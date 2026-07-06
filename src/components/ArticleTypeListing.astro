@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { articleTypeLabel } from '@/utils/slugs';
+
+interface Props {
+  type: string;
+}
+
+const { type } = Astro.props;
+const heading = articleTypeLabel(type);
+
+const all = await getCollection('articles');
+const articles = all
+  .filter((a) => a.data.type === type)
+  .sort((a, b) => b.data.published.localeCompare(a.data.published));
+---
+
+<BaseLayout title={heading}>
+  <main id="maincontent">
+    <h1>{heading}</h1>
+    <ul id="listing">
+      {articles.map((article) => (
+        <li>
+          <a href={`/articles/${article.data.id}`}>{article.data.title}</a>
+        </li>
+      ))}
+    </ul>
+  </main>
+</BaseLayout>
