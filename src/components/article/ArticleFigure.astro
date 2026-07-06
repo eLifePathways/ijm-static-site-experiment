@@ -1,0 +1,63 @@
+---
+interface ImageAsset {
+  type: 'image';
+  id: string;
+  label?: string;
+  title?: string;
+  image: {
+    alt: string;
+    source: { filename: string };
+    size?: { width: number; height: number };
+  };
+}
+
+interface TableAsset {
+  type: 'table';
+  id: string;
+  label?: string;
+  title?: string;
+  tables: string[];
+  footnotes?: Array<{ text: Array<{ text: string; type: string }> }>;
+}
+
+type Asset = ImageAsset | TableAsset;
+
+interface Props {
+  assets: Asset[];
+  articleId: string;
+}
+
+const { assets, articleId } = Astro.props;
+
+function imgSrc(filename: string) {
+  return `/images/${articleId}/${filename}`;
+}
+---
+
+{assets.map((asset) => (
+  <figure id={asset.id}>
+    {asset.type === 'image' && (
+      <img
+        src={imgSrc(asset.image.source.filename)}
+        alt={asset.image.alt || ''}
+        width={asset.image.size?.width}
+        height={asset.image.size?.height}
+        loading="lazy"
+      />
+    )}
+    {asset.type === 'table' && (
+      <div class="table-wrap">
+        <Fragment set:html={asset.tables[0]} />
+        {asset.footnotes?.map((fn) =>
+          fn.text.map((p) => <p class="table-footnote" set:html={p.text} />)
+        )}
+      </div>
+    )}
+    {(asset.label || asset.title) && (
+      <figcaption>
+        {asset.label && <strong>{asset.label}.</strong>}
+        {asset.title && <span set:html={` ${asset.title}`} />}
+      </figcaption>
+    )}
+  </figure>
+))}

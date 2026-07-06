@@ -1,0 +1,130 @@
+---
+import ArticleFigure from './ArticleFigure.astro';
+import BodyNode from './BodyNode.astro';
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type AnyNode = Record<string, any>;
+
+interface Props {
+  node: AnyNode;
+  depth?: number;
+  articleId: string;
+}
+
+const { node, depth = 2, articleId } = Astro.props;
+const type: string = node.type ?? '';
+const headingLevel = Math.min(depth, 6) as 2 | 3 | 4 | 5 | 6;
+const HeadingTag = `h${headingLevel}` as const;
+
+// Pre-cast children arrays in frontmatter to avoid TS generics in template
+const sectionChildren: AnyNode[] = type === 'section' || (!type && node.content) ? node.content ?? [] : [];
+const listItems: AnyNode[][] = type === 'list' ? node.items ?? [] : [];
+const boxChildren: AnyNode[] = type === 'box' ? node.content ?? [] : [];
+const quoteParas: Array<{ text: string; type: string }> = type === 'quote' ? node.text ?? [] : [];
+---
+
+{/* Section */}
+{(type === 'section' || (!type && sectionChildren.length > 0)) && (
+  <section id={node.id || undefined} class="article-section">
+    {node.title && <HeadingTag set:html={node.title} />}
+    {sectionChildren.map((child) => (
+      <BodyNode node={child} depth={depth + 1} articleId={articleId} />
+    ))}
+  </section>
+)}
+
+{/* Paragraph */}
+{type === 'paragraph' && <p set:html={node.text} />}
+
+{/* Figure (image or table assets) */}
+{type === 'figure' && (
+  <ArticleFigure assets={node.assets} articleId={articleId} />
+)}
+
+{/* Single image node */}
+{type === 'image' && (
+  <figure id={node.id || undefined}>
+    <img
+      src={`/images/${articleId}/${node.image?.source?.filename ?? ''}`}
+      alt={node.image?.alt ?? ''}
+      loading="lazy"
+    />
+    {(node.label || node.title) && (
+      <figcaption>
+        {node.label && <strong>{node.label}.</strong>}
+        {node.title && <span set:html={` ${node.title}`} />}
+      </figcaption>
+    )}
+  </figure>
+)}
+
+{/* Table node (bare HTML) */}
+{type === 'table' && (
+  <div class="table-wrap">
+    <Fragment set:html={node.tables?.[0] ?? ''} />
+  </div>
+)}
+
+{/* List */}
+{type === 'list' && (
+  <>
+    {node.prefix === 'number'
+      ? (
+        <ol>
+          {listItems.map((item) => (
+            <li>
+              {item.map((child) => (
+                <BodyNode node={child} depth={depth} articleId={articleId} />
+              ))}
+            </li>
+          ))}
+        </ol>
+      ) : (
+        <ul>
+          {listItems.map((item) => (
+            <li>
+              {item.map((child) => (
+                <BodyNode node={child} depth={depth} articleId={articleId} />
+              ))}
+            </li>
+          ))}
+        </ul>
+      )
+    }
+  </>
+)}
+
+{/* MathML equation */}
+{type === 'mathml' && (
+  <div id={node.id || undefined} class="equation">
+    {node.label && <span class="equation-label">{node.label}</span>}
+    <Fragment set:html={node.mathml} />
+  </div>
+)}
+
+{/* Box (algorithm, callout, etc.) */}
+{type === 'box' && (
+  <aside id={node.id || undefined} class="article-box">
+    {(node.label || node.title) && (
+      <h4 class="article-box__title">
+        {node.label && <span class="article-box__label">{node.label}. </span>}
+        {node.title && <span set:html={node.title} />}
+      </h4>
+    )}
+    {boxChildren.map((child) => (
+      <BodyNode node={child} depth={depth} articleId={articleId} />
+    ))}
+  </aside>
+)}
+
+{/* Code block */}
+{type === 'code' && (
+  <pre><code>{node.code as string}</code></pre>
+)}
+
+{/* Block quote */}
+{type === 'quote' && (
+  <blockquote>
+    {quoteParas.map((p) => <p set:html={p.text} />)}
+  </blockquote>
+)}
