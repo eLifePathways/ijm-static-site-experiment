@@ -1,0 +1,99 @@
+---
+import { articleTypeLabel } from '@/utils/slugs';
+import { resolvePdfPath, formatAuthorList } from '@/utils/articleContent';
+import type { CollectionEntry } from 'astro:content';
+
+interface Props {
+  article: CollectionEntry<'articles'>;
+}
+
+const { article } = Astro.props;
+const {
+  id,
+  type,
+  title,
+  authorLine,
+  doi,
+  volume,
+  issue,
+  fpage,
+  lpage,
+  published,
+  subjects,
+  abstract,
+  authors,
+  pdf,
+  copyright,
+} = article.data;
+
+const typeLabel = articleTypeLabel(type);
+const pdfPath = pdf ? resolvePdfPath(pdf) : null;
+const year = published ? new Date(published).getFullYear() : null;
+const authorsFormatted = authors ? formatAuthorList(authors) : authorLine ?? null;
+
+// Abstract may be an object with content array or a simple string
+const abstractParagraphs: Array<{ text: string }> = (() => {
+  if (!abstract) return [];
+  if (typeof abstract === 'string') return [{ text: abstract }];
+  const a = abstract as { content?: Array<{ text?: string; type?: string }> };
+  return (a.content ?? []).filter((n) => n.type === 'paragraph' && n.text) as Array<{ text: string }>;
+})();
+---
+
+<header class="article-header">
+  <p class="article-header__type">
+    <a href={`/articles/${type}`}>{typeLabel}</a>
+  </p>
+
+  <h1 class="article-header__title" set:html={title} />
+
+  {authorsFormatted && (
+    <p class="article-header__authors">{authorsFormatted}</p>
+  )}
+
+  <dl class="article-header__meta">
+    <dt>Published</dt>
+    <dd>{year}</dd>
+    <dt>Volume</dt>
+    <dd><a href={`/collections/${volume}`}>Volume {volume}</a></dd>
+    <dt>Issue</dt>
+    <dd>{issue}</dd>
+    {(fpage || lpage) && <dt>Pages</dt>}
+    {(fpage || lpage) && <dd>{fpage}–{lpage}</dd>}
+    <dt>DOI</dt>
+    <dd>
+      <a href={`https://doi.org/${doi}`} target="_blank" rel="noopener">{doi}</a>
+    </dd>
+  </dl>
+
+  {subjects && subjects.length > 0 && (
+    <ul class="article-header__subjects">
+      {subjects.map((s: { id: string; name: string }) => (
+        <li><a href={`/subjects/${s.id}`}>{s.name}</a></li>
+      ))}
+    </ul>
+  )}
+
+  {abstractParagraphs.length > 0 && (
+    <section id="abstract" class="article-section article-header__abstract">
+      <h2>Abstract</h2>
+      {abstractParagraphs.map((p) => <p set:html={p.text} />)}
+    </section>
+  )}
+
+  <nav class="article-header__downloads" aria-label="Downloads">
+    <ul>
+      {pdfPath && (
+        <li><a href={pdfPath} id="downloads">Download PDF</a></li>
+      )}
+      <li><a href={`/articles/${id}.bib`}>Download BibTeX</a></li>
+      <li><a href={`/articles/${id}.ris`}>Download RIS</a></li>
+    </ul>
+  </nav>
+
+  {copyright && (
+    <p class="article-header__copyright">
+      {copyright.statement}
+    </p>
+  )}
+</header>

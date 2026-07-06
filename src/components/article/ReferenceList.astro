@@ -1,0 +1,189 @@
+---
+interface Author {
+  type: 'person' | 'group';
+  name?: { preferred: string; index: string };
+  groupName?: string;
+}
+
+interface Pages {
+  first?: string;
+  last?: string;
+  range?: string;
+}
+
+interface Publisher {
+  name: string[];
+  address?: { formatted: string[] };
+}
+
+interface Reference {
+  id: string;
+  type: string;
+  authors?: Author[];
+  date?: string;
+  // journal
+  articleTitle?: string;
+  journal?: string;
+  volume?: string;
+  issue?: string;
+  pages?: Pages;
+  doi?: string;
+  // book
+  bookTitle?: string;
+  publisher?: Publisher;
+  edition?: string;
+  // book-chapter
+  editors?: Author[];
+  chapterTitle?: string;
+  // conference
+  conferenceName?: string;
+  // web
+  title?: string;
+  uri?: string;
+  accessed?: string;
+  // report / thesis / software / preprint
+  source?: string;
+  institution?: Publisher;
+  // misc
+  number?: string;
+  pages_raw?: string;
+}
+
+interface Props {
+  references: Reference[];
+}
+
+const { references } = Astro.props;
+
+function authorStr(authors: Author[] | undefined, max = 99): string {
+  if (!authors?.length) return '';
+  const names = authors.slice(0, max).map((a) =>
+    a.type === 'group' ? (a.groupName ?? '') : (a.name?.index ?? a.name?.preferred ?? '')
+  );
+  const suffix = authors.length > max ? ' et al' : '';
+  return names.join(', ') + suffix;
+}
+
+function editorStr(eds: Author[] | undefined): string {
+  if (!eds?.length) return '';
+  const s = authorStr(eds);
+  return eds.length === 1 ? `${s} (Ed.)` : `${s} (Eds.)`;
+}
+
+function pageStr(pages: Pages | undefined): string {
+  if (!pages) return '';
+  return pages.range ?? (pages.first && pages.last ? `${pages.first}–${pages.last}` : (pages.first ?? ''));
+}
+
+function pubStr(pub: Publisher | undefined): string {
+  if (!pub) return '';
+  const loc = pub.address?.formatted?.[0];
+  const name = pub.name.join(', ');
+  return loc ? `${loc}: ${name}` : name;
+}
+---
+
+<section id="references" class="article-section">
+  <h2>References</h2>
+  <ol class="reference-list">
+    {references.map((ref) => (
+      <li id={ref.id} class="reference-item">
+        {/* Journal article */}
+        {ref.type === 'journal' && (
+          <span>
+            {authorStr(ref.authors)} ({ref.date}).{' '}
+            {ref.articleTitle && <span set:html={ref.articleTitle} />}.{' '}
+            <em>{ref.journal}</em>
+            {ref.volume && <>, <strong>{ref.volume}</strong></>}
+            {ref.issue && <>({ref.issue})</>}
+            {pageStr(ref.pages) && <>, {pageStr(ref.pages)}</>}.
+            {ref.doi && <>{' '}<a href={`https://doi.org/${ref.doi}`} target="_blank" rel="noopener">{`https://doi.org/${ref.doi}`}</a></>}
+          </span>
+        )}
+
+        {/* Book */}
+        {ref.type === 'book' && (
+          <span>
+            {authorStr(ref.authors)} ({ref.date}).{' '}
+            <em set:html={ref.bookTitle} />.
+            {ref.edition && <> {ref.edition} ed.</>}
+            {pubStr(ref.publisher) && <> {pubStr(ref.publisher)}.</>}
+          </span>
+        )}
+
+        {/* Book chapter */}
+        {ref.type === 'book-chapter' && (
+          <span>
+            {authorStr(ref.authors)} ({ref.date}).{' '}
+            {ref.chapterTitle && <span set:html={ref.chapterTitle} />}.{' '}
+            {ref.editors && <>In {editorStr(ref.editors)}, </>}
+            <em set:html={ref.bookTitle} />
+            {pageStr(ref.pages) && <> (pp. {pageStr(ref.pages)})</>}.
+            {pubStr(ref.publisher) && <> {pubStr(ref.publisher)}.</>}
+          </span>
+        )}
+
+        {/* Conference proceeding */}
+        {ref.type === 'conference-proceeding' && (
+          <span>
+            {authorStr(ref.authors)} ({ref.date}).{' '}
+            {ref.articleTitle && <span set:html={ref.articleTitle} />}.{' '}
+            {ref.conferenceName && <em>{ref.conferenceName}</em>}
+            {pageStr(ref.pages) && <>, {pageStr(ref.pages)}</>}.
+          </span>
+        )}
+
+        {/* Web / online source */}
+        {ref.type === 'web' && (
+          <span>
+            {authorStr(ref.authors)} ({ref.date}).{' '}
+            {ref.title && <span set:html={ref.title} />}.
+            {ref.uri && <>{' '}<a href={ref.uri} target="_blank" rel="noopener">{ref.uri}</a></>}
+            {ref.accessed && <> (accessed {ref.accessed})</>}.
+          </span>
+        )}
+
+        {/* Report */}
+        {(ref.type === 'report' || ref.type === 'data') && (
+          <span>
+            {authorStr(ref.authors)} ({ref.date}).{' '}
+            {ref.title && <em set:html={ref.title} />}
+            {ref.source && <>{'. '}{ref.source}</>}
+            {pubStr(ref.institution) && <>{'. '}{pubStr(ref.institution)}</>}.
+            {ref.doi && <>{' '}<a href={`https://doi.org/${ref.doi}`} target="_blank" rel="noopener">{`https://doi.org/${ref.doi}`}</a></>}
+          </span>
+        )}
+
+        {/* Thesis */}
+        {ref.type === 'thesis' && (
+          <span>
+            {authorStr(ref.authors)} ({ref.date}).{' '}
+            {ref.title && <em set:html={ref.title} />}.
+            {pubStr(ref.publisher) && <> {pubStr(ref.publisher)}.</>}
+          </span>
+        )}
+
+        {/* Preprint / software */}
+        {(ref.type === 'preprint' || ref.type === 'software') && (
+          <span>
+            {authorStr(ref.authors)} ({ref.date}).{' '}
+            {ref.title && <em set:html={ref.title} />}.
+            {ref.source && <>{' '}{ref.source}.</>}
+            {ref.doi && <>{' '}<a href={`https://doi.org/${ref.doi}`} target="_blank" rel="noopener">{`https://doi.org/${ref.doi}`}</a></>}
+          </span>
+        )}
+
+        {/* Fallback for unknown types */}
+        {ref.type === 'unknown' && (
+          <span>
+            {authorStr(ref.authors)}
+            {ref.date && <> ({ref.date})</>}.
+            {(ref.articleTitle || ref.title || ref.bookTitle) && (
+              <> <span set:html={ref.articleTitle ?? ref.title ?? ref.bookTitle} />.</>
+            )}
+          </span>
+        )}
+      </li>
+    ))}
+  </ol>
+</section>
