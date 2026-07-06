@@ -1,6 +1,9 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import ArticleHeader from '@/components/article/ArticleHeader.astro';
+import BodyNode from '@/components/article/BodyNode.astro';
+import ReferenceList from '@/components/article/ReferenceList.astro';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -15,18 +18,53 @@ interface Props {
 }
 
 const { article } = Astro.props;
-const { title, authorLine, doi, volume, issue, pdf } = article.data;
+const { id, title, body, references, appendices, acknowledgements, funding } = article.data;
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type AnyNode = Record<string, any>;
+const bodyNodes = body as AnyNode[];
+const appendixNodes = (appendices ?? []) as AnyNode[];
+const ackParas = (acknowledgements ?? []) as Array<{ text: string; type: string }>;
+const fundingStatement = (funding as { statement?: string } | undefined)?.statement ?? null;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const refs = (references ?? []) as any[];
 ---
 
 <BaseLayout title={title}>
-  <main id="maincontent">
-    <header>
-      <h1>{title}</h1>
-      {authorLine && <p>{authorLine}</p>}
-      <p>Volume {volume}, Issue {issue}</p>
-      <p>DOI: {doi}</p>
-      {pdf && <a href={pdf}>Download PDF</a>}
-    </header>
-    <!-- Article body rendered in Phase 2 -->
+  <main id="maincontent" class="article-page" data-pagefind-body>
+    <ArticleHeader article={article} />
+
+    <div class="article-body">
+      {bodyNodes.map((node) => (
+        <BodyNode node={node} depth={2} articleId={id} />
+      ))}
+    </div>
+
+    {appendixNodes.length > 0 && (
+      <div class="article-appendices">
+        <h2>Appendices</h2>
+        {appendixNodes.map((node) => (
+          <BodyNode node={node} depth={3} articleId={id} />
+        ))}
+      </div>
+    )}
+
+    {ackParas.length > 0 && (
+      <section class="article-section" id="acknowledgements">
+        <h2>Acknowledgements</h2>
+        {ackParas.map((p) => <p set:html={p.text} />)}
+      </section>
+    )}
+
+    {fundingStatement && (
+      <section class="article-section" id="funding">
+        <h2>Funding</h2>
+        <p>{fundingStatement}</p>
+      </section>
+    )}
+
+    {refs.length > 0 && (
+      <ReferenceList references={refs} />
+    )}
   </main>
 </BaseLayout>

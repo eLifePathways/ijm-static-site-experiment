@@ -1,5 +1,6 @@
-import { defineCollection, z } from 'astro:content';
+import { defineCollection } from 'astro:content';
 import { glob } from 'astro/loaders';
+import { z } from 'zod';
 
 // ── Shared primitives ───────────────────────────────────────────────────────
 
@@ -7,7 +8,7 @@ const affiliationSchema = z.object({
   name: z.array(z.string()),
   address: z
     .object({
-      components: z.record(z.unknown()),
+      components: z.record(z.string(), z.unknown()),
       formatted: z.array(z.string()),
     })
     .optional(),
