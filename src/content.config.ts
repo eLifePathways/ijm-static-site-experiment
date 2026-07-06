@@ -1,5 +1,5 @@
 import { defineCollection } from 'astro:content';
-import { glob } from 'astro/loaders';
+import { file } from 'astro/loaders';
 import { z } from 'zod';
 
 // ── Shared primitives ───────────────────────────────────────────────────────
@@ -45,7 +45,7 @@ const bodyNodeSchema: z.ZodType<unknown> = z.unknown();
 // ── Collection definitions ───────────────────────────────────────────────────
 
 const articlesCollection = defineCollection({
-  loader: glob({ pattern: '*.json', base: '../api/data/articles' }),
+  loader: file('../api/data/articles-all.json'),
   schema: z
     .object({
       '-meta': z.object({ patched: z.boolean() }).optional(),
@@ -93,7 +93,7 @@ const articlesCollection = defineCollection({
 });
 
 const issuesCollection = defineCollection({
-  loader: glob({ pattern: '*.json', base: '../api/data/collections' }),
+  loader: file('../api/data/collections-all.json'),
   schema: z.object({
     id: z.string(),
     title: z.string(),
@@ -103,7 +103,7 @@ const issuesCollection = defineCollection({
 });
 
 const subjectsCollection = defineCollection({
-  loader: glob({ pattern: '*.json', base: '../api/data/subjects' }),
+  loader: file('../api/data/subjects-all.json'),
   schema: z.object({
     id: z.string(),
     name: z.string(),

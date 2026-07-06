@@ -5,7 +5,11 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
+    "merge-content": "node scripts/merge-content.mjs",
+    "convert-images": "node scripts/convert-images.mjs",
+    "prebuild": "npm run merge-content && npm run convert-images",
     "build": "astro build",
+    "postbuild": "node scripts/copy-generated.mjs",
     "preview": "astro preview",
     "check": "astro check",
     "lint": "eslint src",
