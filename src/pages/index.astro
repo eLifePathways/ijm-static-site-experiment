@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+
+const allArticles = await getCollection('articles');
+const latestArticles = allArticles
+  .sort((a, b) => b.data.published.localeCompare(a.data.published))
+  .slice(0, 10);
+---
+
+<BaseLayout title="Latest research | International Journal of Microsimulation">
+  <main id="maincontent">
+    <h1>Latest research</h1>
+    <ul id="listing">
+      {latestArticles.map((article) => (
+        <li>
+          <a href={`/articles/${article.data.id}`}>{article.data.title}</a>
+        </li>
+      ))}
+    </ul>
+  </main>
+</BaseLayout>

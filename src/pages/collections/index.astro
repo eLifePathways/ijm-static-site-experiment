@@ -1,0 +1,25 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { issueSlug } from '@/utils/slugs';
+
+const issues = await getCollection('issues');
+const sorted = issues.sort((a, b) =>
+  b.data.published.localeCompare(a.data.published),
+);
+---
+
+<BaseLayout title="Issues | International Journal of Microsimulation">
+  <main id="maincontent">
+    <h1>Issues</h1>
+    <ul id="listing">
+      {sorted.map((issue) => (
+        <li>
+          <a href={`/collections/${issue.data.id}/${issueSlug(issue.data.title)}`}>
+            {issue.data.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </main>
+</BaseLayout>

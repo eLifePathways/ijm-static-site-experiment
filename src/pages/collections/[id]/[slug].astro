@@ -1,0 +1,38 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import { issueSlug } from '@/utils/slugs';
+
+export async function getStaticPaths() {
+  const issues = await getCollection('issues');
+  return issues.map((issue) => ({
+    params: { id: issue.data.id, slug: issueSlug(issue.data.title) },
+    props: { issue },
+  }));
+}
+
+interface Props {
+  issue: CollectionEntry<'issues'>;
+}
+
+const { issue } = Astro.props;
+const { title, content: articleIds } = issue.data;
+
+const allArticles = await getCollection('articles');
+const issueArticles = articleIds
+  .map((id) => allArticles.find((a) => a.data.id === id))
+  .filter((a): a is CollectionEntry<'articles'> => a !== undefined);
+---
+
+<BaseLayout title={title}>
+  <main id="maincontent">
+    <h1>{title}</h1>
+    <ul id="listing">
+      {issueArticles.map((article) => (
+        <li>
+          <a href={`/articles/${article.data.id}`}>{article.data.title}</a>
+        </li>
+      ))}
+    </ul>
+  </main>
+</BaseLayout>
