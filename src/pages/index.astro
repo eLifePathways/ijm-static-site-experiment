@@ -4,6 +4,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import Hero from '@/components/Hero.astro';
 import CategoryList from '@/components/CategoryList.astro';
 import ArticleTeaser from '@/components/ArticleTeaser.astro';
+import IssuesGroupSidebar from '@/components/IssuesGroupSidebar.astro';
 
 const subjects = (await getCollection('subjects')).sort((a, b) => a.data.name.localeCompare(b.data.name));
 const subjectItems = subjects.map((s) => ({ label: s.data.name, href: `/subjects/${s.data.id}` }));
@@ -57,11 +58,14 @@ const latestArticles = allArticles
       items={exploreItems}
       columns={2}
     />
-    <div class="wrapper">
-      <h2>Latest research</h2>
-      <ol class="teaser-list">
-        {latestArticles.map((article) => <ArticleTeaser article={article} />)}
-      </ol>
+    <div class="wrapper home-grid">
+      <div class="home-grid__main">
+        <h2>Latest research</h2>
+        <ol class="teaser-list">
+          {latestArticles.map((article) => <ArticleTeaser article={article} />)}
+        </ol>
+      </div>
+      <IssuesGroupSidebar />
     </div>
   </main>
 </BaseLayout>
@@ -74,5 +78,17 @@ const latestArticles = allArticles
     border-bottom: 1px solid var(--color-border);
     padding-block: var(--space-xs);
     margin-block-end: var(--space-m);
+  }
+
+  .home-grid {
+    display: grid;
+    gap: var(--space-l);
+  }
+
+  @media (min-width: 60em) {
+    .home-grid {
+      grid-template-columns: 2fr 1fr;
+      align-items: start;
+    }
   }
 </style>
