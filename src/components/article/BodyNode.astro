@@ -19,10 +19,14 @@ const { node, depth = 2, articleId, index } = Astro.props;
 const type: string = node.type ?? '';
 const headingLevel = Math.min(depth, 6) as 2 | 3 | 4 | 5 | 6;
 const HeadingTag = `h${headingLevel}` as const;
-const isCollapsibleSection = type === 'section' && depth === 2 && !!node.title;
+// Appendix entries (unlike body[] sections) have no explicit `type` field —
+// just {content, id, title} — so this also matches untyped section-shaped
+// nodes, not just type === 'section'.
+const isSectionShaped = type === 'section' || (!type && !!node.content?.length);
+const isCollapsibleSection = isSectionShaped && depth === 2 && !!node.title;
 
 // Pre-cast children arrays in frontmatter to avoid TS generics in template
-const sectionChildren: AnyNode[] = type === 'section' || (!type && node.content) ? node.content ?? [] : [];
+const sectionChildren: AnyNode[] = isSectionShaped ? node.content ?? [] : [];
 const listItems: AnyNode[][] = type === 'list' ? node.items ?? [] : [];
 const boxChildren: AnyNode[] = type === 'box' ? node.content ?? [] : [];
 const quoteParas: Array<{ text: string; type: string }> = type === 'quote' ? node.text ?? [] : [];
@@ -53,7 +57,7 @@ if (type === 'image' && !resolvedImage) {
 )}
 
 {/* Section */}
-{!isCollapsibleSection && (type === 'section' || (!type && sectionChildren.length > 0)) && (
+{!isCollapsibleSection && isSectionShaped && (
   <section id={node.id || undefined} class="article-section">
     {node.title && <HeadingTag set:html={node.title} />}
     {sectionChildren.map((child) => (

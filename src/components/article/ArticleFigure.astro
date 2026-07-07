@@ -47,6 +47,14 @@ for (const asset of assets) {
 
 {assets.map((asset) => (
   <figure id={asset.id}>
+    {/* Legacy puts a table's caption above the table (footnote stays below,
+        inside the table wrap); image captions stay below the image. */}
+    {asset.type === 'table' && (asset.label || asset.title) && (
+      <figcaption>
+        {asset.label && <strong>{asset.label}.</strong>}
+        {asset.title && <span set:html={` ${asset.title}`} />}
+      </figcaption>
+    )}
     {asset.type === 'image' && (() => {
       const resolved = resolvedImages.get(asset.id)!;
       return (
@@ -70,7 +78,7 @@ for (const asset of assets) {
         )}
       </div>
     )}
-    {(asset.label || asset.title) && (
+    {asset.type === 'image' && (asset.label || asset.title) && (
       <figcaption>
         {asset.label && <strong>{asset.label}.</strong>}
         {asset.title && <span set:html={` ${asset.title}`} />}
@@ -92,6 +100,10 @@ for (const asset of assets) {
     font-size: var(--step--1);
     color: var(--color-ink-muted);
     margin-block-start: var(--space-2xs);
+
+    &:first-child {
+      margin-block: 0 var(--space-2xs);
+    }
   }
 
   .figure-lightbox-trigger {

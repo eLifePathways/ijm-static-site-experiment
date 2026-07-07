@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { articleTypeLabel, issueSlug } from '@/utils/slugs';
-import { resolvePdfPath, formatAuthorList, formatCiteAsAuthors } from '@/utils/articleContent';
+import { resolvePdfPath, formatAuthorList, formatCiteAsAuthors, uniqueAffiliations } from '@/utils/articleContent';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -24,7 +24,6 @@ const {
   abstract,
   authors,
   pdf,
-  copyright,
 } = article.data;
 
 const typeLabel = articleTypeLabel(type);
@@ -37,6 +36,7 @@ const issueTitle = matchedIssue?.data.title ?? `Volume ${volume}`;
 const year = published ? new Date(published).getFullYear() : null;
 const authorsFormatted = authors ? formatAuthorList(authors) : authorLine ?? null;
 const citeAsAuthors = authors ? formatCiteAsAuthors(authors) : authorLine ?? null;
+const institutions = authors ? uniqueAffiliations(authors) : [];
 
 // Abstract may be an object with content array or a simple string
 const abstractParagraphs: Array<{ text: string }> = (() => {
@@ -70,6 +70,10 @@ const abstractParagraphs: Array<{ text: string }> = (() => {
       <p class="article-header__authors">{authorsFormatted}</p>
     )}
 
+    {institutions.length > 0 && (
+      <p class="article-header__institutions">{institutions.join('; ')}</p>
+    )}
+
     <p class="article-header__volume">
       {issuePath ? <a href={issuePath}>{issueTitle}</a> : issueTitle}
     </p>
@@ -99,10 +103,6 @@ const abstractParagraphs: Array<{ text: string }> = (() => {
       <li><a href={`/articles/${id}.ris`}>Download RIS</a></li>
     </ul>
   </nav>
-
-  {copyright && (
-    <p class="article-header__copyright" set:html={copyright.statement} />
-  )}
 </header>
 
 <style>
@@ -155,6 +155,13 @@ const abstractParagraphs: Array<{ text: string }> = (() => {
     margin: 0 0 var(--space-2xs);
   }
 
+  .article-header__institutions {
+    font-family: var(--font-heading);
+    font-size: var(--step--1);
+    color: var(--color-ink-muted);
+    margin: 0 0 var(--space-2xs);
+  }
+
   .article-header__volume {
     font-family: var(--font-heading);
     font-size: var(--step--1);
@@ -194,10 +201,6 @@ const abstractParagraphs: Array<{ text: string }> = (() => {
     }
   }
 
-  .article-header__copyright {
-    font-size: var(--step--1);
-    color: var(--color-ink-muted);
-  }
 </style>
 
 <style>

@@ -2,6 +2,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import ArticleHeader from '@/components/article/ArticleHeader.astro';
+import ArticleInfo from '@/components/article/ArticleInfo.astro';
 import ArticleToc from '@/components/article/ArticleToc.astro';
 import BodyNode from '@/components/article/BodyNode.astro';
 import ReferenceList from '@/components/article/ReferenceList.astro';
@@ -20,14 +21,12 @@ interface Props {
 }
 
 const { article } = Astro.props;
-const { id, title, body, references, appendices, acknowledgements, funding } = article.data;
+const { id, title, body, references, appendices } = article.data;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type AnyNode = Record<string, any>;
 const bodyNodes = body as AnyNode[];
 const appendixNodes = (appendices ?? []) as AnyNode[];
-const ackParas = (acknowledgements ?? []) as Array<{ text: string; type: string }>;
-const fundingStatement = (funding as { statement?: string } | undefined)?.statement ?? null;
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const refs = (references ?? []) as any[];
 
@@ -36,9 +35,11 @@ const tocItems = [
   ...bodyNodes
     .filter((node) => node.type === 'section' && node.title && node.id)
     .map((node) => ({ id: node.id as string, title: node.title as string })),
-  ...(ackParas.length > 0 ? [{ id: 'acknowledgements', title: 'Acknowledgements' }] : []),
-  ...(fundingStatement ? [{ id: 'funding', title: 'Funding' }] : []),
+  ...appendixNodes
+    .filter((node) => node.title && node.id)
+    .map((node) => ({ id: node.id as string, title: node.title as string })),
   ...(refs.length > 0 ? [{ id: 'references', title: 'References' }] : []),
+  { id: 'info', title: 'Article and author information' },
 ];
 ---
 
@@ -61,32 +62,15 @@ const tocItems = [
           ))}
         </div>
 
-        {appendixNodes.length > 0 && (
-          <div class="article-appendices">
-            <h2>Appendices</h2>
-            {appendixNodes.map((node) => (
-              <BodyNode node={node} depth={3} articleId={id} />
-            ))}
-          </div>
-        )}
-
-        {ackParas.length > 0 && (
-          <section class="article-section" id="acknowledgements">
-            <h2>Acknowledgements</h2>
-            {ackParas.map((p) => <p set:html={p.text} />)}
-          </section>
-        )}
-
-        {fundingStatement && (
-          <section class="article-section" id="funding">
-            <h2>Funding</h2>
-            <p set:html={fundingStatement} />
-          </section>
-        )}
+        {appendixNodes.map((node) => (
+          <BodyNode node={node} depth={2} articleId={id} />
+        ))}
 
         {refs.length > 0 && (
           <ReferenceList references={refs} />
         )}
+
+        <ArticleInfo article={article} />
       </div>
     </div>
   </main>

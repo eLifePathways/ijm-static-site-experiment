@@ -1,0 +1,186 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { articleTypeLabelSingular } from '@/utils/slugs';
+import { formatAffiliation, formatLongDate } from '@/utils/articleContent';
+
+interface Props {
+  article: CollectionEntry<'articles'>;
+}
+
+interface AffiliationInfo {
+  name: string[];
+  address?: { formatted: string[] };
+}
+
+interface AuthorInfo {
+  name: { preferred: string };
+  affiliations?: AffiliationInfo[];
+  emailAddresses?: string[];
+  competing?: string;
+  orcid?: string;
+}
+
+const { article } = Astro.props;
+const { id, type, subjects, keywords, authors, funding, acknowledgements, copyright, versionDate, version, status, published } =
+  article.data;
+
+const personAuthors = (authors ?? []).filter((a: { type: string }) => a.type === 'person') as AuthorInfo[];
+const fundingStatement = (funding as { statement?: string } | undefined)?.statement ?? null;
+const ackParas = (acknowledgements ?? []) as Array<{ text: string; type: string }>;
+const publishedLabel = status === 'poa' ? 'Preprint posted' : 'Version of Record published';
+const copyrightYear = copyright.year ?? new Date(published).getUTCFullYear();
+
+const hasTagsFooter = Boolean(type || (subjects && subjects.length > 0) || (keywords && keywords.length > 0));
+---
+
+<details id="info" class="article-section article-section--collapsible">
+  <summary><h2>Article and author information</h2></summary>
+  <div class="article-section__body">
+    {personAuthors.length > 0 && (
+      <section class="article-info__section">
+        <h3>Author details</h3>
+        <ol class="article-info__author-list">
+          {personAuthors.map((author: AuthorInfo) => (
+            <li class="article-info__author">
+              <h4>{author.name.preferred}</h4>
+              {author.affiliations && author.affiliations.length > 1 && (
+                <ul class="article-info__affiliations">
+                  {author.affiliations.map((aff) => <li>{formatAffiliation(aff)}</li>)}
+                </ul>
+              )}
+              {author.affiliations && author.affiliations.length === 1 && (
+                <p class="article-info__detail">{formatAffiliation(author.affiliations[0])}</p>
+              )}
+              {author.emailAddresses && author.emailAddresses.length > 0 && (
+                <p class="article-info__detail">
+                  <strong>For correspondence:</strong>{' '}
+                  <a href={`mailto:${author.emailAddresses[0]}`}>{author.emailAddresses[0]}</a>
+                </p>
+              )}
+              {author.competing && (
+                <p class="article-info__detail"><strong>Competing interests:</strong> {author.competing}</p>
+              )}
+              {author.orcid && (
+                <p class="article-info__detail">
+                  <a href={`https://orcid.org/${author.orcid}`} target="_blank" rel="noopener">ORCID iD: {author.orcid}</a>
+                </p>
+              )}
+            </li>
+          ))}
+        </ol>
+      </section>
+    )}
+
+    {fundingStatement && (
+      <section class="article-info__section">
+        <h3>Funding</h3>
+        <p set:html={fundingStatement} />
+      </section>
+    )}
+
+    {ackParas.length > 0 && (
+      <section class="article-info__section">
+        <h3>Acknowledgements</h3>
+        {ackParas.map((p) => <p set:html={p.text} />)}
+      </section>
+    )}
+
+    <section class="article-info__section">
+      <h3>Publication history</h3>
+      <p><a href={`/articles/${id}`}>{publishedLabel}: {formatLongDate(versionDate)} (version {version})</a></p>
+    </section>
+
+    <section class="article-info__section">
+      <h3>Copyright</h3>
+      <p>© {copyrightYear}, {copyright.holder}</p>
+      <p set:html={copyright.statement} />
+    </section>
+  </div>
+</details>
+
+{hasTagsFooter && (
+  <footer class="article-meta">
+    <h4>Categories and tags</h4>
+    <ul class="article-meta__list">
+      {type && <li><a href={`/articles/${type}`}>{articleTypeLabelSingular(type)}</a></li>}
+      {subjects?.map((s: { id: string; name: string }) => (
+        <li><a href={`/subjects/${s.id}`}>{s.name}</a></li>
+      ))}
+      {keywords?.map((k: string) => <li class="article-meta__tag">{k.trim()}</li>)}
+    </ul>
+  </footer>
+)}
+
+<style>
+  .article-info__author-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .article-info__author {
+    margin: 0 0 var(--space-m);
+
+    h4 {
+      font-size: var(--step-0);
+      margin: 0 0 var(--space-3xs);
+    }
+  }
+  .article-info__affiliations {
+    margin: 0 0 var(--space-3xs);
+    padding-inline-start: var(--space-m);
+    font-size: var(--step--1);
+    color: var(--color-ink-muted);
+  }
+  .article-info__detail {
+    font-size: var(--step--1);
+    color: var(--color-ink-muted);
+    margin: 0 0 var(--space-3xs);
+  }
+
+  .article-info__section {
+    margin: 0 0 var(--space-m);
+
+    h3 {
+      font-size: var(--step-0);
+      margin: 0 0 var(--space-2xs);
+    }
+    p {
+      font-size: var(--step--1);
+    }
+  }
+
+  .article-meta {
+    margin-block-start: var(--space-m);
+    padding-block-start: var(--space-m);
+    border-block-start: 1px solid var(--color-border);
+
+    h4 {
+      font-size: var(--step--1);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--color-ink-muted);
+      margin: 0 0 var(--space-2xs);
+    }
+  }
+  .article-meta__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2xs) var(--space-s);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-heading);
+    font-size: var(--step--1);
+
+    a {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--color-accent-strong);
+    }
+  }
+  .article-meta__tag {
+    color: var(--color-ink-muted);
+  }
+</style>
