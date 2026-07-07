@@ -26,6 +26,11 @@ h6 {
   font-weight: bold;
   line-height: var(--leading-tight);
   color: var(--color-ink);
+  margin-block-end: var(--space-s);
+}
+
+#maincontent {
+  padding-block: var(--space-l);
 }
 
 h1 {

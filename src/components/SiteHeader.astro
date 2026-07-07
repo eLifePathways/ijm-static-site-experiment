@@ -1,0 +1,87 @@
+---
+---
+
+<header class="site-header">
+  <div class="wrapper site-header__bar">
+    <a href="/" class="site-header__logo">
+      <img src="/logo-full.png" alt="International Journal of Microsimulation home" />
+    </a>
+    <a href="/about" class="site-header__about">About</a>
+  </div>
+  <nav class="site-nav" aria-label="Primary">
+    <ul class="wrapper site-nav__list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/collections">Issues</a></li>
+      <li class="site-nav__search">
+        <a href="/search" aria-label="Search">
+          <img src="/search-icon.svg" alt="" width="18" height="18" />
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .site-header {
+    border-bottom: 1px solid var(--color-border);
+
+    .site-header__bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-block: var(--space-xs);
+    }
+
+    .site-header__logo img {
+      height: 2rem;
+      width: auto;
+    }
+
+    .site-header__about {
+      font-family: var(--font-heading);
+      font-weight: bold;
+      font-size: var(--step--1);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      color: var(--color-ink);
+    }
+    .site-header__about:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  .site-nav {
+    border-top: 1px solid var(--color-border);
+
+    .site-nav__list {
+      display: flex;
+      align-items: center;
+      gap: var(--space-m);
+      list-style: none;
+      margin: 0;
+      padding-block: var(--space-2xs);
+    }
+
+    a {
+      font-family: var(--font-heading);
+      font-weight: bold;
+      font-size: var(--step--1);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      text-decoration: none;
+      color: var(--color-ink);
+    }
+    a:hover {
+      color: var(--color-accent);
+    }
+
+    .site-nav__search {
+      margin-inline-start: auto;
+
+      img {
+        display: block;
+      }
+    }
+  }
+</style>
