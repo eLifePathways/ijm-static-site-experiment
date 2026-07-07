@@ -1,0 +1,64 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { issueSlug } from '@/utils/slugs';
+
+interface Props {
+  issue: CollectionEntry<'issues'>;
+}
+const { issue } = Astro.props;
+const { id, title, published } = issue.data;
+const href = `/collections/${id}/${issueSlug(title)}`;
+const date = new Date(published).toLocaleDateString('en-GB', {
+  day: 'numeric',
+  month: 'short',
+  year: 'numeric',
+});
+---
+
+<li class="teaser">
+  <h4 class="teaser__title"><a href={href}>{title}</a></h4>
+  <div class="teaser__footer">
+    <a class="teaser__type" href="/collections">Issue</a>
+    <span>{date}</span>
+  </div>
+</li>
+
+<style>
+  .teaser {
+    border-top: 1px solid var(--color-border);
+    padding-block-start: var(--space-m);
+    margin-block-end: var(--space-m);
+  }
+
+  .teaser__title {
+    font-size: var(--step-2);
+    margin: 0 0 var(--space-2xs);
+
+    a {
+      color: var(--color-ink);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  .teaser__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-heading);
+    font-size: var(--step--2);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-ink-muted);
+  }
+
+  .teaser__type {
+    color: inherit;
+    text-decoration: none;
+  }
+  .teaser__type:hover {
+    color: var(--color-accent);
+  }
+</style>

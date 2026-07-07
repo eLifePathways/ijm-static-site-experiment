@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
-import { issueSlug } from '@/utils/slugs';
+import IssueTeaser from '@/components/IssueTeaser.astro';
 
 const issues = await getCollection('issues');
 const sorted = issues.sort((a, b) =>
@@ -12,14 +12,8 @@ const sorted = issues.sort((a, b) =>
 <BaseLayout title="Issues">
   <main id="maincontent" class="wrapper">
     <h1>Issues</h1>
-    <ul id="listing">
-      {sorted.map((issue) => (
-        <li>
-          <a href={`/collections/${issue.data.id}/${issueSlug(issue.data.title)}`}>
-            {issue.data.title}
-          </a>
-        </li>
-      ))}
-    </ul>
+    <ol class="teaser-list">
+      {sorted.map((issue) => <IssueTeaser issue={issue} />)}
+    </ol>
   </main>
 </BaseLayout>
