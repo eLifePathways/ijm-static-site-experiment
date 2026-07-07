@@ -34,9 +34,52 @@ export function formatCiteAsAuthors(authors: Array<{ type: string; name?: { inde
     .join(', ');
 }
 
+interface Affiliation {
+  name: string[];
+  address?: { formatted: string[] };
+}
+
+// Full affiliation text, e.g. "Dept of Economics, University Road, Galway,
+// Ireland" — used both for each author's own affiliation list and, deduped,
+// for the masthead's institution line.
+export function formatAffiliation(affiliation: Affiliation): string {
+  return [...affiliation.name, ...(affiliation.address?.formatted ?? [])].join(', ');
+}
+
+// Unique institution list across all authors, in first-seen order — matches
+// the legacy PHP site's masthead, which lists each institution once even
+// when multiple authors share it.
+export function uniqueAffiliations(authors: Array<{ type: string; affiliations?: Affiliation[] }>): string[] {
+  const seen = new Set<string>();
+  const result: string[] = [];
+  for (const author of authors) {
+    for (const affiliation of author.affiliations ?? []) {
+      const formatted = formatAffiliation(affiliation);
+      if (!seen.has(formatted)) {
+        seen.add(formatted);
+        result.push(formatted);
+      }
+    }
+  }
+  return result;
+}
+
 const MONTH_ABBR = [
   'jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec',
 ];
+
+const MONTH_FULL = [
+  'January', 'February', 'March', 'April', 'May', 'June',
+  'July', 'August', 'September', 'October', 'November', 'December',
+];
+
+// "June 4, 2025" style, for the Publication History line — UTC-based like
+// formatCitationDate below, to avoid the server/browser timezone shifting
+// the date shown near midnight.
+export function formatLongDate(isoDate: string): string {
+  const d = new Date(isoDate);
+  return `${MONTH_FULL[d.getUTCMonth()]} ${d.getUTCDate()}, ${d.getUTCFullYear()}`;
+}
 
 export function formatCitationDate(isoDate: string): { year: number; month: string; ymd: string; slashDate: string } {
   const d = new Date(isoDate);
@@ -89,4 +132,86 @@ export function convertInlineFormatting(html: string, target: 'tex' | 'ris'): st
     text = text.replace(/[$%&_]/g, '\\$&');
   }
   return text;
+}
+
+// Shape shared by [id].bib.ts / [id].ris.ts — a subset of the full article
+// schema, kept independent of astro:content types so these pure formatters
+// (and the route handlers that call them) are testable without an Astro
+// server or the astro:content virtual module.
+export interface CitableArticle {
+  doi: string;
+  title: string;
+  volume: number;
+  issue?: number;
+  published: string;
+  elocationId: string;
+  keywords?: string[];
+  authors?: Array<{ type: string; name?: { index: string } }>;
+  abstract?: { content?: Array<{ text: string }> } | null;
+}
+
+export function buildBibTeX(article: CitableArticle): string {
+  const { doi, title, volume, issue, published, elocationId, keywords } = article;
+  const authors = citationAuthorNames(article.authors ?? []);
+  const { year, month, ymd } = formatCitationDate(published);
+  const abstractParas = article.abstract?.content ?? [];
+
+  const lines = [
+    `@article {${doi},`,
+    `article_type = {journal},`,
+    `title = {${convertInlineFormatting(title, 'tex')}},`,
+    `author = {${authors.join(' and ')}},`,
+    `volume = ${volume},`,
+    ...(issue ? [`number = ${issue},`] : []),
+    `year = ${year},`,
+    `month = {${month}},`,
+    `pub_date = {${ymd}},`,
+    `pages = {${elocationId}},`,
+    `citation = {IJM ${year};${volume}(${issue}):${elocationId}},`,
+    `doi = {${doi}},`,
+    `url = {https://doi.org/${doi}},`,
+    ...(abstractParas.length
+      ? [`abstract = {${abstractParas.map((p) => convertInlineFormatting(p.text, 'tex')).join(' ')}},`]
+      : []),
+    ...(keywords?.length
+      ? [`keywords = {${keywords.map((k) => convertInlineFormatting(k, 'tex')).join(', ')}},`]
+      : []),
+    `journal = {IJM},`,
+    `issn = {1747-5864},`,
+    `publisher = {International Journal of Microsimulation},`,
+    `}`,
+  ];
+
+  return lines.join('\n') + '\n';
+}
+
+export function buildRIS(article: CitableArticle): string {
+  const { doi, title, volume, issue, published, elocationId, keywords } = article;
+  const authors = citationAuthorNames(article.authors ?? []);
+  const { year, slashDate } = formatCitationDate(published);
+  const abstractParas = article.abstract?.content ?? [];
+
+  const lines = [
+    `TY  - JOUR`,
+    `TI  - ${convertInlineFormatting(title, 'ris')}`,
+    ...authors.map((name) => `AU  - ${name}`),
+    `VL  - ${volume}`,
+    ...(issue ? [`IS  - ${issue}`] : []),
+    `PY  - ${year}`,
+    `DA  - ${slashDate}`,
+    `SP  - ${elocationId}`,
+    `C1  - IJM ${year};${volume}(${issue}):${elocationId}`,
+    `DO  - ${doi}`,
+    `UR  - https://doi.org/${doi}`,
+    ...(abstractParas.length
+      ? [`AB  - ${abstractParas.map((p) => convertInlineFormatting(p.text, 'ris')).join(' ')}`]
+      : []),
+    ...(keywords?.length ? keywords.map((k) => `KW  - ${convertInlineFormatting(k, 'ris')}`) : []),
+    `JF  - IJM`,
+    `SN  - 1747-5864`,
+    `PB  - International Journal of Microsimulation`,
+    `ER  - `,
+  ];
+
+  return lines.join('\r\n');
 }

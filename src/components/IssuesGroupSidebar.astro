@@ -1,32 +1,10 @@
 ---
 import { getCollection } from 'astro:content';
 import { issueSlug } from '@/utils/slugs';
+import { groupByYearBand } from '@/utils/issues';
 
 const issues = await getCollection('issues');
-const withYear = issues.map((issue) => ({
-  issue,
-  year: new Date(issue.data.published).getUTCFullYear(),
-}));
-
-const years = withYear.map((i) => i.year);
-const maxYear = Math.max(...years);
-const minYear = Math.min(...years);
-
-// 3-year bands counting down from the newest year with content. The last
-// band may be shorter than 3 years if the data doesn't divide evenly —
-// simpler than the legacy site's fixed-width last band (which leaves a
-// year uncovered by any label when it doesn't divide evenly either).
-const bands: Array<{ start: number; end: number; issues: typeof withYear }> = [];
-for (let top = maxYear; top >= minYear; top -= 3) {
-  const bottom = Math.max(top - 2, minYear);
-  bands.push({
-    start: top,
-    end: bottom,
-    issues: withYear
-      .filter((i) => i.year >= bottom && i.year <= top)
-      .sort((a, b) => b.issue.data.published.localeCompare(a.issue.data.published)),
-  });
-}
+const bands = groupByYearBand(issues, (issue) => issue.data.published);
 ---
 
 <aside class="issues-group">
@@ -35,7 +13,7 @@ for (let top = maxYear; top >= minYear; top -= 3) {
     <details>
       <summary>{band.start === band.end ? band.start : `${band.start}-${band.end}`}</summary>
       <ol>
-        {band.issues.map(({ issue }) => (
+        {band.items.map((issue) => (
           <li>
             <a href={`/collections/${issue.data.id}/${issueSlug(issue.data.title)}`}>
               {issue.data.title}
