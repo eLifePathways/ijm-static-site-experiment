@@ -2,6 +2,20 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Hero from '@/components/Hero.astro';
+import CategoryList from '@/components/CategoryList.astro';
+
+const subjects = (await getCollection('subjects')).sort((a, b) => a.data.name.localeCompare(b.data.name));
+const subjectItems = subjects.map((s) => ({ label: s.data.name, href: `/subjects/${s.data.id}` }));
+
+// The legacy site links these to "book-reviews"/"data-watch"/etc., which
+// are dead routes there too (confirmed: 404 in the live app) — pointing
+// straight at the real article-type pages instead.
+const exploreItems = [
+  { label: 'Book reviews', href: '/articles/scientific-correspondence' },
+  { label: 'Data watch', href: '/articles/tools-resources' },
+  { label: 'Research notes', href: '/articles/short-report' },
+  { label: 'Software reviews', href: '/articles/registered-report' },
+];
 
 // Matches the legacy PHP HomeController's forType(...) filter for "Latest
 // research" — editorials (and corrections) are excluded from this listing.
@@ -36,6 +50,12 @@ const latestArticles = allArticles
       The International Journal of Microsimulation (IJM) is the official online peer-reviewed
       journal of the International Microsimulation Association
     </p>
+    <CategoryList heading="Research categories" items={subjectItems} columns={3} />
+    <CategoryList
+      heading="In addition to standard research articles, explore our:"
+      items={exploreItems}
+      columns={2}
+    />
     <div class="wrapper">
       <h2>Latest research</h2>
       <ul id="listing">

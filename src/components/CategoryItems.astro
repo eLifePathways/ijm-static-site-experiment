@@ -1,0 +1,39 @@
+---
+interface Item {
+  label: string;
+  href: string;
+}
+interface Props {
+  items: Item[];
+  columns: number;
+}
+const { items, columns } = Astro.props;
+---
+
+<ol class="category-items" style={`column-count: ${columns}`}>
+  {items.map((item) => (
+    <li><a href={item.href}>{item.label}</a></li>
+  ))}
+</ol>
+
+<style>
+  .category-items {
+    column-gap: var(--space-l);
+    list-style: none;
+    margin: 0;
+    padding-block-start: var(--space-xs);
+
+    li {
+      break-inside: avoid;
+      padding-block: var(--space-3xs);
+    }
+
+    a {
+      color: var(--color-ink);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--color-accent);
+    }
+  }
+</style>
