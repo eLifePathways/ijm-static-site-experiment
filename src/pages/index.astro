@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Hero from '@/components/Hero.astro';
 import CategoryList from '@/components/CategoryList.astro';
+import ArticleTeaser from '@/components/ArticleTeaser.astro';
 
 const subjects = (await getCollection('subjects')).sort((a, b) => a.data.name.localeCompare(b.data.name));
 const subjectItems = subjects.map((s) => ({ label: s.data.name, href: `/subjects/${s.data.id}` }));
@@ -58,13 +59,9 @@ const latestArticles = allArticles
     />
     <div class="wrapper">
       <h2>Latest research</h2>
-      <ul id="listing">
-        {latestArticles.map((article) => (
-          <li>
-            <a href={`/articles/${article.data.id}`} set:html={article.data.title} />
-          </li>
-        ))}
-      </ul>
+      <ol class="teaser-list">
+        {latestArticles.map((article) => <ArticleTeaser article={article} />)}
+      </ol>
     </div>
   </main>
 </BaseLayout>
@@ -77,5 +74,11 @@ const latestArticles = allArticles
     border-bottom: 1px solid var(--color-border);
     padding-block: var(--space-xs);
     margin-block-end: var(--space-m);
+  }
+
+  .teaser-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
   }
 </style>

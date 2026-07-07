@@ -1,5 +1,10 @@
 import { describe, it, expect } from 'vitest';
-import { issueSlug, articleTypeLabel, ARTICLE_TYPE_LABELS } from '@/utils/slugs';
+import {
+  issueSlug,
+  articleTypeLabel,
+  articleTypeLabelSingular,
+  ARTICLE_TYPE_LABELS,
+} from '@/utils/slugs';
 
 describe('issueSlug', () => {
   it('converts a volume title to a URL-safe slug matching the legacy site', () => {
@@ -34,6 +39,17 @@ describe('articleTypeLabel', () => {
 
   it('falls back to the raw type string for unknown types', () => {
     expect(articleTypeLabel('unknown-type')).toBe('unknown-type');
+  });
+});
+
+describe('articleTypeLabelSingular', () => {
+  it('returns the correct singular form for known types, verified against the live PHP app', () => {
+    expect(articleTypeLabelSingular('editorial')).toBe('Editorial');
+    expect(articleTypeLabelSingular('short-report')).toBe('Research note');
+  });
+
+  it('falls back to the raw type string for unknown types', () => {
+    expect(articleTypeLabelSingular('unknown-type')).toBe('unknown-type');
   });
 });
 

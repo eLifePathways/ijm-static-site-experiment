@@ -30,3 +30,23 @@ export const ARTICLE_TYPE_LABELS: Record<string, string> = {
 export function articleTypeLabel(type: string): string {
   return ARTICLE_TYPE_LABELS[type] ?? type;
 }
+
+/**
+ * Singular form, as used for a single article's type badge (e.g. teaser
+ * cards) — confirmed against the live PHP app ("Editorial", "Research note").
+ */
+export const ARTICLE_TYPE_LABELS_SINGULAR: Record<string, string> = {
+  correction: 'Correction',
+  editorial: 'Editorial',
+  'research-article': 'Research article',
+  'research-communication': 'Commentary',
+  'registered-report': 'Software review',
+  'scientific-correspondence': 'Book review',
+  'short-report': 'Research note',
+  'tools-resources': 'Data watch',
+  feature: 'Feature article',
+};
+
+export function articleTypeLabelSingular(type: string): string {
+  return ARTICLE_TYPE_LABELS_SINGULAR[type] ?? type;
+}

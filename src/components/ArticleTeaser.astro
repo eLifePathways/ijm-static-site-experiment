@@ -1,0 +1,119 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import { articleTypeLabelSingular, issueSlug } from '@/utils/slugs';
+
+interface Props {
+  article: CollectionEntry<'articles'>;
+}
+const { article } = Astro.props;
+const { id, type, title, authors, authorLine, subjects, volume, issue, pdf } = article.data;
+
+const primarySubject = subjects?.[0];
+
+const authorNames = authors
+  ?.filter((a) => a.type === 'person' && a.name)
+  .map((a) => a.name!.preferred);
+const authorText =
+  authorNames && authorNames.length
+    ? authorNames.length > 2
+      ? `${authorNames[0]} et al.`
+      : authorNames.join(', ')
+    : (authorLine ?? null);
+
+const issueId = `${volume}-${issue}`;
+const matchedIssue = (await getCollection('issues')).find((i) => i.data.id === issueId);
+const issuePath = matchedIssue ? `/collections/${issueId}/${issueSlug(matchedIssue.data.title)}` : null;
+---
+
+<li class="teaser">
+  {primarySubject && (
+    <p class="teaser__label"><a href={`/subjects/${primarySubject.id}`}>{primarySubject.name}</a></p>
+  )}
+  <h4 class="teaser__title"><a href={`/articles/${id}`} set:html={title} /></h4>
+  {authorText && <p class="teaser__author">{authorText}</p>}
+  <div class="teaser__footer">
+    <a class="teaser__type" href={`/articles/${type}`}>{articleTypeLabelSingular(type)}</a>
+    <span class="teaser__formats">{pdf ? 'HTML + PDF' : 'HTML'}</span>
+  </div>
+  {matchedIssue && (
+    <p class="teaser__issue"><a href={issuePath}>{matchedIssue.data.title}</a></p>
+  )}
+</li>
+
+<style>
+  .teaser {
+    border-top: 1px solid var(--color-border);
+    padding-block-start: var(--space-m);
+    margin-block-end: var(--space-m);
+  }
+
+  .teaser__label {
+    font-family: var(--font-heading);
+    font-size: var(--step--2);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0 0 var(--space-2xs);
+
+    a {
+      color: var(--color-accent);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--color-accent-strong);
+    }
+  }
+
+  .teaser__title {
+    font-size: var(--step-2);
+    margin: 0 0 var(--space-2xs);
+
+    a {
+      color: var(--color-ink);
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  .teaser__author {
+    font-family: var(--font-heading);
+    margin: 0 0 var(--space-xs);
+  }
+
+  .teaser__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-heading);
+    font-size: var(--step--2);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-ink-muted);
+  }
+
+  .teaser__type {
+    color: inherit;
+    text-decoration: none;
+  }
+  .teaser__type:hover {
+    color: var(--color-accent);
+  }
+
+  .teaser__issue {
+    font-family: var(--font-heading);
+    font-size: var(--step--2);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-ink-muted);
+    margin: var(--space-2xs) 0 0;
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--color-accent);
+    }
+  }
+</style>
