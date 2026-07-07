@@ -1,0 +1,31 @@
+/*
+  Type scale, utopia.fyi-style fluid clamps (min viewport 320px, max 1240px).
+  The legacy site's h1..h6 px sizes were used as this scale's *max* (desktop)
+  endpoint, so wide viewports land on the same sizes as the PHP app; the
+  *min* (mobile) endpoint is a mobile-first reduction chosen for this port.
+
+  Font roles are also lifted from the legacy CSS: body copy is set in
+  "Noto Serif", headings/UI chrome in "Noto Sans" — an unusual split, but
+  it's what the source app actually does throughout.
+*/
+
+:root {
+  --font-heading: 'Noto Sans', Arial, Helvetica, sans-serif;
+  --font-body: 'Noto Serif', Georgia, serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, monospace;
+
+  /* static steps: legacy doesn't fluidly scale fine print or body copy */
+  --step--2: 0.6875rem; /* 11px — eyebrow labels, dates, DOIs */
+  --step--1: 0.875rem; /* 14px — captions, references, footnotes */
+  --step-0: 1rem; /* 16px — body base / h6 */
+
+  /* fluid steps, 320px -> 1240px viewport */
+  --step-1: clamp(1rem, 0.9565rem + 0.2174vw, 1.125rem); /* h5: 16px -> 18px */
+  --step-2: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem); /* h4: 18px -> 20px */
+  --step-3: clamp(1.1875rem, 1.1223rem + 0.3261vw, 1.375rem); /* h3: 19px -> 22px */
+  --step-4: clamp(1.3125rem, 1.2038rem + 0.5435vw, 1.625rem); /* h2: 21px -> 26px */
+  --step-5: clamp(1.625rem, 1.4076rem + 1.087vw, 2.25rem); /* h1: 26px -> 36px */
+
+  --leading-tight: 1.15;
+  --leading-normal: 1.5;
+}

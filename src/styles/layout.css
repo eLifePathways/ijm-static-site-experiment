@@ -1,0 +1,19 @@
+/*
+  Layout primitives, Every Layout style (https://every-layout.dev/) —
+  small, composable, class-based building blocks rather than one-off
+  per-page layout rules. Add more here as pages need them.
+*/
+
+/* Center: constrains and centers content, with mobile-first inline padding.
+   Max width matches the legacy site's .wrapper (69.625rem / 1114px). */
+.wrapper {
+  max-width: 69.625rem;
+  margin-inline: auto;
+  padding-inline: var(--space-m);
+}
+
+/* Stack: consistent vertical rhythm between a block's direct children,
+   without relying on collapsing margins. */
+.stack > * + * {
+  margin-block-start: var(--stack-space, var(--space-m));
+}
