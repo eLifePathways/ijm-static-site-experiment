@@ -6,18 +6,15 @@
 
 :root {
   --color-ink: #212121;
-  --color-ink-muted: #888888;
+  --color-ink-muted: #717171;
+  --color-ink-disabled: #757575;
 
   --color-surface: #ffffff;
   --color-surface-subtle: #f7f7f7;
 
   --color-border: #e0e0e0;
-  --color-border-strong: #bdbdbd;
 
-  --color-accent: #0288d1;
-  --color-accent-strong: #0277bd;
+  --color-accent: #0274b8;
+  --color-accent-strong: #01578f;
   --color-accent-ink: #ffffff;
-
-  --color-accent-secondary: #629f43;
-  --color-accent-secondary-strong: #569037;
 }
