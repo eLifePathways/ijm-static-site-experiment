@@ -3,18 +3,19 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 
 const allArticles = await getCollection('articles');
-const sorted = allArticles.sort((a, b) =>
-  b.data.published.localeCompare(a.data.published),
+const sorted = allArticles.sort(
+  (a, b) =>
+    b.data.published.localeCompare(a.data.published) || a.data.id.localeCompare(b.data.id),
 );
 ---
 
-<BaseLayout title="Articles | International Journal of Microsimulation">
+<BaseLayout title="Articles">
   <main id="maincontent">
     <h1>Articles</h1>
     <ul id="listing">
       {sorted.map((article) => (
         <li>
-          <a href={`/articles/${article.data.id}`}>{article.data.title}</a>
+          <a href={`/articles/${article.data.id}`} set:html={article.data.title} />
         </li>
       ))}
     </ul>

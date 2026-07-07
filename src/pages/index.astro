@@ -2,19 +2,39 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 
+// Matches the legacy PHP HomeController's forType(...) filter for "Latest
+// research" — editorials (and corrections) are excluded from this listing.
+const RESEARCH_TYPES = new Set([
+  'research-article',
+  'research-communication',
+  'registered-report',
+  'scientific-correspondence',
+  'short-report',
+  'tools-resources',
+  'feature',
+]);
+
 const allArticles = await getCollection('articles');
 const latestArticles = allArticles
-  .sort((a, b) => b.data.published.localeCompare(a.data.published))
+  .filter((article) => RESEARCH_TYPES.has(article.data.type))
+  // Same-day ties can't be broken identically to the legacy site: its API sorts
+  // by a full timestamp, but this dataset only records publish dates (day
+  // granularity), so tie order among same-day articles is a best-effort
+  // approximation, not a guaranteed match.
+  .sort(
+    (a, b) =>
+      b.data.published.localeCompare(a.data.published) || a.data.id.localeCompare(b.data.id),
+  )
   .slice(0, 10);
 ---
 
-<BaseLayout title="Latest research | International Journal of Microsimulation">
+<BaseLayout title="Latest research">
   <main id="maincontent">
     <h1>Latest research</h1>
     <ul id="listing">
       {latestArticles.map((article) => (
         <li>
-          <a href={`/articles/${article.data.id}`}>{article.data.title}</a>
+          <a href={`/articles/${article.data.id}`} set:html={article.data.title} />
         </li>
       ))}
     </ul>

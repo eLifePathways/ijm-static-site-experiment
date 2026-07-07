@@ -30,7 +30,7 @@ const issueArticles = articleIds
     <ul id="listing">
       {issueArticles.map((article) => (
         <li>
-          <a href={`/articles/${article.data.id}`}>{article.data.title}</a>
+          <a href={`/articles/${article.data.id}`} set:html={article.data.title} />
         </li>
       ))}
     </ul>

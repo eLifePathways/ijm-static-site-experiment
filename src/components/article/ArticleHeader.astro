@@ -1,5 +1,6 @@
 ---
-import { articleTypeLabel } from '@/utils/slugs';
+import { getCollection } from 'astro:content';
+import { articleTypeLabel, issueSlug } from '@/utils/slugs';
 import { resolvePdfPath, formatAuthorList } from '@/utils/articleContent';
 import type { CollectionEntry } from 'astro:content';
 
@@ -28,6 +29,10 @@ const {
 
 const typeLabel = articleTypeLabel(type);
 const pdfPath = pdf ? resolvePdfPath(pdf) : null;
+
+const issueId = `${volume}-${issue}`;
+const matchedIssue = (await getCollection('issues')).find((i) => i.data.id === issueId);
+const issuePath = matchedIssue ? `/collections/${issueId}/${issueSlug(matchedIssue.data.title)}` : null;
 const year = published ? new Date(published).getFullYear() : null;
 const authorsFormatted = authors ? formatAuthorList(authors) : authorLine ?? null;
 
@@ -55,7 +60,7 @@ const abstractParagraphs: Array<{ text: string }> = (() => {
     <dt>Published</dt>
     <dd>{year}</dd>
     <dt>Volume</dt>
-    <dd><a href={`/collections/${volume}`}>Volume {volume}</a></dd>
+    <dd>{issuePath ? <a href={issuePath}>Volume {volume}</a> : `Volume ${volume}`}</dd>
     <dt>Issue</dt>
     <dd>{issue}</dd>
     {(fpage || lpage) && <dt>Pages</dt>}
@@ -92,8 +97,6 @@ const abstractParagraphs: Array<{ text: string }> = (() => {
   </nav>
 
   {copyright && (
-    <p class="article-header__copyright">
-      {copyright.statement}
-    </p>
+    <p class="article-header__copyright" set:html={copyright.statement} />
   )}
 </header>

@@ -29,7 +29,7 @@ const subjectArticles = allArticles
     <ul id="listing">
       {subjectArticles.map((article) => (
         <li>
-          <a href={`/articles/${article.data.id}`}>{article.data.title}</a>
+          <a href={`/articles/${article.data.id}`} set:html={article.data.title} />
         </li>
       ))}
     </ul>

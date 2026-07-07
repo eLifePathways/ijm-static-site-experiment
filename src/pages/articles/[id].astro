@@ -31,7 +31,12 @@ const refs = (references ?? []) as any[];
 ---
 
 <BaseLayout title={title}>
-  <main id="maincontent" class="article-page" data-pagefind-body>
+  <main
+    id="maincontent"
+    class="article-page"
+    data-pagefind-body
+    data-pagefind-meta={`url:/articles/${id}`}
+  >
     <ArticleHeader article={article} />
 
     <div class="article-body">
@@ -59,7 +64,7 @@ const refs = (references ?? []) as any[];
     {fundingStatement && (
       <section class="article-section" id="funding">
         <h2>Funding</h2>
-        <p>{fundingStatement}</p>
+        <p set:html={fundingStatement} />
       </section>
     )}
 

@@ -16,6 +16,10 @@ const siteTitle = 'International Journal of Microsimulation';
     <meta name="description" content={description} />
     <title>{title === siteTitle ? title : `${title} | ${siteTitle}`}</title>
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    {/* trailingSlash is "never" site-wide; without this, Pagefind derives a
+        trailing-slash URL from the crawled file path (dir/index.html) and
+        every search result 404s. Pagefind honours this tag over its default. */}
+    <link rel="canonical" href={Astro.url.pathname} />
   </head>
   <body>
     <slot />
