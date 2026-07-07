@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import Hero from '@/components/Hero.astro';
 
 // Matches the legacy PHP HomeController's forType(...) filter for "Latest
 // research" — editorials (and corrections) are excluded from this listing.
@@ -29,14 +30,32 @@ const latestArticles = allArticles
 ---
 
 <BaseLayout title="Latest research">
-  <main id="maincontent" class="wrapper">
-    <h1>Latest research</h1>
-    <ul id="listing">
-      {latestArticles.map((article) => (
-        <li>
-          <a href={`/articles/${article.data.id}`} set:html={article.data.title} />
-        </li>
-      ))}
-    </ul>
+  <Hero title="International Journal of Microsimulation" />
+  <main id="maincontent">
+    <p class="lead-para wrapper">
+      The International Journal of Microsimulation (IJM) is the official online peer-reviewed
+      journal of the International Microsimulation Association
+    </p>
+    <div class="wrapper">
+      <h2>Latest research</h2>
+      <ul id="listing">
+        {latestArticles.map((article) => (
+          <li>
+            <a href={`/articles/${article.data.id}`} set:html={article.data.title} />
+          </li>
+        ))}
+      </ul>
+    </div>
   </main>
 </BaseLayout>
+
+<style>
+  .lead-para {
+    font-family: var(--font-heading);
+    font-weight: bold;
+    text-align: center;
+    border-bottom: 1px solid var(--color-border);
+    padding-block: var(--space-xs);
+    margin-block-end: var(--space-m);
+  }
+</style>
