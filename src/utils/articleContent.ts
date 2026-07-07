@@ -21,6 +21,19 @@ export function citationAuthorNames(authors: Array<{ type: string; name?: { inde
   return authors.filter((a) => a.type === 'person' && a.name).map((a) => a.name!.index);
 }
 
+// "Initial. Surname" author list for the "Cite as:" line, e.g.
+// "A. Afeku, C. O'Donoghue, K. Kilcline" — matches the legacy PHP site's
+// citation format, derived from the same index name ("Afeku, Alfred").
+export function formatCiteAsAuthors(authors: Array<{ type: string; name?: { index: string } }>): string {
+  return authors
+    .filter((a) => a.type === 'person' && a.name)
+    .map((a) => {
+      const [surname, given] = a.name!.index.split(', ');
+      return given ? `${given.trim().charAt(0)}. ${surname}` : surname;
+    })
+    .join(', ');
+}
+
 const MONTH_ABBR = [
   'jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec',
 ];

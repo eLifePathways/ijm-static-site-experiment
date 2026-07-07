@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import { articleTypeLabel, issueSlug } from '@/utils/slugs';
-import { resolvePdfPath, formatAuthorList } from '@/utils/articleContent';
+import { resolvePdfPath, formatAuthorList, formatCiteAsAuthors } from '@/utils/articleContent';
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
@@ -33,8 +33,10 @@ const pdfPath = pdf ? resolvePdfPath(pdf) : null;
 const issueId = `${volume}-${issue}`;
 const matchedIssue = (await getCollection('issues')).find((i) => i.data.id === issueId);
 const issuePath = matchedIssue ? `/collections/${issueId}/${issueSlug(matchedIssue.data.title)}` : null;
+const issueTitle = matchedIssue?.data.title ?? `Volume ${volume}`;
 const year = published ? new Date(published).getFullYear() : null;
 const authorsFormatted = authors ? formatAuthorList(authors) : authorLine ?? null;
+const citeAsAuthors = authors ? formatCiteAsAuthors(authors) : authorLine ?? null;
 
 // Abstract may be an object with content array or a simple string
 const abstractParagraphs: Array<{ text: string }> = (() => {
@@ -46,37 +48,39 @@ const abstractParagraphs: Array<{ text: string }> = (() => {
 ---
 
 <header class="article-header">
-  <p class="article-header__type">
-    <a href={`/articles/${type}`}>{typeLabel}</a>
-  </p>
+  <div class="article-header__intro">
+    {subjects && subjects.length > 0 && (
+      <p class="article-header__subjects">
+        {subjects.map((s: { id: string; name: string }, i: number) => (
+          <>
+            <a href={`/subjects/${s.id}`}>{s.name}</a>{i < subjects.length - 1 ? ', ' : ''}
+          </>
+        ))}
+      </p>
+    )}
 
-  <h1 class="article-header__title" set:html={title} />
+    <p class="article-header__type">
+      <a href={`/articles/${type}`}>{typeLabel}</a>
+      {year && <span class="article-header__date"> · {year}</span>}
+    </p>
 
-  {authorsFormatted && (
-    <p class="article-header__authors">{authorsFormatted}</p>
-  )}
+    <h1 class="article-header__title" set:html={title} />
 
-  <dl class="article-header__meta">
-    <dt>Published</dt>
-    <dd>{year}</dd>
-    <dt>Volume</dt>
-    <dd>{issuePath ? <a href={issuePath}>Volume {volume}</a> : `Volume ${volume}`}</dd>
-    <dt>Issue</dt>
-    <dd>{issue}</dd>
-    {(fpage || lpage) && <dt>Pages</dt>}
-    {(fpage || lpage) && <dd>{fpage}–{lpage}</dd>}
-    <dt>DOI</dt>
-    <dd>
-      <a href={`https://doi.org/${doi}`} target="_blank" rel="noopener">{doi}</a>
-    </dd>
-  </dl>
+    {authorsFormatted && (
+      <p class="article-header__authors">{authorsFormatted}</p>
+    )}
 
-  {subjects && subjects.length > 0 && (
-    <ul class="article-header__subjects">
-      {subjects.map((s: { id: string; name: string }) => (
-        <li><a href={`/subjects/${s.id}`}>{s.name}</a></li>
-      ))}
-    </ul>
+    <p class="article-header__volume">
+      {issuePath ? <a href={issuePath}>{issueTitle}</a> : issueTitle}
+    </p>
+  </div>
+
+  {citeAsAuthors && (
+    <p class="article-header__cite">
+      <span class="article-header__cite_label">Cite as:</span>
+      {' '}{citeAsAuthors}; {year}; <span set:html={title} />; International Journal of Microsimulation; {volume}({issue}); {fpage}–{lpage}.
+      {' '}<span class="article-header__cite_doi">doi: <a href={`https://doi.org/${doi}`}>{doi}</a></span>
+    </p>
   )}
 
   {abstractParagraphs.length > 0 && (
@@ -102,11 +106,37 @@ const abstractParagraphs: Array<{ text: string }> = (() => {
 </header>
 
 <style>
+  .article-header__intro {
+    text-align: center;
+    max-width: 46rem;
+    margin-inline: auto;
+    padding-block-end: var(--space-m);
+    border-block-end: 1px solid var(--color-border);
+  }
+
+  .article-header__subjects {
+    font-family: var(--font-heading);
+    font-size: var(--step--2);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin: 0 0 var(--space-2xs);
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    a:hover {
+      color: var(--color-accent-strong);
+    }
+  }
+
   .article-header__type {
     font-family: var(--font-heading);
     font-size: var(--step--2);
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    color: var(--color-ink-muted);
     margin: 0 0 var(--space-2xs);
 
     a {
@@ -122,55 +152,22 @@ const abstractParagraphs: Array<{ text: string }> = (() => {
   .article-header__authors {
     font-family: var(--font-heading);
     font-size: var(--step-1);
-    margin: 0 0 var(--space-s);
+    margin: 0 0 var(--space-2xs);
   }
 
-  .article-header__meta {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    column-gap: var(--space-3xs);
-    row-gap: var(--space-2xs);
-    font-family: var(--font-heading);
-    margin: 0 0 var(--space-s);
-    padding-block: var(--space-xs);
-    border-block: 1px solid var(--color-border);
-
-    dt {
-      font-size: var(--step--2);
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: var(--color-ink-muted);
-    }
-    dt::after {
-      content: ':';
-    }
-    dd {
-      margin-inline-end: var(--space-m);
-    }
-  }
-
-  .article-header__subjects {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--space-2xs) var(--space-s);
-    list-style: none;
-    margin: 0 0 var(--space-m);
-    padding: 0;
+  .article-header__volume {
     font-family: var(--font-heading);
     font-size: var(--step--1);
+    color: var(--color-ink-muted);
+    margin: 0;
 
     a {
-      color: var(--color-accent);
-      text-decoration: none;
-    }
-    a:hover {
-      color: var(--color-accent-strong);
+      color: inherit;
     }
   }
 
   .article-header__abstract {
-    margin-block-end: var(--space-m);
+    margin-block: var(--space-m);
   }
 
   .article-header__downloads ul {
@@ -200,5 +197,32 @@ const abstractParagraphs: Array<{ text: string }> = (() => {
   .article-header__copyright {
     font-size: var(--step--1);
     color: var(--color-ink-muted);
+  }
+</style>
+
+<style>
+  .article-header__cite {
+    font-family: var(--font-heading);
+    font-size: var(--step--2);
+    letter-spacing: 0.02em;
+    line-height: var(--leading-normal);
+    color: var(--color-ink-muted);
+    text-align: center;
+    margin: 0 0 var(--space-m);
+    padding-block: var(--space-xs);
+    border-block-end: 1px solid var(--color-border);
+  }
+
+  .article-header__cite_label {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .article-header__cite_doi {
+    display: inline-block;
+
+    a {
+      color: inherit;
+    }
   }
 </style>
