@@ -1,13 +1,7 @@
 /**
  * Prepare static assets for the IJM site build:
- *   1. Convert TIFF figures → JPEG  (generated/images/{id}/{stem}.jpg)
- *   2. Copy PDFs                    (generated/files/{id}/{file}.pdf)
- *
- * Output goes to generated/ (not public/) so Astro's build step does not
- * scan these files at startup — the public/ scan exhausts the OS file
- * descriptor limit (ulimit -n 4096) on sandboxed builds. A postbuild
- * script (copy-generated.mjs) merges generated/ into dist/ after Astro
- * finishes.
+ *   1. Convert TIFF figures → JPEG  (public/images/{id}/{stem}.jpg)
+ *   2. Copy PDFs                    (public/files/{id}/{file}.pdf)
  *
  * Both operations are idempotent: files are skipped when the destination
  * already exists and is newer than the source.
@@ -26,9 +20,8 @@ const require = createRequire(import.meta.url);
 const sharp = require('sharp');
 
 const ASSETS_DIR = resolve(__dirname, '../../assets/files');
-// Staging outside site/ so Rolldown/Vite does not scan these files
-const IMAGES_DIR = resolve(__dirname, '../../generated/images');
-const FILES_DIR = resolve(__dirname, '../../generated/files');
+const IMAGES_DIR = resolve(__dirname, '../public/images');
+const FILES_DIR = resolve(__dirname, '../public/files');
 const JPEG_QUALITY = 85;
 const CONCURRENCY = 4; // process 4 TIFFs at a time to stay within memory budget
 
