@@ -10,12 +10,16 @@ interface Props {
   node: AnyNode;
   depth?: number;
   articleId: string;
+  // Position among top-level (depth 2) sections — only the first one starts
+  // expanded, matching the legacy site's collapsing behaviour.
+  index?: number;
 }
 
-const { node, depth = 2, articleId } = Astro.props;
+const { node, depth = 2, articleId, index } = Astro.props;
 const type: string = node.type ?? '';
 const headingLevel = Math.min(depth, 6) as 2 | 3 | 4 | 5 | 6;
 const HeadingTag = `h${headingLevel}` as const;
+const isCollapsibleSection = type === 'section' && depth === 2 && !!node.title;
 
 // Pre-cast children arrays in frontmatter to avoid TS generics in template
 const sectionChildren: AnyNode[] = type === 'section' || (!type && node.content) ? node.content ?? [] : [];
@@ -35,8 +39,21 @@ if (type === 'image' && !resolvedImage) {
 }
 ---
 
+{/* Top-level section — collapsible, matching the legacy site (only the
+    first section after the abstract starts expanded) */}
+{isCollapsibleSection && (
+  <details id={node.id || undefined} class="article-section article-section--collapsible" open={index === 0}>
+    <summary><HeadingTag set:html={node.title} /></summary>
+    <div class="article-section__body">
+      {sectionChildren.map((child) => (
+        <BodyNode node={child} depth={depth + 1} articleId={articleId} />
+      ))}
+    </div>
+  </details>
+)}
+
 {/* Section */}
-{(type === 'section' || (!type && sectionChildren.length > 0)) && (
+{!isCollapsibleSection && (type === 'section' || (!type && sectionChildren.length > 0)) && (
   <section id={node.id || undefined} class="article-section">
     {node.title && <HeadingTag set:html={node.title} />}
     {sectionChildren.map((child) => (

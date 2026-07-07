@@ -1,0 +1,85 @@
+---
+interface TocItem {
+  id: string;
+  title: string;
+}
+
+interface Props {
+  items: TocItem[];
+}
+
+const { items } = Astro.props;
+---
+
+{items.length > 0 && (
+  <details class="article-toc">
+    <summary>Jump to</summary>
+    <ul>
+      {items.map((item) => (
+        <li><a href={`#${item.id}`} set:html={item.title} /></li>
+      ))}
+    </ul>
+  </details>
+)}
+
+<style>
+  .article-toc {
+    margin-block-end: var(--space-m);
+
+    > summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: var(--space-2xs);
+      font-family: var(--font-heading);
+      font-weight: bold;
+      font-size: var(--step--1);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      color: var(--color-ink-muted);
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+      &::before {
+        content: '';
+        flex: none;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 4px 0 4px 6px;
+        border-color: transparent transparent transparent var(--color-ink-muted);
+        transition: transform 0.15s ease;
+      }
+    }
+    &[open] > summary::before {
+      transform: rotate(90deg);
+    }
+
+    ul {
+      list-style: none;
+      margin: var(--space-2xs) 0 0;
+      padding: 0;
+    }
+    li {
+      margin: 0 0 var(--space-2xs);
+    }
+    a {
+      font-family: var(--font-heading);
+      font-size: var(--step--1);
+      text-decoration: none;
+      color: var(--color-ink-muted);
+    }
+    a:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  @media (min-width: 75em) {
+    .article-toc {
+      position: sticky;
+      top: var(--space-m);
+    }
+  }
+</style>

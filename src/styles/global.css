@@ -40,6 +40,46 @@ h6 {
   margin-block-end: var(--space-l);
 }
 
+/* Top-level sections (and references) collapse like the legacy site's —
+   only the first section after the abstract starts expanded. Native
+   <details> gives us the toggle and hidden-content behaviour for free. */
+.article-section--collapsible {
+  border-block-start: 1px solid var(--color-border);
+  padding-block-start: var(--space-m);
+
+  > summary {
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: baseline;
+    gap: var(--space-2xs);
+
+    &::-webkit-details-marker {
+      display: none;
+    }
+    &::before {
+      content: '';
+      flex: none;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 4px 0 4px 6px;
+      border-color: transparent transparent transparent var(--color-ink-muted);
+      transition: transform 0.15s ease;
+    }
+    h2 {
+      margin: 0;
+    }
+  }
+  &[open] > summary::before {
+    transform: rotate(90deg);
+  }
+
+  > .article-section__body {
+    margin-block-start: var(--space-m);
+  }
+}
+
 .teaser-list {
   list-style: none;
   padding: 0;

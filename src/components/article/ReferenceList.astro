@@ -83,8 +83,8 @@ function pubStr(pub: Publisher | undefined): string {
 }
 ---
 
-<section id="references" class="article-section">
-  <h2>References</h2>
+<details id="references" class="article-section article-section--collapsible">
+  <summary><h2>References</h2></summary>
   <ol class="reference-list">
     {references.map((ref) => (
       <li id={ref.id} class="reference-item">
@@ -186,11 +186,12 @@ function pubStr(pub: Publisher | undefined): string {
       </li>
     ))}
   </ol>
-</section>
+</details>
 
 <style>
   .reference-list {
     padding-inline-start: var(--space-l);
+    margin-block-start: var(--space-m);
 
     li {
       margin-block-end: var(--space-s);
