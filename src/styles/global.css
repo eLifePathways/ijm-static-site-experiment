@@ -33,6 +33,13 @@ h6 {
   padding-block: var(--space-l);
 }
 
+/* Shared across article/[id].astro, BodyNode.astro, and ReferenceList.astro
+   (Astro's component-scoped styles don't reach into child components, so a
+   class this widely reused is simpler as one global rule). */
+.article-section {
+  margin-block-end: var(--space-l);
+}
+
 h1 {
   font-size: var(--step-5);
 }

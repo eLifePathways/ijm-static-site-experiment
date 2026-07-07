@@ -61,3 +61,43 @@ function imgSrc(filename: string) {
     )}
   </figure>
 ))}
+
+<style>
+  figure {
+    margin: 0 0 var(--space-m);
+
+    img {
+      margin-inline: auto;
+    }
+  }
+  figcaption {
+    font-family: var(--font-heading);
+    font-size: var(--step--1);
+    color: var(--color-ink-muted);
+    margin-block-start: var(--space-2xs);
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    margin: 0 0 var(--space-m);
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th,
+    td {
+      border: 1px solid var(--color-border);
+      padding: var(--space-2xs) var(--space-xs);
+      text-align: start;
+    }
+    th {
+      font-family: var(--font-heading);
+      background: var(--color-surface-subtle);
+    }
+  }
+  .table-footnote {
+    font-size: var(--step--1);
+    color: var(--color-ink-muted);
+  }
+</style>

@@ -128,3 +128,107 @@ const quoteParas: Array<{ text: string; type: string }> = type === 'quote' ? nod
     {quoteParas.map((p) => <p set:html={p.text} />)}
   </blockquote>
 )}
+
+<style>
+  p {
+    margin-block-end: var(--space-s);
+  }
+
+  ul,
+  ol {
+    margin: 0 0 var(--space-s);
+    padding-inline-start: var(--space-m);
+  }
+  li {
+    margin-block-end: var(--space-2xs);
+  }
+
+  blockquote {
+    margin: 0 0 var(--space-s);
+    padding-inline-start: var(--space-s);
+    border-inline-start: 3px solid var(--color-border);
+    font-style: italic;
+    color: var(--color-ink-muted);
+  }
+
+  pre {
+    margin: 0 0 var(--space-s);
+    padding: var(--space-s);
+    background: var(--color-surface-subtle);
+    border-radius: 3px;
+    overflow-x: auto;
+
+    code {
+      font-family: var(--font-mono);
+      font-size: var(--step--1);
+    }
+  }
+
+  .article-box {
+    margin: 0 0 var(--space-m);
+    padding: var(--space-s) var(--space-m);
+    background: var(--color-surface-subtle);
+    border-inline-start: 3px solid var(--color-accent);
+
+    .article-box__title {
+      margin-block-end: var(--space-2xs);
+    }
+    .article-box__label {
+      color: var(--color-accent);
+    }
+  }
+
+  .equation {
+    margin: 0 0 var(--space-m);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-s);
+    overflow-x: auto;
+
+    .equation-label {
+      margin-inline-start: auto;
+      color: var(--color-ink-muted);
+      font-family: var(--font-heading);
+      font-size: var(--step--1);
+    }
+  }
+
+  figure {
+    margin: 0 0 var(--space-m);
+
+    img {
+      margin-inline: auto;
+    }
+  }
+  figcaption {
+    font-family: var(--font-heading);
+    font-size: var(--step--1);
+    color: var(--color-ink-muted);
+    margin-block-start: var(--space-2xs);
+  }
+
+  .table-wrap {
+    overflow-x: auto;
+    margin: 0 0 var(--space-m);
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th,
+    td {
+      border: 1px solid var(--color-border);
+      padding: var(--space-2xs) var(--space-xs);
+      text-align: start;
+    }
+    th {
+      font-family: var(--font-heading);
+      background: var(--color-surface-subtle);
+    }
+  }
+  .table-footnote {
+    font-size: var(--step--1);
+    color: var(--color-ink-muted);
+  }
+</style>
