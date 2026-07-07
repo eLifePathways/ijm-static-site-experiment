@@ -21,6 +21,7 @@ const { items, columns } = Astro.props;
     column-gap: var(--space-l);
     list-style: none;
     margin: 0;
+    padding-inline-start: 0;
     padding-block-start: var(--space-xs);
 
     li {
@@ -29,6 +30,7 @@ const { items, columns } = Astro.props;
     }
 
     a {
+      font-family: var(--font-heading);
       color: var(--color-ink);
       text-decoration: none;
     }
