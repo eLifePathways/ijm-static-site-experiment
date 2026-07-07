@@ -1,11 +1,19 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import '@pagefind/default-ui/css/ui.css';
 ---
 
 <BaseLayout title="Search">
   <main id="maincontent">
     <h1>Search</h1>
-    <!-- Pagefind search UI added in Phase 5 -->
     <div id="search"></div>
   </main>
 </BaseLayout>
+
+<script>
+  import { PagefindUI } from '@pagefind/default-ui';
+
+  window.addEventListener('DOMContentLoaded', () => {
+    new PagefindUI({ element: '#search', showSubResults: true });
+  });
+</script>
