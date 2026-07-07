@@ -17,3 +17,17 @@ import '@pagefind/default-ui/css/ui.css';
     new PagefindUI({ element: '#search', showSubResults: true });
   });
 </script>
+
+<style>
+  #search {
+    /* Ties Pagefind's own themeable custom properties to our tokens
+       instead of leaving its defaults, so the search UI doesn't look like
+       a bolted-on widget. */
+    --pagefind-ui-primary: var(--color-ink);
+    --pagefind-ui-text: var(--color-ink);
+    --pagefind-ui-background: var(--color-surface);
+    --pagefind-ui-border: var(--color-border);
+    --pagefind-ui-tag: var(--color-surface-subtle);
+    --pagefind-ui-font: var(--font-body);
+  }
+</style>

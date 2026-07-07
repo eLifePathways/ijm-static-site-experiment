@@ -75,13 +75,18 @@ a:visited {
   color: var(--color-accent);
 }
 
-ul#listing,
-ol#listing {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+/* Prose defaults for plain content areas (about pages render Markdown
+   straight to HTML with no per-element component to scope styles to).
+   .teaser-list and similar already reset these via higher-specificity
+   class rules, so this doesn't fight them. */
+p {
+  margin-block-end: var(--space-s);
 }
-ul#listing > li + li,
-ol#listing > li + li {
-  margin-block-start: var(--space-s);
+ul,
+ol {
+  margin: 0 0 var(--space-s);
+  padding-inline-start: var(--space-m);
+}
+li {
+  margin-block-end: var(--space-2xs);
 }
