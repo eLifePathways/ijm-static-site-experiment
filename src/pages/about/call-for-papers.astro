@@ -1,10 +1,17 @@
 ---
+import { getEntry, render } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import AboutMenu from '@/components/AboutMenu.astro';
+
+const entry = await getEntry('about', 'call-for-papers');
+if (!entry) throw new Error('Missing about/call-for-papers.md content entry');
+const { Content } = await render(entry);
 ---
 
-<BaseLayout title="Call for papers">
+<BaseLayout title={entry.data.title}>
   <main id="maincontent">
-    <h1>Call for papers</h1>
-    <!-- Content migrated from AboutController.php in Phase 4 -->
+    <h1>{entry.data.title}</h1>
+    <Content />
   </main>
+  <AboutMenu currentPath="/about/call-for-papers" />
 </BaseLayout>

@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+
+const entries = (await getCollection('about'))
+  .filter((entry) => entry.data.order !== undefined)
+  .sort((a, b) => (a.data.order ?? 0) - (b.data.order ?? 0));
+
+const slugToPath: Record<string, string> = {
+  'aims-and-scope': '/about',
+  'editorial-board': '/about/editorial-board',
+  'editorial-policy': '/about/editorial-policy',
+  'reviewer-notes': '/about/reviewer-notes',
+  'call-for-papers': '/about/call-for-papers',
+};
+---
+
+<nav aria-label="About sections" class="about-menu">
+  <h2>About sections</h2>
+  <ul>
+    {entries.map((entry) => {
+      const href = slugToPath[entry.id] ?? `/about/${entry.id}`;
+      return (
+        <li>
+          <a href={href} aria-current={href === currentPath ? 'page' : undefined}>
+            {entry.data.title}
+          </a>
+        </li>
+      );
+    })}
+  </ul>
+</nav>

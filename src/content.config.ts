@@ -1,5 +1,5 @@
 import { defineCollection } from 'astro:content';
-import { file } from 'astro/loaders';
+import { glob } from 'astro/loaders';
 import { z } from 'zod';
 
 // ── Shared primitives ───────────────────────────────────────────────────────
@@ -45,7 +45,7 @@ const bodyNodeSchema: z.ZodType<unknown> = z.unknown();
 // ── Collection definitions ───────────────────────────────────────────────────
 
 const articlesCollection = defineCollection({
-  loader: file('../api/data/articles-all.json'),
+  loader: glob({ pattern: '*.json', base: '../api/data/articles' }),
   schema: z
     .object({
       '-meta': z.object({ patched: z.boolean() }).optional(),
@@ -93,7 +93,7 @@ const articlesCollection = defineCollection({
 });
 
 const issuesCollection = defineCollection({
-  loader: file('../api/data/collections-all.json'),
+  loader: glob({ pattern: '*.json', base: '../api/data/collections' }),
   schema: z.object({
     id: z.string(),
     title: z.string(),
@@ -103,10 +103,20 @@ const issuesCollection = defineCollection({
 });
 
 const subjectsCollection = defineCollection({
-  loader: file('../api/data/subjects-all.json'),
+  loader: glob({ pattern: '*.json', base: '../api/data/subjects' }),
   schema: z.object({
     id: z.string(),
     name: z.string(),
+  }),
+});
+
+const aboutCollection = defineCollection({
+  loader: glob({ pattern: '*.md', base: './src/content/about' }),
+  schema: z.object({
+    title: z.string(),
+    // Sets the about-section menu order; pages without one (e.g. author-notes,
+    // which the legacy PHP site's own menu excludes) are left out of the menu.
+    order: z.number().optional(),
   }),
 });
 
@@ -114,4 +124,5 @@ export const collections = {
   articles: articlesCollection,
   issues: issuesCollection,
   subjects: subjectsCollection,
+  about: aboutCollection,
 };
