@@ -56,13 +56,22 @@ if (type === 'image' && !resolvedImage) {
 {/* Single image node */}
 {type === 'image' && resolvedImage && (
   <figure id={node.id || undefined}>
-    <img
-      src={resolvedImage.src}
-      width={resolvedImage.width}
-      height={resolvedImage.height}
-      alt={node.image?.alt ?? ''}
-      loading="lazy"
-    />
+    <a
+      href={resolvedImage.src}
+      class="figure-lightbox-trigger"
+      data-pswp-width={resolvedImage.width}
+      data-pswp-height={resolvedImage.height}
+      target="_blank"
+      rel="noreferrer"
+    >
+      <img
+        src={resolvedImage.src}
+        width={resolvedImage.width}
+        height={resolvedImage.height}
+        alt={node.image?.alt ?? ''}
+        loading="lazy"
+      />
+    </a>
     {(node.label || node.title) && (
       <figcaption>
         {node.label && <strong>{node.label}.</strong>}
@@ -202,6 +211,12 @@ if (type === 'image' && !resolvedImage) {
       margin-inline: auto;
     }
   }
+
+  .figure-lightbox-trigger {
+    display: block;
+    cursor: zoom-in;
+  }
+
   figcaption {
     font-family: var(--font-heading);
     font-size: var(--step--1);

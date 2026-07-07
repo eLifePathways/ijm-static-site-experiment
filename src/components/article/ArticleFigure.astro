@@ -49,7 +49,18 @@ for (const asset of assets) {
   <figure id={asset.id}>
     {asset.type === 'image' && (() => {
       const resolved = resolvedImages.get(asset.id)!;
-      return <img src={resolved.src} alt={asset.image.alt || ''} width={resolved.width} height={resolved.height} loading="lazy" />;
+      return (
+        <a
+          href={resolved.src}
+          class="figure-lightbox-trigger"
+          data-pswp-width={resolved.width}
+          data-pswp-height={resolved.height}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <img src={resolved.src} alt={asset.image.alt || ''} width={resolved.width} height={resolved.height} loading="lazy" />
+        </a>
+      );
     })()}
     {asset.type === 'table' && (
       <div class="table-wrap">
@@ -81,6 +92,11 @@ for (const asset of assets) {
     font-size: var(--step--1);
     color: var(--color-ink-muted);
     margin-block-start: var(--space-2xs);
+  }
+
+  .figure-lightbox-trigger {
+    display: block;
+    cursor: zoom-in;
   }
 
   .table-wrap {

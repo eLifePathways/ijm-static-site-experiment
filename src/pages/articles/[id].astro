@@ -4,6 +4,7 @@ import BaseLayout from '@/layouts/BaseLayout.astro';
 import ArticleHeader from '@/components/article/ArticleHeader.astro';
 import BodyNode from '@/components/article/BodyNode.astro';
 import ReferenceList from '@/components/article/ReferenceList.astro';
+import 'photoswipe/style.css';
 
 export async function getStaticPaths() {
   const articles = await getCollection('articles');
@@ -73,3 +74,17 @@ const refs = (references ?? []) as any[];
     )}
   </main>
 </BaseLayout>
+
+<script>
+  import PhotoSwipeLightbox from 'photoswipe/lightbox';
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: '.article-page',
+      children: 'a.figure-lightbox-trigger',
+      bgOpacity: 1,
+      pswpModule: () => import('photoswipe'),
+    });
+    lightbox.init();
+  });
+</script>
