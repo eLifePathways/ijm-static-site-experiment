@@ -80,7 +80,10 @@ const tocItems = [
   @media (min-width: 75em) {
     .article-content-grid {
       display: grid;
-      grid-template-columns: 12rem 1fr;
+      /* Mirrors the legacy site's 2/8/2-twelfths split: the ToC fills the
+         left margin and an equal-width empty column on the right keeps the
+         content column itself centered rather than flush against the ToC. */
+      grid-template-columns: 12rem 1fr 12rem;
       gap: var(--space-l);
       align-items: start;
     }
