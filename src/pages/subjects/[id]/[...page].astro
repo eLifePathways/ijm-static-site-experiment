@@ -1,13 +1,14 @@
 ---
+import { getAllArticles, getAllSubjects } from '@/utils/content';
 import type { GetStaticPaths, Page } from 'astro';
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { type CollectionEntry } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import ArticleTeaser from '@/components/ArticleTeaser.astro';
 import Pagination from '@/components/Pagination.astro';
 
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
-  const subjects = await getCollection('subjects');
-  const allArticles = await getCollection('articles');
+  const subjects = await getAllSubjects();
+  const allArticles = await getAllArticles();
 
   return subjects.flatMap((subject) => {
     const subjectArticles = allArticles

@@ -4,8 +4,9 @@
 // route only ever generates page 2 onward — see the filter below — so
 // following "Next" from / lands here without an unnecessary duplicate
 // /page route for page 1.
+import { getAllArticles } from '@/utils/content';
 import type { GetStaticPaths, Page } from 'astro';
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { type CollectionEntry } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import ArticleTeaser from '@/components/ArticleTeaser.astro';
 import Pagination from '@/components/Pagination.astro';
@@ -22,7 +23,7 @@ export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
     'tools-resources',
     'feature',
   ]);
-  const allArticles = await getCollection('articles');
+  const allArticles = await getAllArticles();
   const latestArticles = allArticles
     .filter((article) => RESEARCH_TYPES.has(article.data.type))
     .sort(

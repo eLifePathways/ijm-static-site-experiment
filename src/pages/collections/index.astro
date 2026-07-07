@@ -1,9 +1,9 @@
 ---
-import { getCollection } from 'astro:content';
+import { getAllIssues } from '@/utils/content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import IssueTeaser from '@/components/IssueTeaser.astro';
 
-const issues = await getCollection('issues');
+const issues = await getAllIssues();
 const sorted = issues.sort((a, b) =>
   b.data.published.localeCompare(a.data.published),
 );

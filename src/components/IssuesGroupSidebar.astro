@@ -1,9 +1,9 @@
 ---
-import { getCollection } from 'astro:content';
+import { getAllIssues } from '@/utils/content';
 import { issueSlug } from '@/utils/slugs';
 import { groupByYearBand } from '@/utils/issues';
 
-const issues = await getCollection('issues');
+const issues = await getAllIssues();
 const bands = groupByYearBand(issues, (issue) => issue.data.published);
 ---
 

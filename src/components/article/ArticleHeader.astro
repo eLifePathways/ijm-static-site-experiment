@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getAllIssues } from '@/utils/content';
 import { articleTypeLabel, issueSlug } from '@/utils/slugs';
 import { resolvePdfPath, formatAuthorList, formatCiteAsAuthors, uniqueAffiliations } from '@/utils/articleContent';
 import type { CollectionEntry } from 'astro:content';
@@ -30,7 +30,7 @@ const typeLabel = articleTypeLabel(type);
 const pdfPath = pdf ? resolvePdfPath(pdf) : null;
 
 const issueId = `${volume}-${issue}`;
-const matchedIssue = (await getCollection('issues')).find((i) => i.data.id === issueId);
+const matchedIssue = (await getAllIssues()).find((i) => i.data.id === issueId);
 const issuePath = matchedIssue ? `/collections/${issueId}/${issueSlug(matchedIssue.data.title)}` : null;
 const issueTitle = matchedIssue?.data.title ?? `Volume ${volume}`;
 const year = published ? new Date(published).getFullYear() : null;

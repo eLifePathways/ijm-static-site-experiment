@@ -1,5 +1,5 @@
 ---
-import { getCollection } from 'astro:content';
+import { getAllArticles, getAllSubjects } from '@/utils/content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import Hero from '@/components/Hero.astro';
 import CategoryList from '@/components/CategoryList.astro';
@@ -7,7 +7,7 @@ import ArticleTeaser from '@/components/ArticleTeaser.astro';
 import IssuesGroupSidebar from '@/components/IssuesGroupSidebar.astro';
 import Pagination from '@/components/Pagination.astro';
 
-const subjects = (await getCollection('subjects')).sort((a, b) => a.data.name.localeCompare(b.data.name));
+const subjects = (await getAllSubjects()).sort((a, b) => a.data.name.localeCompare(b.data.name));
 const subjectItems = subjects.map((s) => ({ label: s.data.name, href: `/subjects/${s.data.id}` }));
 
 // The legacy site links these to "book-reviews"/"data-watch"/etc., which
@@ -32,7 +32,7 @@ const RESEARCH_TYPES = new Set([
   'feature',
 ]);
 
-const allArticles = await getCollection('articles');
+const allArticles = await getAllArticles();
 const allLatest = allArticles
   .filter((article) => RESEARCH_TYPES.has(article.data.type))
   // Same-day ties can't be broken identically to the legacy site: its API sorts

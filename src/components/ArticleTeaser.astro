@@ -1,5 +1,6 @@
 ---
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getAllIssues } from '@/utils/content';
+import { type CollectionEntry } from 'astro:content';
 import { articleTypeLabelSingular, issueSlug } from '@/utils/slugs';
 
 interface Props {
@@ -21,7 +22,7 @@ const authorText =
     : (authorLine ?? null);
 
 const issueId = `${volume}-${issue}`;
-const matchedIssue = (await getCollection('issues')).find((i) => i.data.id === issueId);
+const matchedIssue = (await getAllIssues()).find((i) => i.data.id === issueId);
 const issuePath = matchedIssue ? `/collections/${issueId}/${issueSlug(matchedIssue.data.title)}` : null;
 ---
 

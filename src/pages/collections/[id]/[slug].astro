@@ -1,11 +1,12 @@
 ---
-import { getCollection, type CollectionEntry } from 'astro:content';
+import { getAllArticles, getAllIssues } from '@/utils/content';
+import { type CollectionEntry } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { issueSlug } from '@/utils/slugs';
 import ArticleTeaser from '@/components/ArticleTeaser.astro';
 
 export async function getStaticPaths() {
-  const issues = await getCollection('issues');
+  const issues = await getAllIssues();
   return issues.map((issue) => ({
     params: { id: issue.data.id, slug: issueSlug(issue.data.title) },
     props: { issue },
@@ -19,7 +20,7 @@ interface Props {
 const { issue } = Astro.props;
 const { title, content: articleIds } = issue.data;
 
-const allArticles = await getCollection('articles');
+const allArticles = await getAllArticles();
 const issueArticles = articleIds
   .map((id) => allArticles.find((a) => a.data.id === id))
   .filter((a): a is CollectionEntry<'articles'> => a !== undefined);
