@@ -2,10 +2,12 @@ import { describe, it, expect } from 'vitest';
 import { issueSlug, articleTypeLabel, ARTICLE_TYPE_LABELS } from '@/utils/slugs';
 
 describe('issueSlug', () => {
-  it('converts a volume title to a URL-safe slug', () => {
-    expect(issueSlug('Volume 1(1) Autumn 2007')).toBe('volume-11-autumn-2007');
-    expect(issueSlug('Volume 19(1) Spring 2026')).toBe('volume-191-spring-2026');
-    expect(issueSlug('Volume 10(3) Winter 2016')).toBe('volume-103-winter-2016');
+  it('converts a volume title to a URL-safe slug matching the legacy site', () => {
+    // Verified against the live PHP app's cocur/slugify redirect behaviour:
+    // parentheses are separators, not characters to delete.
+    expect(issueSlug('Volume 1(1) Autumn 2007')).toBe('volume-1-1-autumn-2007');
+    expect(issueSlug('Volume 19(1) Spring 2026')).toBe('volume-19-1-spring-2026');
+    expect(issueSlug('Volume 10(3) Winter 2016')).toBe('volume-10-3-winter-2016');
   });
 
   it('produces no leading or trailing hyphens', () => {
