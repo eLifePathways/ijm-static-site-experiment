@@ -5,6 +5,7 @@ import Hero from '@/components/Hero.astro';
 import CategoryList from '@/components/CategoryList.astro';
 import ArticleTeaser from '@/components/ArticleTeaser.astro';
 import IssuesGroupSidebar from '@/components/IssuesGroupSidebar.astro';
+import Pagination from '@/components/Pagination.astro';
 
 const subjects = (await getCollection('subjects')).sort((a, b) => a.data.name.localeCompare(b.data.name));
 const subjectItems = subjects.map((s) => ({ label: s.data.name, href: `/subjects/${s.data.id}` }));
@@ -32,7 +33,7 @@ const RESEARCH_TYPES = new Set([
 ]);
 
 const allArticles = await getCollection('articles');
-const latestArticles = allArticles
+const allLatest = allArticles
   .filter((article) => RESEARCH_TYPES.has(article.data.type))
   // Same-day ties can't be broken identically to the legacy site: its API sorts
   // by a full timestamp, but this dataset only records publish dates (day
@@ -41,8 +42,10 @@ const latestArticles = allArticles
   .sort(
     (a, b) =>
       b.data.published.localeCompare(a.data.published) || a.data.id.localeCompare(b.data.id),
-  )
-  .slice(0, 10);
+  );
+const PAGE_SIZE = 10;
+const latestArticles = allLatest.slice(0, PAGE_SIZE);
+const lastPage = Math.ceil(allLatest.length / PAGE_SIZE);
 ---
 
 <BaseLayout title="Latest research">
@@ -64,6 +67,7 @@ const latestArticles = allArticles
         <ol class="teaser-list">
           {latestArticles.map((article) => <ArticleTeaser article={article} />)}
         </ol>
+        <Pagination currentPage={1} lastPage={lastPage} nextHref={lastPage > 1 ? '/page/2' : undefined} />
       </div>
       <IssuesGroupSidebar />
     </div>

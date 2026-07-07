@@ -1,0 +1,59 @@
+---
+// Continuation pages for the homepage's "Latest research" list. Page 1
+// lives at / (with the hero, category browse, and issues sidebar); this
+// route only ever generates page 2 onward — see the filter below — so
+// following "Next" from / lands here without an unnecessary duplicate
+// /page route for page 1.
+import type { GetStaticPaths, Page } from 'astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ArticleTeaser from '@/components/ArticleTeaser.astro';
+import Pagination from '@/components/Pagination.astro';
+
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+  // Defined inside getStaticPaths, not at module scope — see the note in
+  // articles/[type]/[...page].astro for why.
+  const RESEARCH_TYPES = new Set([
+    'research-article',
+    'research-communication',
+    'registered-report',
+    'scientific-correspondence',
+    'short-report',
+    'tools-resources',
+    'feature',
+  ]);
+  const allArticles = await getCollection('articles');
+  const latestArticles = allArticles
+    .filter((article) => RESEARCH_TYPES.has(article.data.type))
+    .sort(
+      (a, b) =>
+        b.data.published.localeCompare(a.data.published) || a.data.id.localeCompare(b.data.id),
+    );
+  const pages = paginate(latestArticles, { pageSize: 10 });
+  return pages.filter((p) => p.props.page.currentPage > 1);
+};
+
+interface Props {
+  page: Page<CollectionEntry<'articles'>>;
+}
+
+const { page } = Astro.props as unknown as Props;
+// Page 1 of this same paginated set lives at / — send "Previous" from
+// page 2 back there instead of Astro's computed (nonexistent) /page/1.
+const prevHref = page.currentPage === 2 ? '/' : page.url.prev;
+---
+
+<BaseLayout title={`Latest research (page ${page.currentPage})`}>
+  <main id="maincontent" class="wrapper">
+    <h1>Latest research</h1>
+    <ol class="teaser-list">
+      {page.data.map((article) => <ArticleTeaser article={article} />)}
+    </ol>
+    <Pagination
+      currentPage={page.currentPage}
+      lastPage={page.lastPage}
+      prevHref={prevHref}
+      nextHref={page.url.next}
+    />
+  </main>
+</BaseLayout>

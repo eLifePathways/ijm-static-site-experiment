@@ -1,0 +1,55 @@
+---
+import type { GetStaticPaths, Page } from 'astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ArticleTeaser from '@/components/ArticleTeaser.astro';
+import Pagination from '@/components/Pagination.astro';
+import { articleTypeLabel } from '@/utils/slugs';
+
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+  // Defined inside getStaticPaths, not at module scope: Astro extracts this
+  // function into an isolated chunk for the prerender pass, which doesn't
+  // have access to other top-level consts in the same file.
+  const ARTICLE_TYPES = [
+    'editorial',
+    'research-article',
+    'research-communication',
+    'registered-report',
+    'scientific-correspondence',
+    'short-report',
+    'tools-resources',
+    'feature',
+  ];
+  const all = await getCollection('articles');
+  return ARTICLE_TYPES.flatMap((type) => {
+    const articles = all
+      .filter((a) => a.data.type === type)
+      .sort((a, b) => b.data.published.localeCompare(a.data.published));
+    if (articles.length === 0) return [];
+    return paginate(articles, { params: { type }, pageSize: 10 });
+  });
+};
+
+interface Props {
+  page: Page<CollectionEntry<'articles'>>;
+}
+
+const { type } = Astro.params;
+const { page } = Astro.props as unknown as Props;
+const heading = articleTypeLabel(type as string);
+---
+
+<BaseLayout title={page.currentPage > 1 ? `${heading} (page ${page.currentPage})` : heading}>
+  <main id="maincontent" class="wrapper">
+    <h1>{heading}</h1>
+    <ol class="teaser-list">
+      {page.data.map((article) => <ArticleTeaser article={article} />)}
+    </ol>
+    <Pagination
+      currentPage={page.currentPage}
+      lastPage={page.lastPage}
+      prevHref={page.url.prev}
+      nextHref={page.url.next}
+    />
+  </main>
+</BaseLayout>
