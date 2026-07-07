@@ -1,6 +1,7 @@
 ---
 import ArticleFigure from './ArticleFigure.astro';
 import BodyNode from './BodyNode.astro';
+import { resolveFigureImage } from '@/utils/images';
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type AnyNode = Record<string, any>;
@@ -21,6 +22,17 @@ const sectionChildren: AnyNode[] = type === 'section' || (!type && node.content)
 const listItems: AnyNode[][] = type === 'list' ? node.items ?? [] : [];
 const boxChildren: AnyNode[] = type === 'box' ? node.content ?? [] : [];
 const quoteParas: Array<{ text: string; type: string }> = type === 'quote' ? node.text ?? [] : [];
+
+const resolvedImage =
+  type === 'image' && node.image?.source?.filename
+    ? await resolveFigureImage(articleId, node.image.source.filename)
+    : null;
+if (type === 'image' && !resolvedImage) {
+  throw new Error(
+    `No source TIFF found for ${articleId}/${node.image?.source?.filename} — expected it at ` +
+      `src/generated-tiffs/${articleId}/ (run "npm run prepare-assets").`,
+  );
+}
 ---
 
 {/* Section */}
@@ -42,10 +54,12 @@ const quoteParas: Array<{ text: string; type: string }> = type === 'quote' ? nod
 )}
 
 {/* Single image node */}
-{type === 'image' && (
+{type === 'image' && resolvedImage && (
   <figure id={node.id || undefined}>
     <img
-      src={`/images/${articleId}/${node.image?.source?.filename ?? ''}`}
+      src={resolvedImage.src}
+      width={resolvedImage.width}
+      height={resolvedImage.height}
       alt={node.image?.alt ?? ''}
       loading="lazy"
     />

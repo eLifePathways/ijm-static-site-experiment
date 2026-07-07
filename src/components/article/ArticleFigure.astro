@@ -1,4 +1,6 @@
 ---
+import { resolveFigureImage } from '@/utils/images';
+
 interface ImageAsset {
   type: 'image';
   id: string;
@@ -7,7 +9,6 @@ interface ImageAsset {
   image: {
     alt: string;
     source: { filename: string };
-    size?: { width: number; height: number };
   };
 }
 
@@ -29,22 +30,27 @@ interface Props {
 
 const { assets, articleId } = Astro.props;
 
-function imgSrc(filename: string) {
-  return `/images/${articleId}/${filename}`;
+const resolvedImages = new Map<string, Awaited<ReturnType<typeof resolveFigureImage>>>();
+for (const asset of assets) {
+  if (asset.type === 'image') {
+    const resolved = await resolveFigureImage(articleId, asset.image.source.filename);
+    if (!resolved) {
+      throw new Error(
+        `No source TIFF found for ${articleId}/${asset.image.source.filename} — expected it at ` +
+          `src/generated-tiffs/${articleId}/ (run "npm run prepare-assets").`,
+      );
+    }
+    resolvedImages.set(asset.id, resolved);
+  }
 }
 ---
 
 {assets.map((asset) => (
   <figure id={asset.id}>
-    {asset.type === 'image' && (
-      <img
-        src={imgSrc(asset.image.source.filename)}
-        alt={asset.image.alt || ''}
-        width={asset.image.size?.width}
-        height={asset.image.size?.height}
-        loading="lazy"
-      />
-    )}
+    {asset.type === 'image' && (() => {
+      const resolved = resolvedImages.get(asset.id)!;
+      return <img src={resolved.src} alt={asset.image.alt || ''} width={resolved.width} height={resolved.height} loading="lazy" />;
+    })()}
     {asset.type === 'table' && (
       <div class="table-wrap">
         <Fragment set:html={asset.tables[0]} />
