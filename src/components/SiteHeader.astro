@@ -2,39 +2,69 @@
 ---
 
 <header class="site-header">
-  <div class="wrapper site-header__bar">
+  <div class="site-header__inner">
     <a href="/" class="site-header__logo">
       <img src="/logo-full.png" alt="International Journal of Microsimulation home" />
     </a>
-    <a href="/about" class="site-header__about">About</a>
+    <div class="site-header__secondary">
+      <a href="/about" class="site-header__about">About</a>
+      <a
+        href="https://www.epress.ac.uk/ijm/webforms/author.php"
+        class="site-header__submit"
+      >Submit my research</a>
+    </div>
+    <nav class="site-nav" aria-label="Primary">
+      <ul class="site-nav__list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/collections">Issues</a></li>
+        <li class="site-nav__search">
+          <a href="/search" aria-label="Search">
+            <img src="/search-icon.svg" alt="" width="18" height="18" />
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
-  <nav class="site-nav" aria-label="Primary">
-    <ul class="wrapper site-nav__list">
-      <li><a href="/">Home</a></li>
-      <li><a href="/collections">Issues</a></li>
-      <li class="site-nav__search">
-        <a href="/search" aria-label="Search">
-          <img src="/search-icon.svg" alt="" width="18" height="18" />
-        </a>
-      </li>
-    </ul>
-  </nav>
 </header>
 
 <style>
+  /* Mobile-first: logo + About/Submit stack on one row, primary nav on the
+     row below, all full width — matches the legacy site's own mobile
+     layout. At the legacy CSS's 45.625em breakpoint this switches to a
+     two-column grid: a left logo column (full height, bordered) with the
+     secondary row and primary nav stacked to its right — same elements,
+     just reassigned grid areas, so no markup duplication is needed. */
   .site-header {
     border-bottom: 1px solid var(--color-border);
 
-    .site-header__bar {
-      display: flex;
+    .site-header__inner {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      grid-template-areas:
+        'logo secondary'
+        'nav nav';
       align-items: center;
-      justify-content: space-between;
+      column-gap: var(--space-s);
       padding-block: var(--space-xs);
+      padding-inline: var(--space-m);
     }
 
-    .site-header__logo img {
-      height: 2rem;
-      width: auto;
+    .site-header__logo {
+      grid-area: logo;
+
+      img {
+        height: 2rem;
+        width: auto;
+        display: block;
+      }
+    }
+
+    .site-header__secondary {
+      grid-area: secondary;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: var(--space-m);
     }
 
     .site-header__about {
@@ -49,9 +79,28 @@
     .site-header__about:hover {
       color: var(--color-accent);
     }
+
+    .site-header__submit {
+      display: none;
+      font-family: var(--font-heading);
+      font-weight: bold;
+      font-size: var(--step--2);
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--color-accent-ink);
+      background: var(--color-accent);
+      padding: var(--space-3xs) var(--space-xs);
+      border-radius: 3px;
+      white-space: nowrap;
+    }
+    .site-header__submit:hover {
+      background: var(--color-accent-strong);
+    }
   }
 
   .site-nav {
+    grid-area: nav;
     border-top: 1px solid var(--color-border);
 
     .site-nav__list {
@@ -82,6 +131,35 @@
       img {
         display: block;
       }
+    }
+  }
+
+  @media (min-width: 45.625em) {
+    .site-header .site-header__inner {
+      grid-template-columns: auto 1fr;
+      grid-template-rows: auto auto;
+      grid-template-areas:
+        'logo secondary'
+        'logo nav';
+      column-gap: var(--space-m);
+      padding-block: 0;
+    }
+
+    .site-header .site-header__logo {
+      align-self: stretch;
+      display: flex;
+      align-items: center;
+      border-inline-end: 1px solid var(--color-border);
+      padding-block: var(--space-s);
+      padding-inline-end: var(--space-m);
+    }
+
+    .site-header .site-header__submit {
+      display: inline-block;
+    }
+
+    .site-nav {
+      border-top: none;
     }
   }
 </style>
