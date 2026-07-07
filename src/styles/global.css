@@ -40,6 +40,12 @@ h6 {
   margin-block-end: var(--space-l);
 }
 
+.teaser-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 h1 {
   font-size: var(--step-5);
 }

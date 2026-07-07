@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import ArticleTeaser from '@/components/ArticleTeaser.astro';
 
 export async function getStaticPaths() {
   const subjects = await getCollection('subjects');
@@ -26,12 +27,8 @@ const subjectArticles = allArticles
 <BaseLayout title={name}>
   <main id="maincontent" class="wrapper">
     <h1>{name}</h1>
-    <ul id="listing">
-      {subjectArticles.map((article) => (
-        <li>
-          <a href={`/articles/${article.data.id}`} set:html={article.data.title} />
-        </li>
-      ))}
-    </ul>
+    <ol class="teaser-list">
+      {subjectArticles.map((article) => <ArticleTeaser article={article} />)}
+    </ol>
   </main>
 </BaseLayout>

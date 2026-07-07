@@ -2,6 +2,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { issueSlug } from '@/utils/slugs';
+import ArticleTeaser from '@/components/ArticleTeaser.astro';
 
 export async function getStaticPaths() {
   const issues = await getCollection('issues');
@@ -27,12 +28,8 @@ const issueArticles = articleIds
 <BaseLayout title={title}>
   <main id="maincontent" class="wrapper">
     <h1>{title}</h1>
-    <ul id="listing">
-      {issueArticles.map((article) => (
-        <li>
-          <a href={`/articles/${article.data.id}`} set:html={article.data.title} />
-        </li>
-      ))}
-    </ul>
+    <ol class="teaser-list">
+      {issueArticles.map((article) => <ArticleTeaser article={article} />)}
+    </ol>
   </main>
 </BaseLayout>

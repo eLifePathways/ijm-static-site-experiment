@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { articleTypeLabel } from '@/utils/slugs';
+import ArticleTeaser from '@/components/ArticleTeaser.astro';
 
 interface Props {
   type: string;
@@ -17,14 +18,10 @@ const articles = all
 ---
 
 <BaseLayout title={heading}>
-  <main id="maincontent">
+  <main id="maincontent" class="wrapper">
     <h1>{heading}</h1>
-    <ul id="listing">
-      {articles.map((article) => (
-        <li>
-          <a href={`/articles/${article.data.id}`} set:html={article.data.title} />
-        </li>
-      ))}
-    </ul>
+    <ol class="teaser-list">
+      {articles.map((article) => <ArticleTeaser article={article} />)}
+    </ol>
   </main>
 </BaseLayout>
