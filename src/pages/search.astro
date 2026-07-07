@@ -13,8 +13,22 @@ import '@pagefind/default-ui/css/ui.css';
 <script>
   import { PagefindUI } from '@pagefind/default-ui';
 
+  // @pagefind/default-ui ships no type declarations, so triggerSearch (which
+  // does exist at runtime per https://pagefind.app/docs/ui-usage/) is typed
+  // by hand here.
+  interface PagefindUIInstance {
+    triggerSearch: (term: string) => void;
+  }
+
   window.addEventListener('DOMContentLoaded', () => {
-    new PagefindUI({ element: '#search', showSubResults: true });
+    const search = new PagefindUI({
+      element: '#search',
+      showSubResults: true,
+      openFilters: ['Research category'],
+    }) as unknown as PagefindUIInstance;
+
+    const q = new URLSearchParams(window.location.search).get('q');
+    if (q) search.triggerSearch(q);
   });
 </script>
 

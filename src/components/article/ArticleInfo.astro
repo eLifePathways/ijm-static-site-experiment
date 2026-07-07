@@ -104,9 +104,11 @@ const hasTagsFooter = Boolean(type || (subjects && subjects.length > 0) || (keyw
     <ul class="article-meta__list">
       {type && <li><a href={`/articles/${type}`}>{articleTypeLabelSingular(type)}</a></li>}
       {subjects?.map((s: { id: string; name: string }) => (
-        <li><a href={`/subjects/${s.id}`}>{s.name}</a></li>
+        <li><a href={`/subjects/${s.id}`} data-pagefind-filter={`Research category:${s.name}`}>{s.name}</a></li>
       ))}
-      {keywords?.map((k: string) => <li class="article-meta__tag">{k.trim()}</li>)}
+      {keywords?.map((k: string) => (
+        <li><a class="article-meta__tag" href={`/search?q=${encodeURIComponent(k.trim())}`}>{k.trim()}</a></li>
+      ))}
     </ul>
   </footer>
 )}
@@ -179,8 +181,12 @@ const hasTagsFooter = Boolean(type || (subjects && subjects.length > 0) || (keyw
     a:hover {
       color: var(--color-accent-strong);
     }
-  }
-  .article-meta__tag {
-    color: var(--color-ink-muted);
+
+    a.article-meta__tag {
+      color: var(--color-ink-muted);
+    }
+    a.article-meta__tag:hover {
+      color: var(--color-ink);
+    }
   }
 </style>
