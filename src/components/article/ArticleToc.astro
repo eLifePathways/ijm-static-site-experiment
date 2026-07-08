@@ -24,15 +24,17 @@ const { items, articleHref, figuresHref, activeView = 'article' } = Astro.props;
     grid children and break the column placement. */}
 <div class="article-sidebar">
   {figuresHref && articleHref && (
-    <nav class="view-selector" aria-label="Article view">
-      <ul>
-        <li class:list={['view-selector__item', { 'view-selector__item--active': activeView === 'article' }]}>
-          <a href={articleHref} aria-current={activeView === 'article' ? 'page' : undefined}>Article</a>
-        </li>
-        <li class:list={['view-selector__item', { 'view-selector__item--active': activeView === 'figures' }]}>
-          <a href={figuresHref} aria-current={activeView === 'figures' ? 'page' : undefined}>Figures and data</a>
-        </li>
-      </ul>
+    <nav class="view-tabs" aria-label="Article view">
+      <a
+        href={articleHref}
+        class:list={['view-tabs__link', { 'view-tabs__link--active': activeView === 'article' }]}
+        aria-current={activeView === 'article' ? 'page' : undefined}
+      >Article</a>
+      <a
+        href={figuresHref}
+        class:list={['view-tabs__link', { 'view-tabs__link--active': activeView === 'figures' }]}
+        aria-current={activeView === 'figures' ? 'page' : undefined}
+      >Figures and data</a>
     </nav>
   )}
 
@@ -56,47 +58,33 @@ const { items, articleHref, figuresHref, activeView = 'article' } = Astro.props;
     }
   }
 
-  .view-selector {
+  /* Same typographic treatment as .article-toc's "Jump to" summary below —
+     plain text links, not a pill/tab control, so the two view links and the
+     ToC toggle read as one consistent list of sidebar labels. */
+  .view-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xs);
     margin-block-end: var(--space-m);
-
-    ul {
-      display: flex;
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      max-width: 21rem;
-    }
   }
-  .view-selector__item {
-    flex: 1;
-    text-align: center;
-    border: 1px solid var(--color-ink);
-
-    &:first-child {
-      border-inline-end: none;
-      border-radius: 4px 0 0 4px;
-    }
-    &:last-child {
-      border-inline-start: none;
-      border-radius: 0 4px 4px 0;
-    }
-
-    a {
-      display: block;
-      padding: var(--space-2xs) var(--space-xs);
-      font-family: var(--font-heading);
-      font-size: var(--step--1);
-      text-decoration: none;
-      color: var(--color-ink-muted);
-    }
+  .view-tabs__link {
+    font-family: var(--font-heading);
+    font-weight: bold;
+    font-size: var(--step--1);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: var(--color-ink-muted);
   }
-  .view-selector__item--active {
-    background: var(--color-ink);
-
-    a {
-      color: var(--color-accent-ink);
-      cursor: default;
-    }
+  .view-tabs__link:hover {
+    color: var(--color-accent);
+  }
+  .view-tabs__link--active {
+    color: var(--color-ink);
+  }
+  .view-tabs__link--active:hover {
+    color: var(--color-ink);
+    cursor: default;
   }
 
   .article-toc {

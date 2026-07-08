@@ -2,10 +2,9 @@
 import { getAllArticles } from '@/utils/content';
 import { type CollectionEntry } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import ArticleHeader from '@/components/article/ArticleHeader.astro';
 import ArticleToc from '@/components/article/ArticleToc.astro';
 import ArticleFigure from '@/components/article/ArticleFigure.astro';
-import ArticleDownloads from '@/components/article/ArticleDownloads.astro';
-import { resolvePdfPath } from '@/utils/articleContent';
 import { articleHasFiguresOrTables, extractFiguresAndTables, summarizeFiguresAndTables } from '@/utils/figuresAndData';
 import 'photoswipe/style.css';
 
@@ -24,7 +23,7 @@ interface Props {
 }
 
 const { article } = Astro.props;
-const { id, title, body, appendices, pdf } = article.data;
+const { id, title, body, appendices } = article.data;
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 type AnyNode = Record<string, any>;
@@ -33,7 +32,6 @@ const appendixNodes = (appendices ?? []) as AnyNode[];
 
 const { images, tables } = extractFiguresAndTables([...bodyNodes, ...appendixNodes]);
 const summary = summarizeFiguresAndTables(images, tables);
-const pdfPath = pdf ? resolvePdfPath(pdf) : null;
 
 const tocItems = [
   ...(images.length > 0 ? [{ id: 'figures', title: 'Figures' }] : []),
@@ -48,7 +46,7 @@ const tocItems = [
     data-pagefind-body
     data-pagefind-meta={`url:/articles/${id}/figures`}
   >
-    <h1 class="figures-page__title" set:html={title} />
+    <ArticleHeader article={article} />
 
     <div class="article-content-grid">
       <ArticleToc
@@ -78,21 +76,12 @@ const tocItems = [
             </div>
           </details>
         )}
-
-        <section class="article-section">
-          <h2>Download links</h2>
-          <ArticleDownloads articleId={id} pdfPath={pdfPath} />
-        </section>
       </div>
     </div>
   </main>
 </BaseLayout>
 
 <style>
-  .figures-page__title {
-    margin-block-end: var(--space-m);
-  }
-
   .figures-page__summary {
     color: var(--color-ink-muted);
     margin-block-end: var(--space-m);
