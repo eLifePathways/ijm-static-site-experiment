@@ -1,0 +1,124 @@
+---
+import { getAllArticles } from '@/utils/content';
+import { type CollectionEntry } from 'astro:content';
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import ArticleToc from '@/components/article/ArticleToc.astro';
+import ArticleFigure from '@/components/article/ArticleFigure.astro';
+import ArticleDownloads from '@/components/article/ArticleDownloads.astro';
+import { resolvePdfPath } from '@/utils/articleContent';
+import { articleHasFiguresOrTables, extractFiguresAndTables, summarizeFiguresAndTables } from '@/utils/figuresAndData';
+import 'photoswipe/style.css';
+
+export async function getStaticPaths() {
+  const articles = await getAllArticles();
+  return articles
+    .filter((article) => articleHasFiguresOrTables(article.data))
+    .map((article) => ({
+      params: { id: article.data.id },
+      props: { article },
+    }));
+}
+
+interface Props {
+  article: CollectionEntry<'articles'>;
+}
+
+const { article } = Astro.props;
+const { id, title, body, appendices, pdf } = article.data;
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+type AnyNode = Record<string, any>;
+const bodyNodes = body as AnyNode[];
+const appendixNodes = (appendices ?? []) as AnyNode[];
+
+const { images, tables } = extractFiguresAndTables([...bodyNodes, ...appendixNodes]);
+const summary = summarizeFiguresAndTables(images, tables);
+const pdfPath = pdf ? resolvePdfPath(pdf) : null;
+
+const tocItems = [
+  ...(images.length > 0 ? [{ id: 'figures', title: 'Figures' }] : []),
+  ...(tables.length > 0 ? [{ id: 'tables', title: 'Tables' }] : []),
+];
+---
+
+<BaseLayout title={`Figures and data in ${title}`}>
+  <main
+    id="maincontent"
+    class="article-page wrapper"
+    data-pagefind-body
+    data-pagefind-meta={`url:/articles/${id}/figures`}
+  >
+    <h1 class="figures-page__title" set:html={title} />
+
+    <div class="article-content-grid">
+      <ArticleToc
+        items={tocItems}
+        articleHref={`/articles/${id}`}
+        figuresHref={`/articles/${id}/figures`}
+        activeView="figures"
+      />
+
+      <div class="article-content">
+        {summary && <p class="figures-page__summary">{summary}</p>}
+
+        {images.length > 0 && (
+          <details id="figures" class="article-section article-section--collapsible" open>
+            <summary><h2>Figures</h2></summary>
+            <div class="article-section__body">
+              <ArticleFigure assets={images} articleId={id} />
+            </div>
+          </details>
+        )}
+
+        {tables.length > 0 && (
+          <details id="tables" class="article-section article-section--collapsible" open={images.length === 0}>
+            <summary><h2>Tables</h2></summary>
+            <div class="article-section__body">
+              <ArticleFigure assets={tables} articleId={id} />
+            </div>
+          </details>
+        )}
+
+        <section class="article-section">
+          <h2>Download links</h2>
+          <ArticleDownloads articleId={id} pdfPath={pdfPath} />
+        </section>
+      </div>
+    </div>
+  </main>
+</BaseLayout>
+
+<style>
+  .figures-page__title {
+    margin-block-end: var(--space-m);
+  }
+
+  .figures-page__summary {
+    color: var(--color-ink-muted);
+    margin-block-end: var(--space-m);
+  }
+
+  @media (min-width: 75em) {
+    .article-content-grid {
+      display: grid;
+      /* Mirrors [id].astro's 2/8/2-twelfths split. */
+      grid-template-columns: 12rem 1fr 12rem;
+      gap: var(--space-l);
+      align-items: start;
+    }
+  }
+</style>
+
+<script>
+  import PhotoSwipeLightbox from 'photoswipe/lightbox';
+
+  window.addEventListener('DOMContentLoaded', () => {
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: '.article-page',
+      children: 'a.figure-lightbox-trigger',
+      bgOpacity: 1,
+      pswpModule: () => import('photoswipe'),
+    });
+    lightbox.init();
+  });
+</script>

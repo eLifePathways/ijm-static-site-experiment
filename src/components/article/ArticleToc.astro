@@ -6,23 +6,99 @@ interface TocItem {
 
 interface Props {
   items: TocItem[];
+  // Present only on articles that have a "Figures and data" view — when set,
+  // renders the legacy site's Article/Figures and data toggle above the jump
+  // list. Both pages pass their own hrefs/items; there's no client-side tab
+  // switching, just two full-page views sharing this component.
+  articleHref?: string;
+  figuresHref?: string;
+  activeView?: 'article' | 'figures';
 }
 
-const { items } = Astro.props;
+const { items, articleHref, figuresHref, activeView = 'article' } = Astro.props;
 ---
 
-{items.length > 0 && (
-  <details class="article-toc">
-    <summary>Jump to</summary>
-    <ul>
-      {items.map((item) => (
-        <li><a href={`#${item.id}`} set:html={item.title} /></li>
-      ))}
-    </ul>
-  </details>
-)}
+{/* A single wrapper element keeps this as one grid item in the article
+    page's 3-column layout — Astro doesn't wrap multiple top-level template
+    nodes, so two conditional root elements here would become two separate
+    grid children and break the column placement. */}
+<div class="article-sidebar">
+  {figuresHref && articleHref && (
+    <nav class="view-selector" aria-label="Article view">
+      <ul>
+        <li class:list={['view-selector__item', { 'view-selector__item--active': activeView === 'article' }]}>
+          <a href={articleHref} aria-current={activeView === 'article' ? 'page' : undefined}>Article</a>
+        </li>
+        <li class:list={['view-selector__item', { 'view-selector__item--active': activeView === 'figures' }]}>
+          <a href={figuresHref} aria-current={activeView === 'figures' ? 'page' : undefined}>Figures and data</a>
+        </li>
+      </ul>
+    </nav>
+  )}
+
+  {items.length > 0 && (
+    <details class="article-toc">
+      <summary>Jump to</summary>
+      <ul>
+        {items.map((item) => (
+          <li><a href={`#${item.id}`} set:html={item.title} /></li>
+        ))}
+      </ul>
+    </details>
+  )}
+</div>
 
 <style>
+  @media (min-width: 75em) {
+    .article-sidebar {
+      position: sticky;
+      top: var(--space-m);
+    }
+  }
+
+  .view-selector {
+    margin-block-end: var(--space-m);
+
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      max-width: 21rem;
+    }
+  }
+  .view-selector__item {
+    flex: 1;
+    text-align: center;
+    border: 1px solid var(--color-ink);
+
+    &:first-child {
+      border-inline-end: none;
+      border-radius: 4px 0 0 4px;
+    }
+    &:last-child {
+      border-inline-start: none;
+      border-radius: 0 4px 4px 0;
+    }
+
+    a {
+      display: block;
+      padding: var(--space-2xs) var(--space-xs);
+      font-family: var(--font-heading);
+      font-size: var(--step--1);
+      text-decoration: none;
+      color: var(--color-ink-muted);
+    }
+  }
+  .view-selector__item--active {
+    background: var(--color-ink);
+
+    a {
+      color: var(--color-accent-ink);
+      cursor: default;
+    }
+  }
+
   .article-toc {
     margin-block-end: var(--space-m);
 
@@ -76,10 +152,4 @@ const { items } = Astro.props;
     }
   }
 
-  @media (min-width: 75em) {
-    .article-toc {
-      position: sticky;
-      top: var(--space-m);
-    }
-  }
 </style>

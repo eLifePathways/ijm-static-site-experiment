@@ -7,6 +7,7 @@ import ArticleInfo from '@/components/article/ArticleInfo.astro';
 import ArticleToc from '@/components/article/ArticleToc.astro';
 import BodyNode from '@/components/article/BodyNode.astro';
 import ReferenceList from '@/components/article/ReferenceList.astro';
+import { articleHasFiguresOrTables } from '@/utils/figuresAndData';
 import 'photoswipe/style.css';
 
 export async function getStaticPaths() {
@@ -42,6 +43,8 @@ const tocItems = [
   ...(refs.length > 0 ? [{ id: 'references', title: 'References' }] : []),
   { id: 'info', title: 'Article and author information' },
 ];
+
+const figuresHref = articleHasFiguresOrTables(article.data) ? `/articles/${id}/figures` : undefined;
 ---
 
 <BaseLayout title={title}>
@@ -54,7 +57,7 @@ const tocItems = [
     <ArticleHeader article={article} />
 
     <div class="article-content-grid">
-      <ArticleToc items={tocItems} />
+      <ArticleToc items={tocItems} articleHref={`/articles/${id}`} figuresHref={figuresHref} activeView="article" />
 
       <div class="article-content">
         <div class="article-body">

@@ -1,30 +1,9 @@
 ---
 import { resolveFigureImage } from '@/utils/images';
-
-interface ImageAsset {
-  type: 'image';
-  id: string;
-  label?: string;
-  title?: string;
-  image: {
-    alt: string;
-    source: { filename: string };
-  };
-}
-
-interface TableAsset {
-  type: 'table';
-  id: string;
-  label?: string;
-  title?: string;
-  tables: string[];
-  footnotes?: Array<{ text: Array<{ text: string; type: string }> }>;
-}
-
-type Asset = ImageAsset | TableAsset;
+import type { FigureAsset } from '@/utils/figuresAndData';
 
 interface Props {
-  assets: Asset[];
+  assets: FigureAsset[];
   articleId: string;
 }
 
