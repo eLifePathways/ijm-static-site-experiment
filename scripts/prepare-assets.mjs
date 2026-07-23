@@ -19,15 +19,15 @@
  * Wired as: prebuild (runs automatically before `npm run build`)
  */
 
-import { readdirSync, mkdirSync, existsSync, statSync, copyFileSync } from 'fs';
-import { join, resolve, dirname, basename } from 'path';
-import { fileURLToPath } from 'url';
+import { readdirSync, mkdirSync, existsSync, statSync, copyFileSync } from "fs";
+import { join, resolve, dirname, basename } from "path";
+import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-const ASSETS_DIR = resolve(__dirname, '../../assets/files');
-const TIFFS_DIR = resolve(__dirname, '../src/generated-tiffs');
-const FILES_DIR = resolve(__dirname, '../public/files');
+const ASSETS_DIR = resolve(__dirname, "../assets/files");
+const TIFFS_DIR = resolve(__dirname, "../src/generated-tiffs");
+const FILES_DIR = resolve(__dirname, "../public/files");
 
 let tiffsCopied = 0;
 let tiffsSkipped = 0;
@@ -63,8 +63,8 @@ function main() {
     }
     for (const file of entries) {
       const lower = file.toLowerCase();
-      if (lower.endsWith('.tif') || lower.endsWith('.tiff')) {
-        const stem = basename(file, lower.endsWith('.tiff') ? '.tiff' : '.tif');
+      if (lower.endsWith(".tif") || lower.endsWith(".tiff")) {
+        const stem = basename(file, lower.endsWith(".tiff") ? ".tiff" : ".tif");
         const srcPath = join(srcDir, file);
         const destPath = join(TIFFS_DIR, articleId, `${stem}.tiff`);
         if (isStale(srcPath, destPath)) {
@@ -73,7 +73,7 @@ function main() {
         } else {
           tiffsSkipped++;
         }
-      } else if (lower.endsWith('.pdf')) {
+      } else if (lower.endsWith(".pdf")) {
         const srcPath = join(srcDir, file);
         const destPath = join(FILES_DIR, articleId, file);
         if (isStale(srcPath, destPath)) {
@@ -86,7 +86,9 @@ function main() {
     }
   }
 
-  console.log(`TIFFs: ${tiffsCopied} copied, ${tiffsSkipped} already up-to-date`);
+  console.log(
+    `TIFFs: ${tiffsCopied} copied, ${tiffsSkipped} already up-to-date`,
+  );
   console.log(`PDFs:  ${pdfsCopied} copied, ${pdfsSkipped} already up-to-date`);
 }
 
