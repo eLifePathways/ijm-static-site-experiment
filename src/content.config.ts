@@ -1,6 +1,6 @@
-import { defineCollection } from 'astro:content';
-import { glob } from 'astro/loaders';
-import { z } from 'zod';
+import { defineCollection } from "astro:content";
+import { glob } from "astro/loaders";
+import { z } from "zod";
 
 // ── Shared primitives ───────────────────────────────────────────────────────
 
@@ -15,7 +15,7 @@ const affiliationSchema = z.object({
 });
 
 const authorSchema = z.object({
-  type: z.literal('person'),
+  type: z.literal("person"),
   name: z.object({
     preferred: z.string(),
     index: z.string(),
@@ -45,22 +45,22 @@ const bodyNodeSchema: z.ZodType<unknown> = z.unknown();
 // ── Collection definitions ───────────────────────────────────────────────────
 
 const articlesCollection = defineCollection({
-  loader: glob({ pattern: '*.json', base: '../api/data/articles' }),
+  loader: glob({ pattern: "*.json", base: "./data/articles" }),
   schema: z
     .object({
-      '-meta': z.object({ patched: z.boolean() }).optional(),
+      "-meta": z.object({ patched: z.boolean() }).optional(),
       id: z.string(),
-      status: z.enum(['vor', 'poa']),
+      status: z.enum(["vor", "poa"]),
       stage: z.string(),
       version: z.number(),
       type: z.enum([
-        'editorial',
-        'research-article',
-        'short-report',
-        'scientific-correspondence',
-        'tools-resources',
-        'registered-report',
-        'feature',
+        "editorial",
+        "research-article",
+        "short-report",
+        "scientific-correspondence",
+        "tools-resources",
+        "registered-report",
+        "feature",
       ]),
       doi: z.string(),
       title: z.string(),
@@ -93,7 +93,7 @@ const articlesCollection = defineCollection({
 });
 
 const issuesCollection = defineCollection({
-  loader: glob({ pattern: '*.json', base: '../api/data/collections' }),
+  loader: glob({ pattern: "*.json", base: "./data/collections" }),
   schema: z.object({
     id: z.string(),
     title: z.string(),
@@ -103,7 +103,7 @@ const issuesCollection = defineCollection({
 });
 
 const subjectsCollection = defineCollection({
-  loader: glob({ pattern: '*.json', base: '../api/data/subjects' }),
+  loader: glob({ pattern: "*.json", base: "./data/subjects" }),
   schema: z.object({
     id: z.string(),
     name: z.string(),
@@ -111,7 +111,7 @@ const subjectsCollection = defineCollection({
 });
 
 const aboutCollection = defineCollection({
-  loader: glob({ pattern: '*.md', base: './src/content/about' }),
+  loader: glob({ pattern: "*.md", base: "./src/content/about" }),
   schema: z.object({
     title: z.string(),
     // Sets the about-section menu order; pages without one (e.g. author-notes,
