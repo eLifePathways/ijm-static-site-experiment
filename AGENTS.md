@@ -5,7 +5,12 @@ what the project actually is.
 
 ## Sandbox quirks
 
-- **Always `unset NPM_CONFIG_PREFIX` before any `npm`/`npx` command** — it's set
+- The package manager is **pnpm** (pinned via mise in `mise.toml`), not npm —
+  don't create a `package-lock.json`. pnpm doesn't hoist transitive deps, so
+  import only packages declared in `package.json` (e.g. zod via `astro/zod`).
+  Dependencies allowed to run install scripts are listed under `allowBuilds`
+  in `pnpm-workspace.yaml`.
+- **Always `unset NPM_CONFIG_PREFIX` before any `pnpm` command** — it's set
   globally and breaks nvm otherwise.
 - The main checkout (`.../microsimulation/ijm`) is likely mounted in a way that
   exhausts the process file-descriptor limit for this project's file count
@@ -21,19 +26,19 @@ what the project actually is.
   ln -s /home/hff/work/microsimulation/ijm/site/node_modules      <worktree>/site/node_modules
   ln -s /home/hff/work/microsimulation/ijm/site/src/generated-tiffs <worktree>/site/src/generated-tiffs
   ```
-- First `npm`/`astro` command in a fresh worktree needs `mise trust` run once in
+- First `pnpm`/`astro` command in a fresh worktree needs `mise trust` run once in
   `site/` (mise.toml isn't trusted for new working directories by default).
-- Dev server: `npm run dev -- --port <port> --host 0.0.0.0`, backgrounded
+- Dev server: `pnpm dev --port <port> --host 0.0.0.0`, backgrounded
   (`( ... & )`). Takes ~15–20s to fully start (loads all articles + generated
   TIFFs). If a change you made doesn't seem to take effect after a reload, don't
-  trust Vite HMR — kill the process and start a fresh `npm run dev`; stale served
+  trust Vite HMR — kill the process and start a fresh `pnpm dev`; stale served
   CSS/JS after edits has happened more than once in this sandbox.
 
 ## Validating changes
 
-- `npm test` — vitest unit tests (`src/tests/`).
-- `npx astro check` — typecheck.
-- `npx eslint src` — lint.
+- `pnpm test` — vitest unit tests (`src/tests/`).
+- `pnpm check` — typecheck.
+- `pnpm lint` — lint.
 - For visual/behavioral parity with the legacy PHP app, compare live vs local
   with `rodney` (`uvx rodney ...`):
   - `rodney pages` tab indices are **not stable across commands** — re-check

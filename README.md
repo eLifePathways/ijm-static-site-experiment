@@ -6,15 +6,15 @@ PHP/Symfony application.
 
 ## Requirements
 
-- Node 22 (see `mise.toml`; `mise install` will pick it up automatically if you use mise)
+- Node 22 and pnpm (both pinned in `mise.toml`; run `mise install` to get them)
 - The sibling directories this build reads from: `./data/` (article/collection/subject
   JSON) and `./assets/files/` (source TIFF figures and PDFs)
 
 ## Running locally
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 This starts the Astro dev server at `http://localhost:4321`. On first run (and whenever
@@ -25,7 +25,7 @@ time (1,422 images); subsequent runs are idempotent and only convert what's stal
 ## Building
 
 ```bash
-npm run build
+pnpm build
 ```
 
 Runs, in order: `prebuild` (TIFF→JPEG + PDF copy into `public/`), `astro build` (425
@@ -33,15 +33,15 @@ pages), `postbuild` (`pagefind --site dist`, which indexes the built article pag
 the `/search` page). Output goes to `site/dist/`.
 
 ```bash
-npm run preview   # serve the built dist/ locally, e.g. to test search end-to-end
+pnpm preview   # serve the built dist/ locally, e.g. to test search end-to-end
 ```
 
 ## Tests and checks
 
 ```bash
-npm test        # vitest unit + data-integrity tests
-npm run check   # astro type-check
-npm run lint    # eslint
+pnpm test      # vitest unit + data-integrity tests
+pnpm check     # astro type-check
+pnpm lint      # eslint
 ```
 
 ## Deploying to GitHub Pages
@@ -49,7 +49,7 @@ npm run lint    # eslint
 Nothing here sets this up (CI/CD is intentionally out of scope for this port) — this is
 what would be needed:
 
-1. **A workflow** that runs `npm ci && npm run build` in `site/` and deploys `site/dist/`
+1. **A workflow** that runs `pnpm install --frozen-lockfile && pnpm build` in `site/` and deploys `site/dist/`
    using `actions/upload-pages-artifact` + `actions/deploy-pages` (or pushes `dist/` to a
    `gh-pages` branch).
 2. **A path decision.** Every internal link and asset reference in this codebase

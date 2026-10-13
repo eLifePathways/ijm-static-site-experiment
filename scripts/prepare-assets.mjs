@@ -15,8 +15,8 @@
  * Both operations are idempotent: files are skipped when the destination
  * already exists and is newer than the source.
  *
- * Run via:  npm run prepare-assets
- * Wired as: prebuild (runs automatically before `npm run build`)
+ * Run via:  pnpm prepare-assets
+ * Wired as: prebuild (runs automatically before `pnpm build`)
  */
 
 import { readdirSync, mkdirSync, existsSync, statSync, copyFileSync } from "fs";
