@@ -32,6 +32,16 @@ const subjectRefSchema = z.object({
   name: z.string(),
 });
 
+// Plain-text paragraph (may contain inline HTML), as used by dataSets.availability.
+const paragraphSchema = z.object({
+  type: z.literal("paragraph"),
+  text: z.string(),
+});
+
+const dataSetsSchema = z.object({
+  availability: z.array(paragraphSchema).optional(),
+});
+
 const copyrightSchema = z.object({
   license: z.string(),
   holder: z.string().optional(),
@@ -85,7 +95,7 @@ const articlesCollection = defineCollection({
       appendices: z.array(z.unknown()).optional(),
       acknowledgements: z.array(z.unknown()).optional(),
       funding: z.unknown().optional(),
-      dataSets: z.unknown().optional(),
+      dataSets: dataSetsSchema.optional(),
       additionalFiles: z.unknown().optional(),
       ethics: z.unknown().optional(),
     })

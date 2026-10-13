@@ -21,11 +21,25 @@ interface AuthorInfo {
 }
 
 const { article } = Astro.props;
-const { id, type, subjects, keywords, authors, funding, acknowledgements, copyright, versionDate, version, status, published } =
-  article.data;
+const {
+  id,
+  type,
+  subjects,
+  keywords,
+  authors,
+  funding,
+  dataSets,
+  acknowledgements,
+  copyright,
+  versionDate,
+  version,
+  status,
+  published,
+} = article.data;
 
 const personAuthors = (authors ?? []).filter((a: { type: string }) => a.type === 'person') as AuthorInfo[];
 const fundingStatement = (funding as { statement?: string } | undefined)?.statement ?? null;
+const availabilityParas = dataSets?.availability ?? [];
 const ackParas = (acknowledgements ?? []) as Array<{ text: string; type: string }>;
 const publishedLabel = status === 'poa' ? 'Preprint posted' : 'Version of Record published';
 const copyrightYear = copyright.year ?? new Date(published).getUTCFullYear();
@@ -75,6 +89,13 @@ const hasTagsFooter = Boolean(type || (subjects && subjects.length > 0) || (keyw
       <section class="article-info__section">
         <h3>Funding</h3>
         <p set:html={fundingStatement} />
+      </section>
+    )}
+
+    {availabilityParas.length > 0 && (
+      <section class="article-info__section">
+        <h3>Data and code availability</h3>
+        {availabilityParas.map((p) => <p set:html={p.text} />)}
       </section>
     )}
 
