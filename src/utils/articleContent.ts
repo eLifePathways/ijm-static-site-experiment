@@ -81,6 +81,12 @@ export function formatLongDate(isoDate: string): string {
   return `${MONTH_FULL[d.getUTCMonth()]} ${d.getUTCDate()}, ${d.getUTCFullYear()}`;
 }
 
+// "Jun 9, 2026" style, for the article header — UTC-based like formatLongDate.
+export function formatShortDate(isoDate: string): string {
+  const d = new Date(isoDate);
+  return `${MONTH_FULL[d.getUTCMonth()].slice(0, 3)} ${d.getUTCDate()}, ${d.getUTCFullYear()}`;
+}
+
 export function formatCitationDate(isoDate: string): { year: number; month: string; ymd: string; slashDate: string } {
   const d = new Date(isoDate);
   const year = d.getUTCFullYear();

@@ -8,6 +8,7 @@ import {
   formatAffiliation,
   uniqueAffiliations,
   formatLongDate,
+  formatShortDate,
 } from '@/utils/articleContent';
 
 const person = (preferred: string, index: string) => ({
@@ -139,6 +140,16 @@ describe('formatLongDate', () => {
 
   it('does not zero-pad the day', () => {
     expect(formatLongDate('2025-01-05T00:00:00Z')).toBe('January 5, 2025');
+  });
+});
+
+describe('formatShortDate', () => {
+  it('formats an abbreviated month name, day, and year', () => {
+    expect(formatShortDate('2026-06-09T00:00:00Z')).toBe('Jun 9, 2026');
+  });
+
+  it('uses UTC, so a midnight-UTC date does not shift a day', () => {
+    expect(formatShortDate('2007-12-31T00:00:00Z')).toBe('Dec 31, 2007');
   });
 });
 
