@@ -46,7 +46,7 @@ node_modules: package.json pnpm-lock.yaml
 VRT_IMAGE := ijm-vrt
 VRT_PORT := 4322
 
-.vrt-image: Dockerfile.vrt package.json pnpm-lock.yaml
+.vrt-image: Dockerfile.vrt package.json pnpm-lock.yaml pnpm-workspace.yaml
 	docker build -f Dockerfile.vrt -t $(VRT_IMAGE) .
 	@touch .vrt-image
 
