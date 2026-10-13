@@ -15,8 +15,8 @@
  * Both operations are idempotent: files are skipped when the destination
  * already exists and is newer than the source.
  *
- * Run via:  pnpm prepare-assets
- * Wired as: prebuild (runs automatically before `pnpm build`)
+ * Run via:  make prepare-assets
+ * Wired as: a prerequisite of `make dev` and `make prod`
  */
 
 import { readdirSync, mkdirSync, existsSync, statSync, copyFileSync } from "fs";

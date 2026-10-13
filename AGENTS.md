@@ -10,7 +10,9 @@ what the project actually is.
   import only packages declared in `package.json` (e.g. zod via `astro/zod`).
   Dependencies allowed to run install scripts are listed under `allowBuilds`
   in `pnpm-workspace.yaml`.
-- **Always `unset NPM_CONFIG_PREFIX` before any `pnpm` command** — it's set
+- Run tasks via the `Makefile` (`make dev`, `make test`, …); `package.json`
+  deliberately has no `scripts`.
+- **Always `unset NPM_CONFIG_PREFIX` before any `make`/`pnpm` command** — it's set
   globally and breaks nvm otherwise.
 - The main checkout (`.../microsimulation/ijm`) is likely mounted in a way that
   exhausts the process file-descriptor limit for this project's file count
@@ -26,19 +28,19 @@ what the project actually is.
   ln -s /home/hff/work/microsimulation/ijm/site/node_modules      <worktree>/site/node_modules
   ln -s /home/hff/work/microsimulation/ijm/site/src/generated-tiffs <worktree>/site/src/generated-tiffs
   ```
-- First `pnpm`/`astro` command in a fresh worktree needs `mise trust` run once in
+- First `make`/`pnpm` command in a fresh worktree needs `mise trust` run once in
   `site/` (mise.toml isn't trusted for new working directories by default).
-- Dev server: `pnpm dev --port <port> --host 0.0.0.0`, backgrounded
+- Dev server: `make prepare-assets && pnpm exec astro dev --port <port> --host 0.0.0.0`, backgrounded
   (`( ... & )`). Takes ~15–20s to fully start (loads all articles + generated
   TIFFs). If a change you made doesn't seem to take effect after a reload, don't
-  trust Vite HMR — kill the process and start a fresh `pnpm dev`; stale served
+  trust Vite HMR — kill the process and start a fresh dev server; stale served
   CSS/JS after edits has happened more than once in this sandbox.
 
 ## Validating changes
 
-- `pnpm test` — vitest unit tests (`src/tests/`).
-- `pnpm check` — typecheck.
-- `pnpm lint` — lint.
+- `make test` — vitest unit tests (`src/tests/`).
+- `make check` — typecheck.
+- `make lint` — lint.
 - For visual/behavioral parity with the legacy PHP app, compare live vs local
   with `rodney` (`uvx rodney ...`):
   - `rodney pages` tab indices are **not stable across commands** — re-check
