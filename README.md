@@ -1,53 +1,23 @@
 # IJM static site
 
-Astro static-site port of the International Journal of Microsimulation (IJM), reading
-directly from the pre-generated content under `./data/` instead of the legacy
-PHP/Symfony application.
+Astro static-site port of the International Journal of Microsimulation (IJM). Instead of the legacy PHP / Symfony applicatation, this static site builds from: `./data/` (article/collection/subject
+JSON) and `./assets/files/` (source TIFF figures and PDFs).
 
 ## Requirements
 
-- Node 22 and pnpm (both pinned in `mise.toml`; run `mise install` to get them)
-- The sibling directories this build reads from: `./data/` (article/collection/subject
-  JSON) and `./assets/files/` (source TIFF figures and PDFs)
+Node and pnpm (both pinned in `mise.toml`; run `mise install` to get them).
 
 ## Running locally
 
-All tasks go through the `Makefile`; each target installs dependencies first if
-`package.json` or `pnpm-lock.yaml` has changed.
-
-```bash
-make dev
-```
-
-This starts the Astro dev server at `http://localhost:4321`. Before it starts, the
-`prepare-assets` step (`scripts/prepare-assets.mjs`) copies TIFF figures from
-`assets/files/` into `src/generated-tiffs/` and PDFs into `public/files/` — this can take
-a while the first time (1,422 images); subsequent runs only copy what's stale.
-
-## Building
-
-```bash
-make prod
-```
-
-Runs, in order: `prepare-assets`, `astro build`, `pagefind --site dist` (which indexes
-the built article pages for the `/search` page), then `astro preview` to serve the
-built `dist/` locally, e.g. to test search end-to-end.
-
-## Tests and checks
-
-```bash
-make test      # vitest unit + data-integrity tests
-make check     # astro type-check
-make lint      # eslint
-```
+- `make dev` gives you hot reloading, but because of this search doesn't work.
+- `make prod` is the equivalent to the version that would be deployed. Rerun to reload. Pregenerated assets; search works.
 
 ## Cleaning up
 
-```bash
-make clean     # remove build output (dist/, .astro/)
-make clobber   # clean, plus generated assets and node_modules — a blank slate
-```
+
+- `make clean` removes build output (`dist/`, `.astro/`)
+- `make clobber` cleans, plus also removes generated assets and node_modules — a blank slate.
+
 
 ## Deploying to GitHub Pages
 
