@@ -17,6 +17,17 @@ Node and pnpm (both pinned in `mise.toml`; run `mise install` to get them).
 
 `make check` runs various linters and tests.
 
+### Visual regression tests
+
+Screenshot tests (Playwright, in `visual-regression/`) run in Docker so the browser and
+fonts are identical everywhere; they need Docker running.
+
+- `make vrt-test` builds the site, compares it against the committed screenshots in
+  `visual-regression/snapshots/`, and opens the HTML report if anything differs.
+- `make vrt-reference` regenerates those screenshots — run it after an intentional visual
+  change, review the new images, and commit them.
+- `make vrt-report` reopens the last report.
+
 ## Cleaning up
 
 - `make clean` removes build output (`dist/`, `.astro/`)

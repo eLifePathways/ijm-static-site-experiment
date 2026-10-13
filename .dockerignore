@@ -1,0 +1,5 @@
+# Dockerfile.vrt only needs the manifests; keep the TIFFs/PDFs out of the build context.
+*
+!package.json
+!pnpm-lock.yaml
+!pnpm-workspace.yaml

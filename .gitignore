@@ -3,3 +3,6 @@ dist/
 .astro/
 src/generated-tiffs/
 public/files/**/*.pdf
+visual-regression/test-results/
+visual-regression/html_report/
+.vrt-image

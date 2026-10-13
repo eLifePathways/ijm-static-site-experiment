@@ -1,0 +1,8 @@
+# Pinned browser + OS so screenshots render identically on any host.
+# Keep the tag in step with @playwright/test in package.json.
+FROM mcr.microsoft.com/playwright:v1.64.0-noble
+WORKDIR /work
+RUN npm install -g pnpm@12.11.2
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml ./
+# Only @playwright/test is needed in here; skip native builds (sharp, esbuild).
+RUN pnpm install --frozen-lockfile --ignore-scripts
