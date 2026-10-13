@@ -28,6 +28,10 @@ lint: node_modules
 clean:
 	rm -rf dist .astro
 
+.PHONY: clobber
+clobber: clean
+	rm -rf src/generated-tiffs public/files node_modules
+
 node_modules: package.json pnpm-lock.yaml
 	pnpm install --frozen-lockfile
 	@touch node_modules
