@@ -9,8 +9,6 @@ interface Props {
 const { article } = Astro.props;
 const { id, type, title, authors, authorLine, subjects, volume, issue, pdf } = article.data;
 
-const primarySubject = subjects?.[0];
-
 const authorNames = authors
   ?.filter((a) => a.type === 'person' && a.name)
   .map((a) => a.name!.preferred);
@@ -27,8 +25,14 @@ const issuePath = matchedIssue ? `/collections/${issueId}/${issueSlug(matchedIss
 ---
 
 <li class="teaser">
-  {primarySubject && (
-    <p class="teaser__label"><a href={`/subjects/${primarySubject.id}`}>{primarySubject.name}</a></p>
+  {subjects && subjects.length > 0 && (
+    <p class="teaser__label">
+      {subjects.map((s, i) => (
+        <>
+          <a href={`/subjects/${s.id}`}>{s.name}</a>{i < subjects.length - 1 ? ', ' : ''}
+        </>
+      ))}
+    </p>
   )}
   <h4 class="teaser__title"><a href={`/articles/${id}`} set:html={title} /></h4>
   {authorText && <p class="teaser__author">{authorText}</p>}
