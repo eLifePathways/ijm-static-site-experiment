@@ -1,0 +1,22 @@
+TY  - JOUR
+TI  - A general microsimulation model for the EU VAT with a specific application to Germany
+AU  - Siemers, Lars-H. R.
+VL  - 7
+IS  - 2
+PY  - 2014
+DA  - 2014/08/31
+SP  - 40-93
+C1  - IJM 2014;7(2):40-93
+DO  - 10.34196/ijm.00100
+UR  - https://doi.org/10.34196/ijm.00100
+AB  - The major sales tax in the EU—and in several other countries—is practiced as value-added tax of the consumption type with invoice method. Literature on microsimulation models (MSM) for VAT is rare, though the importance of VAT has continuously increased. We discuss the issues of VAT-MSM in detail and develop a basic general VAT-MSM, applicable to the EU member states (and beyond). To illustrate the functioning of the general model, we apply it in detail to the specific case of Germany. We provide comprehensive estimation results for the distributional and fiscal effects of the German VAT. Finally, we simulate the effects of a small VAT reform, comparing static and behavioral response simulations.
+KW  - VAT microsimulation
+KW  - VAT exemption
+KW  - hidden VAT burdens
+KW  - tax incidence
+KW  - EU
+KW  - RWI-VAT-SIM
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

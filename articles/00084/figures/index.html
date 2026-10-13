@@ -1,0 +1,906 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Figures and data in Modelling private wealth accumulation and spend-down in the Italian microsimulation model CAPP_DYN: A life-cycle approach | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00084/figures"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.figures-page__summary[data-astro-cid-uy5dlehv]{color:var(--color-ink-muted);margin-block-end:var(--space-m)}@media (width>=75em){.article-content-grid[data-astro-cid-uy5dlehv]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-astro-cid-uy5dlehv><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/consumption-savings-wealth" data-astro-cid-ak4gb66a>Consumption, savings and wealth</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Aug 31, 2013</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Modelling private wealth accumulation and spend-down in the Italian microsimulation model CAPP_DYN: A life-cycle approach</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Simone Tedeschi, Elena Pisano, Carlo Mazzaferro, Marcello Morciano</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Sapienza University of Rome, Italy; Bank of Italy, Italy; University of Bologna and CAPP, Italy; University of East Anglia, ISER and CAPP, England</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/6-2/volume-6-2-autumn-2013" data-astro-cid-ak4gb66a>Volume 6(2) Autumn 2013</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> S. Tedeschi, E. Pisano, C. Mazzaferro, M. Morciano; 2013; <span data-astro-cid-ak4gb66a>Modelling private wealth accumulation and spend-down in the Italian microsimulation model CAPP_DYN: A life-cycle approach</span>; International Journal of Microsimulation; 6(2); 76–122. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00084" data-astro-cid-ak4gb66a>10.34196/ijm.00084</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>In microsimulation literature a limited number of models include a module aimed at analyzing and projecting the evolution of private wealth over time. However, this issue appears crucial in order to comprehensively evaluate the likely distributional effects of institutional reforms adopted to cope with population ageing. In this work we describe the implementation in the Italian dynamic micro simulation model CAPP_DYN of a new module in which households’ savings and asset allocation are modelled. In particular, we aim to account for possible behavioural responses to pension reforms in household savings. To this end, we rely on an approximate life cycle structural framework for estimating saving behaviour, while adopting a traditional stochastic micro simulation approach for asset allocation. In line with <a href="#bib1">Ando and Nicoletti Altimari (2004)</a>, we emphasize the role of lifetime economic resources in households’ consumption decisions, yet we further account for internal habit formation and subjective expectations on pension outcomes in the econometric stage. In addition, we model intergenerational transfers of private wealth in a probabilistic fashion.</p><p data-astro-cid-ak4gb66a>As the behavioural hypothesis adopted can largely affect results, we compare our semi-structural life-cycle approach with the estimation and the simulation of a non-structural consumption rule, analyzing wealth and disposable income dynamics and their drivers according to the two methods, especially in a long-term intergenerational perspective.</p><p data-astro-cid-ak4gb66a>While a ‘quasi’ life cycle consumption profile, including saving responses to pension reforms, curbs the dynamics of wealth inequality compared to the non-structural approach, results for the period 2010–2050 suggest an increasing contribution of intergenerational transfers to the predicted increase in wealth dispersion. Although hypotheses on (the mean of) returns are neutral for the evolution of net wealth inequality, the differential between returns and productivity (<i>r-g</i>) parameters are crucial in affecting the dynamics of disposable income due to cumulated effect on capital incomes shares.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00084/ijm-00084.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00084.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00084.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-uy5dlehv><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00084" class="view-tabs__link" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00084/figures" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#figures" data-astro-cid-twdwaz5s>Figures</a></li><li data-astro-cid-twdwaz5s><a href="#tables" data-astro-cid-twdwaz5s>Tables</a></li></ul></details></div><div class="article-content" data-astro-cid-uy5dlehv><p class="figures-page__summary" data-astro-cid-uy5dlehv>This article contains 10 figures and 8 tables.</p><details id="figures" class="article-section article-section--collapsible" open data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Figures</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00084-fig1.aWdK-rca_Zu9hRe.webp" class="figure-lightbox-trigger" data-pswp-width="707" data-pswp-height="1075" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00084-fig1.aWdK-rca_Zu9hRe.webp" alt width="707" height="1075" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> A stylized scheme of formation and transmission of wealth in the wealth module.</span></figcaption></figure><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00084-fig2.BBPZ96uO_Zlvaz8.webp" class="figure-lightbox-trigger" data-pswp-width="717" data-pswp-height="671" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00084-fig2.BBPZ96uO_Zlvaz8.webp" alt width="717" height="671" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Estimation and simulation of human resources.</span></figcaption></figure><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00084-fig3.BAxMiNN9_Z2UOHK.webp" class="figure-lightbox-trigger" data-pswp-width="740" data-pswp-height="274" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00084-fig3.BAxMiNN9_Z2UOHK.webp" alt width="740" height="274" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Average equivalent consumption (left) and propensity to save (right) household-head-age-profile.</span></figcaption></figure><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00084-fig4.BH0ik7_w_2t8wdv.webp" class="figure-lightbox-trigger" data-pswp-width="466" data-pswp-height="359" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00084-fig4.BH0ik7_w_2t8wdv.webp" alt width="466" height="359" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Post-estimation predicted consumption from dynamic model in level vs ratio.</span></figcaption></figure><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00084-fig5.Da8T_wrY_ZA48m3.webp" class="figure-lightbox-trigger" data-pswp-width="747" data-pswp-height="270" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00084-fig5.Da8T_wrY_ZA48m3.webp" alt width="747" height="270" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> Average saving propensity (left), propensity to save for active households vs. for retired households (right), 2008–2050.</span></figcaption></figure><figure id="fig6" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00084-fig6.pg7E5ad5_13bJfT.webp" class="figure-lightbox-trigger" data-pswp-width="759" data-pswp-height="269" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00084-fig6.pg7E5ad5_13bJfT.webp" alt width="759" height="269" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 6.</strong><span data-astro-cid-dzaleqsp> Propensity to save by age, LC (left) vs. NS (right) simulation, 2011–2020, 2021–2030, 2036–2045 (averages).</span></figcaption></figure><figure id="fig7" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00084-fig7.94oYT-dA_1joSoq.webp" class="figure-lightbox-trigger" data-pswp-width="737" data-pswp-height="271" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00084-fig7.94oYT-dA_1joSoq.webp" alt width="737" height="271" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 7.</strong><span data-astro-cid-dzaleqsp> Evolution of <i>iv</i> and <i>mc</i> transfers recipient households’ share and of the average amount received, 2010–2050.</span></figcaption></figure><figure id="fig8" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00084-fig8.CqLU1-ae_Z2gri6k.webp" class="figure-lightbox-trigger" data-pswp-width="749" data-pswp-height="269" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00084-fig8.CqLU1-ae_Z2gri6k.webp" alt width="749" height="269" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 8.</strong><span data-astro-cid-dzaleqsp> Evolution in the Gini of net worth (left) and disposable income (right), 2010–2050.</span></figcaption></figure><figure id="fig9" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00084-fig9.CP9G7_cV_Z1Xs3h9.webp" class="figure-lightbox-trigger" data-pswp-width="753" data-pswp-height="261" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00084-fig9.CP9G7_cV_Z1Xs3h9.webp" alt width="753" height="261" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 9.</strong><span data-astro-cid-dzaleqsp> Contributions to wealth Gini variation, LC (left) vs. NS (right) simulation, 2008–2050.</span></figcaption></figure><figure id="fig10" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00084-fig10.CsNgGYJM_1urVpt.webp" class="figure-lightbox-trigger" data-pswp-width="755" data-pswp-height="552" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00084-fig10.CsNgGYJM_1urVpt.webp" alt width="755" height="552" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 10.</strong><span data-astro-cid-dzaleqsp> Differential contributions to disposable income Gini variation between high and low returns scenarios, 2007–2050.</span></figcaption></figure></div></details><details id="tables" class="article-section article-section--collapsible" data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Tables</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Three-stage least-squares regression of planned age of retirement and the expected replacement rate.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Equation</th>
+<th>Obs</th>
+<th>Parms</th>
+<th>RMSE</th>
+<th>R-sq</th>
+<th>chi2</th>
+<th>P</th>
+<th/>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. PRA</td>
+<td>27194</td>
+<td>21</td>
+<td>3.435451</td>
+<td>0.257</td>
+<td>9408.45</td>
+<td>0</td>
+<td/>
+</tr>
+<tr>
+<td>2. ERR</td>
+<td>27194</td>
+<td>21</td>
+<td>0.163388</td>
+<td>0.149</td>
+<td>5043.9</td>
+<td>0</td>
+<td/>
+</tr>
+<tr>
+<td colspan="4"><i><b>Planned Age of Retirement</b></i></td>
+<td colspan="4"><i><b>Expected Replacement Rate</b></i></td>
+</tr>
+<tr>
+<td/>
+<td colspan="2">B</td>
+<td>SE</td>
+<td/>
+<td colspan="2">B</td>
+<td>Se</td>
+</tr>
+<tr>
+<td>year_contrib</td>
+<td colspan="2">−0.5187 <a href="#tfn1-3">***</a></td>
+<td>0.0138</td>
+<td>PRA</td>
+<td colspan="4">0.0026 <a href="#tfn1-2">**</a></td>
+<td>0.0010</td>
+</tr>
+<tr>
+<td>year_contrib²</td>
+<td colspan="2">−0.0093 <a href="#tfn1-3">***</a></td>
+<td>0.0003</td>
+<td>year_contrib</td>
+<td colspan="2">0.0064 <a href="#tfn1-3">***</a></td>
+<td>0.0009</td>
+</tr>
+<tr>
+<td>age<a href="#tfn1-1">*</a>contrib.</td>
+<td colspan="2">0.0148 <a href="#tfn1-3">***</a></td>
+<td>0.0003</td>
+<td>age<a href="#tfn1-1">*</a>contrib</td>
+<td colspan="2">0.0000</td>
+<td>0.0000</td>
+</tr>
+<tr>
+<td>female</td>
+<td colspan="2">−2.0137 <a href="#tfn1-3">***</a></td>
+<td>0.0523</td>
+<td>NDC</td>
+<td colspan="2">−0.0292</td>
+<td>0.0180</td>
+</tr>
+<tr>
+<td>NDC</td>
+<td colspan="2">0.1496</td>
+<td>0.3824</td>
+<td>single</td>
+<td colspan="2">−0.0024</td>
+<td>0.0050</td>
+</tr>
+<tr>
+<td colspan="8">Education (<i>omit.lower secondary</i>)</td>
+</tr>
+<tr>
+<td>upper_secondary</td>
+<td colspan="2">0.2877 <a href="#tfn1-3">***</a></td>
+<td>0.0557</td>
+<td>upper secondary</td>
+<td colspan="2">0.0130 <a href="#tfn1-3">***</a></td>
+<td>0.0026</td>
+</tr>
+<tr>
+<td>degree_or_more</td>
+<td colspan="2">0.8929 <a href="#tfn1-3">***</a></td>
+<td>0.0842</td>
+<td>degree or more</td>
+<td colspan="2">0.0094 <a href="#tfn1-1">*</a></td>
+<td>0.0040</td>
+</tr>
+<tr>
+<td>self_employed</td>
+<td colspan="2">1.2709 <a href="#tfn1-3">***</a></td>
+<td>0.0646</td>
+<td>self employed</td>
+<td colspan="2">−0.1168 <a href="#tfn1-3">***</a></td>
+<td>0.0033</td>
+</tr>
+<tr>
+<td>public</td>
+<td colspan="2">−0.2373 <a href="#tfn1-3">***</a></td>
+<td>0.0632</td>
+<td>public</td>
+<td colspan="2">0.0457 <a href="#tfn1-3">***</a></td>
+<td>0.0030</td>
+</tr>
+<tr>
+<td>home_owner</td>
+<td colspan="2">−0.1369 <a href="#tfn1-1">*</a></td>
+<td>0.0564</td>
+<td>partime</td>
+<td colspan="2">−0.0363 <a href="#tfn1-3">***</a></td>
+<td>0.0047</td>
+</tr>
+<tr>
+<td>South</td>
+<td colspan="2">0.6384 <a href="#tfn1-3">***</a></td>
+<td>0.0580</td>
+<td>Centre</td>
+<td colspan="2">0.0321 <a href="#tfn1-3">***</a></td>
+<td>0.0030</td>
+</tr>
+<tr>
+<td>single</td>
+<td colspan="2">0.3774 <a href="#tfn1-3">***</a></td>
+<td>0.1072</td>
+<td>South</td>
+<td colspan="2">0.0427 <a href="#tfn1-3">***</a></td>
+<td>0.0030</td>
+</tr>
+<tr>
+<td>tau2002</td>
+<td colspan="2">0.0625</td>
+<td>0.0751</td>
+<td>tau2002</td>
+<td colspan="2">−0.0298 <a href="#tfn1-3">***</a></td>
+<td>0.0035</td>
+</tr>
+<tr>
+<td>tau2004</td>
+<td colspan="2">0.2979 <a href="#tfn1-3">***</a></td>
+<td>0.0774</td>
+<td>tau2004</td>
+<td colspan="2">−0.0453 <a href="#tfn1-3">***</a></td>
+<td>0.0036</td>
+</tr>
+<tr>
+<td>tau2006</td>
+<td colspan="2">0.0922</td>
+<td>0.0805</td>
+<td>tau2006</td>
+<td colspan="2">−0.0739 <a href="#tfn1-3">***</a></td>
+<td>0.0037</td>
+</tr>
+<tr>
+<td>tau2008</td>
+<td colspan="2">0.8402 <a href="#tfn1-3">***</a></td>
+<td>0.0978</td>
+<td>tau2008</td>
+<td colspan="2">−0.0793 <a href="#tfn1-3">***</a></td>
+<td>0.0047</td>
+</tr>
+<tr>
+<td colspan="8">Cohort effect (<i>omit. Cohorts &lt;1953</i>)</td>
+</tr>
+<tr>
+<td>coor_53</td>
+<td colspan="2">1.1369 <a href="#tfn1-3">***</a></td>
+<td>0.1010</td>
+<td>coor_53</td>
+<td colspan="2">0.0122 <a href="#tfn1-2">**</a></td>
+<td>0.0046</td>
+</tr>
+<tr>
+<td>coor_58</td>
+<td colspan="2">2.0562 <a href="#tfn1-3">***</a></td>
+<td>0.1234</td>
+<td>coor_58</td>
+<td colspan="2">0.0165 <a href="#tfn1-2">**</a></td>
+<td>0.0056</td>
+</tr>
+<tr>
+<td>coor_63</td>
+<td colspan="2">2.5093 <a href="#tfn1-3">***</a></td>
+<td>0.1462</td>
+<td>coor_63</td>
+<td colspan="2">0.0257 <a href="#tfn1-3">***</a></td>
+<td>0.0065</td>
+</tr>
+<tr>
+<td>coor_68</td>
+<td colspan="2">2.5112 <a href="#tfn1-3">***</a></td>
+<td>0.1672</td>
+<td>coor_68</td>
+<td colspan="2">0.0393 <a href="#tfn1-3">***</a></td>
+<td>0.0071</td>
+</tr>
+<tr>
+<td>coor-73</td>
+<td colspan="2">2.3387 <a href="#tfn1-3">***</a></td>
+<td>0.1844</td>
+<td>coor-73</td>
+<td colspan="2">0.0660 <a href="#tfn1-3">***</a></td>
+<td>0.0075</td>
+</tr>
+<tr>
+<td>coor_78</td>
+<td colspan="2">2.0769 <a href="#tfn1-3">***</a></td>
+<td>0.2041</td>
+<td>coor_78</td>
+<td colspan="2">0.0688 <a href="#tfn1-3">***</a></td>
+<td>0.0081</td>
+</tr>
+<tr>
+<td>intercept</td>
+<td colspan="2">61.3483 <a href="#tfn1-3">***</a></td>
+<td>0.1937</td>
+<td>intercept</td>
+<td colspan="2">0.4269 <a href="#tfn1-3">***</a></td>
+<td>0.0635</td>
+</tr>
+<tr>
+<td colspan="8"><i><b>Endogenous variables:</b></i> PRA, ERR</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>p&lt;.05.</p><p class="table-footnote" data-astro-cid-dzaleqsp>p&lt;.01.</p><p class="table-footnote" data-astro-cid-dzaleqsp>p&lt;.001.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Authors’ computations on SHIW 2000–2008.</p></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Dynamic panel-data estimation of the consumption rule, two-step system GMM <sup><a href="#fn16">16</a></sup>.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>ln{C/HR}</th>
+<th>B</th>
+<th>Se</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lag.ln{C/HR}</td>
+<td>0.0821 <a href="#tfn2-3">***</a></td>
+<td>0.0209</td>
+</tr>
+<tr>
+<td>In_af_en</td>
+<td>0.0114 <a href="#tfn2-3">***</a></td>
+<td>0.0024</td>
+</tr>
+<tr>
+<td>In_ar_h</td>
+<td>−0.0171 <a href="#tfn2-3">***</a></td>
+<td>0.0014</td>
+</tr>
+<tr>
+<td>In_ar_h<a href="#tfn2-1">*</a>n_houses</td>
+<td>0.0040 <a href="#tfn2-3">***</a></td>
+<td>0.0006</td>
+</tr>
+<tr>
+<td>In_pf</td>
+<td>0.0092 <a href="#tfn2-3">***</a></td>
+<td>0.0012</td>
+</tr>
+<tr>
+<td>quintile 2_income</td>
+<td>−0.1347 <a href="#tfn2-3">***</a></td>
+<td>0.0181</td>
+</tr>
+<tr>
+<td>quintile 3_income</td>
+<td>−0.1832 <a href="#tfn2-3">***</a></td>
+<td>0.0206</td>
+</tr>
+<tr>
+<td>quintile 4_income</td>
+<td>−0.2559 <a href="#tfn2-3">***</a></td>
+<td>0.0232</td>
+</tr>
+<tr>
+<td>quintile 5_income</td>
+<td>−0.3105 <a href="#tfn2-3">***</a></td>
+<td>0.0272</td>
+</tr>
+<tr>
+<td>hh_age</td>
+<td>−0.2152 <a href="#tfn2-3">***</a></td>
+<td>0.0491</td>
+</tr>
+<tr>
+<td>hh_age²</td>
+<td>0.0066 <a href="#tfn2-3">***</a></td>
+<td>0.0013</td>
+</tr>
+<tr>
+<td>hh_age³</td>
+<td>−0.0001 <a href="#tfn2-3">***</a></td>
+<td>0.0000</td>
+</tr>
+<tr>
+<td>hh_age<sup>4</sup></td>
+<td>0.0000 <a href="#tfn2-3">***</a></td>
+<td>0.0000</td>
+</tr>
+<tr>
+<td>hh_age_self_emp</td>
+<td>−0.0026 <a href="#tfn2-3">***</a></td>
+<td>0.0004</td>
+</tr>
+<tr>
+<td>hh_age_upper_secondary</td>
+<td>−0.0009 <a href="#tfn2-3">***</a></td>
+<td>0.0002</td>
+</tr>
+<tr>
+<td>hh_age_degree_or_more</td>
+<td>−0.0032 <a href="#tfn2-3">***</a></td>
+<td>0.0004</td>
+</tr>
+<tr>
+<td>h_res_life</td>
+<td>−0.0143 <a href="#tfn2-3">***</a></td>
+<td>0.0027</td>
+</tr>
+<tr>
+<td>hh_retired</td>
+<td>−0.1282 <a href="#tfn2-3">***</a></td>
+<td>0.0213</td>
+</tr>
+<tr>
+<td>earners_ratio</td>
+<td>−0.2058 <a href="#tfn2-3">***</a></td>
+<td>0.0326</td>
+</tr>
+<tr>
+<td>n_child_in the family</td>
+<td>0.0232 <a href="#tfn2-2">**</a></td>
+<td>0.0087</td>
+</tr>
+<tr>
+<td>South</td>
+<td>−0.0489 <a href="#tfn2-3">***</a></td>
+<td>0.0109</td>
+</tr>
+<tr>
+<td colspan="3">Household types (<i>omitt. Nuclear family</i>)</td>
+</tr>
+<tr>
+<td>Single</td>
+<td>0.0108</td>
+<td>0.0211</td>
+</tr>
+<tr>
+<td>nuclear single headed</td>
+<td>0.1754 <a href="#tfn2-3">***</a></td>
+<td>0.0356</td>
+</tr>
+<tr>
+<td>non_nuclear single headed</td>
+<td>0.4704 <a href="#tfn2-3">***</a></td>
+<td>0.0350</td>
+</tr>
+<tr>
+<td>non_nuclear</td>
+<td>0.1948 <a href="#tfn2-3">***</a></td>
+<td>0.0174</td>
+</tr>
+<tr>
+<td colspan="3">Time dummies (<i>omit.tau2002</i>)</td>
+</tr>
+<tr>
+<td>tau1993</td>
+<td>0.0148</td>
+<td>0.0191</td>
+</tr>
+<tr>
+<td>tau1995</td>
+<td>0.0623 <a href="#tfn2-2">**</a></td>
+<td>0.0193</td>
+</tr>
+<tr>
+<td>tau1998</td>
+<td>−0.0699 <a href="#tfn2-3">***</a></td>
+<td>0.0210</td>
+</tr>
+<tr>
+<td>tau2000</td>
+<td>−0.4194 <a href="#tfn2-3">***</a></td>
+<td>0.0194</td>
+</tr>
+<tr>
+<td>tau2004</td>
+<td>−0.0219</td>
+<td>0.0176</td>
+</tr>
+<tr>
+<td>tau2006</td>
+<td>0.0228</td>
+<td>0.0186</td>
+</tr>
+<tr>
+<td>tau2008</td>
+<td>0.0018</td>
+<td>0.0182</td>
+</tr>
+<tr>
+<td>intercept</td>
+<td>−0.2847</td>
+<td>0.6923</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>N = 23,426, number of groups = 10,284.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Arellano-Bond test for AR(1) in first differences: z = −18.00 Pr &gt; z = 0.000.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Arellano-Bond test for AR(2) in first differences: z = 0.49 Pr &gt; z = 0.627.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Sargan test of overid. restrictions: chi2(7) = 7.60 Prob &gt; chi2 = 0.369.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Hansen test of overid. restrictions: chi2(7) = 4.79 Prob &gt; chi2 = 0.685.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Difference-in-Hansen tests of exogeneity of instrument subsets:</p><p class="table-footnote" data-astro-cid-dzaleqsp>GMM instruments for levels.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Hansen test excluding group: chi2(6) = 4.60 Prob &gt; chi2 = 0.596.</p><p class="table-footnote" data-astro-cid-dzaleqsp><b>Difference</b> (null H = exogenous): chi2(1) = 0.20 Prob &gt; chi2 = 0.658.</p><p class="table-footnote" data-astro-cid-dzaleqsp>p&lt;.05.</p><p class="table-footnote" data-astro-cid-dzaleqsp>p&lt;.01.</p><p class="table-footnote" data-astro-cid-dzaleqsp>p&lt;.001.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Authors’ computations on SHIW data, Historical Archive, panel component, waves 1991–2008.</p></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Two-step estimation for intergenerational giving with Heckman correction.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th colspan="6"><i>Donor side N=16,871</i></th>
+</tr>
+<tr>
+<th colspan="3">Logit Probability of being Donor</th>
+<th colspan="3">OLS ln{Ratio}</th>
+</tr>
+<tr>
+<th/>
+<th>B</th>
+<th>Se</th>
+<th/>
+<th>B</th>
+<th>Se</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>age</td>
+<td>0.0807 <a href="#tfn3-3">***</a></td>
+<td>0.0243</td>
+<td>age</td>
+<td>−0.7785 <a href="#tfn3-2">**</a></td>
+<td>0.2404</td>
+</tr>
+<tr>
+<td>age<sup>2</sup></td>
+<td>−0.0007 <a href="#tfn3-3">***</a></td>
+<td>0.0002</td>
+<td>age<sup>2</sup></td>
+<td>0.0113 <a href="#tfn3-2">**</a></td>
+<td>0.0036</td>
+</tr>
+<tr>
+<td>in_work</td>
+<td>0.3522 <a href="#tfn3-3">***</a></td>
+<td>0.052</td>
+<td>age3</td>
+<td>−0.0001 <a href="#tfn3-2">**</a></td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>quintile 3_wealth</td>
+<td>0.4146 <a href="#tfn3-3">***</a></td>
+<td>0.0543</td>
+<td>in work</td>
+<td>−0.4384 <a href="#tfn3-3">***</a></td>
+<td>0.0866</td>
+</tr>
+<tr>
+<td>quintile 4_wealth</td>
+<td>0.6046 <a href="#tfn3-3">***</a></td>
+<td>0.0531</td>
+<td>retired</td>
+<td>−0.2449 <a href="#tfn3-2">**</a></td>
+<td>0.0849</td>
+</tr>
+<tr>
+<td>quintile 5_wealth</td>
+<td>0.6989 <a href="#tfn3-3">***</a></td>
+<td>0.0531</td>
+<td>unemp</td>
+<td>−0.4619 <a href="#tfn3-2">**</a></td>
+<td>0.1649</td>
+</tr>
+<tr>
+<td>child_unemp</td>
+<td>0.2835 <a href="#tfn3-3">***</a></td>
+<td>0.0625</td>
+<td>ch_unemp</td>
+<td>0.3006 <a href="#tfn3-3">***</a></td>
+<td>0.0817</td>
+</tr>
+<tr>
+<td>wed_or_birth</td>
+<td>3.2668 <a href="#tfn3-3">***</a></td>
+<td>0.1205</td>
+<td>quintile 3_wealth</td>
+<td>−0.5422 <a href="#tfn3-3">***</a></td>
+<td>0.0752</td>
+</tr>
+<tr>
+<td>upper_secondary</td>
+<td>0.5074 <a href="#tfn3-3">***</a></td>
+<td>0.0463</td>
+<td>quintile 4_wealth</td>
+<td>−0.8931 <a href="#tfn3-3">***</a></td>
+<td>0.0736</td>
+</tr>
+<tr>
+<td>degree_or_more</td>
+<td>0.742 <a href="#tfn3-3">***</a></td>
+<td>0.0502</td>
+<td>quintile 5_wealth</td>
+<td>−1.4278 <a href="#tfn3-3">***</a></td>
+<td>0.0733</td>
+</tr>
+<tr>
+<td>Italy</td>
+<td>−0.2737 <a href="#tfn3-3">***</a></td>
+<td>0.0747</td>
+<td>Italy</td>
+<td>0.7029 <a href="#tfn3-3">***</a></td>
+<td>0.0951</td>
+</tr>
+<tr>
+<td>_intercept</td>
+<td>−4.4368 <a href="#tfn3-3">***</a></td>
+<td>0.8158</td>
+<td><i><b>mills_ratio</b></i></td>
+<td>0.2653 <a href="#tfn3-3">***</a></td>
+<td>0.0414</td>
+</tr>
+<tr>
+<td/>
+<td/>
+<td/>
+<td>_intercept</td>
+<td>15.5409 <a href="#tfn3-2">**</a></td>
+<td>5.3305</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>T</p><p class="table-footnote" data-astro-cid-dzaleqsp>p&lt;.05.</p><p class="table-footnote" data-astro-cid-dzaleqsp>p&lt;.01.</p><p class="table-footnote" data-astro-cid-dzaleqsp>p&lt;.001.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Authors’ computations on SHARE data, wave 2004.</p></div></figure><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Two-step estimation for intergenerational receiving without Heckman correction.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th colspan="6"><i><b>Recipient side</b></i></th>
+</tr>
+<tr>
+<th colspan="3"><i><b>N=29,652</b></i> Logit Probability of being Recipient</th>
+<th colspan="3"><i><b>N= 1,872</b></i> OLS ln{Amount}</th>
+</tr>
+<tr>
+<th/>
+<th>B</th>
+<th>t</th>
+<th/>
+<th>B</th>
+<th>Se</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>In(af parents)</td>
+<td>0.169 <a href="#tfn4-3">***</a></td>
+<td>0.061</td>
+<td>In(af parents)</td>
+<td>0.0892 <a href="#tfn4-3">***</a></td>
+<td>0.0079</td>
+</tr>
+<tr>
+<td>age</td>
+<td>−0.0883 <a href="#tfn4-3">***</a></td>
+<td>0.052</td>
+<td>age</td>
+<td>0.0253 <a href="#tfn4-1">*</a></td>
+<td>0.0147</td>
+</tr>
+<tr>
+<td>age²</td>
+<td>0.0007 <a href="#tfn4-3">***</a></td>
+<td>0.0543</td>
+<td>age²</td>
+<td>−0.0004 <a href="#tfn4-1">*</a></td>
+<td>0.0002</td>
+</tr>
+<tr>
+<td>married</td>
+<td>0.3004 <a href="#tfn4-2">**</a></td>
+<td>0.0531</td>
+<td>grandchildren</td>
+<td>−0.1051 <a href="#tfn4-1">*</a></td>
+<td>0.0567</td>
+</tr>
+<tr>
+<td>single</td>
+<td>0.6497 <a href="#tfn4-3">***</a></td>
+<td>0.0531</td>
+<td>married</td>
+<td>0.1911 <a href="#tfn4-3">***</a></td>
+<td>0.0494</td>
+</tr>
+<tr>
+<td>divorced</td>
+<td>0.6462 <a href="#tfn4-3">***</a></td>
+<td>0.0625</td>
+<td>Italy</td>
+<td>0.2481 <a href="#tfn4-2">**</a></td>
+<td>0.0944</td>
+</tr>
+<tr>
+<td>in work</td>
+<td>−0.2689 <a href="#tfn4-3">***</a></td>
+<td>0.1205</td>
+<td>_intercept</td>
+<td>7.028 <a href="#tfn4-3">***</a></td>
+<td>0.2699</td>
+</tr>
+<tr>
+<td>degree</td>
+<td>0.3421 <a href="#tfn4-3">***</a></td>
+<td>0.0463</td>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>grandchildren</td>
+<td>0.2863 <a href="#tfn4-3">***</a></td>
+<td>0.0502</td>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Italy</td>
+<td>0.1984 <a href="#tfn4-2">**</a></td>
+<td>0.0747</td>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>_intercept</td>
+<td>−1.3815 <a href="#tfn4-3">***</a></td>
+<td>0.8158</td>
+<td/>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>T</p><p class="table-footnote" data-astro-cid-dzaleqsp>p&lt;.05.</p><p class="table-footnote" data-astro-cid-dzaleqsp>p&lt;.01.</p><p class="table-footnote" data-astro-cid-dzaleqsp>p&lt;.001.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Authors’ computations on SHARE data, wave 2004.</p></div></figure><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Cumulated contributions to wealth Gini variation, LC vs. NS simulation, 2008–2050 (in percent).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>W<sub>0</sub></th>
+<th>Capgains</th>
+<th>S</th>
+<th>ig_tr</th>
+<th>ESA</th>
+<th>d.gini</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.LC approach</td>
+<td>0.146</td>
+<td>−3.918</td>
+<td>−0.511</td>
+<td>6.757</td>
+<td>−1.958</td>
+<td>0.516</td>
+</tr>
+<tr>
+<td>2.NS approach</td>
+<td>0.128</td>
+<td>−4.522</td>
+<td>6.754</td>
+<td>2.979</td>
+<td>−1.705</td>
+<td>3.634</td>
+</tr>
+<tr>
+<td>(1)– (2)</td>
+<td><i><b>−0.018</b></i></td>
+<td><i><b>−0.604</b></i></td>
+<td><i><b>7.264</b></i></td>
+<td><i><b>−3.778</b></i></td>
+<td><i><b>0.253</b></i></td>
+<td><i><b>3.118</b></i></td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Authors’ computations on simulated data.</p></div></figure><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Cumulated contributions to disposable income Gini variation, LC approach, different returns scenarios, 2008–2050 (<i>in percent</i>).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>After_tax pensions</th>
+<th>After-tax earnings</th>
+<th>Rents on real estate net of liabilities</th>
+<th>Interests on financial wealth</th>
+<th>d.gini</th>
+<th>avg <i>r-g</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.low returns</td>
+<td>5.55</td>
+<td>−1.42</td>
+<td>2.50</td>
+<td>3.51</td>
+<td>10.13</td>
+<td><i><b>0.13</b></i></td>
+</tr>
+<tr>
+<td>1.Benchmark</td>
+<td>5.28</td>
+<td>−6.69</td>
+<td>7.57</td>
+<td>4.92</td>
+<td>11.08</td>
+<td><i><b>0.61</b></i></td>
+</tr>
+<tr>
+<td>3.High returns</td>
+<td>4.79</td>
+<td>−14.70</td>
+<td>16.89</td>
+<td>6.89</td>
+<td>13.88</td>
+<td><i><b>1.28</b></i></td>
+</tr>
+<tr>
+<td>(3)-(2)</td>
+<td>−0.76</td>
+<td>−13.28</td>
+<td>14.40</td>
+<td>3.39</td>
+<td>3.75</td>
+<td>1.15</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Authors’ computations on simulated data.</p></div></figure><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Cumulated variation in incomes shares (<i>in percent</i>).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Sources</th>
+<th>2008</th>
+<th>2050</th>
+<th>2050–2008</th>
+<th>2008</th>
+<th>2050</th>
+<th>2050–2008</th>
+<th>2008</th>
+<th>2050</th>
+<th>(2050)-(2008)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>After-tax earnings</td>
+<td>51.0</td>
+<td>43.8</td>
+<td>−7.2</td>
+<td>51.4</td>
+<td>46.2</td>
+<td>−5.2</td>
+<td>50.7</td>
+<td>40.0</td>
+<td>−10.7</td>
+</tr>
+<tr>
+<td>After-tax pensions</td>
+<td>29.7</td>
+<td>29.7</td>
+<td/>
+<td>29.9</td>
+<td>31.3</td>
+<td>1.5</td>
+<td>29.5</td>
+<td>27.2</td>
+<td>−2.3</td>
+</tr>
+<tr>
+<td>Rents on real estate net of negative interests</td>
+<td>14.6</td>
+<td>18.3</td>
+<td>3.7</td>
+<td>14.1</td>
+<td>15.1</td>
+<td>1.1</td>
+<td>15.2</td>
+<td>23.7</td>
+<td>8.6</td>
+</tr>
+<tr>
+<td>Interests on financial wealth</td>
+<td>4.7</td>
+<td>8.2</td>
+<td>3.4</td>
+<td>4.7</td>
+<td>7.4</td>
+<td>2.7</td>
+<td>4.7</td>
+<td>9.1</td>
+<td>4.4</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Authors’ computations on simulated data.</p></div></figure><figure id="tablea-1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A1.</strong><span data-astro-cid-dzaleqsp> Table A1 Exogenous parameters (<i>per year</i>).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Low returns scenario</th>
+<th>Benchmark returns scenario</th>
+<th>High returns scenario</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Productivity</b></td>
+<td><b>Productivity</b></td>
+<td><b>Productivity</b></td>
+</tr>
+<tr>
+<td>Same as benchmark</td>
+<td>G (average earnings growth)</td>
+<td>Same as benchmark</td>
+</tr>
+<tr>
+<td>“</td>
+<td>0.88% (2008–2009)</td>
+<td>“</td>
+</tr>
+<tr>
+<td>“</td>
+<td>1.00% (2010–2013)</td>
+<td>“</td>
+</tr>
+<tr>
+<td>“</td>
+<td>1.20% (2014–2019)</td>
+<td>“</td>
+</tr>
+<tr>
+<td>“</td>
+<td>1.90% (2020–2029)</td>
+<td>“</td>
+</tr>
+<tr>
+<td>“</td>
+<td>2.00% (2030–2050)</td>
+<td>“</td>
+</tr>
+<tr>
+<td><b>Capital gains</b></td>
+<td><b>Capital gains</b></td>
+<td><b>Capital gains</b></td>
+</tr>
+<tr>
+<td><i><b>r<sub>h</sub></b> ~N</i> µ=<b>0.75%;</b> sd=8%</td>
+<td>r<sub>h</sub> ~N µ= 1.5%; sd= 8%</td>
+<td>r<sub>h</sub> ~N µ=2.5%; sd=8%</td>
+</tr>
+<tr>
+<td><i><b>r<sub>f</sub></b> ~N</i> µ=<b>1.5%</b>; sd=18%;</td>
+<td><i><b>r<sub>f</sub></b> ~N</i> µ<i>=3%; sd</i>=1<i>8%;</i></td>
+<td><i><b>r<sub>f</sub></b> ~N</i> µ=<b>5%</b>; sd=18%;</td>
+</tr>
+<tr>
+<td>kurt = 2.4%</td>
+<td>kurt=2.4%</td>
+<td>kurt=2.4%</td>
+</tr>
+<tr>
+<td><i><b>r<sub>esa</sub></b></i>=0.9%</td>
+<td><i><b>r<sub>esa</sub></b></i>=0.9%</td>
+<td><i><b>r<sub>esa</sub></b></i>=0.9%</td>
+</tr>
+<tr>
+<td><b>Interests and rents</b></td>
+<td><b>Interests and rents</b></td>
+<td><b>Interests and rents</b></td>
+</tr>
+<tr>
+<td>Same as benchmark</td>
+<td><i><b>r<sub>m</sub></b> ~N</i> µ<i>=3%; sd= 0.5%</i></td>
+<td>Same as benchmark</td>
+</tr>
+<tr>
+<td>“</td>
+<td>home equity annual rent: 3.5%</td>
+<td>“</td>
+</tr>
+<tr>
+<td>“</td>
+<td>real interest rate on non-risky AF: 1%</td>
+<td>“</td>
+</tr>
+<tr>
+<td>“</td>
+<td>real interest rate on risky AF: 3%</td>
+<td>“</td>
+</tr>
+</tbody>
+</table></div></figure></div></details></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/figures.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

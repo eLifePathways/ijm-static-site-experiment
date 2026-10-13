@@ -1,0 +1,24 @@
+TY  - JOUR
+TI  - Stay on Target: Population Projections and Microsimulation Design
+AU  - Bacon, Rachel J
+AU  - Hodulik, George
+AU  - Voas, David
+AU  - Puga-Gonzalez, Ivan
+AU  - Wildman, Wesley J
+VL  - 16
+IS  - 3
+PY  - 2023
+DA  - 2023/12/31
+SP  - 77-99
+C1  - IJM 2023;16(3):77-99
+DO  - 10.34196/ijm.00289
+UR  - https://doi.org/10.34196/ijm.00289
+AB  - Even though standard cohort component models are relatively easy to comprehend, designing simulations to match expected population estimates and projections in multiple countries and over long spans of time is surprisingly challenging. We identify microsimulation design options that replicate United Nations population estimates and projections in three countries (Norway, United States, and India) over a 150-year time span. The design adapts the United Nations cohort component model, which implies a certain ordering of demographic events, and uses either cohorts or age groups to assign risk. We design four simple microsimulations that use United Nations demographic statistics as exogenous variables. One model adjusts event ordering and assignment of risk by age, called the Split Fertility design, and one model does not. Each model operates in either one- or five-year steps. The Split Fertility design has less than one percent divergence in total births, deaths, and population in all three countries. The simpler design produces varying magnitudes of divergence, as large as 20% in India. The Split Fertility design is suitable for simulations that seek to maintain population dynamics in multiple countries, whether operating in one- or five-year steps. The Split Fertility design is ideal for comparative simulations that adapt demographic statistics from cohort component models. Development of the design highlights the flexibility of simulations and the importance of careful interpretation of exogenous statistics in simulation design.
+KW  - Cohort Component Model
+KW  - Microsimulation
+KW  - Population Projection
+KW  - Demographic Statistics
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

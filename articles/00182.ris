@@ -1,0 +1,20 @@
+TY  - JOUR
+TI  - A new heuristic in mutual sequential mate search
+AU  - Saglam, Ismail
+VL  - 11
+IS  - 2
+PY  - 2018
+DA  - 2018/08/31
+SP  - 122-145
+C1  - IJM 2018;11(2):122-145
+DO  - 10.34196/ijm.00182
+UR  - https://doi.org/10.34196/ijm.00182
+AB  - In this paper, we propose a new heuristic to be used as a mate search strategy in the human mate choice model of Todd and Miller (1999). This heuristic, which we call Take the Weighted Average with the Next Desiring Date, is a plausible search rule in terms of informational assumptions. Our simulations show that this new heuristic is in terms of mating likelihood almost as good as, and in terms of mating speed always better than, the most successful —yet also unrealistic— heuristic of Todd and Miller (1999), namely the Mate Value-5 rule, which assumes that individuals in the mating population completely know their own mate values before interacting with any date. The success of our heuristic stems from its extreme power to lead an average individual in the mating population to always underestimate his/her own mate value during the adolescence (learning) phase of the mating process. While our new heuristic is also found to be successfully egalitarian in pairing up individuals, it does not perform well in terms of marital stability.
+KW  - mate choice
+KW  - mate search
+KW  - simple heuristics
+KW  - agent-based simulation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

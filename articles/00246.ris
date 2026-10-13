@@ -1,0 +1,23 @@
+TY  - JOUR
+TI  - Microsimulation. A Tool for Economic Analysis
+AU  - Klevmarken, Anders
+VL  - 15
+IS  - 1
+PY  - 2022
+DA  - 2022/04/30
+SP  - 6-14
+C1  - IJM 2022;15(1):6-14
+DO  - 10.34196/ijm.00246
+UR  - https://doi.org/10.34196/ijm.00246
+AB  - Micro simulation involves modeling the behavior of individuals and other decision units taking into account the effects of policy parameters such as tax rates, eligibility rules for benefits and subsidies and compensation rates in the social security system. The model is simulated to analyze the impact of policy changes not only on mean behavior but also on the entire distribution of target variables. Micro simulation models have thus, for instance, been used to analyze how changes in the income taxes influence the tails of the income distribution (the incidence of poverty). Micro simulation complements a more traditional economic analysis. It is demanding in terms of modeling effort, data requirements and computer capacity. The issues of statistical inference related to micro simulation are in principle no different from those in econometric modeling generally. In practice the large scale and complex structure of a typical micro simulation model and the shortage of good micro data raise inference issues of particular relevance for micro simulation such as the choice of estimation criteria, calibration to benchmarks and model validation. Much in current practice does not meet high scientific standards, but there is a potential for a promising research program.
+KW  - calibration
+KW  - ceteris paribus assumption
+KW  - constrained estimation
+KW  - large scale modeling
+KW  - method of simulated moments
+KW  - micro simulation
+KW  - validation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

@@ -1,0 +1,1193 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>A dynamic micro-econometric simulation model for firms | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00042"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00042" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/firm-behaviour" data-astro-cid-ak4gb66a>Firm behaviour</a>, <a href="/subjects/dynamic-microsimulation" data-astro-cid-ak4gb66a>Dynamic microsimulation</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Apr 30, 2011</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>A dynamic micro-econometric simulation model for firms</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Hovick Shahnazarian</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Sveriges Riksbank, Stockholm/Sweden</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/4-1/volume-4-1-spring-2011" data-astro-cid-ak4gb66a>Volume 4(1) Spring 2011</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> H. Shahnazarian; 2011; <span data-astro-cid-ak4gb66a>A dynamic micro-econometric simulation model for firms</span>; International Journal of Microsimulation; 4(1); 2–20. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00042" data-astro-cid-ak4gb66a>10.34196/ijm.00042</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>The firm-based simulation model presented in this paper aims to help practical policy making, by providing a tool for analyzing the behavioural effects induced by changes in the tax code and for forecasting corporate tax revenues. To achieve this end, one of the key innovations adopted in the paper is the use of robust estimation techniques designed to ameliorate the undue impact of influential observations. The simulation results indicate that a statutory corporate tax rate reduction does not reduce the effective corporate tax rate to an equal extent because firms adjust their behaviour to new tax rules. The simulation also reveals that even though the macroeconomic environment is important for the taxes paid by the firm, it is not obvious that the effective tax rate for these firms may change because of the changed macro conditions.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00042/ijm-00042.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00042.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00042.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00042" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00042/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s0" data-astro-cid-twdwaz5s>Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s8" data-astro-cid-twdwaz5s>Conclusions</a></li><li data-astro-cid-twdwaz5s><a href="#app1" data-astro-cid-twdwaz5s>Variable listing</a></li><li data-astro-cid-twdwaz5s><a href="#app2" data-astro-cid-twdwaz5s>The Framework of the Simulation Model</a></li><li data-astro-cid-twdwaz5s><a href="#app3" data-astro-cid-twdwaz5s>The Structure of the Simulation Model</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s0" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>One task of the Ministries of Finance in many countries is to produce revenue estimates with regard to corporation tax. Such estimates have to a large extent, when it comes to corporations, been restricted to theoretical evaluation of the behavioural effects induced by changes in the tax code. The lack of micro data has typically made it difficult to conduct a valid empirical investigation. Estimation of behavioural factors, therefore, plays an important role in assessing the financial implications of proposals for changes in the tax code. It is desirable that more qualified assessments are enabled. A change in this direction will imply a better revenue estimate with regard to corporation tax. Another main task of the typical Ministry of Finance is revenue forecasting. Corporation tax is an area where forecasts have been unreliable. The forecasting failure blurs the assumed connection between the development of the economy and income tax. The aggregate material used has not enabled the necessary provisions in the forecasts for corporations’ allocation of profits over time. It may be assumed that such provisions are utilized to a varying degree depending on the individual firm’s economic situation (see, for example, <a href="#bib4">Forsling, 1998</a>). To capture the individual firm’s economic behaviour, it is necessary to use micro data. The estimation of behavioural factors is thus an important part of improving the methods for forecasting corporation tax revenue. Ministries of Finance are to a large extent dependent upon the development of a micro simulation model for this purpose.</p><p data-astro-cid-qsyhzaho>As <a href="#bib14">Shaym-Sunder and Myers (1999)</a> rightly mentioned, corporate financing decisions reflect many motives, forces and constraints, and they called for more elaborate theoretical and empirical models that can deal with these issues. <a href="#bib13">Shahnazarian (2005)</a> shows, using a theoretical model, that combining an upper constraint on dividends, a lower constraint on dividends due to shareholder preferences, an interest rate that increases with the debt ratio, a “tax incentive” for firms to substitute debt for retained earnings, and retained earnings for new share issues (which is the case in most OECD countries) leads to a pecking-order financial structure: a typical firm will start to finance a new investment by issuing new shares in combination with debt, then grow by financing its investments with retained earnings and borrowing, and eventually stop growing and distribute all profits. The study also shows that repurchases of shares will speed up this growth path and that economic depreciation may make the firm want to stop the decline in its capital stock earlier. Findings in these studies indicate that estimation of behavioural factors is an important part of improving the methods for evaluating and forecasting the business performance. However, the evaluations of tax revenue effects induced by changes in the tax code within Ministries of Finance in many countries often exclude these behavioural effects.</p><p data-astro-cid-qsyhzaho>The simulation model introduced in this paper is aimed to help practical policy making, by providing a tool for analyzing the behavioural effects induced by changes in the tax code and for forecasting tax revenues. Furthermore, the model is also aimed at improving the business practice for analyzing business performance.</p><p data-astro-cid-qsyhzaho>The idea behind the dynamic micro econometric simulation model presented can be summarized in the following way. In <i>the simulation module</i>, we define the stock and flow variables of firms and specify the evolution of the stock variables over time in terms of difference equations, using the information in the firm’s three basic financial statements: the balance sheet, the income statement, and the statement of changes in financial conditions. This so-called system dynamic approach has more frequently been used in natural and technical sciences. It has also been used in the business field. An original reference is <a href="#bib3">Forrester’s (1961)</a> industrial dynamic system. The idea behind system dynamic modelling of corporate firms has also been called financial statement modelling. A very simple example of such modelling is given in <a href="#bib1">Benninga (1989)</a>. <a href="#bib9">Kumar and Vrat (1989)</a> and <a href="#bib2">Clarke and Tobias (1995)</a> provide a review of system dynamic modelling with regard to a corporation. This way of modelling has, to our knowledge, not been used extensively in the field of economics. This could be due to the fact that the implementation of the idea into a functioning model is not an easy task. There is of course one exception. <a href="#bib16">Tongeren (1995)</a> uses this approach in micro simulation modelling of Dutch firms. This is achieved by focusing on the relationship between the firms and the economy as a whole. However, Tongeren’s simulation model explores micro-macroeconomic relationships. This is not the case in the model presented in this paper. The behaviour of firms is instead decided by using econometric tools. In our model, we use macro economic variables as explanatory variables in our estimations of the behaviour of the firms. As a result, we do not see the repercussions from the behaviour of the firms on the macroeconomic variables.</p><p data-astro-cid-qsyhzaho>There is, however, an extensive literature in the field of dynamic optimization that indirectly uses a system dynamic approach. In the field of corporate taxation and finance there are many examples of this indirect use of a system approach. <a href="#bib15">Sinn (1987)</a>, <a href="#bib8">Kanniainen and Södersten (1995)</a> and <a href="#bib10">Shahnazarian (1996</a>, <a href="#bib13">2005</a>) are examples of such studies. <a href="#bib11">Shahnazarian (1997)</a> uses such an approach in his theoretical and numerical evaluation of the Swedish tax reform act of 1994. In this paper the emphasis is on the way in which the complex structure of a firm’s dynamics is specified, though the micro foundations of such dynamics are analogous to the existing academic literature on investment behaviour of firms under taxation. More generally, the models used in these papers are often a simplified version of basic system dynamic models, since in this field the authors are usually interested in examining the impact of taxation on corporate financial policy and the cost of capital.</p><p data-astro-cid-qsyhzaho>The focus in this paper, on the other hand, is on the use of econometric tools rather than theoretical ones. In <i>the statistical module (behaviour modelling</i>), the behaviour of the firms is modelled and estimated in two steps. We use a dynamic optimization model to derive the relationships between different decision variables. These relationships are derived by subjecting the optimization to investigations of a comparative static sort. The relationships between different decisions variables are then estimated using robust estimation methods depending on the nature of the variable. The major gain in building and employing micro simulation models is that such models utilize information derived from existing microdata. The use of microdata enables the economic behaviour of individual firms to be captured. However, analysis of microdata often reveals that influential observations are present. This is especially the case for micro data on firms. The data in hand include both large corporations and small enterprises. Therefore, it is not advisable to exclude the information on these firms just because they happen to be big or small corporations. The estimation method that is used to estimate firms’ behaviour regarding different decision variables must be able to deal with this fact. This is especially important for models that are aimed to be used for practical purposes. When influential observations are present and have an unacceptable effect on derived least squares estimate, the best remedy is to apply a robust estimator rather than deleting these observations.</p><p data-astro-cid-qsyhzaho>In our estimations, we use pooled data derived from accounting and taxation information from 19971999 resulting in a three-year panel. In this paper, we use the data for stock companies from the database named FRIDA (which stands for Firm <span class="underline">R</span>egister and <span class="underline">I</span>ndividual <span class="underline">Da</span>tabases). FRIDA was developed in 1997 by the Swedish Ministry of Finance and Statistics Sweden. FRIDA is composed of several databases for firms with different organization forms. This includes databases for joint stock companies (which also includes close companies), cooperatives, partnerships, associations, foundations, and proprietorship (or sole trader).</p><p data-astro-cid-qsyhzaho>The purpose of this paper is to provide an overview of the model we have developed without going too far into technical details, highlighting one or two key areas of innovation, and presenting some illustrative results/applications. The aim is therefore to show how the simulation model can be used to simulate firms’ three basic financial statements and to evaluate the impact of changes in tax laws. This is the reason why we refrain from presenting the dynamic optimization problem, the estimation methods and the results and refer the reader to <a href="#bib12">Shahnazarian (2004)</a> for the details. However we introduce the framework of the simulation model within a simple model with two assets in <a href="#app2">Appendix 2</a>. We strongly recommend the reader to read this appendix before continuing with subsequent sections. In <a href="#s1">Section 1</a>, we give a brief overview of the corporate tax system in the period covered in the analysis. In <a href="#s2">Section 2</a>, we describe the structure of the different modules in the simulation model. However, we provide a formal description of the simulation model in <a href="#app3">Appendix 3</a>. To make this paper easier to read, we also include an index with an explanation of the symbols used in <a href="#app1">Appendix 1</a>. In <a href="#s3">Section 3</a>, we describe the data used in both the statistical and the simulation modules. In <a href="#s4">Section 4</a>, we present the simulation results using the current tax rules. <a href="#s5">Section 5</a> provides an evaluation of the simulation model by examining the forecasting accuracy of the simulation results. In <a href="#s6">Section 6</a>, we analyze the simulation results for a hypothetical corporate tax rate reduction of three present. In <a href="#s7">Section 7</a>, we present the simulation results for a hypothetical change in the macro economic development. The discussion that follows sums up and concludes the paper.</p><section id="s1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1. The taxation of incorporated businesses in Sweden</h3><p data-astro-cid-qsyhzaho>Prior to 1991, Swedish company taxation was characterized by high statutory tax rates combined with liberal reserve facilities. The government used the company taxation, as part of the general economic policy, to direct firms’ behaviour. The gap between the statutory tax rate and the effective tax burden on a company’s profits became very large because of the generous reserve facilities. The belief that the tax burden was different for different companies was one of the reasons why a reform was believed to be necessary. The direction of the 1991 reform and reforms thereafter were to broaden the tax bases, cut the tax rates and simplify the tax rules. The corporate income tax rate was lowered to 28 per cent, while the tax base was broadened. The reason for choosing this particular tax rate was to achieve uniformity between the taxation of the corporation’s income and the taxation of capital income.</p><p data-astro-cid-qsyhzaho>In Sweden the tax balance sheet of the firm must coincide with the commercial balance sheet (so-called uniform reporting). The main connection between the accounting profit and the taxable profit is that the calculation of taxable income must be undertaken according to good accounting practice, which is based on accounting laws (except where the tax rules specifically differ from the accounting rules). Most of the balance-sheet allocations prior to 1991 were removed. An exception was the new reserve option periodical reserve fund. Enterprises are allowed to allocate, tax-free, a maximum of 25 per cent of their annual profits to a periodical reserve fund. A firm which has made an allocation to a periodic reserve fund can make a deduction from its taxable income. The deduction is limited to a maximum of 25 per cent of the current year’s profit. The reserve must be returned to taxable status no later than the fifth year of allocation. The reason for introducing this option was to bring about an effective average tax rate lower than 28 per cent. Among the remaining balance-sheet allocations it is important to mention accelerated depreciation of machinery and equipment. The depreciation rate, for tax purposes, for machinery and equipment is 30 per cent if the declining-balance method is used, while it is only 20 per cent if the straight-line method is used. For buildings the straight-line method applies and, depending on type of asset, the depreciation rate is 1.5–5 per cent.</p></section><section id="s2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2. The different modules in the simulation model</h3><p data-astro-cid-qsyhzaho>The basic idea behind the simulation model is to combine the dynamic behaviour of the corporate system with a statistical model that captures the development and the interrelationships between the firms’ different decision variables. The dynamic behaviour of the corporate system is captured in the simulation module by several difference equations that identify how different variables in the firms’ balance sheets change over time using the information in the firms’ three basic financial statements: the balance sheet, the income statement, and the statement of changes in financial conditions. The firms’ decisions regarding the flow variables are modelled in a statistical module. We use the dynamic optimization problem to derive the relationships between these variables. These relationships are then estimated using different robust estimation methods. The estimated functions from the statistical module are then inserted into the difference equation system. The difference equation system together with the estimated relationships is finally solved numerically in a recursive manner to be able to simulate new financial statements.</p><p data-astro-cid-qsyhzaho>The simulation module maintains three interrelated sets of accounts: a balance sheet account, a profit-loss account, and the statement of changes in financial conditions. Altogether, these three accounts provide a financial description of the firms at a given moment in time. The first is the income statement. A second document is a statement of sources and uses of funds (the cash flow statement). These two statements are flow statements, showing various financial flows occurring during the course of one year. The third statement is the balance sheet, which is a stock concept. It shows the value of various company assets and liabilities outstanding at the end of each financial year. <a href="#app3">Appendix 3</a> gives a technical description of the simulation model.</p><p data-astro-cid-qsyhzaho>The structure of the statistical module can be summarized as follows. The approach we use to identify the recursion follows the traditional approach in economic theory. We use the solution (total differentiation of the first order condition) of a dynamic optimization model to find out the economic relationships between the changes in different balance sheet items (see <a href="#app1">Appendix 1</a>). However, the derived relationships only include firm-specific variables such as income-statement variables, balance-sheet variables, and variables that capture the legal and accounting constraints. But, we know that firms operations are highly dependent on the firms’ expectations regarding the business cycle and the development of the market. Therefore we also include other regressors in our estimations of corporate decision variables to control for these factors. The market conditions are captured by the following three variables: a variable that identifies the market in which firms may have their business, a variable that captures the market share of these firms, and a variable that captures the location of the firms. Moreover, we use two different variables as proxies for the maturity of firms. The firms’ expectations regarding the business cycle are captured by including one of the two following macroeconomic variables: the change in GDP and the real interest rate on a government bond with a maturity of 10 years. To be able to include the macro economic variables and variables that capture the development of the market in our estimations, it proved necessary to pool data from 1997–1999.</p><p data-astro-cid-qsyhzaho>The recursive method used in the statistical module is as follows. First, we estimate the economic depreciation of machinery and equipment, the sale of machinery and equipment, and the investments in these assets. Second, we estimate the economic depreciation of buildings, the net investments in these assets, the net change in other fixed assets and the net change in current assets. Third, having established the net changes in different assets, we go on to investigate the funds available to undertake such investments. This is done in the following order. We estimate the net change in long-term liabilities, the net change in current liabilities, the net change in share capital, and the net change in restricted reserves. Finally, we estimate operating income before depreciation, financial income, financial expenditure, tax allowances for depreciation, reversals from periodical reserves, allocations to periodical reserves, changes in other untaxed reserves, net group contributions, other allocations, tax liabilities, other tax adjustments, the tax depreciation of buildings, and reductions in taxes.</p><p data-astro-cid-qsyhzaho>We use robust estimation methods to estimate these variables. The use of robust estimation methods is one of the main innovations we wish to emphasize. The reason for using robust estimation methods is the fact that microdata on firms often reveal that influential observations are present. The estimation method that is used to estimate firms’ behaviour regarding different decision variables must include this fact. This is especially important for models that are aimed to be used for practical purposes. When influential observations are present and have an unacceptable effect on the least squares method, the best remedy is to apply a robust estimator rather than deleting these observations. OLS regression models are quite sensitive to influential observations, which may be a consequence of heavy-tailed distributions. <a href="#bib5">Hampel (1985)</a> argues that robust estimators are superior in practice to classical non-robust estimators and shows that they are even better than classical methods combined with rejection. <a href="#bib7">Huber (1964)</a> proposed as a robust estimator (the maximum-likelihood estimator) of the location parameter associated with a density function that is normal in the middle part, but like a double exponential in the tails. In our analysis, we apply a bounded-influence technique proposed by Schweppe (<a href="#bib6">Handschin <i>et al</i>., 1975</a>). This technique reduces the impact of influential observations in both <i>y</i>-space as well as <i>x</i>-space. However, different variables have different characteristics. Some of the variables take non-negative values while other variables may be either negative, zero or positive. Depending on the nature of the dependent variable we combine four different robust estimation methods: Huber-Schweppe robust estimation method, a logistic model with the cumulative logistic distribution function, a logistic model with the complementary log-log distribution function, and a Tobit model with a logistic distribution function.</p><p data-astro-cid-qsyhzaho>The estimation results indicate that firms’ utilization of different tax allowances as well as different accounting constraints have important impact on firms’ investment and financial behaviour. These results indicate that estimation of behavioural factors has an important role in assessing the financial implications of proposals for change in the tax code and accounting rules. This was originally observed in <a href="#bib4">Forsling’s (1998)</a> study of the utilization of different tax allowances.</p></section><section id="s3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3. Description of data</h3><p data-astro-cid-qsyhzaho>In 1997, the Ministry of Finance and Statistics Sweden (SCB) started developing FRIDA, which stands for Firm <span class="underline">R</span>egister and <span class="underline">I</span>ndividual <span class="underline">DA</span>tabases. FRIDA is composed of several databases for firms with different organization forms. This includes databases for joint stock companies (which also includes closed companies), cooperatives, partnerships (which also includes limited partnerships), associations, foundations, and proprietorships (or sole traders). Apart from partnerships and proprietorships, these enterprises are subject to corporation tax. In this paper, we will present the database for stock companies which is used in the simulation model. The information gathered for these firms includes accounts, balance sheets, wages and other compensation, depreciation, untaxed reserves and dividends, etc. Moreover, it also includes information on tax adjustments.</p><p data-astro-cid-qsyhzaho>The data at our disposal come mainly from the National Tax Board (RSV) and include the Standardized Accounting Statements (SRU) and the Tax Assessment (TA). The SRU contains information on accounts and tax adjustments and the TA contains information on the income tax paid by the firms. The TA files contain pure information on assessed income, preliminary tax, final tax, and some administrative data. However, the TA data do not contain any background information on how the final tax is calculated (accounts, balance sheet and tax adjustments). Both the TA and the SRU files are designed to cover the total population of firms. We chose to have 1997 as a base year for our database as the quality of the data were better from this year. The sampling frame for the database is based on register data in TA and SRU. For the joint stock companies, we select those firms that provide the income tax return form S2. This register is then supplemented with further information about the organization form from SCB’s Central Register of Enterprises and Establishments. The sampling frame is then adjusted by removing the income tax return form for those firms that have provided two identical forms. The stratification is made according to company size and whether they are a close company. For this purpose, we select those firms that complete their income tax return forms with another form (K10) that is used by shareholders in close companies. The firms’ size is based on total assets (<i>K</i>), net income (<i>NI</i>), and net business income (<i>NBI</i>). The sampling frame is stratified in three different strata.</p><p data-astro-cid-qsyhzaho>The first stratum contains each and every financial firm that has the industry classification 65, 66, and 67 according to the Swedish Standard Industrial Classification 1992 (SNI92). This classification standard is based on the classification used by Eurostat, NACE Rev. Further, this stratum also contains all those firms that fulfil the following conditions: Total assets (<i>K</i>) are higher than 100 MSEK, net income (NI) is higher than 5 MSEK (which is the case for both positive and negative net income), and net business income (NBI) is higher than 5 MSEK (which is the case for both positive and negative net business income). Remaining firms are classified between two different strata depending on whether there is a K10 form assigned to the company. In the first stratum, all units are selected. In the other two strata, the numbers of units drawn are a function of <i>NBI</i>. For this purpose a simple random sampling (SRS) was used. The idea behind the database is to gain a fairly good approximation of the total net business income and final tax payments.</p><p data-astro-cid-qsyhzaho>In our estimations, we use the information from 1997–1999. For these years, we have two time series observations on different variables for each and every firm. For 1997–1999, we have 27 370, 27 440, and 35 457 cross-sectional observations respectively (see <a href="#table1">Table 1</a>). This gives us a total of 90 227 pooled observations. The sample sizes were originally bigger (column 3 in <a href="#table1">Table 1</a>). However, these samples were checked for inconsistencies and errors. Observations that did not fulfil the constructed criteria were excluded from the original samples (column 4 in <a href="#table1">Table 1</a>). Moreover, for estimation purposes, we also need two time series observations on different variables. Therefore, we exclude those firms that did not provide information the previous year (column 5 in <a href="#table1">Table 1</a>). We obtain a smaller sample size by doing so. The samples were then re-weighted.</p><section class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">Check for inconsistencies and errors</h4><p data-astro-cid-qsyhzaho>As we mentioned earlier, the original sample for each and every year is checked for inconsistencies and errors. We regard those firms that do not pass through the error and correction program as outliers and exclude them from our sample. The sample is then re-weighted. The data program for auditing and correction contains 30–60 modules. The structure of auditing and correction is as follows. First, the program starts by controlling whether the observations lack balance sheet data, income statement data, or tax adjustments. Although the firms are under a statutory obligation to supply the data, non-response does occur. We do not use imputation methods to handle the non-response. Instead, we regard these firms as outliers and exclude them from our sample. Second, the balance sheet, income statement, and tax adjustments undergo a detailed examination by the program developed. Routines for testing and improving the data quality have been developed to make the SRU and TA files reliable. Usually the errors originate from the following: clerical or typing errors, summation errors, or changes in the assessment of tax that is not registered in SRU files. In each module, we check whether firms have made a correct addition of the information requested by the tax authorities. If the deviation is lower than 100 SEK, we accept the addition made by firms. If not, we correct the information. All corrections are made automatically to avoid costly revision.</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> A description of the sample for 1997, 1998, and 1999.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="center">Year</th>
+<th align="center">Sampling frame</th>
+<th align="center">Initial sample size</th>
+<th align="center">Initial sample size correction<a href="#tfn1">*</a></th>
+<th align="center">Sample size after data Sample size with observations for t-2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">1997</td>
+<td align="center">2,56,171</td>
+<td align="center">33,887</td>
+<td align="center">29,363</td>
+<td align="center">27,370</td>
+</tr>
+<tr>
+<td align="center">1998</td>
+<td align="center">2,50,058</td>
+<td align="center">35,107</td>
+<td align="center">31,400</td>
+<td align="center">27,400</td>
+</tr>
+<tr>
+<td align="center">1999</td>
+<td align="center">2,43,131</td>
+<td align="center">36,566</td>
+<td align="center">36,238</td>
+<td align="center">35,457</td>
+</tr>
+<tr>
+<td align="center">Total</td>
+<td align="center">7,49,360</td>
+<td align="center">1,05,560</td>
+<td align="center">97,001</td>
+<td align="center">90,227</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>After the sampling, we check for inconsistencies and errors. If the firm does not fulfil the constructed criteria, it is regarded as an outlier and excluded from the sample. The sample is then re-weighted.</p></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Simulation results using current rules, MSEK.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>2000</th>
+<th>2001</th>
+<th>2002</th>
+<th>2003</th>
+<th>2004</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="6"><i>Assets</i></td>
+</tr>
+<tr>
+<td> CA</td>
+<td>21,57,244</td>
+<td>26,26,464</td>
+<td>29,91,256</td>
+<td>32,85,191</td>
+<td>35,76,919</td>
+</tr>
+<tr><td> <i>MA</i></td>
+<td>6,55,068</td>
+<td>7,37,831</td>
+<td>8,12,583</td>
+<td>8,85,209</td>
+<td>9,56,082</td>
+</tr>
+<tr>
+<td> <i>BU</i></td>
+<td>5,26,931</td>
+<td>10,34,464</td>
+<td>12,55,277</td>
+<td>13,23,282</td>
+<td>13,87,825</td>
+</tr>
+<tr>
+<td> <i>OFA</i></td>
+<td>36,97,248</td>
+<td>33,25,529</td>
+<td>34,41,718</td>
+<td>36,46,573</td>
+<td>36,58,999</td>
+</tr>
+<tr>
+<td> <i>Total</i></td>
+<td>70,33,491</td>
+<td>77,24,288</td>
+<td>85,00,834</td>
+<td>91,40,255</td>
+<td>95,79,825</td>
+</tr>
+<tr>
+<td colspan="6"><i>Liabilities</i></td>
+</tr>
+<tr>
+<td> <i>CL</i></td>
+<td>14,81,818</td>
+<td>26,98,440</td>
+<td>34,49,106</td>
+<td>38,42,111</td>
+<td>42,31,449</td>
+</tr>
+<tr>
+<td> <i>LL</i></td>
+<td>26,07,697</td>
+<td>27,29,837</td>
+<td>28,33,233</td>
+<td>39,17,740</td>
+<td>30,00,933</td>
+</tr>
+<tr>
+<td> <i>ASD</i></td>
+<td>2,28,662</td>
+<td>2,35,496</td>
+<td>2,40,215</td>
+<td>2,44,820</td>
+<td>2,48,510</td>
+</tr>
+<tr>
+<td> <i>OUR</i></td>
+<td>10,524</td>
+<td>10,760</td>
+<td>10,939</td>
+<td>10,987</td>
+<td>11,138</td>
+</tr>
+<tr>
+<td> <i>SC</i></td>
+<td>3,38,181</td>
+<td>3,61,574</td>
+<td>3,84,821</td>
+<td>4,06,226</td>
+<td>4,29,033</td>
+</tr>
+<tr>
+<td> <i>RR</i></td>
+<td>6,14,792</td>
+<td>8,69,063</td>
+<td>11,24,540</td>
+<td>13,77,906</td>
+<td>16,31,679</td>
+</tr>
+<tr>
+<td> <i>URE</i></td>
+<td>15,58,227</td>
+<td>5,92,813</td>
+<td>2,01,132</td>
+<td>50,403</td>
+<td>−2,93,084</td>
+</tr>
+<tr>
+<td> <i>PFt</i></td>
+<td>1,93,585</td>
+<td>2,26,301</td>
+<td>2,56,844</td>
+<td>2,90,058</td>
+<td>3,20,165</td>
+</tr>
+<tr>
+<td> <i>Total</i></td>
+<td>70,33,486</td>
+<td>77,24,284</td>
+<td>85,00,830</td>
+<td>91,40,251</td>
+<td>95,79,823</td>
+</tr>
+<tr>
+<td colspan="6"><i>Income statement</i></td>
+</tr>
+<tr>
+<td> <i>OIBD</i></td>
+<td>2,80,257</td>
+<td>4,05,649</td>
+<td>4,16,275</td>
+<td>4,09,780</td>
+<td>4,17,883</td>
+</tr>
+<tr>
+<td> <i>EDEPma</i></td>
+<td>1,04,559</td>
+<td>1,28,439</td>
+<td>1,32,789</td>
+<td>1,31,337</td>
+<td>1,32,571</td>
+</tr>
+<tr>
+<td> <i>EDEPbu</i></td>
+<td>9,084</td>
+<td>20,342</td>
+<td>19,701</td>
+<td>18,767</td>
+<td>18,602</td>
+</tr>
+<tr>
+<td> <i>OIAD</i></td>
+<td>1,66,613</td>
+<td>2,56,867</td>
+<td>2,63,784</td>
+<td>2,59,675</td>
+<td>2,66,709</td>
+</tr>
+<tr>
+<td> <i>EBA</i></td>
+<td>1,84,907</td>
+<td>2,50,162</td>
+<td>2,69,569</td>
+<td>2,74,013</td>
+<td>2,81,933</td>
+</tr>
+<tr>
+<td> <i>EBT</i></td>
+<td>1,44,302</td>
+<td>2,20,969</td>
+<td>2,45,122</td>
+<td>2,47,502</td>
+<td>2,63,326</td>
+</tr>
+<tr>
+<td> <i>NI</i></td>
+<td>90,460</td>
+<td>1,80,345</td>
+<td>2,00,673</td>
+<td>1,95,417</td>
+<td>2,11,841</td>
+</tr>
+<tr>
+<td> <i>FTAX</i></td>
+<td>47,735</td>
+<td>42,842</td>
+<td>42,689</td>
+<td>42,980</td>
+<td>43,766</td>
+</tr>
+<tr>
+<td> <i>Olt</i></td>
+<td>4,10,084</td>
+<td>4,88,375</td>
+<td>5,46,493</td>
+<td>6,06,410</td>
+<td>6,52,192</td>
+</tr>
+<tr>
+<td> <i>NBI</i></td>
+<td>96,566 </td>
+<td>1,78,126</td>
+<td>2,02,432</td>
+<td>2,04,522</td>
+<td>2,19,559</td>
+</tr>
+<tr>
+<td colspan="6"><i>Selected flow variables and financial ratios</i></td>
+</tr>
+<tr>
+<td> <i>CR</i></td>
+<td>1.456</td>
+<td>0.973</td>
+<td>0.867</td>
+<td>0.855</td>
+<td>0.845</td>
+</tr>
+<tr>
+<td> <i>DR</i></td>
+<td>0.599</td>
+<td>0.720</td>
+<td>0.756</td>
+<td>0.756</td>
+<td>0.772</td>
+</tr>
+<tr>
+<td> <i>DER</i></td>
+<td>1.492</td>
+<td>2.570</td>
+<td>3.094</td>
+<td>3.103</td>
+<td>3.384</td>
+</tr>
+<tr>
+<td> <i>ECR</i></td>
+<td>0.401</td>
+<td>0.280</td>
+<td>0.244</td>
+<td>0.244</td>
+<td>0.228</td>
+</tr>
+<tr>
+<td> <i>FQ</i></td>
+<td>−0.292</td>
+<td>−0.380</td>
+<td>−0.404</td>
+<td>−0.397</td>
+<td>−0.399</td>
+</tr>
+<tr>
+<td> <i>ICR</i></td>
+<td>1.493</td>
+<td>.634</td>
+<td>1.682</td>
+<td>1.684</td>
+<td>1.693</td>
+</tr>
+<tr>
+<td> <i>DI</i></td>
+<td>0.089</td>
+<td>0.071</td>
+<td>0.062</td>
+<td>0.058</td>
+<td>0.055</td>
+</tr>
+<tr>
+<td> <i>ROE</i></td>
+<td>0.097</td>
+<td>0.097</td>
+<td>0.108</td>
+<td>0.100</td>
+<td>0.105</td>
+</tr>
+<tr>
+<td> <i>ROI</i></td>
+<td>0.080</td>
+<td>0.083</td>
+<td>0.078</td>
+<td>0.074</td>
+<td>0.072</td>
+</tr>
+<tr>
+<td> <i>EFFTAX</i></td>
+<td>0.258</td>
+<td>0.171</td>
+<td>0.158</td>
+<td>0.157</td>
+<td>0.155</td>
+</tr>
+<tr>
+<td> <i>RROI</i></td>
+<td>0.072</td>
+<td>0.062</td>
+<td>0.059</td>
+<td>0.061</td>
+<td>0.062</td>
+</tr>
+<tr>
+<td> <i>ER</i></td>
+<td>0.007</td>
+<td>0.022</td>
+<td>0.019</td>
+<td>0.013</td>
+<td>0.010</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Notes</i>: See <a href="#app1">Appendix 1</a> for key to variable names</p></div></figure></section></section><section id="s4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4. The simulation results using current tax rules</h3><p data-astro-cid-qsyhzaho><a href="#table2">Table 2</a> summarizes the simulation results from 2000–2004 that were obtained by solving the difference equation systems numerically. Let us now penetrate some of the most important results. Firms’ operating income before depreciation (<i>OIBD</i>) increases between 2000 and 2002. In 2003, this increase continues. This variable shows a large increase between 2000 and 2001. The reason for this is that <i>OIBD</i> is estimated to increase with the level of current assets (<i>CA</i>), the level of machinery and equipment (<i>MA</i>), the net investment in machinery and equipment (<i>I<sup>MA</sup></i>), economic depreciation of machinery and equipment (<i>EDEP<sup>MA</sup></i>) at a decreasing rate, the level of buildings (<i>BU</i>), the net investment in buildings (<i>I<sup>BU</sup></i>), economic depreciation of buildings (<i>EDEP<sup>BU</sup></i>) at an increasing rate, the net change in current assets (<i>dCA</i>) at a decreasing rate, the change in the utilization of tax rules regarding allocations to periodical reserves (<i>ddmpa</i>) at a decreasing rate the increase is decreasing, and the change in cash flow (<i>dcashfl</i>) at an increasing rate. These variables are also estimated and simulated to increase during the simulation period mainly because of the macroeconomic development. Despite the fact that <i>OIBD</i> increases in 2001, final taxes paid (<i>FTAX</i>) by the firms decreases. This has to do with the development of tax adjustments made by the firm. This is especially the case for losses from previous years (<i>OL</i>) which increase during the entire simulation period. The development of <i>OIBD</i> is important for the development of earnings before allocations (EBA) which increases as <i>OIBD</i> increases. This together with the development of <i>FTAX</i> imply that the effective tax rate (<i>EFFTAX</i>) decreases in 2001 and continues to decrease during the simulation period.</p><p data-astro-cid-qsyhzaho>We use financial ratio analysis to summarize the simulation results. Four major categories of financial ratios have been developed, each designed to address an important aspect of the firms’ financial condition: liquidity ratios, leverage ratios, profitability ratios, and market value ratios (see <a href="#app3">Appendix 3</a>). Corporate debt in relation to total assets (<i>DR</i>) is simulated to grow rapidly during the simulation period. This is believed to be due to the strong credit growth in the corporate sector. This indicates that the extent to which firms use borrowed funds to finance their total assets increases. The debt/equity ratio (<i>DER</i>) also increases during the entire simulation period, which indicates that the capital contributed by creditors increases compared to the capital contributed by owners. However, the interest coverage ratio (<i>ICR</i>) increases during the entire simulation period indicating that firms’ ability to meet their interest payments out of their operating earnings improve over coming years. But, companies’ current ratio is simulated to gradually deteriorate, which means that companies have diminishing liquid assets to use for their short-term payment commitments. The worsened current ratio does not pose any problem that companies will be unable to meet their payment commitments as long as companies’ earnings capacity and profitability remain sound. As is evident from the simulation results, companies increase their profitability (<i>ROI</i>) during 2001, after which it decreases from 2002–2004. Return on investment focuses on the earnings power of ongoing operations. This return must be compared to the required return on investment (<i>RROI</i>) to be able to draw conclusions about the value of TOBINS q. Excess return increases in 2001 before it decreases three years in a row. This indicates that return on investment is constantly reduced relative to the required return on investment. This in turn implies that the value of TOBINS q becomes lower and lower, indicating that the value of the firms compared to the replacement costs of the firms’ assets decreases. Hence, the market’s prediction of the value of the returns generated per 1 SEK of additional investment becomes lower.</p><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Forecasting accuracy for year 2000.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="center" rowspan="3">Variable name</th>
+<th align="center" colspan="4">Population weighted, Year 2000, MSEK</th>
+<th align="center" rowspan="3">Matched pairs t-test<sup><a href="#tfn4">***</a></sup> (t)</th>
+</tr>
+<tr>
+<th align="center" colspan="2">Sample</th>
+<th align="center" colspan="2">Predicted</th>
+</tr>
+<tr>
+<th align="center">Mean (A)</th>
+<th align="center">Standard deviation (B)</th>
+<th align="center">Mean (C)</th>
+<th align="center">Standard deviation (D)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><i>EDEPMA</i></td>
+<td>0.447</td>
+<td>15.150</td>
+<td>0.458</td>
+<td>10.439</td>
+<td>−0.280</td></tr>
+<tr><td><i>SMA</i></td>
+<td>2.206</td>
+<td>1097.177</td>
+<td>0.092</td>
+<td>50.235</td>
+<td>0.920</td></tr>
+<tr><td><i>IMA</i></td>
+<td>2.945</td>
+<td>1096.308</td>
+<td>0.834</td>
+<td>10.150</td>
+<td>0.920</td></tr>
+<tr><td><i>EDEPBU</i></td>
+<td>0.069</td>
+<td>1.821</td>
+<td>0.039</td>
+<td>1.251</td>
+<td>6.233</td></tr>
+<tr><td><i>IBU</i></td>
+<td>0.161</td>
+<td>29.319</td>
+<td>0.029</td>
+<td>7.808</td>
+<td>2.083</td></tr>
+<tr><td><i>dofa</i></td>
+<td>−2.600</td>
+<td>2373.374</td>
+<td>2.671</td>
+<td>87.504</td>
+<td>−1.061</td></tr>
+<tr><td><i>dca</i></td>
+<td>0.417</td>
+<td>578.716</td>
+<td>0.546</td>
+<td>26.748</td>
+<td>−0.106</td></tr>
+<tr><td><i>dll</i></td>
+<td>−3.446</td>
+<td>2104.863</td>
+<td>0.283</td>
+<td>23.357</td>
+<td>−0.847</td></tr>
+<tr><td><i>dcl</i></td>
+<td>0.114</td>
+<td>432.930</td>
+<td>−0.502</td>
+<td>30.057</td>
+<td>0.678</td></tr>
+<tr><td><i>dsc</i></td>
+<td>−0.035</td>
+<td>48.833</td>
+<td>0.090</td>
+<td>5.457</td>
+<td>−1.217</td></tr>
+<tr><td><i>drr</i></td>
+<td>0.456</td>
+<td>113.333</td>
+<td>1.157</td>
+<td>12.723</td>
+<td>−2.937</td></tr>
+<tr><td><i>OIBD</i></td>
+<td>1.398</td>
+<td>81.459</td>
+<td>1.227</td>
+<td>17.734</td>
+<td>0.980</td></tr>
+<tr><td><i>FI</i></td>
+<td>1.880</td>
+<td>153.795</td>
+<td>.722</td>
+<td>103.292</td>
+<td>0.407</td></tr>
+<tr><td><i>FE</i></td>
+<td>1.150</td>
+<td>55.330</td>
+<td>1.641</td>
+<td>112.435</td>
+<td>−1.875</td></tr>
+<tr><td><i>TDEPMA</i></td>
+<td>0.538</td>
+<td>18.430</td>
+<td>0.522</td>
+<td>6.936</td>
+<td>0.408</td></tr>
+<tr><td><i>ZPF</i></td>
+<td>0.095</td>
+<td>8.401</td>
+<td>−0.001</td>
+<td>0.444</td>
+<td>5.485</td></tr>
+<tr><td><i>Dour</i></td>
+<td>−0.015</td>
+<td>2.216</td>
+<td>0.087</td>
+<td>8.181</td>
+<td>−5.775</td></tr>
+<tr><td><i>GC</i></td>
+<td>0.033</td>
+<td>45.076</td>
+<td>0.032</td>
+<td>35.622</td>
+<td>0.008</td></tr>
+<tr><td><i>OA</i></td>
+<td>0.068</td>
+<td>42.842</td>
+<td>0.072</td>
+<td>35.470</td>
+<td>−0.041</td></tr>
+<tr><td><i>TL</i></td>
+<td>0.233</td>
+<td>7.468</td>
+<td>0.236</td>
+<td>37.691</td>
+<td>−0.041</td></tr>
+<tr><td><i>OTA</i></td>
+<td>−0.678</td>
+<td>147.590</td>
+<td>−0.221</td>
+<td>19.762</td>
+<td>−1.465</td></tr>
+<tr><td><i>TDEPBU</i></td>
+<td>0.086</td>
+<td>3.688</td>
+<td>0.080</td>
+<td>1.308</td>
+<td>0.668</td></tr>
+<tr><td><i>PALLO</i></td>
+<td>0.224</td>
+<td>32.200</td>
+<td>0.274</td>
+<td>2.580</td>
+<td>−0.733</td></tr>
+<tr><td><i>ROT</i></td>
+<td>0.002</td>
+<td>4.355</td>
+<td>0.091</td>
+<td>7.970</td>
+<td>−1.007</td></tr>
+<tr><td><i>TAX</i></td>
+<td>0.212</td>
+<td>6.360</td>
+<td>0.230</td>
+<td>2.168</td>
+<td>−1.270</td></tr>
+<tr><td><i>FTAX</i></td>
+<td>0.210</td>
+<td>6.000</td>
+<td>0.209</td>
+<td>8.168</td>
+<td>0.060</td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Notes</i>: See <a href="#app1">Appendix 1</a> for key to variable names</p><p class="table-footnote" data-astro-cid-dzaleqsp>Calculated by dividing weighted sum of variable in the sample by population size</p><p class="table-footnote" data-astro-cid-dzaleqsp>Calculated using the population rather than sample size</p><p class="table-footnote" data-astro-cid-dzaleqsp>The match pair t-test of equal predicted and sample means is performed as follows: t = (A-B)/sqrt(C**2/N)+D**2/N) where N = 228344 is the population size.</p></div></figure></section><section id="s5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5. The forecasting accuracy</h3><p data-astro-cid-qsyhzaho>In <a href="#table3">Table 3</a>, we present a matched pairs test of the hypothesis that the weighted mean of different variables in the sample for the year 2000 coincides with the predicted mean for the same variables. The table shows that <i>t</i>-values for these variables lie within the acceptance region with the exception of <i>EDEP<sub>t</sub><sup>BU</sup>, drr<sub>t</sub></i> and <i>dour<sub>t</sub></i>. The most crucial variable in the simulation model is the sum of the corporate taxes that firms pay to the government. The sum of taxes paid by all firms, in 2000, equals 48 026 MSEK. Our simulated tax payment for 2000 is 47 735 MSEK. The difference is 291 MSEK, which indicate an underestimation of the tax payments by 0.6 per cent. <a href="#table3">Table 3</a> reinforces the forecasting accuracy of the firms’ tax payments when we use both the information about the mean and the standard deviation. The matched pairs test indicates that we cannot reject the hypothesis that the weighted mean of tax payments in the sample for the year 2000 coincides with the predicted mean for the same variable.</p><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> The actual and predicted distribution.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th align="center"><i>The actual distribution</i></th>
+<th align="center"><i>The predicted distribution</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mean</td>
+<td>2,02,425.364</td>
+<td>2,20,221.588</td></tr>
+<tr><td>Standard Deviation</td>
+<td>1,60,57,919.6</td>
+<td>2,29,66,100</td></tr>
+<tr><td>Skewness</td>
+<td>51.3292645</td>
+<td>−155.64327</td></tr>
+<tr><td>Curtosis</td>
+<td>3,517.11279</td>
+<td>25,481.8173</td></tr>
+<tr><td>100% Max</td>
+<td>1,38,01,03,929</td>
+<td>39,02,61,309</td></tr>
+<tr><td>90%</td>
+<td>1,76,232</td>
+<td>4,37,049</td></tr>
+<tr><td>75% Q3</td>
+<td>43,411</td>
+<td>2,71,427</td></tr>
+<tr><td>50% Median</td>
+<td>4076</td>
+<td>1,82,961</td></tr>
+<tr><td>25% Q1</td>
+<td>0</td>
+<td>0</td></tr>
+<tr><td>10%</td>
+<td>0</td>
+<td>0</td></tr>
+<tr><td>0% Min</td>
+<td>0</td>
+<td>−3702063348</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>Another way of evaluating the forecasting accuracy is to compare the distribution of predicted tax payments with the actual distribution. This is done by looking at the mean, the standard deviation, the skewness, the kurtosis, and the median of the distributions (<a href="#table4">Table 4</a>). As can be seen, the predicted distribution is more skewed on the left side and more tapering compared to the actual distribution. It is also evident that the median of the predicted distribution is much higher than the median for the actual distributions. Moreover, there are negative simulated final taxes (<i>FTAX</i>) which may be due to the following. To be able to derive firms’ final tax payments (<i>FTAX</i>), we adjust firms’ tax payments (<i>TAX</i>) for their reduction of taxes (<i>ROT</i>) so that <i>FTAX</i> = <i>TAX</i> – <i>ROT</i>. We impose a nonnegative constraint on <i>TAX</i> as follows: <i>TAX<sub>t</sub></i> = τ max[0,(<i>NI<sub>t</sub></i> + <i>TA<sub>t</sub></i>)] where τ is the corporate tax rate, TA<sub>t</sub> (which either can be positive, negative or equal to zero) is the firms’ tax adjustments. However, we do not impose non-negative constraint on <i>FTAX</i> because firms can obtain tax refunds due to a reduction in taxes (<i>ROT</i>). But, we found out that <i>ROT</i> was very difficult to estimate and simulate because of the appearance of data errors and outliers. We have obviously simulated a very high reduction of taxes which in turn generates a negative value for <i>FTAX</i>. One way to overcome this problem is to also impose non-negative constraint on final taxes. Finally, while 10 percent of companies are paying more than around 180 000 kronor, we simulate that 50 percent of the companies will pay more than this amount in final taxes. This evaluation exercise shows that only general tax rule changes should be applied in this model. This has to do with the fact that the method used to estimate different variables is a non-parametric estimation method that gives different weight to different observations. This means that small, medium and large companies are weighted up or down in relation to an average “medium” enterprise. This is why we cannot replicate the distribution of FTAX. One way around this problem is to estimate the behaviour of small, medium and large companies instead of estimating the behaviour of all companies. However, this is very time-consuming. After all, it should be borne in mind that a simulation model must be updated each year as new data bases become available.</p><p data-astro-cid-qsyhzaho>At present, the selection of the sample is a function of corporate final tax payments (<i>FTAX</i>). In other words, the sample is drawn so that the ratio of the weighted sum of the final taxes in the sample and the sum of the final taxes in the total population will come close to unity. For 1999 and 2000 this ratio equals 1.03 and 1.04 respectively. However, for other variables, we are aware that it is very uncertain whether this ratio will come close to unity. Even more important is the fact that the ratio may change significantly between sampling years. For example, precision ratio of investment in machinery and equipment (<i>I<sup>MA</sup></i>) in 1999 is close to 1, indicating a good precision. On the other hand, the ratio is more than three times higher in 2000. A comparison of the precision ratio for <i>I<sup>MA</sup></i> in 1999 and 2000 indicates that the selections of the samples for 1999 and 2000 are not comparable. Another way to interpret these results is that the sample (in the case of variable <i>I<sup>MA</sup></i>) is randomly drawn in 1999 while the selection for 2000 is not a random sample. This makes it almost impossible to evaluate the model in terms of other variables (i.e. the 24 estimated decision variables in the simulation) than final taxes (<i>FTAX</i>).</p><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Simulation results for a proposed tax reduction by 3 per cent, MSEK.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="center"/>
+<th align="center">2000</th>
+<th align="center">2001</th>
+<th align="center">2002</th>
+<th align="center">2003</th>
+<th align="center">2004</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="6"><i>Final taxes paid </i></td>
+</tr>
+<tr>
+<td><i>FTAX</i></td>
+<td>47,735</td>
+<td>42,842</td>
+<td>37,651</td>
+<td>37,888</td>
+<td>38,581</td>
+</tr>
+<tr>
+<td colspan="6"><i>Financial ratio analysis</i></td>
+</tr>
+<tr>
+<td><i>CR</i></td>
+<td>1.456</td>
+<td>0.973</td>
+<td>0.867</td>
+<td>0.855</td>
+<td>0.845</td></tr>
+<tr><td><i>DR</i></td>
+<td>0.599</td>
+<td>0.720</td>
+<td>0.754</td>
+<td>0.754</td>
+<td>0.770</td></tr>
+<tr><td><i>DER</i></td>
+<td>1.492</td>
+<td>20570</td>
+<td>3.064</td>
+<td>3.073</td>
+<td>3.350</td></tr>
+<tr><td><i>ECR</i></td>
+<td>0.401</td>
+<td>0.280</td>
+<td>0.246</td>
+<td>0.246</td>
+<td>0.230</td></tr>
+<tr><td><i>FQ</i></td>
+<td>−0.292</td>
+<td>−0.380</td>
+<td>−0.402</td>
+<td>−0.395</td>
+<td>−0.397</td></tr>
+<tr><td><i>ICR</i></td>
+<td>1.493</td>
+<td>1.634</td>
+<td>1.682</td>
+<td>1.684</td>
+<td>1.693</td></tr>
+<tr><td><i>DI</i></td>
+<td>0.089</td>
+<td>0.071</td>
+<td>0.062</td>
+<td>0.058</td>
+<td>0.055</td></tr>
+<tr><td><i>ROE</i></td>
+<td>0.097</td>
+<td>0.097</td>
+<td>0.108</td>
+<td>0.099</td>
+<td>0.105</td></tr>
+<tr><td><i>ROI</i></td>
+<td>0.080</td>
+<td>0.083</td>
+<td>0.078</td>
+<td>0.074</td>
+<td>0.072</td></tr>
+<tr><td><i>EFFTAX</i></td>
+<td>0.258</td>
+<td>0.171</td>
+<td>0.140</td>
+<td>0.138</td>
+<td>0.137</td></tr>
+<tr><td><i>RROI</i></td>
+<td>0.072</td>
+<td>0.062</td>
+<td>0.058</td>
+<td>0.059</td>
+<td>0.060</td></tr>
+<tr><td><i>ER</i></td>
+<td>0.007</td>
+<td>0.022</td>
+<td>0.020</td>
+<td>0.015</td>
+<td>0.012</td></tr>
+<tr>
+<td colspan="6"><i>The cost of the proposed tax rule</i></td>
+</tr>
+<tr><td>Periodic net cost (<i>FTAXP</i> – <i>FTAXC</i>)</td>
+<td>0</td>
+<td>0</td>
+<td>−5038</td>
+<td>−5092</td>
+<td>5185</td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Notes</i>: See <a href="#app1">Appendix 1</a> for key to variable names</p></div></figure></section><section id="s6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6. Simulation results for a hypothetical corporate tax rate reduction of three percent</h3><p data-astro-cid-qsyhzaho>To illustrate the application of our model, in this section we present a simulation exercise, in which the statutory corporate tax rate is reduced by 3 per cent (from 28 per cent to 25 per cent) from 2002. This is only a hypothetical simulation exercise and does not refer to a government proposal.</p><p data-astro-cid-qsyhzaho>The best way of analysing the implication of the new rules for the corporations is to compare the development of weighted average financial ratios for current tax rules (<a href="#table2">Table 2</a>) with the development of the financial ratios for a hypothetical corporate tax rate reduction of three per cent (<a href="#table5">Table 5</a>). The reduction of the tax rate by 3 per cent implies that the final taxes paid by the firms (FTAX) decreases. The cost of the proposed tax rule is about MSEK 5 038 in 2002, MSEK 5 092 in 2003, and MSEK 5 185 in 2004 (see <a href="#table5">Table 5</a>). The decrease in FTAX implies that the effective tax rate (EFFTAX) decreases from 15.8 per cent to 14.0 per cent in 2002, 15.7 per cent to 13.8 per cent in 2003, and 15.5 per cent to 13.7 per cent in 2004. An interesting observation is that a decrease in the statutory corporate tax rate by 3 per cent only decreases the effective taxes paid by the firms by about 1.8 per cent. It is the effective tax rate which is important for corporate investment and financial decisions. The lesson from this simulation exercise is that if the statutory corporate tax is reduced to stimulate corporate investment, one should bear in mind that the impact may be lower than expected because firms have the opportunity to adjust their utilization of the tax rules, and their financial behaviour. Behavioural factors play an important role in assessing the financial implications of proposals for change in the tax code.</p><p data-astro-cid-qsyhzaho>The current ratio is not affected by the new rule. This means that the new tax rule does not have any impact on firms” ability to meet their short-term obligations, which means that the tax change does not improve the liquidity position of firms. The new tax rule causes a small decrease in the weighted average debt ratio. The tax decrease has a small impact on the extent to which firms use borrowed funds to finance their total assets. The required return on investment decreases because of the tax decrease, and hence the weighted average excess return increases. This indicates that the value of TOBINS q becomes higher, which in its case indicates that the value of the firms compared to the replacement costs of the firms” assets increases. This means that the proposed tax reduction will have a positive impact on corporate investment.</p></section><section id="s7" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7. Simulation results for ahypothetical change in the macro economic developments</h3><p data-astro-cid-qsyhzaho>The simulation results for a hypothetical change in the macro economic developments are summarized in <a href="#table6">Table 6</a>. In this case, we compare the macroeconomic development forecast presented in government’s budget bill for 2000 with the macroeconomic development forecast in the government’s spring fiscal policy bill in 2000 (see <a href="#table7">Table 7</a>). An interesting observation is that the forecasts was not revised so much in the spring bill except for GDP growth for 2001 and 2002 which were revised downwards by 1 and 0.7 percentage points respectively.</p><p data-astro-cid-qsyhzaho>The best way of analysing the implication of the new macro-economic development for firms is to compare the development of weighted average financial ratios for the initially assumed macro economic development (<a href="#table2">Table 2</a>) with the development of the financial ratios for the new macro-economic development (<a href="#table6">Table 6</a>). In the new macroeconomic environment, the government receives higher taxes from firms during 2000. However, from 2001, firms” tax payments to the government (FTAX) decrease. This is a natural consequence of the lower GDP growth forecast in the government’s spring fiscal policy bill in 2000. However, the effective tax rate (EFFTAX) is almost the same even when firms” tax payments to the government decrease during the simulation period.</p><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Simulated results from an alternative macroeconomic development, MSEK.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="center"/>
+<th align="center">2000</th>
+<th align="center">2001</th>
+<th align="center">2002</th>
+<th align="center">2003</th>
+<th align="center">2004</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="6"><i>Final taxes paid</i></td>
+</tr>
+<tr>
+<td><i>FTAX</i></td>
+<td>48,642</td>
+<td>41,072</td>
+<td>39,760</td>
+<td>39,984</td>
+<td>40,807</td>
+</tr>
+<tr>
+<td colspan="6"><i>Financial ratio analysis</i></td>
+</tr>
+<tr><td><i>CR</i></td>
+<td>1.339</td>
+<td>1.064</td>
+<td>0.998</td>
+<td>0.972</td>
+<td>0.933</td>
+</tr>
+<tr>
+<td><i>DR</i></td>
+<td>0.627</td>
+<td>0.700</td>
+<td>0.724</td>
+<td>0.734</td>
+<td>0.762</td>
+</tr>
+<tr>
+<td><i>DER</i></td>
+<td>1.682</td>
+<td>2.337</td>
+<td>2.620</td>
+<td>2.574</td>
+<td>3.196</td></tr>
+<tr><td><i>ECR</i></td>
+<td>0.373</td>
+<td>0.300</td>
+<td>0.276</td>
+<td>0.266</td>
+<td>0.238</td></tr>
+<tr><td><i>FQ</i></td>
+<td>−0.310</td>
+<td>−0.357</td>
+<td>−0.366</td>
+<td>−0.365</td>
+<td>−0.376</td></tr>
+<tr><td><i>ICR</i></td>
+<td>1.511</td>
+<td>1.590</td>
+<td>1.642</td>
+<td>1.652</td>
+<td>1.666</td></tr>
+<tr><td><i>DI</i></td>
+<td>0.086</td>
+<td>0.074</td>
+<td>0.066</td>
+<td>0.062</td>
+<td>0.058</td></tr>
+<tr><td><i>ROE</i></td>
+<td>0.082</td>
+<td>0.082</td>
+<td>0.090</td>
+<td>0.089</td>
+<td>0.101</td></tr>
+<tr><td><i>ROI</i></td>
+<td>0.081</td>
+<td>0.082</td>
+<td>0.078</td>
+<td>0.075</td>
+<td>0.073</td></tr>
+<tr><td><i>EFFTAX</i></td>
+<td>0.253</td>
+<td>0.178</td>
+<td>0.160</td>
+<td>0.156</td>
+<td>0.153</td></tr>
+<tr><td><i>RROI</i></td>
+<td>0.072</td>
+<td>0.063</td>
+<td>0.062</td>
+<td>0.062</td>
+<td>0.061</td></tr>
+<tr><td><i>ER</i></td>
+<td>0.009</td>
+<td>0.109</td>
+<td>0.016</td>
+<td>0.013</td>
+<td>0.012</td></tr>
+<tr><td colspan="6"><i>The cost of the proposed tax rule</i></td></tr>
+<tr><td>Periodic net cost (<i>FTAXP</i> – <i>FTAXC</i>)</td>
+<td>907</td>
+<td>−1770</td>
+<td>−2929</td>
+<td>−2996</td>
+<td>−2959</td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Notes</i>: See <a href="#app1">Appendix 1</a> for key to variable names</p></div></figure><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Macroeconomic forecast in the government’s budget bill and spring fiscal policy bill (in parenthesis), SEK billion, percentage change, and percent.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="center"/>
+<th align="center">1999</th>
+<th align="center">2000</th>
+<th align="center">2001</th>
+<th align="center">2002</th>
+<th align="center">2003</th>
+<th align="center">2004</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GDP</td>
+<td>2010 (2010)</td>
+<td>2083 (2098)</td>
+<td>2118 (2115)</td>
+<td>2169 (2151)</td>
+<td>2225 (2207)</td>
+<td>2277 (2262)</td>
+</tr>
+<tr>
+<td>dGDP</td>
+<td>79 (79)</td>
+<td>72 (88)</td>
+<td>35 (16)</td>
+<td>51 (37)</td>
+<td>56 (55)</td>
+<td>51 (56)</td>
+</tr>
+<tr>
+<td>dlGDP</td>
+<td/>
+<td>3.60 (4.38)</td>
+<td>1.70 (0.77)</td>
+<td>2.40 (1.73)</td>
+<td>2.60 (2.58)</td>
+<td>2.30 (2.52)</td>
+</tr>
+<tr>
+<td>r10<a href="#tfn5">*</a></td>
+<td>4.83 (4.83)</td>
+<td>5.40 (5.37)</td>
+<td>5.20 (5.10)</td>
+<td>5.20 (5.00)</td>
+<td>5.20 (5.11)</td>
+<td>5.20 (5.20)</td>
+</tr>
+<tr>
+<td>Inflation</td>
+<td>1.20 (1.20)</td>
+<td>1.40 (1.30)</td>
+<td>2.70 (2.60)</td>
+<td>1.80 (2.10)</td>
+<td>2.00 (2.20)</td>
+<td>2.00 (2.00)</td>
+</tr>
+<tr>
+<td>Real r10</td>
+<td>3.59 (3.59)</td>
+<td>3.94 (4.02)</td>
+<td>2.43 (2.44)</td>
+<td>3.34 (2.84)</td>
+<td>3.14 (2.85)</td>
+<td>3.14 (3.14)</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Notes</i>: See <a href="#app1">Appendix 1</a> for key to variable names;</p><p class="table-footnote" data-astro-cid-dzaleqsp>r10 is the nominal interest rate on a government bond with a maturity of 10 years.</p></div></figure><p data-astro-cid-qsyhzaho>The current ratio decreases, which means that the new macro economic development degrades firms” abilities to meet their short-term obligations. This means that the new macro economic development impairs the liquidity position of firms. The new macro economic development causes a small decrease in the debt ratio which indicates that the new macro economic development has a small impact on the extent to which firms use borrowed funds to finance their total assets.</p></section></div></details><details id="s8" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Conclusions</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The basic idea behind the simulation model is to combine the dynamic behaviour of the corporate system with a statistical model that captures the development and the interrelationships between the firms’ different decision variables. The dynamic behaviour of the corporate system is captured by several difference equations that identify how different variables in the firms’ balance sheets change over time using the information in the firms’ three basic financial statements: the balance sheet, the income statement, and the statement of changes in financial conditions. The firms’ decisions regarding the flow variables are modelled in a statistical module. From the dynamic optimization problem we derive the relationships between these flow variables. These relationships are then estimated using different robust estimation methods. The estimated functions from the statistical module are then inserted into the difference equation system. The difference equation system together with the estimated relationships is finally solved numerically to be able to simulate new financial statements. Tests indicate that the model’s ability to predict firms’ final tax payments as well as other variables is satisfactory.</p><p data-astro-cid-qsyhzaho>We pointed out that estimation of behavioural factors plays an important role in assessing the financial implications of proposals for a change in the tax code. Moreover, we also pointed out the importance of using robust estimation methods. The reason for using robust estimations methods is because microdata on firms often reveal that influential observations are present. The estimation method that is used to estimate firms’ behaviour regarding different decisions variables must be able to deal with this fact. OLS regression models are quite sensitive to influential observations, which may be a consequence of heavy-tailed distributions. The estimation results using robust estimation methods revealed that firms’ utilization of different tax allowances as well as different accounting constraints have an important impact on firms’ investment and financial behaviour.</p><p data-astro-cid-qsyhzaho>The lesson from this simulation exercise is that if the statutory corporate tax is reduced to stimulate corporate investment, one should bear in mind that the impact may be lower than expected because firms have the opportunity to adjust their utilization of the tax rules, and their financial behaviour. Behavioural factors play an important role in assessing the financial implications of proposals for changes in the tax code.</p><p data-astro-cid-qsyhzaho>This is also confirmed by the simulation results which indicate that the cost of a proposed corporate tax rate reduction increase over time. The simulation results also indicate that a statutory corporate tax rate reduction does not decrease the effective corporate tax rate equally. This is mainly because firms have the opportunity to adjust their utilization of the tax rules and their financial behaviour to the new tax rules. Moreover, the simulation results also indicate that a corporate tax change has a significant impact on the extent to which firms use borrowed funds to finance their total assets, the capital contributed by creditors compared with the capital contributed by owners, and the market’s prediction of the value of the returns of additional investment.</p><p data-astro-cid-qsyhzaho>Finally, the simulation model gives us the opportunity to examine the impact of combined changes of the macroeconomic variables. The simulation results indicate that macroeconomic developments have major impact on corporate taxes paid by the firms. However, it is not obvious that the effective tax rate for these firms will change dramatically because of the changed macro conditions. This is due to the fact that firms have the opportunity to adjust their utilization of the tax rules and their financial behaviour and thereby adjust their effective tax rate.</p></div></details></div><details id="app1" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Variable listing</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><figure id="tableA1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>A1.1.</strong><span data-astro-cid-dzaleqsp> Balance sheet and income statement variables.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Variable name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><i>K</i></td>
+<td>Assets</td>
+</tr>
+<tr>
+<td><i>CA</i></td>
+<td>Current Assets</td>
+</tr>
+<tr>
+<td><i>FA</i></td>
+<td>Fixed Assets</td>
+</tr>
+<tr>
+<td><i>MA</i></td>
+<td>Machinery and Equipment</td>
+</tr>
+<tr>
+<td><i>BU</i></td>
+<td>Buildings</td>
+</tr>
+<tr>
+<td><i>OFA</i></td>
+<td>Other Fixed Assets</td>
+</tr>
+<tr>
+<td><i>CMA</i></td>
+<td>The Taxable Residual Value of Machinery and Equipment</td>
+</tr>
+<tr>
+<td><i>WC</i></td>
+<td>Working Capital</td>
+</tr>
+<tr>
+<td><i>B</i></td>
+<td>Liabilities</td>
+</tr>
+<tr>
+<td><i>CL</i></td>
+<td>Current Liabilities</td>
+</tr>
+<tr>
+<td><i>LL</i></td>
+<td>Long-Term Liabilities</td>
+</tr>
+<tr>
+<td><i>UR</i></td>
+<td>Untaxed Reserves</td>
+</tr>
+<tr>
+<td><i>ASD</i></td>
+<td>Accumulated Supplementary Depreciation</td>
+</tr>
+<tr>
+<td><i>OUR</i></td>
+<td>Other Untaxed Reserves</td>
+</tr>
+<tr>
+<td><i>PF<sub>t</sub><sup>t-i</sup></i></td>
+<td>Remaining Periodical Reserves From t-i in period t</td>
+</tr>
+<tr>
+<td><i>EC</i></td>
+<td>Equity Capital</td>
+</tr>
+<tr>
+<td><i>SC</i></td>
+<td>Share Capital</td>
+</tr>
+<tr>
+<td><i>RR</i></td>
+<td>Restricted Reserves</td>
+</tr>
+<tr>
+<td><i>URE</i></td>
+<td>Unrestricted Equity</td>
+</tr>
+<tr>
+<td><i>OIBD</i></td>
+<td>Operating Income Before Depreciation</td>
+</tr>
+<tr>
+<td><i>EDEP<sup>MA</sup></i></td>
+<td>Economic Depreciation of Machinery and Equipment</td>
+</tr>
+<tr>
+<td><i>EDEP<sup>BU</sup></i></td>
+<td>Economic Depreciation of Buildings</td></tr>
+<tr>
+<td><i>OIAD</i></td>
+<td>Operating Income after Economic Depreciation</td></tr>
+<tr>
+<td><i>FI</i></td>
+<td>Financial Income</td></tr>
+<tr>
+<td><i>FI</i></td>
+<td>Financial Income</td></tr>
+<tr>
+<td><i>FE</i></td>
+<td>Financial Expenses</td></tr>
+<tr>
+<td><i>EBA</i></td>
+<td>Earnings Before Allocations</td></tr>
+<tr>
+<td><i>TDEP<sup>MA</sup></i></td>
+<td>Tax Depreciation of Machinery and Equipment</td></tr>
+<tr>
+<td><i>OA</i></td>
+<td>Other Allocations</td></tr>
+<tr>
+<td><i>zpf</i></td>
+<td>Change in Periodical Reserves</td></tr>
+<tr>
+<td><i>p<sup>allo</sup></i></td>
+<td>Allocations to Periodical Reserves</td></tr>
+<tr>
+<td><i>EBT</i></td>
+<td>Earnings Before Taxes</td></tr>
+<tr>
+<td><i>TL</i></td>
+<td>Tax Liability</td></tr>
+<tr>
+<td><i>NI</i></td>
+<td>Net Income</td></tr>
+<tr>
+<td><i>TA</i></td>
+<td>Tax Adjustments</td></tr>
+<tr>
+<td><i>OTA</i></td>
+<td>Other Tax Adjustments</td></tr>
+<tr>
+<td><i>TDEP<sup>BU</sup></i></td>
+<td>Tax Depreciation of Buildings</td></tr>
+<tr>
+<td><i>OLt<sup>t-1</sup></i></td>
+<td>Losses From Previous Years</td></tr>
+<tr>
+<td><i>TAX</i></td>
+<td>Calculated Tax Payments</td></tr>
+<tr>
+<td><i>ROT</i></td>
+<td>Reduction Of Taxes</td></tr>
+<tr>
+<td><i>FTAX</i></td>
+<td>Final Tax Payments</td></tr>
+<tr>
+<td><i>OL<sub>t</sub></i></td>
+<td>The Stock of Old Losses</td></tr>
+<tr>
+<td><i>NBI</i></td>
+<td>Net Business Income</td></tr>
+</tbody>
+</table></div></figure><figure id="tableA1-2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>A1.2.</strong><span data-astro-cid-dzaleqsp> Flow variables, financial ratios, legal constraints, and parameters.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Symbol</th>
+<th>Variable name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><i>I<sub>MA</sub></i></td>
+<td>Net Investment in Machinery and Equipment</td>
+</tr>
+<tr>
+<td><i>I<sub>Bu</sub></i></td>
+<td>Net Investment in Buildings</td>
+</tr>
+<tr>
+<td><i>dca</i></td>
+<td>Net Change in Current Assets</td>
+</tr>
+<tr>
+<td><i>dofa</i></td>
+<td>Net Change in Other Fixed Assets</td>
+</tr>
+<tr>
+<td><i>dcl</i></td>
+<td>Net Change in Current Liabilities</td>
+</tr>
+<tr>
+<td><i>dll</i></td>
+<td>Net Change in Long-Term Liabilities</td>
+</tr>
+<tr>
+<td><i>dour</i></td>
+<td>Net Change in Other Untaxed Reserves</td>
+</tr>
+<tr>
+<td><i>dsc</i></td>
+<td>Net Change in Share Capital</td>
+</tr>
+<tr>
+<td><i>drr</i></td>
+<td>Net Changes in Restricted Reserves</td>
+</tr>
+<tr>
+<td><i>dURE</i></td>
+<td>Net Change in Unrestricted Equity (Retained Earnings)</td>
+</tr>
+<tr>
+<td><i>cashfl</i></td>
+<td>Cash flow</td>
+</tr>
+<tr>
+<td><i>S<sup>MA</sup></i></td>
+<td>Sales of Machinery and Equipment</td>
+</tr>
+<tr>
+<td><i>IG</i></td>
+<td>Investment Grant</td>
+</tr>
+<tr>
+<td><i>DIV</i></td>
+<td>Dividends Paid to Shareholders</td>
+</tr>
+<tr>
+<td><i>GC</i></td>
+<td>Net Group Contribution</td>
+</tr>
+<tr>
+<td><i>CR</i></td>
+<td>The Current Ratio</td>
+</tr>
+<tr>
+<td><i>DR</i></td>
+<td>The Debt Ratio</td>
+</tr>
+<tr>
+<td><i>DER</i></td>
+<td>The Debt/Equity Ratio</td>
+</tr>
+<tr>
+<td><i>ECR</i></td>
+<td>The Equity Capital Ratio</td>
+</tr>
+<tr>
+<td><i>FQ</i></td>
+<td>The Financial Q</td>
+</tr>
+<tr>
+<td><i>ICR</i></td>
+<td>The Interest Coverage Ratio</td>
+</tr>
+<tr>
+<td><i>ROA</i></td>
+<td>Return on Total Assets</td>
+</tr>
+<tr>
+<td><i>ROE</i></td>
+<td>Return on Equity</td>
+</tr>
+<tr>
+<td><i>DI</i></td>
+<td>Average Debt Interest</td></tr>
+<tr>
+<td><i>ROI</i></td>
+<td>Return on Investment</td></tr>
+<tr>
+<td><i>RROI</i></td>
+<td>Required Return on Investment</td></tr>
+<tr>
+<td><i>τ<sup>eff</sup></i></td>
+<td>Effective Corporate Tax Rate</td></tr>
+<tr>
+<td><i>ER</i></td>
+<td>Excess Return on Investment</td></tr>
+<tr>
+<td><i>TDDB<sup>MA</sup></i></td>
+<td>Tax Depreciation (Declining Balance Method)</td></tr>
+<tr>
+<td><i>TDSL<sup>MA</sup></i></td>
+<td>Tax Depreciation (<span class="underline">Straight-Line Method</span>)</td></tr>
+<tr>
+<td><i>TDRV<sup>MA</sup></i></td>
+<td>Tax Depreciation (<span class="underline">Rest Value Method</span>)</td></tr>
+<tr>
+<td><i>MTDM</i></td>
+<td>Maximum Amount of Tax Depreciation</td></tr>
+<tr>
+<td><i>dmtdm</i></td>
+<td>Difference Between MTDM and TDEP<sup>MA</sup></td></tr>
+<tr>
+<td><i>ddmtdm</i></td>
+<td>Change in the Utilization of Depreciation Allowances</td></tr>
+<tr>
+<td><i>MPA</i></td>
+<td>Maximum Amount of Allocations to Periodical Reserves</td></tr>
+<tr>
+<td><i>dmpa</i></td>
+<td>Difference Between <i>MPA</i> and <i>p<sup>allo</sup></i></td></tr>
+<tr>
+<td><i>ddmpa</i></td>
+<td>Change in the Utilization of Periodical Reserves</td></tr>
+<tr>
+<td><i>dcashfl</i></td>
+<td>The Change in Cash Flow</td></tr>
+<tr>
+<td><i>mcash</i></td>
+<td>Maximum Dividends</td></tr>
+<tr>
+<td><i>dmcash</i></td>
+<td>The Difference Between <i>mcash</i> and <i>cashfl</i></td></tr>
+<tr>
+<td><i>ddmcash</i></td>
+<td>Change of Dividend Policy Closer to the Legal Constraint</td></tr>
+<tr>
+<td><i>δ<sup>DB</sup></i></td>
+<td>The Depreciation Rate (Declining Balance Method)</td></tr>
+<tr>
+<td><i>δ<sup>S</sup></i></td>
+<td>The Depreciation Rate (Straight-Line Method)</td></tr>
+<tr>
+<td><i>δ<sup>RV</sup></i></td>
+<td>The Depreciation Rate (Rest Value Method)</td></tr>
+<tr>
+<td><i>M</i></td>
+<td>Number of Months in the Firms’ Income Year</td></tr>
+<tr>
+<td><i>τ</i></td>
+<td>The Statutory Corporate Tax Rate</td>
+</tr>
+</tbody>
+</table></div></figure></div></details><details id="app2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">The Framework of the Simulation Model</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In this appendix, we present the framework of the simulation model within a simple model with two assets. In the balance sheet the value of the firms’ assets must be equal to the firms’ liabilities, so that</p><div id="eqnA2-1" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.1)</span><math><mrow><mi>C</mi><msub><mi>A</mi><mi>t</mi></msub><mo>+</mo><mi>M</mi><msub><mi>A</mi><mi>t</mi></msub><mo>=</mo><mi>U</mi><mi>R</mi><msub><mi>E</mi><mi>t</mi></msub></mrow></math></div><p data-astro-cid-qsyhzaho>where <i>CA<sub>t</sub></i> is current assets, <i>MA<sub>t</sub></i> is machinery and equipment, and <i>URE<sub>t</sub></i> is the firms’ unrestricted equity. These are the stock (state) variables of this model. The income statement includes only the operating income before depreciation (<i>OIBD<sub>t</sub></i>). This implies that firm’s earnings before taxes coincides with the operating income before depreciation: <i>EBT<sub>t</sub></i> = <i>OIBD<sub>t</sub></i>. Firms pay corporate taxes based on their earnings before taxes: <i>TAX<sub>t</sub></i> = τ <i>EBT<sub>t</sub></i> where τ is the corporate tax rate. We can thus write net business income as <i>NBI<sub>t</sub> = EBT<sub>t</sub></i> – <i>TAX<sub>t</sub></i> = (<i>1-τ)OIBD<sub>t</sub></i>. Net business income increases unrestricted equity. However, unrestricted equity decreases also because of the maximum amount available for dividends in the current period (the so-called net cash flow, <i>cashfl<sub>t</sub></i>). Thus, unrestricted equity in period <i>t</i> can be derived from</p><div id="eqnA2-2" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.2)</span><math><mrow><mi>U</mi><mi>R</mi><msub><mi>E</mi><mi>t</mi></msub><mo>=</mo><mi>U</mi><mi>R</mi><msub><mi>E</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><mi>N</mi><mi>B</mi><msub><mi>I</mi><mi>t</mi></msub><mo>−</mo><mi>c</mi><mi>a</mi><mi>s</mi><mi>h</mi><mi>f</mi><msub><mi>l</mi><mi>t</mi></msub><mo>.</mo></mrow></math></div><p data-astro-cid-qsyhzaho>The level of current assets at the end of time <i>t</i> equals the level of current assets at the end of time <i>t-1 plus</i> the net change in current assets</p><div id="eqnA2-3" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.3)</span><math><mrow><mi>C</mi><msub><mi>A</mi><mi>t</mi></msub><mo>=</mo><mi>C</mi><msub><mi>A</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><mi>d</mi><mi>c</mi><msub><mi>a</mi><mi>t</mi></msub></mrow></math></div><p data-astro-cid-qsyhzaho>The level of the firm’s machinery and equipment at the end of time <i>t</i> equals the level of machinery and equipment at the end of time <i>t-1 plus</i> the net investment in new machinery and equipment</p><div id="eqnA2-4" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.4)</span><math><mrow><mi>M</mi><msub><mi>A</mi><mi>t</mi></msub><mo>=</mo><mi>M</mi><msub><mi>A</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msubsup><mi>I</mi><mi>t</mi><mrow><mtext>MA</mtext></mrow></msubsup></mrow></math></div><p data-astro-cid-qsyhzaho>Inserting the difference equations for <i>URE<sub>t</sub>, CA<sub>t</sub></i> and <i>MA<sub>t</sub></i> (from (<a href="#eqnA2-2">A2.2</a>)–(<a href="#eqnA2-4">A2.4</a>)) into (<a href="#eqnA2-1">A2.1</a>) we obtain the cash flow constraint</p><div id="eqnA2-5" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.5)</span><math><mrow><mi>c</mi><mi>a</mi><mi>s</mi><mi>h</mi><mi>f</mi><msub><mi>l</mi><mi>t</mi></msub><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false">)</mo><mi>O</mi><mi>I</mi><mi>B</mi><msub><mi>D</mi><mi>t</mi></msub><mo>−</mo><msubsup><mi>I</mi><mi>t</mi><mrow><mi>MA</mi></mrow></msubsup><mo>−</mo><mi>d</mi><mi>c</mi><msub><mi>a</mi><mi>t</mi></msub></mrow></math></div><p data-astro-cid-qsyhzaho>Equations (<a href="#eqnA2-2">A2.2</a>)–(<a href="#eqnA2-5">A2.5</a>) are the major equations in our simulation model. We use equations (<a href="#eqnA2-2">A2.2</a>)–(<a href="#eqnA2-4">A2.4</a>) to simulate the values of different balance sheet items in the next period, while equation (<a href="#eqnA2-5">A2.5</a>) makes sure that we achieve a balance between the asset and the liability sides of the balance sheet during the simulation. As shown, we need initial values for <math id="m6"><mrow><msubsup><mi>I</mi><mi>t</mi><mrow><mtext>MA</mtext></mrow></msubsup></mrow></math>, <i>dca<sub>t</sub></i>, and OIBD<sub>t</sub> to be able to solve the difference equations system in (<a href="#eqnA2-2">A2.2</a>)–(<a href="#eqnA2-5">A2.5</a>). These initial values are obtained by estimating these variables.</p><section id="app2-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">A2.1 The dynamic optimization model</h3><p data-astro-cid-qsyhzaho>Let us begin by defining the value of the firms at time <i>t</i> as</p><div id="uneqnA1" class="equation" data-astro-cid-qsyhzaho><math><mrow><mtext>V(</mtext><mi>t</mi><mtext>)</mtext><mo>=</mo><mstyle displaystyle="true"><mrow><munderover><mo>∫</mo><mrow><mi>u</mi><mo>=</mo><mi>t</mi></mrow><mi>∞</mi></munderover><mrow><mi>c</mi><mi>a</mi><mi>s</mi><mi>h</mi><mi>f</mi><mi>l</mi><mtext> </mtext><mtext> </mtext><mtext> </mtext><msup><mi>e</mi><mrow><mo>−</mo><mi>i</mi><mo stretchy="false">(</mo><mi>u</mi><mo>−</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></msup><mi>d</mi><mi>u</mi></mrow></mrow></mstyle></mrow></math></div><p data-astro-cid-qsyhzaho>where <i>i</i> is the shareholders’ return on holding bonds and <i>cashfl</i> = (1 <i>−τ</i>)<i>OIBD</i> – <i>I<sup>MA</sup></i> – <i>dca</i>. We define operating income before depreciation as:</p><div id="uneqnA2" class="equation" data-astro-cid-qsyhzaho><math><mrow><mi>O</mi><mi>I</mi><mi>B</mi><mi>D</mi><mo>=</mo><mi>f</mi><mo stretchy="false">(</mo><mi>M</mi><mi>A</mi><mo>,</mo><mi>C</mi><mi>A</mi><mo stretchy="false">)</mo></mrow></math></div><p data-astro-cid-qsyhzaho>where <i>f</i>(<i>MA,CA</i>) is the production function with <i>f<sub>MA</sub></i>&gt;0, <i>f<sub>CA</sub></i>&gt;0, <i>f<sub>MAMA</sub></i>&lt; 0 and <i>f<sub>CACA</sub></i>&lt;0. The firms’ production function is equal to the firms’ revenue because the product price is assumed to be equal to one. As we mentioned in the previous section the changes in current assets and machinery and equipment are</p><div id="uneqnA3" class="equation" data-astro-cid-qsyhzaho><math><mrow><mover><mrow><mi>M</mi><mi>A</mi></mrow><mo>•</mo></mover><mo>=</mo><msup><mi>I</mi><mrow><mi>M</mi><mi>A</mi></mrow></msup><mtext> </mtext><mtext> </mtext><mtext>and</mtext><mtext> </mtext><mover><mrow><mi>C</mi><mi>A</mi></mrow><mo>•</mo></mover><mo>=</mo><mi>d</mi><mi>c</mi><mi>a</mi><mo>.</mo><mtext> </mtext></mrow></math></div><p data-astro-cid-qsyhzaho>We also impose non-negativity constraints on each and every balance sheet item:</p><div id="uneqnA4" class="equation" data-astro-cid-qsyhzaho><math><mrow><mi>M</mi><mi>A</mi><mo>≥</mo><mn>0</mn><mtext>​</mtext><mtext> </mtext><mtext> </mtext><mtext>and</mtext><mtext> </mtext><mtext> </mtext><mi>C</mi><mi>A</mi><mo>≥</mo><mn>0.</mn></mrow></math></div><p data-astro-cid-qsyhzaho>Further, we assume that the interest rate is exogenously given. Firms will choose the time path of <i>I<sup>MA</sup></i> and <i>dca</i> so that the market value of their shares is maximized. The current-value Hamiltonian for this problem is:</p><div id="uneqnA5" class="equation" data-astro-cid-qsyhzaho><math><mrow><mi>F</mi><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false">)</mo><mi>f</mi><mo stretchy="false">(</mo><mi>M</mi><mi>A</mi><mo>,</mo><mtext> </mtext><mi>C</mi><mi>A</mi><mo stretchy="false">)</mo><mo>−</mo><msup><mi>I</mi><mrow><mi>M</mi><mi>A</mi></mrow></msup><mo>−</mo><mi>d</mi><mi>c</mi><mi>a</mi><mo>+</mo><msub><mi>μ</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><msup><mi>I</mi><mrow><mi>M</mi><mi>A</mi></mrow></msup><mo>+</mo><msub><mi>μ</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mi>d</mi><mi>c</mi><mi>a</mi><mo>+</mo><msub><mi>n</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mi>M</mi><mi>A</mi><mo>+</mo><msub><mi>n</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mi>C</mi><mi>A</mi></mrow></math></div><p data-astro-cid-qsyhzaho>where <i>μ<sub>MA</sub></i> and <i>μ<sub>CA</sub></i> are the shadow prices or co-state variables of the stock of machinery and equipment and the stock of current assets. <i>n<sub>MA</sub></i> and <i>n<sub>CA</sub></i> are the Khun-Tucker shadow-price of constraints MA≥0 and CA≥0. The first order necessary conditions are:</p><div id="eqnA2-6" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.6)</span><math><msup><mi>I</mi><mrow><mi>M</mi><mi>A</mi></mrow></msup><mo>:</mo><mo>−</mo><mn>1</mn><mo>+</mo><msub><mi>μ</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mo>=</mo><mn>0</mn></math></div><div id="eqnA2-7" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.7)</span><math><mi>d</mi><mi>c</mi><mi>a</mi><mo>:</mo><mo>−</mo><mn>1</mn><mo>+</mo><msub><mi>μ</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mo>=</mo><mn>0</mn></math></div><div id="eqnA2-8" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.8)</span><math><mi>M</mi><mi>A</mi><mo>:</mo><mover><mrow><msub><mi>μ</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub></mrow><mo>•</mo></mover><mo>=</mo><mi>i</mi><msub><mi>μ</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mo>−</mo><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false">)</mo><msub><mi>f</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mo>+</mo><msub><mi>n</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mo stretchy="false">]</mo></math></div><div id="eqnA2-9" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.9)</span><math><mi>C</mi><mi>A</mi><mo>:</mo><mover><mrow><msub><mi>μ</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub></mrow><mo>•</mo></mover><mo>=</mo><mi>i</mi><msub><mi>μ</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mo>−</mo><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false">)</mo><msub><mi>f</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mo>+</mo><msub><mi>n</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mo stretchy="false">]</mo></math></div><div id="eqnA2-10" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.10)</span><math><msub><mi>n</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mo>:</mo><mfrac><mrow><mi>δ</mi><mi>F</mi></mrow><mrow><mi>δ</mi><msub><mi>n</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub></mrow></mfrac><mo>≥</mo><mn>0</mn><mo>,</mo><mtext> </mtext><mtext> </mtext><mtext> </mtext><msub><mi>n</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mo>≥</mo><mn>0</mn><mo>,</mo><mtext> </mtext><mtext> </mtext><msub><mi>n</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mfrac><mrow><mi>δ</mi><mi>F</mi></mrow><mrow><mi>δ</mi><msub><mi>n</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub></mrow></mfrac><mo>=</mo><mn>0</mn></math></div><div id="eqnA2-11" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.11)</span><math><msub><mi>n</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mo>:</mo><mfrac><mrow><mi>δ</mi><mi>F</mi></mrow><mrow><mi>δ</mi><msub><mi>n</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub></mrow></mfrac><mo>≥</mo><mn>0</mn><mo>,</mo><mtext> </mtext><mtext> </mtext><mtext> </mtext><msub><mi>n</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mo>≥</mo><mn>0</mn><mo>,</mo><mtext> </mtext><mtext> </mtext><msub><mi>n</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mfrac><mrow><mi>δ</mi><mi>F</mi></mrow><mrow><mi>δ</mi><msub><mi>n</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub></mrow></mfrac><mo>=</mo><mn>0</mn></math></div><p data-astro-cid-qsyhzaho>Stationary constraints</p><div id="uneqnA6" class="equation" data-astro-cid-qsyhzaho><math><mrow><mover><mrow><msub><mi>μ</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub></mrow><mo>•</mo></mover><mo>=</mo><mover><mrow><msub><mi>μ</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow><mo>•</mo></mover></mrow></math></div><p data-astro-cid-qsyhzaho>together with (<a href="#eqnA2-8">A2.8</a>) and (<a href="#eqnA2-9">A2.9</a>) give the values of <i>μ<sup>MA</sup></i> and <i>μ<sub>CA</sub></i>:</p><div id="uneqnA7" class="equation" data-astro-cid-qsyhzaho><math><msub><mi>μ</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mi>i</mi></mfrac><mo stretchy="true">[</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false">)</mo><msub><mi>f</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mo>+</mo><msub><mi>n</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mo stretchy="true">]</mo></math></div><p data-astro-cid-qsyhzaho>and</p><div id="uneqnA8" class="equation" data-astro-cid-qsyhzaho><math><msub><mi>μ</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mo>=</mo><mfrac><mn>1</mn><mi>i</mi></mfrac><mo stretchy="false">[</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false">)</mo><msub><mi>f</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mo>+</mo><msub><mi>n</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mo stretchy="false">]</mo><mo>.</mo></math></div><p data-astro-cid-qsyhzaho>Using the steady state solutions for <i>μ<sub>MA</sub></i> and <i>μ<sub>CA</sub></i>, the first order conditions in steady state become</p><div id="eqnA2-12" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.12)</span><math><msup><mi>I</mi><mrow><mi>M</mi><mi>A</mi></mrow></msup><mo>:</mo><mo>−</mo><mi>i</mi><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false">)</mo><msub><mi>f</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mo>+</mo><msub><mi>n</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mo>=</mo><mn>0</mn></math></div><div id="eqnA2-13" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.13)</span><math><mi>d</mi><mi>c</mi><mi>a</mi><mo>:</mo><mo>−</mo><mi>i</mi><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false">)</mo><msub><mi>f</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mo>+</mo><msub><mi>n</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mo>=</mo><mn>0</mn></math></div><div id="eqnA2-14" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.14)</span><math><msub><mi>n</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mo>:</mo><mtext> </mtext><mtext> </mtext><mtext> </mtext><msub><mi>n</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mi>M</mi><mi>A</mi><mo>=</mo><mn>0</mn></math></div><div id="eqnA2-15" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.15)</span><math><msub><mi>n</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mo>:</mo><mtext> </mtext><mtext> </mtext><mtext> </mtext><msub><mi>n</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mi>C</mi><mi>A</mi><mo>=</mo><mn>0</mn></math></div><p data-astro-cid-qsyhzaho>The rate of change in the equilibrium values of the endogenous variable are found by total differentiating the first order conditions in equilibrium (<a href="#eqnA2-12">A2.12</a>)–(<a href="#eqnA2-15">A2.15</a>). After some simple derivations we obtain the following conditions</p><div id="eqnA2-16" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.16)</span><math><msubsup><mi>β</mi><mn>1</mn><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mi>d</mi><mi>C</mi><mi>A</mi><mo>+</mo><msubsup><mi>β</mi><mn>2</mn><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mi>d</mi><mi>M</mi><mi>A</mi><mo>=</mo><msubsup><mi>β</mi><mn>0</mn><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></math></div><div id="eqnA2-17" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.17)</span><math><msubsup><mi>β</mi><mn>1</mn><mrow><mi>C</mi><mi>A</mi></mrow></msubsup><mi>d</mi><mi>C</mi><mi>A</mi><mo>+</mo><msubsup><mi>β</mi><mn>2</mn><mrow><mi>C</mi><mi>A</mi></mrow></msubsup><mi>d</mi><mi>M</mi><mi>A</mi><mo>=</mo><msubsup><mi>β</mi><mn>0</mn><mrow><mi>C</mi><mi>A</mi></mrow></msubsup></math></div><p data-astro-cid-qsyhzaho>where</p><div id="uneqnA9" class="equation" data-astro-cid-qsyhzaho><math><mrow><msubsup><mi>β</mi><mn>0</mn><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>=</mo><mi>d</mi><mi>i</mi><mo>+</mo><msub><mi>f</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mi>d</mi><mi>τ</mi><mo>,</mo></mrow></math></div><div id="uneqnA10" class="equation" data-astro-cid-qsyhzaho><math><msubsup><mi>β</mi><mn>0</mn><mrow><mi>C</mi><mi>A</mi></mrow></msubsup><mo>=</mo><mi>d</mi><mi>i</mi><mo>+</mo><msub><mi>f</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mi>d</mi><mi>τ</mi><mo>,</mo></math></div><div id="uneqnA11" class="equation" data-astro-cid-qsyhzaho><math><msubsup><mi>β</mi><mn>1</mn><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false">)</mo><msub><mi>f</mi><mrow><mi>M</mi><mi>A</mi><mi>C</mi><mi>A</mi></mrow></msub><mo>,</mo></math></div><div id="uneqnA12" class="equation" data-astro-cid-qsyhzaho><math><msubsup><mi>β</mi><mn>2</mn><mrow><mi>C</mi><mi>A</mi></mrow></msubsup><mo>=</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false">)</mo><msub><mi>f</mi><mrow><mi>C</mi><mi>A</mi><mi>M</mi><mi>A</mi></mrow></msub><mo>,</mo></math></div><div id="uneqnA13" class="equation" data-astro-cid-qsyhzaho><math><msubsup><mi>β</mi><mn>2</mn><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>=</mo><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false">)</mo><msub><mi>f</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mo>−</mo><mo stretchy="false">(</mo><msub><mi>n</mi><mrow><mi>M</mi><mi>A</mi></mrow></msub><mo>/</mo><mi>M</mi><mi>A</mi><mo stretchy="false">)</mo><mo stretchy="false">]</mo><mo>,</mo></math></div><p data-astro-cid-qsyhzaho>and <math id="m32"><mrow><msubsup><mi>β</mi><mn>1</mn><mrow><mi>C</mi><mi>A</mi></mrow></msubsup><mo>=</mo><mo stretchy="false">[</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false">)</mo><msub><mi>f</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mo>−</mo><mo stretchy="false">(</mo><msub><mi>n</mi><mrow><mi>C</mi><mi>A</mi></mrow></msub><mo>/</mo><mi>C</mi><mi>A</mi><mo stretchy="false">)</mo><mo stretchy="false">]</mo></mrow></math> are evaluated in the initial values and are therefore constants.</p><p data-astro-cid-qsyhzaho>Let us now solve (<a href="#eqnA2-16">A2.16</a>) for <i>dMA</i> = <i>I<sup>MA</sup></i> and (<a href="#eqnA2-17">A2.17</a>) for <i>dCA</i>. This yields</p><div id="uneqnA14" class="equation" data-astro-cid-qsyhzaho><math><mtable columnalign="left"><mtr><mtd><msup><mi>I</mi><mrow><mi>M</mi><mi>A</mi></mrow></msup><mo>=</mo><mo stretchy="false">(</mo><msubsup><mi>β</mi><mn>0</mn><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>/</mo><msubsup><mi>β</mi><mn>2</mn><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><msubsup><mi>β</mi><mn>1</mn><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>/</mo><msubsup><mi>β</mi><mn>2</mn><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo stretchy="false">)</mo><mi>d</mi><mi>c</mi><mi>a</mi></mtd></mtr><mtr><mtd><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mo>=</mo><msubsup><mi>γ</mi><mn>0</mn><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>+</mo><msubsup><mi>γ</mi><mn>1</mn><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mi>d</mi><mi>c</mi><mi>a</mi></mtd></mtr></mtable></math></div><p data-astro-cid-qsyhzaho>and</p><div id="equ1" class="equation" data-astro-cid-qsyhzaho><math><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><mi>d</mi><mi>c</mi><mi>a</mi><mo>=</mo><mo stretchy="false">(</mo><msubsup><mi>β</mi><mn>0</mn><mrow><mi>C</mi><mi>A</mi></mrow></msubsup><mo>/</mo><msubsup><mi>β</mi><mn>1</mn><mrow><mi>C</mi><mi>A</mi></mrow></msubsup><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><msubsup><mi>β</mi><mn>2</mn><mrow><mi>C</mi><mi>A</mi></mrow></msubsup><mo>/</mo><msubsup><mi>β</mi><mn>1</mn><mrow><mi>C</mi><mi>A</mi></mrow></msubsup><mo stretchy="false">)</mo><msup><mi>I</mi><mrow><mi>M</mi><mi>A</mi></mrow></msup></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mo>=</mo><msubsup><mi>γ</mi><mn>0</mn><mrow><mi>C</mi><mi>A</mi></mrow></msubsup><mo>+</mo><msubsup><mi>γ</mi><mn>1</mn><mrow><mi>C</mi><mi>A</mi></mrow></msubsup><msup><mi>I</mi><mrow><mi>M</mi><mi>A</mi></mrow></msup><mo>.</mo></mrow></mtd></mtr></mtable></math></div><p data-astro-cid-qsyhzaho>As is evident from these two equations, we have an interrelationship between <i>I<sup>MA</sup></i> and <i>dca</i>. This means that the equation system must be solved or estimated simultaneously. In this simple model, it may not seem to be a complicated task. The complication has to do with the nature of the data in hand. The most important statistical difficulty is the presence of extreme observation on both dependent and explanatory variables. Solving this statistical problem within the context of simultaneous estimation is very difficult. Therefore, we have chosen a recursion system to estimate each and every decision variable within a firm. Let us now introduce the time index to make the recursive system more straightforward.</p><div id="eqnA2-18" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.18)</span><math><msubsup><mi>I</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>=</mo><msubsup><mi>γ</mi><mn>0</mn><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>+</mo><msubsup><mi>γ</mi><mn>1</mn><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mi>d</mi><mi>c</mi><msub><mi>a</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub></math></div><div id="eqnA2-19" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.19)</span><math><mi>d</mi><mi>c</mi><msub><mi>a</mi><mi>t</mi></msub><mo>=</mo><msubsup><mi>γ</mi><mn>0</mn><mrow><mi>C</mi><mi>A</mi></mrow></msubsup><mo>+</mo><msubsup><mi>γ</mi><mn>1</mn><mrow><mi>C</mi><mi>A</mi></mrow></msubsup><msubsup><mi>I</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></math></div><p data-astro-cid-qsyhzaho>In this recursion system, we assume that firms first make decisions about their fixed assets before making decisions about net investment in current assets. After the investment decisions, firms undertake different financial decisions. For these decisions, it is important to estimate the operating income before depreciation. We know that OIBDt = <i>f(MA<sub>t</sub>,CA<sub>t</sub></i>). By using (<a href="#eqnA2-3">A2.3</a>) and (<a href="#eqnA2-4">A2.4</a>), we find the following relationship for <i>OIBD<sub>t</sub></i>:</p><div id="eqnA2-20" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A2.20)</span><math><mrow><mi>O</mi><mi>I</mi><mi>B</mi><msub><mi>D</mi><mi>t</mi></msub><mo>=</mo><msubsup><mi>γ</mi><mn>0</mn><mrow><mi>O</mi><mi>I</mi><mi>B</mi><mi>D</mi></mrow></msubsup><mo>+</mo><msubsup><mi>γ</mi><mn>1</mn><mrow><mi>O</mi><mi>I</mi><mi>B</mi><mi>D</mi></mrow></msubsup><msubsup><mi>I</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>+</mo><msubsup><mi>γ</mi><mn>2</mn><mrow><mi>O</mi><mi>I</mi><mi>B</mi><mi>D</mi></mrow></msubsup><mi>d</mi><mi>c</mi><msub><mi>a</mi><mi>t</mi></msub><mo>+</mo><msubsup><mi>γ</mi><mn>3</mn><mrow><mi>O</mi><mi>I</mi><mi>B</mi><mi>D</mi></mrow></msubsup><mi>M</mi><msub><mi>A</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msubsup><mi>γ</mi><mn>4</mn><mrow><mi>O</mi><mi>I</mi><mi>B</mi><mi>D</mi></mrow></msubsup><mi>C</mi><msub><mi>A</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow></math></div><p data-astro-cid-qsyhzaho>Adding a disturbance term to each and every equation above and giving the errors a random interpretation converts our economic models into statistical probability models which gives us a basis for statistical inference. Equations (<a href="#eqnA2-18">A2.18</a>) to (<a href="#eqnA2-20">A2.20</a>) are estimated using robust estimation techniques. They will all be estimated one-way, with no feedback looping. Crucial for this model, however, is the fact that it is assumed that disturbance terms for the endogenous variables are uncorrelated.</p></section><section id="app2-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">A2.2 The dynamic system used for simulation purposes</h3><p data-astro-cid-qsyhzaho>Equations (<a href="#eqnA2-18">A2.18</a>), (<a href="#eqnA2-4">A2.4</a>), (<a href="#eqnA2-19">A2.19</a>), (<a href="#eqnA2-3">A2.3</a>), (<a href="#eqnA2-20">A2.20</a>), (<a href="#eqnA2-5">A2.5</a>), and (<a href="#eqnA2-2">A2.2</a>) are simulated recursively. We begin our simulation from year <i>t</i> −1 = 1999. We use the information for the net investment in current assets in the current period (t −1 = 1999) to draw conclusions about the investment in machinery and equipment in the next period <i>t</i> = 2000 (equation (<a href="#eqnA2-18">A2.18</a>)). The investment in machinery and equipment increases the stock of machinery and equipment in the balance sheet for the next period (equation (<a href="#eqnA2-4">A2.4</a>)). As is evident from (<a href="#eqnA2-19">A2.19</a>), the net investment in current assets in the next period is a function of firms’ investment decisions regarding machinery and equipment. This net investment in current assets increases the stock of current assets in the balance sheet for the next period (equation (<a href="#eqnA2-3">A2.3</a>)). Firms’ investment must be financed in one way or another. In this simple model, the financing comes from equity capital, which is a function of operating income before depreciation. Operating income before depreciation in the next period is a function of firms’ investment in different assets in the next period and the stock of the same assets in the current period (equation (<a href="#eqnA2-20">A2.20</a>)). Having determined the investment in different assets and earnings before taxes, we can use (<a href="#eqnA2-5">A2.5</a>) to calculate firms’ cash flow. Finally, net business income in the next period increases the stock of unrestricted equity. On the other hand, the cash flow in the next period decreases the stock of unrestricted equity in the next period (equation (<a href="#eqnA2-2">A2.2</a>)).</p></section></div></details><details id="app3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">The Structure of the Simulation Model</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The balance sheet presents firms’ assets, liabilities, and equity. In the balance sheet the value of the firm’s assets must be equal to the firm’s liabilities so that</p><div id="eqnA3-1" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.1)</span><math><mtable columnalign="left"><mtr><mtd><mi>C</mi><msub><mi>A</mi><mi>t</mi></msub><mo>+</mo><mi>M</mi><msub><mi>A</mi><mi>t</mi></msub><mo>+</mo><mi>B</mi><msub><mi>U</mi><mi>t</mi></msub><mo>+</mo><mi>O</mi><mi>F</mi><msub><mi>A</mi><mi>t</mi></msub><mo>=</mo><mi>C</mi><msub><mi>L</mi><mi>t</mi></msub><mo>+</mo><mi>L</mi><msub><mi>L</mi><mi>t</mi></msub><mo>+</mo></mtd></mtr><mtr><mtd><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mi>A</mi><mi>S</mi><msub><mi>D</mi><mi>t</mi></msub><mo>+</mo><mi>P</mi><msub><mi>F</mi><mi>t</mi></msub><mo>+</mo><mi>O</mi><mi>U</mi><msub><mi>R</mi><mi>t</mi></msub><mo>+</mo><mi>S</mi><msub><mi>C</mi><mi>t</mi></msub><mo>+</mo></mtd></mtr><mtr><mtd><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mi>R</mi><msub><mi>R</mi><mi>t</mi></msub><mo>+</mo><mi>U</mi><mi>R</mi><msub><mi>E</mi><mi>t</mi></msub></mtd></mtr></mtable></math></div><p data-astro-cid-qsyhzaho>The income statement is formalized as follows. Operating income before depreciation (<i>OIBD<sub>t</sub></i>) is the operating revenue remaining after operating expenses. Operating income before depreciation is split into two elements: Economic depreciation of machinery and equipment (<math id="m39"><mrow><mi>E</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></mrow></math>) and economic depreciation of buildings (<math id="m40"><mrow><mi>E</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>B</mi><mi>U</mi></mrow></msubsup></mrow></math>). The remainder, which is operating income after economic depreciation (<i>OIAD<sub>t</sub></i>), is one part of the earnings before allocations (<i>EBA<sub>t</sub></i>). In addition, earnings before allocations include the financial income (<i>FI<sub>t</sub></i>) and excludes financial expenses (<i>FE<sub>t</sub></i>). By adding net allocations to earnings before allocations we obtain earnings before taxes (<i>EBT<sub>t</sub></i>). Allocations to untaxed reserves are purely bookkeeping operations. Net allocations include allocations to the accumulated supplementary depreciation (∆<i>ASD<sub>t</sub></i>), net allocations to periodical reserves (∆<i>PF<sub>t</sub></i>), and other allocations (<i>OA<sub>t</sub></i>). Allocations to the accumulated supplementary depreciation constitute the difference between allowances for depreciation and depreciation according to plan (∆<i>ASD<sub>t</sub></i> = <math id="m41"><mrow><mi>T</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></mrow></math> – <math id="m42"><mrow><mi>E</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></mrow></math>). The tax code only specifies the maximum amount of tax depreciation which firms may deduct from their taxable income. Moreover, according to the tax legislation regarding periodical reserves, firms may each year allocate a maximum of 25 per cent of their taxable income to a special reserve. Corporations are allowed to have six different periodical reserves. However, the allocated amount in a reserve, <i>at the latest</i> six years after the fiscal year when the allocation was made, recurs as taxable income. Net allocation to periodical reserves is the difference between the allocation to and reversals from periodical reserves (∆<i>PF<sub>t</sub></i> = <math id="m43"><mrow><msubsup><mi>p</mi><mi>t</mi><mrow><mi>a</mi><mi>l</mi><mi>l</mi><mi>o</mi></mrow></msubsup></mrow></math> − <i>zpf<sub>t</sub></i>). Finally, other allocations include (net) group contributions. Earnings before taxes (<i>EBT<sub>t</sub></i>) is defined as follows</p><div id="eqnA3-2" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.2)</span><math><mtable columnalign="left"><mtr><mtd><mi>E</mi><mi>B</mi><msub><mi>T</mi><mi>t</mi></msub><mo>=</mo><mi>O</mi><mi>I</mi><mi>B</mi><msub><mi>D</mi><mi>t</mi></msub><mo>−</mo><mi>E</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>B</mi><mi>U</mi></mrow></msubsup><mo>+</mo><mi>F</mi><msub><mi>I</mi><mi>t</mi></msub><mo>−</mo><mi>F</mi><msub><mi>E</mi><mi>t</mi></msub><mo>−</mo></mtd></mtr><mtr><mtd><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mi>T</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>−</mo><msubsup><mi>p</mi><mi>t</mi><mrow><mi>a</mi><mi>l</mi><mi>l</mi><mi>o</mi></mrow></msubsup><mo>+</mo><mi>z</mi><mi>p</mi><msub><mi>f</mi><mi>t</mi></msub><mo>+</mo><mi>O</mi><msub><mi>A</mi><mi>t</mi></msub></mtd></mtr></mtable></math></div><p data-astro-cid-qsyhzaho>Net income (<i>NI<sub>t</sub></i>) is calculated after deducting the tax liability in a specific period for (<i>TL<sub>t</sub></i>). The reason for this is that firms usually close their books for one accounting period long before they fill in the tax return form. For this reason, firms must make a good estimate of their tax liability. Net income (<i>NI<sub>t</sub></i>) can thus be derived as</p><div id="eqnA3-3" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.3)</span><math><mi>N</mi><msub><mi>I</mi><mi>t</mi></msub><mo>=</mo><mi>E</mi><mi>B</mi><msub><mi>T</mi><mi>t</mi></msub><mo>−</mo><mi>T</mi><msub><mi>L</mi><mi>t</mi></msub></math></div><p data-astro-cid-qsyhzaho>However, the cash flow in a company depends on actual tax payments. By adjusting net income for tax purposes, (<i>TA<sub>t</sub></i>), firms are able to calculate the amount of tax they have to pay:</p><div id="uneqnA15" class="equation" data-astro-cid-qsyhzaho><math><mrow><mi>T</mi><mi>A</mi><msub><mi>X</mi><mi>t</mi></msub><mo>=</mo><mi>τ</mi><mi>max</mi><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mo stretchy="false">(</mo><mi>N</mi><msub><mi>I</mi><mi>t</mi></msub><mo>+</mo><mi>T</mi><msub><mi>A</mi><mi>t</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">]</mo></mrow></math></div><p data-astro-cid-qsyhzaho>where τ is the corporate tax rate, <i>TA<sub>t</sub></i> (which either can be positive, negative or equal to zero) is the firms’ tax adjustments.</p><p data-astro-cid-qsyhzaho>It is worth mentioning that firms pay tax on their income if and only if <i>NI<sub>t</sub></i> + <i>TA<sub>t</sub></i> &gt; 0. Tax adjustments are made for the tax depreciation of buildings (<math id="m47"><mrow><mi>T</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>B</mi><mi>U</mi></mrow></msubsup></mrow></math>), losses from previous years which are fully deductible for firms (<i>OL<sub>t-1</sub></i>), and other tax adjustments (<i>OTA<sub>t</sub></i>):</p><div id="uneqnA16" class="equation" data-astro-cid-qsyhzaho><math><mrow><mi>T</mi><msub><mi>A</mi><mi>t</mi></msub><mo>=</mo><mi>O</mi><mi>T</mi><msub><mi>A</mi><mi>t</mi></msub><mo>−</mo><mi>T</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>B</mi><mi>U</mi></mrow></msubsup><mo>−</mo><mi>O</mi><msub><mi>L</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>.</mo></mrow></math></div><p data-astro-cid-qsyhzaho>However, to be able to derive firms’ final tax payments (<i>FTAX<sub>t</sub></i>), we adjust firms’ tax payments for their reduction of taxes (<i>ROT<sub>t</sub></i>) so that <i>FTAX<sub>t</sub></i> = <i>TAX<sub>t</sub></i> – <i>ROT<sub>t</sub></i>. We can thus write net business income, when <i>NI<sub>t</sub></i> + <i>TA<sub>t</sub></i> ≥ 0, as</p><div id="eqnA3-4" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.4)</span><math><mi>N</mi><mi>B</mi><msub><mi>I</mi><mi>t</mi></msub><mo>=</mo><mi>E</mi><mi>B</mi><msub><mi>T</mi><mi>t</mi></msub><mo>−</mo><mi>F</mi><mi>T</mi><mi>A</mi><msub><mi>X</mi><mi>t</mi></msub></math></div><p data-astro-cid-qsyhzaho>However, when <i>NI<sub>t</sub></i> + <i>TA<sub>t</sub></i> &lt; 0, firms increase their stock of old losses with the same amount</p><div id="eqnA3-5" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.5)</span><math><mi>O</mi><msub><mi>L</mi><mi>t</mi></msub><mo>=</mo><mi>min</mi><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mo stretchy="false">(</mo><mi>N</mi><msub><mi>I</mi><mi>t</mi></msub><mo>+</mo><mi>T</mi><msub><mi>A</mi><mi>t</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">]</mo></math></div><p data-astro-cid-qsyhzaho>The first financial decision, the proportion of funds to be retained, is then made by dividing net business income into dividends paid to shareholders, the maximum amount available for dividends in the current period (the so called cash flow), allocations to restricted reserves, and retained earnings.</p><div id="eqnA3-6" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.6)</span><math><mi>U</mi><mi>R</mi><msub><mi>E</mi><mi>t</mi></msub><mo>=</mo><mi>U</mi><mi>R</mi><msub><mi>E</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><mi>N</mi><mi>B</mi><msub><mi>I</mi><mi>t</mi></msub><mo>−</mo><mi>D</mi><mi>I</mi><msub><mi>V</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>−</mo><mi>Δ</mi><mi>R</mi><msub><mi>R</mi><mi>t</mi></msub><mo>−</mo><mi>c</mi><mi>a</mi><mi>s</mi><mi>h</mi><mi>f</mi><msub><mi>l</mi><mi>t</mi></msub></math></div><p data-astro-cid-qsyhzaho>The board of directors usually proposes the dividend for year <i>t-1</i> in a financial statement bulletin at the beginning of the year <i>t</i>. The stockholders’ meeting adopts the balance sheet, the amount of dividends that should be paid out, the allocations to be made to restricted reserves and free reserves, and the remaining retained earnings. However, once a dividend has been decided, it becomes a current liability of the corporation. After the stockholders’ meeting, firms mail out the dividends as soon as possible. When this happens, the current liability is eliminated, and the firms’ current assets decline.</p><p data-astro-cid-qsyhzaho>The stock (state) variables of this model are <i>LL<sub>t</sub>, CL<sub>t</sub>, SC<sub>t</sub>, RR<sub>t</sub>, URE<sub>t</sub>, ASD<sub>t</sub>, PF<sub>t</sub>, OUR<sub>t</sub>, CA<sub>t</sub>, MA<sub>t</sub>, BU<sub>t</sub></i>, and <i>OFA<sub>t</sub></i>. As the two columns in the balance sheet give the same total in any given time period, the sum of each for all time periods in the past up to the date of the balance sheet will also be equal. The equations of motions that hold for these state variables are</p><div id="eqnA3-7" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.7)</span><math><mi>L</mi><msub><mi>L</mi><mi>t</mi></msub><mo>=</mo><mi>L</mi><msub><mi>L</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><mi>d</mi><mi>l</mi><mi>l</mi><msub><mi>L</mi><mi>t</mi></msub></math></div><div id="eqnA3-8" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.8)</span><math><mi>C</mi><msub><mi>L</mi><mi>t</mi></msub><mo>=</mo><mi>C</mi><msub><mi>L</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><mi>d</mi><mi>c</mi><msub><mi>l</mi><mi>t</mi></msub></math></div><div id="eqnA3-9" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.9)</span><math><mi>S</mi><msub><mi>C</mi><mi>t</mi></msub><mo>=</mo><mi>S</mi><msub><mi>C</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><mi>d</mi><mi>s</mi><msub><mi>c</mi><mi>t</mi></msub></math></div><div id="eqnA3-10" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.10)</span><math><mi>R</mi><msub><mi>R</mi><mi>t</mi></msub><mo>=</mo><mi>T</mi><msub><mi>T</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><mi>d</mi><mi>r</mi><msub><mi>r</mi><mi>t</mi></msub></math></div><div id="eqnA3-11" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.11)</span><math><mi>C</mi><msub><mi>A</mi><mi>t</mi></msub><mo>=</mo><mi>C</mi><msub><mi>A</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><mi>d</mi><mi>c</mi><msub><mi>a</mi><mi>t</mi></msub></math></div><div id="eqnA3-12" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.12)</span><math><mi>M</mi><msub><mi>A</mi><mi>t</mi></msub><mo>=</mo><mi>M</mi><msub><mi>A</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msubsup><mi>I</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>−</mo><msubsup><mi>S</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>−</mo><mi>E</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></math></div><div id="eqnA3-13" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.13)</span><math><mi>B</mi><msub><mi>U</mi><mi>t</mi></msub><mo>=</mo><mi>B</mi><msub><mi>U</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msubsup><mi>I</mi><mi>t</mi><mrow><mi>B</mi><mi>U</mi></mrow></msubsup><mo>−</mo><mi>E</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>B</mi><mi>U</mi></mrow></msubsup></math></div><div id="eqnA3-14" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.14)</span><math><mi>O</mi><mi>F</mi><msub><mi>A</mi><mi>t</mi></msub><mo>=</mo><mi>O</mi><mi>F</mi><msub><mi>A</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><mi>d</mi><mi>o</mi><mi>f</mi><msub><mi>a</mi><mi>t</mi></msub></math></div><div id="eqnA3-15" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.15)</span><math><mi>A</mi><mi>S</mi><msub><mi>D</mi><mi>t</mi></msub><mo>=</mo><mi>A</mi><mi>S</mi><msub><mi>D</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><mo stretchy="false">(</mo><mi>T</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>−</mo><mi>E</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo stretchy="false">)</mo></math></div><div id="eqnA3-16" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.16)</span><math><mi>O</mi><mi>U</mi><msub><mi>R</mi><mi>t</mi></msub><mo>=</mo><mi>O</mi><mi>U</mi><msub><mi>R</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><mi>d</mi><mi>o</mi><mi>u</mi><msub><mi>r</mi><mi>t</mi></msub></math></div><div id="eqnA3-17" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.17)</span><math><mi>P</mi><msub><mi>F</mi><mi>t</mi></msub><mo>=</mo><mi>P</mi><msub><mi>F</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msubsup><mi>p</mi><mi>t</mi><mrow><mi>a</mi><mi>l</mi><mi>l</mi><mi>o</mi></mrow></msubsup><mo>−</mo><mi>z</mi><mi>p</mi><msub><mi>f</mi><mi>t</mi></msub></math></div><p data-astro-cid-qsyhzaho>where <math id="m63"><mrow><msubsup><mi>S</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></mrow></math> is sales of old machinery and equipment, (<math id="m64"><mrow><mi>T</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></mrow></math> – <math id="m65"><mrow><mi>E</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></mrow></math>) is the supplementary depreciation during period <i>t</i>, and <i>dour<sub>t</sub></i> is the net change in other untaxed reserves. The financial statement that is closest in reporting cash flow is formally referred to as the statement of changes in financial conditions, more commonly known as the cash flow statement. Inserting the difference equations for <i>LL<sub>t</sub>, CL<sub>t</sub>, SC<sub>t</sub>, RR<sub>t</sub>, URE<sub>t</sub>, ASD<sub>t</sub>, PF<sub>t</sub>, OUR<sub>t</sub>, CA<sub>t</sub>, MA<sub>t</sub>, BU<sub>t</sub></i>, and <i>OFA<sub>t</sub></i> (from (<a href="#eqnA3-6">A3.6</a>)–(<a href="#eqnA3-17">A3.17</a>)) into equation (<a href="#eqnA3-1">A3.1</a>) we obtain the cash flow constraint</p><div id="eqnA3-18" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.18)</span><math><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><mi>c</mi><mi>a</mi><mi>s</mi><mi>h</mi><mi>f</mi><msub><mi>l</mi><mi>t</mi></msub><mo>=</mo></mrow></mtd><mtd columnalign="left"><mrow><mi>O</mi><mi>I</mi><mi>B</mi><msub><mi>D</mi><mi>t</mi></msub><mo>+</mo><mi>F</mi><msub><mi>I</mi><mi>t</mi></msub><mo>−</mo><mi>F</mi><msub><mi>E</mi><mi>t</mi></msub><mo>+</mo><mi>O</mi><msub><mi>A</mi><mi>t</mi></msub><mo>−</mo></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow/></mtd><mtd columnalign="left"><mrow><mi>F</mi><mi>T</mi><mi>A</mi><msub><mi>X</mi><mi>t</mi></msub><mo>−</mo><mi>D</mi><mi>I</mi><msub><mi>V</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><mi>d</mi><mi>s</mi><msub><mi>c</mi><mi>t</mi></msub><mo>+</mo></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow/></mtd><mtd columnalign="left"><mrow><mi>d</mi><mi>c</mi><msub><mi>l</mi><mi>t</mi></msub><mo>+</mo><mi>d</mi><mi>l</mi><msub><mi>l</mi><mi>t</mi></msub><mo>+</mo><mi>d</mi><mi>o</mi><mi>u</mi><msub><mi>r</mi><mi>t</mi></msub><mo>−</mo><msubsup><mi>I</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>+</mo></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow/></mtd><mtd columnalign="left"><mrow><msubsup><mi>S</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>−</mo><msubsup><mi>I</mi><mi>t</mi><mrow><mi>B</mi><mi>C</mi></mrow></msubsup><mo>−</mo><mi>d</mi><mi>o</mi><mi>f</mi><msub><mi>a</mi><mi>t</mi></msub><mo>−</mo><mi>d</mi><mi>c</mi><msub><mi>a</mi><mi>t</mi></msub></mrow></mtd></mtr></mtable></math></div><p data-astro-cid-qsyhzaho>This is the maximum amount available for dividends in the current period. One of the legal constraints that we model is that “dividends” cannot exceed unrestricted equity in period <i>t-1</i> (<i>URE<sub>t-1</sub></i>) plus the current period’s net business income minus allocations to restricted reserves. If dividends were to exceed this amount the equity base of the firm would fall. The conditions can be summarized mathematically as <i>cashfl<sub>t</sub></i> ≤ <i>mcash<sub>t</sub></i> where</p><div id="uneqnA17" class="equation" data-astro-cid-qsyhzaho><math><mi>m</mi><mi>c</mi><mi>a</mi><mi>s</mi><msub><mi>h</mi><mi>t</mi></msub><mo>=</mo><mi>U</mi><mi>R</mi><msub><mi>E</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><mi>N</mi><mi>B</mi><msub><mi>I</mi><mi>t</mi></msub><mo>−</mo><mi>d</mi><mi>r</mi><msub><mi>r</mi><mi>t</mi></msub><mo>.</mo></math></div><p data-astro-cid-qsyhzaho>This constraint is of course only valid for <i>URE<sub>t-1</sub></i>&gt;0. Another constraint modelled is that firms are not allowed to pay negative “dividends”: <i>cashfl<sub>t</sub></i> ≥ 0. This means that the firms’ dividend payments are equal to</p><div id="eqnA3-19" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.19)</span><math><mi>D</mi><mi>I</mi><msub><mi>V</mi><mi>t</mi></msub><mo>=</mo><mi>max</mi><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>min</mi><mo stretchy="false">(</mo><mi>c</mi><mi>a</mi><mi>s</mi><mi>h</mi><mi>f</mi><msub><mi>l</mi><mi>t</mi></msub><mo>,</mo><mi>m</mi><mi>c</mi><mi>a</mi><mi>s</mi><msub><mi>h</mi><mi>t</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">]</mo></math></div><p data-astro-cid-qsyhzaho>Let us now define a variable that is the difference between the maximum dividend firms can pay to their shareholders and the amount of dividends they actually pay to their shareholders:</p><div id="uneqnA18" class="equation" data-astro-cid-qsyhzaho><math><mi>d</mi><mi>m</mi><mi>c</mi><mi>a</mi><mi>s</mi><msub><mi>h</mi><mi>t</mi></msub><mo>=</mo><mi>m</mi><mi>c</mi><mi>a</mi><mi>s</mi><msub><mi>h</mi><mi>t</mi></msub><mo>−</mo><mi>c</mi><mi>a</mi><mi>s</mi><mi>h</mi><mi>f</mi><msub><mi>l</mi><mi>t</mi></msub><mo>.</mo></math></div><p data-astro-cid-qsyhzaho>This variable gives us the opportunity to analyze the way in which firms’ investment and financial behaviour would be influenced by the fact that firms’ dividend policy does not coincide with the legal constraint on dividends. Let us also define a variable that captures whether firms change their dividend policy so that it comes closer to the legal constraint on dividends:</p><div id="uneqnA19" class="equation" data-astro-cid-qsyhzaho><math><mi>d</mi><mi>d</mi><mi>m</mi><mi>c</mi><mi>a</mi><mi>s</mi><msub><mi>h</mi><mi>t</mi></msub><mo>=</mo><mi>d</mi><mi>m</mi><mi>c</mi><mi>a</mi><mi>s</mi><msub><mi>h</mi><mi>t</mi></msub><mo>−</mo><mi>d</mi><mi>m</mi><mi>c</mi><mi>a</mi><mi>s</mi><msub><mi>h</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>.</mo></math></div><p data-astro-cid-qsyhzaho>This variable captures whether firms change their dividend policy so that it comes closer to the legal constraint on dividends.</p><section id="app3-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">A3.1 The constraints on firms’ tax depreciation of machinery and equipment</h3><p data-astro-cid-qsyhzaho>For machinery and equipment, there are three kinds of depreciation rules available: The declining balance method, the straight line method, and the rest value method. To be able to explain the implication of the three different methods for depreciation, we need to define the taxable residual value of machinery and equipment</p><div id="eqnA3-20" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.20)</span><math><mi>C</mi><mi>M</mi><msub><mi>A</mi><mi>t</mi></msub><mo>=</mo><mi>C</mi><mi>M</mi><msub><mi>A</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msubsup><mi>I</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>−</mo><msubsup><mi>S</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>−</mo><mi>T</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></math></div><section id="app3-1a" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">The declining-balance method</h4><p data-astro-cid-qsyhzaho>The tax code in Sweden specifies the maximum amount of tax depreciation that firms may deduct from their taxable income. The declining-balance method allows a maximum deduction of 30 percent of the remaining taxable residual value and the gross investment made in period <i>t</i>. However, the taxable residual value must be adjusted for different investment grants and the sale price of machinery and equipment that has been disposed of during period <i>t</i>. Further, the deduction rate must also be adjusted if the income year is longer than 12 months. For example, if the income year is 18 months the depreciation rate must be multiplied by 18/12, which gives a depreciation rate of 45%. The declining-balance method implies that the tax depreciation <math id="m72"><mrow><mi>T</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></mrow></math> is constrained by</p><div id="eqnA3-21" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.21)</span><math><mi>T</mi><mi>D</mi><mi>D</mi><msubsup><mi>B</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>=</mo><mo stretchy="false">(</mo><mi>M</mi><mo>/</mo><mn>12</mn><mo stretchy="false">)</mo><msup><mi>δ</mi><mrow><mi>d</mi><mi>b</mi></mrow></msup><mo stretchy="false">[</mo><mi>C</mi><mi>M</mi><msub><mi>A</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msubsup><mi>I</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>−</mo><msubsup><mi>S</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>−</mo><mi>I</mi><msub><mi>G</mi><mi>t</mi></msub><mo stretchy="false">]</mo></math></div><p data-astro-cid-qsyhzaho>where <i>M</i> is the number of months in the firms’ income year, <i>IG<sub>t</sub></i> is the investment grants, and <i>δ<sup>db</sup></i> = 0.3 is the maximum rate of depreciation allowed for tax purposes. The allowed tax depreciation rate is assumed to be higher than the economic depreciation rate.</p></section><section id="app3-1b" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">The straight-line method</h4><p data-astro-cid-qsyhzaho>The calculation of tax depreciation according to the straight-line method necessitates knowledge about firms’ investment during the last three years prior to the income year. This method allows a 20% depreciation of inventories and equipment. Further, the deduction rate must be adjusted if the income year is longer than 12 months. The straight-line method starts from the taxable residual value at period <i>t-1</i>. However, this value is reduced by 80% of the firms’ investment in year <i>t-3</i>, 60% of the firms’ investment in year <i>t-2</i>, 40% of the firms’ investment in year <i>t-1</i>, and 20% of the firms’ investment in year t. The resulting difference is the maximum tax depreciation according to the straight line method. The tax depreciation <i>TDEPt<sup>MA</sup></i> is therefore constrained by</p><div id="eqnA3-22" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.22)</span><math><mi>T</mi><mi>D</mi><mi>S</mi><msubsup><mi>L</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>=</mo><mi>C</mi><mi>M</mi><msub><mi>A</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msubsup><mi>I</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>−</mo><msubsup><mi>S</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>−</mo><mi>I</mi><msub><mi>G</mi><mi>t</mi></msub><mo>−</mo><mo stretchy="false">[</mo><msubsup><mi>δ</mi><mi>t</mi><mi>s</mi></msubsup><mo stretchy="false">(</mo><msubsup><mi>I</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>−</mo><mi>I</mi><msub><mi>G</mi><mi>t</mi></msub><mo stretchy="false">)</mo><mo>+</mo><msubsup><mi>δ</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow><mi>s</mi></msubsup><msubsup><mi>I</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>+</mo><msubsup><mi>δ</mi><mrow><mi>t</mi><mo>−</mo><mn>2</mn></mrow><mi>s</mi></msubsup><msubsup><mi>I</mi><mrow><mi>t</mi><mo>−</mo><mn>2</mn></mrow><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>+</mo><msubsup><mi>δ</mi><mrow><mi>t</mi><mo>−</mo><mn>3</mn></mrow><mi>s</mi></msubsup><msubsup><mi>I</mi><mrow><mi>t</mi><mo>−</mo><mn>3</mn></mrow><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo stretchy="false">]</mo></math></div><p data-astro-cid-qsyhzaho>where</p><div id="uneqnA20" class="equation" data-astro-cid-qsyhzaho><math><msubsup><mi>δ</mi><mi>t</mi><mi>s</mi></msubsup><mo>=</mo><mo stretchy="false">[</mo><mn>1</mn><mo>−</mo><mo stretchy="false">(</mo><mi>M</mi><mo>/</mo><mn>12</mn><mo stretchy="false">)</mo><msup><mi>δ</mi><mi>s</mi></msup><mo stretchy="false">]</mo><mo>,</mo></math></div><div id="uneqnA21" class="equation" data-astro-cid-qsyhzaho><math><msubsup><mi>δ</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow><mi>s</mi></msubsup><mo>=</mo><msubsup><mi>δ</mi><mi>t</mi><mi>s</mi></msubsup><mo>−</mo><msup><mi>δ</mi><mi>s</mi></msup><mo>,</mo></math></div><div id="uneqnA22" class="equation" data-astro-cid-qsyhzaho><math><msubsup><mi>δ</mi><mrow><mi>t</mi><mo>−</mo><mn>2</mn></mrow><mi>s</mi></msubsup><mo>=</mo><msubsup><mi>δ</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow><mi>s</mi></msubsup><mo>−</mo><msup><mi>δ</mi><mi>s</mi></msup><mo>,</mo></math></div><p data-astro-cid-qsyhzaho>and</p><div id="uneqnA23" class="equation" data-astro-cid-qsyhzaho><math><msubsup><mi>δ</mi><mrow><mi>t</mi><mo>−</mo><mn>3</mn></mrow><mi>s</mi></msubsup><mo>=</mo><msubsup><mi>δ</mi><mrow><mi>t</mi><mo>−</mo><mn>2</mn></mrow><mi>s</mi></msubsup><mo>−</mo><msup><mi>δ</mi><mi>s</mi></msup><mo>.</mo></math></div><p data-astro-cid-qsyhzaho><i>δ<sup>s</sup></i> is the allowed tax depreciation rate according to the straight-line method. For example, if we assume that δ<sup>s</sup> =0.2 and M = 12 then δ<sup>s</sup> = <i>0.8, δ<sup>s</sup><sub>t-1</sub></i> = <i>0.6, δ<sup>s</sup><sub>t-2</sub></i> = <i>0.4</i>, and <i>δ<sup>s</sup><sub>t-3</sub></i> = <i>0.2</i>. The firm chooses the depreciation rule that gives the highest tax depreciation. The choice can be defined mathematically by a maximum function:</p><div id="uneqnA24" class="equation" data-astro-cid-qsyhzaho><math><mi>max</mi><mo stretchy="false">(</mo><mi>T</mi><mi>D</mi><mi>D</mi><msubsup><mi>B</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>,</mo><mi>T</mi><mi>D</mi><mi>S</mi><msubsup><mi>L</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo stretchy="false">)</mo><mo>.</mo></math></div></section><section id="app3-1c" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">The rest value method</h4><p data-astro-cid-qsyhzaho>This method follows the same rules as the declining balance method. However, the rest value method is simpler. The method is mainly used by unincorporated businesses that do not prepare annual accounts. However, incorporated firms are also allowed to use this method. This will give them lower tax depreciation (compared to the declining balance method). The rest value method gives these firms the opportunity to make deductions for tax depreciation even if they do not have annual accounts. It is also important to note that these firms are not allowed to use the supplementary rule for depreciation according to Swedish tax legislation (the straight line method). Mathematically, the rest value method will be handled just like the declining balance method as follows:</p><div id="eqnA3-23" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.23)</span><math><mi>T</mi><mi>D</mi><mi>R</mi><msubsup><mi>V</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>=</mo><mo stretchy="false">(</mo><mi>M</mi><mo>/</mo><mn>12</mn><mo stretchy="false">)</mo><msup><mi>δ</mi><mrow><mi>r</mi><mi>v</mi></mrow></msup><mo stretchy="false">[</mo><mi>C</mi><mi>M</mi><msub><mi>A</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msubsup><mi>I</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>+</mo><msubsup><mi>S</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>−</mo><mi>I</mi><msub><mi>G</mi><mi>t</mi></msub><mo stretchy="false">]</mo></math></div><p data-astro-cid-qsyhzaho>where <i>δ<sup>db</sup></i> = 0.25 is the maximum rate of depreciation allowed for tax purposes according to the rest value method.</p><p data-astro-cid-qsyhzaho>Let us now define a variable that captures the constraints that the tax code in Sweden puts on the amount of tax depreciation that firms may deduct from their taxable income as <i>MTDM<sub>t</sub></i>. The tax depreciation of machinery and equipment is constrained by <i>MTDM<sub>t</sub></i> so that <math id="m81"><mrow><mi>T</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></mrow></math> ≤ <i>MTDM<sub>t</sub></i>. However, as we mentioned above, <i>MTDM<sub>t</sub></i> depends on following conditions:</p><p data-astro-cid-qsyhzaho>If <math id="m82"><mi>T</mi><mi>D</mi><mi>D</mi><msubsup><mi>B</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>&gt;</mo><mi>T</mi><mi>D</mi><mi>R</mi><msubsup><mi>V</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></math> and <math id="m83"><mi>T</mi><mi>D</mi><mi>S</mi><msubsup><mi>L</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>&gt;</mo><mi>T</mi><mi>D</mi><mi>R</mi><msubsup><mi>V</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></math> then</p><div id="uneqnA25" class="equation" data-astro-cid-qsyhzaho><math><mi>M</mi><mi>T</mi><mi>D</mi><msub><mi>M</mi><mi>t</mi></msub><mo>=</mo><mi>max</mi><mo stretchy="false">(</mo><mi>T</mi><mi>D</mi><mi>D</mi><msubsup><mi>B</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>,</mo><mi>T</mi><mi>D</mi><mi>S</mi><msubsup><mi>L</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo stretchy="false">)</mo><mo>.</mo></math></div><p data-astro-cid-qsyhzaho>However, if <math id="m85"><mi>T</mi><mi>D</mi><mi>D</mi><msubsup><mi>B</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>≤</mo><mi>T</mi><mi>D</mi><mi>R</mi><msubsup><mi>V</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></math> and <math id="m86"><mi>T</mi><mi>D</mi><mi>S</mi><msubsup><mi>L</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>≤</mo><mi>T</mi><mi>D</mi><mi>R</mi><msubsup><mi>V</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></math> then</p><div id="uneqnA26" class="equation" data-astro-cid-qsyhzaho><math><mi>M</mi><mi>T</mi><mi>D</mi><msub><mi>M</mi><mi>t</mi></msub><mo>=</mo><mi>T</mi><mi>D</mi><mi>R</mi><msubsup><mi>V</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></math></div><p data-astro-cid-qsyhzaho>The variable <i>MTDM<sub>t</sub></i> captures the constraint that the tax code in Sweden puts on the amount of tax depreciation that firms may deduct from their taxable income.</p><p data-astro-cid-qsyhzaho>Let us now define a variable that is the difference between the maximum amount of tax depreciation and the depreciation for income tax purposes made by these firms (<math id="m88"><mi>T</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup></math>)):</p><div id="uneqnA27" class="equation" data-astro-cid-qsyhzaho><math><mi>d</mi><mi>m</mi><mi>t</mi><mi>d</mi><msub><mi>m</mi><mi>t</mi></msub><mo>=</mo><mi>M</mi><mi>T</mi><mi>D</mi><msub><mi>M</mi><mi>t</mi></msub><mo>−</mo><mi>T</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>.</mo></math></div><p data-astro-cid-qsyhzaho>This variable gives us the opportunity to analyze the impact of underutilization (or overutilization) of depreciation allowances on firms’ investment and financial behaviour. Let us also define a variable that captures whether firms increase or decrease their utilization of depreciation allowances:</p><div id="uneqnA28" class="equation" data-astro-cid-qsyhzaho><math><mi>d</mi><mi>d</mi><mi>m</mi><mi>t</mi><mi>d</mi><mi>m</mi><mo>=</mo><mi>d</mi><mi>m</mi><mi>t</mi><mi>d</mi><msub><mi>m</mi><mi>t</mi></msub><mo>−</mo><mi>d</mi><mi>m</mi><mi>t</mi><mi>d</mi><msub><mi>m</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>.</mo></math></div></section></section><section id="app3-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">A3.2 The constraint on firms’ allocations to the periodical reserves</h3><p data-astro-cid-qsyhzaho>The tax code in Sweden specifies the maximum amount of allocations firms can allocate to periodical reserves each year. As mentioned above, firms can deduct up to 25 percent (the allocation was reduced to 20 percent in 1998) of its taxable income each year (adjusted for different items). In the balance sheet this deduction is booked as a reserve (under untaxed reserves). The maximum base for the allocation to this reserve during the income year is calculated according to the following equation:</p><div id="eqnA3-24" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.24)</span><math><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><mi>p</mi><mi>b</mi><mi>a</mi><mi>s</mi><msub><mi>e</mi><mi>t</mi></msub><mo>=</mo></mrow></mtd><mtd columnalign="left"><mrow><mi>O</mi><mi>I</mi><mi>B</mi><msub><mi>D</mi><mi>t</mi></msub><mo>−</mo><mi>E</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>B</mi><mi>U</mi></mrow></msubsup><mo>+</mo><mi>F</mi><msub><mi>I</mi><mi>t</mi></msub><mo>−</mo></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow/></mtd><mtd columnalign="left"><mrow><mi>F</mi><msub><mi>E</mi><mi>t</mi></msub><mo>−</mo><mi>T</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>+</mo><mi>z</mi><mi>p</mi><msub><mi>f</mi><mi>t</mi></msub><mo>+</mo></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow/></mtd><mtd columnalign="left"><mrow><mi>O</mi><msub><mi>A</mi><mi>t</mi></msub><mo>−</mo><mi>T</mi><msub><mi>L</mi><mi>t</mi></msub><mo>+</mo><mi>T</mi><msub><mi>A</mi><mi>t</mi></msub></mrow></mtd></mtr></mtable></math></div><p data-astro-cid-qsyhzaho>The allocation to the periodical reserve fund is constrained to <i>η</i> = 0.25 % of this base:</p><div id="uneqnA29" class="equation" data-astro-cid-qsyhzaho><math><msubsup><mi>p</mi><mi>t</mi><mrow><mi>a</mi><mi>l</mi><mi>l</mi><mi>o</mi></mrow></msubsup><mo>≤</mo><mi>M</mi><mi>P</mi><msub><mi>A</mi><mi>t</mi></msub></math></div><p data-astro-cid-qsyhzaho>where</p><div id="uneqnA30" class="equation" data-astro-cid-qsyhzaho><math><mi>M</mi><mi>P</mi><msub><mi>A</mi><mi>t</mi></msub><mo>=</mo><mi>max</mi><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mo stretchy="false">(</mo><mi>η</mi><mo>×</mo><mi>p</mi><mi>b</mi><mi>a</mi><mi>s</mi><msub><mi>e</mi><mi>t</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">]</mo><mo>.</mo></math></div><p data-astro-cid-qsyhzaho>Thus, the constraint can be rewritten as follows</p><div id="eqnA3-25" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.25)</span><math><msubsup><mi>P</mi><mi>t</mi><mrow><mi>a</mi><mi>l</mi><mi>l</mi><mi>o</mi></mrow></msubsup><mo>=</mo><mi>max</mi><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mi>min</mi><mo stretchy="false">(</mo><msubsup><mi>P</mi><mi>t</mi><mrow><mi>a</mi><mi>l</mi><mi>l</mi><mi>o</mi></mrow></msubsup><mo>,</mo><mo stretchy="false">(</mo><mi>η</mi><mo>×</mo><mi>p</mi><mi>b</mi><mi>a</mi><mi>s</mi><msub><mi>e</mi><mi>t</mi></msub><mo stretchy="false">)</mo><mo stretchy="false">)</mo><mo stretchy="false">]</mo></math></div><p data-astro-cid-qsyhzaho>The variable <i>MPA<sub>t</sub></i> captures the maximum amount of allocations firms can make to periodical reserves. Let us now define a variable that is the difference between the maximum amount of allocations to periodical reserves and the allocation made by the firms during the current period (<math id="m95"><mrow><msubsup><mi>p</mi><mi>t</mi><mrow><mi>a</mi><mi>l</mi><mi>l</mi><mi>o</mi></mrow></msubsup></mrow></math>):</p><div id="uneqnA31" class="equation" data-astro-cid-qsyhzaho><math><mi>d</mi><mi>m</mi><mi>p</mi><msub><mi>a</mi><mi>t</mi></msub><mo>=</mo><mi>M</mi><mi>P</mi><msub><mi>A</mi><mi>t</mi></msub><mo>−</mo><msubsup><mi>p</mi><mi>t</mi><mrow><mi>a</mi><mi>l</mi><mi>l</mi><mi>o</mi></mrow></msubsup><mo>.</mo></math></div><p data-astro-cid-qsyhzaho>This variable gives us the opportunity to analyze the impact of underutilization (or overutilization) of allocations to periodical reserves on firms’ investment and financial behaviour. Let us also define a variable that captures whether firms change their utilization of their allocations to periodical reserves:</p><div id="uneqnA32" class="equation" data-astro-cid-qsyhzaho><math><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><mi>d</mi><mi>d</mi><mi>m</mi><mi>p</mi><msub><mi>a</mi><mi>t</mi></msub></mrow></mtd><mtd columnalign="left"><mo>=</mo></mtd><mtd columnalign="left"><mrow><mi>d</mi><mi>m</mi><mi>p</mi><msub><mi>a</mi><mi>t</mi></msub><mo>−</mo><mi>d</mi><mi>m</mi><mi>p</mi><msub><mi>a</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow/></mtd><mtd columnalign="left"><mrow><mo>=</mo><mo stretchy="false">(</mo><mi>M</mi><mi>P</mi><msub><mi>A</mi><mi>t</mi></msub><mo>−</mo><msubsup><mi>p</mi><mi>t</mi><mrow><mi>a</mi><mi>l</mi><mi>l</mi><mi>o</mi></mrow></msubsup><mo stretchy="false">)</mo><mo>−</mo><mo stretchy="false">(</mo><mi>M</mi><mi>P</mi><msub><mi>A</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>−</mo><msubsup><mi>p</mi><mrow><mi>t</mi><mo>−</mo><mn>1</mn></mrow><mrow><mi>a</mi><mi>l</mi><mi>l</mi><mi>o</mi></mrow></msubsup><mo stretchy="false">)</mo></mrow></mtd></mtr></mtable></math></div><section id="app3-2a" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">Financial ratio analysis</h4><p data-astro-cid-qsyhzaho>In order to summarize the simulation results, we use financial ratio analysis. Four major categories of financial ratios have been developed, each designed to address an important aspect of the firms’ financial condition: liquidity ratios, leverage ratios, profitability ratios, and market value ratios. Current ratio (<i>CR</i>) is used as a liquidity ratio and it measures the quality and adequacy of current assets to meet current liabilities as they come due. Debt/equity ratio (<i>DR</i>), equity/capital ratio (<i>DER</i>), equity/capital ratio (<i>ECR</i>), and interest coverage ratio (<i>ICR</i>) are used as leverage ratios. Return on total assets (<i>ROA</i>), return on equity (<i>ROE</i>), and debt interest (<i>DI</i>) are used as profitability ratios, as follows.</p><div id="eqnA3-26" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.26)</span><math><mi>C</mi><msub><mi>R</mi><mi>t</mi></msub><mo>=</mo><mfrac><mrow><mi>C</mi><msub><mi>A</mi><mi>t</mi></msub></mrow><mrow><mi>C</mi><msub><mi>L</mi><mi>t</mi></msub></mrow></mfrac></math></div><div id="eqnA3-27" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.27)</span><math><mi>D</mi><msub><mi>R</mi><mi>t</mi></msub><mo>=</mo><mfrac><mrow><mi>C</mi><msub><mi>L</mi><mi>t</mi></msub><mo>+</mo><mi>L</mi><msub><mi>L</mi><mi>t</mi></msub><mo>+</mo><mi>τ</mi><mo stretchy="false">(</mo><mi>A</mi><mi>S</mi><msub><mi>D</mi><mi>t</mi></msub><mo>+</mo><mi>P</mi><msub><mi>F</mi><mi>t</mi></msub><mo>+</mo><mi>O</mi><mi>U</mi><msub><mi>R</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow><mrow><msub><mi>K</mi><mi>t</mi></msub></mrow></mfrac></math></div><div id="eqnA3-28" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.28)</span><math><mi>D</mi><mi>E</mi><msub><mi>R</mi><mi>t</mi></msub><mo>=</mo><mfrac><mrow><mi>C</mi><msub><mi>L</mi><mi>t</mi></msub><mo>+</mo><mi>L</mi><msub><mi>L</mi><mi>t</mi></msub><mo>+</mo><mi>τ</mi><mo stretchy="false">(</mo><mi>A</mi><mi>S</mi><msub><mi>D</mi><mi>t</mi></msub><mo>+</mo><mi>P</mi><msub><mi>F</mi><mi>t</mi></msub><mo>+</mo><mi>O</mi><mi>U</mi><msub><mi>R</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow><mrow><mi>S</mi><msub><mi>C</mi><mi>t</mi></msub><mo>+</mo><mi>R</mi><msub><mi>R</mi><mi>t</mi></msub><mo>+</mo><mi>U</mi><mi>R</mi><msub><mi>E</mi><mi>t</mi></msub><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>A</mi><mi>S</mi><msub><mi>D</mi><mi>t</mi></msub><mo>+</mo><mi>P</mi><msub><mi>F</mi><mi>t</mi></msub><mo>+</mo><mi>O</mi><mi>U</mi><msub><mi>R</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow></mfrac></math></div><div id="eqnA3-29" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.29)</span><math><mi>E</mi><mi>C</mi><msub><mi>R</mi><mi>t</mi></msub><mo>=</mo><mfrac><mrow><mi>S</mi><msub><mi>C</mi><mi>t</mi></msub><mo>+</mo><mi>R</mi><msub><mi>R</mi><mi>t</mi></msub><mo>+</mo><mi>U</mi><mi>R</mi><msub><mi>E</mi><mi>t</mi></msub><mo>+</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mi>τ</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>A</mi><mi>S</mi><msub><mi>D</mi><mi>t</mi></msub><mo>+</mo><mover><mrow><mi>P</mi><msub><mi>F</mi><mi>t</mi></msub></mrow><mo>∧</mo></mover><mo>+</mo><mi>O</mi><mi>U</mi><msub><mi>R</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow><mrow><msub><mi>K</mi><mi>t</mi></msub></mrow></mfrac></math></div><div id="eqnA3-30" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.30)</span><math><mi>I</mi><mi>C</mi><msub><mi>R</mi><mi>t</mi></msub><mo>=</mo><mfrac><mrow><mi>O</mi><mi>I</mi><mi>B</mi><msub><mi>D</mi><mi>t</mi></msub><mo>−</mo><mi>E</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>−</mo><mi>E</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>B</mi><mi>U</mi></mrow></msubsup><mo>+</mo><mi>F</mi><msub><mi>I</mi><mi>t</mi></msub></mrow><mrow><mi>F</mi><msub><mi>E</mi><mi>t</mi></msub></mrow></mfrac></math></div><div id="eqnA3-31" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.31)</span><math><mi>R</mi><mi>O</mi><msub><mi>A</mi><mi>t</mi></msub><mo>=</mo><mfrac><mrow><mi>O</mi><mi>B</mi><mi>I</mi><msub><mi>D</mi><mi>t</mi></msub><mo>−</mo><mi>E</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>M</mi><mi>A</mi></mrow></msubsup><mo>−</mo><mi>E</mi><mi>D</mi><mi>E</mi><msubsup><mi>P</mi><mi>t</mi><mrow><mi>B</mi><mi>U</mi></mrow></msubsup><mo>+</mo><mi>F</mi><msub><mi>I</mi><mi>t</mi></msub><mo>+</mo><mi>T</mi><msub><mi>L</mi><mi>t</mi></msub></mrow><mrow><msub><mi>K</mi><mi>t</mi></msub></mrow></mfrac></math></div><div id="eqnA3-32" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.32)</span><math><mi>R</mi><mi>O</mi><msub><mi>E</mi><mi>t</mi></msub><mo>=</mo><mi>R</mi><mi>O</mi><msub><mi>A</mi><mi>t</mi></msub><mo>+</mo><mo stretchy="false">(</mo><mi>R</mi><mi>O</mi><msub><mi>A</mi><mi>t</mi></msub><mo>−</mo><mi>D</mi><msub><mi>I</mi><mi>t</mi></msub><mo stretchy="false">)</mo><mi>D</mi><mi>E</mi><msub><mi>R</mi><mi>t</mi></msub></math></div><div id="eqnA3-33" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A3.33)</span><math><mi>D</mi><msub><mi>I</mi><mi>t</mi></msub><mo>=</mo><mfrac><mrow><mi>F</mi><msub><mi>E</mi><mi>t</mi></msub></mrow><mrow><mi>C</mi><msub><mi>L</mi><mi>t</mi></msub><mo>+</mo><mi>L</mi><msub><mi>L</mi><mi>t</mi></msub><mo>+</mo><mi>τ</mi><mo stretchy="false">(</mo><mi>A</mi><mi>S</mi><msub><mi>D</mi><mi>t</mi></msub><mo>+</mo><mi>P</mi><msub><mi>F</mi><mi>t</mi></msub><mo>+</mo><mi>O</mi><mi>U</mi><msub><mi>R</mi><mi>t</mi></msub><mo stretchy="false">)</mo></mrow></mfrac></math></div><p data-astro-cid-qsyhzaho>Moreover, we also introduce a market value ratio. We know that Tobin’s q, which is a market value ratio, compares the market value of the firm with the replacement cost of the firms’ assets. The greater is the real return on investment (<i>ROI</i>) relative to the required return on investment (<i>RROI</i>), the higher will be the value of q. This is captured by excess return on investment (<i>ER</i>), which is the difference between the return on investment and the required return on investment as follows: <i>ER<sub>t</sub></i> = <i>ROI<sub>t</sub></i> −RROI<sub>t</sub>. Often, firms use return on total assets as an approximation of return on investment: <i>ROI<sub>t</sub></i> = <i>ROA<sub>t</sub></i>. It is assumed that the investors’ required return on investment (<i>RROI</i>) coincides with the pre tax interest rate on government loan:</p><div id="uneqnA33" class="equation" data-astro-cid-qsyhzaho><math><mi>R</mi><mi>R</mi><mi>O</mi><msub><mi>I</mi><mi>t</mi></msub><mo>=</mo><msub><mi>i</mi><mi>t</mi></msub><mo>/</mo><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><msubsup><mi>τ</mi><mi>t</mi><mrow><mi>e</mi><mi>f</mi><mi>f</mi></mrow></msubsup><mo stretchy="false">)</mo></math></div><p data-astro-cid-qsyhzaho>where the effective corporate tax rate is defined as</p><div id="uneqnA34" class="equation" data-astro-cid-qsyhzaho><math><msubsup><mi>τ</mi><mi>t</mi><mrow><mi>e</mi><mi>f</mi><mi>f</mi></mrow></msubsup><mo>=</mo><mi>F</mi><mi>T</mi><mi>A</mi><msub><mi>X</mi><mi>t</mi></msub><mo>/</mo><mi>E</mi><mi>B</mi><msub><mi>A</mi><mi>t</mi></msub><mo>.</mo></math></div></section></section></div></details><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Benninga, S (1989). <span data-astro-cid-oer3kof4>Numerical Techniques in Finances</span>.</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Clarke, S, Tobias, AM (1995). <span data-astro-cid-oer3kof4>Complexity in Corporate Modeling: A Review</span>. <em data-astro-cid-oer3kof4>Business History</em>, <strong data-astro-cid-oer3kof4>37</strong>, 17–44.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Forrester, JW (1961). <span data-astro-cid-oer3kof4>Industrial Dynamics</span>.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Forsling, G (1998). <span data-astro-cid-oer3kof4>Economic Studies 37; Department of Economics</span>.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hampel, F R (1985). <span data-astro-cid-oer3kof4>The Breakdown Points of the Mean Combined With Some Rejection Rules</span>. <em data-astro-cid-oer3kof4>Technometrics</em>, <strong data-astro-cid-oer3kof4>27</strong>, 95–107.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Handschin, E, Kohlas, J, Fiechter, A, Schweppe, F (1975). <span data-astro-cid-oer3kof4>Bad Data Analysis for Power System State Estimation</span>. <em data-astro-cid-oer3kof4>IEEE Transaction in Power Apparatus and Systems PAS-94</em>, 329–337.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Huber, PJ (1964). <span data-astro-cid-oer3kof4>Robust Estimation of a Location Parameter</span>. <em data-astro-cid-oer3kof4>Annals of Mathematical Statistics</em>, <strong data-astro-cid-oer3kof4>35</strong>, 73–101.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kanniainen, V, Södersten, J (1995). <span data-astro-cid-oer3kof4>The Importance of Reporting Conventions for the Theory of Corporate Taxation</span>. <em data-astro-cid-oer3kof4>Journal of Public Economics</em>, <strong data-astro-cid-oer3kof4>57</strong>, 417–430.</span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kumar, R, Vrat, P (1989). <span data-astro-cid-oer3kof4>Using Computer Models in Corporate Planning</span>. <em data-astro-cid-oer3kof4>Long Range Planning</em>, <strong data-astro-cid-oer3kof4>22</strong>, 114–120.</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Shahnazarian, H (1996). <span data-astro-cid-oer3kof4>Three Essays on Corporate Taxation</span>.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Shahnazarian, H (1997). <span data-astro-cid-oer3kof4>A Theoretical Evaluation of the Swedish Corporate Tax Reform Act of 1994</span>. <em data-astro-cid-oer3kof4>Finish Economic Papers</em>, <strong data-astro-cid-oer3kof4>10</strong>, 67–80.</span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Shahnazarian, H (2004). <span data-astro-cid-oer3kof4>A Dynamic Microeconometric Simulation Model for Incorporated Businesses. Sveriges Riksbank Occasional Paper Series</span>.</span></li><li id="bib13" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Shahnazarian, H (2005). <span data-astro-cid-oer3kof4>Corporate Financial Dynamics: A Pecking Order Approach</span>.</span></li><li id="bib14" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Shyam-Sunder, L, Myers, SC (1999). <span data-astro-cid-oer3kof4>Testing Static Tradeoff Against Pecking Order Models of Capital Structure</span>. <em data-astro-cid-oer3kof4>Journal of Financial Economics</em>, <strong data-astro-cid-oer3kof4>51</strong>, 219–244.</span></li><li id="bib15" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Sinn, H-W (1987). <span data-astro-cid-oer3kof4>Capital Income Taxation and Resource Allocation</span>.</span></li><li id="bib16" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>van, Tongeren FW (1995). <span data-astro-cid-oer3kof4>Microsimulation Modeling of the Corporate Firm-Exploring Micro-Macro Economic Relations</span>.</span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Hovick Shahnazarian</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Sveriges Riksbank, Stockholm/Sweden</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:hovick.shahnazarian@riksbank.se" data-astro-cid-m3fa5h5a>hovick.shahnazarian@riksbank.se</a></p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Acknowledgements</h3><p data-astro-cid-m3fa5h5a>I have had the privilege to work with two very proficient persons, Altin Vejsiu and Peter Brose, during the development of this model. Their hard work and ingenuity are gratefully acknowledged. This paper also benefited considerably from comments by Jan Södersten and Anders Klevmarken. I owe my deepest gratitude to Anders Kristoffersson. His expert comments have greatly improved the quality of the simulation model. I would also like to thank Bo Lindén who introduced me to the exciting field of corporate accounting. Further, I would like to thank seminar participants at the Swedish Ministry of Finance for numerous helpful comments and suggestions. Elizabeth Nilsson at Sveriges Riksbank is acknowledged for checking for linguistic errors in this manuscript.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00042" data-astro-cid-m3fa5h5a>Version of Record published: April 30, 2011 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2011, Shahnazarian</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/firm-behaviour" data-pagefind-filter="Research category:Firm behaviour" data-astro-cid-m3fa5h5a>Firm behaviour</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/dynamic-microsimulation" data-pagefind-filter="Research category:Dynamic microsimulation" data-astro-cid-m3fa5h5a>Dynamic microsimulation</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

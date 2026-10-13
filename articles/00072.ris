@@ -1,0 +1,19 @@
+TY  - JOUR
+TI  - On weights in dynamic-ageing microsimulation models
+AU  - Dekkers, Gijs
+AU  - Cumpston, Richard
+VL  - 5
+IS  - 2
+PY  - 2012
+DA  - 2012/12/31
+SP  - 59-65
+C1  - IJM 2012;5(2):59-65
+DO  - 10.34196/ijm.00072
+UR  - https://doi.org/10.34196/ijm.00072
+AB  - A dynamic model with cross-sectional dynamic ageing builds up complete synthetic life histories for each individual, starting from a survey dataset or an administrative dataset. Many of these datasets include weights. This is a problem for dynamic microsimulation models, since the most obvious solution, expanding the dataset, is not always advisable or even possible. This short paper presents an alternative method to use weights in dynamic microsimulation models with dynamic ageing. This approach treats the weighting variable as just another variable in the model, and the weights are only used after simulation to derive weighted simulation results. Tests using Australian data confirm that weighted variables give sensible results, with reductions in runtimes and memory requirements.
+KW  - sample weights
+KW  - dynamic microsimulation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

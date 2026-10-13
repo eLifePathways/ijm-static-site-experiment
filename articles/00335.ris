@@ -1,0 +1,20 @@
+TY  - JOUR
+TI  - Evaluating the results of a social benefit simulation using individual administrative data on benefit receipt
+AU  - Bruckmeier, Kerstin
+VL  - 19
+IS  - 1
+PY  - 2026
+DA  - 2026/04/20
+SP  - 60-78
+C1  - IJM 2026;19(1):60-78
+DO  - 10.34196/ijm.00335
+UR  - https://doi.org/10.34196/ijm.00335
+AB  - The simulation of social benefit entitlements is an important application of tax-benefit microsimulation models in social policy research. However, the simulation of social benefits that include a comprehensive means test and overlap with other social benefits is subject to numerous data limitations and simulation inaccuracies. This note examines the validity of the results of an open-source tax-benefit microsimulation model (GETTSIM) on social benefit entitlements. We use accurate administrative data collected during the application process for the simulation to assess the quality of the simulation. We find a low beta error rate and a high match between simulated and recorded benefits, making GETTSIM a powerful tool for the analysis of social policies.
+KW  - tax-benefit microsimulation
+KW  - validation
+KW  - GETTSIM
+KW  - Germany
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

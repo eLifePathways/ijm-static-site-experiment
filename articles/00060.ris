@@ -1,0 +1,24 @@
+TY  - JOUR
+TI  - Using statistics Canada LifePaths microsimulation model to project the disability status of Canadian elderly
+AU  - Légaré, Jacques
+AU  - Décarie, Yann
+VL  - 4
+IS  - 3
+PY  - 2011
+DA  - 2011/12/31
+SP  - 48-56
+C1  - IJM 2011;4(3):48-56
+DO  - 10.34196/ijm.00060
+UR  - https://doi.org/10.34196/ijm.00060
+AB  - Complex population projections usually use microsimulation models; in Canada, Statistics Canada has developed a global dynamic microsimulation model named LifePaths in the Modgen programming language to be used in policy research. LifePaths provides a platform to build on for our research program, conjointly with Dr Janice Keefe from Mount Saint Vincent University, on projections of the Canadian chronic homecare needs for the elderly up to 2031 and of the human resources required. Beside marital status, family networks and living arrangements, future disability status of the elderly is a key variable, but an intricate one. Since disability status transitions were previously conditioned only on age and sex, we will use here the current disability module of LifePaths with longitudinal data from Canada’s National Population Health Survey (NPHS). These new disability status transitions are considering other significant explicative variables like marital status, education etc. We will then present projections of future Canadian elderly by disability status and a comparison with nine European countries for the Future Elderly Living Conditions in Europe (FELICIE) Research Program which has used the same approach. Our previous researches have shown the importance of future disability level for the management of an elderly society. The main output of the present paper would first produce, with new health scenarios, new estimates for Canada of elderly in poor health, for those aged 75 and over. Secondly, it would produce an interesting comparative analysis, useful especially for implementing new policies for the well-being of the Canadian elderly.
+KW  - microsimulation
+KW  - elderly population
+KW  - aging
+KW  - LifePaths
+KW  - health
+KW  - disability
+KW  - Canada
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

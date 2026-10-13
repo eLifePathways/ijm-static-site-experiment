@@ -1,0 +1,19 @@
+TY  - JOUR
+TI  - The simulation properties of microsimulation models with static and dynamic ageing – a brief guide into choosing one type of model over the other
+AU  - Dekkers, Gijs
+VL  - 8
+IS  - 1
+PY  - 2015
+DA  - 2015/04/30
+SP  - 97-109
+C1  - IJM 2015;8(1):97-109
+DO  - 10.34196/ijm.00113
+UR  - https://doi.org/10.34196/ijm.00113
+AB  - To assess possible distribution effects of alternative scenarios, including hypothetical future states, one can use either static ageing techniques, which age the population by reweighing and uprating, or dynamic ageing, which alter the relevant population by applying deterministic probabilities that a certain event may or may not occur. This paper makes the argument that, even though the two methods are technically completely different, they are not unlike in terms of their simulation properties. Starting from the thesis that under theoretical circumstances, both approaches are equivalent in terms of their simulation properties, the choice between the two archetypes of models comes down to assessing how far the actual and theoretical circumstances differ from each other. By highlighting the differences and resemblances between static and dynamic microsimulations in terms of their simulation properties, this short note will contribute to the debate in choosing between these two types of models, and can thus serve as an advice piece for someone contemplating the development of a microsimulation model.
+KW  - dynamic ageing
+KW  - static ageing
+KW  - microsimulation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

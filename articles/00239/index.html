@@ -1,0 +1,1185 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>A Dynamic Microsimulation Model for Ageing and Health in England: The English Future Elderly Model | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00239"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00239" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/health" data-astro-cid-ak4gb66a>Health</a>, <a href="/subjects/dynamic-microsimulation" data-astro-cid-ak4gb66a>Dynamic microsimulation</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Dec 31, 2021</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>A Dynamic Microsimulation Model for Ageing and Health in England: The English Future Elderly Model</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Luke Archer, Nik Lomax, Bryan Tysinger</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>The University of Leeds, Leeds, UK; University of Southern California, Los Angeles, USA</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/14-3/volume-14-3-winter-2021" data-astro-cid-ak4gb66a>Volume 14(3) Winter 2021</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> L. Archer, N. Lomax, B. Tysinger; 2021; <span data-astro-cid-ak4gb66a>A Dynamic Microsimulation Model for Ageing and Health in England: The English Future Elderly Model</span>; International Journal of Microsimulation; 14(3); 2–26. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00239" data-astro-cid-ak4gb66a>10.34196/ijm.00239</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>Population ageing has the potential to disrupt every aspect of society, placing a great deal of stress in particular on our healthcare and welfare systems. To overcome these challenges will require effective policy interventions with effects that may not be truly seen for decades. Policy makers would therefore benefit from a tool that allows them to assess the long-term impact of their decisions on population health. We have developed such a tool by adapting the well-established Future Elderly Model (FEM) developed in the US to use the English Longitudinal Study of Ageing. The FEM is a Markov microsimulation model for people aged over 50 that generates input populations and transition probabilities using the English Longitudinal Study of Ageing, and can then project the population forward in time assessing the prevalence and incidence of a number of chronic diseases and related economic outputs. By modifying the input populations or transition probabilities, we can use the model to investigate counterfactual scenarios and assess the long-term effects of policy interventions on elderly health. In this paper we describe the model and its workings, provide evidence to validate its outputs, and outline possible applications.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00239/ijm-00239.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00239.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00239.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00239" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00239/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. Rationale and context</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. The english future elderly model</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. Validation</a></li><li data-astro-cid-twdwaz5s><a href="#s5" data-astro-cid-twdwaz5s>5. Results and discussion</a></li><li data-astro-cid-twdwaz5s><a href="#s6" data-astro-cid-twdwaz5s>6. Conclusions</a></li><li data-astro-cid-twdwaz5s><a href="#footnotes" data-astro-cid-twdwaz5s>Footnotes</a></li><li data-astro-cid-twdwaz5s><a href="#A1" data-astro-cid-twdwaz5s>Appendix</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In the United Kingdom (UK), life expectancy at birth has increased over the last 40 years. In 1981 male period life expectancy was 70.9 while for females this figure was 76.9. In 2018 this had risen to 79.3 and 82.9 respectively, with projected rises to 85.4 and 88 in 2061 (<a href="#bib1">ONS, 2019a</a>). The potential impact and implications of an ageing population in the UK has received considerable attention, for example the UK Government <i>Foresight Future of an Ageing Population</i> project which took a wide-ranging and multi-method approach across multiple domains, including housing, health and the impacts of technology and design (<a href="#bib2">G. O. for Science, 2016</a>).</p><p data-astro-cid-qsyhzaho>These improvements in life expectancy are to be celebrated, however an ageing population will increase the strain on critical systems such as health and social care provision. This demographic shift will also have a wide-ranging impact on the rest of society. For example having a larger proportion of the population in retirement (relative to those in work) means lower tax revenue to fund the health and social care that some elderly people rely on, often referred to as the Potential Support Ratio (PSR) (<a href="#bib3">Lomax et al., 2020</a>). These issues are not confined to just the UK (<a href="#bib4">Balachandran et al., 2017</a>).</p><p data-astro-cid-qsyhzaho>To adapt to these challenges, policy makers require robust evidence about current and future trends across a broad range of health and socio-economic outcomes. Having suitable modelling tools which are capable of assessing the multi-domain and inter-related outcomes for an ageing population and the ability to assess scenarios and trade-off in terms of policy development has the potential to inform this evidence base substantially. In this paper we discuss the development of one such model and its application to an ageing English population.</p><p data-astro-cid-qsyhzaho>A combination of factors contribute to the future heath and economic outcomes for individuals within the population. These can be demographic (age, sex, ethnicity), relate to educational attainment or past employment, and/or dependent on current health status or individual risk factors (for example smoking, drinking and exercise). This combination of unique attributes soon adds up to a complex picture and so is best handled by considering each individual rather than aggregating over groups or attributes. Interventions or policy experiments can then be applied to individuals to test how outcomes might differ in the future.</p><p data-astro-cid-qsyhzaho>We present a microsimulation model for the English population aged 50 and over. The English Future Elderly Model (E-FEM) accounts for demographic change, ageing, disability, and mortality, and has been adapted from the US FEM, initially created by a team at RAND and now developed at the Leonard P. Schaeffer Center for Health Policy and Economics at the University of Southern California (<a href="#bib5">Goldman et al., 2004</a>). We utilise longitudinal survey data from the English Longitudinal Study of Ageing (ELSA) which enables detailed assessment of individual characteristics across a broad range of domains. The aim of this paper is to describe the development of this model and demonstrate its utility as a tool for understanding the potential future trajectories of the ageing English population. We are motivated by the following research questions: (i) How can we build and validate a model that reflects the complex and multi-faceted health and economic status of the English population aged over 50? (ii) How do policy intervention experiments impact on the outcomes for this population?</p><p data-astro-cid-qsyhzaho>It is our intention to describe how the model works, provide validation of both inputs and outputs in an English context and demonstrate the model’s utility with some example scenarios. We intend for this paper to act as a reference for further work which will be focused on specific policy questions and health outcomes.</p><p data-astro-cid-qsyhzaho>The remainder of the paper is structured as follows: Section 2 provides context for the model and discusses previous FEM applications; Section 3 sets out the model design for the E-FEM; Section 4 deals with validation of outputs; Results are presented and discussed in Section 5; finally Section 6 offers some conclusions and avenues for further work.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. Rationale and context</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In this section we discuss two substantive themes: (i) a brief summary of a number of models which are designed for either assessing the elderly population or are focused on health; and (ii) discussion of the background to the FEM, including existing applications of the model.</p><p data-astro-cid-qsyhzaho>One of the earliest examples of a dynamic microsimulation model designed specifically for health policy analysis was POPREP, applied to the United States and later adapted to simulate the Egyptian population (<a href="#bib6">Khalifa, 1972</a>). POPREP was used to assess the impact of different methods of family planning on the rate of conception (<a href="#bib7">Mustafa, 1973</a>). Aside from POPREP, until the 1990s, health microsimulation models were typically static rather than dynamic owing to the computational cost of individual-level modelling compared with macromodels (<a href="#bib8">Schofield et al., 2018</a>). These static microsimulation models rely on static ageing methods, where input microdata is transformed to fit expected demographic and health constraints at the next time step. Examples of these early static models include the evaluation of disease screening (<a href="#bib9">Habbema et al., 1985</a>; <a href="#bib10">Van Oortmarssen et al., 1981</a>), and assessing fertility (<a href="#bib11">Santow, 1976</a>).</p><p data-astro-cid-qsyhzaho>As the development of more complex dynamic microsimulation models to examine health policy questions became more prevalent, many of these were written for specific disease processes rather than to take in to account a wide range of outcomes (<a href="#bib12">Rutter et al., 2011</a>). This is largely owing to the difficulty in creating microsimulation models in the first place - building a model from scratch requires a skilled programmer and a significant time investment. Examples include <a href="#bib13">Meester et al. (2015)</a> for the screening of colorectal cancer, <a href="#bib14">Mytton et al. (2018)</a> for evaluating cardiovascular disease prevention in the UK, and <a href="#bib15">Su et al. (2015)</a> for assessing the clinical and economic impact of obesity.</p><p data-astro-cid-qsyhzaho>More recently, some research groups have moved to creating microsimulation frameworks to speed up the process of development, enabling much quicker development of models. Examples of large frameworks are LIAM2, () and Modgen developed by Statistics Canada (<a href="#bib16">de Menten et al., 2014</a>; <a href="#bib17">Canada, 2009</a>. These frameworks provide a generic toolkit to handle basic functions of microsimulation such as input/output, cross-sectional ageing, event management, and custom scenario generation, leaving researchers who use them to focus on developing models rather than software. Providing these functions in a user-friendly manner reduces the expertise and time needed to create new models from scratch and potentially opens up a range of new possibilities for using microsimulation to answer pertinent policy-relevant questions.</p><section id="s2-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.1. The future elderly model</h3><p data-astro-cid-qsyhzaho>The FEM is an example of a microsimulation framework, although not in the same way as LIAM2 or Modgen. The FEM uses the Health and Retirement Study (HRS) as the primary data source, which is a longitudinal survey of health and ageing for people over the age of 50 in the US. Many countries around the world have since developed their own longitudinal health surveys based on the HRS, which has enabled comparative research into ageing. These studies are all hosted on the Gateway to Global Aging platform (g2aging.org) which also provides code to harmonise the datasets, linking an individual respondent’s information between waves and generating comparative variables. The comparative nature of these datasets means that the ‘engine’ on which the FEM runs can be adapted to different nations relatively easily, which not only vastly decreases the time required to develop a microsimulation but offers the potential for cross-national comparison of model outcomes. A key feature is that using harmonized data and a common simulation engine means that differences in projections can be interpreted as true differences between countries, rather than driven by modeling or data issues. An excellent example of this comes from a recent publication from <a href="#bib18">Atella et al. (2021)</a> uses the FEM to compare disease prevalence, Life Expectancy, and inequalities in health outcomes in the future elderly across 12 OECD countries.</p><p data-astro-cid-qsyhzaho>The FEM was originally conceived in 1997 by Dana Goldman as a dynamic microsimulation model designed to help policy analysts and firms understand future trends in healthcare spending, health, and population longevity. Originally built for an administrative database of Medicare beneficiaries aged 65 and over (<a href="#bib5">Goldman et al., 2004</a>), it has, for example, been used to produce scenarios of the future cost of providing healthcare to the elderly population under a range of advances in medical technology (<a href="#bib19">Goldman et al., 2005</a>). More recent applications of the FEM in the US include an assessment of longevity and public finances if health trends approximated those in Western Europe (<a href="#bib20">Michaud et al., 2011</a>), predicting the quantity and quality of life (<a href="#bib21">Leaf et al., 2021</a>), and assessing innovations in cancer treatment (<a href="#bib22">Zhao et al., 2019</a>).</p><p data-astro-cid-qsyhzaho>The FEM has been used and adapted to analyse a wide range of topics in a number of different countries. <a href="#bib23">Chen et al. (2016)</a> use an adaptation of the FEM to forecast disability and health for Japan’s future elderly using the Japanese Study of Aging and Retirement. For Mexico, <a href="#bib24">Gonzalez-Gonzalez et al. (2017)</a> use the FEM to estimate the future prevalence of diabetes, using as input the Mexican Health and Aging Study and a range of hypothetical interventions which would reduce diabetes prevalence. For Singapore, <a href="#bib25">Chen et al. (2019)</a> adapt the FEM to take as an input the Singapore Chinese Health Study (SCHS). They use the model to assess the prevalence of ADLs and IADLs and the spending of elderly people on hospital care. A cross-country comparison of smoking, life expectancy and chronic disease in the US, South Korea and Singapore is undertaken by <a href="#bib26">Kim et al. (2021)</a>. They find that the life gain for heavy smokers quitting vs light smokers quitting is apparent in all three countries but that the magnitude is higher in South Korea and Singapore than the US.</p></section></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. The english future elderly model</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In this section we discuss the development of the E-FEM, outlining the data used, model design, imputation of missing variables and the transition models estimated on the data.</p><section id="s3-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.1. Data requirements</h3><p data-astro-cid-qsyhzaho>The primary source of input data for the E-FEM is the English Longitudinal Study of Ageing (ELSA) (<a href="#bib27">Banks et al., 2019</a>). ELSA is a longitudinal survey conducted on a representative sample of the English population aged 50 and over, and contains a wealth of information including demographics, physical and mental health, risk behaviours (for instance smoking and drinking), functional limitations, work and income. The original sample was drawn from households that previously participated in the Health Survey for England (HSE) between 1998 and 2001. This same group of respondents were interviewed at intervals of two years (known as waves), and any change in state for those individuals was recorded. This allows us to observe the transitions between states over time at the individual level, and to estimate transition models based on related characteristics. In ELSA, the majority of binary response variables are in an absorbing state, which means that once entered, that state cannot be left. For example, when asking about chronic health conditions, the question posed is: "Has a doctor ever told that you have (or had) any of the following conditions?" Once a respondent answers ‘‘yes’’ this state is carried forward to future waves. ELSA is jointly run by teams at University College London (UCL), the Institute for Fiscal Studies (IFS), National Centre for Social Research, and the University of Manchester.</p><p data-astro-cid-qsyhzaho>The reliance on a single dataset in the E-FEM is in contrast to many other microsimulation models, where often multiple sources of input data are required. One example of this is the Population Health Model (POHEM) developed by Statistics Canada, which uses a host of both longitudinal and cross-sectional surveys to inform transition models and generate the starting population (<a href="#bib28">Hennessy et al., 2015</a>). Using only ELSA in this way means that the populations we use for estimating transitions and running the model are equivalent in terms of bias and sampling frame, and the mechanisms driving change are the same throughout. ELSA data was accessed from the UK Data Service,<a href="#fn1"> <sup>1</sup> </a> and the Stata harmonisation script for collating all waves of ELSA was downloaded from the Gateway to Global Ageing .<a href="#fn2"> <sup>2</sup> </a>Harmonising the data collects all information into a single file, containing cleaned and processed variables with consistent and intuitive naming conventions, model-based imputations and imputation flags, and spousal counterparts of most individual-level variables.</p><p data-astro-cid-qsyhzaho>Wave 1 of ELSA reports data for March 2002, where sample members were drawn from respondents to the Health Survey for England (HSE), and initial data collected for the HSE was linked to ongoing ELSA measurements. The initial sample included 11,050 respondents aged 50 and over, and refreshment samples selected from the HSE were included in waves 3, 4, 6, and 7. By wave 8 in 2016, the sample included 8375 respondents. <a href="#table1">Table 1</a> shows all the outcome variables that are projected in the E-FEM model based on ELSA data.</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Variables tracked by the model</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Domain</th>
+<th align="left">Variable</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Health</td>
+<td align="left">Mortality, Alzheimers, Cancer, Dementia, Diabetes, Heart Disease, High Cholesterol, Hypertension, Lung Disease, Stroke</td>
+</tr>
+<tr>
+<td align="left">Risk Factors</td>
+<td align="left">BMI, Smoking Status, Alcohol Consumption, Exercise</td>
+</tr>
+<tr>
+<td align="left">Functional Limitations</td>
+<td align="left">Difficulties in Activities of Daily Living (ADLs), and Instrumental Activities of Daily Living (IADLs)</td>
+</tr>
+<tr>
+<td align="left">Economic</td>
+<td align="left">Employed, Unemployed, Retired/Disabled</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>Whilst the E-FEM relies mostly on ELSA as a primary data source, some other data are required in model preparation. Additional data from the UK 2011 Census of Population is used to re-weight the stock and replenishing populations by sex, age, and educational attainment. This is to ensure the stock population is representative of the wider English population aged 50 plus at the start of the simulation, and any replenishing populations remain so into the future. Mid-year population estimates were used to re-weight by sex and age from 2012 to 2018, and beyond 2018 switched to national population projections. Both of these datasets are produced by the Office for National Statistics (ONS). For education, there is no widely available and reliable data projecting levels of attainment into the future. Instead, we used data on education levels reported in the 2011 Census, and assumed that the highest level of educational attainment for an individual did not change after the age of 30. Using this assumption, we re-weighted the replenishing populations by education for the first 20 years of simulation, and held the final distribution constant for any waves beyond that.</p><section id="s3-1-1" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">3.1.1. Data limitations</h4><p data-astro-cid-qsyhzaho>Whilst ELSA is an important source of data in the study of elderly health, there are some limitations that must be acknowledged in the scope of this work. Some of these we deal with in the imputation section of the paper. Firstly, there have been some changes to the survey over time that have significant implications in terms of bias. For example, a number of physical measurements including height and weight are carried out as part of a visit from a qualified nurse, which happens only every second wave. From wave 2, the nurse visit was only offered to ‘core sample members’ who had an interview in person, however in wave 8 eligibility for the nursing visit was further determined by sub-sampling. From this point, selection prioritised those who had responded to all previous nurse visits from cohorts 1-6, reducing the number of eligible respondents and introducing bias.</p><p data-astro-cid-qsyhzaho>Another limitation is the attrition rate of the ELSA sample, shown in <a href="#table2">Table 2</a>. <a href="#bib29">Banks et al. (2011)</a> investigated attrition rates in both ELSA and the US HRS from 2002 to 2006, finding that rates in ELSA were almost 4 times higher for ages 55-64 and 70-80 than in the HRS. They reported that this higher attrition could not be fully explained by differences in the survey design or sampling methodology, but were more likely due to cultural differences between North American and European populations when it comes to scientific surveys. Respondents in the lower education group were most likely to attrit in ELSA, and in particular those with low numeracy scores, suggesting a potential source of bias. <a href="#bib29">Banks et al. (2011)</a> did however conclude that disease prevalences were not biased by attrition in either study, and that the small bias they did find was driven by mortality.</p><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Sample attrition in the over 50s in ELSA. The sample was replenished in 2006, 2008, 2012, and 2014</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Year</th>
+<th align="left">Sample Size</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">2002</td>
+<td align="left">11391</td>
+</tr>
+<tr>
+<td align="left">2004</td>
+<td align="left">8780</td>
+</tr>
+<tr>
+<td align="left">2006</td>
+<td align="left">8655</td>
+</tr>
+<tr>
+<td align="left">2008</td>
+<td align="left">9805</td>
+</tr>
+<tr>
+<td align="left">2010</td>
+<td align="left">8988</td>
+</tr>
+<tr>
+<td align="left">2012</td>
+<td align="left">9068</td>
+</tr>
+<tr>
+<td align="left">2014</td>
+<td align="left">8152</td>
+</tr>
+<tr>
+<td align="left">2016</td>
+<td align="left">7133</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>Finally, the way ELSA deals with nursing homes and institutional living leads to some specific sampling issues. For the first two waves, ELSA did not follow respondents into nursing homes so they were lost from the survey. Starting in wave 3, ELSA surveys respondents in institutions either by proxy or in person, but these individuals are assigned a cross-sectional analysis weight of zero. Respondents who move into a nursing home are likely to be more ill than the population average, and with a higher probability of mortality, so not including them in the full sample could bias the population towards a healthier state.</p></section></section><section id="s3-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.2. Model design</h3><p data-astro-cid-qsyhzaho>The E-FEM is a first-order Markov chain model competing risks model. The Markovian nature of the model means that characteristics that get assigned at time T (the present) only depend on characteristics at time T-1 (the previous timestep). As a result of this, the order that these changes are made in the simulation is inconsequential, as each characteristic is simply a function of several factors at time T-1. The order that is important in the E-FEM however is what we describe as the ’causal pathway’. That is, risk behaviours lead to chronic disease and functional limitations, which in turn have an impact on economic outcomes. For example, BMI is a predictor of the incidence of stroke, which can lead to functional limitations, which in part predict a respondents working status. These pathways are determined individually in the transition models of each characteristic.</p><p data-astro-cid-qsyhzaho>Running the E-FEM happens in two phases - preparation and simulation. In the preparation phase raw ELSA survey data are harmonised, cleaned, and variables of interest are extracted in order to create starting populations. Transition models are estimated from one of the starting populations, and all this information is written into configuration files for use in the simulation. Preparation is handled in Stata (<a href="#bib30">StataCorp, 2021</a>). The simulation phase then takes the starting population and ages individuals, dynamically applying the transition probabilities between each wave to transform the state of simulants and project them into the future. We can think of these as projections of the future of the ELSA survey respondents, which we use to represent the future of the English population due to the representative nature of the survey and the re-weighting to 2011 Census and mid-year population estimates and projections.</p><p data-astro-cid-qsyhzaho>The E-FEM can run both whole population and cohort simulations. The structure of both of these simulation types is shown in <a href="#fig1">Figure 1</a>. Population level simulations begin with the stock population, which includes all ELSA core respondents aged 51 or over in wave 6 (2012). At each wave of the population simulation, the replenishing cohort is included, refreshing the stock population with people aged 51 and 52. This is to ensure the age distribution of the sample remains representative. The cohort simulation does not refresh the sample over time, and instead follows only people aged 51 and 52 from the replenishing cohort.</p><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00239-fig001.CJJX6hbG_AnHCB.webp" class="figure-lightbox-trigger" data-pswp-width="2161" data-pswp-height="1753" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00239-fig001.CJJX6hbG_AnHCB.webp" alt width="2161" height="1753" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Structure of the FEM simulation.</span></figcaption></figure></section><section id="s3-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.3. Starting populations</h3><p data-astro-cid-qsyhzaho>Three separate data files are required to run the E-FEM: the stock, replenishing, and transition populations, all of which are generated from harmonised ELSA data. The stock population is produced from the whole sample of core respondents aged over 50 at wave 6 of ELSA (2012), and is the starting point for the population simulation. The replenishing population is derived from the stock population, where respondents aged 51 and 52 are extracted. The replenishing population is included at each new wave of the population simulation, to maintain the age distribution, but is also the starting point of the cohort simulation. The transition population contains all respondents from wave 2 onwards, and is used to estimate all of the statistical models that are used for ageing the simulants. <a href="#table3">Table 3</a> provides summary statistics on each population.</p><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Summary statistics on key E-FEM populations.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Characteristics</th>
+<th align="left">Stock</th>
+<th align="left">Replenishing</th>
+<th align="left">Transition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Year</td>
+<td align="left">2012</td>
+<td align="left">2012</td>
+<td align="left">2004 - 2016</td>
+</tr>
+<tr>
+<td align="left">Wave</td>
+<td align="left">6</td>
+<td align="left">6</td>
+<td align="left">2 - 8</td>
+</tr>
+<tr>
+<td align="left">Age, Mean (SD)</td>
+<td align="left">66.2 (10.8)</td>
+<td align="left">51.5 (0.5)</td>
+<td align="left">66.1 (10.4)</td>
+</tr>
+<tr>
+<td align="left">Female %</td>
+<td align="left">52.9</td>
+<td align="left">49.7</td>
+<td align="left">53.0</td>
+</tr>
+<tr>
+<td align="left">BMI, Mean (SD)</td>
+<td align="left">28.4 (5.4)</td>
+<td align="left">27.8 (5.4)</td>
+<td align="left">28.3 (5.3)</td>
+</tr>
+<tr>
+<td align="left" colspan="3">BMI Category (%)</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">&lt; 25</td>
+<td align="left">28.3</td>
+<td align="left">37.1</td>
+<td align="left">28.0</td>
+</tr>
+<tr>
+<td align="left">≥ 25 &amp; &lt; 30</td>
+<td align="left">38.8</td>
+<td align="left">34.8</td>
+<td align="left">39.9</td>
+</tr>
+<tr>
+<td align="left">≥ 30</td>
+<td align="left">33.0</td>
+<td align="left">28.1</td>
+<td align="left">32.1</td>
+</tr>
+<tr>
+<td align="left">Smoking Status %</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Ever Smoked</td>
+<td align="left">62.3</td>
+<td align="left">44.5</td>
+<td align="left">62.3</td>
+</tr>
+<tr>
+<td align="left">Current Smoker</td>
+<td align="left">13.6</td>
+<td align="left">13.7</td>
+<td align="left">14.3</td>
+</tr>
+<tr>
+<td align="left">Education Level %</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Less than Secondary</td>
+<td align="left">29.7</td>
+<td align="left">11.1</td>
+<td align="left">33.1</td>
+</tr>
+<tr>
+<td align="left">Upper Secondary and Vocational</td>
+<td align="left">59.9</td>
+<td align="left">64.1</td>
+<td align="left">65.7</td>
+</tr>
+<tr>
+<td align="left">Tertiary</td>
+<td align="left">10.4</td>
+<td align="left">24.8</td>
+<td align="left">11.2</td>
+</tr>
+<tr>
+<td align="left" colspan="3">Disease Prevalence % (Incidence)</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Cancer</td>
+<td align="left">9.8</td>
+<td align="left">2.9</td>
+<td align="left">9.0 (1.46)</td>
+</tr>
+<tr>
+<td align="left">Diabetes</td>
+<td align="left">11.1</td>
+<td align="left">2.8</td>
+<td align="left">10.4 (1.34)</td>
+</tr>
+<tr>
+<td align="left">Heart Disease</td>
+<td align="left">18.9</td>
+<td align="left">7.7</td>
+<td align="left">18.7 (2.57)</td>
+</tr>
+<tr>
+<td align="left">Stroke</td>
+<td align="left">4.7</td>
+<td align="left">0.0</td>
+<td align="left">4.7 (0.85)</td>
+</tr>
+<tr>
+<td align="left">Lung Disease</td>
+<td align="left">6.1</td>
+<td align="left">0.3</td>
+<td align="left">6.2 (0.87)</td>
+</tr>
+<tr>
+<td align="left">Hypertension</td>
+<td align="left">41.8</td>
+<td align="left">20.4</td>
+<td align="left">42.0 (3.08)</td>
+</tr>
+<tr>
+<td align="left">Alzheimer’s</td>
+<td align="left">0.35</td>
+<td align="left">0.0</td>
+<td align="left">0.32 (0.21)</td>
+</tr>
+<tr>
+<td align="left">Dementia</td>
+<td align="left">1.25</td>
+<td align="left">0.27</td>
+<td align="left">1.12 (0.58)</td>
+</tr>
+<tr>
+<td align="left">High Cholesterol</td>
+<td align="left">37.0</td>
+<td align="left">14.9</td>
+<td align="left">32.5 (3.92)</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>The statistics for the replenishing population in <a href="#table3">Table 3</a> are based on 2012 data after re-weighting. The re-weighting step produces a copy of the replenishing population for each wave of the simulation with the cross-sectional weights modified to reflect projected changes in the future. The populations are re-weighted by age, sex, and education, which are all significant predictors for most outcomes. For example, there is an inverse relationship between smoking and education level, where individuals with low educational attainment are more likely to smoke. As smoking is related to a number of chronic diseases in the elderly, the risk therefore of developing these diseases is slightly higher in less educated groups. Over time the proportion of people with higher levels of education is rising, while the proportion of people who are less educated is falling. This will have a diminishing effect on the population level prevalence of these chronic diseases in the near future.</p></section><section id="s3-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.4. Imputation</h3><p data-astro-cid-qsyhzaho>One of the more significant challenges faced in the development of the E-FEM involves dealing with missing data in ELSA. Some variables are missing data for a significant proportion of records, including some key predictor variables such as highest educational qualification (20.9%) and BMI (19.2%). Both education and BMI are important predictors for a variety of outcomes, and so these variables were imputed before estimating transition models.</p><p data-astro-cid-qsyhzaho>All other variables with missing data in the stock population undergo an imputation step during the preparation phase. This is because the model cannot run properly if input populations do not have complete data, as missing variables cannot be transitioned. As the replenishing population is derived from the stock, this imputation step ensures complete data in both starting populations. <a href="#A1-T1">Table A1</a> in the appendix shows a comparison between the imputed and non-imputed stock populations, including the proportion of missing data for specific variables. No significant change in summary statistics is seen before and after imputation.</p><section id="s3-4-1" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">3.4.1. Education</h4><p data-astro-cid-qsyhzaho>Education level has been linked to health through a number of pathways. Higher-educated people are more likely to work full time in fulfilling employment, have higher levels of personal control and social support, and be less likely to take part in risk behaviours such as smoking and heavy drinking which are all significantly correlated with improved health (<a href="#bib31">Ross and Wu, 1995</a>). Education is therefore a key variable in the E-FEM, and imputed for respondents where it was missing.</p><p data-astro-cid-qsyhzaho>During the preparation phase, an ordered probit model for education was estimated and used for imputing missing values during initialisation of the model. As predictors, the education model included demographics, marriage status, parents’ education, and spouse’s education (where applicable).</p></section><section id="s3-4-2" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">3.4.2. BMI</h4><p data-astro-cid-qsyhzaho>ELSA does not report BMI directly, but does report height and weight so that BMI can be calculated (which is handled by the harmonisation script from the Gateway to Global Aging). This information is collected as part of the nurse visit, which was originally only offered to ‘core sample members’ that were drawn from the Health Survey for England (HSE) and had an interview in person (that is not by proxy). They were also only carried out on odd numbered waves of the study, leaving missing data for even waves.</p><p data-astro-cid-qsyhzaho>BMI is a significant predictor of a number of chronic diseases and mortality, as well as non-health-related outcomes such as labour-force participation. In order to effectively estimate transition models including BMI, we need information for every wave and as many respondents as possible. We therefore generated values for missing even waves using linear interpolation in Stata. As linear interpolation simply fills in the midpoint between known data points, transition models estimated from interpolated data showed that current BMI was wholly predicted by previous BMI. This did not mirror reality, and so we tested adding random noise to the interpolated values to assess if this looked more like observed data. For each interpolated data point, we added a sample from a normal distribution with mean 0 and standard deviation 0.05. When testing values for normal distribution, we compared the RMSE term of the BMI transition model with that in the US FEM, and stopped when the terms were roughly equal. <a href="#A1-T2">Table A2</a> in the appendix shows a comparison of mean population BMI between raw and imputed ELSA data at each wave.</p></section></section><section id="s3-5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.5. Transition probabilities</h3><p data-astro-cid-qsyhzaho>Transition probabilities were estimated from the transition panel dataset. <a href="#table4">Table 4</a> provides detailed information about these transition models, including the type of each response variable, the type of regression model used, and all the predictor variables included in each model. Briefly, the models for binary outcomes (such as disease incidence or mortality) use probits, ordered outcomes use ordered probits, non-ordered categorical outcomes use multinomial logit, and continuous outcomes use ordinary least squares. The choice of predictor variables to include in each model was based initially on previous literature, which were then refined iteratively, with the aim of producing parsimonious but well-specified models. The key demographic variables of age, sex, and education were included in every model. Some models are estimated for sub-groups of the population. For example, all individuals are included in the mortality model, only current smokers are included in the model that predicts smoking cessation, and only those who do not and have never had incident heart disease (since it is an absorbing state) are included in the heart disease model.</p><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Information on transitioned variables in the model.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" rowspan="2">Outcome</th>
+<th align="left" rowspan="2">Variable Type</th>
+<th align="left" rowspan="2">Regression Model</th>
+<th align="left" colspan="4">Predictors<a href="#T4_FN1">*</a>
+</th>
+</tr>
+<tr>
+<th align="left">Health Status</th>
+<th align="left">Risk Behaviours</th>
+<th align="left">Economic Predictors</th>
+<th align="left">Demographics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Mortality incidence</td>
+<td align="left">Binary Absorbing</td>
+<td align="left">Probit</td>
+<td align="left">Cancer<br/>Diabetes<br/>Heart Disease<br/>Lung Disease<br/>Stroke<br/>Dementia</td>
+<td align="left">Smoking</td>
+<td align="left"/>
+<td align="left">Age<br/>Sex<br/>Education</td>
+</tr>
+<tr>
+<td align="left">Cancer incidence</td>
+<td align="left">Binary Absorbing</td>
+<td align="left">Probit</td>
+<td align="left"/>
+<td align="left">BMI<br/>Smoking<br/>Alcohol Consumption</td>
+<td align="left"/>
+<td align="left">Age<br/>Sex<br/>Ethnicity<br/>Education</td>
+</tr>
+<tr>
+<td align="left">Diabetes incidence</td>
+<td align="left">Binary Absorbing</td>
+<td align="left">Probit</td>
+<td align="left">Hypertension<br/>High Cholesterol</td>
+<td align="left">BMI<br/>Physical Activity<br/>Alcohol Consumption</td>
+<td align="left"/>
+<td align="left">Age<br/>Sex<br/>Ethnicity<br/>Education</td>
+</tr>
+<tr>
+<td align="left">Heart Disease incidence</td>
+<td align="left">Binary Absorbing</td>
+<td align="left">Probit</td>
+<td align="left">Diabetes<br/>Hypertension<br/>High Cholesterol</td>
+<td align="left">BMI<br/>Smoking<br/>Physical Activity<br/>Alcohol Consumption</td>
+<td align="left"/>
+<td align="left">Age<br/>Sex<br/>Ethnicity<br/>Education</td>
+</tr>
+<tr>
+<td align="left">Hypertension incidence</td>
+<td align="left">Binary Absorbing</td>
+<td align="left">Probit</td>
+<td align="left">High Cholesterol</td>
+<td align="left">BMI<br/>Smoking<br/>Alcohol Consumption<br/>Physical Activity</td>
+<td align="left"/>
+<td align="left">Age<br/>Sex<br/>Ethnicity<br/>Education</td>
+</tr>
+<tr>
+<td align="left">Lung Disease incidence</td>
+<td align="left">Binary Absorbing</td>
+<td align="left">Probit</td>
+<td align="left"/>
+<td align="left">BMI<br/>Smoking</td>
+<td align="left"/>
+<td align="left">Age<br/>Sex<br/>Ethnicity<br/>Education</td>
+</tr>
+<tr>
+<td align="left">Stroke incidence</td>
+<td align="left">Binary Absorbing</td>
+<td align="left">Probit</td>
+<td align="left">Hypertension<br/>Diabetes<br/>High Cholesterol</td>
+<td align="left">BMI<br/>Smoking<br/>Alcohol Consumption</td>
+<td align="left"/>
+<td align="left">Age<br/>Sex<br/>Ethnicity<br/>Education</td>
+</tr>
+<tr>
+<td align="left">High Cholesterol incidence</td>
+<td align="left">Binary Absorbing</td>
+<td align="left">Probit</td>
+<td align="left"/>
+<td align="left">BMI<br/>Smoking<br/>Physical Activity</td>
+<td align="left"/>
+<td align="left">Age<br/>Sex<br/>Ethnicity<br/>Education</td>
+</tr>
+<tr>
+<td align="left">Dementia incidence</td>
+<td align="left">Binary Absorbing</td>
+<td align="left">Probit</td>
+<td align="left">Hypertension<br/>Stroke</td>
+<td align="left">BMI<br/>Smoking</td>
+<td align="left"/>
+<td align="left">Age<br/>Sex<br/>Ethnicity<br/>Education</td>
+</tr>
+<tr>
+<td align="left">Alzheimers incidence</td>
+<td align="left">Binary Absorbing</td>
+<td align="left">Probit</td>
+<td align="left">Hypertension<br/>Stroke</td>
+<td align="left">BMI<br/>Smoking<br/>Alcohol Consumption</td>
+<td align="left"/>
+<td align="left">Age<br/>Sex<br/>Ethnicity<br/>Education</td>
+</tr>
+<tr>
+<td align="left">Start/Stop Smoking</td>
+<td align="left">Binary</td>
+<td align="left">Probit</td>
+<td align="left"/>
+<td align="left">BMI</td>
+<td align="left"/>
+<td align="left">Age<br/>Sex<br/>Ethnicity<br/>Education</td>
+</tr>
+<tr>
+<td align="left">Alcohol Consumption</td>
+<td align="left">Binary</td>
+<td align="left">Probit</td>
+<td align="left"/>
+<td align="left">BMI<br/>Physical Activity</td>
+<td align="left"/>
+<td align="left">Age<br/>Sex<br/>Ethnicity<br/>Education</td>
+</tr>
+<tr>
+<td align="left">BMI</td>
+<td align="left">Continuous</td>
+<td align="left">OLS</td>
+<td align="left"/>
+<td align="left">BMI<br/>Physical Activity</td>
+<td align="left"/>
+<td align="left">Age<br/>Sex<br/>Ethnicity<br/>Education</td>
+</tr>
+<tr>
+<td align="left">Functional Limitations</td>
+<td align="left">Ordered</td>
+<td align="left">Oprobit</td>
+<td align="left">Stroke<br/>Dementia<br/>Alzheimers</td>
+<td align="left">BMI<br/>Smoking</td>
+<td align="left"/>
+<td align="left">Age<br/>Sex<br/>Ethnicity<br/>Education</td>
+</tr>
+<tr>
+<td align="left">Physical Activity</td>
+<td align="left">Ordered</td>
+<td align="left">Oprobit</td>
+<td align="left"/>
+<td align="left">Functional Limitations<br/>Physical Activity</td>
+<td align="left"/>
+<td align="left">Age<br/>Sex<br/>Ethnicity<br/>Education</td>
+</tr>
+<tr>
+<td align="left">Labour Force Participation</td>
+<td align="left">Unordered</td>
+<td align="left">Mlogit</td>
+<td align="left">Functional Limitations</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">Age<br/>Sex<br/>Ethnicity<br/>Education</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>All predictor variables are 2 year lag.</p></div></figure></section><section id="s3-6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.6. Outcomes</h3><p data-astro-cid-qsyhzaho>The FEM can produce both summary and detailed outputs for each scenario we choose to run. For detailed outputs, the state of the population at individual level is written to a new file for each repetition at every wave. Summary outputs are generated by pooling the results of each repetition, and calculating a number of summary statistics. For binary variables, the model reports the number of cases of an observation in the population, as well as the incidence between waves and the total prevalence. For continuous and ordinal variables, the model reports average values, as well as the total number (count), the total value, and quintile distributions.</p><p data-astro-cid-qsyhzaho>Alongside the many variables which are tracked and transitioned throughout the simulation, there are also some outputs that we derive from these variables. For example, the model can be used to investigate life expectancy, as well as many related variables such as disability-free or disease-free life years.</p></section></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. Validation</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In this section we validate a number of model outcomes. We focus on both internal validation (comparing predicted model outcomes with observed model inputs) and external validation by comparing model outputs with distributions seen in other datasets.</p><section id="s4-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.1. Internal validation</h3><p data-astro-cid-qsyhzaho>Internal validation of a microsimulation amounts to comparing the distribution of attributes between simulated outputs and the original data. In this work we employ three methods of internal validation; cross-validation, handover plots and Receiver Operating Characteristic (ROC) curves.</p><p data-astro-cid-qsyhzaho>For cross-validation the original population was split in two, using only half of the population to estimate transition models. The remaining half was then simulated over the same time period as ELSA (2002 - 2016) using these models. We compared simulated outputs with ELSA data by performing t-tests, the results of which are provided in <a href="#A1-T3a">Tables A3</a>. The handover plots and ROC curves will be presented in more detail below.</p><section id="s4-1-1" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">4.1.1. Handover plots</h4><p data-astro-cid-qsyhzaho>Handover plots are not a form of statistical validation, but rather a form of face validity. They give a quick visual indication that simulated outputs follow the same trend as the input data, and confirm that the model is behaving as expected. To generate these plots we estimated transitions using only data from waves 1-4 of ELSA, and produced a starting population based on respondents in wave 5 which was then simulated from wave 5 to 8. Combining these data, the plots in <a href="#fig2">Figure 2</a> show the ’handover’ of chronic disease prevalence from ELSA to the simulation. For each chronic disease, the simulation continues a reasonable pattern from the original data, the predicted values are not noisy and the direction and magnitude of the trend appears sensible and in-line with expectations. Additional handover plots are provided in <a href="#A2-F1">Figure A1</a>.</p><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00239-fig002.C5QzSB2x_ZF6IbK.webp" class="figure-lightbox-trigger" data-pswp-width="2161" data-pswp-height="2524" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00239-fig002.C5QzSB2x_ZF6IbK.webp" alt width="2161" height="2524" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Handover plots for Chronic diseases by sex.</span></figcaption></figure></section><section id="s4-1-2" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">4.1.2. Receiver operating characteristic</h4><p data-astro-cid-qsyhzaho>In order to investigate the efficacy of binary transitions in the model, we used Receiver Operating Characteristic (ROC) curves. First proposed by (<a href="#bib32">Pandya et al., 2017</a>) in a cardiovascular disease policy microsimulation, ROC curves are used to validate a binary classification, comparing the true-positive rate against the false-positive rate. The Area Under the Curve (AUC) relates to the accuracy of the prediction, with 1 being perfect classification when comparing simulated data to real, and 0.5 meaning the classification is no better than random.</p><p data-astro-cid-qsyhzaho>For this analysis, we used the cross-validation population described above, where one half was used to estimate transition models and the remaining half used in the simulation. We simulated this population 500 times from 2002 - 2012 before pooling the results of each run to create a summary output file, which was then compared with ELSA data. The results of this analysis for key binary response variables are shown in <a href="#fig3">Figure 3</a>. In all cases the classification is better than random, and in some cases much better. For example, the AUC for predicting obesity (BMI &gt; 30) and mortality is 0.85 and 0.83 respectively. Predicting chronic disease incidence is not as effective however, with AUCs ranging from 0.55 to 0.70. Additional ROC curves are provided in <a href="#A2-F2">Figure A2</a>.</p><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00239-fig003.dTKMdLsH_1iaQgV.webp" class="figure-lightbox-trigger" data-pswp-width="2161" data-pswp-height="2334" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00239-fig003.dTKMdLsH_1iaQgV.webp" alt width="2161" height="2334" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> ROC curves for key binary response variables with a 10-year simulation horizon, from 2002 - 2012.</span></figcaption></figure></section></section><section id="s4-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.2. External validation</h3><p data-astro-cid-qsyhzaho>External validation involves comparing simulated outputs against independent external datasets. This is often more challenging than internal validation, as finding comparable datasets off the shelf is difficult since question wording and sample selection in surveys often differ. In the case of the E-FEM, chronic disease prevalence and incidence levels are projected into the future, starting in 2012. We can therefore use data published between 2012 and the present to validate the model over short time periods.</p><section id="s4-2-1" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">4.2.1. Comparison with age UK almanac reported disease prevalence</h4><p data-astro-cid-qsyhzaho>The Age UK almanac of disease profiles in later life (<a href="#bib33">Melzer et al., 2015</a>) is a collection of statistics on the prevalence of chronic diseases in elderly people, reported by sex and 5 year age group (over 60).</p><p data-astro-cid-qsyhzaho>We ran a cohort simulation of the E-FEM for a 12-year period between 2004 to 2016 and compared the prevalence of a number of chronic diseases at the end of the simulation with those reported in the Age UK data. The results of the comparison can be seen in <a href="#fig4">Figure 4</a> where the comparison is broken down by age group and sex. The graphs provide a good indication that the E-FEM is, on the whole, predicting chronic disease prevalence well (at least over a 12-year projection period) when compared to the results reported in the Age UK data. Unusual results in the 100 plus population from the E-FEM are most likely caused by a small sample size, as not many simulants survive to that age in the model. We were not able to compare the prevalence of cancer or heart disease in this validation as the Age UK definitions did not match those from ELSA. In the Age UK data cancer diagnosis relates to the previous 5 years only, whereas ELSA asks if the respondent has ever been diagnosed. Heart disease in the Age UK data was defined as one or more of a limited number of conditions, compared with ELSA which reports any heart condition as heart disease.</p><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00239-fig004.CGwRyGHj_ZlR4AJ.webp" class="figure-lightbox-trigger" data-pswp-width="2161" data-pswp-height="2320" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00239-fig004.CGwRyGHj_ZlR4AJ.webp" alt width="2161" height="2320" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Chronic Disease prevalence comparisons by age group between FEM and AgeUK almanac of chronic disease in 2014. AgeUK figures include 95% confidence intervals.</span></figcaption></figure></section><section id="s4-2-2" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">4.2.2. Smoking</h4><p data-astro-cid-qsyhzaho>We ran the E-FEM model to 2018 and compared our estimates of smoking prevalence with data for the same year reported in a fact sheet published by Action on Smoking and Health (ASH) (<a href="#bib34">ASH, 2020</a>), a public health charity in the UK that works to eliminate the harm caused by tobacco, and produces statistical reports on smoking habits broken down by sex and age group. <a href="#fig5">Figure 5</a> shows the comparison between simulated (E-FEM) and observed (ASH) data in 2018. In both age groups, the E-FEM is under-predicting the prevalence of current smokers by approximately 1-2 percentage points.</p><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00239-fig005.ud2So97y_tFk96.webp" class="figure-lightbox-trigger" data-pswp-width="2024" data-pswp-height="1389" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00239-fig005.ud2So97y_tFk96.webp" alt width="2024" height="1389" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> Smoking prevalence comparison by age group in 2018. Simulated data (starting in 2012) compared with prevalence statistics generated by the Action on Smoking and Health charity.</span></figcaption></figure></section></section></div></details><details id="s5" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">5. Results and discussion</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The E-FEM provides a model capable of undertaking policy experimentation across a wide range of health outcomes. To illustrate the utility of the model, we present results from the baseline projections alongside two counterfactual scenarios, focused on heart disease and smoking. Heart disease provides an opportunity to demonstrate a change in outcomes where a chronic disease is directly impacted by model scenarios. Smoking provides an example where an intervention on a behaviour has an impact on health outcomes and survival.</p><section id="s5-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.1. Scenarios</h3><p data-astro-cid-qsyhzaho>For the baseline projections we ran both population and cohort simulations with no alterations. Both the stock and replenishing populations were included (where appropriate) without any modification, and ran for 56 years (28 waves) from 2012 to 2068. The scenario for heart disease was run as a whole population simulation in which nobody develops heart disease in the model. By removing heart disease completely, we can investigate its effect on mortality and disability and see how the removal of heart disease affects life expectancy and healthy life expectancy. The smoking scenario was run as a cohort simulation of people aged 51 and 52. In this scenario, smokers in the cohort immediately quit and do not start smoking again in the model. This way we can investigate the impact smoking has on chronic disease prevalence and mortality.</p></section><section id="s5-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.2. Heart disease</h3><p data-astro-cid-qsyhzaho>Heart disease in ELSA is a catch-all term which encapsulates a range of conditions that affect the heart’s structure and function and is part of a broader set of conditions which are known as Cardiovascular Disease (CVD). CVD is the leading cause of death worldwide, accounting for approximately 31% of all mortality (<a href="#bib35">WHO, 5AD</a>). In England, it is also one of the largest causes of premature mortality, with 33,812 people under the age of 75 dying from CVD in 2016 alone (<a href="#bib36">Public Health England, 2AD</a>). Mortality data from 2001 to 2016 in England has shown a long-term decline in the death rate from CVD, which is reported as one of the main reasons for the increase in life expectancy over this time period. Whilst mortality from CVD has decreased, morbidity has increased as people live longer with these conditions, which has increased the burden on health and social care. Public Health England (PHE) estimates that annual healthcare costs alone for CVD amount to an estimated £7.4 billion, whilst non-healthcare costs are much higher, estimated at £15.8 billion. CVD is one of the most significant targets for PHE, with numerous ongoing strategies for disease prevention. <a href="#table5">Table 5</a> shows the regression model used to estimate Heart Disease transitions in the E-FEM.</p><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Parameter estimates for probit model of heart disease incidence.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">Heart Disease</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Male</td>
+<td align="left">0.108***</td>
+</tr>
+<tr>
+<td align="left">White</td>
+<td align="left">-0.0729</td>
+</tr>
+<tr>
+<td align="left">Less than Secondary Education</td>
+<td align="left">-0.0642</td>
+</tr>
+<tr>
+<td align="left">Higher or further education</td>
+<td align="left">0.0194</td>
+</tr>
+<tr>
+<td align="left">Lag of age spline, less than 65</td>
+<td align="left">0.0103</td>
+</tr>
+<tr>
+<td align="left">Lag of age spline, 65 to 74</td>
+<td align="left">0.0262***</td>
+</tr>
+<tr>
+<td align="left">Lag of age spline, more than 75</td>
+<td align="left">0.0182***</td>
+</tr>
+<tr>
+<td align="left">Lag of BMI spline, less than 30</td>
+<td align="left">0.163</td>
+</tr>
+<tr>
+<td align="left">Lag of BMI spline, more than 30</td>
+<td align="left">0.218</td>
+</tr>
+<tr>
+<td align="left">Lag of ever smoker</td>
+<td align="left">0.0259</td>
+</tr>
+<tr>
+<td align="left">Lag of current smoker</td>
+<td align="left">0.0264</td>
+</tr>
+<tr>
+<td align="left">Lag of heavy smoker (&gt;20 cigs/day)</td>
+<td align="left">0.0836</td>
+</tr>
+<tr>
+<td align="left">Lag of problem drinker (&gt;12 drinks/week)</td>
+<td align="left">-0.0318</td>
+</tr>
+<tr>
+<td align="left">Lag of doctor ever - Diabetes</td>
+<td align="left">0.0520</td>
+</tr>
+<tr>
+<td align="left">Lag of doctor ever - Hypertension</td>
+<td align="left">0.163***</td>
+</tr>
+<tr>
+<td align="left">Lag of doctor ever - High Cholesterol</td>
+<td align="left">0.0659*</td>
+</tr>
+<tr>
+<td align="left">Lag of activity level - Low</td>
+<td align="left">0.174**</td>
+</tr>
+<tr>
+<td align="left">Lag of activity level - Moderate</td>
+<td align="left">0.0979*</td>
+</tr>
+<tr>
+<td align="left">Constant</td>
+<td align="left">-3.172***</td>
+</tr>
+<tr>
+<td align="left">N</td>
+<td align="left">22,333</td>
+</tr>
+<tr>
+<td align="left">Pseudo R2</td>
+<td align="left">0.0335</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>We used the E-FEM to investigate the total burden of disease in the elderly population by comparing the baseline projection to the counterfactual scenario in which nobody developed heart disease whilst in the model. The input populations were not modified in any way for this scenario, so any simulants in the stock or replenishing populations with heart disease were kept in the model. <a href="#fig6">Figure 6</a> compares the average age at death between the baseline and intervention scenarios. There are improvements to overall survival in the intervention, with a significant difference emerging in 2028 of 0.5 years that increases to 1.2 years in 2050.</p><figure id="fig6" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00239-fig006.CBm-pD_l_5jie2.webp" class="figure-lightbox-trigger" data-pswp-width="1465" data-pswp-height="896" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00239-fig006.CBm-pD_l_5jie2.webp" alt width="1465" height="896" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 6.</strong><span data-astro-cid-dzaleqsp> Average age at death comparison between baseline and no heart disease intervention. The shaded bands represent Monte Carlo confidence intervals.</span></figcaption></figure></section><section id="s5-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.3. Smoking</h3><p data-astro-cid-qsyhzaho>The impact of smoking on public health has been studied extensively, and the link between tobacco smoke and chronic health conditions is well understood (<a href="#bib37">Newcomb and Carbone, 1992</a>; <a href="#bib38">Prasad et al., 2009</a>; <a href="#bib39">Al-Bashaireh et al., 2018</a>). Various forms of tobacco control interventions have been attempted around the world, including mass media campaigns (<a href="#bib40">Kuipers et al., 2018</a>), advertising bans (<a href="#bib41">Harris et al., 2006</a>), price increases (<a href="#bib42">Chaloupka et al., 2012</a>), workplace and school smoking bans (<a href="#bib43">Brown et al., 2009</a>), and the addition of warning labels to packaging (<a href="#bib44">Hammond et al., 2006</a>). The outcomes of interest are usually health-related, however some studies have focused on Socio-Economic Status (SES), which has strong links to health. <a href="#table6">Table 6</a> shows the transition model for both starting and stopping smoking.</p><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Parameter estimates for probit models of smoking initiation and cessation.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">Smoking</th>
+<th align="left"/>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"/>
+<td align="left">Started</td>
+<td align="left">Stopped</td>
+</tr>
+<tr>
+<td align="left">Male</td>
+<td align="left">0.112**</td>
+<td align="left">0.0263</td>
+</tr>
+<tr>
+<td align="left">White</td>
+<td align="left">0.0228</td>
+<td align="left">0.257</td>
+</tr>
+<tr>
+<td align="left">Less than Secondary education</td>
+<td align="left">0.188***</td>
+<td align="left">-0.106*</td>
+</tr>
+<tr>
+<td align="left">Higher or Further education</td>
+<td align="left">-0.154**</td>
+<td align="left">0.215**</td>
+</tr>
+<tr>
+<td align="left">Lag of age spline, less than 65</td>
+<td align="left">-0.00572</td>
+<td align="left">0.0188***</td>
+</tr>
+<tr>
+<td align="left">Lag of age spline, 65 to 74</td>
+<td align="left">-0.0186**</td>
+<td align="left">-0.00979</td>
+</tr>
+<tr>
+<td align="left">Lag of age spline, more than 75</td>
+<td align="left">-0.0289**</td>
+<td align="left">0.0171</td>
+</tr>
+<tr>
+<td align="left">Lag of BMI spline, less than 30</td>
+<td align="left">-0.414*</td>
+<td align="left">0.839***</td>
+</tr>
+<tr>
+<td align="left">Lag of BMI spline, more than 30</td>
+<td align="left">0.25</td>
+<td align="left">0.0703</td>
+</tr>
+<tr>
+<td align="left">Constant</td>
+<td align="left">-0.649</td>
+<td align="left">-5.060***</td>
+</tr>
+<tr>
+<td align="left">N</td>
+<td align="left">41951</td>
+<td align="left">6157</td>
+</tr>
+<tr>
+<td align="left">Pseudo R2</td>
+<td align="left">0.019</td>
+<td align="left">0.0129</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho><a href="#fig7">Figure 7</a> compares the average age at death in both the baseline and intervention case (where smokers in the cohort stop smoking and nobody starts smoking). This figure includes the whole population, including both smokers and non-smokers. Results show that average death age is only slightly higher in the no smoking scenario.</p><figure id="fig7" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00239-fig007.DJrWe22H_1kYRWd.webp" class="figure-lightbox-trigger" data-pswp-width="2028" data-pswp-height="1452" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00239-fig007.DJrWe22H_1kYRWd.webp" alt width="2028" height="1452" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 7.</strong><span data-astro-cid-dzaleqsp> Whole population (including smokers and non-smokers) survival curve compared between the baseline and no smoking scenarios.</span></figcaption></figure><p data-astro-cid-qsyhzaho>However, smoking does not just impact on mortality, but also has strong links to increased morbidity. This relationship is most obvious when looking at lung disease. <a href="#fig8">Figure 8</a> plots the prevalence of lung disease in both the baseline and no smoking scenarios, once again including both smokers and non-smokers. There is a clear and significant difference between the scenarios, with prevalence of lung disease being approximately 1.5 percentage points lower after simulating both cohorts for 30 years. This difference is across the whole population, and not just smokers.</p><figure id="fig8" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00239-fig008.CGTwVowh_ZdbN6q.webp" class="figure-lightbox-trigger" data-pswp-width="2027" data-pswp-height="1452" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00239-fig008.CGTwVowh_ZdbN6q.webp" alt width="2027" height="1452" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 8.</strong><span data-astro-cid-dzaleqsp> Whole population prevalence of lung disease comparison between the baseline and no smoking scenarios, with Monte Carlo confidence intervals.</span></figcaption></figure><section id="s5-3-1" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">5.3.1. Treatment on the treated</h4><p data-astro-cid-qsyhzaho>To further illustrate this link, we looked at the difference in life years and disability-free life years for smokers between the two scenarios, this time in a ’treatment on the treated’ analysis where only smokers are included. The results of this analysis are shown in <a href="#table7">Table 7</a>. When looking at smokers only as opposed to the whole cohort, the improvement in life expectancy and healthy life expectancy is much more obvious. Smokers who quit at age 50 in this model live on average 7 years longer than if they did not. However, the improvement in disability-free life-expectancy is only approximately 4.5 years, suggesting that while those who quit live longer, only a proportion of this time equates to disability-free years.</p><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Life year and disability-free life year comparison between baseline and no smoking scenario. This is a treatment on the treated analysis, so only including respondents that smoke.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Scenario</th>
+<th align="left">Life Years</th>
+<th align="left">Disability-free Life Years</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Baseline</td>
+<td align="left">24.4</td>
+<td align="left">16.9</td>
+</tr>
+<tr>
+<td align="left">Intervention</td>
+<td align="left">31.4</td>
+<td align="left">21.4</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>We can run analyses by sub-population using the E-FEM. In the case of smoking we investigate how the intervention affects smokers by different levels of education. <a href="#table8">Table 8</a> shows the average increase in life years and disability-free life years by level of education. The largest overall improvement in life expectancy can be seen for the median educational level (level 2), with over eight years improvement. Those in the lowest education group (level 1) show the smallest average improvement in life years (5.5), as well as the lowest improvement in disability-free life years (3.4). These results suggest that other comorbidities disproportionately affect those with the lowest educational attainment, so even though intervention on a single attribute (smoking) delivers the substantial improvements in life expectancy, only a proportion of these extra years are disability free.</p><figure id="table8" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 8.</strong><span data-astro-cid-dzaleqsp> Average improvement in life years and disability-free life years between scenarios by highest level of education.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Education Level</th>
+<th align="left">Life Years Improvement</th>
+<th align="left">Disability-free Life Years Improvement</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left">5.5</td>
+<td align="left">3.4</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">8.4</td>
+<td align="left">5.3</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">7.7</td>
+<td align="left">5.4</td>
+</tr>
+</tbody>
+</table></div></figure></section></section></div></details><details id="s6" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">6. Conclusions</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>We set out with the aim of discussing the development of a dynamic microsimulation model for an ageing English population, the E-FEM. In this paper we have demonstrated how data from ELSA has been harmonised, cleaned and variables imputed to make it suitable for our model. Validation, both internal and external, demonstrates that the E-FEM is capable of accurately predicting health outcomes and disease states in to the future while results demonstrate that on a whole population and on a cohort the model can inform disease and mortality outcomes under counterfactual scenarios. We show results for a heart disease and a smoking intervention to demonstrate the type of experiments that can be run using the E-FEM but the model can be used to estimate a wide range of potential outcomes.</p><section id="s6-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.1. Limitations and future work</h3><p data-astro-cid-qsyhzaho>Developing and using a dynamic microsimulation like the E-FEM requires that some pragmatic decisions are made so as not to be overwhelmed by the complexity of the data, the model itself, and when interpreting outcomes. This can be summed up by considering the sources of uncertainty and bias which come in to play. The first arises from the data used as input. Limitations with ELSA have been discussed in this paper but in brief relate to bias and the representativeness of the data, missing values and changing data collection methods. The first of these have been mitigated somewhat by scaling to other data (Census, mid-year estimates and projections) and through imputation.</p><p data-astro-cid-qsyhzaho>A second source of uncertainty arises from the estimation of the transition models. Further work to develop policy specific-models using the E-FEM could utilise non-parametric bootstrapping or other methods to improve these models. Third, that the E-FEM is a Monte Carlo simulation means that outputs are inherently uncertain. We have generally used the average result from 100 runs in our results, and have quantified this uncertainty using confidence intervals where possible.</p><p data-astro-cid-qsyhzaho>Fourth, and most difficult to deal with, is that the future is inherently uncertain. Trends in predictors that are important for estimating transitions within the model, such as risk behaviours (smoking, drinking, etc.) are very difficult to predict. Future development of the model could deal with these in a similar way to how we currently deal with changes in educational attainment. Experimentation with trends in risk behaviours and demographic change could be used to modify future populations.</p><section id="s6-1-1" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">6.1.1. Prediction of cancer incidence</h4><p data-astro-cid-qsyhzaho>Special mention must be given to the prediction of cancer, which as shown in <a href="#fig3">Figure 3</a> is not performing much better than chance when compared with original ELSA data. There are a couple of possible contributing factors at play that mean cancer prevalence and mortality may not wholly be captured by ELSA, as well as other reasons why cancer may be difficult to predict from this data. Firstly, the time between diagnosis and death is often short for cancer, which gets progressively worse with age. For example in lung cancer, the 1-year survival rate for someone diagnosed between ages 55-64 is 44.7%, whereas the same diagnosis between ages 75-99 has a 1-year survival rate of 32.0% (<a href="#bib45">ONS, 2019b</a>). There is therefore a significant chance that a respondent diagnosed with cancer between waves may not survive to the next wave. Secondly, cancer is one of the leading reasons for the need for palliative care. As previously stated, respondents who move into assisted living facilities (including palliative care) are given an analysis weight of zero, effectively removing them from our analyses. Thirdly, current predictors taken from ELSA (for example BMI, smoking status) may not be adequate for the prediction of cancer in this case. Further information such as family history, pack-years for smokers, or other environmental exposures may be necessary to improve the model. Also given that different types of cancer can have very specific behavioural and genetic risks, it may be inadequate to predict incidence of all types of cancer with a single set of predictor variables. Finally, cancer could be more of a ’random shock’ than other diseases, meaning prediction of it is more difficult than other diseases even with perfect data.</p></section><section id="s6-1-2" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">6.1.2. Summary</h4><p data-astro-cid-qsyhzaho>This paper has provided an overview of the development of the E-FEM and sought to demonstrate its utility and validity as a model for undertaking policy analysis related to an ageing English population. We set out the basis for further work which will address policy questions which are specifically pertinent to this ageing population. It also marks further expansion of the FEM model developed for the US which has subsequently been adapted and applied to other countries. This will provide an opportunity to undertake cross-country comparisons with the English population represented in our work.</p><p data-astro-cid-qsyhzaho>The potential applications of this model are broad, as evidenced by the history of FEM models in the United States and around the world. Moving forward, we intend to use the E-FEM to assess the burden of chronic disease, evaluate the impact of early life experiences on later-life health, investigate the relationship between socio-economic factors and the quality and quantity of life, and quantify the potential impact for interventions targeting key risk factors.</p></section></section></div></details><details id="footnotes" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Footnotes</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="fn1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1.</h3><p data-astro-cid-qsyhzaho><a href="http://ukdataservice.ac.uk/">ukdataservice.ac.uk/</a></p></section><section id="fn2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.</h3><p data-astro-cid-qsyhzaho><a href="http://g2aging.org">g2aging.org</a></p></section></div></details></div><details id="A1" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Appendix</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s9" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Imputation</h3><figure id="A2-F1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00239-fig009.CeSWoqCH_5fleP.webp" class="figure-lightbox-trigger" data-pswp-width="2161" data-pswp-height="3205" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00239-fig009.CeSWoqCH_5fleP.webp" alt width="2161" height="3205" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure A1.</strong><span data-astro-cid-dzaleqsp> Handover plots for ADLs and IADLs.</span></figcaption></figure><figure id="A2-F2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00239-fig010.Bx_Adb5Q_ZxAGaa.webp" class="figure-lightbox-trigger" data-pswp-width="2047" data-pswp-height="1448" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00239-fig010.Bx_Adb5Q_ZxAGaa.webp" alt width="2047" height="1448" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure A2.</strong><span data-astro-cid-dzaleqsp> Receiver Operating Characteristic curves.</span></figcaption></figure><figure id="A1-T1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A1.</strong><span data-astro-cid-dzaleqsp> Summary statistics for raw and imputed stock populations, including the percentage of missing data where applicable.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Characteristics</th>
+<th align="left">Raw Stock</th>
+<th align="left">Imputed</th>
+<th align="left">Missing (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Age, Mean (SD)</td>
+<td align="left">66.5 (10.8)</td>
+<td align="left">66.2 (10.8)</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">Female (%)</td>
+<td align="left">52.9</td>
+<td align="left">52.9</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">BMI, Mean (SD)</td>
+<td align="left">28.4 (5.4)</td>
+<td align="left">28.4 (5.4)</td>
+<td align="left">19.2</td>
+</tr>
+<tr>
+<td align="left">BMI Category (%)</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">&lt; 25</td>
+<td align="left">28.3</td>
+<td align="left">28.3</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">≥ 25 &amp; &lt; 30</td>
+<td align="left">42.2</td>
+<td align="left">42.2</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">≥ 30</td>
+<td align="left">29.5</td>
+<td align="left">29.5</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">Smoking Status (%)</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Ever Smoked</td>
+<td align="left">62.5</td>
+<td align="left">62.3</td>
+<td align="left">1.83</td>
+</tr>
+<tr>
+<td align="left">Current Smoker</td>
+<td align="left">12.2</td>
+<td align="left">13.6</td>
+<td align="left">0.05</td>
+</tr>
+<tr>
+<td align="left">Education Level (%)</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">20.9</td>
+</tr>
+<tr>
+<td align="left">Less than Secondary</td>
+<td align="left">38.6</td>
+<td align="left">38.6</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">Upper Secondary and Vocational</td>
+<td align="left">48.0</td>
+<td align="left">47.9</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">Some University or more</td>
+<td align="left">13.5</td>
+<td align="left">13.5</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left">Initial Disease Prevalence (%)</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Cancer</td>
+<td align="left">9.8</td>
+<td align="left">9.8</td>
+<td align="left">0.009</td>
+</tr>
+<tr>
+<td align="left">Diabetes</td>
+<td align="left">11.1</td>
+<td align="left">11.1</td>
+<td align="left">0.009</td>
+</tr>
+<tr>
+<td align="left">Heart Disease</td>
+<td align="left">18.9</td>
+<td align="left">18.9</td>
+<td align="left">0.009</td>
+</tr>
+</tbody>
+</table></div></figure></section><section id="s10" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">BMI</h3><figure id="A1-T2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A2.</strong><span data-astro-cid-dzaleqsp> Raw vs imputed BMI mean and standard deviation at each wave of ELSA.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Wave</th>
+<th align="left">Raw BMI</th>
+<th align="left">Imputed BMI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left">-</td>
+<td align="left">28.0 (5.3)</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">28.0 (4.9)</td>
+<td align="left">28.0 (5.0)</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">-</td>
+<td align="left">28.2 (5.2)</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">28.3 (5.4)</td>
+<td align="left">28.4 (5.4)</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">-</td>
+<td align="left">28.4 (5.4)</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">28.4 (5.3)</td>
+<td align="left">28.4 (5.4)</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">-</td>
+<td align="left">28.4 (5.4)</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">28.3 (5.5)</td>
+<td align="left">28.3 (5.5)</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="A1-T3a" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A3.</strong><span data-astro-cid-dzaleqsp> T-test results for health outcomes.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Variable</th>
+<th align="left">FEM 3</th>
+<th align="left">ELSA 3</th>
+<th align="left">P value 3</th>
+<th align="left">FEM 5</th>
+<th align="left">ELSA 5</th>
+<th align="left">P value 5</th>
+<th align="left">FEM 8</th>
+<th align="left">ELSA 8</th>
+<th align="left">P value 8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Alzheimers</td>
+<td align="left">0.0067</td>
+<td align="left">0.00325</td>
+<td align="left">0.00076</td>
+<td align="left">0.0103</td>
+<td align="left">0.00404</td>
+<td align="left">0</td>
+<td align="left">0.0178</td>
+<td align="left">0.0119</td>
+<td align="left">0.0204</td>
+</tr>
+<tr>
+<td align="left">Any ADLs</td>
+<td align="left">0.184</td>
+<td align="left">0.213</td>
+<td align="left">0</td>
+<td align="left">0.199</td>
+<td align="left">0.234</td>
+<td align="left">0</td>
+<td align="left">0.241</td>
+<td align="left">0.225</td>
+<td align="left">0.0938</td>
+</tr>
+<tr>
+<td align="left">Any IADLs</td>
+<td align="left">0.204</td>
+<td align="left">0.222</td>
+<td align="left">0.012</td>
+<td align="left">0.230</td>
+<td align="left">0.255</td>
+<td align="left">0.00292</td>
+<td align="left">0.268</td>
+<td align="left">0.266</td>
+<td align="left">0.839</td>
+</tr>
+<tr>
+<td align="left">Cancer</td>
+<td align="left">0.1</td>
+<td align="left">0.0863</td>
+<td align="left">0.00448</td>
+<td align="left">0.130</td>
+<td align="left">0.119</td>
+<td align="left">0.0836</td>
+<td align="left">0.176</td>
+<td align="left">0.164</td>
+<td align="left">0.182</td>
+</tr>
+<tr>
+<td align="left">Dementia</td>
+<td align="left">0.0159</td>
+<td align="left">0.0102</td>
+<td align="left">0.00156</td>
+<td align="left">0.0226</td>
+<td align="left">0.0194</td>
+<td align="left">0.24</td>
+<td align="left">0.0324</td>
+<td align="left">0.164</td>
+<td align="left">0.0214</td>
+</tr>
+<tr>
+<td align="left">Diabetes</td>
+<td align="left">0.109</td>
+<td align="left">0.0937</td>
+<td align="left">0.00275</td>
+<td align="left">0.132</td>
+<td align="left">0.128</td>
+<td align="left">0.571</td>
+<td align="left">0.164</td>
+<td align="left">0.151</td>
+<td align="left">0.125</td>
+</tr>
+<tr>
+<td align="left">Heart disease</td>
+<td align="left">0.220</td>
+<td align="left">0.175</td>
+<td align="left">0</td>
+<td align="left">0.26</td>
+<td align="left">0.222</td>
+<td align="left">0</td>
+<td align="left">0.328</td>
+<td align="left">0.29</td>
+<td align="left">0.00031</td>
+</tr>
+<tr>
+<td align="left">Hypertension</td>
+<td align="left">0.453</td>
+<td align="left">0.448</td>
+<td align="left">0.555</td>
+<td align="left">0.491</td>
+<td align="left">0.506</td>
+<td align="left">0.115</td>
+<td align="left">0.549</td>
+<td align="left">0.538</td>
+<td align="left">0.381</td>
+</tr>
+<tr>
+<td align="left">Lung disease</td>
+<td align="left">0.0836</td>
+<td align="left">0.0719</td>
+<td align="left">0.00989</td>
+<td align="left">0.0957</td>
+<td align="left">0.0863</td>
+<td align="left">0.0857</td>
+<td align="left">0.111</td>
+<td align="left">0.0898</td>
+<td align="left">0.00167</td>
+</tr>
+<tr>
+<td align="left">Stroke</td>
+<td align="left">0.0558</td>
+<td align="left">0.0504</td>
+<td align="left">0.156</td>
+<td align="left">0.0667</td>
+<td align="left">0.06743</td>
+<td align="left">0.875</td>
+<td align="left">0.082</td>
+<td align="left">0.089</td>
+<td align="left">0.289</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="A1-T3b" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A3.</strong><span data-astro-cid-dzaleqsp> t-test results for economic outcomes.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Variable</th>
+<th align="left">FEM 3</th>
+<th align="left">ELSA 3</th>
+<th align="left">P value 3</th>
+<th align="left">FEM 5</th>
+<th align="left">ELSA 5</th>
+<th align="left">P value 5</th>
+<th align="left">FEM 8</th>
+<th align="left">ELSA 8</th>
+<th align="left">P value 8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Employed</td>
+<td align="left">0.284</td>
+<td align="left">0.285</td>
+<td align="left">0.906</td>
+<td align="left">0.194</td>
+<td align="left">0.179</td>
+<td align="left">0.0412</td>
+<td align="left">0.0809</td>
+<td align="left">0.0842</td>
+<td align="left">0.606</td>
+</tr>
+<tr>
+<td align="left">Unemployed</td>
+<td align="left">0.00102</td>
+<td align="left">0.00662</td>
+<td align="left">0.0132</td>
+<td align="left">0.00519</td>
+<td align="left">0.00675</td>
+<td align="left">0.321</td>
+<td align="left">0.00137</td>
+<td align="left">0.00092</td>
+<td align="left">0.529</td>
+</tr>
+<tr>
+<td align="left">Retired/Disabled</td>
+<td align="left">0.706</td>
+<td align="left">0.707</td>
+<td align="left">0.0.84</td>
+<td align="left">0.801</td>
+<td align="left">0.811</td>
+<td align="left">0.167</td>
+<td align="left">0.918</td>
+<td align="left">0.912</td>
+<td align="left">0.411</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="A1-T3c" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A3.</strong><span data-astro-cid-dzaleqsp> t-test results for risk behaviours.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Variable</th>
+<th align="left">FEM 3</th>
+<th align="left">ELSA 3</th>
+<th align="left">P value 3</th>
+<th align="left">FEM 5</th>
+<th align="left">ELSA 5</th>
+<th align="left">P value 5</th>
+<th align="left">FEM 8</th>
+<th align="left">ELSA 8</th>
+<th align="left">P value 8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">BMI<a href="#A1-T3e_FN1">*</a>
+</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">28.4</td>
+<td align="left">28.0</td>
+<td align="left">0.0014</td>
+</tr>
+<tr>
+<td align="left">Drinks Alcohol</td>
+<td align="left">0.866</td>
+<td align="left">0.874</td>
+<td align="left">0.205</td>
+<td align="left">0.859</td>
+<td align="left">0.851</td>
+<td align="left">0.239</td>
+<td align="left">0.844</td>
+<td align="left">0.839</td>
+<td align="left">0.552</td>
+</tr>
+<tr>
+<td align="left">Problem Drinker</td>
+<td align="left">0.12</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">0.122</td>
+<td align="left">0.127</td>
+<td align="left">0.487</td>
+<td align="left">0.109</td>
+<td align="left">0.113</td>
+<td align="left">0.567</td>
+</tr>
+<tr>
+<td align="left">Activity - Low</td>
+<td align="left">0.0907</td>
+<td align="left">0.101</td>
+<td align="left">0.0426</td>
+<td align="left">0.099</td>
+<td align="left">0.13</td>
+<td align="left">0</td>
+<td align="left">0.112</td>
+<td align="left">0.129</td>
+<td align="left">0.0304</td>
+</tr>
+<tr>
+<td align="left">Activity - Moderate</td>
+<td align="left">0.164</td>
+<td align="left">0.162</td>
+<td align="left">0.739</td>
+<td align="left">0.168</td>
+<td align="left">0.181</td>
+<td align="left">0.0775</td>
+<td align="left">0.183</td>
+<td align="left">0.201</td>
+<td align="left">0.0508</td>
+</tr>
+<tr>
+<td align="left">Activity - High</td>
+<td align="left">0.745</td>
+<td align="left">0.736</td>
+<td align="left">0.231</td>
+<td align="left">0.733</td>
+<td align="left">0.689</td>
+<td align="left">0</td>
+<td align="left">0.706</td>
+<td align="left">0.669</td>
+<td align="left">0.00097</td>
+</tr>
+<tr>
+<td align="left">Smoke Now</td>
+<td align="left">0.132</td>
+<td align="left">0.143</td>
+<td align="left">0.0678</td>
+<td align="left">0.106</td>
+<td align="left">0.116</td>
+<td align="left">0.106</td>
+<td align="left">0.076</td>
+<td align="left">0.0708</td>
+<td align="left">0.391</td>
+</tr>
+<tr>
+<td align="left">Smoke Ever</td>
+<td align="left">0.637</td>
+<td align="left">0.628</td>
+<td align="left">0.279</td>
+<td align="left">0.639</td>
+<td align="left">0.648</td>
+<td align="left">0.322</td>
+<td align="left">0.638</td>
+<td align="left">0.658</td>
+<td align="left">0.0646</td>
+</tr>
+<tr>
+<td align="left">Heavy Smoker</td>
+<td align="left">0.0234</td>
+<td align="left">0.0297</td>
+<td align="left">0.906</td>
+<td align="left">0.0214</td>
+<td align="left">0.0229</td>
+<td align="left">0.595</td>
+<td align="left">0.0128</td>
+<td align="left">0.0136</td>
+<td align="left">0.761</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>ELSA only reports BMI information for even waves.</p></div></figure><figure id="A1-T3d" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A3.</strong><span data-astro-cid-dzaleqsp> t-test results for mortality.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Variable</th>
+<th align="left">FEM 3</th>
+<th align="left">ELSA 3</th>
+<th align="left">P value 3</th>
+<th align="left">FEM 5</th>
+<th align="left">ELSA 5</th>
+<th align="left">P value 5</th>
+<th align="left">FEM 8</th>
+<th align="left">ELSA 8<a href="#A1-T3f_FN1">*</a>
+</th>
+<th align="left">P value 8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Died</td>
+<td align="left">0.0294</td>
+<td align="left">0.0412</td>
+<td align="left">0.00033</td>
+<td align="left">0.0435</td>
+<td align="left">0.0602</td>
+<td align="left">0</td>
+<td align="left">0.0596</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>End of life interviews are only reporte for waves 2-6 (excluding wave 5). There is therefore no mortality informationfor waves 7 or 8.</p></div></figure></section></div></details><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib39" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Al-Bashaireh, AM, Haddad, LG, Weaver, M, Kelly, DL, Chengguo, X, Yoon, S (2018). <span data-astro-cid-oer3kof4>The Effect of Tobacco Smoking on Musculoskeletal Health: A Systematic Review</span>. <em data-astro-cid-oer3kof4>Journal of Environmental and Public Health</em>, <strong data-astro-cid-oer3kof4>
+2018
+</strong>. <a href="https://doi.org/10.1155/2018/4184190" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1155/2018/4184190</a></span></li><li id="bib34" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2020). <span data-astro-cid-oer3kof4>Fact Sheet: Smoking Statistics</span>.</span></li><li id="bib18" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Atella, V, Belotti, F, Kim, D, Goldman, D, Gracner, T, Piano Mortari, A, Tysinger, B (2021). <span data-astro-cid-oer3kof4>The future of the elderly population health status: Filling a knowledge gap</span>. <em data-astro-cid-oer3kof4>Health Economics</em>, <strong data-astro-cid-oer3kof4>
+30 Suppl 1
+</strong>. <a href="https://doi.org/10.1002/hec.4258" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1002/hec.4258</a></span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Balachandran, A, de Beer, J, van Wissen, L, Janssen, F (2017). <span data-astro-cid-oer3kof4>Comparison of Ageing in Europe and Asia: Refining the Prospective Age Approach with a Cross-Country Perspective, Netherlands Interdisciplinary Demographic Institute</span>.</span></li><li id="bib27" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Banks, J, Blake, M, Clemens, S, Marmot, M, Nazroo, J, Oldfield, Z, Oskala, A, Phelps, A, Rogers, N, Steptoe, A (2019). <em data-astro-cid-oer3kof4>English Longitudinal Study of Ageing: Waves 0-9, 1998-2019</em>. UK Data Service. <a href="https://doi.org/10.5255/UKDA-SN-5050-24" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.5255/UKDA-SN-5050-24</a></span></li><li id="bib29" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Banks, J, Muriel, A, Smith, JP (2011). <span data-astro-cid-oer3kof4>Attrition and health in ageing studies: Evidence from ELSA and HRS</span>. <em data-astro-cid-oer3kof4>Longitudinal and Life Course Studies</em>, <strong data-astro-cid-oer3kof4>
+2
+</strong>. <a href="https://doi.org/10.14301/llcs.v2i2.115" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.14301/llcs.v2i2.115</a></span></li><li id="bib43" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Brown, A, Moodie, C, Hastings, G (2009). <span data-astro-cid-oer3kof4>A longitudinal study of policy effect (smoke-free legislation) on smoking norms: ITC Scotland/United Kingdom</span>. <em data-astro-cid-oer3kof4>Nicotine &amp; Tobacco Research</em>, <strong data-astro-cid-oer3kof4>
+11
+</strong>, 924–932. <a href="https://doi.org/10.1093/ntr/ntp087" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1093/ntr/ntp087</a></span></li><li id="bib17" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Canada, S (2009). <span data-astro-cid-oer3kof4>The modgen microsimulation programming language</span>. <a href="https://www.statcan.gc.ca/eng/microsimulation/modgen/modgen" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://www.statcan.gc.ca/eng/microsimulation/modgen/modgen</a>.</span></li><li id="bib42" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Chaloupka, FJ, Yurekli, A, Fong, GT (2012). <span data-astro-cid-oer3kof4>Tobacco taxes as a tobacco control strategy</span>. <em data-astro-cid-oer3kof4>Tobacco Control</em>, <strong data-astro-cid-oer3kof4>
+21
+</strong>, 172–180. <a href="https://doi.org/10.1136/tobaccocontrol-2011-050417" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1136/tobaccocontrol-2011-050417</a></span></li><li id="bib23" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Chen, BK, Jalal, H, Hashimoto, H, Suen, S-. C, Eggleston, K, Hurley, M, Schoemaker, L, Bhattacharya, J (2016). <span data-astro-cid-oer3kof4>Forecasting Trends in Disability in a Super-Aging Society: Adapting the Future Elderly Model to Japan</span>. <em data-astro-cid-oer3kof4>Journal of the Economics of Ageing</em>, <strong data-astro-cid-oer3kof4>
+8
+</strong>, 42–51. <a href="https://doi.org/10.1016/j.jeoa.2016.06.001" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1016/j.jeoa.2016.06.001</a></span></li><li id="bib25" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Chen, C, Lim, JT, Chia, NC, Wang, L, Tysinger, B, Zissimopolous, J, Chong, MZ, Wang, Z, Koh, GC, Yuan, JM, Tan, KB, Chia, KS, Cook, AR, Malhotra, R, Chan, A, Ma, S, Ng, TP, Koh, WP, Goldman, DP, Yoong, J (2019). <span data-astro-cid-oer3kof4>The Long-Term Impact of Functional Disability on Hospitalization Spending in Singapore</span>. <em data-astro-cid-oer3kof4>Journal of the Economics of Ageing</em>, <strong data-astro-cid-oer3kof4>
+14
+</strong>. <a href="https://doi.org/10.1016/j.jeoa.2019.02.002" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1016/j.jeoa.2019.02.002</a></span></li><li id="bib16" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>de Menten, G, Dekkers, G, Bryon, G, Liégeois, P, O’Donoghue, C (2014). <span data-astro-cid-oer3kof4>LIAM2: a New Open Source Development Tool for Discrete-Time Dynamic Microsimulation Models</span>. <em data-astro-cid-oer3kof4>Journal of Artificial Societies and Social Simulation</em>, <strong data-astro-cid-oer3kof4>
+17
+</strong>, 1–9. <a href="https://doi.org/10.18564/jasss.2574" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.18564/jasss.2574</a></span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2016). <span data-astro-cid-oer3kof4>Future of an ageing population</span>. <a href="http://web:8082/00239/hhttps://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/816458/future-of-an-ageing-population.pdf" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://web:8082/00239/hhttps://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/816458/future-of-an-ageing-population.pdf</a>.</span></li><li id="bib19" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Goldman, DP, Shang, B, Bhattacharya, J, Garber, AM, Hurd, M, Joyce, GF, Lakdawalla, DN, Panis, C, Shekelle, PG (2005). <span data-astro-cid-oer3kof4>Consequences of health trends and medical innovation for the future elderly: When demographic trends temper the optimism of biomedical advances, how will tomorrow’s elderly fare</span>. <em data-astro-cid-oer3kof4>Health Affairs</em>, <strong data-astro-cid-oer3kof4>
+24
+</strong>, W5–R5.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Goldman, DP, Shekelle, PG, Bhattacharya, J, Hurd, M, Joyce, GF (2004). <em data-astro-cid-oer3kof4>Health status and medical treatment of the future elderly</em>. Health status and medical treatment of the future elderly.</span></li><li id="bib24" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Gonzalez-Gonzalez, C, Tysinger, B, Goldman, DP, Wong, R (2017). <span data-astro-cid-oer3kof4>Projecting diabetes prevalence among Mexicans aged 50 years and older: the Future Elderly Model-Mexico (FEM-Mexico)</span>. <em data-astro-cid-oer3kof4>BMJ Open</em>, <strong data-astro-cid-oer3kof4>
+7
+</strong>. <a href="https://doi.org/10.1136/bmjopen-2017-017330" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1136/bmjopen-2017-017330</a></span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Habbema, JD, van Oortmarssen, GJ, Lubbe, JT, van der Maas, PJ (1985). <span data-astro-cid-oer3kof4>The MISCAN simulation program for the evaluation of screening for disease</span>. <em data-astro-cid-oer3kof4>Computer Methods and Programs in Biomedicine</em>, <strong data-astro-cid-oer3kof4>
+20
+</strong>, 79–93. <a href="https://doi.org/10.1016/0169-2607(85)90048-3" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1016/0169-2607(85)90048-3</a></span></li><li id="bib44" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hammond, D, Fong, GT, McNeill, A, Borland, R, Cummings, KM (2006). <span data-astro-cid-oer3kof4>Effectiveness of cigarette warning labels in informing smokers about the risks of smoking: findings from the International Tobacco Control (ITC) Four Country Survey</span>. <em data-astro-cid-oer3kof4>Tobacco Control</em>, <strong data-astro-cid-oer3kof4>
+15 Suppl 3
+</strong>, iii19–25. <a href="https://doi.org/10.1136/tc.2005.012294" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1136/tc.2005.012294</a></span></li><li id="bib41" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Harris, F, MacKintosh, AM, Anderson, S, Hastings, G, Borland, R, Fong, GT, Hammond, D, Cummings, KM,  (2006). <span data-astro-cid-oer3kof4>Effects of the 2003 advertising/promotion ban in the United Kingdom on awareness of tobacco marketing: findings from the International Tobacco Control (ITC) Four Country Survey</span>. <em data-astro-cid-oer3kof4>Tobacco Control</em>, <strong data-astro-cid-oer3kof4>
+15 Suppl 3
+</strong>, iii26–33. <a href="https://doi.org/10.1136/tc.2005.013110" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1136/tc.2005.013110</a></span></li><li id="bib28" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hennessy, DA, Flanagan, WM, Tanuseputro, P, Bennett, C, Tuna, M, Kopec, J, Wolfson, MC, Manuel, DG (2015). <span data-astro-cid-oer3kof4>The Population Health Model (POHEM): an overview of rationale, methods and applications</span>. <em data-astro-cid-oer3kof4>Population Health Metrics</em>, <strong data-astro-cid-oer3kof4>
+13
+</strong>, 1–12. <a href="https://doi.org/10.1186/s12963-015-0057-x" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1186/s12963-015-0057-x</a></span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Khalifa, AM (1972). <span data-astro-cid-oer3kof4>Towards a computerized demographic microsimulation model for Egypt: experimentation of POPSIM: 1</span>. <em data-astro-cid-oer3kof4>The Egyptian Population and Family Planning Review</em>, <strong data-astro-cid-oer3kof4>
+5
+</strong>, 153–166.</span></li><li id="bib26" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kim, D, Chen, C, Tysinger, B, Park, S, Chong, MZ, Wang, L, Zhao, M, Yuan, J-. M, Koh, W-. P, Yoong, J, Bhattacharya, J, Eggleston, K (2021). <span data-astro-cid-oer3kof4>Smoking, life expectancy, and chronic disease in South Korea, Singapore, and the United States: A microsimulation model</span>. <em data-astro-cid-oer3kof4>Health Economics</em>, <strong data-astro-cid-oer3kof4>
+30 Suppl 1
+</strong>. <a href="https://doi.org/10.1002/hec.3978" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1002/hec.3978</a></span></li><li id="bib40" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kuipers, MA, Beard, E, West, R, Brown, J (2018). <span data-astro-cid-oer3kof4>Associations between tobacco control mass media campaign expenditure and smoking prevalence and quitting in england: a time series analysis</span>. <em data-astro-cid-oer3kof4>Tobacco Control</em>, <strong data-astro-cid-oer3kof4>
+27
+</strong>, 455–462. <a href="https://doi.org/10.1136/tobaccocontrol-2017-053662" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1136/tobaccocontrol-2017-053662</a></span></li><li id="bib21" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Leaf, DE, Tysinger, B, Goldman, DP, Lakdawalla, DN (2021). <span data-astro-cid-oer3kof4>Predicting quantity and quality of life with the future elderly model</span>. <em data-astro-cid-oer3kof4>Health Economics</em>, <strong data-astro-cid-oer3kof4>
+30
+</strong>, 52–79. <a href="https://doi.org/10.1002/hec.4169" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1002/hec.4169</a></span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Lomax, N, Wohland, P, Rees, P, Norman, P (2020). <span data-astro-cid-oer3kof4>The impacts of international migration on the uk’s ethnic populations</span>. <em data-astro-cid-oer3kof4>Journal of Ethnic and Migration Studies</em>, <strong data-astro-cid-oer3kof4>
+46
+</strong>, 177–199. <a href="https://doi.org/10.1080/1369183X.2019.1577726" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1080/1369183X.2019.1577726</a></span></li><li id="bib13" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Meester, RG, Doubeni, CA, Lansdorp-Vogelaar, I, Jensen, CD, van der Meulen, MP, Levin, TR, Quinn, VP, Schottinger, JE, Zauber, AG, Corley, DA (2015). <span data-astro-cid-oer3kof4>Variation in adenoma detection rate and the lifetime benefits and cost of colorectal cancer screening: a microsimulation model</span>. <em data-astro-cid-oer3kof4>JAMA</em>, <strong data-astro-cid-oer3kof4>
+313
+</strong>, 2349–2358.</span></li><li id="bib33" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Melzer, D, Delgado, JC, Winder, R, Masoli, J, Richards, S, Ble, A (2015). <span data-astro-cid-oer3kof4>The Ageuk Almanac of Disease Profiles in Later Life, UK, Ageing Research Group, University of Exeter</span>.</span></li><li id="bib20" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Michaud, P-. C, Goldman, D, Lakdawalla, D, Gailey, A, Zheng, Y (2011). <span data-astro-cid-oer3kof4>Differences in health between americans and western europeans: Effects on longevity and public finance</span>. <em data-astro-cid-oer3kof4>Social Science &amp; Medicine</em>, <strong data-astro-cid-oer3kof4>
+73
+</strong>, 254–263.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mustafa, AF (1973). <span data-astro-cid-oer3kof4>Fecundability Differentials among Acceptors and Non-Acceptors of Family Planning: A Simulation Experiment,’’ Ph.D. Dissertation, Citeseer</span>.</span></li><li id="bib14" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mytton, OT, Jackson, C, Steinacher, A, Goodman, A, Langenberg, C, Griffin, S, Wareham, N, Woodcock, J (2018). <span data-astro-cid-oer3kof4>The current and potential health benefits of the national health service health check cardiovascular disease prevention programme in england: a microsimulation study</span>. <em data-astro-cid-oer3kof4>PLoS Medicine</em>, <strong data-astro-cid-oer3kof4>
+15
+</strong>.</span></li><li id="bib37" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Newcomb, PA, Carbone, PP (1992). <span data-astro-cid-oer3kof4>The health consequences of smoking: cancer</span>. <em data-astro-cid-oer3kof4>Medical Clinics of North America</em>, <strong data-astro-cid-oer3kof4>
+76
+</strong>, 305–331. <a href="https://doi.org/10.1016/S0025-7125(16)30355-8" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1016/S0025-7125(16)30355-8</a></span></li><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2019). <span data-astro-cid-oer3kof4>Past and projected period and cohort life tables, 2018-based, uk: 1981 to 2068</span>. <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/lifeexpectancies/bulletins/pastandprojecteddatafromtheperiodandcohortlifetables/1981to2068" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://www.ons.gov.uk/peoplepopulationandcommunity/birthsdeathsandmarriages/lifeexpectancies/bulletins/pastandprojecteddatafromtheperiodandcohortlifetables/1981to2068</a>.</span></li><li id="bib45" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2019). <span data-astro-cid-oer3kof4>Cancer survival in england - adults diagnosed</span>. <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/datasets/cancersurvivalratescancersurvivalinenglandadultsdiagnosed" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/conditionsanddiseases/datasets/cancersurvivalratescancersurvivalinenglandadultsdiagnosed</a>.</span></li><li id="bib32" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Pandya, A, Sy, S, Cho, S, Alam, S, Weinstein, MC, Gaziano, TA (2017). <span data-astro-cid-oer3kof4>Validation of a cardiovascular disease policy microsimulation model using both survival and receiver operating characteristic curves</span>. <em data-astro-cid-oer3kof4>Medical Decision Making</em>, <strong data-astro-cid-oer3kof4>
+37
+</strong>, 802–814. <a href="https://doi.org/10.1177/0272989X17706081" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1177/0272989X17706081</a></span></li><li id="bib38" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Prasad, D, Kabir, Z, Dash, A, Das, B (2009). <span data-astro-cid-oer3kof4>Smoking and cardiovascular health: a review of the epidemiology, pathogenesis, prevention and control of tobacco</span>. <em data-astro-cid-oer3kof4>Dian Journal of Medical Sciences</em>, <strong data-astro-cid-oer3kof4>
+63 11
+</strong>, 520–533.</span></li><li id="bib36" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (1000). <span data-astro-cid-oer3kof4>Health matters: preventing cardiovascular disease</span>. <a href="https://www.gov.uk/government/publications/health-matters-preventing-cardiovascular-disease/health-matters-preventing-cardiovascular-disease" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://www.gov.uk/government/publications/health-matters-preventing-cardiovascular-disease/health-matters-preventing-cardiovascular-disease</a>.</span></li><li id="bib31" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ross, CE, Wu, C -l (1995). <span data-astro-cid-oer3kof4>The links between education and health</span>. <em data-astro-cid-oer3kof4>American Sociological Review</em>, 719–745.</span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Rutter, CM, Zaslavsky, AM, Feuer, EJ (2011). <span data-astro-cid-oer3kof4>Dynamic microsimulation models for health outcomes: a review</span>. <em data-astro-cid-oer3kof4>Medical Decision Making</em>, <strong data-astro-cid-oer3kof4>
+31
+</strong>, 10–18.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Santow, MG (1976). <span data-astro-cid-oer3kof4>Thesis (PhD</span>.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Schofield, D, Zeppel, MJ, Tan, O, Lymer, S, Cunich, MM, Shrestha, RN (2018). <span data-astro-cid-oer3kof4>A brief, global history of microsimulation models in health: past applications, lessons learned and future directions</span>. <em data-astro-cid-oer3kof4>T. J. Microsimulation</em>, <strong data-astro-cid-oer3kof4>
+11
+</strong>, 97–142.</span></li><li id="bib30" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2021). <span data-astro-cid-oer3kof4>Stata Statistical Software: Release 17. College Station, Tx: Statacorp Llc</span>.</span></li><li id="bib15" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Su, W, Huang, J, Chen, F, Iacobucci, W, Mocarski, M, Dall, T, Perreault, L (2015). <span data-astro-cid-oer3kof4>Modeling the clinical and economic implications of obesity using microsimulation</span>. <em data-astro-cid-oer3kof4>Journal of Medical Economics</em>, <strong data-astro-cid-oer3kof4>
+18
+</strong>, 886–897.</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Van Oortmarssen, G, Habbema, J, Lubbe, JTN, de Jong, G, van der Maas, P (1981). <span data-astro-cid-oer3kof4>Predicting the effects of mass-screening for disease—a simulation approach</span>. <em data-astro-cid-oer3kof4>European Journal of Operational Research</em>, <strong data-astro-cid-oer3kof4>
+6
+</strong>, 399–409.</span></li><li id="bib35" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (1000). <span data-astro-cid-oer3kof4>Cardiovascular diseases (cvds)</span>. <a href="https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://www.who.int/news-room/fact-sheets/detail/cardiovascular-diseases-(cvds</a>.</span></li><li id="bib22" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Zhao, H, Tysinger, B, Goldman, DP (2019). <span data-astro-cid-oer3kof4>Valuing Innovations in Cancer Treatment</span>. <em data-astro-cid-oer3kof4>Journal of Clinical Oncology</em>, <strong data-astro-cid-oer3kof4>
+37
+</strong>, e18176–e18176.</span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Luke Archer</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>The University of Leeds, Leeds, UK</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:l.archer@leeds.ac.uk" data-astro-cid-m3fa5h5a>l.archer@leeds.ac.uk</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Nik Lomax</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>The University of Leeds, Leeds, UK</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><a href="https://orcid.org/0000-0001-9504-7570" target="_blank" rel="noopener" data-astro-cid-m3fa5h5a>ORCID iD: 0000-0001-9504-7570</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Bryan Tysinger</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>University of Southern California, Los Angeles, USA</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><a href="https://orcid.org/0000-0002-8497-3664" target="_blank" rel="noopener" data-astro-cid-m3fa5h5a>ORCID iD: 0000-0002-8497-3664</a></p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Funding</h3><p data-astro-cid-m3fa5h5a>This work was supported by Wave 1 of The UKRI Strategic Priorities Fund under the EPSRC Grant EP/T001569/1, particularly the ‘Digital Twins: Urban Analytics’ theme within that grant and The Alan Turing Institute.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Data and code availability</h3><p data-astro-cid-m3fa5h5a>The English Longitudinal Study of Ageing is available at the UK Data Service website (www.ukdataservice.ac.uk). The data is available for scientific research only upon registration. The script to harmonise the data is publicly available from the Gateway to Global Aging Data (www.g2aging.org). Census data used for reweighting populations by sex, age, and educational attainment were freely obtained from both the Office of National Statistics (ONS) (www.ons.gov.uk) and nomisweb (www.nomisweb.co.uk) websites. To re-weight the initial populations by sex and age from 2002 to 2018, population estimate data was obtained from the nomisweb data query tool. For re-weighting from 2018 onwards, National Population Projections were used from the ONS, available at www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationprojections/datasets/z3zippedpopulationprojectionsdatafilesengland. Data used for re-weighting populations by highest level of education was again obtained from the ONS at www.ons.gov.uk/peoplepopulationandcommunity/educationandchildcare/adhocs/004283ct04692011censussexbyagebyhighestlevelofqualificationbynssecengland. The code used in the creation of this model is freely accessible on Github at the following link: github.com/ld-archer/E_FEM.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Acknowledgements</h3><p data-astro-cid-m3fa5h5a>The English Longitudinal Study of Ageing was developed by a team of researchers based at University College London, NatCen Social Research, the Institute for Fiscal Studies, the University of Manchester and the University of East Anglia. The data were collected by NatCen Social Research. The funding is currently provided by the National Institute on Aging in the US, and a consortium of UK government departments coordinated by the National Institute for Health Research. Funding has also been received by the Economic and Social Research Council. This analysis uses data or information from the Harmonized English Longitudinal Study of Ageing dataset and Codebook, Version E as of April 2017 developed by the Gateway to Global Aging Data. The development of the Harmonized English Longitudinal Study of Ageing was funded by the National Institute on Aging (R01 AG030153, RC2 AG036619, 1R03AG043052). For more information, please refer to <a href="http://wwwg2agingorg">www.g2aging.org</a>.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00239" data-astro-cid-m3fa5h5a>Version of Record published: December 31, 2021 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2021, Archer</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/health" data-pagefind-filter="Research category:Health" data-astro-cid-m3fa5h5a>Health</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/dynamic-microsimulation" data-pagefind-filter="Research category:Dynamic microsimulation" data-astro-cid-m3fa5h5a>Dynamic microsimulation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=Ageing" data-astro-cid-m3fa5h5a>Ageing</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=Microsimulation" data-astro-cid-m3fa5h5a>Microsimulation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=Policy" data-astro-cid-m3fa5h5a>Policy</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

@@ -1,0 +1,20 @@
+TY  - JOUR
+TI  - EUROMOD: The European Union tax-benefit microsimulation model
+AU  - Sutherland, Holly
+AU  - Figari, Francesco
+VL  - 6
+IS  - 1
+PY  - 2013
+DA  - 2013/04/30
+SP  - 4-26
+C1  - IJM 2013;6(1):4-26
+DO  - 10.34196/ijm.00075
+UR  - https://doi.org/10.34196/ijm.00075
+AB  - This paper aims to provide an introduction to the current state of the art of EUROMOD, the European Union tax-benefit microsimulation model. It explains the original motivations for building a multi-country EU-wide model and summarises its current organisation. It provides an overview of EUROMOD components, covering its policy scope, the input data, the validation process and some technical aspects such as the tax-benefit programming language and the user interface. The paper also reviews some recent applications of EUROMOD and, finally, considers future developments.
+KW  - EUROMOD
+KW  - microsimulation
+KW  - europe
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

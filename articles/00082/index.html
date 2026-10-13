@@ -1,0 +1,1156 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>A survey of dynamic microsimulation models: Uses, model structure and methodology | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00082"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00082" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/methodology" data-astro-cid-ak4gb66a>Methodology</a>, <a href="/subjects/dynamic-microsimulation" data-astro-cid-ak4gb66a>Dynamic microsimulation</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Aug 31, 2013</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>A survey of dynamic microsimulation models: Uses, model structure and methodology</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Jinjing Li, Cathal O’Donoghue</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>The National Centre for Social and Economic Modelling (NATSEM), University of Canberra, Australia; Rural Economy and Development Programme, Teagasc Teagasc Rural Economy Research Centre, Ireland</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/6-2/volume-6-2-autumn-2013" data-astro-cid-ak4gb66a>Volume 6(2) Autumn 2013</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> J. Li, C. O’Donoghue; 2013; <span data-astro-cid-ak4gb66a>A survey of dynamic microsimulation models: Uses, model structure and methodology</span>; International Journal of Microsimulation; 6(2); 3–55. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00082" data-astro-cid-ak4gb66a>10.34196/ijm.00082</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>More than 10 years ago O’Donoghue (<a href="#bib122">2001a</a>) surveyed the dynamic microsimulation models that had been developed up to that point. However many of the barriers mentioned have been gradually overcome in the last decade. This paper surveys the development and practices in dynamic microsimulation over the past decade, and discusses the methodological challenges today. It provides an overview of the methodological choices made in more than 60 known dynamic microsimulation models and examines the advantages and disadvantages of different practices. In addition, this paper reviews the main progress made in the field and explores how future microsimulation models could evolve potentially.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00082/ijm-00082.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00082.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00082.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00082" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00082/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. Overview of models and their uses</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. Model types, structure and datasets</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. Estimations and validations of microsimulation models</a></li><li data-astro-cid-twdwaz5s><a href="#s5" data-astro-cid-twdwaz5s>5. Programming of dynamic micro-simulation models</a></li><li data-astro-cid-twdwaz5s><a href="#s6" data-astro-cid-twdwaz5s>6. Progress in dynamic micro-simulation</a></li><li data-astro-cid-twdwaz5s><a href="#s7" data-astro-cid-twdwaz5s>7. Future directions</a></li><li data-astro-cid-twdwaz5s><a href="#s8" data-astro-cid-twdwaz5s>8. Conclusions</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>A dynamic microsimulation model is a model that simulates the behaviour of micro-units over time. <a href="#bib130">Orcutt <i>et al</i>. (1961)</a> described the first dynamic microsimulation model following the inspiration of Orcutt’s (<a href="#bib128">1957</a>) article. Most dynamic microsimulation models that have developed in following decades trace a direct or indirect link back to this model. Urban planners use microsimulation techniques to estimate traffic flows, while in the field of economics and social science, microsimulation is often used to analyse the social economic policies. In this paper we shall review how dynamic microsimulation in social science has developed, with main focuses on the economic models developed in the past decade.</p><p data-astro-cid-qsyhzaho>Micro level data, such as data obtained from a household survey, is often chosen as the basis for social economic research. In order to evaluate certain impacts of public policies, e.g. the redistributive impact over the course of a lifetime, it is necessary to utilise a long panel dataset. In general, such datasets are not available, either because the analysis relates to the future, as in the case of pension forecasts, or because collected datasets do not cover sufficiently long time periods; therefore, analysts use dynamic microsimulation models to assist in their analysis, a concept which was initially suggested by Orcutt in <a href="#bib128">1957</a>. Essentially, microsimulation is a tool to generate synthetic micro-unit based data, which can then be used to answer many “what-if” questions that, otherwise, cannot be answered.</p><p data-astro-cid-qsyhzaho>Microsimulation models, as in the field of policy modelling, are usually categorised as “static” or “dynamic.” Static models, e.g. EUROMOD (<a href="#bib149">Sutherland, 2007</a>), are often used to evaluate the immediate distributional impact upon individuals/households of possible policy changes without reference to the time dimension and extensive behavioural adjustment. Some newer static models, e.g. IZAΨMOD (<a href="#bib135">Peichl <i>et al</i>., 2010</a>), improved the traditional model by incorporating certain behaviour responses assuming the market adjusts to the new steady state overnight. Dynamic models, e.g. DESTINIE, PENSIM, and SESIM (<a href="#bib18">Bardaji <i>et al</i>., 2003</a>; <a href="#bib43">Curry, 1996</a>; <a href="#bib62">Flood, 2007</a>), extend the static model by allowing individuals to change their characteristics due to endogenous factors within the model (<a href="#bib122">O’Donoghue, 2001a</a>) and let individual units to progress over time. Because of the integrated long-term projections and time dependent behaviour simulations, dynamic microsimulation models could offer further insights in theory.</p><p data-astro-cid-qsyhzaho>10 years ago O’Donoghue (<a href="#bib122">2001a</a>) surveyed the dynamic microsimulation models that had been developed up to that point. However, many of the barriers that existed for model development back in 2001 have been overcome. Data collection projects such as the European Community Household Panel and the increased availability of longitudinal administrative data such as the Lifetime Labour Market Database in the UK have loosened the data constraints. A number of new models were developed in the past decade, for instance Pensim2 (<a href="#bib55">Emmerson <i>et al</i>., 2004</a>), IFS Model (<a href="#bib25">Brewer <i>et al</i>., 2007</a>) and SAGE (<a href="#bib169">Zaidi &amp; Rake, 2001</a>) models in UK, APPSIM in Australia (<a href="#bib77">Harding, 2007a</a>) and DESTINIE2 (<a href="#bib20">Blanchet <i>et al</i>., 2009</a>) in France etc. Meanwhile, a few generic software programmes have emerged, such as ModGen (<a href="#bib166">Wolfson &amp; Rowe, 1998</a>), UMDBS (<a href="#bib141">Sauerbier, 2002</a>), GENESIS (<a href="#bib52">Edwards, 2004</a>) and LIAM (<a href="#bib125">O’Donoghue <i>et al</i>., 2009</a>), eliminating the need to create a model from scratch. It has allowed an internationalisation of the models with developments in Belgium (<a href="#bib46">Dekkers &amp; Belloni, 2009</a>), Italy (<a href="#bib47">Dekkers <i>et al</i>., 2010</a>), Canada (<a href="#bib147">Spielauer, 2009</a>), UK (<a href="#bib55">Emmerson <i>et al</i>., 2004</a>) etc. Nevertheless, the decade has seen the demise of a number of models such as DYNACAN in Canada, CORSIM in U.S., NEDYMAS (<a href="#bib48">Dekkers <i>et al</i>., 1993</a>) in the Netherlands, the Belgian model (<a href="#bib90">Joyeux <i>et al</i>., 1996</a>) and MIDAS in New Zealand etc. The micro-econometric and micro-economic understandings of the processes that make up a dynamic microsimulation model have also greatly improved over this period. It is therefore worth in considering the progress made by the discipline over the past decade.</p><p data-astro-cid-qsyhzaho>In this paper we shall describe the models developed, their uses and discuss some of the methodological choices faced. We then review the progress made by the discipline since the earliest models and suggest some directions for future development.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. Overview of models and their uses</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Dynamic microsimulation models can have many uses and this section provides an overview of the principle uses. <a href="#table1">Table 1</a> summarises many of the existing dynamic microsimulation models in terms of their main purposes, which covers projection, evaluating/designing public policies, inter-temporal behaviour studies, etc. Given that the most accessible micro datasets for social scientists are household or individual level information, most models do not incorporate information on business establishments, with a few exceptions for models like (Sweden) MOSES (<a href="#bib53">Eliasson, 1977</a>), NEDYMAS model, where business behaviours are incorporated through market equilibriums in the models. There are only a small number of firm-level microsimulation models, e.g. DIECOFIS (<a href="#bib133">Parisi, 2003</a>), and they are mostly static.</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Uses of dynamic microsimulation models.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Country</th>
+<th>Uses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APPSIM</td>
+<td>Australia</td>
+<td>Designed to provide answers regarding the future distributional impact of policy change and other issues associated with policy responses to population ageing (<a href="#bib77">Harding, 2007a</a>; <a href="#bib92">Kelly and Percival, 2009</a>)</td>
+</tr>
+<tr>
+<td>BRALAMMO</td>
+<td>Brazil</td>
+<td>Models the Brazilian labour market for pension welfare analysis (<a href="#bib172">Zylberstajn <i>et al</i>., 2011</a>)</td>
+</tr>
+<tr>
+<td>CAPP_DYN</td>
+<td>Italy</td>
+<td>Analyses the long term redistributive effects of social policies (<a href="#bib112">Mazzaferro &amp; Morciano, 2008</a>)</td>
+</tr>
+<tr>
+<td>CBOLT</td>
+<td>US</td>
+<td>Analyses potential reforms to federal entitlement programmes and quantifies the US nation’s long-term fiscal challenges (<a href="#bib127">Oharra <i>et al</i>., 2004</a>)</td>
+</tr>
+<tr>
+<td>CORSIM</td>
+<td>US</td>
+<td>Models changes occurring within kinship networks, wealth accumulation, patterns of intergenerational mobility, the progressivity and the life course of the current social security system, as well as potential reforms, household wealth accumulation, health status, interstate migration, time and income allocation, and international collaborations (<a href="#bib29">Caldwell <i>et al</i>., 1996</a>; <a href="#bib30">Caldwell <i>et al</i>., 1997</a>)</td>
+</tr>
+<tr>
+<td>Czech Republic Model</td>
+<td>Czech Republic</td>
+<td>Designed to analyse public pension system and potential reforms in Czech republic (<a href="#bib61">Fialka <i>et al</i>., 2011</a>)</td>
+</tr>
+<tr>
+<td>DEMOGEN</td>
+<td>Canada</td>
+<td>Models distributional and financial impact of proposals to include homemakers in the Canadian pension plan (<a href="#bib163">Wolfson 1989</a>)</td>
+</tr>
+<tr>
+<td>DESTINIE I/II</td>
+<td>France</td>
+<td>Models public pensions and intergenerational transfers (<a href="#bib20">Blanchet <i>et al</i>., 2009</a>; <a href="#bib23">Bonnet and Mahieu, 2000</a>; <a href="#bib22">Bonnet <i>et al</i>.,1999</a>)</td>
+</tr>
+<tr>
+<td>DYNACAN</td>
+<td>Canada</td>
+<td>Models the Canada Pension Plan and its impact on the Canadian population (<a href="#bib117">Morrison, 2000</a>; <a href="#bib131">Osberg &amp; Lethbridge, 1996</a>)</td>
+</tr>
+<tr>
+<td>DYNAMITE</td>
+<td>Italy</td>
+<td>Models microeconomic issues and the impact of macroeconomic/institutional changes on the distribution of income (Ando and Nicoletti-Altimari, 1999; <a href="#bib5">Ando <i>et al</i>., 2000</a>)</td>
+</tr>
+<tr>
+<td>DYNAMOD I &amp; II</td>
+<td>Australia</td>
+<td>Models life course policies such as superannuation, age, pensions and education, long-term issues within the labour market, health, aged care and housing policy, future characteristics of the population and the projected impact of policy changes (<a href="#bib9">Antcliff 1993</a>; <a href="#bib10">Antcliff <i>et al</i>., 1996</a>; <a href="#bib94">King <i>et al</i>., 1999a</a>; <a href="#bib95">King <i>et al</i>., 1999b</a>)</td>
+</tr>
+<tr>
+<td>DYNASIM I &amp; II</td>
+<td>US</td>
+<td>Forecasts the population up to 2030 by employing different assumptions regarding demographic and economic scenarios, and analyses the cost of teenage childbearing to the public sector under alternative policy scenarios, also includes a link to a macro model (<a href="#bib35">Citro &amp; Hanushek, 1991a</a>; <a href="#bib36">Citro &amp; Hanushek, 1991b</a>)</td>
+</tr>
+<tr>
+<td>DYNASIM III</td>
+<td>US</td>
+<td>Designed to analyse the long-term distributional consequences of retirement and ageing issues (<a href="#bib60">Favreault &amp; Smith, 2004</a>)</td>
+</tr>
+<tr>
+<td>DYPENSI (SIPEMM)</td>
+<td>Slovenia</td>
+<td>A Slovenia Dynamic Microsimulation Model with the focus on pension system simulation (<a href="#bib110">Majcen, 2011</a>)</td>
+</tr>
+<tr>
+<td>FAMSIM</td>
+<td>Austria</td>
+<td>Models the demographic behaviour of young women (<a href="#bib108">Lutz, 1997</a>)</td>
+</tr>
+<tr>
+<td>FEM</td>
+<td>US</td>
+<td>A demographic and economic simulation model designed to predict the future costs and health status of the elderly and to explore what current trends or future shifts might imply for policy, developed by RAND (<a href="#bib70">Goldman <i>et al</i>., 2006</a>; <a href="#bib71">Goldman <i>et al</i>., 2009</a>)</td>
+</tr>
+<tr>
+<td>GAMEO</td>
+<td>France</td>
+<td>Analyses and assesses the consequences of various higher education policies (Courtioux <i>et al</i>., 2008)</td>
+</tr>
+<tr>
+<td>HARDING</td>
+<td>Australia</td>
+<td>Analysis of lifetime tax-transfer analysis, for analysis of policy concerning the Higher Education Contribution Scheme and redistributive impact of government health outlays over the lifetime of an individual (<a href="#bib76">Harding, 1993</a>)</td>
+</tr>
+<tr>
+<td>HealthPaths</td>
+<td>Canada</td>
+<td>Simulate the trajectory of health and life expectancies, and analyses the relative importance of determinants of health-adjusted life expectancy (<a href="#bib167">Wolfson &amp; Rowe, 2013</a>)</td>
+</tr>
+<tr>
+<td>IFS Model</td>
+<td>UK</td>
+<td>Studies pensioner poverty under a variety of alternative tax and benefit policies (<a href="#bib25">Brewer <i>et al</i>., 2007</a>)</td>
+</tr>
+<tr>
+<td>IFSIM</td>
+<td>Sweden</td>
+<td>Studies intergenerational transfers and the interdependence between demography and the economy (<a href="#bib19">Baroni <i>et al</i>., 2009</a>)</td>
+</tr>
+<tr>
+<td>INAHSIM</td>
+<td>Japan</td>
+<td>Simulates demographic and social evolution, able to simulate kinship relationships in detail (<a href="#bib88">Inagaki, 2010</a>)</td>
+</tr>
+<tr>
+<td>INFORM</td>
+<td>UK</td>
+<td>Developed for forecasting of benefit caseloads and combinations of receipt, designed to incorporate significant benefit reforms planned over the coming years, based entirely on administrative data (<a href="#bib69">Gault, 2009</a>)</td>
+</tr>
+<tr>
+<td>Italian Cohort</td>
+<td>Italy</td>
+<td>Analyses lifetime income distribution issues (<a href="#bib15">Baldini, 2001</a>)</td>
+</tr>
+<tr>
+<td>Japanese Cohort</td>
+<td>Japan</td>
+<td>Looks at the impact on household savings of changes in demographic structure (<a href="#bib6">Ando &amp; Moro, 1995</a>; <a href="#bib4">Ando, 1996</a>)</td>
+</tr>
+<tr>
+<td>LABORsim</td>
+<td>Italy</td>
+<td>Simulates the evolution of the labour force over future decades in Italy (<a href="#bib104">Leombruni, 2006</a>)</td>
+</tr>
+<tr>
+<td>LIAM 0</td>
+<td>Ireland</td>
+<td>Models inter-temporal issues relating to the degree of redistribution within the tax-benefit system (<a href="#bib122">O’Donoghue, 2001a</a>; <a href="#bib123">O’Donoghue, 2001b</a>)</td>
+</tr>
+<tr>
+<td>LIAM 1</td>
+<td>Ireland</td>
+<td>Evaluates potential reforms to the Irish pensions system in terms of changes to life-cycle incomes (<a href="#bib125">O’Donoghue <i>et al</i>., 2009</a>)</td>
+</tr>
+<tr>
+<td>LIFEMOD</td>
+<td>UK</td>
+<td>Models the lifetime impact of a welfare state (<a href="#bib59">Falkingham &amp; Lessof, 1992</a>)</td>
+</tr>
+<tr>
+<td>LifePaths</td>
+<td>Canada</td>
+<td>Models health care treatments, student loans, time-use, public pensions and generational accounts (<a href="#bib140">Rowe &amp; Wolfson, 2000</a>)</td>
+</tr>
+<tr>
+<td>Long Term Care Model</td>
+<td>UK</td>
+<td>Models long term care reform options (<a href="#bib74">Hancock, 2000</a>)</td>
+</tr>
+<tr>
+<td>Melbourne Cohort</td>
+<td>Australia</td>
+<td>Analyses income inequality in a lifetime context (<a href="#bib154">Van de Ven, 1998</a>)</td>
+</tr>
+<tr>
+<td>MICROHUS</td>
+<td>Sweden</td>
+<td>Models dynamic effects of changes to the tax-benefit system on the income distribution and economic-demographic effects of immigration (<a href="#bib96">Klevemarken, 1991</a>; <a href="#bib102">Klevmarken &amp; Olovsson, 1996</a>)</td>
+</tr>
+<tr>
+<td>MICSIM</td>
+<td>Germany</td>
+<td>Analyses German pension and tax reform (<a href="#bib114">Merz <i>et al</i>., 2002</a>)</td>
+</tr>
+<tr>
+<td>MiMESIS</td>
+<td>Sweden</td>
+<td>Evaluates Swedish Pension Reform (<a href="#bib115">Mikula <i>et al</i>., 2003</a>)</td>
+</tr>
+<tr>
+<td>MIDAS</td>
+<td>Multi</td>
+<td>Analyses pension system and social security adequacy (<a href="#bib46">Dekkers &amp; Belloni, 2009</a>)</td>
+</tr>
+<tr>
+<td>MIDAS</td>
+<td>New Zealand</td>
+<td>Models wealth accumulation and distribution (<a href="#bib148">Stroombergen <i>et al</i>., 1995</a>)</td>
+</tr>
+<tr>
+<td>MIND</td>
+<td>Italy</td>
+<td>Simulates the economic impact resulting from alternative values of the income growth rate and real interest rate (<a href="#bib153">Vagliasindi <i>et al</i>., 2004</a>)</td>
+</tr>
+<tr>
+<td>MINT</td>
+<td>US</td>
+<td>Forecasts the distribution of income for the 1931–1960 birth cohorts in retirement, MINT5 extends to the 1926–2018 birth cohorts ((<a href="#bib132">Panis &amp; Lillard, 1999</a>; <a href="#bib145">Smith <i>et al</i>., 2007</a>; <a href="#bib152">Toder <i>et al</i>., 2002</a>)</td>
+</tr>
+<tr>
+<td>MOSART 1/2/3</td>
+<td>Norway</td>
+<td>Models the future cost of pensions, undertakes micro level projections of population, education, labour supply and public pensions, incorporates overlapping-generations, models within a dynamic microsimulation framework (Andersson <i>et al</i>., 1992; <a href="#bib64">Fredriksen, 1998</a>)</td>
+</tr>
+<tr>
+<td>MOSES</td>
+<td>Sweden</td>
+<td>Investigates the micro basis for inflation and the interactions between inflation, economic growth, and profitability (<a href="#bib53">Eliasson, 1977</a>)</td>
+</tr>
+<tr>
+<td>NEDYMAS</td>
+<td>Netherlands</td>
+<td>Models intergenerational equity and pension reform, the redistributive impact of social security schemes in a lifetime framework (<a href="#bib120">Nelissen, 1996</a>; <a href="#bib121">Nelissen, 1998</a>)</td>
+</tr>
+<tr>
+<td>PENMOD</td>
+<td>Japan</td>
+<td>Public pension system analysis (<a href="#bib144">Shiraishi, 2008</a>)</td>
+</tr>
+<tr>
+<td>PENSIM</td>
+<td>UK</td>
+<td>Models the treatment of pensioners by the social security system across the income distribution (<a href="#bib75">Hancock <i>et al</i>. 1992</a>; <a href="#bib43">Curry, 1996</a>)</td>
+</tr>
+<tr>
+<td>PENSIM</td>
+<td>US</td>
+<td>Analyses lifetime coverage and adequacy issues related to employer-sponsored pension plans in the US (<a href="#bib83">Holmer <i>et al</i>., 2001</a>)</td>
+</tr>
+<tr>
+<td>PENSIM2</td>
+<td>UK</td>
+<td>Estimates the future distribution of pensioner incomes to analyse the distributional effects of proposed changes to pension policy (<a href="#bib55">Emmerson <i>et al</i>., 2004</a>)</td>
+</tr>
+<tr>
+<td>Pensions Model</td>
+<td>Belgium</td>
+<td>Analyses and forecasts the medium term impact of a change to pension regulations (<a href="#bib90">Joyeaux <i>et al</i>., 1996</a>)</td>
+</tr>
+<tr>
+<td>POHEM</td>
+<td>Canada</td>
+<td>A longitudinal microsimulation model of health and disease, it is used to compare competing health intervention alternatives within a framework that captures the effects of disease interactions (<a href="#bib158">Will, 2001</a>)</td>
+</tr>
+<tr>
+<td>POLISIM</td>
+<td>US</td>
+<td>Demographic-economic and social security projection for US social security administration (<a href="#bib82">Holmer, 2009</a>; <a href="#bib113">McKay, 2003</a>)</td>
+</tr>
+<tr>
+<td>PRISM</td>
+<td>US</td>
+<td>Evaluates public and private pensions (<a href="#bib35">Citro &amp; Hanushek, 1991a</a>; <a href="#bib36">Citro &amp; Hanushek, 1991b</a>)</td>
+</tr>
+<tr>
+<td>SADNAP</td>
+<td>Netherlands</td>
+<td>Evaluates the financial and economic implications of the problem of ageing (Van Sonsbeek, 2009)</td>
+</tr>
+<tr>
+<td>SAGE</td>
+<td>UK</td>
+<td>Dynamic demographic/tax model for the UK (<a href="#bib169">Zaidi &amp; Rake, 2001</a>; <a href="#bib170">Zaidi &amp; Scott, 2001</a>)</td>
+</tr>
+<tr>
+<td>SESIM</td>
+<td>Sweden</td>
+<td>Analyses the consequences of population ageing and models budget and distributional impact of inter-temporal policy issues such as student grants, labour supply, savings decisions and pensions (<a href="#bib57">Ericson &amp; Hussenius, 1998</a>; <a href="#bib56">Ericson &amp; Hussenius, 1999</a>; <a href="#bib101">Klevmarken &amp; Lindgren, 2008</a>; <a href="#bib99">Klevmarken, 2010</a>; <a href="#bib138">Pylkkänen, 2001</a>)</td>
+</tr>
+<tr>
+<td>Sfb3</td>
+<td>Germany</td>
+<td>Analyses pension reforms, the effect of shortening worker hours, distributional effects of education transfers (<a href="#bib68">Galler &amp; Wagner, 1986</a>; <a href="#bib72">Hain &amp; Hellberger, 1986</a>)</td>
+</tr>
+<tr>
+<td>SimBritain</td>
+<td>UK</td>
+<td>Simulates urban and regional populations within the UK (<a href="#bib16">Ballas <i>et al</i>., 2005a</a>; <a href="#bib17">Ballas <i>et al</i>., 2005b</a>);</td>
+</tr>
+<tr>
+<td>SMILE</td>
+<td>Ireland</td>
+<td>Population projections with spatial details for Ireland (<a href="#bib16">Ballas <i>et al</i>., 2005a</a>; <a href="#bib126">O’Donoghue <i>et al</i>., 2011</a>)</td>
+</tr>
+<tr>
+<td>SustainCity</td>
+<td>Multi</td>
+<td>A dynamic model with a focus on land use simulations (<a href="#bib116">Morand <i>et al</i>., 2010</a>)</td>
+</tr>
+<tr>
+<td>SVERIGE</td>
+<td>Sweden</td>
+<td>Models human eco-dynamics, e.g. the impact of human cultural and economic systems on the environment (<a href="#bib156">Vencatasawmy <i>et al</i>., 1999</a>)</td>
+</tr>
+<tr>
+<td>Swedish Cohort</td>
+<td>Sweden</td>
+<td>Models the replacement of social insurance by personal savings accounts and the distribution of lifetime marginal effective tax rates (<a href="#bib63">Fölster, 2001</a>)</td>
+</tr>
+<tr>
+<td>Tdymm</td>
+<td>Italy</td>
+<td>Analyses the Italian labour market and pension system, with a focus on pension adequacy and related distributional effects (<a href="#bib151">Tedeschi, 2011</a>)</td>
+</tr>
+<tr>
+<td>XEcon</td>
+<td>Canada</td>
+<td>A model intended for theoretical exploration rather than practical empirical application (<a href="#bib164">Wolfson, 1995</a>)</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>Following the introduction of the time dimension into dynamic microsimulation, these models are able to provide useful projections for the trend of socio-economic development under current policies. DYNASIM2/3 (<a href="#bib157">Wertheimer <i>et al</i>., 1986</a>; <a href="#bib60">Favreault &amp; Smith, 2004</a>), APPSIM (<a href="#bib77">Harding, 2007a</a>), the SfB3 population model (<a href="#bib68">Galler &amp; Wagner, 1986</a>), DYNAMITE (<a href="#bib5">Ando <i>et al</i>., 2000</a>), SADNAP (<a href="#bib155">Van Sonsbeek, 2010</a>) and DESTINIE1/2 (<a href="#bib23">Bonnet &amp; Mahieu, 2000</a>; <a href="#bib20">Blanchet <i>et al</i>., 2009</a>), have all been used for these purposes. In some cases, dynamic microsimulation models have been used as an input for macro models such as in the case of the MOSART (<a href="#bib8">Andreassen <i>et al</i>., 1994</a>; <a href="#bib64">Fredriksen, 1998</a>, <a href="#bib65">2003</a>), DYNASIM2 and DARMSTADT (<a href="#bib80">Heike <i>et al</i>., 1987</a>) models.</p><p data-astro-cid-qsyhzaho>Dynamic microsimulation models can also be used to evaluate the future performance of various long-term programmes such as pensions, educational financing, and health and long-term care, by analysing simulated future cross-sectional data. The governmental models such as DYNCAN (<a href="#bib117">Morrison, 2000</a>), POLISIM (<a href="#bib113">McKay, 2003</a>), PENSIM2 (<a href="#bib55">Emmerson, 2004</a>), the Sfb3 models (<a href="#bib68">Galler &amp; Wagner, 1986</a>), MOSART (Andreassen <i>et al</i>., 1996), PENMOD (<a href="#bib144">Shiraishi, 2008</a>) and SESIM (<a href="#bib56">Ericson, &amp; Hussenius, 1999</a>; <a href="#bib101">Klevmarken &amp; Lindgren, 2008</a>) have been extensively used for this purpose. The existence of baseline projections allows the design of a new public policy by simulating the effect of potential reforms. Models such as LIAM (<a href="#bib125">O’Donoghue <i>et al</i>., 2009</a>), PRISM (<a href="#bib93">Kennell &amp; Sheils, 1990</a>), the Belgian dynamic model (Joyeaux <i>et al</i>., 1996), the SfB3 population model (<a href="#bib68">Galler &amp; Wagner, 1986</a>), LIFEMOD (<a href="#bib58">Falkingham &amp; Johnson, 1993</a>), SESIM (<a href="#bib62">Flood, 2007</a>; <a href="#bib99">Klevmarken, 2010</a>) and Belgium MIDAS (<a href="#bib47">Dekkers <i>et al</i>., 2010</a>; <a href="#bib46">Dekkers &amp; Belloni, 2009</a>), have all been used to look at pension reform. A number of models such as DYNAMOD, the SfB3 cohort model (<a href="#bib72">Hain &amp; Hellberger, 1986</a>), LIFEMOD (<a href="#bib76">Harding, 1993</a>), and SAGE (<a href="#bib170">Zaidi &amp; Scott, 2001</a>) have been used to examine changes to education finance, whereby education costs are to be paid for over an individual’s lifetime. Fölster (<a href="#bib63">2001</a>) used a microsimulation model to examine reforms to social insurance utilising personal savings accounts.</p><p data-astro-cid-qsyhzaho>With the longitudinal information created from dynamic microsimulation models, researchers can study the inter-temporal processes and behaviours at both the aggregate and individual levels. For example, CORSIM (<a href="#bib91">Keister, 2000</a>), DYNAMOD (<a href="#bib13">Baekgaard, 1998</a>), and the New Zealand MIDAS model (<a href="#bib148">Stroombergen <i>et al</i>., 1995</a>) have all been used to look at wealth accumulation. Creedy and van de Ven (<a href="#bib41">2001</a>), <a href="#bib121">Nelissen (1998)</a> and others have used dynamic microsimulation models to explore lifetime earning redistributions. Models such as DESTINIE1/2, LIAM, LifePaths, and IFSIM have been used to examine intergenerational transfers (<a href="#bib140">Rowe &amp; Wolfson, 2000</a>; <a href="#bib23">Bonnet &amp; Mahieu, 2000</a>; <a href="#bib20">Blanchet <i>et al</i>., 2009</a>; <a href="#bib19">Baroni <i>et al</i>., 2009</a>; <a href="#bib125">O’Donoghue <i>et al</i>., 2009</a>), whilst FAMSIM (<a href="#bib108">Lutz, 1997</a>) has been used to study the demographic behaviour of women, and MICROHUS (<a href="#bib102">Klevmarken &amp; Olovsson, 1996</a>) examined the impact of a tax-benefit system on labour market mobility. Models that simulate these processes can be used to design policies to combat these problems, for example DYNASIM was used to study the effect of teenage childbearing, while CORSIM has been used to look at dental health within the US population (<a href="#bib26">Brown <i>et al</i>., 1995</a>). The FEM and POHEM models were designed to evaluate the evolution of the population’s health status and its budget implications for the US and Canada (<a href="#bib171">Zucchelli <i>et al</i>., 2010</a>; <a href="#bib158">Will <i>et al</i>., 2001</a>), whist the LifePaths modelling framework has been used in Canada to examine time use issues (<a href="#bib166">Wolfson &amp; Rowe, 1998</a>).</p><p data-astro-cid-qsyhzaho>By combining spatial information with dynamic microsimulation models, the model can also be used to predict the geographical trend of certain social economic activities. This type of model is usually referred to as a dynamic spatial microsimulation model, e.g. MOSES (<a href="#bib168">Wu <i>et al</i>., 2008</a>) from U.K., there are a number of models that attempt to analyse policy changes at the national level. For instance, the SVERIGE model simulates a number of demographic processes for policy analysis in Sweden (<a href="#bib156">Vencatasawmy <i>et al</i>., 1999</a>; <a href="#bib81">Holm <i>et al</i>., 2003</a>), whilst the SMILE model (<a href="#bib16">Ballas <i>et al</i>., 2005a</a>; <a href="#bib126">O’Donoghue <i>et al</i>., 2011</a>) analyses the impact of policy change and economic development on rural areas in Ireland. In addition to modelling economic policy, SimBritain (<a href="#bib17">Ballas <i>et al</i>., 2005b</a>) looks at the evolution of health at the national level while models such as SustainCity (<a href="#bib116">Morand <i>et al</i>., 2010</a>) focus on the housing market with a dynamic setting.</p><p data-astro-cid-qsyhzaho>Since dynamic microsimulation models typically project samples of the population over time, one can use the model to examine future income distributions under different economic and demographic scenarios. DYNASIM2/3 (<a href="#bib157">Wertheimer <i>et al</i>., 1986</a>; <a href="#bib60">Favreault &amp; Smith, 2004</a>), APPSIM (<a href="#bib77">Harding, 2007a</a>), the SfB3 population model (<a href="#bib68">Galler &amp; Wagner, 1986</a>), DYNAMITE (<a href="#bib5">Ando <i>et al</i>., 2000</a>), SESIM (<a href="#bib101">Klevmarken &amp; Lindgren, 2008</a>), SADNAP (<a href="#bib155">Van Sonsbeek, 2010</a>) and DESTINIE1/2 (<a href="#bib23">Bonnet &amp; Mahieu, 2000</a>; <a href="#bib20">Blanchet et.al, 2009</a>) have been used for these purposes. These models typically utilise macro-models or forecasts to align their own projections. However, occasionally the opposite has occurred, where dynamic microsimulation models have been used as input into macro models as in the case of MOSART (Andreassen and Solli, 2000), DYNASIM (<a href="#bib157">Wertheimer <i>et al</i>., 1986</a>; <a href="#bib60">Favreault &amp; Smith, 2004</a>) and the DARMSTADT models.</p><p data-astro-cid-qsyhzaho>Although <a href="#table1">Table 1</a> tries to cover as many known models as possible, it is nearly impossible to give a complete list as new models are being developed every year. In addition, the list focuses more on the dynamic microsimulation models that are mainly used for social economic analyses. Certain regional dynamic spatial models and transportation models are not included.</p><p data-astro-cid-qsyhzaho>One can also track the development of models through a number of lineages. The original Orcutt Socio-economic System (<a href="#bib130">Orcutt <i>et al</i>., 1961</a>) led to DYNASIM described above, which in turn led to CORSIM which in turn led to POLISIM, DYNACAN and SVERIGE models. In parallel, large modelling developments in the 1970’s took place in Sweden and Germany with current antecedents, while the LSE welfare state programme of the 1980’s have spawned the LIFEMOD, PENSIM, PENSIM2 and SAGEMOD models in the UK as well as the HARDING model in Australia and LIAM model in Ireland. Subsequently the HARDIING model led within the creation of NATSEM to a range of models in Australia, while the LIAM model has influenced a number of European models including the LIAM2 modelling framework. Separately to these largely related developments, Statistics Canada has developed a series of Lifepath/MODGEN based models based upon the original DEMOGEN.</p><p data-astro-cid-qsyhzaho>All these powerful dynamic microsimulation models come with the cost of high complexity. Compared with static microsimulation, dynamic microsimulation is much more costly to develop and also has more issues with the methodologies used. This paper intends to discuss some of the methodological issues related to the construction of a dynamic microsimulation model, surveying current practice in the field around the world.</p></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. Model types, structure and datasets</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s3-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.1 An overview of the technical choices made by dynamic microsimulation models</h3><p data-astro-cid-qsyhzaho>This section continues the discussion of methodological issues faced in constructing dynamic microsimulation models but focuses on the technical implementation and choices made in a model. <a href="#table2">Table 2</a> describes the data source and sample size used by different dynamic microsimulation models while <a href="#table3">Table 3</a> provides an overview of the technical choices of the modelling structure. These two tables will be discussed in details in this section.</p><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Base dataset selection of dynamic microsimulation models.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Country</th>
+<th>Base Dataset</th>
+<th>Observation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APPSIM</td>
+<td>Australia</td>
+<td>1% census sample drawn from the 2001 Census</td>
+<td>188,013 individuals</td>
+</tr>
+<tr>
+<td>CAPP_DYN</td>
+<td>Italy</td>
+<td>Survey of Households’ Income and Wealth (SHIW), 2002</td>
+<td>21,148 individuals and 8,011 households</td>
+</tr>
+<tr>
+<td>CBOLT</td>
+<td>US</td>
+<td>Continuous Work History</td>
+<td/>
+</tr>
+<tr>
+<td>CORSIM</td>
+<td>US</td>
+<td>0.1% sample drawn from the 1,960 census</td>
+<td>180,000 individuals</td>
+</tr>
+<tr>
+<td>Czech Republic Model</td>
+<td>Czech Republic</td>
+<td>Synthetic age 0 cohort, distribution parameters obtained from multiple sources</td>
+<td>119,914 individuals</td>
+</tr>
+<tr>
+<td>DEMOGEN</td>
+<td>Canada</td>
+<td>Synthetic age 0 cohort</td>
+<td>1,000–5,000 individuals</td>
+</tr>
+<tr>
+<td>DESTINIE I &amp; II</td>
+<td>France</td>
+<td>Financial Assets Survey,1991</td>
+<td>37,000 individuals</td>
+</tr>
+<tr>
+<td>DYNACAN</td>
+<td>Canada</td>
+<td>1% sample drawn from 1971 census, public use file</td>
+<td>212,000 individuals</td>
+</tr>
+<tr>
+<td>DYNAMIC TUSCAN</td>
+<td>Italy</td>
+<td>EU-SILC 2003 wave</td>
+<td/>
+</tr>
+<tr>
+<td>DYNAMITE</td>
+<td>Italy</td>
+<td>Household Income and Wealth, 1993</td>
+<td>67,000 households</td>
+</tr>
+<tr>
+<td>DYNAMOD I and II</td>
+<td>Australia</td>
+<td>1% sample drawn from the 1986 census</td>
+<td>150,000 individuals</td>
+</tr>
+<tr>
+<td>DYNASIM I</td>
+<td>US</td>
+<td>1960 Census 1–10,000 Public Use Sample<br/> 1970 Census 1–10,000 Public Use Sample</td>
+<td>4000 individuals<br/> 10000 individuals</td>
+</tr>
+<tr>
+<td>DYNASIM II</td>
+<td>US</td>
+<td>CPS 1973 matched to Social Security Administration (SSA) data</td>
+<td/>
+</tr>
+<tr>
+<td>DYNASIM III</td>
+<td>US</td>
+<td>SIPP panels 1990 to 1993</td>
+<td>100,000 individuals and 44,000 households</td>
+</tr>
+<tr>
+<td>DYPENSI (SIPEMM)</td>
+<td>Slovenia</td>
+<td>Administrative dataset by Slovenia Statistical Office (SORS), 2007/2010</td>
+<td>115,000 individuals / 40,000 households</td>
+</tr>
+<tr>
+<td>FAMSIM</td>
+<td>Austria</td>
+<td>Family and Fertility Survey (Austria), 1995–96</td>
+<td>4,500 women</td>
+</tr>
+<tr>
+<td>FEM</td>
+<td>US</td>
+<td>Individual records drawn from the Medicare Current Beneficiary Survey (MCBS), 1992–1998</td>
+<td>10,000 individuals</td>
+</tr>
+<tr>
+<td>GAMEO</td>
+<td>France</td>
+<td>French Labour Force Survey (FLFS), 2003–2005</td>
+<td/>
+</tr>
+<tr>
+<td>HARDING</td>
+<td>Australia</td>
+<td>Synthetic cohort aged 0</td>
+<td>4,000 individuals</td>
+</tr>
+<tr>
+<td>IFS Model</td>
+<td>UK</td>
+<td>English Longitudinal Study of Ageing (ELSA), 2002–2003</td>
+<td>12,100 individuals</td>
+</tr>
+<tr>
+<td>IFSIM</td>
+<td>Sweden</td>
+<td>Swedish Household Panel Survey (HUS), 1996</td>
+<td>3,000 individuals</td>
+</tr>
+<tr>
+<td>INAHSIM rev1/2/3</td>
+<td>Japan</td>
+<td>Rev1: 1974 Comprehensive Survey of the Living Conditions of People on Health and Welfare (CSLC) with private household only
+<br/>Rev2: 2001 CSLC (private household only)
+<br/>Rev3: 2004 CSLC, aligned with population census</td>
+<td>Rev1:32,000 individuals and 10,000 households Rev2: 126,000 individuals and 46,000 households Rev3: 128,000 individuals and 49,000 households</td>
+</tr>
+<tr>
+<td>INFORM</td>
+<td>UK</td>
+<td>1% sample drawn from Department for Work and Pensions (DWP) administrative data</td>
+<td>110,000 individuals</td>
+</tr>
+<tr>
+<td>Italian Cohort Model</td>
+<td>Italy</td>
+<td>Synthetic cohort aged 0</td>
+<td>4,000 individuals</td>
+</tr>
+<tr>
+<td>Japanese Cohort Model</td>
+<td>Japan</td>
+<td>Synthetic multiple cohorts (single representative of each cohort type)</td>
+<td>4,000 individuals</td>
+</tr>
+<tr>
+<td>LABORsim</td>
+<td>Italy</td>
+<td>2003 Rilevazione Trimestrale delle Forze Lavoro (RTFL)</td>
+<td>50,000 individuals</td>
+</tr>
+<tr>
+<td>LIAM 0</td>
+<td>Ireland</td>
+<td>LII survey, 1994 (Pop.), synthetic cohort aged 0 (Cohort)</td>
+<td>Around 4,500 households</td>
+</tr>
+<tr>
+<td>LIAM 1</td>
+<td>Ireland</td>
+<td>LII survey, 1994–2001</td>
+<td>15,000 individuals</td>
+</tr>
+<tr>
+<td>LIFEMOD</td>
+<td>UK</td>
+<td>Synthetic cohort aged 0</td>
+<td>4,000 individuals</td>
+</tr>
+<tr>
+<td>LifePaths</td>
+<td>Canada</td>
+<td>Synthetic cross-section</td>
+<td>Varies</td>
+</tr>
+<tr>
+<td>Long Term Care Model</td>
+<td>UK</td>
+<td>Family Expenditure Surveys, 1993–1996</td>
+<td>1,770 individuals</td>
+</tr>
+<tr>
+<td>Melbourne Cohort Model</td>
+<td>Australia</td>
+<td>Synthetic sample of 20 year olds in 1970</td>
+<td>50,000 males and families</td>
+</tr>
+<tr>
+<td>MICROHUS</td>
+<td>Sweden</td>
+<td>The Swedish Household Panel Survey (HUS), 1984</td>
+<td/>
+</tr>
+<tr>
+<td>MIDAS</td>
+<td>Multi</td>
+<td>PSBH dataset for Belgium, 2002, GSOEP dataset for Germany,2002, ECHP dataset for Italy, 2001</td>
+<td/>
+</tr>
+<tr>
+<td>MIDAS</td>
+<td>New Zealand</td>
+<td>Synthetic cross-section based on 1991 Census</td>
+<td>10,000 individuals</td>
+</tr>
+<tr>
+<td>MIND</td>
+<td>Italy</td>
+<td>ISTATA, IRP and SHIW Data, 1995</td>
+<td/>
+</tr>
+<tr>
+<td>MINT</td>
+<td>US</td>
+<td>SIPP, 1990–93, matched to SSA data, SIPP, 1990–96, matched to SSA data for MINT5</td>
+<td>85,000 individuals, expanded in later versions</td>
+</tr>
+<tr>
+<td>MOSART 1/2/3</td>
+<td>Norway</td>
+<td>1% sample drawn from administrative data, 1989, version 3 used a 12% sample drawn from administrative data, 1993</td>
+<td>40,000 individuals, 500,000 observations in version 3</td>
+</tr>
+<tr>
+<td>NEDYMAS</td>
+<td>Netherlands</td>
+<td>Synthetic cross-section based on 1947 census</td>
+<td>10,000 individuals</td>
+</tr>
+<tr>
+<td>PENMOD</td>
+<td>Japan</td>
+<td>Synthetic dataset based on the official aggregate statistics</td>
+<td/>
+</tr>
+<tr>
+<td>PENSIM</td>
+<td>UK</td>
+<td>Retirement Survey, 1988, Social Change and Economic Life Initiative Survey, 1986 and Family Expenditure Survey, 1988</td>
+<td>5,000 benefit units</td>
+</tr>
+<tr>
+<td>PENSIM</td>
+<td>US</td>
+<td>Synthetic cohort aged 0
+<br/>Family Resource Survey, British</td>
+<td/>
+</tr>
+<tr>
+<td>PENSIM2</td>
+<td>UK</td>
+<td>Household Panel Survey and Lifelong Labour Market Database, 1999–2001</td>
+<td/>
+</tr>
+<tr>
+<td>Pensions Model</td>
+<td>Belgium</td>
+<td>Synthetic cross-section based on survey data</td>
+<td/>
+</tr>
+<tr>
+<td>POHEM</td>
+<td>Canada</td>
+<td>Administrative data</td>
+<td/>
+</tr>
+<tr>
+<td>POLISIM</td>
+<td>US</td>
+<td>A subset (1–10%) of the 1960 US Census Bureau Public use Microdata Sample (PUMS)</td>
+<td/>
+</tr>
+<tr>
+<td>PRISM</td>
+<td>US</td>
+<td>CPS, March 1978, March and May 1979, matched to SSA data</td>
+<td>28,000 adults</td>
+</tr>
+<tr>
+<td>PSG</td>
+<td>US</td>
+<td>Mixed</td>
+<td>100,000 individuals</td>
+</tr>
+<tr>
+<td>SADNAP</td>
+<td>Netherlands</td>
+<td>Administrative data from Statistics Netherlands (CBS)
+<br/>10% sample drawn from the</td>
+<td/>
+</tr>
+<tr>
+<td>SAGE</td>
+<td>UK</td>
+<td>Individual/Household, 1991 anonymised records combined with several survey datasets</td>
+<td>54,000 individuals</td>
+</tr>
+<tr>
+<td>SESIM</td>
+<td>Sweden</td>
+<td>Longitudinal Individual Data Base (LINDA), 1999</td>
+<td>100,000 individuals</td>
+</tr>
+<tr>
+<td>Sfb3 Cohort</td>
+<td>Germany</td>
+<td>Integrated Micro Data File, 1969 (Pop.), synthetic cohort aged 0 (Cohort)</td>
+<td>69,000 households / 7,300 individuals</td>
+</tr>
+<tr>
+<td>Sfb3 Population</td>
+<td>Germany</td>
+<td>Integrated Micro Data File, 1969 (Pop.), synthetic cohort aged 0 (Cohort)</td>
+<td>69,000 households / 7,300 individuals</td>
+</tr>
+<tr>
+<td>SimBritain</td>
+<td>UK</td>
+<td>UK Census and BHPS, 1991</td>
+<td/>
+</tr>
+<tr>
+<td>SMILE</td>
+<td>Ireland</td>
+<td>Census of Population of Ireland</td>
+<td/>
+</tr>
+<tr>
+<td>SustainCity</td>
+<td>Multi</td>
+<td>Multiple data sources, including survey datasets and administrative datasets</td>
+<td>Depends on the end user, 120,000 individuals for the Paris demography module,</td>
+</tr>
+<tr>
+<td>Swedish Cohort</td>
+<td>Sweden</td>
+<td>Synthetic cohort aged 20</td>
+<td>1,000 individuals</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: see <a href="#table1">Table 1</a>.</p></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> An overview of the technical choices made by dynamic microsimulation models.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Model</th>
+<th>Country</th>
+<th>Base Pop Cross</th>
+<th>Type of Time Modelling</th>
+<th>Open or Closed Model</th>
+<th>Use of Alignment Algorithms</th>
+<th>Use of Behavioural Equations</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APPSIM</td>
+<td>Australia</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>CAPP_DYN</td>
+<td>Italy</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>CORSIM</td>
+<td>US</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>DEMOGEN</td>
+<td>Canada</td>
+<td>Cohort</td>
+<td>D</td>
+<td>O</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>DESTINIE I &amp; II</td>
+<td>France</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>DYNACAN</td>
+<td>Canada</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>DYNAMITE</td>
+<td>Italy</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>DYNAMOD I &amp; II</td>
+<td>Australia</td>
+<td>Cross</td>
+<td>C/D</td>
+<td>C</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>DYNASIM I &amp; II</td>
+<td>US</td>
+<td>Cross</td>
+<td>C/D</td>
+<td>C</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>DYNASIM III</td>
+<td>US</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>FAMSIM</td>
+<td>Austria</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>FEM</td>
+<td>US</td>
+<td>Cross</td>
+<td>D</td>
+<td/>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>GAMEO</td>
+<td>France</td>
+<td>Cross</td>
+<td>D</td>
+<td/>
+<td>Y</td>
+<td/>
+</tr>
+<tr>
+<td>HARDING</td>
+<td>Australia</td>
+<td>Cohort</td>
+<td>D</td>
+<td>C</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>IFS Model</td>
+<td>UK</td>
+<td>Partial Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>IFSIM</td>
+<td>Sweden</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Partial CGE</td>
+<td/>
+</tr>
+<tr>
+<td>INAHSIM</td>
+<td>Japan</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>INFORM</td>
+<td>UK</td>
+<td>Cross</td>
+<td>D</td>
+<td/>
+<td>Y</td>
+<td/>
+</tr>
+<tr>
+<td>Italian Cohort Model</td>
+<td>Italy</td>
+<td>Cohort</td>
+<td>D</td>
+<td>C</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>Japanese Cohort Model</td>
+<td>Japan</td>
+<td>Cohort</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>LABORsim</td>
+<td>Italy</td>
+<td>Cohort</td>
+<td>C</td>
+<td>C</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>LIAM 0</td>
+<td>Ireland</td>
+<td>Cohort</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>LIAM 1</td>
+<td>Ireland</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>LIFEMOD</td>
+<td>UK</td>
+<td>Cohort</td>
+<td>D</td>
+<td>C</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>LifePaths</td>
+<td>Canada</td>
+<td>Cross</td>
+<td>C</td>
+<td>O</td>
+<td/>
+<td>N</td>
+</tr>
+<tr>
+<td>Long Term Care Model</td>
+<td>UK</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>Melbourne Cohort Model</td>
+<td>Australia</td>
+<td>Cohort</td>
+<td>D</td>
+<td>O</td>
+<td/>
+<td>N</td>
+</tr>
+<tr>
+<td>MICROHUS</td>
+<td>Sweden</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>N</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>MIDAS</td>
+<td>Multi</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>MIDAS</td>
+<td>New Zealand</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td/>
+<td>N</td>
+</tr>
+<tr>
+<td>MIND</td>
+<td>Italy</td>
+<td>Cross</td>
+<td/>
+<td>O</td>
+<td>Y</td>
+<td/>
+</tr>
+<tr>
+<td>MINT</td>
+<td>US</td>
+<td>Cross</td>
+<td>C/D</td>
+<td>O</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>MOSART 1/2/3</td>
+<td>Norway</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>NEDYMAS</td>
+<td>Netherlands</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Limited CGE</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>PENSIM</td>
+<td>UK</td>
+<td>Cross</td>
+<td>C</td>
+<td>C</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>PENSIM</td>
+<td>US</td>
+<td>Cohort</td>
+<td>C/D</td>
+<td>O</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>PENSIM2</td>
+<td>UK</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>Pensions Model</td>
+<td>Belgium</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td/>
+<td>N</td>
+</tr>
+<tr>
+<td>POHEM</td>
+<td>Canada</td>
+<td>Cohort</td>
+<td>C</td>
+<td/>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>POLISIM</td>
+<td>US</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>PRISM</td>
+<td>US</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>PSG</td>
+<td>US</td>
+<td>Cohort</td>
+<td>C</td>
+<td>O</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SADNAP</td>
+<td>Netherlands</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>SAGE</td>
+<td>UK</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>SESIM</td>
+<td>Sweden</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>Sfb3 Cohort</td>
+<td>Germany</td>
+<td>Cohort</td>
+<td>D</td>
+<td>O</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>Sfb3 Population</td>
+<td>Germany</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SIPEMM</td>
+<td>Slovenia</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+<tr>
+<td>SustainCity</td>
+<td>Switzerland</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>SVERIGE</td>
+<td>Sweden</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>N</td>
+</tr>
+<tr>
+<td>Swedish Cohort Model</td>
+<td>Sweden</td>
+<td>Cohort</td>
+<td>D</td>
+<td>C</td>
+<td>N</td>
+<td>N</td>
+</tr>
+<tr>
+<td>Tdymm</td>
+<td>Italy</td>
+<td>Cross</td>
+<td>D</td>
+<td>C</td>
+<td>Y</td>
+<td>Y</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: see <a href="#table1">Table 1</a>.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Key</i>: Cross, cross-sectional, C, continuous, D, discrete, Y, yes, N, No.</p></div></figure></section><section id="s3-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.2 Base dataset selection</h3><p data-astro-cid-qsyhzaho>Base dataset selection is important in a microsimulation model as the quality of the input data determines the quality of the output. However, selection of a base dataset is not an easy task as hardly any micro dataset contains all the information required by a dynamic population microsimulation model and the difficulties of picking a base dataset have been discussed by <a href="#bib170">Zaidi and Scott (2001)</a>, <a href="#bib32">Cassells <i>et al</i>. (2006)</a>, <a href="#bib101">Klevmarken and Lindgren (2008)</a> and many other papers. There are a number of different types of base data that a dynamic model can utilise. As shown in <a href="#table2">Table 2</a>, a dynamic microsimulation model typically starts with one or several of the following types of dataset according to their sources:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Administrative Data</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Census Data</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Household Survey Data</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Synthetic Dataset</p></li></ul><p data-astro-cid-qsyhzaho>Administrative data often contains extensive information in taxable earnings and basic (tax-related) social economic variables and the data is often collected for the most part of the population, with a much bigger sample size compared with survey data. Because the data is often collected for taxations or law enforcement purpose, the data could be very accurate for some variables, e.g. employee earnings, but very misleading in certain self-reported information, e.g. household wealth. Since the administrative data collection is a government initiative, some information that is useful for social economic researchers may not be included. For this reason, models using administrative data often seek to supplement information from external sources, such in the case of Sweden (SESIM model) where certain variables were imputed based on a survey.</p><p data-astro-cid-qsyhzaho>Legal and privacy reasons may also prevent administrative data from being accessible. Models such as CORSIM, DYNACAN and DYNAMOD use census data. While census datasets typically have higher number of observations than household surveys, they often contain less information and have to be supplemented with imputed information from other sources.</p><p data-astro-cid-qsyhzaho>Household survey data, e.g. the LII survey utilised in the LIAM model, are also frequently used as the base dataset because it is rich in the number of variables of interest and offers information on the dynamics of behaviour. However, household survey datasets may have the issues of smaller sample size and weights adjustment. The use of weights in a dynamic model adds complexity to many areas and can result in individuals being given different weightings at different points in their lives. As microsimulation aims at inference to a finite population, one solution, as implemented in the DYNAMITE, is to replicate household population according to their weights, so that consequently each household has the same basic weight. However, there is limited understanding on how the use of weight would affect the final outcomes of simulation models.</p><p data-astro-cid-qsyhzaho>Another type of base dataset is synthetic data. These are selected when either a longitudinal model is used, as in the case of DEMOGEN, HARDING, LIFEMOD, LIAM (<a href="#bib122">O’Donoghue, 2001a</a>), or where no data exists, as in the case of the NEDYMAS model, where a synthetic initial sample representative of the Dutch population in 1947 was generated NEDYMAS (<a href="#bib48">Dekkers <i>et al</i>., 1993</a>). Synthetic datasets are artificially created with all required variables populated based on some known macro statistics and distributional assumptions. It is often used to understand theoretical implications of a single policy in depth. However, significant adjustments and justifications are required before inferring the policy effects in real life.</p><p data-astro-cid-qsyhzaho>For microsimulation models analysing the dynamics of elderly earnings or pensions, the dataset requirement is usually higher as it requires historical variables that affect the evolution of the elderly social economic status. This necessity implies that a long panel dataset containing rich demographic, employment, and pension data is required, something which is not readily available to most researchers. Hybrid sources of datasets are often used in such scenario, whereby a combination of datasets from various sources, statistical matching and simulation techniques are utilised, for instance DYNASIM3 (<a href="#bib60">Favreault &amp; Smith, 2004</a>) matches two survey datasets, namely, Survey of Income and Program Participation (SIPP) and Panel Study of Income Dynamics (PSID). CBOLT (<a href="#bib127">Oharra <i>et al</i>., 2004</a>) uses a similar approach to complement its main dataset with SIPP, PSID and data from the Current Population Survey (CPS). A recent model Tdymm (<a href="#bib151">Tedeschi, 2011</a>), intends to match administrative records with the European Union Statistics on Income and Living Conditions (EU-SILC) dataset. For researchers without access to certain required data, simulation is used to impute the longitudinal history. The CORSIM model simulates part of the historical profile based on a historical cross-sectional dataset and matches the model output to historical aggregate information such as fertility and mortality rates (<a href="#bib29">Caldwell, 1996</a>), whilst LIAM simulates a historical profile by exploiting retrospective variables, previous censuses and other data sources (<a href="#bib106">Li &amp; O’Donoghue, 2012</a>).</p><p data-astro-cid-qsyhzaho>Each of data matching/imputation methods has pros and cons and is often tailor-made to the specific datasets and projects. Statistical matching can be used when there are sufficient matching variables in a comparable dataset and this method has the desirable feature of having a “real-world” value, although the quality of matching may vary substantially depending on the quality and quantity of matching variables. Synthetic simulation has the advantage of flexibility but longitudinal consistency may be an issue due to the limited information available. Additionally, it is also not uncommon to estimate behavioural relations from a dataset other than the base dataset and applies the equation to simulation. In this case, however, one may want to consider the comparability and consistency issues carefully due to the survey design and variable definitions.</p><p data-astro-cid-qsyhzaho>Another issue in the base dataset selection is sample size; the larger the sample size, the more subgroups can be considered. Sample sizes are more important for inter-temporal analysis because the number of dimensions is increased, as similar individuals in a cross-sectional sample may in fact be very different due to the different paths taken to reach the same state. Regardless the source of the dataset, panel data is usually preferred as it records changes over time. Sample size also has an impact on run time of the model; the larger the samples size, the longer the run speed, resulting in a trade-off. Faster computer power does however reduce the impact of this trade-off.</p></section><section id="s3-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.3 Cohort model or population model</h3><p data-astro-cid-qsyhzaho>One issue that is closely related to the base dataset selection is the type of data structure that a model uses. <a href="#bib76">Harding (1993)</a> and others have categorised inter-temporal dynamic models into two types: cohort models that model a single cohort over a relative long time period (usually lifetime), and population models that model a population cross-section over a defined period of time. In addition, some models focus only on adults (i.e. ignore children) and thus, although these models may contain a cross-section of the population, they do not represent the entire age spectrum. In many cases, only persons born within a particular year are included in the model. LIFEMOD (<a href="#bib59">Falkingham &amp; Lessof, 1992</a>), for instance, only includes 4000 people born in 1985.</p><p data-astro-cid-qsyhzaho>From a model design perspective, the distinction between cohort and population model is less significant than the use that the model is put to. The distinction made in the literature from a historical viewpoint has more to do with computing power and data constraints rather than any major methodological differences. Cohort models were typically used because the computing costs required to simulate whole lifetimes for cross-sections with sufficient sample sizes to be able to examine specific cohorts were too high. The method typically features less micro-units interactions as compared with a full-fledged population model. Both types of models can be simulated in the same modelling environment: a cohort model is simply a model that ages a sample of individuals in a particular age group, while a population model ages a sample of individuals of different ages. Both samples are then passed through ageing procedures, to produce life event histories over the modelled period.</p><p data-astro-cid-qsyhzaho>It is also possible to model both types using the same computing platform. The potentially larger size of the cohort modelled in dynamic cohort models allows life time income patterns for smaller population groups such as recipients of disability benefits or lone parents to be studied. Some cross-section models such as MOSART combine both types of modelling technique as they may use a very large dataset. With increasing computation and modelling capacities, newer models tend to use population models as one may get more information and draw inference to the population directly.</p></section><section id="s3-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.4 Ageing method in dynamic microsimulation</h3><p data-astro-cid-qsyhzaho>Aging within a microsimulation context may be defined as the process of updating a database to represent current conditions or of projecting a database for one or more years to represent expected future conditions. There are two types of ageing processes; static ageing and dynamic ageing. Static ageing, as described in <a href="#bib87">Immervoll <i>et al</i>. (2005)</a>, is a method that attempts to align the available micro-data with other known future information (such as changes in population aggregates, age distributions or unemployment rates), without modelling the processes that drive these changes (e.g., migration, fertility, or economic downturn). For example, in order to simulate an ageing society, the weighting of young people gradually decreases over time while the weighting of elderly people would increase; however, there is no change to the attributes of these individuals. Dynamic ageing by contrast, changes the attributes of the individuals instead of altering their weights. In the same example of simulating an ageing society, models with dynamic ageing will update the age and other related attributes of individuals over time instead of changing their weights. The method can be referred as cross-sectional dynamic ageing if all individuals are updated before a model moves on to the next time period in a dynamic ageing process, or longitudinal dynamic ageing if a model simulates all time periods for one individual before repeating the same process for the next one in the population. Dynamic ageing is generally more popular and may sometimes be used as the criteria to judge whether a model belongs to the camp of dynamic microsimulation models<sup><a href="#fn1">1</a></sup>.</p><p data-astro-cid-qsyhzaho>While static ageing can ideally produce the same population representative cross-sectionals as models with dynamic ageing, it works in a very different way as it does not update social economic variables for each time period. In many cases, the only variable that needs to be changed over time is the weight of the observations. Dekkers and Van Camp (<a href="#bib49">2011</a>) noted that this might be attractive for modellers who already have a static microsimulation model, however, static ageing also has a number of disadvantages. <a href="#bib97">Klevmarken (1997)</a> highlighted that whereas static ageing may avoid some problems of drift in the projected cross-section associated with dynamic ageing because of misspecification in dynamic equations, it cannot account for mobility between states. In addition, he pointed out that from a statistical point of view, it is inefficient not to use all available historical information to project into the future. A consequence of not modelling the mobility of individuals between points in time is that it reduces the type of analyses that can be undertaken by a microsimulation model, for example, it is not possible to conduct analyses that require life event histories such as the simulation of pensions. Furthermore, future weights need to be forecast in order to age a dataset. Although macro models or other forecasting devices can be used they may not forecast weights at the level of detail required. Besides, the weight calculation may be further complicated when multiple variables are being considered at the same time<sup><a href="#fn2">2</a></sup>. Generally speaking, static ageing cannot be used where no sample observation is in the particular state of interest. If a particular state is under-represented, a very high weight may have to be applied to the corresponding observations, resulting in unstable predictions. As a result, static ageing procedures are mostly used in short to medium term forecasts of approximately 3–5 years, where it can be expected that large changes would not occurred in the underlying population. However, it may be more difficult to use static ageing over longer periods of time due to changing characteristics of the population.</p><p data-astro-cid-qsyhzaho>Dynamic ageing aims to reflect the ageing process in real life though it could make a model very complicated and computational expensive. Cross-sectional dynamic ageing is the most common method while longitudinal ageing is sometimes used in cohort models. Dynamic ageing can consistently estimate characteristics of future income distributions under ideal circumstances in which all transition probabilities and state specific expectations can be estimated consistently. This may be possible in a simple model with a small number of processes, but in a fully dynamic model of work and life histories, many more processes need to be jointly estimated, a formidable requirement given the available data. Therefore, it might be necessary to make some assumptions to make estimation feasible, e.g. education choice happens before labour participation choice etc. In addition, one may also need to assume independent error terms and some other arbitrary assumptions in order to simplify the estimation. Although these assumptions are common in practice, they may lead to theoretical pitfalls and biased results when excessively used without proper testing. In addition, projections over time at the micro-level are particularly susceptible to misspecification error as modelling at this level involves more detail than in macro models, also current knowledge regarding micro-behaviour is not good enough to specify a fully dynamic model. As a result, dynamic ageing combined with an alignment (calibration) mechanism to keep aggregate outputs in line with predictions from macro models is commonly used. The method allows individual transitions to be simulated as well as ensuring that aggregate outputs on track with macro forecasts (see, for examples, <a href="#bib33">Chénard 2000</a>, <a href="#bib34">2001</a>).</p></section><section id="s3-5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.5 Discrete or continuous time modelling</h3><p data-astro-cid-qsyhzaho>Another choice in the development of dynamic microsimulation models is the treatment of time. Discrete time models simulate which individuals experience particular events in given time intervals while continuous time models treat time as a continuous variable and determine the exact time that an event occurs (<a href="#bib159">Willekens, 2006</a>).</p><p data-astro-cid-qsyhzaho>Discrete time microsimulation models changes once per time period. Take demography for example, demographic modules in dynamic models are often constructed using annual transition probability matrices. Individuals are passed through a collection of transition matrices in each time period of the simulation (usually a year) to determine their simulated life paths, e.g. death. This method often assumes a sequential order of life events, however in reality they may be interdependent. As in the example given above and consequently the order in which the transition matrices are applied is very important. In the example given above, if marriage is determined first, then the potential fertility rate changes and similarly, a pre-marital pregnancy will increase the probability of getting married. <a href="#bib67">Galler (1997)</a> discussed a number of options in this situation including the procedure of random ordering as used by the DARMSTADT (<a href="#bib80">Heike <i>et al</i>., 1987</a>) and Hungarian models (<a href="#bib42">Csicsman <i>et al</i>., 1987</a>).</p><p data-astro-cid-qsyhzaho>There are a number of other problems with this type of approach. Firstly transitions are assumed to take place at a single point in each time period and the duration of the event must last at least one time period (typically a year, but may be of shorter duration). For example if the time period is a year, this approach rules out transitions in and out of unemployment over the course of a year, which is unrealistic, as many people will have unemployment transitions for periods of less than one year as in the case of seasonal workers. Therefore, the discrete time transitions simulate net transitions (see <a href="#bib67">Galler, 1997</a>) at discrete points in time, ignoring the transition path taken to reach the end state. Some models, e.g. MICROHUS and SESIM, therefore developed a workaround where the end state is stimulated together with an extra variable describing the transition. Take unemployment as an example, the method simulates both the employment status (end state) and the length of unemployment, which can be used to partially describe the transition with greater details.</p><p data-astro-cid-qsyhzaho>Continuous time microsimulation models, on the other hand, usually use survival models to simulate the time of events. Rather than simulating annual transition probabilities, survival functions model the length of time an individual will face in his/her current state, e.g. DYNAMOD and SOCSIM (<a href="#bib73">Hammel <i>et al</i>., 1990</a>) and this method was extensively discussed by <a href="#bib159">Willekens (2006)</a>. Once a referencing event has occurred such as marriage, an individual is passed through each survival function that they are eligible for given their current states. For example, once an individual is married, they become eligible for divorce, the event given their current state with the nearest event time is selected and then repeated until death.</p><p data-astro-cid-qsyhzaho>While the continuous time model has some theoretical advantages as it pinpoints the time of events, it also suffers from considerable practical limitations. The estimation of competing risks and survival functions place very high requirements on the data that are rarely matched by the actual data available (<a href="#bib169">Zaidi &amp; Rake, 2001</a>). Given that most base datasets were collected yearly and many taxation procedures are reviewed annually, it is easier to incorporate a discrete time framework. Although a continuous time model could simulate the sequence of event occurrences, it still faces the estimation problems of interdependent processes and correlated errors. In addition, the potential interdependence of transitions for members (e.g. family) further raises the complexity of implementation. Alignment for continuous models is more difficult as cross-sectional adjustments would erode the advantages of duration models, and the potential computation cost of alignment is much higher in continuous time models.</p></section><section id="s3-6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.6 Open versus closed model</h3><p data-astro-cid-qsyhzaho>A decision dynamic microsimulation model builder has to consider is whether the model should be open, closed or a mixture of the two. A model is often considered closed if, except in the case of new born and migrants, the model only uses a fixed set of individuals to create and maintain social links. Thus, if an individual is selected to be married, then their spouse is selected from within the existing population of the model. Similarly, a baby is always attached to a family within the sample. In contrast, an open model starts with a base population and if spouses are required, then new individuals are generated exogenously. This has the advantage that simulations for individuals (and their immediate families) can be run independently of other individuals, and thus allows the model to be run in parallel on different computer processors, allowing overall run times to be reduced (<a href="#bib122">O’Donoghue, 2001a</a>).</p><p data-astro-cid-qsyhzaho>Open models, for instance, PENSIM and LifePaths, have the advantage of having simpler interaction models, e.g. a newly married partner can be created artificially to fit the social economic characteristics of an individual. However, an open model is more difficult for matching external macro aggregates as the sample may not stay representative of the population as new individuals are created. Although possible, it is a non-trivial task to align a varying population with macro-aggregates, as the process would require constant dynamic reweighting and in the case of heavy alignments, the benefits of running the model in parallel might be lost. As a result, most dynamic models in use utilise a closed model method.</p></section><section id="s3-7" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.7 Link between micro and macro models</h3><p data-astro-cid-qsyhzaho>As many policy indicators (e.g. employment rate) are at macro level, microsimulation models increasingly find the need to interact with macro economy through either an alignment process or computational general equilibrium (CGE) feedback. Alignment, as discussed in earlier, offers a simple but limited way to enforce the aggregate statistics within a simulation; however, it is usually limited to very specific variables and does not change based on the feedback from simulated micro data. Besides alignment, it is also possible to use CGE models to link macro, meso and micro models (see <a href="#bib1">Ahmed and O’Donoghue, 2007</a>; <a href="#bib44">Davies 2004</a>). CGE models offer a potential opportunity to allow macro models interact with micro models via prices in different markets, which is particular useful for analysing large scale macroeconomic shock. For instance, IFSIM (<a href="#bib19">Baroni <i>et al</i>., 2009</a>) links a microsimulation model with a simple CGE model assuming a single sector economy.</p><p data-astro-cid-qsyhzaho>There are a few papers discussing the potential methods of linking a microsimulation model and a CGE model. <a href="#bib37">Cockburn (2001)</a> used an integrated approach to link a survey dataset within a CGE framework, where the main concept was to replace the traditional unit of analysis in CGE, representative household, with a real household. Another approach is to separate macro and micro components while allowing the result of the micro or macro models being fed into the other models. Depending on the direction of the output feeding and the number of iterations, this approach was further subcategorised into “Top-Down”, “Bottom-Up”, “Top-Down Bottom-Up” and “Iterated Top-Down Bottom-Up” approaches (<a href="#bib66">Galler, 1990</a>; <a href="#bib12">Baekgaard, 1995</a>; <a href="#bib142">Savard, 2003</a>). Colombo (2010) compared several CGE microsimulation linkage methods and suggested the “Iterated Top-Down Bottom-Up” as the currently most complete approach. However, with only few exceptions like NEDYMAS (<a href="#bib48">Dekkers <i>et al</i>., 1993</a>) which used the iterated approach, most macro-micro linking attempts in dynamic microsimulation models are limited to one-way only.</p><p data-astro-cid-qsyhzaho>At the current stage, the integration of CGE with microsimulation is still limited due to several factors, including modelling complexity, data issues, model stability and computational costs. (<a href="#bib1">Ahmed &amp; O’Donoghue, 2007</a>) <a href="#bib139">Robilliard &amp; Robinson (2003)</a> indicated that current approaches in linking micro-macro may still need to be refined before addressing distributional issues. In addition, linking with CGE requires decent quality of household income and expenditure data, which is not widely available. Furthermore, the integration between CGE and dynamic microsimulation could potentially exaggerate the uncertainty introduced in the results due to the complexities in interactions of different social economic variables and consequently result in a greatly increased computation time.</p><p data-astro-cid-qsyhzaho>Given the complexity in incorporating complete a CGE model in microsimulation, it might be more feasible to incorporate a partial equilibrium in to the model. A static microsimulation model, IZAΨMOD (<a href="#bib135">Peichl <i>et al</i>., 2010</a>), allows feedback from computed labour market equilibrium to refine the labour supply behavioural response. In a spatial microsimulation model, one may consider to model the feedback from the housing market as illustrated in <a href="#bib84">Hooimeijer (1996)</a>. This type of single market equilibrium implementation can avoid the complexity introduced by the social accounting matrix and inaccurate expenditure data.</p></section><section id="s3-8" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.8 Links and integration with agent based models</h3><p data-astro-cid-qsyhzaho>Although this study mostly focuses on the development of dynamic microsimulation models, it is also worth to note that microsimulation is closely related to two other individual level modelling approaches, cellular automata and agent based models (<a href="#bib160">Williamson, 2007</a>). In particular, agent based models are also used in social science to analyse macro level phenomena gathered from micro units. An agent based model (ABM) typically consists of a set of autonomous decision-making entities (agents), a set of agent relationships and methods of interaction, and the agents’ environment (<a href="#bib109">Macal &amp; North, 2010</a>). It is often used to show how macro level properties such as spatial patterns and levels of cooperation emerge from adaptive behaviours of individuals.</p><p data-astro-cid-qsyhzaho>Traditionally, agent based models are highly abstract and theoretical without many direct empirical applications (<a href="#bib21">Boero &amp; Squazzoni, 2005</a>; <a href="#bib89">Janssen &amp; Ostrom, 2006</a>). In recent years, however, there is a growing interest in ABM literature of injecting empirical data in an attempt to simulate some real-world phenomenon (<a href="#bib134">Parker <i>et al</i>., 2003</a>; <a href="#bib79">Hassan <i>et al</i>., 2008</a>). From a practical point of view, when agent based models add more social economic attributes to the agents and when microsimulation models add more behaviour rules and interactions, they are moving toward to a common ground (<a href="#bib160">Williamson, 2007</a>). Some papers, e.g. <a href="#bib54">Eliasson (1991)</a>, <a href="#bib19">Baroni <i>et al</i>. (2009)</a> etc., may even use the word interchangeably when behavioural models are included in microsimulation.</p><p data-astro-cid-qsyhzaho>Agent based models covers an important aspect of social economic modelling, network effects, which has long been discussed by sociologists and economists but hardly exists in microsimulation beyond the spouse matching. Microsimulation modellers often implicitly assume that the effects of social pressures and peer effects are already embedded in the existing distribution and they are likely to keep constant, i.e. there is no need to update the model as time passes. While this assumption might be acceptable for some research, such as tax reform analysis, it might be too strong for some other types of research, e.g. evaluating alternative health intervention policy. Agent based models, on the other hand, often explicitly model these interactions and allow certain social factors to change as the population evolves.</p><p data-astro-cid-qsyhzaho>With the growing number of social networking data, it becomes possible to integrate the empirically-tested adaptive behaviours from ABM into microsimulation models to produce a more realistic model. The potential introduction of network effects could benefit a set of microsimulation models, e.g. health simulation models, in which the social factors may play a role. In addition, peer effects may also help to model the evolution of marriage/fertility patterns, the formations and dissolutions of neighbourhoods in a spatial microsimulation model etc.</p><p data-astro-cid-qsyhzaho>It should also be noted that this potential integration may also bring some disadvantages. The implementations of micro interactions would greatly increase the computational cost and complexity, thus makes the model more difficult to understand and validate. Besides, the current base datasets of the microsimulation models are often standard surveys or census data that do not cover extensive network attributes. At the current stage, the implementation of extensive interactions like ABM in microsimulation models is still at its infancy, the existing attempts are limited to the introduction of simple behaviour rules, e.g. copying consumption habits as in <a href="#bib103">Lawson (2011)</a>.</p></section></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. Estimations and validations of microsimulation models</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s4-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.1 Modelling transitions and behaviours</h3><p data-astro-cid-qsyhzaho>Microsimulation models could use structural behavioural models, reduced form statistical model or simple transition matrix to simulate changes. Behavioural models are grounded in economic theory, in the sense that changes to institutional or market characteristics result in a change in the behaviour of agents within the model. In contrast, reduced form statistical models aim to model the transition probabilities of individual characteristics using related variables. It aims to reproduce observed distributional characteristics in sample surveys without explicit considerations on policies. Reduced form models usually do not respond to external market and institutional characteristics and assume a stable policy environment implicitly. Transition matrix is often a time-homogeneous Markov chain with limited number of states (e.g. age group, gender). It is the easiest way to model potential changes with least theoretical considerations.</p><p data-astro-cid-qsyhzaho>Reduced form models and transition matrices are often used to simulate mortality, fertility, family formation, labour market transitions etc. As these models usually do not depend on policy parameters, they are not suitable for reform analysis, and are often restricted to simulating status quo only. The method is often used in static tax benefit microsimulation models as well as demographic components of dynamic microsimulation models.</p><p data-astro-cid-qsyhzaho>In a structural behavioural model, individual behaviour changes are as a result of changing policies, therefore the policy parameters must have a direct or indirect impact on the model. An example could be a labour supply model that responds to changes in the tax-benefit system. Behavioural models in microsimulation should be relevant to overall model objectives, able to introduce behavioural adjustments to policy changes. Examples of behavioural responses that fit these requirements include labour supply, retirement decisions, the effect of income and price changes on consumption, fertility and marital decisions, the take-up of social benefits etc. A behavioural model may contain multiple components. In the case of labour supply models, behaviour simulation models typically consist of three parts: an arithmetic tax benefit model to estimate budget constraints, a quantifiable behaviour model using variables that can be simulated, and a mechanism to predict the labour supply under a new policy environment (<a href="#bib40">Creedy <i>et al</i>., 2002</a>).</p><p data-astro-cid-qsyhzaho>Compared with earlier microsimulation models, more models today have incorporated behavioural responses into their designs although these responses are often limited to labour market simulations. Models such as MICROHUS (<a href="#bib102">Klevmarken &amp; Olovsson, 1996</a>), PRISM (<a href="#bib93">Kennell &amp; Sheils, 1990</a>), NEDYMAS (<a href="#bib48">Dekkers <i>et al</i>., 1993</a>), LIAM (<a href="#bib125">O’Donoghue <i>et al</i>., 2009</a>) all incorporate labour supply behavioural responses to the tax-benefit system, SESIM (<a href="#bib101">Klevmarken &amp; Lindgren, 2008</a>), DYNAMITE (<a href="#bib5">Ando <i>et al</i>., 2000</a>), and SADNAP (<a href="#bib155">Van Sonsbeek, 2010</a>) model retirement decisions depending on the social security system. However, there is still only limited implementation of life-cycle models in microsimulation and the study on the impact of prediction errors on simulation results is scarce.</p></section><section id="s4-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.2 Alignment with projections</h3><p data-astro-cid-qsyhzaho>As statistical models are typically estimated using historical datasets with specific characteristics and period effects, projections of the future may therefore contain errors or may not correspond to exogenous expectations of future events. In addition, the complexity of micro behaviour modelling may mean that simulation models may over or under predict the occurrence of a certain event, even in a well-specified model (<a href="#bib51">Duncan &amp; Weeks, 1998</a>). Because of these issues, methods of calibration known as alignment have been developed within the microsimulation literature to correct for issues related to the adequacy of micro projections.</p><p data-astro-cid-qsyhzaho>Scott (<a href="#bib143">2001</a>) defines alignment as “a process of constraining model output to conform more closely to externally derived macro-data (‘targets’)”. Clearly, in an ideal world, a system of equations would be estimated that could replicate reality and give effective future projections without the need for alignment. However, as <a href="#bib162">Winder (2000)</a> stated, “microsimulation models usually fail to simulate known time-series data. By aligning the model, goodness of fit to an observed time series can be guaranteed.” Some modellers suggest that alignment is an effective pragmatic solution for highly complex models (<a href="#bib124">O’Donoghue, 2010</a>), as it offers a limited connection between micro and macro data.</p><p data-astro-cid-qsyhzaho>Alignment also has its downsides, as highlighted by <a href="#bib14">Baekgaard (2002)</a>. Concerns raised regarding alignment include the issue of consistency within the estimates and the level of disaggregation at which this should occur. The implementation of alignment may twist the relations of key variables in an undesired way (<a href="#bib107">Li &amp; O’Donoghue, 2013</a>). The existence of an alignment mechanism may constrain model outputs to always hit aggregate targets even if there has been an underlying behavioural or structural change. An example would be if education levels rose, as this would be expected to reduce mortality rates and increase female labour force participation. If the alignment mechanism for each process did not incorporate the impact of educational achievement, then an increase in the education level would have no effect on these aggregates. It has been suggested that equations should be reformulated rather than constrained ex post. <a href="#bib98">Klevmarken (2002)</a> demonstrated various potential methods in incorporating alignment information in estimations. In most cases, alignment methods are only documented briefly as a minor technical part of the main model. Currently, there is very limited number of studies analysing how projections and distributions change as a result of the use of different alignment methods.</p><p data-astro-cid-qsyhzaho>Despite the potential pitfall of its statistical properties, aligning the output of a microsimulation model to exogenous assumptions has become standard over the past decade. As <a href="#bib3">Anderson (2001)</a> noted, almost all existing dynamic microsimulation models are adjusted to align to external projections of aggregate or group variables when used for policy analysis. Continuous variables such as earnings are typically aligned with a fix ratio in order to meet the projected average or distribution, whilst binary variables, such as working status, are aligned with various methods, including multiplicative scaling, sidewalk, sorting based algorithms etc. (See <a href="#bib118">Morrison, 2006</a>). Microsimulation models using historical datasets, e.g. CORSIM, align their output to historical data to create a more credible profile (<a href="#bib146">SOA, 1997</a>), while models that work prospectively, e.g. APPSIM, also utilise the technique to align their simulations with external projections (<a href="#bib92">Kelly &amp; Percival, 2009</a>).</p></section><section id="s4-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.3 Model complexity</h3><p data-astro-cid-qsyhzaho>Dynamic microsimulation is mostly built on the assumed parameters, estimated Markov chains and the conditional probability distributions estimated by various econometric methods. It usually involves many equations and parameters, estimated and fixed by laws and regulations. Once the estimations and parameters are put in place, most microsimulation models follow a straightforward execution process without invoking computational complicated algorithms. The complexity of a model, as a result, often comes from the constructions of the economic models and is mostly guided by the potential policy questions that the model is required to answer. Models focusing on pension issues usually simulate detailed labour market behaviour for decades ahead, as a change in the pension system can only mature when the youngest cohort in the labour market retires. In contrast, short term tax policy models usually forward simulate 3 to 5 years and are typically limited to tax related variables only. If a model is being utilised to answer different research questions, then it usually needs to simulate more variables for a longer period of time, which involves higher levels of complexity.</p><p data-astro-cid-qsyhzaho>An ideal microsimulation model should have the capacity to simulate details of all possibly related variables; however, the costs of building large models, both in terms of model validity and management needs to be taken into consideration. Dynamic microsimulation models have the reputation of being complex and the potential to run “out-of-spin” with regard to some aspects. This might be a particular concern when simulating policy reforms. Economics models, especially reduced form models, are often criticised for simulation purpose as the stability of the model structure is questionable under policy changes. This argument is also widely known as Lucas’ critique. As a result, structural models are usually seen as a better choice. Since some part of the policies (e.g. tax) can be explicitly included in the structural model, the estimated utility parameters are perceived to be more stable (<a href="#bib101">Klevmarken &amp; Lindgren, 2008</a>), although utility parameters can sometimes be very sensitive to even a small change in the model specification. Over fitting may also be a potential issue when the list of explanatory variables grows. Due to the number of models that one microsimulation model can invoke and the budget/time constraints, many models are primarily constructed using reduced form models with some structural models in key components.</p><p data-astro-cid-qsyhzaho>Complex models, while having more power, are much more difficult to validate and may often contain bugs in their implementation. In addition, the complexity of the processes often means development takes longer than expected. Large general purpose microsimulation models are usually built by large teams with access to large and complex datasets. These models usually simulate a wide variety of economic and demographic processes and can therefore be used for many different applications. These forecasting models usually incorporate alignment systems in order to keep the model in line with external forecasts or are in fact linked to macro-models. Models of this type include DYNASIM from the US, DYNACAN in Canada, SESIM in Sweden, MOSART in Norway and the APPSIM in Australia etc.</p></section><section id="s4-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.4 Model validation</h3><p data-astro-cid-qsyhzaho>Given the increasing complexity of models, it becomes increasingly important to validate the model in order to maintain its credibility. Unfortunately, only limited effort has been placed on validation matters and there is no international consensus on validation procedures. <a href="#bib101">Klevmarken and Lindgren (2008)</a> suggest that validation should be put in the same context as estimation and testing, and should involve the identification of all sources of errors and their properties. Given the size and structure of a large microsimulation model, bootstrapping and Monte Carlo exercises are likely to be more practical than the analytical deduction. In addition, sensitivity analysis on the models should also be part of the microsimulation validations (<a href="#bib101">Klevmarken &amp; Lindgren, 2008</a>). In <a href="#bib119">Morrison (2008)</a>’s paper, DYNACAN published their method of the validation from a practical point of view. It lists several important components one should cover during a microsimulation validation process: context of validation, data/coefficient/parameter validation, programmers/algorithmic validation, module-specific validation, multi-module validation, and policy impact validation.</p><p data-astro-cid-qsyhzaho>Ex post analyses of previous periods can also be used to assess the reliability of a model and it is for this reason that a number of the major microsimulation projects have taken historic datasets as their starting population base for simulations. For example, the CORSIM and POLISIM models takes as their base a sub-sample of the 1971 and 1960 US Censuses respectively, and the DYNACAN model takes a sample of the 1970 Canadian Census as its base. By running the model forward to the present day, the model forecasts can be compared to what has actually happened (see for examples <a href="#bib117">Morrison, 2000</a>; <a href="#bib31">Caldwell &amp; Morrison, 2000</a>). However, these models invariably incorporate historical information such as macro-aggregates into the model and as this information would not have been known to forecasters, this may produce better forecasts than would have otherwise been the case. One method to overcome this is to compare directly generated forecasts with what happened in reality, for example comparing forecasted labour participation rates with actual rates. Another method described by <a href="#bib29">Caldwell (1996)</a> is to use an indirect approach, known as a multiple module approach. An example cited by Caldwell is the case of validating the numbers of married persons with health insurance, when the directly simulated processes are marriage and medical insurance membership. Sources of error may result from errors in either or both direct processes, or because of mis-specified interactions.</p><p data-astro-cid-qsyhzaho>Some types of dynamic models, however, may have no comparable data source for validation. For example, some theoretical models that solely look at a single cohort living in a steady state have nothing with which they can be validated through external data source as they do not attempt to mimic real life in a comprehensive style. These types of models, due to the lack of validations, are often restricted in their interpretations of policy impact. Additionally, countries that have only recently developed their micro-data resources may not have alternative sources of data with which to validate, although this problem will become progressively less with time.</p><p data-astro-cid-qsyhzaho>Recent developments suggest an alternative validation method using a simplified model. Since no future data is available to validate a forecasting dynamic microsimulation model, <a href="#bib119">Morrison (2008)</a> suggests comparing a model’s result to a trustworthy model’s result. Dekkers (<a href="#bib45">2010</a>) argues that the general trend of certain indicators estimated by a simple model could be seen as a benchmark for more complicated microsimulation model as there is no black box in a simple model. The Belgium MIDAS model used this approach to validate against a “simple stylised” model, which is essentially a representative household model with only demographic and pension indexation components. This approach, however, raises another question on the criteria of a “trustworthy” model. It is difficult to say which model is correct when the output of a stylised benchmark model differs significantly from the result of a comprehensive population model. Without further analysis, the differences between model outputs may only be used as indicative validation tests rather than anything conclusive.</p></section></div></details><details id="s5" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">5. Programming of dynamic micro-simulation models</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Microsimulation models are usually built for specific purposes and are thus custom developed, although there are a few packages that are often used in the development of dynamic microsimulation model. These packages can be grouped in to three main categories according to their development environments, each with their own advantages and disadvantages:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>General purpose programming language tool (C/C++/C#/Java etc.)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>General purpose statistical package (Stata/SAS/R/MatLab/Mathematica etc.)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Simulation modelling package (Modgen, LIAM2, GENESIS etc.)</p></li></ul><p data-astro-cid-qsyhzaho>Development using a general purpose programming language clearly enjoys the highest degree of flexibility and possibly speed advantage. FORTRAN was popular among some earlier models, e.g. MICROHUS, PRISM, and DYNASIM2 while C language family seems to be a popular choice for later models. SAGE, DYNAMOD, LIAM, DYNACAN and a few others models were all developed using C++, whilst POLISIM used a mixture of C and C++, and APPSIM and MOSART were programmed in C#. Models have also been developed in Java (e.g. IFSIM), Visual Basic (e.g. SESIM) and a number of other languages. Evaluation based on the prototype microsimulation models by <a href="#bib136">Percival (2007)</a> suggested that there is a substantial speed advantage when the prototype model is coded using C++. However, the cost of development is much higher when compared with other approaches, as all the potential numeric calculations and related data management need to be programmed. In practice, it is likely that policy modellers are not adequately proficient in programming, while professional programmers may not fully understand the economic theories and scientific principles that are to be implemented.</p><p data-astro-cid-qsyhzaho>The second approach is to develop microsimulation models based on existing statistical or mathematics packages, such as GAMEO, DYNASIM, and PENSIM2 which were built on SAS. Modern statistical packages are capable of executing computation commands in batch and the code of a model is commonly referred to as a “script”, “do-file” or “syntax file” etc. The main advantage of this approach is short development time and easy access to the statistical power of the package. However, the speed of the model might be lower and the data structure may not be optimised for simulation purpose.</p><p data-astro-cid-qsyhzaho>Another way to develop microsimulation models is to use modelling packages developed by the third parties. Software in this category ranges from generic purpose modelling software, e.g. AnyLogic etc. to microsimulation specific packages. Whilst agent based simulation modellers use more generic purpose packages, microsimulation modellers tend to use more specific software.</p><p data-astro-cid-qsyhzaho>The most notable dynamic microsimulation modelling tools include</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Modgen, developed by Statistics Canada (<a href="#bib166">Wolfson &amp; Rowe, 1998</a>)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>LIAM2, developed by the Belgium Federal Planning Bureau (<a href="#bib27">Bryon <i>et al</i>., 2011</a>)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>UMDBS, developed by <a href="#bib141">Sauerbier (2002)</a></p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>GENESIS, developed by UK Department for Work and Pensions (<a href="#bib52">Edwards, 2004</a>)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>JAMSIM, developed by Centre of Methods and Policy Application in the Social Science (COMPASS), University of Auckland (<a href="#bib111">Mannion <i>et al</i>., 2012</a>)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>LIAM, developed by O’Donoghue <i>et al</i>. (2009)</p></li></ul><p data-astro-cid-qsyhzaho>Modgen provides a C++ library for developers to incorporate required common actions and modules. It is often used to develop continuous microsimulation models, such as LifePath. In contrast, LIAM2 is a microsimulation scripting engine which is capable of reading its own syntax. The engine itself is coded in Python with extensive references to libraries written in C. Microsimulation packages such as this one offer the great benefit of rapid development. There are also a few dynamic microsimulation models that were built with generic deployment in mind. For example, LIAM avoids hardcoded parameters and variable names during the development, which greatly reduce the repetitive work load of a new modeller. GENESIS offers a platform to create a SAS based microsimulation model by reading the model specification from an Excel Sheet. JAMSIM combines several opens source packages, e.g. R, Ascape, to create a user friendly interface to model and execute microsimulation models. However, these models still require end users to understand the internal mechanism and make changes at source code level when building larger models.</p><p data-astro-cid-qsyhzaho>Most models today are based on a statistical package or a generic purpose programming language. However, it is not uncommon to see mixed combinations of environments in order to utilise the advantages of different software, especially for pre- or post-simulation analysis, e.g. DYNACAN, LIAM.</p></div></details><details id="s6" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">6. Progress in dynamic micro-simulation</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s6-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.1 Progress of dynamic microsimulation modelling since 1970s</h3><p data-astro-cid-qsyhzaho>In reviewing progress made by the field, it is useful to consider an early model development, the DYNASIM model developed by <a href="#bib129">Orcutt <i>et al</i>. (1976)</a> in the Urban Institute in the early 1960s to mid 1970’s. In terms of our classification above, DYNASIM was a longitudinal closed model running a 10000 person dataset. It contained</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>A demographic module, modelling leaving home, births, deaths partnership formation and dissolution, disability, education and broad location.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>A labour market module containing participation, hours, unemployment and labour income</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>A Tax-Transfer and Wealth module containing capital income and the main tax and transfer instruments</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>A marriage matching module</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>As well as a simple macroeconomic model and feedback loops linked with the microsimulation model via alignment.</p></li></ul><p data-astro-cid-qsyhzaho>Thus in terms of generic structure, this 1970s model incorporates much of what has been included in later dynamic microsimulation models, although each component has been largely improved by the newer models. Despite the progresses in 1970s and 1980s, early microsimulation modellers faced a number of challenges which were summarised by <a href="#bib85">Hoschka (1986)</a>:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Many of the behavioural hypotheses in micro-simulation models are of insufficient theoretical and/or empirical basis</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Dynamic changes in the behaviour of the population are mostly not regarded by micro modellers</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The problems of including more than the primary effects of a policy programme is still unresolved</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Quality and accessibility of the data required by micro models often are restricted severely.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The development of micro-models frequently needs too much time and its costs are accordingly high</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Running micro models usually requires a lot of computer time</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The prediction quality of micro-models has not yet been systematically evaluated and validated</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Large microsimulation models are so complex that they are difficult to comprehend and control.</p></li></ul><p data-astro-cid-qsyhzaho>These challenges can be broadly categorised into five different areas: behaviour response modelling (a-c), microdata quality (d), development cost (e), limited computation capacity (f) and model validation (g-h). Comparing with some recent discussions in issues of microsimulation (<a href="#bib78">Harding, 2007b</a>), it is clear that most issues mentioned are still relevant and high on the list several decades later.</p><p data-astro-cid-qsyhzaho>By comparing the DYNASIM model structure with today’s dynamic microsimulation models and the challenges faced by the modellers in 1980s and today, what we are seeing are gradual advancements in the methodologies rather than breakthrough in model designs and applications. Improved computer hardware has allowed both improved speed and increased databases as have model software developments such as Scott (<a href="#bib143">2001</a>), O’Donoghue <i>et al</i>. (<a href="#bib125">2009</a>) etc. Improvements in good data and the software packages with built-in micro-econometric techniques have improved the sophistication possible in individual models (See <a href="#bib122">O’Donoghue, 2001a</a>). There has been some improvement also in the incorporation of behavioural response. This allows us to analyse the social economic impact on individuals when the policies are not kept constant. In addition, today’s microsimulation modellers have proposed several methods to systematically validate the simulation output (<a href="#bib119">Morrison, 2008</a>). Another major advancement in the past decades is the emerge of generic models, including Modgen (<a href="#bib166">Wolfson &amp; Rowe, 1998</a>), UMDBS (<a href="#bib141">Sauerbier, 2002</a>), GENESIS (<a href="#bib52">Edwards, 2004</a>), LIAM (<a href="#bib125">O’Donoghue <i>et al</i>., 2009</a>) and LIAM2 (<a href="#bib27">Bryon <i>et al</i>., 2011</a>). These generic models can greatly reduce the workload of new modellers by providing commonly used microsimulation routines.</p></section><section id="s6-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.2 Obstacles in the advancement of microsimulation</h3><p data-astro-cid-qsyhzaho>While the field of microsimulation has progressed greatly in many aspects since the original paper of Orcutt (<a href="#bib161">Williamson <i>et al</i>., 2009</a>), the rate of progress in dynamic microsimulation, nonetheless, is arguably slow given that we still share the same model design and face similar problems as early DYNASIM modellers did nearly 40 years ago. There are a number of reasons could be ascribed to this lack of progress, including:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Knowledge transfer</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Model ownership</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Unrealistic expectations</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Funding</p></li></ul><p data-astro-cid-qsyhzaho>One criticism of the knowledge transfer mechanisms within the field is that most of the transfer has been via tacit knowledge rather than codified knowledge. Much important knowledge and methodologies have mainly been codified as “documentation”, with the main aim to facilitate other team members utilising the models. In addition, microsimulation models are mostly developed in governmental or policy institutions, where developing a literature on which a wider group of scientists has built has been a lesser objective. Furthermore, the documents are mainly spread with limited books and conference presentations, which may not be easily available for researchers outside of the network. Additionally, academic publication relies on preparing papers of 5 to 10 thousand words, which may not be enough for complex dynamic microsimulation models. Thus a significant proportion of the extensive methods used in the field are not formally codified, meaning that to a large extent new models have had to reinvent the wheel and redevelop existing methods over and over again. This has made it very difficult to work in the field.</p><p data-astro-cid-qsyhzaho>The non-transparent knowledge transfer has also manifested itself in a proprietary versus open source view in relation to the software, where either code or coding consultancy has been sold to potential clients. While this model of intellectual property makes sense when an economic return can be gained and motives private R&amp;D, given the relatively small demand for these tools by clients with the capacity to pay for them, it seems to be a business model that will stymie intellectual development. With low funded demand, the returns will be low, limiting private investment, while the private good nature of the intellectual property will limit transmission. In addition, the protection of the source code makes replicating others’ findings very difficult, which could harm the credibility of the research. Moving from black box” modelling to a glass box” modelling could ease many potential users’ concerns and raise the method’s scientific status (<a href="#bib165">Wolfson, 2009</a>). The availability of less closed model frameworks such as GENESIS, LIAM and LIAM2 can facilitate the development of new models. However it will require the publication of full models to fully realise the benefits of scientific interaction.</p><p data-astro-cid-qsyhzaho>Another reason for the lack of progress might be the perceived “failure” of the earlier models. However this failure to some extent can be attributed to failing to meet unachievably high expectations. <a href="#bib130">Orcutt <i>et al</i>. (1961)</a> focused on the capacity to undertake prediction at a micro level to facilitate planning. Human behaviour is of such complexity and is endogenous to economic analysis that dynamic microsimulation models cannot hope to make highly accurate predictions. Even well specified econometric model may over or under predict the outcomes (<a href="#bib51">Duncan &amp; Weeks, 1998</a>). As <a href="#bib24">George Box (1987)</a> said “All models are wrong, some are useful”. In being useful we can hope, by using good theory, data and statistical and computational methods, dynamic microsimulation models can provide a consistent and reasonable framework with which to undertake policies analyses incorporating inter-temporal events and the distribution of the population.</p><p data-astro-cid-qsyhzaho>Funding may also be a major issue facing many microsimulation modellers. Building and using large microsimulation models requires teams of researchers representing different disciplines and experiences. In addition, the scale of the model also suggests the need for long-term funding, which does not always fit well into an ordinary university department with its normal rotation of people and the three-year funding of research projects. After the initial funding, most models are no longer actively maintained, which makes very difficult for people outside of the original team to utilise the model for other research purposes.</p></section></div></details><details id="s7" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">7. Future directions</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s7-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.1 Model uses</h3><p data-astro-cid-qsyhzaho>The applications of microsimulation are widespread as suggested by <a href="#table1">Table 1</a>. With the availability of better modelling tools and greater number of researchers from different fields engaging in microsimulation, the method is now applied in many fields other than the traditional welfare policy research. For instance, using microsimulation model as part of the tools to estimate impact of climate change (<a href="#bib86">Hynes <i>et al</i>., 2009</a>; <a href="#bib28">Buddelmeyer <i>et al</i>., 2009</a>), modelling disease spread (<a href="#bib158">Will <i>et al</i>., 2001</a>), time use simulation (<a href="#bib2">Anderson <i>et al</i>., 2009</a>), and even to assist personal financial planning (<a href="#bib11">Avery &amp; Morrison, 2011</a>). The use of dynamic microsimulation models can be even further expanded as more micro-level data becomes available. With the better availability of the longitudinal data and administrative data, it is possible to better understand the consequence of ageing. In addition, the raise of the network data could help to model the disease spread and knowledge diffusion in a more realistic way.</p><p data-astro-cid-qsyhzaho>While large dynamic models have their advantages for providing more comprehensive simulation outputs, the complexity also increases the difficulties in validation, model usages and also funding issues. It might be beneficial to also develop some specialised simple dynamic models. Smaller models could be better validated and make it easier to publish the model details within the length limit of a journal article. This does not mean that there is no need for large models. Instead, the easy-to-validate smaller models could be absorbed into a more complicated microsimulation model where more complex interactions are allowed.</p><p data-astro-cid-qsyhzaho>Additionally, instead of expecting an accurate long run simulation, researchers could focus more on scenario analyses, where the assumptions are explicit and there is less pressure to be a fortune teller. The changes in economic and politics climate also mean that all the simulations results may become obsolete in relative short time. Focusing on the scenario analyses could be more cost effective and relevant to the debate of contemporary issues.</p><p data-astro-cid-qsyhzaho>Furthermore, academics can also use dynamic microsimulation to improve the understanding and modelling of inter temporal behaviours. Traditionally, labour economists do not have access to the longitudinal data that covers the whole life-span of individuals. With the help of microsimulation, it is possible to generate budget constraints for use as input into life-cycle behaviour choice modelling, e.g. retirement choice as in Li and O’Donoghue (<a href="#bib105">2011</a>). The method may assist us to better understand the many inter temporal processes, e.g. fertility decision, education choices etc. The raising interests from the academic side would benefit the field development and ensures the sustainability of the knowledge.</p></section><section id="s7-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.2 Model assumptions and potential expansions</h3><p data-astro-cid-qsyhzaho>While the models that focus on the individual social economic patterns and behaviours have improved in the past decade, there is limited effort modelling the institutions except tax benefit system within microsimulation. Future models could potentially benefit from incorporating some of these important social fabrics, e.g. companies, unions in a labour market simulation exercise, or hospitals, clinics, emergency response in a health model. This also relates to the discussions of better behaviour modelling and CGE models linkage referred in earlier section. These improvements could potentially provide us a more accurate picture of the consequences of large scale policy change.</p><p data-astro-cid-qsyhzaho>A number of the typical assumptions in microsimulation can also be further explored. For instance, the unit of analysis is traditionally individual or nuclear family. It is useful to consider more complex household arrangements to be comparable with the welfare economics literature. Also, the sharing within household assumption may not hold if there’s complex family structure. By modelling the kinships within the family, like INAHSIM (<a href="#bib88">Inagaki, 2010</a>), it allows us to better understand the welfare network and poverty alleviations in the society. In addition, most microsimulation models these days ignore the budget and political constraint from the government side, either by assuming fiscally neutral or unlimited resources. The macroeconomic constraint and the political feasibilities are not discussed in most papers. Future microsimulation modellers may want to incorporate these factors to assess the feasibilities of a proposed reform.</p></section><section id="s7-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.3 Methodologies and technical choices</h3><p data-astro-cid-qsyhzaho>In terms of methodological development, a primary need is to codify the various methodologies that are currently being used in dynamic microsimulation models. There are many methods being used; most without any published description or evaluation. As noted above, this can impede the progress of the field. Formally documenting the methods used and publishing in a peer-reviewed journal could improve the knowledge diffusion and increase the public good returns by academics, providing incentive to innovate. Additionally, publications could preserve the knowledge that could have been lost due to the end of project funding. It is hoped that in time that the newly founded International Journal of Microsimulation can provide an opportunity for citable peer reviewed publications.</p><p data-astro-cid-qsyhzaho>The widely used alignment technique is still under documented. While some models have published their alignment implementation details, it is still unclear how alignment should be used when combined with more complex econometric models, e.g. categorical behaviour models. Generally, there is limited understanding on the simulation properties of many algorithms used, including alignment, error term manipulation, complex reweighting, random numbers etc. In most models, each equation is estimated separately without the considering the potential correlated error terms and the simulation structure where the equations will be applied to. This may lead to undesired bias due to inconsistent assumptions when simulating some reforms. In addition, to improve the model credibility, it is worthwhile to pay attention to the testing and validation process of a simulation model. Additionally, papers using microsimulation model typically provide the result of only one-run although a few papers, e.g. <a href="#bib137">Pudney and Sutherland (1994)</a> found that the microsimulation results could have a wide confidence interval. Given the raising computing capacity available for researchers these days, modellers could potentially provide more information about the simulation, e.g. the confidence intervals of the result using Monte Carlo techniques.</p><p data-astro-cid-qsyhzaho>Despite the discussions and the general consensus to improve validation process in microsimulation, there is still little guideline how dynamic microsimulation models should be validated (Harding, 2010). While DYNASIM documented many issues involved in the model validation, there are still many areas that need to be explored, such as behaviour responses validation, longitudinal consistency validation, module interactions etc. Besides the validation from the technical side, it is also worth considering to validate the simulation with historical data, from which we can learn what has been done right, how the simulation performs under different assumptions etc.</p></section></div></details><details id="s8" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">8. Conclusions</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>This paper has discussed some of main issues involved in constructing a dynamic microsimulation model and described some of the choices made by different models in use worldwide. The main issues discussed have covered some of the general model development issues, such as base dataset selection, cohort or population based model structure, programming environment, and model validation. The paper has also discussed some of the technical choices made in model implementation, such as whether the model should be open or closed, whether alignment algorithms should be used, whether the model should incorporate behavioural response to policy changes, and links to the agent based models etc.</p><p data-astro-cid-qsyhzaho>Over the past decades, microsimulation models have been applied to many different policy areas and a comparison of models as given in <a href="#table1">Table 1</a> illustrates the scope of application of dynamic microsimulation models. Most dynamic microsimulation models listed can be categorised as discrete models using dynamic ageing approach. For newer models, alignment has become a standard component allowing interactions with macro aggregates and more recently, simulation packages that are dedicated solely to microsimulation have become a viable option in model development. These packages, together with increased co-operation through meetings and code sharing (e.g. LIAM, Modgen model series), could significantly increase the development process.</p><p data-astro-cid-qsyhzaho>The increasing use of microsimulation models has raised many technical challenges to meet the needs of more complex and accurate policy analyses. For instance, there is a growing interest in integrating CGE into microsimulation models, although the actual implementations of CGE-microsimulation are at this stage restricted due to data and technical limitations. Behavioural responses in microsimulation could also be further improved and one should consider more life-cycle models when simulating inter-temporal choices. Microsimulation models could potentially implement some elements from ABM to allow dynamic behaviour interactions and adaptations. In addition, considering different unit of analysis, budget and political constraints, may also broaden the field of microsimulation applications. Furthermore, certain practices within the simulations, such as alignment for complex models and error term simulation, should be more thoroughly studied.</p><p data-astro-cid-qsyhzaho>Besides the technical challenges, there are also some general issues in the field. The lack of documentations often forces new modellers to reinvent the wheel; closed sourced models which slow down the knowledge transmission. The unrealistically high expectation in long run simulation may challenge the creditability of the model and make applying for funding more difficult in long run. Future modellers may help to address these issues by publishing model details in academic journals and be more open on the algorithm implementations. Newer modelling platforms like LIAM2 attempt to be more open and transparent in the software source code, which would potentially benefit the field development and knowledge transmission. In addition, the field can also explore topics other than taxations and standard government policies. Topics like the impact of climate change, the social consequence of ageing, for instance, could also potentially gain benefits from microsimulation techniques.</p></div></details></div><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ahmed, V, O’Donoghue, C (2007). <em data-astro-cid-oer3kof4>CGE-microsimulation modelling: a survey. MPRA Paper 9307</em>. CGE-microsimulation modelling: a survey. MPRA Paper 9307.</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Anderson, B, Agostini, P, Laidoudi, S, Weston, A, Zon, P (2009). <span data-astro-cid-oer3kof4>Time and Money in Space: Estimating Household Expenditure and Time Use at the Small Area Level in Great Britain</span>.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Anderson, JM (2001). <span data-astro-cid-oer3kof4>Models for Retirement Policy Analysis</span>.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ando, A (1996). <em data-astro-cid-oer3kof4>Microsimuation Analysis of Aggregate Savings Behaviour in Japan: Effects of Aging Population on Aggregate Savings and Design of Policies on Savings in Japan</em>. National Institute for Research Advancement.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ando, A, Brandolini, A, Bruno, G, Cannari, L, Cipollone, P, D’Alessio, G, Faiella, I, Forni, L, Marino, M, Nicoletti Altimari, S (2000). <em data-astro-cid-oer3kof4>The Bank of Italy’s DYNAMITE: Recent Developments</em>. Roma: mimeo, Banca d’Italia.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ando, A, Moro, A (1995). <span data-astro-cid-oer3kof4>Demographic dynamics, labor force participation and household asset accumulation: case of Japan. NBER Working Paper No. 5261</span>.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ando, A, Nicoletti-Altimari, S (2004). <em data-astro-cid-oer3kof4>A micro simulation model of demographic development and households’ economic behavior in Italy</em>. Bank of Italy, Economic Research Department.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Andreassen, L, Fredriksen, D, Ljones, O (1994). <span data-astro-cid-oer3kof4>The Future Burden of Public Pension Benefits A Microsimulation Study. Discussion Papers No. 115</span>.</span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Antcliff, S (1993). <span data-astro-cid-oer3kof4>An introduction to DYNAMOD: A dynamic microsimulation model. DYNAMOD Technical Paper No 1</span>.</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Antcliff, S, Bracher, M, Gruskin, A, Hardin, A, Kapuscinski, C (1996). <em data-astro-cid-oer3kof4>Development of DYNAMOD: 1993 and 1994. DYNAMOD Working Paper</em>. Development of DYNAMOD: 1993 and 1994. DYNAMOD Working Paper.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Avery, M, Morrison, R (2011). <span data-astro-cid-oer3kof4>Microsimulation as a Financial Literacy Tool: Assessing the Consequences of Decisions to Work</span>. .</span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Baekgaard, H (1995). <span data-astro-cid-oer3kof4>National Centre for Social and Economic Modelling (NATSEM)</span>.</span></li><li id="bib13" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Baekgaard, H (1998). <span data-astro-cid-oer3kof4>National Centre for Social and Economic Modelling (NATSEM)</span>.</span></li><li id="bib14" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Baekgaard, H (2002). <span data-astro-cid-oer3kof4>National Centre for Social and Economic Modelling(NATSEM). Technical paper No. 25</span>.</span></li><li id="bib15" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Baldini, M (2001). <span data-astro-cid-oer3kof4>Inequality and redistribution over the life-cycle in Italy: An analysis with a dynamic cohort microsimulation model</span>. <em data-astro-cid-oer3kof4>Brazilian Electronic Journal of Economics</em>, <strong data-astro-cid-oer3kof4>4</strong>.</span></li><li id="bib16" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ballas, D, Clarke, G, Dorling, D, Eyre, H, Thomas, B, Rossiter, D (2005). <span data-astro-cid-oer3kof4>SimBritain: a spatial microsimulation approach to population dynamics</span>. <em data-astro-cid-oer3kof4>Population, Space and Place</em>, <strong data-astro-cid-oer3kof4>11</strong>, 13–34.</span></li><li id="bib17" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ballas, D, Clarke, GP, Wiemers, E (2005). <span data-astro-cid-oer3kof4>Building a dynamic spatial microsimulation model for Ireland</span>. <em data-astro-cid-oer3kof4>Population, Space and Place</em>, <strong data-astro-cid-oer3kof4>11</strong>, 157–172.</span></li><li id="bib18" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Bardaji, J, Sédillot, B, Walraet, E (2003). <span data-astro-cid-oer3kof4>Un outil de prospective des retraites: le modèle de microsimulation Destinie</span>. <em data-astro-cid-oer3kof4>Economie &amp; prévision</em>, 193–213.</span></li><li id="bib19" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Baroni, E, Žamac, J, Öberg, G (2009). <span data-astro-cid-oer3kof4>IFSIM Handbook</span>.</span></li><li id="bib20" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Blanchet, DECSM (2009). <span data-astro-cid-oer3kof4>The Destinie 2 microsimulation model: increased flexibility and adaptation to users’ needs</span>. .</span></li><li id="bib21" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Boero, R, Squazzoni, F (2005). <span data-astro-cid-oer3kof4>Does empirical embeddedness matter? Methodological issues on agent-based models for analytical social science</span>.</span></li><li id="bib22" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Bonnet, C, Burricand, C, Colin, C, Flipo, A, Mahieu, R, Ralle, P, Sédillot, B (1999). <span data-astro-cid-oer3kof4>Le modèle de microsimulation dynamique destinie</span>.</span></li><li id="bib23" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Bonnet, C, Mahieu, R (2000). <span data-astro-cid-oer3kof4>Microsimulation in the new millennium: challenges and innovations</span>.</span></li><li id="bib24" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Box, G, Draper, N (1987). <em data-astro-cid-oer3kof4>Empirical model-building and response surfaces</em>. John Wiley &amp; Sons.</span></li><li id="bib25" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Brewer, M, Browne, J, Emmerson, C, Goodman, A, Muriel, A, Tetlow, G (2007). <em data-astro-cid-oer3kof4>Pensioner poverty over the next decade: what role for tax and benefit reform?</em>. The Institute for Fiscal Studies.</span></li><li id="bib26" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Brown, LJ, Caldwell, SB, Eklund, SA (1995). <span data-astro-cid-oer3kof4>How fee and insurance changes could affect dentistry: results from a microsimulation model</span>. <em data-astro-cid-oer3kof4>The Journal of the American Dental Association</em>, <strong data-astro-cid-oer3kof4>126</strong>, 449–459.</span></li><li id="bib27" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Bryon, G, Dekkers, G, de Menten, G (2011). <span data-astro-cid-oer3kof4>LIAM 2 User Guide documentation MiDaL Project Document</span>.</span></li><li id="bib28" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Buddelmeyer, H, Economic, MIoA, Research, S (2009). <em data-astro-cid-oer3kof4>Linking a Dynamic CGE Model and a Microsimulation Model: Climate Change Mitigation Poliices and Income Distribution in Australia</em>. University of Melbourne: Melbourne Institute of Applied Economic and Social Research.</span></li><li id="bib29" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Caldwell, S (1996). <span data-astro-cid-oer3kof4>Health, wealth, pensions and life paths: the CORSIM dynamic microsimulation model</span>. <em data-astro-cid-oer3kof4>Contributions to Economic Analysis</em>, <strong data-astro-cid-oer3kof4>232</strong>, 505–522.</span></li><li id="bib30" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Caldwell, S, Gupta, R, Habig, B, Kalbag, S, Payne, A, Peromsik, A (1997). <em data-astro-cid-oer3kof4>Corsim 3.0 user and technical documentation</em>. New York: Ithaca.</span></li><li id="bib31" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Caldwell, S, Morrison, RJ (2000). <em data-astro-cid-oer3kof4>Validation of longitudinal dynamic microsimulation models: experience with CORSIM and DYNACAN</em>. University of Cambridge: Department of Applied Economics.</span></li><li id="bib32" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Cassells, R, Harding, A, Kelly, S (2006). <em data-astro-cid-oer3kof4>Problems and Prospects for Dynamic Microsimulation: A Review and lessons for APPSIM. Discussion Paper no. 63</em>. Problems and Prospects for Dynamic Microsimulation: A Review and lessons for APPSIM. Discussion Paper no. 63.</span></li><li id="bib33" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Chenard, D (2000). <em data-astro-cid-oer3kof4>Individual alignment and group processing: an application to migration processes in DYNACAN</em>. University of Cambridge: Department of Applied Economics.</span></li><li id="bib34" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Chénard, D (2001). <em data-astro-cid-oer3kof4>Earnings in DYNACAN: distribution alignment methodology. DYNACAN Working Paper</em>. Earnings in DYNACAN: distribution alignment methodology. DYNACAN Working Paper.</span></li><li id="bib35" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Citro, C, Hanushek, E (1991). <em data-astro-cid-oer3kof4>The Uses of Microsimulation Modelling</em>. Washington, DC: National Academy Press.</span></li><li id="bib36" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Citro, C, Hanushek, E (1991). <em data-astro-cid-oer3kof4>The Uses of Microsimulation Modelling. Technical Papers</em>. The Uses of Microsimulation Modelling. Technical Papers.</span></li><li id="bib37" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Cockburn, J (2001). <span data-astro-cid-oer3kof4>Trade liberalisation and poverty in Nepal: A computable general equilibrium micro simulation analysis</span>. <em data-astro-cid-oer3kof4>Cahier de recherche</em>, 01–18.</span></li><li id="bib38" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Colombo, G (2008). <span data-astro-cid-oer3kof4>Linking CGE and Microsimulation Models: A Comparison of Different Approaches</span>.</span></li><li id="bib39" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Courtioux, P, Gregoir, S, Houeto, D (2009). <span data-astro-cid-oer3kof4>The Simulation of the Educational Output over the Life Course: The GAMEO Model</span>. .</span></li><li id="bib40" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Creedy, J, Duncan, A, Harris, M, Scutella, R (2002). <em data-astro-cid-oer3kof4>Microsimulation modelling of taxation and the labour market: the Melbourne Institute tax and transfer simulator</em>. Cheltenham: Edward Elgar Publishing Limited.</span></li><li id="bib41" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Creedy, J, Van de Ven, J (2001). <span data-astro-cid-oer3kof4>Decomposing redistributive effects of taxes and transfers in Australia: Annual and lifetime measures</span>.</span></li><li id="bib42" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Csicsman, N, Pappne, N (1987). <span data-astro-cid-oer3kof4>The Software Developed for the Hungarian Micro-simulation System</span>. .</span></li><li id="bib43" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Curry, C (1996). <em data-astro-cid-oer3kof4>PENSIM: a dynamic simulation model of pensioners’ incomes</em>. London, United Kingdom: Department of Social Security.</span></li><li id="bib44" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Davies, JB (2004). <em data-astro-cid-oer3kof4>Microsimulation, CGE and macro modelling for transition and developing economies, WIDER Discussion Papers 2004/08</em>. Microsimulation, CGE and macro modelling for transition and developing economies, WIDER Discussion Papers 2004/08.</span></li><li id="bib45" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Dekkers, G (2010). <em data-astro-cid-oer3kof4>On the impact of indexation and demographic ageing on inequality among pensioners: Validating MIDAS Belgium using a stylized model, European Workshop on Dynamic microsimulation modelling</em>. Belgium: Brussels.</span></li><li id="bib46" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Dekkers, G, Belloni, M (2009). <span data-astro-cid-oer3kof4>Micro simulation, pension adequacy and the dynamic model MIDAS: an introduction</span>.</span></li><li id="bib47" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Dekkers, G, Buslei, H, Cozzolino, M, Desmet, R, Geyer, J, Hofmann, D, Raitano, M, Steiner, V, Tanda, P, Tedeschi, S (2010). <span data-astro-cid-oer3kof4>What are the consequences of the European AWG-projections on the adequacy of pensions? An application of the dynamic micro simulation model MIDAS for Belgium, Germany and Italy. Life-Cycle Microsimulation Modelling</span>. <em data-astro-cid-oer3kof4>Constructing and Using Dynamic Microsimulation Models</em>, 325–357.</span></li><li id="bib48" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Dekkers, G, Nelissen, JHM, Verbon, HAA (1993). <em data-astro-cid-oer3kof4>The Macro Model Programme Sector of the Microsimulation Model NEDYMAS. WORC paper 93.08.016/2</em>. The Macro Model Programme Sector of the Microsimulation Model NEDYMAS. WORC paper 93.08.016/2.</span></li><li id="bib49" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Dekkers, G, Van Camp, G (2011). <span data-astro-cid-oer3kof4>The simulation properties of microsimulation models with static and dynamic ageing – a guide into choosing one type of model over the other</span>.</span></li><li id="bib50" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Deville, JC, Sarndal, CE, Sautory, O (1993). <span data-astro-cid-oer3kof4>Generalized raking procedures in survey sampling. Journal of the American Statistical Association</span>.</span></li><li id="bib51" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Duncan, A, Weeks, M (1998). <span data-astro-cid-oer3kof4>Simulating transitions using discrete choice models</span>. <em data-astro-cid-oer3kof4>Papers and Proceedings of the American Statistical Association 106</em>, 151–156.</span></li><li id="bib52" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Edwards, S (2004). <em data-astro-cid-oer3kof4>GENESIS: SAS based computing environment for dynamic microsimulation models</em>. London: Mimeo, Department of Work and Pensions.</span></li><li id="bib53" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Eliasson, G (1977). <span data-astro-cid-oer3kof4>Competition and market processes in a simulation model of the Swedish economy</span>. <em data-astro-cid-oer3kof4>The American Economic Review</em>, <strong data-astro-cid-oer3kof4>67</strong>, 277–281.</span></li><li id="bib54" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Eliasson, G (1991). <span data-astro-cid-oer3kof4>Modeling the experimentally organized economy* 1:: Complex dynamics in an empirical micro-macro model of endogenous economic growth</span>. <em data-astro-cid-oer3kof4>Journal of Economic Behavior &amp; Organization</em>, <strong data-astro-cid-oer3kof4>16</strong>, 153–182.</span></li><li id="bib55" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Emmerson, C, Reed, H, Shephard, A (2004). <em data-astro-cid-oer3kof4>An assessment of PenSim2, WP04/21</em>. The Institute for Fiscal Studies.</span></li><li id="bib56" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ericson, P, Hussenius, J (1999). <span data-astro-cid-oer3kof4>Public Policy Analysis and management: Global and Comparative PErspectives</span>.</span></li><li id="bib57" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ericson, P, Hussénius, J (1998). <em data-astro-cid-oer3kof4>A note about SESIM–a dynamic microsimulation model, SESIM Documents</em>. Stockholm: Swedish Ministry of Finance.</span></li><li id="bib58" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Falkingham, J, Johnson, P (1993). <span data-astro-cid-oer3kof4>Welfare State Programme, Suntory-Toyota International Centre for Economics and Related Disciplines</span>.</span></li><li id="bib59" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Falkingham, J, Lessof, C (1992). <span data-astro-cid-oer3kof4>Microsimulation Models for Public Policy Analysis: New Frontiers</span>.</span></li><li id="bib60" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Favreault, M, Smith, KE (2004). <em data-astro-cid-oer3kof4>A primer on the dynamic simulation of income model (DYNASIM3)</em>. Urban Institute.</span></li><li id="bib61" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Fialka, J, Krejdl, A, Bednarik, P (2011). <span data-astro-cid-oer3kof4>Summary based on the final project report of the dynamic microsimulation model of the Czech Republic</span>.</span></li><li id="bib62" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Flood, L (2007). <span data-astro-cid-oer3kof4>Can we afford the future? An evaluation of the new Swedish pension system</span>. In Harding, A, Gupta, A (Eds.), <em data-astro-cid-oer3kof4>Modelling our future: population ageing, social security and taxation</em>. Amsterdam: Elsevier.</span></li><li id="bib63" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Fölster, S (2001). <span data-astro-cid-oer3kof4>An evaluation of social insurance savings accounts</span>. <em data-astro-cid-oer3kof4>Public Finance and Management 1</em>, 420–448.</span></li><li id="bib64" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Fredriksen, D (1998). <span data-astro-cid-oer3kof4>Projections of population, education, labour supply and public pension benefits</span>.</span></li><li id="bib65" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Fredriksen, D (2003). <span data-astro-cid-oer3kof4>The MOSART model-a short technical documentation</span>. .</span></li><li id="bib66" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Galler, HP (1990). <span data-astro-cid-oer3kof4>Simulation Models in Tax and Transfer Policy</span>.</span></li><li id="bib67" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Galler, HP (1997). <em data-astro-cid-oer3kof4>Discrete-time and continuous-time approaches to dynamic microsimulation reconsidered. Technical Paper No. 13</em>. Discrete-time and continuous-time approaches to dynamic microsimulation reconsidered. Technical Paper No. 13.</span></li><li id="bib68" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Galler, HP, Wagner, GG (1986). <span data-astro-cid-oer3kof4>Microanalytic Simulation Models to Support Social and Financial Policy Amsterdam</span>.</span></li><li id="bib69" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Gault, S (2009). <span data-astro-cid-oer3kof4>Benefit reform – a dynamic microsimulation approach using administrative data</span>. .</span></li><li id="bib70" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Goldman, DP, Cutler, DM, Shang, B, Joyce, GF (2006). <span data-astro-cid-oer3kof4>The value of elderly disease prevention</span>.</span></li><li id="bib71" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Goldman, DP, Zheng, Y, Girosi, F, Michaud, PC, Olshansky, SJ, Cutler, D, Rowe, JW (2009). <span data-astro-cid-oer3kof4>The benefits of risk factor prevention in Americans aged 51 years and older</span>.</span></li><li id="bib72" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hain, W, Helberger, C (1986). <span data-astro-cid-oer3kof4>Microanalytic Simulation Models to support Social and Financial Policy</span>.</span></li><li id="bib73" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hammel, E, Mason, C, Wachter, K (1990). <em data-astro-cid-oer3kof4>SOCSIM II, a sociodemographic microsimulation program, rev. 1.0, operating manual: Graduate Group in Demography Working Paper No. 29</em>. Berkeley, California: University of California, Institute of International Studies, Program in Population Research.</span></li><li id="bib74" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hancock, R (2000). <span data-astro-cid-oer3kof4>Charging for care in later life: an exercise in dynamic microsimulation</span>. In Mitton, L, Sutherland, H, Weeks, MJ (Eds.), <em data-astro-cid-oer3kof4>Microsimulation in the New Millennium</em> (pp. 226–237). Cambridge: Cambridge University Press, Cambridge.</span></li><li id="bib75" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hancock, R, Mallender, J, Pudney, S (1992). <span data-astro-cid-oer3kof4>Microsimulation Models for Public Policy Analysis: New Frontiers</span>.</span></li><li id="bib76" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Harding, A (1993). <span data-astro-cid-oer3kof4>Lifetime income distribution and redistribution: Applications of a microsimulation model</span>.</span></li><li id="bib77" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Harding, A (2007). <span data-astro-cid-oer3kof4>APPSIM: The Australian dynamic population and policy microsimulation model</span>. .</span></li><li id="bib78" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Harding, A (2007). <span data-astro-cid-oer3kof4>Challenges and opportunities of dynamic microsimulation modelling</span>. .</span></li><li id="bib79" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hassan, S, Pavon, J, Gilbert, N (2008). <span data-astro-cid-oer3kof4>Injecting data into simulation: Can agent-based modelling learn from microsimulation, World Congress of Social Simulation</span>.</span></li><li id="bib80" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Heike, H, Hellwig, D, Kaufmann, A, Zafir, M, Cicsman, J, Papp, E, Rudas, M (1987). <em data-astro-cid-oer3kof4>Experiences with the Darmstadt microsimulation model (DPMS)</em>. Budapest: International Workshop for Demographic Microsimulation of the IIASA.</span></li><li id="bib81" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Holm, E, Lindgren, U, Lundevaller, E, Strömgren, M (2003). <span data-astro-cid-oer3kof4>The SVERIGE spatial microsimulation model</span>. .</span></li><li id="bib82" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Holmer, M (2009). <span data-astro-cid-oer3kof4>Projecting future US pension benefits</span>. .</span></li><li id="bib83" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Holmer, M, Janney, A, Cohen, B (2001). <em data-astro-cid-oer3kof4>Overview of PENSIM</em>. Washington D.C.: Policy Simulation Group.</span></li><li id="bib84" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hooimeijer, P (1996). <span data-astro-cid-oer3kof4>A life-course approach to urban dynamics: state of the art in and research design for the Netherlands</span>. <em data-astro-cid-oer3kof4>Microsimulation for urban and regional policy analysis</em>, 28–63.</span></li><li id="bib85" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hoschka, P (1986). <em data-astro-cid-oer3kof4>Requisite research on methods and tools for microanalytic simulation models. Microanalytic Simulation Models to Support Social and Financial Policy</em>. Amsterdam: North-Holland.</span></li><li id="bib86" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hynes, S, Morrissey, K, O’Donoghue, C, Clarke, G (2009). <span data-astro-cid-oer3kof4>A spatial micro-simulation analysis of methane emissions from Irish agriculture</span>. <em data-astro-cid-oer3kof4>Ecological Complexity</em>, <strong data-astro-cid-oer3kof4>6</strong>, 135–146.</span></li><li id="bib87" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Immervoll, H, Lindström, K, Mustonen, E, Riihelä, M, Viitamäki, H (2005). <span data-astro-cid-oer3kof4>Static Data Ageing Techniques: Accounting For Population Changes In Tax Benefit Microsimulation Models. EUROMOD Working Papers EM7/05</span>.</span></li><li id="bib88" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Inagaki, S (2010). <span data-astro-cid-oer3kof4>Overview of INAHSIM: A Microsimulation Model for Japan. PIE/CIS Discussion Paper</span>.</span></li><li id="bib89" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Janssen, MA, Ostrom, E (2006). <span data-astro-cid-oer3kof4>Empirically based, agent-based models</span>. <em data-astro-cid-oer3kof4>Ecology and Society</em>, <strong data-astro-cid-oer3kof4>11</strong>.</span></li><li id="bib90" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Joyeux, C, Plasman, R, Scholtus, B (1996). <span data-astro-cid-oer3kof4>A Model of the Evolution of Pensions Expenditures in Belgium</span>. .</span></li><li id="bib91" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Keister, LA (2000). <em data-astro-cid-oer3kof4>Wealth in America: Trends in wealth inequality</em>. Cambridge Univ Press.</span></li><li id="bib92" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kelly, S, Percival, R (2009). <span data-astro-cid-oer3kof4>Longitudinal benchmarking and alignment of a dynamic microsimulation model</span>. .</span></li><li id="bib93" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kennell, DL, Sheils, JF (1990). <em data-astro-cid-oer3kof4>PRISM: Dynamic simulation of pension and retirement income. Microsimulation Techniques for Tax and Transfer Analysis</em>. Washington, DC: The Urban Institute Press.</span></li><li id="bib94" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>King, A, Robinson, M, Baekgaard, H (1999). <em data-astro-cid-oer3kof4>The Base Data for DYNAMOD-2. Technical Paper No. 20</em>. The Base Data for DYNAMOD-2. Technical Paper No. 20.</span></li><li id="bib95" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>King, A, Robinson, M, Baekgaard, H (1999). <em data-astro-cid-oer3kof4>DYNAMOD-2: An overview. Techincal Paper No. 19</em>. DYNAMOD-2: An overview. Techincal Paper No. 19.</span></li><li id="bib96" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Klevmarken, NA (1991). <span data-astro-cid-oer3kof4>International Geographical Union Microsimulation Symposium</span>.</span></li><li id="bib97" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Klevmarken, NA (1997). <em data-astro-cid-oer3kof4>Behavioral modeling in micro simulation models: a survey, Working Paper No 1997:31</em>. Behavioral modeling in micro simulation models: a survey, Working Paper No 1997:31.</span></li><li id="bib98" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Klevmarken, NA (2002). <span data-astro-cid-oer3kof4>Statistical inference in micro-simulation models: incorporating external information</span>. <em data-astro-cid-oer3kof4>Mathematics and computers in simulation</em>, <strong data-astro-cid-oer3kof4>59</strong>, 255–265.</span></li><li id="bib99" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Klevmarken, NA (2010). <em data-astro-cid-oer3kof4>Microsimulation for public policy: Experiences from the Swedish model SESIM, Economics and Social Research Institute Discussion Paper 242</em>. Japan: Cabinet Office, Tokyo.</span></li><li id="bib100" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Klevmarken, NA, Bolin, K, Eklöf, M, Flood, L, Fransson, U, Hallberg, D, Höjgård, S, Lindgren, B, Mitrut, A, Lagergren, M (2007). <em data-astro-cid-oer3kof4>Simulating the future of the Swedish babyboom generations. Working Paper No 2007:26</em>. Simulating the future of the Swedish babyboom generations. Working Paper No 2007:26.</span></li><li id="bib101" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Klevmarken, NA, Lindgren, B (2008). <em data-astro-cid-oer3kof4>Simulating an ageing population: a microsimulation approach applied to Sweden, Contributions to Economic Analysis No 285</em>. Bingley, UK: Emerald Group Publishing.</span></li><li id="bib102" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Klevmarken, NA, Olovsson, P (1996). <span data-astro-cid-oer3kof4>Microsimulation and Public Policy, Contributions to Economic Analysis No 232</span>.</span></li><li id="bib103" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Lawson, T (2011). <span data-astro-cid-oer3kof4>An Agent-based Model of Household Spending Using a Random Assignment Scheme</span>. .</span></li><li id="bib104" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Leombruni, R, Richiardi, M (2006). <span data-astro-cid-oer3kof4>LABORsim: An Agent-Based Microsimulation of Labour Supply–An Application to Italy</span>. <em data-astro-cid-oer3kof4>Computational Economics</em>, <strong data-astro-cid-oer3kof4>27</strong>, 63–88.</span></li><li id="bib105" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Li, J, O’donoghue, C (2011). <span data-astro-cid-oer3kof4>Retirement Choice Simulation in Household Settings with Heterogeneous Pension Plans. IZA Discussion Paper No.5866</span>.</span></li><li id="bib106" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Li, J, O’Donoghue, C (2012). <span data-astro-cid-oer3kof4>Simulating Histories within Dynamic Microsimulation Models</span>. <em data-astro-cid-oer3kof4>International Journal of Microsimulation</em>, <strong data-astro-cid-oer3kof4>5</strong>, 52–76.</span></li><li id="bib107" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Li, J, O’Donoghue, C (2013). <span data-astro-cid-oer3kof4>Evaluating binary alignment methods in microsimulation models</span>.</span></li><li id="bib108" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Lutz, W (1997). <em data-astro-cid-oer3kof4>FAMSIM Austria: Feasibility Study for A Dynamic Microsimulation Model for Projections and the Evaluation of Family Policies Based on the European Family and Fertility Survey</em>. Vienna: Austrian Institute for Family Studies.</span></li><li id="bib109" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Macal, CM, North, MJ (2010). <span data-astro-cid-oer3kof4>Tutorial on agent-based modelling and simulation</span>. <em data-astro-cid-oer3kof4>Journal of Simulation</em>, <strong data-astro-cid-oer3kof4>4</strong>, 151–162.</span></li><li id="bib110" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Majcen, B (2011). <em data-astro-cid-oer3kof4>Interim Report: Development of the pension microsimulation model</em>. Slovenia: Institute for Economic Research.</span></li><li id="bib111" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mannion, O, Lay-Yee, R, Wrapson, W, Davis, P, Pearson, J (2012). <span data-astro-cid-oer3kof4>JAMSIM: A microsimulation modelling policy tool</span>. <em data-astro-cid-oer3kof4>Journal of Artificial Societies and Social Simulation</em>, <strong data-astro-cid-oer3kof4>15</strong>.</span></li><li id="bib112" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mazzaferro, C, Morciano, M (2008). <em data-astro-cid-oer3kof4>CAPP_DYN: A Dynamic Microsimulation Model for the Italian Social Security System</em>. Center for the Analysis of Public Policies (CAPP).</span></li><li id="bib113" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>McKay, S (2003). <span data-astro-cid-oer3kof4>Dynamic microsimulation at the US Social Security administration, International Conference on Population Ageing and Health: Modelling Our Future</span>.</span></li><li id="bib114" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Merz, J, Stolze, H, Zwick, M (2002). <span data-astro-cid-oer3kof4>Professions, entrepreneurs, employees and the new German tax (cut) reform 2000-A MICSIM microsimulation analysis of distributional impacts</span>.</span></li><li id="bib115" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mikula, BD, Elias, F, Holmgren, N, Lundkvist, L (2003). <em data-astro-cid-oer3kof4>The Swedish Pension Model in context of the pension reform</em>. RFV, Mimesis group.</span></li><li id="bib116" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Morand, E, Toulemon, L, Pennec, S, Baggio, R, Billari, F (2010). <em data-astro-cid-oer3kof4>Demographic modelling: the state of the art</em>. Paris: INED.</span></li><li id="bib117" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Morrison, R (2000). <em data-astro-cid-oer3kof4>Assessing the Quality of DYNACAN’s Synthetically-Generated Earnings Histories</em>. Social Policy Directorate, Human Resources Development Canada.</span></li><li id="bib118" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Morrison, R (2006). <span data-astro-cid-oer3kof4>Make it so: Event alignment in dynamic microsimulation. DYNACAN paper</span>.</span></li><li id="bib119" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Morrison, R (2008). <em data-astro-cid-oer3kof4>Validation of longitudinal microsimulation models: DYNACAN practices and plans. Working Paper No. 8</em>. Validation of longitudinal microsimulation models: DYNACAN practices and plans. Working Paper No. 8.</span></li><li id="bib120" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Nelissen, JHM (1996). <span data-astro-cid-oer3kof4>The modelling of institutional households by means of microsimulation</span>.</span></li><li id="bib121" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Nelissen, JHM (1998). <span data-astro-cid-oer3kof4>Annual versus lifetime income redistribution by social security</span>. <em data-astro-cid-oer3kof4>Journal of Public Economics</em>, <strong data-astro-cid-oer3kof4>68</strong>, 223–249.</span></li><li id="bib122" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Donoghue, C (2001). <span data-astro-cid-oer3kof4>Dynamic microsimulation: A methodological survey</span>. <em data-astro-cid-oer3kof4>Brazilian Electronic Journal of Economics</em>, <strong data-astro-cid-oer3kof4>4</strong>.</span></li><li id="bib123" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Donoghue, C (2001). <span data-astro-cid-oer3kof4>Redistribution in the Irish tax-benefit system</span>.</span></li><li id="bib124" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Donoghue, C (2010). <span data-astro-cid-oer3kof4>Life-Cycle Microsimulation Modelling: Constructing and Using Dynamic Microsimulation Models</span>.</span></li><li id="bib125" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Donoghue, C, Lennon, J, Hynes, S (2009). <span data-astro-cid-oer3kof4>The Life-cycle Income Analysis Model (LIAM): a study of a flexible dynamic microsimulation modelling computing framework</span>. <em data-astro-cid-oer3kof4>International Journal of Microsimulation</em>, <strong data-astro-cid-oer3kof4>2</strong>, 16–31.</span></li><li id="bib126" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Donoghue, C, Loughrey, J, Morrissey, K (2011). <span data-astro-cid-oer3kof4>Modelling The Impact of the Economic Crisis on Inequality in Ireland</span>. .</span></li><li id="bib127" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Harra, J, Sabelhaus, JE, Simpson, M (2004). <em data-astro-cid-oer3kof4>Overview of the Congressional Budget Office Long-Term (CBOLT) Policy Simulation Model</em>. Congressional Budget Office.</span></li><li id="bib128" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Orcutt, GH (1957). <span data-astro-cid-oer3kof4>A new type of socio-economic system</span>. <em data-astro-cid-oer3kof4>The Review of Economics and Statistics</em>, <strong data-astro-cid-oer3kof4>39</strong>, 116–123.</span></li><li id="bib129" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Orcutt, GH, Caldwell, S, Wertheimer, RF (1976). <em data-astro-cid-oer3kof4>Policy exploration through microanalytic simulation</em>. Rowman &amp; Littlefield Pub Inc.</span></li><li id="bib130" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Orcutt, GH, Greenberger, M, Korbel, JJ, Rivlin, AM (1961). <em data-astro-cid-oer3kof4>Microanalysis of socioeconomic systems: A simulation study</em>. Harper New York.</span></li><li id="bib131" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Osberg, L, Lethbridge, L (1996). <span data-astro-cid-oer3kof4>Labour Market Modeling in DYNACAN–Final Report. DYNCAN Project Consulting Report</span>.</span></li><li id="bib132" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Panis, C, Lillard, L (1999). <span data-astro-cid-oer3kof4>Near Term Model Development Part II</span>.</span></li><li id="bib133" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Parisi, V (2003). <span data-astro-cid-oer3kof4>A Cross Country Simulation Exercise Using the DIECOFIS Corporate Tax Model</span>. .</span></li><li id="bib134" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Parker, DC, Manson, SM, Janssen, MA, Hoffmann, MJ, Deadman, P (2003). <span data-astro-cid-oer3kof4>Multi-agent systems for the simulation of land-use and land-cover change: a review</span>. <em data-astro-cid-oer3kof4>Annals of the Association of American Geographers</em>, <strong data-astro-cid-oer3kof4>93</strong>, 314–337.</span></li><li id="bib135" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Peichl, A, Schneider, H, Siegloch, S (2010). <span data-astro-cid-oer3kof4>Documentation IZA?MOD: The IZA Policy SImulation MODel. IZA Discussion Paper No. 4865</span>.</span></li><li id="bib136" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Percival, R, Social, NCf, Modelling, E (2007). <em data-astro-cid-oer3kof4>APPSIM-Software Selection and Data Structures. Working Paper No. 3</em>. APPSIM-Software Selection and Data Structures. Working Paper No. 3.</span></li><li id="bib137" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Pudney, S, Sutherland, H (1994). <span data-astro-cid-oer3kof4>How reliable are microsimulation results?:: An analysis of the role of sampling error in a UK tax-benefit model</span>. <em data-astro-cid-oer3kof4>Journal of Public Economics</em>, <strong data-astro-cid-oer3kof4>53</strong>, 327–365.</span></li><li id="bib138" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Pylkkänen, E (2001). <span data-astro-cid-oer3kof4>Modeling wages and hours of work</span>. <em data-astro-cid-oer3kof4>Brazilian Electronic Journal of Economics</em>.</span></li><li id="bib139" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Robilliard, AS, Robinson, S (2003). <span data-astro-cid-oer3kof4>Reconciling household surveys and national accounts data using a cross entropy estimation method</span>. <em data-astro-cid-oer3kof4>Review of Income and Wealth</em>, <strong data-astro-cid-oer3kof4>49</strong>, 395–406.</span></li><li id="bib140" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Rowe, G, Wilfson, M (2000). <span data-astro-cid-oer3kof4>Public Pensions-Canadian Analysis Based on the Lifepaths Generational Accounting Framework</span>. .</span></li><li id="bib141" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Sauerbier, T (2002). <span data-astro-cid-oer3kof4>UMDBS-a new tool for dynamic microsimulation</span>.</span></li><li id="bib142" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Savard, L (2003). <span data-astro-cid-oer3kof4>Poverty and income distribution in a cge-household micro-simulation model: Top-down/bottom up approach. Cahier de recherche/Working Paper 343</span>.</span></li><li id="bib143" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Scott, A (2001). <span data-astro-cid-oer3kof4>Model options and constraints</span>.</span></li><li id="bib144" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Shiraishi, K (2008). <span data-astro-cid-oer3kof4>The Use of Microsimulation Models for Pension Analysis in Japan. PIE/CIS Discussion Paper 409</span>.</span></li><li id="bib145" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Smith, KE, Favreault, MM, Ratcliffe, C, Butrica, B, Toder, E, Bakija, J (2007). <em data-astro-cid-oer3kof4>Modeling income in the near term 5</em>. Urban Institute.</span></li><li id="bib146" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (1997). <span data-astro-cid-oer3kof4>Chapter 5 on CORSIM</span>.</span></li><li id="bib147" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Spielauer, M (2009). <span data-astro-cid-oer3kof4>Ethno-cultural diversity and educational attainment: The modeling of education in the Canadian DemoSim population projection model</span>. .</span></li><li id="bib148" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Stroombergen, A, Rose, D, Miller, J (1995). <em data-astro-cid-oer3kof4>Wealth accumulation and distribution: Analysis with a dynamic microsimulation model</em>. Wellington: Business and Economic Research Ltd.</span></li><li id="bib149" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Sutherland, H (2007). <em data-astro-cid-oer3kof4>EUROMOD: the tax-benefit microsimulation model for the European Union</em>. Amsterdam: Elsevier.</span></li><li id="bib150" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Tanton, R, Vidyattama, Y, Nepal, B, McNamara, J (2011). <span data-astro-cid-oer3kof4>Small area estimation using a reweighting algorithm</span>. <em data-astro-cid-oer3kof4>Journal of the Royal Statistical Society: Series A (Statistics in Society)</em>, <strong data-astro-cid-oer3kof4>174</strong>, 931–951.</span></li><li id="bib151" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Tedeschi, S (2011). <span data-astro-cid-oer3kof4>T-DYMM: Background and Challenges</span>. .</span></li><li id="bib152" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Toder, E, Thompson, L, Favreault, M, Johnson, R, Perese, K, Ratcliffe, C, Smith, K, Uccello, C, Waidmann, T, Berk, J, Woldemariam, R, Burtless, G, Sahm, C, Wolf, D (2002). <em data-astro-cid-oer3kof4>Modeling Income in the Near Term-Projections of Retirement Income Through 2020 for the 1931–60 Birth Cohorts: Final Report</em>. Modeling Income in the Near Term-Projections of Retirement Income Through 2020 for the 1931–60 Birth Cohorts: Final Report.</span></li><li id="bib153" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Vagliasindi, PA, Romanelli, M, Bianchi, C (2004). <em data-astro-cid-oer3kof4>Validation and policy analysis using dynamic microsimulation modelling: Evidence from experiments in the italian case. Technical report</em>. Validation and policy analysis using dynamic microsimulation modelling: Evidence from experiments in the italian case. Technical report.</span></li><li id="bib154" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Van De Ven, J (1998). <em data-astro-cid-oer3kof4>A dynamic cohort microsimulation model, Department of Economics -Working Papers No 637</em>. A dynamic cohort microsimulation model, Department of Economics -Working Papers No 637.</span></li><li id="bib155" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Van Sonsbeek, JM (2010). <span data-astro-cid-oer3kof4>Micro simulations on the effects of ageing-related policy measures</span>. <em data-astro-cid-oer3kof4>Economic Modelling</em>, <strong data-astro-cid-oer3kof4>27</strong>, 968–979.</span></li><li id="bib156" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Vencatasawmy, CP, Holm, E, Rephann, T, Esko, J, Swan, N, Öhman, M, Aström, M, Alfredsson, E, Holme, K, Siikavaara, J (1999). <span data-astro-cid-oer3kof4>Building a spatial microsimulation model, 11th European Colloquium on Quantitative and Theoretical Geography</span>.</span></li><li id="bib157" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Wertheimer, R, Zedlewski, SR, Anderson, J, Moore, K (1986). <span data-astro-cid-oer3kof4>DYNASIM in comparison with other microsimulation models</span>. In Orcutt, G, Merz, J, Quinke, H (Eds.), <em data-astro-cid-oer3kof4>Microanalytic simulation models to support social and financial policy</em> (pp. 187–209). North-Holland: Amsterdam.</span></li><li id="bib158" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Will, B, Berthelot, JM, Nobrega, K, Flanagan, W, Evans, W (2001). <span data-astro-cid-oer3kof4>Canada’s Population Health Model (POHEM): a tool for performing economic evaluations of cancer control interventions</span>. <em data-astro-cid-oer3kof4>European Journal of Cancer</em>, <strong data-astro-cid-oer3kof4>37</strong>, 1797–1804.</span></li><li id="bib159" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Willekens, F (2006). <span data-astro-cid-oer3kof4>MicMac Bridging the micro-macro gap in population forecasting</span>.</span></li><li id="bib160" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Williamson, P (2007). <span data-astro-cid-oer3kof4>The Role of the International Journal of Microsimulation</span>. <em data-astro-cid-oer3kof4>International Journal of Microsimulation</em>, <strong data-astro-cid-oer3kof4>1</strong>, 1–2.</span></li><li id="bib161" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Williamson, P, Zaidi, A, Harding, A (2009). <span data-astro-cid-oer3kof4>New frontiers in microsimulation modelling</span>.</span></li><li id="bib162" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Winder, N (2000). <em data-astro-cid-oer3kof4>Modelling within a thermodynamic framework: a footnote to Sanders (1999)</em>. Cybergeo: European Journal of Geography.</span></li><li id="bib163" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Wolfson, M (1989). <span data-astro-cid-oer3kof4>Homemaker pensions and lifetime redistribution</span>. <em data-astro-cid-oer3kof4>Review of Income and Wealth</em>, <strong data-astro-cid-oer3kof4>34</strong>, 221–250.</span></li><li id="bib164" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Wolfson, M (1995). <em data-astro-cid-oer3kof4>XEcon: An experimental/evolutionary model of economic growth</em>. Statistics Canada.</span></li><li id="bib165" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Wolfson, M (2009). <span data-astro-cid-oer3kof4>New frontiers in microsimulation modelling</span>.</span></li><li id="bib166" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Wolfson, M, Rowe, G (1998). <span data-astro-cid-oer3kof4>LifePaths–Toward an integrated microanalytic framework for socio-economic statistics</span>. .</span></li><li id="bib167" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Wolfson, M, Rowe, G (2013). <span data-astro-cid-oer3kof4>HealthPaths—Using health trajectories to estimate and simulate the relative importance of determinants of health-adjusted life expectancy (HALE): a statistical analysis</span>. <em data-astro-cid-oer3kof4>The Lancet</em>, <strong data-astro-cid-oer3kof4>381</strong>.</span></li><li id="bib168" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Wu, B, Birkin, M, Rees, P (2008). <span data-astro-cid-oer3kof4>A spatial microsimulation model with student agents</span>. <em data-astro-cid-oer3kof4>Computers, Environment and Urban Systems</em>, <strong data-astro-cid-oer3kof4>32</strong>, 440–453.</span></li><li id="bib169" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Zaidi, A, Rake, K (2001). <span data-astro-cid-oer3kof4>Dynamic microsimulation models: a review and some lessons for SAGE</span>.</span></li><li id="bib170" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Zaidi, A, Scott, A (2001). <span data-astro-cid-oer3kof4>Base dataset for the SAGE model</span>.</span></li><li id="bib171" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Zucchelli, E, Jones, AM, Rice, N (2010). <span data-astro-cid-oer3kof4>The evaluation of health policies through microsimulation methods. Health, Econometrics and Data Group (HEDG) Working Papers 10/03</span>.</span></li><li id="bib172" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Zylberstajn, E, Zylberstajn, H, Afonso, L (2011). <span data-astro-cid-oer3kof4>BRALAMMO: A dynamic labor market microsimulation model for Brazil</span>. .</span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Jinjing Li</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>The National Centre for Social and Economic Modelling (NATSEM), University of Canberra, Australia</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:Jinjing.Li@natsem.canberra.edu.au" data-astro-cid-m3fa5h5a>Jinjing.Li@natsem.canberra.edu.au</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Cathal O’Donoghue</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Rural Economy and Development Programme, Teagasc Teagasc Rural Economy Research Centre, Ireland</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:Cathal.ODonoghue@teagasc.ie" data-astro-cid-m3fa5h5a>Cathal.ODonoghue@teagasc.ie</a></p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Acknowledgements</h3><p data-astro-cid-m3fa5h5a>The authors wish to thank two anonymous referees, the editor of IJM, participants of the 1st, 2nd, 3rd IMA conferences and several European meetings for kindly sharing their knowledge, views and comments. For their financial support, the authors are grateful to the National Research Fund, Luxembourg.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00082" data-astro-cid-m3fa5h5a>Version of Record published: August 31, 2013 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2013, Li and O’Donoghue</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/methodology" data-pagefind-filter="Research category:Methodology" data-astro-cid-m3fa5h5a>Methodology</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/dynamic-microsimulation" data-pagefind-filter="Research category:Dynamic microsimulation" data-astro-cid-m3fa5h5a>Dynamic microsimulation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=dynamic%20microsimulation" data-astro-cid-m3fa5h5a>dynamic microsimulation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=survey" data-astro-cid-m3fa5h5a>survey</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=literature%20review" data-astro-cid-m3fa5h5a>literature review</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

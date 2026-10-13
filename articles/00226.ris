@@ -1,0 +1,23 @@
+TY  - JOUR
+TI  - Comparative analysis of different techniques to impute expenditures into an income data set
+AU  - Decoster, André
+AU  - Rock, Bram De
+AU  - Swerdt, Kris De
+AU  - Loughrey, Jason
+AU  - O’Donoghue, Cathal
+AU  - Verwerft, Dirk
+VL  - 13
+IS  - 3
+PY  - 2020
+DA  - 2020/12/31
+SP  - 70-94
+C1  - IJM 2020;13(3):70-94
+DO  - 10.34196/ijm.00226
+UR  - https://doi.org/10.34196/ijm.00226
+AB  - Income and budget data seldom are measured in the same dataset. In order to make simulations that need both, one requires a reliable procedure to merge an income and a budget survey into one combined dataset. This paper contains the comparison and evaluation of five different techniques to impute expenditures into income datasets: parametric estimation of Engel curves, nonparametric estimation, both constrained and unconstrained matching using a distance function and grade correspondence. After a detailed description of the methods as well as a comparison of the main pros and cons, their effectiveness is tested upon an artificially split data file. In general, the parametric and non-parametric estimation seem to yield the best results, generating imputed values that are closest to the observed values for the budget shares.
+KW  - microsimulation
+KW  - statistical matching
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

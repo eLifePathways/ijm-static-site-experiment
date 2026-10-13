@@ -1,0 +1,28 @@
+TY  - JOUR
+TI  - Creating a synthetic database for use in microsimulation models to investigate alternative health care financing strategies in Canada
+AU  - Hennessy, Deirdre
+AU  - Sanmartin, Claudia
+AU  - Eftekhary, Sabha
+AU  - Plager, Laurie
+AU  - Jones, Jennifer
+AU  - Onate, Kanecy
+AU  - McEvoy, Neil
+AU  - Hicks, Chantal
+AU  - Deber, Raisa
+VL  - 8
+IS  - 3
+PY  - 2015
+DA  - 2015/12/31
+SP  - 41-74
+C1  - IJM 2015;8(3):41-74
+DO  - 10.34196/ijm.00121
+UR  - https://doi.org/10.34196/ijm.00121
+AB  - The objective of this study was to develop a synthetic database which would be used with a microsimulation model to evaluate alternative health care financing options in Canada. The Social Policy Simulation Database (SPSD), developed by Statistics Canada, was enhanced with population-based data on health status, disability, disease status, health service use and costs from the Canadian Community Health Survey (CCHS) and other relevant data sources. The Social Policy Simulation Database and Model (SPSD/M) is a microsimulation tool designed to investigate the financial interactions between governments and individuals in Canada. Typically the SPSD/M has been used to inform policy around income tax, commodity tax, and cash transfer reform. We supplemented the model’s database with health data to enable analysis of alternative health care financing options in Canada. Data on health status, disability, disease status, health service, medication use and out-of-pocket spending on health care were drawn together from population-based surveys (including the CCHS, the Canadian Health Measures Survey (CHMS), Survey of Household Spending (SHS)), health administrative data (the Discharge Abstract Database (DAD)) and estimates of health service use and cost available in the literature. Costs of health services and drugs were assigned to individuals in the CCHS 2009/2010 (host health dataset) through imputation. The resulting health dataset was merged with the SPSD. Models using the enhanced SPSD-Health will allow health policy makers and academics to “try-out” alternative health care financing options, and consider their monetary impacts on individuals and families in Canada.
+KW  - health care financing
+KW  - health policy
+KW  - microsimulation
+KW  - SPSD/M
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

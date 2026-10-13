@@ -1,0 +1,17 @@
+TY  - JOUR
+TI  - Pushing it to the edge: Extending generalised regression as a spatial microsimulation method
+AU  - Tanton, Robert
+AU  - Vidyattama, Yogi
+VL  - 3
+IS  - 2
+PY  - 2010
+DA  - 2010/12/31
+SP  - 23-33
+C1  - IJM 2010;3(2):23-33
+DO  - 10.34196/ijm.00036
+UR  - https://doi.org/10.34196/ijm.00036
+AB  - This paper extends a spatial microsimulation model to test how the model behaves after adding different constraints, and how results using univariate constraint tables rather than multivariate constraint tables compare. This paper also tests how well non-Capital city households from a survey can estimate areas within capital cities. Using all households available in Australian survey means that the spatial microsimulation method has more households to choose from to represent the constraints in the area being estimated. In theory, this should improve the fit of the model. However, a household from another area may not be representative of households in the area being estimated. We found that, in the case that the estimated statistics is already closely related to the benchmarks used, adding a number of benchmarks had little effect on the number of areas where estimates couldn’t be made, and had little effect on the accuracy of our estimates in areas where estimates could be made. However, the advantage of using more benchmarks was that the weights can be used to estimate a wider variety of outcome variables. We also found that more complex bi-variate benchmarks gave better results compared to simpler univariate benchmarks; and that using a specific sub-sample of observations from a survey gave better results in smaller capital cities in Australia (Adelaide and Perth).
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

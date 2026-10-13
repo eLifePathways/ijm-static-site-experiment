@@ -1,0 +1,21 @@
+TY  - JOUR
+TI  - A Dynamic Microsimulation Model for Ageing and Health in England: The English Future Elderly Model
+AU  - Archer, Luke
+AU  - Lomax, Nik
+AU  - Tysinger, Bryan
+VL  - 14
+IS  - 3
+PY  - 2021
+DA  - 2021/12/31
+SP  - 2-26
+C1  - IJM 2021;14(3):2-26
+DO  - 10.34196/ijm.00239
+UR  - https://doi.org/10.34196/ijm.00239
+AB  - Population ageing has the potential to disrupt every aspect of society, placing a great deal of stress in particular on our healthcare and welfare systems. To overcome these challenges will require effective policy interventions with effects that may not be truly seen for decades. Policy makers would therefore benefit from a tool that allows them to assess the long-term impact of their decisions on population health. We have developed such a tool by adapting the well-established Future Elderly Model (FEM) developed in the US to use the English Longitudinal Study of Ageing. The FEM is a Markov microsimulation model for people aged over 50 that generates input populations and transition probabilities using the English Longitudinal Study of Ageing, and can then project the population forward in time assessing the prevalence and incidence of a number of chronic diseases and related economic outputs. By modifying the input populations or transition probabilities, we can use the model to investigate counterfactual scenarios and assess the long-term effects of policy interventions on elderly health. In this paper we describe the model and its workings, provide evidence to validate its outputs, and outline possible applications.
+KW  - Ageing
+KW  - Microsimulation
+KW  - Policy
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

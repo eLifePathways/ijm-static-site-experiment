@@ -1,0 +1,1001 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Imputing individual effects in dynamic microsimulation models an application to household formation and labour market participation in Italy | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00099"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00099" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/methodology" data-astro-cid-ak4gb66a>Methodology</a>, <a href="/subjects/labour-supply-demand" data-astro-cid-ak4gb66a>Labour supply and demand</a>, <a href="/subjects/dynamic-microsimulation" data-astro-cid-ak4gb66a>Dynamic microsimulation</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Aug 31, 2014</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Imputing individual effects in dynamic microsimulation models an application to household formation and labour market participation in Italy</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Matteo Richiardi, Ambra Poggi</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Institute for New Economic Thinking, University of Oxford Nuffield College, United Kingdom; Collegio Carlo Alberto and LABORatorio Revelli, Italy; LABORatorio Revelli, University of Milan-Bicocca, Italy</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/7-2/volume-7-2-autumn-2014" data-astro-cid-ak4gb66a>Volume 7(2) Autumn 2014</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> M. Richiardi, A. Poggi; 2014; <span data-astro-cid-ak4gb66a>Imputing individual effects in dynamic microsimulation models an application to household formation and labour market participation in Italy</span>; International Journal of Microsimulation; 7(2); 3–39. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00099" data-astro-cid-ak4gb66a>10.34196/ijm.00099</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>Dynamic microsimulation modelling involves two stages: estimation and forecasting. Unobserved heterogeneity is often considered in estimation, but not in forecasting, beyond trivial cases. Non-trivial cases involve individuals that enter the simulation with a history of previous outcomes. We show that the simple solutions of attributing to these individuals a null effect or a random draw from the estimated unconditional distributions lead to biased forecasts, which are often worse than those obtained neglecting unobserved heterogeneity altogether. We then present a first implementation of the Rank method, a new algorithm for assigning individual effects to the simulation sample. Out-of-sample validation of our model shows that use of the Rank method significantly improves the quality of the forecasts.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00099/ijm-00099.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00099.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00099.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00099" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00099/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. Unobserved heterogeneity and dynamic microsimulations</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. The Rank method</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. Female labor supply in Italy</a></li><li data-astro-cid-twdwaz5s><a href="#s5" data-astro-cid-twdwaz5s>5. Data, econometric specifications and estimation results</a></li><li data-astro-cid-twdwaz5s><a href="#s6" data-astro-cid-twdwaz5s>6. The microsimulation model</a></li><li data-astro-cid-twdwaz5s><a href="#s7" data-astro-cid-twdwaz5s>7. Model comparison and validation</a></li><li data-astro-cid-twdwaz5s><a href="#s8" data-astro-cid-twdwaz5s>8. Conclusions</a></li><li data-astro-cid-twdwaz5s><a href="#footnotes" data-astro-cid-twdwaz5s>Footnotes</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In dynamic microsimulation models, the dynamics of each process are generally governed by coefficients that have been estimated on historical data. The choice of the econometric specification is therefore crucial for the quality of the predictions. This is particularly true when unobserved heterogeneity (UH) is an issue, given that microsimulations have been explicitly developed to allow distributional analysis and hence a thorough consideration of individual idiosyncrasies. However, netting out the estimated coefficients from the effects of individual-specific components does not guarantee better quality forecasts, as long as these individual-specific components are not appropriately simulated. This is an easy task if the simulation sample is the same as the estimation sample (statistical packages generally provide an estimation of the individual effect for each estimation unit), or if “new” simulated individuals enter the simulation without a history of previous outcomes (the individual effects can be randomly assigned by drawing from their estimated unconditional distributions). If this is not the case, individual effects should be drawn from conditional (posterior) distributions, given the observed outcomes and the value of the covariates.</p><p data-astro-cid-qsyhzaho>As an example, suppose that a model of labour market participation (a 0–1 process) has been estimated on panel data by means of a probit model with random effects. This means that some individuals have a higher probability of participation thanks to unobservable characteristics, say motivation, attitude, etc. We get estimates for the coefficients, and an estimate for the standard deviation of the random effects, which are assumed to be normally distributed and independent of the observables. We want to apply these estimates to a different population, which is observed in the base year. This means –let us be redundant at this point– that in the base year we observe the observables, and we do not observe the unobservable characteristics of our population. Shall we simply ignore the unobservables, or shall we impute a random effect to each individual in the simulation sample? Take two individuals with the same observable characteristics: individual A is active, while individual B is inactive. Clearly, it is more likely that A has more favourable unobservable traits than B. If we ignore UH, the simulated labour market trajectories of A and B will be a priori similar, and heterogeneity is lost. If we sample from the estimated (unconditional) normal distribution of the individual effects, there is an equal probability that A gets a less favourable individual effect than B, or B gets a less favourable individual effect than A, which is also incorrect. The individual effect for A must be sampled from a different distribution than the one used for B.</p><p data-astro-cid-qsyhzaho>Unfortunately, except in the linear case with Gaussian disturbances, sampling from posterior distributions requires the repeated application of numerical integration methods, which may be computationally demanding. A different strategy has therefore emerged, which consists in drawing all individual effects from their unconditional distributions, and then assigning each random draw to a simulated individual with the aim to minimize an overall distance between realized and simulated outcomes (<a href="#bib52">Panis, 2003</a>). This optimal assignment approach however runs into two problems: first, it introduces, in nonlinear models, a correlation between the individual effects and the covariates. Second, it is also computationally burdensome: the available optimal assignment algorithms developed in the operations research literature work in polynomial time (Carpaneto <i>et al.</i>, <a href="#bib17">1988</a>; Burkard <i>et al.</i>, 2008). <a href="#bib56">Richiardi (2014)</a> develops an algorithm that provides an optimal solution to the assignment problem in linear regression models, and an approximation of the optimal solution in nonlinear (binary response) models.<sup><a href="#fn1">1</a></sup> This approximation has two interesting features: it greatly reduces the induced correlation problem of the optimal assignment solution in binary response models, and it is much faster, working in quasi-linear (<i>N log N</i>) time.</p><p data-astro-cid-qsyhzaho>In this paper we test this method vis-à-vis the standard approaches for dealing with UH in dynamic microsimulation models. Specifically, we compare the outcomes in terms of participation rates of different subgroups of the population in four versions of a microsimulation model: a benchmark in which all processes are modelled by means of simple pooled probit specifications with lagged endogenous variables and no UH, and three alternatives in which we specify random effect dynamic probit models, where initial conditions are estimated following Heckman (<a href="#bib36">1981a</a>, <a href="#bib37">1981b</a>). These three variations differ in how individual UH is imputed in the simulated population: in the first one we assign an individual effect equal to zero (a “null” effect) to all individuals, in the second one we assign each individual a random draw from the estimated unconditional distribution of UH, while in the third one we use the Rank method to assign each individual a random draw that matches his or her observed past history. We show that the differences in projected outcomes are large and significant. We base our estimations on the complete series of the European Community Household Panel (ECHP), which runs from 1994 to 2001, in order to be able to perform out-of-sample validation in the subsequent years. We find evidence that the forecasts obtained with imputation of UH through the Rank method remain sensibly more on track with historical data. Our microsimulation is applied to Italian data: for the purpose of our work, this is a particularly apt case study, as female participation rates are still very low as compared to other EU countries, despite having markedly increased over the past decades (Del Boca <i>et al.</i>, <a href="#bib26">2006</a>). This leaves space for a further increase (Leombruni and Richiardi, 2006), and makes the outcome of the microsimulation highly sensitive to the estimated coefficients.</p><p data-astro-cid-qsyhzaho>The paper is structured as follows. <a href="#s2">Section 2</a> discusses the methodological problem that motivates our analysis; <a href="#s3">Section 3</a> describes in more details the Rank method; <a href="#s4">Section 4</a> describes the evolution and the main determinants, according to the literature, of female labour force participation in Italy, and elaborates on why this is an interesting testbed for our exercise; <a href="#s5">Section 5</a> discusses the econometric specifications and estimates; <a href="#s6">Section 6</a> describes the microsimulation model; <a href="#s7">Section 7</a> presents our out-of-sample validation of the different imputation methods; <a href="#s8">Section 8</a> wraps up and concludes.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. Unobserved heterogeneity and dynamic microsimulations</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Microsimulation models often consider dichotomous processes, e.g. labour market participation, household formation, fertility. They are generally modelled by comparing the value of a latent outcome variable y*, assumed to be a function of observable characteristics of the individual, with a threshold.<sup><a href="#fn2">2</a></sup> In the case of a probit</p><div id="equ1" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(1)</span><math><mtable columnalign="left"><mtr><mtd><msubsup><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow><mo>*</mo></msubsup><mo>=</mo><msubsup><mi>x</mi><mrow><mi>i</mi><mi>t</mi></mrow><mo>′</mo></msubsup><mi>β</mi><mo>+</mo><msub><mi>ε</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub></mtd></mtr><mtr><mtd><msub><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mn>1</mn><mtext> </mtext><mtext>if</mtext><mtext> </mtext><msubsup><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow><mo>*</mo></msubsup><mo>&gt;</mo><mn>0</mn></mtd></mtr><mtr><mtd><msub><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mn>0</mn><mtext> </mtext><mtext> </mtext><mtext>otherwise</mtext></mtd></mtr><mtr><mtd><msub><mi>ε</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>~</mo><mi>N</mi><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mtd></mtr></mtable></math></div><p data-astro-cid-qsyhzaho>which gives raise to the standard expression</p><div id="equ2" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(2)</span><math><mi>Pr</mi><mo stretchy="false">[</mo><msub><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mn>1</mn><mo>|</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo stretchy="false">]</mo><mo>=</mo><mo mathvariant="normal">Φ</mo><mo stretchy="false">(</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>′</mo><mi>β</mi><mo stretchy="false">)</mo></math></div><p data-astro-cid-qsyhzaho>where Φ is the cumulative distribution function of a standard normal distribution, <i>x</i> is a vector of strictly exogenous observed explanatory variables for individual <i>i</i> at time <i>t</i>, and the vector <i>β</i> contains the parameters to be estimated.</p><p data-astro-cid-qsyhzaho>Often, these processes are characterized by a high degree of persistence, i.e. the explanatory power of lagged dependent variables is very high. Including the lagged dependent variable in this settings leads to</p><div id="equ3" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(3)</span><math><mi>Pr</mi><mo stretchy="false">[</mo><msub><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mn>1</mn><mo>|</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>,</mo><msub><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">]</mo><mo>=</mo><mo mathvariant="normal">Φ</mo><mo stretchy="false">(</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>′</mo><mi>β</mi><mo>+</mo><mi>γ</mi><msub><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></math></div><p data-astro-cid-qsyhzaho>with γ being an additional parameter to be estimated.<sup><a href="#fn3">3</a></sup></p><p data-astro-cid-qsyhzaho>This poses no problems if observed persistence is only due to true state dependence. In this case, being in a certain state (e.g. participate to the labour market) in a specific time period, in itself, increases the probability of being in the same state in subsequent periods. However, observed persistence may also be due to permanent UH:<sup><a href="#fn4">4</a></sup></p><div id="equ4" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(4)</span><math><msub><mi>ε</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><msub><mi>α</mi><mi>i</mi></msub><mo>+</mo><msub><mi>η</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub></math></div><p data-astro-cid-qsyhzaho>where <i>α<sub>i</sub></i> indicates the individual-specific effect.</p><p data-astro-cid-qsyhzaho>According to equation <a href="#equ4">(4)</a>, individuals are heterogeneous with respect to characteristics that are relevant for the chance of being (and remaining) in a certain state. For example, an individual might participate to the labour market despite unfavourable observable characteristics, due to favourable unobservable characteristics like a special taste for work, work ethics, need for money etc. These characteristics are likely to be at least to some extent persistent over time; therefore, they increase the likelihood that the individual will also participate in the future. These unobserved individual effects work in every respect as omitted variables. As <a href="#bib64">Wooldridge (2005a</a>, p. 27) puts it, “[i]n nonlinear models, much has been made about the deleterious effects that ignoring heterogeneity can have on the estimation of parameters, even when the heterogeneity is assumed to be independent of the observed covariates. A leading case is the probit model with an omitted variable. <a href="#bib66">Yatchew and Griliches (1985)</a> show that when the omitted variable is independent of the explanatory variables and normally distributed, the probit estimators suffer from (asymptotic) attenuation bias. This result is sometimes cited to illustrate how a misspecification that is innocuous in linear models leads to problems in nonlinear models”.<sup><a href="#fn5">5</a></sup> Moreover, the individual effect is not independent of the lagged dependent variable, if included among the covariates, as the latter is correlated by construction with the lagged residual, which includes the unobserved permanent individual effect. As a result, estimates of state dependence that fail to account for permanent UH are in general upward biased: the model attributes to true state dependence any individual effect that makes a transition to a different state less likely.<sup><a href="#fn6">6</a></sup></p><p data-astro-cid-qsyhzaho>Most microsimulation models now take into account UH, at least in the core processes under study.</p><p data-astro-cid-qsyhzaho>However, when simulation is involved an additional problem arises, concerning the imputation of the individual effects to the simulated individuals. This is less of an issue in static microsimulations, as the simulation sample generally coincides with the estimation sample, where individual effects can be estimated. On the other hand, dynamic microsimulations generally include many processes (like schooling, household formation, labour market transitions, retirement, etc.): it is quite unlikely that a single dataset exists with all the relevant variables so that it can be used both for estimation of all processes and as a basis for simulation; this being all the more so as models with UH require panel data for estimation. A more common situation is to estimate different processes on different datasets, and then apply the estimated coefficients to some initial population to be simulated forward in time. Moreover, the initial population generally needs to be expanded as the simulation proceeds, possibly including offspring, spouses and immigrants. If the simulated individuals enter the simulation without a history of previous outcomes, the solution is straightforward: sampling random individual effects from the estimated (unconditional) distribution. However, to the extent to which not every individual is simulated from birth (a very unlikely scenario even in cohort models), the simulated individuals in the initial population enter the simulation with a history of previous outcomes. This is also the case whenever the simulated population expands over time with the inclusion of spouses and immigrants. Even newborns can enter the simulation with some pre-set variables. For instance, the ECHP / EU-SILC surveys only record information for individuals aged 16+: if such data are used for estimation of the processes included in the microsimulation (which is common, at least for EU models, given their wide coverage), the simplest solution is to let newborns enter the simulation when they are already grown up, with many education and labour market related events having already been occurred.</p><p data-astro-cid-qsyhzaho>Three main classes of solutions exist to the problem of assigning a random intercept to each individual in the simulation sample (<a href="#bib56">Richiardi, 2014</a>).<sup><a href="#fn7">7</a></sup> First, we can simply forget the problem, set all individual effects to zero, and take into account only the observables in simulating the outcomes of interest. <a href="#bib56">Richiardi (2014)</a> shows that this strategy is optimal when the goal is forecasting mean values <i>and</i> the model is linear; in nonlinear models, however, setting the individual effects to zero in the simulation introduces a non-negligible bias in the projections, as we will discuss below. Second, we can draw the individual effects from the estimated distributions of the random intercepts, conditional on the observed past outcomes and the covariates. This is trivial in linear models with Gaussian random effects, less straightforward and more computationally complex in linear models with fixed effects, where the fixed effects follow an arbitrary (non-Gaussian) distribution, and in binary response models with random effects. Using Bayes’ theorem, the posterior PDFs <i>f</i><sub><i>α|y=</i>0</sub> and <i>f</i><sub><i>α|y=</i>1</sub> of the individual effect <i>α</i> in binary response models can be calculated by multiplying the prior probability distribution by the likelihood function, and then dividing by a normalizing constant, as follows:</p><div id="equ7a" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(5)</span><math><mtable columnalign="left"><mtr><mtd><msub><mi>f</mi><mrow><mi>α</mi><mo>|</mo><mi>y</mi><mo>=</mo><mn>0</mn></mrow></msub><mfrac><mrow><msub><mi>f</mi><mi>α</mi></msub><msub><mi>L</mi><mrow><mi>α</mi><mo>|</mo><mi>y</mi><mo>=</mo><mn>0</mn></mrow></msub></mrow><mrow><mstyle displaystyle="true"><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi>∞</mi></mrow><mi>∞</mi></msubsup><mrow><msub><mi>f</mi><mi>α</mi></msub><msub><mi>L</mi><mrow><mi>α</mi><mo>|</mo><mi>y</mi><mo>=</mo><mn>0</mn></mrow></msub></mrow></mrow></mstyle></mrow></mfrac><mo>≈</mo><mfrac><mrow><msub><mi>f</mi><mi>α</mi></msub><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><msub><mi>F</mi><mi>η</mi></msub><mo stretchy="false">(</mo><mi>x</mi><mo>′</mo><mi>β</mi><mo>+</mo><mi>α</mi><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow><mrow><mn>1</mn><mo>−</mo><msub><mi>F</mi><mi>ε</mi></msub><mo stretchy="false">(</mo><mi>x</mi><mo>′</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mfrac></mtd></mtr><mtr><mtd><msub><mi>f</mi><mrow><mi>α</mi><mo>|</mo><mi>y</mi><mo>=</mo><mn>1</mn></mrow></msub><mfrac><mrow><msub><mi>f</mi><mi>α</mi></msub><msub><mi>L</mi><mrow><mi>α</mi><mo>|</mo><mi>y</mi><mo>=</mo><mn>1</mn></mrow></msub></mrow><mrow><mstyle displaystyle="true"><mrow><msubsup><mo>∫</mo><mrow><mo>−</mo><mi>∞</mi></mrow><mi>∞</mi></msubsup><mrow><msub><mi>f</mi><mi>α</mi></msub><msub><mi>L</mi><mrow><mi>α</mi><mo>|</mo><mi>y</mi><mo>=</mo><mn>1</mn></mrow></msub></mrow></mrow></mstyle></mrow></mfrac><mo>≈</mo><mfrac><mrow><msub><mi>f</mi><mi>α</mi></msub><msub><mi>F</mi><mi>η</mi></msub><mo stretchy="false">(</mo><mi>x</mi><mo>′</mo><mi>β</mi><mo>+</mo><mi>α</mi><mo stretchy="false">)</mo></mrow><mrow><msub><mi>F</mi><mi>ε</mi></msub><mo stretchy="false">(</mo><mi>x</mi><mo>′</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mfrac></mtd></mtr></mtable></math></div><p data-astro-cid-qsyhzaho>where <i>L<sub>α</sub></i> is the likelihood function, <i>F<sub>η</sub></i> is the CDF of the random disturbance <i>η</i> and <i>F<sub>ε</sub></i> is the CDF of the random term <i>ε = α + η</i>. These posterior distributions are not normal even when the <i>α</i> and the <i>η</i> are normal, though they can be approximated by a normal distribution with the Laplace method (finding the mean and variance of the approximated normal conditional distributions is not immediate, though). Given knowledge of the (unconditional) distributions of the individual effects and the error terms, the posterior distributions can be computed, for any given value of the covariates, by numerical integration methods such as quadrature, simulated maximum likelihood, or Markov chain Monte Carlo sampling schemes.<sup><a href="#fn8">8</a></sup> However, individual heterogeneity in the observable characteristics <i>x</i> (which might well be continuous) implies that the computation has to be made for every new individual that enters the simulation, in the base year or in following simulation periods, for every process that accounts for UH.</p><p data-astro-cid-qsyhzaho>As a third, alternative approach, we can sample from the unconditional estimated distributions of the individual effects <i>f<sub>α</sub></i> –which is simple– and then assign to each individual the value for UH that best matches his observed past outcomes, among those sampled, in one single assignment round for every period and for every process. Methods for solving this optimal assignment problem can be borrowed from the linear programming literature. However, they work in (third or fourth order) polynomial time. This might be an impediment in forecasting exercises that involve hundreds of thousands or even millions of individuals, as is common in dynamic microsimulation models (Li and O’Donoghue, 2013). A further problem of the optimal assignment approach is that, in nonlinear models, it introduces a correlation between the individual effects and the covariates (<a href="#bib56">Richiardi, 2014</a>).</p><p data-astro-cid-qsyhzaho>The above problems seem to be completely ignored by the microsimulation literature, with the notable exception of <a href="#bib52">Panis (2003)</a>. For instance, standard references as Creedy and Kalb (1995), <a href="#bib63">Wolf (2001)</a> and Li and O’Donoghue (<a href="#bib44">2012</a>) do not mention it. Even works focusing on the treatment of UH as <a href="#bib30">Galler (1995)</a> fail to recognize the issue.<sup><a href="#fn9">9</a></sup> We have not been able to find a single dynamic microsimulation model where the problem of the imputation of the individual effects is considered. In the absence of specific information, it is reasonable to assume that new individuals are simply given the average individual effect (which is normalized to 0) or, at best, a random draw from the unconditional distributions. However, estimating a random intercept discrete choice model (either fixed or random effects) and imputing a null effect to the population to be projected forward in time leads to possibly big biases in forecasting. This is due to the nonlinearity of the latent variable model. To see why, suppose two individuals have the same observables, but they differ because of UH: for the sake of illustration, suppose they have two symmetric individual effects around a mean value of 0. The outcome variable is binary. The average probability of the event of the two heterogeneous individuals is different from the probability of the average individual, with the size of the bias depending on the standard deviation of the individual effect and the direction of the bias depending on the local concavity of the probit or logit transformation: imputing a null individual effect leads to overestimate the frequency of occurrence of an event if the average probability is higher than .5, and to underestimate it if it is lower. Moreover, a break is introduced at an individual level between the past (for which outcomes depend on the true individual effect) and the future (for which outcomes depend only on observables), thus making simulated life trajectories less likely. This can have important consequences, for instance with respect to eligibility to social benefits, seniority accrual, etc. Whilst the first problem (the forecasting bias) is solved by attributing each simulated individual a random draw from the unconditional distribution of individual effects, the latter problem (the break in individual trajectories) turns out to be even aggravated.<sup><a href="#fn10">10</a></sup></p><p data-astro-cid-qsyhzaho>The limited attention that the literature poses to the issue might be partly explained with the abundant recourse to alignment. Alignment techniques (<a href="#bib45">Li &amp; O’Donoghue, 2014</a>) are used to keep the microsimulation outcomes in line with some exogenous projections, and can therefore be considered as a way of correcting for possible biases introduced in the simulations.<sup><a href="#fn11">11</a></sup> However, alignment requires having external, unbiased, projections in the first place to be used as a target. Moreover, even when this is the case alignment only corrects for biases in the average values, while an improper treatment of UH also impinges, as we have seen, on the veracity of individual trajectories.</p></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. The Rank method</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><a href="#bib56">Richiardi (2014)</a> has developed a simple method that gives the optimal solution of the assignment problem in linear models. Applied to binary response models, the method provides a reasonable approximation of the optimal assignment solution, which reproduces to a high degree the conditional distributional properties of the true individual effects and strongly reduces the induced correlation problem between the imputed individual effects and the covariates, which characterises the optimal assignment solution in this class of models. Moreover, the algorithm is very simple to code and works in quasi-linear (<i>N log N</i>) time. For these reasons, <a href="#bib56">Richiardi (2014)</a> suggests the use of the Rank method as a simpler alternative to sampling from the conditional distributions of eq. <a href="#equ7a">(5)</a>. The algorithm works as follows:</p><ol data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Estimate the model with UH (on the estimation sample): this gives a vector of estimated coefficients <inline-formula id="inline1"><math display="inline" id="i1"><mover accent="true"><mi>β</mi><mo>^</mo></mover></math> and an estimated distribution of the individual effects and the random disturbances.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Compute (on the simulation sample) the predicted outcome <inline-formula id="inline2"><math display="inline" id="i2"><mover accent="true"><mi>y</mi><mo>^</mo></mover><mo>=</mo><mi>I</mi><mo stretchy="false">(</mo><mi>x</mi><mo>′</mo><mover accent="true"><mi>β</mi><mo>^</mo></mover><mo>&gt;</mo><mn>0</mn><mo stretchy="false">)</mo></math>, where <i>I</i> is the indicator function, by imposing a null individual effect to all <i>N</i> individuals that need assignment.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Compute the difference between the observed outcome and the predicted outcome based on observables only, <inline-formula id="inline3"><math display="inline" id="i3"><mi>y</mi><mo>−</mo><mover accent="true"><mi>y</mi><mo>^</mo></mover></math>.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Order this difference from high to low (with randomized tie-breaking).</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Extract <i>N</i> values from the estimated unconditional distribution of the individual effects, <inline-formula id="inline4"><math display="inline" id="i4"><mover accent="true"><mi>α</mi><mo>˜</mo></mover></math>.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Extract <i>N</i> values from the estimated unconditional distribution of the idiosyncratic disturbances, <inline-formula id="inline5"><math display="inline" id="i5"><mover accent="true"><mi>η</mi><mo>^</mo></mover></math>.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Construct the error terms <inline-formula id="inline6"><math display="inline" id="i6"><mover accent="true"><mi>ε</mi><mo>˜</mo></mover><mo>=</mo><mover accent="true"><mi>α</mi><mo>˜</mo></mover><mo>+</mo><mover accent="true"><mi>η</mi><mo>˜</mo></mover></math> and order them from high to low.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Assign the individual effects <inline-formula id="inline7"><math display="inline" id="i7"><mover accent="true"><mi>α</mi><mo>˜</mo></mover></math> to the <i>N</i> individuals by matching the two rankings above.</p></li></ol><p data-astro-cid-qsyhzaho>As an example, in a binary response model estimated with random effects, let <inline-formula id="inline8"><math display="inline" id="i8"><mover accent="true"><mi>β</mi><mo>^</mo></mover></math> be the estimated coefficients, <inline-formula id="inline9"><math display="inline" id="i9"><msubsup><mover accent="true"><mi>σ</mi><mo>^</mo></mover><mi>α</mi><mn>2</mn></msubsup></math> and <inline-formula id="inline10"><math display="inline" id="i10"><msubsup><mover accent="true"><mi>σ</mi><mo>^</mo></mover><mi>η</mi><mn>2</mn></msubsup></math> the estimated variances of the random effects and of the random disturbances, respectively; <i>y</i> and <i>x</i> are observed. For the sake of illustration, we assume that the coefficients are estimated without errors, so that <inline-formula id="inline11"><math display="inline" id="i11"><mover accent="true"><mi>β</mi><mo>^</mo></mover><mo>=</mo><mi>β</mi></math> <a href="#table1">Table 1</a> describes how the individual effects are constructed and imputed. Column (1) reports observed outcomes (either 0 or 1); column (2) reports the predicted scores based on observables; column (3) reports the predicted outcomes, based on observables (they are equal to 1 if the predicted score of col. 2 is positive, and 0 otherwise); column (4) reports the difference between the observed and predicted outcomes; column (5) ranks these differences, with randomized tie-breaking. <i>N</i> (= 10 in this example) individual effects (column 6) and random disturbances (column 7) are then drawn from two normal distributions with mean 0 and variance <inline-formula id="inline12"><math display="inline" id="i12"><msubsup><mover accent="true"><mi>σ</mi><mo>^</mo></mover><mi>α</mi><mn>2</mn></msubsup></math> and <inline-formula id="inline13"><math display="inline" id="i13"><msubsup><mover accent="true"><mi>σ</mi><mo>^</mo></mover><mi>η</mi><mn>2</mn></msubsup></math> respectively. A simulated error <inline-formula id="inline14"><math display="inline" id="i14"><mover accent="true"><mi>ε</mi><mo>˜</mo></mover><mo>=</mo><mover accent="true"><mi>α</mi><mo>˜</mo></mover><mo>+</mo><mover accent="true"><mi>η</mi><mo>˜</mo></mover></math> is constructed (column 8) and ranked (column 9). Each individual is then assigned the individual effect <inline-formula id="inline15"><math display="inline" id="i15"><msub><mover accent="true"><mi>α</mi><mo>˜</mo></mover><mi>i</mi></msub></math> for which the two rankings are matched. Finally, column (10) contains the simulated outcome, where the imputed ~ is added to the score (the simulated outcome is equal to 1 if <inline-formula id="inline16"><math display="inline" id="i16"><mi>x</mi><mo>′</mo><mover accent="true"><mi>β</mi><mo>^</mo></mover><mo>+</mo><mover accent="true"><mi>ε</mi><mo>˜</mo></mover></math> is positive, and 0 otherwise).</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Application of the Rank method. It is assumed β = β.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>(1)</th>
+<th>(2)</th>
+<th>(3)</th>
+<th>(4)</th>
+<th>(5)</th>
+<th>(6)</th>
+<th>(7)</th>
+<th>(8)</th>
+<th>(9)</th>
+<th>(10)</th>
+</tr>
+<tr>
+<th>id</th>
+<th><i>y</i></th>
+<th><inline-formula id="inline17"><math display="inline" id="i17"><mi>x</mi><mo>′</mo><mover accent="true"><mi>β</mi><mo>^</mo></mover></math></th>
+<th><inline-formula id="inline18"><math display="inline" id="i18"><mover accent="true"><mi>y</mi><mo>^</mo></mover></math></th>
+<th><inline-formula id="inline19"><math display="inline" id="i19"><mi>y</mi><mo>−</mo><mover accent="true"><mi>y</mi><mo>^</mo></mover></math></th>
+<th><inline-formula id="inline20"><math display="inline" id="i20"><mi>r</mi><mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mover accent="true"><mi>y</mi><mo>^</mo></mover><mo stretchy="false">)</mo></math></th>
+<th><inline-formula id="inline21"><math display="inline" id="i21"><mover accent="true"><mi>α</mi><mo>˜</mo></mover></math></th>
+<th><inline-formula id="inline22"><math display="inline" id="i22"><mover accent="true"><mi>η</mi><mo>˜</mo></mover></math></th>
+<th><inline-formula id="inline23"><math display="inline" id="i23"><mover accent="true"><mi>ε</mi><mo>˜</mo></mover><mo>=</mo><mover accent="true"><mi>α</mi><mo>˜</mo></mover><mo>+</mo><mover accent="true"><mi>η</mi><mo>˜</mo></mover></math></th>
+<th><inline-formula id="inline24"><math display="inline" id="i24"><mi>r</mi><mo stretchy="false">(</mo><mover accent="true"><mi>ε</mi><mo>˜</mo></mover><mo stretchy="false">)</mo></math></th>
+<th><inline-formula id="inline25"><math display="inline" id="i25"><mover accent="true"><mi>y</mi><mo>˜</mo></mover></math></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>−0.49</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>−1.43</td>
+<td>2.01</td>
+<td>0.58</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>9</td>
+<td>1</td>
+<td>−0.05</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>2.36</td>
+<td>−2.12</td>
+<td>0.24</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td>1</td>
+<td>−0.39</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>0.22</td>
+<td>−0.10</td>
+<td>0.12</td>
+<td>3</td>
+<td>0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1</td>
+<td>−1.38</td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+<td>2.02</td>
+<td>−2.45</td>
+<td>−0.43</td>
+<td>4</td>
+<td>0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1</td>
+<td>−0.77</td>
+<td>0</td>
+<td>1</td>
+<td>5</td>
+<td>−0.76</td>
+<td>0.16</td>
+<td>−0.6</td>
+<td>5</td>
+<td>0</td>
+</tr>
+<tr>
+<td>10</td>
+<td>1</td>
+<td>0.21</td>
+<td>1</td>
+<td>0</td>
+<td>6</td>
+<td>−1.35</td>
+<td>0.27</td>
+<td>−1.08</td>
+<td>6</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>−2.79</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+<td>0.29</td>
+<td>−1.45</td>
+<td>−1.16</td>
+<td>7</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0</td>
+<td>−0.5</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+<td>−1.87</td>
+<td>0.06</td>
+<td>−1.81</td>
+<td>8</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0</td>
+<td>−0.37</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+<td>−0.52</td>
+<td>−1.85</td>
+<td>−2.37</td>
+<td>9</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0</td>
+<td>0.36</td>
+<td>1</td>
+<td>−1</td>
+<td>10</td>
+<td>0.79</td>
+<td>−3.33</td>
+<td>−2.54</td>
+<td>10</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>The method is not optimal. To see why, consider switching the imputed random intercepts for individuals <i>8</i> and <i>10</i>: while individual <i>8,</i> who is observed as a success, remains predicted as a failure, individual <i>10</i> (who is also a success) is now assigned a value of UH high enough, and turns concordant. Said differently, assigning a positive but small value of the random intercept to <i>8</i> is a waste, as it does not make the score of <i>8</i> positive. However, with respect to the optimal assignment solution, the method has two advantages, as we have already anticipated: it greatly reduces computing time (from polynomial to quasi-linear), and it greatly reduces the induced correlation problem, in particular when heterogeneity in the covariates increases. The reason why this happens is that as heterogeneity in the observable characteristics increases, the likelihood that UH is decisive in determining the outcome decreases (see <a href="#equ1">eq. 1</a>), and random assignment due to tie-breaking becomes more frequent. However, the Rank method still significantly outperforms a pure random assignment according to the unconditional distribution of the individual effects (the mean squared forecasting error is approximately halved, irrespective of the value of the covariates).</p><p data-astro-cid-qsyhzaho>Finally, the Rank method is also able to replicate to a satisfactory extent the conditional distribution properties of the true individual effects. <a href="#fig1">Figure 1</a>, taken from <a href="#bib56">Richiardi (2014)</a>, shows the distributions of the true and imputed individual effects for the <i>y</i> = 0 and <i>y</i> = 1 subsamples, in a Monte Carlo experiment where 1 million observations were drawn according to <inline-formula id="inline26"><math display="inline" id="i26"><mi>x</mi><mo>~</mo><mi>N</mi><mo stretchy="false">(</mo><mo>−</mo><mn>0.5</mn><mo>,</mo><mn>2</mn><mo stretchy="false">)</mo><mo>,</mo><mover accent="true"><mi>β</mi><mo>^</mo></mover><mo>=</mo><mi>β</mi><mo>=</mo><mn>1</mn><mo>,</mo><mi>α</mi><mo>~</mo><mi>N</mi><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo><mo>,</mo><mi>η</mi><mo>~</mo><mi>N</mi><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></math>.</p><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00099-fig1.WZS1KCmx_2utPl8.webp" class="figure-lightbox-trigger" data-pswp-width="466" data-pswp-height="341" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00099-fig1.WZS1KCmx_2utPl8.webp" alt width="466" height="341" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Distribution of the true and imputed (via the Rank method) individual effects. Parameterization: x~N(−0.5,2),β = β = 1, α~N(0,1),η~N(0,1).</span></figcaption></figure><p data-astro-cid-qsyhzaho>For extreme values of <i>x</i>, the Rank method introduces some distortions in the distribution of the individual effects, but still much lower than with random assignment (that is, sampling from the unconditional distribution of the individual effects). This can be seen in <a href="#fig2">Figure 2</a>, also taken from <a href="#bib56">Richiardi (2014)</a>, for the first quintile of <i>x</i>.</p><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00099-fig2.BZQ0a9fr_1lVIdt.webp" class="figure-lightbox-trigger" data-pswp-width="457" data-pswp-height="333" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00099-fig2.BZQ0a9fr_1lVIdt.webp" alt width="457" height="333" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Distribution of the true and imputed (via the Rank method) individual effects, first quintile of x. Parameterization: x~N(−0.5,2),β = β = 1, α~N(0,1),η~N(0,1).</span></figcaption></figure></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. Female labor supply in Italy</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The last decades have witnessed a long-term trend towards increasing female participation rates in most OECD countries. Nevertheless, there are persistent differences in levels suggesting that different countries are constrained by country-specific institutional and social factors. Ahn and Mira (2002) and Engelhardt <i>et al.</i> (2001) have divided the 21 OECD countries into three groups. The high participation group, in which the participation rate was, at the time of the study, above 60%, includes the U.S., Canada, the U.K., Sweden, Norway, Denmark, Finland and Switzerland. The medium participation group includes countries where the participation rate was in the 50–60% range. Finally, the low participation group includes Italy, Spain and Greece, where the female participation rate was lower than 50%. The latter group was also the target of the Lisbon 2000 Agenda, which set a goal of (at least) 60% for the female employment rate, to be achieved by 2010. By that year, the female employment rate in Italy was still close to 50%, followed only by Malta in the EU27 ranking.</p><p data-astro-cid-qsyhzaho>Low female participation has always been a feature of the Italian labour market (<a href="#bib58">Rondinelli &amp; Zizza, 2011</a>). Education matters in explaining the gender gap in participation rates: lower education levels are associated with larger gaps (<a href="#table2">Table 2</a>). Even if participation rates of married women increased over the last several decades (<a href="#bib26">Del Boca <i>et al.</i>, 2006</a>), employment rates of mothers with children under six in Italy are still very low (<a href="#bib25">Del Boca, 2003</a>): in facts, more than one fourth of women leave the labour market after a birth (<a href="#bib15">Bratti <i>et al.</i> 2005</a>; <a href="#bib19">Casadio <i>et al.</i> 2008</a>).</p><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Participation rates by level of education, 2010.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">Italy</th>
+<th colspan="2">EU15</th>
+</tr>
+<tr>
+<th/>
+<th>Men</th>
+<th>Women</th>
+<th>Men</th>
+<th>Women</th>
+</tr>
+<tr>
+<th/>
+<th/>
+<th/>
+<th>%</th>
+<th/>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Low education</td>
+<td>64.5</td>
+<td>32.6</td>
+<td>67.3</td>
+<td>46.4</td>
+</tr>
+<tr>
+<td>Medium education</td>
+<td>80.7</td>
+<td>63.1</td>
+<td>82.2</td>
+<td>71.2</td>
+</tr>
+<tr>
+<td>High education</td>
+<td>86.5</td>
+<td>77.5</td>
+<td>90.4</td>
+<td>84.0</td>
+</tr>
+<tr>
+<td>TOTAL</td>
+<td>73.6</td>
+<td>51.2</td>
+<td>78.8</td>
+<td>65.6</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: our elaboration on Eurostat data</p></div></figure><p data-astro-cid-qsyhzaho>The following factors further help explaining the gender participation gap. First, in spite of the recent institutional changes, the Italian labour market still remains highly regulated: strict rules apply to hiring and firing and specify the types of available employment arrangements; these labour market regulations have been largely responsible for the high female and youth unemployment rates (<a href="#bib13">Bertola <i>et al.</i>, 2001</a>). Thus, women have hard times to enter and re-enter (after breaks during childbearing years) the labour market. This situation affects also participation rates since discouraged women may decide to drop out of the labour force.</p><p data-astro-cid-qsyhzaho>Second, part-time employment is still not common in Italy: it accounts for less than 30% of female employment, while it is above 75% in the Netherlands (Eurostat data for 2010): this is detrimental to the participation of married women, particularly those with children (<a href="#bib24">Del Boca, 2002</a>).</p><p data-astro-cid-qsyhzaho>Third, women get a disproportionate share of the burden with respect to housework and child bearing within the family. In facts, the reconciliation of roles within and outside the family is more difficult for a working mother than for a working father, and often the strategies adopted are completely different: as the budget constraint becomes more binding men typically increase the time devoted to paid work and women decrease their working time or even exit the labour market (<a href="#bib5">Anxo <i>et al.</i>, 2007</a>; Mencarini &amp; Tanturri, 2004; <a href="#bib46">Lo Conte &amp; Prati, 2003</a>).</p><p data-astro-cid-qsyhzaho>Fourth, the public childcare system is inadequate and does not help enough in reducing the direct costs of participation; in particular, the number of available slots is limited with respect to OECD standards (especially in some regions in the South) and the hours of childcare offered are typically non compatible with full-time jobs. As for what concerns children in school age, things do not improve much as school days often end in the mid-afternoon, much earlier than the end of fulltime work days (<a href="#bib24">Del Boca, 2002</a>; <a href="#bib27">Del Boca &amp; Vuri, 2007</a>).</p><p data-astro-cid-qsyhzaho>Finally, a general cultural attitude against female participation in the labour market, which also partly explains the factors reviewed above, is only slowly fading away, as older generations are replaced by younger cohorts.</p><p data-astro-cid-qsyhzaho>Of all these determinants, in our model we take explicitly into account the demographic evolution of the population and the changes in its composition by level of education, while we keep the institutional factors (labour market regulations and the public childcare system) as fixed. By considering a cohort effect, we proxy changes in the general cultural attitude, in the division of labour within the family and in the availability of part-time employment.</p></div></details><details id="s5" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">5. Data, econometric specifications and estimation results</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s5-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.1 The data</h3><p data-astro-cid-qsyhzaho>Estimations are performed on the Italian micro data from all eight waves 1994 to 2001 of the European Community Household Panel (ECHP).<sup><a href="#fn12">12</a></sup> The ECHP was a survey conducted annually and provided detailed information on income, work and employment, poverty and social exclusion, housing, health, and many other diverse social indicators concerning living conditions of private households and individuals (aged 16+). Cross section and longitudinal weights were provided in order to achieve representativeness of the total population. The main advantage of ECHP is that it allows analysing participation in the labour market, schooling and household formation from a dynamic point of view.</p><p data-astro-cid-qsyhzaho>The initial population is a random extraction (with replacement) from the 2001 Italian subsample of the ECHP. A large part of the initial population is therefore included in the estimation sample, a case which would make it possible to use the estimated individual effects, rather than imputing them. As we will explain in the validation section, we exploit this continuity between the estimation sample and the simulation sample to assess the advantages of the Rank method over the simpler solutions of imputing a null individual effect or sampling from the unconditional distribution of the individual effects.</p><p data-astro-cid-qsyhzaho>Notwithstanding some disruptions in the time series of indicators between the ECHP and the EU-SILC data due to changes in the sampling strategy, in the structure of the questionnaire and in some of the definitions (<a href="#bib29">European Communities, 2005</a>), we use the 2005–2008 Italian data of the EU-SILC to perform validation analysis of the different simulation approaches.<sup><a href="#fn13">13</a></sup></p></section><section id="s5-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.2 Modelling approach</h3><p data-astro-cid-qsyhzaho>In the econometric literature, there are two ways of treating UH: random effects or fixed effects models. Interested readers can refer to <a href="#bib41">Honoré (2002</a>) for a full discussion on the choice between these two approaches. This paper follows the random effects approach in order to have a fully specified model in which one can estimate all the quantities of interest, including the coefficients of time invariant characteristics (e.g. gender). This allows not only to interpret the coefficients correctly –as in standard microeconometric papers–burden of different but, of most importance here, to simulate forward the evolution of the initial population. The random effects approach usually lead to more efficient estimators of the parameters of the model if the distributional assumptions are satisfied. Moreover, traditional maximum likelihood estimator of non-linear panel data models with fixed effects generally exhibits considerable bias in finite sample when the number of periods is not large.<sup><a href="#fn14">14</a></sup></p><p data-astro-cid-qsyhzaho>In order for the model to be fully parameterized, initial conditions have to be specified. An initial condition problem arises when the start of the observation period does not coincide with the start of the stochastic process generating individual experiences (<a href="#bib36">Heckman, 1981a</a>; <a href="#bib12">Arulampalam <i>et al</i>., 2000</a>).<sup><a href="#fn15">15</a></sup> Our way to deal with this issue is to use the estimator suggested by <a href="#bib36">Heckman (1981a</a>, <a href="#bib37">1981b</a>). His approach involves the specification of an approximation to the reduced form equation for the initial condition and allows for cross-correlation between the dynamic equation and the initial condition:</p><div id="equ7b" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(6)</span><math><mi>Pr</mi><mo stretchy="false">[</mo><msub><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mn>0</mn></mrow></msub><mo>=</mo><mn>1</mn><mo>|</mo><msub><mi>α</mi><mi>i</mi></msub><mo stretchy="false">]</mo><mo>=</mo><mo mathvariant="normal">Φ</mo><mo stretchy="false">(</mo><msub><mi>z</mi><mrow><mi>i</mi><mo>,</mo><mn>0</mn></mrow></msub><mo>′</mo><mi>λ</mi><mo>+</mo><mi>θ</mi><msub><mi>α</mi><mi>i</mi></msub><mo stretchy="false">)</mo></math></div><p data-astro-cid-qsyhzaho>where <i>z<sub>i,0</sub></i> is a vector of exogenous covariates (including <i>x<sub>i,0</sub></i> and, eventually, additional variables that can be viewed as “instruments” such as pre-sample variables).<sup><a href="#fn16">16</a></sup> Exogeneity corresponds to <i><b>θ</b></i> = 0 and can be tested accordingly. Equations <a href="#equ3">(3)</a>, <a href="#equ4">(4)</a> and <a href="#equ7b">(6)</a> together specify a complete model for the process that can be estimated by maximum likelihood (for details about the estimation see <a href="#bib11">Arulampalam and Steward, 2007</a>).</p><p data-astro-cid-qsyhzaho>We use a random effects dynamic probit model for estimating male and female labour force participation, unemployment and living in consensual union. For these processes, we also estimate simple probit models. The other processes (education and fertility) are also modelled by means of probit models.</p></section><section id="s5-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.3 Initial status</h3><p data-astro-cid-qsyhzaho>ECHP and EU-SILC data cover individuals aged 16+. Since we need information on lagged status, individuals enter the simulation at age 17. Assignment to the initial status (in education, activity, employment) is random, based on observed probabilities (<a href="#table3">Table 3</a>).</p><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Status at age 17.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>In education</th>
+<th>Active <i>Males</i></th>
+<th>Unemployed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>North</td>
+<td>79.8%</td>
+<td>17.2%</td>
+<td>8.6%</td>
+</tr>
+<tr>
+<td>Centre</td>
+<td>86.0%</td>
+<td>10.4%</td>
+<td>15.0%</td>
+</tr>
+<tr>
+<td>South</td>
+<td>82.3%</td>
+<td>12.2% <i>Females</i></td>
+<td>46.9%</td>
+</tr>
+<tr>
+<td>North</td>
+<td>86.7%</td>
+<td>12.1%</td>
+<td>19.0%</td>
+</tr>
+<tr>
+<td>Centre</td>
+<td>86.8%</td>
+<td>10.2%</td>
+<td>35.0%</td>
+</tr>
+<tr>
+<td>South</td>
+<td>83.7%</td>
+<td>9.9%</td>
+<td>55.8%</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: our elaboration on Italian LFS data (2001).</p></div></figure><p data-astro-cid-qsyhzaho>As a scenario, we assume that the share of individuals aged 17 who are in education will (linearly) converge to 100% from the initial level in <a href="#table3">Table 3</a> by the end of the simulation period (2050).</p></section><section id="s5-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.4 Education</h3><p data-astro-cid-qsyhzaho>In Italy school attendance is compulsory until age 16, while it is generally illegal to work under 15.<sup><a href="#fn17">17</a></sup> Primary school has 8 grades, and students should normally complete it at 13–14. Then, they compulsorily enrol in secondary school, which should last for 5 years. According to <a href="#bib60">Sistan (2006</a>, <a href="#bib59">2007</a>), secondary school attendance from age 16 to age 18 is above 80% (2005 data), while the probability of achieving a diploma is slightly above 70% (67% for males and 78% for females). Early school leavers (individuals aged 18–24 that achieved at least an education level equal to ISCED 2) are about 22%, higher than the EU-25 average (15%).</p><p data-astro-cid-qsyhzaho>Among those who achieved a diploma, three in four enrol at university (79% females; 66% males); overall, university enrolment rate is about 56%, about the OCSE average (54%). Enrolment rates have increased from 1998 to 2005 (+16%). Dropouts after the first year of university are about 20%, and they remain significant even later. Less than one in two students enrolled actually graduate (51% females; 37% males). Among those who make it, 52% graduates before age 25 and 80% before age 29. Graduation rates have remained fairly stable over the years. Very few people come back to formal education, once left.</p><p data-astro-cid-qsyhzaho>Coherently with this picture, we estimate two separate equations, one for secondary school attendance and one for university attendance.<sup><a href="#fn18">18</a></sup> In both cases the probability of being a student at time <i>t</i> is modelled as a function of sex, age, age-squared, year of birth and area of residence, and estimation is conditioned on not having entered the labour market. Estimates are reported in <a href="#table4">Table 4</a>. The probability of being enrolled in secondary school decreases with age, as individuals are supposed to take a diploma at about 18–19 years old.</p><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Enrolment.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="3">Secondary School (Probit)</th>
+<th colspan="3">University (Probit)</th>
+</tr>
+<tr>
+<th/>
+<th>Coef</th>
+<th/>
+<th>SE</th>
+<th>Coef.</th>
+<th/>
+<th>SE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Female</td>
+<td>−0.008</td>
+<td/>
+<td>0.069</td>
+<td>0.113</td>
+<td><a href="#tfn4-1">*</a></td>
+<td>0.055</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>−11.285</td>
+<td><a href="#tfn4-2">**</a></td>
+<td>2.665</td>
+<td>0.691</td>
+<td><a href="#tfn4-2">**</a></td>
+<td>0.214</td>
+</tr>
+<tr>
+<td>Age-squared</td>
+<td>0.287</td>
+<td><a href="#tfn4-2">**</a></td>
+<td>0.070</td>
+<td>−0.016</td>
+<td><a href="#tfn4-2">**</a></td>
+<td>0.004</td>
+</tr>
+<tr>
+<td>Centre</td>
+<td>0.090</td>
+<td/>
+<td>0.098</td>
+<td>0.010</td>
+<td/>
+<td>0.070</td>
+</tr>
+<tr>
+<td>South</td>
+<td>0.087</td>
+<td/>
+<td>0.081</td>
+<td>0.110</td>
+<td><a href="#tfn4-2">**</a></td>
+<td>0.033</td>
+</tr>
+<tr>
+<td>Year of birth</td>
+<td>0.073</td>
+<td><a href="#tfn4-2">**</a></td>
+<td>0.021</td>
+<td>0.036</td>
+<td><a href="#tfn4-2">**</a></td>
+<td>0.014</td>
+</tr>
+<tr>
+<td>Constant</td>
+<td>−33.024</td>
+<td/>
+<td>50.76</td>
+<td>−77.856</td>
+<td><a href="#tfn4-2">**</a></td>
+<td>27.901</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: our elaboration on ECHP 1994–2001 data.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 90% confidence level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 95% confidence level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>*** significant at 99% confidence level</p></div></figure><p data-astro-cid-qsyhzaho>Unfortunately, the exact moment of graduation is often only poorly observed in ECHP. For this reason, in the microsimulation we use the same coefficients for graduation as in Leombruni and Richiardi (2006), estimated on the 1993–2003 Italian Labor Force Surveys (RTFL) data. Graduation is modelled by means of a constant probability in the relevant age brackets for secondary school, and with a linear term in age for university (<a href="#fig3">Figure 3</a>).</p><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00099-fig3.NR1Inv8k_Kz1Km.webp" class="figure-lightbox-trigger" data-pswp-width="701" data-pswp-height="200" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00099-fig3.NR1Inv8k_Kz1Km.webp" alt width="701" height="200" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Probability of graduating, high school (left panel) and university (right panel).</span></figcaption></figure></section><section id="s5-5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.5 Unemployment and male participation</h3><p data-astro-cid-qsyhzaho>The unemployment status at time <i>t</i> is modelled as function of lagged unemployment status, age, education level, area of residence, the status of student at time <i>t-</i>1 and the overall unemployment rate.</p><p data-astro-cid-qsyhzaho>Male participation at time <i>t</i> is modelled as a function of lagged participation, age, year of birth, education level, area of residence and student status at time <i>t-1.</i> In both cases, model estimation is conditioned on not being retired or student. We first estimate standard probit models. To account for UH and solve the initial conditions problem, we then estimate dynamic random effects models. The estimated coefficients and standard errors are shown in <a href="#table5">Table 5</a>. To compare the probit coefficients with those from the random effects estimators, the latter need to be multiplied by an estimate of 1/√(1+σ<sub>α</sub><sup>2</sup>), where σ<sub>α</sub> represents the size of UH (see <a href="#bib10">Arulampalam, 1999</a>). Allowing for the different normalizations, the scaled estimate for lagged participation (unemployment) is 0.54 (0.70), significantly less than the pooled probit estimate. Participation (unemployment) yesterday increases the probability of participating (being unemployed) today. The relationship between male participation and age follows the usual inverse U-shape. Higher education increases male participation and decreases the probability of being unemployed. Living in the south of Italy decreases male participation and increases the probability of being unemployed.</p><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Unemployment and male participation estimates (<i>Table legend</i>).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="4">Unemployment</th>
+<th colspan="4">Male participation</th>
+</tr>
+<tr>
+<th/>
+<th colspan="2">Probit</th>
+<th colspan="2">Dynamic RE model</th>
+<th colspan="2">Probit</th>
+<th colspan="2">Dynamic RE model</th>
+</tr>
+<tr>
+<th/>
+<th>Coef.</th>
+<th>Robust SE</th>
+<th>Coef.</th>
+<th>SE</th>
+<th>Coef.</th>
+<th>Robust SE</th>
+<th>Coef.</th>
+<th>SE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lag (participation)</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+<td>1.766 <a href="#tfn5-3">**</a></td>
+<td>0.052</td>
+<td>0.799 <a href="#tfn5-3">**</a></td>
+<td>0.077</td>
+</tr>
+<tr>
+<td>Lag (unemployment)</td>
+<td>1.785 <a href="#tfn5-3">**</a></td>
+<td>0.026</td>
+<td>1.123 <a href="#tfn5-3">**</a></td>
+<td>0.039</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Female</td>
+<td>0.356 <a href="#tfn5-3">**</a></td>
+<td>0.022</td>
+<td>0.592 <a href="#tfn5-3">**</a></td>
+<td>0.049</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>−0.148 <a href="#tfn5-3">**</a></td>
+<td>0.009</td>
+<td>−0.256 <a href="#tfn5-3">**</a></td>
+<td>0.020</td>
+<td>0.130 <a href="#tfn5-3">**</a></td>
+<td>0.011</td>
+<td>0.326 <a href="#tfn5-3">**</a></td>
+<td>0.026</td>
+</tr>
+<tr>
+<td>Age^2</td>
+<td>0.002 <a href="#tfn5-3">**</a></td>
+<td>0.0001</td>
+<td>0.002 <a href="#tfn5-3">**</a></td>
+<td>0.000</td>
+<td>−0.002 <a href="#tfn5-3">**</a></td>
+<td>0.000</td>
+<td>−0.004 <a href="#tfn5-3">**</a></td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>High education</td>
+<td>−0.246 <a href="#tfn5-3">**</a></td>
+<td>0.038</td>
+<td>−0.582 <a href="#tfn5-3">**</a></td>
+<td>0.083</td>
+<td>0.287 <a href="#tfn5-3">**</a></td>
+<td>0.066</td>
+<td>0.341 <a href="#tfn5-3">**</a></td>
+<td>0.115</td>
+</tr>
+<tr>
+<td>Medium education</td>
+<td>−0.237 <a href="#tfn5-3">**</a></td>
+<td>0.022</td>
+<td>−0.368 <a href="#tfn5-3">**</a></td>
+<td>0.045</td>
+<td>0.110 <a href="#tfn5-3">**</a></td>
+<td>0.032</td>
+<td>0.170 <a href="#tfn5-3">**</a></td>
+<td>0.058</td>
+</tr>
+<tr>
+<td>Centre</td>
+<td>0.283 <a href="#tfn5-3">**</a></td>
+<td>0.035</td>
+<td>0.463 <a href="#tfn5-3">**</a></td>
+<td>0.078</td>
+<td>−0.054</td>
+<td>0.046</td>
+<td>−0.104</td>
+<td>0.088</td>
+</tr>
+<tr>
+<td>South</td>
+<td>0.783 <a href="#tfn5-3">**</a></td>
+<td>0.028</td>
+<td>1.508 <a href="#tfn5-3">**</a></td>
+<td>0.065</td>
+<td>−0.155 <a href="#tfn5-3">**</a></td>
+<td>0.035</td>
+<td>−0.313 <a href="#tfn5-3">**</a></td>
+<td>0.069</td>
+</tr>
+<tr>
+<td>Year of birth</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+<td>−0.006</td>
+<td>0.007</td>
+<td>0.010</td>
+<td>0.014</td>
+</tr>
+<tr>
+<td>Lag (student)</td>
+<td>1.147 <a href="#tfn5-3">**</a></td>
+<td>0.043</td>
+<td>0.504 <a href="#tfn5-3">**</a></td>
+<td>0.116</td>
+<td>0.205 <a href="#tfn5-3">**</a></td>
+<td>0.061</td>
+<td>−0.026</td>
+<td>0.135</td>
+</tr>
+<tr>
+<td>Unempl.rate</td>
+<td>11.354 <a href="#tfn5-3">**</a></td>
+<td>1.585</td>
+<td>10.076 <a href="#tfn5-3">**</a></td>
+<td>2.828</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>_cons</td>
+<td>−0.167</td>
+<td>0.229</td>
+<td>1.403 <a href="#tfn5-3">**</a></td>
+<td>0.476</td>
+<td>9.376</td>
+<td>13.075</td>
+<td>−24.420</td>
+<td>27.245</td>
+</tr>
+<tr>
+<td>σ<sub>α</sub></td>
+<td colspan="2">---</td>
+<td colspan="2">1.256</td>
+<td colspan="2">---</td>
+<td colspan="2">1.071</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: our elaboration on ECHP 1994–2001 data.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 90% confidence level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 95% confidence level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 99% confidence level.</p></div></figure></section><section id="s5-6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.6 Female labour market participation and household formation</h3><p data-astro-cid-qsyhzaho>We estimate two separate equations, one for labour market participation and one for the choice of living in consensual union.<sup><a href="#fn19">19</a></sup> Reflecting our interest in uncovering the presence of dynamic spillover effects from participation to marriage, and from marriage to participation, the equations for female labour market participation and household formation also include cross-effect lagged variables, which are assumed weakly exogenous. Therefore, both participation and living in consensual union at time <i>t</i> are modelled as a function of lagged participation, lagged consensual union status, the existence of children under three (at time <i>t-1),</i> age, year of birth, level of education, area of residence and being a student (at time <i>t-1).</i> Moreover, model estimation is conditioned on not being retired or a student at time <i>t.</i> Dummies for the area of residence also capture regional differences in the availability of childcare and other (local) institutional factors. In order to simplify the model and keep a dichotomous participation outcome variable we do not explicitly model work hours. This implies that we do not consider the availability of part-time. Since the share of female part-time employment in the total employment has increased almost linearly since 1990, from about 10% to about 30% with few regional differences, this increase is captured by the cohort effect.<sup><a href="#fn20">20</a></sup></p><p data-astro-cid-qsyhzaho>As a benchmark, the estimates of the standard pooled probit models are reported in <a href="#table6">Table 6</a>, columns 1 and 2. Then, column 3 and 4 report the coefficients and standard errors of the dynamic probit model with random effects. As explained above, the random effects probit and pooled probit models involve different normalizations. The scaled estimate of the coefficient on lagged participation (living in consensual union) is 0.90 (2.25), significantly less than the pooled probit estimate: this indicates that omitting permanent UH leads to overestimation of state dependence. There is a lot of heterogeneity that cannot be accounted for by the explanatory variables: the estimated σ<b>α</b> is equal to 1.2 (0.89). Instead, the estimated coefficients on the other covariate are similar (sometime larger) than the pooled estimates.</p><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Female participation and household formation estimates.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="4">Female participation</th>
+<th colspan="4">Living in consensual union</th>
+</tr>
+<tr>
+<th/>
+<th colspan="2">Probit</th>
+<th colspan="2">Dynamic RE model</th>
+<th colspan="2">Probit</th>
+<th colspan="2">Dynamic RE model</th>
+</tr>
+<tr>
+<th/>
+<th>Coef.</th>
+<th>Robust SE</th>
+<th>Coef.</th>
+<th>SE</th>
+<th>Coef.</th>
+<th>Robust SE</th>
+<th>Coef.</th>
+<th>SE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lag (participation)</td>
+<td>2.387 <a href="#tfn6-2">**</a></td>
+<td>0.027</td>
+<td>1.417 <a href="#tfn6-2">**</a></td>
+<td>0.038</td>
+<td>−0.049</td>
+<td>0.033</td>
+<td>−0.093</td>
+<td>0.052</td>
+</tr>
+<tr>
+<td>Lag (union)</td>
+<td>−0.417 <a href="#tfn6-2">**</a></td>
+<td>0.027</td>
+<td>−0.595 <a href="#tfn6-2">**</a></td>
+<td>0.049</td>
+<td>3.795 <a href="#tfn6-2">**</a></td>
+<td>0.043</td>
+<td>3.010 <a href="#tfn6-2">**</a></td>
+<td>0.075</td>
+</tr>
+<tr>
+<td>Lag (children under 3)</td>
+<td>−0.159 <a href="#tfn6-2">**</a></td>
+<td>0.032</td>
+<td>−0.197 <a href="#tfn6-2">**</a></td>
+<td>0.050</td>
+<td>0.347 <a href="#tfn6-2">**</a></td>
+<td>0.098</td>
+<td>0.516 <a href="#tfn6-2">**</a></td>
+<td>0.122</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>0.038 <a href="#tfn6-2">**</a></td>
+<td>0.007</td>
+<td>0.087 <a href="#tfn6-2">**</a></td>
+<td>0.015</td>
+<td>0.074 <a href="#tfn6-2">**</a></td>
+<td>0.010</td>
+<td>0.263 <a href="#tfn6-2">**</a></td>
+<td>0.036</td>
+</tr>
+<tr>
+<td>Age2</td>
+<td>−0.001 <a href="#tfn6-2">**</a></td>
+<td>0.000</td>
+<td>−0.001 <a href="#tfn6-2">**</a></td>
+<td>0.000</td>
+<td>−0.001 <a href="#tfn6-2">**</a></td>
+<td>0.000</td>
+<td>−0.003 <a href="#tfn6-2">**</a></td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>High education</td>
+<td>0.808 <a href="#tfn6-2">**</a></td>
+<td>0.047</td>
+<td>1.665 <a href="#tfn6-2">**</a></td>
+<td>0.093</td>
+<td>−0.001</td>
+<td>0.060</td>
+<td>−0.170</td>
+<td>0.093</td>
+</tr>
+<tr>
+<td>Medium education</td>
+<td>0.371 <a href="#tfn6-2">**</a></td>
+<td>0.021</td>
+<td>0.775 <a href="#tfn6-2">**</a></td>
+<td>0.044</td>
+<td>−0.029</td>
+<td>0.032</td>
+<td>−0.135 <a href="#tfn6-1">*</a></td>
+<td>0.057</td>
+</tr>
+<tr>
+<td>Centre</td>
+<td>−0.116 <a href="#tfn6-2">**</a></td>
+<td>0.027</td>
+<td>−0.355 <a href="#tfn6-2">**</a></td>
+<td>0.064</td>
+<td>0.052</td>
+<td>0.042</td>
+<td>0.145 <a href="#tfn6-1">*</a></td>
+<td>0.073</td>
+</tr>
+<tr>
+<td>South</td>
+<td>−0.270 <a href="#tfn6-2">**</a></td>
+<td>0.021</td>
+<td>−0.738 <a href="#tfn6-2">**</a></td>
+<td>0.052</td>
+<td>0.015</td>
+<td>0.031</td>
+<td>0.003</td>
+<td>0.053</td>
+</tr>
+<tr>
+<td>Year of birth</td>
+<td>0.000</td>
+<td>0.004</td>
+<td>0.009</td>
+<td>0.008</td>
+<td>0.002</td>
+<td>0.007</td>
+<td>−0.026</td>
+<td>0.014</td>
+</tr>
+<tr>
+<td>Lag(student)</td>
+<td>0.549</td>
+<td>0.056</td>
+<td>0.272 <a href="#tfn6-1">*</a></td>
+<td>0.121</td>
+<td>−0.530 <a href="#tfn6-2">**</a></td>
+<td>0.066</td>
+<td>−0.706 <a href="#tfn6-2">**</a></td>
+<td>0.090</td>
+</tr>
+<tr>
+<td>_cons</td>
+<td>−1.326</td>
+<td>7.845</td>
+<td>−19.025</td>
+<td>16.684</td>
+<td>−7.667</td>
+<td>13.146</td>
+<td>44.404</td>
+<td>28.285</td>
+</tr>
+<tr>
+<td>σ<sub>α</sub></td>
+<td colspan="2">----</td>
+<td colspan="2">1.218</td>
+<td colspan="2">----</td>
+<td colspan="2">0.890</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: our elaboration on ECHP 1994–2001 data.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 90% confidence level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 95% confidence level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 99% confidence level.</p></div></figure><p data-astro-cid-qsyhzaho>Estimated coefficients generally have the expected sign: participation at time <i>t-1</i> increases the probability of participating at time <i>t,</i> while living in consensual union and having small children reduce it; having a better education is associated with higher activity rates, while living in the Centre and especially in the South of Italy is associated with lower activity rates.</p><p data-astro-cid-qsyhzaho>Quite obviously, we find that living in consensual union in any one year strongly increases the probability of living in consensual union in the next year. The probability also increases if the woman has young children. The relationship with age is again inverse U-shaped. The level of education and the area of residence are not significant; instead, being a student at time <i>t-1</i> reduces the probability of living in consensual union at time <i>t.</i></p><p data-astro-cid-qsyhzaho>Finally, we estimate the probability of having a child at time <i>t</i>, as a function of the presence of children aged under three at time <i>t-</i>1, the number of children at time <i>t-</i>1, dummies about the labour market status at time <i>t-</i>1 (in education, in the labour force, in employment), age, level of education, area of residence and the overall fertility rate. Estimation is conditioned on living in consensual union and being in the age bracket 17–45. Estimates are reported in <a href="#table7">Table 7</a>. Again, the coefficients go in the expected direction: the probability of having a child later initially increases and then decreases with age, decreases if in the household there are already children under three, decreases with the number of children in the household. Having high education increases the probability of having a child, for a given age. No significant geographical differences are found.</p><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Birth probability estimates <i>the sample includes only women aged 17–45.</i></span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Motherhood</th>
+<th colspan="2">Probit</th>
+</tr>
+<tr>
+<th/>
+<th>Coef.</th>
+<th>Robust SE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lag (children under 3)</td>
+<td>−0.571 **</td>
+<td>0.050</td>
+</tr>
+<tr>
+<td>Lag (no children)</td>
+<td>−0.371 **</td>
+<td>0.084</td>
+</tr>
+<tr>
+<td>Lag (participation)</td>
+<td>−0.037</td>
+<td>0.046</td>
+</tr>
+<tr>
+<td>Lag (unemployment)</td>
+<td>−0.087</td>
+<td>0.072</td>
+</tr>
+<tr>
+<td>Lag (student)</td>
+<td>−0.216</td>
+<td>0.153</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>0.287 **</td>
+<td>0.043</td>
+</tr>
+<tr>
+<td>Age2</td>
+<td>−0.006 **</td>
+<td>0.001</td>
+</tr>
+<tr>
+<td>High education</td>
+<td>0.227 **</td>
+<td>0.072</td>
+</tr>
+<tr>
+<td>Medium education</td>
+<td>0.039</td>
+<td>0.043</td>
+</tr>
+<tr>
+<td>Centre</td>
+<td>0.062</td>
+<td>0.060</td>
+</tr>
+<tr>
+<td>South</td>
+<td>0.092</td>
+<td>0.073</td>
+</tr>
+<tr>
+<td>Fertility rate</td>
+<td>11.716 *</td>
+<td>5.106</td>
+</tr>
+<tr>
+<td>Constant</td>
+<td>−4.628 **</td>
+<td>0.722</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: our elaboration on ECHP 1994–2001 data.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 90% confidence level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 95% confidence level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 99% confidence level.</p></div></figure></section></div></details><details id="s6" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">6. The microsimulation model</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Our model is a discrete-time dynamic microsimulation of labour supply, with an open population: flags are switched on and off for partners and children for the female population, but no simulated individuals are actually matched. The microsimulation is comprised of four modules: Demography, Education, Household formation and Employment. Individuals are simulated in the age bracket 17–54, from 2002 to 2050. The overall structure of the microsimulation is depicted in <a href="#fig4">Figure 4</a>. Standard simulation runs involve a base year population of about 40,000 individuals, representative of 60 million Italians.</p><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00099-fig4.Di5lUfCf_ZGUoFd.webp" class="figure-lightbox-trigger" data-pswp-width="572" data-pswp-height="577" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00099-fig4.Di5lUfCf_ZGUoFd.webp" alt width="572" height="577" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Structure of the microsimulation model.</span></figcaption></figure><section id="s6-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.1 Demographic module</h3><p data-astro-cid-qsyhzaho>Population is aligned to official demographic projections by year, age, gender and macro-area of living (North, Centre and South of Italy). Whenever the population is over-represented in a given age, gender and area cell, simulated individuals are killed at random. Whenever the population is under-represented, new individuals are created by cloning at random existing individuals in the same cell (in adjacent cells if the cell is empty). We do not model (internal nor external) migration.</p></section><section id="s6-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.2 Education module</h3><p data-astro-cid-qsyhzaho>We separately model enrolment and graduation, both for secondary school and university. Individuals enter the simulation at 17, after completion of compulsory education. Dropouts at 16 are modelled by aligning the initial status (in education, in the labour force, in employment) to the observed frequencies (see <a href="#table3">Table 3</a> above). Dropouts from school exit the education module and enter the labour market module. Students can graduate from secondary school starting at age 18. Those who fail to graduate before age 22 exit the education module and enter the labour market module. Secondary school graduates can enter university. University participation is allowed until age 30, while graduation can take place beginning at age 21. University dropouts leave the education module and enter the labour market module. We make the simplifying assumption that people never go back to education, once they have left. This is justified, as already discussed, by the very small number of students of older ages.</p><p data-astro-cid-qsyhzaho>The detected (linear) trends toward higher high school participation are stopped for individuals born in 1990 or later, while those toward higher university participation are stopped for individuals born in 1985 or later (we prudentially assume all trends have already come to an end in the base year).</p><p data-astro-cid-qsyhzaho>The flowchart of the Education module is represented in <a href="#fig5">Figure 5</a>.</p><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00099-fig5.Ce2nCedW_OI1nO.webp" class="figure-lightbox-trigger" data-pswp-width="622" data-pswp-height="587" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00099-fig5.Ce2nCedW_OI1nO.webp" alt width="622" height="587" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> The education module.</span></figcaption></figure></section><section id="s6-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.3 Household formation module</h3><p data-astro-cid-qsyhzaho>Given that the presence of a partner is not relevant, at a first order approximation, for male labour market participation, the household formation module is only applied to the female population.<sup><a href="#fn21">21</a></sup> The module is comprised of two sub-modules: Living in consensual union and Maternity. Women aged 17 or older and who are not student can enter a consensual union. Note that at young ages not living in consensual union is likely to be a choice, while at older ages it might also reflect a partner’s death, hence a state of widowhood. The (linear) cohort effect in the equation for living in consensual union is stopped for individuals born in 1990 or later. Women aged 17–45 who live in a consensual union can have children. The total amount of births in each year is aligned with demographic data. The flowchart of the Household formation module is represented in <a href="#fig6">Figure 6</a>.</p><figure id="fig6" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00099-fig6.lyo_Bc1N_Z5vVmo.webp" class="figure-lightbox-trigger" data-pswp-width="645" data-pswp-height="163" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00099-fig6.lyo_Bc1N_Z5vVmo.webp" alt width="645" height="163" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 6.</strong><span data-astro-cid-dzaleqsp> The Household formation module (females only).</span></figcaption></figure></section><section id="s6-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.4 Employment module</h3><p data-astro-cid-qsyhzaho>The labour market module is applied to all individuals who are not in education or retired (remember individuals enter the simulation above the minimum working age). We consider retirement only for those individuals who are already retired in the initial population, and assume no one can retire before age 55 as the simulation proceeds (this is in line with the recent reforms of the Italian pension system).</p><p data-astro-cid-qsyhzaho>The employment module is composed of two sub-modules: Labour market participation and Unemployment. Labour market participation is modelled separately by gender, and the model for females is conditional on household composition. The (linear) cohort effects in the equations for labour market participation are stopped for individuals born in 1990 or later. Alignment with an exogenous trend is performed for the overall unemployment rate for the 17–54 population. Consequently, the Unemployment module is to be regarded as a model of unemployment rate differentials, rather than unemployment rate levels. This is justified by the fact that we do not model the demand side: the overall unemployment rate is therefore considered as an exogenous parameter of the simulation. The flowchart of the Employment module is represented in <a href="#fig7">Figure 7</a>.</p><figure id="fig7" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00099-fig7.Coczvuns_x3A8I.webp" class="figure-lightbox-trigger" data-pswp-width="622" data-pswp-height="157" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00099-fig7.Coczvuns_x3A8I.webp" alt width="622" height="157" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 7.</strong><span data-astro-cid-dzaleqsp> The employment module.</span></figcaption></figure></section></div></details><details id="s7" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">7. Model comparison and validation</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The credibility of a dynamic microsimulation model is based on its capacity to reproduce observed data or known benchmarks such as outside projections. Accordingly, an important aspect of dynamic microsimulation modelling is the validation of results produced by the simulation exercise. However, the applied literature has devoted little attention to validation procedures and the quantification of uncertainty around model predictions (<a href="#bib63">Wolf, 2001</a>), and there is currently no apparent consensus among practitioners on what constitutes a best practice. In this section, we focus on a specific aspect of validation: ex-post validation of model outcome. With the limitations arising from the fact that the ECHP was discontinued in 2001 and replaced only in 2004 by a different survey (EU-SILC), and the fact that the most recent years cannot be used for validation due to the impact of the Great Recession, we compare the simulated female participation rates with the actual participation trends computed on the Italian EU-SILC data over the period 2005–2008.<sup><a href="#fn22">22</a></sup> The four versions of the model that we test are labelled <i>Probit</i> (pooled probit estimates), <i>Null</i> (dynamic random effect probit estimates without imputation of random effects), <i>Unconditional</i> (dynamic random effect probit estimates with imputation of random effects from the unconditional distributions), <i>Rank</i> (dynamic random effect probit estimates with imputation of random effects by means of the Rank method).</p><p data-astro-cid-qsyhzaho><a href="#fig8">Figure 8</a> shows the projected activity rates in the age group 17–54. Depending on the estimation method we get significant differences in both males and females participation rates. For females, these differences become larger over time: at the end of the simulation period, the difference between predictions obtained under the Rank and the Null scenario amounts to almost 10 percentage points. This corresponds almost exactly to the bias we expect due to nonlinearity of the probit transformation, for the estimated standard deviation of the individual effects: +4% (+8%) for the Null scenario at the beginning (end) of the simulation period, when the average activity rate under the Rank scenario is .57 (.65). Also expected, given the theoretical results (<a href="#bib56">Richiardi, 2014</a>), is the similarity between the Rank and the Unconditional scenario, when cross-sectional figures are considered.</p><figure id="fig8" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00099-fig8.4APhSH0S_ZunGsO.webp" class="figure-lightbox-trigger" data-pswp-width="460" data-pswp-height="336" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00099-fig8.4APhSH0S_ZunGsO.webp" alt width="460" height="336" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 8.</strong><span data-astro-cid-dzaleqsp> Projected participation rates, individuals aged 17–54.</span></figcaption></figure><p data-astro-cid-qsyhzaho>The simulation projections can be compared with the observed participation rates for the period 2005–2008 as computed using EU-SILC data (<a href="#table8">Table 8</a>). Predictions obtained using the Rank method and those obtained sampling from the unconditional distributions of the individual effects are slightly lower than the observed activity rates both in term of average and transition probabilities. The true data lie in between the Probit and the Rank/Unconditional forecasts. The Null forecasts do indeed overestimate both female participation rates and transition probabilities in and out the labour market. Hence, improving the estimates of the coefficients by considering UH but failing to impute it to the simulated population results in forecasts that are even worse than forecasts based on simpler (and misspecified) models.</p><figure id="table8" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 8.</strong><span data-astro-cid-dzaleqsp> Validation results: female participation rates (%), individuals aged 17–54.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th colspan="3">True data</th>
+<th colspan="4">Simulated data</th>
+</tr>
+<tr>
+<th colspan="3">Dataset</th>
+<th>Probit</th>
+<th>Null</th>
+<th>Rank</th>
+<th>Unconditional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="8">ECHP</td>
+<td>1994</td>
+<td>52.85</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>1995</td>
+<td>53.22</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>1996</td>
+<td>53.66</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>1997</td>
+<td>53.80</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>1998</td>
+<td>55.52</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>1999</td>
+<td>55.49</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>2000</td>
+<td>54.76</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>2001</td>
+<td>56.24</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td rowspan="4">EUSIC</td>
+<td>2005</td>
+<td>59.78</td>
+<td>61.02</td>
+<td>63.41</td>
+<td>58.01</td>
+<td>57.48</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>60.28</td>
+<td>61.77</td>
+<td>63.83</td>
+<td>57.91</td>
+<td>57.89</td>
+</tr>
+<tr>
+<td>2007</td>
+<td>59.10</td>
+<td>61.77</td>
+<td>64.26</td>
+<td>57.81</td>
+<td>58.01</td>
+</tr>
+<tr>
+<td>2008</td>
+<td>60.07</td>
+<td>62.34</td>
+<td>64.06</td>
+<td>57.78</td>
+<td>57.93</td>
+</tr>
+<tr>
+<td colspan="2"><b>Probability of participate at time t</b></td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td colspan="2">if not participate at t-1</td>
+<td>17.06</td>
+<td>14.22</td>
+<td>34.69</td>
+<td>20.29</td>
+<td>20.68</td>
+</tr>
+<tr>
+<td colspan="2">if participate at t-1</td>
+<td>91.05</td>
+<td>93.79</td>
+<td>85.78</td>
+<td>89.09</td>
+<td>88.41</td>
+</tr>
+<tr>
+<td colspan="2">  <b>Probability of not participate at time t</b></td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td colspan="2">if not participate at t-1</td>
+<td>82.94</td>
+<td>85.78</td>
+<td>65.31</td>
+<td>79.71</td>
+<td>79.32</td>
+</tr>
+<tr>
+<td colspan="2">if participate at t-1</td>
+<td>8.5</td>
+<td>6.21</td>
+<td>14.22</td>
+<td>10.91</td>
+<td>11.59</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>The practical equivalence between imputing individual effects <i>via</i> the Rank method or sampling from the unconditional distributions breaks down dramatically when individual life histories are considered.</p><p data-astro-cid-qsyhzaho>To document this, we have estimated the same simple probit models as described in <a href="#s5">Section 5</a> on couples of adjacent years: the first set of estimates is performed on 2000–2001, entirely on ECHP data; the second set is performed on 2001–2002, by merging the first year of the simulation output with ECHP data; then, other sets follow entirely on simulation data.<sup><a href="#fn23">23</a></sup> We are interested in the coefficient of the lagged endogenous variable, as a descriptive measure of state persistence. <a href="#table9">Table 9</a> shows the results.<sup><a href="#fn24">24</a></sup> The first column refers to the years 2000–2001 and is computed on true data: it is thus invariant to the model considered and constitutes our target. The second column is computed using the true data as base year (2001) and the first period of the simulated data as final year (2002): it thus encompass any discontinuity in life trajectories due to the imputation method. Theory suggests that state persistence (the coefficients of the lagged endogenous variables) should be lower for the Unconditional scenario, intermediate for the Null scenario and higher (though still below the target) for the Rank scenario. The third column reports the averages of the coefficients of the lagged endogenous variables computed over the couples of years 2002–2003 to 2007–2008, estimated on simulated data. Theory now suggests that state persistence should pick up again, with the coefficients under the Rank and the Unconditional scenario broadly similar and higher than those under the Null scenario. This is broadly in line with what we find. State persistence decreases in the first year of the simulation for the Unconditional scenario, as the true individual effects governing past outcomes are replaced by random draws from the unconditional distributions, which are by definition uncorrelated with the true individual effects. From the second year of the simulation onward state persistence picks up again, and individual trajectories keep the memory of the artificial discontinuity of the previous year. Under the Null scenario, on the other hand, state persistence decreases less that under the Unconditional scenario on the first year, but then remains stationary at this level. Only under the Rank scenario state persistence remains reasonably close to the true value, keeping the discontinuity of lifetime trajectories in the first period of the simulation at a minimum.</p><figure id="table9" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 9.</strong><span data-astro-cid-dzaleqsp> Coefficients of lagged endogenous variables (standard errors in parenthesis), same probit models as for input estimation. Estimation is performed on couple of years (<i>the third column reports averages over results from 2002–2003 to 2007–2008</i>).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>ECHP</th>
+<th>ECHP/sim</th>
+<th>sim</th>
+</tr>
+<tr>
+<th/>
+<th>2000–2001</th>
+<th>2001–2002</th>
+<th>2002–2008</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Union unconditional</b></td>
+<td>3.810 (0.087)</td>
+<td>1.648 (0.019)</td>
+<td>2.626 (0.034)</td>
+</tr>
+<tr>
+<td>Null</td>
+<td>3.810 (0.087)</td>
+<td>2.285 (0.022)</td>
+<td>2.150 (0.036)</td>
+</tr>
+<tr>
+<td>Rank</td>
+<td>3.810 (0.087)</td>
+<td>3.111 (0.026)</td>
+<td>2.826 (0.035)</td>
+</tr>
+<tr>
+<td><b>Participation (males) unconditional</b></td>
+<td>2.550 (0.075)</td>
+<td>1.426 (0.024)</td>
+<td>1.728 (0.033)</td>
+</tr>
+<tr>
+<td>Null</td>
+<td>2.550 (0.075)</td>
+<td>1.901 (0.026)</td>
+<td>1.763 (0.051)</td>
+</tr>
+<tr>
+<td>Rank</td>
+<td>2.550 (0.075)</td>
+<td>2.599 (0.028)</td>
+<td>1.858 (0.308)</td>
+</tr>
+<tr>
+<td><b>Participation (females)</b> unconditional</td>
+<td>2.542 (0.056)</td>
+<td>0.638 (0.015)</td>
+<td>1.856 (0.024)</td>
+</tr>
+<tr>
+<td>Null</td>
+<td>2.542 (0.056)</td>
+<td>0.974 (0.015)</td>
+<td>0.938 (0.024)</td>
+</tr>
+<tr>
+<td>Rank</td>
+<td>2.542 (0.056)</td>
+<td>2.057 (0.017)</td>
+<td>1.990 (0.024)</td>
+</tr>
+</tbody>
+</table></div></figure></div></details><details id="s8" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">8. Conclusions</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In this paper we have dealt with the problem of assigning unobserved individual effects to the simulation sample, when new individuals enter the simulation with a history of previous outcomes. The only theoretically sound methodology in this case is sampling from the estimated conditional distributions, which can be fairly complicated in nonlinear models. Using a dynamic microsimulation model of labour supply in Italy as a testbed, we have shown that neglecting the problem (i.e. assigning a null effect to all individuals) implies a forecasting bias in discrete choice models, due to nonlinearity of the probit/logit transformations. Sampling from the unconditional estimated distributions of the individual effects prevent the forecasting bias, hence getting cross-sectional statistics right, but introduces unnatural breaks in individual trajectories at the moment of imputation, therefore getting longitudinal statistics wrong. The same applies if the estimates are obtained under simple specifications without unobserved heterogeneity. We have then provided a first empirical application of a new algorithm that greatly reduces the complexity of sampling from the conditional distributions, at the cost of introducing a small correlation between the imputed individual effects and the individual observable characteristics. Our results have been validated on out-of sample data, albeit admittedly short. Imputing individual effects with the new method allows to remain more on track with observed data both cross-sectionally and longitudinally.</p><p data-astro-cid-qsyhzaho>Finally, from a substantive point of view, our microsimulation documents the existence of a marked though slow process of convergence in the activity rates of different subgroups of the Italian population: between men and women, between women with children and women without children, between the North and the South of Italy.</p></div></details><details id="footnotes" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Footnotes</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="fn1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1.</h3><p data-astro-cid-qsyhzaho>He also develops an optimal assignment algorithm for the binary response model, which works in quadratic time rather than in third or fourth order polynomial time as the standard algorithms.</p></section><section id="fn2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.</h3><p data-astro-cid-qsyhzaho>The same argument applies, <i>mutatis mutandis,</i> to a multinomial setting with more than two states.</p></section><section id="fn3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.</h3><p data-astro-cid-qsyhzaho>An alternative approach is to use Markovian transitions models, where the processes are split up according to the initial state. This amounts to estimate</p><div id="equ5" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(7)</span><math><mtable columnalign="left"><mtr><mtd><mi>Pr</mi><mo stretchy="false">[</mo><msub><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mn>1</mn><mo>|</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>,</mo><msub><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>0</mn><mo stretchy="false">]</mo><mo>=</mo><mi>Φ</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>′</mo><msub><mi>β</mi><mn>0</mn></msub><mo stretchy="false">)</mo></mtd></mtr><mtr><mtd><mi>Pr</mi><mo stretchy="false">[</mo><msub><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mn>1</mn><mo>|</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>,</mo><msub><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>=</mo><mn>1</mn><mo stretchy="false">]</mo><mo>=</mo><mi>Φ</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>′</mo><msub><mi>β</mi><mn>1</mn></msub><mo stretchy="false">)</mo></mtd></mtr></mtable></math></div><p data-astro-cid-qsyhzaho>or, equivalently,</p><div id="equ6" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(8)</span><math><mi>Pr</mi><mo stretchy="false">[</mo><msub><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mn>1</mn><mo>|</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>,</mo><msub><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">]</mo><mo>=</mo><mi>Φ</mi><mo stretchy="false">(</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>′</mo><msub><mi>β</mi><mn>0</mn></msub><mo>+</mo><msub><mi>x</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>′</mo><mi>δ</mi><msub><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></math></div><p data-astro-cid-qsyhzaho>The main advantage of this approach is the possibility to allow estimated persistence to vary according with the initial state and the observed individual characteristics, at the cost of a higher number of parameters.</p></section><section id="fn4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.</h3><p data-astro-cid-qsyhzaho>In facts, we can get significant estimates of state dependence coefficients even when there is no true state dependence and persistence is only due to permanent UH (<a href="#bib18">Carro, 2007</a>).</p></section><section id="fn5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.</h3><p data-astro-cid-qsyhzaho>See also <a href="#bib22">Cramer (2005)</a>.</p></section><section id="fn6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.</h3><p data-astro-cid-qsyhzaho>For applications to models of labour supply, see for instance <a href="#bib33">Haan (2006)</a> and <a href="#bib51">Pacifico (2009)</a>.</p></section><section id="fn7" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.</h3><p data-astro-cid-qsyhzaho><a href="#bib56">Richiardi (2014)</a> also discusses a fourth option of imputing the missing variables in the simulation sample from their estimated counterparts in the estimation sample. This solution however turns out to be suboptimal and feasible only in special cases.</p></section><section id="fn8" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">8.</h3><p data-astro-cid-qsyhzaho>See <a href="#bib32">Gu <i>et al.</i> (2009)</a> for an application to a random effects binary probit model with heteroscedasticity.</p></section><section id="fn9" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">9.</h3><p data-astro-cid-qsyhzaho>A proper survey of the treatment of UH in dynamic microsimulation models is hampered by the fact that the relevant papers generally devote little space to the presentation of the econometric estimates –sometimes even the list of covariates is missing. This is a well-known problem with the microsimulation approach: being in general large models, developed over the course of many years and often building on pre-existing work, microsimulation models end up being close to black boxes. Sometimes detailed explanations can be found in technical papers that however remain unpublished or have a limited circulation, while published articles often restrict their attention, given the page constraint, on some specific result or addition to the basic model.</p></section><section id="fn10" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">10.</h3><p data-astro-cid-qsyhzaho>See <a href="#bib56">Richiardi (2014)</a> for more details.</p></section><section id="fn11" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">11.</h3><p data-astro-cid-qsyhzaho>Indeed, an improper treatment of UH might contribute to explain why alignment becomes necessary.</p></section><section id="fn12" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">12.</h3><p data-astro-cid-qsyhzaho>The ECHP was discontinued in 2001 and replaced only three years later by the European Union Statistics on Income and Living conditions (EU-SILC).</p></section><section id="fn13" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">13.</h3><p data-astro-cid-qsyhzaho>The Italian component of the EU-SILC panel data is available only from 2005 onwards.</p></section><section id="fn14" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">14.</h3><p data-astro-cid-qsyhzaho>Fixed effects estimators of nonlinear panel model can be severely biased due to the incidental parameters problem. This problem arises because unobserved individual characteristics are replaced by sample estimates, biasing estimates of model parameters. As far as we know, the solution proposed are not sqrt(<i>N</i>)-consistent (Honoré and Kyriazidou, 2000; <a href="#bib34">Hahn, 2001</a>; <a href="#bib39">Honoré and Tamer, 2004</a>). Some authors propose modified maximum likelihood estimators that reduces the order of the bias (i.e. <a href="#bib21">Cox and Reid, 1987</a>; <a href="#bib6">Arellano, 2003</a>; <a href="#bib18">Carro, 2007</a>; <a href="#bib9">Arellano and Hahn, 2007</a>; <a href="#bib61">Val, 2009</a>). The latter estimators work only “moderately” well when the number of periods <i>T</i> is larger than 8, but this is not our case. Recently, <a href="#bib38">Hoderlein <i>et al.</i> (2011)</a> has proposed a nonparametric procedure that generalizes the conditional logit approach leading to an estimator based on nonlinear stochastic integral equations that seems to works moderately well in finite sample Monte Carlo simulations. Also, the random effect model can be generalized to allow for some correlation between the individual effects and the regressors. Following the Mundlak-Chamberlain approach (<a href="#bib49">Mundlak, 1978</a>; <a href="#bib20">Chamberlain, 1982</a>), this reduces to running a random-effect model where the individual means of the time-varying characteristics are added as control variables to allow for some correlation with the random effects.</p></section><section id="fn15" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">15.</h3><p data-astro-cid-qsyhzaho>In dynamic panel data models with unobserved effects, the initial condition problem is an important issue. Many authors studied dynamic linear models with an additive unobserved effect with a special focus on the treatment of the initial condition problem (see, for example, <a href="#bib2">Ahn and Schmidt, 1995</a>; <a href="#bib4">Anderson and Hsiao, 1982</a>; <a href="#bib7">Arellano and Bond, 1991</a>; <a href="#bib8">Arellano and Bover, 1995</a>; <a href="#bib14">Blundell and Bond, 1998</a>; <a href="#bib35">Hahn, 1999</a>]). The initial condition problem is much more difficult to resolve within non-linear models. <a href="#bib42">Honoré (1993</a>) and Honoré and Kyriazidou (2000) offer examples of the treatment of the initial condition problem in a semi-parametric context. The interested reader can also refer to <a href="#bib36">Heckman (1981a</a>, <a href="#bib37">1981b</a>), <a href="#bib43">Hsiao (1986)</a>, Orme (1997) and <a href="#bib65">Wooldridge (2005b)</a> for a discussion of alternative ways of handling initial conditions in a dynamic non-linear model with UH, which however provide similar results (<a href="#bib11">Arulampalam &amp; Stewart, 2007</a>). The Mundlak-Chamberlain approach for dealing with correlated random effects can also be applied to these estimators.</p></section><section id="fn16" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">16.</h3><p data-astro-cid-qsyhzaho>If the vector <i>zi</i> does not include instruments, the model is identified by the functional form.</p></section><section id="fn17" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">17.</h3><p data-astro-cid-qsyhzaho>Illegal dropouts are approximately zero in primary school and about 1.5% in secondary school (<a href="#bib60">Sistan, 2006</a>).</p></section><section id="fn18" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">18.</h3><p data-astro-cid-qsyhzaho>Dario Di Pierro helped with the estimates.</p></section><section id="fn19" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">19.</h3><p data-astro-cid-qsyhzaho>Female labour force participation and the choice of living in consensual union may of course be correlated. A joint determination of female participation and marital status can be treated extending the dynamic random effects model allowing for correlation in the error terms (see Alessie <i>et al.</i>, 2004; <a href="#bib28">Devicienti and Poggi, 2011</a>). Since this is not the focus of the present paper, we do not consider this issue further.</p></section><section id="fn20" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">20.</h3><p data-astro-cid-qsyhzaho>In 2010 the share of female part-time employment was 30.5% in the North, 29.0% in the Centre and 25.4% in the South (Italian LFS data).</p></section><section id="fn21" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">21.</h3><p data-astro-cid-qsyhzaho>Living in union might well affect the decision about how much to work, and possibly wages; however, we do not model work hours, nor wages.</p></section><section id="fn22" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">22.</h3><p data-astro-cid-qsyhzaho>A presentation of the long-term projections that come out of the model is contained in the working paper version of our work (<a href="#bib57">Richiardi &amp; Poggi, 2012</a>).</p></section><section id="fn23" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">23.</h3><p data-astro-cid-qsyhzaho>This validation strategy exploits the fact that the initial population in the simulation coincides with the last sample used for estimation. This, together with our desire to use all years from 2005 to 2008 for validation, explains why we have used a 2001 sample from ECHP data rather than a 2005 sample from EU-SILC data for our initial population.</p></section><section id="fn24" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">24.</h3><p data-astro-cid-qsyhzaho>We do not report results for unemployment as this process is subject to alignment.</p></section></div></details></div><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Aaberge, R, Dagsvik, JK, Strøm, S (1995). <span data-astro-cid-oer3kof4>Labor Supply Responses and Welfare Effects of Tax Reforms</span>. <em data-astro-cid-oer3kof4>Scandinavian Journal of Economics</em>, <strong data-astro-cid-oer3kof4>97</strong>, 635–659.</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ahn, SC, Schmidt, P (1995). <span data-astro-cid-oer3kof4>Efficient estimation of models for dynamic panel data</span>. <em data-astro-cid-oer3kof4>Journal of Econometrics</em>, <strong data-astro-cid-oer3kof4>68</strong>, 5–28.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Anderson, JM (2003). <span data-astro-cid-oer3kof4>Models for Retirement Policy Analysis. Report prepared for the Society of Actuaries</span>.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Anderson, TW, Hsiao, C (1982). <span data-astro-cid-oer3kof4>Formulation and estimation of dynamic models using panel data</span>. <em data-astro-cid-oer3kof4>Journal of Econometrics</em>, <strong data-astro-cid-oer3kof4>68</strong>, 5–27.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Anxo, D, Flood, L, Mencarini, L, Pailhé, A, Solaz, A, Tanturri, ML (2007). <span data-astro-cid-oer3kof4>Time Allocation between Work and Family Over the Life-Cycle: A Comparative Gender Analysis of Italy, France, Sweden and the United States. IZA Discussion Paper. No. 3193</span>.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Arellano, M (2003). <span data-astro-cid-oer3kof4>Discrete choice with panel data</span>. <em data-astro-cid-oer3kof4>Investigaciones Económicas</em>, <strong data-astro-cid-oer3kof4>XVII</strong>, 423–458.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Arellano, M, Bond, SR (1991). <span data-astro-cid-oer3kof4>Some tests of specification for panel data: Monte Carlo evidence and an application to employment equations</span>. <em data-astro-cid-oer3kof4>Review of Economic Studies</em>, <strong data-astro-cid-oer3kof4>58</strong>, 277–297.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Arellano, M, Bover, O (1995). <span data-astro-cid-oer3kof4>Another look at the instrumental variables estimation of error component models</span>. <em data-astro-cid-oer3kof4>Journal of Econometrics</em>, <strong data-astro-cid-oer3kof4>68</strong>, 29–51.</span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Arellano, M, Hahn, J (2007). <em data-astro-cid-oer3kof4>Understading bias in nonlinear panel models: Some recent developments</em>. Cambridge: Cambridge University Press.</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Arulampalam, W (1999). <span data-astro-cid-oer3kof4>A Note on estimated effects in random effect probit models</span>. <em data-astro-cid-oer3kof4>Oxford Bulletin of Economics and Statistics</em>, <strong data-astro-cid-oer3kof4>61</strong>, 597–602.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Arulampalam, W, Steward, MB (2007). <span data-astro-cid-oer3kof4>Simplified Implementation of the Heckman Estimator of the Dynamic Probit Model and a Comparison with Alternative Estimators”. IZA discussion paper</span>.</span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Arulampalam, W, Booth, AL, Taylor, MP (2000). <span data-astro-cid-oer3kof4>Unemployment persistence. Oxford Economic Papers</span>.</span></li><li id="bib13" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Bertola, G, Jimeno, JF, Marimon, R, Pissarides, C (2001). <span data-astro-cid-oer3kof4>Welfare and Employment in a United Europe</span>.</span></li><li id="bib14" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Blundell, R, Bond, SR (1998). <span data-astro-cid-oer3kof4>Initial conditions and moment restrictions in dynamic panel data models</span>. <em data-astro-cid-oer3kof4>Journal of Econometrics</em>, <strong data-astro-cid-oer3kof4>87</strong>, 115–143.</span></li><li id="bib15" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Bratti, M, Del Bono, E, Vuri, D (2005). <span data-astro-cid-oer3kof4>New mothers’ labour force participation in Italy: The role of job characteristics</span>. <em data-astro-cid-oer3kof4>Labour</em>, <strong data-astro-cid-oer3kof4>19</strong>, 79–121.</span></li><li id="bib16" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Burkard, R, Dell’Amico, M, Martello, S (2012). <em data-astro-cid-oer3kof4>Assignment Problems - Revised Reprint</em>. Philadelphia: Society for Industrial and Applied Mathematics.</span></li><li id="bib17" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Carpaneto, G, Martello, S, Toth, P (1988). <span data-astro-cid-oer3kof4>Algorithms and Codes for the Assignment Problem</span>. <em data-astro-cid-oer3kof4>Annals of Operations Research</em>, <strong data-astro-cid-oer3kof4>13</strong>, 193–223.</span></li><li id="bib18" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Carro, JM (2007). <span data-astro-cid-oer3kof4>Estimating dynamic panel data discrete choice models with fixed effects</span>. <em data-astro-cid-oer3kof4>Journal of Econometrics</em>, <strong data-astro-cid-oer3kof4>140</strong>, 503–528.</span></li><li id="bib19" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Casadio, P, Lo Conte, M, Neri, A (2008). <span data-astro-cid-oer3kof4>Balancing work and family in Italy: New mothers’ employment decisions after childbirth. Bank of Italy Economic working papers</span>.</span></li><li id="bib20" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Chamberlain, G (1982). <span data-astro-cid-oer3kof4>Multivariate Regression Models for Panel Data,</span>. <em data-astro-cid-oer3kof4>Journal of Econometrics</em>, <strong data-astro-cid-oer3kof4>1</strong>, 5–46.</span></li><li id="bib21" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Cox, DR, Reid, N (1987). <span data-astro-cid-oer3kof4>Parameter orthogonality and approximate conditional inference</span>. <em data-astro-cid-oer3kof4>Journal of the Royal Statistical Society</em>, <strong data-astro-cid-oer3kof4>49</strong>, 1–39.</span></li><li id="bib22" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Cramer, JS (2005). <span data-astro-cid-oer3kof4>Omitted Variables and Misspecified Disturbances in the Logit Model. Tinbergen Institute Discussion Paper. TI 2005-084/4</span>.</span></li><li id="bib23" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Creedy, J, Kalb, G (2005). <span data-astro-cid-oer3kof4>Discrete hours labour supply modelling: specification, estimation and simulation</span>. <em data-astro-cid-oer3kof4>Journal of Economic Surveys</em>, <strong data-astro-cid-oer3kof4>19</strong>, 697–734.</span></li><li id="bib24" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Del Boca, D (2002). <span data-astro-cid-oer3kof4>The effect of child care and part time opportunities on participation and fertility decisions in Italy</span>. <em data-astro-cid-oer3kof4>Journal of Population Economics</em>, <strong data-astro-cid-oer3kof4>15</strong>, 1432–1475.</span></li><li id="bib25" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Del Boca, D (2003). <span data-astro-cid-oer3kof4>Why are fertility and participation rates so low in Italy (and Southern Europe)?</span>. .</span></li><li id="bib26" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Del Boca, D, Aaberge, R, Colombino, U, Ermish, J, Francesconi, M, Pasqua, S, Strom, S (2006). <em data-astro-cid-oer3kof4>Labour market participation of women and fertility: the effect of social policies</em>. Mimeo: University of Turin.</span></li><li id="bib27" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Del Boca, D, Vuri, D (2007). <span data-astro-cid-oer3kof4>The mismatch between employment and child care in Italy: the impact of rationing</span>. <em data-astro-cid-oer3kof4>Journal of Population Economics</em>, <strong data-astro-cid-oer3kof4>20</strong>, 805–832.</span></li><li id="bib28" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Devicienti, F, Poggi, A (2011). <span data-astro-cid-oer3kof4>Poverty and social exclusion: two sides of the same coin or dynamically interrelated processes?</span>. <em data-astro-cid-oer3kof4>Applied Economics</em>, <strong data-astro-cid-oer3kof4>43</strong>, 3549–3571.</span></li><li id="bib29" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2005). <em data-astro-cid-oer3kof4>The continuity of indicators during the transition between ECHP and EU-SILC</em>. Luxembourg: Office for Official Publications of the European Communities.</span></li><li id="bib30" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Galler, H (1995). <span data-astro-cid-oer3kof4>Household Demography and Household Modeling</span>.</span></li><li id="bib31" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Gershuny, J, Robinson, JP (1988). <span data-astro-cid-oer3kof4>Historical Changes in the Household Division of Labor</span>. <em data-astro-cid-oer3kof4>Demography</em>, <strong data-astro-cid-oer3kof4>25</strong>, 537–552.</span></li><li id="bib32" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Gu, Y, Fiebig, DG, Cripps, E, Kohn, R (2009). <span data-astro-cid-oer3kof4>Bayesian estimation of a random effects heteroscedastic probit model</span>. <em data-astro-cid-oer3kof4>The Econometrics Journal</em>, <strong data-astro-cid-oer3kof4>12</strong>, 324–339.</span></li><li id="bib33" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Haan, P (2006). <span data-astro-cid-oer3kof4>Slowly, But Changing: How Does Genuine State Dependency Affect Female Labor Supply On The Extensive and Intensive Margin. JEPS Working Papers. No. 06-002, JEPS</span>.</span></li><li id="bib34" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hahn, J (2001). <span data-astro-cid-oer3kof4>The information bound of a dynamic panel logit model with fixed effects</span>. <em data-astro-cid-oer3kof4>Econometric Theory</em>, <strong data-astro-cid-oer3kof4>17</strong>, 913–932.</span></li><li id="bib35" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hahn, J (1999). <span data-astro-cid-oer3kof4>How informative is the initial condition in the dynamic panel data model with fixed effects?</span>. <em data-astro-cid-oer3kof4>Journal of Econometrics</em>, <strong data-astro-cid-oer3kof4>93</strong>, 309–326.</span></li><li id="bib36" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Heckman, JJ (1981). <span data-astro-cid-oer3kof4>Studies in Labor Markets</span>.</span></li><li id="bib37" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Heckman, JJ (1981). <span data-astro-cid-oer3kof4>The incidental parameters problem and the problem of initial conditions in estimating a discrete time-discrete data stochastic process”</span>. In Manski, CF, McFadden, D (Eds.), <em data-astro-cid-oer3kof4>Structural Analysis of Discrete Data with Econometric Applications</em> (pp. 114–178). Cambridge, MA: MIT Press.</span></li><li id="bib38" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hoderlein, S, Mammen, E, Yu, K (2011). <span data-astro-cid-oer3kof4>Nonparametric models in Binary choice fixed effects panel data</span>. <em data-astro-cid-oer3kof4>Econometrics Journal</em>, <strong data-astro-cid-oer3kof4>14</strong>, 351–367.</span></li><li id="bib39" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Honoré, B, Tamer, E (2004). <em data-astro-cid-oer3kof4>Bounds on parameters in dynamic discrete choice models. CAM Working paper 2004-23</em>. Bounds on parameters in dynamic discrete choice models. CAM Working paper 2004-23.</span></li><li id="bib40" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Honoré, BE, Kyriazidou, E (2010). <span data-astro-cid-oer3kof4>Panel data discrete choice models with lagged dependent variables</span>. <em data-astro-cid-oer3kof4>Econometrica</em>, <strong data-astro-cid-oer3kof4>68</strong>, 839–874.</span></li><li id="bib41" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Honoré, BE (2002). <em data-astro-cid-oer3kof4>Non-linear models with panel data. Centre for Microdata Methods and Practice. Working paper CWP 13/02</em>. Non-linear models with panel data. Centre for Microdata Methods and Practice. Working paper CWP 13/02.</span></li><li id="bib42" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Honoré, BE (1993). <span data-astro-cid-oer3kof4>Orthogonality conditions for Tobit models with fixed effects and lagged dependent variables.</span>. <em data-astro-cid-oer3kof4>Journal of Econometrics</em>, <strong data-astro-cid-oer3kof4>59</strong>, 35–61.</span></li><li id="bib43" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hsiao, C (1986). <em data-astro-cid-oer3kof4>Analysis of Panel Data</em>. Cambridge: Cambridge University Press.</span></li><li id="bib44" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Li, J, O’Donoghue, C (2012). <span data-astro-cid-oer3kof4>A survey of dynamic microsimulation models: uses, model structure and methodology</span>. <em data-astro-cid-oer3kof4>International Journal of Microsimulation</em>, <strong data-astro-cid-oer3kof4>6</strong>, 3–55.</span></li><li id="bib45" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Li, J, O’Donoghue, C (2014). <span data-astro-cid-oer3kof4>Evaluating Binary Alignment Methods in Microsimulation Models</span>. <em data-astro-cid-oer3kof4>Journal of Artifical Societies and Social Simulation</em>, <strong data-astro-cid-oer3kof4>17</strong>.</span></li><li id="bib46" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Lo Conte, M, Prati, S (2003). <span data-astro-cid-oer3kof4>Maternità e partecipazione femminile al mercato del lavoro. Un’analisi della situazione professionale delle neo-madri</span>.</span></li><li id="bib47" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mencarini, L, Tanturri, ML (2006). <span data-astro-cid-oer3kof4>High Fertility or Childlessness: Micro-Level Determinants of Reproductive Behaviour in Italy</span>. <em data-astro-cid-oer3kof4>Population</em>, <strong data-astro-cid-oer3kof4>61</strong>, 389–416.</span></li><li id="bib48" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Morciano, M (2007). <span data-astro-cid-oer3kof4>Un modello di microsimulazione a popolazione dinamica per l’analisi del sistema di protezione sociale italiano</span>.</span></li><li id="bib49" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mundlak, Y (1978). <span data-astro-cid-oer3kof4>On the pooling of time series and cross section data</span>. <em data-astro-cid-oer3kof4>Econometrica</em>, <strong data-astro-cid-oer3kof4>46</strong>, 69–85.</span></li><li id="bib50" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Orme, CD (2001). <em data-astro-cid-oer3kof4>Two-step inference in dynamic non-linear panel data models</em>. Mimeo: University of Manchester.</span></li><li id="bib51" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Pacifico, D (2009). <em data-astro-cid-oer3kof4>On the role of unobserved preference heterogeneity in discrete choice models of labor supply”. MPRA Paper 19030</em>. On the role of unobserved preference heterogeneity in discrete choice models of labor supply”. MPRA Paper 19030.</span></li><li id="bib52" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Panis, CW (2003). <em data-astro-cid-oer3kof4>Microsimulations in the presence of heterogeneity”. University of Michigan Retirement Research Center Working Paper 2003-048</em>. Microsimulations in the presence of heterogeneity”. University of Michigan Retirement Research Center Working Paper 2003-048.</span></li><li id="bib53" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2004). <span data-astro-cid-oer3kof4>Le tendenze di medio-lungo periodo del sistema pensionistico e sanitario. Rapporto n. 6</span>.</span></li><li id="bib54" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2005). <span data-astro-cid-oer3kof4>Le tendenze di medio-lungo periodo del sistema pensionistico e sanitario. Rapporto n. 7</span>.</span></li><li id="bib55" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2006). <span data-astro-cid-oer3kof4>Le tendenze di medio-lungo periodo del sistema pensionistico e sanitario. Rapporto n. 8</span>.</span></li><li id="bib56" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Richiardi, M (2014). <span data-astro-cid-oer3kof4>Forecasting with Unobserved Heterogeneity, Mimeo. Previous version. LABORatororio Revelli Working Paper</span>.</span></li><li id="bib57" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Richiardi, M, Poggi, A (2012). <span data-astro-cid-oer3kof4>Imputing Individual Effects in Dynamic Microsimulation Models. An application of the Rank Method.. LABORatororio Revelli Working Paper</span>.</span></li><li id="bib58" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Rondinelli, C, Zizza, R (2011). <em data-astro-cid-oer3kof4>(Non)persistent effects of fertility on female labour supply. Working paper No. 2011-04</em>. (Non)persistent effects of fertility on female labour supply. Working paper No. 2011-04.</span></li><li id="bib59" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2008). <em data-astro-cid-oer3kof4>L’Università in cifre 2007</em>. Roma: Ministero dell’Università e della Ricerca.</span></li><li id="bib60" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2006). <em data-astro-cid-oer3kof4>La dispersione scolastica: indicatori di base per l’analisi del fenomeno. Anno Scolastico 2004-2005</em>. Roma: Ministero dell’Università e della Ricerca.</span></li><li id="bib61" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Val, F (2009). <span data-astro-cid-oer3kof4>Fixed effects estimation of structural parameters and marginal effects in panel probit modles</span>. <em data-astro-cid-oer3kof4>Journal of Econometrics</em>, <strong data-astro-cid-oer3kof4>150</strong>, 71–85.</span></li><li id="bib62" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Van Soest, A (1995). <span data-astro-cid-oer3kof4>Structural Models of Family Labor Supply: A Discrete Choice Approach</span>. <em data-astro-cid-oer3kof4>Journal of Human Resources</em>, <strong data-astro-cid-oer3kof4>30</strong>, 63–88.</span></li><li id="bib63" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Wolf, DA (2001). <span data-astro-cid-oer3kof4>The Role of Microsimulation in Longitudinal Data Analysis</span>. <em data-astro-cid-oer3kof4>Canadian Studies in Population Special Issue on Longitudinal Methodology</em>, <strong data-astro-cid-oer3kof4>28</strong>, 313–339.</span></li><li id="bib64" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Wooldridge, JM (2005). <span data-astro-cid-oer3kof4>Identification and Inference for Econometric Models: Essays in Honor of Thomas Rothenberg</span>.</span></li><li id="bib65" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Wooldridge, JM (2005). <span data-astro-cid-oer3kof4>Simple solutions to the initial conditions problem in dynamic, nonlinear panel data models with unobserved heterogeneity</span>. <em data-astro-cid-oer3kof4>Journal of Applied Econometrics</em>, <strong data-astro-cid-oer3kof4>20</strong>, 39–54.</span></li><li id="bib66" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Yatchew, A, Griliches, Z (1985). <span data-astro-cid-oer3kof4>Specification Error in Probit Models</span>. <em data-astro-cid-oer3kof4>The Review of Economics and Statistics</em>, <strong data-astro-cid-oer3kof4>67</strong>, 134–39.</span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Matteo Richiardi</h4><ul class="article-info__affiliations" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a>Institute for New Economic Thinking, University of Oxford Nuffield College, United Kingdom</li><li data-astro-cid-m3fa5h5a>Collegio Carlo Alberto and LABORatorio Revelli, Italy</li></ul><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:matteo.richiardi@maths.ox.ac.uk" data-astro-cid-m3fa5h5a>matteo.richiardi@maths.ox.ac.uk</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Ambra Poggi</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>LABORatorio Revelli, University of Milan-Bicocca, Italy</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:ambra.poggi@unimib.it" data-astro-cid-m3fa5h5a>ambra.poggi@unimib.it</a></p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Acknowledgements</h3><p data-astro-cid-m3fa5h5a>Matteo Richiardi gratefully acknowledges financial support from Collegio Carlo Alberto and Regione Piemonte within the research projects “Causes, Processes and Consequences of Flexsecurity Reform in the EU: Lesson from Bismarckian Countries” (Collegio Carlo Alberto) and “From Work to Health and Back: The Right to a Healthy Working Life in a Changing Society” (Regione Piemonte and Collegio Carlo Alberto). The paper benefited from comments by participants at the 2011 International Microsimulation Association conference in Dublin, the 2011 Italian Economic Association (SIE) in Rome, the 2011 Italian Labour Economists Association in Milan, the 2012 CSDA International Conference on Computational and Financial Econometrics in Oviedo, by seminar attendants at Collegio Carlo Alberto in 2013 and by three anonymous referees.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00099" data-astro-cid-m3fa5h5a>Version of Record published: August 31, 2014 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2014, Richiardi and Poggi</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/methodology" data-pagefind-filter="Research category:Methodology" data-astro-cid-m3fa5h5a>Methodology</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/labour-supply-demand" data-pagefind-filter="Research category:Labour supply and demand" data-astro-cid-m3fa5h5a>Labour supply and demand</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/dynamic-microsimulation" data-pagefind-filter="Research category:Dynamic microsimulation" data-astro-cid-m3fa5h5a>Dynamic microsimulation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=dynamic%20microsimulation" data-astro-cid-m3fa5h5a>dynamic microsimulation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=unobserved%20heterogeneity" data-astro-cid-m3fa5h5a>unobserved heterogeneity</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=validation" data-astro-cid-m3fa5h5a>validation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=Rank%20method" data-astro-cid-m3fa5h5a>Rank method</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=assignment%20algorithms" data-astro-cid-m3fa5h5a>assignment algorithms</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=female%20labour%20force%20participation" data-astro-cid-m3fa5h5a>female labour force participation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=Italy" data-astro-cid-m3fa5h5a>Italy</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

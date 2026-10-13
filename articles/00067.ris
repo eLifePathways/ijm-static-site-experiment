@@ -1,0 +1,21 @@
+TY  - JOUR
+TI  - Simulating histories within dynamic microsimulation models
+AU  - Li, Jinjing
+AU  - O’Donoghue, Cathal
+VL  - 5
+IS  - 1
+PY  - 2012
+DA  - 2012/06/30
+SP  - 52-76
+C1  - IJM 2012;5(1):52-76
+DO  - 10.34196/ijm.00067
+UR  - https://doi.org/10.34196/ijm.00067
+AB  - Constructing a base dataset is one of the most important elements in the dynamic microsimulation modelling. However, the access to a long historical panel is usually restricted for many reasons. This paper aims to develop a back simulation method that has the potential to generate a consistent synthetic history panel based on a typical household survey dataset with some complementary statistics. The model uses Living in Ireland (LU) household survey as an example to reconstruct the individual labour market trajectory since 1939. The overall results of the simulated panel have been proven sensible and consistent based on several validation tests. This method opens the possibility to further investigate into several fields of application such as life-cycle income analysis and pension reform evaluation, which typically requires the historical profile of individuals and has traditionally been difficult to perform.
+KW  - microsimulation
+KW  - base dataset
+KW  - history simulation
+KW  - back simulation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

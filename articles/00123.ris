@@ -1,0 +1,26 @@
+TY  - JOUR
+TI  - Accounting for tax evasion profiles and tax expenditures in microsimulation modelling. The Betamod model for personal income taxes in Italy
+AU  - Albarea, Andrea
+AU  - Bernasconi, Michele
+AU  - Novi, Cinzia Di
+AU  - Marenzi, Anna
+AU  - Rizzi, Dino
+AU  - Zantomio, Francesca
+VL  - 8
+IS  - 3
+PY  - 2015
+DA  - 2015/12/31
+SP  - 99-136
+C1  - IJM 2015;8(3):99-136
+DO  - 10.34196/ijm.00123
+UR  - https://doi.org/10.34196/ijm.00123
+AB  - The paper presents the main characteristics of Betamod, a static microsimulation model that reproduces the Italian personal income tax (Irpef), as well as local income taxes, namely the regional and municipal surtaxes, building on a detailed reconstruction of tax legislation. With respect to the vast majority of existing tax microsimulation models, the peculiarities of Betamod concern two aspects: the inclusion of a detailed set of tax expenditures, and the estimation of individual-specific tax evasion rates, which account for the total individual income level, its composition in terms of income sources, and the geographical area of residence.
+KW  - tax-benefit microsimulation
+KW  - tax evasion
+KW  - tax expenditures
+KW  - SILC
+KW  - Italy
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

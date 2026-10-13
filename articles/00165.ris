@@ -1,0 +1,21 @@
+TY  - JOUR
+TI  - Solving a Partial Equilibrium Model in a CGE Framework: The Case of a Behavioural Microsimulation Model
+AU  - Zhang, Xiao-guang
+VL  - 10
+IS  - 3
+PY  - 2017
+DA  - 2017/12/31
+SP  - 27-58
+C1  - IJM 2017;10(3):27-58
+DO  - 10.34196/ijm.00165
+UR  - https://doi.org/10.34196/ijm.00165
+AB  - This paper presents a simple approach to wrapping a computable general equilibrium (CGE) model around a behavioural microsimulation (BMS) model. The approach is akin to decomposing an integrated CGE model into a partial equilibrium (PE) or a BMS model and a ‘residual’ CGE model. This is likely to improve the BMS analysis when changes in labour supply are projected to be large. Specifically, this paper outlines how a household module with many households can be separated from the CGE model and how the resulting PE sub-model and CGE model can be solved iteratively, so that the equilibrium is identical to that obtained with an equivalent fully integrated model. The paper focuses on two challenges that arise when linking and solving the two models: how to find a convergent solution and how to ensure that it is a true general equilibrium solution. This involves ensuring that databases and theory in both models are consistent and fit exactly with each other. Some cases may require the use of a temporary slack variable to facilitate convergence. The approach has the potential to extend the range and quality of the analysis of policy-relevant issues.
+KW  - CGE MODEL
+KW  - PARTIAL EQUILIBRIUM MODEL
+KW  - MICROSIMULATION MODEL
+KW  - C63
+KW  - C68
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

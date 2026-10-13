@@ -1,0 +1,1805 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Figures and data in Calibration of Vehicle and Driver Characteristics in VISSIM and ANN-based Sensitivity Analysis | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00219/figures"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.figures-page__summary[data-astro-cid-uy5dlehv]{color:var(--color-ink-muted);margin-block-end:var(--space-m)}@media (width>=75em){.article-content-grid[data-astro-cid-uy5dlehv]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-astro-cid-uy5dlehv><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/transport" data-astro-cid-ak4gb66a>Transport</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Aug 31, 2020</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Calibration of Vehicle and Driver Characteristics in VISSIM and ANN-based Sensitivity Analysis</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Marsh M Bandi, Varghese George</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>National Institute of Technology Karnataka, Surathkal, Mangalore, India</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/13-2/volume-13-2-summer-2020" data-astro-cid-ak4gb66a>Volume 13(2) Summer 2020</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> M. Bandi, V. George; 2020; <span data-astro-cid-ak4gb66a>Calibration of Vehicle and Driver Characteristics in VISSIM and ANN-based Sensitivity Analysis</span>; International Journal of Microsimulation; 13(2); 79–101. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00219" data-astro-cid-ak4gb66a>10.34196/ijm.00219</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>Traffic-flow modeling using microsimulation approaches facilitates the study of bottlenecks and assists in the analysis of traffic-flow characteristics, the movement of individual vehicles, and in the study of vehicle and driver characteristics. The present study focuses on performing investigations on assessing the influence of vehicle and driver characteristics on accurate prediction of traffic volumes in Mangalore city road network. The multi-stage first-level of calibrations were performed starting with default values of vehicle and driver characteristics followed by testing of various combinations. The accuracy of predicting simulated volumes was measured using GEH-statistic. An ANN-based sensitivity analysis was performed to find the relative importance of vehicle and driver characteristics, which revealed that the average standstill distance, minimum look-ahead distance, and the desired speed: lower bounds for speed distributions were highly sensitive. The second-level of calibrations were performed by fine-tuning these three characteristics in three stages and the final VISSIM model was validated.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00219/ijm-00219.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00219.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00219.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-uy5dlehv><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00219" class="view-tabs__link" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00219/figures" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#figures" data-astro-cid-twdwaz5s>Figures</a></li><li data-astro-cid-twdwaz5s><a href="#tables" data-astro-cid-twdwaz5s>Tables</a></li></ul></details></div><div class="article-content" data-astro-cid-uy5dlehv><p class="figures-page__summary" data-astro-cid-uy5dlehv>This article contains 3 figures and 9 tables.</p><details id="figures" class="article-section article-section--collapsible" open data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Figures</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00219-fig001.BiYvJGTk_Z5OrYT.webp" class="figure-lightbox-trigger" data-pswp-width="1791" data-pswp-height="1446" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00219-fig001.BiYvJGTk_Z5OrYT.webp" alt width="1791" height="1446" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> AutoCAD Drawing Interfaced with High-Resolution Map of Mangalore City.</span></figcaption></figure><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00219-fig002.BLZ863u0_Z1d0EKq.webp" class="figure-lightbox-trigger" data-pswp-width="1791" data-pswp-height="990" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00219-fig002.BLZ863u0_Z1d0EKq.webp" alt width="1791" height="990" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> A Pictorial Representation of Observed and Predicted Volumes at 18 mid-block Sections Using Random Seeds 25, 28, 42, and 50.</span></figcaption></figure><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00219-fig003.jkxaWfK8_Z2nlSCr.webp" class="figure-lightbox-trigger" data-pswp-width="1791" data-pswp-height="1054" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00219-fig003.jkxaWfK8_Z2nlSCr.webp" alt width="1791" height="1054" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> A Pictorial Representation of the Reduction in MAEs for Various Stages of Calibration Using Random Seed 42.</span></figcaption></figure></div></details><details id="tables" class="article-section article-section--collapsible" data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Tables</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Suggested Lower and Upper Bound Values for Vehicle and Driver Characteristics Used in Performing Simulation Trials in VISSIM.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Sl. No.</th>
+<th align="left">Vehicle and Driver Characteristics</th>
+<th align="left">Operating Value Range</th>
+<th align="left">Best performing simulation runs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left">Minimum Lateral Clearance (m)</td>
+<td align="left">0.25 - 1.0</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">2a</td>
+<td align="left">Distributions for Desired Acceleration (m/s<sup>2</sup>)</td>
+<td align="left">0.5 - 4.4</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">2b</td>
+<td align="left">Distributions for Maximum Acceleration (m/s<sup>2</sup>)</td>
+<td align="left">1.0 - 4.4</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">2c</td>
+<td align="left">Distributions for Deceleration (m/s<sup>2</sup>)</td>
+<td align="left">2.5 - 8.0</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">3a</td>
+<td align="left">Distributions for Desired Acceleration (m/s<sup>2</sup>)</td>
+<td align="left">0.5 - 4.4</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">3b</td>
+<td align="left">Distributions for Maximum Acceleration (m/s<sup>2</sup>)</td>
+<td align="left">1.0 - 4.4</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">Minimum Look-ahead Distance (m)</td>
+<td align="left">10 - 50</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">Distributions for Maximum Acceleration (m/s<sup>2</sup>)</td>
+<td align="left">1.0 - 4.4</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">Distributions for Desired Acceleration (m/s<sup>2</sup>)</td>
+<td align="left">0.5 - 4.4</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">7a</td>
+<td align="left">Distributions for Desired Speed (kmph) - Lower Bound</td>
+<td align="left">21.9 - 72.3</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">7b</td>
+<td align="left">Distributions for Desired Speed (kmph) - Upper Bound</td>
+<td align="left">21.9 - 72.3</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">Minimum Look-back Distance (m) for car-following</td>
+<td align="left">10.0 - 50.0</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">Average Standstill Distance (m) for car-following</td>
+<td align="left">0.5 - 2.5</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">Additive Part of Desired Safety Distance (m) for car-following</td>
+<td align="left">0.2 - 2.0</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="left">Multiplicative Part of Desired Safety Distance (m) for car-following</td>
+<td align="left">0.2 - 3.0</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left">Time-between Direction Changes (s) for overtaking</td>
+<td align="left">1.0 - 10.0</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left">Minimum Longitudinal Speed (kmph) for lane change</td>
+<td align="left">1.1 - 3.6</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td align="left">Minimum Collision Time-gain for lateral driving behavior (s)</td>
+<td align="left">0.40 - 2.0</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Total simulation runs in the first-level calibrations</td>
+<td align="left"/>
+<td align="left">90</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Authors own creation.</p></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> A Partial Listing of the Normalized Database Used for Training the ANN Model.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" colspan="16">Details on Data Set for Sensitivity Analysis for Vehicle and Driver Characteristics</th>
+</tr>
+<tr>
+<th align="left">First-level of Calibration Stage Sl. No.</th>
+<th align="left">Minimum Lateral Clearances (m)</th>
+<th align="left">Desired Accelerations at Desired Speed of 50 kmph (m/s<sup>2</sup>)</th>
+<th align="left">Maximum Accelerations at Desired Speed of 50 kmph (m/s<sup>2</sup>)</th>
+<th align="left">Deceleration Distribution (m/s<sup>2</sup>)</th>
+<th align="left">Weighted Average of Speed Distribution Lower-Bounds (kmph)</th>
+<th align="left">Weighted Average of Speed Distribution Upper-Bounds (kmph)</th>
+<th align="left">Minimum Look-ahead Distances (m)</th>
+<th align="left">Minimum Look-back Distances (m)</th>
+<th align="left">Average Standstill Distances (m)</th>
+<th align="left">Additive Part of Desired Safety Distances (m)</th>
+<th align="left">Multiplicative Part of Desired Safety Distances (m)</th>
+<th align="left">Time-Between Direction Changes (s)</th>
+<th align="left">Minimum Longitudinal Speeds (kmph)</th>
+<th align="left">Minimum Collision Time-gains (s)</th>
+<th align="left">Mean Absolute Errors (%)</th>
+</tr>
+<tr>
+<th align="left">(1)</th>
+<th align="left">(2)</th>
+<th align="left">(3)</th>
+<th align="left">(4)</th>
+<th align="left">(5)</th>
+<th align="left">(6)</th>
+<th align="left">(7)</th>
+<th align="left">(8)</th>
+<th align="left">(9)</th>
+<th align="left">(10)</th>
+<th align="left">(11)</th>
+<th align="left">(12)</th>
+<th align="left">(13)</th>
+<th align="left">(14)</th>
+<th align="left">(15)</th>
+<th align="left">(16)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Ini--tial</td>
+<td align="left">1.00</td>
+<td align="left">0.432</td>
+<td align="left">0.432</td>
+<td align="left">0.335</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left" rowspan="5" valign="bottom">1</td>
+<td align="left">0.50</td>
+<td align="left">0.432</td>
+<td align="left">0.432</td>
+<td align="left">0.335</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">0.25</td>
+<td align="left">0.432</td>
+<td align="left">0.432</td>
+<td align="left">0.335</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">0.75</td>
+<td align="left">0.432</td>
+<td align="left">0.432</td>
+<td align="left">0.335</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">0.65</td>
+<td align="left">0.432</td>
+<td align="left">0.432</td>
+<td align="left">0.335</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">0.85</td>
+<td align="left">0.432</td>
+<td align="left">0.432</td>
+<td align="left">0.335</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left" rowspan="5" valign="bottom">2a</td>
+<td align="left">0.50</td>
+<td align="left">0.159</td>
+<td align="left">0.432</td>
+<td align="left">0.335</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.295</td>
+<td align="left">0.432</td>
+<td align="left">0.335</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.409</td>
+<td align="left">0.432</td>
+<td align="left">0.335</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.455</td>
+<td align="left">0.432</td>
+<td align="left">0.335</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.114</td>
+<td align="left">0.432</td>
+<td align="left">0.335</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left" rowspan="5" valign="bottom">2b</td>
+<td align="left">0.50</td>
+<td align="left">0.159</td>
+<td align="left">0.295</td>
+<td align="left">0.335</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.159</td>
+<td align="left">0.568</td>
+<td align="left">0.335</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.159</td>
+<td align="left">0.705</td>
+<td align="left">0.335</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.159</td>
+<td align="left">0.705</td>
+<td align="left">0.335</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.159</td>
+<td align="left">0.250</td>
+<td align="left">0.335</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left" rowspan="5" valign="bottom">2c</td>
+<td align="left">0.50</td>
+<td align="left">0.159</td>
+<td align="left">0.295</td>
+<td align="left">0.334</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.159</td>
+<td align="left">0.295</td>
+<td align="left">0.675</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.159</td>
+<td align="left">0.295</td>
+<td align="left">0.738</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.159</td>
+<td align="left">0.295</td>
+<td align="left">1.000</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.159</td>
+<td align="left">0.295</td>
+<td align="left">0.313</td>
+<td align="left">0.96</td>
+<td align="left">0.69</td>
+<td align="left">0.20</td>
+<td align="left">0.20</td>
+<td align="left">0.80</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.10</td>
+<td align="left">1.00</td>
+<td align="left">1.00</td>
+<td align="left">0.9653</td>
+</tr>
+<tr>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+<td align="left">-</td>
+</tr>
+<tr>
+<td align="left" rowspan="5" valign="bottom">13</td>
+<td align="left">0.50</td>
+<td align="left">0.341</td>
+<td align="left">0.341</td>
+<td align="left">0.334</td>
+<td align="left">0.61</td>
+<td align="left">0.86</td>
+<td align="left">0.80</td>
+<td align="left">0.60</td>
+<td align="left">0.40</td>
+<td align="left">0.20</td>
+<td align="left">0.17</td>
+<td align="left">0.50</td>
+<td align="left">0.53</td>
+<td align="left">1.00</td>
+<td align="left">0.2948</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.341</td>
+<td align="left">0.341</td>
+<td align="left">0.334</td>
+<td align="left">0.61</td>
+<td align="left">0.86</td>
+<td align="left">0.80</td>
+<td align="left">0.60</td>
+<td align="left">0.40</td>
+<td align="left">0.20</td>
+<td align="left">0.17</td>
+<td align="left">0.50</td>
+<td align="left">0.83</td>
+<td align="left">1.00</td>
+<td align="left">0.3295</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.341</td>
+<td align="left">0.341</td>
+<td align="left">0.334</td>
+<td align="left">0.61</td>
+<td align="left">0.86</td>
+<td align="left">0.80</td>
+<td align="left">0.60</td>
+<td align="left">0.40</td>
+<td align="left">0.20</td>
+<td align="left">0.17</td>
+<td align="left">0.50</td>
+<td align="left">0.67</td>
+<td align="left">1.00</td>
+<td align="left">0.3295</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.341</td>
+<td align="left">0.341</td>
+<td align="left">0.334</td>
+<td align="left">0.61</td>
+<td align="left">0.86</td>
+<td align="left">0.80</td>
+<td align="left">0.60</td>
+<td align="left">0.40</td>
+<td align="left">0.20</td>
+<td align="left">0.17</td>
+<td align="left">0.50</td>
+<td align="left">0.42</td>
+<td align="left">1.00</td>
+<td align="left">0.3035</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.341</td>
+<td align="left">0.341</td>
+<td align="left">0.334</td>
+<td align="left">0.61</td>
+<td align="left">0.86</td>
+<td align="left">0.80</td>
+<td align="left">0.60</td>
+<td align="left">0.40</td>
+<td align="left">0.20</td>
+<td align="left">0.17</td>
+<td align="left">0.50</td>
+<td align="left">0.31</td>
+<td align="left">1.00</td>
+<td align="left">0.3064</td>
+</tr>
+<tr>
+<td align="left" rowspan="5">14</td>
+<td align="left">0.50</td>
+<td align="left">0.341</td>
+<td align="left">0.341</td>
+<td align="left">0.334</td>
+<td align="left">0.61</td>
+<td align="left">0.86</td>
+<td align="left">0.80</td>
+<td align="left">0.60</td>
+<td align="left">0.40</td>
+<td align="left">0.20</td>
+<td align="left">0.17</td>
+<td align="left">0.50</td>
+<td align="left">0.53</td>
+<td align="left">0.29</td>
+<td align="left">0.2775</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.341</td>
+<td align="left">0.341</td>
+<td align="left">0.334</td>
+<td align="left">0.61</td>
+<td align="left">0.86</td>
+<td align="left">0.80</td>
+<td align="left">0.60</td>
+<td align="left">0.40</td>
+<td align="left">0.20</td>
+<td align="left">0.17</td>
+<td align="left">0.50</td>
+<td align="left">0.53</td>
+<td align="left">0.20</td>
+<td align="left">0.2948</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.341</td>
+<td align="left">0.341</td>
+<td align="left">0.334</td>
+<td align="left">0.61</td>
+<td align="left">0.86</td>
+<td align="left">0.80</td>
+<td align="left">0.60</td>
+<td align="left">0.40</td>
+<td align="left">0.20</td>
+<td align="left">0.17</td>
+<td align="left">0.50</td>
+<td align="left">0.53</td>
+<td align="left">0.40</td>
+<td align="left">0.3006</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.341</td>
+<td align="left">0.341</td>
+<td align="left">0.334</td>
+<td align="left">0.61</td>
+<td align="left">0.86</td>
+<td align="left">0.80</td>
+<td align="left">0.60</td>
+<td align="left">0.40</td>
+<td align="left">0.20</td>
+<td align="left">0.17</td>
+<td align="left">0.50</td>
+<td align="left">0.53</td>
+<td align="left">0.75</td>
+<td align="left">0.3266</td>
+</tr>
+<tr>
+<td align="left">0.50</td>
+<td align="left">0.341</td>
+<td align="left">0.341</td>
+<td align="left">0.334</td>
+<td align="left">0.61</td>
+<td align="left">0.86</td>
+<td align="left">0.80</td>
+<td align="left">0.60</td>
+<td align="left">0.40</td>
+<td align="left">0.20</td>
+<td align="left">0.17</td>
+<td align="left">0.50</td>
+<td align="left">0.53</td>
+<td align="left">0.55</td>
+<td align="left">0.2861</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Authors own creation.</p></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Details on Tests for Identifying the Ideal ANN Configuration.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" rowspan="2">Test Serial No.</th>
+<th align="left" colspan="3">Number of Neurons in the Hidden Layers</th>
+<th align="left" rowspan="2">Mean Absolute Error (<i>MAE</i>) in Prediction(%)</th>
+<th align="left" rowspan="2">Number of training cycles for convergence</th>
+</tr>
+<tr>
+<th align="left">HiddenLayerNo: 1</th>
+<th align="left">HiddenLayerNo: 2</th>
+<th align="left">HiddenLayerNo: 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left">15</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">3.8075</td>
+<td align="left">10751</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">14</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">3.7303</td>
+<td align="left">11407</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">13</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">3.9456</td>
+<td align="left">10276</td>
+</tr>
+<tr>
+<td align="left">
+<b>*</b>4</td>
+<td align="left">
+<b>12</b>
+</td>
+<td align="left">
+<b>0</b>
+</td>
+<td align="left">
+<b>0</b>
+</td>
+<td align="left">
+<b>3.0979</b>
+</td>
+<td align="left">
+<b>11184</b>
+</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">11</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">3.7925</td>
+<td align="left">11265</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">10</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">3.4415</td>
+<td align="left">10138</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">9</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">3.2023</td>
+<td align="left">11312</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">8</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">3.7263</td>
+<td align="left">10015</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">7</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">3.4304</td>
+<td align="left">10864</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">3.7916</td>
+<td align="left">10319</td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">3.7277</td>
+<td align="left">9677</td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">3.7169</td>
+<td align="left">6234</td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left">12</td>
+<td align="left">12</td>
+<td align="left">0</td>
+<td align="left">3.6959</td>
+<td align="left">5407</td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td align="left">12</td>
+<td align="left">11</td>
+<td align="left">0</td>
+<td align="left">3.4819</td>
+<td align="left">4803</td>
+</tr>
+<tr>
+<td align="left">15</td>
+<td align="left">12</td>
+<td align="left">10</td>
+<td align="left">0</td>
+<td align="left">3.8747</td>
+<td align="left">3468</td>
+</tr>
+<tr>
+<td align="left">16</td>
+<td align="left">12</td>
+<td align="left">9</td>
+<td align="left">0</td>
+<td align="left">3.8354</td>
+<td align="left">6072</td>
+</tr>
+<tr>
+<td align="left">
+<b>*</b>17</td>
+<td align="left">
+<b>12</b>
+</td>
+<td align="left">
+<b>8</b>
+</td>
+<td align="left">
+<b>0</b>
+</td>
+<td align="left">
+<b>3.4290</b>
+</td>
+<td align="left">
+<b>4021</b>
+</td>
+</tr>
+<tr>
+<td align="left">18</td>
+<td align="left">12</td>
+<td align="left">7</td>
+<td align="left">0</td>
+<td align="left">3.4600</td>
+<td align="left">3548</td>
+</tr>
+<tr>
+<td align="left">19</td>
+<td align="left">12</td>
+<td align="left">6</td>
+<td align="left">0</td>
+<td align="left">3.6131</td>
+<td align="left">2984</td>
+</tr>
+<tr>
+<td align="left">20</td>
+<td align="left">12</td>
+<td align="left">5</td>
+<td align="left">0</td>
+<td align="left">4.3240</td>
+<td align="left">1353</td>
+</tr>
+<tr>
+<td align="left">21</td>
+<td align="left">12</td>
+<td align="left">4</td>
+<td align="left">0</td>
+<td align="left">3.9310</td>
+<td align="left">4506</td>
+</tr>
+<tr>
+<td align="left">22</td>
+<td align="left">12</td>
+<td align="left">3</td>
+<td align="left">0</td>
+<td align="left">5.4365</td>
+<td align="left">1231</td>
+</tr>
+<tr>
+<td align="left">23</td>
+<td align="left">12</td>
+<td align="left">2</td>
+<td align="left">0</td>
+<td align="left">5.3433</td>
+<td align="left">4619</td>
+</tr>
+<tr>
+<td align="left">24</td>
+<td align="left">12</td>
+<td align="left">8</td>
+<td align="left">8</td>
+<td align="left">3.5013</td>
+<td align="left">6229</td>
+</tr>
+<tr>
+<td align="left">25</td>
+<td align="left">12</td>
+<td align="left">8</td>
+<td align="left">7</td>
+<td align="left">3.0347</td>
+<td align="left">7672</td>
+</tr>
+<tr>
+<td align="left">26</td>
+<td align="left">12</td>
+<td align="left">8</td>
+<td align="left">6</td>
+<td align="left">3.5135</td>
+<td align="left">9181</td>
+</tr>
+<tr>
+<td align="left">27</td>
+<td align="left">12</td>
+<td align="left">8</td>
+<td align="left">5</td>
+<td align="left">4.2408</td>
+<td align="left">2670</td>
+</tr>
+<tr>
+<td align="left">
+<b>*</b>28</td>
+<td align="left">
+<b>12</b>
+</td>
+<td align="left">
+<b>8</b>
+</td>
+<td align="left">
+<b>4</b>
+</td>
+<td align="left">
+<b>2.9404</b>
+</td>
+<td align="left">
+<b>5261</b>
+</td>
+</tr>
+<tr>
+<td align="left">29</td>
+<td align="left">12</td>
+<td align="left">8</td>
+<td align="left">3</td>
+<td align="left">4.0352</td>
+<td align="left">2314</td>
+</tr>
+<tr>
+<td align="left">30</td>
+<td align="left">12</td>
+<td align="left">8</td>
+<td align="left">2</td>
+<td align="left">3.0703</td>
+<td align="left">16403</td>
+</tr>
+<tr>
+<td align="left">31</td>
+<td align="left">12</td>
+<td align="left">8</td>
+<td align="left">1</td>
+<td align="left">4.4979</td>
+<td align="left">3347</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Authors own creation.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Note: *Optimum <i>ANN</i> configurations for neurons organized in 1, 2, or 3 hidden layers. Target error = 0.1; Learning rate = 0.7; Momentum rate = 0.8; Number of neurons in the input layer = 14; Number of neurons in the output layer = 1.</p></div></figure><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Details of MAE, GEH, and RNSE at 18 Mid-Block Sections after Stage 14 of First-Level of Calibrations.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" colspan="2">Direction of Traffic Flow</th>
+<th align="left" rowspan="2">Simulated volume</th>
+<th align="left" rowspan="2">Observed volume</th>
+<th align="left" rowspan="2">Absolute Error (%)</th>
+<th align="left" rowspan="2">GEH Statistic</th>
+<th align="left" rowspan="2">RNSE Statistic</th>
+</tr>
+<tr>
+<th align="left">From</th>
+<th align="left">To</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Jyothi</td>
+<td align="left">Hampankatta</td>
+<td align="left">465</td>
+<td align="left">516</td>
+<td align="left">9.9</td>
+<td align="left">2.30</td>
+<td align="left">2.25</td>
+</tr>
+<tr>
+<td align="left">Hampankatta</td>
+<td align="left">Jyothi</td>
+<td align="left">431</td>
+<td align="left">464</td>
+<td align="left">7.1</td>
+<td align="left">1.56</td>
+<td align="left">1.53</td>
+</tr>
+<tr>
+<td align="left">PVS</td>
+<td align="left">Bunts</td>
+<td align="left">282</td>
+<td align="left">293</td>
+<td align="left">3.8</td>
+<td align="left">0.65</td>
+<td align="left">0.64</td>
+</tr>
+<tr>
+<td align="left">Bunts</td>
+<td align="left">PVS</td>
+<td align="left">239</td>
+<td align="left">301</td>
+<td align="left">20.6</td>
+<td align="left">3.77</td>
+<td align="left">3.57</td>
+</tr>
+<tr>
+<td align="left">Navabharat</td>
+<td align="left">PVS</td>
+<td align="left">441</td>
+<td align="left">502</td>
+<td align="left">12.2</td>
+<td align="left">2.81</td>
+<td align="left">2.72</td>
+</tr>
+<tr>
+<td align="left">PVS</td>
+<td align="left">Navabharat</td>
+<td align="left">464</td>
+<td align="left">474</td>
+<td align="left">2.1</td>
+<td align="left">0.46</td>
+<td align="left">0.46</td>
+</tr>
+<tr>
+<td align="left">Hampankatta</td>
+<td align="left">Navabharat</td>
+<td align="left">382</td>
+<td align="left">445</td>
+<td align="left">14.2</td>
+<td align="left">3.10</td>
+<td align="left">2.99</td>
+</tr>
+<tr>
+<td align="left">Navabharat</td>
+<td align="left">Hampankatta</td>
+<td align="left">357</td>
+<td align="left">420</td>
+<td align="left">15.0</td>
+<td align="left">3.20</td>
+<td align="left">3.07</td>
+</tr>
+<tr>
+<td align="left">Jyothi</td>
+<td align="left">Bunts</td>
+<td align="left">343</td>
+<td align="left">404</td>
+<td align="left">15.1</td>
+<td align="left">3.16</td>
+<td align="left">3.03</td>
+</tr>
+<tr>
+<td align="left">Bunts</td>
+<td align="left">Jyothi</td>
+<td align="left">378</td>
+<td align="left">394</td>
+<td align="left">4.1</td>
+<td align="left">0.81</td>
+<td align="left">0.81</td>
+</tr>
+<tr>
+<td align="left">Jyothi</td>
+<td align="left">Balmatta</td>
+<td align="left">315</td>
+<td align="left">366</td>
+<td align="left">13.9</td>
+<td align="left">2.76</td>
+<td align="left">2.67</td>
+</tr>
+<tr>
+<td align="left">Balmatta</td>
+<td align="left">Jyothi</td>
+<td align="left">476</td>
+<td align="left">517</td>
+<td align="left">7.9</td>
+<td align="left">1.84</td>
+<td align="left">1.80</td>
+</tr>
+<tr>
+<td align="left">Balmatta</td>
+<td align="left">St. Theresa</td>
+<td align="left">132</td>
+<td align="left">142</td>
+<td align="left">7.0</td>
+<td align="left">0.85</td>
+<td align="left">0.84</td>
+</tr>
+<tr>
+<td align="left">St. Theresa</td>
+<td align="left">Balmatta</td>
+<td align="left">174</td>
+<td align="left">161</td>
+<td align="left">8.1</td>
+<td align="left">1.00</td>
+<td align="left">1.02</td>
+</tr>
+<tr>
+<td align="left">Bendoorwell</td>
+<td align="left">Balmatta</td>
+<td align="left">270</td>
+<td align="left">291</td>
+<td align="left">7.2</td>
+<td align="left">1.25</td>
+<td align="left">1.23</td>
+</tr>
+<tr>
+<td align="left">Balmatta</td>
+<td align="left">Bendoorwell</td>
+<td align="left">275</td>
+<td align="left">336</td>
+<td align="left">18.2</td>
+<td align="left">3.49</td>
+<td align="left">3.33</td>
+</tr>
+<tr>
+<td align="left">Bendoorwell</td>
+<td align="left">St. Theresa</td>
+<td align="left">241</td>
+<td align="left">241</td>
+<td align="left">0.0</td>
+<td align="left">0.00</td>
+<td align="left">0.00</td>
+</tr>
+<tr>
+<td align="left">St. Theresa</td>
+<td align="left">Bendoorwell</td>
+<td align="left">205</td>
+<td align="left">220</td>
+<td align="left">6.8</td>
+<td align="left">1.03</td>
+<td align="left">1.01</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"><i>MAE</i></td>
+<td align="left">9.6</td>
+<td align="left">1.89</td>
+<td align="left">1.83</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Authors own creation.</p></div></figure><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Summary of the MAE and the GEH at each Stage of Refinement in the First-Level of Calibrations.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Stages of Refinement</th>
+<th align="left">Mean Absolute Errors at the end of the stages (%)</th>
+<th align="left">Mean GEH Statistic</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Initial trial (default value)</td>
+<td align="left">33.4</td>
+<td align="left">7.06</td>
+</tr>
+<tr>
+<td align="left">Stage 1</td>
+<td align="left">33.4</td>
+<td align="left">7.06</td>
+</tr>
+<tr>
+<td align="left">Stages 2a, 2b, and 2c</td>
+<td align="left">33.4</td>
+<td align="left">7.06</td>
+</tr>
+<tr>
+<td align="left">Stages 3a and 3b</td>
+<td align="left">32.9</td>
+<td align="left">6.94</td>
+</tr>
+<tr>
+<td align="left">Stage 4</td>
+<td align="left">29.5</td>
+<td align="left">6.14</td>
+</tr>
+<tr>
+<td align="left">Stage 5</td>
+<td align="left">27.5</td>
+<td align="left">5.82</td>
+</tr>
+<tr>
+<td align="left">Stage 6</td>
+<td align="left">27.2</td>
+<td align="left">5.63</td>
+</tr>
+<tr>
+<td align="left">Stages 7a and 7b</td>
+<td align="left">24.5</td>
+<td align="left">5.12</td>
+</tr>
+<tr>
+<td align="left">Stage 8</td>
+<td align="left">22.4</td>
+<td align="left">4.65</td>
+</tr>
+<tr>
+<td align="left">Stage 9</td>
+<td align="left">20.1</td>
+<td align="left">4.08</td>
+</tr>
+<tr>
+<td align="left">Stage 10</td>
+<td align="left">13.8</td>
+<td align="left">2.74</td>
+</tr>
+<tr>
+<td align="left">Stage 11</td>
+<td align="left">10.3</td>
+<td align="left">2.05</td>
+</tr>
+<tr>
+<td align="left">Stage 12</td>
+<td align="left">10.3</td>
+<td align="left">2.01</td>
+</tr>
+<tr>
+<td align="left">Stage 13</td>
+<td align="left">10.2</td>
+<td align="left">1.97</td>
+</tr>
+<tr>
+<td align="left">Stage 14</td>
+<td align="left">9.6</td>
+<td align="left">1.89</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Authors own creation.</p></div></figure><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Summary of Values of Vehicle and Driver Characteristics at the End of First and Second-Levels of Calibrations.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" rowspan="2">Sl. No.</th>
+<th align="left" rowspan="2">Vehicle and Driver Characteristics</th>
+<th align="left" colspan="6">Calibrated Value</th>
+</tr>
+<tr>
+<th align="left">Car</th>
+<th align="left">MTW</th>
+<th align="left">Auto-rickshaw</th>
+<th align="left">LCV</th>
+<th align="left">Bus</th>
+<th align="left">Truck</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"/>
+<td align="left" colspan="7">Vehicle and Driver Characteristics at the End of First Level of Calibrations</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">Minimum Lateral Clearances (m)</td>
+<td align="left">0.5</td>
+<td align="left">0.5</td>
+<td align="left">0.5</td>
+<td align="left">0.5</td>
+<td align="left">0.5</td>
+<td align="left">0.5</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">Desired Accelerations at 50kmph (m/s<sup>2</sup>)</td>
+<td align="left">1.7</td>
+<td align="left">1.6</td>
+<td align="left">0.5</td>
+<td align="left">0.7</td>
+<td align="left">0.5</td>
+<td align="left">0.4</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">Maximum Accelerations at 50kmph (m/s<sup>2</sup>)</td>
+<td align="left">1.8</td>
+<td align="left">1.7</td>
+<td align="left">0.6</td>
+<td align="left">0.8</td>
+<td align="left">0.7</td>
+<td align="left">0.7</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">Deceleration Distributions (m/s<sup>2</sup>)</td>
+<td align="left">2.8</td>
+<td align="left">2.8</td>
+<td align="left">2.4</td>
+<td align="left">2.1</td>
+<td align="left">2.2</td>
+<td align="left">1.8</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">Desired Speed: Lower Bounds (kmph)</td>
+<td align="left">35</td>
+<td align="left">30</td>
+<td align="left">30</td>
+<td align="left">38</td>
+<td align="left">37</td>
+<td align="left">30</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">Desired Speed: Upper Bounds (kmph)</td>
+<td align="left">70</td>
+<td align="left">60</td>
+<td align="left">55</td>
+<td align="left">68</td>
+<td align="left">65</td>
+<td align="left">60</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">Minimum Look-ahead distances (m)</td>
+<td align="left">40</td>
+<td align="left">40</td>
+<td align="left">40</td>
+<td align="left">40</td>
+<td align="left">40</td>
+<td align="left">40</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">Minimum Look-back distances (m)</td>
+<td align="left">30</td>
+<td align="left">30</td>
+<td align="left">30</td>
+<td align="left">30</td>
+<td align="left">30</td>
+<td align="left">30</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">Average Stand Still Distances (m)</td>
+<td align="left">1.0</td>
+<td align="left">1.0</td>
+<td align="left">1.0</td>
+<td align="left">1.0</td>
+<td align="left">1.0</td>
+<td align="left">1.0</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">Additive Part of Desired Safety Distances (m)</td>
+<td align="left">0.4</td>
+<td align="left">0.4</td>
+<td align="left">0.4</td>
+<td align="left">0.4</td>
+<td align="left">0.4</td>
+<td align="left">0.4</td>
+</tr>
+<tr>
+<td align="left">11</td>
+<td align="left">Multiplicative Part of Desired Safety Distances (m)</td>
+<td align="left">0.5</td>
+<td align="left">0.5</td>
+<td align="left">0.5</td>
+<td align="left">0.5</td>
+<td align="left">0.5</td>
+<td align="left">0.5</td>
+</tr>
+<tr>
+<td align="left">12</td>
+<td align="left">Time-Between Direction Changes (s)</td>
+<td align="left">5.0</td>
+<td align="left">5.0</td>
+<td align="left">5.0</td>
+<td align="left">5.0</td>
+<td align="left">5.0</td>
+<td align="left">5.0</td>
+</tr>
+<tr>
+<td align="left">13</td>
+<td align="left">Minimum Longitudinal Speeds (kmph)</td>
+<td align="left">1.9</td>
+<td align="left">1.9</td>
+<td align="left">1.9</td>
+<td align="left">1.9</td>
+<td align="left">1.9</td>
+<td align="left">1.9</td>
+</tr>
+<tr>
+<td align="left">14</td>
+<td align="left">Minimum Collision Time-gains (s)</td>
+<td align="left">0.57</td>
+<td align="left">0.57</td>
+<td align="left">0.57</td>
+<td align="left">0.57</td>
+<td align="left">0.57</td>
+<td align="left">0.57</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left" colspan="7">Vehicle and Driver Characteristics Revised at the End of Second Level of Calibrations</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">Average Stand Still Distance (m)</td>
+<td align="left">0.4</td>
+<td align="left">0.4</td>
+<td align="left">0.4</td>
+<td align="left">0.4</td>
+<td align="left">0.4</td>
+<td align="left">0.4</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">Minimum Look-ahead distance (m)</td>
+<td align="left">25</td>
+<td align="left">20</td>
+<td align="left">20</td>
+<td align="left">25</td>
+<td align="left">30</td>
+<td align="left">30</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">Desired Speed: Lower Bounds (kmph)</td>
+<td align="left">35</td>
+<td align="left">30</td>
+<td align="left">30</td>
+<td align="left">30</td>
+<td align="left">37</td>
+<td align="left">30</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Authors own creation.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Notes. MTW = Motorized two- wheelers, LCV = Light commercial vehicles of gross weight lesser than 7.5 metric tonnes.</p></div></figure><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Computed Values of the Relative Importance of the Vehicle and Driver Characteristics Based on Sensitivity Analysis.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Vehicle and Driver Characteristics</th>
+<th align="left">Final Computed Values of Relative Importance(%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Average Standstill Distance (m)</td>
+<td align="left">36.03346781</td>
+</tr>
+<tr>
+<td align="left">Minimum Look-ahead Distance (m)</td>
+<td align="left">29.08247098</td>
+</tr>
+<tr>
+<td align="left">Desired Speed: Lower Bounds (kmph)</td>
+<td align="left">10.01939929</td>
+</tr>
+<tr>
+<td align="left">Additive Part of Desired Safety Distance (m)</td>
+<td align="left">6.018405862</td>
+</tr>
+<tr>
+<td align="left">Minimum Look-back Distance (m)</td>
+<td align="left">5.82585454</td>
+</tr>
+<tr>
+<td align="left">Desired Acceleration at Desired Speed of 50 kmph (m/s<sup>2</sup>)</td>
+<td align="left">4.047062691</td>
+</tr>
+<tr>
+<td align="left">Maximum Acceleration at Desired Speed of 50 kmph (m/s<sup>2</sup>)</td>
+<td align="left">3.425829983</td>
+</tr>
+<tr>
+<td align="left">Multiplicative Part of Desired Safety Distance (m)</td>
+<td align="left">1.990901583</td>
+</tr>
+<tr>
+<td align="left">Minimum Longitudinal Speed (kmph)</td>
+<td align="left">1.139688108</td>
+</tr>
+<tr>
+<td align="left">Minimum Collision Time-gain (s)</td>
+<td align="left">1.118960391</td>
+</tr>
+<tr>
+<td align="left">Desired Speed: Upper Bounds (kmph)</td>
+<td align="left">0.641713873</td>
+</tr>
+<tr>
+<td align="left">Minimum Lateral Clearance (m)</td>
+<td align="left">0.307529776</td>
+</tr>
+<tr>
+<td align="left">Time-Between Direction Change (s)</td>
+<td align="left">0.276678493</td>
+</tr>
+<tr>
+<td align="left">Deceleration Distribution (m/s<sup>2</sup>)</td>
+<td align="left">0.072036627</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Authors own creation.</p></div></figure><figure id="table8" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 8.</strong><span data-astro-cid-dzaleqsp> Details of MAE, GEH, and RNSE at 18 Mid-Block Sections for the Validated Model.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" colspan="2">Direction of Traffic Flow</th>
+<th align="left" rowspan="2">Simulated Volume</th>
+<th align="left" rowspan="2">Observed Volume</th>
+<th align="left" rowspan="2">Absolute Error (%)</th>
+<th align="left" rowspan="2">GEH Statistic</th>
+<th align="left" rowspan="2">RNSE Statistic</th>
+</tr>
+<tr>
+<th align="left">From</th>
+<th align="left">To</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Jyothi</td>
+<td align="left">Hampankatta</td>
+<td align="left">155</td>
+<td align="left">153</td>
+<td align="left">1.3</td>
+<td align="left">0.16</td>
+<td align="left">0.16</td>
+</tr>
+<tr>
+<td align="left">Hampankatta</td>
+<td align="left">Jyothi</td>
+<td align="left">146</td>
+<td align="left">167</td>
+<td align="left">12.6</td>
+<td align="left">1.68</td>
+<td align="left">1.63</td>
+</tr>
+<tr>
+<td align="left">PVS</td>
+<td align="left">Bunts</td>
+<td align="left">85</td>
+<td align="left">95</td>
+<td align="left">10.5</td>
+<td align="left">1.05</td>
+<td align="left">1.03</td>
+</tr>
+<tr>
+<td align="left">Bunts</td>
+<td align="left">PVS</td>
+<td align="left">77</td>
+<td align="left">94</td>
+<td align="left">18.1</td>
+<td align="left">1.84</td>
+<td align="left">1.75</td>
+</tr>
+<tr>
+<td align="left">Navabharat</td>
+<td align="left">PVS</td>
+<td align="left">147</td>
+<td align="left">164</td>
+<td align="left">10.4</td>
+<td align="left">1.36</td>
+<td align="left">1.33</td>
+</tr>
+<tr>
+<td align="left">PVS</td>
+<td align="left">Navabharat</td>
+<td align="left">129</td>
+<td align="left">184</td>
+<td align="left">29.9</td>
+<td align="left">4.40</td>
+<td align="left">4.05</td>
+</tr>
+<tr>
+<td align="left">Hampankatta</td>
+<td align="left">Navabharat</td>
+<td align="left">135</td>
+<td align="left">154</td>
+<td align="left">12.3</td>
+<td align="left">1.58</td>
+<td align="left">1.53</td>
+</tr>
+<tr>
+<td align="left">Navabharat</td>
+<td align="left">Hampankatta</td>
+<td align="left">117</td>
+<td align="left">105</td>
+<td align="left">11.4</td>
+<td align="left">1.14</td>
+<td align="left">1.17</td>
+</tr>
+<tr>
+<td align="left">Jyothi</td>
+<td align="left">Bunts</td>
+<td align="left">122</td>
+<td align="left">157</td>
+<td align="left">22.3</td>
+<td align="left">2.96</td>
+<td align="left">2.79</td>
+</tr>
+<tr>
+<td align="left">Bunts</td>
+<td align="left">Jyothi</td>
+<td align="left">136</td>
+<td align="left">108</td>
+<td align="left">25.9</td>
+<td align="left">2.54</td>
+<td align="left">2.69</td>
+</tr>
+<tr>
+<td align="left">Jyothi</td>
+<td align="left">Balmatta</td>
+<td align="left">106</td>
+<td align="left">115</td>
+<td align="left">7.8</td>
+<td align="left">0.86</td>
+<td align="left">0.84</td>
+</tr>
+<tr>
+<td align="left">Balmatta</td>
+<td align="left">Jyothi</td>
+<td align="left">169</td>
+<td align="left">155</td>
+<td align="left">9.0</td>
+<td align="left">1.10</td>
+<td align="left">1.12</td>
+</tr>
+<tr>
+<td align="left">Balmatta</td>
+<td align="left">St. Theresa</td>
+<td align="left">46</td>
+<td align="left">52</td>
+<td align="left">11.5</td>
+<td align="left">0.86</td>
+<td align="left">0.83</td>
+</tr>
+<tr>
+<td align="left">St. Theresa</td>
+<td align="left">Balmatta</td>
+<td align="left">61</td>
+<td align="left">50</td>
+<td align="left">22.0</td>
+<td align="left">1.48</td>
+<td align="left">1.56</td>
+</tr>
+<tr>
+<td align="left">Bendoorwell</td>
+<td align="left">Balmatta</td>
+<td align="left">99</td>
+<td align="left">91</td>
+<td align="left">8.8</td>
+<td align="left">0.82</td>
+<td align="left">0.84</td>
+</tr>
+<tr>
+<td align="left">Balmatta</td>
+<td align="left">Bendoorwell</td>
+<td align="left">96</td>
+<td align="left">110</td>
+<td align="left">12.7</td>
+<td align="left">1.38</td>
+<td align="left">1.33</td>
+</tr>
+<tr>
+<td align="left">Bendoorwell</td>
+<td align="left">St. Theresa</td>
+<td align="left">95</td>
+<td align="left">87</td>
+<td align="left">9.2</td>
+<td align="left">0.84</td>
+<td align="left">0.86</td>
+</tr>
+<tr>
+<td align="left">St. Theresa</td>
+<td align="left">Bendoorwell</td>
+<td align="left">70</td>
+<td align="left">79</td>
+<td align="left">11.4</td>
+<td align="left">1.04</td>
+<td align="left">1.01</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"><i>MAE</i></td>
+<td align="left">13.7</td>
+<td align="left">1.51</td>
+<td align="left">1.47</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Authors own creation.</p></div></figure><figure id="table9" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 9.</strong><span data-astro-cid-dzaleqsp> Calibrated Values for Characteristics later Refined at the End of the Second-Level of Calibrations, along with Comparisons to Related Studies in India, and Suggested Value Ranges for Simulation Trials.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" rowspan="2">Vehicle and Driver Characteristics</th>
+<th align="left" colspan="3">Suggested Values Ranges for Simulation</th>
+<th align="left" colspan="3">Calibrated Values after Second Level of Calibrations</th>
+</tr>
+<tr>
+<th align="left"><a href="#bib13">Siddharth and Ramadurai (2013)</a><a href="#T9_FN1">*</a></th>
+<th align="left"><a href="#bib12">Mathew and Radhakrishnan (2010)</a><a href="#T9_FN2">†</a></th>
+<th align="left">ThePresent Study‡</th>
+<th align="left"><a href="#bib13">Siddharth and Ramadurai (2013)</a><a href="#T9_FN1">*</a></th>
+<th align="left"><a href="#bib12">Mathew and Radhakrishnan (2010)</a><a href="#T9_FN2">†</a></th>
+<th align="left">ThePresent Study<a href="#T9_FN3">‡</a></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Minimum Look-ahead Distances (m)</td>
+<td align="left">10 - 30</td>
+<td align="left">-</td>
+<td align="left">10 - 50</td>
+<td align="left">27.91</td>
+<td align="left">-</td>
+<td align="left">20<a href="#T9_FN4">§</a>, 25<a href="#T9_FN4">§</a>, 30<a href="#T9_FN4">§</a></td>
+</tr>
+<tr>
+<td align="left">Minimum Look-back Distances (m)</td>
+<td align="left">10 - 30</td>
+<td align="left">-</td>
+<td align="left">10 - 50</td>
+<td align="left">14.31</td>
+<td align="left">-</td>
+<td align="left">30</td>
+</tr>
+<tr>
+<td align="left">Average Standstill Distances (m)</td>
+<td align="left">1.0 - 2.0</td>
+<td align="left">0.0 - 4.0</td>
+<td align="left">0.5 - 2.5</td>
+<td align="left">1.0</td>
+<td align="left">1.33</td>
+<td align="left">0.4</td>
+</tr>
+<tr>
+<td align="left">Additive Part of Safety Distances (m)</td>
+<td align="left">0.1 - 2.0</td>
+<td align="left">0.0 - 4.0</td>
+<td align="left">0.2 - 2.0</td>
+<td align="left">0.2</td>
+<td align="left">0.28</td>
+<td align="left">0.4</td>
+</tr>
+<tr>
+<td align="left">Multiplicative Part of Safety Distances (m)</td>
+<td align="left">0.0 - 3.0</td>
+<td align="left">0.0 - 5.0</td>
+<td align="left">0.2 - 3.0</td>
+<td align="left">0.78</td>
+<td align="left">0.16</td>
+<td align="left">0.5</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Authors own creation.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Based on studies performed in Chennai city, India.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Based on studies performed in Trivandrum city, India.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Based on studies performed in Mangalore city, India.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Minimum look-ahead distance of 20m for motorized two-wheelers and auto-rickshaws, 25 for cars and LCVs, 30 for buses and trucks.</p></div></figure></div></details></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/figures.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

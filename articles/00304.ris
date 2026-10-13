@@ -1,0 +1,23 @@
+TY  - JOUR
+TI  - Dynamic Microsimulations of Regional Income Inequalities in Germany
+AU  - Emmenegger, Jana
+AU  - Obersneider, Monika
+VL  - 17
+IS  - 1
+PY  - 2024
+DA  - 2024/04/30
+SP  - 69-101
+C1  - IJM 2024;17(1):69-101
+DO  - 10.34196/ijm.00304
+UR  - https://doi.org/10.34196/ijm.00304
+AB  - Income is one of the key indicators to measure individual opportunities, regional differences, and societal inequalities. Previous research has shed considerable light on gender- and migration-related disparities at the national level. However, the regional distribution of these inequalities, especially over time, has received less attention. Moreover, how these regional inequalities might develop in the future or under different conditions remains unclear. Regionalized dynamic microsimulations provide a powerful tool to analyze individual, household, as well as local long-term income developments under ‘what-if’ scenarios. This contribution examines the potential regional dynamics in gender and migrant income gaps across the districts in Germany. We extend the data, model, and infrastructure of the MikroSim project with an income module that accounts for migrant groups. By simulating four independent scenarios, we can isolate and evaluate their unique effects on inequality dynamics within different regions. Specifically, we adjust the full-time employment rates and tertiary education levels for a) women to align with those of men, and b) immigrants to align with those of the majority population, separately for each district. The results show that the scenarios have regionally differing effects on inequality dynamics, highlighting the considerable potential of dynamic microsimulations for regional evidence-based policies.
+KW  - Regional Microsimulation
+KW  - Income Estimation
+KW  - Inequality
+KW  - Immigration
+KW  -  Gender Income Gap
+KW  -  Migrant Income Gap
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

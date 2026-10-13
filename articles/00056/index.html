@@ -1,0 +1,1180 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Constructing a basefile for simulating Kunming’s medical insurance scheme of urban employees | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00056"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00056" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/health" data-astro-cid-ak4gb66a>Health</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Dec 31, 2011</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Constructing a basefile for simulating Kunming’s medical insurance scheme of urban employees</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Xiong Linping, Tang Weidong, Liu Hong</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Department of Health Services Management, Second Military Medical University, China; The National Centre for Social and Economic Modelling, University of Canberra, Australia; Bureau of Labour and Social Security of Kunming, China; Office of Medical Insurance at No. 43 General Hospital, China</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/4-3/volume-4-3-winter-2011" data-astro-cid-ak4gb66a>Volume 4(3) Winter 2011</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> X. Linping, T. Weidong, L. Hong; 2011; <span data-astro-cid-ak4gb66a>Constructing a basefile for simulating Kunming’s medical insurance scheme of urban employees</span>; International Journal of Microsimulation; 4(3); 3–16. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00056" data-astro-cid-ak4gb66a>10.34196/ijm.00056</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>Focusing on China’s medical insurance scheme which covers all employers and employees in urban areas, this research aims to assess the distributional impacts of medical insurance policies and to predict medical expenses by using microsimulation techniques. As an important part of the project, this article provides a brief overview of China’s medical insurance reform of urban employees and detail the techniques and processes to construct a basefile in 2005 for projecting the medical expenditures for urban employees over the period of 2006–2010. The main data used are administrative medical records of medical insurance participants provided by the Bureau of Labour and Social Security of Kunming, Yunnan Province. Along with the initial analysis for the raw datasets and age processing and adjustment for the individual records, monthly income information was imputed and personal savings accounts were established for each individual record. Important modelling parameters such as death rates and income adjustment factors were constructed. Furthermore, this article identifies medical insurance for government officials by using the combination of logarithm curve fitting and binary discriminant analysis. Based on this basefile, a static microsimulation model can be built to assess the implementation effects of the medical insurance policy and analyse the impact of the medical insurance scheme on urban employees.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00056/ijm-00056.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00056.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00056.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00056" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00056/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. Microdata sources used in the model</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. Constructing medical insurance micro datasets</a></li><li data-astro-cid-twdwaz5s><a href="#s3-8" data-astro-cid-twdwaz5s>3.8 Income adjustment parameters</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. Discussions</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>As an important part of the national social security system in China, medical insurance plays an important role in providing basic medical services to employees, promoting social and economic development, and maintaining the social security. Commencing in 1995, with Zhenjiang and Jiujiang as the two pilot cities, a new medical insurance system in China which covers all employers and employees in urban areas was established in December 1998. This medical insurance system covers all employers and employees in urban areas working in government organizations, enterprises, social groups and non-profit-making bodies (<a href="#bib13">State Council 2004</a>; <a href="#bib15">Xu 2007</a>).</p><p data-astro-cid-qsyhzaho>Under this system, two accounts are established – personal savings accounts and the social pool fund. Each of these caters to a different type of medical care, that is, ordinary illness and serious illness, respectively. The funds for the medical insurance mainly come from premiums paid by both employers and employees. In principle, the employer contributes about 8 per cent of the total wage bill, of which 30 per cent is credited to the employee’s personal savings account and the balance paid into the social pool fund. An employee pays 2 per cent, which is fully credited to his or her personal savings account. Retirees are exempted from paying the premiums (<a href="#bib13">State Council 2004</a>).</p><p data-astro-cid-qsyhzaho>Medical expenses are shared by the medical insurance fund and the individuals themselves. Medical services in clinics are mainly paid from a personal savings account, while hospitalization expenses are paid predominantly from the social pool fund. Efforts have been made to ensure that the insured have access to necessary medical services, to curb unreasonable medical expenses, and to enhance the utilization efficiency of the basic medical insurance fund. By the end of 2006, a total of 157.32 million employees and retirees around China had joined this basic medical insurance scheme. Of these, 115.80 million were employees, representing 40.90 per cent of the total employed (283.10 million) (<a href="#bib9">MLSS and NBS 2007</a>).</p><p data-astro-cid-qsyhzaho>After ten years of medical insurance reform in urban areas, China has both gained significant achievements but faces lots of challenges. In July 2005, the Development Research Centre of China’s State Council and the World Health Organization jointly published a study titled “China’s Reform of the Medical and Health System.” The study came to the conclusion that the reform of the national medical system is “basically unsuccessful” (<a href="#bib4">DRC State Council 2005</a>). The study reported that medical institutions had become over commercialized and failed to meet the public’s medical needs.</p><p data-astro-cid-qsyhzaho>Later in May 2006, the research group of “the report of China’s medical and health reform” issued a green book of “Medical and Health 2006” (<a href="#bib3">Dong 2006</a>). The green book believed that the ten-year medical insurance reform indeed led to many problems, especially low fairness in access to medical services and low efficiency in funding of health. In the wake of this research, health care reform in China has been the subject of much discussion and public debate. There is no doubt that further expanding the coverage of social medical insurance and reducing the proportion of self-payment continue to be top priority on the government agenda.</p><p data-astro-cid-qsyhzaho>To tackle the problems, China’s State Council announced a new medical reform plan in early April 2009, which is aimed at providing fair and affordable services for all 1.3 billion residents by 2020 (<a href="#bib10">Lan et al. 2009</a>). The plan promised to restore the welfare nature of public hospitals and tackle four key areas: universal access to basic health insurance, the introduction of an essential medicine system, improved primary health care facilities and equal access to basic public health services. The plan aimed at creating a comprehensive medical insurance system composed of basic medical insurance for urban employers and employees, basic medical insurance for urban residents and a new rural cooperative medical care program, which will cover 90 percent of the population by 2011.</p><p data-astro-cid-qsyhzaho>This article reports the processes and techniques underlying the creation of a basefile, which will be used to analyse the impact of the medical insurance reform on employees’ health care benefits – in particular, on their financial burden due to medical expenses (<a href="#bib14">Xiong et al. 2007</a>). The key aims are to assess the distributional impacts of medical insurance policies and to predict the medical expenses for urban employees and employers by creating a static microsimulation model (<a href="#bib2">Brown et al. 2004</a>; <a href="#bib6">Harding &amp; Gupta 2007</a>; <a href="#bib5">Gupta &amp; Basu 2007</a>; <a href="#bib12">Schofield et al. 2009</a>). With 2006 as the commencement year, the model forecasts the urban medical insurance policies and their settings for five years until 2010.</p><p data-astro-cid-qsyhzaho>Such a static microsimulation model mainly contains two parts – creating a basefile for 2005 and projecting the implementation of the medical insurance policy over the period of 2006–2010. Constructing the basefile is an important part in creating the static microsimulation model. This paper describes the steps involved in creating the basefile for modelling the medical insurance scheme of urban employees and retirees.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. Microdata sources used in the model</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s2-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.1 Basic information of Kunming</h3><p data-astro-cid-qsyhzaho>This project focused on the medical insurance system of the city of Kunming. Kunming, the capital of Yunnan Province, is located in South-west China, with a total population of 6.08 million at the end of 2005. Kunming commenced its medical insurance reform in April 2001. About 1.08 million urban employees were covered by the scheme at the end of 2005 (<a href="#bib8">Kunming Medical Insurance Centre 2006</a>), including employees and retirees of all government agencies, public institutions, enterprises, mass organizations and private non-enterprise units.</p><p data-astro-cid-qsyhzaho>Like the other urban areas in China, the basic medical insurance funds in Kunming include the basic medical insurance pool fund (Social pool fund) and the basic medical insurance personal savings account (Personal savings account). The social pool fund is mainly responsible for hospitalization expenses, while the personal savings account for medical expenses in clinics. Apart from these two funds, there are several compensation programs like the other urban areas of China, of which the serious illness fund and the government official fund are the two main funds (<a href="#bib7">Kunming Medical Insurance Association 2004</a>).</p></section><section id="s2-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.2 Source of microdata</h3><p data-astro-cid-qsyhzaho>The main data used in this research are administrative medical records of the basic medical insurance participants. The Bureau of Labour and Social Security of Kunming provided the personal information of the insured individuals and the expenditure records of their medical services for the period of 2001–2005. In detail, there are five kinds of datasets used in creating the microsimulation model which are briefly described below:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Basic individual datasets</p><p data-astro-cid-qsyhzaho>These datasets provide individuals’ basic information over the period of 2001–2005, and include mainly the variables of: personal identifier, gender, nationality, date of birth, date of initial job, employment status, education degree, individual status, date of entry medical insurance scheme, blood type, marital status. These variables provide the demographic information of individuals who joined the medical insurance scheme.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Individual status alteration datasets</p><p data-astro-cid-qsyhzaho>These datasets provide individual status alteration records of medical insurance participants over the period of 2001–2005, including variables: personal identifier, type of alteration (e.g. newly registered participant, quit insurance scheme, retired), reason of alteration, date of alteration.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Medical insurance premium datasets</p><p data-astro-cid-qsyhzaho>These datasets record the amount of contributions by individuals and their employers to the basic medical insurance scheme over the period of 2001–2005. The datasets mainly include variables of: personal identifier, employment status, corresponding period of premium, monthly income of participants, amount of money contributed by employees, amount of money went to personal saving accounts by employers, amount of money went to social pool fund by employers.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Medical expenses datasets of hospitalization and special disease treatment</p><p data-astro-cid-qsyhzaho>These datasets provide the medical expenditure records of insured participants in both hospitalization and special disease services for the year from 2002 to 2005. The datasets mainly include variables of: personal identifier, employment status, hospital identifier (used to distinguish the level of a hospital, like large, medium, or small), total medical service cost, the amount shared by the social pool fund, type of payment (e. g. admitted to hospital, special disease, emergency service, chronic disease treatment), the expense shared by serious illness fund.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Medical expenses records of ordinary clinic treatment and medication</p><p data-astro-cid-qsyhzaho>These datasets provide the medical expenditure records of clinic medical services and medication in pharmacies of insured participants over the period of 2001–2005. The datasets mainly have variables of: personal identifier, employment status, total medical services fees, date of medical services, type of payment (ordinary clinic treatment or medication in a pharmacy).</p><p data-astro-cid-qsyhzaho>The above five datasets were linked with each other through unique personal identifiers and formed the whole medical insurance data sources of the participants for the period of 2001–2005. The unique personal identifier was assigned to each individual and available in all data sets for the individuals’ record. This made up the detailed information base data for the modelling construction.</p></li></ul></section><section id="s2-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.3 Initial data processing and editing</h3><p data-astro-cid-qsyhzaho>In the initial analysis for the raw datasets, the mistyping codes were corrected and some codes for one variable with the similar meaning were combined. For example, male in variable of ‘gender’ was coded ‘1’, but some records had code ‘01’ or character ‘male’. Similar problems were detected with variables of ‘employment status’, ‘blood type’ and ‘marital status’. These problems were solved manually. The other data processing included the combination of some variable codes. For example, there were more than ten kinds of employment status types in the raw datasets for the variable of ‘employment status’. But the frequency analysis showed that, in general, there are mainly two kinds of participants, that is, employees (may work in enterprises, self employed, employed in a flexible manner, self employed after retire etc.) and retirees (retired from work, settlement in different places after retire). In the data processing, such kinds of variable codes were combined.</p><p data-astro-cid-qsyhzaho>Primary settlement with the raw datasets for the year 2005 was then made, particularly for the individual’s demographic information. PROC FREQ in SAS software (<a href="#bib11">SAS 2008</a>) was used to get distributions of variables such as ‘age’, ‘gender’, ‘employment status’, in order to find the percentage of missing data for the variables. For example, there were 28,308 records with their age missing (accounting for 3.22 per cent of total participants) in the basic individual dataset because of missing scheme entry date (an individual’s age was obtained by scheme entry date minus the date of birth). Calculating the scheme entry age is needed for the purpose of calculating the premium allocation to the personal savings accounts by employers. The percentage of allocation may be different for individuals with different ages. This problem was solved by using the entry date records in the status alteration dataset, in detail, sorting the two datasets by personal identifier respectively and then merging them by personal identifier to compensate the missing scheme entry date.</p></section><section id="s2-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.4 Framework for construction</h3><p data-astro-cid-qsyhzaho>As mentioned in <a href="#s2-2">Section 2.2</a>, totally five kinds of medical insurance records for each insured individual were included in the administrative data sources which are outlined in <a href="#table1">Table 1</a>. The first three kinds of datasets provide the demographic information of medical insurance participants, individual status alteration and insurance premium contribution records, while the other two provide medical expenses information on different types of medical services. The process of using and combining these five kinds of datasets to construct the basefile is outlined in <a href="#fig1">Figure 1</a>.</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Administrative datasets used in modelling medical insurance scheme.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Datasets</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Basic individual information</td>
+<td>Individuals’ basic demographic information under the urban medical insurance scheme over the period of 2001–2005</td> </tr>
+<tr>
+<td>Individual status alteration</td>
+<td>Individual status alteration records of medical insurance scheme participants over the period of 2001–2005</td>
+</tr>
+<tr>
+<td>Medical insurance premium</td>
+<td>Amount of contributions by individuals and their employers to the basic medical insurance scheme over the period of 2001–2005</td>
+</tr>
+<tr>
+<td>Hospitalization treatment expenses</td>
+<td>Medical expenditure records of insured participants in both hospitalization and special disease services for the year 2002–2005</td> </tr>
+<tr>
+<td>Clinic services expenses</td>
+<td>Medical expenditure records of clinic services and medications in pharmacies of insured participants over the period of 2001–2005</td> </tr>
+</tbody>
+</table></div></figure><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00056-fig1.BHvaxMlu_eLag6.webp" class="figure-lightbox-trigger" data-pswp-width="1692" data-pswp-height="1168" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00056-fig1.BHvaxMlu_eLag6.webp" alt width="1692" height="1168" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Datasets used in the research and their functions.</span></figcaption></figure><p data-astro-cid-qsyhzaho>The five data sources provided different information on demographic, insurance payment, and medical services. They were connected by the unique personal identifier contained in each dataset. Through combining the five data sets, the main output data for 2005 was produced. This included individual level information plus information on personal savings accounts, pool fund balances and medical expenses. The output, as a basefile in 2005, acts as input data for simulating the medical behaviour of urban employees and retirees under the medical insurance scheme over the period of 2006–2010.</p><p data-astro-cid-qsyhzaho>Regarding the corresponding years of these datasets, except for the hospitalization treatment expenses which were provided for the years from 2002 to 2005, the other four datasets were for the period 2001–2005. Due to the incomplete records of the dataset in 2001 and with the advice of the Bureau of Labour and Social Security of Kunming, datasets in 2002–2005 were used regularly when establishing the empirical parameters in modelling the medical insurance scheme.</p></section></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. Constructing medical insurance micro datasets</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s3-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.1 Medical insurance micro records in 2005</h3><p data-astro-cid-qsyhzaho>The starting point for the construction of medical insurance micro datasets or base file is the basic information of medical insurance scheme participants at the end of 2005. In the individual basic information datasets, there were 813,801 records registered in the medical insurance scheme in 2005 which included individuals who altered their insurance status in 2005. When constructing the basic individual dataset at the end of 2005, the records of individuals who quit the scheme needed to be removed. This procedure was completed together with the use of the individual status alteration dataset (<a href="#table1">Table 1</a>) in 2005.</p><p data-astro-cid-qsyhzaho>According to the individual status alteration dataset, a total of 359,187 individuals altered their insurance status in 2005, which included new scheme entry, scheme exit, retired and reemployed. The date and type of alteration were picked up according to the date of alteration. It was found that there were 231,189 persons who made a one time alteration, 95,308 persons had a second alteration, and 18,009 had a third alteration and so on. This sort of record detection terminated after 10 times of status alteration which left only 6 remaining records. Then by reversing the procedure 10 times, the scheme status of participants was decided due to their last status alteration. Eliminating the records of individuals who quit the scheme, a dataset having 790,186 individual records was obtained. This dataset did not contain the records of individuals who died in 2005. When estimating the population of insurance participants and analysing the medical expenses in 2005, it is important to consider the individuals who died in the year.</p><p data-astro-cid-qsyhzaho>After adding the death records onto the individual information dataset, the number of individual records at the end of 2005 totalled 793,987. This figure was very close to the target population of 794,130 at the end of 2005, which was reported by the Bureau of Labour and Social Security of Kunming (<a href="#bib8">Kunming Medical Insurance Centre 2006</a>). So no further adjustment on the number of the scheme participants was needed. How the number and distribution of death records for the period of 2001–2005 was obtained is discussed later in <a href="#s3-3">Section 3.3</a>.</p></section><section id="s3-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.2 Age processing and adjustment for insured individiuals</h3><p data-astro-cid-qsyhzaho>In the created dataset for the year 2005, there were quite a few records which had apparent mistakes about data entry/typing the age of participants. Some employees were under 15 years of age, some employees were above 85 years old but still at work, and some individuals were aged less than 35 years but had already retired. These events are assumed impossible in practice. Such mistakes were therefore checked and revised.</p><p data-astro-cid-qsyhzaho>First, for individuals less than the legitimate age of the labour force, there were 118 records with age less than 15 years, some even as young as 7 years old. Such mistakes happened due to typing errors on variables of ‘Date of birth’ or ‘Date of initial job’. The revision procedure first chose the smaller one of these two dates (like suppose the year 1991 is smaller than the year 1996) to be the date of birth of the individual. Together with the use of the variable of ‘Date of entry scheme’, the procedure got a new age variable which was then updated to the end of 2005. This resolved the age problem of 41 records. Next assuming the larger one between ‘Date of birth’ and ‘Date of initial job’ as the individual’s initial job date, the individual’s age was assigned randomly between 15 and 20 years old at the time when they started their initial job. Finally, two records with a date of birth in 2049, which was assumed to be 1949, were adjusted to the age of 56 at the end of 2005.</p><p data-astro-cid-qsyhzaho>Second, participants aged over 85 years and were still in the state of employment were assumed impossible in practice. In the original dataset in 2005, 63 individuals were found to be older than 85 years old and were still at work. The legitimate retirement age in China is 60 years for male, 50 years for female employees and 55 years for female government officials. A few individuals can work after the retirement age, but it is very rare to have a job beyond the age of 85 years. The records on the medical insurance premiums indicate that they were employed individuals, and errors occurred in their age. This problem was resolved by randomly making these records have an age between 50 and 80 years.</p><p data-astro-cid-qsyhzaho>Third, for the participants aged less than 36 years and were in a state of retirement. In the original individual information dataset in 2005, there were 105 such records. For some reason, such as sickness, some individuals may retire before the legitimate retired age, but not under the age of 36 years. It is supposed there were some typing mistakes about these records. First referring to the variables of ‘Date of birth’ and ‘Date of initial job’, the individual’s age was revised as for individuals less than 15 years old. This resolved the age problem of 40 records. For the remaining 65 records, the revision was achieved by assigning the records arbitrarily an age from 36 to 45 years.</p></section><section id="s3-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.3 The death record cases</h3><p data-astro-cid-qsyhzaho>In the initial individual records, there were no codes indicating the death of the medical insurance participants. However, in the variable of ‘Reason of alteration’, there were some words describing the reason of death, like ‘dead of illness’, ‘dead at accident’, ‘dead on certain day’. By picking up these kinds of words manually and coding them in a new variable, deleting the repeated records due to their personal identifiers, 14,124 death records for the period of 2001–2005 were obtained. The events of the death records are summarised in <a href="#table2">Table 2</a>. This gives an average annual death rate of 0.5007 per cent over the period of 2002–2005.</p><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Death of medical insurance participants in 2001–2005.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Number of participants</th>
+<th>Number of deaths</th>
+<th>Accumulative frequency</th>
+<th>Proportion of death (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2001</td>
+<td>3,77,676</td>
+<td>291</td>
+<td>291</td>
+<td>0.0771</td>
+</tr>
+<tr>
+<td>2002</td>
+<td>5,32,706</td>
+<td>2,373</td>
+<td>2,664</td>
+<td>0.4455</td>
+</tr>
+<tr>
+<td>2003</td>
+<td>6,61,038</td>
+<td>3,573</td>
+<td>6,237</td>
+<td>0.5405</td>
+</tr>
+<tr>
+<td>2004</td>
+<td>7,56,996</td>
+<td>3,823</td>
+<td>10,060</td>
+<td>0.5050</td>
+</tr>
+<tr>
+<td>2005</td>
+<td>7,93,987</td>
+<td>4,064</td>
+<td>14,124</td>
+<td>0.5118</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>In addition to the total information on death, the death rates by gender across age group were calculated (<a href="#table3">Tables 3 and 4</a>). Because of incomplete death information in 2001, due to the first year commencement of the scheme, the death rates by gender across age group in 2001 were quite different from the other four years (similar in <a href="#table2">Table 2</a>). In forecasting personal medical behaviour and medical insurance policies over the period of 2006–2010, the average death rates over 2002–2005 will be used to project the death events. On average, the death rate is about 6.28 for male and 3.52 for female. The death rate of males was 1.78 times higher than the counterpart of females.</p><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Age group specific death number and death rate (0.1%) of male (2001–2005).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Year</th>
+<th>≤ 34</th>
+<th>35–49</th>
+<th>50–64</th>
+<th>≥ 65</th>
+<th>Total number</th>
+<th>≤ 34</th>
+<th>35–49</th>
+<th>50–64</th>
+<th>≥ 65</th>
+<th>Total rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2001</td>
+<td>4</td>
+<td>16</td>
+<td>47</td>
+<td>127</td>
+<td>194</td>
+<td>0.0804</td>
+<td>0.2543</td>
+<td>0.8673</td>
+<td>4.3571</td>
+<td>0.9899</td>
+</tr>
+<tr>
+<td>2002</td>
+<td>35</td>
+<td>99</td>
+<td>374</td>
+<td>1,095</td>
+<td>1,603</td>
+<td>0.5003</td>
+<td>1.0766</td>
+<td>4.4636</td>
+<td>23.1903</td>
+<td>5.4724</td>
+</tr>
+<tr>
+<td>2003</td>
+<td>43</td>
+<td>152</td>
+<td>525</td>
+<td>1,653</td>
+<td>2,373</td>
+<td>0.5057</td>
+<td>1.3631</td>
+<td>5.0157</td>
+<td>27.3214</td>
+<td>6.5605</td>
+</tr>
+<tr>
+<td>2004</td>
+<td>66</td>
+<td>178</td>
+<td>612</td>
+<td>1,808</td>
+<td>2,664</td>
+<td>0.6881</td>
+<td>1.4875</td>
+<td>5.2957</td>
+<td>27.7599</td>
+<td>6.7226</td>
+</tr>
+<tr>
+<td>2005</td>
+<td>60</td>
+<td>195</td>
+<td>761</td>
+<td>1,725</td>
+<td>2,741</td>
+<td>0.5678</td>
+<td>1.5188</td>
+<td>6.1504</td>
+<td>23.6195</td>
+<td>6.3623</td>
+</tr>
+<tr>
+<td colspan="6">Average death rate over 2002–2005 (0.1%)</td>
+<td>0.5655</td>
+<td>1.3615</td>
+<td>5.2314</td>
+<td>25.4728</td>
+<td>6.2795</td>
+</tr> </tbody>
+</table></div></figure><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Age group death number and death rate (0.1%) of female (2001–2005).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Year</th>
+<th>≤ 34</th>
+<th>35–49</th>
+<th>50–64</th>
+<th>≥ 65</th>
+<th>Total number</th>
+<th>≤ 34</th>
+<th>35–49</th>
+<th>50–64</th>
+<th>≥ 65</th>
+<th>Total rate</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2001</td>
+<td>2</td>
+<td>11</td>
+<td>23</td>
+<td>61</td>
+<td>97</td>
+<td>0.0431</td>
+<td>0.2008</td>
+<td>0.4777</td>
+<td>3.0511</td>
+<td>0.5728</td>
+</tr>
+<tr>
+<td>2002</td>
+<td>16</td>
+<td>57</td>
+<td>160</td>
+<td>537</td>
+<td>770</td>
+<td>0.2545</td>
+<td>0.6833</td>
+<td>2.2372</td>
+<td>17.0563</td>
+<td>3.0886</td>
+</tr>
+<tr>
+<td>2003</td>
+<td>29</td>
+<td>77</td>
+<td>248</td>
+<td>846</td>
+<td>1,200</td>
+<td>0.3892</td>
+<td>0.7402</td>
+<td>2.8507</td>
+<td>20.7135</td>
+<td>3.9168</td>
+</tr>
+<tr>
+<td>2004</td>
+<td>21</td>
+<td>82</td>
+<td>256</td>
+<td>800</td>
+<td>1,159</td>
+<td>0.2527</td>
+<td>0.7132</td>
+<td>2.7311</td>
+<td>17.7054</td>
+<td>3.4392</td>
+</tr>
+<tr>
+<td>2005</td>
+<td>21</td>
+<td>83</td>
+<td>335</td>
+<td>884</td>
+<td>1,323</td>
+<td>0.2312</td>
+<td>0.6878</td>
+<td>3.3030</td>
+<td>17.6004</td>
+<td>3.6430</td>
+</tr>
+<tr>
+<td colspan="6">Average death rate over 2002–2005 (0.1%)</td>
+<td>0.2819</td>
+<td>0.7061</td>
+<td>2.7805</td>
+<td>18.2689</td>
+<td>3.5219</td>
+</tr> </tbody>
+</table></div></figure></section><section id="s3-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.4 Add personal income information</h3><p data-astro-cid-qsyhzaho>After completing the construction of the 2005 basic individual information dataset, personal income information was added to this dataset. The average monthly income for each participant was added annually referring to the datasets of collecting insurance premiums.</p><p data-astro-cid-qsyhzaho>In determining the income information for each person, the frequency distribution of monthly premium payment for each year was analysed. Reversing from 2005 to 2001, the number of months per person for premium payment in each year was determined according to individual’s entry date to the medical insurance scheme. <a href="#table5">Table 5</a> illustrates the records of the monthly premium payments and monthly income by age group in 2005. In 2005, there were total of 793,987 participants, of which 777,117 had payment records, giving the payment rate of 97.88 per cent. Here the age group was classified into five categories, three age categories for employees in accordance with the age classification under the medical insurance scheme and two age categories for retirees.</p><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Monthly premium information by age group in 2005.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Age group</th>
+<th>Number of participants</th>
+<th>Number of participants with payment</th>
+<th>Payment rate (%)</th>
+<th>Average monthly income (Yuan)</th>
+<th>Minimum income (Yuan)</th>
+<th>Maximum income (Yuan)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Emp ≤ 34 years</td>
+<td>1,96,410</td>
+<td>1,89,614</td>
+<td>96.54</td>
+<td>1,176</td>
+<td>450</td>
+<td>3,342</td>
+</tr>
+<tr>
+<td>Emp 35–49</td>
+<td>2,43,227</td>
+<td>2,40,111</td>
+<td>98.72</td>
+<td>1,249</td>
+<td>468</td>
+<td>3,342</td>
+</tr>
+<tr>
+<td>Emp ≥ 50 years</td>
+<td>91,893</td>
+<td>91,424</td>
+<td>99.49</td>
+<td>1,179</td>
+<td>336</td>
+<td>3,342</td>
+</tr>
+<tr>
+<td>Ret ≤ 64 years</td>
+<td>139,362</td>
+<td>137,544</td>
+<td>98.70</td>
+<td>763</td>
+<td>111</td>
+<td>3,320</td>
+</tr>
+<tr>
+<td>Ret ≥ 65 years</td>
+<td>1,23,095</td>
+<td>1,18,424</td>
+<td>96.21</td>
+<td>760</td>
+<td>108</td>
+<td>3108</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>7,93,987</td>
+<td>7,77,117</td>
+<td>97.88</td>
+<td/>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: Emp – Employee, Ret – Retiree</p></div></figure><p data-astro-cid-qsyhzaho><a href="#table6">Table 6</a> presents the payment distribution of number of months to the scheme in 2005. The figure ‘99’ in the first column means records with missing monthly income. Two adjustments need to be carried out for these income missing records, one is to compensate for the income, the other is to determine how many months the individual paid the premium in that year. The monthly income of these missing records was imputed by randomly picking up the records with known income by gender across age group. The number of months for premium payment for the missing income records was determined by the date of their scheme entering. <a href="#table7">Table 7</a> presents the result after the compensation for the income missing records. Comparing the income on average, minimum and maximum with <a href="#table5">Table 5</a>, the results are good and reasonable.</p><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Distribution of number of monthly payments to the scheme in 2005.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Number of months</th>
+<th>Participant frequency</th>
+<th>Percentage</th>
+<th>Accumulative frequency</th>
+<th>Accumulative percentage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>5,576</td>
+<td>0.70</td>
+<td>5576</td>
+<td>0.70</td>
+</tr>
+<tr>
+<td>2</td>
+<td>4,545</td>
+<td>0.57</td>
+<td>10,121</td>
+<td>1.27</td>
+</tr>
+<tr>
+<td>3</td>
+<td>6,211</td>
+<td>0.78</td>
+<td>16,332</td>
+<td>2.06</td>
+</tr>
+<tr>
+<td>4</td>
+<td>5,309</td>
+<td>0.67</td>
+<td>21,641</td>
+<td>2.73</td>
+</tr>
+<tr>
+<td>5</td>
+<td>4,417</td>
+<td>0.56</td>
+<td>26,058</td>
+<td>3.28</td>
+</tr>
+<tr>
+<td>6</td>
+<td>4,856</td>
+<td>0.61</td>
+<td>30,914</td>
+<td>3.89</td>
+</tr>
+<tr>
+<td>7</td>
+<td>4,816</td>
+<td>0.61</td>
+<td>35,730</td>
+<td>4.50</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9,043</td>
+<td>1.14</td>
+<td>44,773</td>
+<td>5.64</td>
+</tr>
+<tr>
+<td>9</td>
+<td>4,597</td>
+<td>0.58</td>
+<td>49,370</td>
+<td>6.22</td>
+</tr>
+<tr>
+<td>10</td>
+<td>5,506</td>
+<td>0.69</td>
+<td>54,876</td>
+<td>6.91</td>
+</tr>
+<tr>
+<td>11</td>
+<td>12,472</td>
+<td>1.57</td>
+<td>67,348</td>
+<td>8.48</td>
+</tr>
+<tr>
+<td>12</td>
+<td>709,769</td>
+<td>89.39</td>
+<td>777,117</td>
+<td>97.88</td>
+</tr>
+<tr>
+<td>99</td>
+<td>16,870</td>
+<td>2.12</td>
+<td>793,987</td>
+<td>100.00</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: ’99 in the first column indicates missing records.</p></div></figure><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> The monthly income by age group in 2005 after imputation.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Age group</th>
+<th>Actual population</th>
+<th>Population after imputation</th>
+<th>Average income (Yuan)</th>
+<th>Minimum income (Yuan)</th>
+<th>Maximum income (Yuan)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Emp ≤34 years</td>
+<td>1,96,410</td>
+<td>1,96,410</td>
+<td>1,175.67</td>
+<td>450.00</td>
+<td>3,342.25</td>
+</tr>
+<tr>
+<td>Emp 35–49 years</td>
+<td>2,43,227</td>
+<td>243,227</td>
+<td>1,249.58</td>
+<td>468.25</td>
+<td>3,342.25</td>
+</tr>
+<tr>
+<td>Emp ≥50 years</td>
+<td>91,893</td>
+<td>91,893</td>
+<td>1,179.26</td>
+<td>336.00</td>
+<td>3,342.25</td>
+</tr>
+<tr>
+<td>Ret ≤64 years</td>
+<td>1,39,362</td>
+<td>1,39,362</td>
+<td>763.59</td>
+<td>111.00</td>
+<td>3,319.71</td>
+</tr>
+<tr>
+<td>Ret ≥65 years</td>
+<td>1,23,095</td>
+<td>1,23,095</td>
+<td>760.58</td>
+<td>108.00</td>
+<td>3,107.50</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>7,93,987</td>
+<td>7,93,987</td>
+<td/>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: Emp – Employee, Ret – Retiree.</p></div></figure><p data-astro-cid-qsyhzaho>Similarly, the missing values of income were imputed for each year of 2002–2004, of which the number of payment months for each individual in 2002 was doubled due to only the information at the first half of that year was provided. Regarding the year 2001, it was not possible to do the same compensation to estimate the income for individuals without income records because of very high income missing rate (83.5%). This problem was solved by using estimated adjustment coefficients through linear fitting incomes of 2002–2005 across each age group. That is, the income in 2001 was estimated by using linear regression methods.</p><p data-astro-cid-qsyhzaho><a href="#fig2">Figure 2</a> gives the average income trends over the period of 2001–2005. On average, the income of all age groups showed increasing trends. However, both the amount and growth rate for each group of employees are bigger than those for the two groups of retirees. The income of retirees only showed a slight increase. The income gap between employees and retirees was broadened during this period. This, as a result, leads to low balances of the personal savings accounts for retirees.</p><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00056-fig2.DrgCHxm4_Z1ui8zy.webp" class="figure-lightbox-trigger" data-pswp-width="1638" data-pswp-height="1152" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00056-fig2.DrgCHxm4_Z1ui8zy.webp" alt width="1638" height="1152" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> The income trends of 2001–2005 by age group.</span></figcaption></figure></section><section id="s3-5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.5 Set up personal savings accounts</h3><p data-astro-cid-qsyhzaho>After fixing monthly income, a variable representing the personal savings account was created for each individual across five different age groups. This was done according to the allocation premium rules for each age group under the medical insurance scheme. <a href="#table8">Table 8</a> shows the cumulative amount in personal savings accounts (accumulated from the commencement of entering the scheme) by age groups at the end of 2005. The group of employees aged 50 years and over got the highest average accumulative amount (1989 Yuan) in their personal savings accounts, while the group of employees aged less than 35 years the lowest. The accumulative amounts of the personal savings accounts varied significantly among individuals, with some as high as more than 7000 Yuan (retirees aged 65 years or over), while the others as low as 28 Yuan (retirees aged less than 65 years). Totally, there were 5,660 individuals whose personal savings accounts had cumulative deposits less than 100 Yuan. This was due to their short time period of entering the medical insurance scheme and their low monthly income which was under 1000 Yuan.</p><figure id="table8" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 8.</strong><span data-astro-cid-dzaleqsp> The accumulative amount in personal savings accounts at the end of 2005 (Yuan).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Age group</th>
+<th>Population</th>
+<th>Average accumulate</th>
+<th>Standard deviation</th>
+<th>Minimum</th>
+<th>Maximum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Emp ≤ 34 years</td>
+<td>1,96,410</td>
+<td>1,116</td>
+<td>754</td>
+<td>69</td>
+<td>5,014</td>
+</tr>
+<tr>
+<td>Emp 35–49 years</td>
+<td>2,43,227</td>
+<td>1,698</td>
+<td>900</td>
+<td>69</td>
+<td>5,758</td>
+</tr>
+<tr>
+<td>Emp≥50 years</td>
+<td>91,893</td>
+<td>1,989</td>
+<td>1,033</td>
+<td>39</td>
+<td>6,484</td>
+</tr>
+<tr>
+<td>Ret ≤64 years</td>
+<td>1,39,362</td>
+<td>1,402</td>
+<td>766</td>
+<td>28</td>
+<td>6,382</td>
+</tr>
+<tr>
+<td>Ret ≥65 years</td>
+<td>1,23,095</td>
+<td>1,385</td>
+<td>714</td>
+<td>35</td>
+<td>7,257</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>7,93,987</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Notes</i>: Emp – Employee,Ret – Retiree.</p></div></figure></section><section id="s3-6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.6 Determine government officials</h3><p data-astro-cid-qsyhzaho>A Government official fund has been established along with the commencement of the basic medical insurance system in Kunming in April 2001, which is financed by the local governments. Apart from the benefits from the social pool fund when medical services are needed, government officials further can get benefits from the Government official fund. There was no variable in the original datasets indicating which records belong to government officials. So it was necessary to determine the population of government officials.</p><p data-astro-cid-qsyhzaho>First, it was necessary to determine the number of government officials in 2005 and the forecasting years of 2006–2010. Referring to the medical insurance implementation report for the year of 2001–2004 by Kunming (the Bureau of Labour and Social Security 2005), the number of government officials in 2005 was estimated. Broadly, according to the actual number of officials over the period of 2002–2004, curve fitting (<a href="#fig3">Figure 3</a>) was conducted and the number of officials for each year of 2005–2010 was estimated (<a href="#table9">Table 9</a>).</p><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00056-fig3.CAH6Bnvw_Kol51.webp" class="figure-lightbox-trigger" data-pswp-width="1798" data-pswp-height="738" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00056-fig3.CAH6Bnvw_Kol51.webp" alt width="1798" height="738" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Exponential curve fitting for estimating the number of officials.</span></figcaption></figure><figure id="table9" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 9.</strong><span data-astro-cid-dzaleqsp> Estimation of number of officials using exponential curve fitting.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Actual number of officials</th>
+<th>Estimated number of officials</th>
+<th>Relative errors<a href="#tfn1">*</a></th>
+<th>Estimated number of participants</th>
+<th>% of officials to participants</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2002</td>
+<td>1,02,310</td>
+<td>1,02,873</td>
+<td>0.5503</td>
+<td>577,066</td>
+<td>17.8</td>
+</tr>
+<tr>
+<td>2003</td>
+<td>123,769</td>
+<td>123,670</td>
+<td>−0.0800</td>
+<td>683,646</td>
+<td>18.1</td>
+</tr>
+<tr>
+<td>2004</td>
+<td>1,29,259</td>
+<td>1,29,285</td>
+<td>0.0201</td>
+<td>747,710</td>
+<td>17.3</td>
+</tr>
+<tr>
+<td>2005</td>
+<td/>
+<td>1,32,667</td>
+<td/>
+<td>7,93,663</td>
+<td>16.7</td>
+</tr>
+<tr>
+<td>2006</td>
+<td/>
+<td>1,35,096</td>
+<td/>
+<td>8,29,518</td>
+<td>16.3</td>
+</tr>
+<tr>
+<td>2007</td>
+<td/>
+<td>1,36,991</td>
+<td/>
+<td>8,58,925</td>
+<td>15.9</td>
+</tr>
+<tr>
+<td>2008</td>
+<td/>
+<td>1,38,546</td>
+<td/>
+<td>8,83,852</td>
+<td>15.7</td>
+</tr>
+<tr>
+<td>2009</td>
+<td/>
+<td>1,39,865</td>
+<td/>
+<td>9,05,486</td>
+<td>15.4</td>
+</tr>
+<tr>
+<td>2010</td>
+<td/>
+<td>1,41,009</td>
+<td/>
+<td>9,24,596</td>
+<td>15.3</td>
+</tr>
+<tr>
+<td>Fitted R<sup>2</sup></td>
+<td/>
+<td>0.9999</td>
+<td/>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: *Relative Errors = (Estimated – Actual)/Actual × 100.</p></div></figure><p data-astro-cid-qsyhzaho>In detail for the curve fitting, the scatter plot of the number of officials (<i>Y</i>) versus year (left side in <a href="#fig3">Figure 3</a>) shows an exponential curve trend. A new variable <i>T</i> was derived by transforming <i>Y</i> with an equation of <i>T</i> = 10<i><sup>Y/20000</sup></i>. Choosing the number 20,000 was to use the linear regression method to fit a straight line of this new variable <i>T</i> versus year. The estimate function of <i>T</i> could be obtained as,</p><div class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(1)</span><math><mover><mi>T</mi><mo>^</mo></mover><mo>=</mo><mn>1386610</mn><mo>.</mo><mn>769</mn><mo> </mo><mi>y</mi><mi>e</mi><mi>a</mi><mi>r</mi><mo> </mo><mo>-</mo><mo> </mo><mn>2775855553</mn><mo>.</mo></math></div><p data-astro-cid-qsyhzaho>So reversing the variable <i>T</i> to the number of officials <i>Y</i>, the estimates of <i>Y</i> can be expressed as the following equation.</p><div class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(2)</span><math><mover><mi>Y</mi><mo>⏜</mo></mover><mo>=</mo><mn>20000</mn><msub><mi>log</mi><mn>10</mn></msub><mo> </mo><mo>(</mo><mn>1386610</mn><mo>.</mo><mn>769</mn><mo> </mo><mi>y</mi><mi>e</mi><mi>a</mi><mi>r</mi><mo> </mo><mo>-</mo><mo> </mo><mn>277855553</mn><mo>)</mo></math></div><p data-astro-cid-qsyhzaho>Using this estimated equation, the number of government officials for each year of 2005–2010 could be obtained, with the results shown in <a href="#table9">Table 9</a>. The R square of the curve fitting was high at 0.9999. The comparison between the actual number and estimated number for the years of 2002–2004 was very close. <a href="#table9">Table 9</a> also presents the estimated number of scheme participants (<a href="#bib14">Xiong et al. 2007</a>) and the trend in the proportion of officials in the participant population.</p><p data-astro-cid-qsyhzaho>The next step was to determine the records of the government officials. By <a href="#table9">Table 9</a>, the estimated number of the officials in 2005 was 132,667. Some clues of government officials could be found in the raw datasets of hospitalization services. By checking the medical expenditure records in 2002–2005, records with expenses subsidized by the Government official fund were allocated to be government officials. This process determined a total number of 26,955 records as officials. Then referring to the dataset of individual basic information in 2005, 105,604 records with a code of ‘Cadre’ in a variable ‘Personal status’ were treated as officials (<a href="#table10">Table 10</a>). Excluded those records with expenses subsidized by the Government official fund, an extra 86,823 records were picked up to be officials. The above two processes gave a total number of 113,778 officials. The remaining 18,889 officials in 2005 needed to be imputed. This was done by using discriminant analysis to identify the government officials in 2005.</p><figure id="table10" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 10.</strong><span data-astro-cid-dzaleqsp> The distribution of personal status in 2005.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Category</th>
+<th>Frequency</th>
+<th>Percentage</th>
+<th>Accumulative frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4">Personal status</td>
+<td>Cadre</td>
+<td>1,05,604</td>
+<td>14.33</td>
+<td>1,13,778</td>
+</tr>
+<tr>
+<td>Worker</td>
+<td>76,308</td>
+<td>9.90</td>
+<td>1,92,403</td>
+</tr>
+<tr>
+<td>Farmer labourer</td>
+<td>137</td>
+<td>0.02</td>
+<td>1,92,601</td>
+</tr>
+<tr>
+<td>Missing</td>
+<td>6,01,386</td>
+<td>75.74</td>
+<td>7,93,987</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>The following steps were undertaken to identify government officials.</p><ol data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In the created basefile for 2005, there were mainly two categories in a variable ‘Personal status’ – Cadre or Worker, with only 0.02 per cent of records indicated as ‘Farmer labourer’ and a large frequency (75.74 per cent) as missing records (<a href="#table10">Table 10)</a>.</p><p data-astro-cid-qsyhzaho>For the records with identified personal status of ‘Cadre’ or ‘Worker’, the binary discriminant analysis was conducted to create the discriminant functions (<a href="#bib1">Armitage et al. 2002</a>). In this process, eight possible impact factors were considered: Gender, Nationality, Employment status, Education degree, Marital status, Age group, Age and Monthly income (<a href="#table11">Table 11</a>).</p><p data-astro-cid-qsyhzaho>Here the age group follows the classification of the medical insurance scheme, three age groups for employees and two age groups for retirees. The first six factors are categorical variables, while the other two factors are continuous variables. Getting rid of the missing records among these factors, left 763,215 records which accounted for 96.12 per cent of the total records.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>For the identified population of ‘Cadre’ and ‘Worker’, which had 192,403 records (<a href="#table10">Table 10)</a>, the binary discriminant functions were created by stepwise discriminant analysis to distinguish officials (Cadres) and workers. The constant items and coefficients of the linear discriminant functions are given in <a href="#table12">Table 12</a>.</p><p data-astro-cid-qsyhzaho>The result of the binary discriminant analysis showed that all eight considered factors had significant impact on the classification between officials and workers. The corresponding partial R-Square indicated that ‘Education degree’ was the most important impact factor, followed by Age, Marital status and Monthly income (<a href="#table12">Table 12</a>). The other four factors of Gender, Nationality, Employment status and Age group had less impacts on the classification compared with the first four factors.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Retrospective testing using the above linear discriminant functions indicates that the classification error was 28.62 per cent for ‘Official’, 25.08 per cent for ‘Worker’, giving the total error of 27.13 per cent (less than 30 per cent, <a href="#table13">Table 13)</a>. The classification result was reasonable and acceptable.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>For the 601,386 records with no personal status (or missing, the last row in <a href="#table10">Table 10)</a>, the above linear discriminant functions were adopted to estimate who could be potential officials. As a result, 240,280 individual records were classified into potential officials. Finally, by using simple random sampling method, 18,889 individuals were picked up randomly from these potential officials and were made to be government officials. Plus the above determined number of 113,778 officials, that would make the expected number of officials 132,667 in 2005 (<a href="#table9">Table 9)</a>. Thus, the problem of identifying the records of the government officials in 2005 was resolved.</p></li></ol><figure id="table11" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 11.</strong><span data-astro-cid-dzaleqsp> The impact factors of discriminant analysis in identifying officials.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Factors</th>
+<th>Category</th>
+<th>Frequency</th>
+<th>percentage</th>
+<th>Accumulative frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Gender</td>
+<td>Male</td>
+<td>4,16,632</td>
+<td>54.59</td>
+<td>4,16,632</td>
+</tr>
+<tr>
+<td>Female</td>
+<td>3,46,583</td>
+<td>45.41</td>
+<td>7,63,215</td>
+</tr>
+<tr>
+<td rowspan="2">Nationality</td>
+<td>Han</td>
+<td>6,98,678</td>
+<td>91.54</td>
+<td>6,98,678</td>
+</tr>
+<tr>
+<td>Minorities</td>
+<td>64,537</td>
+<td>8.46</td>
+<td>7,63,215</td>
+</tr>
+<tr>
+<td rowspan="2">Employment status</td>
+<td>Employee</td>
+<td>5,08,400</td>
+<td>66.61</td>
+<td>5,08,400</td>
+</tr>
+<tr>
+<td>Retiree</td>
+<td>2,54,815</td>
+<td>33.39</td>
+<td>7,63,215</td>
+</tr>
+<tr>
+<td rowspan="4">Education degree</td>
+<td>Under primary</td>
+<td>1,50,333</td>
+<td>19.70</td>
+<td>1,50,333</td>
+</tr>
+<tr>
+<td>Junior high school</td>
+<td>1,81,643</td>
+<td>23.80</td>
+<td>3,31,976</td>
+</tr>
+<tr>
+<td>Senior high school</td>
+<td>2,45,124</td>
+<td>32.12</td>
+<td>5,77,100</td>
+</tr>
+<tr>
+<td>University</td>
+<td>1,86,115</td>
+<td>24.39</td>
+<td>7,63,215</td>
+</tr>
+<tr>
+<td rowspan="2">Marital status</td>
+<td>Single</td>
+<td>1,75,146</td>
+<td>22.95</td>
+<td>1,75,146</td>
+</tr>
+<tr>
+<td>Married</td>
+<td>5,88,069</td>
+<td>77.05</td>
+<td>7,63,215</td>
+</tr>
+<tr>
+<td rowspan="5">Age group</td>
+<td>Employee ≤34 years</td>
+<td>1,87,106</td>
+<td>24.52</td>
+<td>1,87,106</td>
+</tr>
+<tr>
+<td>Employee 35–49 years</td>
+<td>2,32,154</td>
+<td>30.42</td>
+<td>4,19,260</td>
+</tr>
+<tr>
+<td>Employee ≥50 years</td>
+<td>89,140</td>
+<td>11.68</td>
+<td>5,08,400</td>
+</tr>
+<tr>
+<td>Retiree ≤64 years</td>
+<td>1,35,959</td>
+<td>17.81</td>
+<td>6,44,359</td>
+</tr>
+<tr>
+<td>Retiree ≥65 years</td>
+<td>1,18,856</td>
+<td>15.57</td>
+<td>7,63,215</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>Continuous variable</td>
+<td>7,63,215</td>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Monthly income</td>
+<td>Continuous variable</td>
+<td>7,63,215</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table></div></figure><figure id="table12" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 12.</strong><span data-astro-cid-dzaleqsp> Constants and Coefficients of discriminant functions.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Classify</th>
+<th>Constant</th>
+<th>Gender</th>
+<th>Nationality</th>
+<th>Employment</th>
+<th>Education</th>
+<th>Marry</th>
+<th>Age</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Official</td>
+<td>−54.3071</td>
+<td>6.16945</td>
+<td>14.2724</td>
+<td>25.45331</td>
+<td>6.1558</td>
+<td>5.37318</td>
+<td>1.39241</td> </tr>
+<tr>
+<td>Worker</td>
+<td>−48.8466</td>
+<td>6.20641</td>
+<td>14.15723</td>
+<td>25.34738</td>
+<td>4.69624</td>
+<td>5.83103</td>
+<td>1.36205</td> </tr>
+<tr>
+<td>Partial R-Square</td>
+<td/>
+<td>0.0001</td>
+<td>0.0002</td>
+<td>0.0001</td>
+<td>0.2277</td>
+<td>0.0063</td>
+<td>0.0335</td> </tr>
+</tbody>
+</table></div></figure><figure id="table13" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 13.</strong><span data-astro-cid-dzaleqsp> Number of Observations and Percent Classified into Cadre or Worker.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Original classification</th>
+<th>Classified into Official</th>
+<th>Classified into Worker</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Official No</td>
+<td>75,451</td>
+<td>30,153</td>
+<td>1,05,604</td>
+</tr>
+<tr>
+<td>%</td>
+<td>71.38</td>
+<td>28.62</td>
+<td>100.00</td>
+</tr>
+<tr>
+<td>Worker No</td>
+<td>19,206</td>
+<td>57,102</td>
+<td>76,308</td>
+</tr>
+<tr>
+<td>%</td>
+<td>25.08</td>
+<td>74.92</td>
+<td>100.00</td>
+</tr>
+<tr>
+<td>Total No</td>
+<td>94,657</td>
+<td>87,255</td>
+<td>1,81,912</td>
+</tr>
+<tr>
+<td>%</td>
+<td>51.96</td>
+<td>48.04</td>
+<td>100.00</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>For the government officials in the following years of 2006–2010, which are estimated to have a small growth in the number of the population (<a href="#table9">Table 9</a>), the method of simplified random picking up would be used to determine the officials instead of using the discriminant analysis again.</p><p data-astro-cid-qsyhzaho>After identifying the records of government officials, a certain percentage of their income was allocated to their personal savings accounts according to the relative supplementary policy. After subsidizing their personal savings accounts, merging with the amount of allocation regulated by the medical insurance scheme, the final personal savings accounts for officials were established. So government officials’ personal savings accounts consisted of two monetary parts; one comes from the income allocation under the medical insurance scheme, the other comes from the financial assistance by the local governments.</p></section><section id="s3-7" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.7 Settle the balance of personal savings accounts</h3><p data-astro-cid-qsyhzaho>This subsection describes the addition of the information on medical expenses to each individual’s basic information records each year. The total medical expenses for individuals are covered jointly by the personal savings accounts or patients themselves, the social pool fund, the serious illness fund, and the Government official fund for officials. The medical expenses paid by participants themselves include the following four items.</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><b>Total self payments</b>.</p><p data-astro-cid-qsyhzaho>These payments are for medical services not covered by the basic medical insurance scheme. Individuals need to pay all the costs of these kinds of services through out of pocket payments.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><b>Payments for clinic treatments and medication in pharmacies</b></p><p data-astro-cid-qsyhzaho>These two kinds of medical expenditure should be paid through personal savings accounts. When the personal savings accounts are exhausted, patients should pay the excess fees directly from their own pockets.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><b>Shared payments for hospitalisation and special diseases</b></p><p data-astro-cid-qsyhzaho>These payments include threshold fees admitted to a hospital, amount of shared percentage for hospitalisation services (small part, around 10 per cent of the cost), individual shared payment for special diseases and emergency services in clinic. These kinds of payments can be charged to the personal savings accounts or individuals concerned directly.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><b>Self payments for special clinic checkup and chronic disease</b></p><p data-astro-cid-qsyhzaho>Usually 20–30 per cent of these kinds of expenses are shared by individuals, the rest of expenses are covered by the social pool fund. These kinds of expenses shared by individuals can be charged to the personal savings accounts or individuals concerned directly.</p></li></ul><p data-astro-cid-qsyhzaho>After finishing the calculation of these four items of medical expenses in 2001–2005, all of the expenses were summed up to get the total medical services cost shared by individuals. Deducting these medical services costs from the personal savings accounts, then the balances of the personal savings accounts for each person were obtained. Here for the personal savings accounts which are managed by individuals themselves, the balances equal the accumulative amounts minus the medical services costs payable by individuals concerned.</p><p data-astro-cid-qsyhzaho>Except the total self payment and the payments by the personal savings account, the rest of the medical expenses are covered jointly by the social pool fund, the serious illness fund and the Government official fund. <a href="#table14">Table 14</a> presents the average results of different kinds of costs for each age group, and the accumulative amounts and balances of the personal savings accounts in average. Here the personal savings accounts covered all the costs shared by individuals except for the medical services items out of the medical insurance scheme, which were totally paid by individuals themselves.</p><figure id="table14" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 14.</strong><span data-astro-cid-dzaleqsp> Different kind of costs in average by age group at the end of 2005 (Yuan).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="2">Age group</th>
+<th colspan="5">Average Payment for each insured individual by</th>
+<th rowspan="2">Amount of Accumulate in PSA</th>
+<th rowspan="2">Balance of PSA</th>
+</tr>
+<tr>
+<th>Self Totally</th>
+<th>Personal savings account</th>
+<th>Social pool fund</th>
+<th>Serious illness fund</th>
+<th>Government official fund</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Emp ≤34 years</td>
+<td>22</td>
+<td>1,050</td>
+<td>283</td>
+<td>19</td>
+<td>3</td>
+<td>1,607</td>
+<td>557</td>
+</tr>
+<tr>
+<td>Emp 35–49 years</td>
+<td>49</td>
+<td>1,640</td>
+<td>724</td>
+<td>47</td>
+<td>9</td>
+<td>2,226</td>
+<td>586</td>
+</tr>
+<tr>
+<td>Emp ≥50 years</td>
+<td>81</td>
+<td>1,977</td>
+<td>1,361</td>
+<td>126</td>
+<td>12</td>
+<td>2,477</td>
+<td>501</td>
+</tr>
+<tr>
+<td>Ret ≤64 years</td>
+<td>130</td>
+<td>1,961</td>
+<td>2,687</td>
+<td>187</td>
+<td>9</td>
+<td>1,639</td>
+<td>−322</td>
+</tr>
+<tr>
+<td>Ret ≥65 years</td>
+<td>223</td>
+<td>2,578</td>
+<td>5,025</td>
+<td>313</td>
+<td>23</td>
+<td>1,614</td>
+<td>−964</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: Emp – Employee, Ret – Retiree, PSA – Personal savings account</p></div></figure><p data-astro-cid-qsyhzaho>On average, the personal savings accounts of employees could cover all the medical services costs shared by individuals with some balances. However, for retirees, especially for retirees aged 65 years and over, the balances of their personal savings accounts were negative. Regarding retirees, the older the individuals, the larger the gap to cover the medical treatment fees which supposed to be paid by individuals themselves.</p></section></div></details><details id="s3-8" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3.8 Income adjustment parameters</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>When forecasting individual’s medical expenditure and assessing the medical insurance scheme, the individual’s income plays an important role because both the social pool fund and the personal savings account are collected with the premium based on the individual’s income. So after creating the basic individual information dataset for the forecasting year, the income adjustment parameters for different age groups of individuals need to be established.</p><p data-astro-cid-qsyhzaho>The income increase parameters (or adjustment parameters) of the participants were obtained using the income information from 2002 to 2005. It is assumed that individual’s monthly income remains unchanged in the particular forecasting year. The adjustment parameters were constructed by the following three steps.</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>First, by categories of gender across age group, the incomes were split into several sections. The actual data analysis of 2002–2005 shows that the higher the income, the more variation occurs, so more classes should be used to catch the variation. As a result, the individual monthly income in each year of 2002–2004 were split into 9 classes according to income percentile, that is, Minimum-P5 (the fifth percentile of income, similar for the others), P5-P10, P10-P25, P25-P50, P50-P75, P75-P90, P90-P95, P95-P99, P99-Maximum. So the individual income was categorized into 2×5×9 = 90 groups, where 2 represents male and female, and 5 represents 5 age groups.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Second, for each of the above categorized 90 income groups, increase rates of individual income were calculated for 2002–2003, 2003–2004 and 2004–2005. These rates of increase for each income group were further divided into 8 segments from the lowest to the highest, in detail, Lowest-P10 (the tenth percentile of income), P10-P25, P25-P50, P50-P75, P75-P90, P90-P95, P95-P99, P99-Highest. In this way, 90×8 = 720 income cells were obtained. By the actual calculation, the rates of increase in those income cells for three different years of 2002–2003, 2003–2004 and 2004–2005 showed consistent trends.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Third, in each income cell, the average rates of increase of the three years in a row were calculated. Such calculations were reasonable because the income cells stood for the same percentiles and had consistent trends for the above three different years. The results are illustrated in <a href="#table15">Table 15</a>, where the first column indicates gender of male and female, the second column indicates 5 age groups, and the third column indicates 9 income sections in percentile. Rate1 – Rate8 at the first row means the different rates of increase, with the relative interval of frequency at the last row.</p></li></ul><figure id="table15" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 15.</strong><span data-astro-cid-dzaleqsp> The monthly income adjustment parameters.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Sex</th>
+<th>Group</th>
+<th>Income</th>
+<th>Rate1</th>
+<th>Rate2</th>
+<th>Rate3</th>
+<th>Rate4</th>
+<th>Rate5</th>
+<th>Rate6</th>
+<th>Rate7</th>
+<th>Rate8</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>0.12266</td>
+<td>0.14138</td>
+<td>0.21787</td>
+<td>0.47927</td>
+<td>1.04961</td>
+<td>1.73501</td>
+<td>3.31952</td>
+<td>4.66841</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>0.08690</td>
+<td>0.11716</td>
+<td>0.20500</td>
+<td>0.42003</td>
+<td>0.87130</td>
+<td>1.47540</td>
+<td>3.00536</td>
+<td>4.31932</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>3</td>
+<td>−0.00323</td>
+<td>0.06362</td>
+<td>0.13608</td>
+<td>0.39481</td>
+<td>0.81915</td>
+<td>1.47868</td>
+<td>2.85378</td>
+<td>4.02337</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>4</td>
+<td>−0.18203</td>
+<td>−0.03832</td>
+<td>0.03729</td>
+<td>0.22041</td>
+<td>0.49273</td>
+<td>0.95651</td>
+<td>2.01142</td>
+<td>3.10143</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>5</td>
+<td>−0.36013</td>
+<td>−0.16767</td>
+<td>0.01439</td>
+<td>0.11296</td>
+<td>0.30066</td>
+<td>0.65700</td>
+<td>1.38539</td>
+<td>2.07747</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>6</td>
+<td>−0.48373</td>
+<td>−0.28098</td>
+<td>−0.04153</td>
+<td>0.08365</td>
+<td>0.28106</td>
+<td>0.52561</td>
+<td>1.04572</td>
+<td>1.53034</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>7</td>
+<td>−0.61252</td>
+<td>−0.42016</td>
+<td>−0.15020</td>
+<td>0.06411</td>
+<td>0.25603</td>
+<td>0.45087</td>
+<td>0.66346</td>
+<td>0.89255</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>8</td>
+<td>−0.69212</td>
+<td>−0.49179</td>
+<td>−0.18298</td>
+<td>0.05357</td>
+<td>0.18571</td>
+<td>0.27947</td>
+<td>0.36918</td>
+<td>0.47154</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>9</td>
+<td>−0.70124</td>
+<td>−0.45743</td>
+<td>−0.20916</td>
+<td>0.00736</td>
+<td>0.02508</td>
+<td>0.02691</td>
+<td>0.00249</td>
+<td>0.15586</td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>1</td>
+<td>0.09254</td>
+<td>0.14038</td>
+<td>0.21973</td>
+<td>0.50458</td>
+<td>1.17240</td>
+<td>1.93866</td>
+<td>3.50962</td>
+<td>4.69382</td>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>2</td>
+<td>0.04557</td>
+<td>0.08680</td>
+<td>0.15186</td>
+<td>0.43602</td>
+<td>0.99369</td>
+<td>1.67413</td>
+<td>2.98944</td>
+<td>4.24908</td>
+</tr>
+<tr>
+<td/>
+<td>:</td>
+<td>:</td>
+<td>:</td>
+<td>:</td>
+<td>:</td>
+<td>:</td>
+<td>:</td>
+<td>:</td>
+<td>:</td>
+<td>:</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5</td>
+<td>8</td>
+<td>−0.60547</td>
+<td>−0.41587</td>
+<td>−0.00792</td>
+<td>0.03741</td>
+<td>0.06543</td>
+<td>0.11838</td>
+<td>0.17226</td>
+<td>0.27425</td>
+</tr>
+<tr>
+<td>2</td>
+<td>5</td>
+<td>9</td>
+<td>−0.68014</td>
+<td>−0.47035</td>
+<td>−0.16917</td>
+<td>0.02955</td>
+<td>0.05355</td>
+<td>0.10269</td>
+<td>0.13050</td>
+<td>0.18214</td>
+</tr>
+<tr>
+<td colspan="3"><b>Relative frequency</b></td>
+<td>0–0.10</td>
+<td>0.10–0.25</td>
+<td>0.25–0.50</td>
+<td>0.50–0.75</td>
+<td>0.75–0.90</td>
+<td>0.90–0.95</td>
+<td>0.95–0.99</td>
+<td>0.99–1.00</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>With the parameters of monthly income rates of increase in <a href="#table15">Table 15</a>, each individual’s monthly income in 2006–2010 can be projected. For example, for a male in age group 1 (employee aged less than 35 years), if his monthly wage fell into the lowest section (Income = ‘1’), then his monthly wage in the coming year would have an increase rate of 0.12266 with a chance of 10 per cent (refer to the relative frequency in the last row in <a href="#table15">Table 15</a>). In practice, a uniform random number was given to this person. If this person’s random number fell into 0≤random&lt;0.10, then his monthly income would have an increase rate Apart from the basic medical insurance scheme, of 0.12266. Such income adjustment was carried Kunming has also established a government out once a year in the model.</p></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. Discussions</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>This article discusses part of a microsimulation model developed to assess the distributional impacts of medical insurance policies in the city of Kunming and describes an important step of the development of the model. Through the overview of the medical insurance scheme of China’s urban employees and employers, the article describes in detail the steps to create the basefile.</p><p data-astro-cid-qsyhzaho>Using the administrative microdata sources over the period of 2001–2005 provided by the Bureau of Labour and Social Security of Kunming, the basefile was constructed for the microsimulation model for the medical insurance scheme in China. The basefile, for the year 2005, mainly contains demographic information of medical insurance participants. The determined population of participants in 2005 was quite close to the target population reported by the Bureau of Labour and Social Security of Kunming (<a href="#bib8">Kunming Medical Insurance Centre 2006</a>). The death rates by gender across age group were created manually, which is vital information for projecting medical expenses.</p><p data-astro-cid-qsyhzaho>Monthly income was imputed for individual records with missing income values using Monte Carlo method and linear curve fitting. Using this information, the personal savings account for each individual was created. Combining with the calculated different medical expenses, the balance of the personal savings account was achieved. On average, by the end of 2005, the personal savings accounts of employees could cover all the medical expenses shared by individuals with some balances. However, for retirees, especially for retirees aged 65 years and over, there were large gaps to cover the medical treatment fees with their personal savings accounts.</p><p data-astro-cid-qsyhzaho>Apart from the basic medical insurance scheme, Kunming has also established a government official fund for the government officials. Unfortunately the information about government officials in the raw datasets was quite insufficient. The project used the combination methods of logarithm curve fitting and binary discriminant analysis to identify government officials. The results were reasonable and acceptable. For comparison, the estimated total number of medical insurance participants over 2006–2010 was also presented. This showed a steady growth trend. Because of a new medical reform plan announced by China’s State Council in April 2009 (<a href="#bib10">Lan et al. 2009</a>), it is estimated that more young employees would join the medical insurance scheme.</p><p data-astro-cid-qsyhzaho>Finally, the income adjustment parameters for medical insurance participants were produced by using the income information from 2002 to 2005. When forecasting the medical insurance scheme for the coming years 2006–2010, these parameters will be very important information. With these parameters, individuals’ income would be adjusted annually, on which the medical insurance premium contribution would be collected according to the relative medical insurance policies.</p><p data-astro-cid-qsyhzaho>Based on the basefile constructed as discussed in this article, a static microsimulation model could be built to assess the implementation effects of the medical insurance policies and analyse the impact of the urban medical insurance system on urban employees and employers. By analysing the balances of the social pool fund, the serious illness fund and the Government official fund at the end of each forecast year, the assistance capacity and sustainable development of these pool funds could be examined. For example, it could estimate the payment proportion covered annually by the social pool fund and the serious illness fund together for the total incurred medical costs over the period of 2006–2010. It could also project the distribution of personal saving accounts and the medical services burden for different age groups of the population.</p></div></details></div><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Armitage, P, Berry, G, Matthews, JNS (2002). <em data-astro-cid-oer3kof4>Statistical Methods in Medical Research</em>. 4 ed. London: Blackwell Science Ltd.</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Brown, L, Abello, A, Phillips, B, Harding, A (2004). <span data-astro-cid-oer3kof4>Moving towards an improved microsimulation model of the Australian Pharmaceutical Benefits Scheme</span>. <em data-astro-cid-oer3kof4>Australian Economic Review</em>, <strong data-astro-cid-oer3kof4>37</strong>, 41–61.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Dong, W (2006). <span data-astro-cid-oer3kof4>Green book of Medical and Health Services: The Government should take more responsibility for unsuccessful of medical insurance reform</span>.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2005). <span data-astro-cid-oer3kof4>China’s Reform of the Medical and Health System</span>.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Gupta, A, Basu, K (2007). <span data-astro-cid-oer3kof4>Building Policy-Relevant Health Human Resource Models</span>. In Gupta, A., Harding, A (Eds.), <em data-astro-cid-oer3kof4>Modelling Our Future: Population Ageing, Health and Aged Care</em> (pp. 322–342). North-Holland, Amsterdam: International Symposia in Economic Theory and Economitrics.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Harding, A, Gupta, A (2007). <em data-astro-cid-oer3kof4>Modelling Our Future: Population Ageing, Social Security and Taxation</em>. North-Holland, Amsterdam: International Symposia in Economic Theory and Economitrics.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2004). <em data-astro-cid-oer3kof4>Kunming basic medical insurance: guideline for insurance participants (in Chinese)</em>. Kunming, China: Yunnan Nationality Press.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2006). <em data-astro-cid-oer3kof4>Implement analysis report on Kunming’s medical insurance system for the year of 2005 (in Chinese)</em>. Kunming: China.</span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2007). <em data-astro-cid-oer3kof4>Statistical announcement on labour and social security issues in 2006</em>. Ministry of Labour and Social Security and Bureau of National Statistics.</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Lan, T, Song, J, Linag, Q (2009). <span data-astro-cid-oer3kof4>A long and winding road to recovery, China Daily, 2009-04-28</span>.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2008). <span data-astro-cid-oer3kof4>SAS Learning Edition, SAS Procedures</span>.</span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Schofield, D, Passey, M, Earnest, A, Percival, R, Kelly, S, Shrestha, R, Fletcher, S (2009). <span data-astro-cid-oer3kof4>Health&WealthMOD: A Microsimulation Model Of The Economic Impacts Of Diseases On Older Workers</span>. <em data-astro-cid-oer3kof4>International Journal of Microsimulation</em>, <strong data-astro-cid-oer3kof4>2</strong>, 58–63.</span></li><li id="bib13" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2004). <span data-astro-cid-oer3kof4>China’s Social Security and Its Policy</span>.</span></li><li id="bib14" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Xiong, L, Jia, J, Gong, M, Li, L, Zhao, J (2007). <span data-astro-cid-oer3kof4>Modelling of Medical Insurance System for Urban Employees in China. First General Conference of the International Microsimulation Association</span>.</span></li><li id="bib15" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Xu, H (2007). <span data-astro-cid-oer3kof4>Basic Consideration of the Medical Insurance System Reform</span>. <em data-astro-cid-oer3kof4>Chinese Health Economics Magazine</em>, <strong data-astro-cid-oer3kof4>26</strong>, 69–71.</span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Xiong Linping</h4><ul class="article-info__affiliations" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a>Department of Health Services Management, Second Military Medical University, China</li><li data-astro-cid-m3fa5h5a>The National Centre for Social and Economic Modelling, University of Canberra, Australia</li></ul><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:xionglinping@yahoo.com.cn" data-astro-cid-m3fa5h5a>xionglinping@yahoo.com.cn</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Tang Weidong</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Bureau of Labour and Social Security of Kunming, China</p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Liu Hong</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Office of Medical Insurance at No. 43 General Hospital, China</p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Acknowledgements</h3><p data-astro-cid-m3fa5h5a>The authors of the article are very grateful to the revisions and constructive comments from Prof. Ann Harding and Prof. Laurie Brown, National Centre for Social and Economic Modelling, University of Canberra, Australia. We would like to gratefully acknowledge the funding of a postgraduate research scholarship provided by the University of Canberra. We would also like to acknowledge the editorial advice that has been sought from Clair Mathews, University of Canberra. The project also supported by the National Natural Science Foundation of China (Grant No. 70073171).</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00056" data-astro-cid-m3fa5h5a>Version of Record published: December 31, 2011 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2011, Linping et al.</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/health" data-pagefind-filter="Research category:Health" data-astro-cid-m3fa5h5a>Health</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=urban%20medical%20insurance" data-astro-cid-m3fa5h5a>urban medical insurance</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=China" data-astro-cid-m3fa5h5a>China</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=microsimulation" data-astro-cid-m3fa5h5a>microsimulation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=basefile" data-astro-cid-m3fa5h5a>basefile</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=policy%20research" data-astro-cid-m3fa5h5a>policy research</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

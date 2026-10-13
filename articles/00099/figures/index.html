@@ -1,0 +1,1001 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Figures and data in Imputing individual effects in dynamic microsimulation models an application to household formation and labour market participation in Italy | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00099/figures"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.figures-page__summary[data-astro-cid-uy5dlehv]{color:var(--color-ink-muted);margin-block-end:var(--space-m)}@media (width>=75em){.article-content-grid[data-astro-cid-uy5dlehv]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-astro-cid-uy5dlehv><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/methodology" data-astro-cid-ak4gb66a>Methodology</a>, <a href="/subjects/labour-supply-demand" data-astro-cid-ak4gb66a>Labour supply and demand</a>, <a href="/subjects/dynamic-microsimulation" data-astro-cid-ak4gb66a>Dynamic microsimulation</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Aug 31, 2014</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Imputing individual effects in dynamic microsimulation models an application to household formation and labour market participation in Italy</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Matteo Richiardi, Ambra Poggi</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Institute for New Economic Thinking, University of Oxford Nuffield College, United Kingdom; Collegio Carlo Alberto and LABORatorio Revelli, Italy; LABORatorio Revelli, University of Milan-Bicocca, Italy</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/7-2/volume-7-2-autumn-2014" data-astro-cid-ak4gb66a>Volume 7(2) Autumn 2014</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> M. Richiardi, A. Poggi; 2014; <span data-astro-cid-ak4gb66a>Imputing individual effects in dynamic microsimulation models an application to household formation and labour market participation in Italy</span>; International Journal of Microsimulation; 7(2); 3–39. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00099" data-astro-cid-ak4gb66a>10.34196/ijm.00099</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>Dynamic microsimulation modelling involves two stages: estimation and forecasting. Unobserved heterogeneity is often considered in estimation, but not in forecasting, beyond trivial cases. Non-trivial cases involve individuals that enter the simulation with a history of previous outcomes. We show that the simple solutions of attributing to these individuals a null effect or a random draw from the estimated unconditional distributions lead to biased forecasts, which are often worse than those obtained neglecting unobserved heterogeneity altogether. We then present a first implementation of the Rank method, a new algorithm for assigning individual effects to the simulation sample. Out-of-sample validation of our model shows that use of the Rank method significantly improves the quality of the forecasts.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00099/ijm-00099.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00099.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00099.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-uy5dlehv><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00099" class="view-tabs__link" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00099/figures" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#figures" data-astro-cid-twdwaz5s>Figures</a></li><li data-astro-cid-twdwaz5s><a href="#tables" data-astro-cid-twdwaz5s>Tables</a></li></ul></details></div><div class="article-content" data-astro-cid-uy5dlehv><p class="figures-page__summary" data-astro-cid-uy5dlehv>This article contains 8 figures and 9 tables.</p><details id="figures" class="article-section article-section--collapsible" open data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Figures</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00099-fig1.WZS1KCmx_2utPl8.webp" class="figure-lightbox-trigger" data-pswp-width="466" data-pswp-height="341" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00099-fig1.WZS1KCmx_2utPl8.webp" alt width="466" height="341" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Distribution of the true and imputed (via the Rank method) individual effects. Parameterization: x~N(−0.5,2),β = β = 1, α~N(0,1),η~N(0,1).</span></figcaption></figure><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00099-fig2.BZQ0a9fr_1lVIdt.webp" class="figure-lightbox-trigger" data-pswp-width="457" data-pswp-height="333" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00099-fig2.BZQ0a9fr_1lVIdt.webp" alt width="457" height="333" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Distribution of the true and imputed (via the Rank method) individual effects, first quintile of x. Parameterization: x~N(−0.5,2),β = β = 1, α~N(0,1),η~N(0,1).</span></figcaption></figure><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00099-fig3.NR1Inv8k_Kz1Km.webp" class="figure-lightbox-trigger" data-pswp-width="701" data-pswp-height="200" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00099-fig3.NR1Inv8k_Kz1Km.webp" alt width="701" height="200" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Probability of graduating, high school (left panel) and university (right panel).</span></figcaption></figure><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00099-fig4.Di5lUfCf_ZGUoFd.webp" class="figure-lightbox-trigger" data-pswp-width="572" data-pswp-height="577" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00099-fig4.Di5lUfCf_ZGUoFd.webp" alt width="572" height="577" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Structure of the microsimulation model.</span></figcaption></figure><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00099-fig5.Ce2nCedW_OI1nO.webp" class="figure-lightbox-trigger" data-pswp-width="622" data-pswp-height="587" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00099-fig5.Ce2nCedW_OI1nO.webp" alt width="622" height="587" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> The education module.</span></figcaption></figure><figure id="fig6" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00099-fig6.lyo_Bc1N_Z5vVmo.webp" class="figure-lightbox-trigger" data-pswp-width="645" data-pswp-height="163" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00099-fig6.lyo_Bc1N_Z5vVmo.webp" alt width="645" height="163" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 6.</strong><span data-astro-cid-dzaleqsp> The Household formation module (females only).</span></figcaption></figure><figure id="fig7" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00099-fig7.Coczvuns_x3A8I.webp" class="figure-lightbox-trigger" data-pswp-width="622" data-pswp-height="157" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00099-fig7.Coczvuns_x3A8I.webp" alt width="622" height="157" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 7.</strong><span data-astro-cid-dzaleqsp> The employment module.</span></figcaption></figure><figure id="fig8" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00099-fig8.4APhSH0S_ZunGsO.webp" class="figure-lightbox-trigger" data-pswp-width="460" data-pswp-height="336" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00099-fig8.4APhSH0S_ZunGsO.webp" alt width="460" height="336" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 8.</strong><span data-astro-cid-dzaleqsp> Projected participation rates, individuals aged 17–54.</span></figcaption></figure></div></details><details id="tables" class="article-section article-section--collapsible" data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Tables</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Application of the Rank method. It is assumed β = β.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>(1)</th>
+<th>(2)</th>
+<th>(3)</th>
+<th>(4)</th>
+<th>(5)</th>
+<th>(6)</th>
+<th>(7)</th>
+<th>(8)</th>
+<th>(9)</th>
+<th>(10)</th>
+</tr>
+<tr>
+<th>id</th>
+<th><i>y</i></th>
+<th><inline-formula id="inline17"><math display="inline" id="i17"><mi>x</mi><mo>′</mo><mover accent="true"><mi>β</mi><mo>^</mo></mover></math></th>
+<th><inline-formula id="inline18"><math display="inline" id="i18"><mover accent="true"><mi>y</mi><mo>^</mo></mover></math></th>
+<th><inline-formula id="inline19"><math display="inline" id="i19"><mi>y</mi><mo>−</mo><mover accent="true"><mi>y</mi><mo>^</mo></mover></math></th>
+<th><inline-formula id="inline20"><math display="inline" id="i20"><mi>r</mi><mo stretchy="false">(</mo><mi>y</mi><mo>−</mo><mover accent="true"><mi>y</mi><mo>^</mo></mover><mo stretchy="false">)</mo></math></th>
+<th><inline-formula id="inline21"><math display="inline" id="i21"><mover accent="true"><mi>α</mi><mo>˜</mo></mover></math></th>
+<th><inline-formula id="inline22"><math display="inline" id="i22"><mover accent="true"><mi>η</mi><mo>˜</mo></mover></math></th>
+<th><inline-formula id="inline23"><math display="inline" id="i23"><mover accent="true"><mi>ε</mi><mo>˜</mo></mover><mo>=</mo><mover accent="true"><mi>α</mi><mo>˜</mo></mover><mo>+</mo><mover accent="true"><mi>η</mi><mo>˜</mo></mover></math></th>
+<th><inline-formula id="inline24"><math display="inline" id="i24"><mi>r</mi><mo stretchy="false">(</mo><mover accent="true"><mi>ε</mi><mo>˜</mo></mover><mo stretchy="false">)</mo></math></th>
+<th><inline-formula id="inline25"><math display="inline" id="i25"><mover accent="true"><mi>y</mi><mo>˜</mo></mover></math></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>−0.49</td>
+<td>0</td>
+<td>1</td>
+<td>1</td>
+<td>−1.43</td>
+<td>2.01</td>
+<td>0.58</td>
+<td>1</td>
+<td>1</td>
+</tr>
+<tr>
+<td>9</td>
+<td>1</td>
+<td>−0.05</td>
+<td>0</td>
+<td>1</td>
+<td>2</td>
+<td>2.36</td>
+<td>−2.12</td>
+<td>0.24</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr>
+<td>8</td>
+<td>1</td>
+<td>−0.39</td>
+<td>0</td>
+<td>1</td>
+<td>3</td>
+<td>0.22</td>
+<td>−0.10</td>
+<td>0.12</td>
+<td>3</td>
+<td>0</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1</td>
+<td>−1.38</td>
+<td>0</td>
+<td>1</td>
+<td>4</td>
+<td>2.02</td>
+<td>−2.45</td>
+<td>−0.43</td>
+<td>4</td>
+<td>0</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1</td>
+<td>−0.77</td>
+<td>0</td>
+<td>1</td>
+<td>5</td>
+<td>−0.76</td>
+<td>0.16</td>
+<td>−0.6</td>
+<td>5</td>
+<td>0</td>
+</tr>
+<tr>
+<td>10</td>
+<td>1</td>
+<td>0.21</td>
+<td>1</td>
+<td>0</td>
+<td>6</td>
+<td>−1.35</td>
+<td>0.27</td>
+<td>−1.08</td>
+<td>6</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>−2.79</td>
+<td>0</td>
+<td>0</td>
+<td>7</td>
+<td>0.29</td>
+<td>−1.45</td>
+<td>−1.16</td>
+<td>7</td>
+<td>0</td>
+</tr>
+<tr>
+<td>2</td>
+<td>0</td>
+<td>−0.5</td>
+<td>0</td>
+<td>0</td>
+<td>8</td>
+<td>−1.87</td>
+<td>0.06</td>
+<td>−1.81</td>
+<td>8</td>
+<td>0</td>
+</tr>
+<tr>
+<td>3</td>
+<td>0</td>
+<td>−0.37</td>
+<td>0</td>
+<td>0</td>
+<td>9</td>
+<td>−0.52</td>
+<td>−1.85</td>
+<td>−2.37</td>
+<td>9</td>
+<td>0</td>
+</tr>
+<tr>
+<td>4</td>
+<td>0</td>
+<td>0.36</td>
+<td>1</td>
+<td>−1</td>
+<td>10</td>
+<td>0.79</td>
+<td>−3.33</td>
+<td>−2.54</td>
+<td>10</td>
+<td>0</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Participation rates by level of education, 2010.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">Italy</th>
+<th colspan="2">EU15</th>
+</tr>
+<tr>
+<th/>
+<th>Men</th>
+<th>Women</th>
+<th>Men</th>
+<th>Women</th>
+</tr>
+<tr>
+<th/>
+<th/>
+<th/>
+<th>%</th>
+<th/>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Low education</td>
+<td>64.5</td>
+<td>32.6</td>
+<td>67.3</td>
+<td>46.4</td>
+</tr>
+<tr>
+<td>Medium education</td>
+<td>80.7</td>
+<td>63.1</td>
+<td>82.2</td>
+<td>71.2</td>
+</tr>
+<tr>
+<td>High education</td>
+<td>86.5</td>
+<td>77.5</td>
+<td>90.4</td>
+<td>84.0</td>
+</tr>
+<tr>
+<td>TOTAL</td>
+<td>73.6</td>
+<td>51.2</td>
+<td>78.8</td>
+<td>65.6</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: our elaboration on Eurostat data</p></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Status at age 17.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>In education</th>
+<th>Active <i>Males</i></th>
+<th>Unemployed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>North</td>
+<td>79.8%</td>
+<td>17.2%</td>
+<td>8.6%</td>
+</tr>
+<tr>
+<td>Centre</td>
+<td>86.0%</td>
+<td>10.4%</td>
+<td>15.0%</td>
+</tr>
+<tr>
+<td>South</td>
+<td>82.3%</td>
+<td>12.2% <i>Females</i></td>
+<td>46.9%</td>
+</tr>
+<tr>
+<td>North</td>
+<td>86.7%</td>
+<td>12.1%</td>
+<td>19.0%</td>
+</tr>
+<tr>
+<td>Centre</td>
+<td>86.8%</td>
+<td>10.2%</td>
+<td>35.0%</td>
+</tr>
+<tr>
+<td>South</td>
+<td>83.7%</td>
+<td>9.9%</td>
+<td>55.8%</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: our elaboration on Italian LFS data (2001).</p></div></figure><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Enrolment.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="3">Secondary School (Probit)</th>
+<th colspan="3">University (Probit)</th>
+</tr>
+<tr>
+<th/>
+<th>Coef</th>
+<th/>
+<th>SE</th>
+<th>Coef.</th>
+<th/>
+<th>SE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Female</td>
+<td>−0.008</td>
+<td/>
+<td>0.069</td>
+<td>0.113</td>
+<td><a href="#tfn4-1">*</a></td>
+<td>0.055</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>−11.285</td>
+<td><a href="#tfn4-2">**</a></td>
+<td>2.665</td>
+<td>0.691</td>
+<td><a href="#tfn4-2">**</a></td>
+<td>0.214</td>
+</tr>
+<tr>
+<td>Age-squared</td>
+<td>0.287</td>
+<td><a href="#tfn4-2">**</a></td>
+<td>0.070</td>
+<td>−0.016</td>
+<td><a href="#tfn4-2">**</a></td>
+<td>0.004</td>
+</tr>
+<tr>
+<td>Centre</td>
+<td>0.090</td>
+<td/>
+<td>0.098</td>
+<td>0.010</td>
+<td/>
+<td>0.070</td>
+</tr>
+<tr>
+<td>South</td>
+<td>0.087</td>
+<td/>
+<td>0.081</td>
+<td>0.110</td>
+<td><a href="#tfn4-2">**</a></td>
+<td>0.033</td>
+</tr>
+<tr>
+<td>Year of birth</td>
+<td>0.073</td>
+<td><a href="#tfn4-2">**</a></td>
+<td>0.021</td>
+<td>0.036</td>
+<td><a href="#tfn4-2">**</a></td>
+<td>0.014</td>
+</tr>
+<tr>
+<td>Constant</td>
+<td>−33.024</td>
+<td/>
+<td>50.76</td>
+<td>−77.856</td>
+<td><a href="#tfn4-2">**</a></td>
+<td>27.901</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: our elaboration on ECHP 1994–2001 data.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 90% confidence level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 95% confidence level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>*** significant at 99% confidence level</p></div></figure><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Unemployment and male participation estimates (<i>Table legend</i>).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="4">Unemployment</th>
+<th colspan="4">Male participation</th>
+</tr>
+<tr>
+<th/>
+<th colspan="2">Probit</th>
+<th colspan="2">Dynamic RE model</th>
+<th colspan="2">Probit</th>
+<th colspan="2">Dynamic RE model</th>
+</tr>
+<tr>
+<th/>
+<th>Coef.</th>
+<th>Robust SE</th>
+<th>Coef.</th>
+<th>SE</th>
+<th>Coef.</th>
+<th>Robust SE</th>
+<th>Coef.</th>
+<th>SE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lag (participation)</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+<td>1.766 <a href="#tfn5-3">**</a></td>
+<td>0.052</td>
+<td>0.799 <a href="#tfn5-3">**</a></td>
+<td>0.077</td>
+</tr>
+<tr>
+<td>Lag (unemployment)</td>
+<td>1.785 <a href="#tfn5-3">**</a></td>
+<td>0.026</td>
+<td>1.123 <a href="#tfn5-3">**</a></td>
+<td>0.039</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Female</td>
+<td>0.356 <a href="#tfn5-3">**</a></td>
+<td>0.022</td>
+<td>0.592 <a href="#tfn5-3">**</a></td>
+<td>0.049</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>−0.148 <a href="#tfn5-3">**</a></td>
+<td>0.009</td>
+<td>−0.256 <a href="#tfn5-3">**</a></td>
+<td>0.020</td>
+<td>0.130 <a href="#tfn5-3">**</a></td>
+<td>0.011</td>
+<td>0.326 <a href="#tfn5-3">**</a></td>
+<td>0.026</td>
+</tr>
+<tr>
+<td>Age^2</td>
+<td>0.002 <a href="#tfn5-3">**</a></td>
+<td>0.0001</td>
+<td>0.002 <a href="#tfn5-3">**</a></td>
+<td>0.000</td>
+<td>−0.002 <a href="#tfn5-3">**</a></td>
+<td>0.000</td>
+<td>−0.004 <a href="#tfn5-3">**</a></td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>High education</td>
+<td>−0.246 <a href="#tfn5-3">**</a></td>
+<td>0.038</td>
+<td>−0.582 <a href="#tfn5-3">**</a></td>
+<td>0.083</td>
+<td>0.287 <a href="#tfn5-3">**</a></td>
+<td>0.066</td>
+<td>0.341 <a href="#tfn5-3">**</a></td>
+<td>0.115</td>
+</tr>
+<tr>
+<td>Medium education</td>
+<td>−0.237 <a href="#tfn5-3">**</a></td>
+<td>0.022</td>
+<td>−0.368 <a href="#tfn5-3">**</a></td>
+<td>0.045</td>
+<td>0.110 <a href="#tfn5-3">**</a></td>
+<td>0.032</td>
+<td>0.170 <a href="#tfn5-3">**</a></td>
+<td>0.058</td>
+</tr>
+<tr>
+<td>Centre</td>
+<td>0.283 <a href="#tfn5-3">**</a></td>
+<td>0.035</td>
+<td>0.463 <a href="#tfn5-3">**</a></td>
+<td>0.078</td>
+<td>−0.054</td>
+<td>0.046</td>
+<td>−0.104</td>
+<td>0.088</td>
+</tr>
+<tr>
+<td>South</td>
+<td>0.783 <a href="#tfn5-3">**</a></td>
+<td>0.028</td>
+<td>1.508 <a href="#tfn5-3">**</a></td>
+<td>0.065</td>
+<td>−0.155 <a href="#tfn5-3">**</a></td>
+<td>0.035</td>
+<td>−0.313 <a href="#tfn5-3">**</a></td>
+<td>0.069</td>
+</tr>
+<tr>
+<td>Year of birth</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+<td>−0.006</td>
+<td>0.007</td>
+<td>0.010</td>
+<td>0.014</td>
+</tr>
+<tr>
+<td>Lag (student)</td>
+<td>1.147 <a href="#tfn5-3">**</a></td>
+<td>0.043</td>
+<td>0.504 <a href="#tfn5-3">**</a></td>
+<td>0.116</td>
+<td>0.205 <a href="#tfn5-3">**</a></td>
+<td>0.061</td>
+<td>−0.026</td>
+<td>0.135</td>
+</tr>
+<tr>
+<td>Unempl.rate</td>
+<td>11.354 <a href="#tfn5-3">**</a></td>
+<td>1.585</td>
+<td>10.076 <a href="#tfn5-3">**</a></td>
+<td>2.828</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+<td>---</td>
+</tr>
+<tr>
+<td>_cons</td>
+<td>−0.167</td>
+<td>0.229</td>
+<td>1.403 <a href="#tfn5-3">**</a></td>
+<td>0.476</td>
+<td>9.376</td>
+<td>13.075</td>
+<td>−24.420</td>
+<td>27.245</td>
+</tr>
+<tr>
+<td>σ<sub>α</sub></td>
+<td colspan="2">---</td>
+<td colspan="2">1.256</td>
+<td colspan="2">---</td>
+<td colspan="2">1.071</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: our elaboration on ECHP 1994–2001 data.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 90% confidence level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 95% confidence level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 99% confidence level.</p></div></figure><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Female participation and household formation estimates.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="4">Female participation</th>
+<th colspan="4">Living in consensual union</th>
+</tr>
+<tr>
+<th/>
+<th colspan="2">Probit</th>
+<th colspan="2">Dynamic RE model</th>
+<th colspan="2">Probit</th>
+<th colspan="2">Dynamic RE model</th>
+</tr>
+<tr>
+<th/>
+<th>Coef.</th>
+<th>Robust SE</th>
+<th>Coef.</th>
+<th>SE</th>
+<th>Coef.</th>
+<th>Robust SE</th>
+<th>Coef.</th>
+<th>SE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lag (participation)</td>
+<td>2.387 <a href="#tfn6-2">**</a></td>
+<td>0.027</td>
+<td>1.417 <a href="#tfn6-2">**</a></td>
+<td>0.038</td>
+<td>−0.049</td>
+<td>0.033</td>
+<td>−0.093</td>
+<td>0.052</td>
+</tr>
+<tr>
+<td>Lag (union)</td>
+<td>−0.417 <a href="#tfn6-2">**</a></td>
+<td>0.027</td>
+<td>−0.595 <a href="#tfn6-2">**</a></td>
+<td>0.049</td>
+<td>3.795 <a href="#tfn6-2">**</a></td>
+<td>0.043</td>
+<td>3.010 <a href="#tfn6-2">**</a></td>
+<td>0.075</td>
+</tr>
+<tr>
+<td>Lag (children under 3)</td>
+<td>−0.159 <a href="#tfn6-2">**</a></td>
+<td>0.032</td>
+<td>−0.197 <a href="#tfn6-2">**</a></td>
+<td>0.050</td>
+<td>0.347 <a href="#tfn6-2">**</a></td>
+<td>0.098</td>
+<td>0.516 <a href="#tfn6-2">**</a></td>
+<td>0.122</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>0.038 <a href="#tfn6-2">**</a></td>
+<td>0.007</td>
+<td>0.087 <a href="#tfn6-2">**</a></td>
+<td>0.015</td>
+<td>0.074 <a href="#tfn6-2">**</a></td>
+<td>0.010</td>
+<td>0.263 <a href="#tfn6-2">**</a></td>
+<td>0.036</td>
+</tr>
+<tr>
+<td>Age2</td>
+<td>−0.001 <a href="#tfn6-2">**</a></td>
+<td>0.000</td>
+<td>−0.001 <a href="#tfn6-2">**</a></td>
+<td>0.000</td>
+<td>−0.001 <a href="#tfn6-2">**</a></td>
+<td>0.000</td>
+<td>−0.003 <a href="#tfn6-2">**</a></td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>High education</td>
+<td>0.808 <a href="#tfn6-2">**</a></td>
+<td>0.047</td>
+<td>1.665 <a href="#tfn6-2">**</a></td>
+<td>0.093</td>
+<td>−0.001</td>
+<td>0.060</td>
+<td>−0.170</td>
+<td>0.093</td>
+</tr>
+<tr>
+<td>Medium education</td>
+<td>0.371 <a href="#tfn6-2">**</a></td>
+<td>0.021</td>
+<td>0.775 <a href="#tfn6-2">**</a></td>
+<td>0.044</td>
+<td>−0.029</td>
+<td>0.032</td>
+<td>−0.135 <a href="#tfn6-1">*</a></td>
+<td>0.057</td>
+</tr>
+<tr>
+<td>Centre</td>
+<td>−0.116 <a href="#tfn6-2">**</a></td>
+<td>0.027</td>
+<td>−0.355 <a href="#tfn6-2">**</a></td>
+<td>0.064</td>
+<td>0.052</td>
+<td>0.042</td>
+<td>0.145 <a href="#tfn6-1">*</a></td>
+<td>0.073</td>
+</tr>
+<tr>
+<td>South</td>
+<td>−0.270 <a href="#tfn6-2">**</a></td>
+<td>0.021</td>
+<td>−0.738 <a href="#tfn6-2">**</a></td>
+<td>0.052</td>
+<td>0.015</td>
+<td>0.031</td>
+<td>0.003</td>
+<td>0.053</td>
+</tr>
+<tr>
+<td>Year of birth</td>
+<td>0.000</td>
+<td>0.004</td>
+<td>0.009</td>
+<td>0.008</td>
+<td>0.002</td>
+<td>0.007</td>
+<td>−0.026</td>
+<td>0.014</td>
+</tr>
+<tr>
+<td>Lag(student)</td>
+<td>0.549</td>
+<td>0.056</td>
+<td>0.272 <a href="#tfn6-1">*</a></td>
+<td>0.121</td>
+<td>−0.530 <a href="#tfn6-2">**</a></td>
+<td>0.066</td>
+<td>−0.706 <a href="#tfn6-2">**</a></td>
+<td>0.090</td>
+</tr>
+<tr>
+<td>_cons</td>
+<td>−1.326</td>
+<td>7.845</td>
+<td>−19.025</td>
+<td>16.684</td>
+<td>−7.667</td>
+<td>13.146</td>
+<td>44.404</td>
+<td>28.285</td>
+</tr>
+<tr>
+<td>σ<sub>α</sub></td>
+<td colspan="2">----</td>
+<td colspan="2">1.218</td>
+<td colspan="2">----</td>
+<td colspan="2">0.890</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: our elaboration on ECHP 1994–2001 data.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 90% confidence level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 95% confidence level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 99% confidence level.</p></div></figure><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Birth probability estimates <i>the sample includes only women aged 17–45.</i></span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Motherhood</th>
+<th colspan="2">Probit</th>
+</tr>
+<tr>
+<th/>
+<th>Coef.</th>
+<th>Robust SE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lag (children under 3)</td>
+<td>−0.571 **</td>
+<td>0.050</td>
+</tr>
+<tr>
+<td>Lag (no children)</td>
+<td>−0.371 **</td>
+<td>0.084</td>
+</tr>
+<tr>
+<td>Lag (participation)</td>
+<td>−0.037</td>
+<td>0.046</td>
+</tr>
+<tr>
+<td>Lag (unemployment)</td>
+<td>−0.087</td>
+<td>0.072</td>
+</tr>
+<tr>
+<td>Lag (student)</td>
+<td>−0.216</td>
+<td>0.153</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>0.287 **</td>
+<td>0.043</td>
+</tr>
+<tr>
+<td>Age2</td>
+<td>−0.006 **</td>
+<td>0.001</td>
+</tr>
+<tr>
+<td>High education</td>
+<td>0.227 **</td>
+<td>0.072</td>
+</tr>
+<tr>
+<td>Medium education</td>
+<td>0.039</td>
+<td>0.043</td>
+</tr>
+<tr>
+<td>Centre</td>
+<td>0.062</td>
+<td>0.060</td>
+</tr>
+<tr>
+<td>South</td>
+<td>0.092</td>
+<td>0.073</td>
+</tr>
+<tr>
+<td>Fertility rate</td>
+<td>11.716 *</td>
+<td>5.106</td>
+</tr>
+<tr>
+<td>Constant</td>
+<td>−4.628 **</td>
+<td>0.722</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: our elaboration on ECHP 1994–2001 data.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 90% confidence level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 95% confidence level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 99% confidence level.</p></div></figure><figure id="table8" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 8.</strong><span data-astro-cid-dzaleqsp> Validation results: female participation rates (%), individuals aged 17–54.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th colspan="3">True data</th>
+<th colspan="4">Simulated data</th>
+</tr>
+<tr>
+<th colspan="3">Dataset</th>
+<th>Probit</th>
+<th>Null</th>
+<th>Rank</th>
+<th>Unconditional</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="8">ECHP</td>
+<td>1994</td>
+<td>52.85</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>1995</td>
+<td>53.22</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>1996</td>
+<td>53.66</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>1997</td>
+<td>53.80</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>1998</td>
+<td>55.52</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>1999</td>
+<td>55.49</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>2000</td>
+<td>54.76</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>2001</td>
+<td>56.24</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td rowspan="4">EUSIC</td>
+<td>2005</td>
+<td>59.78</td>
+<td>61.02</td>
+<td>63.41</td>
+<td>58.01</td>
+<td>57.48</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>60.28</td>
+<td>61.77</td>
+<td>63.83</td>
+<td>57.91</td>
+<td>57.89</td>
+</tr>
+<tr>
+<td>2007</td>
+<td>59.10</td>
+<td>61.77</td>
+<td>64.26</td>
+<td>57.81</td>
+<td>58.01</td>
+</tr>
+<tr>
+<td>2008</td>
+<td>60.07</td>
+<td>62.34</td>
+<td>64.06</td>
+<td>57.78</td>
+<td>57.93</td>
+</tr>
+<tr>
+<td colspan="2"><b>Probability of participate at time t</b></td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td colspan="2">if not participate at t-1</td>
+<td>17.06</td>
+<td>14.22</td>
+<td>34.69</td>
+<td>20.29</td>
+<td>20.68</td>
+</tr>
+<tr>
+<td colspan="2">if participate at t-1</td>
+<td>91.05</td>
+<td>93.79</td>
+<td>85.78</td>
+<td>89.09</td>
+<td>88.41</td>
+</tr>
+<tr>
+<td colspan="2">  <b>Probability of not participate at time t</b></td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td colspan="2">if not participate at t-1</td>
+<td>82.94</td>
+<td>85.78</td>
+<td>65.31</td>
+<td>79.71</td>
+<td>79.32</td>
+</tr>
+<tr>
+<td colspan="2">if participate at t-1</td>
+<td>8.5</td>
+<td>6.21</td>
+<td>14.22</td>
+<td>10.91</td>
+<td>11.59</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table9" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 9.</strong><span data-astro-cid-dzaleqsp> Coefficients of lagged endogenous variables (standard errors in parenthesis), same probit models as for input estimation. Estimation is performed on couple of years (<i>the third column reports averages over results from 2002–2003 to 2007–2008</i>).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>ECHP</th>
+<th>ECHP/sim</th>
+<th>sim</th>
+</tr>
+<tr>
+<th/>
+<th>2000–2001</th>
+<th>2001–2002</th>
+<th>2002–2008</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Union unconditional</b></td>
+<td>3.810 (0.087)</td>
+<td>1.648 (0.019)</td>
+<td>2.626 (0.034)</td>
+</tr>
+<tr>
+<td>Null</td>
+<td>3.810 (0.087)</td>
+<td>2.285 (0.022)</td>
+<td>2.150 (0.036)</td>
+</tr>
+<tr>
+<td>Rank</td>
+<td>3.810 (0.087)</td>
+<td>3.111 (0.026)</td>
+<td>2.826 (0.035)</td>
+</tr>
+<tr>
+<td><b>Participation (males) unconditional</b></td>
+<td>2.550 (0.075)</td>
+<td>1.426 (0.024)</td>
+<td>1.728 (0.033)</td>
+</tr>
+<tr>
+<td>Null</td>
+<td>2.550 (0.075)</td>
+<td>1.901 (0.026)</td>
+<td>1.763 (0.051)</td>
+</tr>
+<tr>
+<td>Rank</td>
+<td>2.550 (0.075)</td>
+<td>2.599 (0.028)</td>
+<td>1.858 (0.308)</td>
+</tr>
+<tr>
+<td><b>Participation (females)</b> unconditional</td>
+<td>2.542 (0.056)</td>
+<td>0.638 (0.015)</td>
+<td>1.856 (0.024)</td>
+</tr>
+<tr>
+<td>Null</td>
+<td>2.542 (0.056)</td>
+<td>0.974 (0.015)</td>
+<td>0.938 (0.024)</td>
+</tr>
+<tr>
+<td>Rank</td>
+<td>2.542 (0.056)</td>
+<td>2.057 (0.017)</td>
+<td>1.990 (0.024)</td>
+</tr>
+</tbody>
+</table></div></figure></div></details></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/figures.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

@@ -1,0 +1,19 @@
+TY  - JOUR
+TI  - Alignment and matching in multi-purpose household microsimulations
+AU  - Cumpston, J Richard
+VL  - 3
+IS  - 2
+PY  - 2010
+DA  - 2010/12/31
+SP  - 34-45
+C1  - IJM 2010;3(2):34-45
+DO  - 10.34196/ijm.00037
+UR  - https://doi.org/10.34196/ijm.00037
+AB  - Household microsimulations are often required to align with deterministic projections from other sources. This paper suggests the use of random sampling within alignment pools to give one-pass event alignment. An iterative process is suggested for alignment of person types, but gives disturbingly high numbers of changes. Type alignment may be better done by manually adjusting assumptions to give approximate alignment. Many forms of matching are needed in household microsimulations. The paper suggests two different immediate matching methods – probability-weighted, and best of n. Performance measures are derived for these methods, and for two existing batch methods – stochastic and order of decreasing difficulty. Probability-weighted matching gave slightly better results than best of n and stochastic, and order of decreasing difficulty gave poor results. The suggested matching methods may be useful in a wide range of applications.
+KW  - alignment
+KW  - marriage market
+KW  - performance measures
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

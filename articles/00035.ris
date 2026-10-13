@@ -1,0 +1,25 @@
+TY  - JOUR
+TI  - Methodological issues in spatial microsimulation modelling for small area estimation
+AU  - Rahman, Azizur
+AU  - Harding, Ann
+AU  - Tanton, Robert
+AU  - Liu, Shuangzhe
+VL  - 3
+IS  - 2
+PY  - 2010
+DA  - 2010/12/31
+SP  - 3-22
+C1  - IJM 2010;3(2):3-22
+DO  - 10.34196/ijm.00035
+UR  - https://doi.org/10.34196/ijm.00035
+AB  - In this paper, some vital methodological issues of spatial microsimulation modelling for small area estimation have been addressed, with a particular emphasis given to the reweighting techniques. Most of the review articles in small area estimation have highlighted methodologies based on various statistical models and theories. However, spatial microsimulation modelling is emerging as a very useful alternative means of small area estimation. Our findings demonstrate that spatial microsimulation models are robust and have advantages over other type of models used for small area estimation. The technique uses different methodologies typically based on geographic models and various economic theories. In contrast to statistical model-based approaches, the spatial microsimulation model-based approaches can operate through reweighting techniques such as GREGWT and combinatorial optimization. A comparison between reweighting techniques reveals that they are using quite different iterative algorithms and that their properties also vary. The study also points out a new method for spatial microsimulation modelling
+KW  - Bayesian prediction approach
+KW  - combinatorial optimisation
+KW  - GREGWT
+KW  - microdata
+KW  - small area estimation
+KW  - spatial microsimulation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

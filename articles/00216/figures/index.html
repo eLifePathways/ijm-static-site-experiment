@@ -1,0 +1,917 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Figures and data in Estimating Confidence Intervals in a Tax Microsimulation Model | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00216/figures"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.figures-page__summary[data-astro-cid-uy5dlehv]{color:var(--color-ink-muted);margin-block-end:var(--space-m)}@media (width>=75em){.article-content-grid[data-astro-cid-uy5dlehv]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-astro-cid-uy5dlehv><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/methodology" data-astro-cid-ak4gb66a>Methodology</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Aug 31, 2020</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Estimating Confidence Intervals in a Tax Microsimulation Model</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Robert McClelland, Surachai Khitatrakun, Chenxi Lu</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>The Tax Policy Center, Washington, USA</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/13-2/volume-13-2-summer-2020" data-astro-cid-ak4gb66a>Volume 13(2) Summer 2020</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> R. McClelland, S. Khitatrakun, C. Lu; 2020; <span data-astro-cid-ak4gb66a>Estimating Confidence Intervals in a Tax Microsimulation Model</span>; International Journal of Microsimulation; 13(2); 2–20. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00216" data-astro-cid-ak4gb66a>10.34196/ijm.00216</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>Since the creation of microsimulation models, the need to measure uncertainty has been recognized, but little research has been conducted in spite of the widespread use of these models. In this article, we calculate confidence intervals for a large tax microsimulation model, comparing a normal approximation to a bootstrap estimator. We estimate confidence intervals for five proposed changes to tax law. We explore the relationship between the size of proposals’ point-estimated impacts and their confidence intervals by considering high, central, and low scenarios for three proposals. To explore uncertainty around small-magnitude estimates, we consider a proposal designed to keep tax revenue unchanged. Finally, we consider a proposal that affects a small number of taxpayers but has a large heterogeneous effect. We find that, overall, confidence intervals in the model fit tightly around the point estimates, but there are exceptions. We also find that in many cases the normal approximation is close to the bootstrap estimator but may differ for policy changes that affect a small number of taxpayers.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00216/ijm-00216.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00216.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00216.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-uy5dlehv><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00216" class="view-tabs__link" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00216/figures" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#tables" data-astro-cid-twdwaz5s>Tables</a></li></ul></details></div><div class="article-content" data-astro-cid-uy5dlehv><p class="figures-page__summary" data-astro-cid-uy5dlehv>This article contains 8 tables.</p><details id="tables" class="article-section article-section--collapsible" open data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Tables</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Population and Sample Size of TPC Microsimulation Model, 2019</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" rowspan="2">Expanded Cash Income Level (thousands of 2019 dollars)</th>
+<th align="left" colspan="2">Population (Tax Unit)</th>
+<th align="left" colspan="2">Sample Size</th>
+</tr>
+<tr>
+<th align="left">Number (thousands)</th>
+<th align="left">Percent of Total</th>
+<th align="left">Number (thousands)</th>
+<th align="left">Percent of Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Less than 10</td>
+<td align="left">12,323</td>
+<td align="left">7.1</td>
+<td align="left">8</td>
+<td align="left">3.3</td>
+</tr>
+<tr>
+<td align="left">10–20</td>
+<td align="left">21,651</td>
+<td align="left">12.4</td>
+<td align="left">16</td>
+<td align="left">6.3</td>
+</tr>
+<tr>
+<td align="left">20–30</td>
+<td align="left">19,523</td>
+<td align="left">11.2</td>
+<td align="left">16</td>
+<td align="left">6.3</td>
+</tr>
+<tr>
+<td align="left">30–40</td>
+<td align="left">15,976</td>
+<td align="left">9.2</td>
+<td align="left">14</td>
+<td align="left">5.5</td>
+</tr>
+<tr>
+<td align="left">40–50</td>
+<td align="left">13,399</td>
+<td align="left">7.7</td>
+<td align="left">12</td>
+<td align="left">4.8</td>
+</tr>
+<tr>
+<td align="left">50–75</td>
+<td align="left">25,288</td>
+<td align="left">14.5</td>
+<td align="left">27</td>
+<td align="left">10.4</td>
+</tr>
+<tr>
+<td align="left">75–100</td>
+<td align="left">16,983</td>
+<td align="left">9.7</td>
+<td align="left">20</td>
+<td align="left">7.8</td>
+</tr>
+<tr>
+<td align="left">100–200</td>
+<td align="left">31,667</td>
+<td align="left">18.1</td>
+<td align="left">43</td>
+<td align="left">16.8</td>
+</tr>
+<tr>
+<td align="left">200–500</td>
+<td align="left">14,026</td>
+<td align="left">8.0</td>
+<td align="left">35</td>
+<td align="left">13.8</td>
+</tr>
+<tr>
+<td align="left">500–1,000</td>
+<td align="left">1,826</td>
+<td align="left">1.1</td>
+<td align="left">16</td>
+<td align="left">6.3</td>
+</tr>
+<tr>
+<td align="left">More than 1,000</td>
+<td align="left">837</td>
+<td align="left">0.5</td>
+<td align="left">40</td>
+<td align="left">15.7</td>
+</tr>
+<tr>
+<td align="left">All</td>
+<td align="left">174,690</td>
+<td align="left">100.0</td>
+<td align="left">256</td>
+<td align="left">100.0</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Urban-Brookings Tax Policy Center Microsimulation Model (version 0319-1).</p><p class="table-footnote" data-astro-cid-dzaleqsp>Note: The sample exclude tax units with negative AGI or ECI.</p></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Partially Restore the Personal Exemption to $4,000, Selected Income Groups, 2019</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" colspan="2" rowspan="2" valign="bottom">Expanded Cash Income Level (thousands of 2019 dollars)</th>
+<th align="left" colspan="2">Tax Units with Tax Cut</th>
+<th align="left" rowspan="2" valign="bottom">Percent Change in After-Tax Income</th>
+<th align="left" rowspan="2" valign="bottom">Average Federal Tax Change ($)</th>
+</tr>
+<tr>
+<th align="left">Percent of Tax Units</th>
+<th align="left">Average Tax Change ($)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="2" valign="bottom">75–100</td>
+<td align="left"> </td>
+<td align="left">94.239 (0.314)</td>
+<td align="left">−1,085.1 (4.5)</td>
+<td align="left">1.370 (0.008)</td>
+<td align="left">−1,022.6 (5.7)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[93.599, 94.843]</td>
+<td align="left">[−1,094.0, −1,076.8]</td>
+<td align="left">[1.351, 1.383]</td>
+<td align="left">[−1,032.4, −1,009.9]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">200–500</td>
+<td align="left"> </td>
+<td align="left">98.470 (0.080)</td>
+<td align="left">−2,496.9 (10.7)</td>
+<td align="left">1.077 (0.006)</td>
+<td align="left">−2,458.6 (10.9)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[98.296, 98.615]</td>
+<td align="left">[−2,515.1, −2,475.3]</td>
+<td align="left">[1.065, 1.088]</td>
+<td align="left">[−2,479.3, −2,435.9]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">More than 1,000</td>
+<td align="left"> </td>
+<td align="left">0.620 (0.176)</td>
+<td align="left">−1,214.3 (242.8)</td>
+<td align="left">0.000 (0.000)</td>
+<td align="left">−7.5 (2.6)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[0.334, 1.054]</td>
+<td align="left">[−1,680.9, −789.1]</td>
+<td align="left">[0.000, 0.001]</td>
+<td align="left">[−13.2, −2.9]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">All</td>
+<td align="left"> </td>
+<td align="left">62.332 (0.131)</td>
+<td align="left">−1,216.4 (2.8)</td>
+<td align="left">0.933 (0.004)</td>
+<td align="left">−758.2 (1.7)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[62.033, 62.542]</td>
+<td align="left">[−1,220.9, −1,210.7]</td>
+<td align="left">[0.927, 0.943]</td>
+<td align="left">[−761.6, −754.6]</td>
+</tr>
+<tr>
+<td align="left" colspan="6">Addendum: Confidence Intervals Calculated Using Bootstrap and Using Normal Approximation of BSE</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">75–100</td>
+<td align="left">Bootstrap</td>
+<td align="left">[93.599, 94.843]</td>
+<td align="left">[−1,094.0, −1,076.8]</td>
+<td align="left">[1.351, 1.383]</td>
+<td align="left">[−1,032.4, −1,009.9]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[93.624, 94.854]</td>
+<td align="left">[−1,093.9, −1,076.2]</td>
+<td align="left">[1.354, 1.386]</td>
+<td align="left">[−1,033.7, −1,011.4]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">200–500</td>
+<td align="left">Bootstrap</td>
+<td align="left">[98.296, 98.615]</td>
+<td align="left">[−2,515.1, −2,475.3]</td>
+<td align="left">[1.065, 1.088]</td>
+<td align="left">[−2,479.3, −2,435.9]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[98.313, 98.628]</td>
+<td align="left">[−2,517.9, −2,475.9]</td>
+<td align="left">[1.065, 1.089]</td>
+<td align="left">[−2,479.9, −2,437.4]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">More than 1,000</td>
+<td align="left">Bootstrap</td>
+<td align="left">[0.334, 1.054]</td>
+<td align="left">[−1,680.9, −789.1]</td>
+<td align="left">[0.000, 0.001]</td>
+<td align="left">[−13.2, −2.9]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[0.275, 0.966]</td>
+<td align="left">[−1,690.2, −738.4]</td>
+<td align="left">[0.000, 0.001]</td>
+<td align="left">[−12.6, −2.4]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">All</td>
+<td align="left">Bootstrap</td>
+<td align="left">[62.033, 62.542]</td>
+<td align="left">[−1,220.9, −1,210.7]</td>
+<td align="left">[0.927, 0.943]</td>
+<td align="left">[−761.6, −754.6]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[62.075, 62.589]</td>
+<td align="left">[−1,221.8, −1,210.9]</td>
+<td align="left">[0.926, 0.941]</td>
+<td align="left">[−761.6, −754.8]</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Urban-Brookings Tax Policy Center Microsimulation Model (version 0319-1).</p><p class="table-footnote" data-astro-cid-dzaleqsp>Notes: Proposal would partially restore the personal exemption of $4,000 in 2019.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Numbers in parentheses are bootstrapped standard errors (BSE). Numbers in brackets are confidence intervals.</p></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Comparison of Population and Sample Size Affected by Partially Restoring the Personal Exemption to $4,000, Selected Income Groups, 2019</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" rowspan="3">Expanded Cash Income Level (thousands of 2019 dollars)</th>
+<th align="left" colspan="2">All Tax Units</th>
+<th align="left" colspan="4">Tax Units with Tax Change</th>
+<th align="left" colspan="2">Tax Change ($)</th>
+</tr>
+<tr>
+<th align="left" rowspan="2" valign="bottom">Population Number</th>
+<th align="left" rowspan="2" valign="bottom">Sample Number</th>
+<th align="left" colspan="2">Population</th>
+<th align="left" colspan="2">Sample</th>
+<th align="left" rowspan="2" valign="bottom">Minimum</th>
+<th align="left" rowspan="2" valign="bottom">Maximum</th>
+</tr>
+<tr>
+<th align="left">Number</th>
+<th align="left">Share within Income Group</th>
+<th align="left">Number</th>
+<th align="left">Share within Income Group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">200–500</td>
+<td align="left">14,026,200</td>
+<td align="left">35,400</td>
+<td align="left">13,815,800</td>
+<td align="left">98.50%</td>
+<td align="left">32,220</td>
+<td align="left">91.00%</td>
+<td align="left">14</td>
+<td align="left">11,000</td>
+</tr>
+<tr>
+<td align="left">More than 1,000</td>
+<td align="left">836,500</td>
+<td align="left">40,100</td>
+<td align="left">5,190</td>
+<td align="left">0.62%</td>
+<td align="left">71</td>
+<td align="left">0.18%</td>
+<td align="left">15</td>
+<td align="left">3,840</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Urban-Brookings Tax Policy Center Microsimulation Model (version 0319-1).</p></div></figure><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Increase the Standard Deduction to $4,000, Selected Income Groups, 2019</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" colspan="2" rowspan="2" valign="bottom">Expanded Cash Income Level (thousands of 2019 dollars)</th>
+<th align="left" colspan="2">Tax Units with Tax Cut</th>
+<th align="left" rowspan="2" valign="bottom">Percent Change in After-Tax Income</th>
+<th align="left" rowspan="2" valign="bottom">Average Federal Tax Change ($)</th>
+</tr>
+<tr>
+<th align="left">Percent of Tax Units</th>
+<th align="left">Average Tax Change ($)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="2" valign="bottom">50–75</td>
+<td align="left"> </td>
+<td align="left">79.993 (0.399)</td>
+<td align="left">−625.8 (2.4)</td>
+<td align="left">0.921 (0.006)</td>
+<td align="left">−500.6 (2.9)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[79.140, 80.676]</td>
+<td align="left">[−629.7, −620.9]</td>
+<td align="left">[0.909, 0.931]</td>
+<td align="left">[−505.9, −494.4]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">200–500</td>
+<td align="left"> </td>
+<td align="left">79.289 (0.329)</td>
+<td align="left">−1,621.6 (5.3)</td>
+<td align="left">0.563 (0.003)</td>
+<td align="left">−1,285.7 (7.0)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[78.622, 79.919]</td>
+<td align="left">[−1,631.7, −1,612.3]</td>
+<td align="left">[0.556, 0.569]</td>
+<td align="left">[−1,296.7, −1,268.5]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">More than 1,000</td>
+<td align="left"> </td>
+<td align="left">23.048 (0.548)</td>
+<td align="left">−2,130.7 (26.4)</td>
+<td align="left">0.023 (0.001)</td>
+<td align="left">−491.1 (13.4)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[22.019, 24.250]</td>
+<td align="left">[−2,180.3, −2,077.4]</td>
+<td align="left">[0.021, 0.025]</td>
+<td align="left">[−521.0, −466.6]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">All</td>
+<td align="left"> </td>
+<td align="left">58.636 (0.141)</td>
+<td align="left">−889.3 (1.8)</td>
+<td align="left">0.642 (0.003)</td>
+<td align="left">−521.4 (1.2)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[58.391, 58.910]</td>
+<td align="left">[−893.3, −886.0]</td>
+<td align="left">[0.638, 0.648]</td>
+<td align="left">[−523.8, −519.0]</td>
+</tr>
+<tr>
+<td align="left" colspan="6">Addendum: Confidence Intervals Calculated Using Bootstrap and Using Normal Approximation of BSE</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">50–75</td>
+<td align="left">Bootstrap</td>
+<td align="left">[79.140, 80.676]</td>
+<td align="left">[−629.7, −620.9]</td>
+<td align="left">[0.909, 0.931]</td>
+<td align="left">[−505.9, −494.4]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[79.211, 80.775]</td>
+<td align="left">[−630.4, −621.2]</td>
+<td align="left">[0.910, 0.932]</td>
+<td align="left">[−506.3, −494.9]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">200–500</td>
+<td align="left">Bootstrap</td>
+<td align="left">[78.622, 79.919]</td>
+<td align="left">[−1,631.7, −1,612.3]</td>
+<td align="left">[0.556, 0.569]</td>
+<td align="left">[−1,296.7, −1,268.5]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[78.645, 79.934]</td>
+<td align="left">[−1,632.0, −1,611.1]</td>
+<td align="left">[0.556, 0.570]</td>
+<td align="left">[−1,299.5, −1,271.9]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">More than 1,000</td>
+<td align="left">Bootstrap</td>
+<td align="left">[22.019, 24.250]</td>
+<td align="left">[−2,180.3, −2,077.4]</td>
+<td align="left">[0.021, 0.025]</td>
+<td align="left">[−521.0, −466.6]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[21.974, 24.122]</td>
+<td align="left">[−2,182.5, −2,079.0]</td>
+<td align="left">[0.021, 0.024]</td>
+<td align="left">[−517.3, −464.9]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">All</td>
+<td align="left">Bootstrap</td>
+<td align="left">[58.391, 58.910]</td>
+<td align="left">[−893.3, −886.0]</td>
+<td align="left">[0.638, 0.648]</td>
+<td align="left">[−523.8, −519.0]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[58.361, 58.912]</td>
+<td align="left">[−892.7, −885.8]</td>
+<td align="left">[0.637, 0.647]</td>
+<td align="left">[−523.8, −519.1]</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Urban-Brookings Tax Policy Center Microsimulation Model (version 0319-1).</p><p class="table-footnote" data-astro-cid-dzaleqsp>Notes: Proposal would increase the standard deduction by $4,000 for single filers and married couples filing separately, $8,000 for married couples filing jointly, and $6,000 for heads of household in 2019.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Numbers in parentheses are bootstrapped standard errors (BSE). Numbers in brackets are confidence intervals.</p></div></figure><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Increase the Top Income Tax Rate to 41 Percent, Selected Income Groups, 2019</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" colspan="2" rowspan="2" valign="bottom">Expanded Cash Income Level (thousands of 2019 dollars)</th>
+<th align="left" colspan="2">Tax Units with Tax Increase</th>
+<th align="left" rowspan="2" valign="bottom">Percent Change in After-Tax Income</th>
+<th align="left" rowspan="2" valign="bottom">Average Federal Tax Change ($)</th>
+</tr>
+<tr>
+<th align="left">Percent of Tax Units</th>
+<th align="left">Average Tax Change ($)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="2" valign="bottom">200–500</td>
+<td align="left"> </td>
+<td align="left">0.062 (0.014)</td>
+<td align="left">2,044.6 (444.8)</td>
+<td align="left">−0.001 (0.000)</td>
+<td align="left">1.3 (0.3)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[0.038, 0.091]</td>
+<td align="left">[1,349.4, 2,956.2]</td>
+<td align="left">[−0.001, 0.000]</td>
+<td align="left">[0.8, 1.9]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">500–1,000</td>
+<td align="left"> </td>
+<td align="left">18.225 (0.530)</td>
+<td align="left">4,127.8 (111.2)</td>
+<td align="left">−0.147 (0.006)</td>
+<td align="left">752.3 (29.8)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[17.236, 19.150]</td>
+<td align="left">[3,909.4, 4,363.9]</td>
+<td align="left">[−0.156, −0.135]</td>
+<td align="left">[691.6, 800.8]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">More than 1,000</td>
+<td align="left"> </td>
+<td align="left">77.965 (0.571)</td>
+<td align="left">52,878.8 (1,006.8)</td>
+<td align="left">−1.917 (0.049)</td>
+<td align="left">41,226.8 (808.0)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[76.552, 78.925]</td>
+<td align="left">[51,126.9, 54,963.1]</td>
+<td align="left">[−1.996, −1.827]</td>
+<td align="left">[39,944.2, 43,177.1]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">All</td>
+<td align="left"> </td>
+<td align="left">0.569 (0.006)</td>
+<td align="left">36,127.7 (759.5)</td>
+<td align="left">−0.253 (0.005)</td>
+<td align="left">205.7 (3.9)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[0.555, 0.581]</td>
+<td align="left">[34,865.4, 37,852.8]</td>
+<td align="left">[−0.264, −0.246]</td>
+<td align="left">[199.5, 214.6]</td>
+</tr>
+<tr>
+<td align="left" colspan="6">Addendum: Confidence Intervals Calculated Using Bootstrap and Using Normal Approximation of BSE</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">200–500</td>
+<td align="left">Bootstrap</td>
+<td align="left">[0.038, 0.091]</td>
+<td align="left">[1,349.4, 2,956.2]</td>
+<td align="left">[−0.001, 0.000]</td>
+<td align="left">[0.8, 1.9]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[0.034, 0.089]</td>
+<td align="left">[1,172.8, 2,916.3]</td>
+<td align="left">[−0.001, 0.000]</td>
+<td align="left">[0.7, 1.9]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">500–1,000</td>
+<td align="left">Bootstrap</td>
+<td align="left">[17.236, 19.150]</td>
+<td align="left">[3,909.4, 4,363.9]</td>
+<td align="left">[−0.156, −0.135]</td>
+<td align="left">[691.6, 800.8]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[17.186, 19.264]</td>
+<td align="left">[3,909.9, 4,345.6]</td>
+<td align="left">[−0.158, −0.135]</td>
+<td align="left">[693.9, 810.6]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">More than 1,000</td>
+<td align="left">Bootstrap</td>
+<td align="left">[76.552, 78.925]</td>
+<td align="left">[51,126.9, 54,963.1]</td>
+<td align="left">[−1.996, −1.827]</td>
+<td align="left">[39,944.2, 43,177.1]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[76.846, 79.084]</td>
+<td align="left">[50,905.5, 54,852.0]</td>
+<td align="left">[−2.013, −1.822]</td>
+<td align="left">[39,643.2, 42,810.5]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">All</td>
+<td align="left">Bootstrap</td>
+<td align="left">[0.555, 0.581]</td>
+<td align="left">[34,865.4, 37,852.8]</td>
+<td align="left">[−0.264, −0.246]</td>
+<td align="left">[199.5, 214.6]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[0.557, 0.582]</td>
+<td align="left">[34,639.1, 37,616.4]</td>
+<td align="left">[−0.262, −0.244]</td>
+<td align="left">[198.1, 213.2]</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Urban-Brookings Tax Policy Center Microsimulation Model (version 0319-1).</p><p class="table-footnote" data-astro-cid-dzaleqsp>Notes: Proposal would increase the top income tax rate to 41 percent in 2019.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Numbers in parentheses are bootstrapped standard errors (BSE). Numbers in brackets are confidence intervals.</p></div></figure><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Replace Farm Loss Deduction with a Revenue-Neutral Refundable Tax Credit, Selected Income Groups, 2019</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" colspan="2" rowspan="2" valign="bottom">Expanded Cash Income Level (thousands of 2019 dollars)</th>
+<th align="left" colspan="2">Tax Units with Tax Cut</th>
+<th align="left" colspan="2" valign="bottom">Tax Units with Tax Increase</th>
+<th align="left" rowspan="2" valign="bottom">Average Federal Tax Change ($)</th>
+</tr>
+<tr>
+<th align="left">Percent of Tax Units</th>
+<th align="left">Average Tax Change ($)</th>
+<th align="left">Percent of Tax Units</th>
+<th align="left">Average Tax Change ($)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="2" valign="bottom">40–50</td>
+<td align="left"> </td>
+<td align="left">0.109 (0.029)</td>
+<td align="left">−1,368.9 (537.1)</td>
+<td align="left">0.267 (0.065)</td>
+<td align="left">404.1 (101.8)</td>
+<td align="left">−0.4 (0.7)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[0.062, 0.180]</td>
+<td align="left">[−2,743.8, −685.0]</td>
+<td align="left">[0.166, 0.462]</td>
+<td align="left">[234.1, 614.2]</td>
+<td align="left">[−2.0, 1.0]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">500–1,000</td>
+<td align="left"> </td>
+<td align="left">0.531 (0.109)</td>
+<td align="left">−3,465.7 (1,568.9)</td>
+<td align="left">1.338 (0.170)</td>
+<td align="left">2,779.1 (400.8)</td>
+<td align="left">18.8 (9.1)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[0.386, 0.812]</td>
+<td align="left">[−8,022.0, −1,416.6]</td>
+<td align="left">[0.990, 1.652]</td>
+<td align="left">[2,082.2, 3,748.6]</td>
+<td align="left">[−2.7, 32.6]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">More than 1,000</td>
+<td align="left"> </td>
+<td align="left">0.994 (0.077)</td>
+<td align="left">−15,499.8 (4,948.4)</td>
+<td align="left">0.922 (0.078)</td>
+<td align="left">7,473.2 (787.6)</td>
+<td align="left">−85.1 (50.9)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[0.852, 1.171]</td>
+<td align="left">[−26,531.3, −7,571.9]</td>
+<td align="left">[0.781, 1.073]</td>
+<td align="left">[6,012.7, 9,182.7]</td>
+<td align="left">[−176.3, −3.0]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">All</td>
+<td align="left"> </td>
+<td align="left">0.207 (0.013)</td>
+<td align="left">−1,909.9 (221.3)</td>
+<td align="left">0.485 (0.020)</td>
+<td align="left">770.2 (47.8)</td>
+<td align="left">−0.2 (0.5)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[0.186, 0.230]</td>
+<td align="left">[−2,420.9, −1,566.6]</td>
+<td align="left">[0.450, 0.522]</td>
+<td align="left">[700.7, 884.2]</td>
+<td align="left">[−1.3, 0.8]</td>
+</tr>
+<tr>
+<td align="left" colspan="6">Addendum: Confidence Intervals Calculated Using Bootstrap and Using Normal Approximation of BSE</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">40–50</td>
+<td align="left">Bootstrap</td>
+<td align="left">[0.062, 0.180]</td>
+<td align="left">[−2,743.8, −685.0]</td>
+<td align="left">[0.166, 0.462]</td>
+<td align="left">[234.1, 614.2]</td>
+<td align="left">[−2.0, 1.0]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[0.052, 0.166]</td>
+<td align="left">[−2,421.6, −316.2]</td>
+<td align="left">[0.140, 0.394]</td>
+<td align="left">[204.6, 603.6]</td>
+<td align="left">[−1.8, 1.0]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">500–1,000</td>
+<td align="left">Bootstrap</td>
+<td align="left">[0.386, 0.812]</td>
+<td align="left">[−8,022.0, −1,416.6]</td>
+<td align="left">[0.990, 1.652]</td>
+<td align="left">[2,082.2, 3,748.6]</td>
+<td align="left">[−2.7, 32.6]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[0.318, 0.744]</td>
+<td align="left">[−6,540.8, −390.7]</td>
+<td align="left">[1.005, 1.670]</td>
+<td align="left">[1,993.5, 3,564.6]</td>
+<td align="left">[1.0, 36.5]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">More than 1,000</td>
+<td align="left">Bootstrap</td>
+<td align="left">[0.852, 1.171]</td>
+<td align="left">[−26,531.3, −7,571.9]</td>
+<td align="left">[0.781, 1.073]</td>
+<td align="left">[6,012.7, 9,182.7]</td>
+<td align="left">[−176.3, −3.0]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[0.843, 1.145]</td>
+<td align="left">[−25,198.5, −5,801.0]</td>
+<td align="left">[0.769, 1.076]</td>
+<td align="left">[5,929.6, 9,016.9]</td>
+<td align="left">[−184.8, 14.6]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">All</td>
+<td align="left">Bootstrap</td>
+<td align="left">[0.186, 0.230]</td>
+<td align="left">[−2,420.9, −1,566.6]</td>
+<td align="left">[0.450, 0.522]</td>
+<td align="left">[700.7, 884.2]</td>
+<td align="left">[−1.3, 0.8]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[0.182, 0.232]</td>
+<td align="left">[−2,343.6, −1,476.2]</td>
+<td align="left">[0.445, 0.524]</td>
+<td align="left">[676.5, 863.9]</td>
+<td align="left">[−1.3, 0.8]</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Urban-Brookings Tax Policy Center Microsimulation Model (version 0319-1).</p><p class="table-footnote" data-astro-cid-dzaleqsp>Notes: Proposal would replace current-law farm loss deduction with a refundable tax credit equal to 82.5% of total farm loss times the statutory income tax rate in 2019.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Numbers in parentheses are bootstrapped standard errors (BSE). Numbers in brackets are confidence intervals.</p></div></figure><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Rescind the Tax-free Treatment of Interest Accruing from Certain Municipal Bonds, Selected Income Groups, 2019</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" colspan="2" rowspan="2" valign="bottom">Expanded Cash Income Level (thousands of 2019 dollars)</th>
+<th align="left" colspan="2">Tax Units with Tax Increase</th>
+<th align="left" rowspan="2" valign="bottom">Percent Change in After-Tax Income</th>
+<th align="left" rowspan="2" valign="bottom">Average Federal Tax Change ($)</th>
+</tr>
+<tr>
+<th align="left">Percent of Tax Units</th>
+<th align="left">Average Tax Change ($)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="2" valign="bottom">40–50</td>
+<td align="left"> </td>
+<td align="left">0.598 (0.105)</td>
+<td align="left">382.8 (142.4)</td>
+<td align="left">−0.006 (0.002)</td>
+<td align="left">2.3 (0.9)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[0.412, 0.830]</td>
+<td align="left">[174.3, 815.8]</td>
+<td align="left">[−0.011, −0.002]</td>
+<td align="left">[1.0, 4.5]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">200–500</td>
+<td align="left"> </td>
+<td align="left">10.871 (0.289)</td>
+<td align="left">2,693.2 (124.2)</td>
+<td align="left">−0.128 (0.006)</td>
+<td align="left">292.8 (14.4)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[10.348, 11.518]</td>
+<td align="left">[2,442.2, 2,965.2]</td>
+<td align="left">[−0.141, −0.116]</td>
+<td align="left">[263.7, 323.0]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">More than 1,000</td>
+<td align="left"> </td>
+<td align="left">50.162 (0.535)</td>
+<td align="left">27,001.5 (1,425.9)</td>
+<td align="left">−0.630 (0.033)</td>
+<td align="left">13,544.6 (729.8)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[49.325, 51.238]</td>
+<td align="left">[24,610.9, 30,036.2]</td>
+<td align="left">[−0.697, −0.576]</td>
+<td align="left">[12,302.0, 15,143.7]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">All</td>
+<td align="left"> </td>
+<td align="left">2.924 (0.050)</td>
+<td align="left">4,272.1 (140.4)</td>
+<td align="left">−0.154 (0.005)</td>
+<td align="left">124.9 (3.9)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">[2.826, 3.014]</td>
+<td align="left">[4,021.8, 4,613.3]</td>
+<td align="left">[−0.164, −0.145]</td>
+<td align="left">[118.0, 133.8]</td>
+</tr>
+<tr>
+<td align="left" colspan="6">Addendum: Confidence Intervals Calculated Using Bootstrap and Using Normal Approximation of BSE</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">40–50</td>
+<td align="left">Bootstrap</td>
+<td align="left">[0.412, 0.830]</td>
+<td align="left">[174.3, 815.8]</td>
+<td align="left">[−0.011, −0.002]</td>
+<td align="left">[1.0, 4.5]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[0.393, 0.803]</td>
+<td align="left">[103.8, 661.9]</td>
+<td align="left">[−0.010, −0.001]</td>
+<td align="left">[0.6, 4.0]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">200–500</td>
+<td align="left">Bootstrap</td>
+<td align="left">[10.348, 11.518]</td>
+<td align="left">[2,442.2, 2,965.2]</td>
+<td align="left">[−0.141, −0.116]</td>
+<td align="left">[263.7, 323.0]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[10.305, 11.437]</td>
+<td align="left">[2,449.8, 2,936.6]</td>
+<td align="left">[−0.141, −0.116]</td>
+<td align="left">[264.6, 321.1]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">More than 1,000</td>
+<td align="left">Bootstrap</td>
+<td align="left">[49.325, 51.238]</td>
+<td align="left">[24,610.9, 30,036.2]</td>
+<td align="left">[−0.697, −0.576]</td>
+<td align="left">[12,302.0, 15,143.7]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[49.113, 51.212]</td>
+<td align="left">[24,206.9, 29,796.1]</td>
+<td align="left">[−0.695, −0.565]</td>
+<td align="left">[12,114.2, 14,975.1]</td>
+</tr>
+<tr>
+<td align="left" rowspan="2" valign="bottom">All</td>
+<td align="left">Bootstrap</td>
+<td align="left">[2.826, 3.014]</td>
+<td align="left">[4,021.8, 4,613.3]</td>
+<td align="left">[−0.164, −0.145]</td>
+<td align="left">[118.0, 133.8]</td>
+</tr>
+<tr>
+<td align="left">Normal with BSE</td>
+<td align="left">[2.825, 3.022]</td>
+<td align="left">[3,996.9, 4,547.4]</td>
+<td align="left">[−0.163, −0.144]</td>
+<td align="left">[117.3, 132.5]</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Urban-Brookings Tax Policy Center Microsimulation Model (version 0319-1).</p><p class="table-footnote" data-astro-cid-dzaleqsp>Notes: Proposal would rescind the tax-free treatment of interest accruing from certain municipal bonds in 2019.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Numbers in parentheses are bootstrapped standard errors (BSE). Numbers in brackets are confidence intervals.</p></div></figure><figure id="table8" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 8.</strong><span data-astro-cid-dzaleqsp> Comparison of Confidence Intervals with Standard Errors Calculated from Bootstrapping and the Gatz and Smith Formula</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" rowspan="3" valign="bottom">Proposal</th>
+<th align="left" colspan="5">Average Tax Change for All Tax Units ($)</th>
+</tr>
+<tr>
+<th align="left" rowspan="2" valign="bottom">Mean</th>
+<th align="left" colspan="2">Standard Error</th>
+<th align="left" colspan="2">Confidence Interval</th>
+</tr>
+<tr>
+<th align="left">BSE</th>
+<th align="left">GSSE</th>
+<th align="left">Bootstrap</th>
+<th align="left">Normal Approximation with GSSE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Restore Personal Exemption</td>
+<td align="left">−758.2</td>
+<td align="left">1.7</td>
+<td align="left">1.9</td>
+<td align="left">[−761.6, −754.6]</td>
+<td align="left">[−761.9, −754.4]</td>
+</tr>
+<tr>
+<td align="left">Increase Standard Deduction</td>
+<td align="left">−521.4</td>
+<td align="left">1.2</td>
+<td align="left">1.2</td>
+<td align="left">[−523.8, −519.0]</td>
+<td align="left">[−523.8, −519.1]</td>
+</tr>
+<tr>
+<td align="left">Increase Tax Rate</td>
+<td align="left">205.7</td>
+<td align="left">3.9</td>
+<td align="left">19.3</td>
+<td align="left">[199.5, 214.6]</td>
+<td align="left">[167.9, 243.4]</td>
+</tr>
+<tr>
+<td align="left">Rescind Tax-free Treatment of Certain Bonds</td>
+<td align="left">124.9</td>
+<td align="left">3.9</td>
+<td align="left">11.2</td>
+<td align="left">[118.0, 133.8]</td>
+<td align="left">[102.9, 146.9]</td>
+</tr>
+<tr>
+<td align="left">Farm Loss Deduction Replaced with Credit</td>
+<td align="left">−0.2</td>
+<td align="left">0.5</td>
+<td align="left">2.2</td>
+<td align="left">[−1.3, 0.8]</td>
+<td align="left">[−4.5, 4.1]</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: Urban-Brookings Tax Policy Center Microsimulation Model (version 0319-1).</p><p class="table-footnote" data-astro-cid-dzaleqsp>Notes: The BSE column shows bootstrapped standard errors. The GSSE columns shows the Gatz and Smith formula for calculating standard errors. The Bootstrap Confidence Interval column shows the bias-corrected bootstrap confidence intervals. Finally, the Normal Approximation with GSSE Confidence Interval column shows confidence intervals derived as the means plus or minus the GSSE multiplied by 1.96. Due to rounding, that interval differs slightly from an interval calculated using the values in the table.</p></div></figure></div></details></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/figures.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

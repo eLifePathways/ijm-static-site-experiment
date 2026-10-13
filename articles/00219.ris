@@ -1,0 +1,23 @@
+TY  - JOUR
+TI  - Calibration of Vehicle and Driver Characteristics in VISSIM and ANN-based Sensitivity Analysis
+AU  - Bandi, Marsh M
+AU  - George, Varghese
+VL  - 13
+IS  - 2
+PY  - 2020
+DA  - 2020/08/31
+SP  - 79-101
+C1  - IJM 2020;13(2):79-101
+DO  - 10.34196/ijm.00219
+UR  - https://doi.org/10.34196/ijm.00219
+AB  - Traffic-flow modeling using microsimulation approaches facilitates the study of bottlenecks and assists in the analysis of traffic-flow characteristics, the movement of individual vehicles, and in the study of vehicle and driver characteristics. The present study focuses on performing investigations on assessing the influence of vehicle and driver characteristics on accurate prediction of traffic volumes in Mangalore city road network. The multi-stage first-level of calibrations were performed starting with default values of vehicle and driver characteristics followed by testing of various combinations. The accuracy of predicting simulated volumes was measured using GEH-statistic. An ANN-based sensitivity analysis was performed to find the relative importance of vehicle and driver characteristics, which revealed that the average standstill distance, minimum look-ahead distance, and the desired speed: lower bounds for speed distributions were highly sensitive. The second-level of calibrations were performed by fine-tuning these three characteristics in three stages and the final VISSIM model was validated.
+KW  - microsimulation
+KW  - VISSIM
+KW  - vehicle characteristics
+KW  - driver characteristics
+KW  - traffic flow modeling
+KW  - sensitivity analysis
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

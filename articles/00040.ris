@@ -1,0 +1,16 @@
+TY  - JOUR
+TI  - Techniques for managing changes to existing simulation models
+AU  - Edwards, Sally
+VL  - 3
+IS  - 2
+PY  - 2010
+DA  - 2010/12/31
+SP  - 80-89
+C1  - IJM 2010;3(2):80-89
+DO  - 10.34196/ijm.00040
+UR  - https://doi.org/10.34196/ijm.00040
+AB  - In This paper provides guidance for managing the enhancement and maintenance of an existing microsimulation model. It focuses on techniques and practices that have been developed to maintain Pensim2; the Department for Work and Pensions (DWP) dynamic microsimulation model that simulates state and private pension entitlement. This guidance is appropriate for any type of model. Standard project management techniques and bespoke simulation model procedures are explained. This guidance is aimed at new modellers and project managers and is particularly relevant for models that are supported by a team, rather than an individual. Models are generally used for many years after they are launched, so it is essential that strong maintenance procedures and project governance structures are put in place. Specifically, this paper includes guidance and examples of structured Change Control processes that are used to manage enhancements and fixes to the model. The Change Control process includes: defining requirements, estimation, design, code reviews, testing/validation, managing multiple modellers changing the same programs and the use of development checklists. Structured Release management guidance is also included in this paper
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

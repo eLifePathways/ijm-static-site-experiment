@@ -1,0 +1,24 @@
+TY  - JOUR
+TI  - The Public Policy Preference Calculator (TriplePC): Developing a comprehensive welfare policy microsimulation
+AU  - Stark, Graham
+AU  - Johnson, Elliot A
+AU  - Reed, Howard
+AU  - Nettle, Daniel
+AU  - Johnson, Matthew T
+VL  - 18
+IS  - 2
+PY  - 2025
+DA  - 2025/08/20
+SP  - 79-93
+C1  - IJM 2025;18(2):79-93
+DO  - 10.34196/ijm.00323
+UR  - https://doi.org/10.34196/ijm.00323
+AB  - Welfare policies have often been assessed on their financial impacts, for example, their effects on net household incomes and marginal and average tax rates. However, welfare policies can also have a substantial effect on population health and wellbeing. In addition, politicians must consider the electoral implications of policies that would affect large sections of the population. In this article we describe a new microsimulation model with a public-facing user interface, the Public Policy Preference Calculator (TriplePC), which enables automated assessment of economic and health impacts as well as public preferences for particular, customisable welfare policies. The TriplePC uses data from, and regressions based on, major UK sources such as the Family Resources Survey, Understanding Society: The UK Household Longitudinal Study (UKHLS) and the Wealth and Assets Survey, alongside our own conjoint experimental surveys on public preferences. While the design of the conjoint survey necessitated relatively strong assumptions in some areas, the TriplePC’s ability to simultaneously model the financial, health and political implications of a policy is, we believe, unique. TriplePC was developed over approximately four months as part of a project on income and health funded by National Institute for Health and Care Research. We view TriplePC as a highly promising prototype rather than the finished article; in this paper we will describe it ‘warts and all’, highlighting areas of particular uncertainty and the lessons learned we hope to apply to future, fuller developed versions.
+KW  - Welfare policy
+KW  - polling
+KW  - public user interface
+KW  - conjoint analysis
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

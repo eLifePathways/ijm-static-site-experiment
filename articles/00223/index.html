@@ -1,0 +1,2356 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Enhancing microsimulation analysis of wealth-related policies in EUROMOD | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00223"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00223" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/methodology" data-astro-cid-ak4gb66a>Methodology</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Dec 31, 2020</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Enhancing microsimulation analysis of wealth-related policies in EUROMOD</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Sarah Kuypers, Jonas Boone, Johannes Derboven, Francesco Figari, Gerlinde Verbist</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Centre for Social Policy, Antwerp, Belgium; University of Insubria, Varese, Italy; University of Essex, Colchester, United Kingdom</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/13-3/volume-13-3-winter-2020" data-astro-cid-ak4gb66a>Volume 13(3) Winter 2020</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> S. Kuypers, J. Boone, J. Derboven, F. Figari, G. Verbist; 2020; <span data-astro-cid-ak4gb66a>Enhancing microsimulation analysis of wealth-related policies in EUROMOD</span>; International Journal of Microsimulation; 13(3); 5–26. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00223" data-astro-cid-ak4gb66a>10.34196/ijm.00223</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>While microsimulation techniques have been widely used for the analysis of the distribution of income, this has not been the case for the distribution of wealth. A major reason for this has been the lack of appropriate input data. In Europe this has recently changed among others by the launch of the Eurosystem Household Finance and Consumption Survey (HFCS). In this paper we explain how microsimulation analysis of wealth-related taxes and policies is enhanced by using the HFCS as input data for EUROMOD, the EU-wide tax-benefit microsimulation model. Pilot databases for Belgium and Italy were explored in Kuypers et al. (2016). This paper builds further on that work by extending the coverage to 17 countries and introducing the simulation of new wealth-related policies in EUROMOD. We explain the processes used to build the input data and to code the wealth-related policies in EUROMOD and highlight some important advantages and drawbacks. Finally, we put forward some research questions which may be addressed by using this enhanced model.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00223/ijm-00223.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00223.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00223.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00223" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00223/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. The transformation of HFCS data into a EUROMOD input database</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. Extending the EUROMOD policy scope</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. Validation of EM-HFCS</a></li><li data-astro-cid-twdwaz5s><a href="#s5" data-astro-cid-twdwaz5s>5. Applications</a></li><li data-astro-cid-twdwaz5s><a href="#s6" data-astro-cid-twdwaz5s>6. Conclusion</a></li><li data-astro-cid-twdwaz5s><a href="#footnotes" data-astro-cid-twdwaz5s>Footnotes</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>While microsimulation techniques have been widely used for the analysis of the distribution of income, this has not been the case for the distribution of wealth. Yet, the need for models and tools to study the wealth distribution and the effects of policy intervention have increased substantially over the last decades. Since wealth inequality has been rising in many OECD countries (<a href="#bib1">Alvaredo et al., 2018</a>; <a href="#bib19">OECD, 2020</a>) higher wealth taxation has been put forward as a way to decrease inequality and potentially raise government revenues. So far this literature has been largely theoretical. To complement it a microsimulation model including information on the wealth distribution can provide empirical results on the redistributive effects of currently existing wealth taxes as well as ex-ante insights into the potential effects of higher taxation or any other potential reform.</p><p data-astro-cid-qsyhzaho>A major reason that such a microsimulation tool for wealth does not yet exist on a large scale is mainly the lack of appropriate input data. In Europe this has recently changed among others by the launch of the Eurosystem Household Finance and Consumption Survey (HFCS) – a comparative survey on households’ assets, liabilities, incomes and consumption carried out in the countries of the Euro Area as well as Hungary, Poland (from 2<sup>nd</sup> wave onwards) and Croatia (from 3<sup>rd</sup> wave onwards) and which is coordinated at the European Central Bank (ECB). In this paper we explain how microsimulation analysis of wealth-related taxes and policies is enhanced by using the HFCS as input data for EUROMOD, the EU-wide tax-benefit microsimulation model. Pilot databases for Belgium and Italy based on the first HFCS wave were explored in <a href="#bib14">Kuypers et al. (2016)</a>. This paper builds further on that work by extending the coverage to 17 countries based on the second HFCS wave and by introducing the simulation of new wealth-related taxes and policies in EUROMOD. The countries include Belgium and Italy and 15 additional countries: Austria, Cyprus, Estonia, Finland, France, Germany, Greece, Hungary, Ireland, Luxembourg, Poland, Portugal, Slovak Republic, Slovenia and Spain. The Netherlands, Malta and Latvia are not included, mainly because of their small sample sizes. We focus on simulating recurrent real property taxation, real property transfer taxation, inheritance and gift taxation and net wealth taxation as they currently exist. Where possible we also improve the simulation of policies which rely on wealth information in some way. This includes for instance the taxation of income from real and financial assets, tax incentives for asset accumulation and asset-testing in determining eligibility for social transfers.</p><p data-astro-cid-qsyhzaho>In this paper we explain the processes used to build the input data and to code the wealth-related policies in EUROMOD and highlight some important advantages and drawbacks. The broader scope of countries allows to analyse the effect of wealth-related policies in a larger variety of institutional contexts. Indeed, the current set of countries includes countries with a flat personal income tax (Hungary, Estonia), countries with low social security provisions (Greece, Estonia) and countries which do not tax intergenerational transfers (Austria, Estonia, Slovak Republic). Also the relationship between the distributions of income and net wealth is strong is some countries (e.g. Spain, France) and fairly weak in others (e.g. Poland) (<a href="#bib17">Kuypers et al., 2021</a>). This modelling tool will have the potential to analyse current wealth-related taxes and tax reforms and their impact on household income and wealth and inequalities therein in EU countries, covering: (1) analyses of existing wealth tax systems; (2) timely analyses of wealth tax policy reforms that might actually come into force in the years to come; (3) analyses of potential alternative wealth tax policy reforms; (4) analyses of the joint effect of wealth tax policy reforms and other tax-benefit reforms affecting households’ disposable income and net wealth.</p><p data-astro-cid-qsyhzaho>The remainder of this paper is organised as follows. In Section 2 we provide brief information on the HFCS data and the steps taken to construct a EUROMOD input database from it. The third section then explains which wealth-related taxes and policies are added to the simulations in EUROMOD. A validation of the simulation results is discussed in Section 4. In Section 5 we put forward some research questions which may be addressed by using this enhanced model. The last section concludes.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. The transformation of HFCS data into a EUROMOD input database</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s2-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.1. Background information: the “Eurosystem Household Finance and Consumption Survey”</h3><p data-astro-cid-qsyhzaho>The Eurosystem Household Finance and Consumption Survey (from now on HFCS) is conducted in a comparative way across the Euro Area by the national banks and some statistical institutes and coordinated at the European Central Bank. It covers detailed household wealth, gross income and consumption information and therefore provides more information on wealth than the current used database in EUROMOD, namely the “European Union Survey of Income and Living Conditions” (EU-SILC). The latter is the standard database used for the analysis of poverty and inequality in the European Union.</p><p data-astro-cid-qsyhzaho>A significant advantage of the HFCS is that the wealthy population is oversampled (except in Italy, Ireland and Finland), i.e. households that are situated at the higher end of the income and/or wealth distribution are more accurately covered in the sample. As argued by <a href="#bib3">Davies et al. (2011)</a> this matters because those households are less likely to participate in surveys and more likely to underreport, in particular when it comes to financial assets. Another interesting feature of the HFCS data is that it uses a multiple imputation technique to deal with selective item non-response. Since EUROMOD requires that there is no missing information, this has the major advantage that missing information does not need to be imputed by researchers themselves. For more information on the oversampling and multiple imputation procedure of the HFCS we refer to <a href="#bib8">HFCN (Eurosystem Household Finance and Consumption Network) (2016)</a>.</p><p data-astro-cid-qsyhzaho>There are two main options for constructing a EUROMOD input database including wealth information. The first is to impute wealth information from the HFCS into the existing EU-SILC based EUROMOD dataset, while another option is to build a completely new input dataset fully based on HFCS. Since we want to maintain the strengths of the HFCS in terms of oversampling and multiple imputation and because the HFCS covers in general all other information needed in a EUROMOD input dataset we chose the latter option. Hence, this means that we create an input dataset based on HFCS covering all ‘standard’ variables needed for tax-benefit simulations also included in EU-SILC (with a few exceptions) complemented with additional wealth-related variables. In order to utilise the multiple imputation advantage to the fullest, we created five separate input databases, each representing information on one of the five imputations. Each dataset is run through EUROMOD, the results shown in this paper represent the average over the five output datasets. <a href="#bib23">Figari et al., 2007</a> noted that a database must fulfil certain requirements in order to be used in a sensible way in EUROMOD. As discussed by <a href="#bib14">Kuypers et al. (2016)</a>, the HFCS fulfils the majority of these criteria such that it can be used in a reasonable way as input data in EUROMOD.</p></section><section id="s2-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.2. Selection of countries and summary statistics</h3><p data-astro-cid-qsyhzaho>We constructed a EUROMOD input database based on the HFCS for a selection of 17 out of the 20 countries who participated in the second wave.<sup><a href="#fn1">1</a></sup> The Netherlands, Malta and Latvia are not included, mainly because of their small sample sizes. Moreover, given that the Netherlands has administrative wealth data which show a large discrepancy with the HFCS estimates (see <a href="#bib20">Salverda, 2015</a>), it does not seem appropriate to include it. Nevertheless, even without these countries our selection represents a broad range of European countries with various kinds of tax-benefit systems in place. Besides the fact that they differ in the more ‘traditional’ tax-benefit instruments (i.e. personal income tax, social insurance contributions, social transfers), they also largely differ in the extent and progressivity of wealth-related taxation or the way in which wealth is taken into account in determining eligibility for social transfers (i.e. ‘asset-testing’). The broad coverage of countries takes advantage of the harmonised framework of EUROMOD and allows to study the budgetary and redistributive effects of wealth-related taxation and other policies from a cross-country perspective.</p><p data-astro-cid-qsyhzaho><a href="#table1">Table 1</a> provides an overview of the income reference years of the input datasets for the respective countries. For most countries it is 2013 or one year before or after. For Spain it is 2010.<sup><a href="#fn2">2</a></sup></p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Overview of income reference periods, HFCS second wave.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="center" colspan="4">Income reference year</th>
+</tr>
+<tr>
+<th align="left">2010</th>
+<th align="left">2012</th>
+<th align="left">2013</th>
+<th align="left">2014</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">ES</td>
+<td align="left">EE, PT, IE</td>
+<td align="left">BE, DE, CY, LU, AT, PL, SL, SK, FI, EL</td>
+<td align="left">FR, IT, HU</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source:</i> The <a href="#bib8">HFCN (Eurosystem Household Finance and Consumption Network) (2016)</a>. <i>Cross-country metadatainformation. Wave 2,</i> European Central Bank.</p></div></figure><p data-astro-cid-qsyhzaho>In <a href="#table2">Table 2</a> we present sample characteristics of the EUROMOD input dataset based on HFCS (called ‘EM-HFCS’) in comparison with those of the dataset based on EU-SILC (called ‘EM-SILC’) which is closest to the HFCS income reference period. The sample size of EM-HFCS ranges from 1,289 households (4,223 individuals) in Cyprus to 12,035 households (28,845 individuals) in France. In most countries the sample size of EM-HFCS is (much) smaller than that of EM-SILC, which is also reflected in the higher value of average weights. Exceptions are France and Ireland, where EM-HFCS has a larger sample. In Finland the same set of people are covered in EU-SILC and HFCS. Following common EUROMOD conventions, children that were born after the end of the income reference period are removed from the sample in the input database. We only know the age of the individuals at the time of the interview and not the year in which they were born. Hence, we assume all individuals younger than one year old to be born after the income reference period. The outcomes of applying this procedure to the HFCS input data for each of the separate countries is presented in the column ‘Restricted individuals’.</p><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Descriptive statistics of sample and weights, EM-HFCS vs. EM-SILC.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left"/>
+<th align="left">Households</th>
+<th align="left">Original individuals</th>
+<th align="left">Restricted individuals</th>
+<th align="left">Mean weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+<b>Austria</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">2,997</td>
+<td align="left">6,189</td>
+<td align="left">6,168</td>
+<td align="left">1,335</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">5,909</td>
+<td align="left">-</td>
+<td align="left">12,945</td>
+<td align="left">647</td>
+</tr>
+<tr>
+<td align="left">
+<b>Belgium</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">2,238</td>
+<td align="left">5,200</td>
+<td align="left">5,187</td>
+<td align="left">2,143</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">5,817</td>
+<td align="left">-</td>
+<td align="left">13,896</td>
+<td align="left">781</td>
+</tr>
+<tr>
+<td align="left">
+<b>Cyprus</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">1,289</td>
+<td align="left">4,223</td>
+<td align="left">4,214</td>
+<td align="left">198</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">4,294</td>
+<td align="left">-</td>
+<td align="left">12,000</td>
+<td align="left">71</td>
+</tr>
+<tr>
+<td align="left">
+<b>Estonia</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">2,220</td>
+<td align="left">5,709</td>
+<td align="left">5,650</td>
+<td align="left">225</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">5,433</td>
+<td align="left">-</td>
+<td align="left">14,210</td>
+<td align="left">93</td>
+</tr>
+<tr>
+<td align="left">
+<b>Finland</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">11,030</td>
+<td align="left">27,142</td>
+<td align="left">27,142</td>
+<td align="left">198</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">11,030</td>
+<td align="left">-</td>
+<td align="left">27,142</td>
+<td align="left">198</td>
+</tr>
+<tr>
+<td align="left">
+<b>France</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">12,035</td>
+<td align="left">28,845</td>
+<td align="left">28,577</td>
+<td align="left">2,229</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">11,390</td>
+<td align="left">-</td>
+<td align="left">26,558</td>
+<td align="left">2,342</td>
+</tr>
+<tr>
+<td align="left">
+<b>Germany</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">4,461</td>
+<td align="left">10,201</td>
+<td align="left">10,160</td>
+<td align="left">7,833</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">12,744</td>
+<td align="left">-</td>
+<td align="left">26,438</td>
+<td align="left">3,015</td>
+</tr>
+<tr>
+<td align="left">
+<b>Greece</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">3,003</td>
+<td align="left">7,744</td>
+<td align="left">7,741</td>
+<td align="left">1,386</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">14,096</td>
+<td align="left">-</td>
+<td align="left">34,380</td>
+<td align="left">311</td>
+</tr>
+<tr>
+<td align="left">
+<b>Hungary</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">6,207</td>
+<td align="left">14,623</td>
+<td align="left">14,473</td>
+<td align="left">663</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">7,770</td>
+<td align="left">-</td>
+<td align="left">18,668</td>
+<td align="left">519</td>
+</tr>
+<tr>
+<td align="left">
+<b>Ireland</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">5,419</td>
+<td align="left">14,546</td>
+<td align="left">14,546</td>
+<td align="left">316</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">4,592</td>
+<td align="left">-</td>
+<td align="left">11,794</td>
+<td align="left">386</td>
+</tr>
+<tr>
+<td align="left">
+<b>Italy</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">8,156</td>
+<td align="left">19,366</td>
+<td align="left">19,290</td>
+<td align="left">3,131</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">17,985</td>
+<td align="left">-</td>
+<td align="left">42,791</td>
+<td align="left">1,413</td>
+</tr>
+<tr>
+<td align="left">
+<b>Luxembourg</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">1,601</td>
+<td align="left">4,444</td>
+<td align="left">4,400</td>
+<td align="left">115</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">5,802</td>
+<td align="left">-</td>
+<td align="left">15,462</td>
+<td align="left">32</td>
+</tr>
+<tr>
+<td align="left">
+<b>Poland</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">3,455</td>
+<td align="left">9,035</td>
+<td align="left">9,035</td>
+<td align="left">4,215</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">12,978</td>
+<td align="left">-</td>
+<td align="left">35,991</td>
+<td align="left">1,045</td>
+</tr>
+<tr>
+<td align="left">
+<b>Portugal</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">6,207</td>
+<td align="left">16,513</td>
+<td align="left">16,404</td>
+<td align="left">634</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">6,257</td>
+<td align="left">-</td>
+<td align="left">15,926</td>
+<td align="left">660</td>
+</tr>
+<tr>
+<td align="left">
+<b>Slovakia</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">2,135</td>
+<td align="left">5,433</td>
+<td align="left">5,378</td>
+<td align="left">959</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">5,490</td>
+<td align="left">-</td>
+<td align="left">15,681</td>
+<td align="left">332</td>
+</tr>
+<tr>
+<td align="left">
+<b>Slovenia</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">2,553</td>
+<td align="left">7,245</td>
+<td align="left">7,204</td>
+<td align="left">285</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">9,205</td>
+<td align="left">-</td>
+<td align="left">28,034</td>
+<td align="left">71</td>
+</tr>
+<tr>
+<td align="left">
+<b>Spain</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">6,106</td>
+<td align="left">15,852</td>
+<td align="left">15,788</td>
+<td align="left">2,892</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">13,597</td>
+<td align="left">-</td>
+<td align="left">36,992</td>
+<td align="left">1,244</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source:</i> Own calculations based on EUROMOD and micro-datafrom EM-HFCS and EM-SILC.</p></div></figure></section><section id="s2-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.3. Common data issues</h3><p data-astro-cid-qsyhzaho>The EUROMOD input dataset that is constructed based on the HFCS contains both variables which are also included in the EU-SILC database in order to simulate the ‘standard’ EUROMOD policies, as well as new input variables in order to simulate wealth-related taxes and policies. The required variables depend on the design of the specific taxes and policies. In the preparation of these input data several challenges needed to be addressed, mainly because of a lack of information in the original HFCS data. We focus here on issues which are applicable to most (or all) countries, for detailed country-specific issues we refer to <a href="#bib2">Boone et al. (2019)</a>.</p><section id="s2-3-1" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">2.3.1. Cadastral values</h4><p data-astro-cid-qsyhzaho>In several countries, the tax base for the calculation of the recurrent real property tax (and the Italian real property transfer tax) is the taxable or cadastral value of the properties. This information is unfortunately not available in the HFCS. To solve this issue we approximate the cadastral values by calculating a ratio between the total of all cadastral values (i.e. at the national level) from external sources and the total market value of properties estimated based on the HFCS. The reported current value of each individual property in the HFCS is then multiplied by this ratio (also taking into account the % ownership of the individual/household). Although there is no reason to assume a link between taxable and market values, it is currently the only available approach and as the validation shows (see Section 4.2) the results are relatively good<sup><a href="#fn3">3</a></sup>. For some countries no relevant external information could be found so the ratio could not be calculated; in these cases we approximate the cadastral value in line with policy parameters of the real property tax, e.g. for Luxembourg cadastral values are assumed to be 0.5% of market values (see <a href="#bib2">Boone et al., 2019</a> for details). <a href="#table3">Table 3</a> provides an overview of the applied ratios for the countries where cadastral values are the tax base for the real property tax.</p><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Ratio cadastral values/market values.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Country</th>
+<th align="left">Ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Austria</td>
+<td align="left">0.105</td>
+</tr>
+<tr>
+<td align="left">Belgium</td>
+<td align="left">0.004</td>
+</tr>
+<tr>
+<td align="left">Finland</td>
+<td align="left">0.510</td>
+</tr>
+<tr>
+<td align="left">France</td>
+<td align="left">0.022 for buildings, 0.105 for land</td>
+</tr>
+<tr>
+<td align="left">Germany</td>
+<td align="left">0.080</td>
+</tr>
+<tr>
+<td align="left">Italy</td>
+<td align="left">0.0033 for main residence, 0.0097 for other real estate</td>
+</tr>
+<tr>
+<td align="left">Luxembourg</td>
+<td align="left">0.005</td>
+</tr>
+<tr>
+<td align="left">Portugal</td>
+<td align="left">0.809</td>
+</tr>
+<tr>
+<td align="left">Spain</td>
+<td align="left">0.360</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: Ratio between the total of cadastral values from administrative data and the total market value of all properties estimated in HFCS, for Belgium between mean cadastral value in EU-SILC and mean market value in HFCS, for Luxembourg ratio was inferred from policy parameters.</p></div></figure></section><section id="s2-3-2" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">2.3.2. Information on the purchase of the main residence and other properties</h4><p data-astro-cid-qsyhzaho>Information on the purchase year of a property is needed for the calculation of the real property transfer tax because we only simulate this tax for households who have bought real estate in the year for which the simulations are carried out. HFCS provides information about the purchase year of the main residence but not for other properties. We do, however, have information on the year mortgages are taken out. Thus, for all countries we approximate the purchase year of property other than the main residence by the year in which a household took out a mortgage using other property as collateral (not in case of refinancing a previous mortgage). We assume that a property was not purchased recently if there is no outstanding mortgage or loan. Hence, the real property transfer tax does not apply in these cases. The tax base is usually the purchase price of the real property. In case the value of real estate at the time of purchase is missing, we use the value at the moment of interview (maximum 2 years later).</p></section><section id="s2-3-3" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">2.3.3. Inheritances and gifts</h4><p data-astro-cid-qsyhzaho>Inheritances and gifts are observed at the household level in the HFCS, while they are taxed at the individual level. In our implementation we assign the inheritance/gift to the household head and in case there are two or more inheritances/gifts received in the same year, the most important one is assigned to the household head, the second one to the partner and so on. In most countries tax rates depend on the relationship between the donor/deceased and the beneficiary. For this purpose information on from whom a gift/inheritance is received is taken from the HFCS. In case this information is missing we assume the inheritance/gift to be received from parents as it is the most common relationship. Finally, many countries grant tax exemptions, deductions or preferential tax rates for certain types of assets such as the family home or business assets. In the HFCS we observe the total amount that each inheritance/gift is worth as well as which types of assets are received, but not the amount for each asset type separately. We impute these amounts based on the information of the stock variables observed in the survey.</p></section><section id="s2-3-4" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">2.3.4. Financial income</h4><p data-astro-cid-qsyhzaho>In several countries not all types of financial income (i.e. interest, rents, dividends…) are treated equally by the tax system. Some countries levy lower tax rates on certain types of financial income (i.e. Belgium, Italy…), while others have a special tax in place on specific financial income (i.e. Cyprus and Luxembourg). In the HFCS only an aggregate amount of financial income is observed (i.e. the sum of interests, dividends, rents, etc.). In contrast, we do observe separate amounts for the stock variables (e.g. value of savings accounts, value of public shares, etc.) from which the different types of financial income are generated. One way to impute the separate amounts of income streams would be to take the share of each stock variable in the total financial asset portfolio and apply these shares to the financial income variable. This approach, however, neglects the fact that publicly traded shares typically generate a larger return than for instance money in savings accounts. Therefore, we apply a slightly different approach consisting of two steps. We first multiply each stock variable containing the value of a financial asset with a national average rate of return taken from administrative data (in case a household does not own the respective financial asset the corresponding income variable is of course equal to zero). We then correct each amount imputed in the first step by the same percentage such that the sum of all imputed variables is equal to the total financial income variable observed in HFCS. We use the same average rate of return for all households. Although evidence suggests that wealthier investors tend to gain higher rates of return than smaller investors (e.g. <a href="#bib24">Piketty, 2014</a>), this kind of information is not available in administrative data.</p></section><section id="s2-3-5" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">2.3.5. Net wealth</h4><p data-astro-cid-qsyhzaho>In EUROMOD we want to simulate wealth taxes payable in the income reference year, such that they align with the taxes and contributions levied on income and the social transfers awarded by the government. For the event wealth taxes (i.e. real property transfer tax, inheritance and gift tax) this is not a problem as the variables covering these events refer to the moment the event takes place and we only simulate the tax for those experiencing the event in the policy year. Recurrent real estate taxes are usually levied on size in square meters or cadastral values which generally do not change from one year to the next. However, in the HFCS the recurrent wealth variables refer to the situation at the time of the interview (for Italy, Hungary and Finland to the last day of the income reference period), while yearly net wealth taxes are usually levied on the first day of the year. Therefore, we need to impute the value of net wealth owned on January 1<sup>st</sup> of the income reference year based on the value of net wealth observed in HFCS, which is generally one to two years later. We approximate the first value by taking the latter and subtracting the following amounts a) the value of real estate purchased and inheritances/gifts received in both the income reference year and the survey year as these represent wealth not yet owned by households at the time the wealth tax was levied<sup><a href="#fn4">4</a></sup> and b) financial income received in the income reference year as an estimate of the growth of financial assets between the time the wealth tax was levied and the moment wealth was observed.</p></section><section id="s2-3-6" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">2.3.6. Social benefits</h4><p data-astro-cid-qsyhzaho>In the original HFCS dataset all social benefits except pensions and unemployment benefits are taken together in a single variable, surveyed at the household level. In EU-SILC, in contrast, benefits are covered separately, with some surveyed at the household level and others at the individual level. A detailed disaggregation is also beneficial for the accuracy of the simulations in EUROMOD. In principle the HFCS social benefits variable may contain all kinds of social benefits, such as housing benefits, child benefits, parental leave allowances, educational allowances, social assistance, etc. To address this issue we decided to include in the input database a variable containing the amount of the total social benefits as observed in HFCS. In EUROMOD we then simulate those social benefits which can be accurately simulated based on other observed information. These are mostly child benefits and social assistance – which are often the most important benefits – but sometimes also other benefits are simulated. When analysing the output we then use the simulated benefits and the residual benefits from the aggregate variable – if any – to calculate disposable income. In other words, in case the simulated benefits are larger than the observed benefits in HFCS we use the simulated amounts, if they are smaller it points towards the receipt of other non-simulated benefits and then we use the observed amount of benefits. See <a href="#bib2">Boone et al. (2019)</a> for a list of social benefits which are part of EUROMOD, but which cannot be simulated based on the HFCS data. As these often entail only small benefits received by a limited number of people, the effects on the simulation results are likely to be small.</p></section></section><section id="s2-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.4. Uprating of monetary variables</h3><p data-astro-cid-qsyhzaho>Survey data are generally available to researchers only after a considerable time lag. In case of the HFCS, data are usually available three years after the interviews take place. Hence, we would like to use the input data both for simulations of the policies as they existed in the income reference year as well as for more recent years. At the moment the most recent coding of the wealth-related taxes and policies in EUROMOD applies to the situation in 2017. To be able to run the input data from the second HFCS wave on the 2017 policies we need to uprate monetary variables to the price levels of 2017. Income components and other variables are uprated using the standard uprating indices included in EUROMOD (for more information on the general uprating procedure see the EUROMOD Country Reports). For monetary variables that are new to the EUROMOD input database we have constructed new uprate indices. As for EU-SILC non-monetary variables are assumed to have stayed the same.</p><p data-astro-cid-qsyhzaho>We illustrate in <a href="#table4">Table 4</a> the construction of the new uprating indices with the example of Germany for which variables need to be uprated from 2013 to 2017. Detailed information on the uprating procedure for each country can be found in <a href="#bib2">Boone et al. (2019)</a>. First, the main asset variables are uprated based on their respective aggregates in the national accounts<sup><a href="#fn5">5</a></sup>. In the case of Germany these were taken from the <a href="#bib5">Federal Statistical Office Germany (2018a)</a>; <a href="#bib6">Federal Statistical Office Germany (2018b)</a> and the <a href="#bib4">Deutsche Bundesbank (2018)</a>. Although categories of the national accounts and HFCS do not always coincide perfectly (<a href="#bib9">Kavonius and Honkkila, 2013</a>; <a href="#bib22">Waltl, 2020)</a>, they are the best available information to take into account the evolution of assets and debt. We try to match the categories as close as possible. For self-employment business assets we used the categories ‘machinery &amp; equipment’ and ‘intellectual property rights’ from the national accounts as proxy. For the HFCS asset categories ‘managed accounts’ and ‘money owed to households’ there is no information available in the national accounts. For managed accounts we apply the same uprating index as for mutual funds and for money owed to the household we use the EUROMOD default, i.e. the price index. The aggregate wealth variables ‘total financial assets’, ‘total real assets’ and ‘total assets’ are uprated by setting them equal to the sum of their uprated components. The uprate index for the value of real property is also applied to the value of real property at the time of purchase, which is used in the simulation of the real property transfer tax. Cadastral values are not uprated. Furthermore, the monetary variables used in the simulation of the inheritance and gift tax are uprated using administrative information on the total amount of inheritances and gifts larger than 0 euro (<a href="#bib7">Federal Statistical Office Germany, 2018c</a>). This information is not available for most countries, so then the uprate index is defined in terms of the evolution in government revenues from inheritance and gift taxation. Since the applicable tax legislation has not significantly changed in the period we are uprating over, it is relatively certain that changes in the tax revenues mainly reflect changes in the amount of wealth that is received or inherited.</p><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Overview of uprating indices used for wealth variables in EUROMOD, Germany (in billion euros).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Variables uprated by the index</th>
+<th align="left">Value2013</th>
+<th align="left">Value2017</th>
+<th align="left">Ratio value 2017/2013</th>
+<th align="left">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Wealth from main residence, Wealth from other buildings, Purchase value of main residence, Purchase value of other buildings</td>
+<td align="left">7160.3</td>
+<td align="left">8328.8</td>
+<td align="left">1.16</td>
+<td align="left">Gross stock of buildings and structures (1)</td>
+</tr>
+<tr>
+<td align="left">Wealth from vehicles</td>
+<td align="left">302.2</td>
+<td align="left">328.8</td>
+<td align="left">1.09</td>
+<td align="left">Stock of personal transport equipment (2)</td>
+</tr>
+<tr>
+<td align="left">Wealth from valuables</td>
+<td align="left">157.9</td>
+<td align="left">175.9</td>
+<td align="left">1.11</td>
+<td align="left">Stock of other durables (2)</td>
+</tr>
+<tr>
+<td align="left">Self-employment business wealth</td>
+<td align="left">317.3</td>
+<td align="left">332.4</td>
+<td align="left">1.05</td>
+<td align="left">Stock of machinery &amp; equipment and intellectual property products (1)</td>
+</tr>
+<tr>
+<td align="left">Wealth from deposits</td>
+<td align="left">1798.8</td>
+<td align="left">2119.6</td>
+<td align="left">1.18</td>
+<td align="left">Stock of transferable &amp; other deposits (3)</td>
+</tr>
+<tr>
+<td align="left">Wealth from mutual funds, wealth from managed accounts</td>
+<td align="left">398.3</td>
+<td align="left">576.2</td>
+<td align="left">1.45</td>
+<td align="left">Stock of investment fund shares (3)</td>
+</tr>
+<tr>
+<td align="left">Wealth from bonds</td>
+<td align="left">179.0</td>
+<td align="left">120.5</td>
+<td align="left">0.67</td>
+<td align="left">Stock of debt securities (3)</td>
+</tr>
+<tr>
+<td align="left">Wealth from private non-self-employment businesses</td>
+<td align="left">264.4</td>
+<td align="left">314.7</td>
+<td align="left">1.19</td>
+<td align="left">Stock of unlisted shares and other equity (3)</td>
+</tr>
+<tr>
+<td align="left">Wealth from listed shares</td>
+<td align="left">223.2</td>
+<td align="left">327.4</td>
+<td align="left">1.47</td>
+<td align="left">Stock of listed shares (domestic &amp; other (3)</td>
+</tr>
+<tr>
+<td align="left">Wealth from private pensions and life insurances</td>
+<td align="left">1555.6</td>
+<td align="left">1826.0</td>
+<td align="left">1.17</td>
+<td align="left">Stock of life insurance and pension entitlements (3)</td>
+</tr>
+<tr>
+<td align="left">Wealth from other assets</td>
+<td align="left">328.0</td>
+<td align="left">384.8</td>
+<td align="left">1.17</td>
+<td align="left">Stock of non-life insurance technical reserves and other accounts (3)</td>
+</tr>
+<tr>
+<td align="left">Debts</td>
+<td align="left">1565.1</td>
+<td align="left">1727.5</td>
+<td align="left">1.11</td>
+<td align="left">Stock of total liabilities (3)</td>
+</tr>
+<tr>
+<td align="left">Value of inheritances and components of inheritances</td>
+<td align="left">17.3</td>
+<td align="left">23.3</td>
+<td align="left">1.35</td>
+<td align="left">Total amount of inheritances&gt;0 euro (4)</td>
+</tr>
+<tr>
+<td align="left">Value of gifts and components of gifts</td>
+<td align="left">11.5</td>
+<td align="left">11.2</td>
+<td align="left">0.97</td>
+<td align="left">Total amount of gifts&gt;0 euro (4)</td>
+</tr>
+<tr>
+<td align="left">Net wealth</td>
+<td align="left">11920.7</td>
+<td align="left">13876.7</td>
+<td align="left">1.16</td>
+<td align="left">Stock of net wealth (sum of fixed assets, consumer durables and financial assets less liabilities) (1,2 and 3)</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: All stock variables refer to the situation at the end of the year.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: (1) National Accounts, Fixed assets by sector (<a href="#bib5">Federal Statistical Office Germany, 2018a</a>); (2) National Wealth Accounts, consumer durables (<a href="#bib6">Federal Statistical Office Germany, 2018b</a>); (3) Financial Accounts (<a href="#bib4">Deutsche Bundesbank, 2018</a>); (4) Finanzen und Steuern, Erbschaft- und Schenkungsteuer (<a href="#bib7">Federal Statistical Office Germany, 2018c</a>).</p></div></figure><p data-astro-cid-qsyhzaho>As mentioned before we assume non-monetary information to have stayed the same. Yet, we simulate the real property transfer tax and the inheritance & gift tax only for those individuals who have experienced these events in the policy year, i.e. for the first only individuals who have bought a property in the policy year and for the second only indivuals who have received an inheritance or gift in the policy year. In the policy years after the income reference period we keep using the observations from the income reference period. Hence, in practice this means we replace the variable which contains information on the year a property is bought or an inheritance/gift is received with 2017 for those for which it is equal to the income reference period (i.e. 2013 is replaced by 2017 in the case of Germany).</p></section></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. Extending the EUROMOD policy scope</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In this section we provide an overview of the existence of wealth-related taxes and other policies relying on wealth information for the countries covered in the analysis. We discuss some common features of these policies and whether or not these policies are simulated in the respective country in the 2017 policy system (which is generally the same as the simulations for the income reference period).</p><p data-astro-cid-qsyhzaho>First, <a href="#table5">Table 5</a> focuses on the new wealth-related taxes that have been integrated in the model. We distinguish between four tax categories, (1) recurrent real property taxes, (2) taxes on the transfer of real property, (3) inheritance and gift taxes and (4) general and specific taxes on the ownership of net wealth. We list whether these taxes exist in a given country and were added to EUROMOD (ES), exist in a given country but were not added (ENS) and do not exist in a given country (N). In general, the majority of the taxes shown below were not yet simulated in EUROMOD due to data limitations in EU-SILC, but the HFCS contains sufficient information to allow these simulations. Some taxes, such as the recurrent real property taxes of Belgium, Italy and Greece were already partially simulated on EM-SILC data.</p><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Overview of simulation new wealth-related taxes in EUROMOD, 2017.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">Real property tax</th>
+<th align="left">Real property transfer tax</th>
+<th align="left">Inheritance tax</th>
+<th align="left">Gift tax</th>
+<th align="left">General net wealth tax</th>
+<th align="left">Specific net wealth tax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Austria</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N<sup>1</sup>
+</td>
+<td align="left">N<sup>1</sup>
+</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Belgium</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Cyprus</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES<sup>2</sup>
+</td>
+<td align="left">ES<sup>2</sup>
+</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Estonia</td>
+<td align="left">ES<sup>3</sup>
+</td>
+<td align="left">N</td>
+<td align="left">N</td>
+<td align="left">N</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Finland</td>
+<td align="left">ES</td>
+<td align="left">ENS</td>
+<td align="left">ENS</td>
+<td align="left">ENS</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">France</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Germany</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Greece</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Hungary</td>
+<td align="left">ENS</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Ireland</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Italy</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">ES</td>
+</tr>
+<tr>
+<td align="left">Luxembourg</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Poland</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Portugal</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES<sup>4</sup>
+</td>
+<td align="left">ES<sup>4</sup>
+</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Slovakia</td>
+<td align="left">ES</td>
+<td align="left">ENS<sup>5</sup>
+</td>
+<td align="left">N</td>
+<td align="left">N</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Slovenia</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Spain</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES<sup>6</sup>
+</td>
+<td align="left">N</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: ES= exists &amp; simulated; ENS= exists &amp; not simulated; N= does not exist. <sup>1</sup>The inheritance &amp; gift tax was abolished in 2008. A provision for inheritances and gifts still exists under the real property transfer tax. <sup>2</sup>Inheritance &amp; gift tax was abolished in 2000 and thereafter included in the legislation of the real property transfer tax. <sup>3</sup>Land tax <sup>4</sup>Inheritance &amp; gift tax was abolished in 2004 and thereafter included in the stamp duty. <sup>5</sup>In Slovakia there is a real property transfer tax provision. We are not able to simulate this provision since it requires specific information. However, the budgetary impact of the tax is very limited. <sup>6</sup>The general net wealth tax was abolished in Spain between 2008 and 2011 and was reintroduced thereafter.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source:</i> <a href="#bib2">Boone et al. (2019)</a>.</p></div></figure><section id="s3-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.1. Real property tax</h3><p data-astro-cid-qsyhzaho>Ownership of real property is taxed recurrently in all HFCS countries included in the analysis. The tax base differs between the different countries but can be divided into three separate categories. Most countries use the cadastral value of the property as tax base for the calculation of the property tax (Austria, Belgium, Finland, France, Germany, Italy, Luxembourg, Portugal and Spain). Other countries use the market value (Cyprus, Hungary, Ireland and Slovenia) or the property size in m² (e.g. Greece<sup><a href="#fn6">6</a></sup>, Hungary<sup><a href="#fn7">7</a></sup>, Poland and Slovakia) as tax base. In some countries there exist exemptions from the real property tax. Note that the Hungarian real property tax cannot be simulated since it requires detailed information at the municipality level that is not available in HFCS.</p></section><section id="s3-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.2. Real property transfer tax</h3><p data-astro-cid-qsyhzaho>Transfers of real property are subject to a transfer tax that is payable by the buyer of the property in all countries. The purchase of immovable property is often preceded by taking out a mortgage, which is in some countries also taxed (Belgium, Italy, Portugal, Spain). With the exception of Italy, all countries levy the transfer tax on the price of the property (i.e. its fair market value), while in Italy the cadastral values are used as tax base. In general, there are no exemptions from this tax, although transfers of properties between lineal heirs or properties held by the government are exempt from taxation in some countries (e.g. Germany, Portugal, Spain …). For Finland and Slovakia, we are not able to simulate the transfer tax. For Finland this is because in HFCS information on wealth transfers is missing as it is based on a combination of register data and a supplementary module added to the EU-SILC survey (<a href="#bib8">HFCN (Eurosystem Household Finance and Consumption Network), 2016</a>). In Slovakia the real estate transfer tax was abolished in 2005, but there is still a very small registration fee in place. The simulation of this fee, however, requires information not available in HFCS. Because it consists of only a small fee, the budgetary importance of this is very limited.</p></section><section id="s3-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.3. Inheritance & gift tax</h3><p data-astro-cid-qsyhzaho>Apart from Austria, Estonia and Slovakia inheritances and gifts are subject to taxation in all countries and are due by the beneficiary of the inheritance/gift. Overall, the value of the inheritance/gift is used as tax base. Often tax rates vary according to the kinship between the beneficiary and the deceased/donor with more favourable tax treatment for partners, descendants and ascendants compared to other relatives or non-related people. Inheritances and gifts are generally taxed in a progressive way, either through a progressive tax schedule (all countries except Hungary, Ireland, Italy, Luxembourg and Portugal) and/or by granting large allowances of several thousands of euros (Germany, Greece, Ireland, Italy). The inheritance and gift tax of Finland cannot be simulated which is again due to the missing information on wealth transfers mentioned above.</p></section><section id="s3-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.4. General & specific net wealth tax</h3><p data-astro-cid-qsyhzaho>In the years for which the simulations are carried out, a general net wealth tax only existed in France<sup><a href="#fn8">8</a></sup> and Spain<sup><a href="#fn9">9</a></sup>. In both countries the tax is levied on the net wealth (i.e. real and financial assets minus liabilities). It is levied on individuals who own a ‘high share of net wealth’, i.e. at least €1,300,000 in France and €700,000 in Spain (in the latter doubled for couples). Apart from the tax-free threshold, both countries have additional exemptions from the wealth tax included in their tax legislation. For instance, the value of the main residence is partially exempted and works of arts, antiques and retirement savings are fully exempted as well as business assets under certain conditions. Tax rates are progressive in both France and Spain. Italy levies a ‘specific net wealth tax’, which entails the taxation of bank accounts and financial assets.</p><p data-astro-cid-qsyhzaho>In the simulation of all the wealth-related taxes we simulate the rules as they apply to residents and the wealth held in the country of residence. Other rules may apply to wealth held in the country by non-residents or the wealth held by residents in other countries.</p><p data-astro-cid-qsyhzaho><a href="#table6">Table 6</a> presents an overview of the policies which were already simulated in EUROMOD, but which have often been refined by taking into account (more detailed) wealth information where necessary. Again, we focus on the 2017 policies, but the situation is largely the same for the income reference period. We classify policies as ‘exists and simulated’ (ES), ‘exists, simulated and refined’ (ESR), ‘exists and not simulated’ (EN) and ‘does not exists’ (N). Taxation of income from financial assets and from real property is for all countries included in EUROMOD. Tax reliefs for mortgage repayments respectively for contributions to private pension funds are also well covered in the refined policies (except for Cyprus, Finland, and Slovakia, resp. for Germany). The same applies for asset tests for social benefits, where the asset test has either been added to the existing policy or the asset test that was coded was refined with additional information (except for Estonia and Slovenia). Country specific taxes are refined for Belgium and Cyprus. For Belgium this entails the ‘tax on long-term savings’ that is levied once people turn 60 years old, while for Cyprus the ‘special contribution to defense’ which is levied on income from financial assets is simulated.</p><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Overview of refined wealth-related policies in EUROMOD, 2017.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">Taxation of income from financial assets</th>
+<th align="left">Taxation of income from real property</th>
+<th align="left">Tax relief for mortgage repayment</th>
+<th align="left">Tax relief for contributions made to private pension funds</th>
+<th align="left">Asset-test for social benefits</th>
+<th align="left">Country specific tax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Austria</td>
+<td align="left">ESR<sup>1</sup>
+</td>
+<td align="left">ES</td>
+<td align="left">ESR<sup>2</sup>
+</td>
+<td align="left">ESR<sup>3</sup>
+</td>
+<td align="left">ESR</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Belgium</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">ESR</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ESR<sup>4</sup>
+</td>
+</tr>
+<tr>
+<td align="left">Cyprus</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">EN<sup>5</sup>
+</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">ESR<sup>6</sup>
+</td>
+</tr>
+<tr>
+<td align="left">Estonia</td>
+<td align="left">ESR</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">EN</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Finland</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">EN</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">France</td>
+<td align="left">ESR</td>
+<td align="left">ESR</td>
+<td align="left">ESR</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Germany</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">EN</td>
+<td align="left">ESR</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Greece</td>
+<td align="left">ESR</td>
+<td align="left">ESR</td>
+<td align="left">N</td>
+<td align="left">N</td>
+<td align="left">ES</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Hungary</td>
+<td align="left">ESR</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Ireland</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">ESR</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Italy</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Luxembourg</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Poland</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">ES</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Portugal</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Slovakia</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">EN<sup>7</sup>
+</td>
+<td align="left">ES</td>
+<td align="left">ES<sup>8</sup>
+</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Slovenia</td>
+<td align="left">ESR</td>
+<td align="left">ESR</td>
+<td align="left">N</td>
+<td align="left">ES</td>
+<td align="left">EN</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Spain</td>
+<td align="left">N<sup>9</sup>
+</td>
+<td align="left">ES</td>
+<td align="left">ESR<sup>10</sup>
+</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">n/a</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: ES = exists &amp; simulated; ESR = exists, simulated &amp; refined; EN = exists &amp; not simulated; N = does not exist. <sup>1</sup>Tax on capital gains. <sup>2</sup>Included under the tax allowance for cost of earnings and tax allowance for exceptional deductions. <sup>3</sup>Included under the tax allowance for exceptional deductions. <sup>4</sup>Tax on long term saving. <sup>5</sup>No specific information was found online such that we cannot implement this tax. <sup>6</sup>Special contribution to defense. <sup>7</sup>Not yet applicable in 2013 and 2017. <sup>8</sup>Social assistance is the only means-tested benefit which is simulated for Slovakia and we did not find any applicable asset-test. <sup>9</sup>Exemption for dividends was abolished in 2015. <sup>10</sup>Since 2013 the mortgage tax credit is no longer in effect for individuals who bought their residences after 1<sup>st</sup> of January of that year.</p></div></figure></section></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. Validation of EM-HFCS</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In this section we show how the outcomes from EM-HFCS and the new policies in EUROMOD compare to other sources. First, we validate the EUROMOD-HFCS outcomes for a number of income concepts at the micro-level by comparing them with those based on the EU-SILC database, for the corresponding income reference year. Next, we turn to the validation of the newly-added wealth policies in EUROMOD and present an overview of the number of potentially liable observations and the number of observed taxpayers for each tax category. Finally, for macro-validation purposes we compare the simulated tax revenues with figures from external sources to assess the accuracy of the simulations.</p><section id="s4-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.1. Micro-validation against EM-SILC</h3><p data-astro-cid-qsyhzaho><a href="#table7">Table 7</a> presents summary statistics of original &amp; pension income and disposable income for EM-HFCS and EM-SILC, although we do not claim that one data is better than the other. We show here the results for the income reference year as these directly reflect the underlying databases, but the differences between EM-HFCS and EM-SILC are the same for 2017 as the same uprating indices are applied to the income variables for both datasets. To be able to compare accurately between EM-HFCS and EM-SILC the newly simulated wealth-related taxes are here not subtracted from disposable income. Note that the figures presented below refer to the mean over the five imputations. All figures are calculated based on the annual household disposable income, equivalised by the OECD modified scale and all individuals are included in the calculations.</p><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Comparison of key EUROMOD equivalised income concepts (in € per year), EM-HFCS vs. EM-SILC, income reference year.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Country</th>
+<th align="left" colspan="4">Mean</th>
+<th align="left" colspan="4">Median</th>
+<th align="left" colspan="4">Gini-coefficients</th>
+</tr>
+<tr>
+<th align="left"> </th>
+<th align="left" colspan="2">Original income</th>
+<th align="left" colspan="2">Disposable income</th>
+<th align="left" colspan="2">Original income</th>
+<th align="left" colspan="2">Disposable income</th>
+<th align="left" colspan="2">Original income</th>
+<th align="left" colspan="2">Disposable income</th>
+</tr>
+<tr>
+<th align="left"> </th>
+<th align="left">HFCS</th>
+<th align="left">SILC</th>
+<th align="left">HFCS</th>
+<th align="left">SILC</th>
+<th align="left">HFCS</th>
+<th align="left">SILC</th>
+<th align="left">HFCS</th>
+<th align="left">SILC</th>
+<th align="left">HFCS</th>
+<th align="left">SILC</th>
+<th align="left">HFCS</th>
+<th align="left">SILC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Austria</td>
+<td align="left">27,274</td>
+<td align="left">32,553</td>
+<td align="left">21,627</td>
+<td align="left">25,185</td>
+<td align="left">24,575</td>
+<td align="left">28,198</td>
+<td align="left">20,174</td>
+<td align="left">22,519</td>
+<td align="left">0.288</td>
+<td align="left">0.364</td>
+<td align="left">0.200</td>
+<td align="left">0.250</td>
+</tr>
+<tr>
+<td align="left">Belgium</td>
+<td align="left">30,623</td>
+<td align="left">26,686</td>
+<td align="left">21,623</td>
+<td align="left">21,023</td>
+<td align="left">27,227</td>
+<td align="left">24,206</td>
+<td align="left">19,863</td>
+<td align="left">20,038</td>
+<td align="left">0.374</td>
+<td align="left">0.396</td>
+<td align="left">0.250</td>
+<td align="left">0.221</td>
+</tr>
+<tr>
+<td align="left">Cyprus</td>
+<td align="left">16,098</td>
+<td align="left">18,652</td>
+<td align="left">15,404</td>
+<td align="left">19,100</td>
+<td align="left">12,600</td>
+<td align="left">14,229</td>
+<td align="left">12,790</td>
+<td align="left">15,115</td>
+<td align="left">0.404</td>
+<td align="left">0.412</td>
+<td align="left">0.324</td>
+<td align="left">0.338</td>
+</tr>
+<tr>
+<td align="left">Estonia</td>
+<td align="left">10,353</td>
+<td align="left">8,112</td>
+<td align="left">9,345</td>
+<td align="left">7,502</td>
+<td align="left">7,869</td>
+<td align="left">6,727</td>
+<td align="left">7,291</td>
+<td align="left">6,356</td>
+<td align="left">0.468</td>
+<td align="left">0.381</td>
+<td align="left">0.401</td>
+<td align="left">0.317</td>
+</tr>
+<tr>
+<td align="left">Finland</td>
+<td align="left">31,601</td>
+<td align="left">30,329</td>
+<td align="left">26,359</td>
+<td align="left">25,573</td>
+<td align="left">27,736</td>
+<td align="left">26,760</td>
+<td align="left">23,962</td>
+<td align="left">23,211</td>
+<td align="left">0.364</td>
+<td align="left">0.379</td>
+<td align="left">0.233</td>
+<td align="left">0.241</td>
+</tr>
+<tr>
+<td align="left">France</td>
+<td align="left">22,079</td>
+<td align="left">28,914</td>
+<td align="left">20,033</td>
+<td align="left">23,994</td>
+<td align="left">19,138</td>
+<td align="left">24,485</td>
+<td align="left">17,467</td>
+<td align="left">20,802</td>
+<td align="left">0.401</td>
+<td align="left">0.371</td>
+<td align="left">0.260</td>
+<td align="left">0.276</td>
+</tr>
+<tr>
+<td align="left">Germany</td>
+<td align="left">31,375</td>
+<td align="left">28,600</td>
+<td align="left">23,852</td>
+<td align="left">22,061</td>
+<td align="left">24,222</td>
+<td align="left">24,379</td>
+<td align="left">19,641</td>
+<td align="left">19,526</td>
+<td align="left">0.431</td>
+<td align="left">0.378</td>
+<td align="left">0.318</td>
+<td align="left">0.280</td>
+</tr>
+<tr>
+<td align="left">Greece</td>
+<td align="left">14,339</td>
+<td align="left">11,161</td>
+<td align="left">12,621</td>
+<td align="left">9,886</td>
+<td align="left">11,780</td>
+<td align="left">8,990</td>
+<td align="left">10,511</td>
+<td align="left">8,549</td>
+<td align="left">0.386</td>
+<td align="left">0.409</td>
+<td align="left">0.346</td>
+<td align="left">0.330</td>
+</tr>
+<tr>
+<td align="left">Hungary</td>
+<td align="left">6,225</td>
+<td align="left">5,889</td>
+<td align="left">4,897</td>
+<td align="left">4,429</td>
+<td align="left">4,998</td>
+<td align="left">5,199</td>
+<td align="left">4,067</td>
+<td align="left">4,030</td>
+<td align="left">0.412</td>
+<td align="left">0.355</td>
+<td align="left">0.329</td>
+<td align="left">0.286</td>
+</tr>
+<tr>
+<td align="left">Ireland</td>
+<td align="left">28,790</td>
+<td align="left">22,744</td>
+<td align="left">24,531</td>
+<td align="left">22,156</td>
+<td align="left">21,886</td>
+<td align="left">18,134</td>
+<td align="left">21,145</td>
+<td align="left">19,573</td>
+<td align="left">0.493</td>
+<td align="left">0.518</td>
+<td align="left">0.331</td>
+<td align="left">0.275</td>
+</tr>
+<tr>
+<td align="left">Italy</td>
+<td align="left">20,137</td>
+<td align="left">22,020</td>
+<td align="left">15,484</td>
+<td align="left">22,021</td>
+<td align="left">16,290</td>
+<td align="left">18,338</td>
+<td align="left">13,340</td>
+<td align="left">15,557</td>
+<td align="left">0.407</td>
+<td align="left">0.388</td>
+<td align="left">0.340</td>
+<td align="left">0.314</td>
+</tr>
+<tr>
+<td align="left">Luxembourg</td>
+<td align="left">48,971</td>
+<td align="left">44,526</td>
+<td align="left">39,801</td>
+<td align="left">37,874</td>
+<td align="left">36,800</td>
+<td align="left">37,039</td>
+<td align="left">33,225</td>
+<td align="left">33,816</td>
+<td align="left">0.424</td>
+<td align="left">0.385</td>
+<td align="left">0.296</td>
+<td align="left">0.242</td>
+</tr>
+<tr>
+<td align="left">Poland</td>
+<td align="left">8,898</td>
+<td align="left">7,434</td>
+<td align="left">6,978</td>
+<td align="left">6,040</td>
+<td align="left">7,410</td>
+<td align="left">6,309</td>
+<td align="left">5,956</td>
+<td align="left">5,265</td>
+<td align="left">0.378</td>
+<td align="left">0.367</td>
+<td align="left">0.333</td>
+<td align="left">0.304</td>
+</tr>
+<tr>
+<td align="left">Portugal</td>
+<td align="left">11,693</td>
+<td align="left">11,903</td>
+<td align="left">10,395</td>
+<td align="left">10,501</td>
+<td align="left">8,725</td>
+<td align="left">8,960</td>
+<td align="left">8,582</td>
+<td align="left">8,726</td>
+<td align="left">0.433</td>
+<td align="left">0.438</td>
+<td align="left">0.330</td>
+<td align="left">0.319</td>
+</tr>
+<tr>
+<td align="left">Slovakia</td>
+<td align="left">7,841</td>
+<td align="left">7,933</td>
+<td align="left">6,945</td>
+<td align="left">7,026</td>
+<td align="left">7,046</td>
+<td align="left">7,105</td>
+<td align="left">6,277</td>
+<td align="left">6,461</td>
+<td align="left">0.352</td>
+<td align="left">0.322</td>
+<td align="left">0.252</td>
+<td align="left">0.236</td>
+</tr>
+<tr>
+<td align="left">Slovenia</td>
+<td align="left">11,436</td>
+<td align="left">14,731</td>
+<td align="left">9,587</td>
+<td align="left">12,648</td>
+<td align="left">9,650</td>
+<td align="left">12,988</td>
+<td align="left">8,580</td>
+<td align="left">11,728</td>
+<td align="left">0.388</td>
+<td align="left">0.363</td>
+<td align="left">0.264</td>
+<td align="left">0.241</td>
+</tr>
+<tr>
+<td align="left">Spain</td>
+<td align="left">16,883</td>
+<td align="left">15,651</td>
+<td align="left">16,495</td>
+<td align="left">14,714</td>
+<td align="left">13,043</td>
+<td align="left">13,067</td>
+<td align="left">13,186</td>
+<td align="left">13,384</td>
+<td align="left">0.451</td>
+<td align="left">0.400</td>
+<td align="left">0.383</td>
+<td align="left">0.313</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Notes</i>: White cells refer to differences of less than 5%, light grey cells refer to differences of between 5% and 10%, medium grey cells refer to differences of between 10% and 20% and dark grey cells refer to differences of more than 20%. In case of Hungary amounts in national currency have been converted to euros based on the average exchange rate in 2017 reported by the European Central Bank, namely €1=HUF 309.19. For Poland the exchange rate applied is equal to €1=4.2259 PLN.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source:</i> Own calculations based on EUROMOD and micro-datafrom EM-HFCS and EM-SILC.</p></div></figure><p data-astro-cid-qsyhzaho>We highlight the extent of the differences as follows: white cells refer to differences of less than 5%, light grey cells refer to differences of between 5% and 10%, medium grey cells refer to differences of between 10% and 20% and dark grey cells refer to differences of more than 20%. Comparability between the results of EM-HFCS and EM-SILC varies widely across countries. Results are close to each other for Finland, Portugal and Slovakia, while they diverge rather strongly for Austria, Estonia, France and Slovenia. Differences are usually larger for original & pension income than for disposable income and larger for the mean than for the median. The differences mostly reflect higher amounts in EM-HFCS than in EM-SILC, which might be related to the oversampling that is applied in the HFCS (see above). Gini coefficients are often also higher in EM-HFCS than in EM-SILC.</p><p data-astro-cid-qsyhzaho>Since the differences between EM-HFCS and EM-SILC are sometimes relatively large and they vary widely across countries, this may potentially lead to different results of simulations of the impact of tax-benefit policies and the country rankings thereof. Nevertheless, the comparison only reveals differences, but not which dataset is closest to reality. Both datasets are household surveys having each important strengths but also suffering from weaknesses. Hence, at this moment there is no way of knowing which dataset provides the ‘best’ estimates of inequality, poverty and redistribution. Therefore, we argue to consider the datasets as complements rather than substitutes.</p></section><section id="s4-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.2. Macro-validation of new EUROMOD policies</h3><p data-astro-cid-qsyhzaho>We now turn to the macro-validation of the newly added wealth policies in EUROMOD.</p><p data-astro-cid-qsyhzaho><a href="#table8">Table 8</a> summarises for each of the taxes the number of observations in the data which are in theory liable to pay the tax and the final observed number of actual taxpayers. The number of potentially liable observations refers to those observations in the input data that could be theoretically taxed. This number refers to all observations that possess the type of asset or have experienced the type of wealth transfer which is taxed in the respective tax, without taking into account any tax legislation or data constraints. This number does not necessarily correspond to the final number of actual taxpayers since units may not pay a tax for several reasons (e.g. missing input data, exemptions foreseen in tax legislation…). The criteria used to calculate the number of potentially liable observations is the same across all countries:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Real property tax: households are considered potentially liable if they (partially) own at least one property.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Real property transfer tax: households are considered potentially liable if they bought at least one property in the policy year.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Inheritance tax: households are considered potentially liable if they received a positive inheritance in the policy year.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Gift tax: individuals are considered potentially liable if they received a positive gift in the policy year.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Mortgage registration duties: households are considered potentially liable if they took out at least one mortgage in the policy year.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Net wealth tax: individuals are considered potentially liable if they own positive net wealth.</p></li></ul><figure id="table8" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 8.</strong><span data-astro-cid-dzaleqsp> Number of observations potentially liable for and actually paying the tax for each of the simulated wealth-related taxes, 2017.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Country</th>
+<th align="left">Wealth-related tax</th>
+<th align="left">Number of potentially liable observations</th>
+<th align="left">Number of observed taxpayers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Austria</td>
+<td align="left">Real property tax</td>
+<td align="left">1,412</td>
+<td align="left">1,412 (2,033,783)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">27</td>
+<td align="left">27 (37,195)</td>
+</tr>
+<tr>
+<td align="left">Belgium</td>
+<td align="left">Real property tax</td>
+<td align="left">1,689</td>
+<td align="left">1,686 (3,531,695)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">28</td>
+<td align="left">25 (68,577)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance tax</td>
+<td align="left">49</td>
+<td align="left">45 (75,363)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Gift tax</td>
+<td align="left">15</td>
+<td align="left">14 (45,970)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Mortgage registration duties</td>
+<td align="left">40</td>
+<td align="left">40 (119,424)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Tax on long-term saving</td>
+<td align="left">44</td>
+<td align="left">44 (66,663)</td>
+</tr>
+<tr>
+<td align="left">Cyprus</td>
+<td align="left">Real property tax</td>
+<td align="left">1,098</td>
+<td align="left">1,098 (250,309)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">5</td>
+<td align="left">5 (688)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Mortgage registration duties</td>
+<td align="left">77</td>
+<td align="left">77 (13,824)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Gift provision</td>
+<td align="left">27</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">Estonia</td>
+<td align="left">Real property tax</td>
+<td align="left">1,801</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">Finland</td>
+<td align="left">Real property tax</td>
+<td align="left">8,536</td>
+<td align="left">8,536 (1,775,911)</td>
+</tr>
+<tr>
+<td align="left">France</td>
+<td align="left">Real property tax</td>
+<td align="left">8,983</td>
+<td align="left">7,355 (13,935,691)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">288</td>
+<td align="left">270 (507,207)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">436</td>
+<td align="left">147 (252,843)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Net wealth tax</td>
+<td align="left">19,262</td>
+<td align="left">1,155 (342,915)</td>
+</tr>
+<tr>
+<td align="left">Germany</td>
+<td align="left">Real property tax</td>
+<td align="left">2,895</td>
+<td align="left">2,894 (19,830,502)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">92</td>
+<td align="left">89 (628,066)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">363</td>
+<td align="left">27 (119,988)</td>
+</tr>
+<tr>
+<td align="left">Greece</td>
+<td align="left">Real property tax</td>
+<td align="left">3,003</td>
+<td align="left">1,793 (3,038,838)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Emergency property tax</td>
+<td align="left">3,003</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">11</td>
+<td align="left">11 (3,326)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">13</td>
+<td align="left">5 (4.134)</td>
+</tr>
+<tr>
+<td align="left">Hungary</td>
+<td align="left">Real property transfer tax</td>
+<td align="left">69</td>
+<td align="left">69 (42,300)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance tax</td>
+<td align="left">47</td>
+<td align="left">5 (3,514)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Gift tax</td>
+<td align="left">28</td>
+<td align="left">1 (224)</td>
+</tr>
+<tr>
+<td align="left">Ireland</td>
+<td align="left">Real property tax</td>
+<td align="left">3,968</td>
+<td align="left">3,917 (1,221,527)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">79</td>
+<td align="left">36 (9,153)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">96</td>
+<td align="left">17 (4,273)</td>
+</tr>
+<tr>
+<td align="left">Italy</td>
+<td align="left">Real property tax</td>
+<td align="left">6,070</td>
+<td align="left">1,880 (5,693,335)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">77</td>
+<td align="left">77 (300,929)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">204</td>
+<td align="left">30 (86,236)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Net wealth tax</td>
+<td align="left">8,156</td>
+<td align="left">8,156 (24,694,121)</td>
+</tr>
+<tr>
+<td align="left">Luxembourg</td>
+<td align="left">Real property tax</td>
+<td align="left">1,295</td>
+<td align="left">1,295 (157,609)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">41</td>
+<td align="left">41 (5,700)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance tax</td>
+<td align="left">37</td>
+<td align="left">8 (1,048)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Gift tax</td>
+<td align="left">10</td>
+<td align="left">1 (76)</td>
+</tr>
+<tr>
+<td align="left">Poland</td>
+<td align="left">Real property tax</td>
+<td align="left">3,436</td>
+<td align="left">3,428 (13,375,016)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">51</td>
+<td align="left">50 (231,159)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">85</td>
+<td align="left">1 (1,785)</td>
+</tr>
+<tr>
+<td align="left">Portugal</td>
+<td align="left">Real property tax</td>
+<td align="left">5,269</td>
+<td align="left">4,770 (2,704,456)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">25</td>
+<td align="left">21 (8,976)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax (stamp duty)</td>
+<td align="left">158</td>
+<td align="left">57 (33,037)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Mortgage registration duties</td>
+<td align="left">59</td>
+<td align="left">59 (29,484)</td>
+</tr>
+<tr>
+<td align="left">Slovakia</td>
+<td align="left">Real property tax</td>
+<td align="left">1,879</td>
+<td align="left">1,863 (1,594,174)</td>
+</tr>
+<tr>
+<td align="left">Slovenia</td>
+<td align="left">Real property tax</td>
+<td align="left">2,066</td>
+<td align="left">224 (79,900)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">15</td>
+<td align="left">15 (4,350)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">49</td>
+<td align="left">2 (305)</td>
+</tr>
+<tr>
+<td align="left">Spain</td>
+<td align="left">Real property tax</td>
+<td align="left">5,586</td>
+<td align="left">5,586 (15,234,706)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">77</td>
+<td align="left">77 (236,799)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance tax</td>
+<td align="left">150</td>
+<td align="left">112 (240,448)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Net wealth tax</td>
+<td align="left">10,150</td>
+<td align="left">1,133 (313,698)</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: Population weighted numbers in brackets.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Own calculations based on EUROMOD and micro-data from EM-HFCS.</p></div></figure><p data-astro-cid-qsyhzaho>The final number of observed taxpayers are those cases that eventually pay a positive tax after taking into account the tax rules (weighted population numbers are presented between parentheses).</p><p data-astro-cid-qsyhzaho>The number of observations differ strongly between the different wealth-related taxes and countries. In general, the number of potentially liable observations and the number of observed taxpayers is highest for the real property tax. In comparison, the number of observations for the inheritance & gift tax, real property transfer tax and mortgage registration duties are considerably lower. In general, the number of observed taxpayers is the same in 2017 compared to the income reference period as most tax legislation did not change (drastically) over this period. The most important differences are (1) that for Greece the number of payers of the real property tax increased between the income reference year and 2017 because of a reform from an ‘emergency property tax’ to the property tax as it exists today, (2) that for Italy the number of payers of the real property tax decreased because the main residence has become exempted from taxation since 2016 and (3) that the number of tax payers of the Spanish net wealth tax is zero in the income reference year (2010) since this tax was abolished between 2008 and 2011.</p><p data-astro-cid-qsyhzaho><a href="#table9">Table 9</a> presents the comparison of tax revenues for the simulated wealth-related taxes with external figures, mainly derived from the OECD Tax Revenue Database. We show here both the validation for the income reference period as for 2017 because the first shows best how well our simulations perform, while the latter provides some insight in the appropriateness of the uprating. Since the number of observations is highest for the real property tax this tax is on average the most accurately simulated wealth tax. For the other taxes the simulated revenues diverge more from the external figures. There are several reasons for this. First, as <a href="#table8">Table 8</a> showed the number of observations in the underlying data are often very low such that the results largely depend on a few cases. When these cases happen to be outliers this has a massive effect on the results. Second, as the results largely depend on the input database, underreporting in the HFCS data may have an effect on the simulation results. Moreover, our simulations are not always completely comparable to the external statistics as the latter are not always available at a detailed level. For instance, we simulate wealth taxes for households, but external figures often do not make a distinction between taxes paid by households versus other economic actors.</p><figure id="table9" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 9.</strong><span data-astro-cid-dzaleqsp> Simulated wealth tax revenues (in million euro per year), income reference year and 2017</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Country</th>
+<th align="left">Wealth tax</th>
+<th align="center" colspan="3">Income reference year</th>
+<th align="center" colspan="3">2017</th>
+</tr>
+<tr>
+<th align="left"> </th>
+<th align="left"> </th>
+<th align="left">Simulated revenue</th>
+<th align="left">External figure</th>
+<th align="left">Ratio</th>
+<th align="left">Simulated revenue</th>
+<th align="left">External figure</th>
+<th align="left">Ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Austria</td>
+<td align="left">Real property tax</td>
+<td align="left">617.10</td>
+<td align="left">736.0 (1)</td>
+<td align="left">83.85%</td>
+<td align="left">617.10</td>
+<td align="left">771.0 (1)</td>
+<td align="left">80.04%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">272.20</td>
+<td align="left">790.0 (1)</td>
+<td align="left">34.46%</td>
+<td align="left">142.40</td>
+<td align="left">1,118 (1)</td>
+<td align="left">12.74%</td>
+</tr>
+<tr>
+<td align="left">Belgium</td>
+<td align="left">Real property tax</td>
+<td align="left">3,218</td>
+<td align="left">3,478 (1)</td>
+<td align="left">92.52%</td>
+<td align="left">3,254</td>
+<td align="left">3,775 (1)</td>
+<td align="left">86.20%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">1,987</td>
+<td align="left">3,452 (3)</td>
+<td align="left">56.10%</td>
+<td align="left">1,977</td>
+<td align="left">4,065 (3)</td>
+<td align="left">48.63%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance tax</td>
+<td align="left">1,142</td>
+<td align="left">2,634 (3)</td>
+<td align="left">43.36%</td>
+<td align="left">1,035</td>
+<td align="left">2,365 (3)</td>
+<td align="left">43.76%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Gift tax</td>
+<td align="left">103.8</td>
+<td align="left">463.0 (3)</td>
+<td align="left">22.42%</td>
+<td align="left">83.49</td>
+<td align="left">567.0 (3)</td>
+<td align="left">43.76%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Mortgage registration duties</td>
+<td align="left">241</td>
+<td align="left">244.0 (4)</td>
+<td align="left">98.77%</td>
+<td align="left">233</td>
+<td align="left">122.0 (4)</td>
+<td align="left">190.98%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Tax on long-term saving</td>
+<td align="left">197.7</td>
+<td align="left">207.0 (3)</td>
+<td align="left">95.51%</td>
+<td align="left">158.2</td>
+<td align="left">382.0 (3)</td>
+<td align="left">41.41%</td>
+</tr>
+<tr>
+<td align="left">Cyprus</td>
+<td align="left">Real property tax</td>
+<td align="left">94.49</td>
+<td align="left">100.8 (2)</td>
+<td align="left">93.74%</td>
+<td align="left">22.52</td>
+<td align="left">16.50 (2)</td>
+<td align="left">136.48%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax, gift provision and mortgage registration duties</td>
+<td align="left">39.93</td>
+<td align="left">79.70 (2)</td>
+<td align="left">50.10%</td>
+<td align="left">22.28</td>
+<td align="left">99.0 (2)</td>
+<td align="left">22.51%</td>
+</tr>
+<tr>
+<td align="left">Estonia</td>
+<td align="left">Real property tax</td>
+<td align="left">0</td>
+<td align="left">59.0 (1)</td>
+<td align="left">0%</td>
+<td align="left">0</td>
+<td align="left">59.0 (1)</td>
+<td align="left">0%</td>
+</tr>
+<tr>
+<td align="left">Finland</td>
+<td align="left">Real property tax</td>
+<td align="left">718.40</td>
+<td align="left">623.0 (1)</td>
+<td align="left">115.31%</td>
+<td align="left">858.20</td>
+<td align="left">811.0 (1)</td>
+<td align="left">105.82%</td>
+</tr>
+<tr>
+<td align="left">France</td>
+<td align="left">Real property tax</td>
+<td align="left">14,390</td>
+<td align="left">17,003 (1)</td>
+<td align="left">84.63%</td>
+<td align="left">15,470</td>
+<td align="left">18,465 (1)</td>
+<td align="left">83.78%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">6,088</td>
+<td align="left">10,143 (1)</td>
+<td align="left">60.0%</td>
+<td align="left">5,916</td>
+<td align="left">12,644 (1)</td>
+<td align="left">46.79%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">6,644</td>
+<td align="left">10,300 (1)</td>
+<td align="left">64.50%</td>
+<td align="left">8,533</td>
+<td align="left">12,188 (1)</td>
+<td align="left">70.01%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Net wealth tax</td>
+<td align="left">6,807</td>
+<td align="left">5,377 (1)</td>
+<td align="left">126.59%</td>
+<td align="left">8,148</td>
+<td align="left">4,837 (1)</td>
+<td align="left">168.45%</td>
+</tr>
+<tr>
+<td align="left">Germany</td>
+<td align="left">Real property tax</td>
+<td align="left">6,795</td>
+<td align="left">4,951 (1)</td>
+<td align="left">137.2%</td>
+<td align="left">7,199</td>
+<td align="left">5,586 (1)</td>
+<td align="left">128.9%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">5,181</td>
+<td align="left">8,394 (1)</td>
+<td align="left">61.7%</td>
+<td align="left">6,899</td>
+<td align="left">13,139 (1)</td>
+<td align="left">52.5%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">1,496</td>
+<td align="left">4,633 (1)</td>
+<td align="left">32.3%</td>
+<td align="left">2,548</td>
+<td align="left">6,114 (1)</td>
+<td align="left">41.7%</td>
+</tr>
+<tr>
+<td align="left">Greece</td>
+<td align="left">Real property tax &amp; Emergency property tax</td>
+<td align="left">415.93</td>
+<td align="left">2,619 (2)</td>
+<td align="left">15.88%</td>
+<td align="left">1,042</td>
+<td align="left">3,095 (2)</td>
+<td align="left">33.67%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">37.77</td>
+<td align="left">275.0 (2)</td>
+<td align="left">13.73%</td>
+<td align="left">50.92</td>
+<td align="left">181.0 (2)</td>
+<td align="left">28.13%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">2.53</td>
+<td align="left">99.0 (2)</td>
+<td align="left">2.56%</td>
+<td align="left">6.63</td>
+<td align="left">115.0 (2)</td>
+<td align="left">5.77%</td>
+</tr>
+<tr>
+<td align="left">Hungary</td>
+<td align="left">Real property transfer tax</td>
+<td align="left">54.52</td>
+<td align="left">265.23 (1)</td>
+<td align="left">20.56%</td>
+<td align="left">73.87</td>
+<td align="left">419.91 (1)</td>
+<td align="left">17.59%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance tax</td>
+<td align="left">4.49</td>
+<td align="left">16.14 (1)</td>
+<td align="left">27.82%</td>
+<td align="left">6.27</td>
+<td align="left">26.40 (1)</td>
+<td align="left">23.75%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Gift tax</td>
+<td align="left">0.13</td>
+<td align="left">3.87 (1)</td>
+<td align="left">3.36%</td>
+<td align="left">0.13</td>
+<td align="left">3.97 (1)</td>
+<td align="left">3.27%</td>
+</tr>
+<tr>
+<td align="left">Ireland</td>
+<td align="left">Real property tax</td>
+<td align="left">172.6</td>
+<td align="left">1,478 (1)</td>
+<td align="left">11.70%</td>
+<td align="left">483.9</td>
+<td align="left">463.0 (2)</td>
+<td align="left">98.03%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">56.6</td>
+<td align="left">105.0 (2)</td>
+<td align="left">53.90%</td>
+<td align="left">68.8</td>
+<td align="left">301.0 (2)</td>
+<td align="left">22.86%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">191.4</td>
+<td align="left">282.0 (1)</td>
+<td align="left">67.87%</td>
+<td align="left">341.1</td>
+<td align="left">411.0 (1)</td>
+<td align="left">82.99%</td>
+</tr>
+<tr>
+<td align="left">Italy</td>
+<td align="left">Real property tax</td>
+<td align="left">19,113</td>
+<td align="left">17,900 (5)</td>
+<td align="left">106.77%</td>
+<td align="left">15,675</td>
+<td align="left">14,400 (5)</td>
+<td align="left">108.85%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">504</td>
+<td align="left">n/a</td>
+<td align="left">n/a</td>
+<td align="left">507</td>
+<td align="left">n/a</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">398</td>
+<td align="left">622 (5)</td>
+<td align="left">63.98%</td>
+<td align="left">404</td>
+<td align="left">557 (5)</td>
+<td align="left">72.53%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Net wealth tax</td>
+<td align="left">1,402</td>
+<td align="left">2,743 (5)</td>
+<td align="left">51.11%</td>
+<td align="left">1,412</td>
+<td align="left">2,743 (5)</td>
+<td align="left">51.47%</td>
+</tr>
+<tr>
+<td align="left">Luxembourg</td>
+<td align="left">Real property tax</td>
+<td align="left">15.62</td>
+<td align="left">33.0 (1)</td>
+<td align="left">47.33%</td>
+<td align="left">15.62</td>
+<td align="left">38.0 (1)</td>
+<td align="left">41.11%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">72.97</td>
+<td align="left">164.0 (1)</td>
+<td align="left">44.49%</td>
+<td align="left">89.90</td>
+<td align="left">319.0 (1)</td>
+<td align="left">28.18%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">17.62</td>
+<td align="left">71.80 (2)</td>
+<td align="left">24.54%</td>
+<td align="left">22.96</td>
+<td align="left">85.90 (2)</td>
+<td align="left">26.73%</td>
+</tr>
+<tr>
+<td align="left">Poland</td>
+<td align="left">Real property tax</td>
+<td align="left">1,578</td>
+<td align="left">4,428 (2)</td>
+<td align="left">35.64%</td>
+<td align="left">1,583</td>
+<td align="left">4,916 (2)</td>
+<td align="left">32.2%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">232</td>
+<td align="left">115 (2)</td>
+<td align="left">201.74%</td>
+<td align="left">238</td>
+<td align="left">101 (2)</td>
+<td align="left">235.64%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">167</td>
+<td align="left">1,093 (1)</td>
+<td align="left">15.3%</td>
+<td align="left">178</td>
+<td align="left">1,183 (1)</td>
+<td align="left">15.05%</td>
+</tr>
+<tr>
+<td align="left">Portugal</td>
+<td align="left">Real property tax</td>
+<td align="left">1,452</td>
+<td align="left">1,140 (1)</td>
+<td align="left">127.37%</td>
+<td align="left">1,443</td>
+<td align="left">1,630 (1)</td>
+<td align="left">88.53%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">69.44</td>
+<td align="left">417.0 (1)</td>
+<td align="left">16.65%</td>
+<td align="left">68.98</td>
+<td align="left">841.0 (1)</td>
+<td align="left">8.20%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax (stamp duty)</td>
+<td align="left">100.90</td>
+<td align="left">1,407 (2)</td>
+<td align="left">7.17%</td>
+<td align="left">320.40</td>
+<td align="left">1,430 (2)</td>
+<td align="left">22.41%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Mortgage registration duties</td>
+<td align="left">14.95</td>
+<td align="left">31.80 (1)</td>
+<td align="left">47.01%</td>
+<td align="left">14.95</td>
+<td align="left">32.28 (1)</td>
+<td align="left">46.31%</td>
+</tr>
+<tr>
+<td align="left">Slovakia</td>
+<td align="left">Real property tax</td>
+<td align="left">39.96</td>
+<td align="left">105.0 (1)</td>
+<td align="left">38.06%</td>
+<td align="left">36.31</td>
+<td align="left">115.0 (1)</td>
+<td align="left">31.57%</td>
+</tr>
+<tr>
+<td align="left">Slovenia</td>
+<td align="left">Real property tax</td>
+<td align="left">38.56</td>
+<td align="left">199.0 (1)</td>
+<td align="left">19.38%</td>
+<td align="left">41.86</td>
+<td align="left">211.0 (1)</td>
+<td align="left">19.84%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">34.98</td>
+<td align="left">23.0 (1)</td>
+<td align="left">152.09%</td>
+<td align="left">34.96</td>
+<td align="left">32.0 (1)</td>
+<td align="left">109.25%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">0.86</td>
+<td align="left">7.0 (1)</td>
+<td align="left">12.29%</td>
+<td align="left">0.94</td>
+<td align="left">8.0 (1)</td>
+<td align="left">11.75%</td>
+</tr>
+<tr>
+<td align="left">Spain</td>
+<td align="left">Real property tax</td>
+<td align="left">10,780</td>
+<td align="left">9,685 (1)</td>
+<td align="left">111.31%</td>
+<td align="left">10,780</td>
+<td align="left">13,045 (1)</td>
+<td align="left">82.64%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">2,979</td>
+<td align="left">8,228 (1)</td>
+<td align="left">36.21%</td>
+<td align="left">4,826</td>
+<td align="left">8,585 (1)</td>
+<td align="left">56.21%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance tax</td>
+<td align="left">3,237</td>
+<td align="left">2,425 (1)</td>
+<td align="left">133.48%</td>
+<td align="left">3,732</td>
+<td align="left">2,709 (1)</td>
+<td align="left">137.76%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Net wealth tax</td>
+<td align="left">n/a</td>
+<td align="left">n/a</td>
+<td align="left">n/a</td>
+<td align="left">1,490</td>
+<td align="left">1,348 (1)</td>
+<td align="left">110.53%</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Own calculations based on EUROMOD and micro-data from EM-HFCS. (1) Tax Revenue Database (<a href="#bib25">OECD (2017)</a>); (2) Taxes in Europe Database (<a href="#bib26">European Commission (2018)</a>); (3) Received taxes and actual social insurance contributions by type (<a href="#bib28">National Bank of Belgium (2017)</a>); (4) Recent figures concerning the federally collected tax revenues (<a href="#bib29">Federal Public Service Finance, 2017</a>); (5) Italian Ministry of Economy and Finance, various sources. In case of Hungary amounts in national currency have been converted to euros based on the average exchange rate in 2017 reported by the European Central Bank, namely €1=HUF 309.19. For Poland the exchange rate applied is equal to €1=4.2259 PLN.</p></div></figure></section></div></details><details id="s5" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">5. Applications</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Combining EUROMOD with the HFCS data has two major advantages. First, EUROMOD can be used to transform the original gross HFCS incomes into disposable incomes, making the HFCS also a suitable dataset for standard (re)distributive analyses. Second, the increased scope of EUROMOD with wealth-related policies allows for new research questions to be addressed. In what follows, we briefly discuss some interesting examples.</p><section id="s5-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.1. Standard (re)distributive analyses</h3><p data-astro-cid-qsyhzaho>The HFCS is by itself not a suitable dataset for (re)distributive analyses as it only covers incomes gross of liabilities for taxes and social insurance contributions. Also, apart from pensions and unemployment benefits, all other social transfers are covered under a single variable. Including the HFCS as an underlying database for EUROMOD allows to simulate these components of the tax-benefit systems for the households covered in the HFCS and to derive disposable incomes. In this way the HFCS becomes an additional source which can be used for research on poverty, inequality and redistribution in Europe, which is currently largely based on EU-SILC and the Luxembourg Income Study (LIS). Moreover, compared to these sources the HFCS has the major advantage that it covers information on both income and wealth such that poverty, inequality and redistribution can be studied both in terms of the distribution of income as well as the distribution of wealth, or a combination of the two.</p><p data-astro-cid-qsyhzaho>A first interesting application can be situated in the so-called ‘asset-based poverty’ literature. In this literature it is argued that financial well-being and precariousness depend on both income and wealth and hence that wealth should be taken into account when determining who is worse off (<a href="#bib12">Kuypers and Marx, 2019</a>). Given that the two distributions are not perfectly correlated poverty measures based on income alone tend to overstate poverty rates among households with low income, but median to high net wealth, while they potentially ignore the precarious situation of households with incomes above the poverty threshold, but with very low assets or bearing a large debt burden (<a href="#bib13">Kuypers and Marx, 2021</a>). Therefore, two approaches have been proposed to define joint income-wealth poverty indicators. Up until a few years ago this literature was largely US-oriented. The combination of disposable incomes and net wealth in the HFCS now also allows to estimate such indicators for Europe (see for instance <a href="#bib13">Kuypers and Marx, 2021</a> forthcoming; <a href="#bib11">Kuypers and Marx (2018)</a>).</p><p data-astro-cid-qsyhzaho>Another possible application is to study the redistributive effects of taxes and benefits. <a href="#table10">Table 10</a>, for instance, shows the absolute and relative redistributive effect achieved by income taxes and social insurance contributions (SIC). The absolute redistributive effect is given by the difference between the Gini coefficient of the income distribution before and after income taxes and social insurance contributions are taken into account. The relative redistributive effect than expresses this absolute redistributive effect as a percentage of the Gini coefficient before income taxes and social insurance contributions are taken into account. A positive redistributive effect means inequality is reduced through taxes and SIC, while a negative sign indicates an increase in inequality. We find that income taxes and social insurance contributions reduce inequality by between 1.5% in Poland and 21.6% in Austria. The last two columns in <a href="#table10">Table 10</a> show the two building blocks of the redistributive effect of taxes and SIC, namely their size (average tax rate) and their progressivity (Kakwani index). The average tax rates vary between 10% in Spain and 35% in Belgium. The Kakwani index shows that the total of income taxes and social insurance contributions is progressive, most strongly so in Ireland and less so in Poland and Hungary.</p><figure id="table10" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 10.</strong><span data-astro-cid-dzaleqsp> Redistributive effect of income and wealth taxes</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Country</th>
+<th align="left">Type of taxes</th>
+<th align="left">Absolute redistributive effect</th>
+<th align="left">Relative redistributive effect</th>
+<th align="left">Average tax rate</th>
+<th align="left">Kakwani progressivity index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Austria</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.055</td>
+<td align="left">21.6%</td>
+<td align="left">25.4%</td>
+<td align="left">0.172</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">0.000</td>
+<td align="left">0.0%</td>
+<td align="left">0.6%</td>
+<td align="left">0.049</td>
+</tr>
+<tr>
+<td align="left">Belgium</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.067</td>
+<td align="left">21.1%</td>
+<td align="left">35.0%</td>
+<td align="left">0.138</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.015</td>
+<td align="left">-4.7%</td>
+<td align="left">2.8%</td>
+<td align="left">-0.095</td>
+</tr>
+<tr>
+<td align="left">Cyprus</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.030</td>
+<td align="left">8.5%</td>
+<td align="left">11.2%</td>
+<td align="left">0.247</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.002</td>
+<td align="left">-0.6%</td>
+<td align="left">1.5%</td>
+<td align="left">-0.102</td>
+</tr>
+<tr>
+<td align="left">Estonia</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.024</td>
+<td align="left">5.6%</td>
+<td align="left">15.8%</td>
+<td align="left">0.133</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.011</td>
+<td align="left">-2.7%</td>
+<td align="left">3.5%</td>
+<td align="left">-0.227</td>
+</tr>
+<tr>
+<td align="left">Finland</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.051</td>
+<td align="left">18.0%</td>
+<td align="left">26.4%</td>
+<td align="left">0.150</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">0.000</td>
+<td align="left">0.0%</td>
+<td align="left">0.5%</td>
+<td align="left">-0.040</td>
+</tr>
+<tr>
+<td align="left">France</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.042</td>
+<td align="left">15.2%</td>
+<td align="left">21.0%</td>
+<td align="left">0.171</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.002</td>
+<td align="left">-0.7%</td>
+<td align="left">3.0%</td>
+<td align="left">0.199</td>
+</tr>
+<tr>
+<td align="left">Germany</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.057</td>
+<td align="left">14.4%</td>
+<td align="left">29.3%</td>
+<td align="left">0.149</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">0.000</td>
+<td align="left">0.0%</td>
+<td align="left">0.7%</td>
+<td align="left">0.121</td>
+</tr>
+<tr>
+<td align="left">Greece</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.015</td>
+<td align="left">4.2%</td>
+<td align="left">15.1%</td>
+<td align="left">0.104</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.001</td>
+<td align="left">-0.3%</td>
+<td align="left">0.4%</td>
+<td align="left">-0.188</td>
+</tr>
+<tr>
+<td align="left">Hungary</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.028</td>
+<td align="left">7.8%</td>
+<td align="left">28.5%</td>
+<td align="left">0.089</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.001</td>
+<td align="left">-0.3%</td>
+<td align="left">0.1%</td>
+<td align="left">-0.051</td>
+</tr>
+<tr>
+<td align="left">Ireland</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.081</td>
+<td align="left">19.7%</td>
+<td align="left">23.1%</td>
+<td align="left">0.279</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.003</td>
+<td align="left">-0.7%</td>
+<td align="left">0.5%</td>
+<td align="left">-0.065</td>
+</tr>
+<tr>
+<td align="left">Italy</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.048</td>
+<td align="left">14.1%</td>
+<td align="left">24.8%</td>
+<td align="left">0.148</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">0.002</td>
+<td align="left">0.6%</td>
+<td align="left">2.5%</td>
+<td align="left">0.090</td>
+</tr>
+<tr>
+<td align="left">Luxembourg</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.067</td>
+<td align="left">18.5%</td>
+<td align="left">25.6%</td>
+<td align="left">0.200</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.001</td>
+<td align="left">-0.3%</td>
+<td align="left">0.5%</td>
+<td align="left">0.117</td>
+</tr>
+<tr>
+<td align="left">Poland</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.005</td>
+<td align="left">1.5%</td>
+<td align="left">26.3%</td>
+<td align="left">0.025</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.004</td>
+<td align="left">-1.2%</td>
+<td align="left">0.9%</td>
+<td align="left">-0.074</td>
+</tr>
+<tr>
+<td align="left">Portugal</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.049</td>
+<td align="left">12.9%</td>
+<td align="left">17.0%</td>
+<td align="left">0.251</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.002</td>
+<td align="left">-0.5%</td>
+<td align="left">1.8%</td>
+<td align="left">-0.081</td>
+</tr>
+<tr>
+<td align="left">Slovakia</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.037</td>
+<td align="left">12.8%</td>
+<td align="left">20.4%</td>
+<td align="left">0.180</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">0.000</td>
+<td align="left">0.0%</td>
+<td align="left">0.1%</td>
+<td align="left">-0.245</td>
+</tr>
+<tr>
+<td align="left">Slovenia</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.060</td>
+<td align="left">18.5%</td>
+<td align="left">22.3%</td>
+<td align="left">0.225</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.001</td>
+<td align="left">-0.3%</td>
+<td align="left">0.5%</td>
+<td align="left">-0.033</td>
+</tr>
+<tr>
+<td align="left">Spain</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.014</td>
+<td align="left">3.5%</td>
+<td align="left">10.0%</td>
+<td align="left">0.134</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.007</td>
+<td align="left">-1.8%</td>
+<td align="left">2.9%</td>
+<td align="left">-0.045</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: SIC= social insurance contributions.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: <a href="#bib2">Boone et al. (2019)</a>.</p></div></figure></section><section id="s5-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.2. New research questions</h3><p data-astro-cid-qsyhzaho>In second instance, the EUROMOD-HFCS tool also provides the possibility to study new research questions. First, due to broader policy scope we cannot only study the redistributive effect of the ‘traditional’ tax-benefit instruments, but also see how redistributive wealth taxation currently is. It is possible to evaluate the redistributive effects of wealth taxation against the income distribution (see <a href="#table10">Table 10</a>), against the wealth distribution or from a joint income-wealth perspective (for the latter two see <a href="#bib16">Kuypers et al., 2020</a>). Irrespective of the framework chosen, we find that in their current form wealth-related taxes are hardly redistributive. While <a href="#table10">Table 10</a> shows that wealth taxes are often regressive when assessed against the distribution of income (i.e. the Kakwani index is negative), they are more progressive when assessed against the (joint) distribution of wealth (and income). However, even when the latter perspectives are taken wealth-related taxes do not achieve any significant redistribution as a consequence of their very small size (<a href="#bib16">Kuypers et al., 2020</a>). The analysis of the wealth taxes can be combined with the standard redistributive analyses as described above. The whole tax-benefit system can then be evaluated against the joint distribution of income and wealth as is done in <a href="#bib15">Kuypers et al. (2019)</a>; <a href="#bib17">Kuypers et al. (2021)</a>. This exercise shows that European welfare states are not as redistributive as they are generally believed to be as most efforts go towards reducing income inequalities, while wealth inequalities remain largely unaddressed. Besides studying current wealth tax systems, it is also possible to simulate the budgetary and (re)distributive effects of recent wealth tax proposals, or explore the prospects of radical new ideas (for instance taxing a wealth annuity in the personal income tax, see <a href="#bib16">Kuypers et al., 2020</a>). Also, it allows to study these reforms in accordance with other tax-benefit instruments.</p><p data-astro-cid-qsyhzaho>Another new research question is related to how wealth is taken into account in determining the eligibility conditions for means-tested benefits. Many European countries have such asset tests in place. Analysing the asset test in minimum income protection schemes in EU member states <a href="#bib18">Marchal et al. (2021)</a> distinguish between two main types of asset tests. The first and most prevalent type applies a disqualification threshold, i.e. when assets are above a certain threshold applicants become immediately ineligible. The second type takes assets into account in a given percentage or at a fictional rate of return which is added to the income in the means-test, such that applicants are eligible to lower minimum income benefits as more assets are available (and eventually at high asset levels also become fully ineligible). Yet, this rate of return is usually higher than actual returns received so in practice assets often also need to be realised. The combination of HFCS with EUROMOD allows to simulate benefit eligibility with and without taking into account the asset test. Hence, it shows the effect of asset testing on eligibility rates, poverty rates and budgets and whether these are different for the two types of asset tests (<a href="#bib18">Marchal et al., 2021</a>).</p><p data-astro-cid-qsyhzaho>A final example relates to public encouragement of wealth accumulation. Many countries across Europe have put in place tax expenditures for instance for mortgage interests, private pension savings and financial income. Using the HFCS data and EUROMOD we can analyse who benefits from these tax expenditures and its cost in terms of forgone tax revenues. Results indicate that these tax expenditures are regressive instruments. Poor households hardly benefit because they do not have the means to invest in the types of assets that are encouraged, because they do not pay sufficient taxes to be able to benefit from a deduction/credit and/or because they are discouraged to save because of asset testing. The EUROMOD-HFCS tool then also allows to simulate new proposed policies, for instance, subsidising wealth accumulation among the poor (see <a href="#bib10">Kuypers, 2018</a>).</p></section></div></details><details id="s6" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">6. Conclusion</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In this paper we explain how microsimulation analysis of wealth-related taxes and policies is enhanced by using the HFCS as input data for EUROMOD. This paper builds further on the work of <a href="#bib14">Kuypers et al. (2016)</a> by extending the coverage to 17 countries and introducing the simulation of new wealth-related policies. We explain the processes used to build the input data and to code the wealth-related policies in EUROMOD. Using the HFCS as the underlying database for EUROMOD is interesting as it contains much more detailed information on assets and liabilities than EU-SILC. However, some data issues needed to be addressed in building the input data, such as the approximation of the cadastral values for the real property taxation, the disaggregation of certain variables based on imputation and the adaptations to net wealth from the value at the moment of observation to the value at the moment of taxation. In general, the majority of the wealth-related taxes can be simulated based on the HFCS, while this was often not possible based on EU-SILC. New uprating indices have been constructed based on national account information to be able to use the input data for simulations of more recent policy years. Although HFCS is more equipped to simulate wealth-related taxes and policies, possibly together with income-based taxes and transfers, EU-SILC is still considered to be most suitable dataset for research questions specifically focused at social transfers or at the situation of specific vulnerable groups. Given the strengths and weaknesses of each dataset and the sometimes relatively large differences between them (<a href="#table7">Table 7</a>), the two datasets must be regarded as complements, rather than substitutes.</p><p data-astro-cid-qsyhzaho>Our results have been extensively validated both at the micro and macro level. Micro-level comparisons between EM-HFCS and EM-SILC show that comparability varies widely across countries. Results are close to each other for Finland, Portugal and Slovakia, while they diverge strongly for Austria, Estonia, France and Slovenia. The differences mostly reflect higher amounts and larger inequalities in EM-HFCS than in EM-SILC, which might be related to the HFCS oversampling. The macro-level validation of tax revenues indicated that the recurrent real property tax can be relatively accurately simulated, while other taxes are often more difficult to simulate properly because of few number of cases in the underlying input data. Differences in the macro-validation can, however, also be partly attributed to the fact that external statistics do not always exist at the same level as we simulate them.</p><p data-astro-cid-qsyhzaho>We also briefly discussed some research questions which may be addressed by using this enhanced model. Combining EUROMOD with the HFCS data has two major advantages. First, EUROMOD can be used to transform the original gross HFCS incomes into disposable incomes, making the HFCS also a suitable dataset for standard (re)distributive analyses. Second, the increased scope of EUROMOD with wealth-related policies allows for new research questions to be addressed, such as a better understanding of the joint distribution of income and wealth and the redistributive impact of wealth taxation.</p><p data-astro-cid-qsyhzaho>Nevertheless, there remain several opportunities for interesting extensions to further improve our understanding of inequality, poverty and redistribution taking into account the distribution of both income and wealth. One would be to broaden the definition of wealth. At the moment HFCS and thus our simulations take into account the distribution of private wealth, that is the wealth owned by private households and which can be used and traded on markets as they wish. A more comprehensive view would, however, also take into account entitlements to public pensions and other social security benefits, known as ‘augmented wealth’. Including this information would make it more straightforward to compare countries with differing pension and welfare systems. A second potentially interesting future extension would be to consider behavioural responses to wealth-related taxation and policies. In previous research EUROMOD has been linked to labour supply models to study the effect of policy changes on individuals’ labour supply. A similar effort could be considered for effects on decisions in relation to investment and asset portfolio allocation.</p></div></details><details id="footnotes" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Footnotes</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="fn1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1.</h3><p data-astro-cid-qsyhzaho>In the first wave 15 countries participated, the recently released third wave took place in 22 countries.</p></section><section id="fn2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.</h3><p data-astro-cid-qsyhzaho>In the new release of the HFCS data in March 2020, the Spanish wave with income reference period 2010 was moved to the first wave and replaced by results with income reference period 2014. Our databases were constructed on a previous version of the second wave data.</p></section><section id="fn3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.</h3><p data-astro-cid-qsyhzaho>The validation only provides information on the consistency of the average level of the cadastral values, and hence the total tax base, but not their distribution. By applying the same ratio to all properties we might suppress the variance in the variable used for the simulations compared to reality. Yet, the relationship between market and cadastral values is not straightforward due to the lack of revisions of cadastral values in most countries. Therefore, there is no way of knowing a priori to which extent such distributional bias is actually induced.</p></section><section id="fn4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.</h3><p data-astro-cid-qsyhzaho>It is possible that households change their asset portfolio by swapping between different types of assets, such that we may in some cases subtract amounts which were part of net wealth on the first of January in the income reference period. We, however, assume that for the majority of the households buying a house represents a new type of wealth.</p></section><section id="fn5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.</h3><p data-astro-cid-qsyhzaho>Since the wealth of those at the top of distribution often increases at a faster pace than at the bottom, uprating the wealth of all households by the same index might reduce the inequality included in the simulations as compared to reality. Yet, by applying different uprating indices to the separate wealth components part of this differential increase is captured as those at the top of the wealth distribution more often invest in financial assets such as listed shares, while those at the bottom own most of their wealth in deposits and value of their main residence.</p></section><section id="fn6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.</h3><p data-astro-cid-qsyhzaho>Property size is combined with information on different coefficients (building age coefficient, floor or house coefficient, façade coefficient and incomplete building coefficient) to determine the tax base.</p></section><section id="fn7" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.</h3><p data-astro-cid-qsyhzaho>In Hungary, either the property size or adjusted market value can be used as tax base, depending on the municipality.</p></section><section id="fn8" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">8.</h3><p data-astro-cid-qsyhzaho>Replaced by a tax levied only on real estate wealth since 1<sup>st</sup> of January 2018.</p></section><section id="fn9" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">9.</h3><p data-astro-cid-qsyhzaho>Abolished between 2008 and 2011, but thereafter reintroduced.</p></section></div></details></div><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Alvaredo, F, Chancel, L, Piketty, T, Saez, E, Zucman, G (2018). <em data-astro-cid-oer3kof4>World inequality report 2018</em>. WID.world.</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Boone, J, Derboven, J, Figari, F, Kuypers, S, Verbist, G (2019). <em data-astro-cid-oer3kof4>EWIGE 2 - Update and extension of the EUROMOD wealth taxation project</em>. JRC Working papers on Taxation and Structural Reforms No. 2019/07.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Davies, J. B, Sandström, S, Shorrocks, A, Wolff, E. N (2011). <span data-astro-cid-oer3kof4>The level and distribution of global household wealth</span>. <em data-astro-cid-oer3kof4>The Economic Journal</em>, <strong data-astro-cid-oer3kof4>121</strong>, 223–254.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (1000). <em data-astro-cid-oer3kof4>Financial Accounts for Germany 2011 to 2016</em>. Special Statistical Publication 4.</span></li><li id="bib26" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2018). <span data-astro-cid-oer3kof4>Taxes in Europe Database</span>.</span></li><li id="bib28" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2017). <span data-astro-cid-oer3kof4>Received taxes and actual social insurance contributions by kind</span>.</span></li><li id="bib29" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2017). <span data-astro-cid-oer3kof4>Recent figures concerning the federally collected Tax revenues: Totale ontvangsten volgens aard en volgens administratie: realisaties</span>.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2018). <em data-astro-cid-oer3kof4>National Accounts, Fixed assets by Sector</em>. Working Document.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2018). <span data-astro-cid-oer3kof4>National Wealth Accounts, Consumer durables</span>.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2018). <span data-astro-cid-oer3kof4>Finanzen und Steuern. Erbschaft- und Schenkungsteuer</span>.</span></li><li id="bib23" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Figari, F, Levy, H, Sutherland, H (2007). <span data-astro-cid-oer3kof4>Using the EU-SILC for policy simulation: Prospects, some limitations and some suggestions</span>.</span></li><li id="bib24" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Piketty, T (2014). <em data-astro-cid-oer3kof4>Capital in the Twenty-First Century</em>. Harvard, USA: Harvard University Press.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2016). <em data-astro-cid-oer3kof4>The Household Finance and Consumption Survey. Cross-country metadata information Wave 2</em>. European Central Bank.</span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kavonius, I. K, Honkkila, J (2013). <span data-astro-cid-oer3kof4>Reconciling micro and macro data on household wealth: a test based on three euro area countries</span>. <em data-astro-cid-oer3kof4>Journal of Economic and Social Policy</em>, <strong data-astro-cid-oer3kof4>15</strong>.</span></li><li id="bib16" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kuypers, S, Figari, F, Verbist, G (1000). <em data-astro-cid-oer3kof4>An Assessment of Wealth Taxes in a Joint Income-Wealth Perspective</em>. Herman Deleeck Centre for Social Policy, University of Antwerp: CSB Working Paper No. 20/06.</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kuypers, S (2018). <em data-astro-cid-oer3kof4>Financial Inclusion for All? A Distributional Analysis of Asset-Building Policies in Europe</em>. Mimeo.</span></li><li id="bib14" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kuypers, S, Figari, F, Verbist, G (2016). <span data-astro-cid-oer3kof4>The Eurosystem Household Finance and Consumption Survey: a new underlying database for EUROMOD</span>. <em data-astro-cid-oer3kof4>International Journal of Microsimulation</em>, <strong data-astro-cid-oer3kof4>9</strong>, 35–65.</span></li><li id="bib15" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kuypers, S, Figari, F, Verbist, G (2019). <span data-astro-cid-oer3kof4>Redistribution in a joint income-wealth perspective</span>.</span></li><li id="bib17" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kuypers, S, Figari, F, Verbist, G (2021). <em data-astro-cid-oer3kof4>Redistribution in a Joint Income-Wealth Perspective: a Comparison Across 16 Countries</em>. Paris: OECD Social, Employment and Migration Working Paper No.257, OECD Publishing.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kuypers, S, Marx, I (2018). <span data-astro-cid-oer3kof4>Estimation of joint income-wealth poverty: a sensitivity analysis</span>. <em data-astro-cid-oer3kof4>Social Indicators Research</em>, <strong data-astro-cid-oer3kof4>136</strong>, 117–137.</span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kuypers, S, Marx, I (2019). <span data-astro-cid-oer3kof4>The truly vulnerable: integrating wealth into the measurement of poverty and social policy effectiveness</span>. <em data-astro-cid-oer3kof4>Social Indicators Research</em>, <strong data-astro-cid-oer3kof4>142</strong>, 131–147.</span></li><li id="bib13" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kuypers, S, Marx, I (2021). <span data-astro-cid-oer3kof4>forthcoming). <i>Poverty in the EU using augmented measures of financial resources: the role of assets and debt</i>
+</span>.</span></li><li id="bib18" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Marchal, S, Kuypers, S, Marx, I, Verbist, G (1000). <span data-astro-cid-oer3kof4>But what about that NICE house you own? The impact of asset tests in minimum income schemes in Europe: an empirical exploration</span>. <em data-astro-cid-oer3kof4>Journal of European Social Policy</em>, <strong data-astro-cid-oer3kof4>31</strong>, 44–61. <a href="https://doi.org/10.1177/0958928720970134" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1177/0958928720970134</a></span></li><li id="bib25" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2017). <span data-astro-cid-oer3kof4>Tax Revenue Database</span>.</span></li><li id="bib19" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2020). <em data-astro-cid-oer3kof4>Inequalities in Household Wealth - Drivers and Policy Implications</em>. Paris: OECD Publishing.</span></li><li id="bib20" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Salverda, W (2015). <em data-astro-cid-oer3kof4>EU Policy Making and Growing Inequalities</em>. Discussion Paper 008, European Commission.</span></li><li id="bib22" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Waltl, S (1000). <em data-astro-cid-oer3kof4>Multidimensional Wealth Inequality: A Hybrid Approach Towards Distributional National Accounts in Europe</em>. INEQ Working Paper Series No. 16, WU Vienna University of Economics and Business.</span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Sarah Kuypers</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Centre for Social Policy, Antwerp, Belgium</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:sarah.kuypers@uantwerpen.be" data-astro-cid-m3fa5h5a>sarah.kuypers@uantwerpen.be</a></p><p class="article-info__detail" data-astro-cid-m3fa5h5a><a href="https://orcid.org/0000-0002-2360-8778" target="_blank" rel="noopener" data-astro-cid-m3fa5h5a>ORCID iD: 0000-0002-2360-8778</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Jonas Boone</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Centre for Social Policy, Antwerp, Belgium</p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Johannes Derboven</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Centre for Social Policy, Antwerp, Belgium</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><a href="https://orcid.org/0000-0002-3445-1710" target="_blank" rel="noopener" data-astro-cid-m3fa5h5a>ORCID iD: 0000-0002-3445-1710</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Francesco Figari</h4><ul class="article-info__affiliations" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a>University of Insubria, Varese, Italy</li><li data-astro-cid-m3fa5h5a>University of Essex, Colchester, United Kingdom</li></ul><p class="article-info__detail" data-astro-cid-m3fa5h5a><a href="https://orcid.org/0000-0003-0735-1076" target="_blank" rel="noopener" data-astro-cid-m3fa5h5a>ORCID iD: 0000-0003-0735-1076</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Gerlinde Verbist</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Centre for Social Policy, Antwerp, Belgium</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><a href="https://orcid.org/0000-0001-9253-3477" target="_blank" rel="noopener" data-astro-cid-m3fa5h5a>ORCID iD: 0000-0001-9253-3477</a></p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Funding</h3><p data-astro-cid-m3fa5h5a>This research was carried out as part of the projects “Update and Extension of the EUROMOD Wealth Taxation project” (JRC/SVQ/2017/B.2/0018/NC) funded by the Joint Research Centre – Fiscal Policy Analysis Unit (Sevilla) of the European Commission and the “European Union’s Horizon 2020 research and innovation programme” under grant agreement No.730998 (InGRID-2).</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Data and code availability</h3><p data-astro-cid-m3fa5h5a>The analysis builds on data from the second wave of the Eurosystem Household Finance and Consumption Survey (HFCS) available for scientific research upon registration through the European Central Bank and the EU-wide micro-simulation model EUROMOD (version H1.0). Details of policy codes are available from the authors upon request.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Acknowledgements</h3><p data-astro-cid-m3fa5h5a>We gratefully acknowledge the support, guidance and comments received by the staff of the Fiscal Policy Analysis Unit, in particular Andreas Thiemann. The analysis builds on data from the second wave of the Eurosystem Household Finance and Consumption Survey (HFCS) and the EU-wide micro-simulation model EUROMOD (version H1.0). Members of the HFCN and the EUROMOD framework are gratefully acknowledged for their contributions. Results may not correspond to those of the data providers.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00223" data-astro-cid-m3fa5h5a>Version of Record published: December 31, 2020 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2020, Kuypers, Boone, Derboven, FigariVerbist </p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/methodology" data-pagefind-filter="Research category:Methodology" data-astro-cid-m3fa5h5a>Methodology</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=Wealth%20taxation" data-astro-cid-m3fa5h5a>Wealth taxation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=wealth%20policies" data-astro-cid-m3fa5h5a>wealth policies</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=EUROMOD" data-astro-cid-m3fa5h5a>EUROMOD</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=distributional%20analysis" data-astro-cid-m3fa5h5a>distributional analysis</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

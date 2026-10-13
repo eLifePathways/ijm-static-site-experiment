@@ -1,0 +1,21 @@
+TY  - JOUR
+TI  - Econometric flexibility in microsimulation: An age-centred regression approach
+AU  - Sabelhaus, John
+AU  - Walker, Lina
+VL  - 2
+IS  - 2
+PY  - 2009
+DA  - 2009/12/31
+SP  - 1-14
+C1  - IJM 2009;2(2):1-14
+DO  - 10.34196/ijm.00013
+UR  - https://doi.org/10.34196/ijm.00013
+AB  - This paper describes a strategy for estimating predictive equations that has been shown to work well in microsimulation modelling. The technique, referred to here as “age-centred regression,” is particularly useful when the available data set for estimating a model equation is limited and the marginal effect of one or more explanatory variables might be expected to vary systematically by age. The examples used here to describe how age-centring works are taken from the labour supply equations in the Congressional Budget Office Long-Term (CBOLT) dynamic microsimulation model. By switching from a traditional single-equation approach to age-centred regression, we show that marginal effects of independent variables can vary significantly across age groups. The comparison also reveals that improvements in mean predictions by age can be achieved with little if any loss in statistical precision of coefficient estimates.
+KW  - age-centred regression
+KW  - heterogeneity
+KW  - spline
+KW  - kernel
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

@@ -1,0 +1,666 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Figures and data in A Portable Dynamic Microsimulation Model for Population, Education and Health Applications in Developing Countries | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00205/figures"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.figures-page__summary[data-astro-cid-uy5dlehv]{color:var(--color-ink-muted);margin-block-end:var(--space-m)}@media (width>=75em){.article-content-grid[data-astro-cid-uy5dlehv]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-astro-cid-uy5dlehv><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/dynamic-microsimulation" data-astro-cid-ak4gb66a>Dynamic microsimulation</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Dec 31, 2019</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>A Portable Dynamic Microsimulation Model for Population, Education and Health Applications in Developing Countries</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Martin Spielauer, Olivier Dupriez</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Consultant for The World Bank Development Data Group, Washington, DC, United States; The World Bank Development Data Group, Washington, DC, United States</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/12-3/volume-12-3-winter-2019" data-astro-cid-ak4gb66a>Volume 12(3) Winter 2019</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> M. Spielauer, O. Dupriez; 2019; <span data-astro-cid-ak4gb66a>A Portable Dynamic Microsimulation Model for Population, Education and Health Applications in Developing Countries</span>; International Journal of Microsimulation; 12(3); 6–27. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00205" data-astro-cid-ak4gb66a>10.34196/ijm.00205</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>Detailed socio-demographic projections are key for policy making and planning. In this paper we introduce the dynamic microsimulation platform DYNAMIS-POP. In its core, DYNAMIS-POP is a population projection model, able to reproduce existing macro (cohort-component based) population projections in their aggregate outcomes, but with the additional possibility to simulate in more detail a variety of geographic, education, ethnicity, child mortality, partnership status, fertility and health characteristics. DYNAMIS-POP is a continuous time interacting population model implemented in Modgen, a freely available programming technology developed at Statistics Canada. The code is also x-compatible with openM++, a platform-independent open-source implementation of Modgen. All components of DYNAMIS-POP are freely available and documented on line at <a href="http://www.dynamis.ihsn.org">www.dynamis.ihsn.org</a>. Most statistical analysis scripts and scripts for post-processing and visualization of the results are implemented in R. Aiming to support portability, the model code and the R scripts are generic. Adaptation of the model to a specific country only requires adapting a single setup script and simulation module. The model is provided with test data of an imaginary country. Required data are available for most developing countries. To date, the model was tested using data from Mauritania, Nepal and Senegal. Designed as a modular and versatile microsimulation platform, DYNAMIS-POP can be adapted for a variety of applications related to population issues, education and health. In this paper we give an illustration from a study on child vaccination in Nepal.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00205/ijm-00205.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00205.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00205.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-uy5dlehv><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00205" class="view-tabs__link" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00205/figures" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#figures" data-astro-cid-twdwaz5s>Figures</a></li><li data-astro-cid-twdwaz5s><a href="#tables" data-astro-cid-twdwaz5s>Tables</a></li></ul></details></div><div class="article-content" data-astro-cid-uy5dlehv><p class="figures-page__summary" data-astro-cid-uy5dlehv>This article contains 8 figures and 5 tables.</p><details id="figures" class="article-section article-section--collapsible" open data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Figures</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00205-fig001.BAd3DkfR_vEghV.webp" class="figure-lightbox-trigger" data-pswp-width="1595" data-pswp-height="767" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00205-fig001.BAd3DkfR_vEghV.webp" alt width="1595" height="767" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> DYNAMIS-POP simulation projections for prenatal care, three scenarios.</span></figcaption></figure><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00205-fig002.CMdE55tm_Wgw3G.webp" class="figure-lightbox-trigger" data-pswp-width="1594" data-pswp-height="769" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00205-fig002.CMdE55tm_Wgw3G.webp" alt width="1594" height="769" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> DYNAMIS-POP simulation projections for immunization rates by mother’s education, base scenario w/o prenatal care.</span></figcaption></figure><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00205-fig003.CJJ3QSut_Z2lhoRi.webp" class="figure-lightbox-trigger" data-pswp-width="1594" data-pswp-height="775" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00205-fig003.CJJ3QSut_Z2lhoRi.webp" alt width="1594" height="775" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> DYNAMIS-POP simulation projections for immunization rates by mother’s education, four alternative scenarios.</span></figcaption></figure><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00205-fig004.0yJXqXWB_ZpnxTY.webp" class="figure-lightbox-trigger" data-pswp-width="1594" data-pswp-height="791" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00205-fig004.0yJXqXWB_ZpnxTY.webp" alt width="1594" height="791" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> DYNAMIS-POP simulation projections for immunization rates, six scenarios.</span></figcaption></figure><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00205-fig005.B4wlXOgo_1sGVsS.webp" class="figure-lightbox-trigger" data-pswp-width="1594" data-pswp-height="770" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00205-fig005.B4wlXOgo_1sGVsS.webp" alt width="1594" height="770" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> Distribution of mother’s education of one-year old children. DYNAMIS-POP projection and DHS data.</span></figcaption></figure><figure id="fig6" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00205-fig006.BV6KiA_m_Z1VigmU.webp" class="figure-lightbox-trigger" data-pswp-width="1594" data-pswp-height="1119" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00205-fig006.BV6KiA_m_Z1VigmU.webp" alt width="1594" height="1119" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 6.</strong><span data-astro-cid-dzaleqsp> Increase in immunization rates: projected total increases and increases due to composition effects.</span></figcaption></figure><figure id="figA1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00205-fig007.DWYu-nZt_Z1dJ1cM.webp" class="figure-lightbox-trigger" data-pswp-width="1299" data-pswp-height="330" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00205-fig007.DWYu-nZt_Z1dJ1cM.webp" alt width="1299" height="330" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure A1–1.</strong><span data-astro-cid-dzaleqsp> Age heaping in the 2001 Census of Nepal and its treatment preparing data for DYNAMIS-POP.</span></figcaption></figure><figure id="figA2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00205-fig008.DvXqz3Bj_M2HHB.webp" class="figure-lightbox-trigger" data-pswp-width="1654" data-pswp-height="781" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00205-fig008.DvXqz3Bj_M2HHB.webp" alt width="1654" height="781" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure A1–2.</strong><span data-astro-cid-dzaleqsp> Underreporting of young children in the 2001 Census of Nepal. The red bars are ‘missing children’ when back-projecting children 0–4 using the number of children born in Nepal age 10–14 in the 2011 Census.</span></figcaption></figure></div></details><details id="tables" class="article-section article-section--collapsible" data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Tables</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> A simplified classification of caste and ethnicities in Nepal according to the <a href="#bib19">The World Bank (2006)</a> study on „Unequal Citizens. Gender, Caste and Ethnic Inclusion in Nepal</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">% Total population</th>
+<th align="left">GSEA / NLSS II (10 groups)</th>
+<th align="left">2001 census (103 groups)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="5">Hindu caste groups (57.5%)</td>
+<td align="left">1.BC (Hill)</td>
+<td align="left">Brahman, Chhetri, Thakuri, Sanyasi</td>
+</tr>
+<tr>
+<td align="left">2.BC (Tarai)</td>
+<td align="left">Kayashta, Rajput, Baniya, Marwadi, Jaine, Nurang, Bengali</td>
+</tr>
+<tr>
+<td align="left">3.Tarai Middle Castes</td>
+<td align="left">Yadev,Teli, Kalwar, Sudi, Sonar, Lohar, Koiri, Kurmi, Kanu, Haluwai, Hajam/Thakur, Badhe, Rajbhar, Kewat Mallah, Numhar, Kahar, Lodha, Bing/Banda, Bhediyar, Mali, Kamar Dhunia</td>
+</tr>
+<tr>
+<td align="left">4.Dalits (Hill)</td>
+<td align="left">Kami, Damai, Sarki, Gaine, Badi</td>
+</tr>
+<tr>
+<td align="left">5.Dalits (Tarai)</td>
+<td align="left">Chamar, Musahar, Tatma, Bantar, Dhusadadh/Paswan, Khatway, Dom, Chidimar, Dhobi, Halkhor, Unidentified Dalit</td>
+</tr>
+<tr>
+<td align="left" rowspan="3">Janajatis (37.2%)</td>
+<td align="left">6.Newar</td>
+<td align="left">All Newari Castes</td>
+</tr>
+<tr>
+<td align="left">7.Janajatis (Hill)</td>
+<td align="left">Magar,Tamang, Rai, Gurung, Limbu, Sherpa, Bhote, Walung, Buansi, Hyolmo, Gharti/Bhujel, Kumal, Sunuwar, Baramu, Pahari, Adivasi Janajati, Yakkha, Shantal, Jirel, Darai, Dura, Majhi, Dunuwar, Thami, Lepcha, Chepang, Bote, Raji, Hayu,Raute, Kasunda</td>
+</tr>
+<tr>
+<td align="left">8.Janajatis (Tarai)</td>
+<td align="left">Tharu, Dhanuk, Rajbanshi, Tajpuriya, Gangai, Dhimal, Meche, Kisan, Munda, Santhal/Satar/Dhangad/Jhangad, Koche, Pattarkatta/Kusbadiya</td>
+</tr>
+<tr>
+<td align="left">Muslims (4.3%)</td>
+<td align="left">9.Muslims</td>
+<td align="left">Muslim, Churoute</td>
+</tr>
+<tr>
+<td align="left">Others (1%)</td>
+<td align="left">10.Others</td>
+<td align="left"/>
+</tr>
+</tbody>
+</table></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Descriptive results of prenatal care and immunization rates. Source: DHS 2001 and DHS 2011, own calculations</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="2"/>
+<th rowspan="2"/>
+<th align="left" colspan="2">Prenatal care</th>
+<th align="left" colspan="3">Immunization DHS 2001</th>
+<th align="left">Immunization DHS 2011</th>
+</tr>
+<tr>
+<th align="left">DHS 2001</th>
+<th align="left">DHS 2011</th>
+<th align="left">No Prenatal Care</th>
+<th align="left">Prenatal Care</th>
+<th align="left">All DHS 2001</th>
+<th align="left">All DHS 2011</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="5">Region</td>
+<td align="left">Eastern</td>
+<td align="left">56.5%</td>
+<td align="left">90.6%</td>
+<td align="left">61.7%</td>
+<td align="left">83.7%</td>
+<td align="left">74.1%</td>
+<td align="left">87.7%</td>
+</tr>
+<tr>
+<td align="left">Central</td>
+<td align="left">54.1%</td>
+<td align="left">84.7%</td>
+<td align="left">46.6%</td>
+<td align="left">72.3%</td>
+<td align="left">60.5%</td>
+<td align="left">83.1%</td>
+</tr>
+<tr>
+<td align="left">Western</td>
+<td align="left">55.2%</td>
+<td align="left">84.1%</td>
+<td align="left">44.2%</td>
+<td align="left">81.5%</td>
+<td align="left">64.8%</td>
+<td align="left">91.2%</td>
+</tr>
+<tr>
+<td align="left">Mid-West</td>
+<td align="left">38.2%</td>
+<td align="left">82.1%</td>
+<td align="left">60.4%</td>
+<td align="left">85.2%</td>
+<td align="left">69.9%</td>
+<td align="left">84.7%</td>
+</tr>
+<tr>
+<td align="left">Far-West</td>
+<td align="left">35.5%</td>
+<td align="left">91.4%</td>
+<td align="left">44.3%</td>
+<td align="left">89.7%</td>
+<td align="left">60.4%</td>
+<td align="left">93.7%</td>
+</tr>
+<tr>
+<td align="left" rowspan="7">Ethnicity</td>
+<td align="left">Brahaman/Chhetri</td>
+<td align="left">53.5%</td>
+<td align="left">89.7%</td>
+<td align="left">58.8%</td>
+<td align="left">90.2%</td>
+<td align="left">75.6%</td>
+<td align="left">90.7%</td>
+</tr>
+<tr>
+<td align="left">Tarai/Madhesi</td>
+<td align="left">54.6%</td>
+<td align="left">91.1%</td>
+<td align="left">41.5%</td>
+<td align="left">66.4%</td>
+<td align="left">55.1%</td>
+<td align="left">82.0%</td>
+</tr>
+<tr>
+<td align="left">Hill Dalits</td>
+<td align="left">44.4%</td>
+<td align="left">86.8%</td>
+<td align="left">53.0%</td>
+<td align="left">83.9%</td>
+<td align="left">66.7%</td>
+<td align="left">87.0%</td>
+</tr>
+<tr>
+<td align="left">Tarai/Madhesi Dalits</td>
+<td align="left">54.6%</td>
+<td align="left">89.0%</td>
+<td align="left">37.6%</td>
+<td align="left">39.7%</td>
+<td align="left">38.8%</td>
+<td align="left">83.8%</td>
+</tr>
+<tr>
+<td align="left">Newar/Janajati</td>
+<td align="left">49.3%</td>
+<td align="left">80.5%</td>
+<td align="left">56.0%</td>
+<td align="left">89.0%</td>
+<td align="left">72.3%</td>
+<td align="left">93.5%</td>
+</tr>
+<tr>
+<td align="left">Muslim</td>
+<td align="left">49.9%</td>
+<td align="left">89.8%</td>
+<td align="left">28.7%</td>
+<td align="left">47.1%</td>
+<td align="left">37.9%</td>
+<td align="left">57.4%</td>
+</tr>
+<tr>
+<td align="left">Other</td>
+<td align="left">39.1%</td>
+<td align="left">--</td>
+<td align="left">46.3%</td>
+<td align="left">57.1%</td>
+<td align="left">50.5%</td>
+<td align="left">--</td>
+</tr>
+<tr>
+<td align="left" rowspan="3">Education of mother</td>
+<td align="left">Never entered school</td>
+<td align="left">40.2%</td>
+<td align="left">79.6%</td>
+<td align="left">47.7%</td>
+<td align="left">71.8%</td>
+<td align="left">57.4%</td>
+<td align="left">78.1%</td>
+</tr>
+<tr>
+<td align="left">Primary school dropout</td>
+<td align="left">58.0%</td>
+<td align="left">88.2%</td>
+<td align="left">78.1%</td>
+<td align="left">86.8%</td>
+<td align="left">83.1%</td>
+<td align="left">92.9%</td>
+</tr>
+<tr>
+<td align="left">Primary and above</td>
+<td align="left">86.2%</td>
+<td align="left">93.0%</td>
+<td align="left">71.1%</td>
+<td align="left">92.2%</td>
+<td align="left">89.3%</td>
+<td align="left">94.8%</td>
+</tr>
+<tr>
+<td align="left" rowspan="5">Mother’s age</td>
+<td align="left">&gt;30</td>
+<td align="left">34.9%</td>
+<td align="left">70.7%</td>
+<td align="left">47.9%</td>
+<td align="left">73.5%</td>
+<td align="left">56.8%</td>
+<td align="left">82.4%</td>
+</tr>
+<tr>
+<td align="left">26–30</td>
+<td align="left">43.7%</td>
+<td align="left">85.1%</td>
+<td align="left">48.9%</td>
+<td align="left">77.0%</td>
+<td align="left">61.2%</td>
+<td align="left">86.7%</td>
+</tr>
+<tr>
+<td align="left">21–25</td>
+<td align="left">52.6%</td>
+<td align="left">90.4%</td>
+<td align="left">52.9%</td>
+<td align="left">84.1%</td>
+<td align="left">69.3%</td>
+<td align="left">87.8%</td>
+</tr>
+<tr>
+<td align="left">18–20</td>
+<td align="left">65.0%</td>
+<td align="left">89.5%</td>
+<td align="left">63.2%</td>
+<td align="left">79.7%</td>
+<td align="left">73.9%</td>
+<td align="left">88.2%</td>
+</tr>
+<tr>
+<td align="left">&lt;18</td>
+<td align="left">62.8%</td>
+<td align="left">90.6%</td>
+<td align="left">48.9%</td>
+<td align="left">80.7%</td>
+<td align="left">68.9%</td>
+<td align="left">89.1%</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">Sex</td>
+<td align="left">Female</td>
+<td align="left">47.8%</td>
+<td align="left">84.4%</td>
+<td align="left">50.6%</td>
+<td align="left">79.4%</td>
+<td align="left">64.3%</td>
+<td align="left">85.7%</td>
+</tr>
+<tr>
+<td align="left">Male</td>
+<td align="left">53.0%</td>
+<td align="left">88.1%</td>
+<td align="left">53.3%</td>
+<td align="left">80.5%</td>
+<td align="left">67.7%</td>
+<td align="left">88.2%</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">Prenatal care</td>
+<td align="left">No</td>
+<td align="left">--</td>
+<td align="left">--</td>
+<td align="left">--</td>
+<td align="left">--</td>
+<td align="left">51.8%</td>
+<td align="left">70.3%</td>
+</tr>
+<tr>
+<td align="left">Yes</td>
+<td align="left">--</td>
+<td align="left">--</td>
+<td align="left">--</td>
+<td align="left">--</td>
+<td align="left">79.9%</td>
+<td align="left">89.6%</td>
+</tr>
+<tr>
+<td align="left">TOTAL</td>
+<td align="left"/>
+<td align="left">50.3%</td>
+<td align="left">86.2%</td>
+<td align="left">51.8%</td>
+<td align="left">79.9%</td>
+<td align="left">65.9%</td>
+<td align="left">87.0%</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Regression results of logistic regression models for prenatal care and immunization based on DHS 2001 and DHS 2011 data. Own calculations. The coefficients are expressed as odds ratios</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="2"/>
+<th align="center" colspan="2">Prenatal care</th>
+<th align="center" colspan="6">Immunization DHS 2001</th>
+<th align="center" colspan="2">Immunization</th>
+</tr>
+<tr>
+<th align="center" colspan="2">DHS 2001</th>
+<th align="center" colspan="2">No Prenatal Care</th>
+<th align="center" colspan="2">Prenatal Care</th>
+<th align="center" colspan="2">All</th>
+<th align="center" colspan="2">DHS 2011</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Constant</td>
+<td align="left">0.626</td>
+<td align="left">**</td>
+<td align="left">1.709</td>
+<td align="left"/>
+<td align="left">5.213</td>
+<td align="left">***</td>
+<td align="left">2.419</td>
+<td align="left">***</td>
+<td align="left">3.986</td>
+<td align="left">***</td>
+</tr>
+<tr>
+<td align="left">Male (Female reference)</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">1.299</td>
+<td align="left"/>
+<td align="left">1.052</td>
+<td align="left"/>
+<td align="left">1.260</td>
+<td align="left">*</td>
+<td align="left">1.248</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Mother entered primary school (No school reference)</td>
+<td align="left">1.743</td>
+<td align="left">**</td>
+<td align="left">3.926</td>
+<td align="left">***</td>
+<td align="left">1.487</td>
+<td align="left"/>
+<td align="left">2.978</td>
+<td align="left">***</td>
+<td align="left">2.779</td>
+<td align="left">**</td>
+</tr>
+<tr>
+<td align="left">Mother graduated primary education</td>
+<td align="left">7.590</td>
+<td align="left">***</td>
+<td align="left">2.700</td>
+<td align="left">*</td>
+<td align="left">2.424</td>
+<td align="left">*</td>
+<td align="left">4.347</td>
+<td align="left">***</td>
+<td align="left">3.444</td>
+<td align="left">***</td>
+</tr>
+<tr>
+<td align="left">Central region (Eastern region reference)</td>
+<td align="left">0.951</td>
+<td align="left"/>
+<td align="left">0.526</td>
+<td align="left">*</td>
+<td align="left">0.591</td>
+<td align="left">.</td>
+<td align="left">0.581</td>
+<td align="left">***</td>
+<td align="left">0.786</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Western region</td>
+<td align="left">0.754</td>
+<td align="left"/>
+<td align="left">0.407</td>
+<td align="left">**</td>
+<td align="left">0.612</td>
+<td align="left"/>
+<td align="left">0.479</td>
+<td align="left">***</td>
+<td align="left">0.923</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Mid-Western region</td>
+<td align="left">0.528</td>
+<td align="left">**</td>
+<td align="left">0.711</td>
+<td align="left"/>
+<td align="left">0.782</td>
+<td align="left"/>
+<td align="left">0.647</td>
+<td align="left">*</td>
+<td align="left">0.680</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Far-Western region</td>
+<td align="left">0.459</td>
+<td align="left">***</td>
+<td align="left">0.336</td>
+<td align="left">**</td>
+<td align="left">0.962</td>
+<td align="left"/>
+<td align="left">0.374</td>
+<td align="left">***</td>
+<td align="left">1.643</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Tarai/Madhesi (Brahaman/Chheri reference)</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">0.447</td>
+<td align="left">*</td>
+<td align="left">0.360</td>
+<td align="left">*</td>
+<td align="left">0.457</td>
+<td align="left">***</td>
+<td align="left">0.728</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Hill Dalits</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">0.878</td>
+<td align="left"/>
+<td align="left">0.750</td>
+<td align="left"/>
+<td align="left">0.851</td>
+<td align="left"/>
+<td align="left">0.843</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Tarai/Madhesi Dalits</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">0.399</td>
+<td align="left">.</td>
+<td align="left">0.107</td>
+<td align="left">***</td>
+<td align="left">0.240</td>
+<td align="left">***</td>
+<td align="left">1.059</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Newar and Janajati</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">0.758</td>
+<td align="left"/>
+<td align="left">1.091</td>
+<td align="left"/>
+<td align="left">0.835</td>
+<td align="left"/>
+<td align="left">1.654</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Muslim</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">0.263</td>
+<td align="left">**</td>
+<td align="left">0.147</td>
+<td align="left">***</td>
+<td align="left">0.231</td>
+<td align="left">***</td>
+<td align="left">0.235</td>
+<td align="left">***</td>
+</tr>
+<tr>
+<td align="left">Other</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">0.570</td>
+<td align="left"/>
+<td align="left">0.185</td>
+<td align="left">***</td>
+<td align="left">0.355</td>
+<td align="left">***</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Mother’s birth cohort 1 (25–29 at birth; 30+ reference)</td>
+<td align="left">1.199</td>
+<td align="left"/>
+<td align="left">1.129</td>
+<td align="left"/>
+<td align="left">1.263</td>
+<td align="left"/>
+<td align="left">1.185</td>
+<td align="left"/>
+<td align="left">1.245</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Mother’s birth cohort 2 (20–24 at birth)</td>
+<td align="left">1.485</td>
+<td align="left">*</td>
+<td align="left">1.192</td>
+<td align="left"/>
+<td align="left">2.043</td>
+<td align="left">*</td>
+<td align="left">1.470</td>
+<td align="left">**</td>
+<td align="left">1.170</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Mother’s birth cohort 3 ( ≤ 20 at birth)</td>
+<td align="left">2.326</td>
+<td align="left">***</td>
+<td align="left">1.903</td>
+<td align="left">*</td>
+<td align="left">1.441</td>
+<td align="left"/>
+<td align="left">1.808</td>
+<td align="left">***</td>
+<td align="left">1.411</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Young Mother (age &lt;18; 18+ reference)</td>
+<td align="left">0.819</td>
+<td align="left"/>
+<td align="left">0.408</td>
+<td align="left">.</td>
+<td align="left">0.919</td>
+<td align="left"/>
+<td align="left">0.586</td>
+<td align="left">**</td>
+<td align="left">0.863</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Sample size (n)</td>
+<td align="left">1,295</td>
+<td align="left"/>
+<td align="left">649</td>
+<td align="left"/>
+<td align="left">646</td>
+<td align="left"/>
+<td align="left">1,295</td>
+<td align="left"/>
+<td align="left">943</td>
+<td align="left"/>
+</tr>
+</tbody>
+</table></div></figure><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> DYNAMIS-POP simulation projections for prenatal care, three scenarios</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" rowspan="2">Prenatal care scenarios</th>
+<th align="center" colspan="4">Prenatal care rate</th>
+</tr>
+<tr>
+<th align="left">2002</th>
+<th align="left">2012</th>
+<th align="left">2022</th>
+<th align="left">2032</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Scenario X0 - Base (used in immunization scenarios A0 and A1)</td>
+<td align="left">52.0%</td>
+<td align="left">67.2%</td>
+<td align="left">76.0%</td>
+<td align="left">81.5%</td>
+</tr>
+<tr>
+<td align="left">Scenario X1 - Closing regional gaps (used in A2 and A3)</td>
+<td align="left">52.0%</td>
+<td align="left">71.7%</td>
+<td align="left">79.9%</td>
+<td align="left">84.8%</td>
+</tr>
+<tr>
+<td align="left">Scenario X2 - Closing all prenatal care gaps (use in A4 and A5)</td>
+<td align="left">52.0%</td>
+<td align="left">90.7%</td>
+<td align="left">91.6%</td>
+<td align="left">91.7%</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> DYNAMIS-POP simulation projections for immunization rates, six scenarios</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" rowspan="2">Immunization scenarios</th>
+<th align="center" colspan="4">Immunization rate</th>
+</tr>
+<tr>
+<th align="left">2002</th>
+<th align="left">2012</th>
+<th align="left">2022</th>
+<th align="left">2032</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Scenario A0 - Base (prenatal care scenario X0 - Base)</td>
+<td align="left">68.1%</td>
+<td align="left">77.2%</td>
+<td align="left">81.3%</td>
+<td align="left">83.8%</td>
+</tr>
+<tr>
+<td align="left">Scenario A1 - Closing ethnic gaps (prenatal care scenario X0 - Base)</td>
+<td align="left">68.2%</td>
+<td align="left">83.2%</td>
+<td align="left">87.1%</td>
+<td align="left">89.3%</td>
+</tr>
+<tr>
+<td align="left">Scenario A2 - Closing regional gaps (prenatal care scenario X1 - closing regional gaps)</td>
+<td align="left">68.2%</td>
+<td align="left">83.8%</td>
+<td align="left">86.6%</td>
+<td align="left">88.3%</td>
+</tr>
+<tr>
+<td align="left">Scenario A3 - Closing ethnic &amp; regional gaps (prenatal care scenario X1 - closing regional gaps)</td>
+<td align="left">68.2%</td>
+<td align="left">88.8%</td>
+<td align="left">91.5%</td>
+<td align="left">92.8%</td>
+</tr>
+<tr>
+<td align="left">Scenario A4 - Closing ethnic &amp; regional &amp; all prenatal care gaps (prenatal care scenario X2)</td>
+<td align="left">68.2%</td>
+<td align="left">91.0%</td>
+<td align="left">92.4%</td>
+<td align="left">93.2%</td>
+</tr>
+<tr>
+<td align="left">Scenario A5 - Closing prenatal care gaps only (prenatal care scenario X2)</td>
+<td align="left">68.1%</td>
+<td align="left">81.7%</td>
+<td align="left">83.5%</td>
+<td align="left">84.9%</td>
+</tr>
+</tbody>
+</table></div></figure></div></details></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/figures.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

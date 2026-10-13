@@ -1,0 +1,22 @@
+TY  - JOUR
+TI  - A Microsimulation Model for the Land Rental Market in Irish Farming
+AU  - Loughrey, Jason
+AU  - Hennessy, Thia
+VL  - 15
+IS  - 2
+PY  - 2022
+DA  - 2022/08/31
+SP  - 77-101
+C1  - IJM 2022;15(2):77-101
+DO  - 10.34196/ijm.00264
+UR  - https://doi.org/10.34196/ijm.00264
+AB  - In this paper, we utilize Teagasc National Farm survey data to analyse the agricultural land rental market in Ireland with a newly developed agent-based microsimulation (ABM) model and a classical walrasian equilibrium model of the land rental market. We conclude that the microsimulation model has a number of strengths in addressing the interactions between landowners and tenants and dealing with the impact of economic changes on the farm size concentration. The equilibrium model retains some value in dealing with the question of price determination and in illustrating the potential surpluses to be gained from a more active land rental market. The paper contains a comparison of simulation results from the ABM model with recent farm-level data and Census of Agriculture data. These comparisons indicate the relevance of some findings from the simulation model including the rise in average dairy farm size and the decline in area allocated to non-dairy cattle farming. However, the sheep farming system appears to have defied the predictions from the simulation model and this may be attributed to the recent improvement in economic performance for this sector. The ABM model can be further refined to account for decisions in relation to the choice of farming system, the question of retirement and farm exit.
+KW  - Agent-Based Microsimulation Model
+KW  - Agricultural Land Rental Market
+KW  - Sealed-Bid Auction
+KW  - Price Determination
+KW  - Farm Size Concentration
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

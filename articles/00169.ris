@@ -1,0 +1,19 @@
+TY  - JOUR
+TI  - The code is the model
+AU  - Meisser, Luzius
+VL  - 10
+IS  - 3
+PY  - 2017
+DA  - 2017/12/31
+SP  - 184-201
+C1  - IJM 2017;10(3):184-201
+DO  - 10.34196/ijm.00169
+UR  - https://doi.org/10.34196/ijm.00169
+AB  - Conventionally, agent-based models are specified in a combination of natural language and mathematical terms, and their implementation seen as an afterthought. I challenge this view and argue that it is the source code that represents the model best, with natural language and mathematical descriptions serving as documentation. This modeling paradigm is inspired by agile software development and adopting it leads to various – mostly beneficial – consequences. First, discrepancies between the specification documents and what the model actually does are eliminated by definition as the code becomes the specification. Second, replicability is greatly improved. Third, object-oriented programming is recognized as an integral part of a modeler’s skill set. Forth, tools and methods from software engineering can support the modeling process, making it more agile. Fifth, increased modularity allows to better manage complexity and enables the collaborative construction of large models. Sixth, the way models are published needs to be reconsidered, with source code ideally being part of the peer review. Seventh, the quality of source code in science is improved as it enjoys more importance, attention and scrutiny.
+KW  - agent-based modeling
+KW  - agile software engineering
+KW  - modeling methodology
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

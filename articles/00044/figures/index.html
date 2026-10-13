@@ -1,0 +1,796 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Figures and data in The siena microsimulation model (SM2) for net-gross conversion of EU-silc income variables | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00044/figures"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.figures-page__summary[data-astro-cid-uy5dlehv]{color:var(--color-ink-muted);margin-block-end:var(--space-m)}@media (width>=75em){.article-content-grid[data-astro-cid-uy5dlehv]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-astro-cid-uy5dlehv><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/taxes-benefits" data-astro-cid-ak4gb66a>Taxes and benefits</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Apr 30, 2011</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>The siena microsimulation model (SM2) for net-gross conversion of EU-silc income variables</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Gianni Betti, Gabriella Donatiello, Vijay Verma</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>University of Siena, Italy; ISTAT, Italy</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/4-1/volume-4-1-spring-2011" data-astro-cid-ak4gb66a>Volume 4(1) Spring 2011</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> G. Betti, G. Donatiello, V. Verma; 2011; <span data-astro-cid-ak4gb66a>The siena microsimulation model (SM2) for net-gross conversion of EU-silc income variables</span>; International Journal of Microsimulation; 4(1); 35–53. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00044" data-astro-cid-ak4gb66a>10.34196/ijm.00044</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>In interview surveys collecting information on personal income, the respondents may report income amounts as gross or net of taxes and other deductions. These data must be made homogenous before use for analysis, especially when undertaking comparisons across population groups and countries. The Siena Microsimulation Model (SM2) has been developed as a practical tool providing a robust and convenient procedure for the conversion between net and gross forms of household income. In this paper we describe the logic and structure of the SM2. Starting from data on household and personal income given in different forms, and on the basis of the prevailing tax regime in a country, the SAS routines of the model are designed to estimate full information on income by component, with a breakdown of gross amounts into taxes, social insurance contributions of various types, and net income. Given this specific purpose, SM2 is not meant to be an alternative to general tax-benefit simulation models, but as a complementary tool which those models can usefully exploit. The usefulness of SM2, of course, goes beyond these specific objectives. The distinguishing feature of SM2 is that it can handle diverse tax-benefit regimes using a common logic and a standard set of procedures making it particularly useful for multi-country comparative application; these are explained in the paper in some detail. The immediate context for the development of SM2 has been the requirements of EU-SILC (EU Statistics on Income and Living Conditions). Recently SM2 has been implemented for Italy based on EU-SILC data. The application and some results from it are described. Applications have also been developed for France, Spain and Greece. Selected aspects of these applications are illustrated for France and Spain.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00044/ijm-00044.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00044.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00044.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-uy5dlehv><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00044" class="view-tabs__link" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00044/figures" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#figures" data-astro-cid-twdwaz5s>Figures</a></li><li data-astro-cid-twdwaz5s><a href="#tables" data-astro-cid-twdwaz5s>Tables</a></li></ul></details></div><div class="article-content" data-astro-cid-uy5dlehv><p class="figures-page__summary" data-astro-cid-uy5dlehv>This article contains 2 figures and 9 tables.</p><details id="figures" class="article-section article-section--collapsible" open data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Figures</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00044-fig1.DUISx8Tr_Z58z55.webp" class="figure-lightbox-trigger" data-pswp-width="1088" data-pswp-height="1231" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00044-fig1.DUISx8Tr_Z58z55.webp" alt width="1088" height="1231" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Basic relationship between net and gross amounts.</span></figcaption></figure><figure id="table4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00044-tbl4.Cw5goEjE_1Y8TS9.webp" class="figure-lightbox-trigger" data-pswp-width="2035" data-pswp-height="839" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00044-tbl4.Cw5goEjE_1Y8TS9.webp" alt width="2035" height="839" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Common structure of the iterative model.</span></figcaption></figure></div></details><details id="tables" class="article-section article-section--collapsible" data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Tables</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Gross-to-Net conversion algorithm.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th colspan="2">Income measure</th>
+<th>Total</th>
+<th>By component <sup><a href="#tfn1">a</a></sup></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>GROSS <sup><a href="#tfn2">b</a></sup></td>
+<td><i>G</i>=Σ<i>G<sub>i</sub></i> <b>←</b></td>
+<td><i>G<sub>i</sub></i></td>
+</tr>
+<tr>
+<td>2</td>
+<td>Social Insurance contribution</td>
+<td/>
+<td><b><i>S<sub>i</sub></i> = <i>S<sub>i</sub></i>(<i>G<sub>i</sub></i>)</b></td>
+</tr>
+<tr>
+<td>3</td>
+<td>GROSS TAXABLE</td>
+<td><i>H</i>=Σ<i>H<sub>i</sub></i> <b>←</b></td>
+<td><i>H<sub>i</sub></i> = <i>G<sub>i</sub></i> − <i>S<sub>i</sub></i></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Component-specific deductions</td>
+<td/>
+<td><b><i>D<sub>i</sub></i> = <i>D<sub>i</sub></i>(<i>H<sub>i</sub></i>)</b></td>
+</tr>
+<tr>
+<td align="center" colspan="4"><i>Aggregation over components and individuals in tax unit</i></td></tr>
+<tr>
+<td>5</td>
+<td>TAXABLE INCOME</td>
+<td> <i>Y</i>=Σ<i>y<sub>i</sub></i> <b>←</b></td>
+<td><i>Y<sub>i</sub></i> = <i>H<sub>i</sub></i> − <i>D<sub>i</sub></i></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Common deductions</td>
+<td><b><i>D<sub>0</sub></i> = <i>D<sub>0</sub></i>(<i>H</i>)</b></td>
+<td/>
+</tr>
+<tr>
+<td>7</td>
+<td>Taxable income (after deduction)</td>
+<td><i>Y<sub>0</sub></i> = <i>Y</i> − <i>D<sub>0</sub></i></td>
+<td/>
+</tr>
+<tr>
+<td>8</td>
+<td>Tax due (before credits)</td>
+<td><b><i>W<sub>0</sub></i> = <i>W<sub>0</sub></i>(<i>Y<sub>0</sub></i>)</b></td>
+<td/>
+</tr>
+<tr>
+<td>9</td>
+<td>Common tax credits</td>
+<td><b><i>C<sub>0</sub></i> = <i>C<sub>0</sub></i>(<i>Y<sub>0</sub></i>)</b></td>
+<td/>
+</tr>
+<tr>
+<td>10</td>
+<td>TAX DUE</td>
+<td><i>W</i> = <i>W</i><sub>0</sub> − <i>C</i><sub>0</sub></td>
+<td/>
+</tr>
+<tr>
+<td>11</td>
+<td>Component-specific tax credits</td>
+<td><i>C</i> = Σ<i>C<sub>i</sub></i> <b>←</b></td>
+<td><b><i>C<sub>i</sub></i> = <i>C<sub>i</sub></i>(<i>Y<sub>i</sub></i>)</b></td>
+</tr>
+<tr>
+<td>12</td>
+<td>TAX PAID</td>
+<td><i>X</i> = <i>W</i> − <i>C</i></td>
+<td/>
+</tr>
+<tr>
+<td>13</td>
+<td>TOTAL NET INCOME</td>
+<td><i>N</i> = <i>H</i> − <i>X</i></td>
+<td/>
+</tr>
+<tr>
+<td>14</td>
+<td>Tax rate (descriptive)</td>
+<td><i>R</i><sub>0</sub> = <i>X/H</i></td>
+<td/>
+</tr>
+<tr>
+<td>15</td>
+<td>TAX RATE = TAX DUE/ TAXABLE INCOME</td>
+<td><b><i>R</i> = <i>W/Y</i></b></td>
+<td/>
+</tr>
+<tr>
+<td align="center" colspan="4"><i>Disaggregation – personal income by component</i></td>
+</tr>
+<tr>
+<td>16</td>
+<td>Proportionate tax by component</td>
+<td/>
+<td><i>X<sub>i</sub></i> = (<b><i>R</i></b>*<i>Y<sub>i</sub></i>) – <i>C<sub>i</sub></i></td>
+</tr>
+<tr>
+<td>17</td>
+<td>NET INCOME BY COMPONENT</td>
+<td/>
+<td><i>N<sub>i</sub></i> = <i>H<sub>i</sub></i> – <i>X<sub>i</sub></i></td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>The functional relationships in this column may be somewhat more complex or varied.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Gross including employers’ social insurance contribution (SS) is: <i>GG</i> = <i>G</i> + <i>SS</i>(<i>G</i><sub>1</sub>)</p></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Forms of reporting of an income component.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td colspan="2">Income component (<i>i</i>) subject to tax and social insurance contributions</td>
+</tr>
+<tr>
+<td colspan="2">Form (<i>X<sub>i</sub></i>) in which data on the income component have been collected:</td>
+</tr>
+<tr>
+<td>  <i>G<sub>i</sub></i></td>
+<td>gross income (before tax and social insurance contributions, if applicable)</td>
+</tr>
+<tr>
+<td>  <i>H<sub>i</sub></i></td>
+<td>gross taxable (before tax, but after social insurance contributions, if any)</td>
+</tr>
+<tr>
+<td>  <i>N<sub>i</sub></i></td>
+<td>net income (after deducing ‘final’ tax and social insurance contributions, i.e., as the final amount actually received)</td>
+</tr>
+<tr>
+<td colspan="2">Income received after retentions at source:</td>
+</tr>
+<tr>
+<td>  <i>XT<sub>i</sub></i></td>
+<td>taxed at source (but no social insurance contribution); <i>T<sub>i</sub></i> = tax at source</td>
+</tr>
+<tr>
+<td>  <i>XS<sub>i</sub></i></td>
+<td>Social insurance contributions (but not tax) at source; <i>S<sub>i</sub></i> = social insurance contributions at source</td>
+</tr>
+<tr>
+<td>  <i>XTS<sub>i</sub></i></td>
+<td>both tax and social insurance contributions at source; T<sub>i</sub> + S<sub>i</sub></td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Calculation of <i>H<sub>i</sub></i> according to the form in which the component is specified.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td colspan="4"><b>Set <i>H</i></b></td>
+</tr>
+<tr>
+<td rowspan="4">given value <i>P<sub>i</sub></i> =</td>
+<td><i>XS<sub>i</sub></i></td>
+<td><i>H<sub>i</sub></i> = <i>XS<sub>i</sub></i></td>
+<td rowspan="4">Simple iteration, generally separately for each component</td>
+</tr>
+<tr>
+<td><i>G<sub>i</sub></i></td>
+<td><i>H<sub>i</sub></i> = <i>G<sub>i</sub></i> − <b><i>S<sub>i</sub></i>(<i>G<sub>i</sub></i>)</b></td>
+</tr>
+<tr>
+<td><i>XT<sub>i</sub></i></td>
+<td><i>H<sub>i</sub></i> = <i>G<sub>i</sub></i> − <b><i>S<sub>i</sub></i>(<i>G<sub>i</sub></i>)</b> where <i>G<sub>i</sub></i> = <i>XT<sub>i</sub></i> + <b><i>T<sub>i</sub></i>(<i>H<sub>i</sub></i>)</b></td>
+</tr>
+<tr>
+<td><i>XTS<sub>i</sub></i></td>
+<td><i>H<sub>i</sub></i> = <i>XTS<sub>i</sub></i> + <b><i>T<sub>i</sub></i>(<i>H<sub>i</sub></i>)</b></td>
+</tr>
+<tr>
+<td colspan="4"><b>Set <i>N</i></b></td>
+</tr>
+<tr>
+<td>given value <i>P<sub>i</sub></i> =</td>
+<td><i>N<sub>i</sub></i></td>
+<td><i>H<sub>i</sub></i> = <i>Y<sub>i</sub></i> + <b><i>D<sub>i</sub></i>(<i>H<sub>i</sub></i>)</b><br/>where<br/><i>Y<sub>i</sub></i> = [<i>H<sub>i</sub></i> − <i>N<sub>i</sub></i> + <b><i>C<sub>i</sub></i>(<i>Y<sub>i</sub></i>)</b>] / <b><i>R</i></b></td>
+<td>Double iteration<br/>(i) with assumed <i>R</i>, for each component in turn<br/>(ii) for determining <i>R</i>, common to all pooled components</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Set <i>N</i>: set of income components which are subject to income tax (irrespective of whether the component is also subject to social insurance contributions), and for which the ‘final net’ amount (<i>X<sub>i</sub></i> = <i>N<sub>i</sub></i>) has been specified in the data collected.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Set <i>H</i>: all other income component (not subject to tax, or for which the data has been collected in a form other than</p></div></figure><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Examples of special deductions and tax credits.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th colspan="2">Form of taxation of component i</th>
+<th>Special deduction</th>
+<th>Special tax credit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Tax exempt</td>
+<td><i>D<sub>i</sub></i> = <i>H<sub>i</sub></i></td>
+<td>−</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Taxed at flat rate f<sub>i</sub></td>
+<td><i>D<sub>i</sub></i> = <i>H<sub>i</sub></i></td>
+<td><i>C<sub>i</sub></i> = <i>−f<sub>i</sub></i> × <i>H<sub>i</sub></i></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Tax-exempt at flat rate f<sub>i</sub></td>
+<td>−</td>
+<td><i>C<sub>i</sub></i> = <i>+f<sub>i</sub></i> × <i>H<sub>i</sub></i></td>
+</tr>
+<tr>
+<td>4</td>
+<td>Deductions for expenses</td>
+<td>+ common deductions</td>
+<td>−</td></tr>
+<tr>
+<td>5</td>
+<td>Tax credit for expenses</td>
+<td>−</td>
+<td>+ common tax credits</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Special tax not related to income</td>
+<td>−</td>
+<td>− common tax credits</td></tr>
+<tr>
+<td>7</td>
+<td>Double taxation at flat rate f<sub>i</sub></td>
+<td>−</td>
+<td>C<sub>i</sub> = −<i>f<sub>i</sub></i> × <i>H<sub>i</sub></i></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Part ΔS<sub>i</sub> of social insurance contributions subject to tax</td>
+<td>−Δ<i>S<sub>i</sub></i></td>
+<td>−</td>
+</tr></tbody></table><p class="table-footnote" data-astro-cid-dzaleqsp>Different forms may apply to cases like 3, 4 and 7: for instance the tax rate being a more general function of the amount of income involved for the component concerned.</p></div></figure><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Main components of income, and tax and social insurance deductions in the Italian fiscal system (year 2003).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="2">N</th>
+<th rowspan="2">Income Components</th>
+<th rowspan="2">Social Insurance Contributions (<i>Si</i>)</th>
+<th rowspan="2">Tax</th>
+<th rowspan="2">Included in common pool</th>
+<th colspan="2">Component-specific</th>
+</tr>
+<tr>
+<th>Deduction (<i>D<sub>i</sub></i>)</th>
+<th>Tax Credits (<i>C<sub>i</sub></i>)<sup><a href="#tfn5">c</a></sup></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Employment income</td>
+<td>Employer’s <i>S</i><sub>0</sub>(<i>G</i><sub>1</sub>)<br/>Employer’s <i>S</i><sub>0</sub>(<i>G</i><sub>1</sub>)</td>
+<td>IRPEF <sup><a href="#tfn3">a</a></sup></td>
+<td>X</td>
+<td><i>D</i><sub>1</sub>(<i>Y</i><sub>1</sub>)</td>
+<td/>
+</tr>
+<tr>
+<td>2</td>
+<td>Self-employment income</td>
+<td><i>S<sub>2</sub></i>(<i>G</i><sub>2</sub>)</td>
+<td>IRPEF</td>
+<td>X</td>
+<td><i>D</i><sub>2</sub>(<i>Y</i><sub>2</sub>)</td>
+<td>−<i>f</i><sub>2</sub>(<i>H</i><sub>2</sub>) IRAP <sup><a href="#tfn6">d</a></sup></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Pensions</td>
+<td/>
+<td>IRPEF</td>
+<td>X</td>
+<td><i>D</i><sub>3</sub>(<i>Y</i><sub>3</sub>)</td>
+<td/>
+</tr>
+<tr><td>4</td>
+<td>Non-financial capital income</td>
+<td/>
+<td>IRPEF</td>
+<td>X</td>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>5</td>
+<td>Property (rental and cadastral) income</td>
+<td/>
+<td>IRPEF <sup><a href="#tfn5">c</a></sup></td>
+<td>X</td>
+<td/>
+<td/>
+</tr>
+<tr>
+<td rowspan="2">6</td>
+<td>Financial Capital income</td>
+<td/>
+<td>Taxed at source (flat rate <i>K</i><sub>6</sub>)</td>
+<td/>
+<td><i>H</i><sub>6</sub></td>
+<td>−<i>K</i><sub>6</sub> × <i>H</i><sub>6</sub></td>
+</tr>
+<tr>
+<td>Education related benefits, Unemployment benefits</td>
+<td/>
+<td>IRPEF</td>
+<td>X</td>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>7</td>
+<td>Family benefits, Sickness invalidity benefits <sup><a href="#tfn6">d</a></sup>, Housing allowances, Any other personal benefits.</td>
+<td/>
+<td>Tax exempt</td>
+<td/>
+<td><i>H</i><sub>7</sub></td>
+<td/>
+</tr>
+<tr>
+<td colspan="7"><i>Assets</i></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Property value</td>
+<td/>
+<td>ICI (on value of real estate)</td>
+<td/><td/>
+<td>−<i>f</i><sub>8</sub>(value)</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Above a certain limit and if it not taxed at source</p><p class="table-footnote" data-astro-cid-dzaleqsp>Additional tax on self-employment income (IRAP, Tax on income from production activities). f(..) stands for "a function of"</p><p class="table-footnote" data-astro-cid-dzaleqsp>On total cadastral and on 85% of the rental income</p><p class="table-footnote" data-astro-cid-dzaleqsp>Part of the benefits may be taxable</p></div></figure><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> EU-SILC target variables: distribution of income by component.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th/>
+<th>Ratio net/gross</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><i>6.1.1.1.1.1</i></td>
+<td><i>  Income from work</i></td>
+<td>64.5</td>
+</tr>
+<tr>
+<td rowspan="3">PY010</td>
+<td>employee cash or near cash income</td>
+<td>85.9</td>
+</tr>
+<tr>
+<td>employer’s SI contribution</td>
+<td/>
+</tr>
+<tr>
+<td>employee’s SI contribution</td>
+<td/>
+</tr>
+<tr>
+<td rowspan="2">PY050</td>
+<td>cash benefits or losses from self-employment</td>
+<td>76.3</td>
+</tr>
+<tr>
+<td>Self-employed SI contribution</td>
+<td/>
+</tr>
+<tr>
+<td><i>6.1.1.1.1.2</i></td>
+<td><i>  Property income</i></td>
+<td>80.7</td></tr>
+<tr>
+<td>HY090</td>
+<td>interest, dividends, profit from capital investments in unincorporated business</td>
+<td>81.1</td>
+</tr>
+<tr>
+<td>HY040</td>
+<td>income from rental of a property or land</td>
+<td>80.2</td></tr>
+<tr>
+<td><i>6.1.1.1.1.3</i></td>
+<td>  <i>Taxable benefits</i></td>
+<td>88.6</td>
+</tr>
+<tr>
+<td>PY090</td>
+<td>unemployment benefits</td>
+<td>92.5</td>
+</tr>
+<tr>
+<td>PY100</td>
+<td>old-age benefits</td>
+<td>88.7</td></tr>
+<tr>
+<td>PY110</td>
+<td>survivor’ benefits</td>
+<td>87.9</td></tr>
+<tr>
+<td>PY130</td>
+<td>disability benefits</td>
+<td>90.2</td></tr>
+<tr>
+<td><i>6.1.1.1.1.4</i></td>
+<td>  <i>Tax-exempt social transfers</i></td>
+<td>100.0</td>
+</tr>
+<tr>
+<td>PY140</td>
+<td>education-related allowances</td>
+<td>100.0</td>
+</tr>
+<tr>
+<td>HY050</td>
+<td>family related allowances</td>
+<td>100.0</td>
+</tr>
+<tr>
+<td>HY060</td>
+<td>social assistance</td>
+<td>100.0</td>
+</tr>
+<tr>
+<td>HY070</td>
+<td>housing allowances</td>
+<td>100.0</td>
+</tr>
+<tr>
+<td>HY080</td>
+<td>regular inter-household cash transfer received</td>
+<td>100.0</td>
+</tr>
+<tr>
+<td><b>Total</b></td>
+<td/>
+<td>71.3</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table8" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 8.</strong><span data-astro-cid-dzaleqsp> Comparison with external sources: distribution of total gross income.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>SM2</th>
+<th>ISTAT</th>
+<th>Error (% point)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gross including SI</td>
+<td>100.0</td>
+<td>100.0</td>
+<td/>
+</tr>
+<tr>
+<td>SI contributions</td>
+<td>15.9</td>
+<td>15.7</td>
+<td>0.2</td></tr>
+<tr>
+<td>− Employers’ contribution</td>
+<td>9.9</td>
+<td>11.4</td>
+<td>−1.5</td></tr>
+<tr>
+<td>− Employees’ contribution</td>
+<td>3.5</td>
+<td>2.8</td>
+<td>0.7</td></tr>
+<tr>
+<td>− Self -employment contribution</td>
+<td>2.5</td>
+<td>1.6</td>
+<td>0.9</td></tr>
+<tr>
+<td>Gross taxable</td>
+<td>84.1</td>
+<td>84.3</td>
+<td>−0.2</td></tr>
+<tr>
+<td>Personal income tax and financial tax</td>
+<td>12.8</td>
+<td>12.0</td>
+<td>0.8</td></tr>
+<tr>
+<td>Net income</td>
+<td>71.3</td>
+<td>72.2</td>
+<td>−0.9</td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Sources:</i> ISTAT: National Accounts (2003); SM2: Model run using Italy EU SILC Wave 1 (2003) as input</p></div></figure><figure id="tableA1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A.1.</strong><span data-astro-cid-dzaleqsp> Main components of income, and tax and social insurance deductions: Spain (year 2003)</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>Income component</th>
+<th>ECHP/SILC variable</th>
+<th>Social insurance contribution</th>
+<th>Taxed at source</th>
+<th>Tax-exempt</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Employees’ income</td>
+<td>(PI1111/PY010), regular wage/salary earnings excluding lump-sum</td>
+<td>Employers’ contribution <sup><a href="#tfn12">f</a></sup> ; Employees contribution; Unemployment. Insurance. <sup><a href="#tfn13">g</a></sup></td>
+<td>X <sup><a href="#tfn7">a</a></sup></td>
+<td/>
+</tr>
+<tr>
+<td>2</td>
+<td>Unemployment benefits</td>
+<td>(PI131/PY090)</td>
+<td/>
+<td>X <sup><a href="#tfn7">a</a></sup></td>
+<td/>
+</tr>
+<tr>
+<td>3</td>
+<td>Pensions</td>
+<td>(PI132/PY100 + PY110) includes old age and survivor’s benefits (2 EU-SILC variables)</td> <td>X <sup><a href="#tfn7">a</a></sup></td>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>4</td>
+<td>Family related benefits</td>
+<td>(PI133/HY050)</td>
+<td/>
+<td>X <sup><a href="#tfn7">a</a></sup></td>
+<td/>
+</tr>
+<tr>
+<td>5</td>
+<td>Sickness invalidity benefits</td>
+<td>(PI134/PY120 + PY130) (2 EU-SILC variables)</td>
+<td/>
+<td>X <sup><a href="#tfn7">a</a></sup></td>
+<td>X <sup><a href="#tfn8">b</a></sup></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Other taxable personal benefits</td>
+<td>(PI136/PY150)</td>
+<td/>
+<td>X <sup><a href="#tfn7">a</a></sup></td>
+<td/>
+</tr>
+<tr>
+<td colspan="6"><i>Flat rate taxed withholding</i></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Employees’ lump-sum income</td>
+<td>(PI1112)</td>
+<td/>
+<td>X <sup><a href="#tfn9">c</a></sup></td>
+<td/>
+</tr>
+<tr>
+<td>8</td>
+<td>Self-employment income</td>
+<td>(PI112/PY050)</td>
+<td>Self-employed social insurance</td>
+<td>X <sup><a href="#tfn10">d</a></sup></td>
+<td/>
+</tr>
+<tr>
+<td>9</td>
+<td>Capital income</td>
+<td>includes both financial and non-financial capital income (PI121/HY090)</td>
+<td/>
+<td>X <sup><a href="#tfn10">d</a>,<a href="#tfn11">e</a></sup></td>
+<td/>
+</tr>
+<tr>
+<td>10</td>
+<td>income from renting out buildings or land</td>
+<td>(PI122/HY040)</td>
+<td/>
+<td>X <sup><a href="#tfn10">d</a>,<a href="#tfn11">e</a></sup></td>
+<td/>
+</tr>
+<tr>
+<td colspan="6"><i>Tax exempt</i>
+</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Education related benefits</td>
+<td>(PI135/PY140)</td>
+<td/>
+<td/>
+<td>X</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Housing benefits</td>
+<td>(HI138/HY070)</td>
+<td/>
+<td/>
+<td>X</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Social assistance</td>
+<td>(HI137/HY060)</td>
+<td/>
+<td/>
+<td>X</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Private transfer received</td>
+<td>(PI123/HY080)</td>
+<td/>
+<td/>
+<td>X</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>All these components are taxed at source following the same rules as applied to employment income. The tax rate for deduction at source is determined on the basis of incomes from components 1–6, taken one at a time. By contrast, the final tax rate (IRPF) is determined on the basis of pooled income from all taxable components 1–10.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Some benefits in these categories are tax exempt, e.g. when the individual is completely disabled, or receive sickness benefit due to HIV</p><p class="table-footnote" data-astro-cid-dzaleqsp>Taxed at source at the same rate as determined on the basis of (and applied to) employee’s income.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Taxed at source at a fixed (flat) rate, depending on the component concerned.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Certain (in particular non-financial) forms of capital income are not subject to withholding at source. Also special or local withholding rates apply to some forms. Similarly, only a part of rental income is subject to withholding. <i>Assumption in the application using available data:</i> As it was not possible to distinguish between different forms of capital income, in our application to ECHP data all capital income was treated in a uniform way as financial capital income.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Employee’s ‘gross income’ (including tax and social insurance contributions of the employee), plus employer’s social insurance contribution gives ‘labour cost’.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Assumption in the application using available data:</i> It was assumed that unemployment insurance contributions are made by all employees, but only during the time they are in employment. In reality, not all persons in employment may make this contribution because it is not obligatory. On the other hand, persons may continue to make this contribution also during any periods of unemployment. Such variations are not available in data such as ECHP at the micro-level.</p></div></figure><figure id="tableA2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A.2.</strong><span data-astro-cid-dzaleqsp> Main components of income, and tax and social insurance deductions: France (year 2003)</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td colspan="2"><b>Income from employment</b></td>
+</tr>
+<tr>
+<td>     Total Cost of Labour</td>
+<td><i>GG</i><sub>1</sub></td>
+</tr>
+<tr>
+<td>     Gross wages</td>
+<td><i>G</i><sub>1</sub> = <i>GG</i><sub>1</sub> − <i>S</i><sub>0</sub></td>
+</tr>
+<tr>
+<td>     Wages Net of Social Insurance Contributions</td>
+<td><i>H</i><sub>1</sub> = <i>G</i><sub>1</sub> − <i>S</i><sub>1</sub></td>
+</tr>
+<tr>
+<td colspan="2"><b>Income net of social contributions</b></td>
+</tr>
+<tr>
+<td>     Net Income</td>
+<td><i>H</i> − <i>H</i><sub>8</sub> <sup><a href="#tfn14">a</a></sup></td>
+</tr>
+<tr>
+<td>     Total Net Income</td>
+<td><i>H</i></td>
+</tr>
+<tr>
+<td colspan="2"><b>Tax base and tax</b></td>
+</tr>
+<tr>
+<td>     Revenus Catégoriels</td>
+<td><i>Y<sub>g</sub></i> = (<i>H</i> − <i>H<sub>s</sub></i>) + Δ<i>S</i></td>
+</tr>
+<tr>
+<td>     Revenus Catégoriels Net</td>
+<td><i>Y<sub>n</sub></i> = <i>Y<sub>g</sub></i> − (<i>D<sub>1</sub></i> + <i>D</i><sub>2</sub> + <i>D</i><sub>3</sub> + <i>D</i><sub>4</sub>)</td>
+</tr>
+<tr>
+<td>     Taxable Income</td>
+<td><i>Y</i> = <i>Y<sub>n</sub></i> − (<i>D</i><sub>5</sub> + <i>D</i><sub>6</sub> + <i>D<sub>7</sub></i> + <i>D</i><sub>0</sub>)<sup><a href="#tfn15">b</a></sup></td>
+</tr>
+<tr>
+<td>     (basis for Quotient Familial and Income Taxation)</td>
+<td/>
+</tr>
+<tr>
+<td>     <i>Quotient Familial</i></td>
+<td><i>Q</i></td>
+</tr>
+<tr>
+<td>     <b>Net Income taxes</b> (IR)</td>
+<td><i>X</i> = <i>Q</i> × <i>W</i>(<i>Y/Q</i>) − (<i>C</i> + <i>C<sub>0</sub></i>)</td>
+</tr>
+<tr>
+<td>Income after tax</td>
+<td><i>N</i>′ = <i>H</i> − <i>X</i></td>
+</tr>
+<tr>
+<td>
+<b>Disposable Income</b></td>
+<td><b><i>N</i></b> = <i>N</i>′ + <i>H</i><sub>8</sub></td>
+</tr>
+<tr>
+<td><b>Constructing the income components in SM2</b></td>
+<td/>
+</tr>
+<tr>
+<td><b>Gross income</b> (including employers’ SI contributions)</td>
+<td><i>GG</i> = <i>G</i> + <i>S</i><sub>8</sub></td>
+</tr>
+<tr>
+<td>Employers’ social insurance contributions</td>
+<td><i>S</i><sub>8</sub></td>
+</tr>
+<tr>
+<td><b>Gross income</b> (excluding employers’ SI contributions)</td>
+<td><i>G<sub>i</sub></i>; <i>G</i> = Σ<i>G<sub>i</sub></i></td>
+</tr>
+<tr>
+<td>Income component (<i>i</i>)</td>
+<td/>
+</tr>
+<tr>
+<td>     1. Employment income</td>
+<td/>
+</tr>
+<tr>
+<td>     2. Self-employment income</td>
+<td/>
+</tr>
+<tr>
+<td>     3. Pensions</td>
+<td/>
+</tr>
+<tr>
+<td>     4. Unemployment benefits</td>
+<td/>
+</tr>
+<tr>
+<td>     5. Invalidity benefits</td>
+<td/>
+</tr>
+<tr>
+<td>     6. Capital income ‘A’; Capital income ‘B’ (in fact all capital income treated as ‘A’)</td>
+<td/>
+</tr>
+<tr>
+<td>     7. Other incomes: including property and rental income</td>
+<td/>
+</tr>
+<tr>
+<td>     8. Benefits ‘A’; Benefits ‘B’ (in fact all benefits treated as ‘B’)</td>
+<td/>
+</tr>
+<tr>
+<td>Social insurance contributions (other than employers’)</td>
+<td><i>S<sub>i</sub></i>; taxable part <i>ΔS<sub>i</sub></i></td>
+</tr>
+<tr>
+<td>
+<b>Gross taxable income</b></td>
+<td><i>H<sub>i</sub></i> = <i>G<sub>i</sub></i> − <i>S<sub>i</sub></i>; <i>H</i> = <i>ΣH<sub>i</sub></i></td>
+</tr>
+<tr>
+<td>     Component-specific deductions</td>
+<td><i>D<sub>i</sub>; D</i> = <i>ΣD<sub>i</sub></i></td>
+</tr>
+<tr>
+<td>     Net taxable income</td>
+<td><i>Y<sub>i</sub></i> = <i>H<sub>i</sub></i> − (<i>D<sub>i</sub></i> − Δ<i>S<sub>i</sub></i>) ; <i>Y</i> = Σ<i>Y<sub>i</sub></i> = <i>H</i> − <i>D</i></td>
+</tr>
+<tr>
+<td>     Common deductions</td>
+<td><i>D</i><sup>0</sup>; <i>Y</i><sup>0</sup> = <i>Y</i> − <i>D</i><sub>0</sub></td>
+</tr>
+<tr>
+<td>     Common tax credits</td>
+<td><i>C</i><sub>0</sub></td>
+</tr>
+<tr>
+<td>     <i>Quotient Familial</i></td>
+<td><i>Q</i></td>
+</tr>
+<tr>
+<td>     Tax due</td>
+<td><i>W</i> = <i>Q</i> × <i>W<sub>0</sub></i>(<i>Y</i><sub>0</sub>/<i>Q</i>) − <i>C</i><sub>0</sub></td>
+</tr>
+<tr>
+<td>     Component-specific tax credits</td>
+<td><i>C<sub>i</sub></i>; <i>C</i> = Σ<i>C<sub>i</sub></i></td>
+</tr>
+<tr>
+<td><b>Tax to be paid</b></td>
+<td><i>X</i> = <i>W</i> − <i>C</i></td>
+</tr>
+<tr>
+<td><b>Total net income</b></td>
+<td><i>N</i> = <i>H</i> − <i>X</i></td>
+</tr>
+<tr>
+<td>     Net by component</td>
+<td>N<sub>i</sub> = H<sub>i</sub> − [{Y<sub>i</sub> (W/Y)} − C<sub>i</sub>]</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>H</i><sub>8</sub> are tax and social insurance (SI) exempt benefits; hence <i>H</i><sub>8</sub> = <i>N</i><sub>8</sub></p><p class="table-footnote" data-astro-cid-dzaleqsp><i>D</i><sub>5</sub> to <i>D</i><sub>7</sub> are in fact zero (no component-specific deductions)</p></div></figure></div></details></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/figures.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

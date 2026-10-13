@@ -1,0 +1,17 @@
+TY  - JOUR
+TI  - Combining Microsimulation and Numerical Maximization to Identify Optimal Tax-Transfer Rules
+AU  - Colombino, U
+AU  - Islam, N
+VL  - 15
+IS  - 2
+PY  - 2022
+DA  - 2022/08/31
+SP  - 4-43
+C1  - IJM 2022;15(2):4-43
+DO  - 10.34196/ijm.00261
+UR  - https://doi.org/10.34196/ijm.00261
+AB  - In this paper we propose a computational approach to empirical optimal taxation. We develop and estimate a microeconometric model that is run to simulate household labour supply decisions and the implied economic, fiscal and welfare effects. The microsimulation is embedded into a numerical optimization routine that identifies the tax-transfer rule that maximizes a social welfare function. We consider the class of tax-transfer rules where net available income is computed as a 4th degree polynomial transformation of taxable income plus a transfer. We present the results for six European countries: Germany, France, Italy, Luxembourg, Spain and the United Kingdom. For most values of the inequality aversion parameter k that characterizes the social welfare function, the optimized rules provide a higher social welfare than the current rule, with the exception of Luxembourg. The optimized tax-transfer rules are close to a Flat Tax plus a Universal Basic Income (or equivalently a Negative Income Tax).
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

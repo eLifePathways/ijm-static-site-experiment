@@ -1,0 +1,26 @@
+TY  - JOUR
+TI  - The LOTTE System of Tax Microsimulation Models
+AU  - Jia, Zhiyang
+AU  - Larsen, Bodil M
+AU  - Lian, Bård
+AU  - Nesbakken, Runa
+AU  - Nygård, Odd E
+AU  - Thoresen, Thor O
+AU  - Vattø, Trine E
+VL  - 17
+IS  - 3
+PY  - 2024
+DA  - 2024/12/31
+SP  - 73-95
+C1  - IJM 2024;17(3):73-95
+DO  - 10.34196/ijm.00308
+UR  - https://doi.org/10.34196/ijm.00308
+AB  - Microsimulation models of the LOTTE system are key tools for tax policy-making in Norway and are extensively used in the budget process. The aim of this paper is to give an overview of the different modules in the LOTTE family – a non-behavioral tax-benefit model for personal income tax (LOTTE-Skatt), a labor supply model (LOTTE-Arbeid), and a model for distributional effects of commodity taxation (LOTTE-Konsum). In addition to providing descriptions of the designs of the three microsimulation models, we give examples of how the models are used in practical and academic work.
+KW  - microsimulation
+KW  - tax-benefit model
+KW  - labor supply
+KW  - commodity taxation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

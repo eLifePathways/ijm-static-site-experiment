@@ -1,0 +1,474 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Figures and data in Simulating migration in the Pensim2 dynamic microsimulation model | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00039/figures"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.figures-page__summary[data-astro-cid-uy5dlehv]{color:var(--color-ink-muted);margin-block-end:var(--space-m)}@media (width>=75em){.article-content-grid[data-astro-cid-uy5dlehv]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-astro-cid-uy5dlehv><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/demography" data-astro-cid-ak4gb66a>Demography</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Dec 31, 2010</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Simulating migration in the Pensim2 dynamic microsimulation model</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Cathal O’Donoghue, Howard Redway, John Lennon</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Teagasc Rural Economy Research Centre, Athenry, Co. Galway, Ireland; Department for Work and Pensions (DWP), United Kingdom; Teagasc Rural Economy Research Centre Athenry, United Kingdom</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/3-2/volume-3-2-autumn-2010" data-astro-cid-ak4gb66a>Volume 3(2) Autumn 2010</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> C. O’Donoghue, H. Redway, J. Lennon; 2010; <span data-astro-cid-ak4gb66a>Simulating migration in the Pensim2 dynamic microsimulation model</span>; International Journal of Microsimulation; 3(2); 65–79. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00039" data-astro-cid-ak4gb66a>10.34196/ijm.00039</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>Modelling migration is fundamentally important to maintaining the appropriate population structure in a dynamic microsimulation model. It is particularly important as it is faster changing than other demographic processes such as fertility and mortality and so can impact upon the structure of the population quickly. In this paper we review methods that have been used by other models and describe the choices and methods used in the Pensim2 dynamic microsimulation model. In particular we model immigration flows, emigration flows and the overseas population. We divide our method into modelling how many migrate using external macro data and who emigrates, based upon micro processes.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00039/ijm-00039.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00039.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00039.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-uy5dlehv><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00039" class="view-tabs__link" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00039/figures" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#figures" data-astro-cid-twdwaz5s>Figures</a></li><li data-astro-cid-twdwaz5s><a href="#tables" data-astro-cid-twdwaz5s>Tables</a></li></ul></details></div><div class="article-content" data-astro-cid-uy5dlehv><p class="figures-page__summary" data-astro-cid-uy5dlehv>This article contains 5 figures and 5 tables.</p><details id="figures" class="article-section article-section--collapsible" open data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Figures</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00039-fig1.CwibTdD1_ZXxGbu.webp" class="figure-lightbox-trigger" data-pswp-width="742" data-pswp-height="449" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00039-fig1.CwibTdD1_ZXxGbu.webp" alt width="742" height="449" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Migration Model Outline.</span></figcaption></figure><figure id="fig2a" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00039-fig2a.DGDmiCLI_1HGFX4.webp" class="figure-lightbox-trigger" data-pswp-width="1698" data-pswp-height="1004" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00039-fig2a.DGDmiCLI_1HGFX4.webp" alt width="1698" height="1004" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>(a).</strong><span data-astro-cid-dzaleqsp> k – based upon lagged transitions (1991–2000)</span></figcaption></figure><figure id="fig2b" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00039-fig2b.CQHXhFe8_14qtp2.webp" class="figure-lightbox-trigger" data-pswp-width="1698" data-pswp-height="980" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00039-fig2b.CQHXhFe8_14qtp2.webp" alt width="1698" height="980" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>(b).</strong><span data-astro-cid-dzaleqsp> k – based upon average transitions (1991–2000)</span></figcaption></figure><figure id="fig2c" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00039-fig2c.rcA8N69y_1VrJRk.webp" class="figure-lightbox-trigger" data-pswp-width="1683" data-pswp-height="937" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00039-fig2c.rcA8N69y_1VrJRk.webp" alt width="1683" height="937" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>(c).</strong><span data-astro-cid-dzaleqsp> k – based upon first transition in 1991 (1991–2000)</span></figcaption></figure><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00039-fig3.DYoy8oEs_ec78M.webp" class="figure-lightbox-trigger" data-pswp-width="1778" data-pswp-height="1065" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00039-fig3.DYoy8oEs_ec78M.webp" alt width="1778" height="1065" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> External Control Totals for Emigration and Immigration</span></figcaption></figure></div></details><details id="tables" class="article-section article-section--collapsible" data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Tables</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Migration Trends in the UK 1991–2006 (000’s).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>British</th>
+<th>EU</th>
+<th><i>Immigrants</i> Commonwealth</th>
+<th>Other</th>
+<th>Total</th>
+<th>British</th>
+<th>EU</th>
+<th><i>Emigrants</i> Commonwealth</th>
+<th>Other</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1991</td>
+<td>110</td>
+<td>53</td>
+<td>85</td>
+<td>82</td>
+<td>330</td>
+<td>154</td>
+<td>53</td>
+<td>35</td>
+<td>43</td>
+<td>285</td>
+</tr>
+<tr>
+<td>1992</td>
+<td>93</td>
+<td>44</td>
+<td>65</td>
+<td>67</td>
+<td>269</td>
+<td>155</td>
+<td>38</td>
+<td>31</td>
+<td>57</td>
+<td>281</td>
+</tr>
+<tr>
+<td>1993</td>
+<td>86</td>
+<td>44</td>
+<td>70</td>
+<td>65</td>
+<td>265</td>
+<td>149</td>
+<td>40</td>
+<td>34</td>
+<td>43</td>
+<td>266</td>
+</tr>
+<tr>
+<td>1994</td>
+<td>109</td>
+<td>50</td>
+<td>80</td>
+<td>76</td>
+<td>315</td>
+<td>125</td>
+<td>42</td>
+<td>31</td>
+<td>40</td>
+<td>238</td>
+</tr>
+<tr>
+<td>1995</td>
+<td>84</td>
+<td>61</td>
+<td>85</td>
+<td>82</td>
+<td>312</td>
+<td>135</td>
+<td>38</td>
+<td>29</td>
+<td>34</td>
+<td>236</td>
+</tr>
+<tr>
+<td>1996</td>
+<td>94</td>
+<td>72</td>
+<td>78</td>
+<td>74</td>
+<td>318</td>
+<td>156</td>
+<td>44</td>
+<td>32</td>
+<td>32</td>
+<td>264</td>
+</tr>
+<tr>
+<td>1997</td>
+<td>90</td>
+<td>71</td>
+<td>90</td>
+<td>76</td>
+<td>327</td>
+<td>149</td>
+<td>53</td>
+<td>40</td>
+<td>37</td>
+<td>279</td>
+</tr>
+<tr>
+<td>1998</td>
+<td>104</td>
+<td>82</td>
+<td>105</td>
+<td>101</td>
+<td>392</td>
+<td>126</td>
+<td>49</td>
+<td>33</td>
+<td>44</td>
+<td>252</td>
+</tr>
+<tr>
+<td>1999</td>
+<td>115</td>
+<td>66</td>
+<td>123</td>
+<td>150</td>
+<td>454</td>
+<td>139</td>
+<td>59</td>
+<td>41</td>
+<td>52</td>
+<td>291</td>
+</tr>
+<tr>
+<td>2000</td>
+<td>99</td>
+<td>63</td>
+<td>147</td>
+<td>169</td>
+<td>478</td>
+<td>161</td>
+<td>57</td>
+<td>47</td>
+<td>55</td>
+<td>320</td>
+</tr>
+<tr>
+<td>2001</td>
+<td>110</td>
+<td>57</td>
+<td>149</td>
+<td>164</td>
+<td>480</td>
+<td>158</td>
+<td>49</td>
+<td>51</td>
+<td>49</td>
+<td>307</td>
+</tr>
+<tr>
+<td>2002</td>
+<td>97</td>
+<td>59</td>
+<td>155</td>
+<td>201</td>
+<td>512</td>
+<td>185</td>
+<td>52</td>
+<td>58</td>
+<td>64</td>
+<td>359</td>
+</tr>
+<tr>
+<td>2003</td>
+<td>99</td>
+<td>64</td>
+<td>167</td>
+<td>177</td>
+<td>507</td>
+<td>191</td>
+<td>50</td>
+<td>59</td>
+<td>62</td>
+<td>362</td>
+</tr>
+<tr>
+<td>2004</td>
+<td>88</td>
+<td>256</td>
+<td>215</td>
+<td>155</td>
+<td>714</td>
+<td>195</td>
+<td>83</td>
+<td>53</td>
+<td>52</td>
+<td>383</td>
+</tr>
+<tr>
+<td>2005</td>
+<td>96</td>
+<td>295</td>
+<td>180</td>
+<td>137</td>
+<td>708</td>
+<td>185</td>
+<td>108</td>
+<td>60</td>
+<td>59</td>
+<td>412</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>81</td>
+<td>330</td>
+<td>201</td>
+<td>142</td>
+<td>754</td>
+<td>207</td>
+<td>132</td>
+<td>67</td>
+<td>61</td>
+<td>467</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: ONS (2007) international migration: Migrants entering or leaving the United Kingdom and England and Wales, 2005.</p></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Components of migration modules used in dynamic microsimulation models internationally</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>Data source</th>
+<th>Migration flows</th>
+<th>Emigration explanatory variables</th>
+<th>Immigrant characteristics</th>
+<th>Re-entry of emigrants</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>APPSIM (Australia)1</td>
+<td>2001 census, LSIA, overseas departure data</td>
+<td>Immigration and Emigration</td>
+<td>Age, sex, marital status, Australian or overseas-born</td>
+<td/>
+<td>No</td>
+</tr>
+<tr>
+<td>CORSIM (USA)</td>
+<td>Immigration statistics</td>
+<td>Net Immigration</td>
+<td>Age, marital status, race, sex of HOH</td>
+<td>Age, marital status, race, sex</td>
+<td/>
+</tr>
+<tr>
+<td>DESTINIE (France)</td>
+<td>1998 Financial Assets Survey, 1999 census</td>
+<td>Net migration only</td>
+<td>n/a</td>
+<td>Population projections, birth cohort distributions</td>
+<td>No</td>
+</tr>
+<tr>
+<td>DYNACAN (Canada)</td>
+<td/>
+<td>Immigration and Emigration</td>
+<td>HH process Number of Age, Number of gender and region</td>
+<td>Age, gender, Clones existing family characteristics except CPP contributions</td>
+<td/>
+</tr>
+<tr>
+<td>DYNAMOD (Australia)</td>
+<td>1986 census, LSIA, emigration records</td>
+<td>Immigration (by visa status) and emigration flows, net long term migration</td>
+<td>Age, sex, marital status, Australian or overseas-born</td>
+<td>LSIA, cloned from census data</td>
+<td>No</td>
+</tr>
+<tr>
+<td>LIAM (Ireland)</td>
+<td>1986–2006 Census, 1994–1997 Labour Force Survey</td>
+<td>Immigration and Emigration Flows</td>
+<td>Age, Region</td>
+<td>Quarterly National Household Survey divided into national and nonnational samples, Census</td>
+<td>No</td>
+</tr>
+<tr>
+<td>LifePaths (Canada)</td>
+<td>1921–1998 censuses, birth and immigration records</td>
+<td>Immigration and emigration flows; international and interprovincial movement</td>
+<td>Age, sex, province of residence, year, immigrant status, year of immigration</td>
+<td>Immigration data</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>MOSART (Norway)</td>
+<td>1993 National Insurance data</td>
+<td>Net migration only</td>
+<td>n/a</td>
+<td>General Norwegian population characteristics</td>
+<td>No</td>
+</tr>
+<tr>
+<td>NEDYMAS (Netherlan ds)</td>
+<td/>
+<td>Immigration and emigration flows</td>
+<td>Age, Year of birth, Family type, sex, marital status</td>
+<td>Age, Year of birth, Family type, sex, marital status, year of previous emigration</td>
+<td/>
+</tr>
+<tr>
+<td>Sverige (Sweden)</td>
+<td>Immigration data from 1989–90</td>
+<td>Immigration and emigration flows</td>
+<td>Age, sex, education level, previous immigration, country of origin, labour force participation, income</td>
+<td>Immigration pool of 60 000 individuals</td>
+<td>No</td>
+</tr>
+<tr>
+<td>SESIM (Sweden)</td>
+<td>Linda</td>
+<td>Immigration and emigration flows</td>
+<td>Swedish or foreign born, number of children, adults in household, highest education and oldest age in household, time since immigration</td>
+<td>Linda</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><b><i>Source</i></b>: <a href="#bib12">Pennec and Keegan (2007</a>) and <a href="#bib11">O’Donoghue (2001</a>).</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note 1</i>: APPSIM is based upon the proposed in Pennec and Keegan.</p></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Probit Model of Emigration</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Coefficient</th>
+<th>p-value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Male</td>
+<td>0.085838</td>
+<td/>
+</tr>
+<tr>
+<td>Age 20–29</td>
+<td>1.147498</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Age 30–39</td>
+<td>1.040151</td>
+<td/>
+</tr>
+<tr>
+<td>Age 40–49</td>
+<td>0.876858</td>
+<td/>
+</tr>
+<tr>
+<td>Age 50–59</td>
+<td>0.812458</td>
+<td/>
+</tr>
+<tr>
+<td>Age 60–65</td>
+<td>1.432797</td>
+<td/>
+</tr>
+<tr>
+<td>Immigrant × Age 20–29</td>
+<td>0.908987</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Immigrant × Age 30–39</td>
+<td>0.656066</td>
+<td/>
+</tr>
+<tr>
+<td>Immigrant × Age 40–49</td>
+<td>0.545079</td>
+<td/>
+</tr>
+<tr>
+<td>Immigrant × Age 50–59</td>
+<td>0.574327</td>
+<td/>
+</tr>
+<tr>
+<td>Immigrant × Age 60–65</td>
+<td>0.732853</td>
+<td/>
+</tr>
+<tr>
+<td>Immigrant</td>
+<td>−0.0267</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Constant</td>
+<td>−3.91427</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Sample Size</td>
+<td>1305652</td>
+<td/>
+</tr>
+<tr>
+<td>Pseudo R2</td>
+<td>0.072</td>
+<td/>
+</tr>
+<tr>
+<td>Proportion Emigrate</td>
+<td>0.0046</td>
+<td/>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: Year dummy variables are also included in the model</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Data source</i>: LLMDB (1975–2006), working age population</p></div></figure><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Summmary Statistics Emigration</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td>Variable</td>
+<td>Males</td>
+<td>Females</td>
+</tr>
+<tr>
+<td>Age</td>
+<td>39.4</td>
+<td>37.7</td>
+</tr>
+<tr>
+<td>Immigrant</td>
+<td>0.104</td>
+<td>0.101</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: Year and Cohort dummy variables are also included in the model <i>Data source</i>: LLMDB 1975–2006, working age population</p></div></figure><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Processes used to calculated for state pension.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sp01 SetVarStatePenPe</td>
+<td>Set Variables to PE for state pension calculation</td>
+</tr>
+<tr>
+<td>sp02_SetVarStatePenPa</td>
+<td>Set Variables to PA for state pension calculation</td>
+</tr>
+<tr>
+<td>sp03_WaBspAccrual1</td>
+<td>Calculate the accrual of BSP/HRP rights</td>
+</tr>
+<tr>
+<td>sp04_WaGrossApAccrual</td>
+<td>Gross AP accrual</td>
+</tr>
+<tr>
+<td>sp07_WaAPValue</td>
+<td>Net AP accrual</td>
+</tr>
+<tr>
+<td>sp08_ClaimStatePen</td>
+<td>Whether individual will claim state pensions</td>
+</tr>
+<tr>
+<td>sp09_AmountStatePen</td>
+<td>Amount/Value of state pensions claimed</td>
+</tr>
+</tbody>
+</table></div></figure></div></details></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/figures.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

@@ -1,0 +1,936 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Building a microsimulation model of heroin use careers in Australia | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00146"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00146" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/health" data-astro-cid-ak4gb66a>Health</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Dec 31, 2016</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Building a microsimulation model of heroin use careers in Australia</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Alison Ritter, Nagesh Shukla, Marian Shanahan, Phuong Van Hoang, Vu Lam Cao, Pascal Perez, Michael Farrell</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Drug Policy Modelling Program, National Drug and Alcohol Research Centre, University of New South Wales, Australia; SMART Infrastructure Facility, University of Wollongong, Australia</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/9-3/volume-9-3-winter-2016" data-astro-cid-ak4gb66a>Volume 9(3) Winter 2016</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> A. Ritter, N. Shukla, M. Shanahan, P. Van Hoang, V. Cao, P. Perez, M. Farrell; 2016; <span data-astro-cid-ak4gb66a>Building a microsimulation model of heroin use careers in Australia</span>; International Journal of Microsimulation; 9(3); 140–176. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00146" data-astro-cid-ak4gb66a>10.34196/ijm.00146</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>Illicit heroin use is a worldwide problem, with significant health and social costs. Treatment is known to be effective in changing heroin use habits, but it often needs to be provided over a lifetime, with people cycling in and out of treatment. It is therefore important to capture a long-term perspective on heroin use careers. The aim of this project was to build a lifetime microsimulation model of heroin using careers. This paper describes the conceptual logic of the model, the input parameters and the verification and validation results. A microsimulation model was chosen as the most appropriate simulation platform with 9 states, and 111,400 individuals (aged between 18 and 60) each with gender, HIV (human immunodeficiency virus) and HCV (hepatitis C) status, and treatment history. Probabilities associated with crime commission and individually calculated lengths of stay in each state were determined from multiple datasets. The model included costs associated with treatment provision, healthcare services, criminal activity, life years lost, and family benefit of treatment. The final model represented 42 years of a heroin use career for a cohort based on Australian (New South Wales) data. Individuals cycle into and out of heroin using states (including abstinence), as well as treatment and prison states. We were able to build a stable, tractable model and verified all parameters. Validation against external data sources revealed high validity. While there are limitations associated with any model, the heroin career model now has the potential to be used for simulations of alternate policy scenarios.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00146/ijm-00146.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00146.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00146.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00146" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00146/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. Model overview</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. Data sources and parameterisation of the model</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. Estimating costs</a></li><li data-astro-cid-twdwaz5s><a href="#s5" data-astro-cid-twdwaz5s>5. Verification and validation</a></li><li data-astro-cid-twdwaz5s><a href="#s6" data-astro-cid-twdwaz5s>6. Discussion and conclusion</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Heroin is an illegal drug that is widely abused. It is estimated that there are around 16.5 million heroin users worldwide (a 0.4% population prevalence rate). This does not include pharmaceutical opioid misuse, which is growing at a very fast rate (<a href="#bib93">United Nations Office on Drugs and Crime, 2015</a>). Australia has one of the higher rates of heroin use internationally and is estimated to be around 1% of the general population (Australian Institute of Health and Welfare [AIHW], 2013a). In Australia, heroin is purchased on the black market and usually injected. A person dependent on heroin will inject three to four times a day, and will experience withdrawal symptoms if they reduce or cease using heroin. The costs to society of heroin use and dependence are substantial and include both healthcare costs and the costs associated with crime. The social costs of illicit drugs has been estimated to be AUD$8,189 billion (<a href="#bib15">Collins &amp; Lapsley, 2008</a>) in Australia with similar per capita estimates from other nations (European Monitoring Centre on Drugs and Drug Addition [EMCDDA], 2008, 2011, 2014). Given the size of the economic burden, it is not surprising that governments across the globe expend considerable funds in trying to better manage illicit drugs. In Australia, the federal and state governments spend about AUD$1.7 billion per annum in prevention, treatment, harm reduction and law enforcement to combat illicit drugs (<a href="#bib71">Ritter, McLeod, &amp; Shanahan, 2013</a>). Of the total spending, the majority was allocated to law enforcement, leaving a small proportion to prevention, treatment and harm reduction. There is increasing pressure from both the government and the public to know whether the current spending is optimal or what needs to change to increase the benefits of spending. This is particularly important for complicated social problems, such as heroin use, where there are many external costs.</p><p data-astro-cid-qsyhzaho>In light of both the high social cost associated with illicit drugs and the extent of government expenditure, it is vital that resources are invested in the best possible way. While existing research has demonstrated the efficacy and relative cost-effectiveness of heroin treatments notably pharmacotherapy maintenance such as methadone and buprenorphine (<a href="#bib8">Barnett, 1999</a>; <a href="#bib16">Connock <i>et al</i>., 2007</a>) there has to date been no analysis of the net social benefit of providing heroin treatment interventions over the life course. There is a pressing need to evaluate the existing combinations of heroin treatment interventions over a heroin using career, and explore the best combinations that provide the highest net social benefits.</p><p data-astro-cid-qsyhzaho>The aim of this paper is to detail the development of a microsimulation model (MSM) for heroin use which can be used to assess the net social benefit of current heroin treatment strategies, such that the final model can be used to compare different combinations of treatment alternatives through modelled scenarios. This will lead to better informed policy decisions about the mix and type of treatments.</p><p data-astro-cid-qsyhzaho>The critical methodological issue is the choice of modelling approach. The model needs to capture recurring events over time, such as the common pattern of cycling in and out of heroin treatment (<a href="#bib9">Bell, Burrell, Indig, &amp; Gilmour, 2006</a>) as well as reflect the heterogeneity amongst people who use heroin and their alternative trajectories. The chosen model is MSM. MSM depicts events and outcomes at the level of the individual. The MSM enables ‘memory’ for each individual of such things as the length of heroin use, past treatments and incarcerations.</p><p data-astro-cid-qsyhzaho>Heroin use careers with recurring events, such as abstinence, crime, incarceration, and treatment over time, can be modelled using an approach broadly classified as state transition models (STM). As per <a href="#bib83">Siebert <i>et al</i>. (2012)</a>, a typical STM consist of a set of mutually exclusive and collectively exhaustive health states where individuals can transition among health states based on predefined transition probabilities. STMs are flexible and transparent computer-based decision making models which include both Markov model cohort simulation and individual-based microsimulation. Cohort-based Markov model is one of the predominantly used STM in the substance abuse field (<a href="#bib77">Schackman, Leff, Polsky, Moore, &amp; Fiellin, 2012</a>). Cohort-based Markov models are relatively simple to develop when the number of health states is not large. These models are restricted by the Markovian assumption, where transition probabilities do not depend on individual history or memory (i.e. past health states or state duration) (<a href="#bib83">Siebert <i>et al</i>., 2012</a>). In the case of heroin use, it is recognised that an individual’s history of incarceration, treatment, and length of time in treatment has an effect on the state transition for that individual (<a href="#bib42">Hser, Evans, Huang, &amp; Anglin, 2004</a>; <a href="#bib101">Zhang, Friedmann, &amp; Gerstein, 2003</a>). Therefore, MSMs, which are not restricted by the Markovian assumptions and number of health states, are more appropriate for modelling heroin use careers. MSM reduces the number of health states required as it simulates an individual’s history by using tracker variables.</p><p data-astro-cid-qsyhzaho>MSMs better represent the heterogeneity among individuals in complex modelling scenarios such as illicit drug use. MSMs can model individual characteristics, treatment and heroin use history as continuous variables, whereby future transitions depend on current and past individual history. MSM has been widely used to evaluate health policies and other social and economic policies in many countries. It serves as an effective tool for policy evaluation, decision making and allocation of scarce financial resources. Many large MSM models have been built in Australia and overseas (<a href="#bib10">Briggs &amp; Sculpher, 1998</a>; <a href="#bib38">Harding, Keegan, &amp; Kelly, 2010</a>; <a href="#bib47">Karnon, 2003</a>; <a href="#bib70">Ringel, Eibner, Girosi, Cordova, &amp; McGlynn, 2010</a>; <a href="#bib75">Rutter, Zaslavsky, &amp; Feuer, 2011</a>; <a href="#bib102">Zucchelli, Jones, &amp; Rice, 2012</a>). However, there are very few MSM models that have been built to specifically evaluate illicit drug treatment policies (<a href="#bib39">Hoang <i>et al</i>., 2016</a>). It is noted that it is important to build an MSM specifically for a country/state due to the differences in health care financing structure, costs and benefits, as well as the substantial difference in the availability of treatment methods and drug use.</p><p data-astro-cid-qsyhzaho>There are two existing MSM in our content domain, both from the USA. The RAND Marijuana micro simulation model simulates the use of marijuana over the life course in the USA (<a href="#bib62">Paddock, Kilmer, Caulkins, Booth, &amp; Pacula, 2012</a>). The model follows a cohort of 12 year olds representative of the United States population in 2004, and its focus is on the epidemiology of marijuana use. The second model, by <a href="#bib100">Zarkin <i>et al</i>. (2005)</a> models the costs and benefits of methadone treatment related to heroin use, criminal activity, labour market participation and health care utilization. This model follows 1,000,000 individuals from 18 to 60 year olds who are representative of the United States population. Despite taking into account the life-course perspective of illicit drug use, these two existing models are limited by only containing a few states of drug use, and in the case of <a href="#bib100">Zarkin <i>et al</i>. (2005)</a> a focus on a single treatment (methadone maintenance) and a number of simplifications about internal and external costs and benefits. Our goal was to develop a detailed model of heroin careers for one Australian jurisdiction, i.e. New South Wales (NSW) which enabled assessment of the net social benefit of treatment and the opportunity to simulate alternate treatment scenarios such as different combinations of treatment modalities over the lifetime of heroin use.</p><p data-astro-cid-qsyhzaho>This paper proceeds as follows: we provide an overview of the model and its components, (<a href="#s2">Section 2</a>), then detail the parameterisation and data sources for each of the model components (<a href="#s3">Section 3</a>). <a href="#s4">Section 4</a> provides details of the cost elements within the model, followed by the verification and validation results (<a href="#s5">Section 5</a>). The paper concludes with a discussion of both the strengths and limitations of the approach taken here as well as considering the future applications of the model.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. Model overview</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The MSM model for heroin use careers takes the population of individuals who have ever used heroin (previously and currently) for one Australian state (NSW) including those who used heroin previously and are currently abstinent, those in treatment subgroups as well as those in prison. Each individual in the initial population is characterised by his/her age, gender, treatment history (number of episodes and duration of treatment), human immunodeficiency virus (HIV) and hepatitis C (HCV) status. Each individual evolves over his/her simulated lifetime and eventually transitions from one state to another one.</p><p data-astro-cid-qsyhzaho>There are nine mutually exclusive states, which represent the major modalities of a heroin use career: heroin use, in treatment, abstaining, in prison. Three drug-using states (in absence of treatment), are represented in the model: i) abstinence, ii) irregular use, and iii) regular/dependent use. For the community treatment states, four mutually exclusive states were included: i) withdrawal from heroin (detoxification), ii) residential rehabilitation (RR), iii) Opioid Substitution Treatment (OST), and iv) counselling only. There are two prison states: in prison without treatment; and in prison and in receipt of OST. Exit from the model occurs if an individual is still alive at age 60, or if death from drug related or non-drug related causes occurs prior to age 60.</p><p data-astro-cid-qsyhzaho>The population of individuals are transitioned from one state to another using predefined (individually based) state transition probabilities. In this model, an approach which provides heterogeneous ‘time to transition’ for each individual is used. The length of stay (LOS) in each treatment, heroin use and prison episode is drawn from LOS distributions. LOS was chosen because it is highly predictive of subsequent drug use and treatment outcomes (<a href="#bib42">Hser <i>et al</i>., 2004</a>; <a href="#bib101">Zhang <i>et al</i>., 2003</a>).</p><p data-astro-cid-qsyhzaho>Each state is associated with costs (and benefits) which depend on both fixed costs (such as the cost of one day in treatment) and variable costs, such as the LOS for any one individual. The costs and benefits that were valued in this model were: (i) heroin treatment costs; (ii) other health care utilisation; (iii) treatment for specific diseases such as HIV, HCV; and (iv) crime and criminal justice system costs (police, courts, prisons and social costs of crime). Benefits include: earnings due to individuals returning to work after successful treatments; and value of treatment to the family.</p></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. Data sources and parameterisation of the model</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s3-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.1 Mutually exclusive states</h3><p data-astro-cid-qsyhzaho>The determination of the finite number of states for a simulation is often difficult, as the real world demands many different states but the reality of data and computation requires simplicity. In this simulation of heroin careers, we chose 9 mutually exclusive states: 3 drug using states; 4 community treatment states and 2 prison states. The definition for each state is given in <a href="#table1">Table 1</a>.</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>State</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Abstinence (S1)</b></td>
+<td>Individuals in this state are not using heroin but have used heroin at some previous time.</td>
+</tr>
+<tr>
+<td><b>Irregular use (S2)</b></td>
+<td>Individuals in this state use heroin irregularly, as defined as 1 to 3 days a month, or a maximum of 1 or 2 days a week. They do not ever develop dependence.</td>
+</tr>
+<tr>
+<td><b>Regular/dependent heroin use (S3)</b></td>
+<td>Individuals in this state use heroin regularly (defined as more than 3 days per week in the last month) and they are not in receipt of any type of treatment.</td>
+</tr>
+<tr>
+<td><b>Withdrawal (S4)</b></td>
+<td>Individuals in this state receive withdrawal treatment for their heroin dependence. Withdrawal treatment is concerned with neuro-adaptation reversal, involves about 5–7 days care (in an inpatient or outpatient setting) and includes medications to manage symptoms, supportive care and case management. In this model it is characterised as residential withdrawal (for the purposes of unit costing), and excludes long-tern tapered methadone withdrawal.</td>
+</tr>
+<tr>
+<td><b>Residential rehabilitation (RR) (S5)</b></td>
+<td>Individuals in this state receive residential rehabilitation for their heroin dependence. RR is concerned with behavioural change across all life areas, including relapse prevention, psychological wellbeing, physical health, nutrition etc. It is provided in residential settings, and an ideal treatment program is 6–9 months long although many will leave in the first week. While some RR in Australia also provide OST as part of the program, as characterised here this RR does not include OST.</td>
+</tr>
+<tr>
+<td><b>Opioid Substitution Treatment (OST) (S6)</b></td>
+<td>Individuals in this state receive Opioid Substitution Treatment for their heroin dependence. The provision of a legal, safe opioid (either methadone or buprenorphine), dispensed daily or less frequently with take-away doses; requires a prescriber and attendance at a pharmacy (primary care or clinic settings). The model does not distinguish between methadone and buprenorphine.</td>
+</tr>
+<tr>
+<td><b>Counselling Only (S7)</b></td>
+<td>Individuals in this state receive counselling for their heroin dependence. Provision of psychological therapy only, on an outpatient basis (weekly or fortnightly) with case management.</td>
+</tr>
+<tr>
+<td><b>In-prison no treatment (S8)</b></td>
+<td>Individuals in this state are in prison; and have a history of heroin use.</td>
+</tr>
+<tr>
+<td><b>In-prison treatment (OST) (S9)</b></td>
+<td>Individuals in this state are in prison, have a history of heroin use, and are in receipt of OST in prison.</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>State</th>
+<th>Starting number</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>S1 abstinent</b></td>
+<td>22,000</td>
+</tr>
+<tr>
+<td><b>S2 irregular ongoing use</b></td>
+<td>53,000</td>
+</tr>
+<tr>
+<td><b>S3 regular, dependent use</b></td>
+<td>16,500</td>
+</tr>
+<tr>
+<td><b>S4 withdrawal</b></td>
+<td>20</td>
+</tr>
+<tr>
+<td><b>S5 Therapeutic community</b></td>
+<td>80</td>
+</tr>
+<tr>
+<td><b>S6 OST</b></td>
+<td>17,500</td>
+</tr>
+<tr>
+<td><b>S7 counselling</b></td>
+<td>100</td>
+</tr>
+<tr>
+<td><b>S8 prison not in treatment</b></td>
+<td>1,100</td>
+</tr>
+<tr>
+<td><b>S9 prison in treatment</b></td>
+<td>1,100</td>
+</tr>
+<tr>
+<td><b>TOTAL starting population</b></td>
+<td>111,400</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>In summary, we have selected a set of mutually exclusive states large enough to capture the complexity of the treatment process and few enough to ensure the resulting model is tractable and does not overburden the model with very detailed and specific data requirements.</p></section><section id="s3-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.2 Initial population</h3><p data-astro-cid-qsyhzaho>The initial population is distributed across each of the 9 states in the model (S1-abstinence; S2-irregular use; S3-regular/dependent use and no treatment; S4-withdrawal; S5-residential rehabilitation; S6-OST; S7-counselling; S8-prison; and S9-prison treatment). The figures for each state were derived from various data sources applicable to NSW and/or Australia where NSW-specific data were not available. The number of individuals in the four community treatment states were calculated first (with data from administrative records representing either episodes of care over one year, or census data – single day (<a href="#bib4">AIHW, 2013b</a>, <a href="#bib5">2013c</a>). The prison treatment numbers were also taken from administrative records (<a href="#bib5">AIHW, 2013c</a>). This resulted in approximately 19,000 individuals undertaking some form of treatment.</p><p data-astro-cid-qsyhzaho>This figure was then used to estimate the numbers of individuals in S3 (dependent use, no treatment). This was done by applying ‘unmet need for treatment’ estimates from Australian research (<a href="#bib13">Chalmers, Ritter, Heffernan, &amp; McDonnell, 2009</a>) and other confidential data sources. A range of estimates was obtained (between a low of 4,434 people and a high of 36,356). In the absence of better data, we used the mean of the estimates (16,500).</p><p data-astro-cid-qsyhzaho>For the prison populations, we know that of the total 9,897 prison population in NSW (<a href="#bib7">Australian Bureau Statistics, 2013</a>), 30.6% NSW inmates report heroin use prior to their prison term (<a href="#bib49">Kevin, 2005</a>). We also know that there were 1,661 in OST in prison at any point in time (<a href="#bib5">AIHW, 2013c</a>), indicating that there were similar number of those who have used heroin prior to imprisonment that are not on OST. We also adjusted for remand numbers: NSW Criminal Courts Statistics Reports (see <a href="http://www.bocsar.nsw.gov.au/Pages/bocsar_court_stats/bocsar_court_stats.aspx">http://www.bocsar.nsw.gov.au/Pages/bocsar_court_stats/bocsar_court_stats.aspx</a>) noted that approximately 29% of prisoners were on remand. The final population numbers for the prison states were reduced by this amount.</p><p data-astro-cid-qsyhzaho>Finally, we required the numbers of abstinent (S1) and irregular (S2) heroin users. The average rate of abstinence amongst Australian heroin users was estimated in the longitudinal Australian Treatment Outcome Study (ATOS) (<a href="#bib19">Darke <i>et al</i>., 2007</a>; Ross, 2004 and own analyses) revealing a mean percentage abstinence at each of the follow-up points (3, 12, 24, and 36 months) to be 25%, based on the mean % of abstinence from ATOS at 3, 12, 24 &amp; 36 months (12.27, 21.71, 32.53, 34.65 respectively. The 25% was applied to the existing population numbers for heroin use (which was S3 through to S9 inclusive) to establish the population number for S1. For the number of irregular, non-dependent and not-in-treatment people using heroin in NSW (S2), <a href="#bib23">Day <i>et al</i>. (2006)</a> reported a multiplier of “2.5 recreational heroin users to regular heroin users”. They derived the 2.5 multiplier from two sources (the NSMHWB ratio of past year heroin use to opioid dependence, and a BOCSAR report (<a href="#bib97">Weatherburn &amp; Lind, 1997</a>). Using this method would give an estimate of 62,380 in S2. However, other data sources suggest a lower multiplier of 1.5 (<a href="#bib2">AIHW, 2010</a>; <a href="#bib86">Stafford, 2013</a>). We took the main estimate to be close to a 1.5 multiplier (rather than the higher 2.5), resulting in an S2 population of 53,000.</p><p data-astro-cid-qsyhzaho>In describing the initial population at time zero in the model, we also defined the basic characteristics of each individual at the start. The following characteristics were used: age; gender; number of treatment episodes; HIV status and HCV status. We obtained the unit record ATOS data (<a href="#bib19">Darke <i>et al</i>., 2007</a>; Darke, Ross, <i>et al</i>., 2005; <a href="#bib72">Ross <i>et al</i>., 2004</a>; <a href="#bib81">Shanahan <i>et al</i>., 2006</a>) for the ATOS baseline, 3, 12, 24 and 36 month interviews and used the unit record data for a number of parameters (henceforth referred to as ATOS data). Participants had the same distributions of age, gender and number of treatment episodes in all states at baseline.</p><p data-astro-cid-qsyhzaho>To estimate the number of individuals at baseline in the model who were HCV positive, we used NSW-specific data (<a href="#bib82">Shand <i>et al</i>., 2014</a>) indicating that 85% of clients tested in OST treatment were anti-HCV positive and 65% of these were RNA (ribonucleic acid) positive. Applying the 85% antibody HCV positive to our study population results in 95,471 individuals of whom 62,056 were RNA positive. The number of baseline HIV positive cases was estimated from NSW surveillance data (<a href="#bib92">The Kirby Institute, 2014</a>) resulting in 300 existing cases. People who are HCV and HIV positive were assigned randomly based on age groups at the start of the model to meet the estimated numbers of HCV and HIV cases, and for HCV according to state of disease progression (<a href="#bib58">National Centre in HIV Epidemiology and Clinical Research, 2009</a>). The acquisition of HCV over the course of the model (newly acquired HCV cases) was estimated from the annual incidence rate (5.9 per 100 PY (4.4 to 7.5) (<a href="#bib91">The Kirby Institute, 2013</a>) of those who are in a drug using state in a given year and who do not already have HCV. Eighteen new HIV infections were included per annum.</p></section><section id="s3-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.3 Transition probabilities</h3><p data-astro-cid-qsyhzaho>The model simulates life trajectories of these 111,400 people based on the transition matrix, which provides all possible transitions from one state to other states over participants’ lifetime. The possible transitions are determined by the availability of treatment modalities in NSW and characteristics of heroin use such as participating in treatment, abstinence, relapse, and so on. Multiple datasets and published literature were used or combined to estimate the parameters for transition functions/probabilities.</p><p data-astro-cid-qsyhzaho>We approached the development of individual transitions in a two-step fashion. In the first step we established a generic probability for transition from one community state to another. In the second step we then introduced individual characteristics which influence the generic (or base case) transition. Two data sources were used: the ATOS data (<a href="#bib18">Darke, Mills, Ross, &amp; Teesson, 2011</a>; <a href="#bib19">Darke <i>et al</i>., 2007</a>; Darke, Ross, <i>et al</i>., 2005; Darke, Williamson, 2005; <a href="#bib73">Ross <i>et al</i>., 2006</a>; <a href="#bib81">Shanahan <i>et al</i>., 2006</a>; <a href="#bib87">Teesson, Havard, Ross, &amp; Darke, 2006</a>; <a href="#bib89">Teesson <i>et al</i>., 2007</a>); and published research from both Australia and overseas. The ATOS is a longitudinal dataset that follows heroin users in Australia since 2001–2002. There were 825 heroin users who were interviewed at the baseline in 2001–2002, of whom 277 entered maintenance therapy, 288 entered withdrawal treatment, 180 entered residential rehabilitation and 80 were recruited while not in any treatment. The participants were then re-interviewed at 3, 12, 24 and 36 months to observe the change in the modalities of treatment, as well as some critical aspects of heroin use such as demographics, criminal activities, health and employment over time. The transitions out of the modalities of treatment started at the baseline are expected to reflect the path/progression for people who use heroin. Using the ATOS unit record data, we identified 699 transitions in total. In some cases the cell sizes were small (less than 10); transitions to a current state were not able to distinguish S2 from S3 in the data; and previous states were limited to S4, S5, S6 and S7 (the prior drug using states were unknown). Nonetheless the data provided a starting point for establishing the probability of a transition from one state to another (see <a href="#table3">Table 3</a>).</p><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th colspan="2" rowspan="2"/>
+<th colspan="7">Current state</th>
+</tr>
+<tr>
+<th>State 1</th>
+<th>State 2+3</th>
+<th>State 4</th>
+<th>State 5</th>
+<th>State 6</th>
+<th>State 7</th>
+<th>Sum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4"><b>Previous state</b></td>
+<td><b>State 4</b></td>
+<td>0.1822</td>
+<td>0.4186</td>
+<td>0.0000</td>
+<td>0.1124</td>
+<td>0.2209</td>
+<td>0.0659</td>
+<td>1</td>
+</tr>
+<tr>
+<td><b>State 5</b></td>
+<td>0.4383</td>
+<td>0.2222</td>
+<td>0.0370</td>
+<td>0.0000</td>
+<td>0.1358</td>
+<td>0.1667</td>
+<td>1</td>
+</tr>
+<tr>
+<td><b>State 6</b></td>
+<td>0.4015</td>
+<td>0.4891</td>
+<td>0.0219</td>
+<td>0.0146</td>
+<td>0.0000</td>
+<td>0.0730</td>
+<td>1</td>
+</tr>
+<tr>
+<td><b>State 7</b></td>
+<td>0.4203</td>
+<td>0.3188</td>
+<td>0.0580</td>
+<td>0.0435</td>
+<td>0.1594</td>
+<td>0.0000</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>These data needed to be triangulated with other research and literature, especially for the small cell sizes and those where no ATOS data existed. A systematic review of the heroin treatment outcome literature, which reported direct transitions from one state to another, was undertaken (<a href="#bib6">Anthony, Warner, &amp; Kessler, 1994</a>; <a href="#bib23">Day <i>et al</i>., 2006</a>; <a href="#bib24">Deacon, Hines, Curry, Tynan, &amp; Day, 2014</a>; <a href="#bib34">Gossop, Marsden, Stewart, &amp; Kidd, 2003</a>; <a href="#bib35">Gossop, Marsden, Stewart, &amp; Traecy, 2002</a>; <a href="#bib44">Hser, Hoffman, Grella, &amp; Anglin, 2001</a>; <a href="#bib45">Hubbard, Craddock, &amp; Anderson, 2003</a>; <a href="#bib46">Jimenez-Treviño <i>et al</i>., 2011</a>; <a href="#bib54">Latkin, Knowlton, Hoover, &amp; Mandell, 1999</a>; <a href="#bib55">Lenne <i>et al</i>., 2001</a>; <a href="#bib57">Mattick <i>et al</i>., 2001</a>; <a href="#bib60">Nosyk, Anglin, Brecht, Lima, &amp; Hser, 2013</a>; <a href="#bib65">Price, Risk, &amp; Spitznagel, 2001</a>; <a href="#bib78">Scherbaum &amp; Specka, 2008</a>; <a href="#bib95">Waldorf, 1983</a>; <a href="#bib99">Zarkin <i>et al</i>., 2012</a>; <a href="#bib100">Zarkin <i>et al</i>., 2005</a>). Additionally, current Australian administrative treatment data were used to estimate likely transitions.</p><p data-astro-cid-qsyhzaho>The estimates from the literature were then combined with the ATOS data, and using expert judgement we established a generic transition probability, as seen in <a href="#table4">Table 4</a>. The most challenging aspect is combining the different types of data, weighting the Australian data more heavily and keeping in mind that most of the published literature (other studies, including ATOS and NEPOD (see Mattick <i>et al</i>. 2009)) are non-contiguous. That is, they report what the client status is at 3 or 12 months, but not what happened in-between (i.e. immediately after that treatment episode). Hence the ATOS data that we generated (specific to direct transitions between states) is likely to be the more reliable. The probabilities need to sum to 1.0, therefore they need to be adjusted across each row (which means one cannot take the single best estimate within any one cell but consider it in light of the other estimates across the whole row). This therefore entailed some further adjustments.</p><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>From:</th>
+<th>To:</th>
+<th>S1</th>
+<th>S2</th>
+<th>S3</th>
+<th>S4</th>
+<th>S5</th>
+<th>S6</th>
+<th>S7</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>S1 Abstinence</td>
+<td/>
+<td/>
+<td/>
+<td>1.0</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>S2 Irregular use</td>
+<td/>
+<td>1.0</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>S3 Dependence</td>
+<td/>
+<td>0.04</td>
+<td/>
+<td/>
+<td>0.01</td>
+<td>0.03</td>
+<td>0.90</td>
+<td>0.02</td>
+</tr>
+<tr>
+<td>S4 Withdrawal</td>
+<td/>
+<td>0.18</td>
+<td/>
+<td>0.52</td>
+<td/>
+<td>0.05</td>
+<td>0.20</td>
+<td>0.05</td>
+</tr>
+<tr>
+<td>S5 Residential rehab</td>
+<td/>
+<td>0.40</td>
+<td/>
+<td>0.40</td>
+<td/>
+<td/>
+<td>0.10</td>
+<td>0.10</td>
+</tr>
+<tr>
+<td>S6 OTP</td>
+<td/>
+<td>0.40</td>
+<td/>
+<td>0.55</td>
+<td>0.02</td>
+<td>0.01</td>
+<td/>
+<td>0.02</td>
+</tr>
+<tr>
+<td>S7 Counselling</td>
+<td/>
+<td>0.30</td>
+<td/>
+<td>0.50</td>
+<td>0.05</td>
+<td>0.05</td>
+<td>0.10</td>
+<td/>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>Finally, one needs to recall that the vast majority of people who use heroin cycle rapidly; so most will actually land in S1 for at least one or two days after a treatment episode, but then quickly cycle out into S3 and then subsequently back into S4, 5, 6 or 7. So in this example, the probabilities in S1 appear higher than the reported abstinence rates in the literature but are then accommodated in the model through the LOS curves (which then adjust for how long someone stays in that state).</p><p data-astro-cid-qsyhzaho>The second step in establishing transition probabilities entailed taking into consideration individual characteristics, which may influence the likelihood of an individual transitioning based on his/her age, gender, treatment history, and LOS. These three variables were selected because each of these three has been shown across many studies to be associated with trajectories or careers of heroin use.</p><p data-astro-cid-qsyhzaho>The criteria by which we determined whether to include a variation for these characteristics included: whether there was sufficiently robust evidence across contexts (e.g. from different countries, published research) that it is a known predictor; and whether there is also supporting Australian evidence, given that the model is Australian. In summary, we found three adjustments that met these criteria: the transition from S3 into S6 is adjusted by age (more likely if between 20 and 29 years of age); the transition into any treatment state is adjusted by gender (females more likely to be in treatment); and longer LOS in S5 and S6 increases the probability of transition to S1 compared to S3.</p><p data-astro-cid-qsyhzaho>The transition probabilities from any community state into prison relied on crime data, court data and sentencing data. The rate of offending in the population was determined from the published results of a study about engagement with the criminal justice system among opioid dependent people in NSW using the linked dataset of the Pharmaceutical Drugs of Addiction System and the Bureau of Crime Statistics and Research Re-offending Database (<a href="#bib25">Degenhardt <i>et al</i>., 2013</a>; <a href="#bib33">Gisev <i>et al</i>., 2014</a>). The probability that a crime would result in imprisonment in the model was determined by gender (male or female), the state that the person was in (with lower rates when in treatment states), the age of the person (with lower imprisonment rates for older individuals) and the treatment history (with higher rates for those not ever been in treatment).</p><p data-astro-cid-qsyhzaho>Having established the probability that any one individual would enter prison, the assignment to S8 (no treatment) or S9 (OST in prison) followed logic: those individuals from S6 continued their OST treatments and all individuals from S7 started OST treatment in prison, therefore, they go to the S9 state. Individuals from S4 and S5 were assumed to move to no treatment in prison (S8). Individuals from S3 were allocated to one of the two prison states based on data about heroin use and treatment before and after prison from an inmate population (Drug Use in Prison [DUIP]) survey (<a href="#bib50">Kevin, 2013</a>). Individuals from S1 were allocated to S8.</p><p data-astro-cid-qsyhzaho>The final set of transitions concerned moving out of prison and into the community. Individuals in prison without OST (S8) were assumed to move to the abstinence state (S1). The in-prison treatment individuals (S9) were assumed to move to abstinence (S1), irregular use (S2) or continue OST treatment in community (S6) with probabilities based on prior research (Larney, Toson, Burns <i>et al</i>., 2011).</p></section><section id="s3-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.4 Time step and length of stay</h3><p data-astro-cid-qsyhzaho>The time-step for each transition is delimited by the state (because average lengths of stay in some of the states are short (7 days) and for some states long (i.e. 6 months or 1 year). Individual lengths of stay reflect the heterogeneity of individuals moving between different states. Each ‘time to transition’ is determined for each individual probabilistically based on a distribution of LOS within each state coupled with individual characteristics. The model calculates the time to next event using individual characteristics (e.g. state, age, others). As such, time to transition (in days) is continuous in nature. Multiple data sources were used to establish an LOS distribution for each state. These data combined the ATOS data, literature and administrative data available in NSW, as detailed in <a href="#table5">Table 5</a>.</p><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>State</th>
+<th>LOS data sources</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>S1: Abstinence</b></td>
+<td>ATOS Dataset, (<a href="#bib41">Hser, 2007</a>; <a href="#bib60">Nosyk <i>et al</i>., 2013</a>; Shah, Galai, Celentano, Vlahov, &amp; Strathdee., 2006; <a href="#bib84">Simpson &amp; Marsh, 1986</a>; <a href="#bib90">Termorshuizen, Krol, Prins, &amp; Van Ameijden, 2005</a>)</td>
+</tr>
+<tr>
+<td><b>S2: Irregular use</b></td>
+<td>ATOS Dataset, (<a href="#bib14">Coffin &amp; Sullivan, 2013</a>; <a href="#bib36">Grönbladh &amp; Gunne, 1989</a>)</td>
+</tr>
+<tr>
+<td><b>S3: Regular use</b></td>
+<td>ATOS Dataset, (<a href="#bib9">Bell <i>et al</i>., 2006</a>)</td>
+</tr>
+<tr>
+<td><b>S4: Withdrawal</b></td>
+<td>ATOS Dataset<br/>Alcohol and Other Drug Treatment Services National Minimum Data Set (AODTS-NMDS) Dataset</td>
+</tr>
+<tr>
+<td><b>S5: Residential Rehab</b></td>
+<td>ATOS Dataset<br/>AODTS-NMDS Dataset</td>
+</tr>
+<tr>
+<td><b>S6: OTP</b></td>
+<td>ATOS Dataset, (<a href="#bib11">Burns <i>et al</i>., 2009</a>)</td>
+</tr>
+<tr>
+<td><b>S7: Counselling</b></td>
+<td>ATOS Dataset<br/>AODTS-NMDS Dataset</td>
+</tr>
+<tr>
+<td><b>S8, S9: Prison states</b></td>
+<td>All LOS determined by crime type (probability) and then the average sentence for that crime type (BOCSAR Court Data Report, 2012, see NSW Bureau of Crime Statistics and Research. <a href="http://www.bocsar.nsw.gov.au">http://www.bocsar.nsw.gov.au</a>).</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>A combined distribution for each state was created by using different data sources on LOS. To improve model sensitivity we created the final distribution (in days) from the monthly combined distributions using the specialist distribution software-EasyFit (<a href="#bib56">MathWave, 2014</a>). The procedures are as follows: first, a range of distributions were fitted to the raw data distribution; second, the goodness of fit test was conducted to determine the best fit, that is to find a distribution that has “closest distance” to the data (for detailed description of the goodness of fit test see <a href="http://www.mathwave.com/articles/goodness_of_fit.html#ks">http://www.mathwave.com/articles/goodness_of_fit.html#ks</a>); once the best goodness of fit was determined, 1000 random observations from the best fitted final distribution were generated to form a distribution of LOS for each state.</p><p data-astro-cid-qsyhzaho>The LOS could also potentially vary depending on individual characteristics (such as previous treatment episodes, age, gender, amount of drug use). Therefore, adjusted LOS based on individual characteristics were used only where sustained evidence exists (i.e. at least two empirical studies to confirm). The following adjustments to LOS were made based on individual characteristics: females had a longer LOS in S1 than males (<a href="#bib19">Darke <i>et al</i>., 2007</a>; <a href="#bib80">Shah <i>et al</i>., 2006</a>; <a href="#bib98">Xia <i>et al</i>., 2015</a>); the current episode of S1 was longer than the previous episode of S1 by 20% (<a href="#bib60">Nosyk <i>et al</i>., 2013</a>); if the number of previous treatment episodes &gt; 5, then LOS in a S3 episode decreases by 20% (Darke, Ross, <i>et al</i>., 2005; <a href="#bib80">Shah <i>et al</i>., 2006</a>); and three adjustments were made to the LOS in S6 (based on <a href="#bib9">Bell <i>et al</i>., 2006</a>; <a href="#bib11">Burns <i>et al</i>., 2009</a>; <a href="#bib19">Darke <i>et al</i>., 2007</a>; <a href="#bib22">Davstad, Stenbacka, Leifman, &amp; Romelsjo, 2009</a>; <a href="#bib43">Hser, Grella, Chou, &amp; Angelin, 1998</a>; <a href="#bib63">Parmenter <i>et al</i>., 2013</a>; <a href="#bib64">Peles, Kreek, Kellogg, &amp; Adelson, 2006</a>): older people stayed longer in S6 than younger people; females stayed longer; and subsequent episodes were longer than previous episodes.</p></section><section id="s3-5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.5 Mortality</h3><p data-astro-cid-qsyhzaho>The mortality rate amongst people who use heroin is significantly elevated relative to the general population (<a href="#bib26">Degenhardt, Larney, Randall, Burns, &amp; Hall, 2014</a>; <a href="#bib37">Hall, Degenhardt, &amp; Lynskey, 1999</a>; <a href="#bib52">Larney <i>et al</i>., 2014</a>). In addition, the mortality rate varies depending on heroin use status – for active heroin users the mortality rate is much higher than for those in stable treatment. A further complexity is that the mortality rate also varies depending on stage of treatment (or how long someone has been in treatment). For example, for OST (our S6), there is a heightened risk of mortality in the first week of treatment, after which time the mortality risk is much lower. For these various reasons, each state required its own mortality rate, and then within state, the LOS also determined mortality within state. The published Australian literature on mortality rates for people who use heroin was reviewed, and the mortality rates used in the model are detailed in <a href="#table6">Table 6</a>.</p><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>State: To</th>
+<th>State: From</th>
+<th>LoS</th>
+<th>CMR (Crude Mortality Rate) (all cause)</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>S1</b></td>
+<td>Any</td>
+<td>Fixed rate across LoS</td>
+<td>5.3 /1000 PY (5.0–5.6)</td>
+<td>(<a href="#bib27">Degenhardt <i>et al</i>., 2009</a>)</td>
+</tr>
+<tr>
+<td><b>S2</b></td>
+<td>Any</td>
+<td>Fixed rate across LOS</td>
+<td>5.3/1000 PY (5.0–5.6)</td>
+<td>(<a href="#bib26">Degenhardt <i>et al</i>., 2014</a>; <a href="#bib27">Degenhardt <i>et al</i>., 2009</a>)</td>
+</tr>
+<tr>
+<td rowspan="3"><b>S3</b></td>
+<td>S1, S4, S5, S7</td>
+<td>1st week<br/>2nd week</td>
+<td>17.4/1000 PY (11.7–25.0)<br/>20.1/1000 PY (13.8–28.4)</td>
+<td>(<a href="#bib27">Degenhardt <i>et al</i>., 2009</a>)</td>
+</tr>
+<tr>
+<td>S8</td>
+<td>1st 2 weeks out of prison</td>
+<td>59.5/1000 PY (41.3–83.6)</td>
+<td>(<a href="#bib26">Degenhardt <i>et al</i>., 2014</a>)</td>
+</tr>
+<tr>
+<td>S2, S6, S9</td>
+<td>For the rest of LoS</td>
+<td>11.5/1000 PY (11.1–12.0)</td>
+<td>(<a href="#bib27">Degenhardt <i>et al</i>., 2009</a>)</td>
+</tr>
+<tr>
+<td><b>S4</b></td>
+<td>Anywhere</td>
+<td>Fixed</td>
+<td>6.0/1000 PY (5.7–6.4)</td>
+<td/>
+</tr>
+<tr>
+<td><b>S5</b></td>
+<td>Anywhere</td>
+<td>Fixed</td>
+<td>6.0/1000 PY (5.7–6.4)</td>
+<td/>
+</tr>
+<tr>
+<td rowspan="3"><b>S6</b></td>
+<td>S3, S4, S5, S7, S8</td>
+<td>1st week of LoS<br/>2nd week</td>
+<td>39.5/1000 PY (31.9–48.8)<br/>17.0/1000 PY (11.8–23.6)</td>
+<td/>
+</tr>
+<tr>
+<td>S9</td>
+<td>1st week of LoS</td>
+<td>10.9/1000 PY (4.0–23.8)</td>
+<td>(<a href="#bib26">Degenhardt <i>et al</i>., 2014</a>)</td>
+</tr>
+<tr>
+<td>S6</td>
+<td>All other times</td>
+<td>5.6/1000 PY (5.2–5.9)</td>
+<td>(<a href="#bib27">Degenhardt <i>et al</i>., 2009</a>)</td>
+</tr>
+<tr>
+<td><b>S7</b></td>
+<td>S3, S4, S5, S6</td>
+<td>Fixed</td>
+<td>6.0/1000 PY (5.7–6.4)</td>
+<td/>
+</tr>
+<tr>
+<td><b>S8</b></td>
+<td>Any</td>
+<td>Fixed</td>
+<td>2.7/1000 PY (1.2–2.2)</td>
+<td>(<a href="#bib52">Larney <i>et al</i>., 2014</a>)</td>
+</tr>
+<tr>
+<td><b>S9</b></td>
+<td>Any</td>
+<td>Fixed</td>
+<td>0.7/1000 PY (0.3 to 1.2)</td>
+<td/>
+</tr>
+</tbody>
+</table></div></figure></section></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. Estimating costs</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The costs and benefits included in this study were:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Costs</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Heroin treatment</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Other healthcare utilization</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>HIV/AIDs (aquired immunodeficiency syndrome) & HCV treatment</p></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Criminal justice system (police, courts, prison, social cost of crime) benefits</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Productivity</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Life years saved (value of life year)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Value to family of treatment</p></li></ul></li></ul><section id="s4-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Heroin treatment costs</h3><p data-astro-cid-qsyhzaho>The primary source for resource use information for treatment was extracted from individual care plans developed for the National Drug and Alcohol-Clinical Care and Prevention (DA-CCP) (DA-CCP – the Drug and Alcohol – Clinical Care and Prevention (DA-CCP) planning tool commissioned by the Ministerial Council on Drug Strategy and undertaken by the NSW Ministry of Health as an InterGovernmental Committee on Drugs (IGCD) project, 2013). Care plans for opioid substitution, withdrawal, residential rehabilitation, and counselling for populations aged 18 to 64 were used. Information on staff type and time, pharmaceuticals, diagnostics, overhead and administrative allocations were obtained from respective care packages for each treatment. Once identified, resources were valued at 2012 AUD, sourced from NSW Wages and Salaries, Medical Benefit Schedule, Pharmaceutical Benefits Schedule (New South Wales [NSW] Health 2015, PBS 2015 (see <a href="http://www.mbsonline.gov.au/internet/mbsonline/publishing.nsf/Content/Home">http://www.mbsonline.gov.au/internet/mbsonline/publishing.nsf/Content/Home</a>), MBS 2015 (see <a href="http://www.pbs.gov.au/pbs/home;jsessionid=1mcv0rc5kdl7y1qxttkmtx8rue">http://www.pbs.gov.au/pbs/home;jsessionid=1mcv0rc5kdl7y1qxttkmtx8rue</a>). Additional information on doses and dosing was obtained from relevant sources (<a href="#bib29">Doran <i>et al</i>., 2006</a>; <a href="#bib51">Larance <i>et al</i>., 2014</a>). Costs were estimated for an episode, and then a cost per day was calculated for use in the model. Costs for OST received in prison were modelled on the approach outlined by <a href="#bib96">Warren <i>et al</i>. (2006)</a>, with costs estimated for both methadone and buprenorphine.</p></section><section id="s4-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Other healthcare utilization costs</h3><p data-astro-cid-qsyhzaho>Other health care utilisation costs were estimated in a two-step process. First, self-report data from the ATOS cohort on last month utilisation of inpatient, emergency department, outpatient services, general practitioners, specialists, and ambulances by model state were obtained. Then, relevant unit costs were applied (Department of Health [DoH], 2014; (National Hospital Cost [NHC], 2015; <a href="#bib61">NSW Health, 2015</a>). These costs were then converted to daily costs and applied in the model.</p></section><section id="s4-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">HIV/AIDs and HCV treatment costs</h3><p data-astro-cid-qsyhzaho>The treatment costs for HCV treatment were estimated for each stage of the disease, the likely success rate of the treatment, and the current government cost per person (<a href="#bib92">The Kirby Institute, 2014</a>; <a href="#bib94">Visconti, Doyle, Weir, Shiell, &amp; Hellard, 2013</a>). The HIV treatment costs used a weighted average cost for treatment based on the current distribution of CD counts and relevant clinical costs (<a href="#bib58">National Centre in HIV Epidemiology and Clinical Research, 2009</a>; <a href="#bib79">Schneider, Gray, &amp; Wilson, 2014</a>; <a href="#bib92">The Kirby Institute, 2014</a>).</p></section><section id="s4-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Criminal justice system costs</h3><p data-astro-cid-qsyhzaho>The costs of policing were estimated using the approach adopted by <a href="#bib12">Byrnes <i>et al</i>. (2012)</a>, with annual non-capital expenditure on policing (Productivity Commission, 2015; (<a href="#bib67">RGS, 2013a</a>). The average cost of a day in prison in NSW excluding capital costs was sourced from the Report on Government Services (Productivity Commission, 2015; <a href="#bib69">RGS, 2013c</a>) as was the average cost per charge in the Magistrates Court (Productivity Commission, 2015; <a href="#bib68">RGS, 2013b</a>), where the majority of all cases are heard. Social costs of crime were obtained from an Australian report which included the intangible losses, property losses, and medical costs by type of offence (<a href="#bib85">Smith, Jorna, Sweeney, &amp; Fuller, 2013</a>).</p></section><section id="s4-5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Productivity</h3><p data-astro-cid-qsyhzaho>Participants who are in community states (and specifically S1, S2, S3, S6 and S7) can be employed. Probabilities of employment were derived from the ATOS dataset and the Melbourne Injecting Cohort study (<a href="#bib40">Horyniak <i>et al</i>., 2013</a>) and NSW Labour Statistics 2012. It was assumed that longer duration of abstinence and being in OST increased the probability of employment. If the simulated individual was employed, the benefit was calculated as equal to days of employment multiplied by earnings per day (for unemployed, the benefit was equal to zero). The mean weekly earnings by gender and age from the Employee Earnings Statistics 2012 published by the Australian Bureau of Statistics was used to calculate the total earnings in a state. Therefore, benefits of employment was equal to the LoS (in days) times earnings per day.</p></section><section id="s4-6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Value of statistical life year</h3><p data-astro-cid-qsyhzaho>It was beyond the resources of this study to derive a specific value of a statistical life year, therefore we turned to the literature. Previously, the Australian government commissioned a review of the literature, the methods and issues around the value of a statistical life (<a href="#bib1">Access Economics, 2008</a>). This review located 17 relevant Australian studies. The mean value of a life from these 17 studies was $5.7 million (range $0.9 to $28.4 million AUD in 2006). After further analysis, the recommendations from this report suggest using $6.0 million AUD in 2006 (range $3.7 to $8.1 million). After adjusting to AUD from 2012 with the CPI, the value of a life was estimated to be $7.0 million (range $5.87 – $8.34 million AUD). This value was annuitized over 80 years with a 3% discount rate. Then the total value over the remaining expected lifespan was calculated, driven by age at death for each individual in the model.</p></section><section id="s4-7" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Value to family of treatment</h3><p data-astro-cid-qsyhzaho>A separate Discrete Choice Experiment study was undertaken to establish an appropriate value of the benefit of heroin treatment for family members. This study revealed that a family member was willing to pay AU$33.35 per week for treatment. We estimated that each person would have two family members, thus AU$66.70 was applied as a benefit (value) of treatment for every week a person was in treatment (S4, S5, S6, S7).</p><p data-astro-cid-qsyhzaho><a href="#table7">Tables 7</a> to <a href="#table11">11</a> provide the majority of the unit costs used in the model per participant, per day or per disease state.</p><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>State</th>
+<th>tSate description</th>
+<th>Per day costs (AUD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>S1</b></td>
+<td>Abstinence</td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td><b>S2</b></td>
+<td>Irregular Use</td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td><b>S3</b></td>
+<td>Dependent Use No Treatment</td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td><b>S4</b></td>
+<td>Withdrawal</td>
+<td>$410.77</td>
+</tr>
+<tr>
+<td><b>S5</b></td>
+<td>Residential Rehab</td>
+<td>$139.36</td>
+</tr>
+<tr>
+<td><b>S6</b></td>
+<td>Opioid Treatment Program</td>
+<td>$27.09</td>
+</tr>
+<tr>
+<td><b>S7</b></td>
+<td>Counselling</td>
+<td>$18.49</td>
+</tr>
+<tr>
+<td><b>S9</b></td>
+<td>Prison treatment</td>
+<td>$224.81</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table8" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 8.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>State</th>
+<th>State name</th>
+<th>Per month costs (AUD)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>S1</b></td>
+<td>Abstinence</td>
+<td>$649.00</td>
+</tr>
+<tr>
+<td><b>S2</b></td>
+<td>Irregular Use</td>
+<td>$649.00</td>
+</tr>
+<tr>
+<td><b>S3</b></td>
+<td>Dependent Use No Treatment</td>
+<td>$441.00</td>
+</tr>
+<tr>
+<td><b>S4</b></td>
+<td>Withdrawal</td>
+<td>$648.00</td>
+</tr>
+<tr>
+<td><b>S5</b></td>
+<td>Residential Rehab</td>
+<td>$392.00</td>
+</tr>
+<tr>
+<td><b>S6</b></td>
+<td>Opioid Treatment Program</td>
+<td>$860.00</td>
+</tr>
+<tr>
+<td><b>S7</b></td>
+<td>Counselling</td>
+<td>$566.00</td>
+</tr>
+<tr>
+<td><b>S8</b></td>
+<td>Prison No Treatment</td>
+<td>$0.00</td>
+</tr>
+<tr>
+<td><b>S9</b></td>
+<td>Prison Treatment</td>
+<td>$0.00</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table9" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 9.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td><b>HIV treatment costs</b></td>
+<td>$20,678</td>
+</tr>
+<tr>
+<td><b>HCV treatment costs</b></td>
+<td>$15,526</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table10" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 10.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Crime type</th>
+<th>Police costs</th>
+<th>Social costs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Homicide and related offences</td>
+<td>$ 13,484.80</td>
+<td>$2,731,649.19</td>
+</tr>
+<tr>
+<td>Acts intended to cause injury</td>
+<td>$3,038.83</td>
+<td>$2,650.68</td>
+</tr>
+<tr>
+<td>Sexual assault and related offences</td>
+<td>$ 4,178.39</td>
+<td>$3,959.32</td>
+</tr>
+<tr>
+<td>Dangerous or negligent acts endangering persons</td>
+<td>$2,469.05</td>
+<td>$2,904.72</td>
+</tr>
+<tr>
+<td>Abduction and other offences against the person</td>
+<td>$4,273.35</td>
+<td>$2,904.72</td>
+</tr>
+<tr>
+<td>Robbery or extortion and related offences</td>
+<td>$7,312.18</td>
+<td>$5,179.91</td>
+</tr>
+<tr>
+<td>Unlawful entry or burglary or break and enter</td>
+<td>$3,988.46</td>
+<td>$1,060.68</td>
+</tr>
+<tr>
+<td>Theft and related offences</td>
+<td>$3,228.76</td>
+<td>$2,883.83</td>
+</tr>
+<tr>
+<td>Fraud or deception and related offences</td>
+<td>$3,133.79</td>
+<td>$506.05</td>
+</tr>
+<tr>
+<td>Illicit drug offences</td>
+<td>$2,753.94</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Prohibited and regulated weapons offences</td>
+<td>$3,228.76</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Property damage and environmental pollution</td>
+<td>$2,564.01</td>
+<td>$1,060.68</td>
+</tr>
+<tr>
+<td>Public order offences</td>
+<td>$3,703.57</td>
+<td>$97.16</td>
+</tr>
+<tr>
+<td>Traffic and vehicle regulatory offences</td>
+<td>$1,139.56</td>
+<td>$97.16</td>
+</tr>
+<tr>
+<td>Offences against justice procedures</td>
+<td>$3,703.57</td>
+<td>$97.16</td>
+</tr>
+<tr>
+<td>Miscellaneous offences</td>
+<td>$2,012.00</td>
+<td>0</td>
+</tr>
+<tr>
+<td>COURT COST (Fixed)</td>
+<td/>
+<td>$7,712</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table11" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 11.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>2012 AUD – weighted by distribution of offences</th>
+<th>Applied to</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>Police costs</b></td>
+<td>$3,090</td>
+<td>• those found not guilty<br/>
+• those found guilty and not sentenced to prison</td>
+</tr>
+<tr>
+<td><b>Court costs</b></td>
+<td>$7,712</td>
+<td>• those found not guilty<br/>
+• those found guilty and not sentenced to prison</td>
+</tr>
+<tr>
+<td><b>Social costs</b></td>
+<td>$1,144</td>
+<td>• those found guilty and not sentenced to prison</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>For every person who goes to prison, 2 people will be found not guilty and costs were valued at $10,802 and 9 will be found guilty but not go to prison, valued at $11,946.</p></section></div></details><details id="s5" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">5. Verification and validation</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Verification is the process of determining whether a computer program-based simulation model perform as it is intended, whereas validation refers to the process of determining whether the conceptual model (instead of computer program-based simulation model) accurately represents the real world system under study (<a href="#bib76">Sargent, Kuhl, Steiger, Armstrong, &amp; Joines, 2005</a>).</p><p data-astro-cid-qsyhzaho>The simulation model was written in Java using the Eclipse IDE. The computer program was written following a modular approach (object orient programming) for model components. Several verification tests were defined for each of the modules to verify the intermediate simulation outputs. The logic for transition of individuals within the conceptual model was matched with the output from the simulation model using Eclipse IDE debugger. To verify that the conceptual logic was correctly coded in the computer program, we randomly selected 100 individuals in the simulation model and traced their behaviour and matched that against conceptual logic. The transition summary from the model for these 100 individuals was manually compared against the expected transition summary. The transitions for these individuals matched the conceptual logic implemented in the computer program. In this situation, we verified the simulation response by running a simplified version of the simulation program with a known analytical solution. A simplified version of the model was run according to the changed parameters, i.e., age was fixed to 20 years, treatment history of individuals were assumed to be 1 episode each of S4 – S7, LOS for all individuals was assumed to be 360 days, initial population was considered to be 100,000, mortality rates for HIV, Hep-C was assumed to be zero, and initial population was distributed equally from state 1 to 10 (i.e. 10,000 each). The analytical solution obtained by using the above mentioned parameters in the transition functions was then used to compare with the simplified simulation model.</p><section id="s5-1-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Mortality rate verification</h3><p data-astro-cid-qsyhzaho>The individual deaths from each state in a year were recorded to verify whether the mortality rate from the simulation model output was similar to the rates used in the input. <a href="#table12">Table 12</a> illustrates that the mortality rates from the simulation model were similar to the input rates. There were some minor differences in the rates due to the randomness in assigning crime probabilities in the model.</p><figure id="table12" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 12.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>State</th>
+<th>Mortality rate from simulation</th>
+<th>Input mortality rate (CI interval 95%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><b>S1</b></td>
+<td>0.0057</td>
+<td>0.005 – 0.0056</td>
+</tr>
+<tr>
+<td><b>S2</b></td>
+<td>0.0060</td>
+<td>0.005 – 0.0056</td>
+</tr>
+<tr>
+<td><b>S3</b></td>
+<td>0.0106</td>
+<td>0.0111 – 0.0120</td>
+</tr>
+<tr>
+<td><b>S4</b></td>
+<td>0.0047</td>
+<td>0.0057 – 0.0064</td>
+</tr>
+<tr>
+<td><b>S5</b></td>
+<td>0.0061</td>
+<td>0.0057 – 0.0064</td>
+</tr>
+<tr>
+<td><b>S6</b></td>
+<td>0.0057</td>
+<td>0.0052 – 0.0059</td>
+</tr>
+<tr>
+<td><b>S7</b></td>
+<td>0.0056</td>
+<td>0.0057 – 0.0064</td>
+</tr>
+<tr>
+<td><b>S8</b></td>
+<td>0.0024</td>
+<td>0.002 – 0.0037</td>
+</tr>
+<tr>
+<td><b>S9</b></td>
+<td>0.00038</td>
+<td>0.0003 – 0.0012</td>
+</tr>
+</tbody>
+</table></div></figure></section><section id="s5-1-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Imprisonment rates verification</h3><p data-astro-cid-qsyhzaho>Rates of imprisonment from the simulation model were compared against the input rates based on the simplified version of the model. <a href="#table13">Table 13</a> illustrates that the imprisonment rates from simulation model were similar to the input rates.</p><figure id="table13" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 13.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">From Simulation</th>
+<th colspan="2">From the Input data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td/>
+<td><b>To S8</b></td>
+<td><b>To S9</b></td>
+<td><b>To S8</b></td>
+<td><b>To S9</b></td>
+</tr>
+<tr>
+<td><b>S1</b></td>
+<td>0.0022</td>
+<td>-</td>
+<td>0.0026</td>
+<td>-</td>
+</tr>
+<tr>
+<td><b>S2</b></td>
+<td>0.0286</td>
+<td>-</td>
+<td>0.0282</td>
+<td>-</td>
+</tr>
+<tr>
+<td><b>S3</b></td>
+<td>0.0404</td>
+<td>0.0456</td>
+<td>0.0408</td>
+<td>0.0408</td>
+</tr>
+<tr>
+<td><b>S4</b></td>
+<td>0.0414</td>
+<td>0.0429</td>
+<td>0.0408</td>
+<td>0.0408</td>
+</tr>
+<tr>
+<td><b>S5</b></td>
+<td>0.0400</td>
+<td>0.0430</td>
+<td>0.0408</td>
+<td>0.0408</td>
+</tr>
+<tr>
+<td><b>S6</b></td>
+<td>-</td>
+<td>0.0784</td>
+<td>-</td>
+<td>0.0816</td>
+</tr>
+<tr>
+<td><b>S7</b></td>
+<td>0.0427</td>
+<td>0.0395</td>
+<td>0.0408</td>
+<td>0.0408</td>
+</tr>
+</tbody>
+</table></div></figure></section><section id="s5-1-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Community transition rates verification</h3><p data-astro-cid-qsyhzaho>Transitions to community states were recorded and verified for correctness in the model. <a href="#table14">Table 14</a> illustrates that the community transition rates from the simulation model were similar to the input rates.</p><figure id="table14" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 14.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th colspan="8">Simulation output</th>
+<th colspan="8">Input rates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td/>
+<td><b>S1</b></td>
+<td><b>S2</b></td>
+<td><b>S3</b></td>
+<td><b>S4</b></td>
+<td><b>S5</b></td>
+<td><b>S6</b></td>
+<td><b>S7</b></td>
+<td/>
+<td><b>S1</b></td>
+<td><b>S2</b></td>
+<td><b>S3</b></td>
+<td><b>S4</b></td>
+<td><b>S5</b></td>
+<td><b>S6</b></td>
+<td><b>S7</b></td>
+</tr>
+<tr>
+<td><b>S1</b></td>
+<td>-</td>
+<td>-</td>
+<td>1</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td><b>S1</b></td>
+<td>-</td>
+<td>-</td>
+<td>1</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><b>S2</b></td>
+<td>1</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td><b>S2</b></td>
+<td>1</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td><b>S3</b></td>
+<td>0.16</td>
+<td>-</td>
+<td>-</td>
+<td>0.02</td>
+<td>0.03</td>
+<td>0.76</td>
+<td>0.03</td>
+<td><b>S3</b></td>
+<td>0.154</td>
+<td>-</td>
+<td>-</td>
+<td>0.015</td>
+<td>0.048</td>
+<td>0.750</td>
+<td>0.033</td>
+</tr>
+<tr>
+<td><b>S4</b></td>
+<td>0.18</td>
+<td>-</td>
+<td>0.52</td>
+<td>-</td>
+<td>0.05</td>
+<td>0.20</td>
+<td>0.05</td>
+<td><b>S4</b></td>
+<td>0.18</td>
+<td>-</td>
+<td>0.52</td>
+<td>-</td>
+<td>0.05</td>
+<td>0.20</td>
+<td>0.05</td>
+</tr>
+<tr>
+<td><b>S5</b></td>
+<td>0.60</td>
+<td>-</td>
+<td>0.33</td>
+<td>-</td>
+<td>-</td>
+<td>0.03</td>
+<td>0.04</td>
+<td><b>S5</b></td>
+<td>0.60</td>
+<td>-</td>
+<td>0.34</td>
+<td>-</td>
+<td>-</td>
+<td>0.04</td>
+<td>0.04</td>
+</tr>
+<tr>
+<td><b>S6</b></td>
+<td>0.39</td>
+<td>-</td>
+<td>0.56</td>
+<td>0.02</td>
+<td>0.01</td>
+<td>-</td>
+<td>0.02</td>
+<td><b>S6</b></td>
+<td>0.40</td>
+<td>-</td>
+<td>0.55</td>
+<td>0.02</td>
+<td>0.01</td>
+<td>-</td>
+<td>0.02</td>
+</tr>
+<tr>
+<td><b>S7</b></td>
+<td>0.30</td>
+<td>-</td>
+<td>0.50</td>
+<td>0.05</td>
+<td>0.05</td>
+<td>0.10</td>
+<td>-</td>
+<td><b>S7</b></td>
+<td>0.30</td>
+<td>-</td>
+<td>0.50</td>
+<td>0.05</td>
+<td>0.05</td>
+<td>0.10</td>
+<td>-</td>
+</tr>
+<tr>
+<td><b>S8</b></td>
+<td>0.30</td>
+<td>-</td>
+<td>0.60</td>
+<td>-</td>
+<td>-</td>
+<td>0.10</td>
+<td>-</td>
+<td><b>S8</b></td>
+<td>0.30</td>
+<td>-</td>
+<td>0.60</td>
+<td>-</td>
+<td>-</td>
+<td>0.10</td>
+<td>-</td>
+</tr>
+<tr>
+<td><b>S9</b></td>
+<td>-</td>
+<td>-</td>
+<td>0.10</td>
+<td>-</td>
+<td>-</td>
+<td>0.90</td>
+<td>-</td>
+<td><b>S9</b></td>
+<td>-</td>
+<td>-</td>
+<td>0.10</td>
+<td>-</td>
+<td>-</td>
+<td>0.90</td>
+<td/>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>Apart from these verifications, we also conducted verifications on the population aging, costs, benefits, state LOS, HIV and HCV infections and the associated illness progressions.</p></section><section id="s5-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Validation processes</h3><p data-astro-cid-qsyhzaho>Two main data sources were used for model validation: the MIX dataset (<a href="#bib40">Horyniak <i>et al</i>., 2013</a>), which is a Victorian cohort of people who inject drugs (N=688 at baseline with four follow-ups), with an average age of 26 years at the start of the study. This dataset was not used to parameterise the model. ATOS conducted an 11 year follow-up of the original participants. While the ATOS data from baseline 3, 12, 24 and 36 months were used to parameterise parts of the model, the later (11 year) follow-up data were not used (<a href="#bib88">Teesson <i>et al</i>., 2015</a>). We also validated the model outputs against published research on mortality rates (e.g. <a href="#bib74">Roxburgh &amp; Burns, 2015</a>). We ensured that the validation datasets were as closely matched as possible to the modelled data, so for example when we used the MIX dataset, given the young age of that cohort, we only took modelled results for simulated individuals between the ages of 18 and 30 years.</p><p data-astro-cid-qsyhzaho>There are many sources of uncertainty in the model outputs: (i) stochastic events of moving to one of several states, and; (ii) model inputs such as LOS and transition probabilities. Therefore, each model run may produce a different set of outcomes, which may or may not closely match with the validated data sources. Monte Carlo simulation (running the model 100 times given the tight confidence intervals) was implemented to generate the mean/range/distribution of the outputs in order to verify with other datasets.</p><p data-astro-cid-qsyhzaho>Six outputs from the model were validated against independent data sources: treatment patterns; heroin use; LOS/treatment exposure; criminal activity; imprisonment rate; and mortality rate. In relation to treatment patterns, there was excellent validation for the no treatment state movements (62% of the MIX sample, who were not in treatment at baseline, were not in treatment one year later. For our model this percentage was 63%). However, the simulated state transitions from OST did not match validation data: MIX showed that a large majority of participants remained in OST one year later (81%), whereas the model kept only 33% of individuals in OST one year later. The likely cause was the shorter LOS in S6, and the model insistence on individuals going to S1 (for at least one day) after S6. We undertook two adjustments to improve the model’s validity: revision to the S6 LOS and verification of the age/sex S6 formulae (which were initially incorrect). In the final model, the pattern from the MIX (validation data) was largely upheld, especially in the later years in the model. For S6, the MIX validation data show significantly increasing percentages over 5 years (from 36% at baseline to 67% at year 5). In the modelled result, the increase over the first five years is more modest (from 36% to 53%). However, by year 21, it is 68% and commensurate with the MIX data.</p><p data-astro-cid-qsyhzaho>The model’s outcomes are very closely matched with validated data regarding heroin abstinence from the 11 year ATOS study (75% in both modelled and validation data). This instils significant confidence in the model validity for an important outcome, i.e. heroin use. There also appears to be very good validation of the treatment exposure over time compared to ATOS year 11 results (median number of treatment episodes and days in treatment). As the treatment exposure in our model is driven by multiple transition probabilities, this is very reassuring.</p><p data-astro-cid-qsyhzaho>For the imprisonment and crime rates, we used ATOS 11 year self-reported data as the validation. The ATOS imprisonment rate was 10% by year 3; the model resulted in a prison rate of 6.02% by year 3. Arguably, therefore the imprisonment rate is low, relatively to the ATOS sample. On the other hand, the prison rate matches closely (verified) to the actual prison numbers in NSW (the data used to parameterise the model). The rates of detected crime, at around 20% accorded well with the ATOS rates (between 15% and 24%). The modelled rate at year 11 (16.7%) is lower than the ATOS rate at year 11 (22%), but is somewhat accounted for by exits from the model.</p><p data-astro-cid-qsyhzaho>In relation to mortality, across two different validation tasks, we find that the modelled mortality rate is possibly too low (using 11 year ATOS as validation) and too high (using actual NSW deaths from opioid-related causes in NSW). The differences are likely due to cohort effects, inasmuch as the NSW deaths research (<a href="#bib74">Roxburgh &amp; Burns, 2015</a>) pertain to a time of high heroin purity and availability in NSW. Given the model was populated largely from data from this era (mortality rates as reported by <a href="#bib27">Degenhardt <i>et al</i> (2009)</a>), we would expect a better match with early 2000s mortality rates, rather than the later ATOS 11 year data, as has occurred.</p><p data-astro-cid-qsyhzaho>The final model, verified and validated, represents a 42-year history of a group of 111,400 individuals who have used or are currently using heroin at the model commencement. Each individual commences in one state and then proceeds through multiple transitions over time, as they age, develop treatment experience, contract HCV and/or die before aged 60.</p></section></div></details><details id="s6" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">6. Discussion and conclusion</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The MSM model described in this paper simulates a range of treatment services in the community and prison, and uses a large variety of datasets from illicit drug use surveys and published literature. Traditionally, simulation models in the field of illicit drug use have been either short-term, or focussed on single treatment options and with a lack of consideration for individual histories and attributes.</p><p data-astro-cid-qsyhzaho>MSM are increasingly being used in health-care decision-making. These models have a better ability to represent the heterogeneity that is required in complex modelling scenarios such as illicit drug use. Individuals in these models accommodate their histories to influence the probabilities of the next transition without creating too large a number of health states. The model development described herein followed good modelling practice described in <a href="#bib48">Karnon <i>et al</i>. (2012)</a>. The model has been verified internally by extensive logic reviews with domain experts and by analysing the simulation response by running a simplified version of the simulation program with known analytical solutions. All of these were consistent with expected modelling parameters and assumptions. Various features of the model were validated against external datasets and published data in this field, which were not used as an input for model parameterization. The model output seems coherent and does not significantly diverge from external datasets.</p><p data-astro-cid-qsyhzaho>The proposed model has, unsurprisingly, a number of limitations. In real-life, there are more than nine possible states for heroin use, including some other, relatively minor treatment types, such as injectable heroin. It is not possible to represent every possible treatment state in the model: the data are simply not available and the model itself would become intractable. Additionally, there are gradations in heroin use. Our model somewhat crudely provides for three heroin use options: abstinence, irregular use or dependent use. While these three capture the broad array of heroin use, within each of the three, there can be much heterogeneity; for example our abstinence state (S1) includes both, those who are temporarily abstaining for a brief period of time, and those who have ‘recovered’ and will never resume heroin use. The parameterisation of LOS by individual characteristics overcomes this to some extent. In the prison states only one treatment type was considered (OST) for individuals receiving treatment in prison. This was due to the paucity of datasets informing different type of treatments received by drug using individuals. There was a lack of past research data to drive the mortality probabilities beyond those determined by state and LOS, but this is an important area for further work. Finally, the individual level model required a significant amount of data for modelling various aspects such as individual history, LOS, incarceration, mortality, and transitions to community. Moreover, the computational time required to run the model is generally higher than the simplified cohort based compartmental models.</p><p data-astro-cid-qsyhzaho>Having developed a verified and valid model of heroin use and its transitions for one Australian state (NSW), the deployment of the model for policy simulations can now commence. While there are many possible simulations, the most obvious initial ones to undertake are: increasing the availability/accessibility of treatment (for example through increasing the probability of inflow into treatment); and improving treatment outcomes (for example through increasing LOS). The main outcome of policy interest from these simulations is to compare the Net Social Benefit under the current status quo (that is the basecase model results) with the Net Social Benefit produced by the alternate scenarios. We hope that the policy simulations will provide economic data of relevance and value to current decision-makers.</p></div></details></div><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2008). <em data-astro-cid-oer3kof4>The health of nations: the value of a statistical life</em>. Canberra: Australian Safety and Compensation Council.</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2010). <em data-astro-cid-oer3kof4>2010 National Drug Strategy Household Survey Canberra</em>. Australian Institute of Health and Welfare.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2013). <em data-astro-cid-oer3kof4>2013 National Drug Strategy Household Survey. Detailed Findings Canberra</em>. Australian Institute of Health and Welfare.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2013). <em data-astro-cid-oer3kof4>Alcohol and other drug treatment services in Australia 2010–11: state and territory findings</em>. Canberra: Australian Institute of Health and Welfare.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2013). <em data-astro-cid-oer3kof4>National Opioid Pharmacotherapy Statistics Annual Data Collection 2012</em>. Canberra: Australian Institute of Health and Welfare.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Anthony, JC, Warner, LA, Kessler, RC (1994). <span data-astro-cid-oer3kof4>Comparative epidemiology of dependence on tobacco, alcohol, controlled substances, and inhalants: basic findings from the National Comorbidity Survey</span>. <em data-astro-cid-oer3kof4>Experimental and Clinical Psychopharmacology</em>, <strong data-astro-cid-oer3kof4>2</strong>, 244–268.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2013). <span data-astro-cid-oer3kof4>Prisoner characteristics</span>. <a href="http://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/4517.0∼2013∼Main%20Features∼Prisoner%20characteristics,%20states%20and%20territories∼5" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://www.abs.gov.au/ausstats/abs@.nsf/Lookup/by%20Subject/4517.0∼2013∼Main%20Features∼Prisoner%20characteristics,%20states%20and%20territories∼5</a>.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Barnett, P (1999). <span data-astro-cid-oer3kof4>The cost-effectiveness of methadone maintenance as a health care intervention</span>. <em data-astro-cid-oer3kof4>Addiction</em>, <strong data-astro-cid-oer3kof4>94</strong>, 479–488.</span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Bell, J, Burrell, T, Indig, D, Gilmour, S (2006). <span data-astro-cid-oer3kof4>Cycling in and out of treatment; participation in methadone treatment in NSW, 1990-2002</span>. <em data-astro-cid-oer3kof4>Drug Alcohol Depend</em>, <strong data-astro-cid-oer3kof4>81</strong>, 55–61.</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Briggs, A, Sculpher, M (1998). <span data-astro-cid-oer3kof4>An introduction to Markov modelling for economic evaluation</span>. <em data-astro-cid-oer3kof4>Phamacoeconomics</em>, <strong data-astro-cid-oer3kof4>13</strong>, 397–409.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Burns, L, Randall, D, Hall, WD, Law, M, Butler, T, Bell, J, Degenhardt, L (2009). <span data-astro-cid-oer3kof4>Opioid agonist pharmacotherapy in New South Wales from 1985 to 2006: patient characteristics and patterns and predictors of treatment retention</span>. <em data-astro-cid-oer3kof4>Addiction</em>, <strong data-astro-cid-oer3kof4>104</strong>, 1363–1372.</span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Byrnes, JM, Doran, CM, Shakeshaft, AP (2012). <span data-astro-cid-oer3kof4>Cost per incident of alcohol-related crime in New South Wales</span>. <em data-astro-cid-oer3kof4>Drug and Alcohol Review</em>, <strong data-astro-cid-oer3kof4>37</strong>, 854–860.</span></li><li id="bib13" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Chalmers, J, Ritter, A, Heffernan, M, McDonnell, G (2009). <span data-astro-cid-oer3kof4>Modelling pharmacotherapy maintenance in Australia exploring affordability, availability, accessibility and quality using system dynamics Canberra. ANCD</span>.</span></li><li id="bib14" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Coffin, PO, Sullivan, SD (2013). <span data-astro-cid-oer3kof4>Cost-effectiveness of distributing naloxone to heroin users for lay overdose reversal</span>. <em data-astro-cid-oer3kof4>Annals of Internal Medicine</em>, <strong data-astro-cid-oer3kof4>158</strong>, 1–9.</span></li><li id="bib15" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Collins, DJ, Lapsley, HM (2008). <em data-astro-cid-oer3kof4>The Costs of Tobacco, Alcohol and Illicit Drug Abuse to Australian Society in 2004/05</em>. Canberra: Department of Health and Ageing.</span></li><li id="bib16" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Connock, M, Juarez-Garcia, A, Jowett, S, Frew, E, Liu, Z, Taylor, RJ, Taylor, RS (2007). <span data-astro-cid-oer3kof4>Methadone and buprenorphine for the management of opioid dependence: a systematic review and economic evaluation</span>.</span></li><li id="bib17" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2013). <span data-astro-cid-oer3kof4>DA-CCP - the Drug and Alcohol - Clinical Care and Prevention (DA-CCP) planning tool commissioned by the Ministerial Council on Drug Strategy and undertaken by the NSW Ministry of Health as an InterGovernmental Committee on Drugs (IGCD) project</span>.</span></li><li id="bib18" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Darke, S, Mills, K, Ross, J, Teesson, M (2011). <span data-astro-cid-oer3kof4>Rates and correlates of mortality amongst heroin users: Findings from the Australian Treatment Outcome Study (ATOS), 2001–2009</span>. <em data-astro-cid-oer3kof4>Drug and Alcohol Dependence</em>, <strong data-astro-cid-oer3kof4>115</strong>, 190–195.</span></li><li id="bib19" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Darke, S, Ross, J, Mills, KL, Williamson, A, Havard, A, Teesson, M (2007). <span data-astro-cid-oer3kof4>Patterns of sustained heroin abstinence amongst long-term, dependent heroin users: 36 months findings from the Australian Treatment Outcome Study (ATOS)</span>. <em data-astro-cid-oer3kof4>Addictive Behaviors</em>, <strong data-astro-cid-oer3kof4>32</strong>, 1897–1906.</span></li><li id="bib20" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Darke, S, Ross, J, Teesson, M, Ali, R, Cooke, R, Ritter, A, Lynskey, M (2005). <span data-astro-cid-oer3kof4>Factors associated with 12 months continuous heroin abstinence: findings from the Australian Treatment Outcome Study (ATOS)</span>. <em data-astro-cid-oer3kof4>Journal of Substance Abuse Treatment</em>, <strong data-astro-cid-oer3kof4>28</strong>, 255–263.</span></li><li id="bib21" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Darke, S, Williamson, A, Ross, J, Teesson, M (2005). <span data-astro-cid-oer3kof4>Non-fatal heroin overdose, treatment exposure and client characteristics: Findings from the Australian Treatment Outcome Study (ATOS)</span>. <em data-astro-cid-oer3kof4>Drug and Alcohol Review</em>, <strong data-astro-cid-oer3kof4>24</strong>, 425–432.</span></li><li id="bib22" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Davstad, I, Stenbacka, M, Leifman, A, Romelsjo, A (2009). <span data-astro-cid-oer3kof4>An 18-year follow-up of patients admitted to methadone treatment for the first time</span>. <em data-astro-cid-oer3kof4>Journal of Addictive Diseases</em>, <strong data-astro-cid-oer3kof4>28</strong>, 39–52.</span></li><li id="bib23" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Day, C, Degenhardt, L, Hall, W (2006). <span data-astro-cid-oer3kof4>Changes in the initiation of heroin use after a reduction in heroin supply</span>. <em data-astro-cid-oer3kof4>Drug and Alcohol Review</em>, <strong data-astro-cid-oer3kof4>25</strong>, 307–313.</span></li><li id="bib24" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Deacon, RM, Hines, S, Curry, K, Tynan, M, Day, CA (2014). <span data-astro-cid-oer3kof4>Feasibility of ambulatory withdrawal management delivered in a NSW drug health service and correlates of completion</span>. <em data-astro-cid-oer3kof4>Australian Health Review</em>, <strong data-astro-cid-oer3kof4>38</strong>, 186–189.</span></li><li id="bib25" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Degenhardt, L, Gisev, N, Trevena, J, Larney, J, Kimber, J, Burns, L, Weatherburn, D (2013). <span data-astro-cid-oer3kof4>Engagement with the criminal justice system among opioid-dependent people: a retrospective cohort study</span>. <em data-astro-cid-oer3kof4>Addiction</em>, <strong data-astro-cid-oer3kof4>108</strong>, 2152–2165.</span></li><li id="bib26" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Degenhardt, L, Larney, S, Randall, D, Burns, L, Hall, W (2014). <span data-astro-cid-oer3kof4>Causes of death in a cohort treated for opioid dependence between 1985 and 2005</span>. <em data-astro-cid-oer3kof4>Addiction</em>, <strong data-astro-cid-oer3kof4>109</strong>, 90–99.</span></li><li id="bib27" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Degenhardt, L, Randall, D, Hall, W (2009). <span data-astro-cid-oer3kof4>Mortality among clients of a state-wide opioid pharmacotherapy program over 20 years: Risk factors and lives saved</span>. <em data-astro-cid-oer3kof4>Drug and Alcohol Dependence</em>, <strong data-astro-cid-oer3kof4>105</strong>, 9–15.</span></li><li id="bib28" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2014). <span data-astro-cid-oer3kof4>Medicare Benefits Schedule Book Category 1</span>.</span></li><li id="bib29" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Doran, C, Shanahan, M, Digiusto, E, O’Brien, S, Mattick, RP (2006). <span data-astro-cid-oer3kof4>Cost effectiveness analysis of maintenance agonist treatments in the NEPOD</span>. <em data-astro-cid-oer3kof4>Expert Review Pharmacoeconomics Outcomes Research</em>, <strong data-astro-cid-oer3kof4>6</strong>, 437–446.</span></li><li id="bib30" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2008). <em data-astro-cid-oer3kof4>Towards a better understanding of drug-related public expenditure in Europe</em>. Luxembourg: Publications Office of the European Union.</span></li><li id="bib31" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2011). <em data-astro-cid-oer3kof4>Cost and financing of drug treatment services in Europe</em>. Luxembourg: Publications Office of the European Union.</span></li><li id="bib32" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2014). <em data-astro-cid-oer3kof4>Estimating public expenditure on drug-law offenders in prison in Europe</em>. Luxembourg: Publications Office of the European Union.</span></li><li id="bib33" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Gisev, N, Gibson, A, Larney, S, Kimber, J, Williams, M, Clifford, A, Degenhardt, L (2014). <span data-astro-cid-oer3kof4>Offending, custody and opioid substitution therapy treatment utilisation among opioid-dependent people in contact with the criminal justice system: comparison of Indigenous and non-Indigenous Australians</span>.</span></li><li id="bib34" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Gossop, M, Marsden, J, Stewart, D, Kidd, T (2003). <span data-astro-cid-oer3kof4>The National Treatment Outcome Research Study (NTORS): 4–5 year follow-up results</span>. <em data-astro-cid-oer3kof4>Addiction</em>, <strong data-astro-cid-oer3kof4>98</strong>, 291–303.</span></li><li id="bib35" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Gossop, M, Marsden, J, Stewart, D, Traecy, S (2002). <span data-astro-cid-oer3kof4>Change and stability of change after treatment of drug misuse: 2-year outcomes from the National Treatment Outcome Research Study (UK)</span>. <em data-astro-cid-oer3kof4>Addictive Behaviors</em>, <strong data-astro-cid-oer3kof4>27</strong>, 155–166.</span></li><li id="bib36" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Grönbladh, L, Gunne, L (1989). <span data-astro-cid-oer3kof4>Methadone-assisted rehabilitation of Swedish heroin addicts</span>. <em data-astro-cid-oer3kof4>Drug and Alcohol Dependence</em>, <strong data-astro-cid-oer3kof4>24</strong>, 31–37.</span></li><li id="bib37" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hall, WD, Degenhardt, LJ, Lynskey, MT (1999). <span data-astro-cid-oer3kof4>Opioid overdose mortality in Australia, 1964-1997: birth-cohort trends</span>. <em data-astro-cid-oer3kof4>Medical Journal of Australia</em>, <strong data-astro-cid-oer3kof4>171</strong>, 34–37.</span></li><li id="bib38" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Harding, A, Keegan, M, Kelly, S (2010). <span data-astro-cid-oer3kof4>Validating a dynamic population microsimulation model: Recent experience in Australia</span>. <em data-astro-cid-oer3kof4>International Journal of Microsimulation</em>, <strong data-astro-cid-oer3kof4>3</strong>, 46–64.</span></li><li id="bib39" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hoang, VP, Shanahan, M, Shukla, N, Perez, P, Farrell, M, Ritter, A (2016). <span data-astro-cid-oer3kof4>A Review of Modelling Approaches in Economic Evaluations of Health Interventions for Drug and Alcohol Problems</span>.</span></li><li id="bib40" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Horyniak, D, Higgs, P, Jenkinson, R, Degenhardt, L, Stoové, M, Kerr, T, Dietze, P (2013). <span data-astro-cid-oer3kof4>Establishing the Melbourne injecting drug user cohort study (MIX): rationale, methods, and baseline and twelve-month follow-up results</span>. <em data-astro-cid-oer3kof4>Harm Reduction Journal</em>, <strong data-astro-cid-oer3kof4>10</strong>, 1–14.</span></li><li id="bib41" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hser, Y (2007). <span data-astro-cid-oer3kof4>Predicting long-term stable recovery from heroin addiction: Findings from a 33-year follow-up study</span>. <em data-astro-cid-oer3kof4>Journal of Addictive Diseases</em>, <strong data-astro-cid-oer3kof4>26</strong>, 51–60.</span></li><li id="bib42" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hser, Y, Evans, E, Huang, D, Anglin, DM (2004). <span data-astro-cid-oer3kof4>Relationship between drug treatment services, retention, and outcomes</span>. <em data-astro-cid-oer3kof4>Psychiatric Services</em>, <strong data-astro-cid-oer3kof4>55</strong>, 767–774.</span></li><li id="bib43" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hser, Y, Grella, C, Chou, C, Angelin, DM (1998). <span data-astro-cid-oer3kof4>Relationships between drug treatment careers and outcomes: Findings from the National Drug Abuse Treatment Outcome Study</span>. <em data-astro-cid-oer3kof4>Evaluation Review</em>, <strong data-astro-cid-oer3kof4>22</strong>, 496–519.</span></li><li id="bib44" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hser, YI, Hoffman, V, Grella, CE, Anglin, DM (2001). <span data-astro-cid-oer3kof4>A 33-year follow-up of narcotics addict</span>. <em data-astro-cid-oer3kof4>Archives of General Psychiatry</em>, <strong data-astro-cid-oer3kof4>58</strong>, 503–508.</span></li><li id="bib45" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hubbard, RL, Craddock, SG, Anderson, J (2003). <span data-astro-cid-oer3kof4>Overview of 5-year followup outcomes in the drug abuse treatment outcome studies (DATOS)</span>. <em data-astro-cid-oer3kof4>Journal of Substance Abuse Treatment</em>, <strong data-astro-cid-oer3kof4>25</strong>, 125–134.</span></li><li id="bib46" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Jimenez-Treviño, L, Saiz, PA, García-Portilla, MP, Díaz-Mesa, EM, Sánchez-Lasheras, F, Burón, P, Bobes, J (2011). <span data-astro-cid-oer3kof4>A 25-year follow-up of patients admitted to methadone treatment for the first time: Mortality and gender differences</span>. <em data-astro-cid-oer3kof4>Addictive Behaviors</em>, <strong data-astro-cid-oer3kof4>36</strong>, 1184–1190.</span></li><li id="bib47" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Karnon, J (2003). <span data-astro-cid-oer3kof4>Alternative decision modelling techniques for the evaluation of health care technologies: Markov processes versus discrete event simulation</span>. <em data-astro-cid-oer3kof4>Health Economics</em>, <strong data-astro-cid-oer3kof4>12</strong>, 837–848.</span></li><li id="bib48" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Karnon, J, Stahl, J, Brennan, A, Caro, JJ, Mar, J, Möller, J (2012). <span data-astro-cid-oer3kof4>Modeling using discrete event simulation a report of the ISPOR-SMDM modeling good research practices task force–4</span>. <em data-astro-cid-oer3kof4>Medical Decision Making</em>, <strong data-astro-cid-oer3kof4>32</strong>, 701–711.</span></li><li id="bib49" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kevin, M (2005). <em data-astro-cid-oer3kof4>Addressing the Use of Drugs in Prison: Prevalence, nature and context</em>. Sydney: Corporate Research Evaluation &amp; Statistics, NSW Department of Corrective Services.</span></li><li id="bib50" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kevin, M (2013). <span data-astro-cid-oer3kof4>NSW 6th Biennial Data Collection on Drug Use in the Inmate Population in 2009-10</span>.</span></li><li id="bib51" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Larance, B, Lintzeris, N, Ali, R, Dietze, P, Mattick, R, Jenkinson, R, Degenhardt, L (2014). <span data-astro-cid-oer3kof4>The diversion and injection of a buprenorphine-naloxone soluble film formulation</span>. <em data-astro-cid-oer3kof4>Drug and Alcohol Dependence</em>, <strong data-astro-cid-oer3kof4>136</strong>, 21–27.</span></li><li id="bib52" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Larney, S, Gisev, N, Farrell, M, Dobbins, T, Burns, L, Gibson, A, Degenhardt, L (2014). <span data-astro-cid-oer3kof4>Opioid substitution therapy as a strategy to reduce deaths in prison: retrospective cohort study</span>.</span></li><li id="bib53" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Larney, S, Toson, B, Burns, L (2011). <em data-astro-cid-oer3kof4>Opioid substitution treatment in prison and post-release: Effects on criminal recidivism and mortality</em>. Canberra: National Drug Law Enforcement Research Fund.</span></li><li id="bib54" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Latkin, CA, Knowlton, AR, Hoover, D, Mandell, W (1999). <span data-astro-cid-oer3kof4>Drug network characteristics as a predictor of cessation of drug use among adult injection drug users: a prospective study</span>. <em data-astro-cid-oer3kof4>The American journal of drug and alcohol abuse</em>, <strong data-astro-cid-oer3kof4>25</strong>, 463–473.</span></li><li id="bib55" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Lenne, M, Lintzeris, N, Breen, C, Harris, S, Hawken, L, Mattick, R, Ritter, A (2001). <span data-astro-cid-oer3kof4>Withdrawal from methadone maintenance treatment: prognosis and participant perspectives</span>. <em data-astro-cid-oer3kof4>Australian and New Zealand Journal of Public Health</em>, <strong data-astro-cid-oer3kof4>25</strong>, 121–125.</span></li><li id="bib56" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2014). <span data-astro-cid-oer3kof4>Mathwave EasyFit. 5.5 edition</span>. <a href="http://www.mathwave.com/products/easyfit.html" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://www.mathwave.com/products/easyfit.html</a>.</span></li><li id="bib57" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mattick, R, Digiusto, P, Doran, E, O’Brien, C, Shanahan, S, Kimber, JM,  (2001). <em data-astro-cid-oer3kof4>National Evaluation of Pharmacotherapies for Opioid Dependence. Report of results and recommendations</em>. Sydney: National Drug and Alcohol Research Centre.</span></li><li id="bib58" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2009). <em data-astro-cid-oer3kof4>Return on investment 2: evaluating the cost-effectiveness of needle and syringe programs in Australia 2009</em>. Sydney: National Centre in HIV Epidemiology and Clinical Research, UNSW.</span></li><li id="bib59" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2015). <span data-astro-cid-oer3kof4>National Hospital Cost Data Collection Australian Public Hospitals Cost Report 2011-2012</span>. <a href="http://www.ihpa.gov.au/internet/ihpa/publishing.nsf/content/nhcdc-cost-report-2011-2012-round16-html∼appendices∼appendix-c" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://www.ihpa.gov.au/internet/ihpa/publishing.nsf/content/nhcdc-cost-report-2011-2012-round16-html∼appendices∼appendix-c</a> (accessed 2015-03-04).</span></li><li id="bib60" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Nosyk, B, Anglin, MD, Brecht, M-L, Lima, VD, Hser, YI (2013). <span data-astro-cid-oer3kof4>Characterizing durations of heroin abstinence in the California Civil Addict Program: results from a 33-year observational cohort study</span>. <em data-astro-cid-oer3kof4>American journal of Epidemiology</em>, <strong data-astro-cid-oer3kof4>177</strong>, 675–682.</span></li><li id="bib61" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2015). <span data-astro-cid-oer3kof4>http://www.health.nsw.gov.au/careers/conditions/Awards/hsu_health_professional.pdf</span>. <a href="http://www.health.nsw.gov.au/careers/conditions/Awards/hsu_health_professional.pdf" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://www.health.nsw.gov.au/careers/conditions/Awards/hsu_health_professional.pdf</a> (accessed 2015-03-04).</span></li><li id="bib62" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Paddock, SM, Kilmer, B, Caulkins, JP, Booth, MJ, Pacula, RL (2012). <span data-astro-cid-oer3kof4>An epidemiological model for examining marijuana use over the life course</span>.</span></li><li id="bib63" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Parmenter, J, Mitchell, C, Keen, J, Oliver, P, Rowse, G, Neligan, I, Mathers, N (2013). <span data-astro-cid-oer3kof4>Predicting biopsychosocial outcomes for heroin users in primary care treatment: A prospective longitudinal cohort study</span>. <em data-astro-cid-oer3kof4>British Journal of General Practice</em>, <strong data-astro-cid-oer3kof4>63</strong>, e499–e505.</span></li><li id="bib64" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Peles, E, Kreek, MJ, Kellogg, S, Adelson, M (2006). <span data-astro-cid-oer3kof4>High methadone dose significantly reduces cocaine use in methadone maintenance treatment (MMT) patients</span>. <em data-astro-cid-oer3kof4>Journal of Addictive Diseases</em>, <strong data-astro-cid-oer3kof4>25</strong>, 43–50.</span></li><li id="bib65" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Price, RK, Risk, NK, Spitznagel, EL (2001). <span data-astro-cid-oer3kof4>Remission from drug abuse over a 25-year period: Patterns of remission and treatment use</span>. <em data-astro-cid-oer3kof4>American Journal of Public Health</em>, <strong data-astro-cid-oer3kof4>91</strong>, 1107–1113.</span></li><li id="bib66" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2015). <em data-astro-cid-oer3kof4>Report on Government Services</em>. Report on Government Services.</span></li><li id="bib67" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2013). <em data-astro-cid-oer3kof4>Chapter 6 Policing Report on Government Services (2013)</em>. Australian Government Productivity Commission.</span></li><li id="bib68" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2013). <em data-astro-cid-oer3kof4>Chapter 7 Courts. Corrective Services Report on Government Services (2013)</em>. Australian Government Productivity Commission.</span></li><li id="bib69" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2013). <em data-astro-cid-oer3kof4>Chapter 8 Corrective Services Report on Government Services (2013)</em>. Australian Government Productivity Commission.</span></li><li id="bib70" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ringel, JS, Eibner, C, Girosi, F, Cordova, A, McGlynn, EA (2010). <span data-astro-cid-oer3kof4>Modelling health care policy alternatives</span>. <em data-astro-cid-oer3kof4>Health Services Research</em>, <strong data-astro-cid-oer3kof4>45</strong>, 1541–1558.</span></li><li id="bib71" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ritter, A, McLeod, R, Shanahan, M (2013). <span data-astro-cid-oer3kof4>Government Drug Policy Expenditure in Australia-2009/10 (No. 0733433065): National Drug and Alcohol Research Centre Sydney</span>.</span></li><li id="bib72" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ross, J, Teesson, M, Darke, S, Lynskey, M, Ali, R, Ritter, A, Cooke, R (2004). <em data-astro-cid-oer3kof4>Twelve month outcomes of treatment for heroin dependence: Findings from the Australian Treatment Outcome Study (ATOS) (No. 1877027871). Sydney: National Drug and Alcohol Research Centre</em>. University of New South Wales.</span></li><li id="bib73" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ross, J, Teesson, M, Darke, S, Lynskey, M, Ali, R, Ritter, A, Cooke, R (2006). <span data-astro-cid-oer3kof4>Short-term outcomes for the treatment of heroin dependence: findings from the Australian Treatment Outcome Study (ATOS)</span>. <em data-astro-cid-oer3kof4>Addictive Disorders &amp; Their Treatment</em>, <strong data-astro-cid-oer3kof4>5</strong>, 133–143.</span></li><li id="bib74" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Roxburgh, A, Burns, L (2015). <em data-astro-cid-oer3kof4>Accidental drug-induced deaths due to opioids in Australia, 2011</em>. Sydney: National Drug and Alcohol Research Centre.</span></li><li id="bib75" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Rutter, CM, Zaslavsky, AM, Feuer, EJ (2011). <span data-astro-cid-oer3kof4>Dynamic Microsimulation Models for Health Outcomes: A Review</span>. <em data-astro-cid-oer3kof4>Medical Decision Making</em>, <strong data-astro-cid-oer3kof4>31</strong>, 10–18.</span></li><li id="bib76" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Sargent, RG, Kuhl, ME, Steiger, NM, Armstrong, FB, Joines, JA (2005). <span data-astro-cid-oer3kof4>Verification and validation of simulation models</span>. .</span></li><li id="bib77" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Schackman, BR, Leff, JA, Polsky, D, Moore, BA, Fiellin, DA (2012). <span data-astro-cid-oer3kof4>Cost-Effectiveness of Long-Term Outpatient Buprenorphine-Naloxone Treatment for Opioid Dependence in Primary Care</span>. <em data-astro-cid-oer3kof4>Journal of General Internal Medicine</em>, <strong data-astro-cid-oer3kof4>27</strong>, 669–676.</span></li><li id="bib78" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Scherbaum, N, Specka, M (2008). <span data-astro-cid-oer3kof4>Factors influencing the course of opiate addiction</span>. <em data-astro-cid-oer3kof4>International Journal of Methods in Psychiatric Research</em>, <strong data-astro-cid-oer3kof4>17</strong>, S39–S44.</span></li><li id="bib79" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Schneider, K, Gray, RT, Wilson, DP (2014). <span data-astro-cid-oer3kof4>A cost-effectiveness analysis of HIV preexposure prophylaxis for men who have sex with men in Australia</span>. <em data-astro-cid-oer3kof4>HIV/AIDS</em>, <strong data-astro-cid-oer3kof4>58</strong>, 1027–1034.</span></li><li id="bib80" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Shah, NG, Galai, N, Celentano, DD, Vlahov, D, Strathdee, SA (2006). <span data-astro-cid-oer3kof4>Longitudinal predictors of injection cessation and subsequent relapse among a cohort of injection drug users in Baltimore, MD, 1988–2000</span>. <em data-astro-cid-oer3kof4>Drug and Alcohol Dependence</em>, <strong data-astro-cid-oer3kof4>83</strong>, 147–156.</span></li><li id="bib81" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Shanahan, M, Havard, A, Teesson, M, Mills, K, Williamson, A, Ross, J (2006). <span data-astro-cid-oer3kof4>Patterns and costs of treatment for heroin dependence over 12 months: findings from the Australian Treatment Outcome Study</span>. <em data-astro-cid-oer3kof4>Australian and New Zealand Journal of Public Health</em>, <strong data-astro-cid-oer3kof4>30</strong>, 305–311.</span></li><li id="bib82" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Shand, FL, Day, C, Rawlinson, W, Degenhardt, L, Nicholas, GM, Nelson, EC (2014). <span data-astro-cid-oer3kof4>Hepatitis C testing and status among opioid substitution treatment clients in New South Wales</span>. <em data-astro-cid-oer3kof4>Australian and New Zealand Journal of Public Health</em>, <strong data-astro-cid-oer3kof4>38</strong>, 160–164.</span></li><li id="bib83" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Siebert, U, Alagoz, O, Bayoumi, AM (2012). <span data-astro-cid-oer3kof4>State-transition modeling: a report of the ISPOR-SMDM modeling good research practices task force-3</span>. <em data-astro-cid-oer3kof4>Value in Health</em>, <strong data-astro-cid-oer3kof4>15</strong>, 812–820.</span></li><li id="bib84" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Simpson, DD, Marsh, KL (1986). <span data-astro-cid-oer3kof4>Relapse and recovery among opiate addicts 12 years after treatment</span>.</span></li><li id="bib85" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Smith, PR, Jorna, P, Sweeney, J, Fuller, G (2013). <em data-astro-cid-oer3kof4>Counting the costs of crime in Australia: A 2011 estimate</em>. Canberra: AIC.</span></li><li id="bib86" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Stafford, JaBL (2013). <span data-astro-cid-oer3kof4>Australian Drug Trend Series No. 91. Sydney: National Drug and Alcohol Research Centre</span>.</span></li><li id="bib87" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Teesson, M, Havard, A, Ross, J, Darke, S (2006). <span data-astro-cid-oer3kof4>Outcomes after detoxification for heroin dependence: findings from the Australian Treatment Outcome Study (ATOS)</span>. <em data-astro-cid-oer3kof4>Drug and Alcohol Review</em>, <strong data-astro-cid-oer3kof4>25</strong>, 241–247.</span></li><li id="bib88" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Teesson, M, Marel, C, Darke, S, Ross, J, Slade, T, Burns, L, Mills, KL (2015). <span data-astro-cid-oer3kof4>Long-term mortality, remission, criminality and psychiatric comorbidity of heroin dependence: 11-year findings from the Australian Treatment Outcome Study</span>. <em data-astro-cid-oer3kof4>Addiction</em>, <strong data-astro-cid-oer3kof4>110</strong>, 986–993.</span></li><li id="bib89" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Teesson, M, Mills, K, Ross, J, Darke, S, Williamson, A, Havard, A (2007). <span data-astro-cid-oer3kof4>The impact of treatment on 3 years’ outcome for heroin dependence: findings from the Australian Treatment Outcome Study (ATOS)</span>. <em data-astro-cid-oer3kof4>Addiction</em>, <strong data-astro-cid-oer3kof4>103</strong>, 80–88.</span></li><li id="bib90" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Termorshuizen, F, Krol, A, Prins, M, Van Ameijden, EJ (2005). <span data-astro-cid-oer3kof4>Long-term outcome of chronic drug use the Amsterdam cohort study among drug users</span>. <em data-astro-cid-oer3kof4>American Journal of Epidemiology</em>, <strong data-astro-cid-oer3kof4>161</strong>, 271–279.</span></li><li id="bib91" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2013). <em data-astro-cid-oer3kof4>National Blood-borne Virus and Sexually Transmissible Infections Surveillance and Monitoring Report, 2013</em>. National Blood-borne Virus and Sexually Transmissible Infections Surveillance and Monitoring Report, 2013.</span></li><li id="bib92" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2014). <em data-astro-cid-oer3kof4>HIV, viral hepatitis and sexually transmissible infections in Australia Annual Surveillance Report 2014 HIV Supplement</em>. HIV, viral hepatitis and sexually transmissible infections in Australia Annual Surveillance Report 2014 HIV Supplement.</span></li><li id="bib93" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2015). <em data-astro-cid-oer3kof4>World Drug Report</em>. Vienna: United Nations publication.</span></li><li id="bib94" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Visconti, AJ, Doyle, JS, Weir, A, Shiell, AM, Hellard, EM (2013). <span data-astro-cid-oer3kof4>Assessing the cost-effectiveness’ of treating chronic hepatitis C virus in people who inject drugs in Australia 2012</span>. <em data-astro-cid-oer3kof4>Journal of Gastroenterology and Hepatology</em>, <strong data-astro-cid-oer3kof4>28</strong>, 707–716.</span></li><li id="bib95" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Waldorf, D (1983). <span data-astro-cid-oer3kof4>Natural recovery from opiate addiction: Some social-psychological processes of untreated recovery</span>. <em data-astro-cid-oer3kof4>Journal of Drug Issues</em>, <strong data-astro-cid-oer3kof4>13</strong>, 237–280.</span></li><li id="bib96" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Warren, E, Viney, R, Shearer, J, Shanahan, M, Wodak, A, Dolan, K (2006). <span data-astro-cid-oer3kof4>Value for money in drug treatment: economic evaluation of prison methadone</span>. <em data-astro-cid-oer3kof4>Drug &amp; Alcohol Dependence</em>, <strong data-astro-cid-oer3kof4>84</strong>, 160–166.</span></li><li id="bib97" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Weatherburn, D, Lind, B (1997). <em data-astro-cid-oer3kof4>Social and Economic Stress, Child Neglect and Juvenile Delinquency</em>. Sydney: NSW Bureau of Crime Statistics and Research.</span></li><li id="bib98" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Xia, Y, Seaman, S, Hickman, M, Macleaod, J, Robertson, R, Copeland, L, De Angelis, D (2015). <span data-astro-cid-oer3kof4>Factors affecting repeated cessations of injecting drug use and relapses during the entire injecting career among the Edinburgh Addiction Cohort</span>. <em data-astro-cid-oer3kof4>Drug and Alcohol Dependence</em>, <strong data-astro-cid-oer3kof4>151</strong>, 76–83.</span></li><li id="bib99" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Zarkin, G, Cowell, A, Hicks, K, Mills, MJ, Belenko, S, Dunlap, LJ, Keyes, V (2012). <span data-astro-cid-oer3kof4>Benefits and costs of substance abuse treatment programs for state prison inmates: Results from a lifetime simulation model</span>. <em data-astro-cid-oer3kof4>Health Economics</em>, <strong data-astro-cid-oer3kof4>21</strong>, 633–652.</span></li><li id="bib100" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Zarkin, GA, Dunlap, LJ, Hicks, KA, Mamo, D (2005). <span data-astro-cid-oer3kof4>Benefits and costs of methadone treatment: Results from a lifetime simulation model</span>. <em data-astro-cid-oer3kof4>Health Economics</em>, <strong data-astro-cid-oer3kof4>14</strong>, 1133–1150.</span></li><li id="bib101" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Zhang, Z, Friedmann, PD, Gerstein, DR (2003). <span data-astro-cid-oer3kof4>Does retention matter? Treatment duration and improvement in drug use</span>. <em data-astro-cid-oer3kof4>Addiction</em>, <strong data-astro-cid-oer3kof4>98</strong>, 673–684.</span></li><li id="bib102" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Zucchelli, E, Jones, AM, Rice, N (2012). <span data-astro-cid-oer3kof4>The evaluation of health policies through dynamic microsimulation methods</span>. <em data-astro-cid-oer3kof4>International Journal of Microsimulation</em>, <strong data-astro-cid-oer3kof4>5</strong>, 2–20.</span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Alison Ritter</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Drug Policy Modelling Program, National Drug and Alcohol Research Centre, University of New South Wales, Australia</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:alison.ritter@unsw.edu.au" data-astro-cid-m3fa5h5a>alison.ritter@unsw.edu.au</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Nagesh Shukla</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>SMART Infrastructure Facility, University of Wollongong, Australia</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:nshukla@uow.edu.au" data-astro-cid-m3fa5h5a>nshukla@uow.edu.au</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Marian Shanahan</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Drug Policy Modelling Program, National Drug and Alcohol Research Centre, University of New South Wales, Australia</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:m.shanahan@unsw.edu.au" data-astro-cid-m3fa5h5a>m.shanahan@unsw.edu.au</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Phuong Van Hoang</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Drug Policy Modelling Program, National Drug and Alcohol Research Centre, University of New South Wales, Australia</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:phuong_hoang80@hotmail.com" data-astro-cid-m3fa5h5a>phuong_hoang80@hotmail.com</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Vu Lam Cao</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>SMART Infrastructure Facility, University of Wollongong, Australia</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:vlcao@uow.edu.au" data-astro-cid-m3fa5h5a>vlcao@uow.edu.au</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Pascal Perez</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>SMART Infrastructure Facility, University of Wollongong, Australia</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:pascal@uow.edu.au" data-astro-cid-m3fa5h5a>pascal@uow.edu.au</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Michael Farrell</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Drug Policy Modelling Program, National Drug and Alcohol Research Centre, University of New South Wales, Australia</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:m.farrell@unsw.edu.au" data-astro-cid-m3fa5h5a>m.farrell@unsw.edu.au</a></p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00146" data-astro-cid-m3fa5h5a>Version of Record published: December 31, 2016 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2016, Ritter et al.</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/health" data-pagefind-filter="Research category:Health" data-astro-cid-m3fa5h5a>Health</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=microsimulation%20model" data-astro-cid-m3fa5h5a>microsimulation model</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=heroin" data-astro-cid-m3fa5h5a>heroin</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=opioids" data-astro-cid-m3fa5h5a>opioids</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=lifetime%20model" data-astro-cid-m3fa5h5a>lifetime model</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

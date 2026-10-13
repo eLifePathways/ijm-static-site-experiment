@@ -1,0 +1,24 @@
+TY  - JOUR
+TI  - The life-cycle income analysis model (LIAM): A study of a flexible dynamic microsimulation modelling computing framework
+AU  - O’Donoghue, Cathal
+AU  - Lennon, John
+AU  - Hynes, Stephen
+VL  - 2
+IS  - 1
+PY  - 2009
+DA  - 2009/06/30
+SP  - 16-31
+C1  - IJM 2009;2(1):16-31
+DO  - 10.34196/ijm.00009
+UR  - https://doi.org/10.34196/ijm.00009
+AB  - This paper describes a flexible computing framework designed to create a dynamic microsimulation model, the Life-cycle Income Analysis Model (LIAM). The principle computing characteristics include the degree of modularisation, parameterisation, generalisation and robustness. The paper describes the decisions taken with regard to type of dynamic model used. The LIAM framework has been used to create a number of different microsimulation models, including an Irish dynamic cohort model, a spatial dynamic microsimulation model for Ireland, an indirect tax and consumption model for EU15 as part of EUROMOD and a prototype EU dynamic population microsimulation model for 5 EU countries. Particular consideration is given to issues of parameterisation, alignment and computational efficiency.
+KW  - flexible
+KW  - modular
+KW  - dynamic
+KW  - alignment
+KW  - parameterisation
+KW  - computational efficiency
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

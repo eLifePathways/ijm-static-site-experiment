@@ -1,0 +1,24 @@
+TY  - JOUR
+TI  - A microsimulation model of fertility, childbearing, and child well-being
+AU  - Thomas, Adam
+AU  - Karpilow, Quentin
+AU  - Welti, Kate
+AU  - Manlove, Jennifer
+AU  - Cook, Elizabeth
+VL  - 10
+IS  - 2
+PY  - 2017
+DA  - 2017/08/31
+SP  - 3-85
+C1  - IJM 2017;10(2):3-85
+DO  - 10.34196/ijm.00156
+UR  - https://doi.org/10.34196/ijm.00156
+AB  - The topic of family structure features prominently in social policy debates in the United States. This paper details the architecture of FamilyScape 3.0, a microsimulation tool that models a wide variety of real-world behaviours and outcomes related to family formation and child well-being. We describe FamilyScape’s procedures for simulating sexual activity, contraceptive behaviour, female fecundity, contraceptive efficacy, pregnancy and pregnancy outcomes, and maternal and child outcomes. We present an extensive set of simulation results demonstrating that the model realistically simulates of each of these dynamics. Most importantly, we show that FamilyScape closely approximates real-world rates of contraceptive failure, pregnancy, childbearing, and abortion. We conclude by briefly discussing the model’s potential to inform a range of policy debates.
+KW  - familyscape
+KW  - fertility
+KW  - childbearing
+KW  - contraception
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

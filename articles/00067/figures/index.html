@@ -1,0 +1,1292 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Figures and data in Simulating histories within dynamic microsimulation models | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00067/figures"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.figures-page__summary[data-astro-cid-uy5dlehv]{color:var(--color-ink-muted);margin-block-end:var(--space-m)}@media (width>=75em){.article-content-grid[data-astro-cid-uy5dlehv]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-astro-cid-uy5dlehv><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/methodology" data-astro-cid-ak4gb66a>Methodology</a>, <a href="/subjects/dynamic-microsimulation" data-astro-cid-ak4gb66a>Dynamic microsimulation</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Jun 30, 2012</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Simulating histories within dynamic microsimulation models</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Jinjing Li, Cathal O’Donoghue</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Maastricht University / UNU-MERIT, The Netherlands; Rural Economy and Development Programme, Teagasc, Ireland</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/5-1/volume-5-1-spring-2012" data-astro-cid-ak4gb66a>Volume 5(1) Spring 2012</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> J. Li, C. O’Donoghue; 2012; <span data-astro-cid-ak4gb66a>Simulating histories within dynamic microsimulation models</span>; International Journal of Microsimulation; 5(1); 52–76. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00067" data-astro-cid-ak4gb66a>10.34196/ijm.00067</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>Constructing a base dataset is one of the most important elements in the dynamic microsimulation modelling. However, the access to a long historical panel is usually restricted for many reasons. This paper aims to develop a back simulation method that has the potential to generate a consistent synthetic history panel based on a typical household survey dataset with some complementary statistics. The model uses Living in Ireland (LU) household survey as an example to reconstruct the individual labour market trajectory since 1939. The overall results of the simulated panel have been proven sensible and consistent based on several validation tests. This method opens the possibility to further investigate into several fields of application such as life-cycle income analysis and pension reform evaluation, which typically requires the historical profile of individuals and has traditionally been difficult to perform.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00067/ijm-00067.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00067.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00067.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-uy5dlehv><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00067" class="view-tabs__link" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00067/figures" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#figures" data-astro-cid-twdwaz5s>Figures</a></li><li data-astro-cid-twdwaz5s><a href="#tables" data-astro-cid-twdwaz5s>Tables</a></li></ul></details></div><div class="article-content" data-astro-cid-uy5dlehv><p class="figures-page__summary" data-astro-cid-uy5dlehv>This article contains 16 figures and 14 tables.</p><details id="figures" class="article-section article-section--collapsible" open data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Figures</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig1.D9dsdGR9_Z1dA9CJ.webp" class="figure-lightbox-trigger" data-pswp-width="1209" data-pswp-height="612" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig1.D9dsdGR9_Z1dA9CJ.webp" alt width="1209" height="612" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Simulation flowchart for the employment status variables.</span></figcaption></figure><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig2.CcWTKPek_ZjjhSK.webp" class="figure-lightbox-trigger" data-pswp-width="1162" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig2.CcWTKPek_ZjjhSK.webp" alt width="1162" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Simulated historical in-work ratio for male by age.</span></figcaption></figure><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig3.Ceg9lwCC_1nTC2o.webp" class="figure-lightbox-trigger" data-pswp-width="1162" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig3.Ceg9lwCC_1nTC2o.webp" alt width="1162" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Simulated historical in-work ratio for female by age.</span></figcaption></figure><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig4.DXYw9wl1_1zqrpk.webp" class="figure-lightbox-trigger" data-pswp-width="1162" data-pswp-height="786" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig4.DXYw9wl1_1zqrpk.webp" alt width="1162" height="786" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Simulated historical in-work ratio for male by cohorts.</span></figcaption></figure><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig5.DrdGYIUX_Z1g10HP.webp" class="figure-lightbox-trigger" data-pswp-width="1162" data-pswp-height="786" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig5.DrdGYIUX_Z1g10HP.webp" alt width="1162" height="786" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> Simulated historical in-work ratio for female by cohorts.</span></figcaption></figure><figure id="fig6" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig6.C7E8pYEg_2joldo.webp" class="figure-lightbox-trigger" data-pswp-width="1168" data-pswp-height="781" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig6.C7E8pYEg_2joldo.webp" alt width="1168" height="781" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 6.</strong><span data-astro-cid-dzaleqsp> Difference between simulated years of work and reported value.</span></figcaption></figure><figure id="fig7" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig7.Y1VNAOgu_gM3kn.webp" class="figure-lightbox-trigger" data-pswp-width="1165" data-pswp-height="784" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig7.Y1VNAOgu_gM3kn.webp" alt width="1165" height="784" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 7.</strong><span data-astro-cid-dzaleqsp> Public sector employment for male.</span></figcaption></figure><figure id="fig8" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig8.DtkNwj3t_FPA1p.webp" class="figure-lightbox-trigger" data-pswp-width="1165" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig8.DtkNwj3t_FPA1p.webp" alt width="1165" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 8.</strong><span data-astro-cid-dzaleqsp> Simulated public sector employment for female.</span></figcaption></figure><figure id="fig9" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig9.DPu7aTlh_12CEoq.webp" class="figure-lightbox-trigger" data-pswp-width="1165" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig9.DPu7aTlh_12CEoq.webp" alt width="1165" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 9.</strong><span data-astro-cid-dzaleqsp> Simulated male self-employed ratio by age.</span></figcaption></figure><figure id="fig10" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig10.D8F2s13p_1lWLTt.webp" class="figure-lightbox-trigger" data-pswp-width="1165" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig10.D8F2s13p_1lWLTt.webp" alt width="1165" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 10.</strong><span data-astro-cid-dzaleqsp> Simulated female self-employed ratio by age.</span></figcaption></figure><figure id="fig11" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig11.BWwx_jN0_2spwm1.webp" class="figure-lightbox-trigger" data-pswp-width="1165" data-pswp-height="790" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig11.BWwx_jN0_2spwm1.webp" alt width="1165" height="790" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 11.</strong><span data-astro-cid-dzaleqsp> Occupational pension participation by cohort.</span></figcaption></figure><figure id="fig12" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig12.DK8wUmAJ_ZU1tB2.webp" class="figure-lightbox-trigger" data-pswp-width="1165" data-pswp-height="801" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig12.DK8wUmAJ_ZU1tB2.webp" alt width="1165" height="801" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 12.</strong><span data-astro-cid-dzaleqsp> Occupational pension participation by age group.</span></figcaption></figure><figure id="fig13" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig13.BOJrF20n_ZBO1B3.webp" class="figure-lightbox-trigger" data-pswp-width="1164" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig13.BOJrF20n_ZBO1B3.webp" alt width="1164" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 13.</strong><span data-astro-cid-dzaleqsp> Average male earnings (£) by cohort.</span></figcaption></figure><figure id="fig14" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig14.Bt2AkVF6_13opEL.webp" class="figure-lightbox-trigger" data-pswp-width="1161" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig14.Bt2AkVF6_13opEL.webp" alt width="1161" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 14.</strong><span data-astro-cid-dzaleqsp> Average female earnings (£) by cohort.</span></figcaption></figure><figure id="fig15" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig15._VJ4x0C2_DM2xB.webp" class="figure-lightbox-trigger" data-pswp-width="1164" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig15._VJ4x0C2_DM2xB.webp" alt width="1164" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 15.</strong><span data-astro-cid-dzaleqsp> Average male earnings (£) by age.</span></figcaption></figure><figure id="fig16" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig16.CIDrspM3_J6UVx.webp" class="figure-lightbox-trigger" data-pswp-width="1161" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig16.CIDrspM3_J6UVx.webp" alt width="1161" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 16.</strong><span data-astro-cid-dzaleqsp> Average female earnings (£) by age.</span></figcaption></figure></div></details><details id="tables" class="article-section article-section--collapsible" data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Tables</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> An overview of LII survey.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th><i>Variable</i></th>
+<th><i>Mean</i></th>
+<th><i>Standard Deviation</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Age</td>
+<td>34.15</td>
+<td>21.86</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>0.50</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>Married (%)</td>
+<td>38.91%</td>
+<td>0.49</td>
+</tr>
+<tr>
+<td>Average household size</td>
+<td>4.31</td>
+<td>1.86</td>
+</tr>
+<tr>
+<td>Working population (%)</td>
+<td>38.18%</td>
+<td>0.49</td>
+</tr>
+<tr>
+<td>Public Sector worker (%)</td>
+<td>7.81%</td>
+<td>0.27</td>
+</tr>
+<tr>
+<td>Self-employed (%)</td>
+<td>7.73%</td>
+<td>0.27</td>
+</tr>
+<tr>
+<td>Retired (%)</td>
+<td>6.85%</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Unemployed (%)</td>
+<td>5.40%</td>
+<td>0.23</td>
+</tr>
+<tr>
+<td>Percentage of the population with college education</td>
+<td>17.46%</td>
+<td>0.38</td>
+</tr>
+<tr>
+<td>Average reported years of work</td>
+<td>13.66</td>
+<td>15.20</td>
+</tr>
+<tr>
+<td>Total number of household</td>
+<td align="center" colspan="2">7,529</td>
+</tr>
+<tr>
+<td>Total number of individuals</td>
+<td align="center" colspan="2">23,955</td>
+</tr>
+<tr>
+<td>Total number of observations</td>
+<td align="center" colspan="2">100,639</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Retrospective variables adjustment in the LII survey (base year).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="2"><i>Sex</i></th>
+<th rowspan="2"><i>Variable Description</i></th>
+<th colspan="2"><i>Original</i></th>
+<th colspan="2"><i>Adjusted</i></th>
+<th rowspan="2"><i>Observations Adjusted (%)</i></th>
+</tr>
+<tr>
+<th><i>Mean</i></th>
+<th><i>s.d.</i></th>
+<th><i>Mean</i></th>
+<th><i>s.d.</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="6">Male</td>
+<td>Years in full-time education or training</td>
+<td align="center">6.83</td>
+<td align="center">2.67</td>
+<td align="center">6.67</td>
+<td align="center">2.85</td>
+<td align="center">2.28%</td>
+</tr>
+<tr>
+<td>Years in employment, self-employment or farming</td>
+<td align="center">19.38</td>
+<td align="center">17.88</td>
+<td align="center">19.32</td>
+<td align="center">17.88</td>
+<td align="center">0.40%</td>
+</tr>
+<tr>
+<td>Years in unemployment</td>
+<td align="center">1.11</td>
+<td align="center">3.24</td>
+<td align="center">1.11</td>
+<td align="center">3.24</td>
+<td align="center">0.14%</td>
+</tr>
+<tr>
+<td>Years of illness/disabled</td>
+<td align="center">0.39</td>
+<td align="center">2.88</td>
+<td align="center">0.39</td>
+<td align="center">2.88</td>
+<td align="center">0.02%</td>
+</tr>
+<tr>
+<td>Years spent on home duties</td>
+<td align="center">0.21</td>
+<td align="center">3.30</td>
+<td align="center">0.14</td>
+<td align="center">2.63</td>
+<td align="center">0.23%</td>
+</tr>
+<tr>
+<td>Years in retirement</td>
+<td align="center">1.01</td>
+<td align="center">3.44</td>
+<td align="center">1.00</td>
+<td align="center">3.42</td>
+<td align="center">0.07%</td>
+</tr>
+<tr>
+<td align="center" rowspan="6">Female</td>
+<td>Years in full-time education or training</td>
+<td align="center">6.92</td>
+<td align="center">2.36</td>
+<td align="center">6.77</td>
+<td align="center">2.57</td>
+<td align="center">2.23%</td>
+</tr>
+<tr>
+<td>Years in employment, self-employment or farming</td>
+<td align="center">9.17</td>
+<td align="center">10.68</td>
+<td align="center">9.10</td>
+<td align="center">10.64</td>
+<td align="center">0.51%</td>
+</tr>
+<tr>
+<td>Years in unemployment</td>
+<td align="center">0.32</td>
+<td align="center">1.58</td>
+<td align="center">0.32</td>
+<td align="center">1.58</td>
+<td align="center">0.09%</td>
+</tr>
+<tr>
+<td>Years of illness/disabled</td>
+<td align="center">0.27</td>
+<td align="center">2.39</td>
+<td align="center">0.25</td>
+<td align="center">2.26</td>
+<td align="center">0.05%</td>
+</tr>
+<tr>
+<td>Years spent on home duties</td>
+<td align="center">12.76</td>
+<td align="center">17.21</td>
+<td align="center">12.70</td>
+<td align="center">17.14</td>
+<td align="center">0.17%</td>
+</tr>
+<tr>
+<td>Years in retirement</td>
+<td align="center">0.34</td>
+<td align="center">2.43</td>
+<td align="center">0.33</td>
+<td align="center">2.39</td>
+<td align="center">0.05%</td>
+</tr>
+<tr>
+<td rowspan="6">Total</td>
+<td>Years in full-time education or training</td>
+<td align="center">6.87</td>
+<td align="center">2.52</td>
+<td align="center">6.72</td>
+<td align="center">2.71</td>
+<td align="center">2.26%</td>
+</tr>
+<tr>
+<td>Years in employment, self-employment or farming</td>
+<td align="center">14.29</td>
+<td align="center">15.59</td>
+<td align="center">14.22</td>
+<td align="center">15.58</td>
+<td align="center">0.45%</td>
+</tr>
+<tr>
+<td>Years in unemployment</td>
+<td align="center">0.72</td>
+<td align="center">2.58</td>
+<td align="center">0.72</td>
+<td align="center">2.58</td>
+<td align="center">0.11%</td>
+</tr>
+<tr>
+<td>Years of illness/disabled</td>
+<td align="center">0.33</td>
+<td align="center">2.65</td>
+<td align="center">0.32</td>
+<td align="center">2.59</td>
+<td align="center">0.03%</td>
+</tr>
+<tr>
+<td>Years spent on home duties</td>
+<td align="center">6.48</td>
+<td align="center">13.88</td>
+<td align="center">6.41</td>
+<td align="center">13.77</td>
+<td align="center">0.20%</td>
+</tr>
+<tr>
+<td>Years in retirement</td>
+<td align="center">0.68</td>
+<td align="center">3.00</td>
+<td align="center">0.67</td>
+<td align="center">2.97</td>
+<td align="center">0.06%</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Imputed variables.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th><i>Imputed Variables</i></th>
+<th><i>Personal Characteristics used (X)</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>Years in full-time education or training</p><p>Years in employment, self-employment or farming</p>
+<p>Years in unemployment</p>
+<p>Years of illness/disability</p>
+<p>Years spent on home duties</p>
+<p>Years in retirement</p>
+</td>
+<td>Education, age, current employment status, chronic illness, retirement status, number of children in different age groups</td></tr>
+</tbody>
+</table></div></figure><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Components of the employment status equations.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th align="center" colspan="5"><i>Equations</i></th>
+</tr>
+<tr>
+<th><i>Variables Included in the Equations</i></th>
+<th align="center"><i>In-Work</i></th>
+<th align="center"><i>Self-employment</i></th>
+<th align="center"><i>Job Sector</i></th>
+<th align="center"><i>Occupational Pension Membership</i></th>
+<th align="center"><i>Private Pension Membership</i></th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Age or Age group</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr><td>Age Squared</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr><td>Age 65 or above</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center">Yes</td>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr><td>Education</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr><td>Gender</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr><td>Work Experience</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center">Yes</td>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr><td>Gave Birth to a Child in the current year</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr><td>Work in the Public Sector or Not</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr><td>Job Industry</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr><td>Job Occupation</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr><td>Lagged variables</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr><td>Mean value of residuals</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Simulated profile without adjustment.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="center"><i>Year</i></th>
+<th align="center"><i>1950</i></th>
+<th align="center"><i>1951</i></th>
+<th align="center"><i>1952</i></th>
+<th align="center"><i>1971</i></th>
+<th align="center"><i>1972</i></th>
+<th align="center"><i>1973</i></th>
+<th align="center"><i>Total Years of Work</i></th>
+<th align="center"><i>Rate</i></th>
+<th align="center"><i>Simulated Eligibility</i></th>
+<th align="center"><i>Actual Eligibility</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Individual A</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">3</td>
+<td align="center">33.3%</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>Individual B</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">4</td>
+<td align="center">66.7%</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Individual C</td>
+<td align="center">●</td>
+<td align="center">●</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">3</td>
+<td align="center">0.00%</td>
+<td align="center">No</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Yearly Aggregate</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center" colspan="2">(1/3 correct)</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Simulated profile with adjustment.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="center"><i>Year</i></th>
+<th align="center"><i>1950</i></th>
+<th align="center"><i>1951</i></th>
+<th align="center"><i>1952</i></th>
+<th align="center"><i>1971</i></th>
+<th align="center"><i>1972</i></th>
+<th align="center"><i>1973</i></th>
+<th align="center"><i>Total Years of Work</i></th>
+<th align="center"><i>Rate</i></th>
+<th align="center"><i>Simulated Eligibility</i></th>
+<th align="center"><i>Actual Eligibility</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Individual A</td>
+<td align="center">●</td>
+<td align="center">●</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">3</td>
+<td align="center">0.0%</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>Individual B</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">4</td>
+<td align="center">66.7%</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Individual C</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">3</td>
+<td align="center">33.3%</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Yearly Aggregate</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center" colspan="2">(3/3 correct)</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Percentage of correctly simulated eligibility.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<td><i>Pension Type</i></td>
+<td><i>Correctly Simulated</i></td>
+<td><i>Number of Observations</i><a href="#tfn1">*</a></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contributory State Pension</td>
+<td>96.08%</td>
+<td>9,343</td>
+</tr>
+<tr>
+<td>Occupational Pension</td>
+<td>98.25%</td>
+<td>10,030</td>
+</tr>
+<tr>
+<td>Private Pension</td>
+<td>97.36%</td>
+<td>1,706 (Year 2000 onwards)</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Only those aged 66+ are included for state pension and those aged 65+ for occupational and private pension.</p></div></figure><figure id="tableA1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="3"><i>Variables</i></th>
+<th align="center" colspan="4"><i>Equations</i></th>
+</tr>
+<tr>
+<th colspan="2"><i>Years in full-time education or training</i></th>
+<th align="center" colspan="2"><i>Years in employment, self-employment or farming</i></th>
+</tr>
+<tr>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>College Education</td>
+<td align="center">4.22</td>
+<td align="center">0.07</td>
+<td align="center">−3.43</td>
+<td align="center">0.21</td>
+</tr>
+<tr>
+<td>Secondary Education</td>
+<td align="center">2.17</td>
+<td align="center">0.07</td>
+<td align="center">−1.66</td>
+<td align="center">0.21</td>
+</tr>
+<tr>
+<td>Age</td>
+<td align="center">0.00</td>
+<td align="center">0.02</td>
+<td align="center">0.36</td>
+<td align="center">0.05</td>
+</tr>
+<tr>
+<td>Is Working</td>
+<td align="center">−1.02</td>
+<td align="center">0.13</td>
+<td align="center">7.37</td>
+<td align="center">0.37</td>
+</tr>
+<tr>
+<td>Illness</td>
+<td align="center">0.16</td>
+<td align="center">0.14</td>
+<td align="center">−1.99</td>
+<td align="center">0.42</td>
+</tr>
+<tr>
+<td>In education</td>
+<td align="center">−0.89</td>
+<td align="center">0.14</td>
+<td align="center">2.85</td>
+<td align="center">0.41</td>
+</tr>
+<tr>
+<td>Unemployed</td>
+<td align="center">−1.28</td>
+<td align="center">0.14</td>
+<td align="center">1.03</td>
+<td align="center">0.40</td>
+</tr>
+<tr>
+<td>Retired</td>
+<td align="center">−1.05</td>
+<td align="center">0.17</td>
+<td align="center">4.30</td>
+<td align="center">0.51</td>
+</tr>
+<tr>
+<td>Number of Children under Age 3</td>
+<td align="center">−0.06</td>
+<td align="center">0.06</td>
+<td align="center">0.16</td>
+<td align="center">0.19</td>
+</tr>
+<tr>
+<td>Number of Children between Age 4 and 11</td>
+<td align="center">−0.10</td>
+<td align="center">0.03</td>
+<td align="center">0.09</td>
+<td align="center">0.10</td>
+</tr>
+<tr>
+<td>Number of Children between Age 12 and 15</td>
+<td align="center">−0.09</td>
+<td align="center">0.04</td>
+<td align="center">0.06</td>
+<td align="center">0.12</td>
+</tr>
+<tr>
+<td>Cohort Dummies</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Number of Observations</td>
+<td align="center" colspan="2">5,738</td>
+<td align="center" colspan="2">5,738</td>
+</tr>
+<tr>
+<td>Adjusted R-square</td>
+<td align="center" colspan="2">0.48</td>
+<td align="center" colspan="2">0.90</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="3"><i>Variables</i></th>
+<th align="center" colspan="4"><i>Equations</i></th>
+</tr>
+<tr>
+<th align="center" colspan="2"><i>Years in unemployment</i></th>
+<th align="center" colspan="2"><i>Years of illness/disabled</i></th>
+</tr>
+<tr>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>College Education</td>
+<td align="center">−1.05</td>
+<td align="center">0.11</td>
+<td align="center">−0.02</td>
+<td align="center">0.10</td>
+</tr>
+<tr>
+<td>Secondary Education</td>
+<td align="center">−0.79</td>
+<td align="center">0.11</td>
+<td align="center">−0.03</td>
+<td align="center">0.10</td>
+</tr>
+<tr>
+<td>Age</td>
+<td align="center">−0.01</td>
+<td align="center">0.02</td>
+<td align="center">0.05</td>
+<td align="center">0.02</td>
+</tr>
+<tr>
+<td>Is Working</td>
+<td align="center">−0.04</td>
+<td align="center">0.19</td>
+<td align="center">−0.80</td>
+<td align="center">0.18</td>
+</tr>
+<tr>
+<td>Illness</td>
+<td align="center">−1.33</td>
+<td align="center">0.21</td>
+<td align="center">3.78</td>
+<td align="center">0.20</td>
+</tr>
+<tr>
+<td>In education</td>
+<td align="center">0.61</td>
+<td align="center">0.21</td>
+<td align="center">−0.23</td>
+<td align="center">0.20</td>
+</tr>
+<tr>
+<td>Unemployed</td>
+<td align="center">3.91</td>
+<td align="center">0.21</td>
+<td align="center">1.17</td>
+<td align="center">0.19</td>
+</tr>
+<tr>
+<td>Retired</td>
+<td align="center">1.01</td>
+<td align="center">0.26</td>
+<td align="center">−1.46</td>
+<td align="center">0.24</td>
+</tr>
+<tr>
+<td>Number of Children under Age 3</td>
+<td align="center">−0.03</td>
+<td align="center">0.10</td>
+<td align="center">0.07</td>
+<td align="center">0.09</td>
+</tr>
+<tr>
+<td>Number of Children between Age 4 and 11</td>
+<td align="center">0.06</td>
+<td align="center">0.05</td>
+<td align="center">−0.04</td>
+<td align="center">0.05</td>
+</tr>
+<tr>
+<td>Number of Children between Age 12 and 15</td>
+<td align="center">0.10</td>
+<td align="center">0.06</td>
+<td align="center">−0.13</td>
+<td align="center">0.06</td>
+</tr>
+<tr>
+<td>Cohort Dummies</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Number of Observations</td>
+<td align="center" colspan="2">5,738</td>
+<td align="center" colspan="2">5,738</td>
+</tr>
+<tr>
+<td>Adjusted R-square</td>
+<td align="center" colspan="2">0.23</td>
+<td align="center" colspan="2">0.15</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="3"><i>Variables</i></th>
+<th align="center" colspan="4"><i>Equations</i></th>
+</tr>
+<tr>
+<th align="center" colspan="2"><i>Years spent on home duties</i></th>
+<th align="center" colspan="2"><i>Years in retirement</i></th>
+</tr>
+<tr>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>College Education</td>
+<td align="center">0.43</td>
+<td align="center">0.12</td>
+<td align="center">0.00</td>
+<td align="center">0.07</td>
+</tr>
+<tr>
+<td>Secondary Education</td>
+<td align="center">0.40</td>
+<td align="center">0.12</td>
+<td align="center">−0.01</td>
+<td align="center">0.07</td>
+</tr>
+<tr>
+<td>Age</td>
+<td align="center">−0.12</td>
+<td align="center">0.03</td>
+<td align="center">0.03</td>
+<td align="center">0.02</td>
+</tr>
+<tr>
+<td>Is Working</td>
+<td align="center">−2.35</td>
+<td align="center">0.21</td>
+<td align="center">−0.25</td>
+<td align="center">0.12</td>
+</tr>
+<tr>
+<td>Illness</td>
+<td align="center">0.62</td>
+<td align="center">0.24</td>
+<td align="center">−0.05</td>
+<td align="center">0.13</td>
+</tr>
+<tr>
+<td>In education</td>
+<td align="center">−2.20</td>
+<td align="center">0.24</td>
+<td align="center">−0.22</td>
+<td align="center">0.13</td>
+</tr>
+<tr>
+<td>Unemployed</td>
+<td align="center">−2.28</td>
+<td align="center">0.23</td>
+<td align="center">−0.20</td>
+<td align="center">0.13</td>
+</tr>
+<tr>
+<td>Retired</td>
+<td align="center">−2.42</td>
+<td align="center">0.29</td>
+<td align="center">5.65</td>
+<td align="center">0.16</td>
+</tr>
+<tr>
+<td>Number of Children under Age 3</td>
+<td align="center">0.20</td>
+<td align="center">0.11</td>
+<td align="center">−0.01</td>
+<td align="center">0.06</td>
+</tr>
+<tr>
+<td>Number of Children between Age 4 and 11</td>
+<td align="center">−0.06</td>
+<td align="center">0.06</td>
+<td align="center">−0.03</td>
+<td align="center">0.03</td>
+</tr>
+<tr>
+<td>Number of Children between Age 12 and 15</td>
+<td align="center">0.04</td>
+<td align="center">0.07</td>
+<td align="center">−0.02</td>
+<td align="center">0.04</td>
+</tr>
+<tr>
+<td>Cohort Dummies</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Number of Observations</td>
+<td align="center" colspan="2">5,738</td>
+<td align="center" colspan="2">5,738</td>
+</tr>
+<tr>
+<td>Adjusted R-square</td>
+<td align="center" colspan="2">0.03</td>
+<td align="center" colspan="2">0.74</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="3"><i>Variables</i></th>
+<th align="center" colspan="4"><i>Equations</i></th>
+</tr>
+<tr>
+<th align="center" colspan="2"><i>Years in full-time education or training</i></th>
+<th align="center" colspan="2"><i>Years in employment, self-employment or farming</i></th>
+</tr>
+<tr>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>College Education</td>
+<td align="center">3.47</td>
+<td align="center">0.07</td>
+<td align="center">−0.54</td>
+<td align="center">0.29</td>
+</tr>
+<tr>
+<td>Secondary Education</td>
+<td align="center">2.01</td>
+<td align="center">0.06</td>
+<td align="center">−0.06</td>
+<td align="center">0.26</td>
+</tr>
+<tr>
+<td>Age</td>
+<td align="center">0.02</td>
+<td align="center">0.01</td>
+<td align="center">0.05</td>
+<td align="center">0.06</td>
+</tr>
+<tr>
+<td>Is Working</td>
+<td align="center">0.34</td>
+<td align="center">0.06</td>
+<td align="center">8.34</td>
+<td align="center">0.28</td>
+</tr>
+<tr>
+<td>Illness</td>
+<td align="center">−0.32</td>
+<td align="center">0.12</td>
+<td align="center">0.06</td>
+<td align="center">0.53</td>
+</tr>
+<tr>
+<td>In education</td>
+<td align="center">0.21</td>
+<td align="center">0.11</td>
+<td align="center">2.79</td>
+<td align="center">0.48</td>
+</tr>
+<tr>
+<td>Unemployed</td>
+<td align="center">0.96</td>
+<td align="center">0.13</td>
+<td align="center">4.00</td>
+<td align="center">0.55</td>
+</tr>
+<tr>
+<td>Retired</td>
+<td align="center">0.53</td>
+<td align="center">0.13</td>
+<td align="center">26.78</td>
+<td align="center">0.59</td>
+</tr>
+<tr>
+<td>Number of Children under Age 3</td>
+<td align="center">−0.07</td>
+<td align="center">0.05</td>
+<td align="center">1.26</td>
+<td align="center">0.23</td>
+</tr>
+<tr>
+<td>Number of Children between Age 4 and 11</td>
+<td align="center">−0.03</td>
+<td align="center">0.03</td>
+<td align="center">0.27</td>
+<td align="center">0.13</td>
+</tr>
+<tr>
+<td>Number of Children between Age 12 and 15</td>
+<td align="center">−0.06</td>
+<td align="center">0.04</td>
+<td align="center">−0.75</td>
+<td align="center">0.16</td>
+</tr>
+<tr>
+<td>Cohort Dummies</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Number of Observations</td>
+<td align="center" colspan="2">5,725</td>
+<td align="center" colspan="2">5,725</td>
+</tr>
+<tr>
+<td>Adjusted R-square</td>
+<td align="center" colspan="2">0.50</td>
+<td align="center" colspan="2">0.54</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="3"><i>Variables</i></th>
+<th align="center" colspan="4"><i>Equations</i></th>
+</tr>
+<tr>
+<th align="center" colspan="2"><i>Years in unemployment</i></th>
+<th align="center" colspan="2"><i>Years of illness/disabled</i></th>
+</tr>
+<tr>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>College Education</td>
+<td align="center">−0.37</td>
+<td align="center">0.06</td>
+<td align="center">−0.25</td>
+<td align="center">0.09</td>
+</tr>
+<tr>
+<td>Secondary Education</td>
+<td align="center">−0.30</td>
+<td align="center">0.05</td>
+<td align="center">−0.26</td>
+<td align="center">0.08</td>
+</tr>
+<tr>
+<td>Age</td>
+<td align="center">0.01</td>
+<td align="center">0.01</td>
+<td align="center">−0.03</td>
+<td align="center">0.02</td>
+</tr>
+<tr>
+<td>Is Working</td>
+<td align="center">0.18</td>
+<td align="center">0.06</td>
+<td align="center">−0.26</td>
+<td align="center">0.09</td>
+</tr>
+<tr>
+<td>Illness</td>
+<td align="center">−0.20</td>
+<td align="center">0.11</td>
+<td align="center">2.55</td>
+<td align="center">0.17</td>
+</tr>
+<tr>
+<td>In education</td>
+<td align="center">0.16</td>
+<td align="center">0.10</td>
+<td align="center">−0.10</td>
+<td align="center">0.15</td>
+</tr>
+<tr>
+<td>Unemployed</td>
+<td align="center">1.74</td>
+<td align="center">0.12</td>
+<td align="center">0.30</td>
+<td align="center">0.17</td>
+</tr>
+<tr>
+<td>Retired</td>
+<td align="center">0.65</td>
+<td align="center">0.12</td>
+<td align="center">0.27</td>
+<td align="center">0.19</td>
+</tr>
+<tr>
+<td>Number of Children under Age 3</td>
+<td align="center">0.03</td>
+<td align="center">0.05</td>
+<td align="center">−0.02</td>
+<td align="center">0.07</td>
+</tr>
+<tr>
+<td>Number of Children between Age 4 and 11</td>
+<td align="center">−0.03</td>
+<td align="center">0.03</td>
+<td align="center">−0.11</td>
+<td align="center">0.04</td>
+</tr>
+<tr>
+<td>Number of Children between Age 12 and 15</td>
+<td align="center">0.00</td>
+<td align="center">0.03</td>
+<td align="center">−0.24</td>
+<td align="center">0.05</td>
+</tr>
+<tr>
+<td>Cohort Dummies</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Number of Observations</td>
+<td align="center" colspan="2">5,725</td>
+<td align="center" colspan="2">5,725</td>
+</tr>
+<tr>
+<td>Adjusted R-square</td>
+<td align="center" colspan="2">0.06</td>
+<td align="center" colspan="2">0.05</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="3"><i>Variables</i></th>
+<th align="center" colspan="4"><i>Equations</i></th>
+</tr>
+<tr>
+<th align="center" colspan="2"><i>Years spent on home duties</i></th>
+<th align="center" colspan="2"><i>Years in retirement</i></th>
+</tr>
+<tr>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>College Education</td>
+<td align="center">−1.87</td>
+<td align="center">0.34</td>
+<td align="center">−0.10</td>
+<td align="center">0.07</td>
+</tr>
+<tr>
+<td>Secondary Education</td>
+<td align="center">−1.03</td>
+<td align="center">0.30</td>
+<td align="center">−0.04</td>
+<td align="center">0.06</td>
+</tr>
+<tr>
+<td>Age</td>
+<td align="center">0.22</td>
+<td align="center">0.07</td>
+<td align="center">0.03</td>
+<td align="center">0.02</td>
+</tr>
+<tr>
+<td>Is Working</td>
+<td align="center">−8.58</td>
+<td align="center">0.32</td>
+<td align="center">0.01</td>
+<td align="center">0.07</td>
+</tr>
+<tr>
+<td>Illness</td>
+<td align="center">−1.65</td>
+<td align="center">0.62</td>
+<td align="center">0.05</td>
+<td align="center">0.13</td>
+</tr>
+<tr>
+<td>In education</td>
+<td align="center">−5.04</td>
+<td align="center">0.56</td>
+<td align="center">−0.01</td>
+<td align="center">0.12</td>
+</tr>
+<tr>
+<td>Unemployed</td>
+<td align="center">−7.31</td>
+<td align="center">0.64</td>
+<td align="center">−0.02</td>
+<td align="center">0.13</td>
+</tr>
+<tr>
+<td>Retired</td>
+<td align="center">−34.35</td>
+<td align="center">0.69</td>
+<td align="center">8.96</td>
+<td align="center">0.14</td>
+</tr>
+<tr>
+<td>Number of Children under Age 3</td>
+<td align="center">−0.66</td>
+<td align="center">0.27</td>
+<td align="center">−0.03</td>
+<td align="center">0.06</td>
+</tr>
+<tr>
+<td>Number of Children between Age 4 and 11</td>
+<td align="center">−0.03</td>
+<td align="center">0.15</td>
+<td align="center">0.03</td>
+<td align="center">0.03</td>
+</tr>
+<tr>
+<td>Number of Children between Age 12 and 15</td>
+<td align="center">0.42</td>
+<td align="center">0.18</td>
+<td align="center">−0.05</td>
+<td align="center">0.04</td>
+</tr>
+<tr>
+<td>Cohort Dummies</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Number of Observations</td>
+<td align="center" colspan="2">5,725</td>
+<td align="center" colspan="2">5,725</td>
+</tr>
+<tr>
+<td>Adjusted R-square</td>
+<td align="center" colspan="2">0.75</td>
+<td align="center" colspan="2">0.46</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th><i>Male Employee Earnings</i></th>
+<th><i>Female Employee Earnings</i></th>
+<th><i>Self-employment Earnings</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>College Education</td>
+<td align="center">0.56</td>
+<td align="center">0.81</td>
+<td align="center">0.72</td>
+</tr>
+<tr>
+<td/>
+<td align="center">(0.03)</td>
+<td align="center">(0.03)</td>
+<td align="center">(0.06)</td>
+</tr>
+<tr>
+<td>Secondary Education</td>
+<td align="center">0.31</td>
+<td align="center">0.49</td>
+<td align="center">0.31</td>
+</tr>
+<tr>
+<td/>
+<td align="center">(0.03)</td>
+<td align="center">(0.03)</td>
+<td align="center">(0.06)</td>
+</tr>
+<tr>
+<td>Work Experience (Years)</td>
+<td align="center">0.09</td>
+<td align="center">0.05</td>
+<td align="center">0.03</td>
+</tr>
+<tr>
+<td/>
+<td align="center">(0.00)</td>
+<td align="center">(0.00)</td>
+<td align="center">(0.00)</td>
+</tr>
+<tr>
+<td>Work Experience (Squared)</td>
+<td align="center">0.00</td>
+<td align="center">0.00</td>
+<td align="center">0.00</td>
+</tr>
+<tr>
+<td/>
+<td align="center">(0.00)</td>
+<td align="center">(0.00)</td>
+<td align="center">(0.00)</td>
+</tr>
+<tr>
+<td>Years of Unemployment)</td>
+<td align="center">0.04</td>
+<td align="center">0.01</td>
+<td align="center">0.01</td>
+</tr>
+<tr>
+<td/>
+<td align="center">(0.00)</td>
+<td align="center">(0.00)</td>
+<td align="center">(0.00)</td>
+</tr>
+<tr>
+<td>Gender (Male=1)</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center">0.44</td>
+</tr>
+<tr>
+<td/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">(0.06)</td>
+</tr>
+<tr>
+<td>Total Number of Observation</td>
+<td align="center">13678</td>
+<td align="center">10231</td>
+<td align="center">5092</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>(standard errors are reported in the parenthesis).</p></div></figure></div></details></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/figures.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

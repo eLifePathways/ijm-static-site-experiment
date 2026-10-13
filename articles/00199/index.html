@@ -1,0 +1,1083 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Developing a microsimulation model for farm forestry planting decisions | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00199"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00199" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/environment" data-astro-cid-ak4gb66a>Environment</a>, <a href="/subjects/taxes-benefits" data-astro-cid-ak4gb66a>Taxes and Benefits</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Aug 31, 2019</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Developing a microsimulation model for farm forestry planting decisions</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Mary Ryan, Cathal O’Donoghue</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Teagasc, Rural Economy &amp; Development Programme, Athenry, Co. Galway, Ireland; NUIG Policy Lab, National University of Ireland, Galway, Ireland</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/12-2/volume-12-2-summer-2019" data-astro-cid-ak4gb66a>Volume 12(2) Summer 2019</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> M. Ryan, C. O’Donoghue; 2019; <span data-astro-cid-ak4gb66a>Developing a microsimulation model for farm forestry planting decisions</span>; International Journal of Microsimulation; 12(2); 18–36. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00199" data-astro-cid-ak4gb66a>10.34196/ijm.00199</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>There is increasing pressure in Europe to convert land from agriculture to forestry which would enable the sequestration of additional carbon, thereby mitigating agricultural greenhouse gas production. However, there is little or no information available on the drivers of the land use change decision from agriculture to forestry at individual farm level, which is complicated by the inter-temporal nature of the decision. This paper describes a static microsimulation approach which provides a better understanding of the life-cycle relativity of forestry and agricultural incomes, using Ireland as a case-study. The microsimulation methodology allows for the generation of actual and counterfactual forest and agricultural income streams and for other attributes of utility such as long-term wealth and leisure, for the first time. These attributes are then modelled using purpose built forest models and farm microdata from a 30 year longitudinal dataset. The results show the importance of financial drivers but additionally show that wealth and leisure are also important factors in this inter-temporal land use change decision. By facilitating the examination of the distribution of farms across the farming population, the use of a static microsimulation approach allows us to make a considerable contribution to the literature in relation to the underlying drivers of farm afforestation behaviour. In the broader context of Climate Smart Agriculture and the Grand Challenges facing the intensification of agricultural production, these findings have implications for policies that seek to optimize natural resource use.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00199/ijm-00199.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00199.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00199.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00199" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00199/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. Theoretical framework</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. Methodology and data</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. Results I: baseline simulations</a></li><li data-astro-cid-twdwaz5s><a href="#s5" data-astro-cid-twdwaz5s>5. Results II: distributional analysis</a></li><li data-astro-cid-twdwaz5s><a href="#s6" data-astro-cid-twdwaz5s>6. Conclusions</a></li><li data-astro-cid-twdwaz5s><a href="#footnotes" data-astro-cid-twdwaz5s>Footnotes</a></li><li data-astro-cid-twdwaz5s><a href="#appendix1" data-astro-cid-twdwaz5s>Appendix 1</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>There is increasing pressure in Europe to convert land from agriculture to forestry which would enable the sequestration of additional carbon, thereby mitigating agricultural greenhouse gas production.<sup><a href="#fn1">1</a></sup> The recognition of the multiple values of forests has led to international efforts to increase the planting of new forests (afforestation). However, despite the provision of economic incentives, afforestation targets across Europe are not being met (<a href="#bib53">European Commission, 2013</a>).<sup><a href="#fn2">2</a></sup> This policy failure has consequences downstream in the value chain in for timber processing, for increasing demand for wood fibre and for the potential of forests to sequester carbon and mitigate greenhouse gas emissions. In this paper, we develop a microsimulation model to help to understand the drivers of forest planting behaviour</p><p data-astro-cid-qsyhzaho>This paper develops a microsimulation based framework looking at the drivers of decisions in relation to afforestation (new planting). The literature suggests that a number of factors affect the afforestation decision. In a meta-analysis (<a href="#bib1">Beach et al., 2005</a>) assessed the primary factors driving decision-making among landowners considering afforestation: owner characteristics, plot/resource conditions, factors that affect the forest investment decision and market drivers (costs and returns from forestry and alternative enterprises). <a href="#bib10">Edwards and Guyer (1992)</a> reported that the principal constraints to planting in the UK include lack of land, duration of the commitment and the inability of the annual subsidy payments to compete with agricultural returns. <a href="#bib51">Van Gossum et al. (2012)</a> and <a href="#bib30">Moons and Rousseau (2007)</a> suggest that Flemish forest subsidies are not high enough and the absence of financial benefits for farmers was one of the main reasons for the limited uptake by farmers in the Netherlands (<a href="#bib50">Van Gossum et al., 2010</a>).</p><p data-astro-cid-qsyhzaho>With the growing importance of natural resource and environmental issues in policy spheres, the microsimulation literature has been developing in natural resource spheres such as agriculture, environment and land use (<a href="#bib42">Richardson et al., 2014</a>; <a href="#bib19">Hynes and O’Donoghue, 2014</a>; <a href="#bib54">O’Donoghue, 2017</a>; <a href="#bib43">Ryan et al., 2014</a>). In developing a microsimulation model with the aim of simulating the drivers of afforestation behavior on farms, this paper charts the development of one of the first forestry based microsimulation models.</p><p data-astro-cid-qsyhzaho>While our interest in this study is on drivers of behaviour, we do not develop a behavioural simulation model, but one that is static in nature, where we develop a static microsimulation framework which takes a population distribution and simulates ‘day-after policy’ changes on farms. Thus we develop a model initially with a focus on drivers of forestry planting behaviour. It is therefore a forestry parallel to the microsimulation literature that looks at tax and social policy. In understanding pressures on behavior, this analysis develops static-based measures akin to the use of replacement rates (<a href="#bib35">O’Donoghue, 2011</a>) and marginal effective tax rates (<a href="#bib21">Immervoll, 2005</a>). In doing this, we model the impact on income and public transfers and other issues such as land value and hours worked as a result of converting agricultural land to forestry. We consider in particular the differential implications of planting across the distribution of farms, noting significant heterogeneity amongst farms. Further light could also be shed on the levers driving the land use change by specifically comparing the farm incomes and incentives for those farms that have planted in the past against the farm incomes and incentives that applied to farms without forests.</p><p data-astro-cid-qsyhzaho>We select Ireland as a case study as it is the country within Europe that saw the most rapid increase in afforestation following the introduction of financial incentives for the afforestation of agricultural land. The period 1985 to 1995 saw a rapid increase in annual planting by farmers from just over 5,000 ha to almost 24,000 ha. In recent years however, the decline in afforestation rates has equally been most pronounced in Ireland relative to other European countries as the planting rate has fallen off to just under 5,000 ha in recent years(<a href="#bib12">Forest Service, 2018</a>), despite substantial increases in subsidy payments. Studies that specifically examine farmer afforestation in Ireland have found that there is a preference not to plant land that is profitable in agriculture (<a href="#bib14">Frawley and Leavy, 2001</a>; <a href="#bib39">O’Leary et al., 2000</a>; <a href="#bib28">McDonagh et al., 2010</a>; <a href="#bib33">Ní Dhubháin and Gardiner, 1994</a>; <a href="#bib6">Duesberg et al., 2013</a>; <a href="#bib7">Duesberg et al., 2014</a>) and a strong preference for the utility or value that farmers derive from the farming lifestyle. Increasingly, the loss of flexibility of land use as a result of the permanence of forestry is seen as a barrier to afforestation (<a href="#bib28">McDonagh et al., 2010</a>; <a href="#bib7">Duesberg et al., 2014</a>; <a href="#bib6">Duesberg et al., 2013</a>).</p><p data-astro-cid-qsyhzaho>This paper develops a model to simulate financial and lifestyle drivers of the forestry planting decision. The analysis utilises farm micro data together with bio-economic forestry models and forest subsidy models to estimate the return from an alternative agricultural land use. An examination of the combination of these data and factors has not previously been undertaken in the forestry literature and is facilitated here by the use of microsimulation modelling, which abstracts from reality to better understand complexity (<a href="#bib37">O’Donoghue, 2014</a>). In Section 2 the factors influencing a long-term participation decision such as forestry are investigated in order to develop a theoretical framework. Section 3 describes the generation of the variables used in the models and Section 4 presents the results. We finish with discussion and conclusions.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. Theoretical framework</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In determining the nature of the microsimulation model required to simulate the drivers of afforestation behaviour, we firstly examine the theoretical framework required to compare the incentives of alternative land uses. The literature that addresses the land use change from agriculture to forestry (or farm afforestation) is actually quite limited as the vast majority of studies in relation to the economics of forestry focus on deforestation or management decisions in pre-existing forests.</p><p data-astro-cid-qsyhzaho>As the return from forestry is quite long term with potentially a 40–50 year gap between planting and harvesting for coniferous trees (and longer (up to 150 years) for deciduous trees), afforestation is a long-term investment. Even with the long term planning horizon, afforestation is an unusual land use change as it is a permanent change in many countries (there is a legal requirement to re-plant the land after timber harvesting (<a href="#bib45">Ryan et al., 2016</a>). Conversely, the alternative land use, agriculture, has a relatively short time horizon with a one to three year cycle for agricultural produce. Thus the land use change incurs an inter-temporal annual opportunity cost foregone from existing farm enterprises such as dairy, cattle rearing, sheep or tillage enterprises. In comparing alternative land uses over a long period of time, we will need to model alternative income streams over a long time period and the consequential differences in the net present value of income.</p><p data-astro-cid-qsyhzaho>The literature that deals with agricultural opportunity costs in the context of farm afforestation is also limited and focuses largely on the calculation of the opportunity cost of carbon sequestration through afforestation at an aggregate level (see <a href="#bib31">Moulton and Richards, 1990</a>; <a href="#bib39">O’Leary et al., 2000</a>). Due to the policy complexity of comparing agricultural and forestry income streams over time, studies in this area are based largely on average opportunity costs across farm systems. <a href="#bib34">O’Connor and Kearney (1993)</a>, <a href="#bib27">McCarthy et al. (2003)</a> and <a href="#bib43">Ryan et al. (2014)</a>, use average values to highlight the importance of the loss of agricultural subsidies when land is planted. In calculating the net return from farm afforestation, <a href="#bib5">Dudek and LeBlanc (1990)</a> use average agricultural opportunity costs and <a href="#bib3">Breen et al. (2010)</a> use average farm management data (<a href="#bib46">Teagasc, various years</a>) to calculate the opportunity cost of the superseded agricultural enterprise, while <a href="#bib49">Upton et al. (2013)</a> compare average life-cycle agricultural and forest incomes. <a href="#bib16">Herbohn et al. (2009)</a> go further and use actual farm input data to calculate the agricultural opportunity cost of planting on individual farms. However, in reality there is a large degree of income heterogeneity at individual farm level, yet to our knowledge, there are no studies that examine the distribution of farms in quantifying the life-cycle financial drivers that influence planting behaviour.</p><p data-astro-cid-qsyhzaho>As farm afforestation is essentially a permanent land-use change which imposes loss of flexibility in relation to land use (as there is a legal obligation to retain land under forest once planted), we expect that planting could negatively impact on the long-term wealth of farmers, as planted land is no longer available for agriculture for current or future generations. Therefore in addition to changes in the net present value of income, we need also to consider changes in farm wealth, by examining whether there is a difference in farmers’ perception of the value of their land before and after planting.</p><p data-astro-cid-qsyhzaho>Traditional economic theory suggests that individuals make decisions based on the expected change in their level of ‘well-being’, where the term used for well-being or welfare is utility (<a href="#bib11">Edwards-Jones, 2006</a>). Given that utility is a difficult concept to measure, economists have often made the simplifying assumption that money can act as a substitute for utility. This has led to the situation observed in many agricultural economic models in which farmers act to maximise profitability in all circumstances (<a href="#bib11">Edwards-Jones, 2006</a>). However, the Random Utility Maximisation (RUM) and Discrete Choice methodologies employed by <a href="#bib55">McFadden, 1973</a> and <a href="#bib2">Ben-Akiva and Lerman (1985)</a> incorporate the value of leisure time as a component of utility.</p><p data-astro-cid-qsyhzaho>Labour requirements also differ between agricultural and forest land use. Relatively little labour is required for forest management on a day to day basis, whereas for an animal based agricultural system, there are regular day-to-day labour requirements, e.g. feeding and maintaining the animals and grassland management. Thus we expect that farmers who plant land have reduced working hours with a consequent increase in potential leisure time period. This may act as an incentive for farmers who are motivated by life-style and may be willing to make a trade-off between income and leisure (<a href="#bib44">Ryan et al., 2015</a>).</p><p data-astro-cid-qsyhzaho>Previous studies have highlighted the importance of the relative potential incomes from agriculture and forestry. However, the impact of planting on annual income is less clear because the sources of income are so different. Agriculture and forestry are highly regulated and subsidised businesses, given the public good nature of many of the outputs. Income is thus derived from both market and public sources. Agricultural income includes annual market income and agricultural policy subsidies, which are tied either to production in the case of coupled payments, or land in the case of decoupled payments.<sup><a href="#fn3">3</a></sup> As planting land results in a reduction in the agricultural land area, agricultural subsidy payments may be reduced on planting. The opportunity costs of planting arising from the loss of agricultural market and subsidy income are intertemporal in nature as they are essentially incurred for each year of the forest rotation.</p><p data-astro-cid-qsyhzaho>Income from forestry is net of up-front planting costs, regular maintenance and management costs,with periodic thinning costs. Income may arise from periodic thinnings with harvesting income arising at the end of the forest rotation. Afforestation income streams also include considerable policy subsidies. Thus, losing land from agriculture to forestry, in a straight land use change, sees a reduction in both agricultural market incomes and subsidies and ‘lumpy increases in forestry market incomes and subsidies. The time-lines of the market and subsidy income, along with the wealth and leisure components of the farm afforestation decision are important in developing the inter-temporal framework and are presented graphically in <a href="#fig1">Figure 1</a>.</p><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00199-fig001.Bdm-mu25_Z1RwfW4.webp" class="figure-lightbox-trigger" data-pswp-width="1594" data-pswp-height="977" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00199-fig001.Bdm-mu25_Z1RwfW4.webp" alt width="1594" height="977" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Timelines of financial, policy and leisure components of the utility associated with the land use change from agriculture to forestry</span></figcaption></figure><p data-astro-cid-qsyhzaho>Apart from the high-level income, wealth and leisure differences between agriculture and forestry, there is also significant micro-unit variability as farms can vary by soil type and agronomic characteristics (which influence productivity), farm system (which influences incomes and costs) and individual farmer characteristics and skills (which influence efficiency and investment decisions). Thus we expect the drivers of the planting decision to vary considerably across farm types.</p><p data-astro-cid-qsyhzaho>In summary, the inter-temporal modelling of the differential life-cycles of the agricultural and forest income cycle factors addressed in the literature should provide a better understanding of the direct and indirect opportunity costs faced by individual farmers in considering forestry. However, due to the dearth of farm forestry micro-data, previous studies have been undertaken either using aggregate data or sectoral averages, yet these do not consider the differential farm and farmer characteristics and environmental conditions that apply at individual farm level. Thus an analytical, microsimulation based approach that provides information on the economic drivers of planting behaviour - across the distribution of farms - is appropriate to model alternative land use decisions and assess the impact of financial and lifestyle drivers.</p></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. Methodology and data</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>This study develops a model that simulates at a micro-level, the market, environmental, policy and leisure drivers of forestry planting, in an inter-temporal framework. Here we describe the methodology used to develop a farm-forest microsimulation model which allows us to compare income streams over time between the alternative land uses of agriculture and forestry.</p><section id="s3-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.1. Farm forestry microsimulation model</h3><p data-astro-cid-qsyhzaho>The use of a microsimulation approach here allows for the consideration of two dimensions of complexity, the policy/market and the distributional characteristics, namely a static microsimulation model (<a href="#bib24">Li et al., 2014</a>). Static models take individual characteristics and behaviours as exogenous and are commonly referred to as models that estimate the ‘day after’ impact of a policy reform, ignoring the behavioural response impact due to the policy. While it would be interesting to model the response to policy changes on the probability of afforestation, given the complexity of the decision-making process, a necessary pre-condition is to first understand the drivers of economic (annual income and overall wealth) and working hours/leisure of planting behavior.</p><p data-astro-cid-qsyhzaho>To understand the economic drivers of forest planting behaviour, one needs to understand the full range of factors that influence the opportunity cost of planting, namely (a) the potential forest market and subsidy income streams arising from afforestation, given the specific soil/productivity conditions for individual farms; (b) the annual agricultural market and subsidy income foregone for each year of the forest rotation (depending on soil/productivity conditions of individual farms); and the impact of planting on changes in long-term land value (wealth) and hours worked (leisure).</p><p data-astro-cid-qsyhzaho>In this paper, we want to examine the impact of planting one additional hectare of forest on overall farm income, land value and leisure. Thus we simulate the marginal impact of a planting decision on the factors described above. This is similar methodologically to how the marginal effective tax rate (METR) is calculated in the household microsimulation literature, which examines the degree to which an increase in income of one euro would be ‘taxed away’ from a combination of all instruments, thus influencing household behaviour (<a href="#bib20">Immervoll, 2004</a>).</p><p data-astro-cid-qsyhzaho>The simulation approach undertaken here, drawing upon the method used in Immervoll (ibid) allows for the calculation of the marginal effect of planting on all income sources associated with both the existing land use, agriculture and the alternative land use forestry. This paper follows this methodology and utilises micro-data from a static population of farms to examine the impact of planting on agricultural income and hours worked.</p><p data-astro-cid-qsyhzaho>In order to model the distribution of farmers in Ireland, this analysis utilizes a micro dataset of potential farm forests in order to compare the distribution of incentives for farms that have already planted (has forest) versus farms that haven’t planted (no forest). This is undertaken by simulating (a) counterfactual forest income observations for farms that didn’t plant and (b) counterfactual agricultural incomes for farms that planted land.</p><p data-astro-cid-qsyhzaho>The use of microsimulation models has grown in recent years in agriculture and natural resource policy. While static microsimulation models can be regarded as being ‘simpler’ microsimulation models, ignoring behavioural, temporal or spatial effects, simulations can still be complex as the modelling process tries to represent the heterogeneous patterns of interacting population structures and policy complexity. To our knowledge, this is the first example of a forestry-focused static microsimulation model in the literature.</p></section><section id="s3-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.2. Methodological choices</h3><p data-astro-cid-qsyhzaho>Developing microsimulation models involves many methodological choices. A wide range of parameters have been identified throughout the literature, including:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>type of microsimulation (what)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>unit of analysis & variation (who) and</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>unit of measurement (how & how much).</p></li></ul><p data-astro-cid-qsyhzaho>The modelling options required for static microsimulation models are presented in the following sections, referring in particular to two bespoke forest models developed to model the forest policy environment in Ireland since the 1980s, namely the Teagasc Forest Subsidies (ForSubs) model developed by <a href="#bib43">Ryan et al. (2014)</a> and the Teagasc Forest Bio-economic Systems (ForBES) model developed by <a href="#bib45">Ryan et al. (2016)</a>, which in combination, generate life-cycle forest incomes by modelling forest subsidies and the biological system associated with tree growth, volume production and timber values for a range of species with different environmental conditions and management practices.</p></section><section id="s3-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.3. Unit and period of analysis</h3><p data-astro-cid-qsyhzaho>The choice of the unit of analysis is a key decision of a model builder. Two bespoke forestry models are utilised to understand the comparative advantage of forestry versus agricultural land use, so the common unit of analysis is land and in particular, the farm. Thus the comparative analysis is conducted in relation to subsidies or incomes at the hectare (ha) level. The ForSubs model generates the forest subsidy relevant for the conversion of land from agriculture to forestry (on a per hectare basis), in a given year, while the ForBES model generates forest market income (also on a per hectare basis).</p><p data-astro-cid-qsyhzaho>The next methodological choice is the period of analysis. This refers to the time period over which an analysis applies. The analyses described thus far relate to policies within a particular period. Most policy models focus on the current period and typically model work incentives (<a href="#bib21">Immervoll, 2005</a>). However analyses such as those considered in pensions or education financing are undertaken over longer life-cycle horizons (<a href="#bib56">Falkingham et al., 1999</a>). The conversion of agricultural land to forestry is such a life-cycle choice, thus the period of analysis extends over the full life cycle of a forest.</p></section><section id="s3-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.4. Analytical measures used</h3><p data-astro-cid-qsyhzaho>Fundamental to the analytical choice is the specific analytical measure used. The afforestation decision is essentially an investment decision as farmers ’invest’ their land in forestry. The analytical measures used to model the return on investment vary from nominal values to benefit-to-tax ratio (<a href="#bib22">James and Villas, 2000</a>; <a href="#bib47">Thorburn et al., 2007</a>) to Net Present Value (NPV) (<a href="#bib15">Geanakoplos et al., 1998</a>) to Internal Rate of Return (IRR), depending on the type of investment.</p><p data-astro-cid-qsyhzaho>Within the field of agriculture, the primary focus is on quantifying the costs associated with a given level of production, quantifying the relative profit margin, the total cost and the opportunity costs of different production systems (<a href="#bib48">Thorne and Fingleton, 2006</a>). In the case of examining the land use change from agriculture to forestry, the analytical measures of return required are those which incorporate the inter-temporal nature of the decision, but also facilitate comparison between the opportunity cost of the annual (agricultural) income and multi-annual (forest) income.</p><p data-astro-cid-qsyhzaho>A life-cycle framework is thus required to capture the implications of different afforestation and forest management choices. Discounted Cash Flow (DCF) is the most widely used methodology for determining the economic value of a forest or a parcel of bare land to be afforested (<a href="#bib17">Hiley, 1954</a>). The DCF methodology involves the calculation of the net present value<sup><a href="#fn4">4</a></sup> (NPV), using the <a href="#bib57">, 1849</a> formula. In recent years, the inclusion of non-market values in sustainable forest management (SFM) requires broader thinking and more complex models but the Faustmann formula remains appropriate for sustained yield plantation forests (<a href="#bib23">Kant, 2003</a>).</p><p data-astro-cid-qsyhzaho>The choice of calculation methodology depends on whether the period of analysis reflects one rotation or an infinite number of rotations. The primary interest of this analysis is the comparison of annual returns from an agricultural enterprise against the returns from forestry over one rotation. Using NPV to generate the future value of the forest involves the projection of costs and incomes forward and then discounting these costs and incomes to the present day, at a target rate of interest (<a href="#bib17">Hiley, 1954</a>), thus <a href="#EQ1">equation 1</a> defines</p><div id="EQ1" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(1)</span><math><mi>N</mi><mi>P</mi><mi>V</mi><mo>=</mo><mfrac><mrow><mn>1</mn></mrow><mrow><msup><mrow><mfenced separators="|"><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfenced></mrow><mrow><mi>n</mi></mrow></msup></mrow></mfrac></math></div><p data-astro-cid-qsyhzaho>where n is the number of years into the future (in this case the number of years of the forest rotation) that the income amount (I) will be received, or spent if the income amount is negative.</p><p data-astro-cid-qsyhzaho>In the case of a forest, income and costs can accrue unevenly over the rotation, thus the net present value (NPV) of the whole income stream is the sum of the present values of the annual amounts in the income stream as presented in <a href="#EQ3">equation (3)</a>, (assuming a constant discount rate).</p><div id="EQ2" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(2)</span><math><mi>N</mi><mi>P</mi><mi>V</mi><mo>=</mo><mfrac><mrow><msub><mrow><mi>I</mi></mrow><mrow><mn>0</mn></mrow></msub></mrow><mrow><msup><mrow><mfenced separators="|"><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfenced></mrow><mrow><mn>0</mn></mrow></msup></mrow></mfrac><mo>+</mo><mfrac><mrow><msub><mrow><mi>I</mi></mrow><mrow><mn>1</mn></mrow></msub></mrow><mrow><msup><mrow><mfenced separators="|"><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfenced></mrow><mrow><mn>1</mn></mrow></msup></mrow></mfrac><mo>+</mo><mo>…</mo><mo>+</mo><mfrac><mrow><msub><mrow><mi>I</mi></mrow><mrow><mi>n</mi></mrow></msub></mrow><mrow><msup><mrow><mfenced separators="|"><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfenced></mrow><mrow><mi>n</mi></mrow></msup></mrow></mfrac><mo>+</mo><mo>…</mo><mo>=</mo><mrow><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><mi mathvariant="normal">∞</mi></mrow></munderover><mrow><mfrac><mrow><msub><mrow><mi>I</mi></mrow><mrow><mi>i</mi></mrow></msub></mrow><mrow><msup><mrow><mfenced separators="|"><mrow><mn>1</mn><mo>+</mo><mi>r</mi></mrow></mfenced></mrow><mrow><mi>i</mi></mrow></msup></mrow></mfrac></mrow></mrow></math></div><p data-astro-cid-qsyhzaho>Both market and non-market income streams are included in NPV calculations as described in the next sections.</p></section><section id="s3-5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.5. Generation of forest subsidies</h3><p data-astro-cid-qsyhzaho>The paramaterisation of annual changes in forest subsidy eligibility criteria, payment rates, forest species composition, and area limitations was undertaken by <a href="#bib43">Ryan et al. (2014)</a> in developing the Teagasc ForSubs model. The main factors which determine the rate of payment of forest subsidies are:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>year of afforestation and area planted</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>eligibility for higher “farmer” rate of subsidy</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>LFA<sup>[<a href="#fn5">5</a>]</sup> status</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>species choice is largely governed by forest yield class (yc) which is a measure of the average volume production over the lifetime of a forest crop.</p></li></ul></section><section id="s3-6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.6. Generation of forest market income</h3><p data-astro-cid-qsyhzaho>As there is little or no microsimulation literature that addresses afforestation, this paper provides information on the forest growth and market parameters that are required to model farm forests, using the Teagasc ForBES model (<a href="#bib45">Ryan et al., 2016</a>), which estimates future timber volume production on the basis of specific agronomic and management factors, utilizing the forest yield models of <a href="#bib9">Edwards and Christie (1981)</a>. Timber revenues are calculated by multiplying the timber volume by the relevant timber prices for given log size categories. All establishment, management and harvesting costs are subtracted from incomes to arrive at future net income flows.<sup>[<a href="#fn6">6</a>]</sup> These are then discounted to provide the economic return on a forest, given specific afforestation and management choices such as whether the forest is thinned or not<sup>[<a href="#fn7">7</a>]</sup>. In calculating forest market income in the context of a land use change from agriculture to forestry, the annual opportunity cost of the superseded agricultural enterprise should also be included.</p><p data-astro-cid-qsyhzaho>ForBES incorporates outputs from ForSubs to generate total NPV annual forest (market and subsidy) income for each year of a forest rotation. However, it is only possible to make direct comparisons between the NPV return on two investments (in this case, land uses) if both land uses have the same life spans. Thus the NPV needs to be annualised so that it can be expressed on the same basis as annual agricultural returns. The AE value is calculated as follows:</p><div id="EQ3" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(3)</span><math><mi>A</mi><mi>E</mi><mo>=</mo><mi> </mi><mfrac><mrow><mi>r</mi><mo>.</mo><mi>N</mi><mi>P</mi><mi>V</mi></mrow><mrow><mn>1</mn><mo>-</mo><mo>(</mo><msup><mrow><mn>1</mn><mo>+</mo><mi>r</mi><mo>)</mo></mrow><mrow><mo>-</mo><mi>n</mi></mrow></msup></mrow></mfrac></math></div><p data-astro-cid-qsyhzaho>In order to examine multi-annual forest life-cycle incomes, a discount factor is employed. Essentially, current (2015) input prices are examined and a decision is taken as to whether to adjust these forward for the life-cycle using a consumer price index (CPI), or whether to hold both costs and prices constant for the life-cycle. The NPV calculation then discounts this back to the present day value.</p><p data-astro-cid-qsyhzaho>The discount rate chosen for the NPV calculations can significantly increase or decrease the returns from an afforestation project. There are essentially two components within the discount factor, one which accounts for time preferences and represents the return to money in the bank and the second which accounts for risk. The convention in Ireland is to use a real rate of 5% (<a href="#bib4">Clinch, 1999</a>), reflecting an interest rate of 3% and a risk premium of 2% for risk elements such as fire, wind-blow and market risk (<a href="#bib40">Phillips et al., 2013</a>). For a forest investment with the common pattern of incurring costs in the early years and not accruing profits until later, using a higher discount rate will reduce the NPV. The convention is to ignore any effects of possible inflation, as this cannot be predicted. Therefore, the return is regarded as a ‘real’ rate of return.</p><p data-astro-cid-qsyhzaho>The ForBES and ForSubs models do not include a taxation component. The convention for forest valuation is to generate pre-tax values for agriculture and forestry as per the International Accounting Standard (IAS 41 – Agriculture) (<a href="#bib8">EC, 2009</a>).</p></section><section id="s3-7" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.7. Generation of agricultural income streams using farm survey micro data</h3><p data-astro-cid-qsyhzaho>The primary data source for this analysis is the Teagasc National Farm Survey (NFS) which is Ireland’s contribution to the EU Farm Accountancy Data Network (FADN). The NFS collects detailed information from a representative sample of farms in Ireland over the period 1985–2013 (inclusive) which contains farm and farmer characteristics of the farms that chose to afforest land over the period as well as those that did not choose to afforest land. The data are used to generate long-term agricultural cost and revenue streams for each of six agricultural systems (dairy, cattle rearing, cattle other, sheep, tillage and mixed livestock) on six soil types. The consumer price index (CPI) for 2013 is applied to all incomes to make them comparable.</p><p data-astro-cid-qsyhzaho>Data were also utilised from a Teagasc NFS supplementary survey conducted in 2012, which collected additional attitudinal questions, including whether farmers would plant if financial incentives were increased (’might plant’ and ’never plant’). In order to incorporate these into the analysis, only the set of farms that were contained in the survey in 2012 are considered when classifying results by future planting intentions. Actual farm micro data are used to calculate farm incomes per hectare. Given that it is not clear as to which definition of income is used by farmers in making decisions, we compare the forestry AE value with different farm income measures, namely:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Market Income: Market Gross Output – Direct Costs per hectare</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Gross Margin: Farm Subsidies + Market Gross Output – Direct Costs per hectare</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Net Margin: Farm Subsidies + Market Gross Output – Direct Costs – Overhead Costs per hectare</p></li></ul></section><section id="s3-8" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.8. Forest microsimulation model structure</h3><p data-astro-cid-qsyhzaho>The model structure can be summarized as follows:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The model assumes a straight land use change from agriculture to forestry (on a per hectare basis)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Agricultural market and subsidy incomes (per hectare) are derived from the Teagasc NFS raw data</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Forest subsidy income is simulated by the ForSubs model on a per ha basis</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Forest market income (per ha) is derived using the ForBES model</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Agricultural and forestry counterfactual incomes are simulated based on actual agricultural incomes for farms that have already planted land and on ForBES forest incomes for farms that haven’t planted.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Other components of utility, namely long-term income (land value) and leisure (hours worked) are derived from raw data using panel regressions.</p></li></ul><p data-astro-cid-qsyhzaho>Analysing the impact of land use change on farm incomes is relatively complex, involving the simulation of counter-factual market and subsidy income for the forestry land use. As in the case of marginal effective tax rate calculations (<a href="#bib20">Immervoll, 2004</a>), it is not possible to validate at aggregate level for a hypothetical marginal change simulation such as this. However extensive validation has been undertaken in the development of both the ForBES model that simulates forest market income, taking soil productivity into account (described in <a href="#bib45">Ryan et al., 2016</a>) and the ForSubs model that simulates forest subsidy income (described in <a href="#bib43">Ryan et al., 2014</a>). These studies generated forest market and subsidy income streams for Irish forests and confirmed the accuracy of the results by undertaking extensive validations against administrative, productivity and market data sources for Irish forests. In addition, as the NFS is the gold standard data source, we can be confident of the robustness of the agricultural incomes utilized in the analysis.</p></section></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. Results I: baseline simulations</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The output from the static microsimulation model initially provides forest market and subsidy income simulations derived using ForBES, along with land value and hours worked values derived from NFS farm micro-data.</p><p data-astro-cid-qsyhzaho>ForBES provides cost and income curves for thin and no-thin scenarios and generate annual equivalent NPVs for a range of discount rate, subsidy, thinning, rotation and indexation options. The life-cycle pattern of costs and incomes are presented graphically in <a href="#fig2">Figure 2</a> Figure 2for establishing a Sitka spruce (SS) forest (which accounts for almost two thirds of non-industrial private forestry in Ireland) in 2015, across a range of productivity (yield) classes (yc).</p><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00199-fig002.Dp1P7qzE_ZNgadf.webp" class="figure-lightbox-trigger" data-pswp-width="1594" data-pswp-height="903" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00199-fig002.Dp1P7qzE_ZNgadf.webp" alt width="1594" height="903" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Life-Cycle Pattern of Incomes and Costs by yield class over 1 rotation (2015) for conifer thin (ct) and conifer no thin (cnt) options</span></figcaption></figure><p data-astro-cid-qsyhzaho>There is a considerable difference between the curves for the conifer thin (ct) and no-thin (cnt) scenarios. The distribution of income and cost in the early years of the rotation is the same for both thinned and unthinned crops, regardless of yield class, as early income is derived from grant and premium subsidies which are categorised only by species and not by site productivity. Across the yield classes, there is an almost incremental increase in income.</p><p data-astro-cid-qsyhzaho>In this analysis, the reforestation cost of the next rotation is included as a cost in the first rotation and is evident in the substantial increase in costs after clearfell. While it can be argued that theoretically, the cost of reforestation should not be apportioned to the first rotation, from a pragmatic and transparency perspective, forest owners cannot achieve clearfell revenues without incurring the cost of reforestation. In reality, because the cost arises at the end of the rotation and is dwarfed by the clearfell revenue, it is unlikely to have much impact on the magnitude of the NPV.</p><section id="s4-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.1. Panel data models: on farm hours and land value per hectare</h3><p data-astro-cid-qsyhzaho>In understanding the impact of forestry planting on hours worked and land values, we estimate two panel data models using the Teagasc NFS which collects annual data on the number of hours worked (on and off-farm) and on farmer’s self-assessed land value. The model coefficients for the random effects panel data models necessary to impute counterfactuals for hours worked and land value reported (taking logs to remove the scale effects) are reported in <a href="#app1table2">Appendix 1—Table 2</a>. The model outputs are consistent with <i>a priori</i> expectations in relation to how hours worked and land value change for different farm and farmer characteristics and have good explanatory power (Hours worked <math alttext="R^{2}" id="inf4"><msup><mrow><mi>R</mi></mrow><mrow><mn>2</mn></mrow></msup></math> 33%, Land value <math alttext="R^{2}" id="inf5"><msup><mrow><mi>R</mi></mrow><mrow><mn>2</mn></mrow></msup></math> 31%).</p><p data-astro-cid-qsyhzaho>As expected, the coefficient on new forest planting is negative and significant, indicating a reduction in hours worked as a result of planting. In addition, the level of hours worked increases with farm size and is higher for farms with a greater share of livestock but lower for farms with a greater share of tillage (due to increased use of contractors).<sup><a href="#fn8">8</a></sup> Hours worked is also positive for higher stocked farms on good to medium soils. As would also be expected, it is however lower for older farmers and those with off-farm employment.</p><p data-astro-cid-qsyhzaho>Participation in the REPS agri-environment scheme results in increased work hours, a factor which was also noted by <a href="#bib32">Murphy et al. (2014)</a>. The coefficients on farm size (positive) and farm size squared (negative) show that hours worked increases with increasing farm size but at a reducing rate. The age and age squared coefficients (both negative) show that the reduction in hours worked accelerates as farmers get older.</p><p data-astro-cid-qsyhzaho>In the land value model, only those factors that affect land value are included. The most important information is that (conditional on the lagged value of land), the coefficient on new forest planting is significant and negative, indicating that afforestation reduces farmers’ (self-reported) perceptions of the value of planted land, while land value increases on farms with good to medium soils and on intensive farms with high livestock densities per hectare.</p><p data-astro-cid-qsyhzaho>This is also consistent with <i>a priori</i> expectations based on the loss of flexibility of land use imposed by the legal requirement to replant forests once the timber is harvested. Although the land value is self-assessed, it provides a reliable indication of value. In a comparison of the annual NFS land values with annual agricultural land sales official statistics, a recent Irish study found that while the NFS values are below the official sales figures, the trend over time is almost exactly the same. This result is consistent with the authors experience in the forestry sector and is consistent with published Irish forest land sale prices<sup><a href="#fn9">9</a></sup>.</p></section></div></details><details id="s5" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">5. Results II: distributional analysis</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The purpose of this analysis is to try to understand the impact of planting on the relativity of agriculture and forestry incomes and the impact on land values and hours worked. In our data, we observe the farms that have planted (has forest) and those that have not (no forest). In order to understand the drivers of forest planting behaviour, we first simulate the impacts of a marginal change in land use. We utilise the Teagasc ForBES and the ForSubs models to simulate forest market and subsidy income respectively and utilise the two reduced form econometric models described above to simulate counter factual land and labour impacts. However these averages mask significant heterogeneity across farms so we also disaggregate farms on the basis of whether the agricultural or forest income life cycle streams are greater over time for each farm in the population. Variables are generated whereby life cycle forest income streams are defined as annual equivalised (AE) NPV of market plus subsidy income and compared directly with agricultural incomes (on a per hectare basis). Agricultural life cycle income streams are defined as AE (NPV) of market income, farm gross margin and farm net margin (on a per hectare basis). These impacts are examined for both ‘has forest’ and ‘no forest’ farms. This categorisation is at the heart of this analysis as it is expected that the relativity of these life cycle incomes is a major driver in the afforestation decision.</p><p data-astro-cid-qsyhzaho><a href="#table1">Table 1</a> describes the average changes in income, land and labour which would result from the decision to plant a proportion of the farmland, simulating in turn, a straight land use change of five percent of the land, the change in value and the change in hours worked.</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Impact of planting on income, land and labour</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left" colspan="5">Proportional change in</th>
+</tr>
+<tr>
+<th align="left"/>
+<th align="left">Market income</th>
+<th align="left">Gross margin</th>
+<th align="left">Net margin</th>
+<th align="left">Land value</th>
+<th align="left">Hours worked</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">No Forest</td>
+<td align="left">−0.1953</td>
+<td align="left">−0.1397</td>
+<td align="left">−0.25</td>
+<td align="left">−0.051</td>
+<td align="left">−0.034</td>
+</tr>
+<tr>
+<td align="left">Has Forest</td>
+<td align="left">−0.1948</td>
+<td align="left">−0.11396</td>
+<td align="left">−0.246</td>
+<td align="left">−0.034</td>
+<td align="left">−0.033</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>We see that for each of the income types (market, gross margin and net margin), planting five percent of the farmland results in a slight reduction in income, (as expressed in terms of AE of NPV), as the income from forestry is lower on average than agricultural income. Hours worked reduces due to the lower time input required for forestry than for livestock farming, thus increasing leisure. Although the reduction in hours is small, this is consistent with the underemployment in Irish agriculture noted by <a href="#bib25">Loughrey and Hennessy (2016)</a>. Land values show a small decrease on average due to preferences for farming and lower land flexibility, however given the contribution of land to the overall asset base, a 3%–5% fall in value is quite important.</p><p data-astro-cid-qsyhzaho>To test the sensitivity of the results, we utilise data from 2012 to 2015 to compare the ratios for farms with forests against those without forests. The results are presented in <a href="#table2">Table 2</a> where farms with higher incomes from forestry than from agriculture (For&gt; Ag) are also examined on the basis of the three agricultural income definitions. Finally, future planting intentions are examined, comparing farms that indicated they would ‘never plant’ (1) with those who might plant (never plant 0).</p><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Proportion of Farms where the Forestry AE is greater than Agriculture AE</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Classification</th>
+<th align="left">Market income</th>
+<th align="left">Gross margin</th>
+<th align="left">Net margin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" colspan="4"><b>Has Forestry</b></td>
+</tr>
+<tr>
+<td align="left">0</td>
+<td align="left">0.527</td>
+<td align="left">0.298</td>
+<td align="left">0.596</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">0.629</td>
+<td align="left">0.454</td>
+<td align="left">0.703</td>
+</tr>
+<tr>
+<td align="left" colspan="4"><b>Never Plant</b></td>
+</tr>
+<tr>
+<td align="left">0</td>
+<td align="left">0.633</td>
+<td align="left">0.387</td>
+<td align="left">0.658</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">0.538</td>
+<td align="left">0.303</td>
+<td align="left">0.616</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Teagasc National Farm Survey 2012–2015 and Teagasc ForBES/ForSubs Models.</p></div></figure><p data-astro-cid-qsyhzaho>The proportion of farms that have a higher AE for forestry than agriculture is greater amongst those who have planted forests. This is true for each measure of income considered. Considering market income, 63% of farmers who planted had a higher AE for forestry than for agriculture. However the rate for those who have not planted forestry is 53%. Comparing forestry returns with the agricultural gross margin, where agricultural subsidies are included, the proportion falls to below 50%, with rates of 30% and 45% respectively for farms with and without forestry. When subtracting overhead costs (net margin), the share peaks at 70% and 60% respectively.</p><p data-astro-cid-qsyhzaho>Turning to future intentions, we find similar conclusions. Of those who ‘might plant (corollary of never plant) , there are more farmers who have a higher AE from forestry than from agriculture. However as is the case for those farms that have already planted, the gap is relatively low, again indicating the heterogeneity of the underlying behavior.</p><p data-astro-cid-qsyhzaho>Overall, there are substantial numbers of farmers who would be financially better off by planting, but who have not done so, while similarly there are substantial numbers of farmers who have planted, even when they would have been better off to retain all their land in agriculture. The former may be explained as a result of cultural factors underlying a reluctance to plant (<a href="#bib33">Ní Dhubháin and Gardiner, 1994</a>; <a href="#bib14">Frawley and Leavy, 2001</a>; <a href="#bib26">Malone, 2008</a>; <a href="#bib39">O’Leary et al., 2000</a>; <a href="#bib28">McDonagh et al., 2010</a>; <a href="#bib6">Duesberg et al., 2013</a>), while the latter cohort may be influenced by non-pecuniary factors.</p><p data-astro-cid-qsyhzaho>In <a href="#table3">Table 3</a>, we decompose the annual equivalised NPV into income components (average) for farms that have planted and those that have not. Where agriculture has a higher AE than forestry (Group A), the biggest difference is evident in farm income (output - direct costs), which is substantially different to those farms with a lower agricultural AE (Group B). This is partly due to the substantially higher incomes on dairy versus other systems and the fact that dairy farms are proportionally located on productive soils. Farm subsidies are higher for Group A but the gap is quite small. Overhead costs, consistent with productivity, have a similar pattern to farm incomes. The gap for forest income is relatively small, with potential forest income being slightly higher when the agricultural income is higher, as both agricultural and forest incomes are greater on more productive soils.</p><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Components of Income 2012–2015 by relative AE</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left"/>
+<th align="left"/>
+<th align="left">Forest mkt income per Ha</th>
+<th align="left">Forest subs income per Ha</th>
+<th align="left">Farm income per Ha</th>
+<th align="left">Farm subsidy per Ha</th>
+<th align="left">Overhead cost per Ha</th>
+<th align="left">Difference MI</th>
+<th align="left">Difference GM</th>
+<th align="left">Difference NM</th>
+</tr>
+<tr>
+<th align="left"/>
+<th align="left">For &gt; Ag<a href="#T3_FN1">*</a></th>
+<th align="left">Has forest</th>
+<th align="left"/>
+<th align="left"/>
+<th align="left"/>
+<th align="left"/>
+<th align="left"/>
+<th align="left"/>
+<th align="left"/>
+<th align="left"/>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="2">A</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">490</td>
+<td align="left">329</td>
+<td align="left">1,827</td>
+<td align="left">415</td>
+<td align="left">876</td>
+<td align="left">−1008</td>
+<td align="left">−1423</td>
+<td align="left">−547</td>
+</tr>
+<tr>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">494</td>
+<td align="left">329</td>
+<td align="left">1,651</td>
+<td align="left">400</td>
+<td align="left">803</td>
+<td align="left">−828</td>
+<td align="left">−1228</td>
+<td align="left">−426</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">B</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">475</td>
+<td align="left">329</td>
+<td align="left">369</td>
+<td align="left">390</td>
+<td align="left">419</td>
+<td align="left">435</td>
+<td align="left">44</td>
+<td align="left">463</td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">1</td>
+<td align="left">470</td>
+<td align="left">328</td>
+<td align="left">270</td>
+<td align="left">389</td>
+<td align="left">386</td>
+<td align="left">528</td>
+<td align="left">139</td>
+<td align="left">525</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Farms where potential forestry income is greater than or equal to potential agricultural income</p></div></figure><p data-astro-cid-qsyhzaho>When we compare ‘has forest’ farms in Group A with ‘no forest’ farms, all income differences (forest – agriculture) are negative, but less negative for ‘has forest’ farms. The biggest driver of difference is lower agricultural incomes. For group B, the forest-agriculture income difference is higher for ‘has forest’ farms. Again the differential is primarily driven by farm income. In fact potential forest market income and subsidies are higher for ‘no forest’ farms, suggesting that forest policy is relatively untargeted from an incentive perspective.</p><p data-astro-cid-qsyhzaho>In <a href="#table4">Table 4</a> we take the difference between forest and agricultural market incomes and group this difference into deciles, where higher deciles have a higher difference between forest and agricultural income. Plotting the probability of having a forest, we find that for ‘has forest’ farms, there is a substantial difference between the biggest gap (32%) and the lowest decile with only 7% difference. In general however, we see a relatively small difference in the planting rate between the 2nd and the 8th decile, indicating that financial incentives seem to only have an impact at the extremes of the distribution.</p><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Deciles of gap between forest and agriculture (Market Income)</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">Has forest</th>
+<th align="left">Never plant</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left">0.073</td>
+<td align="left">0.924</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">0.153</td>
+<td align="left">0.854</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">0.168</td>
+<td align="left">0.877</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">0.163</td>
+<td align="left">0.883</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">0.136</td>
+<td align="left">0.820</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">0.118</td>
+<td align="left">0.824</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">0.189</td>
+<td align="left">0.853</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">0.172</td>
+<td align="left">0.849</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">0.238</td>
+<td align="left">0.799</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">0.319</td>
+<td align="left">0.798</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>The probability of never planting takes as expected, the opposite trend, being greater for the lowest gap and least for the highest gap. However the range between the top and the bottom is not as great proportionally as for ‘has forest’ farms.</p><p data-astro-cid-qsyhzaho>While <a href="#table4">Table 4</a> considered probabilities for market incomes only, we next expand the analysis to examine the deciles across all three agricultural income measures for ‘has forest’ farms. The results presented in <a href="#table5">Table 5</a> indicate that while the trend is similar, the proportional range between decile 1 and 10 is smaller for the gross margin and net margin income measures. Thus, it would appear that the planting is more strongly influenced by the financial gain associated with the market income measure.</p><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Deciles of forest–agriculture gap (Has Forest) by income definition</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Decile</th>
+<th align="left">Market income</th>
+<th align="left">Gross margin</th>
+<th align="left">Net margin</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left">0.073</td>
+<td align="left">0.065</td>
+<td align="left">0.091</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">0.153</td>
+<td align="left">0.180</td>
+<td align="left">0.135</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">0.168</td>
+<td align="left">0.157</td>
+<td align="left">0.161</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">0.163</td>
+<td align="left">0.138</td>
+<td align="left">0.154</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">0.136</td>
+<td align="left">0.132</td>
+<td align="left">0.117</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">0.118</td>
+<td align="left">0.176</td>
+<td align="left">0.179</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">0.189</td>
+<td align="left">0.150</td>
+<td align="left">0.206</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">0.172</td>
+<td align="left">0.247</td>
+<td align="left">0.227</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">0.238</td>
+<td align="left">0.208</td>
+<td align="left">0.242</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">0.319</td>
+<td align="left">0.276</td>
+<td align="left">0.211</td>
+</tr>
+<tr>
+<td align="left">Total</td>
+<td align="left">0.172</td>
+<td align="left">0.172</td>
+<td align="left">0.172</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>In <a href="#table6">Table 6</a>, we examine the deciles of the difference between forest and agricultural incomes (forest minus agriculture) in relation to the individual components of income. The difference in forest income between decile 1 and 10 is relatively small for farm subsidies, with the biggest difference being due primarily to agricultural market incomes and to a lesser extent, to overhead costs. Thus it appears that farm income variability has a greater impact on financial drivers than forestry incomes. This raises an important policy question as to whether forest subsidies should be paid on a straight per hectare basis, or on the basis of the opportunity cost foregone from the superseded land use.</p><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Income characteristics by decile of forest-agriculture gap (Market Income)</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">No forestry</th>
+<th align="left">Forestry income per Ha</th>
+<th align="left">Farm income per Ha</th>
+<th align="left">Farm subsidy per Ha</th>
+<th align="left">Overhead cost per Ha</th>
+<th align="left">Difference MI</th>
+<th align="left">Difference GM</th>
+<th align="left">Difference NM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">1</td>
+<td align="left">825</td>
+<td align="left">2,974</td>
+<td align="left">407</td>
+<td align="left">1,176</td>
+<td align="left">−2149</td>
+<td align="left">−2555</td>
+<td align="left">−1379</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">820</td>
+<td align="left">2030</td>
+<td align="left">386</td>
+<td align="left">970</td>
+<td align="left">−1210</td>
+<td align="left">−1595</td>
+<td align="left">−625</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">819</td>
+<td align="left">1,550</td>
+<td align="left">409</td>
+<td align="left">808</td>
+<td align="left">−731</td>
+<td align="left">−1140</td>
+<td align="left">−332</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">816</td>
+<td align="left">1,142</td>
+<td align="left">439</td>
+<td align="left">662</td>
+<td align="left">−326</td>
+<td align="left">−765</td>
+<td align="left">−103</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">813</td>
+<td align="left">820</td>
+<td align="left">451</td>
+<td align="left">582</td>
+<td align="left">−7</td>
+<td align="left">−459</td>
+<td align="left">124</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">816</td>
+<td align="left">604</td>
+<td align="left">419</td>
+<td align="left">505</td>
+<td align="left">212</td>
+<td align="left">−207</td>
+<td align="left">298</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">806</td>
+<td align="left">457</td>
+<td align="left">408</td>
+<td align="left">438</td>
+<td align="left">349</td>
+<td align="left">−59</td>
+<td align="left">379</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">803</td>
+<td align="left">321</td>
+<td align="left">371</td>
+<td align="left">403</td>
+<td align="left">483</td>
+<td align="left">112</td>
+<td align="left">515</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">792</td>
+<td align="left">186</td>
+<td align="left">349</td>
+<td align="left">334</td>
+<td align="left">605</td>
+<td align="left">256</td>
+<td align="left">590</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">794</td>
+<td align="left">−13</td>
+<td align="left">362</td>
+<td align="left">314</td>
+<td align="left">807</td>
+<td align="left">446</td>
+<td align="left">759</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">810.39</td>
+<td align="left">1007.02</td>
+<td align="left">400.04</td>
+<td align="left">619.04</td>
+<td align="left">−197</td>
+<td align="left">−597</td>
+<td align="left">22</td>
+</tr>
+<tr>
+<td align="left" colspan="8"><b>Has Forestry</b></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">821</td>
+<td align="left">2,876</td>
+<td align="left">403</td>
+<td align="left">1,120</td>
+<td align="left">−2055</td>
+<td align="left">−2458</td>
+<td align="left">−1339</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">823</td>
+<td align="left">2083</td>
+<td align="left">389</td>
+<td align="left">942</td>
+<td align="left">−1260</td>
+<td align="left">−1648</td>
+<td align="left">−707</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">825</td>
+<td align="left">1,574</td>
+<td align="left">371</td>
+<td align="left">777</td>
+<td align="left">−749</td>
+<td align="left">−1121</td>
+<td align="left">−344</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">820</td>
+<td align="left">1,163</td>
+<td align="left">434</td>
+<td align="left">689</td>
+<td align="left">−342</td>
+<td align="left">−777</td>
+<td align="left">−88</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">822</td>
+<td align="left">823</td>
+<td align="left">420</td>
+<td align="left">574</td>
+<td align="left">−1</td>
+<td align="left">−420</td>
+<td align="left">154</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">802</td>
+<td align="left">577</td>
+<td align="left">435</td>
+<td align="left">487</td>
+<td align="left">225</td>
+<td align="left">−210</td>
+<td align="left">277</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">808</td>
+<td align="left">468</td>
+<td align="left">378</td>
+<td align="left">400</td>
+<td align="left">340</td>
+<td align="left">−39</td>
+<td align="left">362</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">805</td>
+<td align="left">333</td>
+<td align="left">389</td>
+<td align="left">448</td>
+<td align="left">473</td>
+<td align="left">84</td>
+<td align="left">532</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">799</td>
+<td align="left">190</td>
+<td align="left">382</td>
+<td align="left">345</td>
+<td align="left">609</td>
+<td align="left">228</td>
+<td align="left">573</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">781</td>
+<td align="left">−19</td>
+<td align="left">374</td>
+<td align="left">292</td>
+<td align="left">800</td>
+<td align="left">425</td>
+<td align="left">717</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">810.67</td>
+<td align="left">1006.78</td>
+<td align="left">397.50</td>
+<td align="left">607.30</td>
+<td align="left">−196.10</td>
+<td align="left">−593.61</td>
+<td align="left">13.69</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>Finally, <a href="#table7">Table 7</a> describes the characteristics of farms by decile. The lowest deciles with the largest agriculture-forestry gap are more likely, unsurprisingly to have a greater share of higher income. These farmers are likely to be younger dairy farmers with more intensive systems and higher stocking rates, are more likely to pay for extension services, to be full time farmers and farming on better soils. The corollary also holds that those with a greater financial incentive to plant forests are more likely to be older, farming on marginal land in drystock systems and are more likely to work off-farm.</p><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Farm/farmer characteristics by decile of forest-agriculture gap (Market Income)</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Decile</th>
+<th align="left">Family farm income per Ha</th>
+<th align="left">Dairy cows per Ha</th>
+<th align="left">Labour units</th>
+<th align="left">Age</th>
+<th align="left">Farm size</th>
+<th align="left">Teagasc</th>
+<th align="left">Has reps</th>
+<th align="left">Has off farm income</th>
+<th align="left">Best soil type</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" colspan="10"><b>No Forestry</b></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">1,652</td>
+<td align="left">2.36</td>
+<td align="left">1.39</td>
+<td align="left">50</td>
+<td align="left">57</td>
+<td align="left">0.75</td>
+<td align="left">0.25</td>
+<td align="left">0.51</td>
+<td align="left">0.72</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">1,085</td>
+<td align="left">1.88</td>
+<td align="left">1.42</td>
+<td align="left">53</td>
+<td align="left">71</td>
+<td align="left">0.72</td>
+<td align="left">0.15</td>
+<td align="left">0.45</td>
+<td align="left">0.65</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">880</td>
+<td align="left">1.48</td>
+<td align="left">1.36</td>
+<td align="left">54</td>
+<td align="left">67</td>
+<td align="left">0.68</td>
+<td align="left">0.27</td>
+<td align="left">0.52</td>
+<td align="left">0.65</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">717</td>
+<td align="left">0.73</td>
+<td align="left">1.28</td>
+<td align="left">57</td>
+<td align="left">66</td>
+<td align="left">0.63</td>
+<td align="left">0.22</td>
+<td align="left">0.57</td>
+<td align="left">0.61</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">548</td>
+<td align="left">0.24</td>
+<td align="left">1.18</td>
+<td align="left">56</td>
+<td align="left">56</td>
+<td align="left">0.57</td>
+<td align="left">0.24</td>
+<td align="left">0.68</td>
+<td align="left">0.57</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">419</td>
+<td align="left">0.15</td>
+<td align="left">1.14</td>
+<td align="left">58</td>
+<td align="left">54</td>
+<td align="left">0.56</td>
+<td align="left">0.15</td>
+<td align="left">0.64</td>
+<td align="left">0.62</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">357</td>
+<td align="left">0.05</td>
+<td align="left">1.08</td>
+<td align="left">58</td>
+<td align="left">53</td>
+<td align="left">0.54</td>
+<td align="left">0.14</td>
+<td align="left">0.65</td>
+<td align="left">0.52</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">239</td>
+<td align="left">0.04</td>
+<td align="left">1.06</td>
+<td align="left">58</td>
+<td align="left">46</td>
+<td align="left">0.45</td>
+<td align="left">0.18</td>
+<td align="left">0.62</td>
+<td align="left">0.48</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">174</td>
+<td align="left">0.01</td>
+<td align="left">1.01</td>
+<td align="left">58</td>
+<td align="left">48</td>
+<td align="left">0.45</td>
+<td align="left">0.20</td>
+<td align="left">0.67</td>
+<td align="left">0.38</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">51</td>
+<td align="left">0.03</td>
+<td align="left">1.11</td>
+<td align="left">60</td>
+<td align="left">87</td>
+<td align="left">0.36</td>
+<td align="left">0.09</td>
+<td align="left">0.67</td>
+<td align="left">0.41</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">612.13</td>
+<td align="left">0.70</td>
+<td align="left">1.20</td>
+<td align="left">56.22</td>
+<td align="left">60.49</td>
+<td align="left">0.57</td>
+<td align="left">0.19</td>
+<td align="left">0.60</td>
+<td align="left">0.56</td>
+</tr>
+<tr>
+<td align="left" colspan="10"><b>Has Forestry</b></td>
+</tr>
+<tr>
+<td align="left">1</td>
+<td align="left">51</td>
+<td align="left">0.03</td>
+<td align="left">1.11</td>
+<td align="left">60</td>
+<td align="left">87</td>
+<td align="left">0.36</td>
+<td align="left">0.09</td>
+<td align="left">0.67</td>
+<td align="left">0.41</td>
+</tr>
+<tr>
+<td align="left">2</td>
+<td align="left">1,629</td>
+<td align="left">2.39</td>
+<td align="left">1.37</td>
+<td align="left">51</td>
+<td align="left">61</td>
+<td align="left">0.82</td>
+<td align="left">0.11</td>
+<td align="left">0.66</td>
+<td align="left">0.64</td>
+</tr>
+<tr>
+<td align="left">3</td>
+<td align="left">1,157</td>
+<td align="left">1.98</td>
+<td align="left">1.49</td>
+<td align="left">53</td>
+<td align="left">78</td>
+<td align="left">0.70</td>
+<td align="left">0.14</td>
+<td align="left">0.52</td>
+<td align="left">0.67</td>
+</tr>
+<tr>
+<td align="left">4</td>
+<td align="left">929</td>
+<td align="left">1.48</td>
+<td align="left">1.41</td>
+<td align="left">53</td>
+<td align="left">84</td>
+<td align="left">0.72</td>
+<td align="left">0.18</td>
+<td align="left">0.56</td>
+<td align="left">0.71</td>
+</tr>
+<tr>
+<td align="left">5</td>
+<td align="left">724</td>
+<td align="left">1.01</td>
+<td align="left">1.50</td>
+<td align="left">55</td>
+<td align="left">89</td>
+<td align="left">0.57</td>
+<td align="left">0.40</td>
+<td align="left">0.55</td>
+<td align="left">0.65</td>
+</tr>
+<tr>
+<td align="left">6</td>
+<td align="left">546</td>
+<td align="left">0.53</td>
+<td align="left">1.52</td>
+<td align="left">55</td>
+<td align="left">74</td>
+<td align="left">0.78</td>
+<td align="left">0.30</td>
+<td align="left">0.45</td>
+<td align="left">0.68</td>
+</tr>
+<tr>
+<td align="left">7</td>
+<td align="left">462</td>
+<td align="left">0.14</td>
+<td align="left">1.23</td>
+<td align="left">55</td>
+<td align="left">70</td>
+<td align="left">0.62</td>
+<td align="left">0.28</td>
+<td align="left">0.56</td>
+<td align="left">0.44</td>
+</tr>
+<tr>
+<td align="left">8</td>
+<td align="left">403</td>
+<td align="left">0.04</td>
+<td align="left">1.02</td>
+<td align="left">56</td>
+<td align="left">52</td>
+<td align="left">0.69</td>
+<td align="left">0.16</td>
+<td align="left">0.77</td>
+<td align="left">0.49</td>
+</tr>
+<tr>
+<td align="left">9</td>
+<td align="left">255</td>
+<td align="left">0.09</td>
+<td align="left">1.02</td>
+<td align="left">54</td>
+<td align="left">68</td>
+<td align="left">0.71</td>
+<td align="left">0.15</td>
+<td align="left">0.67</td>
+<td align="left">0.49</td>
+</tr>
+<tr>
+<td align="left">10</td>
+<td align="left">270</td>
+<td align="left">0.01</td>
+<td align="left">1.15</td>
+<td align="left">56</td>
+<td align="left">67</td>
+<td align="left">0.69</td>
+<td align="left">0.24</td>
+<td align="left">0.75</td>
+<td align="left">0.44</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">642.51</td>
+<td align="left">0.77</td>
+<td align="left">1.28</td>
+<td align="left">54.84</td>
+<td align="left">72.85</td>
+<td align="left">0.67</td>
+<td align="left">0.21</td>
+<td align="left">0.61</td>
+<td align="left">0.56</td>
+</tr>
+</tbody>
+</table></div></figure></div></details><details id="s6" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">6. Conclusions</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>This paper describes a static microsimulation approach which provides a better understanding of the life-cycle relativity of forestry and agricultural incomes, using Ireland as a case-study. Due to the complexity and micro data requirements, there is a general gap in the land use change literature in relation to modelling at the individual farm level. The unique contribution of the microsimulation approach taken in this paper is that it combines two units of micro analysis, namely the farm and the forest. While there are existing studies in the literature that individually model farm and forest level incomes, studies that examine the incomes from both land-uses are limited. However, information on both land uses is necessary to understand such a major and permanent land use change. This analysis examines both private (market) and public (subsidy) income sources arising from farming and forestry activities. In combination, these different income sources produce a high degree of heterogeneity, leading to very detailed farm level results.</p><p data-astro-cid-qsyhzaho>The static microsimulation methodology allows for the generation of actual and counterfactual forest and agricultural income streams and for other attributes of utility such as long-term wealth and leisure, for the first time. Income variables are generated to directly compare the life-cycle income streams from agriculture and forestry (on a per hectare basis) given the agronomic and environmental conditions of individual farms.</p><p data-astro-cid-qsyhzaho>The results show that financial drivers are significant and important drivers of farm afforestation as the proportion of farms with greater life-cycle income streams from forestry is higher amongst farmers who have already planted. The results also show that substantial numbers of farmers would be financially better off to plant forests, however many of these farmers have not planted. <a href="#bib26">Malone (2008)</a> recognizes that the decision to change from agriculture to forestry on a parcel of land is not taken in isolation and lists multiple factors including personal circumstances, the relative attraction of available subsidies and the permanent nature of the decision, which removes other options for land use and has implications for current and future generations. The static microsimulation methodology utilised in this study to quantitatively determine the economic implications of planting referred to by Malone (<i>ibid</i>.), has not previously been used in the agriculture to forestry land use change context.</p><p data-astro-cid-qsyhzaho>While previous afforestation incentives focused only on horizontal policies, this analysis suggests that policies that are targeted to take account of direct (financial) and non-direct (lifestyle and land use flexibility) drivers of afforestation, may be more effective in increasing the uptake of farm afforestation. It is evident that the differential between potential forest and agricultural income is driven primarily by farm income, while planting behaviour is more strongly influenced by the financial gain associated with the market income measure. This raises an important policy question as to whether forest subsidies should be paid on a straight per hectare basis, or on the basis of the opportunity cost of the alternative land use. It would further appear that forest policy is relatively untargeted from an incentive perspective and that the financial incentives seem to only have a strong impact at the extremes of the distribution of farms in relation to income potential. This suggests that targeted incentives might be more effective than the horizontal incentives that have previously applied across all farms irrespective of system and income levels.</p><p data-astro-cid-qsyhzaho>The average decrease in land value reported by farmers after planting reflects the inter-temporal commitment and loss of flexibility of land use associated with afforestation. While the permanent nature of forestry as a land use has been cited as a barrier to planting (<a href="#bib28">McDonagh et al., 2010</a>) the decrease in self-assessed land value has not previously been quantified.</p><p data-astro-cid-qsyhzaho>As the afforestation of agricultural land is now a primary component of the climate change mitigation tool kit, methodologies that provide greater understanding of individual farm level economic drivers that could be manipulated to incentive the necessary land use change are increasingly important. The methodology presented here is relevant for Ireland, but the framework employed uses Irish FADN data collected by the Teagasc National Farm Survey and thus has potential for cross country comparative analysis using FADN data. Thus the methodology is readily scaleable to the EU level and potentially globally. In the broader context of Climate Smart Agriculture and the Grand Challenges facing the intensification of agricultural production, these findings have implications for policies that seek to optimise natural resource use.</p></div></details><details id="footnotes" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Footnotes</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="fn1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1.</h3><p data-astro-cid-qsyhzaho>In the EU 28, forests cover a slightly higher proportion of land area (42.4%) than that which is used for agriculture.</p></section><section id="fn2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.</h3><p data-astro-cid-qsyhzaho>For example, UK forest expansion has dropped back from a high of 40,000 hectares (ha) per year in the early 1970s to an average of about 10,000 ha per year (<a href="#bib13">Forestry Commission, 2013</a>) and Dutch expansion targets will not be realized (<a href="#bib50">Van Gossum et al., 2010</a>) and afforestation in Flanders is falling (<a href="#bib51">Van Gossum et al., 2012</a>).</p></section><section id="fn3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.</h3><p data-astro-cid-qsyhzaho>We ignore here the case of complex transition arrangements where in some periods subsidies from agriculture and forestry can be stacked together.</p></section><section id="fn4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.</h3><p data-astro-cid-qsyhzaho>NPV (Net Present Value) is the sum of the present values of incoming and outgoing cash flows over a period of time. Incoming and outgoing cash flows can also be described as income and cost cash flows.</p></section><section id="fn5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.</h3><p data-astro-cid-qsyhzaho>LFA (Less Favoured Areas) payment: higher subsidies were paid on farms designated as ‘more severely handicapped’ for some of the period.</p></section><section id="fn6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.</h3><p data-astro-cid-qsyhzaho>Cost and revenue assumptions employed in the analysis are detailed in <a href="#app1table1">Appendix 1—Table 1</a>.</p></section><section id="fn7" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.</h3><p data-astro-cid-qsyhzaho>Trees may be removed or ‘thinned’ at 5 year intervals providing an interim income, or may remain ‘unthinned’, with revenue arising only at final clearfell.</p></section><section id="fn8" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">8.</h3><p data-astro-cid-qsyhzaho>In order to address commonly occurring multicollinearity between predictor values such as farm size and number of livestock units, the model estimation includes a variable to examine livestock units per hectare, thus capturing additional information over and above the farm scale effects.</p></section><section id="fn9" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">9.</h3><p data-astro-cid-qsyhzaho><a href="http://www.forestsales.ie">www.forestsales.ie</a></p></section><section id="fn10" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">10.</h3><p data-astro-cid-qsyhzaho>The land value per hectare explanatory variable is logged and lagged, reflecting the logged dependent variable.</p></section></div></details></div><details id="appendix1" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Appendix 1</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><figure id="app1table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Appendix 1—Table 1.</strong><span data-astro-cid-dzaleqsp> Teagasc ForBES Model : Detailed Cost assumptions</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left"/>
+<th align="left"/>
+<th align="left">SS (€/ha)</th>
+<th align="left">Ash (€/ha)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Forest establishment</td>
+<td align="left">% of costs covered by Afforestation Grant dependent on year of planting</td>
+<td align="left">Allocated to Year 0</td>
+<td align="left">2,860</td>
+<td align="left">4,280</td>
+</tr>
+<tr>
+<td align="left">Forest maintenance up to end year 4</td>
+<td align="left">Costs covered by Maintenance Grant</td>
+<td align="left">Payment allocated equally over years 1,2,3 &amp; 4</td>
+<td align="left">790</td>
+<td align="left">1,155</td>
+</tr>
+<tr>
+<td align="left">Annual management cost</td>
+<td align="left">Incurred annually</td>
+<td align="left"/>
+<td align="left">20</td>
+<td align="left">20</td>
+</tr>
+<tr>
+<td align="left">Insurance</td>
+<td align="left">Initial payment in year 5 – runs to year 20</td>
+<td align="left">Recurring annually</td>
+<td align="left">20</td>
+<td align="left">20</td>
+</tr>
+<tr>
+<td align="left">Brash/inspection paths</td>
+<td align="left">One-off cost of cutting inspection paths through conifers
+Not relevant for ash</td>
+<td align="left">Incurred in year 14</td>
+<td align="left">35</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">Second fertiliser</td>
+<td align="left">Relevant only for unenclosed sites with additional nutrient requirements</td>
+<td align="left">Not relevant for SS-GPC3 or for ash</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Cost of Sales</td>
+<td align="left">% reduction in revenue</td>
+<td align="left">Lower in high value sites</td>
+<td align="left">Clearfell –12%</td>
+<td align="left">Clearfell – 12%</td>
+</tr>
+<tr>
+<td align="left">Road costs</td>
+<td align="left">Only applicable if thinning</td>
+<td align="left">Not necessary in many small farm forests</td>
+<td align="left">Assume that road grant covers cost</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">Harvest losses</td>
+<td align="left">Timber losses due to difficult site conditions</td>
+<td align="left">Binary – Yes/No</td>
+<td align="left">1st Th: 14%
+<p>2nd TH: 12%</p>
+<p>3rd /sub TH: 8%</p>
+C/fell: 5%</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Reforestation</td>
+<td align="left">Cost of replanting with same species post clearfell</td>
+<td align="left">May be allocated to first or second rotation</td>
+<td align="left">3,500</td>
+<td align="left">0</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="app1table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Appendix 1—Table 2.</strong><span data-astro-cid-dzaleqsp> Model Estimates, On-Farm Hours and Land Value per hectare<sup><a href="#fn10">10</a></sup></span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left" colspan="2">Logged (On-Farm Hours Worked)</th>
+<th align="left" colspan="2">Logged (Land Value per ha)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Variables</td>
+<td align="left">Coefficient</td>
+<td align="left">SE</td>
+<td align="left">Coefficient</td>
+<td align="left">SE</td>
+</tr>
+<tr>
+<td align="left">New forest planting</td>
+<td align="left">−0.0351<a href="#TA2_FN1">***</a></td>
+<td align="left">−1.72</td>
+<td align="left">−0.0529<a href="#TA2_FN1">*</a></td>
+<td align="left">0.0293</td>
+</tr>
+<tr>
+<td align="left">Land Value (lagged : t-1)/ha</td>
+<td align="left">−0.0299<a href="#TA2_FN1">***</a></td>
+<td align="left">−6.35</td>
+<td align="left">0.0075<a href="#TA2_FN1">***</a></td>
+<td align="left">0.0008</td>
+</tr>
+<tr>
+<td align="left">Farm Size</td>
+<td align="left">0.0009<a href="#TA2_FN1">***</a></td>
+<td align="left">6.21</td>
+<td align="left">−0.0071<a href="#TA2_FN1">***</a></td>
+<td align="left">0.0002</td>
+</tr>
+<tr>
+<td align="left">Farm Size Squared</td>
+<td align="left">−0.000001<a href="#TA2_FN1">***</a></td>
+<td align="left">−4.24</td>
+<td align="left"><a href="#TA2_FN1">***</a></td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">Age</td>
+<td align="left">−0.0053<a href="#TA2_FN1">***</a></td>
+<td align="left">−24.76</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Age Squared</td>
+<td align="left">−0.000003<a href="#TA2_FN1">***</a></td>
+<td align="left">−19.03</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Has Off Farm Employment</td>
+<td align="left">−0.1731a</td>
+<td align="left">−32.25</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Spouse Has Off Farm Employment</td>
+<td align="left">0.019<a href="#TA2_FN1">**</a></td>
+<td align="left">3.35</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Share of Tillage Area</td>
+<td align="left">−0.0966<a href="#TA2_FN1">***</a></td>
+<td align="left">−4.08</td>
+<td align="left">0.1257<a href="#TA2_FN1">***</a></td>
+<td align="left">0.0331</td>
+</tr>
+<tr>
+<td align="left">Share of Dairy Forage</td>
+<td align="left">0.2241</td>
+<td align="left">11.12</td>
+<td align="left">−0.0658<a href="#TA2_FN1">**</a></td>
+<td align="left">0.0286</td>
+</tr>
+<tr>
+<td align="left">Share of Sheep Forage</td>
+<td align="left">0.049<a href="#TA2_FN1">*</a></td>
+<td align="left">2.91</td>
+<td align="left">−0.0782a</td>
+<td align="left">0.0242</td>
+</tr>
+<tr>
+<td align="left">Sheep Number of Livestock Units per ha</td>
+<td align="left">0.0049<a href="#TA2_FN1">**</a></td>
+<td align="left">1.82</td>
+<td align="left">0.001</td>
+<td align="left">0.0041</td>
+</tr>
+<tr>
+<td align="left">Cattle Number of Livestock Units per ha</td>
+<td align="left">0.0294<a href="#TA2_FN1">**</a></td>
+<td align="left">6.89</td>
+<td align="left">0.0313<a href="#TA2_FN1">***</a></td>
+<td align="left">0.0066</td>
+</tr>
+<tr>
+<td align="left">Dairy Number of Livestock Units per ha</td>
+<td align="left">0.001<a href="#TA2_FN1">**</a></td>
+<td align="left">0.16</td>
+<td align="left">0.0435<a href="#TA2_FN1">***</a></td>
+<td align="left">0.0089</td>
+</tr>
+<tr>
+<td align="left">Teagasc Client</td>
+<td align="left">−0.01<a href="#TA2_FN1">***</a></td>
+<td align="left">−2.22</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Has REPS payment</td>
+<td align="left">0.0133<a href="#TA2_FN1">**</a></td>
+<td align="left">2.46</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Unpaid labour</td>
+<td align="left">0.4188</td>
+<td align="left">66.04</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Good soil</td>
+<td align="left">0.463<a href="#TA2_FN1">***</a></td>
+<td align="left">0.0246</td>
+<td align="left">0.0455<a href="#TA2_FN1">*</a></td>
+<td align="left">2.66</td>
+</tr>
+<tr>
+<td align="left">Medium soil</td>
+<td align="left">0.2435<a href="#TA2_FN1">***</a></td>
+<td align="left">0.0243</td>
+<td align="left">0.0352<a href="#TA2_FN1">*</a></td>
+<td align="left">2.11</td>
+</tr>
+<tr>
+<td align="left">Constant</td>
+<td align="left">−0.4719<a href="#TA2_FN1">***</a></td>
+<td align="left">0.0197</td>
+<td align="left">7.1293</td>
+<td align="left">3.65</td>
+</tr>
+<tr>
+<td align="left">Share of Variance due to Fixed Effect</td>
+<td align="left">0.58</td>
+<td align="left"/>
+<td align="left">0.69</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">R<sup>2</sup></td>
+<td align="left">0.3309</td>
+<td align="left"/>
+<td align="left">0.3021</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">N</td>
+<td align="left">29,567</td>
+<td align="left"/>
+<td align="left">27,219</td>
+<td align="left"/>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: Regional, Soil and Year dummies ignored.</p><p class="table-footnote" data-astro-cid-dzaleqsp>***significant at 1% level;* significant at 10% level</p></div></figure></div></details><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Beach, RH, Pattanayak, SK, Yang, J-C, Murray, BC, Abt, RC (2005). <span data-astro-cid-oer3kof4>Econometric studies of non-industrial private forest management: a review and synthesis</span>. <em data-astro-cid-oer3kof4>Forest Policy and Economics</em>, <strong data-astro-cid-oer3kof4>7</strong>, 261–281. <a href="https://doi.org/10.1016/S1389-9341(03)00065-0" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1016/S1389-9341(03)00065-0</a></span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ben-Akiva, ME, Lerman, SR (1985). <em data-astro-cid-oer3kof4>Discrete Choice Analysis: Theory and Application to Travel Demand</em>. Cambridge, Ma: MIT Press.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Breen, J, Clancy, D, Ryan, M, Wallace, M (2010). <span data-astro-cid-oer3kof4>Irish land use change and the decision to afforest: an economic analysis</span>. <em data-astro-cid-oer3kof4>Irish Forest</em>, <strong data-astro-cid-oer3kof4>67</strong>, 6–20.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Clinch, JP (1999). <em data-astro-cid-oer3kof4>Economics of Irish Forestry: Evaluating the Returns to Economy and Society</em>. Dublin: COFORD.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Dudek, J, LeBlanc, A (1990). <span data-astro-cid-oer3kof4>Offsetting New CO2 Emissions: A Rational First Greenhouse Policy Step</span>. <em data-astro-cid-oer3kof4>Contemporary Policy Issues</em>, <strong data-astro-cid-oer3kof4>8</strong>, 29–41.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Duesberg, S, Dhubháin, Áine Ní, O’Connor, D (2014). <span data-astro-cid-oer3kof4>Assessing policy tools for encouraging farm afforestation in Ireland</span>. <em data-astro-cid-oer3kof4>Land Use Policy</em>, <strong data-astro-cid-oer3kof4>38</strong>, 194–203. <a href="https://doi.org/10.1016/j.landusepol.2013.11.001" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1016/j.landusepol.2013.11.001</a></span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Duesberg, S, O’Connor, D, Dhubháin, Áine Ní, Ní Dhubháin, A (2013). <span data-astro-cid-oer3kof4>To plant or not to plant—Irish farmers’ goals and values with regard to afforestation</span>. <em data-astro-cid-oer3kof4>Land Use Policy</em>, <strong data-astro-cid-oer3kof4>32</strong>, 155–164. <a href="https://doi.org/10.1016/j.landusepol.2012.10.021" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1016/j.landusepol.2012.10.021</a></span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2009). <span data-astro-cid-oer3kof4>International accounting standard IAS 41 (agriculture)</span>. <a href="http://ec.europa.eu/internal_market/accounting/docs/consolidated/ias41_en.pdf" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://ec.europa.eu/internal_market/accounting/docs/consolidated/ias41_en.pdf</a>.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Edwards-Jones, G (2006). <span data-astro-cid-oer3kof4>Modelling farmer decision-making: concepts, progress and challenges</span>. <em data-astro-cid-oer3kof4>Animal Science</em>, <strong data-astro-cid-oer3kof4>82</strong>, 783–790. <a href="https://doi.org/10.1017/ASC2006112" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1017/ASC2006112</a></span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Edwards, PN, Christie, JM (1981). <span data-astro-cid-oer3kof4>Yield Models for Forest Management</span>.</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Edwards, C, Guyer, C (1992). <span data-astro-cid-oer3kof4>Farm woodland policy: an assessment of the response to the farm woodland scheme in Northern Ireland</span>. <em data-astro-cid-oer3kof4>Journal of Environmental Management</em>, <strong data-astro-cid-oer3kof4>34</strong>, 197–209. <a href="https://doi.org/10.1016/S0301-4797(05)80151-3" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1016/S0301-4797(05)80151-3</a></span></li><li id="bib53" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2013). <span data-astro-cid-oer3kof4>Ministerial conferences</span>. <a href="https://www.google.ie/search?hl=en&amp;q=European+Commission+2013.+Ministerial+Conferences+www_foresteurope_org+2011&amp;meta=&amp;gws_rd=ssl" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://www.google.ie/search?hl=en&amp;q=European+Commission+2013.+Ministerial+Conferences+www_foresteurope_org+2011&amp;meta=&amp;gws_rd=ssl</a>.</span></li><li id="bib57" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Faustmann, M (1849). <span data-astro-cid-oer3kof4>Berechnung des Werthes, welchen Waldboden, sowie noch nicht haubare Holzbestände für die Waldwirthschaft besitzen</span>. <em data-astro-cid-oer3kof4>Allgemeine Forst- und Jagd-Zeitung</em>, <strong data-astro-cid-oer3kof4>25</strong>, 441–455.</span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2018). <em data-astro-cid-oer3kof4>Afforestation Statistics</em>. Department of Agriculture Food and Marine.</span></li><li id="bib13" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2013). <span data-astro-cid-oer3kof4>Forest statistics</span>.</span></li><li id="bib14" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Frawley, J, Leavy, A (2001). <em data-astro-cid-oer3kof4>Farm forestry: land availability, take-up rates and economics</em>. Farm forestry: land availability, take-up rates and economics.</span></li><li id="bib15" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Geanakoplos, G, Mitchell, SO, Zeldes, SP (1998). <span data-astro-cid-oer3kof4>Social security money’s worth</span>.</span></li><li id="bib16" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Herbohn, J, Emtage, N, Harrison, S, Thompson, D (2009). <span data-astro-cid-oer3kof4>The Australian farm forestry financial model</span>. <em data-astro-cid-oer3kof4>Australian Forestry</em>, <strong data-astro-cid-oer3kof4>72</strong>, 184–194. <a href="https://doi.org/10.1080/00049158.2009.10676300" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1080/00049158.2009.10676300</a></span></li><li id="bib17" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hiley, WE (1954). <em data-astro-cid-oer3kof4>Woodland Management</em>. Faber &amp; Faber.</span></li><li id="bib19" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hynes, S, O’Donoghue, C (2014). <span data-astro-cid-oer3kof4>Handbook of Microsimulation Modelling</span>.</span></li><li id="bib20" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Immervoll, H (2004). <span data-astro-cid-oer3kof4>Average and marginal effective tax rates facing workers in the EU: A micro-level analysis of levels, distributions and driving factors</span>.</span></li><li id="bib21" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Immervoll, H (2005). <span data-astro-cid-oer3kof4>FALLING up the stairs: the effects of "bracket creep" on household incomes</span>. <em data-astro-cid-oer3kof4>Review of Income and Wealth</em>, <strong data-astro-cid-oer3kof4>51</strong>, 37–62. <a href="https://doi.org/10.1111/j.1475-4991.2005.00144.x" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1111/j.1475-4991.2005.00144.x</a></span></li><li id="bib22" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>James, E, Villas, D (2000). <span data-astro-cid-oer3kof4>Annuity markets in comparative perspective: do consumers get their money’s worth?</span>.</span></li><li id="bib23" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kant, S (2003). <span data-astro-cid-oer3kof4>Extending the boundaries of forest valuation</span>. <em data-astro-cid-oer3kof4>Forest Policy and Economics</em>, <strong data-astro-cid-oer3kof4>5</strong>, 39–56.</span></li><li id="bib24" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Li, J, O’Donoghue, C, Loughrey, J, Harding, A (2014). <span data-astro-cid-oer3kof4>Handbook of Microsimulation Modelling</span>.</span></li><li id="bib25" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Loughrey, J, Hennessy, T (2016). <span data-astro-cid-oer3kof4>Farm income variability and off-farm employment in Ireland</span>. <em data-astro-cid-oer3kof4>Agricultural Finance Review</em>, <strong data-astro-cid-oer3kof4>76</strong>, 378–401. <a href="https://doi.org/10.1108/AFR-10-2015-0043" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1108/AFR-10-2015-0043</a></span></li><li id="bib26" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Malone, J (2008). <span data-astro-cid-oer3kof4>Factors affecting afforestation in Ireland in recent years. Report for the Minister of state with responsibility for forestry</span>. <a href="http://www.ifa.ie/linkClick.aspx?fileticket=N5243ioVRio%3D&amp;tabid=615" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://www.ifa.ie/linkClick.aspx?fileticket=N5243ioVRio%3D&amp;tabid=615</a>.</span></li><li id="bib27" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>McCarthy, S, Matthews, A, Riordan, B (2003). <span data-astro-cid-oer3kof4>Economic determinants of private afforestation in the Republic of Ireland</span>. <em data-astro-cid-oer3kof4>Land Use Policy</em>, <strong data-astro-cid-oer3kof4>20</strong>, 51–59. <a href="https://doi.org/10.1016/S0264-8377(02)00052-2" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1016/S0264-8377(02)00052-2</a></span></li><li id="bib28" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>McDonagh, J, Farrell, M, Ryan, M, Mahon, M (2010). <span data-astro-cid-oer3kof4>Missed opportunity or cautionary steps? farmers, forestry and rural development in Ireland</span>. <em data-astro-cid-oer3kof4>European Countryside</em>, <strong data-astro-cid-oer3kof4>4</strong>, 236–251.</span></li><li id="bib55" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>McFadden, D (1973). <span data-astro-cid-oer3kof4>Conditional Logit analysis of qualitative choice behaviour</span>.</span></li><li id="bib30" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Moons, E, Rousseau, S (2007). <span data-astro-cid-oer3kof4>Policy options for afforestation in Flanders</span>. <em data-astro-cid-oer3kof4>Ecological Economics</em>, <strong data-astro-cid-oer3kof4>64</strong>, 194–203. <a href="https://doi.org/10.1016/j.ecolecon.2007.02.021" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1016/j.ecolecon.2007.02.021</a></span></li><li id="bib31" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Moulton, R, Richards, K (1990). <em data-astro-cid-oer3kof4>Costs of sequestering carbon through tree planting and forest management in the U.S</em>. Washington DC: U.S. Department of Agriculture, ForestService, Gen. Tech. Rep. WO-58, December 1990.</span></li><li id="bib32" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Murphy, G, O’Donoghue, C, Hynes, S, Murphy, E (2014). <span data-astro-cid-oer3kof4>The participation decision in the rural environment protection scheme (REPS): a conditional logit approach using simulated counterfactual data for farmers</span>. .</span></li><li id="bib33" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ní Dhubháin, Á, Gardiner, J (1994). <span data-astro-cid-oer3kof4>Farmers’ attitudes to forestry</span>. <em data-astro-cid-oer3kof4>Irish Forestry</em>, <strong data-astro-cid-oer3kof4>5</strong>, 21–26.</span></li><li id="bib35" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Donoghue, C (2011). <span data-astro-cid-oer3kof4>Do tax-benefit systems cause high replacement rates? a decompositional analysis using EUROMOD</span>. <em data-astro-cid-oer3kof4>Labour</em>, <strong data-astro-cid-oer3kof4>25</strong>, 126–151. <a href="https://doi.org/10.1111/j.1467-9914.2010.00501.x" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1111/j.1467-9914.2010.00501.x</a></span></li><li id="bib54" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Donoghue, C (2017). <span data-astro-cid-oer3kof4>Farm-Level Microsimulation Modelling</span>.</span></li><li id="bib39" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Leary, TN, McCormack, AG, Clinch, JP (2000). <span data-astro-cid-oer3kof4>Afforestation in Ireland — regional differences in attitude</span>. <em data-astro-cid-oer3kof4>Land Use Policy</em>, <strong data-astro-cid-oer3kof4>17</strong>, 39–48. <a href="https://doi.org/10.1016/S0264-8377(99)00036-8" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1016/S0264-8377(99)00036-8</a></span></li><li id="bib34" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Connor, R, Kearney, B (1993). <span data-astro-cid-oer3kof4>Economic issues in Irish forestry</span>. <em data-astro-cid-oer3kof4>Journal of the Statistical and Social Inquiry Society of Ireland</em>, <strong data-astro-cid-oer3kof4>XXVI</strong>, 179–209.</span></li><li id="bib37" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Donoghue, C (2014). <span data-astro-cid-oer3kof4>The Handbook of Microsimulation Modelling. Contributions to Economic Analysis, Vol 293</span>.</span></li><li id="bib40" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Phillips, H, Little, D, McDonald, T, Phelan, J (2013). <span data-astro-cid-oer3kof4>A guide to the valuation of commercial forest plantations</span>.</span></li><li id="bib56" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Rake, Katherine, Falkingham, J, Evans, M (1999). <span data-astro-cid-oer3kof4>Tightropes and tripwires: new labour’s proposals and means-testing in old age</span>.</span></li><li id="bib42" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Richardson, JW, Hennessy, T, O’Donoghue, C (2014). <span data-astro-cid-oer3kof4>Handbook of microsimulation modelling</span>.</span></li><li id="bib43" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ryan, M, McCormack, M, O’Donoghue, C, Upton, V (2014). <span data-astro-cid-oer3kof4>The role of subsidy payments in the uptake of forestry by the typical cattle farmer in Ireland from 1984 to 2012</span>. <em data-astro-cid-oer3kof4>Irish Forestry</em>, <strong data-astro-cid-oer3kof4>71</strong>, 92–112.</span></li><li id="bib45" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ryan, M, O’Donoghue, C, Phillips, H (2016). <span data-astro-cid-oer3kof4>Modelling financially optimal Afforestation and forest management scenarios using a Bio-Economic model</span>. <em data-astro-cid-oer3kof4>Open Journal of Forestry</em>, <strong data-astro-cid-oer3kof4>06</strong>, 19–38. <a href="https://doi.org/10.4236/ojf.2016.61003" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.4236/ojf.2016.61003</a></span></li><li id="bib44" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ryan, M, O’Donoghue, C, Upton, V (2015). <span data-astro-cid-oer3kof4>Land use change from agriculture to forestry: a structural model of the income and leisure choices of farmers</span>. .</span></li><li id="bib46" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (1000). <span data-astro-cid-oer3kof4>Management Data for Farm Planning. Annual Editions. (1984 to 2012)</span>.</span></li><li id="bib47" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Thorburn, C, Rocha, R, Morales, M (2007). <span data-astro-cid-oer3kof4>An analysis of money’s worth ratios in Chile</span>. <em data-astro-cid-oer3kof4>Journal of Pension Economics and Finance</em>, <strong data-astro-cid-oer3kof4>6</strong>, 287–312. <a href="https://doi.org/10.1017/S1474747207003150" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1017/S1474747207003150</a></span></li><li id="bib48" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Thorne, FS, Fingleton, W (2006). <span data-astro-cid-oer3kof4>Examining the relative competitiveness of milk production: an Irish case study (1996–2004)</span>. <em data-astro-cid-oer3kof4>Journal of International Farm Management</em>, <strong data-astro-cid-oer3kof4>3</strong>, 49–61.</span></li><li id="bib49" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Upton, V, Ryan, M, Farrelly, N, O’Donoghue, C (2013). <span data-astro-cid-oer3kof4>The potential economic returns of converting agricultural land to forestry: an analysis of system and soil effects from 1995 to 2009</span>. <em data-astro-cid-oer3kof4>Irish Forestry</em>, <strong data-astro-cid-oer3kof4>70</strong>, 61–74.</span></li><li id="bib50" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Van Gossum, P, Arts, B, van Laar, J, Verheyen, K (2010). <span data-astro-cid-oer3kof4>Implementation of the forest expansion policy in the Netherlands in the period 1986–2007: decline in success?</span>. <em data-astro-cid-oer3kof4>Land Use Policy</em>, <strong data-astro-cid-oer3kof4>27</strong>. <a href="https://doi.org/10.1016/j.landusepol.2010.03.007" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1016/j.landusepol.2010.03.007</a></span></li><li id="bib51" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Van Gossum, P, Arts, B, Verheyen, K (2012). <span data-astro-cid-oer3kof4>“Smart regulation”: Can policy instrument design solve forest policy aims of expansion and sustainability in Flanders and the Netherlands?</span>. <em data-astro-cid-oer3kof4>Forest Policy and Economics</em>, <strong data-astro-cid-oer3kof4>16</strong>, 23–34. <a href="https://doi.org/10.1016/j.forpol.2009.08.010" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1016/j.forpol.2009.08.010</a></span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Mary Ryan</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Teagasc, Rural Economy &amp; Development Programme, Athenry, Co. Galway, Ireland</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:Mary.ryan@teagasc.ie" data-astro-cid-m3fa5h5a>Mary.ryan@teagasc.ie</a></p><p class="article-info__detail" data-astro-cid-m3fa5h5a><a href="https://orcid.org/0000-0001-8395-6953" target="_blank" rel="noopener" data-astro-cid-m3fa5h5a>ORCID iD: 0000-0001-8395-6953</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Cathal O’Donoghue</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>NUIG Policy Lab, National University of Ireland, Galway, Ireland</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:Cathal.odonoghue@nuigalway.ie" data-astro-cid-m3fa5h5a>Cathal.odonoghue@nuigalway.ie</a></p><p class="article-info__detail" data-astro-cid-m3fa5h5a><a href="https://orcid.org/0000-0003-3713-5366" target="_blank" rel="noopener" data-astro-cid-m3fa5h5a>ORCID iD: 0000-0003-3713-5366</a></p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Funding</h3><p data-astro-cid-m3fa5h5a>No specific funding for this article is reported.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Data and code availability</h3><p data-astro-cid-m3fa5h5a>The data used in this model are partially publicly available, accessible through the Irish Social Science Data Archive (<a href="https://www.ucd.ie/issda/data/teagascnationalfarmsurveyteagascnationalfarmsurvey/">https://www.ucd.ie/issda/data/teagascnationalfarmsurveyteagascnationalfarmsurvey/</a>); partially available for scientific research only upon registration with Teagasc Rural Economy and Development Programme (contact <a href="mailto:Brian.Moran@teagasc.ie">Brian.Moran@teagasc.ie</a>).</p><p data-astro-cid-m3fa5h5a>The paper is model-based. The code is based upon a number of programmes, coded in Stata. The authors are willing to share the code, but advise that given the complexity, the multi-disciplinary nature of the code and its length (1000+ lines of code), it is likely to be challenging for someone to use it without assistance.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Acknowledgements</h3><p data-astro-cid-m3fa5h5a>Not applicable.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00199" data-astro-cid-m3fa5h5a>Version of Record published: August 31, 2019 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2019, Ryan and O’Donoghue</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/environment" data-pagefind-filter="Research category:Environment" data-astro-cid-m3fa5h5a>Environment</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/taxes-benefits" data-pagefind-filter="Research category:Taxes and Benefits" data-astro-cid-m3fa5h5a>Taxes and Benefits</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=afforestation" data-astro-cid-m3fa5h5a>afforestation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=opportunity%20cost" data-astro-cid-m3fa5h5a>opportunity cost</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=life-cycle" data-astro-cid-m3fa5h5a>life-cycle</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=static%20microsimulation%20model" data-astro-cid-m3fa5h5a>static microsimulation model</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

@@ -1,0 +1,32 @@
+TY  - JOUR
+TI  - A geospatial dynamic microsimulation model for household population projections
+AU  - Rogers, Susan M.
+AU  - Rineer, James
+AU  - Scruggs, Matthew D.
+AU  - Wheaton, William D.
+AU  - Cooley, Phillip C.
+AU  - Roberts, Douglas J.
+AU  - Wagener, Diane K.
+VL  - 7
+IS  - 2
+PY  - 2014
+DA  - 2014/08/31
+SP  - 119-146
+C1  - IJM 2014;7(2):119-146
+DO  - 10.34196/ijm.00102
+UR  - https://doi.org/10.34196/ijm.00102
+AB  - Forecasting Populations (FPOP) is a microsimulation model (MSM) that is the demographic core of an extensible modeling framework. The framework, with FPOP at its core, enables the geospatial projection of a population under purely demographic processes or under the additional influence of exogenous factors such as disease, policy changes and prevention programs, or environmental stressors. Empirically-derived transition probabilities of life events such as birth, death, marriage, divorce and migration, captured in lookup table format, drive the simulation. These transition probabilities can be modified dynamically by external user-defined functions or other external MSMs. The use of MSM structures and methodologies enables FPOP to portray the impact of heterogeneity in the geospatial dimension (e.g., distribution of environmental factors or distribution of intervention programs), as well as the social dimension (e.g., household or social network correlates), on the projections. POP is designed and structured to: enable linking with external MSMs of any kind; support inclusion or configuration of more detailed transition probabilities; be scalable to millions of agents; use either an existing baseline synthetic population or a custom synthetic population of the user’s design; and, run under computing environments that don’t require a high degree of specialized software or hardware. In this paper we describe the design and structure of FPOP and then apply FPOP first under purely demographic processes and, secondly, in conjunction with an external disease model of obesity. The objective of FPOP is to provide a demographically realistic projection of the size, structure, and movement of populations and households decades into the future.
+KW  - mathematical models
+KW  - numerical methods
+KW  - computational techniques
+KW  - order dynamics
+KW  - computer programs
+KW  - software
+KW  - map-reduce programming model
+KW  - C630
+KW  - C690
+KW  - C880
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

@@ -1,0 +1,969 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Econometric flexibility in microsimulation: An age-centred regression approach | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00013"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00013" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/methodology" data-astro-cid-ak4gb66a>Methodology</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Dec 31, 2009</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Econometric flexibility in microsimulation: An age-centred regression approach</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>John Sabelhaus, Lina Walker</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Department of Economics, University of Maryland, Washington, DC, United States; Investment Company Institute, Washington, DC, United States; Public Policy Institute, AARP, Washington, DC, United States</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/2-2/volume-2-2-autumn-2009" data-astro-cid-ak4gb66a>Volume 2(2) Autumn 2009</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> J. Sabelhaus, L. Walker; 2009; <span data-astro-cid-ak4gb66a>Econometric flexibility in microsimulation: An age-centred regression approach</span>; International Journal of Microsimulation; 2(2); 1–14. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00013" data-astro-cid-ak4gb66a>10.34196/ijm.00013</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>This paper describes a strategy for estimating predictive equations that has been shown to work well in microsimulation modelling. The technique, referred to here as “age-centred regression,” is particularly useful when the available data set for estimating a model equation is limited and the marginal effect of one or more explanatory variables might be expected to vary systematically by age. The examples used here to describe how age-centring works are taken from the labour supply equations in the Congressional Budget Office Long-Term (CBOLT) dynamic microsimulation model. By switching from a traditional single-equation approach to age-centred regression, we show that marginal effects of independent variables can vary significantly across age groups. The comparison also reveals that improvements in mean predictions by age can be achieved with little if any loss in statistical precision of coefficient estimates.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00013/ijm-00013.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00013.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00013.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00013" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00013/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. The mechanics of age-centred regression</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. Age centring in the cbolt labour force equations</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. Conclusions</a></li><li data-astro-cid-twdwaz5s><a href="#footnotes" data-astro-cid-twdwaz5s>Footnotes</a></li><li data-astro-cid-twdwaz5s><a href="#appendix1" data-astro-cid-twdwaz5s>Example implementation of age-centred regression in Stata</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>A fundamental goal of microsimulation modelling is to replicate empirically observed heterogeneity in person-, household-, or firm-level outcomes. If individuals with certain characteristics are more likely to have certain outcomes, a good model will have transition equations that generate those correlations in simulations. Sample size limitations in the data sets used to estimate model equations can make achieving this goal a challenge, however, as they make it difficult to statistically sort out all of the covariance needed to replicate the desired heterogeneity. This paper discusses an estimation strategy, referred to as “age-centred regression”, that has proved useful for mitigating the types of problems in microsimulation that are typically associated with small sample sizes.</p><p data-astro-cid-qsyhzaho>There are several conditions under which age-centred regression might be useful in microsimulation modelling. First, the behavioural processes being estimated vary systematically with age: these processes include marital status transitions, fertility, mortality, and labour market outcomes. Second, these processes are such that the effect of any given explanatory variable could also vary by age: for example, higher educational attainment might lower the probability of marriage for very young singles, but increase the probability of marriage for middle-aged singles. Third, the data set available for estimating the model equation is limited, so that estimating separate equations for each age is infeasible and therefore some sort of grouping is required.</p><p data-astro-cid-qsyhzaho>A typical approach in microsimulation when these conditions arise is to estimate separate equations for two or more age groups. For instance, in the marital transition equation, one might estimate separate marriage probability equations for young, middle-aged, and perhaps older individuals, so that the model would have three marriage equations. Age centring takes this grouping approach a step further. The idea is to estimate a separate equation for each unique (or “reference”) age, but include every observation in the sample whose age is within a preset range (or “bandwidth”) around the reference age being estimated. Thus, if the sample being analyzed is 25-year-olds and the bandwidth is 4 years, the estimation phase would use all observations in the data set with ages 21 through 29. The equation for 26-year-olds would use every observation with ages 22 to 30, and so on. The end result is that the model will have separate equations for each reference age, but the sample used to estimate the equation for any given age overlaps with the data used to estimate nearby ages.</p><p data-astro-cid-qsyhzaho>There are two benefits when using age-centred regressions, in terms of econometric flexibility. First, there is flexibility in the shape of the functional form with respect to age itself—one does not have to rely on polynomial terms or linear splines to specify how the process in question varies with age. Second, the effect of any given independent variable in the equation is no longer constrained to be equal for all age groups (or even a subset of age groups, as when one splits the sample). If the data suggest that the magnitude or even sign of an explanatory variable systematically varies with age, the differential relationship will show up in the estimates.</p><p data-astro-cid-qsyhzaho>The examples used here to illustrate the age-centring approach are taken from the labour force modules in the U.S. Congressional Budget Office Long-Term dynamic microsimulation, also known as CBOLT.<a href="#fn1"><sup>1</sup></a> The equations we consider sequentially predict labour force participation, full-time versus part-time employment, and hours worked for part-time employed persons. All of the equations are univariate or multinomial logit specifications with standard controls: the explanatory variables include age, marital status, educational attainment, in-school status, number of children under 6 years of age (for women), receipt of social insurance benefits, and cohort/time effects. The equations are all estimated using about thirty years of data from the March Current Population Survey (CPS), which is a large, annual, nationally representative cross-section.</p><p data-astro-cid-qsyhzaho>For each of the three labour market equations, we compare the results using a standard (linear in age) specification with age-centred results. We show that estimated coefficients in the age-centred equations do vary systematically by age, and those differences in coefficients imply very different marginal effects by age. One example is the extent to which lagged labour force participation is correlated with current labour force participation; the effect varies systematically over the life cycle and the age-centred equation is better able to capture that pattern than the more standard equation. A second example is the effect of marital status on expected part-time hours (conditional on working part-time). The extent to which being married affects part-time hours worked also varies significantly across age groups.</p><p data-astro-cid-qsyhzaho>A further benefit of using the age-centred approach in microsimulation modelling is that, by its nature, age-centred regressions are better at capturing any differences in mean predicted outcomes by age. In general, microsimulation modellers rely on the fact that the single equation approach will work if the underlying outcomes by age are smooth and if one uses an appropriate polynomial in age. Using the predictions from the labour force module, we show that deviating from those conditions can lead to biased predictions by age in some cases.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. The mechanics of age-centred regression</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Age-centred regression is useful for estimating microsimulation model equations in cases where the underlying process varies systematically by age and one is trying to achieve maximum flexibility in the estimated econometric relationships. In microsimulation modelling, researchers typically split the sample by age when estimating equations, although it is well understood that the effect of certain independent variables differs across age groups. Age-centred regression takes this logic a step further by estimating different equations for each unique “reference” age. Estimating the equation for each age, however, limits the regression sample and reduces the statistical precision of the estimation. In order to overcome the small-sample-size problem, age-centred regression borrows a principle from kernel density analysis and includes all observations that are within a certain “bandwidth” of the reference age group in question. The technique allows statistical precision to be maintained at the same time that improved flexibility in estimated coefficients by age is achieved.</p><p data-astro-cid-qsyhzaho>For any given bandwidth, the actual estimation strategy for an age-centred regression is straightforward. Assume the equation being estimated is for a reference group that is 25 years old and the bandwidth is set to five years. The equation estimation will include every observation in the data set with ages 20 through 30. However, the observations are not weighted equally. As in kernel density estimation, declining weights are applied to observations that are farther from the reference age group. A simple triangular weighting pattern is used, so if the reference group is 25-year-olds with a 5-year bandwidth, then 25-year-olds have weights of one, persons who are one year plus or minus 25 (24- and 26-year-olds) have weights of 0.8, persons who are two years plus or minus 25 (23- and 27-year-olds) have weights of 0.6, persons three years plus or minus 25 (22- and 28-year-olds) have weights of 0.4, persons four years plus or minus 25 (21- and 29-year-olds) have weights of 0.2, and persons five years plus or minus 25 (20- and 30-year-olds) have weights of 0.0.</p><p data-astro-cid-qsyhzaho>The decision about how wide a bandwidth to use when estimating an age-centred regression will depend on the tradeoff between desired flexibility and statistical precision. If the bandwidth is set low (with bandwidth one, the only observations included are in the reference group itself) the estimation process has the most possible flexibility. There is no smoothing of the estimated effect of independent variables across ages; therefore, if people of different ages are really very different in terms of mean outcomes or the effects of some independent variable, those differences will come through in the estimation. The tradeoff is the loss of statistical precision when the bandwidth is set too low; there may be too few observations exactly at or near some ages and one cannot estimate the coefficients of interest with any reliability.</p><p data-astro-cid-qsyhzaho>The approach in kernel density estimation is to explicitly test for optimal bandwidth, but the decision on bandwidth ultimately depends on how much weight one puts, <i>ex ante</i>, on flexibility versus statistical precision.<a href="#fn2"><sup>2</sup></a> In the examples here (and other equations in the CBOLT dynamic microsimulation model) the bandwidth is set to five years, which balances the goals of flexibility and precision in these types of equations. The five-year bandwidth is large enough that the coefficients are precisely estimated, with significance levels on most coefficients that are comparable to those from the standard single equations using the entire data set. At the same time, the five-year bandwidths are small enough that one can observe any systematic differences in estimates across the age distribution. Capturing these differences will improve the capacity of the microsimulation model to reflect the heterogeneity in the underlying data.</p><p data-astro-cid-qsyhzaho>There are a few mechanical observations about using age-centred regression worth noting. First, in the estimates discussed in this paper (see <a href="#s3">Section 3</a>), all of the age-centred equations include an age term as well as an intercept. Note that if the bandwidth is set to one, the intercept and age will be perfectly correlated. However, when the bandwidth is greater than one, the age term can be estimated and captures any systematic age differences (within the bandwidth range) not captured by other independent variables. It is probably easiest to think of this coefficient as the derivative by age of the process being estimated, evaluated at that particular reference age. In model simulations, when predicting outcomes for a given observation, the age term is effectively combined with the constant term for each reference age group.<a href="#fn3"><sup>3</sup></a></p><p data-astro-cid-qsyhzaho>A second mechanical observation concerns how one actually estimates and uses age-centred regressions. At first glance it might seem that age centring is somewhat more cumbersome, because it replaces one equation for the entire population with separate equations for each age group. However, in practice the actual estimation and implementation are both straightforward. The equations here are all estimated using a simple looping feature in a standard software package, so the actual code for estimating, evaluating, and outputting multiple equations is only slightly more cumbersome than estimating a single equation. (See example code in <a href="#appendix1">appendix</a>.) In the actual CBOLT model code, switching from a single equation to age-centred equations simply involves adding an extra dimension (age) in the coefficient arrays used in the simulation. In sum, the benefits of adopting age centring exceed any computational burdens the technique introduces.</p></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. Age centring in the cbolt labour force equations</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The overarching goal of CBOLT is the same as many other dynamic microsimulation models: to simulate demographic, labour market, and government tax/transfer outcomes for a representative sample of the population forward through time. Although age centring is used in several CBOLT equations, for reasons of brevity the analysis in this paper is focused on the labour force participation and hours worked equations in the CBOLT labour force module. The approach used here to demonstrate age centring is to compare and contrast age-centred results with a more standard single-equation approach for each of the three equations in the CBOLT labour market module.<a href="#fn4"><sup>4</sup></a></p><section id="s3-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">CBOLT labour force equations</h3><p data-astro-cid-qsyhzaho>In CBOLT, annual hours worked for each individual are estimated using a sequence of three equations. For each individual, the model solves for (1) labour force participation, (2) full-time versus part-time work for those in the labour force, and (3) part-time hours worked for those who work part-time. The first two equations are univariate logits, and the resulting probability is compared to a random number draw to determine the actual model outcome. The third equation is a multinomial logit with seven possible outcomes (or “bins”) for annual part-time hours outcomes.<a href="#fn5"><sup>5</sup></a> As with the first two equations, a random number draw is used to place individuals into each of the seven annual part-time bins.</p><p data-astro-cid-qsyhzaho>Each of the three equations in the labour force module is estimated separately for men and women. The explanatory variables used in the CBOLT labour force equations include age, marital status, educational attainment, in-school status, number of children under 6 years of age (for women), receipt of social insurance benefits, and cohort/time effects.<a href="#fn6"><sup>6</sup></a> The labour force participation equation also includes a lagged independent variable in order to capture the observed persistence in the data.<a href="#fn7"><sup>7</sup></a></p><p data-astro-cid-qsyhzaho>The three CBOLT labour force equations are estimated using pooled Current Population Survey (CPS) data. The March CPS collects information on about 60,000 households each year. The data sets are cross-sectional and contain a wide variety of economic and demographic information on the individual, family, and household. The data used to estimate the equations in the labour force module are for calendar years 1975 through 2003. In the equations discussed here, the sample is restricted to individuals ages 25 through 61, which includes nearly 1 million observations over the 29 year period.<a href="#fn8"><sup>8</sup></a></p><p data-astro-cid-qsyhzaho>The CBOLT approach to estimating annual hours worked may seem overly complicated — one could use a single equation that directly predicts annual hours worked — but there are good reasons to separate the process into the three steps. Because each process has different dynamics and marginal impacts from changing independent variables, separately identifying each equation improves the simulations of actual population heterogeneity. Also, separating the module into these three logical steps makes it easier to build in other features of labour market outcomes. For example, unemployment incidence and spell lengths differ for part- and full-time workers. The CBOLT approach also makes it feasible to introduce behavioural responses into the model. In particular, retirement in CBOLT is modelled as a decision to start collecting Social Security, which does not necessarily end labour market activity — it just changes the intensity.<a href="#fn9"><sup>9,</sup></a><a href="#fn10"><sup>10</sup></a></p></section><section id="s3-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Estimated coefficients in single-equation and age-centred regressions</h3><p data-astro-cid-qsyhzaho>In order to draw out how age-centred regression differs from traditional single-equation estimates we compare versions of each labour force equation, estimated using the same data set for the same time period. <a href="#table1">Table 1</a> shows six sets of single-equation estimates, three each for men and women. For each sex group, the first column shows estimated coefficients for the labour force participation equation, the second column for the full-time work equation, and the third column for part-time hours worked.<a href="#fn11"><sup>11</sup></a></p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Regression results using single equation with linear age term, men and women.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th> </th>
+<th colspan="3">Men</th>
+<th colspan="3">Women</th>
+</tr>
+<tr>
+<th>Covariate</th>
+<th>Pr(LFP = 1)</th>
+<th>Pr(FT = 1)</th>
+<th>PT Hours</th>
+<th>Pr(LFP = 1)</th>
+<th>Pr(FT = 1)</th>
+<th>PT Hours</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Lagged Labour Force Participation</td>
+<td>4.082</td>
+<td> </td>
+<td> </td>
+<td>4.361</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><i>(0.012)</i><a href="#tfn_1_02">**</a></td>
+<td> </td>
+<td> </td>
+<td><i>(0.008)</i><a href="#tfn_1_02">**</a></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td rowspan="2">Married</td>
+<td>0.166</td>
+<td>0.822</td>
+<td>0.236</td>
+<td>−0.525</td>
+<td>−0.708</td>
+<td>−0.371</td>
+</tr>
+<tr>
+<td><i>(0.012)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.009)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.015)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.009)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.006)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.010)</i><a href="#tfn_1_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Age of Person</td>
+<td>−0.021</td>
+<td>−0.002</td>
+<td>−0.011</td>
+<td>−0.004</td>
+<td>0.012</td>
+<td>0.013</td>
+</tr>
+<tr>
+<td><i>(0.001)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.001)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.001)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.001)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.000)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.001)</i><a href="#tfn_1_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Receiving Social Security Income</td>
+<td>−2.081</td>
+<td>−2.243</td>
+<td>−1.218</td>
+<td>−1.085</td>
+<td>−1.110</td>
+<td>−0.606</td>
+</tr>
+<tr>
+<td><i>(0.026)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.035)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.042)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.020)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.022)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.025)</i><a href="#tfn_1_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">High School Education</td>
+<td>0.111</td>
+<td>0.552</td>
+<td>0.111</td>
+<td>0.398</td>
+<td>0.299</td>
+<td>0.101</td>
+</tr>
+<tr>
+<td><i>(0.015)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.012)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.019)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.011)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.009)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.012)</i><a href="#tfn_1_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Some College Education</td>
+<td>−0.049</td>
+<td>0.491</td>
+<td>−0.074</td>
+<td>0.482</td>
+<td>0.325</td>
+<td>0.093</td>
+</tr>
+<tr>
+<td><i>(0.017)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.013)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.022)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.013)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.010)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.014)</i><a href="#tfn_1_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">College Education</td>
+<td>0.241</td>
+<td>0.646</td>
+<td>−0.116</td>
+<td>0.637</td>
+<td>0.490</td>
+<td>0.071</td>
+</tr>
+<tr>
+<td><i>(0.016)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.013)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.021)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.013)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.010)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.014)</i><a href="#tfn_1_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Number of Children Under 6 Years</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>−0.481</td>
+<td>−0.516</td>
+<td>−0.299</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td><i>(0.008)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.006)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.007)</i><a href="#tfn_1_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1920–1929</td>
+<td>0.208</td>
+<td>0.129</td>
+<td>0.074</td>
+<td>0.175</td>
+<td>0.078</td>
+<td>0.055</td>
+</tr>
+<tr>
+<td><i>(0.042)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.041)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.066)</i></td>
+<td><i>(0.032)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.033)</i><a href="#tfn_1_01">*</a></td>
+<td><i>(0.045)</i></td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1930–1939</td>
+<td>0.376</td>
+<td>0.202</td>
+<td>0.073</td>
+<td>0.422</td>
+<td>0.157</td>
+<td>0.185</td>
+</tr>
+<tr>
+<td><i>(0.041)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.041)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.064)</i></td>
+<td><i>(0.032)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.033)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.044)</i><a href="#tfn_1_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1940–1949</td>
+<td>0.392</td>
+<td>0.331</td>
+<td>0.178</td>
+<td>0.64</td>
+<td>0.347</td>
+<td>0.337</td>
+</tr>
+<tr>
+<td><i>(0.042)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.042)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.065)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.032)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.033)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.044)</i><a href="#tfn_1_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1950–1959</td>
+<td>0.341</td>
+<td>0.293</td>
+<td>0.151</td>
+<td>0.831</td>
+<td>0.543</td>
+<td>0.547</td>
+</tr>
+<tr>
+<td><i>(0.043)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.042)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.068)</i><a href="#tfn_1_01">*</a></td>
+<td><i>(0.034)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.033)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.045)</i><a href="#tfn_1_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1960–1969</td>
+<td>0.147</td>
+<td>0.266</td>
+<td>0.068</td>
+<td>0.863</td>
+<td>0.700</td>
+<td>0.660</td>
+</tr>
+<tr>
+<td><i>(0.046)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.044)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.070)</i></td>
+<td><i>(0.035)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.034)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.046)</i><a href="#tfn_1_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1970–1979</td>
+<td>−0.001</td>
+<td>0.115</td>
+<td>0.002</td>
+<td>0.744</td>
+<td>0.732</td>
+<td>0.711</td>
+</tr>
+<tr>
+<td><i>(0.052)</i></td>
+<td><i>(0.047)</i><a href="#tfn_1_01">*</a></td>
+<td><i>(0.074)</i></td>
+<td><i>(0.040)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.036)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.049)</i><a href="#tfn_1_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Constant</td>
+<td>−0.443</td>
+<td>1.125</td>
+<td> </td>
+<td>−2.169</td>
+<td>0.152</td>
+<td> </td>
+</tr>
+<tr>
+<td><i>(0.063)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.056)</i><a href="#tfn_1_02">**</a></td>
+<td> </td>
+<td><i>(0.048)</i><a href="#tfn_1_02">**</a></td>
+<td><i>(0.041)</i><a href="#tfn_1_02">**</a></td>
+<td> </td>
+</tr>
+<tr>
+<td>Observations</td>
+<td>1,034,541</td>
+<td>9,44,231</td>
+<td>86,049</td>
+<td>1,113,085</td>
+<td>7,82,972</td>
+<td>2,54,685</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Notes</i>: (i) Models denoted by Pr(LFP = 1) – labour force participation; Pr(FT = 1) –full-time or part-time work; PT Hours –part-time hours for those working part-time. (ii) Robust standard errors italicised and in parentheses.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 5%.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 1%.</p></div></figure><p data-astro-cid-qsyhzaho>The signs of the coefficients in <a href="#table1">Table 1</a> make sense, and most of the parameters of interest are significant at the 1 percent level. In general, more education is associated with higher labour supply for both men and women, while marriage is associated with higher labour supply for men but lower labour supply for women. Receipt of Social Security income has a strong negative effect on labour supply for both men and women. The most dominant effect in the labour force participation equation is from lagged labour force participation, which we focus on below when computing marginal effects. This coefficient shows that persistence in labour supply within the population is a first-order effect that should be accounted for, clearly dominating the magnitude of the other zero-one dummy variables.</p><p data-astro-cid-qsyhzaho>The CBOLT age-centred versions are shown for two reference ages (age 30 and 55) in <a href="#table2a">Table 2a</a> (for men) and <a href="#table2b">Table 2b</a> (for women).<a href="#fn12"><sup>12</sup></a> The first observation about <a href="#table2a">Tables 2a</a> and <a href="#table2b">2b</a> is that the estimated coefficients often vary significantly between the two age samples. For example, the coefficient on lagged labour force participation for 55-year-olds is about 30 percent higher than the coefficient for 30-year-olds, and that holds for both men and women. What that suggests is that persistence in labour supply is much stronger at age 55 than it is at age 30, everything else constant.</p><p data-astro-cid-qsyhzaho>The estimated coefficients for the 30- and 55- year-old reference age samples diverge from the single-equation estimates to varying degrees across independent variables and equations, but the presumption that using age centring can reveal differences in estimated effects by age is clearly borne out in <a href="#table2a">Tables 2a</a> and <a href="#table2b">2b</a>. It is worth noting that single-equation parameter estimates (in <a href="#table1">Table 1</a>) generally fall in the range spanned by the age-centred estimates in <a href="#table2a">Tables 2a</a> and <a href="#table2b">2b</a>, which is expected given the way the data are used to estimate the equations. Finally, there also appears to be no significant loss of statistical precision when shifting to age centring in these equations. Almost every variable that is significant in <a href="#table1">Table 1</a> remains so in <a href="#table2a">Tables 2a</a> and <a href="#table2b">2b</a>.</p><figure id="table2a" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2a.</strong><span data-astro-cid-dzaleqsp> Regression results using age centring, men ages 30 and 55.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th> </th>
+<th colspan="3">Men, Age 30</th>
+<th colspan="3">Men, Age 55</th>
+</tr>
+<tr>
+<th>Covariate</th>
+<th>Pr(LFP = 1)</th>
+<th>Pr(FT = 1)</th>
+<th>PT Hours</th>
+<th>Pr(LFP = 1)</th>
+<th>Pr(FT = 1)</th>
+<th>PT Hours</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Lagged Labour Force Participation</td>
+<td>3.451</td>
+<td> </td>
+<td> </td>
+<td>4.594</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><i>(0.022)</i><a href="#tfn_2a_02">**</a></td>
+<td> </td>
+<td> </td>
+<td><i>(0.025)</i><a href="#tfn_2a_02">**</a></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td rowspan="2">Married</td>
+<td>−0.043</td>
+<td>0.793</td>
+<td>0.226</td>
+<td>0.335</td>
+<td>0.562</td>
+<td>0.091</td>
+</tr>
+<tr>
+<td><i>(0.018)</i><a href="#tfn_2a_01">*</a></td>
+<td><i>(0.014)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.024)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.028)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.022)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.036)</i><a href="#tfn_2a_01">*</a></td>
+</tr>
+<tr>
+<td rowspan="2">Age of Person</td>
+<td>0.046</td>
+<td>0.064</td>
+<td>0.028</td>
+<td>−0.123</td>
+<td>−0.089</td>
+<td>−0.062</td>
+</tr>
+<tr>
+<td><i>(0.004)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.003)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.005)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.005)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.004)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.006)</i><a href="#tfn_2a_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Receiving Social Security Income</td>
+<td>−1.687</td>
+<td>−1.905</td>
+<td>−1.211</td>
+<td>−2.293</td>
+<td>−2.555</td>
+<td>−1.248</td>
+</tr>
+<tr>
+<td><i>(0.052)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.075)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.090)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.050)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.067)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.068)</i><a href="#tfn_2a_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">High School Education</td>
+<td>−0.088</td>
+<td>0.617</td>
+<td>0.230</td>
+<td>0.152</td>
+<td>0.360</td>
+<td>0.012</td>
+</tr>
+<tr>
+<td><i>(0.026)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.021)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.034)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.030)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.024)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.039)</i></td>
+</tr>
+<tr>
+<td rowspan="2">Some College Education</td>
+<td>−0.364</td>
+<td>0.475</td>
+<td>−0.060</td>
+<td>0.123</td>
+<td>0.371</td>
+<td>−0.078</td>
+</tr>
+<tr>
+<td><i>(0.028)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.022)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.036)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.037)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.029)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.047)</i></td>
+</tr>
+<tr>
+<td rowspan="2">College Education</td>
+<td>−0.043</td>
+<td>0.536</td>
+<td>−0.248</td>
+<td>0.464</td>
+<td>0.580</td>
+<td>0.047</td>
+</tr>
+<tr>
+<td><i>(0.028)</i></td>
+<td><i>(0.022)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.035)</i></td>
+<td><i>(0.035)</i></td>
+<td><i>(0.027)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.046)</i></td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1920–1929</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>−0.065</td>
+<td>−0.180</td>
+<td>−0.169</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td><i>(0.081)</i></td>
+<td><i>(0.067)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.103)</i></td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1930–1939</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>−0.133</td>
+<td>−0.382</td>
+<td>−0.291</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td><i>(0.082)</i></td>
+<td><i>(0.067)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.104)</i><a href="#tfn_2a_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1940–1949</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>−0.277</td>
+<td>−0.388</td>
+<td>−0.295</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td><i>(0.082)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.068)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.105)</i><a href="#tfn_2a_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1950–1959</td>
+<td>0.011</td>
+<td>−0.124</td>
+<td>−0.008</td>
+<td>−0.365</td>
+<td>−0.289</td>
+<td>−0.232</td>
+</tr>
+<tr>
+<td><i>(0.030)</i></td>
+<td><i>(0.025)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.041)</i></td>
+<td><i>(0.098)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.080)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.126)</i></td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1960–1969</td>
+<td>−0.025</td>
+<td>−0.058</td>
+<td>−0.044</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><i>(0.030)</i></td>
+<td><i>(0.025)</i><a href="#tfn_2a_01">*</a></td>
+<td><i>(0.042)</i></td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1970–1979</td>
+<td>−0.001</td>
+<td>0.009</td>
+<td>−0.035</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><i>(0.034)</i></td>
+<td><i>(0.028)</i></td>
+<td><i>(0.047)</i></td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td rowspan="2">Constant</td>
+<td>−1.578</td>
+<td>−0.549</td>
+<td> </td>
+<td>5.136</td>
+<td>6.613</td>
+<td> </td>
+</tr>
+<tr>
+<td><i>(0.117)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.094)</i><a href="#tfn_2a_02">**</a></td>
+<td> </td>
+<td><i>(0.302)</i><a href="#tfn_2a_02">**</a></td>
+<td><i>(0.239)</i><a href="#tfn_2a_02">**</a></td>
+<td> </td>
+</tr>
+<tr>
+<td>Observations</td>
+<td>3,08,015</td>
+<td>2,90,385</td>
+<td>29,024</td>
+<td>1,88,934</td>
+<td>1,60,656</td>
+<td>16,547</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Notes</i>: (i) Models denoted by Pr(LFP = 1) – labour force participation; Pr(FT = 1) –full-time or part-time work; PT Hours –part-time hours for those working part-time. (ii) Robust standard errors italicised and in parentheses.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 5%.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 1%.</p></div></figure><figure id="table2b" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2b.</strong><span data-astro-cid-dzaleqsp> Regression results using age centring, women ages 30 and 55.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th> </th>
+<th colspan="3">Women, Age 30</th>
+<th colspan="3">Women, Age 55</th>
+</tr>
+<tr>
+<th>Covariate</th>
+<th>Pr(LFP = 1)</th>
+<th>Pr(FT = 1)</th>
+<th>PT Hours</th>
+<th>Pr(LFP = 1)</th>
+<th>Pr(FT = 1)</th>
+<th>PT Hours</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="2">Lagged Labour Force Participation</td>
+<td>3.717</td>
+<td> </td>
+<td> </td>
+<td>5.028</td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><i>(0.013)</i><a href="#tfn_2b_02">**</a></td>
+<td> </td>
+<td> </td>
+<td><i>(0.020)</i><a href="#tfn_2b_02">**</a></td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td rowspan="2">Married</td>
+<td>−0.534</td>
+<td>−0.547</td>
+<td>−0.306</td>
+<td>−0.535</td>
+<td>−0.780</td>
+<td>−0.413</td>
+</tr>
+<tr>
+<td><i>(0.015)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.011)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.016)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.022)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.016)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.024)</i><a href="#tfn_2b_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Age of Person</td>
+<td>0.029</td>
+<td>0.001</td>
+<td>0.007</td>
+<td>−0.061</td>
+<td>−0.020</td>
+<td>−0.017</td>
+</tr>
+<tr>
+<td><i>(0.003)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.002)</i></td>
+<td><i>(0.003)</i><a href="#tfn_2b_01">*</a></td>
+<td><i>(0.004)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.003)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.004)</i><a href="#tfn_2b_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Receiving Social Security Income</td>
+<td>−0.882</td>
+<td>−0.794</td>
+<td>−0.515</td>
+<td>−1.110</td>
+<td>−1.368</td>
+<td>−0.718</td>
+</tr>
+<tr>
+<td><i>(0.044)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.050)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.054)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.047)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.050)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.050)</i><a href="#tfn_2b_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">High School Education</td>
+<td>0.436</td>
+<td>0.398</td>
+<td>0.107</td>
+<td>0.373</td>
+<td>0.272</td>
+<td>0.076</td>
+</tr>
+<tr>
+<td><i>(0.019)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.018)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.023)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.024)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.019)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.026)</i><a href="#tfn_2b_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Some College Education</td>
+<td>0.526</td>
+<td>0.454</td>
+<td>0.132</td>
+<td>0.425</td>
+<td>0.290</td>
+<td>0.047</td>
+</tr>
+<tr>
+<td><i>(0.021)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.019)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.024)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.031)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.022)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.032)</i></td>
+</tr>
+<tr>
+<td rowspan="2">College Education</td>
+<td>0.700</td>
+<td>0.731</td>
+<td>0.166</td>
+<td>0.598</td>
+<td>0.403</td>
+<td>0.066</td>
+</tr>
+<tr>
+<td><i>(0.021)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.019)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.024)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.033)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.023)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.034)</i></td>
+</tr>
+<tr>
+<td rowspan="2">Number of Children Under 6 Years</td>
+<td>−0.435</td>
+<td>−0.584</td>
+<td>−0.309</td>
+<td>−0.209</td>
+<td>−0.201</td>
+<td>−0.201</td>
+</tr>
+<tr>
+<td><i>(0.008)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.007)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.009)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.084)</i></td>
+<td><i>(0.060)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.085)</i><a href="#tfn_2b_01">*</a></td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1920–1929</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>−0.054</td>
+<td>−0.094</td>
+<td>−0.034</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td><i>(0.062)</i></td>
+<td><i>(0.054)</i></td>
+<td><i>(0.074)</i></td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1930–1939</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>0.096</td>
+<td>−0.095</td>
+<td>0.084</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td><i>(0.063)</i></td>
+<td><i>(0.054)</i></td>
+<td><i>(0.075)</i></td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1940–1949</td>
+<td> </td>
+<td> </td>
+<td> </td>
+<td>0.220</td>
+<td>0.135</td>
+<td>0.220</td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td> </td>
+<td><i>(0.063)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.055)</i><a href="#tfn_2b_01">*</a></td>
+<td><i>(0.075)</i><a href="#tfn_2b_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1950–1959</td>
+<td>0.299</td>
+<td>0.255</td>
+<td>0.293</td>
+<td>0.342</td>
+<td>0.244</td>
+<td>0.351</td>
+</tr>
+<tr>
+<td><i>(0.020)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.016)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.022)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.076)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.062)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.086)</i><a href="#tfn_2b_02">**</a></td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1960–1969</td>
+<td>0.409</td>
+<td>0.449</td>
+<td>0.455</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><i>(0.021)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.017)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.023)</i><a href="#tfn_2b_02">**</a></td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td rowspan="2">Birth Year: 1970–1979</td>
+<td>0.393</td>
+<td>0.499</td>
+<td>0.510</td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td><i>(0.024)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.019)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.027)</i><a href="#tfn_2b_02">**</a></td>
+<td> </td>
+<td> </td>
+<td> </td>
+</tr>
+<tr>
+<td rowspan="2">Constant</td>
+<td>−2.408</td>
+<td>0.530</td>
+<td> </td>
+<td>0.855</td>
+<td>2.184</td>
+<td> </td>
+</tr>
+<tr>
+<td><i>(0.086)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.067)</i><a href="#tfn_2b_02">**</a></td>
+<td> </td>
+<td><i>(0.247)</i><a href="#tfn_2b_02">**</a></td>
+<td><i>(0.178)</i><a href="#tfn_2b_02">**</a></td>
+<td> </td>
+</tr>
+<tr>
+<td>Observations</td>
+<td>330,794</td>
+<td>239,891</td>
+<td>81,777</td>
+<td>205,062</td>
+<td>127,326</td>
+<td>40,052</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Notes</i>: (i) Models denoted by Pr(LFP = 1) – labour force participation; Pr(FT = 1) –full-time or part-time work; PT Hours –part-time hours for those working part-time. (ii) Robust standard errors italicised and in parentheses.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 5%.</p><p class="table-footnote" data-astro-cid-dzaleqsp>significant at 1%.</p></div></figure></section><section id="s3-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Differences in marginal effects by age</h3><p data-astro-cid-qsyhzaho>Differences in estimated coefficients across age groups are one way to show how age centring can affect predicted outcomes, but a better way to see the implications for model simulations is to compute marginal effects. The marginal effect of a given independent variable is computed by applying the estimated equation coefficients within-sample. The value of the independent variable being investigated is varied and the difference in the corresponding predicted outcomes is the marginal effect.</p><p data-astro-cid-qsyhzaho>The first set of marginal effects computed for the CBOLT labour force equations applies to the lagged dependent variable in the labour force participation equations. For each person computed using the estimated coefficients, with all independent variables set to actual values except lagged labour force participation. In the first set of calculations, the value of lagged labour force participation is set to zero (no work in the previous period) for every observation and the mean predicted labour force participation probability by age is computed. In the second set of calculations, the value of lagged labour force participation is set to one for every observation, and again the mean participation probability by age is computed. Because lagged labour force participation has a positive effect on current-year participation, the second set of mean probabilities is higher at every age. The marginal effect of lagged labour force participation is the gap between these two sets of mean probabilities.</p><p data-astro-cid-qsyhzaho><a href="#fig1">Figure 1</a> shows four sets of marginal effects for lagged labour force participation. There is one set each for men and women and for the two equations (single-equation and age-centred). For both men and women, the marginal effects in the single-equation estimates show much less variation by age than in the age-centred regressions. This makes sense because the single-equation estimate provides the weighted-average marginal effect of lagged labour force participation across the age distribution. Indeed, the only variation by age in marginal effects is associated with underlying variation in the other independent variables in the data set; there is only one coefficient on lagged labour force participation that applies to every age group, so the range of marginal effects is limited.</p><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00013-fig1.J0SQLRZy_Z4zwvW.webp" class="figure-lightbox-trigger" data-pswp-width="915" data-pswp-height="520" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00013-fig1.J0SQLRZy_Z4zwvW.webp" alt width="915" height="520" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Marginal effect of lagged LFP on labour force participation comparing single-equation and age-centred regressions men and women, ages 25–61.</span></figcaption></figure><p data-astro-cid-qsyhzaho>The variation in marginal effects by age is much more pronounced in the age-centred regressions, which is consistent with observations about the estimated coefficients by age made in the previous section. The coefficient on lagged labour force participation rises systematically by age in the age-centred regressions for both men and women, and this rise is reflected in significant increases in marginal effects as age increases. The fact that both age-centred marginal effects lines cross their respective single-equation lines is also consistent with the observations made about the coefficients in <a href="#table1">Tables 1</a> and <a href="#table2a">2a</a>, <a href="#table2b">2b</a>.</p><p data-astro-cid-qsyhzaho>These observed differences in estimated marginal effects could be of first-order importance in the microsimulation. The lagged labour force participation coefficient is a key to establishing longitudinal persistence in labour force participation within the micro sample, and in a single-equation model that coefficient is biased down for workers nearing retirement. One often-used technique in microsimulation — calibration factors by age — could be used to match predicted outcomes by age, but unless one addresses the underlying cause of the bias calibration will not fix theproblems with the equation.</p><p data-astro-cid-qsyhzaho>A second comparison of estimated marginal effects using single-equation estimates and age-centred regression leads to the same basic conclusion. <a href="#fig2">Figure 2</a> shows the marginal effect of being married on part-time hours worked (conditional on working part-time). In this case, the marginal effect of being married for both men and women is fairly similar between the age-centred and single-equation estimates, with the notable exception of the youngest and oldest age ranges, wher the bias is noticeable.</p><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00013-fig2.leKCMsGd_Z1YNUmK.webp" class="figure-lightbox-trigger" data-pswp-width="918" data-pswp-height="521" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00013-fig2.leKCMsGd_Z1YNUmK.webp" alt width="918" height="521" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Marginal effect of being married on part-time hours worked comparing single-equation and age-centred regressions men and women, ages 25–61.</span></figcaption></figure></section><section id="s3-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Differences in mean predicted outcomes by age</h3><p data-astro-cid-qsyhzaho>In addition to eliminating bias by age in estimated marginal effects, age centring can also improve the mean predicted outcomes by age in the microsimulation. The examples used here to draw out this point are somewhat contrived, because we estimate the single-equation versions using only a linear age term. In many applications, microsimulation modellers will examine patterns by age for the types of processes we are considering and estimate higher-order age polynomials.</p><p data-astro-cid-qsyhzaho><a href="#fig3">Figure 3</a> shows the mean probability of working by age for men and women, evaluated within-sample using the single-equation and age-centred regression approaches. Both equations clearly capture the concave shape in labour force participation between ages 25 and 61. The age-centred predictions will, by virtue of maximum likelihood principles, more closely track the actual patterns of labour force participation by age, so we can characterize the deviation of the single-equation from the age-centred line as bias. Although the deviation is not too extreme, it is systematically biased upwards for women. For men, the single-equation estimate is biased up for young workers and biased down for older workers, in generally the same direction of bias as the marginal effects of lagged labour force participation noted above. Adding higher-order age terms to the equation may help the single-equation track better, but it is unlikely to eliminate the bias.</p><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00013-fig3.rOqBmRlL_Z2kqDcr.webp" class="figure-lightbox-trigger" data-pswp-width="916" data-pswp-height="520" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00013-fig3.rOqBmRlL_Z2kqDcr.webp" alt width="916" height="520" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Mean predicted labour force participation comparing single-equation and age-centred regressions men and women, ages 25–61.</span></figcaption></figure><p data-astro-cid-qsyhzaho><a href="#fig4">Figure 4</a> shows the mean of part-time hours conditional on working part-time, and for these outcomes the bias is even stronger. The effect of imposing a linear coefficient on age comes through clearly for men, as the functional form induces a predicted relationship with age that is linear. As with labour force participation, the higher-order age-terms could improve predicted outcomes but the predictions will only asymptotically approach the age-centred values as higher-order terms are added.</p><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00013-fig4.qWYPpfVf_Z1VM7qi.webp" class="figure-lightbox-trigger" data-pswp-width="917" data-pswp-height="519" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00013-fig4.qWYPpfVf_Z1VM7qi.webp" alt width="917" height="519" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Mean expected part-time hours comparing single-equation and age-centred regressions men and women, ages 25–61.</span></figcaption></figure></section></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. Conclusions</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The technique described here as “age-centred regression” analysis is a useful way to extract information from a limited data set when estimating equations for dynamic microsimulation models. The situation in which age centring can help is very common: when the behavioural process in question varies systematically by age and the effect of one or more independent variables might also differ across age groups. The basic idea is to estimate separate equations for each age sample, but to include observations that are close to the reference age being estimated. Using the extra information from nearby observations makes it possible to statistically identify how marginal effects and predicted mean outcomes differ across the age distribution under consideration.</p><p data-astro-cid-qsyhzaho>The examples used here to illustrate age centring are fairly simple labour supply equations — the sequence of participation, full-versus part-time, and part-time hours given part-time employment — used in the Congressional Budget Office Long-Term (CBOLT) dynamic microsimulation. We show that moving from a single-equation to an age-centred approach involves little loss of statistical precision but has a significant impact on estimated marginal effects and mean predicted outcomes by age.</p></div></details><details id="footnotes" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Footnotes</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="fn1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1.</h3><p data-astro-cid-qsyhzaho><a href="#bib1">Congressional Budget Office (2006)</a>. The age-centring technique is also applied to marital transitions in CBO’s model; see <a href="#bib8">O’Harra and Sabelhaus (2002)</a> and <a href="#bib3">Harris and O’Harra (2001)</a>. For a general overview of the CBOLT model see <a href="#bib7">O’Harra, Sabelhaus, and Simpson (2004)</a>. The model has been applied in several academic papers, such as <a href="#bib4">Harris, Sabelhaus, and Simpson (2005)</a>, <a href="#bib5">Harris and Sabelhaus (2005)</a>, <a href="#bib6">Harris and Simpson (2005)</a>, and <a href="#bib9">Sabelhaus and Topoleski (2007)</a>. There are also several published CBO reports and studies using CBOLT, available on the CBO website under “Publications by Study Area, Social Security and Pensions.”</p></section><section id="fn2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.</h3><p data-astro-cid-qsyhzaho>In particular, one is trading off the ability to identify differences in the density at a particular point versus the precision with which that difference is being identified.</p></section><section id="fn3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.</h3><p data-astro-cid-qsyhzaho>It is worth noting that this also can lead to a lot of apparent imprecision in the estimated constant and age terms, because if the slope of the process being estimated is relatively flat over a particular age range, there is too little variation by age to separately identify a constant and age coefficient. Indeed, in some processes, one observes a pattern of estimated age and constant term coefficients that appear volatile, but the linear combination of the two actually input to the microsimulation model is much more stable.</p></section><section id="fn4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.</h3><p data-astro-cid-qsyhzaho>For illustrative purposes we have chosen to compare and contrast the age-centred equations with simple versions where age enters linearly, rather than equations with higher-order age terms, in order to emphasize the differences in properties. The primary difference we are trying to highlight—the fact that coefficient estimates for independent variables other than age vary across age groups—is unaffected by this decision. However, it is true that the mean predictions by age from the standard model could be improved if we used higher-order terms.</p></section><section id="fn5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.</h3><p data-astro-cid-qsyhzaho>The bins for the multinomial logit are for annual part-time hours of 125, 375, 625, 875, 1,125, 1,375, and 1,625. Everyone who works full-time (determined by the second equation in the module) has annual hours worked of 2,080.</p></section><section id="fn6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.</h3><p data-astro-cid-qsyhzaho>Like most dynamic microsimulations, CBOLT does not attempt to explicitly incorporate structural equations such as in <a href="#bib12">van Soest, Das, and Gong (2002)</a>. Therefore, the independent variable list does not include measures of wage or other labour income — differences in earnings potential are captured by the education terms and in the idiosyncratic persistence term.</p></section><section id="fn7" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.</h3><p data-astro-cid-qsyhzaho>The other two equations—full-time versus part-time work, and part-time hours conditional on working part-time—exhibit the same longitudinal persistence as labour force participation, but the CPS data used to estimate the equations do not have the requisite lagged information. CBOLT introduces that persistence into the simulation ex post using a technique described in <a href="#bib1">Congressional Budget Office (2006)</a>.</p></section><section id="fn8" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">8.</h3><p data-astro-cid-qsyhzaho>CBOLT uses different equations and/or bandwidth limits for people under age 25 and over 61. For the young, the effects of schooling dominate labour force decisions. For people over 61 the effects of social insurance dominate labour force decisions, because the eligibility age for Social Security is 62 in the United States.</p></section><section id="fn9" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">9.</h3><p data-astro-cid-qsyhzaho>Because the terminology is not universal, it is worth noting that “Social Security” as described here includes only Old Age Survivors and Disability Insurance or OASDI, which covers standard worker disability and retirement benefits.</p></section><section id="fn10" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">10.</h3><p data-astro-cid-qsyhzaho>This is not the only way to achieve desired heterogeneity in labour market outcomes. For other examples, see the description of the labour force modules for the Urban Institute’s DYNASIM model in <a href="#bib2">Favreault and Smith (2004)</a>, <a href="#bib10">Smith <i>et al.</i> (2005)</a> or for the Social Security Administration’s Modeling Income in the Near Term (MINT) model in <a href="#bib11">Toder et al. (2002)</a>.</p></section><section id="fn11" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">11.</h3><p data-astro-cid-qsyhzaho>The estimated thresholds or “cut” para-meters are not shown for the part-time multinomial logits. Those are available from the authors upon request.</p></section><section id="fn12" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">12.</h3><p data-astro-cid-qsyhzaho>The entire list of coefficients for reference ages 16 through 70 can be found in <a href="#bib1">Congressional Budget Office (2006)</a>.</p></section></div></details></div><details id="appendix1" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Example implementation of age-centred regression in Stata</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The following is a generalised version of the Stata code used in the CBOLT model, provided for demonstration purposesonly. The full version of the code takes account of sex and age-specific differentials by implementing age-centred regression separately for a variety of age group / sex combinations.</p><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*Declare Stata version; clear any existing data, set memory size, turn off page pause version 6.0
+clear
+set memory 500m
+set more off
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*If files moved – change this directory reference AND the four data references below cd &quot;C:\Labor Force and Earnings\LFP Equations\&quot;
+*generate a log of Stata output
+log using LFP_modified_model, replace
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*Declare lower bound age loop counters
+local iage= 16
+local jage=16
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*Loop through all valid single years of age (90 = 90+ in this example)
+*Note: 70+ group used in non age-centered regression estimate placed at end of example code while `iage&#39;&lt;=90 {
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*Call data file, deleting any existing data files
+use &quot;C:\Labor Force and Earnings\lfp_master_file &quot;, clear
+*Set age-band (kernel) width to +/- 5 years from currently considered single year of age gen band=5
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*Limit band-width if at or near top or bottom of age-range (= 16–90 in this example)
+replace band=1 if `iage&#39;==16|`iage&#39;==90|`iage&#39;&gt;=61&amp;`iage&#39;&lt;=66
+replace band=2 if `iage&#39;==17|`iage&#39;==89|`iage&#39;==60|`iage&#39;==67
+replace band=3 if `iage&#39;==18|`iage&#39;==88|`iage&#39;==59|`iage&#39;==68
+replace band=4 if `iage&#39;==19|`iage&#39;==87|`iage&#39;==58|`iage&#39;==69
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*Retain records (persons) in current analysis if age falls within range current age +/- band-width keep if age&gt;=`iage&#39;-band &amp; age&lt;=`iage&#39;+band
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*Declare a set of coefficients [default to 20], setting initial values to 0.
+gen beta1=0
+gen beta2=0
+gen beta3=0
+gen beta4=0
+gen beta5=0
+gen beta6=0
+gen beta7=0
+gen beta8=0
+gen beta9=0
+gen beta10=0
+gen beta11=0
+gen beta12=0
+gen beta13=0
+gen beta14=0
+gen beta15=0
+gen beta16=0
+gen beta17=0
+gen beta18=0
+gen beta19=0
+gen beta20=0
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*Assign weight for current record (person), based on difference from current loop single year of age
+*[For 5-year age band, difference of 0 -&gt; weight of 10; +/-1 -&gt; 8; +/-2 -&gt; 6; …etc.]
+gen weight=(((band-abs(`iage&#39;-age))/band)*10)
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*The following illustrative code provides an example of age-centred regression for age-band 16–18 only,
+*reflecting the common need to set up separate regressions for separate parts of the age range, in order
+*to capture changes in the key behavioural determinants. Hence the following code is executed
+*conditional upon the current loop counter age value.
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>while ‵iage&#39;&gt;16&amp;‵iage&#39;&lt;=18 {
+*Set cohort dummy variable to 1 if born during/after 1980
+replace chort8=1 if birthyear&gt;=1980
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*Run logistic regression of Y [dep. varname] given X [indep. var names], in which the
+*variable pw (person weight] is set to equal calculated person-specific Kernel-density weight logit lflwk lfp nm mar age in_school chort7 chort8 trend [pw=weight]
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*output stata-calculated predicted probability of labour force participation
+predict plfp, p
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*tabulate output
+table age if age==`iage&#39;, c(mean plfp mean lflwk mean lfp)
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*keep 1&lt;sup&gt;st&lt;/sup&gt; observation
+keep if _n==1
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*Set value of beta coefficients equal to coefficients calculated by logistic regression
+*replace betas that correspond to variables in the regression equation
+replace beta1=_b[age]
+replace beta3=_b[_cons]
+replace beta10=_b[chort7]
+replace beta11=_b[chort8]
+replace beta12=_b[nm]
+replace beta13=_b[mar]
+replace beta14=_b[lfp]
+replace beta15=_b[trend]
+replace beta16=_b[in_school]
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*Set string variable = current single year of age
+gen age_out=`iage&#39;
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*Save results to age-specific file (concatenating generic file name with string variable recording single
+*year of age), replacing any earlier version of file
+save &quot;C:\Labor Force and Earnings\lfp_`iage&#39;&quot;, replace
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*Break out of loop, as each loop applies age-centred regression to one specific single year of age local iage=`iage&#39;+100
+}
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*Update local age loop counters by 1 before going round loop again for next single year of age local iage=`jage&#39;+1
+local jage=`jage&#39;+1
+}
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*For the final desired age-group (70+ in this example) conventional rather than age-centred regression is
+*used, therefore no weights are needed. However, everything else follows as in the above age-centred
+*example
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>clear
+use &quot;C:\Labor Force and Earnings\lfp_master_file &quot;, clear
+keep if age&gt;=70
+replace chort2=1 if birthyear&gt;=1920
+gen beta1=0
+gen beta2=0
+gen beta3=0
+gen beta4=0
+gen beta5=0
+gen beta6=0
+gen beta7=0
+gen beta8=0
+gen beta9=0
+gen beta10=0
+gen beta11=0
+gen beta12=0
+gen beta13=0
+gen beta14=0
+gen beta15=0
+gen beta16=0
+gen beta17=0
+gen beta18=0
+gen beta19=0
+gen beta20=0
+logit lflwk lfp nm mar age ssinc education2 education3 education4 chort1 chort2 trend predict plfp, p
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>table age if age&gt;=70, c(mean plfp mean lflwk mean lfp)
+keep if _n==1
+replace beta1=_b[age]
+replace beta2=_b[ssinc]
+replace beta3=_b[_cons]
+replace beta4=_b[chort1]
+replace beta5=_b[chort2]
+replace beta12=_b[nm]
+replace beta13=_b[mar]
+replace beta14=_b[lfp]
+replace beta15=_b[trend]
+replace beta17=_b[education2]
+replace beta18=_b[education3]
+replace beta19=_b[education4]
+gen age_out=70
+save &quot;C:\Labor Force and Earnings\lfp_70&quot;, replace
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>use &quot;C:\Shared\Labor Force and Earnings\lfp_16&quot;, clear
+local iage=17
+while ‵iage&#39;&lt;=70 {
+append using &quot;C:\Labor Force and Earnings\lfp_‵iage&#39;&quot;
+local iage=‵iage&#39;+1
+}
+</code></pre><pre data-astro-cid-qsyhzaho><code data-astro-cid-qsyhzaho>*Write out age-centred regression coefficients and save to file [lfp_modified_model] outfile age_out beta1 beta2 beta3 beta4 beta5 beta6 beta7 /*
+*/ beta8 beta9 beta10 beta11 beta12 beta13 beta14 beta15 /*
+*/ beta16 beta17 beta18 beta19 beta20 /*
+*/ using C:\Labor Force and Earnings\lfp_modified_model.txt, wide replace
+</code></pre></div></details><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2006). <em data-astro-cid-oer3kof4>Projecting Labour Force Participation and Earnings in CBO’s Long-Term Microsimulation Model, Background Paper</em>. Projecting Labour Force Participation and Earnings in CBO’s Long-Term Microsimulation Model, Background Paper.</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Favreault, MM, Smith, KE (2004). <em data-astro-cid-oer3kof4>A Primer on the Dynamic Simulation of Income Model (DYNASIM3). Discussion Paper, Retirement Project</em>. A Primer on the Dynamic Simulation of Income Model (DYNASIM3). Discussion Paper, Retirement Project.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Harris, AR, O’Harra, J (2001). <span data-astro-cid-oer3kof4>The Impact of Marriage and Labour Force Participation Trends on the Social Security Benefits of Women</span>. <em data-astro-cid-oer3kof4>Proceedings of the National Tax Association</em>, 99–107.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Harris, AR, Sabelhaus, J, Simpson, M (2005). <span data-astro-cid-oer3kof4>Uncertainty About OAI Worker Benefits Under Individual Accounts</span>. <em data-astro-cid-oer3kof4>Contemporary Economic Policy</em>, <strong data-astro-cid-oer3kof4>23</strong>, 1–16.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Harris, AR, Sabelhaus, J (2005). <em data-astro-cid-oer3kof4>How Does Differential Mortality Affect Social Security Progressivity and Finances? Technical Paper 2005–5</em>. How Does Differential Mortality Affect Social Security Progressivity and Finances? Technical Paper 2005–5.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Harris, AR, Simpson, M (2005). <span data-astro-cid-oer3kof4>Winners and Losers Under Various Approaches to Slowing Social Security Benefit Growth</span>. <em data-astro-cid-oer3kof4>National Tax Journal</em>, <strong data-astro-cid-oer3kof4>LVIII</strong>, 523–544.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Harra, J, Sabelhaus, J, Simpson, M (2004). <em data-astro-cid-oer3kof4>Overview of the Congressional Budget Office Long-Term (CBOLT) Policy Simulation Model. Technical Paper 2004-1</em>. Overview of the Congressional Budget Office Long-Term (CBOLT) Policy Simulation Model. Technical Paper 2004-1.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Harra, J, Sabelhaus, J (2002). <em data-astro-cid-oer3kof4>Projecting Longitudinal Marriage Patterns for Long-Term Policy Analysis. Technical Paper 2002-2</em>. Projecting Longitudinal Marriage Patterns for Long-Term Policy Analysis. Technical Paper 2002-2.</span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Sabelhaus, J, Topoleski, J (2007). <span data-astro-cid-oer3kof4>Uncertain Policy for an Uncertain World: The Case of Social Security</span>. <em data-astro-cid-oer3kof4>Journal of Policy Analysis and Management</em>, <strong data-astro-cid-oer3kof4>26</strong>, 507–525.</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Smith, KE, Cashin, DB, Favreault, MM (2005). <em data-astro-cid-oer3kof4>Modeling Income in the Near Term 4</em>. Washington DC: The Urban Institute.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Toder, E, Thompson, LH, Favreault, M (2002). <em data-astro-cid-oer3kof4>Modeling Income in the Near Term: Revised Projections of Retirement Income Through 2020 for the 1931–1960 Birth Cohorts</em>. Washington DC: The Urban Institute.</span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Van Soest, A, Das, M, Gong, X (2002). <span data-astro-cid-oer3kof4>A Structural Labour Supply Model with Flexible Preferences</span>. <em data-astro-cid-oer3kof4>Journal of Econometrics</em>, <strong data-astro-cid-oer3kof4>107</strong>, 345–374.</span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>John Sabelhaus</h4><ul class="article-info__affiliations" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a>Department of Economics, University of Maryland, Washington, DC, United States</li><li data-astro-cid-m3fa5h5a>Investment Company Institute, Washington, DC, United States</li></ul><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:sabelhaus@econ.umd.edu" data-astro-cid-m3fa5h5a>sabelhaus@econ.umd.edu</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Lina Walker</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Public Policy Institute, AARP, Washington, DC, United States</p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Acknowledgements</h3><p data-astro-cid-m3fa5h5a>The authors are grateful to the editor and an anonymous referee for suggestions. This paper was written while both authors were employed at the Congressional Budget Office, Washington, DC. The analysis and conclusions in this paper are those of the authors and should not be interpreted as those of any of the institutions with which they have been affiliated over the course of this project.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00013" data-astro-cid-m3fa5h5a>Version of Record published: December 31, 2009 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2009, Sabelhaus and Walker</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/methodology" data-pagefind-filter="Research category:Methodology" data-astro-cid-m3fa5h5a>Methodology</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=age-centred%20regression" data-astro-cid-m3fa5h5a>age-centred regression</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=heterogeneity" data-astro-cid-m3fa5h5a>heterogeneity</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=spline" data-astro-cid-m3fa5h5a>spline</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=kernel" data-astro-cid-m3fa5h5a>kernel</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

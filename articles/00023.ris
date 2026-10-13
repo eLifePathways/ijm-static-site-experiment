@@ -1,0 +1,21 @@
+TY  - JOUR
+TI  - Sequential linking of computable general equilibrium and microsimulation models: A comparison of behavioural and reweighting techniques
+AU  - Hérault, Nicolas
+VL  - 3
+IS  - 1
+PY  - 2010
+DA  - 2010/06/30
+SP  - 35-42
+C1  - IJM 2010;3(1):35-42
+DO  - 10.34196/ijm.00023
+UR  - https://doi.org/10.34196/ijm.00023
+AB  - Several approaches have recently been developed to combine a computable general equilibrium model (CGE) and a microsimulation (MS) model. These so-called CGE-MS models enjoy a growing interest because they build a bridge between macro- and microeconomic analyses. This paper focuses on the ‘top-down’ approach. In this context, the CGE model is used to simulate the changes at the macroeconomic level after the policy change, which are then passed on to the MS model. The aim of this paper is to compare the ‘top-down’ approach introduced by Bourguignon et al. (2003) based on a behavioural MS model with an alternative and simpler approach making use of a non-behavioural MS model in combination with a reweighting procedure. Both approaches are presented and applications are provided using South African data. We compare the results obtained with both approaches for a typical simulation of the impact of trade liberalisation on income distribution. The reweighting approach introduces a small bias in the results, however without modifying the main conclusions. This is an indication that, given its relative simplicity compared to the behavioural approach, the reweighting approach can constitute a good alternative when data or time constraints do not allow the use of the behavioural approach and when the interest does not lie in the production of individual-level transition matrices.
+KW  - computable general equilibrium model
+KW  - microsimulation
+KW  - South Africa
+KW  - income distribution
+KW  - trade liberalisation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

@@ -1,0 +1,21 @@
+TY  - JOUR
+TI  - Simulating the joint distribution of individuals, households and dwellings in small areas
+AU  - Husby, Trond
+AU  - Ivanova, Olga
+AU  - Thissen, Mark
+VL  - 11
+IS  - 2
+PY  - 2018
+DA  - 2018/08/31
+SP  - 169-190
+C1  - IJM 2018;11(2):169-190
+DO  - 10.34196/ijm.00184
+UR  - https://doi.org/10.34196/ijm.00184
+AB  - This article proposes a sample-based methodology for synthesizing individuals, households and dwellings in small areas, illustrated using a case study of Amsterdam. The method encompasses the following steps: first, individual- and household-level tables are created separately using Iterative Proportional Fitting (IPF). Second, synthetic individuals are allocated into synthetic households using a combination of sorting algorithms and mixed integer programming. As such, the synthetic households are adjusted to accommodate the synthetic individuals, ensuring a consistent joint distribution of individuals, households and dwellings in small areas.
+KW  - spatial microsimulation
+KW  - iterative proportional fitting
+KW  - mixed integer programming
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

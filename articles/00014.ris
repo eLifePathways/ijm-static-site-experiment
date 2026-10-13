@@ -1,0 +1,23 @@
+TY  - JOUR
+TI  - Dynamic spatial microsimulation using the concept of GHOSTs
+AU  - Rossiter, David
+AU  - Ballas, Dimitris
+AU  - Clarke, Graham
+AU  - Dorling, Danny
+VL  - 2
+IS  - 2
+PY  - 2009
+DA  - 2009/12/31
+SP  - 15-26
+C1  - IJM 2009;2(2):15-26
+DO  - 10.34196/ijm.00014
+UR  - https://doi.org/10.34196/ijm.00014
+AB  - This paper presents a novel method of creating and updating geographical population microdata. In particular, it presents a prototype modelling technique which forms a component of the SimBritain modelling project. The paper first briefly discusses some of the key conceptual and practical issues involved in microsimulation, in particular highlighting the differences between spatial and aspatial microsimulation models. The paper then outlines a potential alternative to fully stochastic event-driven spatial dynamic microsimulation. This alternative uses longitudinal data to produce and project Generic Household Spaces Through Time (GHOSTs), all within a spatial modelling framework. To this end the paper first outlines how to derive GHOSTs from longitudinal data, then explains how the attributes of these GHOSTs can be projected forward in time.
+KW  - dynamic
+KW  - spatial
+KW  - small area
+KW  - household space histories
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

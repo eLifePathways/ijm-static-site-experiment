@@ -1,0 +1,4298 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Figures and data in Regression-style models for parameter estimation in dynamic microsimulation: An empirical performance assessment | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00117/figures"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.figures-page__summary[data-astro-cid-uy5dlehv]{color:var(--color-ink-muted);margin-block-end:var(--space-m)}@media (width>=75em){.article-content-grid[data-astro-cid-uy5dlehv]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-astro-cid-uy5dlehv><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/methodology" data-astro-cid-ak4gb66a>Methodology</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Aug 31, 2015</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Regression-style models for parameter estimation in dynamic microsimulation: An empirical performance assessment</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Jessica M McLay, Roy Lay-Yee, Barry J Milne, Peter Davis</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Centre of Methods and Policy Application in the Social Sciences, The University of Auckland, New Zealand</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/8-2/volume-8-2-autumn-2015" data-astro-cid-ak4gb66a>Volume 8(2) Autumn 2015</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> J. McLay, R. Lay-Yee, B. Milne, P. Davis; 2015; <span data-astro-cid-ak4gb66a>Regression-style models for parameter estimation in dynamic microsimulation: An empirical performance assessment</span>; International Journal of Microsimulation; 8(2); 83–127. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00117" data-astro-cid-ak4gb66a>10.34196/ijm.00117</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>Microsimulation models seek to represent real-world processes and can generate extensive amounts of synthetic data. The parameters that drive the data generation process are often estimated by statistical models, such as linear regression models. There are many models that could be considered for this purpose. We compare six potential models, discuss the assumptions of these models, and perform an empirical assessment that compares synthetic data simulated from these models with observed data. We chose six regression-style models that can be easily implemented in standard statistical software: an ordinary least squares regression model with a lagged dependent variable, two random effects models (with and without an autoregressive order 1within-unit error structure), a fixed effects model, a hybrid model combining features from both fixed and random effects models, and a dynamic panel model estimated with system generalised method of moments. The criterion for good performance was the proximity of fit of simulated data to the observed data on various characteristics. We found evidence of violated assumptions in our data for all the models but found that, for the majority of data characteristics assessed, all the models produced synthetic data that were a reasonable approximation to the observed data, with some models performing better or worse for particular characteristics. We hope more modellers will consider and test the assumptions of models used for parameter estimation and experiment with different model specifications resulting in higher quality microsimulation models and other research applications.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00117/ijm-00117.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00117.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00117.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-uy5dlehv><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00117" class="view-tabs__link" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00117/figures" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#figures" data-astro-cid-twdwaz5s>Figures</a></li><li data-astro-cid-twdwaz5s><a href="#tables" data-astro-cid-twdwaz5s>Tables</a></li></ul></details></div><div class="article-content" data-astro-cid-uy5dlehv><p class="figures-page__summary" data-astro-cid-uy5dlehv>This article contains 4 figures and 33 tables.</p><details id="figures" class="article-section article-section--collapsible" open data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Figures</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00117-fig1.DZRrGyJ5_2txowL.webp" class="figure-lightbox-trigger" data-pswp-width="1890" data-pswp-height="1420" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00117-fig1.DZRrGyJ5_2txowL.webp" alt width="1890" height="1420" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Flowchart showing the cross validation method used to calculate the simulated means, observed means, and the mean absolute differences reported in the results.</span></figcaption></figure><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00117-fig2.CbLshRNr_1AIVMl.webp" class="figure-lightbox-trigger" data-pswp-width="1760" data-pswp-height="1013" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00117-fig2.CbLshRNr_1AIVMl.webp" alt width="1760" height="1013" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Comparison of the observed reading scores and the reading scores simulated under the six models.</span></figcaption></figure><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00117-fig3.CoM4U6Tt_Z2mh50Y.webp" class="figure-lightbox-trigger" data-pswp-width="1827" data-pswp-height="1043" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00117-fig3.CoM4U6Tt_Z2mh50Y.webp" alt width="1827" height="1043" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Cumulative distribution curves of the observed reading scores and the reading scores simulated under the six models.</span></figcaption></figure><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00117-fig4.DAyPk1TZ_ZMkzOG.webp" class="figure-lightbox-trigger" data-pswp-width="2632" data-pswp-height="1541" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00117-fig4.DAyPk1TZ_ZMkzOG.webp" alt width="2632" height="1541" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Comparison of observed and simulated mean reading scores by predictors.</span></figcaption></figure></div></details><details id="tables" class="article-section article-section--collapsible" data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Tables</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Statistical regression techniques used by other dynamic microsimulation models (Table legend).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>OLS regression with an LVD</th>
+<th align="center">Random effects</th>
+<th align="center">Fixed effects</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MINT3: Earnings of retirees who choose to work, earnings of social security beneficiaries (<a href="#bib37">Toder <i>et al</i>., 2002</a>)</td>
+<td>PenSim2: Earnings (<a href="#bib12">Emmerson, Reed, &amp; Shephard, 2004</a>)</td>
+<td>MINT1: Earnings (<a href="#bib37">Toder <i>et al</i>., 2002</a>)</td>
+</tr>
+<tr>
+<td>SVERIGE: Earnings (<a href="#bib30">Rephann &amp; Holm, 2004</a>)</td>
+<td>MIDAS: Hours worked, wages (<a href="#bib10">Dekkers <i>et al</i>., 2008</a>)</td>
+<td>Income Distribution of the Dutch Elderly: Income (<a href="#bib25">Knoef, Alessie, &amp; Kalwij, 2013</a>)</td>
+</tr>
+<tr>
+<td>DYNAMOD-2: Earnings (<a href="#bib5">Bækgaard, 2002</a>)</td>
+<td>DYNASIM-3: Hours worked, earnings (<a href="#bib13">Favreault &amp; Smith, 2004</a>)</td>
+<td>MINT3: Pre-retirement earnings after age 50 (<a href="#bib37">Toder <i>et al</i>., 2002</a>)</td>
+</tr>
+<tr>
+<td>LifePaths: Hours worked (<a href="#bib40">Wolfson, 1995</a>)</td>
+<td>SAGE: Earnings (<a href="#bib42">Zaidi <i>et al</i>., 2009</a>)</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>MINT3: Non-pension wealth, home equity, non-pension assets (<a href="#bib37">Toder <i>et al</i>., 2002</a>)</td>
+<td/>
+</tr>
+<tr>
+<td/>
+<td>SESIM: Earnings, interest paid, size of loan (<a href="#bib24">Klevmarken &amp; Lindgren, 2008</a>)</td>
+<td/>
+</tr>
+</tbody>
+</table></div></figure><figure data-astro-cid-dzaleqsp><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td>Description of approach:</td>
+<td>Standard model with an LDV.</td>
+</tr>
+<tr><td>Estimation:</td>
+<td>Ordinary least squares (OLS)</td></tr>
+<tr><td>Assumptions on individual effects and errors:</td>
+<td><i>μ<sub>i</sub></i> = 0, <i>ε<sub>i,t</sub></i> = <i>υ<sub>i,t</sub></i>~<i>iid N</i>(0, <i>σ</i><sup>2</sup>), Cov(<i>ε<sub>i,t</sub></i>, <i><b>x</b><sub>i,t</sub></i>) = 0</td></tr>
+<tr><td>Estimates of main effects of time-invariant predictors:</td>
+<td>Estimated and included directly in the simulation</td></tr>
+<tr><td>Implementation in the simulation:</td>
+<td>Coefficients (<i>γ</i>, <i>α</i>, and <b><i>β</i></b>) applied to the corresponding individual values to get predicted mean for each individual. Random number drawn from normal distribution with mean equal to the predicted mean and standard deviation equal to <i>σ</i>.</td></tr>
+<tr><td>Other advantages and disadvantages:</td>
+<td>Simple to estimate the model and implement in the simulation.</td>
+</tr>
+</tbody>
+</table></div></figure><figure data-astro-cid-dzaleqsp><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td>Description of approach:</td>
+<td>Random child intercepts. No LDV included (<b><i>α</i></b> = 0).</td></tr>
+<tr>
+<td>Estimation:</td>
+<td>Various options but restricted maximum likelihood (REML) used</td></tr>
+<tr>
+<td>Assumptions on individual effects and errors:</td>
+<td><math><mrow><msub><mi>μ</mi><mi>i</mi></msub><mo>~</mo><mi>i</mi><mi>i</mi><mi>d</mi><mtext> </mtext><mi>N</mi><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><msubsup><mi>σ</mi><mi>b</mi><mn>2</mn></msubsup><mo stretchy="false">)</mo><mo>,</mo><msub><mi>υ</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>~</mo><mi>i</mi><mi>i</mi><mi>d</mi><mtext> </mtext><mi>N</mi><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><msup><mi>σ</mi><mn>2</mn></msup><mo stretchy="false">)</mo><mo>,</mo><mi>C</mi><mi>o</mi><mi>v</mi><mo stretchy="false">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>,</mo><msub><mstyle mathsize="normal" mathvariant="bold-italic"><mi>x</mi></mstyle><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mtext> </mtext><mi>C</mi><mi>o</mi><mi>v</mi><mo stretchy="false">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>,</mo><msub><mi>υ</mi><mrow><mi>i</mi><mo>.</mo><mi>t</mi></mrow></msub><mo>_</mo><mo>=</mo><mn>0</mn></mrow></math></td></tr>
+<tr>
+<td>Estimates of main effects of time-invariant predictors:</td>
+<td>Estimated and included directly in the simulation</td></tr>
+<tr>
+<td>Implementation in the simulation:</td>
+<td>As for OLS-LDV except each child assigned an individual effect which is added to the predicted mean</td></tr>
+<tr>
+<td>Other advantages and disadvantages:</td>
+<td>Must decide how to include the individual effects and treat them during scenario testing</td></tr>
+</tbody>
+</table></div></figure><figure data-astro-cid-dzaleqsp><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td>Description of approach:</td>
+<td>Random child intercepts. No LDV included <i>(a =</i> 0). Within-child errors assumed to have an AR(1) structure.</td></tr>
+<tr>
+<td>Estimation:</td>
+<td>Various options but penalized quasi-likelihood used via the R function glmmPQL.</td></tr>
+<tr>
+<td>Assumptions on individual effects and errors:</td>
+<td><math><mrow><msub><mi>υ</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mi>ρ</mi><msub><mi>υ</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>+</mo><msub><mi>ω</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>,</mo><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><msub><mi>μ</mi><mi>i</mi></msub><mo>~</mo><mi>i</mi><mi>i</mi><mi>d</mi><mtext> </mtext><mi>N</mi><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mtext> </mtext><msubsup><mi>σ</mi><mi>b</mi><mn>2</mn></msubsup><mo stretchy="false">)</mo><mo>,</mo><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><msub><mi>ω</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>~</mo><mi>i</mi><mi>i</mi><mi>d</mi><mtext> </mtext><mi>N</mi><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><msup><mi>σ</mi><mn>2</mn></msup><mo stretchy="false">)</mo><mo>,</mo><mtext> </mtext><mtext> </mtext><mi>C</mi><mi>o</mi><mi>v</mi><mo stretchy="false">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>,</mo><msub><mstyle mathsize="normal" mathvariant="bold-italic"><mi>x</mi></mstyle><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn><mo>,</mo><mtext> </mtext><mtext> </mtext><mi>C</mi><mi>o</mi><mi>v</mi><mo stretchy="false">(</mo><msub><mi>μ</mi><mi>i</mi></msub><mo>,</mo><msub><mi>ω</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>0</mn></mrow></math></td></tr>
+<tr>
+<td>Estimates of main effects of time-invariant predictors:</td>
+<td>Estimated and included directly in the simulation</td></tr>
+<tr>
+<td>Implementation in the simulation:</td>
+<td>As for variance components RE, except that the standard deviation of the simulated values is now a random draw from a normal distribution when mean equal to <i>ρυ<sub>i,t-1</sub></i> and standard deviation <i>σ</i>. In practice, the error (<i>υ<sub>i,t</sub></i>) was simulated first and then added to the individual fitted value (which includes the individual effect, <i>μ<sub>i</sub></i>). This error was saved so that it could be used in simulating the error for the next year.</td></tr>
+<tr>
+<td>Other advantages and disadvantages:</td>
+<td>As for variance components RE, plus more programming required to implement AR errors</td>
+</tr>
+</tbody>
+</table></div></figure><figure data-astro-cid-dzaleqsp><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr><td>Description of approach:</td>
+<td>Uses only within child variation to estimate fixed/within effects for time-variant predictors. Run as standard regression but include the child IDs as a set of dummy variables or use deviation scores for time-variant variables and exclude time-invariant variables. No LDV included (<i>α</i> = 0).</td></tr>
+<tr><td>Estimation:</td>
+<td>OLS</td></tr>
+<tr><td>Assumptions on individual effects and errors:</td>
+<td><i>μ<sub>i</sub></i> estimated, <i>υ<sub>i,t</sub></i>~<i>iid N</i>(0, <i>σ</i><sup>2</sup>), <i>Cov</i>(<i>μ<sub>i</sub></i>, <i><b>x</b><sub>i,t</sub></i>) ≠ 0, <i>Cov</i>(<i>μ<sub>i</sub></i>, <i>υ<sub>i,t</sub></i>) = 0</td></tr>
+<tr><td>Estimates of main effects of time-invariant predictors:</td>
+<td>No estimates of main effects. Can include interactions with time-variant predictors.</td></tr>
+<tr><td>Implementation in the simulation:</td>
+<td>As for random effects.</td></tr>
+<tr><td>Other advantages and disadvantages:</td>
+<td>Does not provide estimates of time-invariant variables which are crucial for a fully functioning DMSM.</td>
+</tr>
+</tbody>
+</table></div></figure><figure data-astro-cid-dzaleqsp><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr><td>Description of approach:</td>
+<td>Estimates fixed effects for time-variant predictors and crosssectional effects for time-invariant predictors. Each predictor decomposed into between-unit variation, <i><b>Z</b><sub>i</sub></i>, (repeated individual-specific means for each time point) and within-unit variation, <math><mrow><msubsup><mstyle mathsize="normal" mathvariant="bold-italic"><mi>x</mi></mstyle><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow><mo>*</mo></msubsup></mrow></math> (the difference between the raw value and <i><b>Z</b><sub>i</sub></i>). Model estimated with the outcome in the original form and including the time-invariant predictors, <i><b>Z</b><sub>i</sub></i>, <math><mrow><msubsup><mstyle mathsize="normal" mathvariant="bold-italic"><mi>x</mi></mstyle><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow><mo>*</mo></msubsup></mrow></math>, and random individual effects. No LDV included.</td>
+</tr>
+<tr>
+<td>Estimation:</td>
+<td>Restricted Maximum Likelihood (REML)</td>
+</tr>
+<tr>
+<td>Assumptions on individual effects and errors:</td>
+<td><i>μ<sub>i</sub></i>~<i>iid N</i>(0, <math><msubsup><mi>σ</mi><mi>b</mi><mn>2</mn></msubsup></math>), <i>υ<sub>i,t</sub></i>~<i>iid N</i>(0, <i>σ</i><sup>2</sup>), by construction <i>Cov</i>(<i>μ<sub>i</sub></i>, <math><mrow><msubsup><mstyle mathsize="normal" mathvariant="bold-italic"><mi>x</mi></mstyle><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow><mo>*</mo></msubsup></mrow></math>) = 0 (so is not strictly an assumption), <i>Cov</i>(<i>μ<sub>i</sub></i>, <i>υ<sub>i,t</sub></i>) = 0, <i>Cov</i>(<i><b>z</b><sub>i</sub></i>, <i>υ<sub>i,t</sub></i>) = 0</td>
+</tr>
+<tr>
+<td>Estimates of main effects of time-invariant predictors:</td>
+<td>Estimated and included directly in the simulation</td>
+</tr>
+<tr>
+<td>Implementation in the simulation:</td>
+<td>As for random effects. For time-invariant variables, the fixed (‘within’) effects are used; the ‘between’ effects of these variables are not used.</td>
+</tr>
+<tr>
+<td>Other advantages and disadvantages:</td>
+<td>Provides fixed effects estimates and main effects for time-invariant variables. Standard errors not correct.</td>
+</tr></tbody></table></div></figure><figure data-astro-cid-dzaleqsp><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td>Description of LDV included. Uses instrumental variables to deal with the approach:</td>
+<td>endogeneity of the LDV and any other predictors. The predictors are transformed (by the first-difference or orthogonal deviations transformation) and then instrumented with lagged levels of the original predictors.</td>
+</tr>
+<tr>
+<td>Estimation:</td>
+<td>Generalised method of moments (GMM)</td>
+</tr>
+<tr>
+<td>Assumptions on individual effects and errors:</td>
+<td><i>Cov</i>(<i>y</i><sub><i>i</i>1</sub>, <i>υ<sub>i,t</sub></i>) = 0 (initial conditions predetermined), <i>Cov</i>(<i>y</i><sub><i>i</i>1</sub>, <i>μ<sub>i</sub></i>) ≠ 0, <i>Cov</i>(<i>μ<sub>i</sub></i>, <i><b>x</b><sub>i,t</sub></i>) ≠ 0, <i><i>x<sub>i,t</sub></i> allowed to be correlated with <i>υ<sub>i,t</sub></i> and earlier errors but not subsequent errors.</i></td>
+</tr>
+<tr>
+<td>Estimates of main effects of time-invariant predictors:</td>
+<td>No estimates provided</td>
+</tr>
+<tr>
+<td>Implementation in the simulation:</td>
+<td>Change simulated and added to previous value. Estimates applied to the change in the predictors from last time-period.</td>
+</tr>
+<tr>
+<td>Other advantages and disadvantages:</td>
+<td>Complex estimator with many options</td>
+</tr>
+</tbody>
+</table></div></figure><figure data-astro-cid-dzaleqsp><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td>Description of approach:</td>
+<td>As for difference GMM DPM but a second ‘levels’ equation is included to form a system of equations. The variables in the levels equation are instrumented with their own first differences.</td>
+</tr>
+<tr>
+<td>Estimation:</td>
+<td>Generalised method of moments (GMM)</td>
+</tr>
+<tr>
+<td>Assumptions on individual effects and errors:</td>
+<td>As for difference GMM, plus <i>Cov</i>(<i>μ<sub>i</sub></i>, <i>Δ<b>w</b><sub>i,t</sub></i> = 0, where <i>w</i> is any instrumenting variable (either <i>x</i> or <i>y</i>)</td>
+</tr>
+<tr>
+<td>Estimates of main effects of time-invariant predictors:</td>
+<td>Estimated and included directly in the simulation</td>
+</tr>
+<tr>
+<td>Implementation in the simulation:</td>
+<td>As for OLS regression with an LDV.</td>
+</tr>
+<tr>
+<td>Other advantages and disadvantages:</td>
+<td>Complex estimator with many options, hard to meet additional assumption</td></tr></tbody></table></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Predictors used in the regression models.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th align="center">Categories/description</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><i>Time-invariant Predictors</i></td>
+<td><i>Values available only at the child’s birth</i></td></tr>
+<tr><td>Gender</td>
+<td>Male; Female</td></tr>
+<tr><td>Mother’s education</td>
+<td>No formal qualifications; Secondary qualification; Tertiary qualification</td></tr>
+<tr><td>Father’s education</td>
+<td>No formal qualifications, Secondary qualification; Tertiary qualification</td></tr>
+<tr><td>Family’s socio-economic position</td>
+<td>Semi-skilled, Unskilled, unemployed; Clerical, technical, skilled; Professional, managerial</td></tr>
+<tr>
+<td/>
+<td>Based on the Elley-Irving scale (<a href="#bib11">Elley &amp; Irving, 1976</a>)</td></tr>
+<tr><td>Breast-feeding</td>
+<td>Duration in months</td></tr>
+<tr><td>Time-variant Predictors</td>
+<td>Values available at each year</td></tr>
+<tr><td>LDV</td>
+<td>The lagged dependent variable; The value of the reading score at the previous year</td></tr>
+<tr><td>Child’s age</td>
+<td>8 to 13 years</td></tr>
+<tr><td>Mother’s hours worked</td>
+<td>The average number of hours of paid work performed per week by the mother/mother figure</td></tr>
+<tr><td>Home ownership</td>
+<td>Owned or mortgaged; Rented</td></tr>
+<tr><td>Father’s smoking</td>
+<td>The average number of cigarettes smoked per day by the father/father figure</td></tr>
+</tbody>
+</table></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Assumptions made for each model. ✓A indicates that the assumption is made by the model. Following this may be either the result of testing for the assumption or a comment <i>(A dash (-) indicates that the test is not relevant).</i></span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>Assumption</th>
+<th>Test used</th>
+<th>OLS-LDV</th>
+<th>RE</th>
+<th>RE-AR(1)</th>
+<th>FE</th>
+<th>HYBRID</th>
+<th>GMM Dynamic Panel</th>
+</tr>
+</thead>
+<tbody>
+<tr><td align="center">1</td>
+<td align="center">No individual effects: <i>μ<sub>i</sub></i> = 0, <i>ε<sub>i,t</sub></i> = <i>υ<sub>i,t</sub></i></td>
+<td align="center">LR test for non-zero <math><mrow><msubsup><mi>σ</mi><mi>b</mi><mn>2</mn></msubsup></mrow></math>, p-value based on a mixture of chi-squares (COVTEST in the GLIMMIX procedure, SAS 9.3).</td>
+<td align="center">✓ A, LDV in model: x<sup>2</sup>(1) = 0.00, p = .9999; LDV not in model: x<sup>2</sup>(1) = 7958, p &lt; .0001</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td align="center">2</td>
+<td align="center">Individual effects independent of within-child errors: <i>Cov</i>(<i>μ<sub>i</sub></i>, <i>υ<sub>i,t</sub></i> = 0</td>
+<td align="center">Test for Pearson’s correlation between estimated individual effects<sup><a href="#tfn1">a</a></sup> and residuals</td>
+<td align="center">-</td>
+<td align="center">✓A, <math><mrow><mi>C</mi><mi>o</mi><mi>r</mi><mo stretchy="false">(</mo><msub><mover accent="true"><mi>μ</mi><mo>^</mo></mover><mi>i</mi></msub><mo>,</mo><msub><mover accent="true"><mi>υ</mi><mo>^</mo></mover><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>0.079</mn></mrow></math>, p &lt; .0001</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center">✓A, <math><mrow><mi>C</mi><mi>o</mi><mi>r</mi><mo stretchy="false">(</mo><msub><mover accent="true"><mi>μ</mi><mo>^</mo></mover><mi>i</mi></msub><mo>,</mo><msub><mover accent="true"><mi>υ</mi><mo>^</mo></mover><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mn>0.079</mn></mrow></math>, p &lt; .0001</td>
+<td align="center"/>
+</tr>
+<tr>
+<td align="center">3</td>
+<td align="center">Individual effects independent of each other: <i>μ<sub>i</sub></i>~<i>iid</i></td>
+<td align="center">Assumed by virtue of the individuals being randomly selected and from different families</td>
+<td align="center">-</td>
+<td align="center">✓A</td>
+<td align="center">✓A</td>
+<td align="center"><i>μ<sub>i</sub>s</i> eliminated by transformation</td>
+<td align="center">✓A</td>
+<td align="center"><i>μ<sub>i</sub>s</i> eliminated by transformation</td>
+</tr>
+<tr>
+<td align="center">4</td>
+<td align="center"><i>μ<sub>i</sub></i>~<i>N</i>(0.<i>σ<sub>b</sub></i>)</td>
+<td align="center">Shapiro-Wilk test on the empirical BLUPs<sup><a href="#tfn2">b</a></sup> of individual effects</td>
+<td align="center">-</td>
+<td align="center">✓A, W = 0.99, p = .0001, but plotting shows distribution close to normal</td>
+<td align="center">✓A, W = 0.99, p &lt; .0001, but plotting shows distribution close to normal</td>
+<td align="center"/>
+<td align="center">✓A, W = 0.99, p = .0001, but plotting shows distribution close to normal</td>
+<td align="center"/>
+</tr>
+<tr>
+<td align="center">5</td>
+<td align="center">Cross-sectional ‘between’ effects equal to within ‘fixed’
+,, . <i>K = λ</i> effects: <b><i>k = λ</i></b></td>
+<td align="center">Hausman test</td>
+<td align="center">✓A, x<sup>2</sup>(5) = 2.55, p = .7693</td>
+<td align="center">✓A, x<sup>2</sup>(5) = 2.55, p = .7693</td>
+<td align="center">✓A, x<sup>2</sup>(5) = 2.55, p = .7693</td>
+<td align="center">Only λ estimated</td>
+<td align="center">λ and κ estimated separately</td>
+<td align="center">Only λ estimated</td>
+</tr>
+<tr>
+<td align="center">6</td>
+<td align="center">Exogenous time-invariant predictors (TIPs): <i>Cov</i>(<i>υ<sub>i,t</sub></i>, <i><b>x</b><sub>i,t</sub></i>) = 0, <i>Cov</i>(<i><b>z</b><sub>i</sub></i>, <i>υ<sub>i,t</sub></i>) = 0,</td>
+<td align="center">C statistic from endogtest in stata’s ivreg2<sup><a href="#tfn3">c</a></sup></td>
+<td align="center">✓A, null of exogeneity not rejected for any TIPs<sup><a href="#tfn4">d</a></sup>. LDV endogenous by definition.</td>
+<td align="center">✓A, null of exogeneity rejected for most TIPs<sup><a href="#tfn5">e</a></sup></td>
+<td align="center">✓A, no convenient test – refer to tests for RE model</td>
+<td align="center">TIPs not used</td>
+<td align="center">✓A, null of exogeneity rejected for half of the TIPs<sup><a href="#tfn5">e</a></sup></td>
+<td align="center">Diff GMM: TIPs not used. System GMM: Assumption does not need to be made</td>
+</tr>
+<tr><td align="center">7</td>
+<td align="center">Exogenous time-variant predictors (TVPs): <i>Cov</i>(<i>ε<sub>i,t</sub></i>, <i><b>x</b><sub>i,t</sub></i>) = 0, <i>Cov</i>(<i>μ<sub>i</sub></i>, <math><mrow><msubsup><mstyle mathsize="normal" mathvariant="bold-italic"><mi>x</mi></mstyle><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow><mo>*</mo></msubsup></mrow></math>) = 0</td>
+<td align="center">C statistic from endogtest in stata’s ivreg2 or xtivreg2<sup><a href="#tfn3">c</a></sup></td>
+<td align="center">✓A, null of exogeneity rejected for one TVP<sup><a href="#tfn4">d</a></sup></td>
+<td align="center">✓A, null of exogeneity rejected for two TVPs<sup><a href="#tfn5">e</a></sup></td>
+<td align="center">✓A, no convenient test – refer to tests for RE model</td>
+<td align="center">✓A, null of exogeneity not rejected for any TVPs<sup><a href="#tfn6">f</a></sup></td>
+<td align="center">✓A, null of exogeneity rejected for one TVP<sup><a href="#tfn5">e</a></sup></td>
+<td align="center">Assumption does not need to be made<sup><a href="#tfn7">g</a></sup></td>
+</tr>
+<tr>
+<td align="center">8</td>
+<td align="center"><i>υ<sub>i,t</sub></i>~<i>iid N</i>(0, σ<sup>2</sup>): Within-child errors serially uncorrelated</td>
+<td align="center">System GMM: Arellano-Bond test for AR in first differences Other models: xtserial in stata (<a href="#bib41">Wooldridge 2002</a>)</td>
+<td align="center">✓A, F(1, 1003) = 398.5, p &lt; .0001</td>
+<td align="center">✓A, F(1, 1043) = 115.5, p &lt; .0001</td>
+<td align="center">Assumes an AR(1) structure<sup><a href="#tfn8">h</a></sup></td>
+<td align="center">✓A, F(1, 1043) = 115.5, p &lt; .0001</td>
+<td align="center">✓A, F(1, 1043) = 115.5, p &lt; .0001</td>
+<td align="center">Assumption not made but choice of instruments depends on degree of serial correlation. instruments depends on degree of serial correlation. AR(2): z = 4.33, p &lt; .0001. AR(3): z = -1.60, p = .109.</td>
+</tr>
+<tr>
+<td align="center">9</td>
+<td align="center"><i>υ<sub>i,t</sub></i>~<i>iid N</i>(0, σ<sup>2</sup>) Within-child errors independent across individuals (no cross-sectional dependence)</td>
+<td align="center">Pesaran’s test (<a href="#bib29">Pesaran 2004</a>): xtcsd in stata</td>
+<td align="center">-</td>
+<td align="center">✓A, statistic = 6.62, p &lt; .0001</td>
+<td align="center">✓A, no convenient test – refer to test for RE model</td>
+<td align="center">✓A, statistic = 6.45, p &lt; .0001</td>
+<td align="center">✓A, no convenient test – refer to tests for RE and FE models</td>
+<td align="center">✓A, no convenient test – refer to tests for RE and FE models</td>
+</tr>
+<tr>
+<td align="center">10</td>
+<td align="center">Validity of moment conditions (validity of instruments) for Difference GMM</td>
+<td align="center">Hansen test</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">✓A, x<sup>2</sup>(22) = 24.47, p = .323</td>
+</tr>
+<tr>
+<td align="center">11</td>
+<td align="center">Validity of additional moment conditions for System GMM</td>
+<td align="center">Difference in Hansen test</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">✓A, x<sub>2</sub>(4)=16.27, p=.003</td>
+</tr>
+<tr>
+<td align="center">12</td>
+<td align="center">Stationarity of within-child errors</td>
+<td align="center"><a href="#bib20">Hadri and Larsson (2005)</a></td>
+<td align="center">Z = -2.80, p = .0051</td>
+<td align="center">Z = 19.31, p &lt; .0001</td>
+<td align="center">Z = 19.46, p &lt; .0001</td>
+<td align="center">Z = 19.34, p &lt; .0001</td>
+<td align="center">Z = 19.32, p &lt; .0001</td>
+<td align="center">System GMM: Z = -2.80, p = .0051</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Estimated individual effects were the empirical BLUPs (best linear unbiased predictors) estimated by SAS</p><p class="table-footnote" data-astro-cid-dzaleqsp>BLUP = best linear unbiased predictor. Empirical BLUPs estimated in SAS by requesting fitted values with and without BLUPS and taking the difference.</p><p class="table-footnote" data-astro-cid-dzaleqsp>The tests utilised additional variables not included in any models as excluded instruments (each tested for exogeneity and relevance). Predictors were tested individually with all other variables in the model treated as exogenous. Each model was checked for identification and weak. Significance was set at the .05 level. Full results of the tests and stata code are available in the online Appendix.</p><p class="table-footnote" data-astro-cid-dzaleqsp>LDV included in the model. cluster option not used (panel data structure ignored).</p><p class="table-footnote" data-astro-cid-dzaleqsp>LDV not included in the model. cluster option used to indicate panel data structure.</p><p class="table-footnote" data-astro-cid-dzaleqsp>LDV not included in the model. cluster option used to indicate panel data structure. fe option used.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Although the exogeneity if variables should be investigated so that the analyst has some indication of what variables need to be instrumented and which do not.</p><p class="table-footnote" data-astro-cid-dzaleqsp>A test for whether the AR(1) structure was defensible compared to an unstructured structure was attempted in SAS but the model with the unstructured model would not converge</p></div></figure><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Mean absolute differences (MAD) (smaller is better) and standardised mean absolute differences (SMAD) (more negative is better) between simulated and observed data.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Data characteristic</th>
+<th>OLS – LDV</th>
+<th align="center" colspan="3">RE)</th>
+<th align="center" colspan="3">RE-AR(1)</th>
+<th>FE</th>
+<th align="center" colspan="3">HYBRID</th>
+<th align="left" colspan="2">SYSTEM GMM</th>
+</tr>
+<tr>
+<th/>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+</tr>
+</thead>
+<tbody>
+<tr><td align="left">PRESS statistic<sup><a href="#tfn9">a</a></sup></td>
+<td align="center">0.53</td>
+<td align="center">−0.11</td>
+<td align="center">0.44</td>
+<td align="center">−0.66</td>
+<td align="center">0.81</td>
+<td align="center">1.59</td>
+<td align="center">0.39</td>
+<td align="center">−0.99</td>
+<td align="center">0.44</td>
+<td align="center">−0.64</td>
+<td align="center">0.68</td>
+<td align="center">0.80</td></tr>
+<tr><td align="left">Overall distributions</td>
+<td align="center">1.47</td>
+<td align="center">−0.97</td>
+<td align="center">2.66</td>
+<td align="center">0.07</td>
+<td align="center">4.70</td>
+<td align="center">1.86</td>
+<td align="center">2.08</td>
+<td align="center">−0.44</td>
+<td align="center">2.69</td>
+<td align="center">0.10</td>
+<td align="center">1.87</td>
+<td align="center">−0.62</td></tr>
+<tr><td align="left">Means across time</td>
+<td align="center">0.50</td>
+<td align="center">−1.42</td>
+<td align="center">0.69</td>
+<td align="center">−0.05</td>
+<td align="center">0.70</td>
+<td align="center">−0.01</td>
+<td align="center">0.73</td>
+<td align="center">0.23</td>
+<td align="center">0.93</td>
+<td align="center">1.66</td>
+<td align="center">0.64</td>
+<td align="center">−0.41</td></tr>
+<tr><td align="left">Child-specific correlations (dynamism)</td>
+<td align="center">0.09</td>
+<td align="center">−1.45</td>
+<td align="center">0.23</td>
+<td align="center">0.85</td>
+<td align="center">0.24</td>
+<td align="center">0.92</td>
+<td align="center">0.15</td>
+<td align="center">−0.46</td>
+<td align="center">0.23</td>
+<td align="center">0.82</td>
+<td align="center">0.14</td>
+<td align="center">−0.68</td></tr>
+<tr><td align="left">Child-specific standard deviations</td>
+<td align="center">0.76</td>
+<td align="center">−1.75</td>
+<td align="center">1.07</td>
+<td align="center">−0.27</td>
+<td align="center">1.38</td>
+<td align="center">1.19</td>
+<td align="center">1.16</td>
+<td align="center">0.14</td>
+<td align="center">1.13</td>
+<td align="center">0.02</td>
+<td align="center">1.27</td>
+<td align="center">0.66</td></tr>
+<tr><td align="left" colspan="13"><i>Time invariant predictors:</i></td>
+</tr>
+<tr><td align="left">Gender</td>
+<td align="center">0.72</td>
+<td align="center">−1.51</td>
+<td align="center">1.16</td>
+<td align="center">0.19</td>
+<td align="center">1.15</td>
+<td align="center">0.15</td>
+<td align="center">1.38</td>
+<td align="center">1.02</td>
+<td align="center">1.37</td>
+<td align="center">0.98</td>
+<td align="center">0.90</td>
+<td align="center">−0.82</td></tr>
+<tr><td align="left">Breast-feeding</td>
+<td align="center">1.69</td>
+<td align="center">−0.77</td>
+<td align="center">1.82</td>
+<td align="center">−0.42</td>
+<td align="center">2.74</td>
+<td align="center">1.97</td>
+<td align="center">1.77</td>
+<td align="center">−0.57</td>
+<td align="center">1.97</td>
+<td align="center">−0.04</td>
+<td align="center">1.92</td>
+<td align="center">−0.17</td></tr>
+<tr><td align="left">Father’s education</td>
+<td align="center">0.85</td>
+<td align="center">−1.64</td>
+<td align="center">1.19</td>
+<td align="center">−0.15</td>
+<td align="center">1.51</td>
+<td align="center">1.18</td>
+<td align="center">1.38</td>
+<td align="center">0.64</td>
+<td align="center">1.34</td>
+<td align="center">0.47</td>
+<td align="center">1.11</td>
+<td align="center">−0.51</td></tr>
+<tr><td align="left">Mother’s education</td>
+<td align="center">0.91</td>
+<td align="center">−1.46</td>
+<td align="center">1.29</td>
+<td align="center">−0.04</td>
+<td align="center">1.68</td>
+<td align="center">1.43</td>
+<td align="center">1.35</td>
+<td align="center">0.19</td>
+<td align="center">1.45</td>
+<td align="center">0.56</td>
+<td align="center">1.12</td>
+<td align="center">−0.67</td></tr>
+<tr><td align="left">Family’s socio-economic status</td>
+<td align="center">0.94</td>
+<td align="center">−1.49</td>
+<td align="center">1.06</td>
+<td align="center">−0.72</td>
+<td align="center">1.38</td>
+<td align="center">1.36</td>
+<td align="center">1.21</td>
+<td align="center">0.28</td>
+<td align="center">1.25</td>
+<td align="center">0.56</td>
+<td align="center">1.17</td>
+<td align="center">0.01</td></tr>
+<tr><td align="left" colspan="13"><i>Time-variant predictors:</i></td>
+</tr>
+<tr><td align="left">Home-ownership</td>
+<td align="center">1.07</td>
+<td align="center">−0.64</td>
+<td align="center">1.29</td>
+<td align="center">−0.45</td>
+<td align="center">1.60</td>
+<td align="center">−0.18</td>
+<td align="center">1.20</td>
+<td align="center">−0.53</td>
+<td align="center">1.57</td>
+<td align="center">−0.21</td>
+<td align="center">4.19</td>
+<td align="center">2.01</td></tr>
+<tr><td align="left">Mother’s hours worked</td>
+<td align="center">4.81</td>
+<td align="center">−0.61</td>
+<td align="center">4.95</td>
+<td align="center">−0.49</td>
+<td align="center">7.88</td>
+<td align="center">1.86</td>
+<td align="center">4.63</td>
+<td align="center">−0.75</td>
+<td align="center">5.01</td>
+<td align="center">−0.44</td>
+<td align="center">6.10</td>
+<td align="center">0.43</td></tr>
+<tr><td align="left">Father’s smoking</td>
+<td align="center">5.31</td>
+<td align="center">−0.80</td>
+<td align="center">5.73</td>
+<td align="center">−0.51</td>
+<td align="center">8.42</td>
+<td align="center">1.36</td>
+<td align="center">5.34</td>
+<td align="center">−0.78</td>
+<td align="center">5.80</td>
+<td align="center">−0.46</td>
+<td align="center">8.17</td>
+<td align="center">1.19</td></tr>
+<tr><td align="left" colspan="13"><i>Weighted means</i></td>
+</tr>
+<tr><td align="left">Scheme 1b</td>
+<td align="center"/>
+<td align="center">−1.11</td>
+<td align="center"/>
+<td align="center">−0.11</td>
+<td align="center"/>
+<td align="center">1.11</td>
+<td align="center"/>
+<td align="center">−0.27</td>
+<td align="center"/>
+<td align="center">0.30</td>
+<td align="center"/>
+<td align="center">0.08</td></tr>
+<tr><td align="left">Scheme 2c</td>
+<td align="center"/>
+<td align="center">−1.12</td>
+<td align="center"/>
+<td align="center">−0.07</td>
+<td align="center"/>
+<td align="center">1.11</td>
+<td align="center"/>
+<td align="center">−0.28</td>
+<td align="center"/>
+<td align="center">0.34</td>
+<td align="center"/>
+<td align="center">0.02</td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>The PRESS statistic is not a mean absolute difference but a standardised measure of the distance between the observed and predicted values. Smaller values are better.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Time-invariant predictors given a weight of 1/5 each, time-variant predictors given a weight of 1/3 each. Other characteristics each given a weight of 1.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Means by predictor variables given a combined weight of 1 with the time-invariant predictors each given a weight of 0.1 and the time-variant predictors each given a weight of 1/6. Other characteristics each given a weight of 1.</p></div></figure><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Overall weighted mean of the standardised mean absolute differences <i>(using weighting scheme 1<sup>a</sup>) by age for each model.</i></span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr><th/>
+<th/>
+<th/>
+<th>AGE</th>
+<th/>
+<th/>
+<th>MEAN OVER AGE<sup><a href="#tfn12">b</a></sup></th></tr>
+</thead>
+<tbody>
+<tr><td>MODEL</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td/></tr>
+<tr><td>OLS – LDV</td>
+<td>−1.11</td>
+<td>−1.10</td>
+<td>−1.10</td>
+<td>−1.06</td>
+<td>−1.04</td>
+<td>−1.11</td></tr>
+<tr><td>RE</td>
+<td>−0.08</td>
+<td>−0.07</td>
+<td>−0.06</td>
+<td>−0.11</td>
+<td>−0.11</td>
+<td>−0.11</td></tr>
+<tr><td>RE-AR (1)</td>
+<td>1.22</td>
+<td>1.18</td>
+<td>1.09</td>
+<td>0.94</td>
+<td>0.74</td>
+<td>1.11</td></tr>
+<tr><td>FE</td>
+<td>−0.16</td>
+<td>−0.24</td>
+<td>−0.27</td>
+<td>−0.30</td>
+<td>−0.27</td>
+<td>−0.27</td></tr>
+<tr><td>Hybrid</td>
+<td>0.42</td>
+<td>0.34</td>
+<td>0.28</td>
+<td>0.28</td>
+<td>0.24</td>
+<td>0.30</td></tr>
+<tr><td>System GMM</td>
+<td>−0.29</td>
+<td>−0.09</td>
+<td>0.05</td>
+<td>0.25</td>
+<td>0.44</td>
+<td>0.08</td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Time-invariant predictors given a weight of 1/5 each, time-variant predictors given a weight of 1/3 each. Other characteristics each given a weight of 1.</p><p class="table-footnote" data-astro-cid-dzaleqsp>The weighted mean of the SMADs that were averaged over age. This is the same value as shown in the second-to-last row of <a href="#table4">Table 4</a>.</p></div></figure><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Coefficients and standard errors estimated on the full dataset for each of the techniques.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th/>
+<th>OLS – LDV</th>
+<th>RE</th>
+<th>RE-AR(1)</th>
+<th>FE</th>
+<th>Hybrid</th>
+<th>System GMM DPM 2 Step <sup><a href="#tfn14">a</a></sup></th>
+<th>System GMM DPM 1 Step <sup><a href="#tfn14">a</a></sup></th>
+</tr></thead>
+<tbody>
+<tr><td>Reading score previous centred (LDV)</td>
+<td/>
+<td>0.90</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>0.83</td>
+<td>0.82</td></tr>
+<tr><td/>
+<td/>
+<td>(0.01)</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>(0.04)</td>
+<td>(0.04)</td></tr>
+<tr><td>Reading score previous centred squared (LDV squared)</td>
+<td/>
+<td>−0.00</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>−0.01</td>
+<td>−0.01</td></tr>
+<tr><td/>
+<td/>
+<td>(0.00)</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>(0.00)</td>
+<td>(0.00)</td></tr>
+<tr><td>Child’s age centred</td>
+<td/>
+<td>−0.33</td>
+<td>8.02</td>
+<td>7.98</td>
+<td>8.01</td>
+<td>8.02</td>
+<td>0.23</td>
+<td>0.27</td></tr>
+<tr><td/>
+<td/>
+<td>(0.09)</td>
+<td>(0.05)</td>
+<td>(0.10)</td>
+<td>(0.05)</td>
+<td>(0.05)</td>
+<td>(0.41)</td>
+<td>(0.41)</td></tr>
+<tr><td>Child’s age centred squared</td>
+<td/>
+<td>0.13</td>
+<td>−0.52</td>
+<td>−0.06</td>
+<td>−0.51</td>
+<td>−0.52</td>
+<td>−0.01</td>
+<td>−0.02</td></tr>
+<tr><td/>
+<td/>
+<td>(0.04)</td>
+<td>(0.03)</td>
+<td>(0.03)</td>
+<td>(0.03)</td>
+<td>(0.03)</td>
+<td>(0.10)</td>
+<td>(0.10)</td></tr>
+<tr><td>Gender (reference: Female)</td>
+<td/>
+<td>0.07</td>
+<td>−3.78</td>
+<td>−3.31</td>
+<td/>
+<td>−3.79</td>
+<td>0.51</td>
+<td>0.49</td></tr>
+<tr><td/>
+<td/>
+<td>(0.21)</td>
+<td>(0.98)</td>
+<td>(0.75)</td>
+<td/>
+<td>(0.98)</td>
+<td>(0.34)</td>
+<td>(0.35)</td></tr>
+<tr><td>Father’s education (reference: No formal education)</td>
+<td>Tertiary</td>
+<td>1.43</td>
+<td>6.78</td>
+<td>5.10</td>
+<td/>
+<td>6.54</td>
+<td>0.68</td>
+<td>0.51</td></tr>
+<tr><td/>
+<td/>
+<td>(0.39)</td>
+<td>(1.79)</td>
+<td>(1.37)</td>
+<td/>
+<td>(1.81)</td>
+<td>(0.58)</td>
+<td>(0.57)</td></tr>
+<tr><td/>
+<td>Secondary</td>
+<td>0.98</td>
+<td>4.60</td>
+<td>3.57</td>
+<td/>
+<td>4.56</td>
+<td>0.67</td>
+<td>0.71</td></tr>
+<tr><td/>
+<td/>
+<td>(0.25)</td>
+<td>(1.18)</td>
+<td>(0.90)</td>
+<td/>
+<td>(1.18)</td>
+<td>(0.36)</td>
+<td>(0.36)</td></tr>
+<tr><td>Mother’s education (reference: No formal education)</td>
+<td>Tertiary</td>
+<td>1.01</td>
+<td>7.02</td>
+<td>5.16</td>
+<td/>
+<td>6.76</td>
+<td>1.18</td>
+<td>1.05</td></tr>
+<tr><td/>
+<td/>
+<td>(0.32)</td>
+<td>(1.53)</td>
+<td>(1.17)</td>
+<td/>
+<td>(1.55)</td>
+<td>(0.55)</td>
+<td>(0.54)</td></tr>
+<tr><td/>
+<td>Secondary</td>
+<td>0.42</td>
+<td>2.47</td>
+<td>1.65</td>
+<td/>
+<td>2.31</td>
+<td>0.47</td>
+<td>0.40</td></tr>
+<tr><td/>
+<td/>
+<td>(0.26)</td>
+<td>(1.21)</td>
+<td>(0.92)</td>
+<td/>
+<td>(1.21)</td>
+<td>(0.37)</td>
+<td>(0.35)</td></tr>
+<tr><td>Family’s socio-economic status (reference: Semi-skilled)</td>
+<td>Professional</td>
+<td>0.22</td>
+<td>4.28</td>
+<td>3.37</td>
+<td/>
+<td>3.76</td>
+<td>0.71</td>
+<td>0.22</td></tr>
+<tr><td/>
+<td/>
+<td>(0.39)</td>
+<td>(1.79)</td>
+<td>(1.37)</td>
+<td/>
+<td>(1.82)</td>
+<td>(0.72)</td>
+<td>(0.77)</td></tr>
+<tr><td/>
+<td>Clerical</td>
+<td>0.03</td>
+<td>2.43</td>
+<td>1.97</td>
+<td/>
+<td>2.02</td>
+<td>0.18</td>
+<td>−0.14</td></tr>
+<tr><td/>
+<td/>
+<td>(0.27)</td>
+<td>(1.23)</td>
+<td>(0.93)</td>
+<td/>
+<td>(1.25)</td>
+<td>(0.54)</td>
+<td>(0.56)</td></tr>
+<tr><td>Breast-feeding</td>
+<td>0.07</td>
+<td>0.26</td>
+<td>0.20</td>
+<td/>
+<td colspan="2">0.25</td>
+<td>0.05</td>
+<td>0.06</td></tr>
+<tr><td/>
+<td>(0.03)</td>
+<td>(0.13)</td>
+<td>(0.10)</td>
+<td/>
+<td colspan="2">(0.13)</td>
+<td>(0.03)</td>
+<td>(0.03)</td></tr>
+<tr><td/>
+<td>0.00</td>
+<td>0.01</td>
+<td>0.00</td>
+<td>0.01</td>
+<td colspan="2">(D, M): 0.01, 0.01</td>
+<td>−0.02</td>
+<td>0.01</td></tr>
+<tr><td>Mother’s hours worked</td>
+<td>(0.01)</td>
+<td>(0.01)</td>
+<td>(0.01)</td>
+<td>(0.01)</td>
+<td colspan="2">(0.01), (0.04)</td>
+<td>(0.04)</td>
+<td>(0.04)</td></tr>
+<tr><td>Father’s smoking</td>
+<td>0.00</td>
+<td>−0.03</td>
+<td>−0.01</td>
+<td>−0.03</td>
+<td colspan="2">(D, M): -0.02, -0.09</td>
+<td>−0.16</td>
+<td>−0.24</td></tr>
+<tr><td/>
+<td>(0.01)</td>
+<td>(0.02)</td>
+<td>(0.02)</td>
+<td>(0.02)</td>
+<td colspan="2">(0.02), (0.07)</td>
+<td>(0.12)</td>
+<td>(0.11)</td></tr>
+<tr><td>Home-ownership (reference: owned/mortgaged)</td>
+<td>−0.72</td>
+<td>−1.48</td>
+<td>−1.15</td>
+<td>−1.30</td>
+<td colspan="2">(D, M): -1.31, -3.75</td>
+<td>3.66</td>
+<td>2.29</td></tr>
+<tr><td/>
+<td>(0.30)</td>
+<td>(0.43)</td>
+<td>(0.42)</td>
+<td>(0.44)</td>
+<td colspan="2">(0.45), (1.62)</td>
+<td>(2.98)</td>
+<td>(3.18)</td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>D: For the hybrid technique, estimate of the within / fixed effect calculated from the deviation variable.</p><p class="table-footnote" data-astro-cid-dzaleqsp>M: For the hybrid technique, estimate of the between/cross-sectional effect calculated from the mean variable.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Windmeijer corrected standard errors are displayed</p></div></figure><figure id="tableA1-1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Mean absolute differences (MAD) (smaller is better) and standardised mean absolute differences (SMAD) (more negative is better) between simulated and observed data for age 9.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">OLS-LDV</th>
+<th colspan="2">RE</th>
+<th colspan="2">RE-AR (1)</th>
+<th colspan="2">Hybrid</th>
+<th colspan="2">FE</th>
+<th colspan="2">System GMM DPM</th>
+</tr>
+<tr>
+<th>Data Characteristic</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PRESS statistic<sup><a href="#tfn15">a</a></sup></td>
+<td>0.26</td>
+<td>−0.65</td>
+<td>0.35</td>
+<td>−0.21</td>
+<td>0.79</td>
+<td>2.01</td>
+<td>0.35</td>
+<td>−0.19</td>
+<td>0.31</td>
+<td>−0.43</td>
+<td>0.28</td>
+<td>−0.53</td>
+</tr>
+<tr>
+<td>Overall distributions</td>
+<td>1.50</td>
+<td>−0.64</td>
+<td>1.86</td>
+<td>−0.43</td>
+<td>5.96</td>
+<td>2.01</td>
+<td>2.10</td>
+<td>−0.28</td>
+<td>2.28</td>
+<td>−0.18</td>
+<td>1.78</td>
+<td>−0.48</td>
+</tr>
+<tr>
+<td>Means across time</td>
+<td>0.50</td>
+<td>−1.42</td>
+<td>0.69</td>
+<td>−0.05</td>
+<td>0.70</td>
+<td>−0.01</td>
+<td>0.93</td>
+<td>1.66</td>
+<td>0.73</td>
+<td>0.23</td>
+<td>0.64</td>
+<td>−0.41</td>
+</tr>
+<tr>
+<td>Within-child correlations (dynamism)</td>
+<td>0.09</td>
+<td>−1.45</td>
+<td>0.23</td>
+<td>0.85</td>
+<td>0.24</td>
+<td>0.92</td>
+<td>0.23</td>
+<td>0.82</td>
+<td>0.15</td>
+<td>−0.46</td>
+<td>0.14</td>
+<td>−0.68</td>
+</tr>
+<tr>
+<td>Within-child standard deviations</td>
+<td>0.76</td>
+<td>−1.75</td>
+<td>1.07</td>
+<td>−0.27</td>
+<td>1.38</td>
+<td>1.19</td>
+<td>1.13</td>
+<td>0.02</td>
+<td>1.16</td>
+<td>0.14</td>
+<td>1.27</td>
+<td>0.66</td>
+</tr>
+<tr>
+<td><i>Time-invariant predictors:</i></td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Gender</td>
+<td>0.82</td>
+<td>−1.06</td>
+<td>1.13</td>
+<td>0.03</td>
+<td>1.28</td>
+<td>0.57</td>
+<td>1.54</td>
+<td>1.47</td>
+<td>1.17</td>
+<td>0.16</td>
+<td>0.79</td>
+<td>−1.17</td>
+</tr>
+<tr>
+<td>Breast-feading</td>
+<td>1.39</td>
+<td>−0.71</td>
+<td>1.57</td>
+<td>−0.35</td>
+<td>2.69</td>
+<td>1.90</td>
+<td>1.90</td>
+<td>0.31</td>
+<td>1.47</td>
+<td>−0.55</td>
+<td>1.45</td>
+<td>−0.6</td>
+</tr>
+<tr>
+<td>Father’s education</td>
+<td>0.40</td>
+<td>−1.24</td>
+<td>1.23</td>
+<td>−0.03</td>
+<td>1.60</td>
+<td>1.09</td>
+<td>1.51</td>
+<td>0.82</td>
+<td>1.41</td>
+<td>0.52</td>
+<td>0.87</td>
+<td>−1.16</td>
+</tr>
+<tr>
+<td>Mother’s education</td>
+<td>0.90</td>
+<td>−1.1</td>
+<td>1.28</td>
+<td>0.02</td>
+<td>1.71</td>
+<td>1.30</td>
+<td>1.56</td>
+<td>0.85</td>
+<td>1.30</td>
+<td>0.09</td>
+<td>0.88</td>
+<td>−1.17</td>
+</tr>
+<tr>
+<td>Family’s socio-economic status</td>
+<td>0.92</td>
+<td>−1.17</td>
+<td>1.26</td>
+<td>−0.02</td>
+<td>1.56</td>
+<td>1.03</td>
+<td>1.58</td>
+<td>1.11</td>
+<td>1.32</td>
+<td>0.19</td>
+<td>0.93</td>
+<td>−1.14</td>
+</tr>
+<tr>
+<td><i>Time-variant predictors:</i></td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Home-ownership</td>
+<td>1.02</td>
+<td>−1.13</td>
+<td>1.34</td>
+<td>−0.38</td>
+<td>1.40</td>
+<td>−0.23</td>
+<td>1.75</td>
+<td>0.57</td>
+<td>1.27</td>
+<td>−0.54</td>
+<td>2.23</td>
+<td>1.71</td>
+</tr>
+<tr>
+<td>Mother’s hours worked</td>
+<td>3.79</td>
+<td>−0.56</td>
+<td>4.05</td>
+<td>−0.35</td>
+<td>7.03</td>
+<td>2.03</td>
+<td>4.17</td>
+<td>−0.26</td>
+<td>3.85</td>
+<td>−0.51</td>
+<td>4.05</td>
+<td>−0.35</td>
+</tr>
+<tr>
+<td>Father’s smoking</td>
+<td>3.56</td>
+<td>−0.79</td>
+<td>4.39</td>
+<td>−0.31</td>
+<td>8.32</td>
+<td>1.98</td>
+<td>4.52</td>
+<td>−0.24</td>
+<td>3.97</td>
+<td>−0.55</td>
+<td>4.79</td>
+<td>−0.08</td>
+</tr>
+<tr>
+<td colspan="13"><i>Weighted means</i></td>
+</tr>
+<tr>
+<td>Scheme 1<sup><a href="#tfn16">b</a></sup></td>
+<td>−1.11</td>
+<td/>
+<td>−0.08</td>
+<td/>
+<td>1.22</td>
+<td/>
+<td>0.42</td>
+<td/>
+<td>−0.16</td>
+<td/>
+<td>−0.29</td>
+<td>−1.11</td>
+</tr>
+<tr>
+<td>Scheme 2<sup><a href="#tfn17">c</a></sup></td>
+<td>−1.14</td>
+<td/>
+<td>−0.05</td>
+<td/>
+<td>1.22</td>
+<td/>
+<td>0.42</td>
+<td/>
+<td>−0.15</td>
+<td/>
+<td>−0.29</td>
+<td>−1.14</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>The PRESS statistic is not a mean absolute difference but a standardised measure of the distance between the observed and predicted values. Smaller values are better.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Time-invariant predictors given a weight of 1/5 each, time-variant predictors given a weight of 1/3 each. Other characteristics were each given a weight of 1.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Means by predictor variables given a combined weight of 1 with the time-invariant predictors each given a weight of 0.1 and the time-variant predictors each given a weight of 1/6. Other characteristics were each given a weight of 1.</p></div></figure><figure id="tableA1-2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Mean absolute differences (MAD) (smaller is better) and standardised mean absolute differences (SMAD) (more negative is better) between simulated and observed data for age 10.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">OLS-LDV</th>
+<th colspan="2">RE</th>
+<th colspan="2">RE-AR (1)</th>
+<th colspan="2">Hybrid</th>
+<th colspan="2">FE</th>
+<th colspan="2">System GMM DPM</th>
+</tr>
+<tr>
+<th>Data Characteristic</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PRESS statistic<sup><a href="#tfn18">a</a></sup></td>
+<td>0.41</td>
+<td>−0.31</td>
+<td>0.38</td>
+<td>−0.48</td>
+<td>0.81</td>
+<td>1.94</td>
+<td>0.39</td>
+<td>−0.46</td>
+<td>0.32</td>
+<td>−0.82</td>
+<td>0.49</td>
+<td>0.12</td>
+</tr>
+<tr>
+<td>Overall distributions</td>
+<td>1.46</td>
+<td>−0.83</td>
+<td>2.77</td>
+<td>−0.07</td>
+<td>6.25</td>
+<td>1.95</td>
+<td>2.85</td>
+<td>−0.02</td>
+<td>1.96</td>
+<td>−0.54</td>
+<td>2.04</td>
+<td>−0.49</td>
+</tr>
+<tr>
+<td>Means across time</td>
+<td>0.50</td>
+<td>−1.42</td>
+<td>0.69</td>
+<td>−0.05</td>
+<td>0.70</td>
+<td>−0.01</td>
+<td>0.93</td>
+<td>1.66</td>
+<td>0.64</td>
+<td>0.23</td>
+<td>0.73</td>
+<td>−0.41</td>
+</tr>
+<tr>
+<td>Within-child correlations (dynamism)</td>
+<td>0.09</td>
+<td>−1.45</td>
+<td>0.23</td>
+<td>0.85</td>
+<td>0.24</td>
+<td>0.92</td>
+<td>0.23</td>
+<td>0.82</td>
+<td>0.14</td>
+<td>−0.46</td>
+<td>0.15</td>
+<td>−0.68</td>
+</tr>
+<tr>
+<td>Within-child standard deviations</td>
+<td>0.76</td>
+<td>−1.75</td>
+<td>1.07</td>
+<td>−0.27</td>
+<td>1.38</td>
+<td>1.19</td>
+<td>1.13</td>
+<td>0.02</td>
+<td>1.27</td>
+<td>0.14</td>
+<td>1.16</td>
+<td>0.66</td>
+</tr>
+<tr>
+<td><i>Time-invariant predictors:</i></td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Gender</td>
+<td>0.66</td>
+<td>−1.26</td>
+<td>1.05</td>
+<td>0.15</td>
+<td>1.11</td>
+<td>0.4</td>
+<td>1.32</td>
+<td>1.14</td>
+<td>1.21</td>
+<td>0.74</td>
+<td>0.69</td>
+<td>−1.17</td>
+</tr>
+<tr>
+<td>Breast-feading</td>
+<td>1.49</td>
+<td>−0.88</td>
+<td>1.77</td>
+<td>−0.26</td>
+<td>2.75</td>
+<td>1.93</td>
+<td>1.94</td>
+<td>0.12</td>
+<td>1.68</td>
+<td>−0.45</td>
+<td>1.67</td>
+<td>−0.46</td>
+</tr>
+<tr>
+<td>Father’s education</td>
+<td>0.79</td>
+<td>−1.49</td>
+<td>1.26</td>
+<td>0.03</td>
+<td>1.57</td>
+<td>1.04</td>
+<td>1.44</td>
+<td>0.6</td>
+<td>1.47</td>
+<td>0.72</td>
+<td>0.97</td>
+<td>−0.91</td>
+</tr>
+<tr>
+<td>Mother’s education</td>
+<td>0.78</td>
+<td>−1.4</td>
+<td>1.35</td>
+<td>0.2</td>
+<td>1.70</td>
+<td>1.18</td>
+<td>1.54</td>
+<td>0.71</td>
+<td>1.40</td>
+<td>0.33</td>
+<td>0.92</td>
+<td>−1.01</td>
+</tr>
+<tr>
+<td>Family’s socio-economic status</td>
+<td>0.78</td>
+<td>−1.46</td>
+<td>1.06</td>
+<td>−0.21</td>
+<td>1.35</td>
+<td>1.08</td>
+<td>1.28</td>
+<td>0.75</td>
+<td>1.26</td>
+<td>0.65</td>
+<td>0.92</td>
+<td>−0.82</td>
+</tr>
+<tr>
+<td><i>Time-variant predictors:</i></td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Home-ownership</td>
+<td>0.77</td>
+<td>−0.67</td>
+<td>0.97</td>
+<td>−0.47</td>
+<td>1.24</td>
+<td>−0.19</td>
+<td>1.29</td>
+<td>−0.15</td>
+<td>0.92</td>
+<td>−0.52</td>
+<td>3.42</td>
+<td>2.00</td>
+</tr>
+<tr>
+<td>Mother’s hours worked</td>
+<td>4.67</td>
+<td>−0.58</td>
+<td>4.77</td>
+<td>−0.49</td>
+<td>7.44</td>
+<td>1.88</td>
+<td>4.88</td>
+<td>−0.39</td>
+<td>4.45</td>
+<td>−0.78</td>
+<td>5.72</td>
+<td>0.35</td>
+</tr>
+<tr>
+<td>Father’s smoking</td>
+<td>4.29</td>
+<td>−0.81</td>
+<td>4.80</td>
+<td>−0.49</td>
+<td>8.23</td>
+<td>1.71</td>
+<td>4.83</td>
+<td>−0.47</td>
+<td>4.52</td>
+<td>−0.67</td>
+<td>6.68</td>
+<td>0.72</td>
+</tr>
+<tr>
+<td colspan="13"><i>Weighted means</i></td>
+</tr>
+<tr>
+<td>Scheme 1<sup><a href="#tfn19">b</a></sup></td>
+<td/>
+<td>−1.10</td>
+<td/>
+<td>−0.07</td>
+<td/>
+<td>1.18</td>
+<td/>
+<td>0.34</td>
+<td/>
+<td>−0.24</td>
+<td/>
+<td>−0.09</td>
+</tr>
+<tr>
+<td>Scheme 2<sup><a href="#tfn20">c</a></sup></td>
+<td/>
+<td>−1.12</td>
+<td/>
+<td>−0.04</td>
+<td/>
+<td>1.19</td>
+<td/>
+<td>0.36</td>
+<td/>
+<td>−0.26</td>
+<td/>
+<td>−0.12</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>The PRESS statistic is not a mean absolute difference but a standardised measure of the distance between the observed and predicted values. Smaller values are better.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Time-invariant predictors given a weight of 1/5 each, time-variant predictors given a weight of 1/3 each. Other characteristics were each given a weight of 1.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Means by predictor variables given a combined weight of 1 with the time-invariant predictors each given a weight of 0.1 and the time-variant predictors each given a weight of 1/6. Other characteristics were each given a weight of 1.</p></div></figure><figure id="tableA1-3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Mean absolute differences (MAD) (smaller is better) and standardised mean absolute differences (SMAD) (more negative is better) between simulated and observed data for age 11.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">OLS-LDV</th>
+<th colspan="2">RE</th>
+<th colspan="2">RE-AR (1)</th>
+<th colspan="2">Hybrid</th>
+<th colspan="2">FE</th>
+<th colspan="2">System GMM DPM</th>
+</tr>
+<tr>
+<th>Data Characteristic</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PRESS statistic<sup><a href="#tfn21">a</a></sup></td>
+<td>0.54</td>
+<td>−0.01</td>
+<td>0.43</td>
+<td>−0.65</td>
+<td>0.82</td>
+<td>1.55</td>
+<td>0.43</td>
+<td>−0.65</td>
+<td>0.36</td>
+<td>−1.05</td>
+<td>0.69</td>
+<td>0.81</td>
+</tr>
+<tr>
+<td>Overall distributions</td>
+<td>1.87</td>
+<td>−0.93</td>
+<td>3.70</td>
+<td>0.2</td>
+<td>6.32</td>
+<td>1.81</td>
+<td>3.67</td>
+<td>0.18</td>
+<td>2.37</td>
+<td>−0.63</td>
+<td>2.37</td>
+<td>−0.63</td>
+</tr>
+<tr>
+<td>Means across time</td>
+<td>0.50</td>
+<td>−1.42</td>
+<td>0.69</td>
+<td>−0.05</td>
+<td>0.70</td>
+<td>−0.01</td>
+<td>0.93</td>
+<td>1.66</td>
+<td>0.73</td>
+<td>0.23</td>
+<td>0.64</td>
+<td>−0.41</td>
+</tr>
+<tr>
+<td>Within-child correlations (dynamism)</td>
+<td>0.09</td>
+<td>−1.45</td>
+<td>0.23</td>
+<td>0.85</td>
+<td>0.24</td>
+<td>0.92</td>
+<td>0.23</td>
+<td>0.82</td>
+<td>0.15</td>
+<td>−0.46</td>
+<td>0.14</td>
+<td>−0.68</td>
+</tr>
+<tr>
+<td>Within-child standard deviations</td>
+<td>0.76</td>
+<td>−1.75</td>
+<td>1.07</td>
+<td>−0.27</td>
+<td>1.38</td>
+<td>1.19</td>
+<td>1.13</td>
+<td>0.02</td>
+<td>1.16</td>
+<td>0.14</td>
+<td>1.27</td>
+<td>0.66</td>
+</tr>
+<tr>
+<td><i>Time-invariant predictors:</i></td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Gender</td>
+<td>0.57</td>
+<td>−1.5</td>
+<td>1.13</td>
+<td>0.27</td>
+<td>1.14</td>
+<td>0.33</td>
+<td>1.26</td>
+<td>0.71</td>
+<td>1.38</td>
+<td>1.11</td>
+<td>0.76</td>
+<td>−0.92</td>
+</tr>
+<tr>
+<td>Breast-feading</td>
+<td>1.84</td>
+<td>−1</td>
+<td>2.14</td>
+<td>−0.22</td>
+<td>2.99</td>
+<td>1.93</td>
+<td>2.21</td>
+<td>−0.04</td>
+<td>2.10</td>
+<td>−0.32</td>
+<td>2.09</td>
+<td>−0.35</td>
+</tr>
+<tr>
+<td>Father’s education</td>
+<td>0.83</td>
+<td>−1.58</td>
+<td>1.33</td>
+<td>0.07</td>
+<td>1.65</td>
+<td>1.08</td>
+<td>1.40</td>
+<td>0.29</td>
+<td>1.57</td>
+<td>0.85</td>
+<td>1.09</td>
+<td>−0.71</td>
+</tr>
+<tr>
+<td>Mother’s education</td>
+<td>0.93</td>
+<td>−1.4</td>
+<td>1.65</td>
+<td>0.3</td>
+<td>1.97</td>
+<td>1.07</td>
+<td>1.72</td>
+<td>0.48</td>
+<td>1.79</td>
+<td>0.63</td>
+<td>1.06</td>
+<td>−1.08</td>
+</tr>
+<tr>
+<td>Family’s socio-economic status</td>
+<td>0.86</td>
+<td>−1.66</td>
+<td>1.06</td>
+<td>−0.57</td>
+<td>1.38</td>
+<td>1.22</td>
+<td>1.22</td>
+<td>0.31</td>
+<td>1.26</td>
+<td>0.55</td>
+<td>1.19</td>
+<td>0.16</td>
+</tr>
+<tr>
+<td><i>Time-variant predictors:</i></td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Home-ownership</td>
+<td>1.04</td>
+<td>−0.79</td>
+<td>1.57</td>
+<td>−0.4</td>
+<td>2.16</td>
+<td>0.04</td>
+<td>1.78</td>
+<td>−0.24</td>
+<td>1.34</td>
+<td>−0.57</td>
+<td>4.71</td>
+<td>1.96</td>
+</tr>
+<tr>
+<td>Mother’s hours worked</td>
+<td>5.17</td>
+<td>−0.45</td>
+<td>5.06</td>
+<td>−0.52</td>
+<td>8.79</td>
+<td>1.9</td>
+<td>5.13</td>
+<td>−0.48</td>
+<td>4.70</td>
+<td>−0.76</td>
+<td>6.35</td>
+<td>0.31</td>
+</tr>
+<tr>
+<td>Father’s smoking</td>
+<td>5.42</td>
+<td>−0.88</td>
+<td>5.90</td>
+<td>−0.51</td>
+<td>8.22</td>
+<td>1.26</td>
+<td>5.96</td>
+<td>−0.47</td>
+<td>5.65</td>
+<td>−0.70</td>
+<td>8.27</td>
+<td>1.30</td>
+</tr>
+<tr>
+<td colspan="13"><i>Weighted means</i></td>
+</tr>
+<tr>
+<td>Scheme 1<sup><a href="#tfn22">b</a></sup></td>
+<td/>
+<td>−1.10</td>
+<td/>
+<td>−0.06</td>
+<td/>
+<td>1.09</td>
+<td/>
+<td>0.28</td>
+<td/>
+<td>−0.27</td>
+<td/>
+<td>0.05</td>
+</tr>
+<tr>
+<td>Scheme 2<sup><a href="#tfn23">c</a></sup></td>
+<td/>
+<td>−1.10</td>
+<td/>
+<td>−0.03</td>
+<td/>
+<td>1.09</td>
+<td/>
+<td>0.34</td>
+<td/>
+<td>−0.30</td>
+<td/>
+<td>0.01</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>The PRESS statistic is not a mean absolute difference but a standardised measure of the distance between the observed and predicted values. Smaller values are better.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Time-invariant predictors given a weight of 1/5 each, time-variant predictors given a weight of 1/3 each. Other characteristics were each given a weight of 1.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Means by predictor variables given a combined weight of 1 with the time-invariant predictors each given a weight of 0.1 and the time-variant predictors each given a weight of 1/6. Other characteristics were each given a weight of 1.</p></div></figure><figure id="tableA1-4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Mean absolute differences (MAD) (smaller is better) and standardised mean absolute differences (SMAD) (more negative is better) between simulated and observed data for age 12.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">OLS-LDV</th>
+<th colspan="2">RE</th>
+<th colspan="2">RE-AR (1)</th>
+<th colspan="2">Hybrid</th>
+<th colspan="2">FE</th>
+<th colspan="2">System GMM DPM</th>
+</tr>
+<tr>
+<th>Data Characteristic</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PRESS statistic<sup><a href="#tfn24">a</a></sup></td>
+<td>0.65</td>
+<td>0.19</td>
+<td>0.48</td>
+<td>−0.74</td>
+<td>0.82</td>
+<td>1.05</td>
+<td>0.48</td>
+<td>−0.73</td>
+<td>0.42</td>
+<td>−1.06</td>
+<td>0.86</td>
+<td>1.29</td>
+</tr>
+<tr>
+<td>Overall distributions</td>
+<td>2.00</td>
+<td>−1.1</td>
+<td>3.72</td>
+<td>0.37</td>
+<td>5.23</td>
+<td>1.66</td>
+<td>3.68</td>
+<td>0.33</td>
+<td>2.61</td>
+<td>−0.58</td>
+<td>2.48</td>
+<td>−0.69</td>
+</tr>
+<tr>
+<td>Means across time</td>
+<td>0.50</td>
+<td>−1.42</td>
+<td>0.69</td>
+<td>−0.05</td>
+<td>0.70</td>
+<td>−0.01</td>
+<td>0.93</td>
+<td>1.66</td>
+<td>0.73</td>
+<td>0.23</td>
+<td>0.64</td>
+<td>−0.41</td>
+</tr>
+<tr>
+<td>Within-child correlations (dynamism)</td>
+<td>0.09</td>
+<td>−1.45</td>
+<td>0.23</td>
+<td>0.85</td>
+<td>0.24</td>
+<td>0.92</td>
+<td>0.23</td>
+<td>0.82</td>
+<td>0.15</td>
+<td>−0.46</td>
+<td>0.14</td>
+<td>−0.68</td>
+</tr>
+<tr>
+<td>Within-child standard deviations</td>
+<td>0.76</td>
+<td>−1.75</td>
+<td>1.07</td>
+<td>−0.27</td>
+<td>1.38</td>
+<td>1.19</td>
+<td>1.13</td>
+<td>0.02</td>
+<td>1.16</td>
+<td>0.14</td>
+<td>1.27</td>
+<td>0.66</td>
+</tr>
+<tr>
+<td><i>Time-invariant predictors:</i></td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Gender</td>
+<td>0.78</td>
+<td>−1.49</td>
+<td>1.18</td>
+<td>0.18</td>
+<td>1.09</td>
+<td>−0.18</td>
+<td>1.31</td>
+<td>0.76</td>
+<td>1.45</td>
+<td>1.33</td>
+<td>0.99</td>
+<td>−0.61</td>
+</tr>
+<tr>
+<td>Breast-feading</td>
+<td>1.92</td>
+<td>−0.62</td>
+<td>1.95</td>
+<td>−0.52</td>
+<td>2.76</td>
+<td>1.94</td>
+<td>2.06</td>
+<td>−0.19</td>
+<td>1.88</td>
+<td>−0.73</td>
+<td>2.17</td>
+<td>0.13</td>
+</tr>
+<tr>
+<td>Father’s education</td>
+<td>0.92</td>
+<td>−1.71</td>
+<td>1.16</td>
+<td>−0.37</td>
+<td>1.46</td>
+<td>1.25</td>
+<td>1.25</td>
+<td>0.11</td>
+<td>1.33</td>
+<td>0.56</td>
+<td>1.26</td>
+<td>0.16</td>
+</tr>
+<tr>
+<td>Mother’s education</td>
+<td>1.03</td>
+<td>−1.57</td>
+<td>1.31</td>
+<td>−0.22</td>
+<td>1.67</td>
+<td>1.53</td>
+<td>1.42</td>
+<td>0.33</td>
+<td>1.38</td>
+<td>0.11</td>
+<td>1.32</td>
+<td>−0.18</td>
+</tr>
+<tr>
+<td>Family’s socio-economic status</td>
+<td>1.04</td>
+<td>−1.09</td>
+<td>1.01</td>
+<td>−1.32</td>
+<td>1.26</td>
+<td>0.97</td>
+<td>1.17</td>
+<td>0.16</td>
+<td>1.18</td>
+<td>0.27</td>
+<td>1.26</td>
+<td>1.01</td>
+</tr>
+<tr>
+<td><i>Time-variant predictors:</i></td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Home-ownership</td>
+<td>1.44</td>
+<td>−0.49</td>
+<td>1.51</td>
+<td>−0.44</td>
+<td>1.75</td>
+<td>−0.29</td>
+<td>1.76</td>
+<td>−0.29</td>
+<td>1.38</td>
+<td>−0.52</td>
+<td>5.43</td>
+<td>2.03</td>
+</tr>
+<tr>
+<td>Mother’s hours worked</td>
+<td>5.14</td>
+<td>−0.57</td>
+<td>5.30</td>
+<td>−0.44</td>
+<td>8.14</td>
+<td>1.82</td>
+<td>5.29</td>
+<td>−0.44</td>
+<td>4.78</td>
+<td>−0.85</td>
+<td>6.45</td>
+<td>0.48</td>
+</tr>
+<tr>
+<td>Father’s smoking</td>
+<td>7.48</td>
+<td>−0.71</td>
+<td>7.80</td>
+<td>−0.48</td>
+<td>9.13</td>
+<td>0.51</td>
+<td>7.86</td>
+<td>−0.43</td>
+<td>7.49</td>
+<td>−0.71</td>
+<td>10.88</td>
+<td>1.82</td>
+</tr>
+<tr>
+<td colspan="13"><i>Weighted means</i></td>
+</tr>
+<tr>
+<td>Scheme 1<sup><a href="#tfn25">b</a></sup></td>
+<td/>
+<td>−1.06</td>
+<td/>
+<td>−0.11</td>
+<td/>
+<td>0.94</td>
+<td/>
+<td>0.28</td>
+<td/>
+<td>−0.30</td>
+<td/>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Scheme 2<sup><a href="#tfn26">c</a></sup></td>
+<td/>
+<td>−1.08</td>
+<td/>
+<td>−0.05</td>
+<td/>
+<td>0.95</td>
+<td/>
+<td>0.34</td>
+<td/>
+<td>−0.32</td>
+<td/>
+<td>0.16</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>The PRESS statistic is not a mean absolute difference but a standardised measure of the distance between the observed and predicted values. Smaller values are better.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Time-invariant predictors given a weight of 1/5 each, time-variant predictors given a weight of 1/3 each. Other characteristics were each given a weight of 1.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Means by predictor variables given a combined weight of 1 with the time-invariant predictors each given a weight of 0.1 and the time-variant predictors each given a weight of 1/6. Other characteristics were each given a weight of 1.</p></div></figure><figure id="tableA1-5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Mean absolute differences (MAD) (smaller is better) and standardised mean absolute differences (SMAD) (more negative is better) between simulated and observed data for age 13.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">OLS-LDV</th>
+<th colspan="2">RE</th>
+<th colspan="2">RE-AR (1)</th>
+<th colspan="2">Hybrid</th>
+<th colspan="2">FE</th>
+<th colspan="2">System GMM DPM</th>
+</tr>
+<tr>
+<th>Data Characteristic</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+<th>MAD</th>
+<th>SMAD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PRESS statistic<sup><a href="#tfn27">a</a></sup></td>
+<td>0.78</td>
+<td>0.25</td>
+<td>0.56</td>
+<td>−0.75</td>
+<td>0.83</td>
+<td>0.5</td>
+<td>0.56</td>
+<td>−0.73</td>
+<td>0.52</td>
+<td>−0.93</td>
+<td>1.08</td>
+<td>1.66</td>
+</tr>
+<tr>
+<td>Overall distributions</td>
+<td>1.98</td>
+<td>−1.43</td>
+<td>3.82</td>
+<td>0.6</td>
+<td>4.39</td>
+<td>1.23</td>
+<td>3.78</td>
+<td>0.56</td>
+<td>3.20</td>
+<td>−0.09</td>
+<td>2.49</td>
+<td>−0.87</td>
+</tr>
+<tr>
+<td>Means across time</td>
+<td>0.50</td>
+<td>−1.42</td>
+<td>0.69</td>
+<td>−0.05</td>
+<td>0.7</td>
+<td>−0.01</td>
+<td>0.93</td>
+<td>1.66</td>
+<td>0.73</td>
+<td>0.23</td>
+<td>0.64</td>
+<td>−0.41</td>
+</tr>
+<tr>
+<td>Within-child correlations (dynamism)</td>
+<td>0.09</td>
+<td>−1.45</td>
+<td>0.23</td>
+<td>0.85</td>
+<td>0.24</td>
+<td>0.92</td>
+<td>0.23</td>
+<td>0.82</td>
+<td>0.15</td>
+<td>−0.46</td>
+<td>0.14</td>
+<td>−0.68</td>
+</tr>
+<tr>
+<td>Within-child standard deviations</td>
+<td>0.76</td>
+<td>−1.75</td>
+<td>1.07</td>
+<td>−0.27</td>
+<td>1.38</td>
+<td>1.19</td>
+<td>1.13</td>
+<td>0.02</td>
+<td>1.16</td>
+<td>0.14</td>
+<td>1.27</td>
+<td>0.66</td>
+</tr>
+<tr>
+<td><i>Time-invariant predictors:</i></td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Gender</td>
+<td>0.74</td>
+<td>−1.65</td>
+<td>1.32</td>
+<td>0.22</td>
+<td>1.12</td>
+<td>−0.42</td>
+<td>1.40</td>
+<td>0.48</td>
+<td>1.68</td>
+<td>1.36</td>
+<td>1.26</td>
+<td>0.01</td>
+</tr>
+<tr>
+<td>Breast-feading</td>
+<td>1.81</td>
+<td>−0.38</td>
+<td>1.68</td>
+<td>−0.75</td>
+<td>2.52</td>
+<td>1.67</td>
+<td>1.73</td>
+<td>−0.61</td>
+<td>1.69</td>
+<td>−0.72</td>
+<td>2.21</td>
+<td>0.78</td>
+</tr>
+<tr>
+<td>Father’s education</td>
+<td>0.86</td>
+<td>−1.39</td>
+<td>0.98</td>
+<td>−0.72</td>
+<td>1.27</td>
+<td>0.81</td>
+<td>1.11</td>
+<td>−0.06</td>
+<td>1.12</td>
+<td>−0.01</td>
+<td>1.37</td>
+<td>1.37</td>
+</tr>
+<tr>
+<td>Mother’s education</td>
+<td>0.93</td>
+<td>−0.62</td>
+<td>0.87</td>
+<td>−0.85</td>
+<td>1.36</td>
+<td>1.08</td>
+<td>1.01</td>
+<td>−0.27</td>
+<td>0.89</td>
+<td>−0.78</td>
+<td>1.45</td>
+<td>1.43</td>
+</tr>
+<tr>
+<td>Family’s socio-economic status</td>
+<td>1.09</td>
+<td>−0.26</td>
+<td>0.89</td>
+<td>−1.08</td>
+<td>1.32</td>
+<td>0.74</td>
+<td>1.01</td>
+<td>−0.57</td>
+<td>1.03</td>
+<td>−0.48</td>
+<td>1.54</td>
+<td>1.63</td>
+</tr>
+<tr>
+<td><i>Time-variant predictors:</i></td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Home-ownership</td>
+<td>1.07</td>
+<td>−0.48</td>
+<td>1.07</td>
+<td>−0.48</td>
+<td>1.46</td>
+<td>−0.24</td>
+<td>1.28</td>
+<td>−0.36</td>
+<td>1.09</td>
+<td>−0.47</td>
+<td>5.15</td>
+<td>2.03</td>
+</tr>
+<tr>
+<td>Mother’s hours worked</td>
+<td>5.27</td>
+<td>−0.79</td>
+<td>5.57</td>
+<td>−0.56</td>
+<td>7.98</td>
+<td>1.3</td>
+<td>5.60</td>
+<td>−0.54</td>
+<td>5.40</td>
+<td>−0.69</td>
+<td>7.95</td>
+<td>1.27</td>
+</tr>
+<tr>
+<td>Father’s smoking</td>
+<td>5.79</td>
+<td>−0.51</td>
+<td>5.75</td>
+<td>−0.53</td>
+<td>8.22</td>
+<td>0.7</td>
+<td>5.83</td>
+<td>−0.5</td>
+<td>5.07</td>
+<td>−0.88</td>
+<td>10.23</td>
+<td>1.71</td>
+</tr>
+<tr>
+<td colspan="13"><i>Weighted means</i></td>
+</tr>
+<tr>
+<td>Scheme 1<sup><a href="#tfn28">b</a></sup></td>
+<td/>
+<td>−1.06</td>
+<td/>
+<td>−0.11</td>
+<td/>
+<td>0.94</td>
+<td/>
+<td>0.28</td>
+<td/>
+<td>−0.30</td>
+<td/>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Scheme 2<sup><a href="#tfn29">c</a></sup></td>
+<td/>
+<td>−1.08</td>
+<td/>
+<td>−0.05</td>
+<td/>
+<td>0.95</td>
+<td/>
+<td>0.34</td>
+<td/>
+<td>−0.32</td>
+<td/>
+<td>0.16</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>The PRESS statistic is not a mean absolute difference but a standardised measure of the distance between the observed and predicted values. Smaller values are better.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Time-invariant predictors given a weight of 1/5 each, time-variant predictors given a weight of 1/3 each. Other characteristics were each given a weight of 1.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Means by predictor variables given a combined weight of 1 with the time-invariant predictors each given a weight of 0.1 and the time-variant predictors each given a weight of 1/6. Other characteristics were each given a weight of 1.</p></div></figure><figure id="tableA2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> t-values from paired t-tests (df=29) comparing the absolute differences (between the simulated and observed percentiles of the distribution of reading scores). Values greater than 2.46 indicate (unadjusted) significance at the .01 level.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="5">Percentile</th>
+</tr>
+<tr>
+<th>Comparison</th>
+<th>10th</th>
+<th>25th</th>
+<th>50th</th>
+<th>75th</th>
+<th>90th</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OLS-LDV – RE</td>
+<td>−31.08</td>
+<td>−19.56</td>
+<td>−28.23</td>
+<td>−24.00</td>
+<td>−14.27</td>
+</tr>
+<tr>
+<td>OLS-LDV – RE-AR(1)</td>
+<td>−9.90</td>
+<td>−18.06</td>
+<td>−17.57</td>
+<td>−8.52</td>
+<td>−6.81</td>
+</tr>
+<tr>
+<td>OLS-LDV – Hybrid</td>
+<td>−2.11</td>
+<td>0.11</td>
+<td>2.12</td>
+<td>−1.35</td>
+<td>−0.61</td>
+</tr>
+<tr>
+<td>OLS-LDV – System GMM DPM</td>
+<td>1.45</td>
+<td>−10.74</td>
+<td>−22.55</td>
+<td>−7.51</td>
+<td>−8.31</td>
+</tr>
+<tr>
+<td>OLS-LDV – FE</td>
+<td>−29.93</td>
+<td>−9.64</td>
+<td>−6.25</td>
+<td>−29.91</td>
+<td>−13.54</td>
+</tr>
+<tr>
+<td>RE – RE-AR(1)</td>
+<td>−2.63</td>
+<td>−2.30</td>
+<td>1.66</td>
+<td>1.75</td>
+<td>−3.02</td>
+</tr>
+<tr>
+<td>RE – Hybrid</td>
+<td>2.41</td>
+<td>9.73</td>
+<td>25.19</td>
+<td>8.85</td>
+<td>2.46</td>
+</tr>
+<tr>
+<td>RE – System GMM DPM</td>
+<td>11.01</td>
+<td>−0.14</td>
+<td>12.25</td>
+<td>9.27</td>
+<td>−2.54</td>
+</tr>
+<tr>
+<td>RE – FE</td>
+<td>20.03</td>
+<td>9.72</td>
+<td>3.66</td>
+<td>31.28</td>
+<td>10.41</td>
+</tr>
+<tr>
+<td>RE-AR(1) – Hybrid</td>
+<td>14.97</td>
+<td>13.80</td>
+<td>27.01</td>
+<td>22.03</td>
+<td>10.03</td>
+</tr>
+<tr>
+<td>RE-AR(1) – System GMM DPM</td>
+<td>30.17</td>
+<td>5.88</td>
+<td>14.38</td>
+<td>26.04</td>
+<td>10.18</td>
+</tr>
+<tr>
+<td>RE-AR(1) – FE</td>
+<td>3.34</td>
+<td>10.18</td>
+<td>16.87</td>
+<td>6.51</td>
+<td>3.00</td>
+</tr>
+<tr>
+<td>Hybrid – System GMM DPM</td>
+<td>11.02</td>
+<td>0.92</td>
+<td>5.88</td>
+<td>5.89</td>
+<td>0.31</td>
+</tr>
+<tr>
+<td>Hybrid – FE</td>
+<td>2.72</td>
+<td>−8.57</td>
+<td>−18.00</td>
+<td>−4.00</td>
+<td>−3.29</td>
+</tr>
+<tr>
+<td>System GMM DPM – FE</td>
+<td>−31.08</td>
+<td>−19.56</td>
+<td>−28.23</td>
+<td>−24.00</td>
+<td>−14.27</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA2-2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> t-values from paired t-tests (df=29) comparing the absolute differences (between the simulated and observed means of reading scores). Values greater than 2.46 indicate (unadjusted) significance at the .01 level.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="5">Age</th>
+</tr>
+<tr>
+<th>Comparison</th>
+<th>9</th>
+<th>10</th>
+<th>11</th>
+<th>12</th>
+<th>13</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OLS-LDV – RE</td>
+<td>−1.84</td>
+<td>−1.95</td>
+<td>−3.48</td>
+<td>−0.90</td>
+<td>−1.83</td>
+</tr>
+<tr>
+<td>OLS-LDV – RE-AR(1)</td>
+<td>−1.85</td>
+<td>−1.65</td>
+<td>−3.75</td>
+<td>−1.04</td>
+<td>−2.31</td>
+</tr>
+<tr>
+<td>OLS-LDV – Hybrid</td>
+<td>−3.39</td>
+<td>−3.59</td>
+<td>−4.38</td>
+<td>−3.43</td>
+<td>−3.07</td>
+</tr>
+<tr>
+<td>OLS-LDV – System GMM DPM</td>
+<td>1.80</td>
+<td>0.21</td>
+<td>−2.02</td>
+<td>−1.49</td>
+<td>−2.69</td>
+</tr>
+<tr>
+<td>OLS-LDV – FE</td>
+<td>−1.53</td>
+<td>−2.34</td>
+<td>−3.70</td>
+<td>−1.38</td>
+<td>−2.05</td>
+</tr>
+<tr>
+<td>RE – RE-AR(1)</td>
+<td>−0.05</td>
+<td>1.98</td>
+<td>−1.10</td>
+<td>−0.28</td>
+<td>−0.74</td>
+</tr>
+<tr>
+<td>RE – Hybrid</td>
+<td>−3.47</td>
+<td>−2.94</td>
+<td>−1.75</td>
+<td>−2.64</td>
+<td>−1.98</td>
+</tr>
+<tr>
+<td>RE – System GMM DPM</td>
+<td>2.16</td>
+<td>2.12</td>
+<td>1.38</td>
+<td>−0.77</td>
+<td>−1.75</td>
+</tr>
+<tr>
+<td>RE – FE</td>
+<td>0.96</td>
+<td>−0.75</td>
+<td>−1.87</td>
+<td>−1.57</td>
+<td>−1.15</td>
+</tr>
+<tr>
+<td>RE-AR(1) – Hybrid</td>
+<td>−3.43</td>
+<td>−3.13</td>
+<td>−1.32</td>
+<td>−2.44</td>
+<td>−1.72</td>
+</tr>
+<tr>
+<td>RE-AR(1) – System GMM DPM</td>
+<td>2.18</td>
+<td>1.80</td>
+<td>1.68</td>
+<td>−0.71</td>
+<td>−1.56</td>
+</tr>
+<tr>
+<td>RE-AR(1) – FE</td>
+<td>0.91</td>
+<td>−1.55</td>
+<td>−1.12</td>
+<td>−1.07</td>
+<td>−0.38</td>
+</tr>
+<tr>
+<td>Hybrid – System GMM DPM</td>
+<td>3.65</td>
+<td>3.63</td>
+<td>2.56</td>
+<td>1.05</td>
+<td>−0.76</td>
+</tr>
+<tr>
+<td>Hybrid – FE</td>
+<td>3.54</td>
+<td>2.09</td>
+<td>0.78</td>
+<td>1.79</td>
+<td>1.16</td>
+</tr>
+<tr>
+<td>System GMM DPM – FE</td>
+<td>−1.85</td>
+<td>−2.38</td>
+<td>−2.02</td>
+<td>0.29</td>
+<td>1.52</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> t-values from paired t-tests (df = 29) comparing the absolute differences (between the simulated and observed percentiles of the distribution of child-specific correlations between current and lagged reading scores). Values greater than 2.46 indicate (unadjusted) significance at the .01 level.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="5">Percentile</th>
+</tr>
+<tr>
+<th>Comparison</th>
+<th>10th</th>
+<th>25th</th>
+<th>50th</th>
+<th>75th</th>
+<th>90th</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OLS-LDV – RE</td>
+<td>−37.88</td>
+<td>−82.01</td>
+<td>−93.94</td>
+<td>−89.52</td>
+<td>−83.17</td>
+</tr>
+<tr>
+<td>OLS-LDV – RE-AR(1)</td>
+<td>−30.27</td>
+<td>−44.09</td>
+<td>−55.95</td>
+<td>−62.67</td>
+<td>−61.41</td>
+</tr>
+<tr>
+<td>OLS-LDV – Hybrid</td>
+<td>−40.68</td>
+<td>−88.06</td>
+<td>−96.87</td>
+<td>−87.17</td>
+<td>−78.17</td>
+</tr>
+<tr>
+<td>OLS-LDV – System GMM DPM</td>
+<td>−14.53</td>
+<td>−13.64</td>
+<td>−13.83</td>
+<td>−13.49</td>
+<td>−12.42</td>
+</tr>
+<tr>
+<td>OLS-LDV – FE</td>
+<td>−14.39</td>
+<td>−83.70</td>
+<td>−111.84</td>
+<td>−104.30</td>
+<td>−95.05</td>
+</tr>
+<tr>
+<td>RE – RE-AR(1)</td>
+<td>−14.68</td>
+<td>0.23</td>
+<td>22.05</td>
+<td>40.07</td>
+<td>47.60</td>
+</tr>
+<tr>
+<td>RE – Hybrid</td>
+<td>2.32</td>
+<td>2.40</td>
+<td>2.45</td>
+<td>2.49</td>
+<td>2.21</td>
+</tr>
+<tr>
+<td>RE – System GMM DPM</td>
+<td>3.64</td>
+<td>33.06</td>
+<td>65.29</td>
+<td>75.15</td>
+<td>72.97</td>
+</tr>
+<tr>
+<td>RE – FE</td>
+<td>52.68</td>
+<td>51.85</td>
+<td>49.02</td>
+<td>46.74</td>
+<td>44.81</td>
+</tr>
+<tr>
+<td>RE-AR(1) – Hybrid</td>
+<td>14.35</td>
+<td>0.36</td>
+<td>−18.04</td>
+<td>−30.84</td>
+<td>−34.43</td>
+</tr>
+<tr>
+<td>RE-AR(1) – System GMM DPM</td>
+<td>10.04</td>
+<td>25.17</td>
+<td>40.75</td>
+<td>48.78</td>
+<td>49.55</td>
+</tr>
+<tr>
+<td>RE-AR(1) – FE</td>
+<td>34.24</td>
+<td>24.66</td>
+<td>14.86</td>
+<td>4.77</td>
+<td>−2.32</td>
+</tr>
+<tr>
+<td>Hybrid – System GMM DPM</td>
+<td>3.50</td>
+<td>34.37</td>
+<td>69.56</td>
+<td>75.74</td>
+<td>71.70</td>
+</tr>
+<tr>
+<td>Hybrid – FE</td>
+<td>51.39</td>
+<td>48.19</td>
+<td>44.55</td>
+<td>41.19</td>
+<td>37.90</td>
+</tr>
+<tr>
+<td>System GMM DPM – FE</td>
+<td>9.43</td>
+<td>−14.40</td>
+<td>−47.04</td>
+<td>−63.95</td>
+<td>−67.09</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> t-values from paired t-tests (df = 29) comparing the absolute differences (between the simulated and observed percentiles of the distribution of within-child standard deviations of reading scores). Values greater than 2.46 indicate (unadjusted) significance at the .01 level.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="5">Percentile</th>
+</tr>
+<tr>
+<th>Comparison</th>
+<th>10th</th>
+<th>25th</th>
+<th>50th</th>
+<th>75th</th>
+<th>90th</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OLS-LDV – RE</td>
+<td>−9.99</td>
+<td>−7.43</td>
+<td>−7.45</td>
+<td>10.71</td>
+<td>7.70</td>
+</tr>
+<tr>
+<td>OLS-LDV – RE-AR(1)</td>
+<td>6.32</td>
+<td>1.89</td>
+<td>−12.79</td>
+<td>−22.29</td>
+<td>−17.18</td>
+</tr>
+<tr>
+<td>OLS-LDV – Hybrid</td>
+<td>−10.20</td>
+<td>−7.87</td>
+<td>−7.97</td>
+<td>9.05</td>
+<td>8.06</td>
+</tr>
+<tr>
+<td>OLS-LDV – System GMM DPM</td>
+<td>−8.23</td>
+<td>−5.83</td>
+<td>−1.88</td>
+<td>−11.14</td>
+<td>−13.73</td>
+</tr>
+<tr>
+<td>OLS-LDV – FE</td>
+<td>−9.84</td>
+<td>−5.31</td>
+<td>−2.92</td>
+<td>0.78</td>
+<td>−0.01</td>
+</tr>
+<tr>
+<td>RE – RE-AR(1)</td>
+<td>41.95</td>
+<td>42.88</td>
+<td>−23.07</td>
+<td>−24.19</td>
+<td>−15.65</td>
+</tr>
+<tr>
+<td>RE – Hybrid</td>
+<td>−2.70</td>
+<td>−2.81</td>
+<td>−2.74</td>
+<td>−4.01</td>
+<td>0.82</td>
+</tr>
+<tr>
+<td>RE – System GMM DPM</td>
+<td>3.10</td>
+<td>2.52</td>
+<td>6.10</td>
+<td>−16.29</td>
+<td>−15.82</td>
+</tr>
+<tr>
+<td>RE – FE</td>
+<td>−0.02</td>
+<td>9.12</td>
+<td>9.48</td>
+<td>−5.53</td>
+<td>−19.46</td>
+</tr>
+<tr>
+<td>RE-AR(1) – Hybrid</td>
+<td>−31.43</td>
+<td>−22.63</td>
+<td>8.32</td>
+<td>24.63</td>
+<td>16.44</td>
+</tr>
+<tr>
+<td>RE-AR(1) – System GMM DPM</td>
+<td>−10.40</td>
+<td>−6.09</td>
+<td>11.37</td>
+<td>6.68</td>
+<td>4.14</td>
+</tr>
+<tr>
+<td>RE-AR(1) – FE</td>
+<td>−35.78</td>
+<td>−26.65</td>
+<td>20.58</td>
+<td>9.90</td>
+<td>8.05</td>
+</tr>
+<tr>
+<td>Hybrid – System GMM DPM</td>
+<td>3.54</td>
+<td>3.13</td>
+<td>6.71</td>
+<td>−14.82</td>
+<td>−16.49</td>
+</tr>
+<tr>
+<td>Hybrid – FE</td>
+<td>2.17</td>
+<td>7.17</td>
+<td>8.74</td>
+<td>−3.88</td>
+<td>−13.89</td>
+</tr>
+<tr>
+<td>System GMM DPM – FE</td>
+<td>−3.12</td>
+<td>−0.91</td>
+<td>−1.21</td>
+<td>6.90</td>
+<td>6.82</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> t-values from paired t-tests (df = 29) comparing the absolute differences (between the simulated and observed mean reading scores by gender). Values greater than 2.46 indicate (unadjusted) significance at the .01 level.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">Gender</th>
+</tr>
+<tr>
+<th>Comparison</th>
+<th>Girls</th>
+<th>Boyx</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OLS-LDV – RE</td>
+<td>−3.97</td>
+<td>−3.21</td>
+</tr>
+<tr>
+<td>OLS-LDV – RE-AR(1)</td>
+<td>−3.75</td>
+<td>−4.12</td>
+</tr>
+<tr>
+<td>OLS-LDV – Hybrid</td>
+<td>−4.51</td>
+<td>−3.65</td>
+</tr>
+<tr>
+<td>OLS-LDV – System GMM DPM</td>
+<td>−2.48</td>
+<td>−1.64</td>
+</tr>
+<tr>
+<td>OLS-LDV – FE</td>
+<td>−5.08</td>
+<td>−4.03</td>
+</tr>
+<tr>
+<td>RE – RE-AR(1)</td>
+<td>0.97</td>
+<td>−0.91</td>
+</tr>
+<tr>
+<td>RE – Hybrid</td>
+<td>−2.88</td>
+<td>−0.98</td>
+</tr>
+<tr>
+<td>RE – System GMM DPM</td>
+<td>2.22</td>
+<td>1.52</td>
+</tr>
+<tr>
+<td>RE – FE</td>
+<td>−3.70</td>
+<td>−3.81</td>
+</tr>
+<tr>
+<td>RE-AR(1) – Hybrid</td>
+<td>−2.44</td>
+<td>0.07</td>
+</tr>
+<tr>
+<td>RE-AR(1) – System GMM DPM</td>
+<td>1.71</td>
+<td>2.30</td>
+</tr>
+<tr>
+<td>RE-AR(1) – FE</td>
+<td>−2.16</td>
+<td>−0.98</td>
+</tr>
+<tr>
+<td>Hybrid – System GMM DPM</td>
+<td>3.35</td>
+<td>1.85</td>
+</tr>
+<tr>
+<td>Hybrid – FE</td>
+<td>1.12</td>
+<td>−1.13</td>
+</tr>
+<tr>
+<td>System GMM DPM – FE</td>
+<td>−3.41</td>
+<td>−2.84</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> t-values from paired t-tests (df = 29) comparing the absolute differences (between the simulated and observed mean reading scores by duration of breast-feeding). Values greater than 2.46 indicate (unadjusted) significance at the .01 level.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="5">Breast-feeding Duration (months)</th>
+</tr>
+<tr>
+<th>Comparison</th>
+<th>0</th>
+<th>3</th>
+<th>6</th>
+<th>9</th>
+<th>12</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OLS-LDV – RE</td>
+<td>−0.35</td>
+<td>−2.91</td>
+<td>−1.63</td>
+<td>−5.11</td>
+<td>−0.45</td>
+</tr>
+<tr>
+<td>OLS-LDV – RE-AR(1)</td>
+<td>−2.99</td>
+<td>−4.71</td>
+<td>−3.66</td>
+<td>−4.12</td>
+<td>−3.40</td>
+</tr>
+<tr>
+<td>OLS-LDV – Hybrid</td>
+<td>−2.15</td>
+<td>−2.66</td>
+<td>−2.87</td>
+<td>−4.09</td>
+<td>−1.10</td>
+</tr>
+<tr>
+<td>OLS-LDV – System GMM DPM</td>
+<td>−2.89</td>
+<td>−2.52</td>
+<td>−2.01</td>
+<td>−4.44</td>
+<td>−1.10</td>
+</tr>
+<tr>
+<td>OLS-LDV – FE</td>
+<td>−0.33</td>
+<td>−2.46</td>
+<td>−2.96</td>
+<td>−4.79</td>
+<td>−0.96</td>
+</tr>
+<tr>
+<td>RE – RE-AR(1)</td>
+<td>−3.08</td>
+<td>−3.82</td>
+<td>−3.46</td>
+<td>−0.95</td>
+<td>−2.69</td>
+</tr>
+<tr>
+<td>RE – Hybrid</td>
+<td>−2.76</td>
+<td>−1.43</td>
+<td>−2.58</td>
+<td>3.03</td>
+<td>−1.26</td>
+</tr>
+<tr>
+<td>RE – System GMM DPM</td>
+<td>−2.07</td>
+<td>−0.09</td>
+<td>−0.91</td>
+<td>0.93</td>
+<td>−0.09</td>
+</tr>
+<tr>
+<td>RE – FE</td>
+<td>−0.04</td>
+<td>−0.12</td>
+<td>−2.42</td>
+<td>0.05</td>
+<td>−1.61</td>
+</tr>
+<tr>
+<td>RE-AR(1) – Hybrid</td>
+<td>0.64</td>
+<td>2.70</td>
+<td>1.78</td>
+<td>1.97</td>
+<td>2.44</td>
+</tr>
+<tr>
+<td>RE-AR(1) – System GMM DPM</td>
+<td>0.52</td>
+<td>2.42</td>
+<td>1.73</td>
+<td>1.61</td>
+<td>2.82</td>
+</tr>
+<tr>
+<td>RE-AR(1) – FE</td>
+<td>2.74</td>
+<td>3.00</td>
+<td>2.53</td>
+<td>0.88</td>
+<td>1.88</td>
+</tr>
+<tr>
+<td>Hybrid – System GMM DPM</td>
+<td>−0.10</td>
+<td>0.57</td>
+<td>0.43</td>
+<td>−0.10</td>
+<td>0.49</td>
+</tr>
+<tr>
+<td>Hybrid – FE</td>
+<td>2.38</td>
+<td>1.20</td>
+<td>0.87</td>
+<td>−2.05</td>
+<td>−0.10</td>
+</tr>
+<tr>
+<td>System GMM DPM – FE</td>
+<td>1.95</td>
+<td>0.04</td>
+<td>0.01</td>
+<td>−0.89</td>
+<td>−0.47</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> t-values from paired t-tests (df = 29) comparing the absolute differences (between the simulated and observed mean reading scores by father's education at the child's birth). Values greater than 2.46 indicate (unadjusted) significance at the .01 level.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="3">Father’s education</th>
+</tr>
+<tr>
+<th>Comparison</th>
+<th>Tertiary</th>
+<th>Secondary</th>
+<th>None</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OLS-LDV – RE</td>
+<td>−3.39</td>
+<td>−2.57</td>
+<td>−2.37</td>
+</tr>
+<tr>
+<td>OLS-LDV – RE-AR(1)</td>
+<td>−5.48</td>
+<td>−4.60</td>
+<td>−2.30</td>
+</tr>
+<tr>
+<td>OLS-LDV – Hybrid</td>
+<td>−3.19</td>
+<td>−3.14</td>
+<td>−3.59</td>
+</tr>
+<tr>
+<td>OLS-LDV – System GMM DPM</td>
+<td>−4.01</td>
+<td>−2.57</td>
+<td>−1.27</td>
+</tr>
+<tr>
+<td>OLS-LDV – FE</td>
+<td>−4.96</td>
+<td>−2.38</td>
+<td>−2.83</td>
+</tr>
+<tr>
+<td>RE – RE-AR(1)</td>
+<td>−3.49</td>
+<td>−3.00</td>
+<td>−0.10</td>
+</tr>
+<tr>
+<td>RE – Hybrid</td>
+<td>−0.38</td>
+<td>−0.79</td>
+<td>−3.00</td>
+</tr>
+<tr>
+<td>RE – System GMM DPM</td>
+<td>0.38</td>
+<td>0.55</td>
+<td>0.65</td>
+</tr>
+<tr>
+<td>RE – FE</td>
+<td>−4.00</td>
+<td>0.17</td>
+<td>−1.61</td>
+</tr>
+<tr>
+<td>RE-AR(1) – Hybrid</td>
+<td>3.59</td>
+<td>2.01</td>
+<td>−2.10</td>
+</tr>
+<tr>
+<td>RE-AR(1) – System GMM DPM</td>
+<td>3.24</td>
+<td>3.47</td>
+<td>0.67</td>
+</tr>
+<tr>
+<td>RE-AR(1) – FE</td>
+<td>0.26</td>
+<td>2.65</td>
+<td>−0.59</td>
+</tr>
+<tr>
+<td>Hybrid – System GMM DPM</td>
+<td>0.55</td>
+<td>0.96</td>
+<td>2.07</td>
+</tr>
+<tr>
+<td>Hybrid – FE</td>
+<td>−2.62</td>
+<td>0.86</td>
+<td>1.97</td>
+</tr>
+<tr>
+<td>System GMM DPM – FE</td>
+<td>−2.54</td>
+<td>−0.43</td>
+<td>−1.03</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA8" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 8.</strong><span data-astro-cid-dzaleqsp> t-values from paired t-tests (df = 29) comparing the absolute differences (between the simulated and observed mean reading scores by mother's education at the child's birth). Values greater than 2.46 indicate (unadjusted) significance at the .01 level.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="3">Mother’s education</th>
+</tr>
+<tr>
+<th>Comparison</th>
+<th>Tertiary</th>
+<th>Secondary</th>
+<th>None</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OLS-LDV – RE</td>
+<td>−6.45</td>
+<td>−0.29</td>
+<td>−2.34</td>
+</tr>
+<tr>
+<td>OLS-LDV – RE-AR(1)</td>
+<td>−6.12</td>
+<td>−3.75</td>
+<td>−3.28</td>
+</tr>
+<tr>
+<td>OLS-LDV – Hybrid</td>
+<td>−4.41</td>
+<td>−2.06</td>
+<td>−3.56</td>
+</tr>
+<tr>
+<td>OLS-LDV – System GMM DPM</td>
+<td>−3.33</td>
+<td>−2.50</td>
+<td>−0.42</td>
+</tr>
+<tr>
+<td>OLS-LDV – FE</td>
+<td>−7.30</td>
+<td>0.12</td>
+<td>−2.20</td>
+</tr>
+<tr>
+<td>RE – RE-AR(1)</td>
+<td>−2.01</td>
+<td>−4.99</td>
+<td>−1.28</td>
+</tr>
+<tr>
+<td>RE – Hybrid</td>
+<td>0.79</td>
+<td>−2.13</td>
+<td>−2.76</td>
+</tr>
+<tr>
+<td>RE – System GMM DPM</td>
+<td>2.81</td>
+<td>−1.62</td>
+<td>1.36</td>
+</tr>
+<tr>
+<td>RE – FE</td>
+<td>−3.19</td>
+<td>0.97</td>
+<td>0.06</td>
+</tr>
+<tr>
+<td>RE-AR(1) – Hybrid</td>
+<td>2.57</td>
+<td>2.54</td>
+<td>−1.27</td>
+</tr>
+<tr>
+<td>RE-AR(1) – System GMM DPM</td>
+<td>5.07</td>
+<td>2.15</td>
+<td>1.95</td>
+</tr>
+<tr>
+<td>RE-AR(1) – FE</td>
+<td>0.66</td>
+<td>4.18</td>
+<td>1.06</td>
+</tr>
+<tr>
+<td>Hybrid – System GMM DPM</td>
+<td>2.17</td>
+<td>−0.06</td>
+<td>2.67</td>
+</tr>
+<tr>
+<td>Hybrid – FE</td>
+<td>−2.45</td>
+<td>2.72</td>
+<td>2.64</td>
+</tr>
+<tr>
+<td>System GMM DPM – FE</td>
+<td>−3.92</td>
+<td>2.02</td>
+<td>−1.34</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA9" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 9.</strong><span data-astro-cid-dzaleqsp> t-values from paired t-tests (df = 29) comparing the absolute differences (between the simulated and observed mean reading scores by family's socio-economic status at the child's birth). Values greater than 2.46 indicate (unadjusted) significance at the .01 level.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="3">Socio-economic status</th>
+</tr>
+<tr>
+<th>Comparison</th>
+<th>Professional</th>
+<th>Clerical</th>
+<th>Semi-skilled</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OLS-LDV – RE</td>
+<td>−2.90</td>
+<td>−0.90</td>
+<td>0.34</td>
+</tr>
+<tr>
+<td>OLS-LDV – RE-AR(1)</td>
+<td>−4.91</td>
+<td>−2.14</td>
+<td>−2.62</td>
+</tr>
+<tr>
+<td>OLS-LDV – Hybrid</td>
+<td>−2.41</td>
+<td>−2.75</td>
+<td>−1.37</td>
+</tr>
+<tr>
+<td>OLS-LDV – System GMM DPM</td>
+<td>−3.18</td>
+<td>−1.14</td>
+<td>−1.70</td>
+</tr>
+<tr>
+<td>OLS-LDV – FE</td>
+<td>−4.24</td>
+<td>−1.22</td>
+<td>0.09</td>
+</tr>
+<tr>
+<td>RE – RE-AR(1)</td>
+<td>−2.34</td>
+<td>−2.12</td>
+<td>−3.34</td>
+</tr>
+<tr>
+<td>RE – Hybrid</td>
+<td>0.00</td>
+<td>−3.11</td>
+<td>−2.46</td>
+</tr>
+<tr>
+<td>RE – System GMM DPM</td>
+<td>0.13</td>
+<td>0.16</td>
+<td>−1.90</td>
+</tr>
+<tr>
+<td>RE – FE</td>
+<td>−3.99</td>
+<td>−1.24</td>
+<td>−0.46</td>
+</tr>
+<tr>
+<td>RE-AR(1) – Hybrid</td>
+<td>2.31</td>
+<td>−1.35</td>
+<td>1.06</td>
+</tr>
+<tr>
+<td>RE-AR(1) – System GMM DPM</td>
+<td>2.46</td>
+<td>1.29</td>
+<td>0.55</td>
+</tr>
+<tr>
+<td>RE-AR(1) – FE</td>
+<td>−0.30</td>
+<td>1.18</td>
+<td>2.84</td>
+</tr>
+<tr>
+<td>Hybrid – System GMM DPM</td>
+<td>0.11</td>
+<td>2.10</td>
+<td>−0.48</td>
+</tr>
+<tr>
+<td>Hybrid – FE</td>
+<td>−2.50</td>
+<td>2.51</td>
+<td>1.83</td>
+</tr>
+<tr>
+<td>System GMM DPM – FE</td>
+<td>−2.19</td>
+<td>−0.52</td>
+<td>1.71</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA10" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 10.</strong><span data-astro-cid-dzaleqsp> t-values from paired t-tests (df = 29) comparing the absolute differences (between the simulated and observed mean reading scores by home-ownership status). Values greater than 2.46 indicate (unadjusted) significance at the .01 level.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">Home-ownership status</th>
+</tr>
+<tr>
+<th>Comparison</th>
+<th>Owned</th>
+<th>Rented</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OLS-LDV – RE</td>
+<td>−4.37</td>
+<td>−0.56</td>
+</tr>
+<tr>
+<td>OLS-LDV – RE-AR(1)</td>
+<td>−4.74</td>
+<td>−3.13</td>
+</tr>
+<tr>
+<td>OLS-LDV – Hybrid</td>
+<td>−4.72</td>
+<td>−1.70</td>
+</tr>
+<tr>
+<td>OLS-LDV – System GMM DPM</td>
+<td>−4.57</td>
+<td>−7.86</td>
+</tr>
+<tr>
+<td>OLS-LDV – FE</td>
+<td>−3.93</td>
+<td>0.52</td>
+</tr>
+<tr>
+<td>RE – RE-AR(1)</td>
+<td>−1.13</td>
+<td>−4.04</td>
+</tr>
+<tr>
+<td>RE – Hybrid</td>
+<td>−2.20</td>
+<td>−2.74</td>
+</tr>
+<tr>
+<td>RE – System GMM DPM</td>
+<td>−2.40</td>
+<td>−7.80</td>
+</tr>
+<tr>
+<td>RE – FE</td>
+<td>−0.59</td>
+<td>2.66</td>
+</tr>
+<tr>
+<td>RE-AR(1) – Hybrid</td>
+<td>−1.83</td>
+<td>1.12</td>
+</tr>
+<tr>
+<td>RE-AR(1) – System GMM DPM</td>
+<td>−2.00</td>
+<td>−6.59</td>
+</tr>
+<tr>
+<td>RE-AR(1) – FE</td>
+<td>0.12</td>
+<td>4.75</td>
+</tr>
+<tr>
+<td>Hybrid – System GMM DPM</td>
+<td>−0.81</td>
+<td>−7.30</td>
+</tr>
+<tr>
+<td>Hybrid – FE</td>
+<td>1.63</td>
+<td>3.87</td>
+</tr>
+<tr>
+<td>System GMM DPM – FE</td>
+<td>2.13</td>
+<td>8.07</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA11" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 11.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="4">Mother’s Hours Worked (hours per week)</th>
+</tr>
+<tr>
+<th>Comparison</th>
+<th>0</th>
+<th>16</th>
+<th>27</th>
+<th>40</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OLS-LDV – RE</td>
+<td>−3.05</td>
+<td>−4.92</td>
+<td>4.61</td>
+<td>−2.85</td>
+</tr>
+<tr>
+<td>OLS-LDV – RE-AR(1)</td>
+<td>−4.95</td>
+<td>−8.76</td>
+<td>1.44</td>
+<td>−6.15</td>
+</tr>
+<tr>
+<td>OLS-LDV – Hybrid</td>
+<td>−4.15</td>
+<td>−3.22</td>
+<td>4.51</td>
+<td>−3.18</td>
+</tr>
+<tr>
+<td>OLS-LDV – System GMM DPM</td>
+<td>−4.11</td>
+<td>−4.30</td>
+<td>−1.35</td>
+<td>−4.52</td>
+</tr>
+<tr>
+<td>OLS-LDV – FE</td>
+<td>−2.78</td>
+<td>−4.31</td>
+<td>3.26</td>
+<td>−2.57</td>
+</tr>
+<tr>
+<td>RE – RE-AR(1)</td>
+<td>−4.54</td>
+<td>−7.13</td>
+<td>−5.52</td>
+<td>−3.86</td>
+</tr>
+<tr>
+<td>RE – Hybrid</td>
+<td>−3.32</td>
+<td>1.02</td>
+<td>−0.95</td>
+<td>−1.29</td>
+</tr>
+<tr>
+<td>RE – System GMM DPM</td>
+<td>−2.10</td>
+<td>0.47</td>
+<td>−5.83</td>
+<td>−2.89</td>
+</tr>
+<tr>
+<td>RE – FE</td>
+<td>0.60</td>
+<td>−0.90</td>
+<td>−2.07</td>
+<td>0.23</td>
+</tr>
+<tr>
+<td>RE-AR(1) – Hybrid</td>
+<td>1.63</td>
+<td>7.43</td>
+<td>5.58</td>
+<td>1.87</td>
+</tr>
+<tr>
+<td>RE-AR(1) – System GMM DPM</td>
+<td>0.31</td>
+<td>6.53</td>
+<td>−2.63</td>
+<td>−1.68</td>
+</tr>
+<tr>
+<td>RE-AR(1) – FE</td>
+<td>3.56</td>
+<td>6.24</td>
+<td>3.37</td>
+<td>3.26</td>
+</tr>
+<tr>
+<td>Hybrid – System GMM DPM</td>
+<td>−0.50</td>
+<td>−0.03</td>
+<td>−5.73</td>
+<td>−2.22</td>
+</tr>
+<tr>
+<td>Hybrid – FE</td>
+<td>2.70</td>
+<td>−1.94</td>
+<td>−1.73</td>
+<td>1.34</td>
+</tr>
+<tr>
+<td>System GMM DPM – FE</td>
+<td>2.35</td>
+<td>−0.82</td>
+<td>4.07</td>
+<td>2.86</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA12" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 12.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="3">Father’s Smoking (cigarettes per day)</th>
+</tr>
+<tr>
+<th>Comparison</th>
+<th>0</th>
+<th>4</th>
+<th>20</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OLS-LDV – RE</td>
+<td>−3.20</td>
+<td>−5.84</td>
+<td>−0.03</td>
+</tr>
+<tr>
+<td>OLS-LDV – RE-AR(1)</td>
+<td>−3.62</td>
+<td>−6.38</td>
+<td>−0.18</td>
+</tr>
+<tr>
+<td>OLS-LDV – Hybrid</td>
+<td>−4.33</td>
+<td>−5.50</td>
+<td>−1.36</td>
+</tr>
+<tr>
+<td>OLS-LDV – System GMM DPM</td>
+<td>−6.99</td>
+<td>−1.60</td>
+<td>−6.97</td>
+</tr>
+<tr>
+<td>OLS-LDV – FE</td>
+<td>−3.02</td>
+<td>−3.51</td>
+<td>−1.91</td>
+</tr>
+<tr>
+<td>RE – RE-AR(1)</td>
+<td>−1.42</td>
+<td>−5.41</td>
+<td>−0.24</td>
+</tr>
+<tr>
+<td>RE – Hybrid</td>
+<td>−2.69</td>
+<td>−0.63</td>
+<td>−2.72</td>
+</tr>
+<tr>
+<td>RE – System GMM DPM</td>
+<td>−4.60</td>
+<td>1.81</td>
+<td>−7.37</td>
+</tr>
+<tr>
+<td>RE – FE</td>
+<td>−1.06</td>
+<td>0.51</td>
+<td>−2.47</td>
+</tr>
+<tr>
+<td>RE-AR(1) – Hybrid</td>
+<td>−2.03</td>
+<td>5.17</td>
+<td>−1.46</td>
+</tr>
+<tr>
+<td>RE-AR(1) – System GMM DPM</td>
+<td>−4.47</td>
+<td>5.56</td>
+<td>−7.67</td>
+</tr>
+<tr>
+<td>RE-AR(1) – FE</td>
+<td>0.11</td>
+<td>4.33</td>
+<td>−1.49</td>
+</tr>
+<tr>
+<td>Hybrid – System GMM DPM</td>
+<td>−2.77</td>
+<td>2.16</td>
+<td>−6.86</td>
+</tr>
+<tr>
+<td>Hybrid – FE</td>
+<td>1.74</td>
+<td>0.72</td>
+<td>0.15</td>
+</tr>
+<tr>
+<td>System GMM DPM – FE</td>
+<td>3.88</td>
+<td>−1.13</td>
+<td>6.95</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA3-1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Exogeneity tests for predictors for OLS-LDV, RE, RE-AR(1), and FE models.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="4">OLS-LDV</th>
+<th colspan="4">RE an RE-AR (1)</th>
+<th colspan="4">FE</th>
+</tr>
+<tr>
+<th/>
+<th>C statistic: x<sup>2</sup>(1)</th>
+<th>p</th>
+<th>Under-identification Test Rejected<sup>a</sup></th>
+<th>Cragg-Donald Wald F</th>
+<th>C statistic: x<sup>2</sup>(1)</th>
+<th>p</th>
+<th>Under-identification Test Rejected<sup><a href="#tfn30">a</a></sup></th>
+<th><i>rk</i> statistic<sup><a href="#tfn31">b</a></sup></th>
+<th>C statistic: x<sup>2</sup>(1)</th>
+<th>p</th>
+<th>Under-identification Test Rejected<sup><a href="#tfn30">a</a></sup></th>
+<th><i>rk</i> statistic<sup><a href="#tfn31">b</a></sup></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Age</td>
+<td>6.93</td>
+<td>.0085</td>
+<td>Yes</td>
+<td>13.60</td>
+<td>2.67</td>
+<td>.1021</td>
+<td>Yes</td>
+<td>10.47</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Age squared</td>
+<td>4.83</td>
+<td>.0280</td>
+<td>No</td>
+<td>0.71</td>
+<td>4.76</td>
+<td>.0291</td>
+<td>No</td>
+<td>1.49</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td><i>Time-invariant:</i></td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Father’s education – tertiary</td>
+<td>0.53</td>
+<td>.4273</td>
+<td>Yes</td>
+<td>5.90</td>
+<td>0.05</td>
+<td>.8202</td>
+<td>No</td>
+<td>1.75</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Father’s education – secondary</td>
+<td>0.01</td>
+<td>.9324</td>
+<td>Yes</td>
+<td>9.85</td>
+<td>0.44</td>
+<td>.5062</td>
+<td>Yes</td>
+<td>2.24</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Breast-feeding</td>
+<td>0.96</td>
+<td>.3263</td>
+<td>Yes</td>
+<td>28.94</td>
+<td>0.31</td>
+<td>.5777</td>
+<td>Yes</td>
+<td>7.23</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Mother’s education – tertiary</td>
+<td>0.67</td>
+<td>.4125</td>
+<td>Yes</td>
+<td>18.96</td>
+<td>5.94</td>
+<td>.0148</td>
+<td>Yes</td>
+<td>5.27</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Mother’s education – secondary</td>
+<td>0.78</td>
+<td>.3766</td>
+<td>Yes</td>
+<td>24.78</td>
+<td>4.87</td>
+<td>.0273</td>
+<td>Yes</td>
+<td>5.77</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Socio-economic status – professional</td>
+<td>0.80</td>
+<td>.3702</td>
+<td>Yes</td>
+<td>36.90</td>
+<td>4.30</td>
+<td>.0382</td>
+<td>Yes</td>
+<td>8.30</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Socio-economic status -clerical</td>
+<td>1.43</td>
+<td>.2297</td>
+<td>Yes</td>
+<td>30.21</td>
+<td>6.29</td>
+<td>.0122</td>
+<td>Yes</td>
+<td>5.13</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Gender – male</td>
+<td>1.94</td>
+<td>.1637</td>
+<td>Yes</td>
+<td>3.20</td>
+<td>3.00</td>
+<td>.0831</td>
+<td>No</td>
+<td>0.51</td>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td><i>Time-variant:</i></td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr>
+<td>Father’s smoking</td>
+<td>0.00</td>
+<td>.9615</td>
+<td>Yes</td>
+<td>41.87</td>
+<td>0.12</td>
+<td>.7262</td>
+<td>Yes</td>
+<td>10.14</td>
+<td>0.27</td>
+<td>.6052</td>
+<td>Yes</td>
+<td>12.10</td>
+</tr>
+<tr>
+<td>Home-ownership</td>
+<td>1.24</td>
+<td>.2664</td>
+<td>Yes</td>
+<td>97.35</td>
+<td>4.03</td>
+<td>.0447</td>
+<td>Yes</td>
+<td>16.51</td>
+<td>0.24</td>
+<td>.6278</td>
+<td>Yes</td>
+<td>6.96</td>
+</tr>
+<tr>
+<td>Mother’s working hours</td>
+<td>5.64</td>
+<td>.0175</td>
+<td>Yes</td>
+<td>67.08</td>
+<td>10.81</td>
+<td>.0012</td>
+<td>Yes</td>
+<td>26.95</td>
+<td>0.25</td>
+<td>.6190</td>
+<td>Yes</td>
+<td>20.41</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Kleibergen-Paap rk LM test. Rejection based at the .05 level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Kleibergen-Paap rk Wald F test.</p></div></figure><figure id="tableA2-1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Exogeneity tests for predictors for the hybrid model.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>C statistic: x<sup>2</sup>(1)</th>
+<th>p</th>
+<th>Under-identification Test Rejected<sup><a href="#tfn32">a</a></sup></th>
+<th>rk statistic<sup><a href="#tfn33">b</a></sup></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Age</td>
+<td>0.80</td>
+<td>.3726</td>
+<td>Yes</td>
+<td>8.03</td>
+</tr>
+<tr>
+<td>Age squared</td>
+<td>3.19</td>
+<td>.0741</td>
+<td>No</td>
+<td>1.15</td>
+</tr>
+<tr>
+<td colspan="5"><i>Time-invariant:</i></td>
+</tr>
+<tr>
+<td>Father’s education – tertiary</td>
+<td>0.00</td>
+<td>.9863</td>
+<td>No</td>
+<td>1.60</td>
+</tr>
+<tr>
+<td>Father’s education – secondary</td>
+<td>0.37</td>
+<td>.5457</td>
+<td>Yes</td>
+<td>2.25</td>
+</tr>
+<tr>
+<td>Breast-feeding</td>
+<td>0.44</td>
+<td>.5063</td>
+<td>Yes</td>
+<td>7.08</td>
+</tr>
+<tr>
+<td>Mother’s education – tertiary</td>
+<td>4.76</td>
+<td>.0291</td>
+<td>Yes</td>
+<td>4.62</td>
+</tr>
+<tr>
+<td>Mother’s education – secondary</td>
+<td>4.12</td>
+<td>.0423</td>
+<td>Yes</td>
+<td>5.29</td>
+</tr>
+<tr>
+<td>Socio-economic status – professional</td>
+<td>3.45</td>
+<td>.0633</td>
+<td>Yes</td>
+<td>7.31</td>
+</tr>
+<tr>
+<td>Socio-economic status -clerical</td>
+<td>5.28</td>
+<td>.0216</td>
+<td>Yes</td>
+<td>4.20</td>
+</tr>
+<tr>
+<td>Gender – male</td>
+<td>2.48</td>
+<td>.1153</td>
+<td>No</td>
+<td>0.48</td>
+</tr>
+<tr>
+<td>Father’s smoking means</td>
+<td>1.50</td>
+<td>.2200</td>
+<td>Yes</td>
+<td>5.84</td>
+</tr>
+<tr>
+<td>Home-ownership means</td>
+<td>3.89</td>
+<td>.0486</td>
+<td>Yes</td>
+<td>14.23</td>
+</tr>
+<tr>
+<td>Mother’s working hours means</td>
+<td>9.16</td>
+<td>.0025</td>
+<td>Yes</td>
+<td>18.47</td>
+</tr>
+<tr>
+<td colspan="5"><i>Time-variant:</i></td>
+</tr>
+<tr>
+<td>Father’s smoking deviation score</td>
+<td>1.95</td>
+<td>.1627</td>
+<td>Yes</td>
+<td>6.36</td>
+</tr>
+<tr>
+<td>Home-ownership deviation score</td>
+<td>0.57</td>
+<td>.4524</td>
+<td>Yes</td>
+<td>3.34</td>
+</tr>
+<tr>
+<td>Mother’s working hours deviation score</td>
+<td>7.05</td>
+<td>.0079</td>
+<td>Yes</td>
+<td>11.05</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Kleibergen-Paap rk LM test. Rejection based at the .05 level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Kleibergen-Paap rk Wald F test.</p></div></figure><figure id="tableA3-2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Glossary of variable names and labels used in stata code.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable name</th>
+<th>Variable label</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>burt</td>
+<td>Burt reading score</td>
+</tr>
+<tr>
+<td>agecent</td>
+<td>Age centred</td>
+</tr>
+<tr>
+<td>agecentsq</td>
+<td>Age centred squared</td>
+</tr>
+<tr>
+<td>gender</td>
+<td>Gender</td>
+</tr>
+<tr>
+<td>meduc1</td>
+<td>Indicator variable for mother having tertiary education at the child’s birth</td>
+</tr>
+<tr>
+<td>meduc2</td>
+<td>Indicator variable for mother having secondary education at the child’s birth</td>
+</tr>
+<tr>
+<td>feduc1</td>
+<td>Indicator variable for father having tertiary education at the child’s birth</td>
+</tr>
+<tr>
+<td>feduc2</td>
+<td>Indicator variable for father having secondary education at the child’s birth</td>
+</tr>
+<tr>
+<td>ses1</td>
+<td>Indicator variable for family’s socio-economic status to be professional at the child’s birth to</td>
+</tr>
+<tr>
+<td>ses2</td>
+<td>Indicator variable for family’s socio-economic status to be clerical at the child’s birth to</td>
+</tr>
+<tr>
+<td>breast</td>
+<td>Duration of breast-feeding</td>
+</tr>
+<tr>
+<td>mhrswrk</td>
+<td>Average number of hours worked per week by the mother</td>
+</tr>
+<tr>
+<td>homeown</td>
+<td>Indicator variable for owning the home</td>
+</tr>
+<tr>
+<td>fsmoke</td>
+<td>Average number of cigarettes smoked per day by the father</td>
+</tr>
+<tr>
+<td>ga</td>
+<td>Gestational age</td>
+</tr>
+<tr>
+<td>single</td>
+<td>Indicator variable for child living in a single-parent family</td>
+</tr>
+<tr>
+<td>welfare</td>
+<td>Indicator variable for child’s family receiving a benefit</td>
+</tr>
+<tr>
+<td>fhrswrk</td>
+<td>Average number of hours worked per week by the father</td>
+</tr>
+<tr>
+<td>chpar</td>
+<td>Indicator variable for whether the child experienced a change in parents in the last year</td>
+</tr>
+<tr>
+<td>kids</td>
+<td>Number of children in the household</td>
+</tr>
+<tr>
+<td>chres</td>
+<td>Number of changes in residence over the last year</td>
+</tr>
+<tr>
+<td>pregalc</td>
+<td>Average number of alcoholic drinks consumed per week during pregnancy</td>
+</tr>
+<tr>
+<td>bw</td>
+<td>Birth weight</td>
+</tr>
+<tr>
+<td>single0</td>
+<td>Indicator variable for the child being born into a single-parent family</td>
+</tr>
+<tr>
+<td>accom</td>
+<td>Indicator variable for the child living in a detached house</td>
+</tr>
+<tr>
+<td>fage</td>
+<td>Father’s age at the child’s birth</td>
+</tr>
+<tr>
+<td>pregsmk</td>
+<td>Average number of cigarettes smoked per day during pregnancy</td>
+</tr>
+<tr>
+<td>overcrowd</td>
+<td>Indicator variable for the child living in over-crowded conditions</td>
+</tr>
+<tr>
+<td>mage</td>
+<td>Mother’s age at the child’s birth</td>
+</tr>
+<tr>
+<td>msmoke</td>
+<td>Average number of cigarettes smoked per day by the mother</td>
+</tr>
+<tr>
+<td>id</td>
+<td>Individual child id</td>
+</tr>
+</tbody>
+</table></div></figure></div></details></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/figures.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

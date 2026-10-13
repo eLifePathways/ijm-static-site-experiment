@@ -1,0 +1,23 @@
+TY  - JOUR
+TI  - Challenges and solutions in constructing a microsimulation model of the use and costs of medical services in Australia
+AU  - Lymer, Sharyn
+AU  - Brown, Laurie
+AU  - Harding, Ann
+AU  - Payne, Alicia
+VL  - 4
+IS  - 3
+PY  - 2011
+DA  - 2011/12/31
+SP  - 17-31
+C1  - IJM 2011;4(3):17-31
+DO  - 10.34196/ijm.00057
+UR  - https://doi.org/10.34196/ijm.00057
+AB  - This paper describes the development of a microsimulation model ‘HealthMod’ which simulates the use and costs of medical and related services by Australian families. Australia has a universal social insurance scheme known as ‘Medicare’ which provides all Australians with access to free or low-cost essential medical services. These services are provided primarily by general practitioners as well as specialist doctors but also include diagnostic and imaging services. Individuals may pay a direct out-of pocket contribution if fees charged for services are higher than the reimbursement schedule set by government. HealthMod is based on the Australian 2001 National Health Survey. This survey had a number of deficiencies in terms of modelling the national medical benefits scheme. The article outlines three major methodological steps that had to be taken in the model construction: the imputation of synthetic families, the imputation of short-term health conditions, and the annualisation of doctor visits and costs. Some preliminary results on the use of doctor services subsidised through Australia’s Medicare are presented.
+KW  - economic microsimulation modelling
+KW  - medical services
+KW  - use and costs
+KW  - Australia
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

@@ -1,0 +1,16 @@
+TY  - JOUR
+TI  - Statistical Inference in Micro-simulation Models: Incorporating External Information
+AU  - Klevmarken, Anders
+VL  - 15
+IS  - 1
+PY  - 2022
+DA  - 2022/04/30
+SP  - 111-120
+C1  - IJM 2022;15(1):111-120
+DO  - 10.34196/ijm.00255
+UR  - https://doi.org/10.34196/ijm.00255
+AB  - In practical applications of Micro-Simulation Models (MSMs), very little is usually known about the properties of the simulated values. This paper argues that we need to apply the same rigorous standards for inference in micro-simulation work as in scientific work generally. If not, then MSMs will loose in credibility. Differences between inference in static and dynamic models are noted and then the paper focuses on the estimation of behavioral parameters. There are four themes: calibration viewed as estimation subject to external constraints, piece wise versus system-wide estimation, simulation-based estimation and validation. © 2002 IMACS. Published by Elsevier Science
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

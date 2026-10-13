@@ -1,0 +1,854 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Validating risk factor and chronic disease projections in the Future Adult Model | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00225"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00225" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/health" data-astro-cid-ak4gb66a>Health</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Dec 31, 2020</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Validating risk factor and chronic disease projections in the Future Adult Model</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Bryan Tysinger</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>University of Southern California, Los Angeles, California</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/13-3/volume-13-3-winter-2020" data-astro-cid-ak4gb66a>Volume 13(3) Winter 2020</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> B. Tysinger; 2020; <span data-astro-cid-ak4gb66a>Validating risk factor and chronic disease projections in the Future Adult Model</span>; International Journal of Microsimulation; 13(3); 54–69. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00225" data-astro-cid-ak4gb66a>10.34196/ijm.00225</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>Over the past several decades, the United States has experienced a dramatic rise in obesity rates, due to both a rightward shift of the body mass index (BMI) distribution and a pushing out of the right tail. This shift has led to increases in obesity-related chronic diseases, particularly diabetes, as well as impacts on longevity, medical expenditures, and quality of life. Microsimulation modeling is a potentially useful tool for assessing the impacts of policies targeting this epidemic, but reliably assessing policies requires a model that performs well in projecting health risk factors and disease outcomes. This research assesses the out-of-sample and external validity of a microsimulation model of the U.S. adult population.</p><p data-astro-cid-ak4gb66a>There are two research questions addressed in this analysis: 1. How well does the Future Adult Model (FAM) perform in projecting BMI and diabetes over a ten-year horizon compared to the host data? 2. How well do the microsimulation model’s predictions compare to external surveillance data of BMI and diabetes?</p><p data-astro-cid-ak4gb66a>FAM is an economic-demographic microsimulation model of the United States population over the age of 25. For this validation exercise, all Markov transition models are estimated using the 1999-2007 waves of the PSID. The simulation is then run from 2007-2017. For internal consistency, simulated outcomes in 2017 are compared to actual PSID outcomes. Population means and selected quantiles are compared between the simulation and the host data. Receiver operating characteristic (ROC) curves are used to assess model performance for binary outcomes using the area under the curve (AUC) statistic. For external validation, simulated outcomes for 2007-2017 are compared to the Behavioral Risk Factors Surveillance System (BRFSS), a large, nationally-representative survey of the United States population.</p><p data-astro-cid-ak4gb66a>After ten years of simulation, FAM BMI projections for men and women compare well to both PSID and BRFSS data throughout much of the distribution. The 99th percentile differs significantly, with FAM underestimating the right tail of the BMI distribution. Individual assignment of obesity and severe obesity performs well using AUC as a criteria. Initial differences in the diabetes prevalence between PSID and BRFSS data are preserved in FAM projections. FAM is initially 1.9 percentage points below BRFSS for women 25 and older and is 1.6 percentage points below BRFSS for women 35 and older after ten years of simulation. Men 25 and older are 1.2 percentage points lower initially and are 0.8 percentage points lower after ten years of simulation. Individual assignment of diabetes incidence does not perform as well as clinical models with richer predictors. Researchers using FAM should be cognizant of these strengths and limitations of the microsimulation model.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00225/ijm-00225.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00225.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00225.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00225" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00225/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. Data and methods</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. Out-of-sample validity</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. External validity</a></li><li data-astro-cid-twdwaz5s><a href="#s5" data-astro-cid-twdwaz5s>5. Discussion</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Over the past several decades obesity rates (a body mass index (BMI) over 30) in the United States have increased dramatically, from 22.9% in 1988-1994 to 39.6% in 2015-2016 (<a href="#bib3">Fryar et al., 2019</a>). During the same time period, the severely obese prevalence (BMI over 40) increased from 2.8% to 7.7%. Comorbidities associated with obesity, such as diabetes, have also increased (<a href="#bib6">Menke et al., 2015</a>). These increases impact both individuals and society through many pathways, including the direct health impacts (chronic conditions, functional limitations, and mortality), increased medical expenditures and utilization, other economic impacts (changes in employment, disability), and declines in subjective well-being.</p><p data-astro-cid-qsyhzaho>Many strategies have been suggested to tackle this challenge, including lifestyle interventions that target diet and exercise, medical procedures like gastric bypass surgery, pharmaceuticals that lead to weight loss, taxes on particular foods, menu labeling to improve food choices, and more. These strategies, in turn, are often implemented on a small scale or within a randomized control trial. To translate the effects to a larger scale analysts increasingly turn to microsimulation models, as these models can account for heterogeneous individuals and treatment effects. To do this credibly requires a microsimulation model that performs well, but also one where the limitations are clearly conveyed. With respect to body mass index, a model that performs well needs to project not just the mean BMI well, but also capture the distribution, as policies often target those in the right tail, such as the obese or severely obese. This is not an uncommon requirement for microsimulation models, as the distribution of continuous variables is often relevant to policy questions. Though often assumed to be ‘‘black boxes’’ or ‘‘crystal balls’’ for projecting the future, validation of past-performance and transparency about limitations can avoid overselling the capabilities of these models while better informing policy decisions.</p><p data-astro-cid-qsyhzaho>There are two purposes for this paper. The first is to describe an approach to validation used with the Future Adult Model (FAM), a microsimulation model of the United States population over age 25. This approach is potentially applicable to other microsimulation models with similar data availability. The second goal is the validation itself, highlighting both where the model performs well and areas where further research can improve FAM’s projections.</p><p data-astro-cid-qsyhzaho>Section 2 briefly describes the model and its source data. A few approaches to out-of-sample validation are presented in Section 3. External validation is described in Section 4. Section 5 concludes.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. Data and methods</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>FAM is described in a detailed technical appendix (<a href="https://healthpolicy.box.com/v/FAM-appendix-2018">https://healthpolicy.box.com/v/FAM-appendix-2018</a>), so only the core functions of the model are summarized here. The host data for the simulation is the Panel Study of Income Dynamics (PSID), a biennial panel survey which collects information on a broad set of health and economic outcomes for approximately 15,000 respondents per year(<a href="#bib5">McGonagle et al., 2012</a>). While the PSID is designed to be nationally representative, it does face the challenges all longitudinal surveys do, such as imperfect response rate and sample attrition. We typically use PSID data from 1999-2017 as the basis for FAM. These data are used to estimate transition functions and as the initial data for the simulation. The first-order Markov transition models are the engine used in ‘‘aging’’ the simulants. The transitions are a mixture of continuous, binary, and categorical outcomes, with a time-scale that mimics the two-year structure of the data. FAM simulates dozens of variables for individuals, including health risk factors, chronic conditions, functional limitations, mortality, life events, economic outcomes, medical cost and use, and government transfers. The causal pathway of FAM is that health risk factors (such as body-mass index and smoking) impact health outcomes (such as diabetes incidence or the number of functional limitations), which in turn impact a set of economic outcomes (such as medical expenditures, retirement).</p><p data-astro-cid-qsyhzaho>BMI and diabetes are two critical outcomes, but also enter as predictors for many other models. These pathways are summarized in <a href="#table1">Table 1</a>. Since both BMI and diabetes impact so many things, it is critical to understand the quality of projections as errors will propagate. The distribution of BMI matters for these outcomes, as high BMI increases risk of chronic illness, so ideally the simulation will capture the distribution of BMI, not just the mean.</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Variables directly impacted by BMI and diabetes in FAM.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Domain</th>
+<th align="left">Category</th>
+<th align="left">Measure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Health</td>
+<td align="left">Chronic conditions</td>
+<td align="left">Cancer<sup>1</sup>, diabetes<sup>1</sup>, heart disease, hypertension, lung disease<sup>1</sup>, stroke</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Functional limitations</td>
+<td align="left">Activities of daily living, instrumental activities of daily living</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Mental distress</td>
+<td align="left">Kessler 6</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Mortality</td>
+<td align="left">Death<sup>2</sup>
+</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Risk factors</td>
+<td align="left">BMI<sup>1</sup>, start smoking, stop smoking</td>
+</tr>
+<tr>
+<td align="left">Economic</td>
+<td align="left">Employment status</td>
+<td align="left">Full-/part-time, labor force participation</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Health insurance</td>
+<td align="left">Health insurance type<sup>2</sup>
+</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Income and assets</td>
+<td align="left">Capital income<sup>2</sup>, earnings<sup>2</sup>, wealth</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Public program participation</td>
+<td align="left">OASI<sup>2</sup>, DI<sup>2</sup>
+</td>
+</tr>
+<tr>
+<td align="left">Medical cost and use</td>
+<td align="left">Individual</td>
+<td align="left">Drug $<sup>2</sup>, out of pocket $<sup>2</sup>
+</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Medicaid</td>
+<td align="left">$<sup>2</sup>
+</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Medicare</td>
+<td align="left">Total $<sup>2</sup>, Part A $<sup>2</sup>, Part B $<sup>2</sup>
+</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Total expenditures</td>
+<td align="left">$<sup>2</sup>
+</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Utilization</td>
+<td align="left">Doctors visits<sup>2</sup>, hospital encounters<sup>2</sup>, hospital nights<sup>2</sup>
+</td>
+</tr>
+<tr>
+<td align="left">Subjective well-being</td>
+<td align="left"/>
+<td align="left">Life satisfaction<sup>2</sup>, quality-adjusted life years<sup>2</sup>, self-reported health<sup>2</sup>
+</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>1 BMI model only</p><p class="table-footnote" data-astro-cid-dzaleqsp>2 Diabetes model only</p></div></figure><p data-astro-cid-qsyhzaho>Note that both of these measures are reported by survey respondents, not based on clinical measurements or administrative records. Self-report data are known to suffer from biases in reporting. Individuals often under-report weight and over-report height, leading to BMI values that are too low compared to their measured values. Similar challenges face measures of chronic conditions, though chronic conditions are more challenging to assess in an interview setting. Administrative medical claims are not a panacea, as they have their own challenges (<a href="#bib2">Clair et al., 2017</a>) . With that said, the measures used in FAM are commonly used in surveys such as PSID, the Behavioral Risk Factor Surveillance System (BRFSS), the Medical Expenditure Panel Survey (MEPS), the Medicare Current Beneficiary Survey (MCBS), the National Health Interview Survey, and others. Though they do not provide the true population prevalence of chronic conditions or BMI distribution, they are still useful in many ways. Within FAM, medical expenditures are estimated using MEPS and MCBS, which then allows the translation of these self-reported measures into predicted medical expenditures.</p><p data-astro-cid-qsyhzaho>FAM estimates the two-year transition of BMI. BMI is defined as an individual’s mass divided by the square of their height. Clinically, it is often used as a predictor of subsequent clinical outcomes, such as risk of diabetes or mortality. The transition model for BMI is estimated in natural logs, allowing the interpretation as a percent change in BMI. A Box-Cox analysis of BMI transitions in the PSID data suggests a  <math id="inf1"> <mi>λ</mi> </math>  parameter between  <math id="inf2"> <mn>0</mn> </math>  and  <math id="inf3"> <mrow> <mo>-</mo> <mn>0.5</mn> </mrow> </math> , depending on specification. The transition model is of the form:</p><div class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(1)</span><math>
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<mi>ln</mi>
+<mo>⁡</mo>
+<mo stretchy="false">(</mo>
+<mi>B</mi>
+<mi>M</mi>
+<msub>
+<mi>I</mi>
+<mrow>
+<mi>i</mi>
+<mo>,</mo>
+<mi>t</mi>
+<mo>+</mo>
+<mn>1</mn>
+</mrow>
+</msub>
+<mo stretchy="false">)</mo>
+<mo>=</mo>
+<mi>α</mi>
+<mo>⋅</mo>
+<mi>ln</mi>
+<mo>⁡</mo>
+<mo stretchy="false">(</mo>
+<mi>B</mi>
+<mi>M</mi>
+<msub>
+<mi>I</mi>
+<mrow>
+<mi>i</mi>
+<mo>,</mo>
+<mi>t</mi>
+</mrow>
+</msub>
+<mo stretchy="false">)</mo>
+<mo>+</mo>
+<msub>
+<mi>X</mi>
+<mrow>
+<mi>i</mi>
+<mo>,</mo>
+<mi>t</mi>
+</mrow>
+</msub>
+<mo>⋅</mo>
+<mi>β</mi>
+<mo>+</mo>
+<msub>
+<mi>Y</mi>
+<mrow>
+<mi>i</mi>
+</mrow>
+</msub>
+<mo>⋅</mo>
+<mi>γ</mi>
+<mo>+</mo>
+<msub>
+<mi>ϵ</mi>
+<mrow>
+<mi>i</mi>
+<mo>,</mo>
+<mi>t</mi>
+<mo>+</mo>
+<mn>1</mn>
+</mrow>
+</msub>
+</mrow>
+</mstyle>
+</math></div><p data-astro-cid-qsyhzaho>The transition model estimates for BMI, estimated separately for men and women, are shown in <a href="#table2">Table 2</a>. These are reduced-form models that include both time-varying (age, log BMI with several knots, marital status) and static (race/ethnicity, education, characteristics from early age) predictors. Time-varying predictors enter as two-year lagged variables. One can think of the interpretation of this model as a percent change in BMI over a two-year period. Within the simulation, a random draw from the root-mean square error term of this model adds a stochastic element. BMI appears in other transitions either in logs or in clinically-relevant BMI categories (under 25, 25 to 30, 30 to 35, 35 to 40, or over 40).</p><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Two-year BMI transition estimates used in FAM, 1999-2007 PSID.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">(1)Log(BMI)-Females</th>
+<th align="left">(2)Log(BMI)-Males</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Non-Hispanic Black</td>
+<td align="left">0.00838***</td>
+<td align="left">0.00168</td>
+</tr>
+<tr>
+<td align="left">Hispanic</td>
+<td align="left">0.00403</td>
+<td align="left">0.000181</td>
+</tr>
+<tr>
+<td align="left">Less than HS</td>
+<td align="left">0.00421</td>
+<td align="left">-0.000211</td>
+</tr>
+<tr>
+<td align="left">Bachelors</td>
+<td align="left">-0.00887***</td>
+<td align="left">-0.00585***</td>
+</tr>
+<tr>
+<td align="left">Masters or higher</td>
+<td align="left">-0.00741*</td>
+<td align="left">-0.00460</td>
+</tr>
+<tr>
+<td align="left">Non-Hispanic Black
+<math id="inf4">
+<mo>×</mo>
+</math>
+ Less than HS</td>
+<td align="left">-0.00920*</td>
+<td align="left">-0.00877*</td>
+</tr>
+<tr>
+<td align="left">Non-Hispanic Black
+<math id="inf5">
+<mo>×</mo>
+</math>
+ Bachelors</td>
+<td align="left">0.0114*</td>
+<td align="left">0.00670</td>
+</tr>
+<tr>
+<td align="left">Non-Hispanic Black
+<math id="inf6">
+<mo>×</mo>
+</math>
+ Masters or higher</td>
+<td align="left">-0.00390</td>
+<td align="left">0.0210</td>
+</tr>
+<tr>
+<td align="left">Hispanic
+<math id="inf7">
+<mo>×</mo>
+</math>
+ Less than HS</td>
+<td align="left">-0.00298</td>
+<td align="left">-0.00431</td>
+</tr>
+<tr>
+<td align="left">Hispanic Bachelors</td>
+<td align="left">0.00193</td>
+<td align="left">-0.000211</td>
+</tr>
+<tr>
+<td align="left">Hispanic
+<math id="inf8">
+<mo>×</mo>
+</math>
+ Masters or higher</td>
+<td align="left">-0.00810</td>
+<td align="left">-0.00361</td>
+</tr>
+<tr>
+<td align="left">Poor child SES</td>
+<td align="left">0.00103</td>
+<td align="left">0.00121</td>
+</tr>
+<tr>
+<td align="left">Well-off child SES</td>
+<td align="left">-0.00154</td>
+<td align="left">-0.00146</td>
+</tr>
+<tr>
+<td align="left">Fair child health</td>
+<td align="left">0.00489</td>
+<td align="left">-0.000600</td>
+</tr>
+<tr>
+<td align="left">Good child health</td>
+<td align="left">0.000692</td>
+<td align="left">0.000749</td>
+</tr>
+<tr>
+<td align="left">Very good child health</td>
+<td align="left">0.00254</td>
+<td align="left">-0.000955</td>
+</tr>
+<tr>
+<td align="left">Excellent child health</td>
+<td align="left">0.000864</td>
+<td align="left">-0.00229</td>
+</tr>
+<tr>
+<td align="left">Age spline, less than 35</td>
+<td align="left">-0.000382</td>
+<td align="left">-0.0000346</td>
+</tr>
+<tr>
+<td align="left">Age spline, 35 to 44</td>
+<td align="left">-0.000155</td>
+<td align="left">-0.000609*</td>
+</tr>
+<tr>
+<td align="left">Age spline, 45 to 54</td>
+<td align="left">0.0000296</td>
+<td align="left">-0.000446</td>
+</tr>
+<tr>
+<td align="left">Age spline, 55 to 64</td>
+<td align="left">-0.000515</td>
+<td align="left">0.000165</td>
+</tr>
+<tr>
+<td align="left">Age spline, 65 to 74</td>
+<td align="left">-0.00130**</td>
+<td align="left">-0.00147***</td>
+</tr>
+<tr>
+<td align="left">Age spline, more than 75</td>
+<td align="left">-0.00202***</td>
+<td align="left">-0.00117*</td>
+</tr>
+<tr>
+<td align="left">Lag of Log(BMI) spline, BMI less than 20</td>
+<td align="left">0.769***</td>
+<td align="left">0.327***</td>
+</tr>
+<tr>
+<td align="left">Lag of Log(BMI) spline, BMI 20 to 25</td>
+<td align="left">0.945***</td>
+<td align="left">0.929***</td>
+</tr>
+<tr>
+<td align="left">Lag of Log(BMI) spline, BMI 25 to 30</td>
+<td align="left">0.898***</td>
+<td align="left">0.905***</td>
+</tr>
+<tr>
+<td align="left">Lag of Log(BMI) spline, BMI 30 to 35</td>
+<td align="left">0.987***</td>
+<td align="left">0.945***</td>
+</tr>
+<tr>
+<td align="left">Lag of Log(BMI) spline, BMI 35 to 40</td>
+<td align="left">0.805***</td>
+<td align="left">0.872***</td>
+</tr>
+<tr>
+<td align="left">Lag of Log(BMI) spline, BMI over 40</td>
+<td align="left">0.895***</td>
+<td align="left">0.830***</td>
+</tr>
+<tr>
+<td align="left">Cohabiting</td>
+<td align="left">-0.00124</td>
+<td align="left">0.00256</td>
+</tr>
+<tr>
+<td align="left">Married</td>
+<td align="left">-0.00480**</td>
+<td align="left">0.000316</td>
+</tr>
+<tr>
+<td align="left">Constant</td>
+<td align="left">0.738***</td>
+<td align="left">2.057***</td>
+</tr>
+<tr>
+<td align="left">Observations</td>
+<td align="left">  20942</td>
+<td align="left">  16454</td>
+</tr>
+<tr>
+<td align="left">R<sup>2</sup>
+</td>
+<td align="left">0.836</td>
+<td align="left">0.810</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>p &lt; 0:05, *p &lt; 0:01, **p &lt; 0:001</p></div></figure><p data-astro-cid-qsyhzaho>FAM’s diabetes model is a probit model of two-year diabetes incidence. As an incidence model, only individuals who did not have diabetes in the previous period are included in the estimation.</p><div class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(2)</span><math>
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<mi>P</mi>
+<mi>r</mi>
+<mo stretchy="false">(</mo>
+<mi>D</mi>
+<mi>i</mi>
+<mi>a</mi>
+<mi>b</mi>
+<mi>e</mi>
+<mi>t</mi>
+<mi>e</mi>
+<msub>
+<mi>s</mi>
+<mrow>
+<mi>t</mi>
+<mo>+</mo>
+<mn>1</mn>
+</mrow>
+</msub>
+<mo>=</mo>
+<mn>1</mn>
+<mrow>
+<mo stretchy="false">|</mo>
+</mrow>
+<mi>X</mi>
+<mo stretchy="false">)</mo>
+<mo>=</mo>
+<mi>ϕ</mi>
+<mo stretchy="false">(</mo>
+<msub>
+<mi>X</mi>
+<mrow>
+<mi>i</mi>
+<mo>,</mo>
+<mi>t</mi>
+</mrow>
+</msub>
+<mo>⋅</mo>
+<mi>β</mi>
+<mo>+</mo>
+<msub>
+<mi>Y</mi>
+<mrow>
+<mi>i</mi>
+</mrow>
+</msub>
+<mo>⋅</mo>
+<mi>γ</mi>
+<mo>+</mo>
+<msub>
+<mi>ϵ</mi>
+<mrow>
+<mi>i</mi>
+<mo>,</mo>
+<mi>t</mi>
+<mo>+</mo>
+<mn>1</mn>
+</mrow>
+</msub>
+<mo stretchy="false">)</mo>
+<mo>,</mo>
+<mrow>
+<mtext mathvariant="monospace">if</mtext>
+</mrow>
+<mspace width="thinmathspace"/>
+<mi>D</mi>
+<mi>i</mi>
+<mi>a</mi>
+<mi>b</mi>
+<mi>e</mi>
+<mi>t</mi>
+<mi>e</mi>
+<msub>
+<mi>s</mi>
+<mrow>
+<mi>t</mi>
+</mrow>
+</msub>
+<mo>=</mo>
+<mn>0</mn>
+</mrow>
+</mstyle>
+</math></div><p data-astro-cid-qsyhzaho>Here, we adjust for time-varying covariates (age, smoking status, exercise, and the log of the previous BMI in splines with several knots) and static characteristics (race/ethnicity, education, gender, childhood SES, childhood health). Marginal effects of this model are shown in <a href="#table3">Table 3</a>. Consistent with the wording of the question in the PSID (‘‘Has a doctor or health professional ever told you that you had diabetes or high blood sugar?’’), diabetes is treated as an absorbing state variable for the remainder of a simulant’s life.</p><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Two-year diabetes incidence estimates used in FAM, 1999-2007 PSID.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">(1)Diabetes incidence (marginal effects)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Non-Hispanic Black</td>
+<td align="left">0.00167</td>
+</tr>
+<tr>
+<td align="left">Hispanic</td>
+<td align="left">0.00505</td>
+</tr>
+<tr>
+<td align="left">Less than HS</td>
+<td align="left">0.00331</td>
+</tr>
+<tr>
+<td align="left">Bachelors</td>
+<td align="left">-0.000224</td>
+</tr>
+<tr>
+<td align="left">Masters or higher</td>
+<td align="left">-0.00235</td>
+</tr>
+<tr>
+<td align="left">Male</td>
+<td align="left">0.00268*</td>
+</tr>
+<tr>
+<td align="left">Poor child SES</td>
+<td align="left">0.00322*</td>
+</tr>
+<tr>
+<td align="left">Well-off child SES</td>
+<td align="left">0.00150</td>
+</tr>
+<tr>
+<td align="left">Fair child health</td>
+<td align="left">-0.000465</td>
+</tr>
+<tr>
+<td align="left">Good child health</td>
+<td align="left">-0.00240</td>
+</tr>
+<tr>
+<td align="left">Very good child health</td>
+<td align="left">0.00184</td>
+</tr>
+<tr>
+<td align="left">Excellent child health</td>
+<td align="left">0.00175</td>
+</tr>
+<tr>
+<td align="left">Age spline, less than 35</td>
+<td align="left">0.0000936</td>
+</tr>
+<tr>
+<td align="left">Age spline, 35 to 44</td>
+<td align="left">0.00117***</td>
+</tr>
+<tr>
+<td align="left">Age spline, 45 to 54</td>
+<td align="left">0.000778**</td>
+</tr>
+<tr>
+<td align="left">Age spline, 55 to 64</td>
+<td align="left">0.000295</td>
+</tr>
+<tr>
+<td align="left">Age spline, 65 to 74</td>
+<td align="left">0.000269</td>
+</tr>
+<tr>
+<td align="left">Age spline, more than 75</td>
+<td align="left">-0.000564</td>
+</tr>
+<tr>
+<td align="left">Lag of former smoker</td>
+<td align="left">0.00141</td>
+</tr>
+<tr>
+<td align="left">Lag of current smoker</td>
+<td align="left">0.00550**</td>
+</tr>
+<tr>
+<td align="left">Lag of any exercise</td>
+<td align="left">-0.00394*</td>
+</tr>
+<tr>
+<td align="left">Lag of Log(BMI) spline, BMI less than 25</td>
+<td align="left">0.0485**</td>
+</tr>
+<tr>
+<td align="left">Lag of Log(BMI) spline, BMI 25 to 30</td>
+<td align="left">0.0733***</td>
+</tr>
+<tr>
+<td align="left">Lag of Log(BMI) spline, BMI 30 to 35</td>
+<td align="left">0.0382*</td>
+</tr>
+<tr>
+<td align="left">Lag of Log(BMI) spline, BMI 35 to 40</td>
+<td align="left">0.0666**</td>
+</tr>
+<tr>
+<td align="left">Lag of Log(BMI) spline, BMI over 40</td>
+<td align="left">-0.0235</td>
+</tr>
+<tr>
+<td align="left">Observations</td>
+<td align="left">  35264</td>
+</tr>
+<tr>
+<td align="left">Pseudo R<sup>2</sup>
+</td>
+<td align="left">0.117</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>p &lt; 0:05, *p &lt; 0:01, **p &lt; 0:001</p></div></figure><p data-astro-cid-qsyhzaho>In typical FAM use, all recent waves of PSID data are pooled for estimation. However, for the analyses presented here we restrict the data used for estimation to PSID respondents from 1999 to 2007. Using these transition models, we simulate the 2007 PSID sample through 2017. The 2017 projections are then compared to the 2017 PSID to test consistency with the host data and to an external data source, the 2017 Behavioral Risk Factor Surveillance System (BRFSS), for external validity. Uncertainty in the transition models is handled via non-parametric bootstrapping. Fifty sets of transition models are estimated on resampled PSID data. Each set of transition models is then simulated 100 times. Confidence intervals reflect both transition and Monte Carlo uncertainty.</p></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. Out-of-sample validity</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>We explore FAM’s out-of-sample validity in two ways. The first focuses on population-level statistics for the two outcomes of interest. The second uses Receiver Operating Characteristic (ROC) curves to assess how well FAM classifies individuals compared to their actual outcomes on a 10-year horizon.</p><section id="s3-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.1. Aggregate projections</h3><p data-astro-cid-qsyhzaho>Beginning with the 2007 cohort of 25 and older PSID respondents, we simulate through 2017. Selected projections for the 2017 cohort, now 35 and older, are presented in <a href="#table4">Table 4</a>.</p><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Out-of-sample validation - 2017 FAM vs. 2017 PSID.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left" colspan="2">Females</th>
+<th align="left" colspan="2">Males</th>
+</tr>
+<tr>
+<th align="left"/>
+<th align="left">FAM (2017)</th>
+<th align="left">PSID (2017)</th>
+<th align="left">FAM (2017)</th>
+<th align="left">PSID (2017)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">BMI</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">1st pctl</td>
+<td align="left">16.6 [ 16.2, 16.9]</td>
+<td align="left">17.2 [ 16.7, 17.8]</td>
+<td align="left">19.2 [ 19.0, 19.5]</td>
+<td align="left">19.0 [ 18.5, 19.5]</td>
+</tr>
+<tr>
+<td align="left">5th pctl</td>
+<td align="left">18.7 [ 18.5, 19.0]</td>
+<td align="left">19.5 [ 19.2, 19.8]</td>
+<td align="left">21.2 [ 21.0, 21.4]</td>
+<td align="left">21.6 [ 21.3, 21.9]</td>
+</tr>
+<tr>
+<td align="left">10th pctl</td>
+<td align="left">20.1 [ 20.0, 20.3]</td>
+<td align="left">20.5 [ 20.4, 20.7]</td>
+<td align="left">22.5 [ 22.2, 22.7]</td>
+<td align="left">22.8 [ 22.5, 23.0]</td>
+</tr>
+<tr>
+<td align="left">25th pctl</td>
+<td align="left">22.9 [ 22.8, 23.0]</td>
+<td align="left">22.8 [ 22.5, 23.1]</td>
+<td align="left">24.9 [ 24.7, 25.0]</td>
+<td align="left">24.9 [ 24.7, 25.1]</td>
+</tr>
+<tr>
+<td align="left">Mean</td>
+<td align="left">27.7 [ 27.6, 27.9]</td>
+<td align="left">27.6 [ 27.4, 27.9]</td>
+<td align="left">28.5 [ 28.3, 28.7]</td>
+<td align="left">28.3 [ 28.1, 28.6]</td>
+</tr>
+<tr>
+<td align="left">75th pctl</td>
+<td align="left">31.5 [ 31.3, 31.8]</td>
+<td align="left">30.9 [ 30.5, 31.3]</td>
+<td align="left">31.5 [ 31.2, 31.8]</td>
+<td align="left">30.9 [ 30.5, 31.3]</td>
+</tr>
+<tr>
+<td align="left">90th pctl</td>
+<td align="left">36.7 [ 36.3, 37.0]</td>
+<td align="left">36.6 [ 35.9, 37.2]</td>
+<td align="left">35.3 [ 34.8, 35.7]</td>
+<td align="left">35.1 [ 34.6, 35.6]</td>
+</tr>
+<tr>
+<td align="left">95th pctl</td>
+<td align="left">40.0 [ 39.4, 40.5]</td>
+<td align="left">40.8 [ 40.1, 41.4]</td>
+<td align="left">37.7 [ 37.1, 38.2]</td>
+<td align="left">37.8 [ 37.3, 38.4]</td>
+</tr>
+<tr>
+<td align="left">99th pctl</td>
+<td align="left">46.9 [ 45.5, 48.2]</td>
+<td align="left">50.5 [ 48.1, 52.9]</td>
+<td align="left">42.4 [ 41.3, 43.6]</td>
+<td align="left">46.4 [ 44.6, 48.1]</td>
+</tr>
+<tr>
+<td align="left">Diabetes prevalence</td>
+<td align="left">12.4 [ 11.5, 13.3]</td>
+<td align="left">14.6 [ 13.2, 15.9]</td>
+<td align="left">14.9 [ 13.6, 16.3]</td>
+<td align="left">16.7 [ 15.2, 18.2]</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Notes: Confidence intervals for FAM reflect 50 sets of bootstrapped transition models, each simulated 100 times. Confidence intervals for PSID reflect the complex survey design.</p></div></figure><p data-astro-cid-qsyhzaho>For women, mean BMI is approximately the same between FAM projections (27.7) and PSID respondents (27.6) for 2017. For men, projected mean BMI is 28.5 in FAM, 28.3 for PSID. Most percentiles also compare well, with overlapping confidence intervals. In the right tail, such as at the 95th and 99th percentile, FAM and the PSID begin to deviate. At the 99th percentile, the FAM projection is 3.6 BMI points lower than the PSID value. For men, we see a similar story, though the discrepancy is around 4.2 BMI points at the 99th percentile. This suggests that the 1999-2007 data used for estimating the transition models did not accurately capture the continual expansion of the very high BMI population in the US.</p><p data-astro-cid-qsyhzaho>Diabetes prevalence is lower in FAM than the PSID for both women and men. FAM projects 12.4% prevalence for women 35 and older, compared to the 14.6% observed in the PSID. Similarly, FAM projects 14.9% diabetes prevalence for men compared to 16.7% in the 2017 PSID. This is possibly a consequence of not projecting the right-tail of the BMI distribution. Alternatively, it could be changing diagnostic practices in the US between 2007 and 2017. A temporal time-trend would not be captured with FAM’s approach to transition model estimation.</p></section><section id="s3-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.2. Individual assignment</h3><p data-astro-cid-qsyhzaho>In order to assess FAM’s performance in classifying individuals, we use Receiver Operating Characteristic curves, as proposed in a validation of a cardiovascular disease microsimulation model (<a href="#bib7">Pandya et al., 2017</a>). In this analysis, each 2007 PSID respondent is simulated 5,000 times (50 sets of bootstrapped transition models, each with 100 Monte Carlo replications). For the outcome of interest, the fraction of simulations that resulted in that outcome is calculated. All simulants are ordered, smallest to largest, by these fractions. At each level of the fraction, the ROC analysis compares to the observed outcome for the individuals in the PSID survey data, assessing the true positive rate and false positive rate. The ROC analysis then shows the trade-off between ‘‘true positives’’ and ‘‘false negatives’’ for different thresholds of predicted prevalence after ten years. We assess four outcomes: having a BMI under 25, having a BMI over 30, having a BMI over 40, and 10-year incident diabetes for those who did not have diabetes in 2007. A performance parameter is the ‘‘area under the curve’’ (AUC in the figures). Interpretation of the value of the AUC statistic varies by context. An AUC of 1.0 is perfect classification, 0.5 is no better than random chance.</p><p data-astro-cid-qsyhzaho>For females, the AUC for predicting a BMI under 25 is 0.91 (<a href="#fig1">Figure 1</a>), while the AUC for predicting a BMI over 30 is 0.92 (<a href="#fig2">Figure 2</a>). For predicting a BMI over 40, the AUC is 0.95 (<a href="#fig3">Figure 3</a>). These perform well, likely driven by the persistence of an individual’s BMI over a decade. For males, the AUC for the BMI under 25 classification is 0.90 (<a href="#fig4">Figure 4</a>, the BMI over 30 classification AUC is 0.92 (<a href="#fig5">Figure 5</a>), and the AUC is 0.94 for the over 40 classification test (<a href="#fig6">Figure 6</a>).</p><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00225-fig001.BUBp_Jm4_ZYpVaj.webp" class="figure-lightbox-trigger" data-pswp-width="1621" data-pswp-height="1126" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00225-fig001.BUBp_Jm4_ZYpVaj.webp" alt width="1621" height="1126" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Receiver Operating Characteristic for BMI &lt;= 25 - Females</span></figcaption></figure><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00225-fig002.Bsaq0gSi_25XPR9.webp" class="figure-lightbox-trigger" data-pswp-width="1621" data-pswp-height="1128" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00225-fig002.Bsaq0gSi_25XPR9.webp" alt width="1621" height="1128" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Receiver Operating Characteristic for BMI &gt; 30 - Females</span></figcaption></figure><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00225-fig003.YkzpvU2j_Z1PVcNv.webp" class="figure-lightbox-trigger" data-pswp-width="1621" data-pswp-height="1127" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00225-fig003.YkzpvU2j_Z1PVcNv.webp" alt width="1621" height="1127" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Receiver Operating Characteristic for BMI &gt; 40 - Females</span></figcaption></figure><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00225-fig004.DuiRP49G_ZQwEUB.webp" class="figure-lightbox-trigger" data-pswp-width="1621" data-pswp-height="1127" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00225-fig004.DuiRP49G_ZQwEUB.webp" alt width="1621" height="1127" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Receiver Operating Characteristic for BMI &lt;= 25 - Males</span></figcaption></figure><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00225-fig005.B4agSy2z_Zs8tFO.webp" class="figure-lightbox-trigger" data-pswp-width="1621" data-pswp-height="1127" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00225-fig005.B4agSy2z_Zs8tFO.webp" alt width="1621" height="1127" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> Receiver Operating Characteristic for BMI &gt; 30 - Males</span></figcaption></figure><figure id="fig6" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00225-fig006.CHg7cq_g_3pcKi.webp" class="figure-lightbox-trigger" data-pswp-width="1621" data-pswp-height="1128" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00225-fig006.CHg7cq_g_3pcKi.webp" alt width="1621" height="1128" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 6.</strong><span data-astro-cid-dzaleqsp> Receiver Operating Characteristic for BMI &gt; 40 - Males</span></figcaption></figure><p data-astro-cid-qsyhzaho>Predicting ten-year incidence of diabetes does not perform as well as predicting obesity or extreme obesity. The AUC for females is 0.71 (<a href="#fig7">Figure 7</a>) and the AUC for males is 0.73 (<a href="#fig8">Figure 8</a>). In addition to giving a sense of FAM’s classification ability, this validation method is also useful for assessing the predictive power in incorporating additional predictors.</p><figure id="fig7" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00225-fig007.B-WoAbr1_Z1jtIwU.webp" class="figure-lightbox-trigger" data-pswp-width="1621" data-pswp-height="1126" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00225-fig007.B-WoAbr1_Z1jtIwU.webp" alt width="1621" height="1126" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 7.</strong><span data-astro-cid-dzaleqsp> Receiver Operating Characteristic for Incident Diabetes - Females</span></figcaption></figure><figure id="fig8" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00225-fig008.BMHBMVQw_Z2udzT6.webp" class="figure-lightbox-trigger" data-pswp-width="1621" data-pswp-height="1127" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00225-fig008.BMHBMVQw_Z2udzT6.webp" alt width="1621" height="1127" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 8.</strong><span data-astro-cid-dzaleqsp> Receiver Operating Characteristic for Incident Diabetes - Males</span></figcaption></figure></section></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. External validity</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The Behavioral Risk Factor Surveillance System is a survey designed to collect state-specific data on health risk behaviors, chronic diseases, and other health-related outcomes related to the leading causes of death and disability in the United States (<a href="#bib1">Centers for Disease Control and Prevention and others, 2018</a>). The sample size is large, with over 450,000 observations in 2017, and designed to be nationally representative. Like the PSID, BRFSS faces challenges with response rate. The self-reported measures in BRFSS are comparable to PSID. Diabetes status is asked in a similar manner (‘‘Has a doctor, nurse, or other health professional EVER told you that you had diabetes?’’). BMI is calculated from self-reported height and weight.</p><p data-astro-cid-qsyhzaho>Before comparing FAM projections with BRFSS, it is valuable to show that PSID and BRFSS showed comparable BMI and diabetes summary statistics for those twenty-five and older in 2007. The twenty-five and older PSID respondents are the initial cohort in the validation exercise. Selected sample characteristics are presented in <a href="#table5">Table 5</a> by gender. Female mean BMI is higher in BRFSS than PSID by 0.3 units and 0.2 units for males. At the 95th percentile, females in BRFSS are within 0.1 units of women in PSID, with men in BRFSS 0.6 units higher. At the 99th percentile the two samples are a bit further apart, with women in PSID 0.5 BMI units higher than BRFSS and men in PSID 1.2 units lower. Female PSID respondents report slightly lower BMI at the fifth through twenty-fifth percentiles. Diabetes rates also differ, with lower rates in PSID by 1.9 percentage points for women and 1.2 percentage points for men.</p><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Host and external data comparison - 2007 PSID vs. 2007 BRFSS.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left" colspan="2">Females</th>
+<th align="left" colspan="2">Males</th>
+</tr>
+<tr>
+<th align="left"/>
+<th align="left">PSID (2007)</th>
+<th align="left">BRFSS (2007)</th>
+<th align="left">PSID (2007)</th>
+<th align="left">BRFSS (2007)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">BMI</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">1st pctl</td>
+<td align="left">17.5 [ 17.2, 17.8]</td>
+<td align="left">17.6 [ 17.5, 17.7]</td>
+<td align="left">19.4 [ 18.8, 19.9]</td>
+<td align="left">19.2 [ 19.0, 19.3]</td>
+</tr>
+<tr>
+<td align="left">5th pctl</td>
+<td align="left">19.1 [ 19.0, 19.3]</td>
+<td align="left">19.5 [ 19.5, 19.6]</td>
+<td align="left">21.7 [ 21.5, 21.9]</td>
+<td align="left">21.5 [ 21.4, 21.6]</td>
+</tr>
+<tr>
+<td align="left">10th pctl</td>
+<td align="left">20.3 [ 20.1, 20.4]</td>
+<td align="left">20.5 [ 20.5, 20.6]</td>
+<td align="left">22.8 [ 22.6, 23.0]</td>
+<td align="left">22.6 [ 22.6, 22.7]</td>
+</tr>
+<tr>
+<td align="left">25th pctl</td>
+<td align="left">22.3 [ 22.2, 22.5]</td>
+<td align="left">22.7 [ 22.7, 22.7]</td>
+<td align="left">24.7 [ 24.5, 24.9]</td>
+<td align="left">24.6 [ 24.4, 24.7]</td>
+</tr>
+<tr>
+<td align="left">Mean</td>
+<td align="left">26.9 [ 26.7, 27.1]</td>
+<td align="left">27.2 [ 27.1, 27.2]</td>
+<td align="left">27.9 [ 27.8, 28.1]</td>
+<td align="left">28.1 [ 28.1, 28.2]</td>
+</tr>
+<tr>
+<td align="left">75th pctl</td>
+<td align="left">30.0 [ 29.7, 30.2]</td>
+<td align="left">30.2 [ 30.1, 30.2]</td>
+<td align="left">30.1 [ 29.9, 30.4]</td>
+<td align="left">30.6 [ 30.5, 30.7]</td>
+</tr>
+<tr>
+<td align="left">90th pctl</td>
+<td align="left">35.3 [ 34.7, 35.8]</td>
+<td align="left">35.5 [ 35.4, 35.6]</td>
+<td align="left">34.2 [ 33.8, 34.5]</td>
+<td align="left">34.5 [ 34.4, 34.6]</td>
+</tr>
+<tr>
+<td align="left">95th pctl</td>
+<td align="left">39.3 [ 38.6, 40.0]</td>
+<td align="left">39.2 [ 39.1, 39.4]</td>
+<td align="left">36.8 [ 36.3, 37.4]</td>
+<td align="left">37.4 [ 37.2, 37.6]</td>
+</tr>
+<tr>
+<td align="left">99th pctl</td>
+<td align="left">48.4 [ 46.2, 50.6]</td>
+<td align="left">47.9 [ 47.5, 48.4]</td>
+<td align="left">43.8 [ 42.2, 45.3]</td>
+<td align="left">45.0 [ 44.6, 45.5]</td>
+</tr>
+<tr>
+<td align="left">Diabetes prevalence</td>
+<td align="left">7.3 [ 6.5, 8.2]</td>
+<td align="left">9.2 [ 9.0, 9.4]</td>
+<td align="left">8.7 [ 7.8, 9.7]</td>
+<td align="left">9.9 [ 9.7, 10.2]</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Notes: Confidence intervals for PSID and BRFSS reflect the complex survey design.</p></div></figure><p data-astro-cid-qsyhzaho>The BMI distributions for females 35 and older in FAM in 2007 and 2017 and BRFSS in 2007 and 2017 are shown in <a href="#fig9">Figure 9</a>. Examining the two BRFSS distributions, one sees the curve shifting to the right over the decade and the right tail pushing out. Qualitatively, FAM seems to capture this behavior. <a href="#fig10">Figure 10</a> illustrates the relative cumulative distribution between FAM and BRFSS in 2017 (left panel). The relative density functions are shown in the right panels. The Kullback-Leibler entropy is 0.018 [0.016, 0.020] and the median relative polarization index is 0.042 [0.035, 0.049]. <a href="#table6">Table 6</a> compares these distributions in greater detail for 2017. Mean BMI for women is 0.5 BMI units lower in FAM projections than in 2017 BRFSS respondents. At the 95th percentile, FAM projections are 0.7 BMI units lower than BRFSS. At the 99th percentile, the distributions are further apart, with FAM 2.0 BMI units lower.</p><figure id="fig9" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00225-fig009.jiRO6WtB_2wKg7C.webp" class="figure-lightbox-trigger" data-pswp-width="1607" data-pswp-height="1130" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00225-fig009.jiRO6WtB_2wKg7C.webp" alt width="1607" height="1130" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 9.</strong><span data-astro-cid-dzaleqsp> BMI distribution for those 35 and older - Females</span></figcaption></figure><figure id="fig10" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00225-fig010.DTW5jO7B_2apHU2.webp" class="figure-lightbox-trigger" data-pswp-width="1577" data-pswp-height="1096" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00225-fig010.DTW5jO7B_2apHU2.webp" alt width="1577" height="1096" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 10.</strong><span data-astro-cid-dzaleqsp> Relative cumulative distribution and density of BMI - Females</span></figcaption></figure><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> External validation - 2017 FAM vs. 2017 BRFSS.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left" colspan="2">Females</th>
+<th align="left" colspan="2">Males</th>
+</tr>
+<tr>
+<th align="left"/>
+<th align="left">FAM (2017)</th>
+<th align="left">BRFSS (2017)</th>
+<th align="left">FAM (2017)</th>
+<th align="left">BRFSS (2017)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">BMI</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">1st pctl</td>
+<td align="left">16.6 [ 16.2, 16.9]</td>
+<td align="left">17.7 [ 17.6, 17.8]</td>
+<td align="left">19.2 [ 19.0, 19.5]</td>
+<td align="left">18.8 [ 18.7, 19.0]</td>
+</tr>
+<tr>
+<td align="left">5th pctl</td>
+<td align="left">18.7 [ 18.5, 19.0]</td>
+<td align="left">19.8 [ 19.7, 19.9]</td>
+<td align="left">21.2 [ 21.0, 21.4]</td>
+<td align="left">21.6 [ 21.5, 21.7]</td>
+</tr>
+<tr>
+<td align="left">10th pctl</td>
+<td align="left">20.1 [ 20.0, 20.3]</td>
+<td align="left">21.0 [ 20.9, 21.0]</td>
+<td align="left">22.5 [ 22.2, 22.7]</td>
+<td align="left">23.0 [ 22.9, 23.0]</td>
+</tr>
+<tr>
+<td align="left">25th pctl</td>
+<td align="left">22.9 [ 22.8, 23.0]</td>
+<td align="left">23.4 [ 23.4, 23.5]</td>
+<td align="left">24.9 [ 24.7, 25.0]</td>
+<td align="left">25.1 [ 25.1, 25.1]</td>
+</tr>
+<tr>
+<td align="left">Mean</td>
+<td align="left">27.7 [ 27.6, 27.9]</td>
+<td align="left">28.2 [ 28.1, 28.3]</td>
+<td align="left">28.5 [ 28.3, 28.7]</td>
+<td align="left">28.8 [ 28.7, 28.9]</td>
+</tr>
+<tr>
+<td align="left">75th pctl</td>
+<td align="left">31.5 [ 31.3, 31.8]</td>
+<td align="left">31.6 [ 31.5, 31.8]</td>
+<td align="left">31.5 [ 31.2, 31.8]</td>
+<td align="left">31.6 [ 31.5, 31.7]</td>
+</tr>
+<tr>
+<td align="left">90th pctl</td>
+<td align="left">36.7 [ 36.3, 37.0]</td>
+<td align="left">36.9 [ 36.7, 37.1]</td>
+<td align="left">35.3 [ 34.8, 35.7]</td>
+<td align="left">35.9 [ 35.7, 36.0]</td>
+</tr>
+<tr>
+<td align="left">95th pctl</td>
+<td align="left">40.0 [ 39.4, 40.5]</td>
+<td align="left">40.7 [ 40.5, 41.0]</td>
+<td align="left">37.7 [ 37.1, 38.2]</td>
+<td align="left">39.0 [ 38.8, 39.3]</td>
+</tr>
+<tr>
+<td align="left">99th pctl</td>
+<td align="left">46.9 [ 45.5, 48.2]</td>
+<td align="left">49.9 [ 49.3, 50.5]</td>
+<td align="left">42.4 [ 41.3, 43.6]</td>
+<td align="left">46.8 [ 46.2, 47.4]</td>
+</tr>
+<tr>
+<td align="left">Diabetes prevalence</td>
+<td align="left">12.4 [ 11.5, 13.3]</td>
+<td align="left">14.0 [ 13.7, 14.4]</td>
+<td align="left">14.9 [ 13.6, 16.3]</td>
+<td align="left">15.7 [ 15.3, 16.1]</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Notes: Confidence intervals for FAM reflect 50 sets of bootstrapped transition models, each simulated 100 times. Confidence intervals for BRFSS reflect the complex survey design.</p></div></figure><p data-astro-cid-qsyhzaho>The BMI distributions for males 35 and older are shown in <a href="#fig11">Figure 11</a>. After 10 years of FAM projections, the FAM distribution appears to have more dispersion than BRFSS. <a href="#fig12">Figure 12</a> shows the relative cumulative distribution and relative density functions. Entropy, as measured by the Kullback-Leibler divergence is 0.015 [0.013, 0.017] and median relative polarization is .018 [0.011, 0.025]. The 2017 distributions are compared in <a href="#table6">Table 6</a>. Here, we see that mean BMI in FAM is 0.3 BMI units below BRFSS. At the 75th percentile FAM is 0.1 BMI units below BRFSS, FAM is 1.3 BMI units lower at the 95th percentile, and the distributions are 4.2 BMI units apart at the 99th percentile.</p><figure id="fig11" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00225-fig011.C5ufFru9_26kxc9.webp" class="figure-lightbox-trigger" data-pswp-width="1608" data-pswp-height="1130" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00225-fig011.C5ufFru9_26kxc9.webp" alt width="1608" height="1130" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 11.</strong><span data-astro-cid-dzaleqsp> BMI distribution for those 35 and older - Males</span></figcaption></figure><figure id="fig12" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00225-fig012.BbWIGerP_1DVlaI.webp" class="figure-lightbox-trigger" data-pswp-width="1577" data-pswp-height="1096" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00225-fig012.BbWIGerP_1DVlaI.webp" alt width="1577" height="1096" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 12.</strong><span data-astro-cid-dzaleqsp> Relative cumulative distribution and density of BMI - Males</span></figcaption></figure><p data-astro-cid-qsyhzaho>Diabetes prevalence for the 35 and older population is also shown in <a href="#table6">Table 6</a>. FAM is 1.6 percentage points lower than BRFSS for women and 0.8 percentage points lower for men. This is consistent with the initial differences observed in 2007 for the twenty-five and older PSID compared to BRFSS.</p></div></details><details id="s5" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">5. Discussion</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In estimating transition models from 1999-2007, then applying them to simulate 2007-2017, the analysis shown here is analogous to a period life table approach. The key assumption is that the 1999-2007 observed transitions will continue to hold through the forecasting period. For the outcomes of interest, one can imagine situations in which this assumption is violated, such as changes in diagnostic procedures for diabetes or the adoption of public health campaigns targeting obesity. Consequently, deviations from what was observed can be driven by both simulation limitations and real world changes.</p><p data-astro-cid-qsyhzaho>In projecting BMI, the 2017 mean BMI in FAM is slightly higher than 2017 PSID (0.1 BMI units women, 0.2 for men), while slightly lower than 2017 BRFSS in means (0.5 BMI units for women, 0.3 for men). For the right tail of the distribution, 2017 FAM BMI distributions are lower than both the PSID and BRFSS at the 95th percentile, much lower at the 99th. This suggests that FAM performed well for much of the distribution, but not for extreme cases. The ROC analyses for BMI are likely driven by the persistence of BMI. For example, those with a BMI over 40 are likely to have a BMI over 40 ten years later.</p><p data-astro-cid-qsyhzaho>For consumers of the model interested in BMI, this validation exercise suggests that projections of many groups of interest are plausible, such as the fraction overweight, obese, or severely obese. However, the distribution of BMI within the severely obese category in FAM under-predicted the BMI values observed in both PSID and BRFSS by two to four BMI units. If the actual BMI values are of interest for those cases, then the BMI modeling approach would merit attention, perhaps including calibrating to an external source.</p><p data-astro-cid-qsyhzaho>Diabetes rates projected with FAM are lower than both 2017 PSID and 2017 BRFSS. The lower rates in 2007 PSID compared to 2007 BRFSS are preserved in FAM. Individual assignment of incident diabetes does not perform as well as models with more information, as shown below. The FAM diabetes model controls for age, race, education, childhood characteristics, smoking, exercise, and BMI. This yields AUC statistics of 0.71 for twenty-five and older women, 0.72 for twenty-five and older men. Notably, the transition model does not currently incorporate family history, pharmaceutical use, biometrics (blood pressure, waist measurements), biomarkers (fasting glucose, cholesterol), or diet. In a UK sample of 40 to 79 year olds, a risk model based on self-reported data on medication, BMI, family history, age, nutrition, and exercise yielded an AUC of 0.763 for predicting incident diabetes in 4.6 years (<a href="#bib8">Simmons et al., 2007</a>). In a US-based study of 25 to 64 year olds, the San Antonio Heart Study, incidence of diabetes was assessed in several different models incorporating a variety of clinical tests. These models had AUC statistics ranging from 0.775 to 0.859. The clinical multivariate models incorporated age, sex, ethnicity, fasting glucose level, systolic blood pressure, HDL cholesterol, BMI, and family history of diabetes (<a href="#bib9">Stern et al., 2002</a>). In a Finnish study of 10-year incidence of drug-treated diabetes amongst 35 to 64 year old individuals, a model adjusting for age, BMI, waist circumference, use of blood pressure medication, a history of high blood glucose (including those with diabetes, but not taking medication), physical activity, and diet yielded an AUC of 0.860 (<a href="#bib4">Lindström and Tuomilehto, 2003</a>).</p><p data-astro-cid-qsyhzaho>For consumers of the model interested in diabetes, this validation exercise suggests that projections of diabetes follow the same trend as in BRFSS. The initially lower rates in PSID are maintained over the decade of projection. If possible, additional information on family history, medications, diet, or other clinical measures would likely improve the specificity and sensitivity of FAM. The AUC statistics for models that include additional information give a sense of how well FAM might perform with more information.</p><p data-astro-cid-qsyhzaho>Overall, these validation exercises are reassuring. The PSID host data compare well with BRFSS. Trends, such as the shift right in BMI and the expansion of the right tail of the BMI distribution, are captured with fairly simple transition models that do not assume a temporal trend. Individual-level predictions are concordant for various classifications of BMI, likely due to the persistence of BMI for individuals, and diabetes incidence classification is reasonable given the lack of clinical information.</p></div></details></div><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2018). <span data-astro-cid-oer3kof4>Behavioral risk factor surveillance system overview: Brfss 2017</span>.</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Clair, PS, Gaudette, É, Zhao, H, Tysinger, B, Seyedin, R, Goldman, DP (2017). <span data-astro-cid-oer3kof4>Using self-reports or claims to assess disease prevalence: its complicated</span>. <em data-astro-cid-oer3kof4>Medical care</em>, <strong data-astro-cid-oer3kof4>55</strong>.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Fryar, C, Carroll, M, Ogden, C (2019). <span data-astro-cid-oer3kof4>Prevalence of overweight, obesity, and severe obesity among adults age 20 and over: United States, 1960-1962 through 2015-2016. Bethesda, MD: National center for health statistics 2018</span>.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Lindström, J, Tuomilehto, J (2003). <span data-astro-cid-oer3kof4>The diabetes risk score: a practical tool to predict type 2 diabetes risk</span>. <em data-astro-cid-oer3kof4>Diabetes Care</em>, <strong data-astro-cid-oer3kof4>26</strong>, 725–731. <a href="https://doi.org/10.2337/diacare.26.3.725" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.2337/diacare.26.3.725</a></span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>McGonagle, KA, Schoeni, RF, Sastry, N, Freedman, VA (2012). <span data-astro-cid-oer3kof4>The panel study of income dynamics: overview, recent innovations, and potential for life course research</span>.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Menke, A, Casagrande, S, Geiss, L, Cowie, CC (2015). <span data-astro-cid-oer3kof4>Prevalence of and trends in diabetes among adults in the United States, 1988-2012</span>. <em data-astro-cid-oer3kof4>JAMA</em>, <strong data-astro-cid-oer3kof4>314</strong>, 1021–1029. <a href="https://doi.org/10.1001/jama.2015.10029" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1001/jama.2015.10029</a></span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Pandya, A, Sy, S, Cho, S, Alam S, Weinstein, Gaziano, TA (2017). <span data-astro-cid-oer3kof4>Validation of a cardiovascular disease policy micro-simulation model using both survival and receiver operating characteristic curves</span>. <em data-astro-cid-oer3kof4>Medical Decision Making</em>.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Simmons, RK, Harding, A-H, Wareham, NJ, Griffin, SJ, Team, E,  (2007). <span data-astro-cid-oer3kof4>Do simple questions about diet and physical activity help to identify those at risk of type 2 diabetes?</span>. <em data-astro-cid-oer3kof4>Diabetic Medicine</em>, <strong data-astro-cid-oer3kof4>24</strong>, 830–835. <a href="https://doi.org/10.1111/j.1464-5491.2007.02173.x" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1111/j.1464-5491.2007.02173.x</a></span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Stern, MP, Williams, K, Haffner, SM (2002). <span data-astro-cid-oer3kof4>Identification of persons at high risk for type 2 diabetes mellitus: do we need the oral glucose tolerance test?</span>. <em data-astro-cid-oer3kof4>Annals of Internal Medicine</em>, <strong data-astro-cid-oer3kof4>136</strong>, 575–581. <a href="https://doi.org/10.7326/0003-4819-136-8-200204160-00006" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.7326/0003-4819-136-8-200204160-00006</a></span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Bryan Tysinger</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>University of Southern California, Los Angeles, California</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:btysinge@usc.edu" data-astro-cid-m3fa5h5a>btysinge@usc.edu</a></p><p class="article-info__detail" data-astro-cid-m3fa5h5a><a href="https://orcid.org/0000-0002-8497-3664" target="_blank" rel="noopener" data-astro-cid-m3fa5h5a>ORCID iD: 0000-0002-8497-3664</a></p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Funding</h3><p data-astro-cid-m3fa5h5a>This work was supported by the National Institute on Aging of the National Institutes of Health under award numbers P30AG024968 and R01HD087257.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Data and code availability</h3><p data-astro-cid-m3fa5h5a>The data used in FAM are available for scientific research upon registration.</p><p data-astro-cid-m3fa5h5a>1. Panel Study of Income Dynamics is available at <a href="https://psidonline.isr.umich.edu/">https://psidonline.isr.umich.edu/</a></p><p data-astro-cid-m3fa5h5a>2. Behavioral Risk Factor Surveillance System is available at <a href="https://www.cdc.gov/brfss/index.html">https://www.cdc.gov/brfss/index.html</a></p><p data-astro-cid-m3fa5h5a>3. Health and Retirement Study is available at <a href="http://hrsonline.isr.umich.edu/">http://hrsonline.isr.umich.edu/</a></p><p data-astro-cid-m3fa5h5a>4. Medical Expenditure Panel Survey is available at <a href="https://meps.ahrq.gov/mepsweb/">https://meps.ahrq.gov/mepsweb/</a></p><p data-astro-cid-m3fa5h5a>5. Medicare Current Beneficiary Survey is available at <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Research/MCBS">https://www.cms.gov/Research-Statistics-Data-and-Systems/Research/MCBS</a></p><p data-astro-cid-m3fa5h5a>6. National Health Interview Survey is available at <a href="https://www.cdc.gov/nchs/nhis/index.htm">https://www.cdc.gov/nchs/nhis/index.htm</a></p><p data-astro-cid-m3fa5h5a>7. National Health and Nutrition Examination Survey is available at <a href="https://www.cdc.gov/nchs/nhis/index.htm">https://www.cdc.gov/nchs/nhanes/index.htm</a></p><p data-astro-cid-m3fa5h5a>8. AmericanCommunitySurvey is available at <a href="https://www.cdc.gov/nchs/nhis/index.htm">https://www.census.gov/programs-surveys/acs</a></p><p data-astro-cid-m3fa5h5a>9. CensusPopulation Projections is available at <a href="https://www.cdc.gov/nchs/nhis/index.htm">https://www.census.gov/programs-surveys/popproj.html</a></p><p data-astro-cid-m3fa5h5a>The source code for FAM is available via a publicly accessible Subversion code repository at <a href="https://schweb.lahrc.lahealthresearchcloud.org/svn/PublicFutureElderlyModel/trunk">https://schweb.lahrc.lahealthresearchcloud.org/svn/PublicFutureElderlyModel/trunk</a>. It is suggested that users contact Bryan Tysinger for guidance in getting started.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Acknowledgements</h3><p data-astro-cid-m3fa5h5a>Not applicable.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00225" data-astro-cid-m3fa5h5a>Version of Record published: December 31, 2020 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2020, Bryan Tysinger</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/health" data-pagefind-filter="Research category:Health" data-astro-cid-m3fa5h5a>Health</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=Microsimulation" data-astro-cid-m3fa5h5a>Microsimulation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=health%20economics" data-astro-cid-m3fa5h5a>health economics</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=life-course%20model" data-astro-cid-m3fa5h5a>life-course model</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=validation" data-astro-cid-m3fa5h5a>validation</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

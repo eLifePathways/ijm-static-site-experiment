@@ -1,0 +1,26 @@
+TY  - JOUR
+TI  - Evaluating the quality of gross incomes in SILC: Compare them with fiscal data and re-calibrate them using EUROMOD
+AU  - Vandelannoote, Dieter
+AU  - Decoster, André
+AU  - Vanheukelom, Toon
+AU  - Verbist, Gerlinde
+VL  - 9
+IS  - 3
+PY  - 2016
+DA  - 2016/12/31
+SP  - 5-34
+C1  - IJM 2016;9(3):5-34
+DO  - 10.34196/ijm.00141
+UR  - https://doi.org/10.34196/ijm.00141
+AB  - In this paper, we shed light on the quality of the gross incomes as reported in the Survey on Income and Living Conditions (SILC). This is done in three steps. First, as both net and gross incomes are reported in SILC, implicit tax rates are calculated and evaluated. In a second step, gross incomes from SILC are compared with gross incomes reported on the fiscal form for the same individuals. Finally, we make use of EUROMOD to re-calibrate SILC gross incomes in order to make them consistent with the reported net ones. We find that, on average, fiscally reported gross incomes exceed gross incomes in the SILC survey. It is not clear however whether the re-calibration method (whereby we use an iterative method to construct adjusted SILC gross incomes starting from the observed net ones) is a genuine improvement upon the reported gross income distribution.
+KW  - SILC (Survey on Income and Living Conditions)
+KW  - IPCAL
+KW  - EUROMOD
+KW  - Belgium
+KW  - gross and net incomes
+KW  - re-calibrate
+KW  - iterative method
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

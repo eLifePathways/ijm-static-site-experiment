@@ -1,0 +1,716 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>A microsimulation model for risk in Irish tillage farming | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00135"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00135" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/environment" data-astro-cid-ak4gb66a>Environment</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Aug 31, 2016</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>A microsimulation model for risk in Irish tillage farming</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Jason Loughrey, Fiona Thorne, Thia Hennessy</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Rural Economy and Development Programme, Ireland</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/9-2/volume-9-2-summer-2016" data-astro-cid-ak4gb66a>Volume 9(2) Summer 2016</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> J. Loughrey, F. Thorne, T. Hennessy; 2016; <span data-astro-cid-ak4gb66a>A microsimulation model for risk in Irish tillage farming</span>; International Journal of Microsimulation; 9(2); 41–76. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00135" data-astro-cid-ak4gb66a>10.34196/ijm.00135</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>Tillage farmers must manage numerous economic risks including uncertain yields and prices. Despite the presence of government payments, these factors can generate a relatively high variability in farm income. The improved management of farm income variability can contribute towards stability in household consumption, support for farm investments, further investment in child education and a reduction in the mental stress associated with variable incomes. In this paper, we develop a new farm-level stochastic microsimulation model to simulate the degree of risk attached to the production of Ireland’s main tillage grain crop i.e. spring barley for animal feed usage. Forward contracting is the main available risk management tool for Irish tillage farmers. Our microsimulation model is extended in order to estimate the impact of forward contracting on farm income risk. Our results show that forward contracting can reduce farm income risk significantly but that other stable sources of income are probably necessary to contain the exposure to the income risk attached to cereal production. The model is capable of addressing the income risk associated with multiple crops although this version of the model is confined to one particular crop. The model can be further extended to accommodate other risk management tools such as crop insurance or a farm management deposit scheme. This will allow policymakers, farmers and other interested parties to assess the impact of alternative risk management policies on the heterogeneous pool of Irish tillage farmers.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00135/ijm-00135.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00135.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00135.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00135" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00135/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. Risk management: tools and government policies</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. Data</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. The model</a></li><li data-astro-cid-twdwaz5s><a href="#s5" data-astro-cid-twdwaz5s>5. Results</a></li><li data-astro-cid-twdwaz5s><a href="#s6" data-astro-cid-twdwaz5s>6. Conclusion</a></li><li data-astro-cid-twdwaz5s><a href="#footnotes" data-astro-cid-twdwaz5s>Footnotes</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Microsimulation models are increasingly being applied to research topics in agricultural economics (<a href="#bib48">Shrestha <i>et al</i>. 2007</a>; <a href="#bib29">Hynes <i>et al</i>. 2009</a>; <a href="#bib42">Ramilan <i>et al</i>. 2011</a> and <a href="#bib39">O’Donoghue 2013</a>). Microsimulation models have much in common with traditional farm simulation models as both are frequently used to simulate policy and economic change although the biological component of farm level models makes them somewhat distinct (<a href="#bib45">Richardson <i>et al</i>. 2014</a>). In this paper, we introduce a stochastic farm-level microsimulation model with the objective of estimating the degree of income risk associated with tillage production on Irish farms. The model is extended further to examine the direct impact of forward selling a fixed proportion of cereal output on the variability of profit margins. This is the first attempt in the microsimulation literature to analyse the contribution of forward contracts or other financial risk management tools towards the containment of risk in agriculture.</p><p data-astro-cid-qsyhzaho>Tillage farms in Ireland are an interesting case study as these farms face a number of serious challenges and risks which could potentially threaten their economic viability and survival into the future. These include a heavy dependence on direct payments (<a href="#bib24">Hennessy <i>et al</i>. 2008</a>), competition for access to land from the more profitable dairy sector (<a href="#bib34">Läpple &amp; Hennessy 2012</a>) and risks associated with nutrient loss and the wider environment (<a href="#bib6">Buckley &amp; Carney 2013</a>). Despite the presence of government payments, the risks associated with uncertain yields (production risk) and prices for individual crops (market risk) can be sufficient to generate unusually high income variability. Numerous studies have examined the role of these two variables in influencing income variability (e.g. <a href="#bib9">Coble <i>et al</i>. 2002</a>; <a href="#bib20">Goodwin and Ker 2002</a>).</p><p data-astro-cid-qsyhzaho>The high exposure to production and market related income variability is particularly relevant for those farms with relatively low government payments and without stable off-farm income (<a href="#bib30">Jetté-Nantel <i>et al</i>. 2011</a>). There is a clear absence of empirical analysis regarding the economic impact of income risk and risk management tools for the main grain crops in Irish agriculture. Numerous studies have provided stochastic analysis of the risk associated with uncertain yields and prices in other areas of Irish agriculture e.g. <a href="#bib47">Shalloo <i>et al</i>. (2004)</a>, <a href="#bib17">Finneran <i>et al</i>. (2011)</a> and <a href="#bib8">Clancy <i>et al</i>. (2012)</a> but none of these deal with the main grain crops. We develop a stochastic microsimulation model for the risk associated with uncertain prices and yields in the production of Spring Barley, the most commonly produced crop on Irish tillage farms (<a href="#bib27">Holden <i>et al</i>. 2003</a>; <a href="#bib31">Kennedy and Connery 2005</a>).</p><p data-astro-cid-qsyhzaho>The development of the stochastic Microsimulation model largely follows the semi-parametric Monte Carlo simulation techniques outlined in <a href="#bib43">Richardson <i>et al</i>. (2000)</a> and <a href="#bib45">Richardson <i>et al</i>. (2014)</a> and adopted elsewhere by <a href="#bib3">Archer and Reicosky (2009)</a>, <a href="#bib51">Wilson and Dahl (2011)</a> and <a href="#bib14">Feng <i>et al</i>. (2014)</a> among others. In our case, the microsimulation model is based on actual farms in the panel component of the Teagasc National Farm Survey. <a href="#bib32">Kimura and Le Thi (2011</a>, p6) explain that accounting for farm level characteristics is a critical part of risk analysis and point out that “using the cross-section data or aggregated time series data does not properly measure the producer’s exposure to risks”.</p><p data-astro-cid-qsyhzaho>In recent years, the microsimulation literature has addressed risk-related topics such as poverty (<a href="#bib37">Navicke <i>et al</i>. 2014</a>) and financial market volatility (Lux and Marchesi 2000) but microsimulation techniques are less frequently applied to risk-related issues within agriculture. The capacity of microsimulation modelling to deal with farm heterogeneity can be of immense added value particularly in the area of risk where risk attitude and the exposure to risk can vary substantially across farms.</p><p data-astro-cid-qsyhzaho>In the next section, we describe the recent evolution of risk management policies and tools relevant to Irish tillage farmers and indeed tillage farmers across the European Union. We follow this with a description of the data utilised to develop the model. In <a href="#s4">Section 4</a>, we discuss the methodology used to develop the stochastic model. In <a href="#s5">Section 5</a>, we discuss some results relating to the riskiness of profit margins in the production of spring barley and the potential impact of forward contracting on risk. This is followed finally by the conclusion.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. Risk management: tools and government policies</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Policies in relation to risk in Irish agriculture have largely been determined at an EU level since Ireland entered the European Community in 1973. On Ireland’s entry into the community at the same time as Britain, the policy of intervention prices placed a floor on the degree of downside risk faced by farmers in both Ireland and Britain. For Irish farmers, the intervention prices determined a large share of total government payments until the MacSharry reforms and the introduction of direct payments in 1992/1993 (<a href="#bib26">Hennessy <i>et al</i>. 2014</a>). Sckokai and Moro (2009) explain that the MacSharry reforms were only partially decoupled from production given their connection with “decisions through the land allocation mechanism”. This contrasts with the subsequent 2003 reforms and the introduction of the fully decoupled Single Farm Payment in 2005 in Ireland, although a number of Member States opted to retain some coupled payments.</p><p data-astro-cid-qsyhzaho>The rapid decline in the intervention prices in the 1990s and early 2000s in conjunction with significantly reduced export subsidies introduced a much greater exposure to output price risk. At the same time, the introduction of direct payments helped to offset some of this risk although this varied across farms. Research has identified changes in risk attitude as a result of these policy reforms (Koundouri <i>et al</i>. 2009). Our microsimulation excludes this kind of behavioural component so that we do not address the potential effect that these policy changes may have had on risk attitude.</p><p data-astro-cid-qsyhzaho>During the latest CAP reform package for 2014–2020, the real decline in the overall budget for direct payments is being accompanied by the emergence of an income stabilisation tool (IST) (<a href="#bib12">European Commission, 2011</a>) although the degree to which this tool has been implemented varies across Member States. In the EC proposal, the new tool should provide compensation to farmers who experience a severe drop in their income. Support can only be granted “where the drop of income exceeds 30% of the average annual income of the individual farmer in the preceding three-year period or a three-year average based on the preceding five year period excluding the highest and lowest entry. Furthermore, “payments by the mutual fund to farmers shall compensate for not more than 70% of the income lost” (<a href="#bib12">European Commission 2011</a>).</p><p data-astro-cid-qsyhzaho>A few studies have sought to estimate the economic outcomes that this tool can produce. Mary <i>et al</i>. (2014) have estimated that farm income volatility in France declines by more than 35 per cent with the introduction of the IST but may generate output distortions. <a href="#bib15">Finger and El Benni (2014a)</a> find that the IST mechanism significantly reduces income inequality among Swiss farms. <a href="#bib16">Finger and El Benni (2014b)</a> conclude that the specification of the farm-level reference income should account for observed income trends as “the average-based approaches cause lower than expected indemnification levels for farmers with increasing incomes, and higher indemnifications if farm incomes are decreasing over time.”</p><p data-astro-cid-qsyhzaho>The empirical analysis in this paper does not focus on the potential economic impact of these non-established tools and instead concentrates on the direct impacts from an existing risk management tool namely the forward contracting tool. <a href="#bib46">Seifert <i>et al</i>. (2004)</a> define a forward contract simply as “an agreement to buy a commodity at a certain future time for a certain price”. Microsimulation models have rarely incorporated the contribution of financial risk management tools such as forward contracts and futures towards the management of income variability in commodity or other financial markets.</p><p data-astro-cid-qsyhzaho>In our farm-based example, the commodity in question is spring barley for animal feed usage. We seek to identify the direct impact on the riskiness of farm profit of entering into a forward contract at different prices and under a range of alternative yield and price scenarios. Tillage farmers in Ireland have access to a very limited number of risk management tools to manage risk with forward contracting being the main available market risk management tool. <a href="#bib25">Hennessy <i>et al</i>. (2014)</a> have estimated that approximately 30 per cent of Irish tillage farms availed of the forward contracting tool during 2012.</p><p data-astro-cid-qsyhzaho>The limited availability of risk management tools in Ireland contrasts with the situation in the United States where <a href="#bib41">Pennings <i>et al</i>. (2008)</a> report that a majority of U.S. crop producers employ more than one risk management tool. Forward contracts, basis contracts, futures contracts, catastrophic coverage and crop revenue coverage appear to be the most commonly adopted tools. In Australia, the Farm Management deposit (FMD) scheme has been widely adopted as a form of risk management tool with the total number of accounts reaching almost 46,000 in June 2014 and total deposits peaking at over $4bn (<a href="#bib4">Australian Government, 2014</a>).</p><p data-astro-cid-qsyhzaho>This scheme allows ‘eligible primary producers’ to deposit pre-tax income in years of high income, which can be accessed subsequently in years of low income. The income in the FMD account is tax deductible in the financial year the deposit is made and becomes taxable in the financial year of the withdrawl. From July 2016, the cap on deposits rises from AUD ($) 400,000 to AUD ($) 800,000 (<a href="#bib4">Australian Government, 2016</a>).</p><p data-astro-cid-qsyhzaho>The widespread use of risk management tools in the United States has generated a significant literature examining the economic impact of tool adoption at the farm level. <a href="#bib10">Cornaggia (2013)</a> finds that risk management leads to greater productivity by relaxing financial constraints suggesting that producers that hedge are more likely to receive access to finance, which can then be used ‘to finance productivity-enhancing investments’. <a href="#bib18">Glauber (2013)</a> concludes that crop revenue insurance coverage based on expected prices compares favourably to fixed-price supports such as countercyclical payments and marketing assistance loans. <a href="#bib21">Goodwin and Smith (2013)</a> argue however, that the burdens associated with the collection of tax revenues to fund the subsidized crop insurance program can generate a large number of distortions both within agriculture and the aggregate economy.</p><p data-astro-cid-qsyhzaho>It is envisaged that the future development of this farm-level microsimulation model will allow us to make some worthwhile judgements on the potential effectiveness of the above policies on risk and profitability in Irish tillage farming and the potential effectiveness of alternative risk management tools which may include forward contracting. The wider effects on the non-agricultural economy are however, probably beyond the scope of the model.</p></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. Data</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In this section, we describe the data source used to construct the farm-level model. This data includes the Teagasc National Farm Survey, the CSO Data on crop yields, FAO data on international crop yields and a crop price database collected and maintained by the Agricultural Economics and Farm Survey department of Teagasc Rural Economy. The objectives of the National Farm Survey (NFS) are to</p><ol data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Determine the financial situation on Irish farms by measuring the level of gross output, costs, income, investment and indebtedness across the spectrum of farming systems and sizes,</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Provide data on Irish farm incomes to the EU Commission in Brussels (FADN),</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Measure the current levels of, and variation in, farm performance for use as standards for farm management purposes, and</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Provide a database for economic and rural development research and policy analysis.</p></li></ol><p data-astro-cid-qsyhzaho>To achieve these objectives, a farm accounts book is recorded for each year on a random sample of farms, selected by the CSO, throughout the country. For this analysis, the Teagasc NFS micro data spans the period from 2004 to 2013. The panel is unbalanced in the sense that there is some attrition from year to year as farmers leave the sample and are replaced by other farms. The attrition rate is relatively low however and new farmers are introduced during the period to maintain a representative sample that is usually kept to between 900 and 1100 farms.</p><p data-astro-cid-qsyhzaho>For our purposes, we concentrate on specialist and non-specialist tillage farmers who produce spring barley for animal feed usage. We concentrate on this subset of farmers as spring barley is the most common grain crop produced by Irish farmers. We have excluded malted spring barley due to the price differential between malted barley and barley for animal feed usage. We have excluded some growers of spring barley (animal feed use) for a number of reasons. First, it is critical that each farm in the analysis has a sufficient number of historical yields for the generation of stochastic projections. As in the case of the Italian analysis by <a href="#bib32">Kimura and Le Thi (2011)</a>, we include all crop producers that have remained in the sample for at least five years between 2004 and 2013.</p><p data-astro-cid-qsyhzaho>There are a total of 138 farms meeting the above criteria and these farms are therefore considered to be ‘the selected sample’ and are available for the stochastic analysis. This includes some specialist tillage farms which are largely focused on cereal production and non-specialist cereal producers, who engage primarily in livestock and/or milk production and for whom cereal production is a secondary activity. There is some attrition in our data in that only 37 farms have historical data for Spring Barley in all of the ten relevant years. The 138 farms represent approximately 8,700 Spring Barley growers. Our sample is therefore representative of the vast majority of spring barley growers in the country. The Census of Agriculture 2010 showed that there were 9,058 spring barley growers (inc. malted barley) in Ireland during that year (<a href="#bib11">CSO, 2012</a>). Our sample includes farms that rotate crops from time to time. This explains the relatively high number of growers being represented.</p><p data-astro-cid-qsyhzaho>In <a href="#table1">Table 1</a>, we display some summary statistics to compare our selected sample of tillage farmers with all other tillage farms in the Teagasc National Farm Survey. This will allow us to examine the representativeness of the selected sample. The statistics are weighted according to the weights provided in the Teagasc National Farm Survey micro-data. The comparison distinguishes between those with no record of producing spring barley for animal feed, those farms with a record of less than five years in producing this crop and those farms comprising the selected sample i.e. those farms with at least five years of production in spring barley for animal feed usage. Some farmers concentrate their activities on other grain crops and are therefore excluded from this initial version of the model. It is intended that the model will eventually broaden to incorporate other grain crops when the sample size becomes sufficient.</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Statistics for the selected sample and other tillage producers.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">Other Tillage Producers</th>
+<th>The selected sample</th>
+</tr>
+<tr>
+<th/>
+<th>No Spring Barley</th>
+<th>Less than Five Years of Spring Barley</th>
+<th>Five Years Plus of Spring Barley</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spring Barley Yield [Animal Feed]</td>
+<td align="center">N/A</td>
+<td align="center">5.69</td>
+<td align="center">6.04</td>
+</tr>
+<tr>
+<td>Average Spring Barley [Animal Feed] Hectares</td>
+<td align="center">0.00</td>
+<td align="center">6.54</td>
+<td align="center">10.45</td>
+</tr>
+<tr>
+<td>Average Malted Spring Barley Hectares</td>
+<td align="center">5.69</td>
+<td align="center">1.37</td>
+<td align="center">0.34</td>
+</tr>
+<tr>
+<td>Farm Size [Number of Hectares</td>
+<td align="center">59.23</td>
+<td align="center">54.03</td>
+<td align="center">69.71</td>
+</tr>
+<tr>
+<td>Land Owned</td>
+<td align="center">51.97</td>
+<td align="center">44.44</td>
+<td align="center">59.25</td>
+</tr>
+<tr>
+<td>Land Rented In</td>
+<td align="center">11.02</td>
+<td align="center">14.45</td>
+<td align="center">15.01</td>
+</tr>
+<tr>
+<td>Total Pasture Hectares</td>
+<td align="center">30.43</td>
+<td align="center">30.63</td>
+<td align="center">38.50</td>
+</tr>
+<tr>
+<td>Total Tillage Hectares</td>
+<td align="center">24.28</td>
+<td align="center">20.36</td>
+<td align="center">27.97</td>
+</tr>
+<tr>
+<td>Number of Crops in Each Year</td>
+<td align="center">1.11</td>
+<td align="center">1.38</td>
+<td align="center">1.59</td>
+</tr>
+<tr>
+<td>Mainly Tillage (0,1)</td>
+<td align="center">0.37</td>
+<td align="center">0.47</td>
+<td align="center">0.51</td>
+</tr>
+<tr>
+<td>Specialist Dairy (0,1)</td>
+<td align="center">0.20</td>
+<td align="center">0.13</td>
+<td align="center">0.06</td>
+</tr>
+<tr>
+<td>Livestock Units</td>
+<td align="center">59.48</td>
+<td align="center">56.80</td>
+<td align="center">69.73</td>
+</tr>
+<tr>
+<td>Livestock Units Per Hectare</td>
+<td align="center">1.07</td>
+<td align="center">1.01</td>
+<td align="center">0.97</td>
+</tr>
+<tr>
+<td>Farm Operator Age</td>
+<td align="center">50.99</td>
+<td align="center">51.90</td>
+<td align="center">55.98</td>
+</tr>
+<tr>
+<td>Mean Farm Income</td>
+<td align="center">38,353</td>
+<td align="center">31,140</td>
+<td align="center">36,750</td>
+</tr>
+<tr>
+<td>Mean Market Farm Income</td>
+<td align="center">19,790</td>
+<td align="center">15,446</td>
+<td align="center">11,780</td>
+</tr>
+<tr>
+<td>Mean Single Farm Payment</td>
+<td align="center">17,482</td>
+<td align="center">14,722</td>
+<td align="center">23,991</td>
+</tr>
+<tr>
+<td>Off-Farm Employment Operator</td>
+<td align="center">0.34</td>
+<td align="center">0.38</td>
+<td align="center">0.24</td>
+</tr>
+<tr>
+<td>Off-Farm Employment Spouse</td>
+<td align="center">0.23</td>
+<td align="center">0.31</td>
+<td align="center">0.28</td>
+</tr>
+<tr>
+<td>Sample size</td>
+<td align="center">49</td>
+<td align="center">240</td>
+<td align="center">138</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Authors Calculations using Teagasc National Farm Survey Data 2005–2013.</p></div></figure><p data-astro-cid-qsyhzaho><a href="#table1">Table 1</a> shows that the selected sample tends to achieve a higher yield per hectare than those farms with less than five observations perhaps reflecting the better performance and growing conditions for farms in the selected sample. It may be the case that some farmers respond to poor yield outcomes by ceasing the production of spring barley and we should consider this in any assessment of the model results. For the selected sample, the average number of hectares of spring barley production appears quite low at approximately 10.45 hectares. This is due to the fact that some of these farms will have recorded years without production of spring barley for animal feed. A substantial proportion of activity on many of these farms is allocated to livestock production. For instance, among the selected sample, an average of approximately 38.5 hectares is devoted to livestock production. This exceeds the average number of hectares allocated to tillage production. A relatively small proportion (~ six per cent) of the selected sample is engaged in specialist dairy farming. This contrasts with 20 per cent for those crop-producers with no spring barley for animal feed usage.</p><p data-astro-cid-qsyhzaho>In terms of farm income, it appears that the selected sample has higher farm income than those farms with fewer observations of spring barley. This is mainly driven by differences in the size of the single farm payment as opposed to market-based activities. The average size of the single farm payment is quite substantial and capable of providing a role as a risk management tool and perhaps crowd out the demand for the forward contracting tool and other financial risk management tools. The average age of the farm operator is also higher among the selected sample which may have some effect on risk management decision-making. The differences in sample characteristics mean that we should be careful in interpreting the results. The eventual results will apply to those farms with a relatively high number of years with spring barley production and may not be so relevant for those farms with an occasional production of this crop.</p><p data-astro-cid-qsyhzaho>As in the case of dairy farmers, the volatility in output and input prices has increased in the past decade. This is part of a wider global trend which has received much attention in the academic literature (see for example <a href="#bib1">Abbott <i>et al</i>. 2011</a>). In <a href="#fig1">Figure 1</a>, we present the recent output price trends for the main grain crops including Barley for animal feed usage. Historically, there have been significant differences in price between Malted Barley and Barley for animal feed use with Malted Barley commanding the higher output price. Despite this price differential, the Barley for animal feed use is more commonly grown in Ireland. The size of the livestock sector in Ireland demands a large supply of grain crops for animal feed use.</p><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00135-fig1.BqaXwDK2_Zi2IBh.webp" class="figure-lightbox-trigger" data-pswp-width="1710" data-pswp-height="1235" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00135-fig1.BqaXwDK2_Zi2IBh.webp" alt width="1710" height="1235" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Historical price trends for selected grain crops (€).</span></figcaption></figure><p data-astro-cid-qsyhzaho>One can see from <a href="#fig1">Figure 1</a> that the price for Feed Barley has lagged behind Malted Barley for the entire period. The price for Feed Barley has closely followed that for Feed Wheat especially since the year 2000. Perhaps, the most striking aspect of this graph is the apparent increase in the volatility of these output prices since 2006. Both Feed Barley and Feed Wheat prices hit the intervention price in the demand slump of 2009 having reached record nominal prices in 2007. It does appear however, that the intervention price is becoming less significant over time. During the 1990s and early 2000s, the market price for Barley was frequently below the intervention price. <a href="#bib22">Grant (2010)</a> explains that this greatly reduced the risks faced by producers and “led to the appearance of the famous butter mountains, wine lakes etc.” Policy has responded by phasing out the option of intervention, reducing the intervention price to near world market levels or alternatively abolishing the option of intervention for particular commodities.</p><p data-astro-cid-qsyhzaho>The profitability of Barley production is dependent on both the output price and the relevant input prices. In terms of input prices, the price of Fertilizer, Machinery Hire, Crop Protection and Seeds are particularly important. In <a href="#fig2">Figure 2</a>, we display the cost price indices for these four inputs. We use the index for motor fuel as a substitute for machinery hire.</p><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00135-fig2.bVIWzMgZ_1UTf0c.webp" class="figure-lightbox-trigger" data-pswp-width="1683" data-pswp-height="956" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00135-fig2.bVIWzMgZ_1UTf0c.webp" alt width="1683" height="956" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Cost indices for key inputs at sowing time (Index 2000)<sup><a href="#fn1">1</a></sup>.</span></figcaption></figure><p data-astro-cid-qsyhzaho>The model includes information on international crop yields and domestic crop prices given that international crop yields can influence domestic crop prices. A correlation matrix of these variables is generated which we discuss in more detail in the next section. The correlations between crop yields are made at the aggregate level using data taken from the CSO rather than farm level data from the Teagasc National Farm Survey. This is a necessary step given that the vast majority of the farms in the sample do not produce all of the relevant crops in the same year i.e. Barley, Wheat and Oats. We are therefore assuming that the correlations between the yields of Barley, Wheat and Oats, as calculated using the CSO aggregate statistics are appropriate for the variety of farms in our sample.</p></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. The model</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Our model provides an estimate of Market Gross Margin for the production of Spring Barley (animal feed use) for each farm under 500 alternative output price and yield scenarios, generated using the SIMETAR software package. We therefore account for the risk associated with these two random variables. The stochastic returns are based on market gross margin rather than market net margin. The market gross margin excludes the deduction of farm overheads such as depreciation, interest repayments and other expenditure items such as electricity, light and heat costs which cannot easily be attributed to a particular farming activity. The market net margin is the profit measure which includes the deduction of these overhead items. In this section, we describe the steps required to estimate the stochastic market gross margin beginning with a formal definition of the market gross margin. This is followed by an explanation of the steps required to deliver stochastic estimates for each of the components in the model.</p><p data-astro-cid-qsyhzaho>The formula for the market gross margin function is the following:</p><div id="eqn1" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(1)</span><math><mrow><msub><mi>π</mi><mrow><mi>G</mi><mi>R</mi><mi>O</mi><mi>S</mi><mi>S</mi></mrow></msub><mo>=</mo><mstyle displaystyle="true"><mo>∑</mo> <mrow><mi>p</mi><mo>∗</mo><mi>q</mi><mo>∗</mo><mi>H</mi><mi>A</mi><mo>−</mo><mi>D</mi><mi>C</mi></mrow></mstyle></mrow></math></div><p data-astro-cid-qsyhzaho><b>p</b> output price per unit of Spring Barley</p><p data-astro-cid-qsyhzaho><b>q</b> yield per hectare of Spring Barley crop</p><p data-astro-cid-qsyhzaho>HA Land Size in Number of Hectares cultivated of Spring Barley. It is assumed that the total number of hectares is unchanged from the most recently available data year.<sup><a href="#fn2">2</a></sup></p><p data-astro-cid-qsyhzaho>DC Direct Costs including Hired Machinery, Seeds, Crop Protection, Fertiliser, Transport Costs, Labour and Other Direct Costs. The Direct Costs are crop specific.</p><section id="s4-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Stochastic prices</h3><p data-astro-cid-qsyhzaho>The stochastic output prices <b><i>p</i></b> are estimated based on the historical information on output prices from the Teagasc database, a series of ordinary least squares (OLS) regressions and the Teagasc Outlook deterministic projections for 2014. These projections were carried out in December 2013 and therefore prior to the sowing of crops for the 2014 harvest. At this time, the Teagasc outlook indicated a deterministic projection of approximately 160 euro per tonne for Winter Wheat. The outlook did not explicitly provide a deterministic estimate for Spring Barley prices. However, the Spring Barley price typically follows the trend in Winter Wheat prices albeit at a slightly lower level. For 2014, this would have suggested a deterministic projection in the region of 150 to 160 euro per tonne (<a href="#bib50">Thorne 2013</a>). The regression based model should ideally provide a deterministic value in this region for 2014.</p><p data-astro-cid-qsyhzaho>The regression based model would be unnecessary if futures prices on spring barley for animal feed usage were widely available in all historical years. In the presence of future prices, one could simply assume that the futures price at any given time represents the best available guide to the predicted price for the crop at harvest time. In contrast to malted barley, there are limited futures markets for spring barley for animal feed usage although such markets do exist in Australia and Hungary. In the United Kingdom, there does exist a LIFFE feed wheat futures market and this can often prove to be a useful guide to the future feed barley price given the expected high correlation between both feed wheat and feed barley prices. The Agriculture and Horticulture Development Board (AHDB) provides a frequently updated information source on developments in these markets (<a href="#bib2">AHDB 2016</a>).</p><p data-astro-cid-qsyhzaho>Given the absence of a suitable feed barley futures market, we therefore rely on the OLS regression approach outlined in (<a href="#bib43">Richardson <i>et al</i>. 2000</a>).</p><p data-astro-cid-qsyhzaho>In estimating a stochastic model for spring barley prices, a number of important decisions must be made including the choice of probability distribution. <a href="#bib43">Richardson <i>et al</i>. (2000)</a> advise that ten observations per farm provides a sample size that is too small for the use of standardized probability distributions such as the weibull distribution or beta distribution. We therefore employ an empirical distribution. <a href="#bib43">Richardson <i>et al</i>. (2000)</a> conclude that an empirical distribution “avoids enforcing a specific distribution on the variables and does not limit the ability of the model to deal with correlation and heteroscedasticity”.</p><p data-astro-cid-qsyhzaho>As proposed by <a href="#bib43">Richardson <i>et al</i>. (2000)</a>, the first step in estimating the parameters for a multivariate empirical (MVE) distribution is to separate the random and non-random components for each of the stochastic variables. We utilise an ordinary least squares (OLS) regression to separate the random and non-random components and therefore identify whether or not a deterministic component appears to have historically existed for Spring Barley prices.</p><div id="eqn2" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(2)</span><math><mrow><msub><mover accent="true"><mi>P</mi><mo>⌢</mo></mover><mrow><mtext>ct</mtext></mrow></msub><mo>=</mo><mover accent="true"><mi>a</mi><mo>⌢</mo></mover><mo>+</mo><mover accent="true"><mi>b</mi><mo>⌢</mo></mover><mo stretchy="false">(</mo><mi>T</mi><mi>r</mi><mi>e</mi><mi>n</mi><msub><mi>d</mi><mrow><mi>t</mi><mo>,</mo></mrow></msub><mo stretchy="false">)</mo><mo>+</mo><mover accent="true"><mi>e</mi><mo>^</mo></mover></mrow></math></div><p data-astro-cid-qsyhzaho>This longitudinal regression is carried out with the historical data on Spring Barley output prices covering the period from 1995 to 2013. The relevant period involved changes such as a sharp increase in economic growth among lower and middle income countries and a sharp rise in livestock feed use in developing countries, both factors placing upward pressure on cereal prices. During this time, the share of land required to be allocated to setaside was reduced to zero, which ought to have placed some downward pressure on prices<sup><a href="#fn3">3</a></sup>. Incorporating all of these factors into an econometric model would add a great degree of complexity with little added value.</p><p data-astro-cid-qsyhzaho>The harvest year is the only independent variable in this model and is represented by Trend<sub><i>t</i></sub>. In this case, the notation c represents the particular crop (in this case spring barley). The objective is simply to identify whether or not a time trend has existed during this time. This econometric model could be made much more complex by attempts to incorporate various national and global supply and demand factors as determinants of the predicted price in each given year. We argue however, that this would introduce a great degree of complexity without much added value. In the absence of a time trend, it can be assumed that the simple mean (<math><mrow><msub><mover accent="true"><mi>P</mi><mo>¯</mo></mover><mi>c</mi></msub></mrow></math>) represents the predicted value of the Output price <math><mrow><msub><mover accent="true"><mi>P</mi><mo>⌢</mo></mover><mrow><mtext>ct</mtext></mrow></msub></mrow></math> in each year as given in <a href="#eqn3">Equation 3</a>.</p><div id="eqn3" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(3)</span><math><mrow><msub><mover accent="true"><mi>P</mi><mo>⌢</mo></mover><mrow><mtext>ct</mtext></mrow></msub><mo>=</mo><msub><mover accent="true"><mi>P</mi><mo>¯</mo></mover><mi>c</mi></msub></mrow></math></div><p data-astro-cid-qsyhzaho>In this regression-based approach, the residuals are a useful proxy for the degree to which the output price deviates from the expected. The residuals or random component (e) is calculated by subtracting the predicted or non-random component of the variable from the observed value in each year.</p><div id="eqn4" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(4)</span><math><mrow><msub><mover accent="true"><mi>e</mi><mo>^</mo></mover><mrow><mtext>ct</mtext></mrow></msub><mo>=</mo><msub><mi>P</mi><mrow><mi>c</mi><mi>t</mi></mrow></msub><mo>−</mo><msub><mover accent="true"><mi>P</mi><mo>⌢</mo></mover><mrow><mi>c</mi><mi>t</mi></mrow></msub></mrow></math></div><p data-astro-cid-qsyhzaho>One can see from <a href="#fig3">Figure 3</a>, the linear predicted trend in output price and the actual outcome price in each year with the difference representing the residual or random component. CV represents the coefficient of variation for the recent history of spring barley prices. The value of 20.45 per cent corresponds very closely to the findings of <a href="#bib38">Nayak and Turvey (2000)</a> for a sample of farmers in Ontario, Canada.</p><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00135-fig3.B9-cBpm0_Z3eBaM.webp" class="figure-lightbox-trigger" data-pswp-width="1594" data-pswp-height="941" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00135-fig3.B9-cBpm0_Z3eBaM.webp" alt width="1594" height="941" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Actual and linear predicted spring barley price (€) 1995–2013.</span></figcaption></figure><p data-astro-cid-qsyhzaho><a href="#fig3">Figure 3</a> shows that in most years, the actual output price has not deviated substantially from the linear predicted price but there are exceptions including 2007 when a boom in commodities prices occurred and 2012 when drought in major crop producing countries affected global supply. The onset of the severe global recession in 2009 manifested itself in unusually low output prices for grain crops.</p><p data-astro-cid-qsyhzaho>The next step is to convert the residuals ê<sub>ct</sub> into fractional deviates about their respective deterministic components.</p><div id="eqn5" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(5)</span><math><mrow><msub><mi>D</mi><mrow><mtext>ct</mtext></mrow></msub><mo>=</mo><mfrac><mrow><msub><mover accent="true"><mi>e</mi><mo>^</mo></mover><mrow><mtext>ct</mtext></mrow></msub></mrow><mrow><msub><mover accent="true"><mi>p</mi><mo>⌢</mo></mover><mrow><mi>c</mi><mi>t</mi></mrow></msub></mrow></mfrac></mrow></math></div><p data-astro-cid-qsyhzaho>For instance, where the predicted output price is 160 per tonne, a residual or deviation of 16 euro per tonne represents a fractional deviate of ten per cent i.e. <math><mrow><msub><mi>D</mi><mrow><mi>c</mi><mi>t</mi></mrow></msub><mo>=</mo><mn>10</mn><mo>=</mo><mfrac><mrow><mn>16</mn></mrow><mrow><mn>160</mn></mrow></mfrac></mrow></math>. The historical range of fractional deviates can therefore be used to estimate the degree of risk attached to output prices in the near future. This is, of course, based on the assumption that the historical distribution of unexpected price changes is an appropriate guide to the stochastic distribution of prices in the future.</p><p data-astro-cid-qsyhzaho>The relative deviates <i>D</i><sub>ct</sub> are then sorted from the minimum deviate to the maximum deviate. N denotes the total number of recorded observations in the sample, in this case 19, each representing one year of historical price data. Prior to this sorting exercise, the creation of pseudo minimums and pseudo maximums are necessary for each random yield and price variable. This ensures that the simulated distribution returns the extreme values. As in the case of <a href="#bib43">Richardson <i>et al</i>. (2000)</a>, the pseudo-minimum and maximums are defined to be very close to the observed minimum and maximum.</p><p data-astro-cid-qsyhzaho>The upper and lower bound for the deviates <b><i>D<sub>cn</sub></i></b> are estimated in the following:</p><div id="eqn6" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(6)</span><math><mrow><msub><mi>D</mi><mrow><mi>c</mi><mo>,</mo><mtext>low_bound</mtext></mrow></msub><mo>=</mo><mn>1.05</mn><mo>∗</mo><mi>m</mi><mi>i</mi><msub><mi>n</mi><mi>n</mi></msub><msub><mi>D</mi><mrow><mi>c</mi><mi>n</mi></mrow></msub></mrow></math></div><div id="eqn7" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(7)</span><math><mrow><msub><mi>D</mi><mrow><mi>c</mi><mo>,</mo><mi>u</mi><mi>p</mi><mi>p</mi><mi>e</mi><mi>r</mi><mtext>bound</mtext></mrow></msub><mo>=</mo><mn>1.05</mn><mo>∗</mo><mi>m</mi><mi>a</mi><msub><mi>x</mi><mi>n</mi></msub><msub><mi>D</mi><mrow><mi>c</mi><mi>n</mi></mrow></msub></mrow></math></div><p data-astro-cid-qsyhzaho>The addition of these upper and lower bounds means that there are 21 initial points for the empirical distribution of output prices i.e. 19 historical observations plus the lower and upper bounds.</p><p data-astro-cid-qsyhzaho>The fractional deviates are then sorted and probabilities are assigned to each of the sorted deviates in the following</p><div id="eqn8" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(8)</span><math><mrow><mtext>P(</mtext><msub><mi>D</mi><mrow><mi>c</mi><mo>,</mo><mi>l</mi><mi>o</mi><mi>w</mi><mo>_</mo><mtext>bound</mtext></mrow></msub><mtext>)</mtext><mo>=</mo><mn>0</mn></mrow></math></div><div id="eqn9" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(9)</span><math><mrow><mtext>P(</mtext><msub><mi>D</mi><mrow><mi>c</mi><mo>,</mo><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></msub><mtext>)</mtext><mo>=</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac></mrow><mo>)</mo></mrow><mo>∗</mo><mn>0.5</mn></mrow></math></div><div id="eqn10" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(10)</span><math><mrow><mtext>P(</mtext><msub><mi>D</mi><mrow><mi>c</mi><mo>,</mo><mo stretchy="false">(</mo><mn>2</mn><mo stretchy="false">)</mo></mrow></msub><mtext>)</mtext><mo>=</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mtext>P(</mtext><msub><mi>D</mi><mrow><mi>c</mi><mo>,</mo><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></msub><mtext>)</mtext></mrow></math></div><div id="eqn11" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(11)</span><math><mrow><mtext>P(</mtext><msub><mi>D</mi><mrow><mi>c</mi><mo>,</mo><mo stretchy="false">(</mo><mi>N</mi><mo stretchy="false">)</mo></mrow></msub><mtext>)</mtext><mo>=</mo><mrow><mo>(</mo><mrow><mfrac><mn>1</mn><mi>N</mi></mfrac></mrow><mo>)</mo></mrow><mo>+</mo><mtext>P(</mtext><msub><mi>D</mi><mrow><mi>c</mi><mo>,</mo><mo stretchy="false">(</mo><mi>N</mi><mo>−</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></msub><mtext>)</mtext></mrow></math></div><div id="eqn12" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(12)</span><math><mrow><mtext>P(</mtext><msub><mi>D</mi><mrow><mi>c</mi><mo>,</mo><mi>u</mi><mi>p</mi><mi>p</mi><mi>e</mi><mi>r</mi><mo>_</mo><mi>b</mi><mi>o</mi><mi>u</mi><mi>n</mi><mi>d</mi></mrow></msub><mtext>)</mtext><mo>=</mo><mn>1</mn></mrow></math></div><p data-astro-cid-qsyhzaho>Based on this sorting exercise, we can produce <a href="#table2">Table 2</a> showing the historical fractional deviates sorted from lowest to highest and the probability attached to each outcome. At this stage, the deterministic price will be established using either <a href="#eqn2">Eq. 2</a> or <a href="#eqn3">Eq. 3</a>. In the case of the Spring Barley price, a deterministic component does appear to exist. The significant time trend (<a href="#eqn2">Eq. 2</a>) provides an annual gradual price increase of 3.80 euro per tonne.</p><p data-astro-cid-qsyhzaho>In <a href="#table2">Table 2</a>, one can see that the minimum fractional deviate is approximately -0.364. This implies that the lowest estimated output price for the simulated year will be no lower than 36.4 per cent below the deterministic price of 156.736 euro per tonne. <a href="#table2">Table 2</a> also shows that the maximum fractional deviate is approximately 0.445. This implies that the maximum estimated output price for the simulated year will be no higher than 44.5 per cent above the deterministic price.</p><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Parameters for an empirical distribution of feed barley price in 2014.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Historical Ranking</th>
+<th>Deterministic Component <math><mrow><msub><mover accent="true"><mi>P</mi><mo>⌢</mo></mover><mrow><mtext>ct</mtext></mrow></msub></mrow></math></th>
+<th>Sorted Fractional Deviates <i>D</i><sub>ct</sub></th>
+<th>Cumulative Probability (F(<i>D<sub>c</sub></i>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Min</td>
+<td align="center">156.736</td>
+<td align="center">−0.364135974</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td>1</td>
+<td align="center">156.736</td>
+<td align="center">−0.346796166</td>
+<td align="center">0.0263</td>
+</tr>
+<tr>
+<td>2</td>
+<td align="center">156.736</td>
+<td align="center">−0.200781935</td>
+<td align="center">0.0789</td>
+</tr>
+<tr>
+<td>3</td>
+<td align="center">156.736</td>
+<td align="center">−0.19998511</td>
+<td align="center">0.1316</td>
+</tr>
+<tr>
+<td>4</td>
+<td align="center">156.736</td>
+<td align="center">−0.19211783</td>
+<td align="center">0.1842</td>
+</tr>
+<tr>
+<td>5</td>
+<td align="center">156.736</td>
+<td align="center">−0.12981906</td>
+<td align="center">0.2368</td>
+</tr>
+<tr>
+<td>6</td>
+<td align="center">156.736</td>
+<td align="center">−0.12203359</td>
+<td align="center">0.2895</td>
+</tr>
+<tr>
+<td>7</td>
+<td align="center">156.736</td>
+<td align="center">−0.10178267</td>
+<td align="center">0.3421</td>
+</tr>
+<tr>
+<td>8</td>
+<td align="center">156.736</td>
+<td align="center">−0.08118956</td>
+<td align="center">0.3947</td>
+</tr>
+<tr>
+<td>9</td>
+<td align="center">156.736</td>
+<td align="center">−0.03725432</td>
+<td align="center">0.4474</td>
+</tr>
+<tr>
+<td>10</td>
+<td align="center">156.736</td>
+<td align="center">−0.01925512</td>
+<td align="center">0.5</td>
+</tr>
+<tr>
+<td>11</td>
+<td align="center">156.736</td>
+<td align="center">−0.00869402</td>
+<td align="center">0.5526</td>
+</tr>
+<tr>
+<td>12</td>
+<td align="center">156.736</td>
+<td align="center">−0.00817022</td>
+<td align="center">0.6053</td>
+</tr>
+<tr>
+<td>13</td>
+<td align="center">156.736</td>
+<td align="center">−0.002380722</td>
+<td align="center">0.6579</td>
+</tr>
+<tr>
+<td>14</td>
+<td align="center">156.736</td>
+<td align="center">0.038333195</td>
+<td align="center">0.7105</td>
+</tr>
+<tr>
+<td>15</td>
+<td align="center">156.736</td>
+<td align="center">0.086928907</td>
+<td align="center">0.7632</td>
+</tr>
+<tr>
+<td>16</td>
+<td align="center">156.736</td>
+<td align="center">0.219717674</td>
+<td align="center">0.8158</td>
+</tr>
+<tr>
+<td>17</td>
+<td align="center">156.736</td>
+<td align="center">0.34089299</td>
+<td align="center">0.8684</td>
+</tr>
+<tr>
+<td>18</td>
+<td align="center">156.736</td>
+<td align="center">0.405517738</td>
+<td align="center">0.9211</td>
+</tr>
+<tr>
+<td>19</td>
+<td align="center">156.736</td>
+<td align="center">0.424213082</td>
+<td align="center">0.9737</td>
+</tr>
+<tr>
+<td>Max</td>
+<td align="center">156.736</td>
+<td align="center">0.445423736</td>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>These 21 alternative fractional deviates and the deterministic predicted output price (<a href="#eqn2">Eq. 2</a>) are subsequently used to estimate 500 alternative price and yield scenarios for each of the 138 farms in the sample but a number of other steps must be first carried out. The next stage is to describe the steps required to estimate the parameters for the stochastic distribution of crop yields, which are an additional source of production risk for tillage producers.</p></section><section id="s4-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Stochastic yields</h3><p data-astro-cid-qsyhzaho>In contrast to the output prices, the stochastic yields are estimated for each farm in the data. This is carried out in order to reflect the wide disparities in average yield and the variability of yields between farms. The variability of within-farm crop yields far exceeds the within-farm variability in crop output prices. The estimation of stochastic yields is a formidable exercise given that there are 138 farms in our sample. In addition, the stochastic yields are estimated at a national level in line with the <a href="#eqn2">Eqs. 2</a>–<a href="#eqn12">12</a>. These national level estimates are less critical for the model but they do allow for the construction of a correlation matrix of international yields and prices, which can be used in the future to simulate the impact of movements in international crop yields on domestic Irish crop prices.</p><p data-astro-cid-qsyhzaho>As in the case of the output price, a series of OLS regressions are applied. In this case, the regression is repeated for each farm in the sample in order to reflect differences between the farms in both average crop yield and its variability. The notation <i>i</i> represents each individual farm in the dataset. For international crop yields, we simply exclude the notation <i>i</i> as those regressions are based on national level data.</p><div id="eqn13" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(13)</span><math><mrow><msub><mrow><mover accent="true"><mrow><mi>Y</mi><mi>D</mi></mrow><mo stretchy="true">⌢</mo></mover></mrow><mrow><mtext>ict</mtext></mrow></msub><mo>=</mo><mover accent="true"><mi>a</mi><mo>⌢</mo></mover><mo>+</mo><mover accent="true"><mi>b</mi><mo>⌢</mo></mover><mo stretchy="false">(</mo><mi>T</mi><mi>r</mi><mi>e</mi><mi>n</mi><msub><mi>d</mi><mrow><mi>c</mi><mi>t</mi><mo>,</mo></mrow></msub><mo stretchy="false">)</mo><mo>+</mo><mover accent="true"><mi>e</mi><mo>^</mo></mover></mrow></math></div><p data-astro-cid-qsyhzaho>The Harvest year is again the only independent variable in this model. The objective is simply to identify whether or not a time trend has existed during this time. On some farms, the coefficient on the time trend will be insignificant. In the absence of a time trend, it can be assumed that the historical mean of yields (<math><mrow><msub><mrow><mover accent="true"><mrow><mi>Y</mi><mi>D</mi></mrow><mo stretchy="true">¯</mo></mover></mrow><mrow><mi>i</mi><mi>c</mi></mrow></msub></mrow></math>) represents the predicted value of the Yield <i>YD</i><sub>iCt</sub> in each year as given in <a href="#eqn14">Equation 14</a>.</p><div id="eqn14" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(14)</span><math><mrow><msub><mrow><mover accent="true"><mrow><mi>Y</mi><mi>D</mi></mrow><mo stretchy="true">⌢</mo></mover></mrow><mrow><mtext>ict</mtext></mrow></msub><mo>=</mo><msub><mrow><mover accent="true"><mrow><mi>Y</mi><mi>D</mi></mrow><mo stretchy="true">¯</mo></mover></mrow><mrow><mi>i</mi><mi>c</mi></mrow></msub></mrow></math></div><p data-astro-cid-qsyhzaho>As in the case of prices, the residuals or random component (ê) is calculated by subtracting the predicted or non-random component of the variable from the observed value in each year.</p><div id="eqn15" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(15)</span><math><mrow><mover accent="true"><mrow><mi>y</mi><mi>d</mi><msub><mi>e</mi><mrow><mtext>ict</mtext></mrow></msub></mrow><mo stretchy="true">⌢</mo></mover><mo>=</mo><mi>Y</mi><msub><mi>D</mi><mrow><mi>i</mi><mi>c</mi><mi>t</mi></mrow></msub><mo>−</mo><msub><mrow><mover accent="true"><mrow><mi>Y</mi><mi>D</mi></mrow><mo stretchy="true">⌢</mo></mover></mrow><mrow><mi>i</mi><mi>c</mi><mi>t</mi></mrow></msub></mrow></math></div><p data-astro-cid-qsyhzaho>In a small minority of cases, the linear trend in the crop yield will be unrealistically high or low and we therefore place an upper and lower bound on the beta coefficient for the trend in crop yields i.e. we do not allow the beta coefficient to exceed 0.25 or reach below −0.25. This essentially imposes a limit of approximately minus four or plus four per cent on the deterministic crop yield. We have chosen this threshold on the basis that the average crop yield growth tends to be in the region of one per cent per annum in Ireland. In some cases, a coefficient limit in excess of 0.25 would suggest that crop yields are changing at approximately five per cent per annum which far exceeds the national average of approximately plus one per cent.</p><p data-astro-cid-qsyhzaho>As in the case of the output prices, the fractional deviates for each historical crop yield are estimated, in this case at the farm level. For farms with ten years of historical data, there will be twelve alternative fractional deviates. This includes the ten historical deviates and a pseudo maximum and pseudo minimum estimate. The large number of alternative farm-level estimates means that the deviates cannot be summarised in one table.</p><p data-astro-cid-qsyhzaho>Given the possible historical relationship between international crop yields and domestic Irish crop yields and prices, there is a case for including the international crop yield deviates in our model. Irish crop production forms a small share of global production and international crop yields can be a significant driver of variability in Irish crop prices. In our model, we include yields for Irish Spring Barley, Irish Oats, Irish Wheat, UK Barley, UK Wheat, UK Rye, UK Oats and USA Soybeans. Our initial model included a larger range of crop yields from French, German and USA agriculture but these were excluded due to the absence of a significant correlation between these crop yields and Irish crop prices or yields.</p><p data-astro-cid-qsyhzaho>As in the case of <a href="#bib43">Richardson <i>et al</i>. (2000)</a>, we develop an intra-temporal correlation matrix to account for these potential international relationships. The intra-temporal correlation matrix is calculated using the unsorted, random components (<b>e</b><sub>it</sub>) from <a href="#eqn3">equation 3</a> and is demonstrated in <a href="#bib43">Richardson (2000)</a> for a 2 X 2 matrix. Many of these correlations are not entirely critical to the income risk results displayed later in the paper but they can be used to develop the model in the future.</p><p data-astro-cid-qsyhzaho>In <a href="#table4">Table 4</a> of the Appendix, we provide the correlation matrix. The results show that crop yields in Ireland are highly correlated at a national level. For instance, the correlation coefficient between Barley and Oats Yields is 0.72 and 0.84 between Barley and Wheat. As expected, Irish crop yields are much less correlated with international crop yields although there does appear to be a relatively high correlation between UK and Irish Wheat yields. USA Soybean yields are included in this model due to the significant relationship between USA Soybean yields and Irish Malted Barley prices and the coefficients are relatively high for other Irish crop prices.</p><p data-astro-cid-qsyhzaho>Irish crop prices are also highly correlated with one another. For instance, Irish feed barley prices and Irish feed wheat prices have a correlation coefficient 0.97. This suggests that the production of multiple crops, in a given year, may have a limited role as a form of risk management. A weak positive correlation coefficient is found between the yield and price for spring barley (animal feed use). The weak correlation is unsurprising given that domestic crop yields are unlikely to be a major driver of Irish crop prices. The positive sign of the coefficient should not be overly surprising given that the literature has sometimes found that expected crop prices can influence the final yield at harvest time (<a href="#bib36">Miao <i>et al</i>. (2015)</a>.</p></section><section id="s4-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Simulation</h3><p data-astro-cid-qsyhzaho>A number of further steps must be carried out in order to generate the simulations. The correlation matrix is transformed in SIMETAR into a 14x1 correlated uniform standard deviates (CUSD) matrix in line with <a href="#bib44">Richardson (2008</a>, p.28). This matrix retains the correlation coefficients provided in appendix <a href="#table4">Table 4</a>. An empirical distribution is then simulated in SIMETAR using the EMP() function. The function assumes a continuous distribution so it interpolates between the 21 specified points on the distribution. This interpolation exercise generates Correlated Fractional Deviates <i>CFD<sub>i</sub></i><sub>(14<i>x</i>1)</sub>.</p><p data-astro-cid-qsyhzaho>These deviates contain information on the size of the deviates for each variable and the correlation between the domestic and international price and yield variables. These Correlated Fractional Deviates are applied to the predicted price and yield values to provide us with an initial simulated value for the yield or price in the simulation year.</p><div id="eqn16" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(16)</span><math><mrow><msub><mrow><mover accent="true"><mi>X</mi><mo stretchy="true">˜</mo></mover></mrow><mrow><mtext>it</mtext></mrow></msub><mo>=</mo><msub><mover accent="true"><mi>X</mi><mo>⌢</mo></mover><mrow><mtext>it</mtext></mrow></msub><mo>.</mo><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><mi>C</mi><mi>F</mi><msub><mi>D</mi><mrow><mi>i</mi><mo stretchy="false">(</mo><mn>14</mn><mi>x</mi><mtext> </mtext><mo stretchy="false">)</mo></mrow></msub><mo stretchy="false">)</mo></mrow></math></div><p data-astro-cid-qsyhzaho>where <math><msub><mover accent="true"><mi>X</mi><mo stretchy="true">˜</mo></mover><mrow><mtext>it</mtext></mrow></msub></math> represents initial simulated value for the price or yield variable and <math><mrow><msub><mover accent="true"><mi>X</mi><mo>⌢</mo></mover><mrow><mtext>it</mtext></mrow></msub></mrow></math> represents the deterministic predicted value for each of these variables as estimated in <a href="#eqn2">Eq. 2</a>–<a href="#eqn3">3</a> and <a href="#eqn13">Eq. 13</a>–<a href="#eqn14">14</a>.</p><div id="eqn17" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(17)</span><math><mrow><msub><mi>Y</mi><mrow><mi>G</mi><mi>R</mi><mi>O</mi><mi>S</mi><mi>S</mi><mi>P</mi><mi>E</mi><mi>R</mi><mi>H</mi><mi>A</mi></mrow></msub><mo>=</mo><mstyle displaystyle="true"><mo>∑</mo> <mrow><mi>p</mi><mo>∗</mo><mi>q</mi></mrow></mstyle></mrow></math></div><p data-astro-cid-qsyhzaho>The Simulate Command in SIMETAR then produces the entire 500 simulated scenarios for both output price and yield. The generation of 500 alternative output price and yield scenarios means that we can produce 500 alternative Gross Output per Hectare scenarios given that Gross Output per hectare is the product of total price <i>p</i> multiplied by yield per hectare <i>q</i> as shown in the following:</p></section><section id="s4-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Direct costs</h3><p data-astro-cid-qsyhzaho>For the estimation of Total Market Gross Margin, it is necessary to deduct the direct costs of production from output as given in <a href="#eqn1">Eq. 1</a>. In the case of Direct Costs, we have made some assumptions to simplify the procedure. The cost of each direct cost item is assumed to be given at the time of sowing. It is assumed that the price of the fertiliser, crop protection and other direct costs are known by the farmer at this point in time and that no risk is attached to fluctuations in the price of direct costs.</p><p data-astro-cid-qsyhzaho>The direct costs for each farm are based on historical farm-level direct costs per hectare for each individual cost item listed above and CSO price data for the first three months of the projection year, in this case 2014. We assume however, that there is no behavioural response to changes in fertiliser prices or other direct costs from the historical data to the projection year. This may impact on the overall results given that some farms only have historical data for the 2004–2009 period and therefore prior to the large increase in motor fuel costs. We therefore test the sensitivity of our results by excluding those farms with less than eight years of data. This is found to have little impact on the overall results and these results are available on request.</p></section><section id="s4-5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Quality acceptance</h3><p data-astro-cid-qsyhzaho>Due to data limitations, this research does not explicitly model the risk attached to the quality acceptance. <a href="#bib51">Wilson and Dahl (2011)</a> is one of the few examples to have explicitly modelled this source of risk, with their study concentrating on the case of Durum Wheat production in the USA. The risk of the barley being rejected by potential buyers on the basis of poor quality is a risk that is very relevant for both producers of barley for malting purposes and barley for animal feed usage. For instance, a farmer may intend to grow barley for sale as malting barley but it may be rejected by potential buyers and the farmer will therefore resort to selling the barley as animal feed or alternatively using the barley to feed their own livestock. Our data suggests that the vast majority of malting barley producers have at some point classified a proportion of their barley production as barley for animal feed usage although it is not clear if this is a result of quality issues or something more deliberate.<sup><a href="#fn4">4</a></sup></p><p data-astro-cid-qsyhzaho>The degree of risk attached to quality acceptance differs somewhat between producers of malting barley and barley for animal feed usage. Quality acceptance is a risk for malting barley growers given the demanding standards for malting barley and the price differential between malting barley and barley for animal feed usage. However, these producers do have the option of selling the product as animal feed. For producers of spring barley for animal feed usage, the alternatives are much less rewarding as a failure to meet quality standards is likely to imply a zero payoff. On the other hand, the standards associated with quality acceptance for barley for animal feed usage are lower than for malting barley and ceteris paribus the likelihood of rejection is likely to be lower as a result.</p></section><section id="s4-6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Forward contracts</h3><p data-astro-cid-qsyhzaho>Forward contracting is the main available risk management tool for Irish tillage farmers. We estimate the impact of forward contracting on farm income risk and the direct impact of this tool on farm income. The degree of income risk is based on the stochastic projection of the Market Gross Margin. We calculate the degree of income variability <sup>σ</sup><i><span class="small-caps">gross</span></i> under three situations 1) where no forward contracts or other financial risk management tool are adopted 2) where 20 per cent of expected production is forward sold at 150 euro per tonne and 3) where 35 per cent of expected production is forward sold at 150 euro per tonne. Given that forward contracting reduces the likelihood of the farmer receiving very low output prices, one may expect that forward contracting will reduce the degree of income variability. Our results will show the degree to which the income variability changes in response to the adoption of the forward contract.</p><p data-astro-cid-qsyhzaho>In addition to the risk-reducing benefits of forward contracting, there are usually accounting costs associated with the adoption of the tool. The Grain merchant only has the incentive to offer a forward contract at less than or close to the expected market price. At the same time, a risk averse farmer will, by definition, be willing to enter into a forward contract at a level somewhat below the market expected price. We therefore show the profit impact of forward contract adoption under a situation where the farmer enters into a contract at 150 euro per tonne and therefore slightly below the expected price of 157 euro per tonne. We find that this will on average lead to a fall in income for the average income tillage farmer.<sup><a href="#fn5">5</a></sup></p></section></div></details><details id="s5" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">5. Results</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In this section, we present the simulation results showing the degree of income variability attached to the production of spring barley for animal feed usage and the degree to which the forward contracting risk management tool can reduce this income variability and therefore contribute towards managing income risk. We begin this section with the stochastic projections for the output price as this is the main contributor to income risk. This is followed by the results with respect to the riskiness of crop yield and the results relating to the riskiness of the market gross margin.</p><section id="s5-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Risk and price</h3><p data-astro-cid-qsyhzaho>In <a href="#fig4">Figure 4</a>, we show the entire simulated distribution for the output price. One can see that the probability of a price greater than 150 euro per tonne is estimated to be slightly greater than 50 per cent in our simulation year, in this case 2014. The average simulated price in SIMETAR is 157 euro per tonne. There is estimated to be only a ten per cent chance of the price falling below 120 euro per tonne. At the other end of the distribution, there is an estimated ten per cent chance of the price exceeding 215 euro per tonne.</p><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00135-fig4.DmUAsybI_Z2owObi.webp" class="figure-lightbox-trigger" data-pswp-width="1856" data-pswp-height="1203" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00135-fig4.DmUAsybI_Z2owObi.webp" alt width="1856" height="1203" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Cumulative distribution function of the feed barley price in 2014.</span></figcaption></figure></section><section id="s5-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Risk and yield</h3><p data-astro-cid-qsyhzaho>In <a href="#fig5">Figure 5</a>, we plot the cumulative distribution of farms according to the simulated coefficient of variation in crop yields. On the y-axis lies the cumulative distribution with the value one representing the entire 138 farms. This provides some indication about the differences between farms in crop yield variability. One can see from <a href="#fig5">Figure 5</a> that the coefficient of variation is approximately 12 to 14 per cent for the median farm i.e. the 69th highest value for income variability in the sample. This suggests that the variability in crop yields tends to be lower than the variability in output prices, a finding similar to (<a href="#bib38">Nayak &amp; Turvey 2000</a>) but we should exercise some caution in the interpretation given that the yields are given at the individual farm level while the crop prices are aggregate indicators. <a href="#bib32">Kimura and LeThi (2011)</a> explain that aggregated data can underestimate the risk for a particular variable. There are a minority of cases where the simulated crop yield variability is in excess of twenty per cent. In these cases, the simulated degree of variability in crop yields is likely to exceed the output price variability. Conversely, there are a significant minority of farms (~15 per cent) with relatively low crop yield variability of less than eight per cent.</p><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00135-fig5.VAUJX-a-_1NloXX.webp" class="figure-lightbox-trigger" data-pswp-width="1800" data-pswp-height="1166" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00135-fig5.VAUJX-a-_1NloXX.webp" alt width="1800" height="1166" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> Cumulative distribution of the variability in barley yield in 2014.</span></figcaption></figure></section><section id="s5-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Risk and market gross margin</h3><p data-astro-cid-qsyhzaho>The low correlation between Irish domestic crop yields and crop prices is important in determining the variability of market-based gross revenue and market-based gross margin. In many large crop producing regions or countries, the domestic crop yield or growing conditions have a significantly negative relationship with crop prices in a given year (<a href="#bib26">Hennessy <i>et al</i>. 1997</a>; <a href="#bib28">Hudson &amp; Coble 1999</a> and <a href="#bib19">Goodwin &amp; Schnepf 2000</a>). This helps suppress the degree of downside revenue risk, as situations of both low output price and low yield become less probable. The absence of a significantly negative relationship in the Irish case means that Irish tillage farmers, ceteris paribus, may face more risk than would be the case in a large crop producing country such as the United States or the Ukraine.</p><p data-astro-cid-qsyhzaho>The absence of a significant trade-off between domestic crop yields and prices means that the market revenues tend to be much more variable than either the output crop price or crop yield alone.</p><figure id="fig6" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00135-fig6.CMlSEy4E_Z2a7Mcw.webp" class="figure-lightbox-trigger" data-pswp-width="1784" data-pswp-height="1156" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00135-fig6.CMlSEy4E_Z2a7Mcw.webp" alt width="1784" height="1156" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 6.</strong><span data-astro-cid-dzaleqsp> Cumulative distribution of the variability in market gross revenue.</span></figcaption></figure><p data-astro-cid-qsyhzaho>One can see from <a href="#fig6">Figure 6</a> that the median farmer has an estimated variability in market gross revenue of approximately 25 per cent. None of the 138 farms have an estimated variability of less than twenty per cent while the estimated variability exceeds 30 per cent for approximately 15 per cent of farmers in the sample.</p><p data-astro-cid-qsyhzaho>The deduction of direct costs from the Total Gross Revenue allows us to estimate the coefficient of variation for the Market Gross Margin. The coefficient of variation for the Market Gross Margin is higher than for the Market Gross Revenue mainly because a smaller denominator applies to the latter. The average Market Gross Margin is typically much lower than the Gross Revenue due to the costs of production.</p><p data-astro-cid-qsyhzaho>In addition, there are a small number of instances of negative Gross Margins. We therefore present the results detailing the coefficient of variation and the standard deviation for different points in the distribution of income variability. The 25th percentile represents the income variability of the farm with the 35th lowest variability among the 138 farms. The 75th percentile represents the income variability of the farm with the 35th highest variability among the 138 farms. One can see from <a href="#table3A">Table 3A</a> that the variability of Gross Margin is approximately 70 per cent for the median farmer. This rises to 119 per cent for the 75th percentile. The 25th percentile has a coefficient of variation in the region of 55 per cent so the variability of profits or Gross Margin is relatively high across most of the distribution.</p><figure id="table3A" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3A.</strong><span data-astro-cid-dzaleqsp> The variability of market gross margin across the distribution.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="3">Coefficient of Variation</th>
+<th colspan="3">Standard Deviation</th>
+</tr>
+<tr>
+<th/>
+<th>25th Percentile</th>
+<th>Median</th>
+<th>75th Percentile</th>
+<th>25th Percentile</th>
+<th>Median</th>
+<th>75th Percentile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Market Gross Revenue</td>
+<td align="center">23.31</td>
+<td align="center">25.25</td>
+<td align="center">27.76</td>
+<td align="center">1780.08</td>
+<td align="center">3420.50</td>
+<td align="center">6524.20</td>
+</tr>
+<tr>
+<td>Market Gross Margin</td>
+<td align="center">54.96</td>
+<td align="center">69.77</td>
+<td align="center">119.43</td>
+<td align="center">1811.45</td>
+<td align="center">3531.71</td>
+<td align="center">6556.58</td>
+</tr>
+</tbody>
+</table></div></figure></section><section id="s5-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">Impact of forward contracts</h3><p data-astro-cid-qsyhzaho>Having established some estimate of the income variability attached to spring barley production, we now assess the potential impact of forward contracts on reducing income risk and variability. This represents the first attempt in the microsimulation literature to model the role of forward contracts or other financial risk management tools in dealing with risk in agriculture. We include the results both in terms of the coefficient of variation and the standard deviation. In <a href="#table3B">Table 3B</a>, we show that if all farmers in the sample decide to forward sell 20 per cent of production at 150 euro per tonne, the estimated variability (coefficient of variation) drops to 62 per cent for the median case. This reduces further to 57 per cent if all farmers commit 35 per cent of expected production to forward contracts.</p><p data-astro-cid-qsyhzaho>For the 75th percentile, the degree of income variability falls but remains at a very elevated level.<sup><a href="#fn6">6</a></sup></p><figure id="table3B" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3B.</strong><span data-astro-cid-dzaleqsp> Effect of forward contracting on variability of market gross margin.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="3">Coefficient of Variation (%)</th>
+<th colspan="3">Standard Deviation</th>
+</tr>
+<tr>
+<th/>
+<th>25th Percentile</th>
+<th>Median</th>
+<th>75th Percentile</th>
+<th>25th Percentile</th>
+<th>Median</th>
+<th>75th Percentile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Market Gross Margin</td>
+<td align="center">54.96</td>
+<td align="center">69.77</td>
+<td align="center">119.43</td>
+<td align="center">1811.45</td>
+<td align="center">3531.71</td>
+<td align="center">6556.58</td>
+</tr>
+<tr>
+<td>Margin with Forward Selling Option A</td>
+<td align="center">48.04</td>
+<td align="center">62.32</td>
+<td align="center">112.57</td>
+<td align="center">1639.82</td>
+<td align="center">3195.35</td>
+<td align="center">5474.91</td>
+</tr>
+<tr>
+<td>Margin with Forward Selling Option B</td>
+<td align="center">42.11</td>
+<td align="center">57.20</td>
+<td align="center">97.93</td>
+<td align="center">1433.87</td>
+<td align="center">2812.42</td>
+<td align="center">4703.06</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>A-20% of expected production @ 150 euro per tonne B-35% of expected production @ 150 euro per tonne.</p></div></figure><p data-astro-cid-qsyhzaho>In <a href="#table4">Table 4</a>, we show that the coefficient of variation for the total farm gross margin (excluding subsidies) was, on average, approximately 40 per cent for tillage farmers in the 2005–2013 period. This suggests that tillage farmers manage to reduce their overall farm income variability through the direct government payments and the engagement in livestock farming. Although forward contracting can reduce income variability by approximately twenty per cent, it is likely that tillage farmers find other non-financial risk management tools helpful in containing their income variability and exposure to risk.</p><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Average coefficient of variation by farm system 2005–2013<sup><a href="#fn7">7</a></sup>.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Farm system</th>
+<th>Total Farm Gross Margin (%)</th>
+<th>Total Farm Gross Margin (Excluding Subsidies) (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cattle</td>
+<td align="center">28.75</td>
+<td align="center">57.29</td>
+</tr>
+<tr>
+<td>Specialist Dairy</td>
+<td align="center">22.70</td>
+<td align="center">29.89</td>
+</tr>
+<tr>
+<td><b>Specialist Tillage</b></td>
+<td align="center"><b>23.86</b></td>
+<td align="center"><b>42.38</b></td>
+</tr>
+<tr>
+<td>Sheep</td>
+<td align="center">22.16</td>
+<td align="center">64.92</td>
+</tr>
+<tr>
+<td>Dairy and Other</td>
+<td align="center">25.85</td>
+<td align="center">50.00</td>
+</tr>
+<tr>
+<td>Total</td>
+<td align="center">26.23</td>
+<td align="center">52.20</td>
+</tr>
+<tr>
+<td>Non-Specialist Tillage<sup><a href="#fn8">8</a></sup></td>
+<td align="center">21.49</td>
+<td align="center">39.16</td>
+</tr>
+<tr>
+<td>No. of observations</td>
+<td align="center">927</td>
+<td align="center">927</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Authors calculations using Teagasc National Farm Survey data.</p></div></figure><p data-astro-cid-qsyhzaho>In particular, it appears from <a href="#table5">Table 5</a> that a relatively weak positive correlation exists between crop and livestock returns for the majority of farms. We find that the correlation coefficient between the livestock gross margin per hectare and the crop gross margin per hectare is approximately 0.13 for the median case. At the 25th percentile, the correlation coefficient is approximately -0.16 while at the 75th percentile, the correlation coefficient is close to 0.39. These estimates are based on the Teagasc National Farm Survey data for the producers of spring barley for animal feed usage between 1996 and 2013. The results are highly robust to the exclusion of non-specialist cereal producers.</p><p data-astro-cid-qsyhzaho>The relatively low correlation between crop and livestock returns suggests that livestock farming can offer some form of risk management for cereal producers. The vast majority of production of spring barley for animal feed usage is sold by the farmer rather than used as feed for their own particular farm. Based on the Teagasc National Farm Survey data, we can report that the share of production sold is above 90 per cent in all years from 2004 to 2013. One may consider the transfer of production from sales to own farm consumption as a form of risk management but it does not appear to be particularly widespread and therefore offers limited protection from adverse price outcomes.</p><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Correlation coefficient between livestock and crop returns.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td>Percentile</td>
+<td align="center">Correlation Coefficient</td>
+</tr>
+<tr>
+<td>10th Percentile</td>
+<td align="center">−0.46</td>
+</tr>
+<tr>
+<td>25th Percentile</td>
+<td align="center">−0.16</td>
+</tr>
+<tr>
+<td>50th Percentile (Median)</td>
+<td align="center">0.13</td>
+</tr>
+<tr>
+<td>75th Percentile</td>
+<td align="center">0.39</td>
+</tr>
+<tr>
+<td>90th Percentile</td>
+<td align="center">0.61</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Authors calculations using Teagasc National Farm Survey data.</p></div></figure></section></div></details><details id="s6" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">6. Conclusion</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In this paper, we have utilised historical farm-level data from the Teagasc National Farm Survey to develop a stochastic microsimulation model for the production of Spring Barley for animal feed use among Irish farmers. This has provided us with an indication of the income risk associated with the production of this grain crop. Forward Contracting is the main available financial risk management tool in Irish tillage farming and we have estimated the first round direct impact of this tool on the variability of profits. The paper is quite a unique contribution as it brings together microsimulation techniques and financial risk management tools to an agricultural setting.</p><p data-astro-cid-qsyhzaho>Our results confirm that there is substantial income risk associated with tillage production in Ireland and that a sole focus on tillage production can leave farmers highly vulnerable to market and production risks. Domestic crop prices appear to be largely determined by international forces and domestic crop yields appear to have little influence on domestic crop prices. This means that instances of poor domestic crop yields and disappointing output prices can occur with greater frequency than in larger crop-producing regions or countries, thus leaving Irish farmers more exposed to income risk than their counterparts operating in larger markets.</p><p data-astro-cid-qsyhzaho>The relatively high single farm payments therefore play an important role as a risk management tool although this comes with costs for taxpayers and wider society. The forward contracting risk management tool can provide an alternative source of risk management and our results suggest that this tool can reduce the standard deviation of returns by approximately twenty per cent although this is dependent on the share of production committed to the contract.</p><p data-astro-cid-qsyhzaho>Although our models have some relatively strong assumptions, the work can support a better understanding about the economic risks associated with the production of grain crops in Ireland and the extent to which forward contracting can offer protection from adverse economic shocks. Farmers will need to establish their own stochastic budgets before considering the forward contracting tool. As in the case of other European farmers, the Irish tillage farmers could benefit from a wider range of available risk management tools. This may include tools capable of giving better protection from adverse changes to the gross margin than is available under a forward contract. Demand for these tools may well be influenced by the degree of dependency on the single farm payment. Future work will incorporate the role of the single farm payments and off-farm work in stabilising household income particularly for these less cost competitive tillage producers. The model can be developed further to examine the potential effect of other risk management tools on income risk including a farm management deposit scheme or gross margin insurance.</p><p data-astro-cid-qsyhzaho>The improved management of farm income variability can contribute towards stability in household consumption, support for farm investments, further investment in child education and a reduction in the mental stress associated with variable incomes and therefore is an important issue for policy makers. The findings from this research can facilitate more effective policy design and implementation in this regard. Our results confirm the important role of decoupled direct payments in insulating farmers’ incomes against risk. However, our findings also indicate that income variability has increased in recent years and hence the need for risk management tools. We find that forward contracting can be an effective means of reducing farmers’ exposure to income variability. Whilst forward contracting is not a policy tool, there is a role for policy makers in relation to education and promotion and in the provision of timely, accessible market information, similar to the data provided in the Milk Market Observatory, co-ordinated by the European Commission. Furthermore, our research has examined the relative contribution of price and yield to margin volatility thus providing policy makers with useful information on the source of risk which can support the design of more effective policies, such as the income stabilisation tool for example. Whilst, this paper did not specifically examine the impact of the income stabilisation tool, the modelling infrastructure built as part of this paper could be used in future work to examine this research question.</p><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Intra-temporal correlation matrix.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="7">Yields</th>
+<th colspan="7">Prices</th>
+</tr>
+<tr>
+<th/>
+<th colspan="3">IR</th>
+<th colspan="4">UK</th>
+<th>USA</th>
+<th colspan="6">IR</th>
+</tr>
+<tr>
+<th/>
+<th colspan="3"/>
+<th colspan="4"/>
+<th/>
+<th>Malt</th>
+<th>Feed</th>
+<th>Mill</th>
+<th>Feed</th>
+<th>Mill</th>
+<th>Feed</th>
+</tr>
+<tr>
+<th/>
+<th>Oats</th>
+<th>Barley</th>
+<th>Wheat</th>
+<th>Barley</th>
+<th>Oats</th>
+<th>Rye</th>
+<th>Wheat</th>
+<th>Soybean</th>
+<th colspan="2">Barley</th>
+<th colspan="2">Wheat</th>
+<th colspan="2">Oats</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IR Oats Yield</td>
+<td align="center">1</td>
+<td align="center">0.72</td>
+<td align="center">0.69</td>
+<td align="center">0.23</td>
+<td align="center">0.03</td>
+<td align="center">−0.09</td>
+<td align="center">0.22</td>
+<td align="center">−0.20</td>
+<td align="center">0.18</td>
+<td align="center">−0.03</td>
+<td align="center">−0.03</td>
+<td align="center">−0.02</td>
+<td align="center">−0.04</td>
+<td align="center">−0.12</td>
+</tr>
+<tr>
+<td>IR Barley Yield</td>
+<td align="center"/>
+<td align="center">1</td>
+<td align="center">0.84</td>
+<td align="center">0.24</td>
+<td align="center">−0.02</td>
+<td align="center">−0.07</td>
+<td align="center">0.27</td>
+<td align="center">−0.05</td>
+<td align="center">0.20</td>
+<td align="center">0.10</td>
+<td align="center">0.01</td>
+<td align="center">0.12</td>
+<td align="center">0.09</td>
+<td align="center">0.09</td>
+</tr>
+<tr>
+<td>IR Wheat Yield</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center">1</td>
+<td align="center">0.24</td>
+<td align="center">0.33</td>
+<td align="center">−0.16</td>
+<td align="center">0.51</td>
+<td align="center">−0.04</td>
+<td align="center">0.05</td>
+<td align="center">−0.10</td>
+<td align="center">−0.20</td>
+<td align="center">−0.08</td>
+<td align="center">−0.13</td>
+<td align="center">−0.11</td>
+</tr>
+<tr>
+<td>UK Barley Yield</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">1</td>
+<td align="center">0.54</td>
+<td align="center">0.60</td>
+<td align="center">0.65</td>
+<td align="center">0.00</td>
+<td align="center">−0.11</td>
+<td align="center">−0.09</td>
+<td align="center">−0.09</td>
+<td align="center">−0.14</td>
+<td align="center">−0.04</td>
+<td align="center">−0.08</td>
+</tr>
+<tr>
+<td>UK Oats Yield</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">1</td>
+<td align="center">0.23</td>
+<td align="center">0.69</td>
+<td align="center">−0.09</td>
+<td align="center">−0.22</td>
+<td align="center">−0.19</td>
+<td align="center">−0.27</td>
+<td align="center">−0.19</td>
+<td align="center">−0.19</td>
+<td align="center">−0.17</td>
+</tr>
+<tr>
+<td>UK Rye Yield</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">1</td>
+<td align="center">0.51</td>
+<td align="center">0.29</td>
+<td align="center">−0.40</td>
+<td align="center">−0.35</td>
+<td align="center">−0.24</td>
+<td align="center">−0.44</td>
+<td align="center">−0.30</td>
+<td align="center">−0.33</td>
+</tr>
+<tr>
+<td>UK Wheat Yield</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">1</td>
+<td align="center">−0.21</td>
+<td align="center">−0.17</td>
+<td align="center">−0.23</td>
+<td align="center">−0.23</td>
+<td align="center">−0.34</td>
+<td align="center">−0.20</td>
+<td align="center">−0.25</td>
+</tr>
+<tr>
+<td>USA Soybean Yield</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">1</td>
+<td align="center">−0.59</td>
+<td align="center">−0.46</td>
+<td align="center">−0.47</td>
+<td align="center">−0.37</td>
+<td align="center">−0.47</td>
+<td align="center">−0.32</td>
+</tr>
+<tr>
+<td>Price IR Malt Barley</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">1</td>
+<td align="center">0.85</td>
+<td align="center">0.83</td>
+<td align="center">0.81</td>
+<td align="center">0.86</td>
+<td align="center">0.78</td>
+</tr>
+<tr>
+<td>Price IR Feed Barley</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">1</td>
+<td align="center">0.95</td>
+<td align="center">0.97</td>
+<td align="center">0.99</td>
+<td align="center">0.97</td>
+</tr>
+<tr>
+<td>Price IR Mill Wheat</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">1</td>
+<td align="center">0.91</td>
+<td align="center">0.94</td>
+<td align="center">0.88</td>
+</tr>
+<tr>
+<td>Price IR Feed Wheat</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">1</td>
+<td align="center">0.96</td>
+<td align="center">0.97</td>
+</tr>
+<tr>
+<td>Price IR Mill Oats</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">1</td>
+<td align="center">0.96</td>
+</tr>
+<tr>
+<td>Price IR Feed Oats</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">1</td>
+</tr>
+</tbody>
+</table></div></figure></div></details><details id="footnotes" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Footnotes</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="fn1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1.</h3><p data-astro-cid-qsyhzaho>Assumed that average of the first three months is the relevant price index.</p></section><section id="fn2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.</h3><p data-astro-cid-qsyhzaho>We make this assumption for a number of reasons. For a model of national-level barley production, the number of hectares could be assumed to be a function of a moving average of recent output prices or gross margins. This method has major limitations at the farm-level given the individual farm-level land constraints and the competition between alternative crops and farm activities for land.</p></section><section id="fn3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.</h3><p data-astro-cid-qsyhzaho>Set-aside was initially introduced in order to limit the production of cereals in the EU. It was applied on a voluntary basis from 1988/89. The policy reforms in 1992 made it obligatory as price support became conditional on arable farmers committing a fixed percentage of arable land to set aside. This policy was abolished in 2007/2008.</p></section><section id="fn4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.</h3><p data-astro-cid-qsyhzaho>According to the microdata, it appears that from 2004-2013 that a minority of producers recorded the production of spring barley for both animal feed and malting spring barley in the same year. However, the vast majority of farms with a record of producing malting spring barley have recorded production for both barley types during the course of their participation in the Teagasc National farm Survey. The small sample size of malting barley growers in the Teagasc National Farm Survey means that we do not report precise estimates for this subgroup of farmers.</p></section><section id="fn5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.</h3><p data-astro-cid-qsyhzaho>The average tillage farmer is assumed to have an expected farm income of approximately 33,229. This is based on the size of the lagged decoupled payments and the average coupled income in recent years.</p></section><section id="fn6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.</h3><p data-astro-cid-qsyhzaho>We do not simulate shares of production greater than 35 per cent as there is a risk that the farmer will not be in a position at harvest time to deliver the required quantity on the contract.</p></section><section id="fn7" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.</h3><p data-astro-cid-qsyhzaho>One observation is deleted as the coefficient of variation exceeds five.</p></section><section id="fn8" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">8.</h3><p data-astro-cid-qsyhzaho>These farms are engaged in cereal production but are excluded from the Specialist tillage category and are primarily engaged in livestock and/or milk production</p></section></div></details></div><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Abbott, PC, Hurt, C, Tyner, WE (2011). <span data-astro-cid-oer3kof4>What Is Driving Food Prices in 2011?. </span>.</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2016). <span data-astro-cid-oer3kof4>http://cereals.ahdb.org.uk/markets.aspx</span>. <a href="http://cereals.ahdb.org.uk/markets.aspx" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://cereals.ahdb.org.uk/markets.aspx</a>.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Archer, DW, Reicosky, DC (2009). <span data-astro-cid-oer3kof4>Economic performance of alternative tillage systems in the northern corn belt</span>. <em data-astro-cid-oer3kof4>Agronomy Journal</em>, <strong data-astro-cid-oer3kof4>101</strong>, 296–304.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2014). <span data-astro-cid-oer3kof4>http://www.agriculture.gov.au/agriculture-food/drought/assistance/fmd/statistics</span>. <a href="http://www.agriculture.gov.au/agriculture-food/drought/assistance/fmd/statistics" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://www.agriculture.gov.au/agriculture-food/drought/assistance/fmd/statistics</a>.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2016). <span data-astro-cid-oer3kof4>http://www.agriculture.gov.au/ag-farm-food/drought/assistance/fmd</span>. <a href="http://www.agriculture.gov.au/ag-farm-food/drought/assistance/fmd" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://www.agriculture.gov.au/ag-farm-food/drought/assistance/fmd</a>.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Buckley, C, Carney, P (2013). <span data-astro-cid-oer3kof4>The potential to reduce the risk of diffuse pollution from agriculture while improving economic performance at farm level</span>. <em data-astro-cid-oer3kof4>Environmental Science and Policy</em>, <strong data-astro-cid-oer3kof4>25</strong>, 118–126.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Chavas, J, Di Falco, S (2012). <span data-astro-cid-oer3kof4>On the role of risk versus economies of scope in farm diversification with an application to Ethiopian farms</span>. <em data-astro-cid-oer3kof4>Journal of Agricultural Economics</em>, <strong data-astro-cid-oer3kof4>63</strong>, 25–55.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Clancy, D, Breen, JP, Thorne, F, Wallace, M (2012). <span data-astro-cid-oer3kof4>A stochastic analysis of the decision to produce biomass crops in Ireland</span>. <em data-astro-cid-oer3kof4>Biomass and Bioenergy</em>, <strong data-astro-cid-oer3kof4>46</strong>, 353–365.</span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Coble, KH, Knight, TO, Patrick, GF, Baquet, AE (2002). <span data-astro-cid-oer3kof4>Understanding the economic factors influencing farm policy preferences</span>. <em data-astro-cid-oer3kof4>Review of Agricultural Economics</em>, <strong data-astro-cid-oer3kof4>24</strong>, 309–321.</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Cornaggia, J (2013). <span data-astro-cid-oer3kof4>Does risk management matter? Evidence from the U.S. agricultural industry</span>. <em data-astro-cid-oer3kof4>Journal of Financial Economics</em>, <strong data-astro-cid-oer3kof4>109</strong>, 419–440.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2012). <span data-astro-cid-oer3kof4>http://www.cso.ie/en/media/csoie/releasespublications/documents/agriculture/2010/full2010</span>. <a href="http://www.cso.ie/en/media/csoie/releasespublications/documents/agriculture/2010/full2010" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://www.cso.ie/en/media/csoie/releasespublications/documents/agriculture/2010/full2010</a> (accessed 2014-11-26).</span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2011). <span data-astro-cid-oer3kof4>Proposal for a Regulation of the European Parliament and of the Council on Support for Rural Development by the European Agricultural Fund for Rural Development (EAFRD), European Commission, Brussels, C0M(2011), 627/3 (2011)</span>.</span></li><li id="bib13" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2014). <span data-astro-cid-oer3kof4>http://faostat3.fao.org/download/P/*/E</span>. <a href="http://faostat3.fao.org/download/P/*/E" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://faostat3.fao.org/download/P/*/E</a>.</span></li><li id="bib14" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Feng, S, Binfield, J, Patton, M, Davis, J (2014). <span data-astro-cid-oer3kof4>Stochastic Partial Equilibrium Modelling: An Application to Crop Yield Variability</span>. In Zopounidis, C, Kalogeras, N, Mattas, K, van Dijk, G, Baourakis, G (Eds.), <em data-astro-cid-oer3kof4>Agricultural Cooperative Management and Policy</em> (pp. 41–61). Switzerland: Springer International Publishing.</span></li><li id="bib15" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Finger, R, El Benni, N (2014). <span data-astro-cid-oer3kof4>A note on the effects of the Income Stabilisation Tool on income inequality in agriculture</span>. <em data-astro-cid-oer3kof4>Journal of Agricultural Economics</em>, <strong data-astro-cid-oer3kof4>65</strong>, 739–745.</span></li><li id="bib16" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Finger, R, El Benni, N (2014). <span data-astro-cid-oer3kof4>Alternative Specifications of Reference Income Levels in the Income Stabilization Tool</span>. In Zopounidis, C, Kalogeras, N, Mattas, K, van Dijk, G, Baourakis, G (Eds.), <em data-astro-cid-oer3kof4>Agricultural Cooperative Management and Policy</em> (pp. 65–85). Switzerland: Springer International Publishing.</span></li><li id="bib17" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Finneran, E, Crosson, P, O&#39;Kiely, P, Shalloo, L, Forristal, D, Wallace, M (2011). <span data-astro-cid-oer3kof4>Stochastic simulation of the cost of home-produced feeds for ruminant livestock systems</span>. <em data-astro-cid-oer3kof4>Journal of Agricultural Science</em>, <strong data-astro-cid-oer3kof4>150</strong>, 123–139.</span></li><li id="bib18" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Glauber, JW (2013). <span data-astro-cid-oer3kof4>The Growth Of The Federal Crop Insurance Program, 1990-2011</span>. <em data-astro-cid-oer3kof4>American Journal of Agricultural Economics</em>, <strong data-astro-cid-oer3kof4>95</strong>, 482–88.</span></li><li id="bib19" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Goodwin, BK, Schnepf, R (2000). <span data-astro-cid-oer3kof4>Determinants of endogenous price risk in corn and wheat futures markets</span>. <em data-astro-cid-oer3kof4>Journal of Futures Markets</em>, <strong data-astro-cid-oer3kof4>20</strong>, 753–774.</span></li><li id="bib20" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Goodwin, BK, Ker, AP (2002). <span data-astro-cid-oer3kof4>Modeling price and yield risk</span>. In Just, R, Pope, R (Eds.), <em data-astro-cid-oer3kof4>A comprehensive assessment of the role of risk in US agriculture</em> (pp. 289–324). Norwell, Boston, MA: Kluwer Academic Publisher.</span></li><li id="bib21" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Goodwin, BK, Smith, VH (2013). <span data-astro-cid-oer3kof4>What Harm Is Done By Subsidizing Crop Insurance?</span>. <em data-astro-cid-oer3kof4>American Journal of Agricultural Economics</em>, <strong data-astro-cid-oer3kof4>95</strong>, 489–497.</span></li><li id="bib22" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Grant, W (2010). <span data-astro-cid-oer3kof4>Policy instruments in the common agricultural policy</span>. <em data-astro-cid-oer3kof4>West European Politics</em>, <strong data-astro-cid-oer3kof4>33</strong>, 22–38.</span></li><li id="bib23" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hennessy, DA, Babcock, BA, Hayes, DJ (1997). <span data-astro-cid-oer3kof4>Budgetary and producer welfare effects of revenue insurance</span>. <em data-astro-cid-oer3kof4>American Journal of Agricultural Economics</em>, <strong data-astro-cid-oer3kof4>79</strong>, 1024–1034.</span></li><li id="bib24" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hennessy, T, Shrestha, S, Farrell, M (2008). <span data-astro-cid-oer3kof4>Quantifying the viability of farming in Ireland: can decoupling address the regional imbalances?</span>. <em data-astro-cid-oer3kof4>Irish Geography</em>, <strong data-astro-cid-oer3kof4>41</strong>, 29–47.</span></li><li id="bib25" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hennessy, T, Kinsella, A, Dillon, E (2014). <span data-astro-cid-oer3kof4>Forty years of the Common Agricultural Policy: The Irish farming experience</span>. <em data-astro-cid-oer3kof4>Administration</em>, <strong data-astro-cid-oer3kof4>62</strong>, 87–102.</span></li><li id="bib26" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hennessy, T, Buckley, C, Dillon, E, Donnellan, T, Hanrahan, K, Ryan, M, Moran, B (2014). <em data-astro-cid-oer3kof4>The development of farm-level sustainability indicators for Ireland using the Teagasc National Farm Survey</em>. Ireland: Teagasc.</span></li><li id="bib27" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Holden, NM, Brereton, AJ, Fealy, R, Sweeney, J (2003). <span data-astro-cid-oer3kof4>Possible change in Irish climate and its impact on barley and potato yields</span>. <em data-astro-cid-oer3kof4>Agricultural and Forest Meteorology</em>, <strong data-astro-cid-oer3kof4>116</strong>, 181–196.</span></li><li id="bib28" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hudson, D, Coble, K (1999). <span data-astro-cid-oer3kof4>Harvest contract price volatility for cotton</span>. <em data-astro-cid-oer3kof4>Journal of Futures Markets</em>, <strong data-astro-cid-oer3kof4>19</strong>, 717–733.</span></li><li id="bib29" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hynes, S, Morrissey, K, O&#39;Donoghue, C, Clarke, G (2009). <span data-astro-cid-oer3kof4>Building a static farm level spatial microsimulation model for rural development and agricultural policy analysis in Ireland</span>. <em data-astro-cid-oer3kof4>International Journal of Agricultural Resources, Governance and Ecology</em>, <strong data-astro-cid-oer3kof4>8</strong>, 282–299.</span></li><li id="bib30" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Jetté-Nantel, S, Freshwater, D, Katchova, A, Beaulieu, M (2011). <span data-astro-cid-oer3kof4>Farm income variability and offfarm diversification among Canadian farm operators</span>. <em data-astro-cid-oer3kof4>Agricultural Finance Review</em>, <strong data-astro-cid-oer3kof4>71</strong>, 329–346.</span></li><li id="bib31" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kennedy, TF, Connery, J (2005). <span data-astro-cid-oer3kof4>Grain yield reductions in spring barley due to barley yellow dwarf virus and aphid feeding</span>. <em data-astro-cid-oer3kof4>Irish Journal of Agricultural and Food Research</em>, <strong data-astro-cid-oer3kof4>44</strong>, 111–128.</span></li><li id="bib32" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kimura, S, Le Thi, C (2011). <em data-astro-cid-oer3kof4>Farm Level Analysis of Risk and Risk Management Strategies and Policies: Technical Note. OECD Food, Agriculture and Fisheries Papers, No. 48</em>. Farm Level Analysis of Risk and Risk Management Strategies and Policies: Technical Note. OECD Food, Agriculture and Fisheries Papers, No. 48.</span></li><li id="bib33" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Kuethe, TH, Morehart, M (2012). <span data-astro-cid-oer3kof4>The profit impacts of risk management tool adoption</span>. <em data-astro-cid-oer3kof4>Agricultural Finance Review</em>, <strong data-astro-cid-oer3kof4>72</strong>, 104–116.</span></li><li id="bib34" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Läpple, D, Hennessy, T (2012). <span data-astro-cid-oer3kof4>The capacity to expand milk production in Ireland following the removal of milk quotas</span>. <em data-astro-cid-oer3kof4>Irish Journal of Agricultural and Food Research</em>, <strong data-astro-cid-oer3kof4>51</strong>, 1–11.</span></li><li id="bib35" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mary, S, Santini, F, Boulanger, P (2013). <span data-astro-cid-oer3kof4>An ex-ante assessment of CAP income stabilisation payments using a farm house hold model, in 87th annual conference of the agricultural economics society</span>.</span></li><li id="bib36" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Miao, R, Khanna, M, Huang, H (2015). <span data-astro-cid-oer3kof4>Responsiveness of Crop Yield and Acreage to Prices and Climate</span>. <em data-astro-cid-oer3kof4>American Journal of Agricultural Economics</em>, <strong data-astro-cid-oer3kof4>97</strong>, 1–21.</span></li><li id="bib37" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Navicke, J, Rastrigina, O, Sutherland, H (2014). <span data-astro-cid-oer3kof4>Nowcasting indicators of poverty risk in the European Union: a microsimulation approach</span>. <em data-astro-cid-oer3kof4>Social Indicators Research</em>, <strong data-astro-cid-oer3kof4>119</strong>, 101–119.</span></li><li id="bib38" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Nayak, GN, Turvey, CG (2000). <span data-astro-cid-oer3kof4>The simultaneous hedging of price risk, crop yield risk and currency risk</span>. <em data-astro-cid-oer3kof4>Canadian Journal of Agricultural Economics/Revue canadienne d’agroeconomie</em>, <strong data-astro-cid-oer3kof4>48</strong>, 123–140.</span></li><li id="bib39" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Donoghue, C (2013). <span data-astro-cid-oer3kof4>Modelling Farm Viability</span>. In O’Donoghue, C, Ballas, D, Clarke, G, Hynes, S, Morrissey, K (Eds.), <em data-astro-cid-oer3kof4>Spatial Microsimulation for Rural Policy Analysis</em> (pp. 177–191). Springer Berlin Heidelberg.</span></li><li id="bib40" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Donoghue, C, Howley, P (2012). <span data-astro-cid-oer3kof4>The Single Farm Payment — A Basic Income for Farmers?</span>. <em data-astro-cid-oer3kof4>Basic Income Studies</em>, <strong data-astro-cid-oer3kof4>7</strong>, 1–23.</span></li><li id="bib41" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Pennings, JM, Isengildina-Massa, O, Irwin, SH, Garcia, P, Good, DL (2008). <span data-astro-cid-oer3kof4>Producers’ complex risk management choices</span>. <em data-astro-cid-oer3kof4>Agribusiness</em>, <strong data-astro-cid-oer3kof4>24</strong>, 31–54.</span></li><li id="bib42" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ramilan, T, Scrimgeour, F, Marsh, D (2011). <span data-astro-cid-oer3kof4>Analysis of environmental and economic efficiency using a farm population micro-simulation model</span>. <em data-astro-cid-oer3kof4>Mathematics and Computers in Simulation</em>, <strong data-astro-cid-oer3kof4>81</strong>, 1344–1352.</span></li><li id="bib43" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Richardson, JW, Klose, SL, Gray, AW (2000). <span data-astro-cid-oer3kof4>An applied procedure for estimating and simulating multivariate empirical (MVE) probability distributions in farm-level risk assessment and policy analysis</span>. <em data-astro-cid-oer3kof4>Journal of Agricultural and Applied Economics</em>, <strong data-astro-cid-oer3kof4>32</strong>, 299–316.</span></li><li id="bib44" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Richardson, JW, Schumann, K, Feldman, P (2008). <em data-astro-cid-oer3kof4>Simulation and Econometrics to Analyze Risk</em>. Department of Agricultural Economics, Texas A and M University.</span></li><li id="bib45" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Richardson, JW, Hennessy, T, Donoghue, C (2014). <span data-astro-cid-oer3kof4>Farm Level Models’</span>. In O’Donoghue, Cathal (Ed.), <em data-astro-cid-oer3kof4>Handbook of Microsimulation Modelling, (Contributions to Economic Analysis 293)</em> (pp. 505–534). Emerald Group Publishing Limited.</span></li><li id="bib46" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Seifert, RW, Thonemann, UW, Hausman, WH (2004). <span data-astro-cid-oer3kof4>Optimal procurement strategies for online spot markets</span>. <em data-astro-cid-oer3kof4>European Journal of Operational Research</em>, <strong data-astro-cid-oer3kof4>152</strong>, 781–799.</span></li><li id="bib47" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Shalloo, L, Dillon, P, Rath, M, Wallace, M (2004). <span data-astro-cid-oer3kof4>Description and validation of the Moorepark Dairy Systems Model</span>. <em data-astro-cid-oer3kof4>Journal of Dairy Science</em>, <strong data-astro-cid-oer3kof4>87</strong>, 1945–1958.</span></li><li id="bib48" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Shrestha, S, Hennessy, T, Hynes, S (2007). <span data-astro-cid-oer3kof4>The Effect of Decoupling on Farming in Ireland: A Regional Analysis</span>. <em data-astro-cid-oer3kof4>Irish Journal of Agriculture and Food Research</em>, <strong data-astro-cid-oer3kof4>46</strong>, 1–13.</span></li><li id="bib49" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2014). <em data-astro-cid-oer3kof4>Management Data for Farm Planning 2013/2014</em>. Teagasc: Oakpark.</span></li><li id="bib50" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Thorne, F (2013). <span data-astro-cid-oer3kof4>http://www.teagasc.ie/publications/2013/30437ReviewAndOutlook2014.pdf</span>. <a href="http://www.teagasc.ie/publications/2013/30437ReviewAndOutlook2014.pdf" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://www.teagasc.ie/publications/2013/30437ReviewAndOutlook2014.pdf</a>.</span></li><li id="bib51" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Wilson, W, Dahl, B (2011). <span data-astro-cid-oer3kof4>Grain contracting strategies: the case of durum wheat</span>. <em data-astro-cid-oer3kof4>Agribusiness</em>, <strong data-astro-cid-oer3kof4>27</strong>, 344–359.</span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Jason Loughrey</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Rural Economy and Development Programme, Ireland</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:jasonloughrey12@gmail.com" data-astro-cid-m3fa5h5a>jasonloughrey12@gmail.com</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Fiona Thorne</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Rural Economy and Development Programme, Ireland</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:fiona.thorne@teagasc.ie" data-astro-cid-m3fa5h5a>fiona.thorne@teagasc.ie</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Thia Hennessy</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Rural Economy and Development Programme, Ireland</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:thia.hennessy@teagasc.ie" data-astro-cid-m3fa5h5a>thia.hennessy@teagasc.ie</a></p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Acknowledgements</h3><p data-astro-cid-m3fa5h5a>The authors acknowledge the funding support of the Department of Agriculture, Food and the Marine under the project entitled ‘Volatility and Risk in Irish Agriculture’. The authors acknowledge the training provided by the FAPRI (Food and Agricultural Policy Research Institute) Missouri team in delivering a short course in Partial Equilibrium Modeling at the FAPRI Institute in July 2014 in Columbia, Missouri, USA.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00135" data-astro-cid-m3fa5h5a>Version of Record published: August 31, 2016 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2016, Loughrey</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/environment" data-pagefind-filter="Research category:Environment" data-astro-cid-m3fa5h5a>Environment</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=microsimulation" data-astro-cid-m3fa5h5a>microsimulation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=stochastic" data-astro-cid-m3fa5h5a>stochastic</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=spring%20barley" data-astro-cid-m3fa5h5a>spring barley</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=forward%20contract" data-astro-cid-m3fa5h5a>forward contract</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

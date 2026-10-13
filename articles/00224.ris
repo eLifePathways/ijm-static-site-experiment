@@ -1,0 +1,23 @@
+TY  - JOUR
+TI  - IrpetDin. A Dynamic Microsimulation Model for Italy and the Region of Tuscany
+AU  - Maitino, Maria Luisa
+AU  - Ravagli, Letizia
+AU  - Sciclone, Nicola
+VL  - 13
+IS  - 3
+PY  - 2020
+DA  - 2020/12/31
+SP  - 27-53
+C1  - IJM 2020;13(3):27-53
+DO  - 10.34196/ijm.00224
+UR  - https://doi.org/10.34196/ijm.00224
+AB  - IrpetDin is a dynamic microsimulation model, developed by IRPET (Regional Institute for Economic Planning of Tuscany) to study the future socio-demographic structure of the population and to evaluate the effects of social security programmes in Italy and in Tuscany over the medium to long-term. The model, based on the Eurostat Survey on Income and Living Conditions, makes projections from 2009 to 2050 and it is organised in modules: demography, education, labour and income and social security. IrpetDin produces realistic projections even for the Region of Tuscany and models education and labour with details. Probabilities and rates are estimated differently for Italy and Tuscany, trough regional administrative data. Education careers are completely simulated, from the choice of secondary school to drop-out, from university enrolment to graduation. Labour supply is endogenously determined while labour demand is driven from IRPET’s macro model. The matching of labour supply and demand is modelled by sector of activity and education, in order to estimate the quantitative and the qualitative mismatch.
+KW  - dynamic microsimulation modelling
+KW  - demography
+KW  - education
+KW  - labour
+KW  - pensions
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

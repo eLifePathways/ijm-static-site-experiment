@@ -1,0 +1,25 @@
+TY  - JOUR
+TI  - Spatial competition with interacting agents
+AU  - Ottino-Loffler, Bertrand
+AU  - Stonedahl, Forrest
+AU  - Veetil, Vipin
+AU  - Wilensky, Uri
+VL  - 10
+IS  - 3
+PY  - 2017
+DA  - 2017/12/31
+SP  - 75-91
+C1  - IJM 2017;10(3):75-91
+DO  - 10.34196/ijm.00166
+UR  - https://doi.org/10.34196/ijm.00166
+AB  - Using agent-based modeling, we generalize Hotelling’s model of spatial competition with more than two firms in a two-dimensional space. Firms choose both price and location to maximize profits. The principle of minimum differentiation does not hold in general. Local duopolies emerge from the interaction between firms. Firms do not spread uniformly across the two-dimensional space, nor do they all charge the same price. Firms in more competitive locations charge lower prices and generate less profit.
+KW  - hotelling
+KW  - price competition
+KW  - agent-based modeling
+KW  - D21
+KW  - D43
+KW  - D83
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

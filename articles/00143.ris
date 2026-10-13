@@ -1,0 +1,23 @@
+TY  - JOUR
+TI  - Constructing a synthetic city for estimating spatially disaggregated heat demand
+AU  - Muñoz H., M. Esteban
+AU  - Dochev, Ivan
+AU  - Seller, Hannes
+AU  - Peters, Irene
+VL  - 9
+IS  - 3
+PY  - 2016
+DA  - 2016/12/31
+SP  - 66-88
+C1  - IJM 2016;9(3):66-88
+DO  - 10.34196/ijm.00143
+UR  - https://doi.org/10.34196/ijm.00143
+AB  - We present a procedure for creating a spatially referenced building stock with population living therein “a synthetic city” for the case of Germany. The level of spatial disaggregation is the European NUTS–3 level for which data from the newest census (2011) exist. Our application is on the estimation of heat demand. We use the German microcensus (2010) which contains both: (a) detailed sociodemographic characteristics of individuals and (b) detailed information on the type of buildings in which these individuals live. With this data we can generate not only a synthetic population but also a synthetic building stock. The microcensus records the construction year and number of dwelling units of buildings. This allow us to classify the buildings for the estimation of heat demand. This procedure has two major advantages: (1) there exist many models for the estimation of heat demand at building level, we can make use of these models, and (2) with the microcensus as the only required data source we are able to estimate heat demand at a spatially disaggregated level for the entire country. We conclude our paper with an internal validation of the microsimulation model by means of the Total Absolute Error TAE and present the first results from this model aggregated at the NUTS–3 level for the entire country. We briefly discuss the observed patters of the results and attempt to hypothesize on the reasons behind this patterns. We also discuss the difficulties of an external validation of this model and how we can address them in the future.
+KW  - heating demand
+KW  - synthetic building stock
+KW  - spatial microsimulation
+KW  - GREGWT
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

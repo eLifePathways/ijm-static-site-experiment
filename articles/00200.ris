@@ -1,0 +1,21 @@
+TY  - JOUR
+TI  - Spatial microsimulation of osteoarthritis prevalence at the small area level in England – Constraint selection for a 2-stage microsimulation process
+AU  - Ifesemen, Onosi Sylvia
+AU  - Bestwick-Stevenson, Thomas
+AU  - Edwards, Kimberley L.
+VL  - 12
+IS  - 2
+PY  - 2019
+DA  - 2019/08/31
+SP  - 37-51
+C1  - IJM 2019;12(2):37-51
+DO  - 10.34196/ijm.00200
+UR  - https://doi.org/10.34196/ijm.00200
+AB  - The presence of identical benchmark/constraint variables in both geographic and survey datasets is a principal requirement for static spatial microsimulation models, particularly in the field of medicine and health sciences. This is also a key limitation of static spatial models because geographical datasets rarely contain all variables required to realistically simulate an outcome. We believe this challenge can be overcome by a multilevel approach to spatial microsimulation using a case study of estimating the small area level prevalence of knee osteoarthritis in England. In the paper, we describe constraint selection and demonstrate a novel two–stage spatial microsimulation procedure using SimObesity, a static deterministic combinatorial spatial microsimulation model. We also present the validation parameters of our synthetic data, important areas for consideration and avenues for future research. Our findings demonstrate that important benchmark variables absent from the geographical dataset can be incorporated into spatial microsimulation models without compromising model robustness.
+KW  - Spatial Microsimulation
+KW  - Deterministic
+KW  - Knee Osteoarthritis
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

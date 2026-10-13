@@ -1,0 +1,23 @@
+TY  - JOUR
+TI  - SNFsim: A Discrete Event Simulator for Decision Support in Skilled Nursing Facilities
+AU  - Strickland, Caroline
+AU  - Wagner, Brittin
+AU  - Wang, Stanley
+AU  - Lizotte, Daniel J
+VL  - 19
+IS  - 1
+PY  - 2026
+DA  - 2026/06/03
+SP  - 79-112
+C1  - IJM 2026;19(1):79-112
+DO  - 10.34196/ijm.00337
+UR  - https://doi.org/10.34196/ijm.00337
+AB  - We introduce SNFsim, an open-source discrete-event simulator for developing and evaluating reinforcement learning (RL) methods for multi-dimensional sequential decision support in Skilled Nursing Facilities (SNFs). SNFs play a vital role in the United States healthcare system, delivering specialized care to individuals with ongoing medical needs. Decision-making within SNFs is often complex due to their fast-paced and stochastic nature. SNFsim provides a modular and extendable simulation of major decision-making processes within SNFs, capturing many of the complexities and uncertainties existing in healthcare environments while still being flexible enough to allow for easy customization. Its potential uses are two-fold: First, as a test bed for the development and comparison of RL algorithms, and second, as the basis of a decision-support system that can be tailored to individual SNFs.
+KW  - healthcare operations
+KW  - reinforcement learning
+KW  - simulation
+KW  - sequential decision support
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

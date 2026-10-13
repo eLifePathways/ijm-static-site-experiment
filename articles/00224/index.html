@@ -1,0 +1,1973 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>IrpetDin. A Dynamic Microsimulation Model for Italy and the Region of Tuscany | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00224"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00224" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/dynamic-microsimulation" data-astro-cid-ak4gb66a>Dynamic microsimulation</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Dec 31, 2020</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>IrpetDin. A Dynamic Microsimulation Model for Italy and the Region of Tuscany</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Maria Luisa Maitino, Letizia Ravagli, Nicola Sciclone</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Istituto Regionale Programmazione Economica della Toscana, Florence, Italy</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/13-3/volume-13-3-winter-2020" data-astro-cid-ak4gb66a>Volume 13(3) Winter 2020</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> M. Maitino, L. Ravagli, N. Sciclone; 2020; <span data-astro-cid-ak4gb66a>IrpetDin. A Dynamic Microsimulation Model for Italy and the Region of Tuscany</span>; International Journal of Microsimulation; 13(3); 27–53. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00224" data-astro-cid-ak4gb66a>10.34196/ijm.00224</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>IrpetDin is a dynamic microsimulation model, developed by IRPET (Regional Institute for Economic Planning of Tuscany) to study the future socio-demographic structure of the population and to evaluate the effects of social security programmes in Italy and in Tuscany over the medium to long-term. The model, based on the Eurostat Survey on Income and Living Conditions, makes projections from 2009 to 2050 and it is organised in modules: demography, education, labour and income and social security. IrpetDin produces realistic projections even for the Region of Tuscany and models education and labour with details. Probabilities and rates are estimated differently for Italy and Tuscany, trough regional administrative data. Education careers are completely simulated, from the choice of secondary school to drop-out, from university enrolment to graduation. Labour supply is endogenously determined while labour demand is driven from IRPET’s macro model. The matching of labour supply and demand is modelled by sector of activity and education, in order to estimate the quantitative and the qualitative mismatch.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00224/ijm-00224.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00224.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00224.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00224" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00224/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. General features</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. Adjustment of the initial sample</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. Irpetdin’s structure</a></li><li data-astro-cid-twdwaz5s><a href="#s5" data-astro-cid-twdwaz5s>5. Demography</a></li><li data-astro-cid-twdwaz5s><a href="#s6" data-astro-cid-twdwaz5s>6. Education</a></li><li data-astro-cid-twdwaz5s><a href="#s7" data-astro-cid-twdwaz5s>7. Labour and income</a></li><li data-astro-cid-twdwaz5s><a href="#s8" data-astro-cid-twdwaz5s>8. Social security module</a></li><li data-astro-cid-twdwaz5s><a href="#s9" data-astro-cid-twdwaz5s>9. Validation</a></li><li data-astro-cid-twdwaz5s><a href="#s10" data-astro-cid-twdwaz5s>10. Main simulation results</a></li><li data-astro-cid-twdwaz5s><a href="#s11" data-astro-cid-twdwaz5s>11. Conclusions</a></li><li data-astro-cid-twdwaz5s><a href="#footnotes" data-astro-cid-twdwaz5s>Footnotes</a></li><li data-astro-cid-twdwaz5s><a href="#app1" data-astro-cid-twdwaz5s>Appendix</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>IrpetDin is a dynamic microsimulation model, developed by IRPET (Regional Institute for Economic Planning of Tuscany), able to make future projections regarding the evolution of a representative sample of the Italian and Tuscan population. The model can be used by IRPET to support the regional policy maker, that is the Region of Tuscany, in evaluating the effects of policies and in planning new interventions.</p><p data-astro-cid-qsyhzaho>The model analyses the socio-demographic structure of the population and evaluates the effects of social security programmes over the medium to long-term. In the baseline scenario, predictions are based on specific assumptions regarding the future evolution of demographic and economic indicators as well as social security policies. However, IrpetDin also allows for an evaluation of different scenarios by modifying assumptions regarding exogenous variables and by simulating reforms of current social security policies.</p><p data-astro-cid-qsyhzaho>IrpetDin is based on EU-SILC 2008, the Eurostat Survey on Income and Living Conditions, which is also representative at regional level. Indeed, the model is designed to produce realistic predictions for Italy and the Region of Tuscany. It simulates demography, education, labour and income and social security, from 2008 to 2050. Predictions have been validated for the 2008-2017 period, in relation to which real data is already available.</p><p data-astro-cid-qsyhzaho>With respect to other microsimulation models, we believe IrpetDin to be particularly innovative with regard to its territorial coverage and its ability to model education and labour.</p><p data-astro-cid-qsyhzaho>IrpetDin particularly focuses on collecting accurate data for Tuscany. Probabilities and rates are estimated differently for Italy and Tuscany, by exploiting regional administrative data where available. The model therefore requires an extensive range of different data sources, allowing us to obtain realistic estimates even at regional level.</p><p data-astro-cid-qsyhzaho>Education is modelled in more detail compared with other microsimulation models, from high-school enrolment to school life, from final results to enrolment in university. If the relative data is available, we also take into account the effects of family background on education outcomes.</p><p data-astro-cid-qsyhzaho>Labour is modelled differently compared to many other microsimulation models. We do not estimate the probability of transitions from education to work, but we match labour supply, endogenously determined within IrpetDin, and labour demand, taken from Dante, IRPET’s macro model, by sector and level of education. IrpetDin can therefore predict the future evolution of the unemployment rate and evaluate the “qualitative mismatch” between labour supply and demand.</p><p data-astro-cid-qsyhzaho>This paper describes how IrpetDin works, as well as presenting the main results regarding the evolution of the Italian and Tuscan population, in terms of demography, education, labour and social security policies. Section 2 describes the general features, section 3 presents the adjustments made to the initial sample and section 4 deals with the structure of the model. The paper goes on to describe the simulation of events for every module, from demography (section 5) through to social security (section 8). Validation and prediction results are presented in sections 9 and 10. Some final comments about further developments conclude the paper.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. General features</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In this section, we discuss IrpetDin’s general features with regard to its uses, selection of the base dataset, the type of model, ageing method, time modelling, linkage with macro models and the development environment.</p><p data-astro-cid-qsyhzaho>As described in <a href="#bib13">Li and O'Donoghue (2013)</a>, dynamic microsimulation models may have different uses, with the most common being: i) to project socio-economic development trends under current policies, and ii) to evaluate the future performance and reforms of social security programmes, such as pensions, education, health and long-term care. <a href="#bib2">Andreassen (1993)</a> uses the MOSART model to show the evolution of the population, labour force, levels of education and future costs of state pensions under current legislation in Norway. In their LABORsim model, <a href="#bib12">Leombruni and Richiardi (2006)</a> focus the analysis on education, labour and pensions. Out of all social security programmes, pensions are undoubtedly the most studied. Models such as LIAM (<a href="#bib19">O’Donoghue et al., 2009</a>) and MIDAS (<a href="#bib7">Dekkers, 2010</a>) have been used to look at pension reforms, with a few models also being used to examine changes to funding for education (e.g. <a href="#bib8">Hain and Helberger, 1986</a>).</p><p data-astro-cid-qsyhzaho>IrpetDin aims to analyse socio-demographic trends and to evaluate the effects of current social security programmes and their reforms. With respect to other microsimulation models, we model education and labour in greater detail and, consequently, we focus more on analysing future education attainment trends and labour market indicators. With regard to social security programmes, IrpetDin is able to evaluate the effects of pension reforms and analyse the future performance of health and long-term care under current legislation.</p><p data-astro-cid-qsyhzaho>Dynamic microsimulation models may use different types of base data: i) administrative data; ii) census data; iii) household survey data; iv) synthetic data. IrpetDin is based on household survey data, namely the European Union Statistics on Income and Living Conditions (EU-SILC). EU-SILC collects extensive information on family members and incomes, even at regional level. It is therefore able to meet IrpetDin’s objective of predicting both socio-demographic trends and the effects of welfare reforms, even only with regard to the Region of Tuscany. However, as is the case with all survey data, the issue with EU-SILC is its small sample size, making it unreliable with regard to certain, specific information and inaccurate in terms of small area estimates. For these reasons, which we will explain in more detail later on, adjustments need to be made to the original EU-SILC sample. Other Italian dynamic microsimulation models have also used EU-SILC, such as <a href="#bib16">Mazzaferro and Morciano (2012)</a> and <a href="#bib4">Caretta et al. (2012)</a>. To overcome the issues involved with the survey data, <a href="#bib4">Caretta et al. (2012)</a> individually matched EU-SILC and administrative data.</p><p data-astro-cid-qsyhzaho>As is the case for the majority of dynamic microsimulation models, IrpetDin is a population model and a closed model. Indeed, it models a cross-section survey, representing the Italian population, rather than a single cohort, over a defined period of time. Furthermore, the closed model method is used as it presents a fixed set of individuals, with the exception of newborns and migrants, to simulate events, i.e. those belonging to the initial sample. It then uses a dynamic ageing procedure to update the initial sample over time, changing the attributes of the individuals concerned (e.g. their age, employment status, etc.) instead of altering sample weights, as would be the case with a static ageing procedure. These updates are completed annually, as per many discrete-time dynamic models.</p><p data-astro-cid-qsyhzaho>Many microsimulation models are somehow linked to macro models, with the aim of reinforcing results for macro indicators, such as the unemployment rate. Nonetheless, only rarely are they fully integrated with macro models, including iterations and feedback effects. They usually just align a number of policy indicators to external macro data. Also IrpetDin aligns certain indicators to exogenous sources including, as we will explain later on, labour demand, aligned to IRPET’s macro model.</p></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. Adjustment of the initial sample</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In EU-SILC 2008, the weighted age structure of the sample is inconsistent with actual data. We therefore need to adjust the distribution of the population by age and by gender, the accuracy of which is crucial for the dynamic microsimulation model. <a href="#fig1">Figure 1a</a> shows the distribution of the Italian population by age in EU-SILC and according to official data by ISTAT, the Italian National Institute of Statistics. As can be easily seen, EU-SILC strongly overestimates the number of people aged 0 and under/overestimates other ages. Furthermore, the initial sample does not specify the age of people over 79 years old. For these reasons, we have adjusted the initial sample by increasing/decreasing individuals’ ages by one or, at the most, two years, until the population by age is as close as possible to actual figures.<sup><a href="#fn1">1</a></sup> We then randomly attributed precise ages to individuals over 79.</p><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00224-fig001.CSDzu4nv_Z1hF1A4.webp" class="figure-lightbox-trigger" data-pswp-width="2067" data-pswp-height="870" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00224-fig001.CSDzu4nv_Z1hF1A4.webp" alt width="2067" height="870" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Italian population by age. Italy.</span></figcaption></figure><p data-astro-cid-qsyhzaho><a href="#fig1">Figure 1b</a> shows the distribution of the adjusted sample compared to actual data. Although some differences still remain, the two curves are more similar compared with the initial sample (<a href="#fig1">Figure 1a</a>).</p><p data-astro-cid-qsyhzaho>The second important adjustment refers to labour market indicators. EU-SILC is not designed to describe the labour market in detail. It tends not to be very accurate in its estimates of un/employment rates. On the contrary, the Labour Force Survey (LFS) is used to measure official employment and unemployment rates. Since the aim of IrpetDin is to predict future labour market indicators, we have adjusted the EU-SILC’s initial distribution of individuals by employment status (employed, unemployed, inactive) with respect to LFS, by age class and by gender.</p><p data-astro-cid-qsyhzaho>As is the case with all survey data, another issue with EU-SILC concerns sample weights and the creation of new households. For example, to simulate marriage between individuals belonging to different families of origin, the model may create a new household composed of members with different weights. To overcome this problem, we have completed a sort of re-weighting, by repeating each sample individual as many times as is the ratio between his/her sample weight and the minimum sample weight<sup><a href="#fn2">2</a></sup>. In this way, every individual has the same weight, equal to 1.</p><p data-astro-cid-qsyhzaho>Finally, EU-SILC does not provide information on the employment history of people who were employed in the initial sample. Given that pension amounts depend on employment contributions paid in the past, we imputed the past incomes of employed individuals, starting from when they first entered the labour market, by assuming the same nominal labour income growth rates for those in the same sector of activity and territory (calculated on the National Accounts provided by ISTAT). We are aware of the limits of this assumption in terms of incomes variability. Indeed, as a future development of the model, we would like to integrate the sample with true administrative data on the work history of the individuals in the sample.</p></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. Irpetdin’s structure</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>IrpetDin is a classic dynamic microsimulation model, organised in modules (<a href="#fig2">Figure 2</a>). It starts by simulating each module for the adjusted initial sample, referring to 2008.</p><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00224-fig002.CyWn0fLj_Z114WMT.webp" class="figure-lightbox-trigger" data-pswp-width="2067" data-pswp-height="1016" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00224-fig002.CyWn0fLj_Z114WMT.webp" alt width="2067" height="1016" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> IrpetDin’s structure.</span></figcaption></figure><p data-astro-cid-qsyhzaho>It simulates demographic events, from ageing to migration, then educational attainment at secondary and tertiary-school level, labour market events, such as entries to the labour force or careers, and, finally, it models social security policies, including pensions, health and long-term care. After the last module, a new sample data set is produced, updated as at 2009, based on which IrpetDin simulates all events for each module for 2010, and so on and so forth until 2050.</p><p data-astro-cid-qsyhzaho>IrpetDin events, or, in other words, transitions between states, can be simulated with a probabilistic or deterministic approach. Probabilistic transitions are completed using the so-called Monte Carlo method, whereby a random number is drawn from a uniform distribution [0,1] and attributed to each observation. If the random value is lower than the probability of an event occurring, then the event actually occurs. In IrpetDin, we obtain probabilities in three different ways: i) by estimating econometric models; ii) by calculating specific rates using specific socio-demographic characteristics; or, iii) by taking probabilities estimated by external research institutes. Probabilities refer to data updated as at the base year and do not change over time. Only the characteristics that determine the probabilities/rates are updated over time through dynamic microsimulation. Deterministic events mainly refer to retirement in the social security module, with the exception of ageing.</p><p data-astro-cid-qsyhzaho>As mentioned in the introduction, and as we will explain in more detail later on, IrpetDin makes projections based on both specific assumptions regarding the future evolution of demographic indicators and social security policies, as well as by aligning economic variable trends from IRPET’s macro model called “Dante”.</p><p data-astro-cid-qsyhzaho>The following sections provide a detailed description of each IrpetDin module. Table A1, attached hereto, presents synthetic information on probability estimation methods, the variables that determine events and data sources for probabilities estimation and for the eventual alignements.</p></div></details><details id="s5" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">5. Demography</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>For each sample individual, the demographic module simulates the most important events in terms of ageing and the formation/dissolution of households. The following paragraphs provide a description of how we simulate events, in the order in which they are coded in the SAS programme.</p><section id="s5-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.1. Death and ageing</h3><p data-astro-cid-qsyhzaho>The first event is death. We have taken death probabilities from ISTAT for the period 2008-2016, broken down by age, by gender and distinguishing between Italy and Tuscany. With regard to future ISTAT releases, we only take data on life expectancy, broken down by gender. We therefore use the Brass method (<a href="#bib3">Brass, 1968</a>; <a href="#bib14">Livi Bacci, 1990</a>) to estimate death probabilities in 2050, based on known death probabilities as at 2016 (broken down by age, by gender and by territory) and assuming a constant slope and intercept given by the difference in life expectancy between 2050 and 2016. We calculate probabilities between 2017 and 2049 by applying the average yearly variation in death probabilities between 2016 and 2050, broken down by age, gender and territory.</p><p data-astro-cid-qsyhzaho>For survivors, we increase the age by one year and we change family relationships within the households where someone has died. For example, the wife becomes the head of the family if the husband dies, the son if both parents die and so on.</p></section><section id="s5-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.2. Marriage</h3><p data-astro-cid-qsyhzaho>As briefly described in <a href="#bib23">Walker and Davis (2013)</a> many microsimulation models simulate the “marriage market” with a Monte Carlo method based on matrices of probabilities of marrying for each pair of the <i>n-th</i> men and the <i>n-th</i> women, usually estimated with a logistic regression by age and education. Differently, others models use retrospective partnership histories from surveys.</p><p data-astro-cid-qsyhzaho>In IrpetDin we follow the first approach. Using the rate at which people get married based on official ISTAT data, broken down by age, by gender and by territory, we select potential candidates among single, divorced and widowed individuals aged between 18 and 59<sup><a href="#fn3">3</a></sup>. As <a href="#bib10">Istat (2014)</a> has described in detail, social studies broadly agree that marriage choices are based on affinity between spouses, rather than differences. In particular, marriages between partners with the same level of education are more common. Therefore, we match potential candidates by taking into account their level of education. More specifically, we calculate the rates at which women, distinguished by age classes, by level of education (low, medium, high) and by territory, marry men, distinguished by age classes, by level of education (low, medium, high) and by territory<sup><a href="#fn4">4</a></sup>. For every woman, there is a given rate according to which she could marry 27 different types of men.</p><p data-astro-cid-qsyhzaho>For each woman, we extract a random number to give the probability of her marrying a certain type of man (randomly extracted from the 27 different types). If the random number is lower than the probability, the woman and the man get married, otherwise the procedure continues with another one of the 27 different types of men.</p><p data-astro-cid-qsyhzaho>After potential candidates have been matched, the model creates a new household. If one or both of the spouses have children from past relationships, the model adds them to the new household. Finally, we attribute family relationships (head of the family, husband, son, etc.) to each member of the new household.</p></section><section id="s5-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.3. Fertility</h3><p data-astro-cid-qsyhzaho>As often in microsimulation models, in IrpetDin fertility is modelled with a probabilistic approach and an alignment to official data. We simulate the birth of a child for married or cohabiting women aged between 18 and 45. Differently with respect to an other Italian model, <a href="#bib16">Mazzaferro and Morciano (2012)</a>, we calculate fertility rates on administrative regional data where available. Specifically, we use birth certificates for the Region of Tuscany (RT) while ISTAT’s birth survey for Italy. Rates are distinguished by nationality, marital status, age, number of children and level of education and are aligned to the official total fertility rate predicted by ISTAT. Probabilities are aligned to official data. We then probabilistically generate the flow of newborns. The model adjusts family relationships inside households as a consequence of a new child being born.</p></section><section id="s5-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.4. Divorce and leaving home</h3><p data-astro-cid-qsyhzaho>Divorce is modelled similarly to <a href="#bib16">Mazzaferro and Morciano (2012)</a>. We select potential candidates among married/cohabiting people aged between 20 and 64 and who have been married/cohabiting for at least three years<sup><a href="#fn5">5</a></sup>. We calculate the rate of divorce/dissolution by territory, by age, by gender and by nationality, based on official civil status data by ISTAT. Then, we make couples divorce, create a new household and adjust the family relationships of the members of both the original and the new household.</p><p data-astro-cid-qsyhzaho>We then simulate single individuals leaving their household of origin. Potential candidates must be employed, unmarried and not the head of the family. The rate at which individuals aged between 18 and 49 leave home is calculated based on the ISTAT survey entitled “Famiglia e soggetti sociali” [“Families and social subjects”]<sup><a href="#fn6">6</a></sup>. As usual, if events alter the composition of households, we adjust the relationships of the members of the households involved: in this case, the family of origin and the new family.</p></section><section id="s5-5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.5. Migration</h3><p data-astro-cid-qsyhzaho>Last but not least, the demographic module simulates migration. As IrpetDin covers both Italy and Tuscany, we simulate migration flows into/out of Italy from/to abroad, and migration flows of Italians into/out of Tuscany from/to other parts of Italy.</p><p data-astro-cid-qsyhzaho>We start with migration into/out of Tuscany. According to official ISTAT data, Tuscany has a positive balance of registrations and cancellations, meaning more people are coming in than going out. We calculate migration rates into Tuscany from other parts of Italy by gender, by age and by level of education, based on regional administrative data. We then make some individuals (excluding foreigners) migrate to Tuscany from other parts of Italy.</p><p data-astro-cid-qsyhzaho>We then move on to Italians migrating abroad. This phenomenon has considerably increased in Italy over the last decade, also as a result of the economic recession. Since ISTAT does not provide detailed data about Italians who have emigrated, we calculate a single probability of migrating abroad, without distinguishing between the various characteristics, and we apply this to Italians aged between 30 and 44.</p><p data-astro-cid-qsyhzaho>The final step is to simulate foreigners migrating into/out of Italy. Italy has a positive balance between registrations and cancellations of foreigners, meaning we need to add new individuals to the sample. For the 2009-2017 period, we have taken the inflows of foreigners to Italy and to Tuscany, based on ISTAT’s demographic balances of foreign citizens, distinguished by gender, by type of family (single, with spouse, with children, etc.), by number of children, by family size, by marital status, by age, by employment status and by level of education. From 2018 onwards, the number of new individuals added to the sample corresponds to ISTAT’s forecast. We attribute gender, age and level of education to immigrants by taking the average characteristics of foreign citizens who are resident in Italy, based on the Survey on Household Income and Wealth (SHIW) conducted by the Bank of Italy.</p><p data-astro-cid-qsyhzaho>After simulating all migration flows, we adjust household compositions and the relationships between the respective members. We also simulate family reunions for immigrants who come to Italy in order to join their partners or relatives.</p></section></div></details><details id="s6" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">6. Education</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>As clearly stated by the <a href="#bib18">European Commission (2018)</a>, Italy does not perform well with regard to education attainment compared with other European countries. The percentage of those who leave education and training early (aged 18-24) is higher (14% vs. 11%) and the percentage of people aged between 30 and 43 with tertiary education is lower (27% vs. 40%). In the region of Tuscany, certain education attainment indicators, such as drop-out rates, are even worse than in the rest of Italy, with others being more in line with those in the less developed south of the country, <a href="#bib9">Irpet (2014)</a>.</p><p data-astro-cid-qsyhzaho>We therefore believe that it is extremely important for regional and national policymakers to understand the future evolution of educational attainment. Several dynamic microsimulation models have implemented a very simplified education module. For example, <a href="#bib16">Mazzaferro and Morciano (2012)</a> have estimated an econometric model to explain educational attainment for individuals aged 16 and over. In our model, we decided to implement a very detailed education model that simulates school and university careers.</p><p data-astro-cid-qsyhzaho>For all events with available information, we explain education careers by taking into account family background, using the mother’s and/or father’s level of education as a proxy. Indeed, as has been widely demonstrated (e.g. <a href="#bib6">Checchi et al., 2008</a>), in Italy, family backgrounds play a crucial role in determining children’s education.</p><p data-astro-cid-qsyhzaho>We start with the choice of secondary school. We estimate the probability of individuals aged under 16 enrolling, depending on their gender and their parents’ level of education, making separate calculations for Italy and Tuscany and applying a multinomial logit, whereby the dependent variable may be one of four options: i) high school; ii) technical school; iii) professional training school; and, iv) other schools (please see table A2, attached hereto, for estimation results). We then attribute a choice of school to individuals aged 16, comparing the vector of four probabilities with a random number drawn from a uniform distribution with support [0,1].</p><p data-astro-cid-qsyhzaho>After enrolments, we simulate students’ educational careers. We calculate drop-out rates and year-repetition rates by type of secondary school and attribute these events to enrolled students. We then estimate a multinomial logit for the final examination results at the end of the last year of school, depending on gender, mother’s education and father’s education. The dependent variable may be one of four options: i) very low mark (less than 70/100); ii) low mark (between 70 and 80 out of 100); iii) medium mark (between 80 and 90 out of 100); and, iv) high mark (over 90). The multinomial model is estimated separately for Italy and Tuscany, based on ISTAT’s survey of secondary school graduates and the administrative regional school register (please see table A3, attached hereto, for the estimation results). Examination results are, finally, attributed to students.</p><p data-astro-cid-qsyhzaho>Depending on their gender, type of secondary school and final examination results, individuals may enrol in university. We calculate enrolment rates, distinguished by gender, by school and by examination results, based both on ISTAT’s survey of secondary school graduates for Italy and on the regional university register for Tuscany. We then simulate enrolment decisions for students who obtained a secondary school diploma.</p><p data-astro-cid-qsyhzaho>We calculate graduation rates based on ISTAT’s survey of university graduates, distinguished by territory, by age, by gender and by type of course (3-year degree, 5-year degree, degree as per former legislation). The degree is imputed by comparing graduation rates with a random number drawn from a uniform distribution with support [0,1] for each student. Students who do not graduate, according to the probabilistic procedure, are considered drop-out students.</p></div></details><details id="s7" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">7. Labour and income</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The Italian labour market is characterised by employment and participation rates that are lower than the European Union average, respectively 58% vs. 68% and 62% vs. 72% in 2017 (<a href="#bib22">Rapiti and Pintaldi, 2019</a>). The unemployment rate is higher, at 11% vs. 7%. Under-utilised labour force in Italy is, indeed, extensive. The high levels of unemployment depend not only on demand-side factors, affected by the long economic crisis (2008-2013), but also on supply factors too, such as the mismatch between the skills required by the market and those offered by individuals. According to <a href="#bib1">Adda et al. (2017)</a>, in Italy, an average of 77% of employees are well-matched, with 9% being under-skilled and 14% being over-skilled.</p><p data-astro-cid-qsyhzaho>As stated by <a href="#bib16">Mazzaferro and Morciano (2012)</a>, many dynamic microsimulation models assume that employment decisions are fully determined by the supply side of the labour market and do not depend on demand-side factors. They typically estimate transition probabilities from education to work, with econometric models that explain employment status (employed, unemployed or inactive) depending on lagged employment status (usually referring to the previous year) and other characteristics<sup><a href="#fn7">7</a></sup>. According to estimated transition probabilities, the employment status of people who finished their education changes. They usually then align labour market indicators, such as participation and unemployment rates, to exogenous and official data, such as figures from the Ministry of Finance or other international institutions.</p><p data-astro-cid-qsyhzaho>IrpetDin models employment decisions partly differently. First, it simulates labour supply. Then, it takes labour demand from the IRPET’s structural econometric macro model called “Dante”. Finally, it matches exogenous labour demand with endogenous labour supply (<a href="#fig3">Figure 3</a>). The two models are not integrated; IrpetDin simply aligns labour demand and GDP growth rates to Dante’s estimations. The purpose of the alignement to Dante is to make coherent IRPET’s microsimulation model and macro model.</p><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00224-fig003.DFuHa9gY_Zk87Gx.webp" class="figure-lightbox-trigger" data-pswp-width="2067" data-pswp-height="912" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00224-fig003.DFuHa9gY_Zk87Gx.webp" alt width="2067" height="912" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> IrpetDin’s alignements to Dante.</span></figcaption></figure><p data-astro-cid-qsyhzaho>The following paragraphs provide details of the labour and income module.</p><section id="s7-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.1. Labour supply</h3><p data-astro-cid-qsyhzaho>In each year  <math id="inf1"> <mi>t</mi> </math>  of the simulation period, immediately after the education module, labour supply is composed of employed ( <math id="inf2"> <msub> <mrow> <mi>E</mi> </mrow> <mrow> <mi>t</mi> <mo>-</mo> <mn>1</mn> </mrow> </msub> </math> ) and unemployed individuals ( <math id="inf3"> <msub> <mrow> <mi>u</mi> </mrow> <mrow> <mi>t</mi> <mo>-</mo> <mn>1</mn> </mrow> </msub> </math> ) from the previous year. However, inactive people from the previous year and students who completed their education in year  <math id="inf4"> <mi>t</mi> </math>  could become active and start to participate in the labour market.</p><p data-astro-cid-qsyhzaho>We calculate participation rates, by age, by gender, by level of education, by role within the family (head of the family or not) and by territory (Italy or Tuscany), based on ISTAT’s Italian Labour Force Survey. We then activate inactive people from the previous year, if their inactivity has been lower than 3 years for women<sup><a href="#fn8">8</a></sup> , as well as students who finished school or university in year  <math id="inf5"> <mi>t</mi> </math> , whether they obtained a diploma/degree or dropped out. If the random number is lower than the probability, then the candidate becomes active and enters the labour market as a job seeker. Labour supply in each year <i>t</i> (<i>S</i> <sub> <i>t</i> </sub>) is therefore composed of the sum of employed at  <math id="inf6"> <mi>t</mi> <mo>-</mo> <mn>1</mn> <mo>,</mo> </math>  ( <math id="inf7"> <msub> <mrow> <mi>E</mi> </mrow> <mrow> <mi>t</mi> <mo>-</mo> <mn>1</mn> </mrow> </msub> </math> ), unemployed individuals at, <i>t</i> – 1, ( <math id="inf8"> <msub> <mrow> <mi>u</mi> </mrow> <mrow> <mi>t</mi> <mo>-</mo> <mn>1</mn> </mrow> </msub> </math> ), and the new flow of job seekers ( <math id="inf9"> <msub> <mrow> <mi>j</mi> </mrow> <mrow> <mi>t</mi> </mrow> </msub> </math> ) (1). The sum of  <math id="inf10"> <msub> <mrow> <mi> </mi> <mi> </mi> <mi>u</mi> </mrow> <mrow> <mi>t</mi> <mo>-</mo> <mn>1</mn> </mrow> </msub> </math>  and  <math id="inf11"> <msub> <mrow> <mi>j</mi> </mrow> <mrow> <mi>t</mi> </mrow> </msub> </math>  is the total number of unemployed individuals in each year <i>t</i>, <i>u<sub>t</sub> </i>.</p><div class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(1)</span><math>
+<msub>
+<mrow>
+<mi>S</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+</msub>
+<mo>=</mo>
+<msub>
+<mrow>
+<mi>E</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>-</mo>
+<mn>1</mn>
+</mrow>
+</msub>
+<mo>+</mo>
+<msub>
+<mrow>
+<mi>u</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>-</mo>
+<mn>1</mn>
+</mrow>
+</msub>
+<mo>+</mo>
+<msub>
+<mrow>
+<mi>j</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+</msub>
+</math></div></section><section id="s7-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.2. The macro model and labour demand</h3><p data-astro-cid-qsyhzaho>Dante is a structural econometric macro model, developed by IRPET, which analyses economic structural changes and the effects of policies in Italy. Since it is designed to evaluate regional policy, Dante distinguishes between three Italian macro-regions: Centre-North, South and Tuscany, all of which are linked together using an interregional trade matrix<sup><a href="#fn9">9</a></sup>.</p><p data-astro-cid-qsyhzaho>It is based on post-Keynesian theories and may be classed as a stock-flow consistent model. The complete structure of the model contains a rather complex set of behavioural equations and accounting identities. The following are some essential features of the model.</p><p data-astro-cid-qsyhzaho><i>Goods and services market. A</i>ggregate demand is a function of private and public consumption, investments and exports. The relationship between output and factors of production is based on a Leontief production function. Factors of production are therefore used in fixed proportions, since there is no substitutability between factors in the short run<sup><a href="#fn10">10</a></sup>. Potential output is determined by the maximum rate of use of labour and capital<sup><a href="#fn11">11</a></sup>. Actual output is equal to the level of aggregate demand.</p><p data-astro-cid-qsyhzaho><i>Labour market.</i> Labour supply is exogenously aligned to the participation rates predicted by ISTAT. Labour demand, expressed in standard labour units (SLU)<sup><a href="#fn12">12</a></sup> , is given by the ratio between actual output and labour productivity<sup><a href="#fn13">13</a></sup>. SLUs are converted into the number of workers through a coefficient that measures the average ratio between SLUs and numbers of workers. Labour demand, expressed in number of workers, is then compared with labour supply in order to predict unemployment or job vacancies.</p><p data-astro-cid-qsyhzaho><i>Adjustment mechanisms</i>. Unlike neo-classical models, in the short run, excess/insufficient aggregate demand compared with potential output is only adjusted through quantities and not through wages and prices. Therefore, if aggregate demand is lower than potential output, then labour demand is lower than labour supply and the model predicts an increase in unemployment. In the medium-long run, adjustments may also be made through wages and prices. If aggregate demand exceeds potential output, because, for example, there is a labour supply shortage, then wages and labour costs increase and companies in turn increase the prices of goods and services, with potentially depressing effects on aggregate demand, actual output, labour demand and employment.</p><p data-astro-cid-qsyhzaho>Dante is able to analyse economic structural changes up until 2035. IrpetDin therefore takes labour demand data from Dante, expressed in SLU and broken down by sector of activity (public or private), until 2035<sup><a href="#fn14">14</a></sup>. For the following years, IrpetDin assumes a growth rate in SLU equal to the average of the previous few years.</p></section><section id="s7-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.3. Matching between labour demand and supply</h3><p data-astro-cid-qsyhzaho>Labour demand data from Dante does not include workers receiving redundancy funds (RF). IrpetDin therefore uses administrative data from INPS, Italy’s National Social Security Institute, regarding the number of hours of redundancy funds in order to estimate the number of workers involved with the social safety net and to simulate scenarios about their evolution over time. More specifically, we estimate SLUs receiving RF by dividing the number of hours by an average standard working time. We then add the SLUs receiving RF to the labour demand, expressed in SLU, derived from Dante.</p><p data-astro-cid-qsyhzaho>Dante makes projections about labour demand by sector of activity. IrpetDin breaks down labour demand within the various sectors by level of education, applying the proportions observed in terms of companies’ intention to hire staff, as expressed in the Excelsior survey<sup><a href="#fn15">15</a></sup>. However, IrpetDin allows us to hypothesise different scenarios regarding the proportions of labour demand by sector and level of education over time.</p><p data-astro-cid-qsyhzaho>In the basic scenario, IrpetDin converts the labour demand originally expressed in SLU into workers, using the same ratio between SLUs and number of workers used in Dante. However, the model also allows us to conjecture a different evolution of the ratio in the future, depending on assumptions about working time.</p><p data-astro-cid-qsyhzaho>Given the peculiar characteristics of the Italian labour market, IrpetDin models the matching of labour demand and supply by sector, by level of education and by nationality. Indeed, a distinctive feature of the Italian labour market is its mismatch of particularly highly skilled individuals. According to <a href="#bib1">Adda et al. (2017)</a> the incidence of over-skilling is especially high among graduates (20%) and individuals with secondary education (14%). Another distinctive feature concerns the type of migration. Unlike continental Europe or northern countries, migration in Italy is a relatively recent phenomenon and migrants are generally lower skilled. As described by the <a href="#bib17">Ministero del Lavoro e delle Politiche Sociali (2019)</a>, the employment rate is higher for migrants than native Italians and migrants are typically employed in low-skilled job positions.</p><p data-astro-cid-qsyhzaho>IrpetDin models the matching between labour demand and supply by taking these distinctive features of the Italian labour market into account. Given the high level of over-skilled graduates in Italy, we assume that unsatisfied graduates, who do not find a job requiring tertiary education, go on to compete for jobs requiring secondary or even only primary education. Furthermore, we assume that individuals with secondary education, who do not find a job requiring secondary education, go on to compete for jobs requiring just primary education. We then hypothesise a sort of priority among migrants for jobs requiring primary education.</p><p data-astro-cid-qsyhzaho>More specifically, the matching is completed in the following way, for each time frame  <math id="inf12"> <mi>t</mi> </math>  and sector of activity  <math id="inf13"> <mi>s</mi> </math> . With regard to labour supply, we initially only consider individuals who are already employed at time  <math id="inf14"> <mi>t</mi> <mo>-</mo> <mn>1</mn> </math> . If labour demand,  <math id="inf15"> <msub> <mrow> <mi>L</mi> </mrow> <mrow> <mi>t</mi> <mo>,</mo> <mi>s</mi> </mrow> </msub> </math> , is lower than the number of those employed at the time  <math id="inf16"> <mi>t</mi> <mo>-</mo> <mn>1</mn> </math> ,  <math id="inf17"> <msubsup> <mrow> <mi>E</mi> </mrow> <mrow> <mi>t</mi> <mo>-</mo> <mn>1</mn> <mo>,</mo> <mi>s</mi> </mrow> <mrow/> </msubsup> </math> , then the sector has an over-supply (2). Consequently, we fire workers according to the ratio between over-supply  <math id="inf18"> <msubsup> <mrow> <mi>e</mi> </mrow> <mrow> <mi>t</mi> <mo>,</mo> <mi>s</mi> </mrow> <mrow/> </msubsup> </math>  and labour demand  <math id="inf19"> <msubsup> <mrow> <mi>L</mi> </mrow> <mrow> <mi>t</mi> <mo>,</mo> <mi>s</mi> </mrow> <mrow/> </msubsup> </math> .</p><div class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(2)</span><math>
+<msub>
+<mrow>
+<mi>I</mi>
+<mi>f</mi>
+<mi> </mi>
+<mi>L</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+</mrow>
+</msub>
+<mo>§amp;lt;</mo>
+<msubsup>
+<mrow>
+<mi>E</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>-</mo>
+<mn>1</mn>
+<mo>,</mo>
+<mi>s</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<munder accentunder="false">
+<mo>⇒</mo>
+<mrow/>
+</munder>
+<mi>o</mi>
+<mi>v</mi>
+<mi>e</mi>
+<mi>r</mi>
+<mi> </mi>
+<mi>s</mi>
+<mi>u</mi>
+<mi>p</mi>
+<mi>p</mi>
+<mi>l</mi>
+<mi>y</mi>
+<mi> </mi>
+<munder accentunder="false">
+<mo>⇒</mo>
+<mrow/>
+</munder>
+<mi> </mi>
+<msubsup>
+<mrow>
+<mi>e</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>=</mo>
+<msubsup>
+<mrow>
+<mi>E</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>-</mo>
+<mn>1</mn>
+<mo>,</mo>
+<mi>s</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>-</mo>
+<msubsup>
+<mrow>
+<mi>L</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+</mrow>
+<mrow/>
+</msubsup>
+</math></div><div class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(3)</span><math>
+<msub>
+<mrow>
+<mi>e</mi>
+<mi>l</mi>
+<mi>s</mi>
+<mi>e</mi>
+<mi> </mi>
+<mi>i</mi>
+<mi>f</mi>
+<mi> </mi>
+<mi>L</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+</mrow>
+</msub>
+<mo>§amp;gt;</mo>
+<msubsup>
+<mrow>
+<mi>E</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>-</mo>
+<mn>1</mn>
+<mo>,</mo>
+<mi>s</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<munder accentunder="false">
+<mo>⇒</mo>
+<mrow/>
+</munder>
+<mi> </mi>
+<mi>o</mi>
+<mi>v</mi>
+<mi>e</mi>
+<mi>r</mi>
+<mi> </mi>
+<mi>d</mi>
+<mi>e</mi>
+<mi>m</mi>
+<mi>a</mi>
+<mi>n</mi>
+<mi>d</mi>
+<mi> </mi>
+<munder accentunder="false">
+<mo>⇒</mo>
+<mrow/>
+</munder>
+<mi> </mi>
+<msubsup>
+<mrow>
+<mi>l</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>=</mo>
+<msubsup>
+<mrow>
+<mi>L</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>-</mo>
+<msubsup>
+<mrow>
+<mi>E</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>-</mo>
+<mn>1</mn>
+<mo>,</mo>
+<mi>s</mi>
+</mrow>
+<mrow/>
+</msubsup>
+</math></div><p data-astro-cid-qsyhzaho>If labour demand,  <math id="inf20"> <msub> <mrow> <mi>L</mi> </mrow> <mrow> <mi>t</mi> <mo>,</mo> <mi>s</mi> </mrow> </msub> </math> , is higher than the number of those employed at the time  <math id="inf21"> <mi>t</mi> <mo>-</mo> <mn>1</mn> </math> ,  <math id="inf22"> <msubsup> <mrow> <mi>E</mi> </mrow> <mrow> <mi>t</mi> <mo>-</mo> <mn>1</mn> <mo>,</mo> <mi>s</mi> </mrow> <mrow/> </msubsup> </math> , then the sector has an over-demand (3). We then hire  <math id="inf23"> <msubsup> <mrow> <mi>l</mi> </mrow> <mrow> <mi>t</mi> <mo>,</mo> <mi>s</mi> </mrow> <mrow/> </msubsup> </math>  individuals among the remaining part of labour supply, composed of unemployed individuals  <math id="inf24"> <msubsup> <mrow> <mi>u</mi> </mrow> <mrow> <mi>t</mi> </mrow> <mrow/> </msubsup> <mo>,</mo> </math>  to the following rules.</p><p data-astro-cid-qsyhzaho>We start from jobs requiring tertiary education (4). If labour demand for tertiary education  <math id="inf25"> <msubsup> <mrow> <mi>l</mi> </mrow> <mrow> <mi>t</mi> <mo>,</mo> <mi>s</mi> <mo>,</mo> <mi>T</mi> </mrow> <mrow/> </msubsup> </math>  is higher than the number of unemployed graduates  <math id="inf26"> <msub> <mrow> <mi>u</mi> </mrow> <mrow> <mi>t</mi> <mo>,</mo> <mi>s</mi> <mo>,</mo> <mi>T</mi> </mrow> </msub> </math> , then everyone finds a job with a probability equal to 1, otherwise they find a job with a probability equal to  <math id="inf27"> <mfrac> <mrow> <msubsup> <mrow> <mi>l</mi> </mrow> <mrow> <mi>t</mi> <mo>,</mo> <mi>s</mi> <mo>,</mo> <mi>T</mi> </mrow> <mrow/> </msubsup> </mrow> <mrow> <msub> <mrow> <mi>u</mi> </mrow> <mrow> <mi>t</mi> <mo>,</mo> <mi>s</mi> <mo>,</mo> <mi>T</mi> </mrow> </msub> </mrow> </mfrac> </math>  . Unsatisfied graduates compete with individuals with secondary education for jobs requiring secondary education, again with a probability equal to 1 if labour demand for secondary education is higher than the sum of labour supply with secondary education and unsatisfied graduates, or equal to the ratio  <math id="inf28"> <mfrac> <mrow> <msubsup> <mrow> <mi>l</mi> </mrow> <mrow> <mi>t</mi> <mo>,</mo> <mi>s</mi> <mo>,</mo> <mi>S</mi> </mrow> <mrow/> </msubsup> </mrow> <mrow> <msub> <mrow> <mi>u</mi> </mrow> <mrow> <mi>t</mi> <mo>,</mo> <mi>s</mi> <mo>,</mo> <mi>S</mi> </mrow> </msub> <mo>+</mo> <msub> <mrow> <mo>(</mo> <msub> <mrow> <mi>u</mi> </mrow> <mrow> <mi>t</mi> <mo>,</mo> <mi>s</mi> <mo>,</mo> <mi>T</mi> </mrow> </msub> <mo>-</mo> <msubsup> <mrow> <mi>l</mi> </mrow> <mrow> <mi>t</mi> <mo>,</mo> <mi>s</mi> <mo>,</mo> <mi>T</mi> </mrow> <mrow/> </msubsup> </mrow> <mrow/> </msub> <mo>)</mo> </mrow> </mfrac> </math>  if labour demand is lower (5).</p><div class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(4)</span><math>
+<mi>I</mi>
+<mi>f</mi>
+<msubsup>
+<mrow>
+<mi>l</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>T</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>≥</mo>
+<msub>
+<mrow>
+<mi>u</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>T</mi>
+</mrow>
+</msub>
+<mi> </mi>
+<munder accentunder="false">
+<mo>⇒</mo>
+<mrow/>
+</munder>
+<mi> </mi>
+<msubsup>
+<mrow>
+<mi>π</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>T</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>=</mo>
+<mn>1</mn>
+<mi> </mi>
+<mi>e</mi>
+<mi>l</mi>
+<mi>s</mi>
+<mi>e</mi>
+<mi> </mi>
+<msubsup>
+<mrow>
+<mi>π</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>T</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<msubsup>
+<mrow>
+<mi>l</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>T</mi>
+</mrow>
+<mrow/>
+</msubsup>
+</mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>u</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>T</mi>
+</mrow>
+</msub>
+</mrow>
+</mfrac>
+</math></div><div class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(5)</span><math>
+<mi>I</mi>
+<mi>f</mi>
+<msubsup>
+<mrow>
+<mi>l</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>S</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>≥</mo>
+<mo>[</mo>
+<msub>
+<mrow>
+<mi>u</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>S</mi>
+</mrow>
+</msub>
+<mo>+</mo>
+<mi> </mi>
+<msub>
+<mrow>
+<mo>(</mo>
+<msub>
+<mrow>
+<mi>u</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>T</mi>
+</mrow>
+</msub>
+<mo>-</mo>
+<msubsup>
+<mrow>
+<mi>l</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>T</mi>
+</mrow>
+<mrow/>
+</msubsup>
+</mrow>
+<mrow/>
+</msub>
+<mo>)</mo>
+<mo>]</mo>
+<munder accentunder="false">
+<mo>⇒</mo>
+<mrow/>
+</munder>
+<mi> </mi>
+<msubsup>
+<mrow>
+<mi>π</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>T</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>=</mo>
+<msubsup>
+<mrow>
+<mi>π</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>S</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>=</mo>
+<mn>1</mn>
+<mi> </mi>
+<mi>e</mi>
+<mi>l</mi>
+<mi>s</mi>
+<mi>e</mi>
+<mi> </mi>
+<msubsup>
+<mrow>
+<mi>π</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>T</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>=</mo>
+<msubsup>
+<mrow>
+<mi>π</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>S</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<msubsup>
+<mrow>
+<mi>l</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>S</mi>
+</mrow>
+<mrow/>
+</msubsup>
+</mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>u</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>S</mi>
+</mrow>
+</msub>
+<mo>+</mo>
+<msub>
+<mrow>
+<mo>(</mo>
+<msub>
+<mrow>
+<mi>u</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>T</mi>
+</mrow>
+</msub>
+<mo>-</mo>
+<msubsup>
+<mrow>
+<mi>l</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>T</mi>
+</mrow>
+<mrow/>
+</msubsup>
+</mrow>
+<mrow/>
+</msub>
+<mo>)</mo>
+</mrow>
+</mfrac>
+</math></div><div class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(6)</span><math>
+<mi>I</mi>
+<mi>f</mi>
+<msubsup>
+<mrow>
+<mi>l</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<msub>
+<mrow>
+<mi>P</mi>
+</mrow>
+<mrow/>
+</msub>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>≥</mo>
+<msubsup>
+<mrow>
+<mi>u</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<msub>
+<mrow>
+<mi>P</mi>
+</mrow>
+<mrow>
+<mi>s</mi>
+<mi>t</mi>
+<mi>r</mi>
+</mrow>
+</msub>
+</mrow>
+<mrow/>
+</msubsup>
+<munder accentunder="false">
+<mo>⇒</mo>
+<mrow/>
+</munder>
+<msubsup>
+<mrow>
+<mi>π</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<msub>
+<mrow>
+<mi>P</mi>
+</mrow>
+<mrow>
+<mi>s</mi>
+<mi>t</mi>
+<mi>r</mi>
+</mrow>
+</msub>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>=</mo>
+<mn>1</mn>
+<mi> </mi>
+<mi>a</mi>
+<mi>n</mi>
+<mi>d</mi>
+<mi> </mi>
+<msubsup>
+<mrow>
+<mi>π</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>T</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>=</mo>
+<msubsup>
+<mrow>
+<mi>π</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>S</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>=</mo>
+<msubsup>
+<mrow>
+<mi>π</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>P</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>=</mo>
+<mfrac>
+<mrow>
+<msubsup>
+<mrow>
+<mi>l</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>P</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>-</mo>
+<msubsup>
+<mrow>
+<mi>h</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<msub>
+<mrow>
+<mi>P</mi>
+</mrow>
+<mrow>
+<mi>s</mi>
+<mi>t</mi>
+<mi>r</mi>
+</mrow>
+</msub>
+</mrow>
+<mrow/>
+</msubsup>
+</mrow>
+<mrow>
+<msub>
+<mrow>
+<mi>u</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>P</mi>
+</mrow>
+</msub>
+<mo>+</mo>
+<msub>
+<mrow>
+<mo>(</mo>
+<msub>
+<mrow>
+<mi>u</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>T</mi>
+</mrow>
+</msub>
+<mo>+</mo>
+<msub>
+<mrow>
+<mi>u</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>S</mi>
+</mrow>
+</msub>
+<mo>-</mo>
+<msubsup>
+<mrow>
+<mi>l</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>T</mi>
+</mrow>
+<mrow/>
+</msubsup>
+</mrow>
+<mrow/>
+</msub>
+<msubsup>
+<mrow>
+<mo>-</mo>
+<mi>l</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>S</mi>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>)</mo>
+</mrow>
+</mfrac>
+</math></div><div class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(7)</span><math>
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<mi>I</mi>
+<mi>f</mi>
+<msubsup>
+<mi>l</mi>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<msub>
+<mi>P</mi>
+<mrow>
+<mi>s</mi>
+<mi>t</mi>
+<mi>r</mi>
+</mrow>
+</msub>
+</mrow>
+<mrow/>
+</msubsup>
+<mo>&lt;</mo>
+<msubsup>
+<mi>u</mi>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<msub>
+<mi>P</mi>
+<mrow>
+<mi>s</mi>
+<mi>t</mi>
+<mi>r</mi>
+</mrow>
+</msub>
+</mrow>
+<mrow/>
+</msubsup>
+<munder>
+<mo stretchy="false">⇒</mo>
+<mrow/>
+</munder>
+<msub>
+<mi>π</mi>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<msub>
+<mi>P</mi>
+<mrow>
+<mi>s</mi>
+<mi>t</mi>
+<mi>r</mi>
+</mrow>
+</msub>
+</mrow>
+</msub>
+<mo>=</mo>
+<mfrac>
+<msub>
+<mi>l</mi>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>P</mi>
+</mrow>
+</msub>
+<msub>
+<mi>u</mi>
+<mrow>
+<mi>t</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mo>,</mo>
+<mi>P</mi>
+<mi mathvariant="normal">_</mi>
+<mi>s</mi>
+<mi>t</mi>
+<mi>r</mi>
+</mrow>
+</msub>
+</mfrac>
+</mrow>
+</mstyle>
+</math></div><p data-astro-cid-qsyhzaho>IrpetDin then continues with jobs requiring primary education. Initially, only foreign workers compete for low-skilled positions. If labour demand is higher than foreign labour supply, then every foreigner can find a job with a probability equal to 1 and low-skilled Italian workers compete for the remaining positions after foreigners have been hired ( <math id="inf29"> <msubsup> <mrow> <mi>h</mi> </mrow> <mrow> <mi>t</mi> <mo>,</mo> <mi>s</mi> <mo>,</mo> <msub> <mrow> <mi>P</mi> </mrow> <mrow> <mi>s</mi> <mi>t</mi> <mi>r</mi> </mrow> </msub> </mrow> <mrow/> </msubsup> </math> ) (6). If labour demand is lower than foreign labour supply, then only foreigner workers can find a job with a probability of  <math id="inf30"> <mfrac> <mrow> <msubsup> <mrow> <mi>l</mi> </mrow> <mrow> <mi>t</mi> <mo>,</mo> <mi>s</mi> <mo>,</mo> <mi>P</mi> </mrow> <mrow/> </msubsup> </mrow> <mrow> <msub> <mrow> <mi>u</mi> </mrow> <mrow> <mi>t</mi> <mo>,</mo> <mi>s</mi> <mo>,</mo> <mi>P</mi> <mo>_</mo> <mi>s</mi> <mi>t</mi> <mi>r</mi> </mrow> </msub> </mrow> </mfrac> </math>  (7).</p><p data-astro-cid-qsyhzaho>The procedure that we use for the matching simulates labour market transitions-from unemployment to employment and vice versa-only when an imbalance between labour supply and demand by sector occurs. Our partial omission of churning can be a strong drawback, especially in view of the increase in temporary work that happened in the last two decades and will probably continue in the future. IrpetDin could, therefore, over-estimate stable careers, accumulation of social contributions, pension requirements and amounts.</p><p data-astro-cid-qsyhzaho>Further, our matching between labour demand and supply does not provide any long run price/wage adjustments. We are, therefore, implicitly assuming that no kind of adjustment of the imbalances can take place except in the quantities.</p><p data-astro-cid-qsyhzaho>Another important shortcoming is our implicit assumption of the absence of employment/unemployment lasting less than one year. This is a significant limit when we use IrpetDin to evaluate the effects of pension reforms, such as those implemented in 2019, that change pension requirements even for fractions of a year.</p><p data-astro-cid-qsyhzaho>After hiring and firing individuals, IrpetDin predicts the unemployment rate<sup><a href="#fn16">16</a></sup>. Thanks to the modelling of labour dynamics by level of education and by sector, IrpetDin can also predict a sort of qualitative mismatch, whereby individuals are hired for jobs requiring a lower level of education than they have.</p></section><section id="s7-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.4. Career and incomes</h3><p data-astro-cid-qsyhzaho>After attributing employment status, IrpetDin simulates types of work, careers and working time. We divide workers into self-employed individuals and employees by applying the proportion observed in the current stock of workers. We then simulate career progressions for employees, from blue-collar worker to white-collar worker, to manager and then from manager to executive, by sector of activity. Transition rates are calculated based on the Italian Labour Force Survey and are then attributed to employees. Part-time work is imputed after estimating a model for the probability of being employed part-time depending on gender, age and number of children. In order to stabilize the value we estimate the probability of being employed part-time on five waves of the Italian Labour Force survey (2009-2013). Given that in Italy part time work has been strongly affected by the economic crisis of 2009<sup><a href="#fn17">17</a></sup> we estimate a second model, with the same covariates, on the two waves 2018 and 2019 of the Italian Labour Force survey. Table A4, attached hereto, shows the estimation results of the two models. We use pre-crisis probabilities until 2017 and post-crisis ones from 2018. As we will described in paragraph 10, we assume a return to pre-crisis probabilities in the long run from 2030 onwards.</p><p data-astro-cid-qsyhzaho>The final step of the labour and income module is to attribute incomes to individuals who are already employed and new recruits. We estimate a standard Mincer equation for the logarithm of income depending on workers’ characteristics (territory, age, gender, contributory seniority, level of education, employment status, number of hours worked, citizenship), separately for self-employed individuals and employees, based on EU-SILC 2008 data (please see tables A5 and A6, attached hereto, for the estimation results). The estimated coefficients and the distribution of the error term are used to impute incomes<sup><a href="#fn18">18</a></sup>. For individuals who are already employed, yearly income is calculated by applying estimated coefficients to their changing characteristics (such as age, seniority, qualification, working time) and fixed characteristics (gender), and by adding the difference between their true and estimated yearly income in 2008. For new recruits, income is calculated by applying estimated coefficients to their characteristics and adding an error term, randomly extracted from the distribution of error terms estimated by EU-SILC for workers in 2008.</p><p data-astro-cid-qsyhzaho>IrpetDin assumes that incomes grow over time in line with the nominal GDP growth rate, taken from Dante.</p></section></div></details><details id="s8" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">8. Social security module</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The social security model is mainly characterised by deterministic events, such as pensions and social assistance for the elderly. The implicit subsidy given by the public provision of health services is imputed to each individual depending on their characteristics. A probabilistic procedure, on the other hand, is only used for individuals who are not self-sufficient. Other social security transfers, which have less of a financial impact, are not simulated in the model, such as unemployment benefits, transfers to families with children and minimum income to prevent poverty.</p><section id="s8-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">8.1. Old-age and seniority pensions</h3><p data-astro-cid-qsyhzaho>In Italy, the pension system has been reformed many times in order to make it financially sustainable and fair between generations. Typically, implementation of these reforms is postponed or revised, in order to make them more acceptable to current generations, which actually ends up offloading costs onto future generations.</p><p data-astro-cid-qsyhzaho>The most important reform, the so-called Dini Reform in 1992, had precisely these characteristics. The reform, which shifted from Defined Benefit (DB) pensions to Notional Defined Contribution plans (NDC), was not applied to individuals who were retiring in those years, but rather to those who entered the labour market after 1995.</p><p data-astro-cid-qsyhzaho>Specifically, the Dini Reform introduced three different regimes: i) the DB plan for workers with more than 18 years of contributions in 1995; ii) the NDC plan for workers who started working after 1995; and, iii) a mixed plan for workers with contributions of between 1 and 18 years in 1995. The method used to calculate the pension amount differs for the three regimes. For retirees with the DB regime, a full DB plan is applied; for retirees with the NDC regime, a full NDC is applied; for those with the mixed system, a DB plan is applied for the years before 1995 and an NDC plan is applied for the years after 1995 (the so called “pro-rata”).</p><p data-astro-cid-qsyhzaho>The Dini Reform was followed by other reforms, whose objectives were, respectively, to increase pension eligibility requirements, to solve financial sustainability problems, or to correct the previous reforms, mainly for electoral issues. In 2011, an important reform was introduced (Italian Law no. 214/2011, the so-called “Fornero Reform”) with the aim of making the system more financially sustainable and fair between generations. The Fornero Reform increased the retirement age, linked retirement requirements automatically to increases in life expectancy and partially extended the NDC plan to all people retiring, also for workers with more than 18 years of contributions in 1995, for years after 2012. Therefore, following this reform, there are two regimes, the mixed and the NDC regime. The two regimes are applied both for old-age pensions and seniority pensions.</p><p data-astro-cid-qsyhzaho>IrpetDin simulates the current pension rules, which were once again changed in 2019 with the so-called “quota 100” reform (Italian Law no. 26/2011)<sup><a href="#fn19">19</a></sup>. It starts by identifying and attributing the pension regime, either mixed or NDC, for each worker in the sample and then calculates the pension amount for both regimes.</p><p data-astro-cid-qsyhzaho>The calculation rule for the DB plan can be represented as in (8). The pension amount is determined by multiplying the average income of the last 10 years for employees and 15 years for self-employed workers<sup><a href="#fn20">20</a></sup> ( <math id="inf31"> <mi>y</mi> </math> ) by a rate of return ( <math id="inf32"> <mi>r</mi> <mo>)</mo> </math>  and by the number of working years ( <math id="inf33"> <mi>e</mi> </math> ). The rate of return decreases with income classes<sup><a href="#fn21">21</a></sup>.</p><div class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(8)</span><math>
+<msub>
+<mrow>
+<mi>P</mi>
+</mrow>
+<mrow>
+<mi>D</mi>
+<mi>B</mi>
+</mrow>
+</msub>
+<mo>=</mo>
+<mi>y</mi>
+<mo>∙</mo>
+<mi>r</mi>
+<mo>∙</mo>
+<mi> </mi>
+<mi>e</mi>
+</math></div><p data-astro-cid-qsyhzaho>The calculation rule for the NDC plan can be represented as in (9). The pension amount is determined by multiplying the total amount of social contributions paid during working life, capitalised at the rate of GDP growth ( <math id="inf34"> <mi>m</mi> <mi>c</mi> </math> ) by a transformation rate ( <math id="inf35"> <mi>t</mi> </math> ). The transformation rate is a value that transforms the amount of contributions into annual pension income; it increases with retirement age and increases over time.</p><div class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(9)</span><math>
+<msub>
+<mrow>
+<mi>P</mi>
+</mrow>
+<mrow>
+<mi>N</mi>
+<mi>D</mi>
+<mi>C</mi>
+</mrow>
+</msub>
+<mo>=</mo>
+<mi>m</mi>
+<mi>c</mi>
+<mo>∙</mo>
+<mi> </mi>
+<mi>t</mi>
+</math></div><p data-astro-cid-qsyhzaho>After calculating the pension amount, IrpetDin simulates pension eligibility requirements for old-age pensions and seniority pensions, as established by the law. Requirements increase over time as life expectancy increases, although in 2019 the so-called “quota 100” reform blocked any increases to the retirement age until 2026. The simulation of requirements comes after the calculation of the pension amount because Italian law provides workers in the NDC regimes and those receiving old-age pensions with a form of flexibility to retire before the retirement age, if their pension amount is higher than certain thresholds.</p><p data-astro-cid-qsyhzaho>By default, IrpetDin simulates retirement for anyone who meets pension eligibility requirements. However, for old-age pensions, it allows us to simulate the choice of whether to retire or not. Specifically, the model calculates the replacement rate, i.e. the ratio between the pension amount and the last working income. If the replacement rate is higher than a certain level, decided by assumption, then the workers retire, otherwise they continue to work.</p><p data-astro-cid-qsyhzaho>Finally, IrpetDin simulates survivor pensions for those whose spouse has died and indirect pensions for children whose parents have died.</p></section><section id="s8-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">8.2. Social assistance and minimum pensions</h3><p data-astro-cid-qsyhzaho>Italian social security provides some forms of social assistance for the elderly and retirees. IrpetDin simulates the eligibility requirements and the amounts established by Italian law.</p><p data-astro-cid-qsyhzaho>There is a minimum pension supplement, representing an integration of the pension amount up until a specific minimum income threshold, for retirees who live in households<sup><a href="#fn22">22</a></sup> with an income below certain levels (in Italian, the so-called “<i>integrazione al trattamento minimo”</i>). An additional supplement (in Italian, the so-called “<i>maggiorazione sociale”</i> ) is provided to retirees over the age of 70, depending on their household income.</p><p data-astro-cid-qsyhzaho>Finally, for those aged 65 and over, the Italian welfare system provides a form of non-contributory social assistance, financed through general taxation, known as the “<i>assegno sociale”</i>. This is a sort of minimum income to prevent poverty, subject to means testing and proven with a top-up mechanism, which, however, is only for the elderly.</p></section><section id="s8-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">8.3. Health in-kind transfer</h3><p data-astro-cid-qsyhzaho>IrpetDin includes a simplified simulation of the implicit subsidy that people receive from public health services (so-called “in-kind” transfers). In-kind health transfers are only attributed to people living in Tuscany, in relation to which we have detailed regional administrative data.</p><p data-astro-cid-qsyhzaho>Two different approaches to including in-kind transfers in microsimulation models can be found in the literature: the actual consumption approach and the insurance value approach. The actual consumption approach only imputes the monetary value of in-kind transfers to individuals who actually use the service. The insurance value approach imputes an average monetary value of in-kind transfers to every individual, based on demographic characteristics (usually age and gender), without taking into account the actual use of services.</p><p data-astro-cid-qsyhzaho>We apply the insurance value approach, widely used in literature for health services, for hospital, specialist and pharmaceutical services. We calculate average per-capita expenditure by gender, by age, by level of education and by nationality for hospital services; by gender, by age and by nationality for specialist services; and by gender and by age for pharmaceutical services.</p></section><section id="s8-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">8.4. Disability and long-term care</h3><p data-astro-cid-qsyhzaho>The last social security transfer simulated in IrpetDin is long-term care (LTC) for people who are not self-sufficient. As LTC is a strictly age-related benefit, the evolution of the number of people who are not self-sufficient could be very significant for national and regional policymakers.</p><p data-astro-cid-qsyhzaho>We estimate the probability of being disabled based on an ISTAT survey, broken down by age, by gender and by level of education (please see table A7, attached hereto, for the estimation results) and, accordingly, we impute disability and non-self-sufficiency to all people in the sample. Public expenditure for LTC is estimated based on official data from the Italian Ministry of Finance and is then attributed to disabled people.</p></section></div></details><details id="s9" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">9. Validation</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>As mentioned previously, before using IrpetDin, we validate our simulations until actual data is available. <a href="#fig4">Figure 4a</a> compares IrpetDin’s simulation of the distribution of the Italian population by age classes in 2017 with official ISTAT data, with clearly satisfying results. <a href="#fig4">Figure 4b</a> compares some 2017 stock and flow indicators from IrpetDin with the equivalent ones registered by ISTAT. As the ratio clearly shows, there are only small differences, with a tendency to only underestimate migration flows.</p><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00224-fig004.BjwEuWhg_Z1Y16uh.webp" class="figure-lightbox-trigger" data-pswp-width="2067" data-pswp-height="796" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00224-fig004.BjwEuWhg_Z1Y16uh.webp" alt width="2067" height="796" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Validation of demography. Year 2017. Italy.</span></figcaption></figure><p data-astro-cid-qsyhzaho>The simulated employment rate is close to the actual rate (<a href="#fig5">Figure 5a</a>-left axis). The model tends to overestimate part time work until 2012 and to underestimate from 2013 (<a href="#fig5">Figure 5a</a>-right axis). However, considering the average of the entire period the share of part time work is around 17,1% in both the simulated and the actual data.</p><p data-astro-cid-qsyhzaho>The simulated unemployment rate is overestimated (<a href="#fig5">Figure 5b</a>). However, IrpetDin does not identify unemployed by applying the official definition used by ISTAT to measure unemployment rate, according to which unemployed are people of working age actively seeking work and available to start working before the end of the two weeks following the reference week of the survey. Indeed, IrpetDin’s unemployment rate is somewhere in between the official rate and the rate that includes among unemployed also people jobless who do not actively seeks for a work (discouraged people) or the rate of those self-declaring unemployed (the so called “subjective” definition of unemployment) (<a href="#fig5">Figure 5b</a>).</p><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00224-fig005.CnQvy5Dc_ZVMxwe.webp" class="figure-lightbox-trigger" data-pswp-width="2067" data-pswp-height="877" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00224-fig005.CnQvy5Dc_ZVMxwe.webp" alt width="2067" height="877" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> Validation of labour market indicators. Italy.</span></figcaption></figure><p data-astro-cid-qsyhzaho>With regard to pensions, IrpetDin achieves satisfactory results in terms of stock and flows of retirees and in terms of pension expenditure with respect to official data (<a href="#table1">Table 1</a>).</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Validation of pensions. Italy</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">IrpetDin</th>
+<th align="left">ISTAT</th>
+<th align="left">Ratio IreptDin ISTAT</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Stock of retirees in 2017</td>
+<td align="left">10,800,000</td>
+<td align="left">11,039,137</td>
+<td align="left">0.98</td>
+</tr>
+<tr>
+<td align="left">Pension flows 2016-2017-2018</td>
+<td align="left">284,138</td>
+<td align="left">291,115</td>
+<td align="left">0.98</td>
+</tr>
+<tr>
+<td align="left">Pension expenditure (billion euro) in 2017</td>
+<td align="left">236</td>
+<td align="left">232</td>
+<td align="left">1.01</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: IrpetDin, ISTAT.</p></div></figure></div></details><details id="s10" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">10. Main simulation results</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Having validated the model, we can now take a look at IrpetDin’s predictions for the future. Results are based on assumptions about the exogenous indicators/variables reported in <a href="#table2">Table 2</a>. In the basic scenario, life expectancy, fertility and migration flows are all aligned with ISTAT’s central forecast for the 2017-2065 period. Real and nominal GDP growth rates are in line with Dante up until 2035, after which they are based on our assumptions. Labour demand is taken from the basic scenario of the Dante macro model. The SLU/employed ratio is assumed to decrease by -0.2% until 2020, after which time it remains unchanged. The labour income growth rate is the same as the nominal GDP growth rate. We assume a part time work share in line to the post-crisis level (2018-2019) from 2018 until 2030 and a return to pre-crisis level from 2030 onwards. Social security is simulated by following current legislation without any changes in the future, except those provided for by the law.</p><p data-astro-cid-qsyhzaho>We simulate a second scenario, that we called “official”, in which we change some assumptions on the economic trends with respect to the basic scenario. Specifically, we assume the SLU/employed ratio underlying the assumptions on employment and unemployment of the last official report of the Italian Ministry of Finance on the evolution of pension expenditure in the long term (<a href="#bib21">Ragioneria generale dello Stato, 2020</a>). Further, we increase the number of years of inactivity after which women definitely leave the labour market (from three to eight from 2025) in order to align our labour supply to the one assumed in the official report of the Italian Ministry of Finance. Compared to our basic scenario, the official scenario predicts lower unemployment in the short term and higher in the long term. In the following, we describe the simulation results under the basic scenario and we compare the distributive effects on retirees between the basic scenario and the official one.</p><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Exogenous indicators/variables</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">Indicator/variabile</th>
+<th align="left">External source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="3">Demographic trends</td>
+<td align="left">Life expectancy</td>
+<td align="left">ISTAT forecast, central scenario</td>
+</tr>
+<tr>
+<td align="left">Fertility</td>
+<td align="left">ISTAT forecast, central scenario</td>
+</tr>
+<tr>
+<td align="left">Migration flows</td>
+<td align="left">ISTAT forecast, central scenario</td>
+</tr>
+<tr>
+<td align="left" rowspan="6">Economic trends</td>
+<td align="left">GDP real growth rate</td>
+<td align="left">Dante until 2035, then our assumption</td>
+</tr>
+<tr>
+<td align="left">GDP nominal growth rate</td>
+<td align="left">Dante until 2035, then our assumption</td>
+</tr>
+<tr>
+<td align="left">Standard Labour Units</td>
+<td align="left">Dante until 2035, then our assumption</td>
+</tr>
+<tr>
+<td align="left">Ratio SLU/employed</td>
+<td align="left">Our assumption</td>
+</tr>
+<tr>
+<td align="left">Labour income growth rate</td>
+<td align="left">Our assumption</td>
+</tr>
+<tr>
+<td align="left">Part time work</td>
+<td align="left">Our assumption</td>
+</tr>
+<tr>
+<td align="left" rowspan="3">Social security programmes</td>
+<td align="left">Pensions and social assistance for old-people</td>
+<td align="left">As current legislation</td>
+</tr>
+<tr>
+<td align="left">Health and long term care</td>
+<td align="left">As current legislation</td>
+</tr>
+<tr>
+<td align="left">Health and LTC costs growth rate</td>
+<td align="left">Our assumption</td>
+</tr>
+</tbody>
+</table></div></figure><section id="s10-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">10.1. Simulation results under the basic scenario</h3><p data-astro-cid-qsyhzaho>According to IrpetDin, the demographic dependency, measured by the ratio between the number of over 65s and those aged between 15 and 64, will increase from 35% in 2018 to 60% in 2050 (<a href="#fig6">Figure 6a</a>). Demographic dependency figures for Tuscany are even worse, where the ratio will increase from 40% in 2018 to 74% in 2050 (<a href="#fig6">Figure 6b</a>).</p><figure id="fig6" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00224-fig006.CDRUtr-g_ZscAH3.webp" class="figure-lightbox-trigger" data-pswp-width="1654" data-pswp-height="755" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00224-fig006.CDRUtr-g_ZscAH3.webp" alt width="1654" height="755" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 6.</strong><span data-astro-cid-dzaleqsp> Demographic dependence for Italy and Tuscany (%).</span></figcaption></figure><p data-astro-cid-qsyhzaho>The percentage of individuals aged between 18 and 34 with tertiary education will increase in the future, but this will not be enough to reach the level of other European countries, at least not in the next 30 years (<a href="#fig7">Figure 7a</a>). The percentage of people who only have primary education will decrease up until 2030, after which it will become stable at about 15% (<a href="#fig7">Figure 7b</a>).</p><figure id="fig7" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00224-fig007.C2hvztJ__3MRBs.webp" class="figure-lightbox-trigger" data-pswp-width="1654" data-pswp-height="845" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00224-fig007.C2hvztJ__3MRBs.webp" alt width="1654" height="845" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 7.</strong><span data-astro-cid-dzaleqsp> Education. Italy.</span></figcaption></figure><p data-astro-cid-qsyhzaho>With regard to the labour market, the model predicts a strong decrease in labour supply (<a href="#fig8">Figure 8a</a>). In the first years of the projection period, the workforce aged between 35 and 55 decreases due to the fall in the birth rate. Elderly workers, on the other hand, do not diminish as they continue to work due to pension reforms. Starting from 2044, the drop in younger workers is no longer offset by the growth in the number of older workers. The numerous baby boomers will begin to retire and leave the labour market (after the postponement introduced by Italian Law no. 214/2011). Similar results are described for an other microsimulation model (<a href="#bib4">Caretta et al., 2012</a>). Indeed, they predict a sharp increase in employment rates for old workers (especially female) for the next 20 years until a stabilisation in around 2040.</p><figure id="fig8" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00224-fig008.BinSr09s_Z2dSlw4.webp" class="figure-lightbox-trigger" data-pswp-width="2067" data-pswp-height="1016" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00224-fig008.BinSr09s_Z2dSlw4.webp" alt width="2067" height="1016" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 8.</strong><span data-astro-cid-dzaleqsp> Labour supply and unemployment. Italy.</span></figcaption></figure><p data-astro-cid-qsyhzaho>Consequently to these dynamics, IrpetDin predicts a diminishing labour force in the long run. With demand growing by around 2.5 million units during the period, according to our projections and in line with the Dante macro model, the unemployment rate will converge to a value that we may define as structural in 2040 (<a href="#fig8">Figure 8b</a>). It then reduces to zero.</p><p data-astro-cid-qsyhzaho>Given the growth in labour demand and the diminishing labour supply, the model predicts a gradually decreasing quantitative mismatch, i.e. the difference between labour demand and supply (<a href="#fig9">Figure 9a</a>). According to IrpetDin, the qualitative mismatch will decrease until 2038 (<a href="#fig9">Figure 9b</a>). As in the baseline scenario, the proportions of labour demand by level of education will not change over time, with the reduction in the qualitative mismatch strictly depending on the shortage of labour supply with respect to labour demand.</p><figure id="fig9" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00224-fig009.1AagbLJb_UrR03.webp" class="figure-lightbox-trigger" data-pswp-width="2067" data-pswp-height="896" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00224-fig009.1AagbLJb_UrR03.webp" alt width="2067" height="896" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 9.</strong><span data-astro-cid-dzaleqsp> Quantitative and qualitative mismatch. Italy.</span></figcaption></figure><p data-astro-cid-qsyhzaho>There is a high rate of people retiring between 2025 and 2044 due to the baby boom generations retiring (<a href="#fig10">Figure 10a</a>). We will have flows of retirees with the old DB plan (which became mixed after the introduction of Italian Law no. 214/2011) and the mixed plan, until 2039. The stock of retirees will increase until 2045 and will then become stable (<a href="#fig10">Figure 10b</a>).</p><figure id="fig10" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00224-fig010.ZC5xzTwE_Z73VXR.webp" class="figure-lightbox-trigger" data-pswp-width="2067" data-pswp-height="926" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00224-fig010.ZC5xzTwE_Z73VXR.webp" alt width="2067" height="926" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 10.</strong><span data-astro-cid-dzaleqsp> Pensions flows and stocks. Italy.</span></figcaption></figure><p data-astro-cid-qsyhzaho>Replacement rates will strongly decline in the future, especially for self employed workers (<a href="#fig11">Figure 11a</a>). In the long run, we will therefore face a problem of intra-generational equity, with retirees with very low pensions. On the other hand, the Gini among retirees will decrease, as differences among retires shall diminish when the NDC plan fully comes into force (<a href="#fig11">Figure 11b</a>). A decreasing in the Gini among Italian retirees in the very long run was also found in <a href="#bib4">Caretta et al. (2012)</a>.</p><figure id="fig11" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00224-fig011.CNYAUzLN_1AyHUI.webp" class="figure-lightbox-trigger" data-pswp-width="2067" data-pswp-height="713" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00224-fig011.CNYAUzLN_1AyHUI.webp" alt width="2067" height="713" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 11.</strong><span data-astro-cid-dzaleqsp> Pensions: intra-generational equity. Italy.</span></figcaption></figure><p data-astro-cid-qsyhzaho>The pension expenditure to GDP ratio will decrease from 2045, when the number of retirees will become stable (<a href="#fig12">Figure 12a</a>). In order to evaluate inter-generational sustainability we use the ratio between the future pension amounts and the accumulated contributions amounts for the flow of retirees (the so called “net present value ratio”). If the ratio is over 1 the pension system is not fair between generations. As can be easily seen from <a href="#fig12">Figure 12b</a>, the NDC plan will make the Italian pension system more fair between generations only in the very long run.</p><figure id="fig12" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00224-fig012.D9sAObXi_Zj4ET8.webp" class="figure-lightbox-trigger" data-pswp-width="2067" data-pswp-height="809" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00224-fig012.D9sAObXi_Zj4ET8.webp" alt width="2067" height="809" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 12.</strong><span data-astro-cid-dzaleqsp> Pensions: financial sustainability and inter-generational equity. Italy.</span></figcaption></figure><p data-astro-cid-qsyhzaho>As in <a href="#bib15">Marano et al. (2012)</a>, the Italian expenditure for social assistance for old people, composed by social pensions and supplements to minimum, will increase in the future (<a href="#fig13">Figure 13b</a>). However, IrpetDin predicts a decrease starting from around 2040, when supplements to minimum will not be in force anymore (<a href="#fig13">Figure 13a</a>).</p><figure id="fig13" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00224-fig013.D8V99-nh_ojSJh.webp" class="figure-lightbox-trigger" data-pswp-width="2067" data-pswp-height="979" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00224-fig013.D8V99-nh_ojSJh.webp" alt width="2067" height="979" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 13.</strong><span data-astro-cid-dzaleqsp> Social assistance for old people and in-kind services.</span></figcaption></figure><p data-astro-cid-qsyhzaho>Finally, IrpetDin predicts a linear but not sharp increase in expenditure for in-kind transfer, composed by specialist, hospital, pharmaceutical services and long term care (<a href="#fig13">Figure 13b</a>).</p></section><section id="s10-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">10.2. A comparison of distributive effects between the basic and the official scenario</h3><p data-astro-cid-qsyhzaho>In this paragraph we compare the distributive effects on retirees between the basic and the official scenario. As explained in the previous paragraph, the official scenario differs with respect to the basic one in the assumptions on economics trends. As can be seen from <a href="#table3">Table 3</a>, in the official scenario the unemployment rate is lower until 2032 and higher from 2033 onwords than the basic one. In order to evaluate the distributive effect on retirees of this change we measure the 25th and the 75th percentile of the of replacement rates for employees and employed and the Gini coefficient on retirees (see <a href="#table3">Table 3</a>).</p><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Unemployment rate, percentiles of replacement rates for employees and employed, Gini among retirees</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left"/>
+<th align="left">2018-2032</th>
+<th align="left">2033-2042</th>
+<th align="left">2043-2050</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="6">Basic scenario</td>
+<td align="left">Unemployment</td>
+<td align="left">11,3%</td>
+<td align="left">4,6%</td>
+<td align="left">0,1%</td>
+</tr>
+<tr>
+<td align="left">p25 employees</td>
+<td align="left">62,4%</td>
+<td align="left">57,8%</td>
+<td align="left">54,0%</td>
+</tr>
+<tr>
+<td align="left">p75 employees</td>
+<td align="left">78,5%</td>
+<td align="left">74,2%</td>
+<td align="left">72,4%</td>
+</tr>
+<tr>
+<td align="left">p25 self-employed</td>
+<td align="left">42,5%</td>
+<td align="left">34,0%</td>
+<td align="left">30,1%</td>
+</tr>
+<tr>
+<td align="left">p75 self-employed</td>
+<td align="left">53,4%</td>
+<td align="left">43,7%</td>
+<td align="left">42,2%</td>
+</tr>
+<tr>
+<td align="left">Gini</td>
+<td align="left">0,322</td>
+<td align="left">0,305</td>
+<td align="left">0,305</td>
+</tr>
+<tr>
+<td align="left" rowspan="6">Official scenario</td>
+<td align="left">Unemployment</td>
+<td align="left">9,7%</td>
+<td align="left">6,8%</td>
+<td align="left">5,4%</td>
+</tr>
+<tr>
+<td align="left">p25 employees</td>
+<td align="left">62,4%</td>
+<td align="left">58,0%</td>
+<td align="left">54,2%</td>
+</tr>
+<tr>
+<td align="left">p75 employees</td>
+<td align="left">78,5%</td>
+<td align="left">74,3%</td>
+<td align="left">72,5%</td>
+</tr>
+<tr>
+<td align="left">p25 self-employed</td>
+<td align="left">42,5%</td>
+<td align="left">34,1%</td>
+<td align="left">30,2%</td>
+</tr>
+<tr>
+<td align="left">p75 self-employed</td>
+<td align="left">53,4%</td>
+<td align="left">43,8%</td>
+<td align="left">42,2%</td>
+</tr>
+<tr>
+<td align="left">Gini</td>
+<td align="left">0,322</td>
+<td align="left">0,305</td>
+<td align="left">0,305</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>Not surprisingly, in the first period, 2018-2032, there are not differences in replacement rates. The impact on pensions can occur at least with a certain temporal lag with respect to labour market changes. Those that occur during the last ten years, 2040-2050, will have effects only after our observation period (beyond 2050).</p><p data-astro-cid-qsyhzaho>Indeed, some differences emerge only after 2033 and specifically the model predicts a mild increase in replacement rates, both at the top and the bottom of pensions distribution, under the official scenario. This effect depends on the lower unemployment rate in the short run (2018-2032) assumed in the official scenario compared to the basic one, that increases earnings and pension contributions and, consequently, the pension amount. Probably, given that replacements rates increase both at the top and the bottom of the distribution, we do not observe any impact on the Gini index.</p><p data-astro-cid-qsyhzaho>Conversely, we can not observe in our observation period, ending in 2050, the effects on pensions of the higher unemployment rate assumed in the official scenario compared to the basic one for the medium and, most of all, for the long run (2043-2050).</p></section></div></details><details id="s11" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">11. Conclusions</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Firstly, especially since it is modelled in great detail, IrpetDin takes a very long time to execute the entire period 2008-2050. A translation of the SAS code in a programming language, like C++ or Java, could improve the speed of execution.</p><p data-astro-cid-qsyhzaho>Secondly, even if IrpetDin aims at best predicting labour market indicators some validation problems in replicating official unemployment rates still remain. Further future research is therefore necessary regarding this issue.</p><p data-astro-cid-qsyhzaho>Thirdly, some information imputed in IrpetDin, like historical working experience, may be available trough to an integration between EU-SILC and administrative data, as made in other Italian microsimulation models. In the future, it is desirable to follow this approach in IrpetDin too.</p><p data-astro-cid-qsyhzaho>Last but not least, IrpetDin simply aligns labour demand to an external macro model. A further development could be the integration between IrpetDin and IRPET’s macro model, through a joint micro-macro model.</p></div></details><details id="footnotes" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Footnotes</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="fn1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1.</h3><p data-astro-cid-qsyhzaho>We removed a part of observations who are 0 years old, otherwise the adjustmet to real data was not feasible.</p></section><section id="fn2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.</h3><p data-astro-cid-qsyhzaho>The individual with the minimum sample weight is consequently not repeated.</p></section><section id="fn3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.</h3><p data-astro-cid-qsyhzaho>According to official data by ISTAT, even if the age at which people get married is increasing, the percentage of those with more than 60 years old are residual, expecially among women.</p></section><section id="fn4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.</h3><p data-astro-cid-qsyhzaho>We have overall 729 rates for each territory.</p></section><section id="fn5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.</h3><p data-astro-cid-qsyhzaho>According to official data by ISTAT, the percentage of divorces before three years of marriage is not residual (about 10% of total dissolutions), but we chose this threshold for possibile issues of sample representativeness.</p></section><section id="fn6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.</h3><p data-astro-cid-qsyhzaho>According to the survey, the majority of single individuals leaves home within 50 years old.</p></section><section id="fn7" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.</h3><p data-astro-cid-qsyhzaho>Mobility between sectors and qualifications are usually not modelled.</p></section><section id="fn8" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">8.</h3><p data-astro-cid-qsyhzaho>According to <a href="#bib5">Cataldo and Tosi (2012)</a>, women may be discouraged from participating in the labour market because of the lack of adequate educational services for children and depending on their working experience. They estimate an higher probability to become inactive in a given year if a woman was unemployed or employed with non-standard contracts in the previous year. <a href="#bib20">Pacelli et al. (2012)</a> demonstrate that the probability of exiting from employment depends on age, having children, income, firm size. In our model we assume the ultimately exit from the labour after 3 years of inactivity.</p></section><section id="fn9" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">9.</h3><p data-astro-cid-qsyhzaho>Dante considers 30 industries and 59 commodities.</p></section><section id="fn10" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">10.</h3><p data-astro-cid-qsyhzaho>In the long run proportions can change for several reasons, among which technological progress.</p></section><section id="fn11" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">11.</h3><p data-astro-cid-qsyhzaho>It takes into account also the average unemployment rate of the last few years.</p></section><section id="fn12" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">12.</h3><p data-astro-cid-qsyhzaho>Standard labour units measure the number of job positions that correspond to standard workers, i.e. full time workers.</p></section><section id="fn13" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">13.</h3><p data-astro-cid-qsyhzaho>Productivity is endogenously determined within the model.</p></section><section id="fn14" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">14.</h3><p data-astro-cid-qsyhzaho>IrpetDin also takes from Dante real and nominal GDP growth rates.</p></section><section id="fn15" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">15.</h3><p data-astro-cid-qsyhzaho>Unioncamere – Minister of Labour, Excelsior survey.</p></section><section id="fn16" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">16.</h3><p data-astro-cid-qsyhzaho>A comparison of the predicted unemployment rate with the one estimated by Dante gives similar results. In some past experiences we linked IrpetDin and Dante with iterations. Dante computed labour demand as input for IrpetDin. IrpetDin predicted participation rates as input for Dante. Dante computed again labour demand as input for IrpetDin, an so on, until unemployment rates predicted by Dante and IrpetDin converge.</p></section><section id="fn17" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">17.</h3><p data-astro-cid-qsyhzaho>As clearly stated by <a href="#bib11">Istat, Ministero del Lavoro, Inps, Anpal, Inail (2019)</a> part time work strongly increased after the great recession of 2009 , owing to involuntary part time, used by firms as a strategy to tackle the economic recession. Precisely, part time increased starting from 2011 until it stabilizes from 2018. As a result, in 2018, the share of part time work in Italy is more in line to the european average (18,6% vs 20,1%) but involuntary part time is some three times higher (64,1% vs 23,4%).</p></section><section id="fn18" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">18.</h3><p data-astro-cid-qsyhzaho>For simplicity in our Mincer equation we do not correct for selection bias. Consequently, we could over-estimate the returns to education.</p></section><section id="fn19" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">19.</h3><p data-astro-cid-qsyhzaho>This last reform made less stringent pension eligibility requirements.</p></section><section id="fn20" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">20.</h3><p data-astro-cid-qsyhzaho>For working years before 1992 the average of the last 5 and 10 years is respectively considered for employees and self-employed.</p></section><section id="fn21" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">21.</h3><p data-astro-cid-qsyhzaho>Income classes change over time, according to the law.</p></section><section id="fn22" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">22.</h3><p data-astro-cid-qsyhzaho>Only the spouse’s income, if present, is considered.</p></section></div></details></div><details id="app1" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Appendix</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><figure id="tablea1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A1.</strong><span data-astro-cid-dzaleqsp> Main features of IrpetDin’s modules</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">EVENT</th>
+<th align="left">POTENTIAL CANDIDATES</th>
+<th align="left">PROBABILITIES ESTIMATION METHOD</th>
+<th align="left">VARIABLES USED TO DETERMINE EVENTS</th>
+<th align="left">DATA SOURCE FOR PROBABILITIES ESTIMATION</th>
+<th align="left">DATA SOUCE FOREVENTUAL ALIGNEMNTS</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"/>
+<td align="left">Ageing</td>
+<td align="left">All individuals</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Mortality</td>
+<td align="left">All individuals</td>
+<td align="left">Rates taken from external sources</td>
+<td align="left">Territory, age, gender</td>
+<td align="left">Mortality tables ISTAT (2008-16)</td>
+<td align="left"> ISTAT forecast, central scenario (2008–2050)</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Marriage</td>
+<td align="left">Single, divorced, widowed aged 18–59</td>
+<td align="left">Our calculated rates</td>
+<td align="left">Territory, age, gender, education</td>
+<td align="left">Official data on marriage ISTAT (2008–2013)</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Fertility</td>
+<td align="left">Married/cohabitant women aged 18–45</td>
+<td align="left">Our calculated rates</td>
+<td align="left">Territory, age, n° children, education, nationality</td>
+<td align="left">Birth attendance certificates RT (2007–2013) + ISTAT survey on births (2012)</td>
+<td align="left"> ISTAT forecast, central scenario (2008–2050)</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Dissolution</td>
+<td align="left">Married/cohabitant aged 20–64, at least 3 years of marriage</td>
+<td align="left">Our calculated rates</td>
+<td align="left">Territory, age, gender, nationality</td>
+<td align="left">Official data on civil status ISTAT (2008–2013)</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Leaving home</td>
+<td align="left">Individuals aged 18–59, unmarried, employed, not the head of the family</td>
+<td align="left">Our calculated rates</td>
+<td align="left">Territory, age, gender</td>
+<td align="left">Survey “Famiglia e soggetti sociali” ISTAT (2013)</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">DEMOGRAPHY</td>
+<td align="left">Migration flows</td>
+<td align="left">All individuals</td>
+<td align="left">Our calculated rates</td>
+<td align="left">Territory, gender, education, occupational status, type and size of the family</td>
+<td align="left">Individual data on registrations and cancellations ISTAT + Demographic balances of foreign citizens ISTAT (2009–2017)</td>
+<td align="left">ISTAT forecast, central scenario (2008–2050)</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Choice of secondary school</td>
+<td align="left">Individuals aged below 16</td>
+<td align="left">Our estimation with multinomial logit</td>
+<td align="left">Territory, gender, parents’ education</td>
+<td align="left">Survey on secondary school graduates ISTAT (2011; 2015)</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Educational attainments at secondary school (drop-out, repeating, high school certificate)</td>
+<td align="left">Enrolled to 1° year of secondary school</td>
+<td align="left">Our calculated rates and estimation with multinomial logit</td>
+<td align="left">Territory, gender, parents’ education, type of secondary school</td>
+<td align="left">School register RT (2008-13) + Survey on secondary school graduates ISTAT (2011; 2015)</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Entry to tertiary school</td>
+<td align="left">Individuals with secondary school diploma</td>
+<td align="left">Our calculated rates</td>
+<td align="left">Territory, gender, type of secondary school, mark, year of study</td>
+<td align="left">University register (2008–2013) + Survey on secondary school graduates ISTAT (2011; 2015)</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">EDUCATION</td>
+<td align="left">University career (drop outs, three- and five-year degree)</td>
+<td align="left">Enrolled to university</td>
+<td align="left">Our calculated rates</td>
+<td align="left">Territory, age, gender, type of course</td>
+<td align="left">Survey on university graduates ISTAT (2011; 2015)</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Entry in the labour force</td>
+<td align="left">Individuals leaving the school (aged 15–39) and inactive people</td>
+<td align="left">Calculated</td>
+<td align="left">Territory, gender, age, education, role within HH</td>
+<td align="left">Labour Force Survey ISTAT (2009–2013; 2014–2016)</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Employment status</td>
+<td align="left">Individuals belong to the labour force</td>
+<td align="left">Matching between labour demand (Dante) and labour supply (IrpetDin)</td>
+<td align="left">Territory, education e sector</td>
+<td align="left">INPS, data on hours of redundancy funds and Unioncamere – Minister of Labour, Excelsior survey. (2008–2014)</td>
+<td align="left">Labour demand aligned to Dante 2008–2035, then our assumption</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Career employment</td>
+<td align="left">All individuals employed</td>
+<td align="left">Our calculated rates</td>
+<td align="left">Sector</td>
+<td align="left">Labour Force Survey ISTAT (2009–2013)</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">LABOUR AND INCOME</td>
+<td align="left">Wages and earnings</td>
+<td align="left">All individuals employed</td>
+<td align="left">Our estimation with OLS</td>
+<td align="left">Territory, age, gender, contributory seniority, educational level, work status, number of hours worked, citizenship</td>
+<td align="left">EU-SILC ISTAT (2003–2013)</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left">SOCIAL SECURITY</td>
+<td align="left">Retirement</td>
+<td align="left">All non-pensioners accruing retirement requirements</td>
+<td align="left"> </td>
+<td align="left">Pensions rules</td>
+<td align="left"> </td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Pension amount</td>
+<td align="left">All pensioners</td>
+<td align="left"> </td>
+<td align="left">Pensions rules</td>
+<td align="left"> </td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Social pension</td>
+<td align="left">Individual aged above 65 with economic condition requirements</td>
+<td align="left"> </td>
+<td align="left">Pensions rules</td>
+<td align="left"> </td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Integration at minimum pensions and pension supplements</td>
+<td align="left">Pensioners fulfilling age and economic condition requirements</td>
+<td align="left"> </td>
+<td align="left">Pensions rules</td>
+<td align="left"> </td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Health</td>
+<td align="left">All individuals (insurance value approach)</td>
+<td align="left"/>
+<td align="left">Age, gender, education, nationality</td>
+<td align="left">Regional administrative data on specialist, pharmaceutical and hospital services (only Region of Tuscany) (2011)</td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Long Term Care</td>
+<td align="left">All individuals</td>
+<td align="left">Our estimation with logit</td>
+<td align="left">Age, gender and education</td>
+<td align="left">Survey “Multiscopo”, ISTAT (2014)</td>
+<td align="left"> </td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tablea2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A2.</strong><span data-astro-cid-dzaleqsp> Multinomial logit of high school choice</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left"/>
+<th align="center" colspan="2">Italy</th>
+<th align="center" colspan="2">Tuscany</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">lyceum (base)</td>
+<td align="left"> </td>
+<td align="left">Coef.</td>
+<td align="left">P&gt;z</td>
+<td align="left">Coef.</td>
+<td align="left">P&gt;z</td>
+</tr>
+<tr>
+<td align="left">technical</td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">female</td>
+<td align="left">–1,277</td>
+<td align="left">0,00</td>
+<td align="left">–1,408</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">father with secondary education</td>
+<td align="left">–0,503</td>
+<td align="left">0,00</td>
+<td align="left">–0,264</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">father with tertiray education</td>
+<td align="left">–1,398</td>
+<td align="left">0,00</td>
+<td align="left">–1,704</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">mather with secondary education</td>
+<td align="left">–0,675</td>
+<td align="left">0,00</td>
+<td align="left">–0,742</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">mather with tertiray education</td>
+<td align="left">–1,613</td>
+<td align="left">0,00</td>
+<td align="left">–1,531</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">intercept</td>
+<td align="left">1,051</td>
+<td align="left">0,00</td>
+<td align="left">0,998</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left">professionalising</td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">female</td>
+<td align="left">–0,795</td>
+<td align="left">0,00</td>
+<td align="left">–1,018</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">father with secondary education</td>
+<td align="left">–0,850</td>
+<td align="left">0,00</td>
+<td align="left">–0,817</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">father with tertiray education</td>
+<td align="left">–1,849</td>
+<td align="left">0,00</td>
+<td align="left">–1,412</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">mather with secondary education</td>
+<td align="left">–0,946</td>
+<td align="left">0,00</td>
+<td align="left">–1,130</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">mather with tertiray education</td>
+<td align="left">–1,916</td>
+<td align="left">0,00</td>
+<td align="left">–2,163</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">intercept</td>
+<td align="left">0,308</td>
+<td align="left">0,00</td>
+<td align="left">0,479</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left">others</td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="left"> </td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">female</td>
+<td align="left">0,133</td>
+<td align="left">0,00</td>
+<td align="left">0,238</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">father with secondary education</td>
+<td align="left">–0,519</td>
+<td align="left">0,00</td>
+<td align="left">–0,512</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">father with tertiray education</td>
+<td align="left">–0,896</td>
+<td align="left">0,00</td>
+<td align="left">–1,566</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">mather with secondary education</td>
+<td align="left">–0,288</td>
+<td align="left">0,00</td>
+<td align="left">–0,333</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">mather with tertiray education</td>
+<td align="left">–0,544</td>
+<td align="left">0,00</td>
+<td align="left">–0,379</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="center">intercept</td>
+<td align="left">–2,189</td>
+<td align="left">0,00</td>
+<td align="left">–2,049</td>
+<td align="left">0,00</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: our estimation on survey on secondary school graduates ISTAT (2011; 2015).</p></div></figure><figure id="tablea3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A3.</strong><span data-astro-cid-dzaleqsp> Multinomial logit of high school mark</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left"/>
+<th align="left">Italy</th>
+<th align="left"/>
+<th align="left">Tuscany</th>
+<th align="left"/>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">under 70 (base)</td>
+<td align="left"> </td>
+<td align="left">Coef,</td>
+<td align="left">P&gt;z</td>
+<td align="left">Coef,</td>
+<td align="left">P&gt;z</td>
+</tr>
+<tr>
+<td align="left">70–80</td>
+<td align="left"> </td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">female</td>
+<td align="left">0,383</td>
+<td align="left">0,00</td>
+<td align="left">0,371</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">father with secondary education</td>
+<td align="left">0,159</td>
+<td align="left">0,00</td>
+<td align="left">0,178</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">father with tertiray education</td>
+<td align="left">0,316</td>
+<td align="left">0,00</td>
+<td align="left">–0,106</td>
+<td align="left">0,04</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">mather with secondary education</td>
+<td align="left">0,098</td>
+<td align="left">0,00</td>
+<td align="left">0,174</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">mather with tertiray education</td>
+<td align="left">0,266</td>
+<td align="left">0,00</td>
+<td align="left">0,283</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">intercept</td>
+<td align="left">–0,739</td>
+<td align="left">0,00</td>
+<td align="left">–0,536</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left">80–90</td>
+<td align="left"> </td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">female</td>
+<td align="left">0,639</td>
+<td align="left">0,00</td>
+<td align="left">0,792</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">father with secondary education</td>
+<td align="left">0,191</td>
+<td align="left">0,00</td>
+<td align="left">0,501</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">father with tertiray education</td>
+<td align="left">0,499</td>
+<td align="left">0,00</td>
+<td align="left">0,469</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">mather with secondary education</td>
+<td align="left">0,230</td>
+<td align="left">0,00</td>
+<td align="left">0,006</td>
+<td align="left">0,88</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">mather with tertiray education</td>
+<td align="left">0,483</td>
+<td align="left">0,00</td>
+<td align="left">–0,158</td>
+<td align="left">0,02</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">intercept</td>
+<td align="left">–1,518</td>
+<td align="left">0,00</td>
+<td align="left">–1,404</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left">90–100</td>
+<td align="left"> </td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">female</td>
+<td align="left">0,789</td>
+<td align="left">0,00</td>
+<td align="left">0,584</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">father with secondary education</td>
+<td align="left">0,501</td>
+<td align="left">0,00</td>
+<td align="left">0,258</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">father with tertiray education</td>
+<td align="left">0,974</td>
+<td align="left">0,00</td>
+<td align="left">–0,030</td>
+<td align="left">0,65</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">mather with secondary education</td>
+<td align="left">0,482</td>
+<td align="left">0,00</td>
+<td align="left">0,809</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">mather with tertiray education</td>
+<td align="left">0,827</td>
+<td align="left">0,00</td>
+<td align="left">1,229</td>
+<td align="left">0,00</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="center">intercept</td>
+<td align="left">–2,168</td>
+<td align="left">0,00</td>
+<td align="left">–2,113</td>
+<td align="left">0,00</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: our estimation on survey on secondary school graduates ISTAT (2011; 2015).</p></div></figure><figure id="tablea4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A4.</strong><span data-astro-cid-dzaleqsp> Logit of the being a part-timer</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="center" colspan="4">2009-2013</th>
+<th align="center" colspan="4">2018-2019</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"/>
+<td align="left">Coef.</td>
+<td align="left">Std. Err.</td>
+<td align="left">Wald Chi-Square</td>
+<td align="left">Pr &gt; ChiQuadr</td>
+<td align="left">Coef.</td>
+<td align="left">Std. Err.</td>
+<td align="left">Wald Chi-Square</td>
+<td align="left">Pr &gt; ChiQuadr</td>
+</tr>
+<tr>
+<td align="left">Woman</td>
+<td align="left">2,0279</td>
+<td align="left">0,0076</td>
+<td align="left">71247,14</td>
+<td align="left">&lt;.0001</td>
+<td align="left">1,781</td>
+<td align="left">0,0106</td>
+<td align="left">28357,22</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Age</td>
+<td align="left">–0,017</td>
+<td align="left">0,000311</td>
+<td align="left">2995,31</td>
+<td align="left">&lt;.0001</td>
+<td align="left">–0,0165</td>
+<td align="left">0,000423</td>
+<td align="left">1517,71</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Number of children</td>
+<td align="left">0,216</td>
+<td align="left">0,00484</td>
+<td align="left">1991,45</td>
+<td align="left">&lt;.0001</td>
+<td align="left">0,1288</td>
+<td align="left">0,00648</td>
+<td align="left">394,59</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Intercept</td>
+<td align="left">–2,2154</td>
+<td align="left">0,0148</td>
+<td align="left">22545,18</td>
+<td align="left">&lt;.0001</td>
+<td align="left">–1,7406</td>
+<td align="left">0,0209</td>
+<td align="left">6913,29</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Number of obs</td>
+<td align="left"> </td>
+<td align="left"> </td>
+<td align="center" colspan="2">791,126</td>
+<td align="left"> </td>
+<td align="center" colspan="2">307,954</td>
+<td align="left"> </td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: our estimation on Italian Labour Force survey 2009-2013 2018-2019, ISTAT.</p></div></figure><figure id="tablea5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A5.</strong><span data-astro-cid-dzaleqsp> OLS of the logarithm of income from employee work</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">Coef.</th>
+<th align="left">Std. Err.</th>
+<th align="left">t</th>
+<th align="left">Pr &gt; |t|</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Intercept</td>
+<td align="left">7.70048</td>
+<td align="left">0.01596</td>
+<td align="left">482.35</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Age</td>
+<td align="left">0.04376</td>
+<td align="left">0.000727</td>
+<td align="left">60.15</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Age(squared)</td>
+<td align="left">–0.0004</td>
+<td align="left">8.74E-06</td>
+<td align="left">–46.05</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Man</td>
+<td align="left">0.18824</td>
+<td align="left">0.00259</td>
+<td align="left">72.54</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Primary education</td>
+<td align="left">–0.12254</td>
+<td align="left">0.00469</td>
+<td align="left">–26.14</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Tertiary education</td>
+<td align="left">–0.16541</td>
+<td align="left">0.00875</td>
+<td align="left">–18.91</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Tertiary Education (squared)</td>
+<td align="left">0.00664</td>
+<td align="left">0.000213</td>
+<td align="left">31.15</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Exceutive</td>
+<td align="left">0.52652</td>
+<td align="left">0.00418</td>
+<td align="left">125.91</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Office worker</td>
+<td align="left">0.28028</td>
+<td align="left">0.00268</td>
+<td align="left">104.45</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Head of the household</td>
+<td align="left">0.07564</td>
+<td align="left">0.00248</td>
+<td align="left">30.46</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Women with children&lt;18</td>
+<td align="left">–0.00165</td>
+<td align="left">0.00482</td>
+<td align="left">–0.34</td>
+<td align="left">0.7327</td>
+</tr>
+<tr>
+<td align="left">Ptime</td>
+<td align="left">0.14081</td>
+<td align="left">0.0055</td>
+<td align="left">25.62</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Working hours</td>
+<td align="left">0.0194</td>
+<td align="left">0.000148</td>
+<td align="left">130.86</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">R2 0.4226</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: our estimation on EU-SILC2008. ISTAT.</p></div></figure><figure id="tablea6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A6.</strong><span data-astro-cid-dzaleqsp> OLS of the logarithm of income from self-employed work</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">Coef.</th>
+<th align="left">Std. Err.</th>
+<th align="left">t</th>
+<th align="left">Pr &gt; |t|</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Intercept</td>
+<td align="left">8.52019</td>
+<td align="left">0.03519</td>
+<td align="left">242.15</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Age</td>
+<td align="left">0.01755</td>
+<td align="left">0.00116</td>
+<td align="left">15.07</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Age(squared)</td>
+<td align="left">–5.5E-05</td>
+<td align="left">1.18E-05</td>
+<td align="left">–4.67</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Secondary Education</td>
+<td align="left">0.1194</td>
+<td align="left">0.01231</td>
+<td align="left">9.7</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Tertiary education</td>
+<td align="left">–0.0409</td>
+<td align="left">0.03009</td>
+<td align="left">–1.36</td>
+<td align="left">0.1741</td>
+</tr>
+<tr>
+<td align="left">Tertiary education (squared)</td>
+<td align="left">0.00904</td>
+<td align="left">0.000563</td>
+<td align="left">16.06</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Professionals</td>
+<td align="left">0.01318</td>
+<td align="left">0.01036</td>
+<td align="left">1.27</td>
+<td align="left">0.2036</td>
+</tr>
+<tr>
+<td align="left">Head of the household</td>
+<td align="left">0.14279</td>
+<td align="left">0.0074</td>
+<td align="left">19.29</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Services</td>
+<td align="left">–0.02719</td>
+<td align="left">0.00781</td>
+<td align="left">–3.48</td>
+<td align="left">0.0005</td>
+</tr>
+<tr>
+<td align="left">Man</td>
+<td align="left">0.20699</td>
+<td align="left">0.00779</td>
+<td align="left">26.59</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">Working hours</td>
+<td align="left">0.00615</td>
+<td align="left">0.00029</td>
+<td align="left">21.21</td>
+<td align="left">&lt;.0001</td>
+</tr>
+<tr>
+<td align="left">R2 0.1549</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: our estimation on EU-SILC2008. ISTAT.</p></div></figure><figure id="tablea7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A7.</strong><span data-astro-cid-dzaleqsp> Logit of the probability of being not self-sufficient</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">Coef.</th>
+<th align="left">Std. Err.</th>
+<th align="left">z</th>
+<th align="left">P&gt;z</th>
+<th align="center" colspan="2">[95% Conf.Interval]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Tertiary education</td>
+<td align="left">–1.110</td>
+<td align="left">0.635</td>
+<td align="left">–1.750</td>
+<td align="left">0.080</td>
+<td align="left">–2.354</td>
+<td align="left">0.134</td>
+</tr>
+<tr>
+<td align="left">Woman</td>
+<td align="left">0.652</td>
+<td align="left">0.149</td>
+<td align="left">4.360</td>
+<td align="left">0.000</td>
+<td align="left">0.359</td>
+<td align="left">0.945</td>
+</tr>
+<tr>
+<td align="left">Age</td>
+<td align="left">0.091</td>
+<td align="left">0.008</td>
+<td align="left">11.650</td>
+<td align="left">0.000</td>
+<td align="left">0.076</td>
+<td align="left">0.106</td>
+</tr>
+<tr>
+<td align="left">Constant</td>
+<td align="left">–8.845</td>
+<td align="left">0.579</td>
+<td align="left">–15.290</td>
+<td align="left">0.000</td>
+<td align="left">–9.979</td>
+<td align="left">–7.711</td>
+</tr>
+<tr>
+<td align="left">Number of obs 7.049Pseudo R2 0.288</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Source: our estimation on Survey “Multiscopo”, ISTAT (2014).</p></div></figure></div></details><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Adda, J, Monti, P, Pellizzari, M, Schivardi, F, Trigari, A (2017). <span data-astro-cid-oer3kof4>Unemployment and skill mismatch in the Italian labour market. A project coordinated by IGIER-Bocconi, supported by J.P. Morgan</span>.</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Andreassen, L (1993). <span data-astro-cid-oer3kof4>Demographic forecasting with a dynamic stochastic microsimulation model (No. 85). Discussion Papers</span>.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Brass, W (1968). <span data-astro-cid-oer3kof4>The demography of tropical Africa</span>.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Caretta, A, Flisi, S, Frale, C, Tedeschi, S (2012). <span data-astro-cid-oer3kof4>Il modello di microsimulazione T-DYMM: caratteristiche e potenzialit</span>. <em data-astro-cid-oer3kof4>Economia &amp; lavoro</em>, <strong data-astro-cid-oer3kof4>46</strong>, 61–78.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Cataldo, A, Tosi, M (2012). <span data-astro-cid-oer3kof4>L’effetto scoraggiamento tra atipicit occupazionale e conciliazione famiglia-lavoro. Un’analisi comparata tra Nord e Sud Italia</span>. <em data-astro-cid-oer3kof4>Sociologia Italiana</em>, <strong data-astro-cid-oer3kof4>2</strong>, 42–69.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Checchi, D, Fiorio, C, V, Leonardi, M (2008). <span data-astro-cid-oer3kof4>Intergenerational persistence in educational attainment in Italy</span>.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Dekkers, G (2010). <span data-astro-cid-oer3kof4>On the impact of indexation and demographic ageing on inequality among pensioners</span>.</span></li><li id="bib18" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2018). <span data-astro-cid-oer3kof4>Education and training monitor 2018 Italy</span>.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hain, W, Helberger, C (1986). <span data-astro-cid-oer3kof4>Microanalytic Simulation Models to support Social and Financial Policy</span>.</span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2014). <span data-astro-cid-oer3kof4>Rapporto sulla dispersione scolastica in Toscana, Firenze, 2014</span>.</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2014). <span data-astro-cid-oer3kof4>Generazioni a confronto. Come cambiano i percorsi verso la vita adulta. Roma, 2014</span>.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2019). <span data-astro-cid-oer3kof4>Il mercato del lavoro 2019: verso una lettura integrata, Roma, 2019</span>.</span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Leombruni, R, Richiardi, M (2006). <span data-astro-cid-oer3kof4>LABORsim: an agent-based microsimulation of labour supply – an application to Italy</span>. <em data-astro-cid-oer3kof4>Computational Economics</em>, <strong data-astro-cid-oer3kof4>27</strong>, 63–88. <a href="https://doi.org/10.1007/s10614-005-9016-0" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1007/s10614-005-9016-0</a></span></li><li id="bib13" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Li, J, O’Donoghue, C (2013). <span data-astro-cid-oer3kof4>A survey of dynamic microsimulation models: uses, model structure and methodology</span>. <em data-astro-cid-oer3kof4>International Journal of Microsimulation</em>, <strong data-astro-cid-oer3kof4>6</strong>, 3–55. <a href="https://doi.org/10.34196/ijm.00082" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.34196/ijm.00082</a></span></li><li id="bib14" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Livi Bacci, M (1990). <span data-astro-cid-oer3kof4>Introduzione alla demografia</span>.</span></li><li id="bib15" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Marano, A, Mazzaferro, C, Morciano, M (2012). <span data-astro-cid-oer3kof4>The strengths and failures of incentive mechanisms in notional defined contribution pension systems</span>. <em data-astro-cid-oer3kof4>Giornale degli economisti e Annali di economia</em>, <strong data-astro-cid-oer3kof4>2012</strong>, 33–70.</span></li><li id="bib16" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mazzaferro, C, Morciano, M (2012). <span data-astro-cid-oer3kof4>CAPP_DYN: a dynamic microsimulation model for the Italian social security system, CAPPaper N. 48</span>.</span></li><li id="bib17" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2019). <span data-astro-cid-oer3kof4>IX Rapporto Annuale. Gli stranieri nel mercato del lavoro in Italia. Direzione generale dell’immigrazione e delle politiche di integrazione</span>.</span></li><li id="bib19" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Donoghue, C, Lennon, J, Hynes, S (2009). <span data-astro-cid-oer3kof4>The life-cycle income analysis model (LIAM): a study of a flexible dynamic microsimulation modelling computing framework</span>. <em data-astro-cid-oer3kof4>International Journal of Microsimulation</em>, <strong data-astro-cid-oer3kof4>2</strong>, 16–31. <a href="https://doi.org/10.34196/ijm.00009" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.34196/ijm.00009</a></span></li><li id="bib20" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Pacelli, L, Pasqua, S, Villosio, C (2012). <span data-astro-cid-oer3kof4>Labour market penalties of mothers: the role of reconciliation policies</span>. <em data-astro-cid-oer3kof4>Working Paper Laboratorio Revelli</em>, <strong data-astro-cid-oer3kof4>151</strong>, 1–33.</span></li><li id="bib21" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2020). <span data-astro-cid-oer3kof4>Le tendenze di medio-lungo periodo del sistema pensionistico e socio-sanitario, Rapporto n.21, Roma, 2020</span>.</span></li><li id="bib22" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Rapiti, F, Pintaldi, F (2019). <span data-astro-cid-oer3kof4>Il mercato del lavoro nel 2018, verso una lettura integrata, Ministero del Lavoro e delle Politiche sociali, INPS, ISTAT, INPS, INAIL, ANPAL</span>.</span></li><li id="bib23" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Walker, L, Davis, P (2013). <span data-astro-cid-oer3kof4>Modelling "marriage markets": a population-scale implementation and parameter test</span>. <em data-astro-cid-oer3kof4>Journal of Artificial Societies and Social Simulation</em>, <strong data-astro-cid-oer3kof4>16</strong>. <a href="https://doi.org/10.18564/jasss.2106" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.18564/jasss.2106</a></span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Maria Luisa Maitino</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Istituto Regionale Programmazione Economica della Toscana, Florence, Italy</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:marialuisa.maitino@irpet.it" data-astro-cid-m3fa5h5a>marialuisa.maitino@irpet.it</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Letizia Ravagli</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Istituto Regionale Programmazione Economica della Toscana, Florence, Italy</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:letizia.ravagli@irpet.it" data-astro-cid-m3fa5h5a>letizia.ravagli@irpet.it</a></p><p class="article-info__detail" data-astro-cid-m3fa5h5a><a href="https://orcid.org/0000-0002-5201-8283" target="_blank" rel="noopener" data-astro-cid-m3fa5h5a>ORCID iD: 0000-0002-5201-8283</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Nicola Sciclone</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Istituto Regionale Programmazione Economica della Toscana, Florence, Italy</p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Funding</h3><p data-astro-cid-m3fa5h5a>No specific funding for this article is reported.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Data and code availability</h3><p data-astro-cid-m3fa5h5a>IrpetDin has been developed using SAS, a general-purpose statistics package. The code and the executable are proprietary and not publicly available. The code is made up of approximately 2,500 rows.</p><p data-astro-cid-m3fa5h5a>EU-SILC data used to build IrpetDin are proprietary. The authors had access to the EU-SILC data thanks to an agreement with the Region of Tuscany, which belongs to the Italian Statistical System (SISTAN).</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Acknowledgements</h3><p data-astro-cid-m3fa5h5a>Not applicable.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00224" data-astro-cid-m3fa5h5a>Version of Record published: December 31, 2020 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2020, Maitino et al.</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/dynamic-microsimulation" data-pagefind-filter="Research category:Dynamic microsimulation" data-astro-cid-m3fa5h5a>Dynamic microsimulation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=dynamic%20microsimulation%20modelling" data-astro-cid-m3fa5h5a>dynamic microsimulation modelling</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=demography" data-astro-cid-m3fa5h5a>demography</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=education" data-astro-cid-m3fa5h5a>education</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=labour" data-astro-cid-m3fa5h5a>labour</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=pensions" data-astro-cid-m3fa5h5a>pensions</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

@@ -1,0 +1,1293 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Simulating histories within dynamic microsimulation models | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00067"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00067" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/methodology" data-astro-cid-ak4gb66a>Methodology</a>, <a href="/subjects/dynamic-microsimulation" data-astro-cid-ak4gb66a>Dynamic microsimulation</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Jun 30, 2012</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Simulating histories within dynamic microsimulation models</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Jinjing Li, Cathal O’Donoghue</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Maastricht University / UNU-MERIT, The Netherlands; Rural Economy and Development Programme, Teagasc, Ireland</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/5-1/volume-5-1-spring-2012" data-astro-cid-ak4gb66a>Volume 5(1) Spring 2012</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> J. Li, C. O’Donoghue; 2012; <span data-astro-cid-ak4gb66a>Simulating histories within dynamic microsimulation models</span>; International Journal of Microsimulation; 5(1); 52–76. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00067" data-astro-cid-ak4gb66a>10.34196/ijm.00067</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>Constructing a base dataset is one of the most important elements in the dynamic microsimulation modelling. However, the access to a long historical panel is usually restricted for many reasons. This paper aims to develop a back simulation method that has the potential to generate a consistent synthetic history panel based on a typical household survey dataset with some complementary statistics. The model uses Living in Ireland (LU) household survey as an example to reconstruct the individual labour market trajectory since 1939. The overall results of the simulated panel have been proven sensible and consistent based on several validation tests. This method opens the possibility to further investigate into several fields of application such as life-cycle income analysis and pension reform evaluation, which typically requires the historical profile of individuals and has traditionally been difficult to perform.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00067/ijm-00067.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00067.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00067.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00067" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00067/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Background</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. Base dataset issues in dynamic microsimulation</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. Data</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. Methodology I: modelling the histories</a></li><li data-astro-cid-twdwaz5s><a href="#s5" data-astro-cid-twdwaz5s>5. Methodology II: alignment and adjustment in the simulation</a></li><li data-astro-cid-twdwaz5s><a href="#s6" data-astro-cid-twdwaz5s>6. Results I: back simulating employment status</a></li><li data-astro-cid-twdwaz5s><a href="#s7" data-astro-cid-twdwaz5s>7. Results II: pension memberships and eligibilities</a></li><li data-astro-cid-twdwaz5s><a href="#s8" data-astro-cid-twdwaz5s>8. Results III: income variables</a></li><li data-astro-cid-twdwaz5s><a href="#s9" data-astro-cid-twdwaz5s>9. Conclusions</a></li><li data-astro-cid-twdwaz5s><a href="#footnotes" data-astro-cid-twdwaz5s>Footnotes</a></li><li data-astro-cid-twdwaz5s><a href="#A1" data-astro-cid-twdwaz5s>Appendix 1 Steps of Back Simulation</a></li><li data-astro-cid-twdwaz5s><a href="#A2" data-astro-cid-twdwaz5s>Appendix 2 Estimates for Certain Retrospective Variables (Male)</a></li><li data-astro-cid-twdwaz5s><a href="#A3" data-astro-cid-twdwaz5s>Appendix 3 Estimates for Certain Retrospective Variables (Female)</a></li><li data-astro-cid-twdwaz5s><a href="#A4" data-astro-cid-twdwaz5s>Appendix 4 Estimates for Earnings</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Background</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Many countries today are facing the prospect of rapid demographic change in the decades ahead and numerous research papers have been devoted to the analysis of the implications of an ageing population. A number of microsimulation models have been developed to study this issue linked with social security, retirement incomes, and pension reforms. In order to generate an accurate and stable projection for elderly earnings and pensions, it is essential to include some historical information in the dataset, a luxury that many modellers do not have.</p><p data-astro-cid-qsyhzaho>Microsimulation models are usually categorised as either “static” or “dynamic”. Static models, e.g. EUROMOD (<a href="#bib16">Mantovani <i>et al</i>., 2007</a>), are mostly arithmetic models that evaluate the immediate distributional impact upon individuals/households of possible policy changes, whilst Dynamic models, e.g. DESTINIE, PENSIM, SESIM (<a href="#bib1">Bardaji <i>et al</i>., 2003</a>; <a href="#bib6">Curry, 1996</a>; <a href="#bib12">Flood, 2007</a>), extend the static model by allowing individuals to change their characteristics as a result of endogenous factors within a model (<a href="#bib21">O’Donoghue, 2001</a>). Dynamic microsimulation models in theory, could offer more insights than static models as they usually integrate long-term projections and behaviour simulations; however, they are costly to develop and require a baseline dataset that is both rich in variables and historical information. These demanding requirements unfortunately are rarely matched by the existing data availability (<a href="#bib14">Harding, 2007</a>) and therefore compromises are often made in order to make the simulation possible.</p><p data-astro-cid-qsyhzaho>This paper investigates longitudinal data availability issues in microsimulation and proposes a viable alternative by simulating a plausible and consistent history using a typical household survey panel from Ireland. The following section discusses the base dataset issues in dynamic microsimulation models and the potential alternatives. <a href="#s3">Section 3</a> describes the dataset used in the back simulation and <a href="#s4">Section 4</a> explains the modelling procedure of the back simulation, and followed by a description of the alignment technique used in <a href="#s5">Section 5</a>. The three sections following report the results of the back simulation together with the validations, for employment status, pension memberships and earnings, respectively. A conclusion and discussion are provided in the final section of this paper.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. Base dataset issues in dynamic microsimulation</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s2-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.1 Base dataset selection</h3><p data-astro-cid-qsyhzaho>Base dataset selection is important for a microsimulation model as the quality of the input data determines the quality of the output, yet this is not an easy task, as hardly any micro datasets contain all the information required by a dynamic microsimulation model that can be used to project the whole population. The difficulties of picking a base dataset have been discussed in several papers (<a href="#bib3">Cassells <i>et al</i>., 2006</a>; <a href="#bib26">Zaidi &amp; Scott, 2001</a>). Typically, a dynamic microsimulation model starts with one or several of the following types of dataset:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Cross-sectional Household Survey Data</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Cross-sectional Administrative data</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Census Data</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Panel Household Survey Data</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Panel Administrative data</p></li></ul><p data-astro-cid-qsyhzaho>Panel data is generally preferred over crosssectional data as it records changes over time, a useful component in statistical modelling. Household survey data, e.g. EU-SILC data in EUROMOD (<a href="#bib11">Figari &amp; Sutherland, 2007</a>), is frequently used as the basis of the base dataset, because it is rich in the number of variables of interests and offers information on the dynamics of behaviours. However, the time period in these survey datasets may be insufficient to provide certain historical information required for life-cycle modelling and analysis. Administrative data, although typically consisting of a more limited range of contextual variables, often provides a longer history and contains relatively high quality information for certain variables, e.g. tax, and in most cases, a higher number of observations. Some Scandinavian country models, e.g. the MOSART model in Norway (<a href="#bib13">Fredriksen, 2003</a>), are based on extensive and detailed register information. However, access to administrative records is typically fairly limited even from within a government.</p><p data-astro-cid-qsyhzaho>For microsimulation models analysing the dynamics of elderly earnings or pensions, it is essential to have historical social economics variables that could be used to reconstruct the career trajectories of today’s elderly workers. This implies that an ideal dynamic microsimulation base dataset should contain the following information for each individual from birth:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Demographic information, which contains age, education, marriage, birth of children, household (or tax unit) formation and dissolution.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Employment trajectory information, which contains labour force participation records, historical earnings, types of job etc.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Pension membership and entitlement information, which contains the record of various pension schemes participation (including state, occupational, and private pension).</p></li></ul><p data-astro-cid-qsyhzaho>To meet these requirements a long panel dataset containing rich demographic, employment, and pension data is required; unfortunately, a dataset that matches the above description is not readily available to most researchers. Certain models (e.g. DYNASIM, CORSIM) as a result, have experimented with alternative methods such as statistical matching and simulation.</p><p data-astro-cid-qsyhzaho>The first method, statistical matching, involves filling in the missing information required from a different but comparable dataset compiled within a similar time frame. For example, a microsimulation model based on a household survey dataset may need some historical earning records that are only available from another income study dataset. Under such a circumstance, a matching method may be used to fill in the information gaps based on a statistical model using available social economic characteristics shared by both datasets. The DYNASIM model was one of the pioneers in this area and uses Current Population Survey (CPS) as the base dataset matched with social security earnings records from administrative data. In DYNASIM3 (<a href="#bib10">Favreault, 2004</a>), the statistical matching was undertaken between two survey datasets, namely, Survey of Income and Program Participation (SIPP) and Panel Study of Income Dynamics (PSID), while PENSIM2 matches Family Resource Survey (FRS) and British Household Panel Survey (BHPS) to the Lifelong Labour Market Database (LLMDB) to incorporate household contextual data (<a href="#bib8">Emmerson <i>et al</i>., 2004</a>). In addition, statistical matching also occurs between survey and census datasets, e.g. SAGE matches survey data to their base census sample data to obtain the additional information required (<a href="#bib9">Evandrou, 2004</a>).</p><p data-astro-cid-qsyhzaho>The second method used is to generate a synthetic historical panel using information from the base dataset itself. Unfortunately, the methodology of simulating histories is not as widely discussed as simulating future characteristics in the microsimulation field. There are many challenges in attempting to “back-cast” or “back simulate” historical earnings (and other characteristics) earlier in life (<a href="#bib14">Harding, 2007</a>). The DYNANCAN model uses a limited back simulation technique by imputing the historical earning profiles between 1966 and 1969 with limited retrospective consistency (<a href="#bib18">Morrison, 1997</a>;<a href="#bib19">1998</a>), whilst the CORSIM model simulates part of the historical profile based on a historical crosssectional dataset, matching the model output to historical aggregate information such as fertility and mortality rates (<a href="#bib2">Caldwell, 1997</a>). Nevertheless, the existing methods only impute the history for a limited number of years and they usually suffer from the inconsistency issues. While certain variables match the historical data at cross-sectional level, the longitudinal consistencies are typically ignored and variables covered are not extensive enough to support life cycle analyses and pension simulations.</p><p data-astro-cid-qsyhzaho>There are advantages and disadvantages to both methods described above. Statistical matching can be used when there are sufficient matching variables in a comparable dataset and this method has the desirable feature of having a “real-world” value, although the quality of matching may vary substantially depending on the quality and quantity of matching variables. In some cases, certain variables, e.g. historical earning records, may not exist in any dataset or access is restricted due to legal restrictions. If these variables are needed within the model, then the only option available is simulation. Synthetic simulation has the advantage of flexibility but longitudinal consistency may be an issue due to the limited information available.</p></section><section id="s2-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.2 LIAM and its base dataset</h3><p data-astro-cid-qsyhzaho>LIAM is a dynamic microsimulation model designed to evaluate potential reforms of the Irish pensions system and other policies in terms of changes to life-cycle incomes, particularly on old age income replacement rates, poverty and inequality measures (<a href="#bib23">O’Donoghue <i>et al</i>., 2009</a>). Given the nature of the model, it requires a pension module which is able to simulate:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Life-cycle income distribution under a given pension system</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Public and/or private pension fund accumulation and dissipation over individuals’ life-cycles, under a given pension system and alternatives</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Effects of reforms of a given system on life-cycle income distribution, costs, and other redistributive measures</p></li></ul><p data-astro-cid-qsyhzaho>Since the model aims to evaluate the impact of policy change for those “at risk”, i.e. potential pensioners, an ideal historical panel would start in the year in which the oldest potential retiree in the dataset was born. However, one practical issue of alignment prevents generating meaningful values in the very early years when few individual exists in the dataset. As alignment is necessary to ensure the cross-sectional consistency with the historical values, it is necessary to keep a minimum number of the observations for each year that the alignment is applied. Therefore, the study sets the starting year of the historical panel in 1939, the year when the youngest retirees in 1994 (age 55) were born and the elder retirees in 1994 (age 75+) just entered the labour market for no more than a few years.</p><p data-astro-cid-qsyhzaho>Furthermore, in order to simulate the potential pension income, it is necessary to include a set of important social economic variables, covering demography, employment, and pension information. These include:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Demographic data includes gender, age, marital status, number of children and education attainment</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Employment data covers employment status (working or not), employment type (employee or self-employed), employment sector (public or private) and job income</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Pension data includes the pension contribution to occupational pension and private pension, the fund size of the defined-contribution (DC) pension, and the type of pension claimed after retirement</p></li></ul><p data-astro-cid-qsyhzaho>LIAM ideally, should select a base dataset which has a long social economic history, i.e. a panel that looks like an extended version of the US PSID or certain administrative datasets available in Sweden/UK etc. Unfortunately, long historical panels do not exist for Ireland, neither in the form of survey datasets nor as administrative records, yet this missing information is crucial to life cycle modelling and analysis, as some forward simulation components, such as pension eligibilities, are built on the individual labour trajectory. Given these constraints, simulation is therefore the best tool for obtaining histories for LIAM. Compared with earlier works on the historical recreation in microsimulation model (e.g. CORSIM and DYNACAN), the model could reconstruct a much longer time period and focuses on the consistencies at both cross-sectional and longitudinal levels.</p><p data-astro-cid-qsyhzaho>This paper, as part of the work developing LIAM, proposes a microsimulation algorithm which could generate a plausible, consistent and comprehensive historical panel based on a household survey dataset by extrapolating the retrospective variables concerning past employment history. Variables such as years of working and pension eligibilities are registered in the household survey and could be used to model a plausible working history for all individuals when taken together with information generated from some external statistics.</p></section></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. Data</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>This back simulation module is primarily modelled based on the 1994-2001 Living in Ireland Survey (LII) dataset along with some external statistics extracted from the pension questionnaire section of the 2002 Quarterly Household National Survey (QHNS), and the Irish census reports since 1930s.</p><p data-astro-cid-qsyhzaho>The LII survey constitutes the Irish component of the European Community Household Panel (ECHP) and is a representative household panel survey that was conducted yearly on the Irish population between 1994 and 2001 (eight waves). The data contains panel information on demographics, employment, and other social economic characteristics for around 3,500 households in each wave. In 2000, an additional 1,500 households were brought into the dataset to compensate for the attrition since 1994. <a href="#table1">Table 1</a> lists some descriptive information of key demographic and employment variables in the LII dataset.</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> An overview of LII survey.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th><i>Variable</i></th>
+<th><i>Mean</i></th>
+<th><i>Standard Deviation</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Age</td>
+<td>34.15</td>
+<td>21.86</td>
+</tr>
+<tr>
+<td>Gender</td>
+<td>0.50</td>
+<td>0.50</td>
+</tr>
+<tr>
+<td>Married (%)</td>
+<td>38.91%</td>
+<td>0.49</td>
+</tr>
+<tr>
+<td>Average household size</td>
+<td>4.31</td>
+<td>1.86</td>
+</tr>
+<tr>
+<td>Working population (%)</td>
+<td>38.18%</td>
+<td>0.49</td>
+</tr>
+<tr>
+<td>Public Sector worker (%)</td>
+<td>7.81%</td>
+<td>0.27</td>
+</tr>
+<tr>
+<td>Self-employed (%)</td>
+<td>7.73%</td>
+<td>0.27</td>
+</tr>
+<tr>
+<td>Retired (%)</td>
+<td>6.85%</td>
+<td>0.25</td>
+</tr>
+<tr>
+<td>Unemployed (%)</td>
+<td>5.40%</td>
+<td>0.23</td>
+</tr>
+<tr>
+<td>Percentage of the population with college education</td>
+<td>17.46%</td>
+<td>0.38</td>
+</tr>
+<tr>
+<td>Average reported years of work</td>
+<td>13.66</td>
+<td>15.20</td>
+</tr>
+<tr>
+<td>Total number of household</td>
+<td align="center" colspan="2">7,529</td>
+</tr>
+<tr>
+<td>Total number of individuals</td>
+<td align="center" colspan="2">23,955</td>
+</tr>
+<tr>
+<td>Total number of observations</td>
+<td align="center" colspan="2">100,639</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>Besides the LII survey, the back simulation module also uses the information gathered from the QHNS survey, which is a nationwide household survey designed to produce quarterly labour force estimates in Ireland since 1997. In the first quarter of 2002, a special module dedicated to pension savings was added to the survey. QHNS is used in the back simulation mostly for alignments when estimating occupational and private pensions. Census reports prior to 1994 were used in the back simulation module in order to align certain important history aggregates.</p><section id="s3-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.1 Demographic base data</h3><p data-astro-cid-qsyhzaho>Demographic data is the foundation of a population-based simulation. The back simulation module extracts demographic information from the LII survey and surmises some data, for example the time of birth of each individual is calculated from age information in the survey and marriage status is derived from the reported age of marriage. In the case where a missing value is spotted, average data is used, e.g. it is assumed that an individual would get married at 25, the average age of marriage in Ireland in the1990s. Divorce and remarriage is not simulated for in the current history panel for complexity reasons, and education level is assumed constant once an individual has left the reported schooling period.</p><p data-astro-cid-qsyhzaho>In the current version of the back simulation, cohorts that died before 1994 were not simulated, as the primary goal for the back simulation is to complete the career trajectory for the potential living pensioners. This simplification helps to reduce uncertainties within the history panel and lowers the modelling difficulties by avoiding potential complex interactions and consistency concerns of the synthetic population. One drawback of this simplification is that it raises the bar for alignment, as the simulated data will not be able to compare with the historical aggregate indicators. Fortunately, the Irish census data contains detailed information for each age gender subgroup. As a result, all alignments described in this paper can be performed at cohort level to ensure the consistency between simulated values and historical census data.</p></section><section id="s3-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.2 Exploiting the retrospective variable</h3><p data-astro-cid-qsyhzaho>The LIIretrospective variables provide information for survey contains certain retrospective questions similar to many household survey datasets. These questions are helpful in history recreation as they can pinpoint the time when certain events happened in an individual’s history, e.g. birth, marriage etc. In the LII survey, retrospective variables provide information for</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>the year when an individual started their current job and their job’s duration</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>the year when an individual first entered the labour market</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>the number of years spent in full-time education, employment (including selfemployment and farming), unemployment (seeking a job), illness or disability,</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>home caring or retirement duration since the age of 10</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>the duration of unemployment, if currently unemployed</p></li></ul><p data-astro-cid-qsyhzaho>While the information collected is highly relevant for back simulation, these retrospective variables may not contain high quality data. Missing values and inconsistencies are sometimes spotted across differing years of the LII survey, for example the declared number of years in school varying without engaging in education. This type of error could hamper the quality of the simulated histories severely, as there would be no reliable reference to constrain the shape of the career trajectory.</p><p data-astro-cid-qsyhzaho>In order to mitigate the impact of lower quality data, it is useful to correct obvious mistakes in the data collection and impute the missing values to expand the base on the dataset. Adjustments are applied to enforce the consistencies with key variables (e.g. age) and avoid basic mistakes such as assigning college degrees to children. Since most retrospective values (more than 90% of the individuals) are not updated once collected in the base year, it is necessary to recalibrate the values from second wave onwards to ensure the consistencies with the recorded labour market activity in the previous year. For example, if the individual worked full time in 1994, the accumulated years of employment should increase by one in 1995. Same principle applies to other variables like years of education etc.</p><p data-astro-cid-qsyhzaho><a href="#table2">Table 2</a> presents an overall summary on the outcome of the retrospective variable adjustments and highlights the difference between the original data and the adjusted data in the base year (1994) when the retrospective data was first collected. This adjustment increases the usability of these variables by improving its internal consistency. The table does not include missing values, which are imputed in the next step.</p><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Retrospective variables adjustment in the LII survey (base year).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="2"><i>Sex</i></th>
+<th rowspan="2"><i>Variable Description</i></th>
+<th colspan="2"><i>Original</i></th>
+<th colspan="2"><i>Adjusted</i></th>
+<th rowspan="2"><i>Observations Adjusted (%)</i></th>
+</tr>
+<tr>
+<th><i>Mean</i></th>
+<th><i>s.d.</i></th>
+<th><i>Mean</i></th>
+<th><i>s.d.</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="6">Male</td>
+<td>Years in full-time education or training</td>
+<td align="center">6.83</td>
+<td align="center">2.67</td>
+<td align="center">6.67</td>
+<td align="center">2.85</td>
+<td align="center">2.28%</td>
+</tr>
+<tr>
+<td>Years in employment, self-employment or farming</td>
+<td align="center">19.38</td>
+<td align="center">17.88</td>
+<td align="center">19.32</td>
+<td align="center">17.88</td>
+<td align="center">0.40%</td>
+</tr>
+<tr>
+<td>Years in unemployment</td>
+<td align="center">1.11</td>
+<td align="center">3.24</td>
+<td align="center">1.11</td>
+<td align="center">3.24</td>
+<td align="center">0.14%</td>
+</tr>
+<tr>
+<td>Years of illness/disabled</td>
+<td align="center">0.39</td>
+<td align="center">2.88</td>
+<td align="center">0.39</td>
+<td align="center">2.88</td>
+<td align="center">0.02%</td>
+</tr>
+<tr>
+<td>Years spent on home duties</td>
+<td align="center">0.21</td>
+<td align="center">3.30</td>
+<td align="center">0.14</td>
+<td align="center">2.63</td>
+<td align="center">0.23%</td>
+</tr>
+<tr>
+<td>Years in retirement</td>
+<td align="center">1.01</td>
+<td align="center">3.44</td>
+<td align="center">1.00</td>
+<td align="center">3.42</td>
+<td align="center">0.07%</td>
+</tr>
+<tr>
+<td align="center" rowspan="6">Female</td>
+<td>Years in full-time education or training</td>
+<td align="center">6.92</td>
+<td align="center">2.36</td>
+<td align="center">6.77</td>
+<td align="center">2.57</td>
+<td align="center">2.23%</td>
+</tr>
+<tr>
+<td>Years in employment, self-employment or farming</td>
+<td align="center">9.17</td>
+<td align="center">10.68</td>
+<td align="center">9.10</td>
+<td align="center">10.64</td>
+<td align="center">0.51%</td>
+</tr>
+<tr>
+<td>Years in unemployment</td>
+<td align="center">0.32</td>
+<td align="center">1.58</td>
+<td align="center">0.32</td>
+<td align="center">1.58</td>
+<td align="center">0.09%</td>
+</tr>
+<tr>
+<td>Years of illness/disabled</td>
+<td align="center">0.27</td>
+<td align="center">2.39</td>
+<td align="center">0.25</td>
+<td align="center">2.26</td>
+<td align="center">0.05%</td>
+</tr>
+<tr>
+<td>Years spent on home duties</td>
+<td align="center">12.76</td>
+<td align="center">17.21</td>
+<td align="center">12.70</td>
+<td align="center">17.14</td>
+<td align="center">0.17%</td>
+</tr>
+<tr>
+<td>Years in retirement</td>
+<td align="center">0.34</td>
+<td align="center">2.43</td>
+<td align="center">0.33</td>
+<td align="center">2.39</td>
+<td align="center">0.05%</td>
+</tr>
+<tr>
+<td rowspan="6">Total</td>
+<td>Years in full-time education or training</td>
+<td align="center">6.87</td>
+<td align="center">2.52</td>
+<td align="center">6.72</td>
+<td align="center">2.71</td>
+<td align="center">2.26%</td>
+</tr>
+<tr>
+<td>Years in employment, self-employment or farming</td>
+<td align="center">14.29</td>
+<td align="center">15.59</td>
+<td align="center">14.22</td>
+<td align="center">15.58</td>
+<td align="center">0.45%</td>
+</tr>
+<tr>
+<td>Years in unemployment</td>
+<td align="center">0.72</td>
+<td align="center">2.58</td>
+<td align="center">0.72</td>
+<td align="center">2.58</td>
+<td align="center">0.11%</td>
+</tr>
+<tr>
+<td>Years of illness/disabled</td>
+<td align="center">0.33</td>
+<td align="center">2.65</td>
+<td align="center">0.32</td>
+<td align="center">2.59</td>
+<td align="center">0.03%</td>
+</tr>
+<tr>
+<td>Years spent on home duties</td>
+<td align="center">6.48</td>
+<td align="center">13.88</td>
+<td align="center">6.41</td>
+<td align="center">13.77</td>
+<td align="center">0.20%</td>
+</tr>
+<tr>
+<td>Years in retirement</td>
+<td align="center">0.68</td>
+<td align="center">3.00</td>
+<td align="center">0.67</td>
+<td align="center">2.97</td>
+<td align="center">0.06%</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>Missing values are imputed via a set of ordinary least squared (OLS) equations, where the number of years spent in certain employment conditions are estimated using a vector for personal characteristics. Imputed values are checked for consistencies with other variables like age, education and adjusted in case of conflicts.</p><p data-astro-cid-qsyhzaho><a href="#table3">Table 3</a> describes what variables are imputed using this specification and what personal characteristics are included in the vector. Models are separately estimated for males and females. <a href="#A2">Appendix 2</a> and <a href="#A3">3</a> report the estimates obtained in the imputation equations.</p><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Imputed variables.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th><i>Imputed Variables</i></th>
+<th><i>Personal Characteristics used (X)</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><p>Years in full-time education or training</p><p>Years in employment, self-employment or farming</p>
+<p>Years in unemployment</p>
+<p>Years of illness/disability</p>
+<p>Years spent on home duties</p>
+<p>Years in retirement</p>
+</td>
+<td>Education, age, current employment status, chronic illness, retirement status, number of children in different age groups</td></tr>
+</tbody>
+</table></div></figure></section></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. Methodology I: modelling the histories</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>This section describes the methodology used in the back simulation. While a back simulation model may use some historical information to refine the outcome, it also has a higher requirement on the output quality. Since the main purpose of this back simulation model is to recreate each individual career trajectory, it demands a high accuracy of the model prediction as the pension eligibility is highly sensitive to the past employment status. In a forward microsimulation model, one would typically use some kind of aggregated values (e.g. mean, standard deviation of the distribution) to evaluate the quality of the simulation. The predicted value does not need to be correct at the individual level as long as the distributions are reasonable. Nonetheless, in the case of backward simulation, one needs to ensure that the values are sensible at the individual level due to the longitudinal consistency requirement while maintaining the reasonable distribution shape at each crosssectional level.</p><p data-astro-cid-qsyhzaho>Compared with a forward dynamic microsimulation model, a back simulation model could be more complex as it is designed to exploit more information both from historical values and retrospective information. In order to create a panel dataset that is as close as possible to the real history, three methodologies are used in back simulations:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Deterministic simulation</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Semi-stochastic simulation</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Stochastic simulation</p></li></ul><p data-astro-cid-qsyhzaho>The deterministic simulation generates the part of the history that is directly determined by retrospective variables and ensures that the generated history is perfectly consistent with the reported values. For instance, if an individual reports starting work at age 20, it is safe to assume that this individual was in work that particular year. The variables used in deterministic simulation include the age when an individual begins to work, the year in which an individual quit their previous job, the number of years spent in their current employment status (e.g. length of current job, unemployment etc.) and the number of years spent in each employment status.</p><p data-astro-cid-qsyhzaho>Semi-stochastic simulation recreates certain historical events from retrospective variables in conjunction with some reasonable assumptions. While the deterministic simulation pinpoints the timing of some major events in history, it gives only incomplete information regarding employment trajectory. Semi-stochastic simulation is still largely based on the reported retrospective variables but might involve some assumptions. For instance, since most women take maternity leave when giving birth, it is reasonable to simulate a career profile interrupted in the year of childbirth with a high probability. Another example would be “back to work” social welfare benefit, which usually implies a period of unemployment for the years preceding claiming the benefit.</p><p data-astro-cid-qsyhzaho>Stochastic simulation is designed to fill the parts of the history that cannot be inferred from deterministic and semi-stochastic processes and it recreates the history through the predictions of estimated econometric models with random components. This method is similar to a regular dynamic microsimulation model, such as DYNAMOD2 and SAGE (<a href="#bib15">King <i>et al</i>., 1999</a>; <a href="#bib25">Zaidi, 2004</a>), with the difference being that the back simulation model ages the population in a reversed direction and is subject to a much more restricted alignment procedure for consistency reasons. An outline of the simulation steps are provided in the <a href="#A1">Appendix 1</a>.</p><section id="s4-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.1 Discrete variable simulation</h3><p data-astro-cid-qsyhzaho>Discrete variables include both binary variables, such as pension membership and categorical variables, such as job position. Since the pension, membership calculation only requires basic employment status and the technical issues in alignment, the current version of the back simulation only simulate binary variables. Binary variables such as employment status, pension membership etc. are modelled using logit models that produce a probability of an event occurring as the output. These binary variables could be modelled in the following generic form</p><div id="eqn1" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>[1]</span><math><mtext>logistic</mtext><mrow><mo>(</mo><mrow><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mtext> </mtext><mo>=</mo><mi>α</mi><mo>+</mo><mi>β</mi><msub><mi>X</mi><mi>i</mi></msub><mo>+</mo><msub><mi>ε</mi><mi>i</mi></msub>
+</math></div><p data-astro-cid-qsyhzaho><i>X<sub>i</sub></i> is the vector of personal characteristics. The error term can be decomposed into specific individual effects <i>u<sub>i</sub></i> and an i.i.d. stochastic term <i>v</i>. While there are a few methods that can be adopted for controlling individual heterogeneity, this current version of the back simulation uses a simple logistic implementation for the program compatibility and the speed reason. Assuming that the stochastic term (<i>v<sub>it</sub></i>) is i.i.d. with mean zero, the average of the error terms for each individual is an unbiased estimate for individual effects (<i>u<sub>i</sub></i>). It then becomes possible to re-estimate the model using calculated individual effects and apply them to the simulation. Therefore, the final model applies can be described as</p><div id="eqn2" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>[2]</span><math><mtext>logistic</mtext><mrow><mo>(</mo><mrow><msub><mi>p</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub></mrow><mo>)</mo></mrow><mtext> </mtext><mo>=</mo><mtext> </mtext><mtext> </mtext><mi>α</mi><mo>+</mo><mi>β</mi><msub><mi>X</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub><mo>+</mo><msub><mi>u</mi><mi>i</mi></msub><mo>+</mo><msub><mi>v</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub></math></div><p data-astro-cid-qsyhzaho>The method is essentially an adjusted “fixed-effects” logit model, which is a logit variation of the specification suggested by <a href="#bib20">Mundlak (1978)</a>. It yields a higher predictive power as parts of the unobserved heterogeneities are modelled. <a href="#table4">Table 4</a> lists the variables included for each logit model. Models are estimated separately for male and females.</p><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Components of the employment status equations.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th align="center" colspan="5"><i>Equations</i></th>
+</tr>
+<tr>
+<th><i>Variables Included in the Equations</i></th>
+<th align="center"><i>In-Work</i></th>
+<th align="center"><i>Self-employment</i></th>
+<th align="center"><i>Job Sector</i></th>
+<th align="center"><i>Occupational Pension Membership</i></th>
+<th align="center"><i>Private Pension Membership</i></th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Age or Age group</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr><td>Age Squared</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr><td>Age 65 or above</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center">Yes</td>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr><td>Education</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr><td>Gender</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr><td>Work Experience</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center">Yes</td>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr><td>Gave Birth to a Child in the current year</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center"/>
+<td align="center"/>
+</tr>
+<tr><td>Work in the Public Sector or Not</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr><td>Job Industry</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr><td>Job Occupation</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr><td>Lagged variables</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr><td>Mean value of residuals</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+</tbody>
+</table></div></figure></section><section id="s4-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.2 Continuous variable simulation</h3><p data-astro-cid-qsyhzaho>Income <i>y<sub>it</sub></i> is modelled as an extended Mincer type earning equation (<a href="#bib17">Mincer &amp; Jovanovic, 1981</a>). It consists of a deterministic component (representing the dependence of income on current state variables), a random effect <i>u<sub>i</sub></i> (to account for unobserved individual heterogeneity), and a stochastic component <i>ε<sub>it</sub></i> (which represents random variation over time, in addition to variation from state changes). The statistical form looks like:</p><div id="eqn3" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>[3]</span><math><msub><mi>y</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub><mtext> </mtext><mo>=</mo><mtext> </mtext><mtext> </mtext><mi>α</mi><mo>+</mo><mi>β</mi><msub><mi>X</mi><mi>i</mi></msub><mo>+</mo><msub><mi>u</mi><mi>i</mi></msub><mo>+</mo><msub><mi>ε</mi><mrow><mi>i</mi><mi>t</mi></mrow></msub></math></div><p data-astro-cid-qsyhzaho>Where <i>X<sub>i</sub></i> includes education attainment, labour market experience and unemployment experience in the equations. Earnings are estimated using a random effect specification and coefficients are reports in <a href="#A4">Appendix 4</a>.</p></section></div></details><details id="s5" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">5. Methodology II: alignment and adjustment in the simulation</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Alignment is a commonly used method for calibrating microsimulation models so that aggregate outputs from the model match the external projections or values. This is partially due to insufficient knowledge regarding microbehaviour to specify a fully dynamic model. Simulation models, if unbounded, may over or under predict the occurrence of a certain event, even in a well-specified discrete model (<a href="#bib7">Duncan &amp; Weeks, 2000</a>). Therefore, although in theory alignment might be controversial (as a perfectly specified model with perfect data should not need any alignment), it is a de facto common practice for microsimulation models (see for example DYNACAN, CORSIM, and LIAM).</p><p data-astro-cid-qsyhzaho>In the back simulation module, alignment shapes the earnings and the distribution of employment status in a way that is both consistent with historical census information and retrospective information. There are two types of alignments applied in this model; one is a cross-sectional alignment and the other a longitudinal alignment.</p><section id="s5-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.1 Cross-sectional alignment</h3><p data-astro-cid-qsyhzaho>Depending on whether the variable is continuous or discrete, the alignment technique applied is different. Continuous variables such as earnings were aligned to the same level for the first year of the survey in 1994 for each age, gender, and education group and wage growth was assumed to be equivalent to consumer price index (CPI) growth rate. The alignment is a proportional adjustment, which has been used in several models, e.g. <a href="#bib4">Chénard (2000a</a>, <a href="#bib5">2000b</a>).</p><p data-astro-cid-qsyhzaho>For binary variables such as employment status variables, the alignment matches the proportion of the population which has a certain employment status (e.g. working or not), to the external census values, or estimated historical values, for each age, sex and education group in a given year. The alignment is based on the probability predicted by the logit model, i.e. individuals with the highest predicted probabilities (with the stochastic term) would be selected. The method is described in details by <a href="#bib24">O’Donoghue (2010)</a>.</p><p data-astro-cid-qsyhzaho>One issue with the alignment usage in this particular study is the incomplete population. While the dataset is population representative between year 1994-2001, the lack of the deceased population makes the dataset biased in early years. To address this problem, cross sectional alignments are only applied at the sub population level, i.e. alignment by age, gender, education status etc. rather than at the whole population level.</p></section><section id="s5-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.2 Longitudinal alignment</h3><p data-astro-cid-qsyhzaho>Besides the cross-sectional alignment, the back simulation also requires consistency in the retrospective variables, which is crucial to the quality of the generated historical dataset, as one of the main purposes of a long panel dynamic microsimulation is life-cycle analysis (e.g. pension). Currently there are hardly any simulation models applying a longitudinal alignment, as most have been developed for forward simulation, where there is no benchmark with which to align the results. In the backsimulation module, longitudinal alignments are implemented for the following reasons:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The simulated life path should be consistent with the reported retrospective variables such as date of marriage, year when started working, education, childbirth etc.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The simulated number of years spent in a certain employment category (e.g. total years of work/unemployment) should be consistent with reported values in the LII dataset</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The state, occupational and private pension eligibilities should be consistent with the simulated labour force trajectory</p></li></ul><p data-astro-cid-qsyhzaho>As discussed earlier, major life events are determined before the stochastic simulation to ensure consistency. The reported number of years spent within a certain employment category, as presented in the LII dataset, is taken into account during the cross-sectional alignment design process. Together with the deterministic simulation, it is possible to identify how many working years are left undetermined. Individuals without any “working years” left would be assigned as out of a job during the cross-sectional alignment procedure. Some small adjustments were applied after the panel was created to eliminate small gaps experienced during public sector employment.</p><p data-astro-cid-qsyhzaho>The alignment for the state contributory pension eligibility is a bit more complicated. Ireland introduced a state pension system in 1953 and in order to be eligible for an Irish state pension, an individual has to contribute for at least 19.52% (10/52) of the time between their first eligible job and age 65. Self-employed jobs were not deemed eligible until 1988. Given this information, it is possible to influence the pension entitlement by modifying two factors within a career profile: the years of contribution and the density of contribution. For example, if an individual is not eligible for a state pension but the simulation gives an opposite result (a type I error), it is most likely that the model over-simulated the number of years worked with a pension eligible job, or that the starting year is too late. In this case, it is possible to improve the consistency by removing the years of working experience in eligible jobs and replace them with non-eligible activities. Meanwhile, a reverse correction procedure can be applied to type II error individuals (the ones with pension eligibility but without simulated eligibility).</p><p data-astro-cid-qsyhzaho>A simplified case below demonstrates this algorithm (<a href="#table5">Table 5</a> and <a href="#table6">Table 6</a>). Assuming there are three individuals in the dataset: A, B and C. They reported that they have worked 3, 4, 3 years in total in their lifetime respectively, and in 1994, B and C received state pensions. Based on the reported total years of work and the yearly aggregate alignment, the back simulation module may generate an output as below, where a black dot [•] means that an individual is working in that year and a white dot [°] indicates that the individual is out of work. As seen below, the simulation is able to reconstruct a history with a controlled yearly aggregate and consistent total years worked.</p><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Simulated profile without adjustment.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="center"><i>Year</i></th>
+<th align="center"><i>1950</i></th>
+<th align="center"><i>1951</i></th>
+<th align="center"><i>1952</i></th>
+<th align="center"><i>1971</i></th>
+<th align="center"><i>1972</i></th>
+<th align="center"><i>1973</i></th>
+<th align="center"><i>Total Years of Work</i></th>
+<th align="center"><i>Rate</i></th>
+<th align="center"><i>Simulated Eligibility</i></th>
+<th align="center"><i>Actual Eligibility</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Individual A</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">3</td>
+<td align="center">33.3%</td>
+<td align="center">Yes</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>Individual B</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">4</td>
+<td align="center">66.7%</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Individual C</td>
+<td align="center">●</td>
+<td align="center">●</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">3</td>
+<td align="center">0.00%</td>
+<td align="center">No</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Yearly Aggregate</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center" colspan="2">(1/3 correct)</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Simulated profile with adjustment.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="center"><i>Year</i></th>
+<th align="center"><i>1950</i></th>
+<th align="center"><i>1951</i></th>
+<th align="center"><i>1952</i></th>
+<th align="center"><i>1971</i></th>
+<th align="center"><i>1972</i></th>
+<th align="center"><i>1973</i></th>
+<th align="center"><i>Total Years of Work</i></th>
+<th align="center"><i>Rate</i></th>
+<th align="center"><i>Simulated Eligibility</i></th>
+<th align="center"><i>Actual Eligibility</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Individual A</td>
+<td align="center">●</td>
+<td align="center">●</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">3</td>
+<td align="center">0.0%</td>
+<td align="center">No</td>
+<td align="center">No</td>
+</tr>
+<tr>
+<td>Individual B</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">4</td>
+<td align="center">66.7%</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Individual C</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">○</td>
+<td align="center">○</td>
+<td align="center">●</td>
+<td align="center">3</td>
+<td align="center">33.3%</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Yearly Aggregate</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">3</td>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center" colspan="2">(3/3 correct)</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>As shown above in <a href="#table5">Table 5</a>, individual A has a type I error and individual C has a type II error. In order to correct the eligibility while preserving the total years of work and yearly aggregate, one solution is to swap jobs. In this case, individual A’s job in 1951 has been swapped with the 1973 job, while individual C’s job in 1973 has been swapped with the 1951 job. Given the symmetric nature of the process, there is no change in the yearly aggregate and total years of work.</p><p data-astro-cid-qsyhzaho>This method is essentially a swapping algorithm that works when the longitudinal inconsistency is found. This procedure, however, might break the cross-sectional alignment introduced earlier in some cases when there is no individual consistency that could be improved without breaking another one. In order to avoid this undesired consequence or alleviate the impact, employment statuses are added or removed only in carefully selected year(s) based on the difference between simulated labour market statistics and the census values. For instance, if the labour force participation is lower than the census value for a specific simulated year, then the model will not be allowed to remove employment statuses from that particular year, instead, it will put a higher priority on employment creation for that particular year. Since the LII is a panel dataset, the simulated history should be consistent with not only the first year, but with all the waves. Therefore, this alignment procedure takes several iterations; the model first aligns the history with the last wave in the survey, and then gradually moves to the first wave in a loop. It should be noted that this method does not guarantee perfect consistency but it does offer a reasonable result with some important insights into the life paths of individuals.</p></section><section id="s5-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.3 Data quality and the alignment</h3><p data-astro-cid-qsyhzaho>Apart from computational algorithm defects in alignments, there is another important factor affecting the consistencies of simulated history: the quality of the data. The retrospective information collected in the survey dataset can suffer from various recall or measurement biases and it is rare not to spot inconsistencies. An individual aged 67 in 1994 might report he/she received his/her state pension in that year, while claiming that he/she had only worked for 2 years during his/her lifetime. Sometimes, the inconsistency may not be as obvious as in this previous example, especially when dealing with cross-variable consistencies. Certain data quality issues might be difficult to spot beforehand and make longitudinal alignment difficult. Therefore, it may sometimes be necessary to allow for a small deviation from the reported values.</p></section></div></details><details id="s6" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">6. Results I: back simulating employment status</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>This section evaluates the back-simulation of discrete (mainly employment status) variables. It recreates labour force participation and job nature (public or private sector, employed or selfemployed), crucial information for future pension projection. <a href="#fig1">Figure 1</a> illustrates their simulation order within the module. Among the discrete variables, the module simulates:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In-work, Employment Sector (Public/Private)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Self-employment</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Various pension memberships</p></li></ul><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig1.D9dsdGR9_Z1dA9CJ.webp" class="figure-lightbox-trigger" data-pswp-width="1209" data-pswp-height="612" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig1.D9dsdGR9_Z1dA9CJ.webp" alt width="1209" height="612" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Simulation flowchart for the employment status variables.</span></figcaption></figure><p data-astro-cid-qsyhzaho>The simulations are based on the complete sample of the 1994 population in the LII survey. Since the model does not generate historical profiles for people who have died before 1994, the simulated sample is not representative of the population prior to 1994. This implies that the average age in the earlier years of the simulation is significantly lower than the average age in the sample. Therefore, outputs are presented mostly by age group or cohort group in order to avoid misunderstandings.</p><p data-astro-cid-qsyhzaho>As discussed in the earlier section, the main goal of the back simulation model is to recreate a sensible history for all individuals in the dataset. Therefore, it is essential that the model output can replicate what actually happened. In an ideal world, the model output should be compared with the actual data to see how well the model performs. However, the lack of real historical data is the very reason that the back simulation is required. In addition, it is not feasible to compare the model with other back simulation approaches, e.g. statistical matching method, in this particular case, as synthetic history recreation is the only option due to the data limitation. Therefore, the results of the model are mainly compared with the known benchmarks: the census reports and the pension eligibilities. A success replication of this information would suggest the simulated historical profiles are sensible at both aggregate and individual level.</p><section id="s6-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.1 In-work ratio</h3><p data-astro-cid-qsyhzaho>The evolution of the in-work ratio is reproduced in <a href="#fig2">Figure 2</a> and <a href="#fig3">Figure 3</a>. As the graphs show, the male employment rate alters little over time except for a gradual fall of late career employment since the introduction of the retirement pension system in the 1970s. The female employment rate is 40%~50% lower than the male employment rate throughout the simulated history. The simulation indicates that the female labour participation rate is much higher before the age of 35 than for other age groups.</p><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig2.CcWTKPek_ZjjhSK.webp" class="figure-lightbox-trigger" data-pswp-width="1162" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig2.CcWTKPek_ZjjhSK.webp" alt width="1162" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Simulated historical in-work ratio for male by age.</span></figcaption></figure><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig3.Ceg9lwCC_1nTC2o.webp" class="figure-lightbox-trigger" data-pswp-width="1162" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig3.Ceg9lwCC_1nTC2o.webp" alt width="1162" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Simulated historical in-work ratio for female by age.</span></figcaption></figure><p data-astro-cid-qsyhzaho><a href="#fig4">Figure 4</a> and <a href="#fig5">Figure 5</a> further examine the simulated historical in-work proportion and offer a comparison with the census values to validate the simulation. As discussed earlier, the crosssectionals in the simulated period are not population representative due to the missing values of deceased individuals. Therefore, census values were adjusted based on the sample’s demographic features. In order to isolate the change of demographic composition, graphs are presented by cohorts.</p><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig4.DXYw9wl1_1zqrpk.webp" class="figure-lightbox-trigger" data-pswp-width="1162" data-pswp-height="786" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig4.DXYw9wl1_1zqrpk.webp" alt width="1162" height="786" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Simulated historical in-work ratio for male by cohorts.</span></figcaption></figure><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig5.DrdGYIUX_Z1g10HP.webp" class="figure-lightbox-trigger" data-pswp-width="1162" data-pswp-height="786" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig5.DrdGYIUX_Z1g10HP.webp" alt width="1162" height="786" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> Simulated historical in-work ratio for female by cohorts.</span></figcaption></figure><p data-astro-cid-qsyhzaho>The figures confirm that the simulated values roughly match the estimations from the census data with a deviation of around 5 percentage points on average. The simulation seems to work better for later cohorts than the earlier ones, however this difference may partially be caused by the longitudinal alignment procedure where the adjustments may not be perfectly balanced, and the inconsistencies in retrospective variables, where the data quality declines as age increases. Nonetheless, it is safe to say that the simulated ratios move in the same direction as the census values.</p><p data-astro-cid-qsyhzaho>The back simulation module not only aims at providing a reasonable profile at the crosssectional level, but also a historical trajectory that is consistent with retrospective variables. <a href="#fig6">Figure 6</a> illustrates the difference between the simulated number of years in work and the reported values. As shown, the longitudinal inconsistency in the simulation is well controlled; in total, over 83% of the individuals were simulated with an error no greater than 1 year, and over 89% of the observations have a difference of less than 2 years. A few extreme cases are also spotted with an error greater than 10 years. These observations typically report no working history but with old age pension entitlement. In this case, the model overrides the report of zero working year in favour of the observed pension eligibilities. On average, the absolute simulation errors for males are slightly larger than those for females. A possible reason is that males generally have longer career trajectories, which increase the computation complexity in balancing the crosssectional and longitudinal alignments. The longer career trajectory also implies that the measurement error of the retrospective values like reported years of work might be bigger for males. As a result, the quality of the simulation could be negatively affected due to the inconsistent reported values.</p><figure id="fig6" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig6.C7E8pYEg_2joldo.webp" class="figure-lightbox-trigger" data-pswp-width="1168" data-pswp-height="781" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig6.C7E8pYEg_2joldo.webp" alt width="1168" height="781" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 6.</strong><span data-astro-cid-dzaleqsp> Difference between simulated years of work and reported value.</span></figcaption></figure></section><section id="s6-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.2 Employment sectors and self-employment</h3><p data-astro-cid-qsyhzaho><a href="#fig7">Figure 7</a> and <a href="#fig8">Figure 8</a> depict the historical evolution of public sector employment by age. As shown, there is a gradual growth of public sector workers for all age groups, a trend that is consistent for both males and females. However, the increase of females working in the public sector is faster compared with male workers, especially for workers in their early and midcareer stages.</p><figure id="fig7" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig7.Y1VNAOgu_gM3kn.webp" class="figure-lightbox-trigger" data-pswp-width="1165" data-pswp-height="784" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig7.Y1VNAOgu_gM3kn.webp" alt width="1165" height="784" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 7.</strong><span data-astro-cid-dzaleqsp> Public sector employment for male.</span></figcaption></figure><figure id="fig8" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig8.DtkNwj3t_FPA1p.webp" class="figure-lightbox-trigger" data-pswp-width="1165" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig8.DtkNwj3t_FPA1p.webp" alt width="1165" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 8.</strong><span data-astro-cid-dzaleqsp> Simulated public sector employment for female.</span></figcaption></figure><p data-astro-cid-qsyhzaho>Regarding the self-employed, <a href="#fig9">Figure 9</a> and <a href="#fig10">Figure 10</a> reveal the different preferences amongst different age groups. From the graphs it can be seen that the self-employment rates increase dramatically for males above the age of 35 over time and this stabilises around 30%, while the self-employment rate for males under 35 is just above 12% most of the time. The raise slope of the curve in the earlier part of the history may be contributed to by the limited number of observations for the age group. For females, the self-employment ratio is more or less stable within each age group except for a moderate decline for workers over 50 years old. Despite the drop, this late-career age group has a self-employment rate of around 30%, which is more than 20 percentage points higher compared with other groups. The differences are mainly due to the dropped female labour participation at later ages. Since the average age of retirement for female employee is lower than the male counterparts, the proportion of the self-employed workers increases after age 50. The graphs demonstrate that workers under the age of 35 have the least preference towards self-employment, a preference which is observed in both the simulated histories and the original dataset.</p><figure id="fig9" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig9.DPu7aTlh_12CEoq.webp" class="figure-lightbox-trigger" data-pswp-width="1165" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig9.DPu7aTlh_12CEoq.webp" alt width="1165" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 9.</strong><span data-astro-cid-dzaleqsp> Simulated male self-employed ratio by age.</span></figcaption></figure><figure id="fig10" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig10.D8F2s13p_1lWLTt.webp" class="figure-lightbox-trigger" data-pswp-width="1165" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig10.D8F2s13p_1lWLTt.webp" alt width="1165" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 10.</strong><span data-astro-cid-dzaleqsp> Simulated female self-employed ratio by age.</span></figcaption></figure></section></div></details><details id="s7" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">7. Results II: pension memberships and eligibilities</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>According to Irish pension regulations, individuals retiring at the age of 65 or later are entitled to a retirement or old age social welfare pension (RP and OAP, respectively), which can either be contributory or means-tested. The state pension system consists of a social insurance pension introduced for those aged 70+ in 1961 and a retirement pension for those aged 65 introduced in 1970 (<a href="#bib22">O’Donoghue, 2002</a>). Individuals may be entitled to additional pensions depending on their jobs and personal choices. The back simulation module replicates the pension system by simulating each individual’s participation in pension schemes and calculating their eligibility for a state pension once an individual retires.</p><section id="s7-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.1 State pension eligibilities</h3><p data-astro-cid-qsyhzaho>State pension eligibility is calculated from the simulated contribution history, which means that an output consistent with observed pension eligibility requires the complete working trajectory (employment status/type/sector) to be within a plausible and restricted range. Therefore, the consistency of pension eligibilities could be seen as an important indicator of overall simulation quality.</p><p data-astro-cid-qsyhzaho><a href="#table7">Table 7</a> lists the accuracies of different simulated pension eligibilities. Overall, the back simulation module developed in this paper is able to simulate the eligibility with an error of less than 5% for any pension type. This result is obtained after the longitudinal alignment procedure, which improved the accuracy of simulated eligibility by more than 25 percentage points in the exercise<sup><a href="#fn1">1</a></sup>.</p><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Percentage of correctly simulated eligibility.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<td><i>Pension Type</i></td>
+<td><i>Correctly Simulated</i></td>
+<td><i>Number of Observations</i><a href="#tfn1">*</a></td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contributory State Pension</td>
+<td>96.08%</td>
+<td>9,343</td>
+</tr>
+<tr>
+<td>Occupational Pension</td>
+<td>98.25%</td>
+<td>10,030</td>
+</tr>
+<tr>
+<td>Private Pension</td>
+<td>97.36%</td>
+<td>1,706 (Year 2000 onwards)</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Only those aged 66+ are included for state pension and those aged 65+ for occupational and private pension.</p></div></figure></section><section id="s7-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.2 Occupational pension membership</h3><p data-astro-cid-qsyhzaho>Occupational and private pensions are simulated through well-specified logit models and the results are aligned with the information extracted from the QNHS and LII survey<sup><a href="#fn2">2</a></sup>. <a href="#fig11">Figure 11</a> describes the development of occupational pension membership by cohorts. It seems that later cohorts are more willing to participate in occupational pension schemes, which might imply an increase in the occupational pension coverage in Ireland over time, which in turn is consistent with the history of Irish pension reforms.</p><figure id="fig11" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig11.BWwx_jN0_2spwm1.webp" class="figure-lightbox-trigger" data-pswp-width="1165" data-pswp-height="790" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig11.BWwx_jN0_2spwm1.webp" alt width="1165" height="790" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 11.</strong><span data-astro-cid-dzaleqsp> Occupational pension participation by cohort.</span></figcaption></figure><p data-astro-cid-qsyhzaho>Analysing the trend for the cohort prospectively shows the dynamics of pension participation across time for the different cohort groups. Nonetheless, it does not reveal the dynamics of age preference, which is tightly linked with career development. <a href="#fig12">Figure 12</a> discloses the shift of preference of same age groups across time. As suggested, mid-career individuals appear to be participating more actively then those in other groups. It seems that the age group closest to retirement has the lowest participation rate, which could due to the differences in career trajectories, availability of the pension options for this cohort and other reasons.</p><figure id="fig12" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig12.DK8wUmAJ_ZU1tB2.webp" class="figure-lightbox-trigger" data-pswp-width="1165" data-pswp-height="801" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig12.DK8wUmAJ_ZU1tB2.webp" alt width="1165" height="801" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 12.</strong><span data-astro-cid-dzaleqsp> Occupational pension participation by age group.</span></figcaption></figure></section></div></details><details id="s8" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">8. Results III: income variables</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In addition to employment statuses, the back simulation module also provides monetary income histories for all individuals. Labour earnings are simulated using the models mentioned in <a href="#s4">Section 4</a>, while other non-labour income is assumed stable over time as they do not affect pension memberships. <a href="#fig13">Figure 13</a> and <a href="#fig14">Figure 14</a> demonstrate the dynamics of the average labour income over lifetime in this back simulation by analysing the earnings of three different cohorts. The average earning curve, as shown by the earlier cohorts, has the distinctive shape of a quadratic function, which matches the expectation of classic human capital theory. Female earnings seem to have a more flat mid-career profile, which may be due to the career interruption caused by maternity leave.</p><figure id="fig13" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig13.BOJrF20n_ZBO1B3.webp" class="figure-lightbox-trigger" data-pswp-width="1164" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig13.BOJrF20n_ZBO1B3.webp" alt width="1164" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 13.</strong><span data-astro-cid-dzaleqsp> Average male earnings (£) by cohort.</span></figcaption></figure><figure id="fig14" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig14.Bt2AkVF6_13opEL.webp" class="figure-lightbox-trigger" data-pswp-width="1161" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig14.Bt2AkVF6_13opEL.webp" alt width="1161" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 14.</strong><span data-astro-cid-dzaleqsp> Average female earnings (£) by cohort.</span></figcaption></figure><p data-astro-cid-qsyhzaho><a href="#fig15">Figure 15</a> and <a href="#fig16">Figure 16</a> give an overview of the evolution of earnings across the different age groups. As can be seen, average earnings increase steadily due to the increasing level of education. This is also confirmed by the cohort graphs shown earlier, where the younger cohorts demonstrate higher peak values. Male earnings are substantially different depending on the stage of their career. The average earnings by age 50 or above can be more than 50% higher compared to a male aged 20–35, but the difference is a lot smaller for female workers.</p><figure id="fig15" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig15._VJ4x0C2_DM2xB.webp" class="figure-lightbox-trigger" data-pswp-width="1164" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig15._VJ4x0C2_DM2xB.webp" alt width="1164" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 15.</strong><span data-astro-cid-dzaleqsp> Average male earnings (£) by age.</span></figcaption></figure><figure id="fig16" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00067-fig16.CIDrspM3_J6UVx.webp" class="figure-lightbox-trigger" data-pswp-width="1161" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00067-fig16.CIDrspM3_J6UVx.webp" alt width="1161" height="783" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 16.</strong><span data-astro-cid-dzaleqsp> Average female earnings (£) by age.</span></figcaption></figure></div></details><details id="s9" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">9. Conclusions</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>As discussed above, the preparation of the base dataset is one of the most important elements in every dynamic microsimulation model. However, finding a long historical panel dataset with all the necessary variables is often infeasible. This paper develops an algorithm to simulate a historical panel for the LII dataset to fill in the missing history.</p><p data-astro-cid-qsyhzaho>The back simulation module extracts retrospective information from the LII survey and applies a dynamic microsimulation in a reversed direction to simulate population histories. Due to the nature of historical simulation, the longitudinal consistency requirement is high and difficult to achieve when compared with a forward dynamic microsimulation. The method proposed in this paper solves this problem by introducing extra calibrations and alignments at both the crosssectional and longitudinal levels. The overall result of the simulated panel, as described in the earlier sections, matches the labour market history to a fairly high degree based on the macro statistics calculated. The simulated values follow the observed trend quite closely, and are able to pick up the dynamics of different types of pension eligibility across time and cohorts. Nevertheless, further validation of the long-term trajectories of the employment and earnings produced by the model might be necessary, although there is little reliable data to compare the results with for the earlier half of 20th century.</p><p data-astro-cid-qsyhzaho>The back simulation method could potentially offer many benefits for microsimulation modellers. By expanding the longitudinal information while maintaining consistencies with a panel dataset with limited waves, it offers a viable alternative to the dilemma of base dataset choice as described by <a href="#bib3">Cassells <i>et al</i>. (2006)</a> and <a href="#bib26">Zaidi and Scott (2001)</a>. The generated historical panel could consequently enhance the accuracy and stability of the forward dynamic simulation by feeding in information on career trajectory. Given the extensive retrospective information modelled, the back simulated panel has a much higher data quality than a simple synthetic panel. Since only standardized survey questions and macro statistics are used in the simulation, this proposed back simulation method could be potentially replicated in other datasets that include retrospective questions, e.g. ECHP, BHPS, German Socio-Economic Panel (GSOEP), FFS. The method could help modellers to run a life-cycle based simulation without using a scarce long panel. In addition, the historical panel provides many important insights, e.g. the dynamics of career trajectories, which would otherwise be easily overlooked in the original dataset.</p><p data-astro-cid-qsyhzaho>The exploration of a back simulation method as described in this paper is still in its early stages and the current algorithm could be further improved. Future work is planned to improve the following aspects of the back simulation model:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Simulation of the deceased cohort of the population in order to align historical statistics more accurately, as the current version does not generate a representative historical population.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Develop an improved algorithm for the cross-sectional/longitudinal alignment to alleviate the impact of inaccurate responses for retrospective questions.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Understand the robustness of the model and the standard errors of the results. Further analysing the variations in the model would enhance the credibility of the model, especially when stochastic components are used.</p></li></ul><p data-astro-cid-qsyhzaho>In spite of the shortcomings inherent in the current version of this model, this paper shows that reconstructing historical information is feasible based on standard household survey dataset and census information, providing there is some retrospective information in the dataset that can be used for modelling. From a practical point of view, the simulated panel is the only available historical panel dataset for Ireland, which offers the possibilities of investigating life-cycle income profiles together with a dynamic microsimulation model.</p></div></details><details id="footnotes" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Footnotes</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="fn1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1.</h3><p data-astro-cid-qsyhzaho>The effectiveness of the longitudinal alignment is determined by a number of factors, which include the number of iterations used, the balancing parameters between the cross-sectional accuracy and the longitudinal consistency, models used in the back simulation, and stochastic terms. The number illustrated here only reflects the efficiency of one particular run that produces the back simulation results in this paper.</p></section><section id="fn2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.</h3><p data-astro-cid-qsyhzaho>Using contemporary data for alignment might lead to overestimated pension participations. A better solution would involve gathering historical data and using it together with pension income, which could then potentially reveal the length of contributions. However, such an improved alignment is not possible in the current model given the availability of data.</p></section></div></details></div><details id="A1" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Appendix 1 Steps of Back Simulation</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><ol data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Estimate models</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Employment (in-work/out-of-work) model</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Self-employed model</p></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Impute social economic status variables for each year in the original dataset (1994-2001)</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Impute the number of years in education, employment, sickness, home care duties and retirement using regression in 1994 by sex group</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Update these variables to 1995–2001</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Consistency check for major social economic variables during the years 1994–2001</p></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Generate historical data using known information</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Demographic information (e.g. year of birth)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Maternity information (based on child age)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Job information (e.g. year of starting first job, last job, total number of years worked etc.)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Pension information (e.g. total pension contribution, pension entitlements)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Others (e.g. school, geographic information)</p></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Deterministic back simulation (in/out work)</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Create age information</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>b. Infer working status from retrospective variables</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Must be out of work before year of starting work</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Must be in work in the year of starting work</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Must be in work since the current job started</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Must be in work in the year of quitting previous job</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Must be unemployed since current unemployment started</p></li></ul></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Semi-stochastic back simulation</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Assuming a 75% chance that a woman will be “out of work” in the year of giving birth to a child</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>State pensioners must start work before the age of 56</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>“Back to work” beneficiaries must have been unemployed for 2 years</p></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Fill the gap of unallocated working status for history using stochastic simulation</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Replace the unknown working status to “in work” if the number of known working years is lower than the total work years</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Error term is stochastic. The ranking is based on the sum of the error terms and the personal effect in the model</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The status is aligned with census data by interacting with the ranking</p></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Impute the working status if there is still a gap between the reported number of years in work and the simulated years of in work</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Set the rest of the employment statuses to “not in work” if the simulated number of years in work is consistent with the reported values</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Adjust any differences</p></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Simulate/Generate the variables that LIAM will use</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Demographic information (age, alive, maternity)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Education information (based on the age of leaving full time education)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Marriage information</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Calculate the year in which an individual married</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Assume that an individual married at age 25 if the current marital status is separated, divorced or widowed.</p></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>d. Prepare employment information</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Self-employment</p><ol data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Estimate the probability of being self-employed (1994–2001)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Read the historical values of self-employment and smooth the curve using moving average method</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Use the stochastic term and personal effect to predict the probability of selfemployment, align data with estimates.</p></li></ol></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Public sector</p><ol data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Assume that people stick with the same sector as reported in 1994</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Do not allow for small gaps in public sector employment</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Store alignment data by sex education and cohort</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Use stochastic term and personal effect to predict the probability of staying within the public sector, and align the data using saved values</p></li></ol></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Final adjustments to smooth labour participation history</p></li></ul></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Calculation for pay related social insurance (PRSI) pension entitlement</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Create a variable for the contributory class in the PRSI system for state pensions</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Public servants are treated as employees if they joined the job after 1995</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Public servant pensions are eligible for those who joined the work before 1995</p></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Calculate the eligibility for a PRSI pension for the rest</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Self-employed are assumed to only be insured after 1988</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Public sector are assumed to only be insured after 1995</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Calculate the pension credit</p></li></ul></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Longitudinal Alignment</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Compare simulated PRSI pension entitlement with the actual entitlement</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Modify the history while keeping the cross-sectional alignment of the labour market participation, self-employed and pension coverage ratio stable</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Repeat the above procedure several times until the consistency is satisfactory</p></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Simulate earnings (for employees and self-employed)</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Estimate the wage model (random effect model)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Record the standard deviation of random effects and the error term</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Simulate the wage for each group with a stochastic term that shares the standard deviation of estimated random effects</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Align the average earnings by sex, education level and age group to the year 2000 values</p></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Simulate occupational pension membership using the equation estimated using the 1994-2001 data and calibrated using the QNHS samples.</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Calculate the probability of receiving an occupational pension, employee personal pension and self-employed personal pension for each age and sex group</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Estimate the occupational/self-employed/personal pension model using existing data</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Align it with the probability breakdown calculated from the QHNS sample for both the existing dataset (LII) values and the simulated historical values</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Correction for the unlikely event of an inconsistency between the occupational pension status and the employment status</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Final adjustment and alignment</p></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Calculate the value of the DC Occupational pension fund</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Model contribution in a similar manner as wages and align with observed contribution rate (split into two rates, pre-1995 and post-1995)</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Calculate the pension fund value from the 1930s using assumed interest rates</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Calculate the contributions for each pension type</p></li></ul></li></ol></div></details><details id="A2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Appendix 2 Estimates for Certain Retrospective Variables (Male)</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><figure id="tableA1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="3"><i>Variables</i></th>
+<th align="center" colspan="4"><i>Equations</i></th>
+</tr>
+<tr>
+<th colspan="2"><i>Years in full-time education or training</i></th>
+<th align="center" colspan="2"><i>Years in employment, self-employment or farming</i></th>
+</tr>
+<tr>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>College Education</td>
+<td align="center">4.22</td>
+<td align="center">0.07</td>
+<td align="center">−3.43</td>
+<td align="center">0.21</td>
+</tr>
+<tr>
+<td>Secondary Education</td>
+<td align="center">2.17</td>
+<td align="center">0.07</td>
+<td align="center">−1.66</td>
+<td align="center">0.21</td>
+</tr>
+<tr>
+<td>Age</td>
+<td align="center">0.00</td>
+<td align="center">0.02</td>
+<td align="center">0.36</td>
+<td align="center">0.05</td>
+</tr>
+<tr>
+<td>Is Working</td>
+<td align="center">−1.02</td>
+<td align="center">0.13</td>
+<td align="center">7.37</td>
+<td align="center">0.37</td>
+</tr>
+<tr>
+<td>Illness</td>
+<td align="center">0.16</td>
+<td align="center">0.14</td>
+<td align="center">−1.99</td>
+<td align="center">0.42</td>
+</tr>
+<tr>
+<td>In education</td>
+<td align="center">−0.89</td>
+<td align="center">0.14</td>
+<td align="center">2.85</td>
+<td align="center">0.41</td>
+</tr>
+<tr>
+<td>Unemployed</td>
+<td align="center">−1.28</td>
+<td align="center">0.14</td>
+<td align="center">1.03</td>
+<td align="center">0.40</td>
+</tr>
+<tr>
+<td>Retired</td>
+<td align="center">−1.05</td>
+<td align="center">0.17</td>
+<td align="center">4.30</td>
+<td align="center">0.51</td>
+</tr>
+<tr>
+<td>Number of Children under Age 3</td>
+<td align="center">−0.06</td>
+<td align="center">0.06</td>
+<td align="center">0.16</td>
+<td align="center">0.19</td>
+</tr>
+<tr>
+<td>Number of Children between Age 4 and 11</td>
+<td align="center">−0.10</td>
+<td align="center">0.03</td>
+<td align="center">0.09</td>
+<td align="center">0.10</td>
+</tr>
+<tr>
+<td>Number of Children between Age 12 and 15</td>
+<td align="center">−0.09</td>
+<td align="center">0.04</td>
+<td align="center">0.06</td>
+<td align="center">0.12</td>
+</tr>
+<tr>
+<td>Cohort Dummies</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Number of Observations</td>
+<td align="center" colspan="2">5,738</td>
+<td align="center" colspan="2">5,738</td>
+</tr>
+<tr>
+<td>Adjusted R-square</td>
+<td align="center" colspan="2">0.48</td>
+<td align="center" colspan="2">0.90</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="3"><i>Variables</i></th>
+<th align="center" colspan="4"><i>Equations</i></th>
+</tr>
+<tr>
+<th align="center" colspan="2"><i>Years in unemployment</i></th>
+<th align="center" colspan="2"><i>Years of illness/disabled</i></th>
+</tr>
+<tr>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>College Education</td>
+<td align="center">−1.05</td>
+<td align="center">0.11</td>
+<td align="center">−0.02</td>
+<td align="center">0.10</td>
+</tr>
+<tr>
+<td>Secondary Education</td>
+<td align="center">−0.79</td>
+<td align="center">0.11</td>
+<td align="center">−0.03</td>
+<td align="center">0.10</td>
+</tr>
+<tr>
+<td>Age</td>
+<td align="center">−0.01</td>
+<td align="center">0.02</td>
+<td align="center">0.05</td>
+<td align="center">0.02</td>
+</tr>
+<tr>
+<td>Is Working</td>
+<td align="center">−0.04</td>
+<td align="center">0.19</td>
+<td align="center">−0.80</td>
+<td align="center">0.18</td>
+</tr>
+<tr>
+<td>Illness</td>
+<td align="center">−1.33</td>
+<td align="center">0.21</td>
+<td align="center">3.78</td>
+<td align="center">0.20</td>
+</tr>
+<tr>
+<td>In education</td>
+<td align="center">0.61</td>
+<td align="center">0.21</td>
+<td align="center">−0.23</td>
+<td align="center">0.20</td>
+</tr>
+<tr>
+<td>Unemployed</td>
+<td align="center">3.91</td>
+<td align="center">0.21</td>
+<td align="center">1.17</td>
+<td align="center">0.19</td>
+</tr>
+<tr>
+<td>Retired</td>
+<td align="center">1.01</td>
+<td align="center">0.26</td>
+<td align="center">−1.46</td>
+<td align="center">0.24</td>
+</tr>
+<tr>
+<td>Number of Children under Age 3</td>
+<td align="center">−0.03</td>
+<td align="center">0.10</td>
+<td align="center">0.07</td>
+<td align="center">0.09</td>
+</tr>
+<tr>
+<td>Number of Children between Age 4 and 11</td>
+<td align="center">0.06</td>
+<td align="center">0.05</td>
+<td align="center">−0.04</td>
+<td align="center">0.05</td>
+</tr>
+<tr>
+<td>Number of Children between Age 12 and 15</td>
+<td align="center">0.10</td>
+<td align="center">0.06</td>
+<td align="center">−0.13</td>
+<td align="center">0.06</td>
+</tr>
+<tr>
+<td>Cohort Dummies</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Number of Observations</td>
+<td align="center" colspan="2">5,738</td>
+<td align="center" colspan="2">5,738</td>
+</tr>
+<tr>
+<td>Adjusted R-square</td>
+<td align="center" colspan="2">0.23</td>
+<td align="center" colspan="2">0.15</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="3"><i>Variables</i></th>
+<th align="center" colspan="4"><i>Equations</i></th>
+</tr>
+<tr>
+<th align="center" colspan="2"><i>Years spent on home duties</i></th>
+<th align="center" colspan="2"><i>Years in retirement</i></th>
+</tr>
+<tr>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>College Education</td>
+<td align="center">0.43</td>
+<td align="center">0.12</td>
+<td align="center">0.00</td>
+<td align="center">0.07</td>
+</tr>
+<tr>
+<td>Secondary Education</td>
+<td align="center">0.40</td>
+<td align="center">0.12</td>
+<td align="center">−0.01</td>
+<td align="center">0.07</td>
+</tr>
+<tr>
+<td>Age</td>
+<td align="center">−0.12</td>
+<td align="center">0.03</td>
+<td align="center">0.03</td>
+<td align="center">0.02</td>
+</tr>
+<tr>
+<td>Is Working</td>
+<td align="center">−2.35</td>
+<td align="center">0.21</td>
+<td align="center">−0.25</td>
+<td align="center">0.12</td>
+</tr>
+<tr>
+<td>Illness</td>
+<td align="center">0.62</td>
+<td align="center">0.24</td>
+<td align="center">−0.05</td>
+<td align="center">0.13</td>
+</tr>
+<tr>
+<td>In education</td>
+<td align="center">−2.20</td>
+<td align="center">0.24</td>
+<td align="center">−0.22</td>
+<td align="center">0.13</td>
+</tr>
+<tr>
+<td>Unemployed</td>
+<td align="center">−2.28</td>
+<td align="center">0.23</td>
+<td align="center">−0.20</td>
+<td align="center">0.13</td>
+</tr>
+<tr>
+<td>Retired</td>
+<td align="center">−2.42</td>
+<td align="center">0.29</td>
+<td align="center">5.65</td>
+<td align="center">0.16</td>
+</tr>
+<tr>
+<td>Number of Children under Age 3</td>
+<td align="center">0.20</td>
+<td align="center">0.11</td>
+<td align="center">−0.01</td>
+<td align="center">0.06</td>
+</tr>
+<tr>
+<td>Number of Children between Age 4 and 11</td>
+<td align="center">−0.06</td>
+<td align="center">0.06</td>
+<td align="center">−0.03</td>
+<td align="center">0.03</td>
+</tr>
+<tr>
+<td>Number of Children between Age 12 and 15</td>
+<td align="center">0.04</td>
+<td align="center">0.07</td>
+<td align="center">−0.02</td>
+<td align="center">0.04</td>
+</tr>
+<tr>
+<td>Cohort Dummies</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Number of Observations</td>
+<td align="center" colspan="2">5,738</td>
+<td align="center" colspan="2">5,738</td>
+</tr>
+<tr>
+<td>Adjusted R-square</td>
+<td align="center" colspan="2">0.03</td>
+<td align="center" colspan="2">0.74</td>
+</tr>
+</tbody>
+</table></div></figure></div></details><details id="A3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Appendix 3 Estimates for Certain Retrospective Variables (Female)</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><figure id="tableA4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="3"><i>Variables</i></th>
+<th align="center" colspan="4"><i>Equations</i></th>
+</tr>
+<tr>
+<th align="center" colspan="2"><i>Years in full-time education or training</i></th>
+<th align="center" colspan="2"><i>Years in employment, self-employment or farming</i></th>
+</tr>
+<tr>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>College Education</td>
+<td align="center">3.47</td>
+<td align="center">0.07</td>
+<td align="center">−0.54</td>
+<td align="center">0.29</td>
+</tr>
+<tr>
+<td>Secondary Education</td>
+<td align="center">2.01</td>
+<td align="center">0.06</td>
+<td align="center">−0.06</td>
+<td align="center">0.26</td>
+</tr>
+<tr>
+<td>Age</td>
+<td align="center">0.02</td>
+<td align="center">0.01</td>
+<td align="center">0.05</td>
+<td align="center">0.06</td>
+</tr>
+<tr>
+<td>Is Working</td>
+<td align="center">0.34</td>
+<td align="center">0.06</td>
+<td align="center">8.34</td>
+<td align="center">0.28</td>
+</tr>
+<tr>
+<td>Illness</td>
+<td align="center">−0.32</td>
+<td align="center">0.12</td>
+<td align="center">0.06</td>
+<td align="center">0.53</td>
+</tr>
+<tr>
+<td>In education</td>
+<td align="center">0.21</td>
+<td align="center">0.11</td>
+<td align="center">2.79</td>
+<td align="center">0.48</td>
+</tr>
+<tr>
+<td>Unemployed</td>
+<td align="center">0.96</td>
+<td align="center">0.13</td>
+<td align="center">4.00</td>
+<td align="center">0.55</td>
+</tr>
+<tr>
+<td>Retired</td>
+<td align="center">0.53</td>
+<td align="center">0.13</td>
+<td align="center">26.78</td>
+<td align="center">0.59</td>
+</tr>
+<tr>
+<td>Number of Children under Age 3</td>
+<td align="center">−0.07</td>
+<td align="center">0.05</td>
+<td align="center">1.26</td>
+<td align="center">0.23</td>
+</tr>
+<tr>
+<td>Number of Children between Age 4 and 11</td>
+<td align="center">−0.03</td>
+<td align="center">0.03</td>
+<td align="center">0.27</td>
+<td align="center">0.13</td>
+</tr>
+<tr>
+<td>Number of Children between Age 12 and 15</td>
+<td align="center">−0.06</td>
+<td align="center">0.04</td>
+<td align="center">−0.75</td>
+<td align="center">0.16</td>
+</tr>
+<tr>
+<td>Cohort Dummies</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Number of Observations</td>
+<td align="center" colspan="2">5,725</td>
+<td align="center" colspan="2">5,725</td>
+</tr>
+<tr>
+<td>Adjusted R-square</td>
+<td align="center" colspan="2">0.50</td>
+<td align="center" colspan="2">0.54</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="3"><i>Variables</i></th>
+<th align="center" colspan="4"><i>Equations</i></th>
+</tr>
+<tr>
+<th align="center" colspan="2"><i>Years in unemployment</i></th>
+<th align="center" colspan="2"><i>Years of illness/disabled</i></th>
+</tr>
+<tr>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>College Education</td>
+<td align="center">−0.37</td>
+<td align="center">0.06</td>
+<td align="center">−0.25</td>
+<td align="center">0.09</td>
+</tr>
+<tr>
+<td>Secondary Education</td>
+<td align="center">−0.30</td>
+<td align="center">0.05</td>
+<td align="center">−0.26</td>
+<td align="center">0.08</td>
+</tr>
+<tr>
+<td>Age</td>
+<td align="center">0.01</td>
+<td align="center">0.01</td>
+<td align="center">−0.03</td>
+<td align="center">0.02</td>
+</tr>
+<tr>
+<td>Is Working</td>
+<td align="center">0.18</td>
+<td align="center">0.06</td>
+<td align="center">−0.26</td>
+<td align="center">0.09</td>
+</tr>
+<tr>
+<td>Illness</td>
+<td align="center">−0.20</td>
+<td align="center">0.11</td>
+<td align="center">2.55</td>
+<td align="center">0.17</td>
+</tr>
+<tr>
+<td>In education</td>
+<td align="center">0.16</td>
+<td align="center">0.10</td>
+<td align="center">−0.10</td>
+<td align="center">0.15</td>
+</tr>
+<tr>
+<td>Unemployed</td>
+<td align="center">1.74</td>
+<td align="center">0.12</td>
+<td align="center">0.30</td>
+<td align="center">0.17</td>
+</tr>
+<tr>
+<td>Retired</td>
+<td align="center">0.65</td>
+<td align="center">0.12</td>
+<td align="center">0.27</td>
+<td align="center">0.19</td>
+</tr>
+<tr>
+<td>Number of Children under Age 3</td>
+<td align="center">0.03</td>
+<td align="center">0.05</td>
+<td align="center">−0.02</td>
+<td align="center">0.07</td>
+</tr>
+<tr>
+<td>Number of Children between Age 4 and 11</td>
+<td align="center">−0.03</td>
+<td align="center">0.03</td>
+<td align="center">−0.11</td>
+<td align="center">0.04</td>
+</tr>
+<tr>
+<td>Number of Children between Age 12 and 15</td>
+<td align="center">0.00</td>
+<td align="center">0.03</td>
+<td align="center">−0.24</td>
+<td align="center">0.05</td>
+</tr>
+<tr>
+<td>Cohort Dummies</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Number of Observations</td>
+<td align="center" colspan="2">5,725</td>
+<td align="center" colspan="2">5,725</td>
+</tr>
+<tr>
+<td>Adjusted R-square</td>
+<td align="center" colspan="2">0.06</td>
+<td align="center" colspan="2">0.05</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="3"><i>Variables</i></th>
+<th align="center" colspan="4"><i>Equations</i></th>
+</tr>
+<tr>
+<th align="center" colspan="2"><i>Years spent on home duties</i></th>
+<th align="center" colspan="2"><i>Years in retirement</i></th>
+</tr>
+<tr>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+<th align="center"><i>coefficient</i></th>
+<th align="center"><i>s.e.</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>College Education</td>
+<td align="center">−1.87</td>
+<td align="center">0.34</td>
+<td align="center">−0.10</td>
+<td align="center">0.07</td>
+</tr>
+<tr>
+<td>Secondary Education</td>
+<td align="center">−1.03</td>
+<td align="center">0.30</td>
+<td align="center">−0.04</td>
+<td align="center">0.06</td>
+</tr>
+<tr>
+<td>Age</td>
+<td align="center">0.22</td>
+<td align="center">0.07</td>
+<td align="center">0.03</td>
+<td align="center">0.02</td>
+</tr>
+<tr>
+<td>Is Working</td>
+<td align="center">−8.58</td>
+<td align="center">0.32</td>
+<td align="center">0.01</td>
+<td align="center">0.07</td>
+</tr>
+<tr>
+<td>Illness</td>
+<td align="center">−1.65</td>
+<td align="center">0.62</td>
+<td align="center">0.05</td>
+<td align="center">0.13</td>
+</tr>
+<tr>
+<td>In education</td>
+<td align="center">−5.04</td>
+<td align="center">0.56</td>
+<td align="center">−0.01</td>
+<td align="center">0.12</td>
+</tr>
+<tr>
+<td>Unemployed</td>
+<td align="center">−7.31</td>
+<td align="center">0.64</td>
+<td align="center">−0.02</td>
+<td align="center">0.13</td>
+</tr>
+<tr>
+<td>Retired</td>
+<td align="center">−34.35</td>
+<td align="center">0.69</td>
+<td align="center">8.96</td>
+<td align="center">0.14</td>
+</tr>
+<tr>
+<td>Number of Children under Age 3</td>
+<td align="center">−0.66</td>
+<td align="center">0.27</td>
+<td align="center">−0.03</td>
+<td align="center">0.06</td>
+</tr>
+<tr>
+<td>Number of Children between Age 4 and 11</td>
+<td align="center">−0.03</td>
+<td align="center">0.15</td>
+<td align="center">0.03</td>
+<td align="center">0.03</td>
+</tr>
+<tr>
+<td>Number of Children between Age 12 and 15</td>
+<td align="center">0.42</td>
+<td align="center">0.18</td>
+<td align="center">−0.05</td>
+<td align="center">0.04</td>
+</tr>
+<tr>
+<td>Cohort Dummies</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+<td align="center">Yes</td>
+</tr>
+<tr>
+<td>Number of Observations</td>
+<td align="center" colspan="2">5,725</td>
+<td align="center" colspan="2">5,725</td>
+</tr>
+<tr>
+<td>Adjusted R-square</td>
+<td align="center" colspan="2">0.75</td>
+<td align="center" colspan="2">0.46</td>
+</tr>
+</tbody>
+</table></div></figure></div></details><details id="A4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Appendix 4 Estimates for Earnings</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><figure id="tableA7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th><i>Male Employee Earnings</i></th>
+<th><i>Female Employee Earnings</i></th>
+<th><i>Self-employment Earnings</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>College Education</td>
+<td align="center">0.56</td>
+<td align="center">0.81</td>
+<td align="center">0.72</td>
+</tr>
+<tr>
+<td/>
+<td align="center">(0.03)</td>
+<td align="center">(0.03)</td>
+<td align="center">(0.06)</td>
+</tr>
+<tr>
+<td>Secondary Education</td>
+<td align="center">0.31</td>
+<td align="center">0.49</td>
+<td align="center">0.31</td>
+</tr>
+<tr>
+<td/>
+<td align="center">(0.03)</td>
+<td align="center">(0.03)</td>
+<td align="center">(0.06)</td>
+</tr>
+<tr>
+<td>Work Experience (Years)</td>
+<td align="center">0.09</td>
+<td align="center">0.05</td>
+<td align="center">0.03</td>
+</tr>
+<tr>
+<td/>
+<td align="center">(0.00)</td>
+<td align="center">(0.00)</td>
+<td align="center">(0.00)</td>
+</tr>
+<tr>
+<td>Work Experience (Squared)</td>
+<td align="center">0.00</td>
+<td align="center">0.00</td>
+<td align="center">0.00</td>
+</tr>
+<tr>
+<td/>
+<td align="center">(0.00)</td>
+<td align="center">(0.00)</td>
+<td align="center">(0.00)</td>
+</tr>
+<tr>
+<td>Years of Unemployment)</td>
+<td align="center">0.04</td>
+<td align="center">0.01</td>
+<td align="center">0.01</td>
+</tr>
+<tr>
+<td/>
+<td align="center">(0.00)</td>
+<td align="center">(0.00)</td>
+<td align="center">(0.00)</td>
+</tr>
+<tr>
+<td>Gender (Male=1)</td>
+<td align="center"/>
+<td align="center"/>
+<td align="center">0.44</td>
+</tr>
+<tr>
+<td/>
+<td align="center"/>
+<td align="center"/>
+<td align="center">(0.06)</td>
+</tr>
+<tr>
+<td>Total Number of Observation</td>
+<td align="center">13678</td>
+<td align="center">10231</td>
+<td align="center">5092</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>(standard errors are reported in the parenthesis).</p></div></figure></div></details><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Bardaji, J, Sédillot, B, Walraet, E (2003). <span data-astro-cid-oer3kof4>Un outil de prospective des retraites: le modèle de microsimulation Destinie</span>. <em data-astro-cid-oer3kof4>Économie et prévision</em>, 193–214.</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Caldwell, SB (1997). <em data-astro-cid-oer3kof4>CORSIM 3.0 User and Technical Documentation</em>. Ithaca, NY: Cornell University.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Cassells, R, Harding, A, Kelly, S (2006). <span data-astro-cid-oer3kof4>Problems and Prospects for Dynamic Microsimulation: A Review and lessons for APPSIM. NATSEM Discussion Paper</span>.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Chénard, D (2000). <span data-astro-cid-oer3kof4>Earnings in DYNACAN: distribution alignment methodology</span>.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Chénard, D (2000). <span data-astro-cid-oer3kof4>Individual alignment and group processing: an application to migration processes in DYNACAN, occasional papers-university of Cambridge department of applied economics</span>.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Curry, C (1996). <em data-astro-cid-oer3kof4>PENSIM: A Dynamic Simulation Model of Pensioners’ Income ” in Government Economic Service Working Paper No. 129</em>. PENSIM: A Dynamic Simulation Model of Pensioners’ Income ” in Government Economic Service Working Paper No. 129.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Duncan, A, Weeks, M (2000). <span data-astro-cid-oer3kof4>Microsimulation Modelling for Policy Analysis: Challenges and Innovations</span>.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Emmerson, C, Reed, H, Shephard, A (2004). <span data-astro-cid-oer3kof4>An assessment of PenSim2</span>.</span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Evandrou, M (2004). <span data-astro-cid-oer3kof4>Imputing pension and caring histories to the base data in the SAGE dynamic microsimulation model</span>.</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Favreault, M (2004). <span data-astro-cid-oer3kof4>A Primer on the Dynamic Simulation of Income Model (DYNASIM3)</span>.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Figari, F, Levy, H, Sutherland, H (2007). <span data-astro-cid-oer3kof4>Using The Eu Silc For Policy Simulation: Prospects. Some Limitations And Suggestions, EUROMOD Working Papers</span>.</span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Flood, L (2007). <span data-astro-cid-oer3kof4>Can we Afford the Future? An evaluation of the new Swedish pension system, Modelling our future: population ageing</span>. <em data-astro-cid-oer3kof4>social security and taxation</em>.</span></li><li id="bib13" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Fredriksen, D (2003). <span data-astro-cid-oer3kof4>The MOSART model-a short technical documentation</span>.</span></li><li id="bib14" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Harding, A (2007). <span data-astro-cid-oer3kof4>Challenges and Opportunities of Dynamic Microsimulation Modelling</span>.</span></li><li id="bib15" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>King, A, Bækgaard, H, Robinson, M (1999). <span data-astro-cid-oer3kof4>DYNAMOD-2: An overview. Technical Paper</span>.</span></li><li id="bib16" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mantovani, D, Papadopoulos, F, Sutherland, H, Tsakloglou, P (2007). <span data-astro-cid-oer3kof4>Pension incomes in the European Union: policy reform strategies in comparative perspective</span>. <em data-astro-cid-oer3kof4>Micro-simulation in action: policy analysis in Europe using EUROMOD</em>.</span></li><li id="bib17" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mincer, J, Jovanovic, B (1981). <span data-astro-cid-oer3kof4>Labor mobility and wages, Studies in Labor Markets</span>.</span></li><li id="bib18" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Morrison, R (1997). <span data-astro-cid-oer3kof4>DYNACAN, the Canadian pension plan policy model: demographic and earnings components</span>. .</span></li><li id="bib19" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Morrison, R (1998). <span data-astro-cid-oer3kof4>Overview of DYNACAN, a full-fledged Canadian actuarial stochastic model designed for the fiscal and policy analysis of social security schemes</span>.</span></li><li id="bib20" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mundlak, Y (1978). <span data-astro-cid-oer3kof4>On the pooling of time series and cross section data</span>. <em data-astro-cid-oer3kof4>Econometrica</em>, <strong data-astro-cid-oer3kof4>46</strong>, 69–85.</span></li><li id="bib21" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Donoghue, C (2001). <span data-astro-cid-oer3kof4>Dynamic microsimulation: a methodological survey</span>. <em data-astro-cid-oer3kof4>Brazilian Electronic Journal of Economics</em>, <strong data-astro-cid-oer3kof4>4</strong>.</span></li><li id="bib22" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Donoghue, C (2002). <em data-astro-cid-oer3kof4>Redistribution in the Irish tax benefit system</em>. University of London.</span></li><li id="bib23" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Donoghue, C, Lennon, J, Hynes, S (2009). <span data-astro-cid-oer3kof4>The Life-Cycle Income Analysis Model (LIAM): A Study of a Flexible Dynamic Microsimulation Modelling Computing Framework</span>.</span></li><li id="bib24" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Donoghue, C (2010). <em data-astro-cid-oer3kof4>Life-Cycle Income Analysis Modelling</em>. AG &amp; CO.KG: 2010 Lambert Academic Publishing.</span></li><li id="bib25" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Zaidi, A (2004). <span data-astro-cid-oer3kof4>Estimation of earnings in the SAGE dynamic microsimulation model: London. ESRC-Sage Technical Note</span>.</span></li><li id="bib26" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Zaidi, A, Scott, A (2001). <span data-astro-cid-oer3kof4>Base dataset for the SAGE model. Sage Technical Note</span>.</span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Jinjing Li</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Maastricht University / UNU-MERIT, The Netherlands</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:Jinjing.Li@natsem.canberra.edu.au" data-astro-cid-m3fa5h5a>Jinjing.Li@natsem.canberra.edu.au</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Cathal O’Donoghue</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Rural Economy and Development Programme, Teagasc, Ireland</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:cathal.odonoghue@nuigalway.ie" data-astro-cid-m3fa5h5a>cathal.odonoghue@nuigalway.ie</a></p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Acknowledgements</h3><p data-astro-cid-m3fa5h5a>The authors are grateful to the National Research Fund, Luxembourg for the financial support. For their helpful discussions and comments, the authors wish to thank Elisa Baroni, Gijs Dekkers, two anonymous referees, and the participants of the 2010 European workshop on dynamic microsimulation modelling in Brussels.Text of acknowledgement</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00067" data-astro-cid-m3fa5h5a>Version of Record published: June 30, 2012 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2012, Li &amp; O’Donoghue</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/methodology" data-pagefind-filter="Research category:Methodology" data-astro-cid-m3fa5h5a>Methodology</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/dynamic-microsimulation" data-pagefind-filter="Research category:Dynamic microsimulation" data-astro-cid-m3fa5h5a>Dynamic microsimulation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=microsimulation" data-astro-cid-m3fa5h5a>microsimulation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=base%20dataset" data-astro-cid-m3fa5h5a>base dataset</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=history%20simulation" data-astro-cid-m3fa5h5a>history simulation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=back%20simulation" data-astro-cid-m3fa5h5a>back simulation</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

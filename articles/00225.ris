@@ -1,0 +1,20 @@
+TY  - JOUR
+TI  - Validating risk factor and chronic disease projections in the Future Adult Model
+AU  - Tysinger, Bryan
+VL  - 13
+IS  - 3
+PY  - 2020
+DA  - 2020/12/31
+SP  - 54-69
+C1  - IJM 2020;13(3):54-69
+DO  - 10.34196/ijm.00225
+UR  - https://doi.org/10.34196/ijm.00225
+AB  - Over the past several decades, the United States has experienced a dramatic rise in obesity rates, due to both a rightward shift of the body mass index (BMI) distribution and a pushing out of the right tail. This shift has led to increases in obesity-related chronic diseases, particularly diabetes, as well as impacts on longevity, medical expenditures, and quality of life. Microsimulation modeling is a potentially useful tool for assessing the impacts of policies targeting this epidemic, but reliably assessing policies requires a model that performs well in projecting health risk factors and disease outcomes. This research assesses the out-of-sample and external validity of a microsimulation model of the U.S. adult population. There are two research questions addressed in this analysis: 1. How well does the Future Adult Model (FAM) perform in projecting BMI and diabetes over a ten-year horizon compared to the host data? 2. How well do the microsimulation model’s predictions compare to external surveillance data of BMI and diabetes? FAM is an economic-demographic microsimulation model of the United States population over the age of 25. For this validation exercise, all Markov transition models are estimated using the 1999-2007 waves of the PSID. The simulation is then run from 2007-2017. For internal consistency, simulated outcomes in 2017 are compared to actual PSID outcomes. Population means and selected quantiles are compared between the simulation and the host data. Receiver operating characteristic (ROC) curves are used to assess model performance for binary outcomes using the area under the curve (AUC) statistic. For external validation, simulated outcomes for 2007-2017 are compared to the Behavioral Risk Factors Surveillance System (BRFSS), a large, nationally-representative survey of the United States population. After ten years of simulation, FAM BMI projections for men and women compare well to both PSID and BRFSS data throughout much of the distribution. The 99th percentile differs significantly, with FAM underestimating the right tail of the BMI distribution. Individual assignment of obesity and severe obesity performs well using AUC as a criteria. Initial differences in the diabetes prevalence between PSID and BRFSS data are preserved in FAM projections. FAM is initially 1.9 percentage points below BRFSS for women 25 and older and is 1.6 percentage points below BRFSS for women 35 and older after ten years of simulation. Men 25 and older are 1.2 percentage points lower initially and are 0.8 percentage points lower after ten years of simulation. Individual assignment of diabetes incidence does not perform as well as clinical models with richer predictors. Researchers using FAM should be cognizant of these strengths and limitations of the microsimulation model.
+KW  - Microsimulation
+KW  - health economics
+KW  - life-course model
+KW  - validation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

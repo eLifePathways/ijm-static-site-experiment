@@ -1,0 +1,25 @@
+TY  - JOUR
+TI  - SWISSMOD – A New Tax-Benefit Model of Switzerland
+AU  - Kirn, Tanja
+AU  - Oschwald, Patrick
+AU  - Anderl, Robin
+VL  - 18
+IS  - 2
+PY  - 2025
+DA  - 2025/06/04
+SP  - 1-20
+C1  - IJM 2025;18(2):1-20
+DO  - 10.34196/ijm.00320
+UR  - https://doi.org/10.34196/ijm.00320
+AB  - This article presents SWISSMOD, a new microsimulation model of the Swiss Tax and Transfer System (TTS) built on the EUROMOD platform. The significant variations in tax burden and transfer payments due to subnational fiscal autonomy make the Swiss TTS—and thus SWISSMOD—particularly intriguing for economic analyses. We focus on three core aspects of SWISSMOD. First, we provide an overview of EUROMOD-based and Swiss microsimulation models, followed by an introduction to the Swiss TTS, highlighting its fiscal autonomy, wealth taxation, joint taxation types, and the administration of social assistance at the subnational level, leading to substantial variation in transfer payments. Second, we provide insights into the Swiss SILC dataset, which forms the database of our model. Given the dataset’s lack of information on cantonal residence and wealth, we outline our approach to imputing this missing data using the Swiss Household Panel. Third, we present the results of the micro- and macro-validation. The micro-validation indicates that the model accurately represents the existing TTS. The results of the macro-validation confirm a high degree of fiscal precision at the aggregated level of income taxation. However, certain limitations exist concerning wealth taxation, driven by the lack of information on wealth. Overall, the model provides reliable results concerning the Swiss TTS.
+KW  - static microsimulation
+KW  - EUROMOD
+KW  - SWISSMOD
+KW  - tax
+KW  - social security
+KW  - wealth
+KW  - Switzerland
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

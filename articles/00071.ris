@@ -1,0 +1,23 @@
+TY  - JOUR
+TI  - Linking a microsimulation model to a dynamic CGE model: Climate change mitigation policies and income distribution in Australia
+AU  - Buddelmeyer, Hielke
+AU  - Hérault, Nicolas
+AU  - Kalb, Guyonne
+AU  - van Zijll de Jong, Mark
+VL  - 5
+IS  - 2
+PY  - 2012
+DA  - 2012/12/31
+SP  - 40-58
+C1  - IJM 2012;5(2):40-58
+DO  - 10.34196/ijm.00071
+UR  - https://doi.org/10.34196/ijm.00071
+AB  - This paper extends the ‘top-down’ framework developed by Robilliard et al. (2001) to link a computable general equilibrium (CGE) model to a microsimulation (MS) model. The proposed approach allows for the linking of an MS model to a dynamic (rather than static) CGE model. The approach relies on altering the sample weights in order to reproduce long-term population projections and changes in employment as estimated by the CGE model. The approach is applied to assess the effects of climate-change mitigation policies in Australia from 2005 to 2030 at five-yearly intervals.
+KW  - microsimulation
+KW  - computable general equilibrium
+KW  - climate change
+KW  - income distribution
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

@@ -1,0 +1,2083 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Modelling the Early life-course (MELC): A Microsimulation Model of Child Development in New Zealand | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00116"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00116" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/health" data-astro-cid-ak4gb66a>Health</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Aug 31, 2015</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Modelling the Early life-course (MELC): A Microsimulation Model of Child Development in New Zealand</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Barry J Milne, Roy Lay-Yee, Jessica M McLay, Janet Pearson, Martin von Randow, Peter Davis</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Centre of Methods and Policy Application in the Social Sciences, The University of Auckland, New Zealand; Department of Biostatistics and Epidemiology Auckland University of Technology, New Zealand</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/8-2/volume-8-2-autumn-2015" data-astro-cid-ak4gb66a>Volume 8(2) Autumn 2015</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> B. Milne, R. Lay-Yee, J. McLay, J. Pearson, M. von Randow, P. Davis; 2015; <span data-astro-cid-ak4gb66a>Modelling the Early life-course (MELC): A Microsimulation Model of Child Development in New Zealand</span>; International Journal of Microsimulation; 8(2); 28–60. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00116" data-astro-cid-ak4gb66a>10.34196/ijm.00116</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>To understand the factors upon which policies can be devised to improve the lives of children and young people, we have developed a dynamic discrete-time micro-simulation model called ‘Modelling the early life-course’ (MELC). MELC models child development from birth through to age 13, encompassing changes in material and family circumstances, family functioning and early education. MELC focusses on three main outcomes: health service use, early literacy, and conduct problems. A synthetic base population (n = 10,000) derived from the 2006 New Zealand Census is used, and transitions through the life-course are determined from estimates derived by analysing three New Zealand child cohort studies: the Christchurch Health and Development Study, the Dunedin Multidisciplinary Health and Development Study, and the Pacific Islands Families Study. The model has been validated against New Zealand norms for reading, general practitioner visits and hospital admissions. Three scenarios were demonstrated. First, we tested the impact of a number of putatively important factors on early literacy, and found small effects. Second, we found that halving the prevalence of single parenting reduced the prevalence of conduct problems. Third, we changed a number of material and family factors for Māori, Pacific and low-socio-economic groups to be equal to those for the general population, and found that this produced small improvements in reading, but large reductions in conduct problems for these groups. MELC has been deployed as a user friendly desktop application at a number of New Zealand government agencies, where it can be used to test policy-relevant scenarios.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00116/ijm-00116.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00116.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00116.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00116" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00116/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. Methods</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. Results of testing policy scenarios</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. Discussion</a></li><li data-astro-cid-twdwaz5s><a href="#A1" data-astro-cid-twdwaz5s>Variables</a></li><li data-astro-cid-twdwaz5s><a href="#A2" data-astro-cid-twdwaz5s>Appendix</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>To understand the factors upon which policies can be devised to improve the lives of children and young people, we have developed a dynamic discrete-time <i>micro-simulation</i> model (MSM) called ‘Modelling the early life-course’ (MELC). MELC models early child development in New Zealand, with a focus on three outcomes: health service use, reading, and conduct problems. These factors were chosen for several reasons. First, each is important for later adult functioning: health service use in childhood – especially some hospitalizations – can portend poorer health in adulthood (<a href="#bib5">Burgner <i>et al</i>., 2015</a>); a one standard deviation increase in childhood reading scores have been estimated to result in 8–20% increase in lifetime earnings (<a href="#bib29">Ludwig &amp; Phillips, 2007</a>); and early conduct problems often lead to compromised physical health, mental health, justice and social outcomes in adulthood (<a href="#bib42">Odgers <i>et al</i>., 2007</a>).</p><p data-astro-cid-qsyhzaho>Second, there are well-established risk factors for these outcomes. Among pre- and perinatal factors, smoking in pregnancy has been associated with hospitalizations for asthma (<a href="#bib10">Davidson <i>et al</i>., 2010</a>), as well as later reading (<a href="#bib3">Anthopolos <i>et al</i>., 2013</a>), and conduct problems (<a href="#bib24">Hill, 2002</a>; <a href="#bib17">Gaysina <i>et al</i>., 2013</a>). Low birth weight has also been associated with poorer reading (<a href="#bib7">Chatterji <i>et al</i>., 2014</a>), greater prevalence of conduct problems (<a href="#bib56">Stevenson <i>et al</i>., 1999</a>) and more hospital admissions (<a href="#bib35">Menezes <i>et al</i>., 2010</a>). Young maternal age has been associated with lower reading levels in children (<a href="#bib57">Torres <i>et al</i>., 2015</a>), increased conduct problems (<a href="#bib45">Reijneveld <i>et al</i>., 2012</a>), and hospitalizations for asthma (<a href="#bib10">Davidson <i>et al</i>., 2010</a>), while low levels of maternal education have been associated with lower reading levels (<a href="#bib60">Williams <i>et al</i>., 2013</a>), increased conduct problems (<a href="#bib45">Reijneveld <i>et al</i>., 2012</a>), and increased hospitalizations (<a href="#bib59">Victora <i>et al</i>., 1992</a>). Breastfeeding is known to be beneficial for reading (<a href="#bib33">McCrory &amp; Layte, 2011</a>), and avoiding hospitalization (<a href="#bib1">Ajetunmobi <i>et al</i>., 2015</a>), and behavioural problems (<a href="#bib28">Lind <i>et al</i>., 2014</a>).</p><p data-astro-cid-qsyhzaho>Other psycho-social and family factors have also been shown to be important risk factors for these three outcomes. These include childhood maltreatment (reading: <a href="#bib8">Coohey <i>et al</i>., 2011</a>; conduct problems: <a href="#bib61">Wilson <i>et al</i>., 2009</a>; <a href="#bib30">Mackenbach <i>et al</i>., 2014</a>; and hospitalization: <a href="#bib14">Farst <i>et al</i>., 2013</a>), single parenting (reading: <a href="#bib21">Hampden-Thompson, 2013</a>; conduct problems: <a href="#bib40">Murray and Farrington, 2010</a>; and hospitalizations for asthma: <a href="#bib10">Davidson <i>et al</i>., 2010</a>), housing tenure (reading: <a href="#bib23">Haurin <i>et al</i>., 2002</a>; and conduct problems: <a href="#bib4">Boyle, 2002</a>), early childhood education (reading: <a href="#bib11">Dearing <i>et al</i>., 2009</a>; <a href="#bib63">Wylie &amp; Thompson, 2003</a>; conduct problems: <a href="#bib9">Coté <i>et al</i>., 2007</a>), maternal expressed emotion (conduct problems only: <a href="#bib6">Caspi <i>et al</i>., 2004</a>); and harsh parenting (conduct problems only: <a href="#bib30">Mackenbach <i>et al</i>., 2014</a>).</p><p data-astro-cid-qsyhzaho>Third, local data (from child cohort studies) are available to simulate these outcomes as a function of the established risk factors. To this end MELC applies simulations – based on a set of stochastic rules derived by analysing longitudinal data – to a synthetic population of new-born children representative of New Zealand births in 2006. These simulations create synthetic histories for these children from birth to age 13, with a wide range of child and family characteristics that may influence the three outcomes updated annually (age 2, 3, 4, etc.).</p><p data-astro-cid-qsyhzaho>Like most MSMs, MELC relies on data from the real world to create an artificial one that mimics the original but upon which virtual experiments can be carried out (<a href="#bib18">Gilbert &amp; Troitzsch 2005</a>). Modifications of influential factors can be undertaken to test hypothetical ‘what if’ scenarios on key down-stream outcomes of interest. Aggregation across children can then reveal the effects of these modifications on the MELC population.</p><p data-astro-cid-qsyhzaho>However, unlike many MSMs (e.g., APPSIM, <a href="#bib22">Harding 2007</a>; MIDAS, <a href="#bib12">Dekkers <i>et al</i>., 2012</a>; FPOP, <a href="#bib46">Rogers <i>et al</i>., 2014</a>) MELC does not model population growth and demographic change. Instead, MELC models the same group (cohort) of individuals from birth to age 13 and assesses the type of factors that could be modified to improve child outcomes. In this sense MELC is a closed system, i.e., individuals do not leave the model via migration and death nor do individuals enter via immigration and births.</p><p data-astro-cid-qsyhzaho>The purpose of the MELC model is to act as a decision-support tool for policy makers, e.g., to test the impact of a potential policy intervention or to investigate the factors most likely to have a large effect on an outcome (<a href="#bib36">Milne <i>et al</i>., 2014</a>). Policy analysts from New Zealand government ministries have been involved in the development of the model. In particular, the policy analysts wanted MELC to be able to be used to determine all the factors that are important for child outcomes, whether or not these factors could be targets for policy interventions. As such, all factors within the model are able to be changed; not just those considered to be obvious targets for policy intervention. In this sense MELC can be used both to test potential policy interventions but also to assess more exploratory “what if?” scenarios.</p><p data-astro-cid-qsyhzaho>In this paper we will describe the MELC model, and will exemplify the model by simulating the following three questions posed by the policy analysts</p><ol data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>How can we improve early literacy?</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>How does single parenting affect later conduct problems?</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>What interventions have impact on later outcomes (health, social, education, justice) for Maori (the indigenous people), Pacific or low-socio-economic status groups?</p></li></ol><p data-astro-cid-qsyhzaho>Cognizant that the answers to these policy questions will necessarily be limited to factors included in the MELC model, we have designed MELC to model a range of biological, social and psychological factors, as described in the sections that follow.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. Methods</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The two main components required for the MELC model to function are: (i) a sample of children to use as the starting population; and (ii) a series of transition equations that determine the characteristics children (and their families) acquire as they age.</p><section id="s2-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.1 Sample</h3><p data-astro-cid-qsyhzaho>For our starting population, we created a synthetic birth cohort of children by analysing data from 10,000 randomly selected children aged 0 and their families from the 2006 New Zealand Census. This is described in more detail elsewhere (<a href="#bib54">Statistics New Zealand, 2014a</a>). Briefly, each child was matched with the two children most similar to them to form a sample of ‘clusters’, each containing three children. A synthetic cohort was then derived by forming a ‘composite’ child from each cluster, with each characteristic for each composite child randomly chosen from the characteristics of the three children in the cluster. The resulting cohort (n = 10,000) was found to be representative of New Zealand births in 2006, and checks were undertaken to ensure that data from the cohort could not be used to reveal confidential information about any ‘actual’ 0-year old child from the 2006 Census (<a href="#bib54">Statistics New Zealand, 2014a</a>).</p><p data-astro-cid-qsyhzaho>This cohort was augmented with birth characteristics not available in the 2006 Census (smoking in pregnancy, drinking in pregnancy, birth weight, gestational age, breastfeeding [months]), by matching each synthetic child with the two children most similar to them from three New Zealand longitudinal birth cohorts (described in more detail below): the Christchurch Health and Development Study (CHDS, <a href="#bib15">Fergusson &amp; Horwood, 2001</a>), the Dunedin Multidisciplinary Health and Development Study (DMHDS, <a href="#bib51">Silva and Stanton, 1996</a>), Pacific Islands Families Study (PIFS, <a href="#bib44">Paterson <i>et al</i>., 2008</a>). Birth characteristic were then assigned to each synthetic child by randomly selecting from the characteristics of the two closest matches in the birth cohorts.</p><p data-astro-cid-qsyhzaho>In all, the sample contained data from birth and the first year of life, and these characteristics served as the starting point for the micro-simulation. Characteristics at all subsequent years (from ages 2–13) were modelled at yearly steps using micro-simulation as described below.</p></section><section id="s2-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.2 Transition equations</h3><p data-astro-cid-qsyhzaho>The following steps were undertaken to develop the transition equations:</p><section id="s2-2-1" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">2.2.1 Conceptual framework</h4><p data-astro-cid-qsyhzaho>The conceptual framework comprises a series of interconnected pathways, following a framework based on the social determinants of health (<a href="#bib52">Solar &amp; Irwin 2010</a>) where structural elements related to social disadvantage fundamentally determine intermediate parental and family factors and final outcomes. In the framework developed for MELC, characteristics at birth (including perinatal characteristics) determine family characteristics and employment that vary year by year. Both of these determine psychosocial and housing factors that vary year by year, while all three determine outcomes (health service use, reading and conduct problems) that vary year by year (see <a href="#fig1">Figure 1</a>).</p></section><section id="s2-2-2" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">2.2.2 Modelling associations</h4><p data-astro-cid-qsyhzaho>We statistically derived parameters for each path in the conceptual framework by analysing longitudinal data from the three longitudinal birth cohorts listed above. These studies cover different timeframes and populations. The CHDS cohort (n = 1265) was born in 1977 in Christchurch, on New Zealand’s South Island, and is largely New Zealand European (white) with populations of Māori and Pacific children under-represented. Data have been collected up to age 30. The DMHDS cohort (n = 1037) was born in 1972/73 in Dunedin, on New Zealand’s South Island, and is also largely New Zealand European with populations of Māori and Pacific children under-represented. Data have been collected up to age 38. The PIFS cohort (n = 1398) was born in 2000 in South Auckland, on New Zealand’s North Island, and is a cohort of children of Pacific descent. Data have been collected up to age 11.</p><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00116-fig1.D9ijq99o_1gbtCc.webp" class="figure-lightbox-trigger" data-pswp-width="1777" data-pswp-height="1073" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00116-fig1.D9ijq99o_1gbtCc.webp" alt width="1777" height="1073" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Conceptual model of the early life course.</span></figcaption></figure><p data-astro-cid-qsyhzaho><i>Analysing combined data.</i> The three datasets were stacked together to form a single dataset with n = 3700 cases, and this dataset was used to estimates parameters for MELC. The rationale for combining the studies was to get more representative estimates for the simulation model. The extent to which this was achieved can never be known for certain, but perhaps can be inferred by the extent to which the simulation model produces results that are similar to those of the New Zealand population. This is tested in the validation <a href="#s2-4">Section (2.4)</a> below.</p><p data-astro-cid-qsyhzaho>All factors were modelled, except factors from birth and the first year of life (i.e., characteristics of the starting population). Different types of regression models were undertaken depending on the distribution of the outcome factor modelled. For binary outcomes (e.g., single parent family, housing tenure [owned/rented], conduct problems) logistic regression models were computed; for continuous outcomes (e.g., reading scores), least-squares regression models were computed; and for count models (e.g., number of GP visits, number of outpatient attendances), Poisson or negative binomial models were computed. The distribution of some outcomes required modelling that was more involved. For example, for hours worked per week by the mother and father there was a large peak at zero indicating the mother or father was not in the workforce, and then a relative normal distribution (with a peak around 40 hours) for mothers and fathers in the workforce. This was modelled in a two-step process whereby the chance of being in the workforce was first modelled using logistic regression. Then, for those in the workforce the number of hours worked was modelled using a least-squares regression.</p><p data-astro-cid-qsyhzaho>The set of predictors for each outcome were chosen using a stepwise procedure in SAS 9.3 (<a href="#bib48">SAS Institute Inc, 2010</a>). Potential predictors for each ‘outcome’ factor included all factors considered to be on the pathway of the outcome, as represented by the conceptual framework, including potential two-way interactions with age and ethnicity, and quadratic terms for continuous factors. In addition, lagged dependent variables (i.e., the value of an outcome for a previous year) were generally included as predictors for count and continuous outcomes outcomes – this approach was found to outperform other methods in producing simulated data that best matched the original (<a href="#bib34">McLay <i>et al</i>., 2015</a>). Stepwise (forward and backward) selection were initially used, with a p &lt; 0.2 criterion for the addition of terms and a p &lt; 0.25 criterion for the removal of terms. Then, backward selection with a p &lt; .05 criterion was used to remove terms so that only terms significant at p &lt; .05 remained in the final model. Interaction and quadratic terms were treated ‘hierarchically’ such that non-significant main effects remained in the model in the presence of significant interactions. A list of the terms in each model is shown in the web appendix, and shows the extent to which each term has direct effects on outcomes, and sometimes indirect effects on outcomes (i.e., through other factors).</p><p data-astro-cid-qsyhzaho>We compared the factors in the MELC statistical models to those in the literature for factors in the scenarios tested. In general, the direction of associations in MELC models matched those in the literature; the only difference was that for the association between maternal age and conduct problems, the MELC statistical models included different age effects by ethnicity: for Māori and European children younger maternal age was associated with increased conduct problems (matching the literature, e.g., <a href="#bib45">Reijneveld <i>et al</i>., 2012</a>), whereas for Pacific children younger maternal age was associated with decreased conduct problems. However, some factors that were found to be important in the literature were absent in the MELC statistical models. For example, associations between reading and smoking in pregnancy have been reported in the literature (<a href="#bib3">Anthopolos <i>et al</i>., 2013</a>), but did not meet threshold for inclusion in the MELC reading model; associations between conduct problems and smoking in pregnancy and maternal expressed emotion have been reported in the literature (<a href="#bib17">Gaysina <i>et al</i>., 2013</a>; <a href="#bib6">Caspi <i>et al</i>., 2004</a>), but these factors did not meet threshold for inclusion in the MELC conduct problems model; and associations between hospital admissions and smoking in pregnancy, maternal education, maternal age, and single parenting have been reported in the literature (<a href="#bib35">Menezes <i>et al</i>., 2010</a>; <a href="#bib59">Victora <i>et al</i>., 1992</a>; <a href="#bib10">Davidson <i>et al</i>., 2010</a>; <a href="#bib1">Ajetunmobi <i>et al</i>., 2015</a>), but these factors did not meet threshold for inclusion in the MELC hospital admissions model. These omissions should be considered when interpreting results from the model.</p><section id="s2-2-2-1" class="article-section" data-astro-cid-qsyhzaho><h5 data-astro-cid-qsyhzaho="true">Weighting</h5><p data-astro-cid-qsyhzaho>Weights were used in analyses to adequately represent all ethnic groups. First, weights were applied to the combined sample to represent the ethnic distribution of New Zealand children in 2006: 58% New Zealanders of European descent, 24% Māori (the indigenous population), 9% Pacific People (e.g., Samoan, Tongan, Cook Island Māori), 9% Asian (e.g., Indian, Chinese). Weights applied were 1.04, 2.96, 0.26, and 31.99 for European, Māori, Pacific and Asian, respectively, to account for the fact that European, Māori, and Asian children were under-represented in the sample and Pacific children over-represented.</p><p data-astro-cid-qsyhzaho>Further, the Māori in the combined sample largely comprise Māori from the CHDS and DMHDS cohorts from New Zealand’s South Island, which raises concerns about the representativeness of this group given the majority (87%) of New Zealand Māori live in the North Island (<a href="#bib55">Statistics New Zealand, 2014b</a>). To test this, we used Māori cultural affiliation (the extent to which individuals speak and understand the Māori language and are actively involved in Māori cultural activities) as an indicator of representativeness to compare Māori in the CHDS and DMHDS cohorts with a representative national sample of New Zealand Māori children, the Te Hoe Nuku Roa sample (THNR, <a href="#bib16">Fitzgerald &amp; Durie, 2000</a>). Note that we could not assess the representativeness of Māori in the PIFS sample as Māori cultural affiliation was not assessed in the PIFS sample.</p><p data-astro-cid-qsyhzaho>Cultural affiliation was taken as the first principal component drawn from scores in the combined three cohorts (CHDS, DMHDS, THNR) on five items:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Marae (Māori communal meeting house) attendance, coded 0 = never, 1 = once or twice in lifetime, 2 = once or twice in past year, 3 = most months, 4 = most weeks, 5 = most days);</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Tangi (Māori funeral) attendance, coded 0 = no, 1 = yes;</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Involvement in Māori cultural groups and activities, coded 0 = no; 1 = yes;</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Māori language communication, coded 0 = know no Māori language at all; 1 = know a few words and greetings; 2 = have an understanding of Māori language at a very basic level; 3 = have an understanding of Māori language at an intermediate level; 4 = have a confident understanding of Māori language in most situations; 5 = fluent speaker learnt as second language 6 = fluent speaker learnt as first language;</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Listening to Māori language radio or watching Māori language television, coded 0 = never; 1 = very rarely; 2 = yearly; 3 = monthly; 4 = weekly; 5 = daily.</p></li></ul><p data-astro-cid-qsyhzaho>Quintiles of cultural affiliation were then derived using cut-offs based on the THNR cohort only.</p><p data-astro-cid-qsyhzaho>The proportion of Māori (combined across the CHDS and DMHDS cohorts) in each of these quintiles, relative to the 20% of THNR in each quintile, was then used to weight Māori to represent the cultural affiliation distribution of the representative cohort. This is described in <a href="#table1">Table 1</a>. The table shows that the cultural affiliation of Māori combined across the CHDS and DMHDS cohorts was skewed towards the lower end of the distribution of the THNR sample. As such, those in the lowest cultural affiliation quintiles were given a lower weight and those in all other cultural affiliation quintiles were given a higher weight. The weights were then iteratively adjusted in combination with the ethnicity weights (to ensure the correct proportion of ethnicities and of Māori in cultural affiliation quintiles) to give the final cultural affiliation weights shown in the right-most column of <a href="#table1">Table 1</a>.</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Weighting based on cultural affiliation.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Quintiles</th>
+<th>THNR Māori (%)</th>
+<th>CHDS/DMHDS Māori (%)</th>
+<th>CHDS/DMHDS Māori</th>
+<th>Final cultural affiliation weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 – low</td>
+<td align="center">20</td>
+<td align="center">57.9</td>
+<td align="center">20/57.9 = 0.35</td>
+<td align="center">0.34</td>
+</tr>
+<tr>
+<td>2</td>
+<td align="center">20</td>
+<td align="center">19.1</td>
+<td align="center">20/19.1 = 1.05</td>
+<td align="center">1.08</td>
+</tr>
+<tr>
+<td>3</td>
+<td align="center">20</td>
+<td align="center">7.9</td>
+<td align="center">20/7.9 = 2.53</td>
+<td align="center">2.65</td>
+</tr>
+<tr>
+<td>4</td>
+<td align="center">20</td>
+<td align="center">10.0</td>
+<td align="center">20/10.0 = 2.00</td>
+<td align="center">2.03</td>
+</tr>
+<tr>
+<td>5 – high</td>
+<td align="center">20</td>
+<td align="center">5.1</td>
+<td align="center">20/5.1 = 3.92</td>
+<td align="center">4.15</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>Weights for ethnicity and Māori cultural affiliation were multiplied together with iterative adjustments (to ensure the correct proportions for both ethnicity and cultural affiliation were achieved when the weights were applied to the sample) to give an overall weight for each participant in analyses (see <a href="#table2">Table 2</a>). To negate the impact of the large weight (31.99) attached to those of Asian ethnicity in the combined sample, Asian and European categories were combined in analyses.</p><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Final weights used in analysis.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Ethnicity</th>
+<th>Ethnicity weight</th>
+<th>Māori cultural affiliation quintile</th>
+<th>Māori cultural affiliation weight</th>
+<th>Final weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>European</td>
+<td align="center">1.04</td>
+<td align="center"/>
+<td align="center">1</td>
+<td align="center">1.04</td>
+</tr>
+<tr>
+<td>Māori</td>
+<td align="center">2.96</td>
+<td align="center"/>
+<td align="center">1</td>
+<td align="center">2.96<sup><a href="#tfn1">a</a></sup></td>
+</tr>
+<tr>
+<td/>
+<td align="center">2.96</td>
+<td align="center">Quintile 1</td>
+<td align="center">0.34</td>
+<td align="center">1.02</td>
+</tr>
+<tr>
+<td/>
+<td align="center">2.96</td>
+<td align="center">Quintile 2</td>
+<td align="center">1.08</td>
+<td align="center">3.20</td>
+</tr>
+<tr>
+<td/>
+<td align="center">2.96</td>
+<td align="center">Quintile 3</td>
+<td align="center">2.65</td>
+<td align="center">7.84</td>
+</tr>
+<tr>
+<td/>
+<td align="center">2.96</td>
+<td align="center">Quintile 4</td>
+<td align="center">2.03</td>
+<td align="center">6.02</td>
+</tr>
+<tr>
+<td/>
+<td align="center">2.96</td>
+<td align="center">Quintile 5</td>
+<td align="center">4.15</td>
+<td align="center">12.28</td>
+</tr>
+<tr>
+<td>Pacific</td>
+<td align="center">0.26</td>
+<td align="center"/>
+<td align="center">1</td>
+<td align="center">0.26</td>
+</tr>
+<tr>
+<td>Asian</td>
+<td align="center">31.99</td>
+<td align="center"/>
+<td align="center">1</td>
+<td align="center">31.99</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>This weight was applied to Māori in the PIFS sample, for whom Māori cultural affiliation could not be assessed</p></div></figure></section><section id="s2-2-2-2" class="article-section" data-astro-cid-qsyhzaho><h5 data-astro-cid-qsyhzaho="true">Imputing missing data</h5><p data-astro-cid-qsyhzaho>To enable modelling with maximal data, imputation of missing data was undertaken prior to modelling, following the methods adopted by the Social Genome Project (<a href="#bib62">Winship &amp; Owen, 2013</a>). The CHDS was used as the base for the conceptual framework for the initial MELC model (<a href="#bib26">Lay-Yee <i>et al</i>., 2015</a>) and as such contains all the variables for all the years that need to be modelled. Thus, the only imputation that was needed for the CHDS data was to complete missing cases for some variables. This was achieved by first ordering variables from least missing to most missing. The variable with the least missing values was then regressed against all variables with no missing values (n = 11), and missing values were then stochastically – and singly – imputed based on the model estimates. Then, the variable with the next least missing values was regressed against all complete variables (now n = 12), and missing values were imputed in the same way. This process was continued until all variables were complete. Regression models were chosen based on the distribution of the outcome variable: ordinary least-squares regression was used for continuous outcomes; logistic regression used for binary outcomes; multinomial logistic regression used for categorical outcomes; and Poisson or negative binomial regression used for count outcomes.</p><p data-astro-cid-qsyhzaho>The DMHDS had data only at some ages (0, 3, 5, 7, 9, 11, 13) and for some of the variables, so imputation was more involved. No imputation was undertaken for ages at which the DMHDS sample was not assessed (e.g., ages 1, 2, 4, 6, 8, 10). For variables that existed at some or all assessment ages, missing values were imputed in the way described above. For variables with missing ages (i.e., missing from ages 0, 3, 5, 7, 9, 11, or 13), imputation was undertaken in one of three ways.</p><p data-astro-cid-qsyhzaho>First, logic and stochastic methods were used to impute ‘number of children’, which was missing at ages 0, 5 and 9. For example, if the number of children was the same at ages either side of a missing age – say, age 3 and 7 – then the number of children was assumed to be the same at the missing age. If the number of children was different at ages either side of a missing age then the number of children in the missing age was stochastically assigned with probabilities for values between (and including) the values at the measured ages determined on the basis of distributions from the CHDS sample. For example, if the number of children at age 3 was 2 and at age 7 was 4, then the number of children at age 5 was imputed by randomly choosing from the values {2,3,4}, with the probability of choosing each value determined by the proportion with values {2,3,4} among the CHDS sub-sample for whom the number of children at age 3 was 2 and at age 7 was 4.</p><p data-astro-cid-qsyhzaho>Second, variables with sufficiently few missing ages to enable the detection of time-trends were modelled and imputed using DMHDS data only. These included mother’s hours worked (missing at ages 0 & 13), change in residence (missing at age 13), and hospital admissions (missing at ages 3 and 11). Models used automatic variable selection of available predictors (using a 0.05 cutoff for logistic models and improved AIC for linear models) to get predictive values for these variables, and imputed values were stochastically chosen from a distribution with the predicted value as its mean.</p><p data-astro-cid-qsyhzaho>Third, variables with a large number of missing ages were modelled and imputed using CHDS data. These included outpatient visits (missing at ages 7 and 9), accommodation type (missing at ages 0, 5, 7, 9, 11, 13), home ownership (missing at ages 0, 5, 7, 9, 11, 13), change in parents (missing at ages 0, 3, 5, 7, 9 and 13), mother’s smoking (missing at ages 3, 5, 7, 13), father’s smoking (missing at ages 0, 3, 5, 7, 13), and general practitioner visits (missing at ages 0, 3, 5, 11, 13). As before, models used automatic variable selection of available predictors to get predictive values for these variables, and imputed values were stochastically chosen from a distribution with the predicted value as its mean.</p><p data-astro-cid-qsyhzaho>Variables that were completely missing (Alcohol during pregnancy, Welfare, Father’s hours worked, Over-crowding, GP morbidity visits, GP respiratory visits) were imputed using models based on CHDS data, as described above.</p><p data-astro-cid-qsyhzaho>Like the DMHDS, the PIFS study only had data at some ages (0, 1, 2, 4, 6, 9) and for some of the variables. A similar procedure as described above for Dunedin was used to impute data for these variables. That is, for variables that existed at some or all assessment ages, missing values were singly imputed in order of number of missing values (i.e., those with the least number of missing values were imputed first and those with the most number of missing values were imputed last). For variables with missing data for some ages (but present data for others) – e.g., mother’s smoking – imputation was based on models using PIFS data only. For remaining variables – breastfeeding, socio-economic status, single parent status, general practitioner preventive and respiratory visits, father’s smoking, household size, household overcrowding, accommodation type, home ownership, single parent status, welfare receipt, changes in residence, reading score, conduct problems, outpatients visits – imputation was based on models using combined CHDS and DMHDS data.</p><p data-astro-cid-qsyhzaho>The total amount of missing data is summarised in the web appendix.</p></section></section><section id="s2-2-3" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">2.2.3 Using measures of association in the simulation</h4><p data-astro-cid-qsyhzaho>The statistically-derived parameters determine the transition equations that drive the simulation process. For this, an expected score (for continuous or count variables) or a probability (for binary variables) is generated for each outcome for each individual at each age based on the statistical models developed for each outcome described above. A random draw is then taken from the appropriate distribution (normal, Poisson, negative binomial, binomial) using the expected score/probability as the mean of the distribution and the appropriate model-estimated parameter as the variance (the residual standard error for the normal distribution, the mean for the Poisson distribution, and the dispersion parameter for the negative binomial distribution; no variance measure is required for the binomial distribution as only 0s and 1s are generated). This random draw constitutes the stochastic value assigned to each individual for each outcome, and will vary from simulation run to simulation run as different random draws are taken. Moreover, the dynamic nature of the micro-simulation is such that the stochastic value assigned for certain characteristics will influence – through the role of these characteristics in other regression equations – other ‘downstream’ characteristics. Thus, stochastically determined values have cascading effects in the simulation, and this contributes to the variation in the results from simulation run to simulation run.</p></section></section><section id="s2-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.3 Deployment</h3><p data-astro-cid-qsyhzaho>A user-friendly software application to run MELC was programmed in JAVA and R. A JAVA-based programme called JAMSIM (JAva MicroSIMulation, <a href="#bib32">Mannion <i>et al</i>. 2012</a>), developed from the agent-based modelling software, ASCAPE (<a href="#bib43">Parker, 2011</a>), provides graphical user interface (GUI) features to display simulation outputs.</p><p data-astro-cid-qsyhzaho>A library in the statistical software, R – called SIMARIO – bundles together functions for running and manipulating the simulation process and producing outputs. These functions perform dynamic simulation, i.e. transform records based on statistical models to make changes over time; generate descriptive statistics from the simulation results at each iteration; perform multiple simulation runs and compute averages across runs; and allow scenario testing through manipulation of variable distributions at different points in the simulation.</p><p data-astro-cid-qsyhzaho>Using JAMSIM and SIMARIO for the MELC model, users have the ability to: (i) view factor distributions for ‘base’ scenarios; (ii) change factors in flexible ways, including: (a) changing the proportion of individuals in categories of a discrete variable; (b) changing the values of a continuous variable for individuals; (c) changing a factor at one point in time or at many different points in time; (d) changing one or many factors at a time; and (e) changing factors for the whole population or for population subgroups of interest (e.g., low socio-economic status groups); and (iii) view the results of scenarios and to compare the results of two or more different scenarios, both for the whole population or for population subgroups of interest.</p><p data-astro-cid-qsyhzaho>The JAMSIM/SIMARIO application running the MELC model can be deployed in a desktop environment, and is currently deployed with policy users at New Zealand government ministries.</p></section><section id="s2-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.4 Validation</h3><p data-astro-cid-qsyhzaho>A key requirement of MELC is that it represents the world well. Prevalence rates and means of characteristics and conditions generated by the simulation should match those of the population, i.e., the base scenario of the model should produce valid results. For the MELC model we were able to test this by comparing simulated results against results for the New Zealand population. Prevalences of outcomes for the New Zealand population were derived from the following sources. For general practitioner visits and outpatients attendances we used the New Zealand Health Survey (NZHS) 2011–12 (<a href="#bib37">Ministry of Health, 2012</a>), for hospitalisations we used the National Minimum Dataset (NMDS) data for 2006 (<a href="#bib41">National Health Board, 2013</a>) as the numerator and the 2006 New Zealand Census population (<a href="#bib53">Statistics New Zealand, 2012</a>) as the denominator, and for reading we used age norms published in the Burt Word Reading Test Teachers Manual (<a href="#bib20">Gilmore <i>et al</i>., 1976</a>). No external source for prevalence of conduct problems existed to enable validation – New Zealand population estimates on conduct problems often cite the very longitudinal studies analysed for our model (e.g., <a href="#bib38">Ministry of Social Development, 2007</a>, p9).</p><p data-astro-cid-qsyhzaho>Validation results are shown in <a href="#fig2">Figure 2</a>. Results are shown for NZHS age groupings for GP visits and hospital outpatient attendances (a &amp; b), and for each year of age for hospital admissions and reading (c &amp; d). Note that age = 1 refers to the first year of life, age = 2 refers to the second year of life, etc., not the calendar age of the child.</p><p data-astro-cid-qsyhzaho>Panel A of <a href="#fig2">Figure 2</a> shows that simulated GP visits were close to NZHS estimates for ages 2 and 6–10, but were high for age 1 and low for ages 3–5. Differences in methodology are likely to explain the differences for age 1: the MELC simulation models the number of GP visits in the first year of life whereas the NZHS assesses GP visits in the previous 12 months for a sample of children ages 0–11 months old, so the NZHS does not capture a full year of visits for many of these children. Notably the MELC simulated estimates for year 1 are nearly twice those of the NZHS, consistent with GP visits for NZHS children being substantially undercounted in the second half of the year. The MELC model was amended to bring the GP visits into line for ages 3–5 by adjusting the intercept; this maintains the rank order of all children and also leaves the coefficients of all modifiable factors unchanged, thus performing a similar job as other alignment methods, e.g., sorting methods (<a href="#bib27">Li &amp; O’Donahue, 2014</a>).</p><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00116-fig2.CpD3wjkK_Z1sr5bT.webp" class="figure-lightbox-trigger" data-pswp-width="1829" data-pswp-height="1523" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00116-fig2.CpD3wjkK_Z1sr5bT.webp" alt width="1829" height="1523" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Validation of the MELC micro-simulation model for (a) GP visits, (b) Hospital outpatient attendances, (c) Hospital admissions, and (d) Reading. Outcomes are validated against reports from the 2012–13 New Zealand Health Survey (NZHS) (a & b), admissions to all New Zealand hospitals in 2006, as recorded in the National Minimum Dataset (NMDS) (c), and New Zealand norms for the Burt Reading test reported in 1976 (d). Error bars show 95% confidence intervals (no error bars are shown for NMDS hospital admissions as these are based on the whole population).</span></figcaption></figure><p data-astro-cid-qsyhzaho>Panel B of <a href="#fig2">Figure 2</a> shows that simulated hospital outpatient attendances were accurate only for age 2: simulated estimates were higher than NZHS estimates for all other ages. The higher simulated estimate at age 1 can be explained by the methodological difference described above; the higher estimates at other ages cannot be so easily explained. The MELC model was therefore amended to bring the hospital outpatient attendances into line for ages 3–5 and ages 6–10 by adjusting the intercept and age coefficient (as with GP visits this maintains the rank order of all children but leaves the coefficients of all modifiable factors unchanged).</p><p data-astro-cid-qsyhzaho>Panel C of <a href="#fig2">Figure 2</a> shows that simulated hospital admissions were very close to actual hospital admissions for the New Zealand population, while panel D shows that simulated reading scores were also very close, though were estimated as slightly higher than 1976 New Zealand norms for ages 9, 10 and 11. No amendments were made to the MELC model for either hospital admissions or reading.</p><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00116-fig3.EoBWBigY_ZeRmFF.webp" class="figure-lightbox-trigger" data-pswp-width="1829" data-pswp-height="1524" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00116-fig3.EoBWBigY_ZeRmFF.webp" alt width="1829" height="1524" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Validation of the MELC micro-simulation model for (a) GP visits, (b) Hospital outpatient attendances, (c) Hospital admissions, and (d) Reading, after adjusting the models for GP visits and Hospital outpatient attendances data. Outcomes are validated against reports from the 2012–13 New Zealand Health Survey (NZHS) (a & b), admissions to all New Zealand hospitals in 2006, as recorded in the National Minimum Dataset (NMDS) (c), and New Zealand norms for the Burt Reading test reported in 1976 (d). Error bars show 95% confidence intervals (no error bars are shown for NMDS hospital admissions as these are based on the whole population).</span></figcaption></figure><p data-astro-cid-qsyhzaho>Comparisons between the MELC simulated outcomes and New Zealand population estimates <i>after</i> adjusting the models for GP visits and hospital outpatient attendances are shown in <a href="#fig3">Figure 3</a>. This shows a close match for all outcomes for all ages, except for age 1 for GP visits and Hospital outpatient attendances, which differ likely because of the methodological differences between the MELC model and the NZHS explained above.</p></section><section id="s2-5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.5 Testing scenarios</h3><p data-astro-cid-qsyhzaho>Simulating the starting population using the transition equations produces a virtual cohort with characteristics from birth to age 13. This virtual cohort represents a ‘base’ scenario, i.e., a simulation representing the ‘business as usual’ case. However, of more interest is the ability of MELC to test the effects of ‘policy’ scenarios by changing some features in the system and simulating the effects. We achieved this by changing the distributions of various factors (e.g., changing a proportion of children in welfare-dependent homes; changing the birth weight distribution for children) to mimic the impact of a particular policy intervention under consideration. We chose to change distributions rather than reweight the dataset so that: (i) only downstream variables are affected (weighting affects all variables), thus allowing users to assess the likely effect on any outcome or indeed any other variable in the simulation; (ii) any combination of variables for any subgroup of the population could be changed for a scenario (weighting becomes more complicated the more variables that are changed); and (iii) change is simulated for those most likely to change, via propensity score models described below (weighting implicitly equally weights all those in the target group).</p><p data-astro-cid-qsyhzaho>In order to change the distribution of a variable to that desired under a specific scenario, the data values of individual units were changed. This was achieved as follows. For categorical variables, a propensity to be in each category was calculated for each individual, based on a logistic (for two-category variables) or multinomial logistic (for &gt; 2 category variables) model using each individual’s starting or simulated characteristics as predictors. For each simulation run, a random draw from a normal distribution with mean = 0, and standard deviation equal to the standard error of the propensity score was used to determine a constant to be added to (or subtracted from) each individual’s propensity score. This new ‘stochastic’ propensity score was then used to determine which individuals to shift from one group to another (i.e., if the number who need to shift = x, then those with the x highest propensity scores are chosen to shift in each simulation run).</p><p data-astro-cid-qsyhzaho>For continuous variables, the process was largely the same in that continuous scores were categorised for scenario testing purposes, and stochastic propensity scores were generated and shifting between categories determined in the way described above. The adjusted categorical values for each individual were converted back to continuous scores by using a series of regression models (either linear regression or negative binomial regression, depending on which gave better fit), each one based on data only from the region defined by the categorisation. Continuous values were assigned by drawing random numbers from the appropriate distribution (normal; negative binomial) using the fitted values from the model as the mean and the variance defined by either the residual standard error (linear model) or the estimated dispersion parameter (negative binomial model).</p><p data-astro-cid-qsyhzaho>Micro-simulation of the policy scenario (with factors changed as described above) was then compared to micro-simulation of the ‘base’ scenario to determine the impact of the policy scenario. As each scenario was based on a number of simulation runs, uncertainty in the effect of a policy scenario on an outcome of interest was represented as a confidence interval based on the variation across simulation runs. For the scenarios we present in this paper ten simulation runs were undertaken (as will be shown, these produce relatively narrow confidence intervals).</p><p data-astro-cid-qsyhzaho>Three scenarios were tested, and the changes made for each scenario are described below:</p><ol data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>How can we improve early literacy?</p><p data-astro-cid-qsyhzaho>In the analyses we conducted to model associations, the following four factors were found to be most strongly associated with better reading: older maternal age at birth of child, higher maternal educational qualifications, higher birth weight, and living in an owned home. We varied each of these factors in the whole population to be at or approximating those of high socio-economic status children for maternal age, maternal education and living in an owned home, and to reduce the prevalence of low birth weight (&lt; 2.5kg) by 75%. Specifically, distributions were changed in the following way:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>maternal age: &lt; 20 (from 3.9% to 1%), 20–24 (from 14.2% to 10%), 25–29 (from 22.3% to 25%), 30–34 (from 34.7% to 35%), 35–39 (from 20.5% to 25%), 40+ (from 4.4% to 4%); and</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>maternal education: tertiary (from 23% to 40%), secondary (from 61% to 50%), and none (from 16% to 10%); and</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>birth weight: &lt;= 2.5kg (from 4.1% to 1%), 2.501–3kg (16.1% to 10%), 3.001–3.5kg (29.6% to 35%), 3.501kg-4kg (34.2% to 35%), &gt; 4kg (16.0% to 19%); and</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>living in an owned home: from between 48.7% (age 1) and 63.9% (age 13) to 70% (age 1), increasing 1% per year to 82% in year 13.</p></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>How does single parenting affect later conduct problems?</p><p data-astro-cid-qsyhzaho>Single parenting rates varied from 20.5% in the second year of life to 23.4% in year 13. We reduced single parenting to a flat rate of 10% in each year (roughly half the actual prevalence, and roughly equal to the prevalence among high socio-economic status families), and then tested the overall effect on conduct problems in the population. We note that single parenting is a well-established predictor of child conduct problems (<a href="#bib40">Murray &amp; Farrington, 2010</a>), though its association may be complicated (<a href="#bib25">Jaffee <i>et al</i>., 2003</a>). Nonetheless, this was the scenario of interest to the policy-makers, and the nature of our micro-simulation model allows the manipulation of single-parenting independent of other related explanatory variables (e.g., socio-economic status), thus giving us greater confidence in assessing the likely effect of such a manipulation.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>What interventions have impact on later outcomes for Māori, Pacific or low-socioeconomic status groups?</p><p data-astro-cid-qsyhzaho>For this scenario we tested an ‘equalization’ scenario in which we altered proportions and means among Māori, Pacific and low-socio-economic status groups to be equal to those for the general population for the following factors: smoking in pregnancy; maternal education; maternal age; breastfeeding; birthweight; single parenting; accommodation type; housing tenure; early childhood education; maternal expressed emotion; and maternal punitiveness. We then tested the effect of these changes on three outcomes: reading, conduct problems, and hospital admissions.</p></li></ol></section></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. Results of testing policy scenarios</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s3-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.1 Improving early literacy</h3><p data-astro-cid-qsyhzaho>In this scenario, we changed a number of factors thought to be important for early literacy, and simulated the results on children’s reading scores. The results show that the scenario resulted in very small but detectable changes to reading scores (see <a href="#fig4">Figure 4</a>).</p><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00116-fig4.CkpoCIAI_Z1Ye9P4.webp" class="figure-lightbox-trigger" data-pswp-width="1503" data-pswp-height="903" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00116-fig4.CkpoCIAI_Z1Ye9P4.webp" alt width="1503" height="903" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Impact of scenario to improve early literacy, as measured by the burt reading score.</span></figcaption></figure></section><section id="s3-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.2 The effect of single parenting on conduct problems</h3><p data-astro-cid-qsyhzaho>The impact on conduct problems of reducing the prevalence of single parenting to 10% for each year of age is shown in <a href="#fig5">Figure 5</a>. The figure shows that reducing the prevalence of single parenting resulted in reductions in the prevalence of conduct problems over time, up to 15–20% by ages 10–13.</p><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00116-fig5.BKBCtSyX_8fMVL.webp" class="figure-lightbox-trigger" data-pswp-width="1503" data-pswp-height="903" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00116-fig5.BKBCtSyX_8fMVL.webp" alt width="1503" height="903" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> Impact of reducing single parenting on conduct problems.</span></figcaption></figure></section><section id="s3-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.3 Impact on outcomes for Māori, Pacific or low-socio-economic status groups</h3><p data-astro-cid-qsyhzaho>The impact on conduct problems, reading, and hospital admissions of bringing a number of structural, perinatal and parenting factors (described in the methods section) for Māori, Pacific and low socio-economic status children into line with the general population (‘equalization’ scenario) is shown in <a href="#fig6">Figures 6</a>-<a href="#fig8">8</a>. <a href="#fig6">Figure 6</a> shows that, for Māori, Pacific and low socio-economic status children, the equalization scenario produced a reduction in conduct problems of about four percentage points from ages 7–13. <a href="#fig7">Figure 7</a> shows a much smaller and often non-significant increase in reading scores that was similar across ages and across Māori, Pacific and low socio-economic status children. <a href="#fig8">Figure 8</a> shows no evidence of an effect of the equalization scenarios on hospital admissions for either Māori, Pacific or low socio-economic status children.</p><figure id="fig6" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00116-fig6.BK81-TaB_1FAINX.webp" class="figure-lightbox-trigger" data-pswp-width="2906" data-pswp-height="977" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00116-fig6.BK81-TaB_1FAINX.webp" alt width="2906" height="977" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 6.</strong><span data-astro-cid-dzaleqsp> Impact on conduct problems of bringing structural, perinatal and parenting factors into line with the general population (equalization scenario) for (a) Māori, (b) Pacific, and (c) low socioeconomic status children.</span></figcaption></figure><figure id="fig7" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00116-fig7.kiZ4Pc7b_1NT3sn.webp" class="figure-lightbox-trigger" data-pswp-width="2906" data-pswp-height="985" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00116-fig7.kiZ4Pc7b_1NT3sn.webp" alt width="2906" height="985" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 7.</strong><span data-astro-cid-dzaleqsp> Impact on reading (Burt score) of bringing structural, perinatal and parenting factors into line with the general population (equalization scenario) for (a) Māori, (b) Pacific, and (c) low socioeconomic status children.</span></figcaption></figure><figure id="fig8" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00116-fig8.B9aHhOY9_2dzY7g.webp" class="figure-lightbox-trigger" data-pswp-width="2906" data-pswp-height="1000" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00116-fig8.B9aHhOY9_2dzY7g.webp" alt width="2906" height="1000" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 8.</strong><span data-astro-cid-dzaleqsp> Impact on hospital admissions of bringing structural, perinatal and parenting factors into line with the general population (equalization scenario) for (a) Māori, (b) Pacific, and (c) low socioeconomic status children.</span></figcaption></figure></section></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. Discussion</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The purpose of this paper was to demonstrate the Modelling the Early Life-course (MELC) microsimulation model, which was developed to understand the factors upon which policies can be devised to improve the lives of children and young people. The MELC model simulates a representative sample of New Zealand children ageing from birth to age 13, with rules for transitioning children from year to year derived from analysing data from child cohort studies.</p><p data-astro-cid-qsyhzaho>The MELC model was able to be validated for three of four outcomes for which external data exist. The model simulated hospital admission results and reading score results that closely matched those of the New Zealand population (from admission records and school-based reading norms). Simulated GP visit numbers were close to those reported in a national survey for ages 2 and 6–10, but underestimated the number of visits for 3–5 year olds and methodological reasons prevented accurate comparisons for the first year of life. The simulation model was calibrated to the national survey estimates to account for the underestimate in years 3–5. However, simulation results for hospital outpatient attendances showed quite different trends to those reported in a national survey. These likely reflect differences between the early life-course trajectory of hospital outpatient attendances reported by the child cohort studies (two of which began in the 1970s) and the early life-course trajectory of hospital outpatient attendances that children in New Zealand experience in the 2000s. While post-modelling calibration was able to bring simulated results in line with national estimates, question marks should remain over modelling this outcome.</p><p data-astro-cid-qsyhzaho>Other limitations of the MELC model are worth noting. First, MELC is a discrete-time dynamic MSM with status updates every year, so it not designed to handle events in continuous time. This is sensible for factors in the model that are not ‘events’ (e.g., reading score, conduct problems), but less so for factors that are events (e.g., becoming a child of a single parent). Second, MELC covers a limited lifespan (from birth to age 13) for a limited range of factors. Work is underway to extend the model to early adulthood to encompass transitions out of school into employment or further training, and we also plan to increase the range of factors to broaden the policy relevance of the model.</p><p data-astro-cid-qsyhzaho>Third, early childhood education was not a factor in the ‘improving early literacy’ scenario because it was not a strong predictor in the reading model (though it was significant). This was perhaps because the early childhood education experienced by the two older samples (both born in the 1970’s) is likely to be of a different form – focussing on child-minding rather than education – than more recent early childhood education. Whatever the reason, this should be considered a limitation of the model, given the established literature on the importance of early childhood education for later education outcomes (<a href="#bib11">Dearing <i>et al</i>., 2009</a>).</p><p data-astro-cid-qsyhzaho>Fourth, MELC simulates a closed cohort rather than a current and growing population (i.e., with births, deaths, immigration and emigration). This is a limitation for policy makers interested in serving a population with changing demographics (~25% of the New Zealand population is foreign born, though only ~10% of the age group MELC models is foreign born). Work is underway to explicitly model births, deaths, immigration and emigration, to extend the model to early adulthood to encompass transitions out of school into employment or further training, and we also plan to increase the range of factors to broaden the policy relevance of the model.</p><p data-astro-cid-qsyhzaho>Fifth, it is unclear whether the effects tested in the model can be considered causal. This is an issue for all micro-simulation models driven by estimates from observational data. While analytic techniques have been developed that strengthen a causal interpretation of associations using observational data (e.g., sibling comparison studies, <a href="#bib13">Ellingson <i>et al</i>., 2014</a>; twin studies, <a href="#bib58">van Os <i>et al</i>., 2001</a>; <a href="#bib6">Caspi <i>et al</i>., 2004</a>; in vitro fertilization samples, <a href="#bib17">Gaysina <i>et al</i>., 2013</a>), few have been applied to the associations represented in the MELC model. To our knowledge only one study has, and that study suggests that there is no causal association between breastfeeding and child conduct problems (<a href="#bib50">Shelton <i>et al</i>., 2011</a>). Findings should interpreted with this limitation in mind.</p><p data-astro-cid-qsyhzaho>In addition to its empirical underpinning, the strengths of the MELC model include the ability to test scenarios that are relevant to policy makers via a user friendly interface. There is no limit to the number of scenarios that can be run, and the results of different scenarios can be viewed in both tabular and graphical form. The value of micro-simulation in MELC – as opposed to separate statistical modelling of each outcome – is that it incorporates the statistical modelling into one system, which allows policy makers the flexibility to test the impact of (potentially) many X on (potentially) many Y, and also the effect for subgroups of interest, while accounting for the stochastic nature of life transitions (e.g., those with a high probability of X will not necessarily exhibit X). In this sense, simulation provides an efficient way to combine interrelated statistical models to test a wide range of scenarios of interest.</p><p data-astro-cid-qsyhzaho>A number of conclusions can be drawn from the scenarios presented in this paper. First, the <i>improving early literacy</i> scenario showed reliable but small improvements to literacy as a result of changing four factors: maternal age, maternal education, birth weight, and living in an owned home. This suggests that even sizeable changes in a number of factors sometimes do not have the large impact desired, perhaps because effect sizes are often small. Also of note here is that the factors found most likely to improve literacy are not typically considered as targets for policy intervention, especially for an education outcome. Thus, while one can imagine policy interventions that could affect all four, it is hard to compare the findings of the scenarios presented to findings in the intervention literature. However, all four factors have been shown to be associated with reading improvements (maternal age: <a href="#bib49">Shaw <i>et al</i>., 2006</a>; maternal education: <a href="#bib31">Magnuson, 2007</a>; birth weight: <a href="#bib7">Chatterji <i>et al</i>., 2014</a>; living in an owned home: <a href="#bib23">Haurin <i>et al</i>., 2002</a>).</p><p data-astro-cid-qsyhzaho>Second, the <i>effect of single parenting on conduct problems</i> scenario showed a noticeable and moderate reduction in conduct problems resulting from a sizeable change in single parenting (reducing it from &gt; 20% to 10% in each year of the child’s life). The impact of single parenting on conduct problems has been well-established in the literature (<a href="#bib24">Hill, 2002</a>; <a href="#bib46">Murray &amp; Farrington 2010</a>; <a href="#bib39">Murray <i>et al</i>. 2013</a>), with estimates suggesting that experiencing a change from a two-parent to a single parent household is associated with a 0.2SD increase in conduct scores (<a href="#bib47">Ryan <i>et al</i>., 2014</a>).</p><p data-astro-cid-qsyhzaho>Third, the <i>impact on outcomes for Māori, Pacific or low-socio-economic status groups</i> scenario showed mixed results. Altering proportions and means of a number of structural, perinatal and parenting factors relative to the general population for Māori, Pacific or low-socio-economic status resulted in moderate reductions in conduct problems for each of these groups, but only modest improvements to reading, and no change in hospital admissions. The findings for reading and conduct problems mirrored those for the general population in the other two scenarios tested: very small effects on reading and larger effects on conduct problems. The finding for hospital admissions perhaps indicate that the factors that influence ‘generic’ health service use outcomes such as hospital admissions are not easily captured because the risks factors may either be condition-specific (e.g., asthma, <a href="#bib10">Davidson <i>et al</i>., 2010</a>; <a href="#bib2">Algert <i>et al</i>., 2011</a>), or may be clinical factors (e.g., <a href="#bib2">Algert <i>et al</i>., 2011</a>; <a href="#bib19">Gill <i>et al</i>., 2015</a>) rather than the socio-economic or behavioural factors that are the focus of the MELC model. Interestingly, one of the few studies to investigate all-cause hospital admissions found few factors that explained admissions in children aged 2–11: just family income and gestational age explained admissions among boys only, there were no significant factors for girls (<a href="#bib35">Menezes <i>et al</i>., 2010</a>).</p><p data-astro-cid-qsyhzaho>Fourth, and more generally, the results of these scenarios emphasise that it is quite difficult to have large impacts on outcomes, even with substantial changes to multiple factors. This perhaps emphasises that multiple areas need to be targeted to have a large impact on children’s lives – there is no “silver bullet” factor that by itself will solve problems in a domain of child functioning.</p></div></details></div><details id="A1" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Variables</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><div class="table-wrap" data-astro-cid-qsyhzaho><table>
+<tr>
+<td>accom</td>
+<td>accommodation type</td>
+</tr>
+<tr>
+<td>age</td>
+<td>age of child</td>
+</tr>
+<tr>
+<td>breast</td>
+<td>breast-feeding</td>
+</tr>
+<tr>
+<td>bthorder</td>
+<td>birth order</td>
+</tr>
+<tr>
+<td>bw</td>
+<td>birthweight</td>
+</tr>
+<tr>
+<td>childethn</td>
+<td>ethnicity of child</td>
+</tr>
+<tr>
+<td>chpar</td>
+<td>change in parents</td>
+</tr>
+<tr>
+<td>chres</td>
+<td>number of changes in residence</td>
+</tr>
+<tr>
+<td>cond</td>
+<td>conduct problems</td>
+</tr>
+<tr>
+<td>fage</td>
+<td>father’s age at child’s birth</td>
+</tr>
+<tr>
+<td>feduc</td>
+<td>father’s education level at child’s birth</td>
+</tr>
+<tr>
+<td>fhrswrk</td>
+<td>father’s hours worked</td>
+</tr>
+<tr>
+<td>fsmoke</td>
+<td>father’s smoking</td>
+</tr>
+<tr>
+<td>ga</td>
+<td>gestational age</td>
+</tr>
+<tr>
+<td>gender</td>
+<td>gender of child</td>
+</tr>
+<tr>
+<td>gpmorb</td>
+<td>number of GP visits for a morbidity for the year</td>
+</tr>
+<tr>
+<td>gpresp</td>
+<td>number of GP visits for a respiratory condition for the year</td>
+</tr>
+<tr>
+<td>gptotvis</td>
+<td>total number of GP visits for the year</td>
+</tr>
+<tr>
+<td>hadm</td>
+<td>number of hospital admissions for the year</td>
+</tr>
+<tr>
+<td>homeown</td>
+<td>home ownership</td>
+</tr>
+<tr>
+<td>householdsize</td>
+<td>number of people in household</td>
+</tr>
+<tr>
+<td>houtp</td>
+<td>number of hospital outpatient visits for the year</td>
+</tr>
+<tr>
+<td>interact</td>
+<td>maternal receptiveness</td>
+</tr>
+<tr>
+<td>kids</td>
+<td>number of children in household</td>
+</tr>
+<tr>
+<td>mage</td>
+<td>mother’s age at child’s birth</td>
+</tr>
+<tr>
+<td>meanaccom1_n</td>
+<td>proportion of years that the child was living in an attached house over the period when the child was age 1 to n</td>
+</tr>
+<tr>
+<td>meanchpar1_n</td>
+<td>proportion of years in which the child experienced a change in parents over the period when the child was aged 1 to n</td>
+</tr>
+<tr>
+<td>meanfhrswrk1_n</td>
+<td>mean number of hours worked by father over period when the child was aged 1 to age n</td>
+</tr>
+<tr>
+<td>meanfsmoke1_n</td>
+<td>mean number of cigarettes smoked by the father over the period when the child was aged 1 to age n</td>
+</tr>
+<tr>
+<td>meanhomeown1_n</td>
+<td>proportion of years that the child was living in a house that was not owned or mortgaged over the period when the child was age 1 to n</td>
+</tr>
+<tr>
+<td>meanhouseholdsize1_n</td>
+<td>mean number of people living in the household over the period when the child was aged 1 to n</td>
+</tr>
+<tr>
+<td>meankids1_n</td>
+<td>mean number of children in the family over the period when the child was aged 1 to n</td>
+</tr>
+<tr>
+<td>meanmhrswrk1_n</td>
+<td>mean number of hours worked by mother over period when the child was aged 1 to age n</td>
+</tr>
+<tr>
+<td>meanmsmoke1_n</td>
+<td>mean number of cigarettes smoked by the mother over the period when the child was aged 1 to age n</td>
+</tr>
+<tr>
+<td>meanovercrowd1_n</td>
+<td>proportion of years that the child was living in overcrowded conditions over the period when the child was aged 1 to n</td>
+</tr>
+<tr>
+<td>meansingle1_n</td>
+<td>proportion of years the that the child was in a single parent family from age 1 to age n inclusive</td>
+</tr>
+<tr>
+<td>meanwelfare1_n</td>
+<td>proportion of years that the child was in family on welfare from age 1 to age n inclusive</td>
+</tr>
+<tr>
+<td>meduc</td>
+<td>mother’s educational level at child’s birth</td>
+</tr>
+<tr>
+<td>mhrswrk</td>
+<td>mother’s hours worked</td>
+</tr>
+<tr>
+<td>msmoke</td>
+<td>mother’s smoking</td>
+</tr>
+<tr>
+<td>npresch</td>
+<td>number of years of preschool education</td>
+</tr>
+<tr>
+<td>overcrowd8</td>
+<td>whether the child was in overcrowded accommodation when aged 8</td>
+</tr>
+<tr>
+<td>pregalc</td>
+<td>drinking in pregnancy</td>
+</tr>
+<tr>
+<td>pregsmk</td>
+<td>smoking in pregnancy</td>
+</tr>
+<tr>
+<td>punish</td>
+<td>maternal punitiveness</td>
+</tr>
+<tr>
+<td>read</td>
+<td>reading ability</td>
+</tr>
+<tr>
+<td>sesbth</td>
+<td>family’s socio-economic position at child’s birth</td>
+</tr>
+<tr>
+<td>single</td>
+<td>single-parent status</td>
+</tr>
+<tr>
+<td>single0</td>
+<td>single-parent status at child’s birth</td>
+</tr>
+<tr>
+<td>twin</td>
+<td>singleton or twin birth</td>
+</tr>
+<tr>
+<td>typeofchange</td>
+<td>change in family type from previous to current year (e.g. father left, same number of parents)</td>
+</tr>
+<tr>
+<td>welfare</td>
+<td>welfare dependence</td>
+</tr>
+</table></div></div></details><details id="A2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Appendix</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><figure id="tableA1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A1.</strong><span data-astro-cid-dzaleqsp> Equations for modifiable factors and outcomes in the MELC micro-simulation model.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Modifiable factor of outcome</th>
+<th>Type of model</th>
+<th>Subset of data on which model was estimated</th>
+<th>Predictors</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td rowspan="4">Change in single-parent status</td>
+<td rowspan="4">Logistic</td>
+<td>Children aged 2 to 5 and in a single-parent family in previous year</td>
+<td>age childethn fage single0 ga age:fage age:single0 ga:childethn</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5 and in a two-parent family in previous year</td>
+<td>childethn mage mage<sup><a href="#tfn2">2</a></sup> sesbth single0 bw pregsmk sesbth:childethn single0:childethn bw:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and in a single-parent family in previous year</td>
+<td>childethn mage feduc ga twin bthorder bthorder<sup><a href="#tfn2">2</a></sup> interact punish punish2 mage:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and in a two-parent family in previous year</td>
+<td>childethn mage fage fage<sup><a href="#tfn2">2</a></sup> feduc sesbth single0 pregsmk interact interact<sup><a href="#tfn2">2</a></sup> punish punish<sup><a href="#tfn2">2</a></sup> fage:childethn childethn:feduc single0:childethn pregsmk:childethn interact:childethn punish:childethn</td>
+</tr>
+<tr>
+<td rowspan="2">Change in number of children in household</td>
+<td rowspan="2">Standard OLS linear</td>
+<td>Children aged 2 to 5</td>
+<td>age typeofchange childethn mage meduc sesbth single0 pregsmk twin bthorder age:childethn age:pregsmk age:twin meduc:childethn sesbth_childethn twin:childethn bthorder:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> typeofchange mage mage<sup><a href="#tfn2">2</a></sup> feduc interact interact<sup><a href="#tfn2">2</a></sup> age:mage age:feduc</td>
+</tr>
+<tr>
+<td rowspan="5">Change in parents</td>
+<td rowspan="5">Logistic</td>
+<td>Children aged 2 to 5 years and no change of residence in previous year</td>
+<td>age gender childethn mage sesbth pregsmk single_previous kids_previous mhrswrk_previous welfare_previous typeofchange age:mage age:sesbth age:kids_previous age:mhrswrk_previous</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5 years and change of residence in previous year</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> childethn mage mage<sup><a href="#tfn2">2</a></sup> feduc sesbth single0 bw pregsmk bthorder bthorde2 householdsize_previous welfare_Previous age:mage age:sesbth age:welfare_previous childethn:feduc bw:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 years and no</td>
+<td>gender childethn mage fage meduc feduc ga ga<sup><a href="#tfn2">2</a></sup> single_previous mhrswrk_previous</td>
+</tr>
+<tr>
+<td>change of residence in previous year</td>
+<td>typeofchange fage:childethn childethn:feduc ga:childethn childethn:typeofchange</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 years and change of residence in previous year</td>
+<td>childethn mage feduc bw ga pregalc kids_previous householdsize_previous welfare_previous typeofchange npresch welfare_previous:childethn</td>
+</tr>
+<tr>
+<td rowspan="2">Number of changes in residence for children</td>
+<td rowspan="2">Negative binomial</td>
+<td>Children aged 2 to 5</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> gender childethn mage mage<sup><a href="#tfn2">2</a></sup> single0 chres_previous pregalc fhrswrk_previous fhrswrk_previous<sup><a href="#tfn2">2</a></sup> welfare_previous age:gender age:chres_previous gender:childethn chres_previous:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13</td>
+<td>age childethn fage feduc chres_previous bthorder mhrswrk_previous mhrswrk_previous2 npresch interact age:childethn age:chres_previous age:npresch mhrswrk_previous:childethn</td>
+</tr>
+<tr>
+<td rowspan="4">Welfare dependence</td>
+<td rowspan="4">Logistic</td>
+<td>Children aged 2 to 5 and family not receiving welfare in previous year</td>
+<td>gender childethn meduc sesbth single0 pregalc single kids mhrswrk fhrswrk fhrswrk2 gender:childethn sesbth:childethn mhrswrk:childethn</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5 and family receiving welfare in the previous year</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> gender fage fage<sup><a href="#tfn2">2</a></sup> feduc sesbth ga ga<sup><a href="#tfn2">2</a></sup> breast pregsmk single householdsize mhrswrk mhrswrk<sup><a href="#tfn2">2</a></sup> fhrswrk age:fage age:ga age:single age:householdsize age:fhrswrk</td>
+</tr>
+<tr>
+<td>Children aged 6 to13 and family not receiving welfare in previous year</td>
+<td>age meduc sesbth ga breast pregsmk single kids householdsize mhrswrk fhrswrk fhrswrk<sup><a href="#tfn2">2</a></sup> age:single age:householdsize age:fhrswrk</td>
+</tr>
+<tr>
+<td>Children aged 6 to13 and family receiving welfare in previous year</td>
+<td>gender childethn meduc feduc sesbth bw ga ga<sup><a href="#tfn2">2</a></sup> pregsmk pregalc pregalc2 single mhrswrk fhrswrk fhrswrk2 interact sesbth:childethn bw:childethn ga:childethn pregsmk:childethn single:childethn interact:childethn</td>
+</tr>
+<tr>
+<td rowspan="7">Mother working</td>
+<td rowspan="7">Logistic</td>
+<td>Children aged 2 to 5, mother not working in previous year, and is birth-mother</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> gender childethn mage meduc feduc single0 ga ga<sup><a href="#tfn2">2</a></sup> breast breast<sup><a href="#tfn2">2</a></sup> pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> pregalc twin bthorder age:gender age:mage age:feduc age:pregalc mage:childethn single0:childethn breast:childethn</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5, mother not working in previous year, and is not birth-mother, and is not same mother as in previous year</td>
+<td>gender</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5, mother not working in previous year, and is not birth-mother, but is same mother as in previous year</td>
+<td>ga</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5, mother working in previous year</td>
+<td>age gender mage fage fage<sup><a href="#tfn2">2</a></sup> meduc feduc pregsmk pregalc twin age:gender age:mage age:pregalc</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13, mother not working in previous year, and is birth-mother</td>
+<td>childethn mage fage meduc sesbth single0 breast breast<sup><a href="#tfn2">2</a></sup> pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> bthorder bthorder<sup><a href="#tfn2">2</a></sup> npresch interact interact<sup><a href="#tfn2">2</a></sup> meduc:childethn sesbth:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13, mother not working in previous year, and is not birth-mother, and is not same mother as in previous year</td>
+<td>childethn sesbth pregsmk pregalc pregalc:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13, mother not working in previous year, and is not birth-mother, but is same mother as in previous year</td>
+<td>gender mage fage ga pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> bthorder npresch</td>
+</tr>
+<tr>
+<td/>
+<td/>
+<td>Children aged 6 to 13 and mother working in previous year</td>
+<td>age childethn mage fage fage<sup><a href="#tfn2">2</a></sup> meduc feduc bw bw<sup><a href="#tfn2">2</a></sup> ga breast breast<sup><a href="#tfn2">2</a></sup> pregalc twin npresch age:childethn age:fage age:meduc age:npresch fage:childethn bw:childethn ga:childethn pregalc:childethn twin:childethn</td>
+</tr>
+<tr>
+<td rowspan="3">Number of hours worked per week for working mothers</td>
+<td rowspan="3">Negative binomial</td>
+<td>Children age 2 to 5 and mother is the child’s birthmother</td>
+<td>childethn meduc sesbth single0 mhrswrk_previous ga ga<sup><a href="#tfn2">2</a></sup> breast breast<sup><a href="#tfn2">2</a></sup> mhrswrk_previous:childethn ga:childethn</td>
+</tr>
+<tr>
+<td>Children age 2 to 5 and mother is not birth-mother, and is not same mother as in previous year</td>
+<td>childethn bw twin bthorder bthorder:childethn</td>
+</tr>
+<tr>
+<td>Children age 2 to 5 and mother is not birth-mother, but is same mother as in previous year</td>
+<td>childethn mhrswrk_previous pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> pregalc pregsmk:childethn</td>
+</tr>
+<tr>
+<td/>
+<td>Negative binomial with dispersion parameter modelled as quadratic function of age</td>
+<td>Children age 6 to 13 and mother is child’s birth-mother</td>
+<td>age childethn bthorder npresch mhrswrk_previous age:npresch age:mhrswrk_previous</td>
+</tr>
+<tr>
+<td rowspan="2"/>
+<td rowspan="2">Negative binomial</td>
+<td>Children age 6 to 13 and mother is not birth-mother, and is not same mother as in previous year</td>
+<td>childethn meduc feduc sesbth single0 bw ga pregsmk bthorder childethn:feduc bw:childethn ga:childethn bthorder:childethn</td>
+</tr>
+<tr>
+<td>Children age 6 to 13 and mother is not birth-mother, but is same mother as in previous year</td>
+<td>gender feduc ga pregsmk pregalc pregalc2 twin bthorder interact interact<sup><a href="#tfn2">2</a></sup></td>
+</tr>
+<tr>
+<td rowspan="7">Father working</td>
+<td rowspan="7">Logistic</td>
+<td>Children aged 2 to 5, father not working in previous year, and is birth-father</td>
+<td>age meduc feduc sesbth</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5, father not working in previous year, and is not birth-father, and is not same father as in previous year</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> mage single0 bthorder age:single0</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5, father not working in previous year, and is not birth-father, but is same father as in previous year</td>
+<td>bw ga ga<sup><a href="#tfn2">2</a></sup></td>
+</tr>
+<tr>
+<td>Children aged 2 to 5, father working in previous year, and is birth-father</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> gender childethn mage mage<sup><a href="#tfn2">2</a></sup> feduc sesbth single0 pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> bthorder age:childethn age:feduc age:sesbth age:single0 age:pregsmk sesbth:childethn</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5, father working in previous year, and is not birth-father, and is not same father as in previous year</td>
+<td>fage<sup><a href="#tfn2">2</a></sup> single0 bthorder bthorder<sup><a href="#tfn2">2</a></sup></td>
+</tr>
+<tr>
+<td>Children aged 2 to 5, father working in previous year, and is not birth-father, but is same father as in previous year</td>
+<td>age single0 pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> age:single0</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13, father not working in previous year, and is birth-father</td>
+<td>age childethn sesbth single0 punish punish<sup><a href="#tfn2">2</a></sup> age:single0 age:punish sesbth:childethn punish:childethn</td>
+</tr>
+<tr>
+<td rowspan="3"/>
+<td rowspan="3"/>
+<td>Children aged 6 to 13, father not working in previous year, and is not birth-father, and is not same father as in previous year</td>
+<td>childethn pregsmk pregalc</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13, father not working in previous year, and is not birth-father, but is same father as in previous year</td>
+<td>childethn fage fage<sup><a href="#tfn2">2</a></sup> meduc breast npresch fage:childethn npresch:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13, father working in previous year, and is birth-father</td>
+<td>age childethn mage mage<sup><a href="#tfn2">2</a></sup> feduc sesbth single0 pregalc pregalc<sup><a href="#tfn2">2</a></sup> twin bthorder bthorder<sup><a href="#tfn2">2</a></sup> npresch age:childethn mage:childethn</td>
+</tr>
+<tr>
+<td rowspan="2"/>
+<td rowspan="2"/>
+<td>Children aged 6 to 13, father working in previous year, and is not birth-father, and is not same father as in previous year</td>
+<td>age fage breast twin age:twin</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13, father working in previous year, and is not birth-father, but is same father as in previous year</td>
+<td>age gender sesbth single0 npresch</td>
+</tr>
+<tr>
+<td rowspan="4">Number of hours worked per week for working fathers</td>
+<td rowspan="4">Standard OLS Linear</td>
+<td>Children aged 2 to 5</td>
+<td>gender childethn mage feduc sesbth single0 bw ga ga<sup><a href="#tfn2">2</a></sup> pregsmk pregalc fhrswrk_previous childethn:feduc sesbth:childethn pregsmk:childethn fhrswrk_previous:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and father is child’s birth-father</td>
+<td>age gender childethn fage meduc single0 pregsmk pregalc twin npresch fhrswrk_previous age:gender age:childethn age:fage age:pregsmk age:twin gender:childethn pregsmk:childethn fhrswrk_previous:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and father is not birth-father, and is not same father as in previous year</td>
+<td>age childethn mage fage sesbth single0 bw pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> pregalc twin npresch interact age:childethn mage:childethn sesbth:childethn single0:childethn pregsmk:childethn twin:childethn npresch:childethn interact:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and father is not birthfather, but is same father as in the previous year</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> mage meduc sesbth single0 bw pregalc pregalc2 punish punish<sup><a href="#tfn2">2</a></sup> interact fhrswrk_previous age:single0 age:interact age:fhrswrk_previous</td>
+</tr>
+<tr>
+<td rowspan="4">Accomodation type</td>
+<td rowspan="4">Logistic</td>
+<td>Children aged 2 to 5 and living in detached house in previous year</td>
+<td>age childethn mage mage<sup><a href="#tfn2">2</a></sup> meduc ga pregalc bthorder householdsize mhrswrk welfare age:childethn age:mage ga:childethn pregalc:childethn householdsize:childethn</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5 and living in attached house in previous year</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> childethn mage single0 breast pregalc twin kids householdsize fhrswrk welfare age:mage age:single age:breast kids:childethn householdsize:childethn fhrswrk:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and living in detached house in previous year</td>
+<td>gender childethn meduc pregsmk pregsmk<sup><a href="#tfn2">2</a></sup>2 bthorder single kids householdsize mhrswrk mhrswrk<sup><a href="#tfn2">2</a></sup> fhrswrk welfare punish interact interact single:childethn kids:childethn householdsize:childethn fhrswrk:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and living in attached house in previous year</td>
+<td>age gender fage fage<sup><a href="#tfn2">2</a></sup> meduc single0 bw pregsmk pregalc twin single fhrswrk fhrswrk2 punish age:meduc age:pregamk age:pregalc age:fhrswrk age:punish</td>
+</tr>
+<tr>
+<td rowspan="4">Home-ownership</td>
+<td rowspan="4">Logistic</td>
+<td>Children aged 2 to 5 and did not own home in previous year</td>
+<td>age childethn mage sesbth bw kids householdsize mhrswrk fhrswrk fhrswrk2 welfare age:mage age:householdsize age:mhrswrk sesbth:childethn welfare:childethn</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5 and did own home in previous year</td>
+<td>childethn mage feduc sesbth single0 bthorder bthorde<sup><a href="#tfn2">2</a></sup> single single0:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and did not own home in previous year</td>
+<td>childethn single kids mage householdsize age age<sup><a href="#tfn2">2</a></sup> fhrswrk meduc kids:childethn householdsize:childethn single:childethn ga ga<sup><a href="#tfn2">2</a></sup> mhrswrk mhrswrk<sup><a href="#tfn2">2</a></sup> pregsmk age:ga breast breast<sup><a href="#tfn2">2</a></sup></td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and did own home in previous year</td>
+<td>age gender childethn sesbth pregsmk single householdsize fhrswrk fhrswrk<sup><a href="#tfn2">2</a></sup> npresch age:single gender:childethn sesbth:childethn pregsmk:childethn single:childethn fhrswrk:childethn npresch:childethn</td>
+</tr>
+<tr>
+<td rowspan="3">Over-crowding</td>
+<td rowspan="3">Logistic</td>
+<td>Children aged 2 to 5 and lived in overcrowded accommodation in previous year</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> gender pregsmk bthorder single kids householdsize welfare age:gender age:single age:kids age:householdsize age:welfare</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5 and did not live in overcrowded accommodation in previous year</td>
+<td>age gender childethn mage fage fage<sup><a href="#tfn2">2</a></sup> meduc single0 bthorder kids householdsize fhrswrk age:childethn age:bthorder age:kids age:householdsize age:fhrswrk gender:childethn mage:childethn meduc:childethn kids:childethn householdsize:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and lived in overcrowded accommodation in previous year</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> gender meduc bw ga breast breast<sup><a href="#tfn2">2</a></sup> pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> bthorder householdsize welfare npresch interact age:meduc age:bw age:breast age:interact</td>
+</tr>
+<tr>
+<td/>
+<td/>
+<td>Children aged 6 to 13 and did not live in overcrowded accommodation in previous year</td>
+<td>householdsize mage kids childethn householdsize:childethn mage:childethn age fhrswrk kids:childethn bthorder meduc fage age:fage mage:age fhrswrk:childethn bthorder:childethn twin mhrswrk mhrswrk<sup><a href="#tfn2">2</a></sup> age:mhrswrk kids:age</td>
+</tr>
+<tr>
+<td rowspan="8">Mother smoking</td>
+<td rowspan="8">Logistic</td>
+<td>Children aged 2 to 5, mother did not smoke in previous year, and is birth-mother</td>
+<td>gender childethn mage mage<sup><a href="#tfn2">2</a></sup> breast breast<sup><a href="#tfn2">2</a></sup> pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> mhrswrk gender:childethn mhrswrk:childethn</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5, mother did not smoke in previous year, and is not birth-mother, and is not same mother as in previous year</td>
+<td>age fage fhrswrk welfare</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5, mother did not smoke in previous year, and is not birth-mother, but is same mother as in previous year</td>
+<td>bthorder</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5 and mother did smoke in previous year</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> fage fage<sup><a href="#tfn2">2</a></sup> sesbth breast pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> welfare age:fage</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and mother did not smoke in the previous year</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> gender childethn mage meduc feduc sesbth bw bw<sup><a href="#tfn2">2</a></sup> ga pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> twin single householdsize welfare age:gender age:childethn age:mage age:feduc age:sesbth single:childethn welfare:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13, mother did smoke in previous year, and is birth-mother</td>
+<td>age childethn fage meduc sesbth bw breast breast<sup><a href="#tfn2">2</a></sup> pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> bthorder mhrswrk interact interact<sup><a href="#tfn2">2</a></sup> age:sesbth age:mhrswrk meduc:childethn sesbth:childethn bthorder:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13, mother did smoke in previous year, and is not birth-mother, and is not same mother as in previous year</td>
+<td>pregsmk pregalc mhrswrk</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13, mother did smoke in previous year, and is not birth-mother, but is same mother as in previous year</td>
+<td>age childethn sesbth ga pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> single mhrswrk npresch interact interact<sup><a href="#tfn2">2</a></sup> age:npresch age:interact ga:childethn single:childethn npresch:childethn interact:childethn</td>
+</tr>
+<tr>
+<td rowspan="4">Number of cigarettes smoked per day for smoking mothers</td>
+<td rowspan="4">Standard OLS linear</td>
+<td>Children aged 2 to 5</td>
+<td>age childethn feduc msmoke_prevous ga pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> single fhrswrk mhrswrk welfare age:msmoke_prevous age:ga ga:childethn pregsmk:childethn fhrswrk:childeth welfare:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and mother is child’s birth-mother</td>
+<td>age mage mage<sup><a href="#tfn2">2</a></sup> fage fage<sup><a href="#tfn2">2</a></sup> meduc bw bw2 pregsmk bthorder interact interact<sup><a href="#tfn2">2</a></sup> msmoke_previous householdsize mhrswrk welfare age:pregsmk age:msmoke_previous age:mhrswrk</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and mother is not birth-mother, and is not same mother as in previous year</td>
+<td>age mage meduc sesbth single0 ga breast pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> pregalc npresch msmoke_previous mhrswrk age:pregsmk</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and mother is not birth-mother, but is same mother as in previous year</td>
+<td>age childethn mage fage fage<sup><a href="#tfn2">2</a></sup> ga pregsmk pregalc twin interact msmoke_previous age:childethn age:pregalc mage:childethn ga:childethn msmoke_prevous:childethn</td>
+</tr>
+<tr>
+<td rowspan="6">Father smoking</td>
+<td rowspan="6">Logistic</td>
+<td>Children aged 2 to 5, father did not smoke in previous year, and is birth-father</td>
+<td>childethn meduc sesbth single0 bw ga breast breast<sup><a href="#tfn2">2</a></sup> twin kids fhrswrk mhrswrk single0:childethn bw:childethn breast:childethn twin:childethn fhrswrk:childethn</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5, father did not smoke in previous year, and is not birth-father, but is same father as in previous year</td>
+<td>childethn fage meduc pregsmk pregalc bthorder single kids mhrswrk mhrswrk<sup><a href="#tfn2">2</a></sup></td>
+</tr>
+<tr>
+<td>Children aged 2 to 5, father did smoke in previous year, and is birth-father</td>
+<td>age gender childethn mage sesbth bw pregsmk single kids fhrswrk fhrswrk<sup><a href="#tfn2">2</a></sup> welfare age:pregsmk age:single age:welfare bw:childethn</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5, father did smoke in previous year, and is not birth-father, and is not same father as in previous year</td>
+<td>age childethn fage meduc feduc</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5, father did smoke in previous year, and is not birth-father, and is not same father as in previous year</td>
+<td>single0 pregalc householdsize</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5, father did smoke in previous year, and is not birth-father, but is same father as in previous year</td>
+<td>childethn sesbth single0 ga ga<sup><a href="#tfn2">2</a></sup> pregsmk fhrswrk sesbth:childethn single0:childethn ga:childethn pregsmk:childethn</td>
+</tr>
+<tr>
+<td rowspan="4"/>
+<td rowspan="4"/>
+<td>Children aged 6 to 13, father did not smoke in previous year, and is birth-father</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> gender childethn fage feduc sesbth bw ga ga<sup><a href="#tfn2">2</a></sup> breast pregalc single householdsize fhrswrk mhrswrk mhrswrk<sup><a href="#tfn2">2</a></sup> welfare npresch interact age:feduc age:mhrswrk gender:childethn childethn:feduc sesbth:childethn bw:childethn householdsize:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13, father did not smoke in previous year, and is not birth-father, and is not same father as in previous year</td>
+<td>age fage feduc pregsmk single kids householdsize mhrswrk welfare npresch interact age:fage</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13, father did not smoke in previous year, and is not birth-father, but is same father as in previous year</td>
+<td>age feduc pregsmk pregalc kids fhrswrk mhrswrk mhrswrk<sup><a href="#tfn2">2</a></sup> punish</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13, father did smoke in previous year</td>
+<td>gender childethn meduc feduc bw bw<sup><a href="#tfn2">2</a></sup> pregsmk bthorder single kids fhrswrk mhrswrk npresch interact childethn:feduc fhrswrk:childethn</td>
+</tr>
+<tr>
+<td rowspan="6">Number of cigarettes smoked per day for smoking fathers</td>
+<td rowspan="6">Standard OLS linear</td>
+<td>Children aged 2 to 5 and father is child’s birth-father</td>
+<td>age childethn fsmoke_previous ga pregsmk bthorder welfare age:fsmoke_previous age:ga age:pregsmk age:welfare fsmoke_previous:childethn pregsmk:childethn</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5 and father is not birth-father, and is not same father as in previous year</td>
+<td>childethn bw fsmoke_previous bw bw<sup><a href="#tfn2">2</a></sup> pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> welfare</td>
+</tr>
+<tr>
+<td>Children aged 2 to 5 and father is not birth-father, but is same father as in previous year</td>
+<td>age mage mage<sup><a href="#tfn2">2</a></sup> single0 fsmoke_previous pregalc pregalc2 age:single0</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and father is child’s birth-father</td>
+<td>childethn mage fage feduc sesbth breast breast<sup><a href="#tfn2">2</a></sup> pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> pregalc interact interact<sup><a href="#tfn2">2</a></sup> fsmopke_previous single mage:childethn fage:childethn breast:childethn interact:childethn single:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and father is not birth-father, and is not same father as in previous year</td>
+<td>meduc bw pregsmk pregsmk<sup><a href="#tfn2">2</a></sup> pregalc npresch punish interact fsmoke_previous single kids householdsize mhrswrk welfare</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 and father is not birth-father, but is same father as in previous year</td>
+<td>gender single0 bw bthorder interact fsmoke_previous kids fhrswrk mhrswrk mhrswrk<sup><a href="#tfn2">2</a></sup></td>
+</tr>
+<tr>
+<td>Mother’s emotional responsiveness</td>
+<td>Negative binomial</td>
+<td>Children at age 5</td>
+<td>gender childethn mage mage<sup><a href="#tfn2">2</a></sup> sesbth single0 bw breast breast<sup><a href="#tfn2">2</a></sup> pregsmk meankids1_5 meanmhrswrk1_5 meanwelfare1_5 meanaccom1_5 meanovercrowd1_5 meanchpar1_5 meanchres1_5 breast:childethn meankids1_5:childethn</td>
+</tr>
+<tr>
+<td>Number of years of preschool education</td>
+<td>Standard OLS linear</td>
+<td>Children at age5</td>
+<td>meduc feduc sesbth breast meanhouseholdsize1_5 meanaccom1_5 meanchres1_5 meanmsmoke1_5</td>
+</tr>
+<tr>
+<td>Mother’s punitiveness</td>
+<td>Poisson</td>
+<td>Children at age5</td>
+<td>gender childethn fage meduc meanmhrswrk1_5 meanhomeown1_5 meanchpar1_5 meduc:childethn meanmhrswrk1_5:childethn meanhomeown1_5:childethn</td>
+</tr>
+<tr>
+<td rowspan="4">Total family doctor visits</td>
+<td rowspan="4">Negative binomial</td>
+<td>Children aged 2 years</td>
+<td>childethn fage fage<sup><a href="#tfn2">2</a></sup> meduc feduc sesbth gptotvis_previous kids_previous fage:childethn gptotvis_previous:childethn</td>
+</tr>
+<tr>
+<td>Children aged 3 to 5 years</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> childethn meduc single0 bthorder gptotv’s_previous householdsize_previous fhrswrk_previous overcrowd_previous age:bthorder age:fhrswrk_previous meduc:childethn single0:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 years</td>
+<td>childethn meduc single0 pregsmk npresch punish punish<sup><a href="#tfn2">2</a></sup> gptotvis_previous kids_previous accom_previous overcrowd_previous punish:childethn gptotv’s_previous:childethn</td>
+</tr>
+<tr>
+<td>Children aged 7 to 10 years</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> childethn punish interact gptotv’s_previous kids_previous fhrswrk_previous age:gptotv’s_previous age:kids_previous punish:childethn interact:childethn fhrswrk_previous:childethn</td>
+</tr>
+<tr>
+<td rowspan="4">Number of visits to a GP for a morbidity</td>
+<td rowspan="4">Negative binomial</td>
+<td>Children aged 2</td>
+<td>childethn single_previous chpar_previous gptotvis gpresp chpar_previous:childethn gptotv’s:childethn</td>
+</tr>
+<tr>
+<td>Children aged 3 and 4</td>
+<td>age gender childethn feduc single_previous kids_previous welfare_previous accom_previous gptotv’s gpresp age:welfare_previous gender:childethn childethn:feduc single_previous:childethn welfare_previous:childethn accom_previous:childethn gptotvis:childethn gpresp:childethn</td>
+</tr>
+<tr>
+<td>Children aged 5</td>
+<td>childethn mage meduc twin bthorder fhrswrk_previous welfare_previous gptotvis gpresp gptotvis:childethn gpresp:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 and 7</td>
+<td>age childethn meduc gpmorb_previous single_previous fhrswrk_previous fhrswrk_previous<sup><a href="#tfn2">2</a></sup> overcrowd_previous gptotv’s gpresp age:fhrswrk_previous age:overcrowd_previous meduc:childethn fhrswrk_previous:childethn overcrowd_previous:childethn gptotvis:childethn gpresp:childethn</td>
+</tr>
+<tr>
+<td>Number of preventative visits to a GP</td>
+<td>Standard OLS linear</td>
+<td>Children aged 2</td>
+<td>childethn mage bthorder welfare_previous gptotvis gpresp gpmorb welfare_previous:childethn gptotv’s:childethn gpresp:childethn gpmorb:childethn</td>
+</tr>
+<tr>
+<td rowspan="3"/>
+<td rowspan="3">Poisson</td>
+<td>Children aged 3 and 4 age</td>
+<td>childethn mage fage single0 bw breast bthorder gptotvis gpresp gpmorb age:bw age:breast age:bthorder age:gptotvis age:gpresp age:gpmorb mage:childethn fage:childethn gptotvis:childethn gpresp:childethn gpmorb:childethn</td>
+</tr>
+<tr>
+<td>Children aged 5</td>
+<td>mage meduc bw ga pregsmk<sup><a href="#tfn2">2</a></sup> welfare_previous fsmoke_previous fsmoke_previous2 gptotvis gpresp gpmorb</td>
+</tr>
+<tr>
+<td>Children aged 6 and 7</td>
+<td>age meduc sesbth single0 breast chpar_previous gptotvis gpresp gpmorb age:meduc age:sesbth age:single0 age:breast age:chpar_previous age:gptotvis age:gpresp age:gpmorb</td>
+</tr>
+<tr>
+<td rowspan="2">Number of visits to a GP for a respiratory condition</td>
+<td rowspan="2">Negative binomial</td>
+<td>Children aged 2 to 5</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> childethn feduc sesbth gpresp_previous fhrswrk_previous homeown_previous fsmoke_previous gptotvis age:childethn age:gptotvis childethn:feduc sesbth:childethn fhrswrk_previous:childethn gptotvis:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 1O</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> childethn pregalc gpresp_previous welfare_previous npresch gptotvis age:childethn age:gpresp_previous age:gptotvis gpresp_previous:childethn npresch:childethn gptotvis:childethn</td>
+</tr>
+<tr>
+<td rowspan="2">Number of hospital admission</td>
+<td rowspan="2">Poisson</td>
+<td>Children aged 2 to 5</td>
+<td>aage gender hadm_previous chres_previous fsmoke_previous age:hadmtot_previous age:fsmoke_previous</td>
+</tr>
+<tr>
+<td>Children aged 6 to 1O</td>
+<td>age age<sup><a href="#tfn2">2</a></sup> gender childethn fage sesbth bw ga punish hadmtot_previous kids_previous householdsize_previous mhrswrk_previous mhrswrk_previous<sup><a href="#tfn2">2</a></sup> age:gender age:childethn age:fage age:sesbth age:bw age:ga age:punish age:hadmtot_previous age:kids_previous age:householdsize_previous age:mhrswrk_previous hadmtot_previous:childethn kids_previous:childethn</td>
+</tr>
+<tr>
+<td rowspan="2">Number of hospital outpatient visits</td>
+<td rowspan="2">Negative binomial</td>
+<td>Children aged 2 to 5</td>
+<td>age gender childethn fage meduc breast bthorder houtp_previous fhrswrk_previous welfare_previous homeown_previous overcrowd_previous chpar_previous fage:childethn meduc:childethn houtp_previous:childethn fhrswrk_previous:childethn homeown_previous:childethn overcrowd_previous:childethn chpar_previous:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 1O</td>
+<td>age meduc bw bthorder punish houtp_previous kids_previous welfare_previous accom_previous overcrowd_previous chpar_previous msmoke_previous age:punish age:houtp_previous age:welfare_previous age:chpar_previous age:msmoke_previous</td>
+</tr>
+<tr>
+<td rowspan="4">Conduct score</td>
+<td rowspan="4">Logistic</td>
+<td>Children aged 4</td>
+<td>age gender childethn mage fage meduc breast breast2 bthorder chres meanmhrswrk1_3 meanwelfare1_3 meanhomeown1_3 age:fage mage:childethn fage:childethn chres:childethn</td>
+</tr>
+<tr>
+<td>Children aged 5 years and no conduct problem in the previous year</td>
+<td>gender childethn feduc sesbth breast single fhrswrk fhrswrk2 accom single:childethn</td>
+</tr>
+<tr>
+<td>Children aged 5 years and with conduct problem in the previous year</td>
+<td>age childethn fage ga chpar homeown:childethn chpar:childethn</td>
+</tr>
+<tr>
+<td>Children aged 6 to 13 years and with conduct problem in the previous year</td>
+<td>age gender childethn feduc sesbth single0 breast kids accom fsmoke msmoke msmoke<sup><a href="#tfn2">2</a></sup> npresch age:fsmoke single0:childethn kids:childethn</td>
+</tr>
+<tr>
+<td rowspan="2">Reading score</td>
+<td rowspan="2">Standard OLS linear</td>
+<td>Children aged 8 years</td>
+<td>gender childethn mage meduc bw bw<sup><a href="#tfn2">2</a></sup> breast bthorder bthorder<sup><a href="#tfn2">2</a></sup> householdsize fhrswrk msmoke interact punish meansingle1_7 meanwelfare1_7 meanfsmoke1_7 mage:childethn</td>
+</tr>
+<tr>
+<td>Children aged 9 to 13 years</td>
+<td>age childethn mage sesbth ga ga<sup><a href="#tfn2">2</a></sup> breast bthorder bthorde<sup><a href="#tfn2">2</a></sup> homeown overcrowd reading_previous npresch interact interact<sup><a href="#tfn2">2</a></sup> age:bthorder age:overcrowd age:reading_previous age:npresch age:interact</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>‘_previous’ suffix denotes that the variable is the value for the year prior to the current year.</p><p class="table-footnote" data-astro-cid-dzaleqsp>superscript denotes that the variable has been squared.</p><p class="table-footnote" data-astro-cid-dzaleqsp>x:y denotes an interaction between variable x and variable y</p></div></figure><figure id="tableA2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A2.</strong><span data-astro-cid-dzaleqsp> Missing data: Time-invariant variables – Christchurch health and development study (N = 1265).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Number of missing values</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gender</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+</tr>
+<tr>
+<td>Ethnicity</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+</tr>
+<tr>
+<td>Age of mother at child’s birth</td>
+<td align="center">2</td>
+<td align="center">0.2%</td>
+</tr>
+<tr>
+<td>Age of father at child’s birth</td>
+<td align="center">4</td>
+<td align="center">0.3%</td>
+</tr>
+<tr>
+<td>Mother’s education at child’s birth</td>
+<td align="center">2</td>
+<td align="center">0.2%</td>
+</tr>
+<tr>
+<td>Father’s education at child’s birth</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+</tr>
+<tr>
+<td>Family’s SES at child’s birth</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+</tr>
+<tr>
+<td>Single-parent status at the child’s birth</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+</tr>
+<tr>
+<td>Birth weight</td>
+<td align="center">3</td>
+<td align="center">0.2%</td>
+</tr>
+<tr>
+<td>Multiple birth</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+</tr>
+<tr>
+<td>Gestational age</td>
+<td align="center">37</td>
+<td align="center">2.9%</td>
+</tr>
+<tr>
+<td>Birth order</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+</tr>
+<tr>
+<td>Smoking during pregnancy</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+</tr>
+<tr>
+<td>Drinking during pregnancy</td>
+<td align="center">1</td>
+<td align="center">0.1%</td>
+</tr>
+<tr>
+<td>Breastfeeding</td>
+<td align="center">85</td>
+<td align="center">6.7%</td>
+</tr>
+<tr>
+<td>Maternal responsiveness</td>
+<td align="center">115</td>
+<td align="center">9.1%</td>
+</tr>
+<tr>
+<td>Maternal punitiveness</td>
+<td align="center">115</td>
+<td align="center">9.1%</td>
+</tr>
+<tr>
+<td>Early childhood education</td>
+<td align="center">234</td>
+<td align="center">18.5%</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A3.</strong><span data-astro-cid-dzaleqsp> Missing data: Time-varying variables by year – Christchurch health and development study (N = 1265).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">Year 1</th>
+<th colspan="2">Year 2</th>
+<th colspan="2">Year 3</th>
+<th colspan="2">Year 4</th>
+<th colspan="2">Year 5</th>
+<th colspan="2">Year 6</th>
+<th colspan="2">Year 7</th>
+<th colspan="2">Year 8</th>
+<th colspan="2">Year 9</th>
+<th colspan="2">Year 1O</th>
+<th colspan="2">Year 11</th>
+<th colspan="2">Year 12</th>
+<th colspan="2">Year 13</th>
+</tr>
+<tr>
+<th>Variable</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single-parent status</td>
+<td align="center">1O2</td>
+<td align="center">8.1</td>
+<td align="center">128</td>
+<td align="center">1O.1</td>
+<td align="center">141</td>
+<td align="center">11.1</td>
+<td align="center">174</td>
+<td align="center">13.8</td>
+<td align="center">18O</td>
+<td align="center">14.2</td>
+<td align="center">2O2</td>
+<td align="center">16</td>
+<td align="center">2OO</td>
+<td align="center">15.8</td>
+<td align="center">252</td>
+<td align="center">19.9</td>
+<td align="center">279</td>
+<td align="center">22.1</td>
+<td align="center">3O4</td>
+<td align="center">24</td>
+<td align="center">342</td>
+<td align="center">27</td>
+<td align="center">398</td>
+<td align="center">31.5</td>
+<td align="center">426</td>
+<td align="center">33.7</td>
+</tr>
+<tr>
+<td>Number of children</td>
+<td align="center">1O2</td>
+<td align="center">8.1</td>
+<td align="center">128</td>
+<td align="center">1O.1</td>
+<td align="center">141</td>
+<td align="center">11.1</td>
+<td align="center">174</td>
+<td align="center">13.8</td>
+<td align="center">18O</td>
+<td align="center">14.2</td>
+<td align="center">2O2</td>
+<td align="center">16</td>
+<td align="center">2OO</td>
+<td align="center">15.8</td>
+<td align="center">252</td>
+<td align="center">19.9</td>
+<td align="center">279</td>
+<td align="center">22.1</td>
+<td align="center">3O4</td>
+<td align="center">24</td>
+<td align="center">342</td>
+<td align="center">27</td>
+<td align="center">398</td>
+<td align="center">31.5</td>
+<td align="center">426</td>
+<td align="center">33.7</td>
+</tr>
+<tr>
+<td>Number of household members</td>
+<td align="center">1O2</td>
+<td align="center">8.1</td>
+<td align="center">128</td>
+<td align="center">1O.1</td>
+<td align="center">141</td>
+<td align="center">11.1</td>
+<td align="center">174</td>
+<td align="center">13.8</td>
+<td align="center">18O</td>
+<td align="center">14.2</td>
+<td align="center">2O2</td>
+<td align="center">16</td>
+<td align="center">2OO</td>
+<td align="center">15.8</td>
+<td align="center">252</td>
+<td align="center">19.9</td>
+<td align="center">279</td>
+<td align="center">22.1</td>
+<td align="center">3O4</td>
+<td align="center">24</td>
+<td align="center">342</td>
+<td align="center">27</td>
+<td align="center">398</td>
+<td align="center">31.5</td>
+<td align="center">426</td>
+<td align="center">33.7</td>
+</tr>
+<tr>
+<td>Mother’s working hours</td>
+<td align="center">1O6</td>
+<td align="center">8.4</td>
+<td align="center">133</td>
+<td align="center">1O.5</td>
+<td align="center">15O</td>
+<td align="center">11.9</td>
+<td align="center">188</td>
+<td align="center">14.9</td>
+<td align="center">184</td>
+<td align="center">14.5</td>
+<td align="center">2O9</td>
+<td align="center">16.5</td>
+<td align="center">215</td>
+<td align="center">17</td>
+<td align="center">252</td>
+<td align="center">19.9</td>
+<td align="center">28O</td>
+<td align="center">22.1</td>
+<td align="center">3O5</td>
+<td align="center">24.1</td>
+<td align="center">342</td>
+<td align="center">27</td>
+<td align="center">398</td>
+<td align="center">31.5</td>
+<td align="center">426</td>
+<td align="center">33.7</td>
+</tr>
+<tr>
+<td>Father’s working hours</td>
+<td align="center">112</td>
+<td align="center">8.9</td>
+<td align="center">145</td>
+<td align="center">11.5</td>
+<td align="center">159</td>
+<td align="center">12.6</td>
+<td align="center">183</td>
+<td align="center">14.5</td>
+<td align="center">2O4</td>
+<td align="center">16.1</td>
+<td align="center">216</td>
+<td align="center">17.1</td>
+<td align="center">2O6</td>
+<td align="center">16.3</td>
+<td align="center">254</td>
+<td align="center">2O.1</td>
+<td align="center">283</td>
+<td align="center">22.4</td>
+<td align="center">3O9</td>
+<td align="center">24.4</td>
+<td align="center">343</td>
+<td align="center">27.1</td>
+<td align="center">399</td>
+<td align="center">31.5</td>
+<td align="center">427</td>
+<td align="center">33.8</td>
+</tr>
+<tr>
+<td>Welfare dependent</td>
+<td align="center">1O2</td>
+<td align="center">8.1</td>
+<td align="center">128</td>
+<td align="center">1O.1</td>
+<td align="center">141</td>
+<td align="center">11.1</td>
+<td align="center">174</td>
+<td align="center">13.8</td>
+<td align="center">18O</td>
+<td align="center">14.2</td>
+<td align="center">2O2</td>
+<td align="center">16</td>
+<td align="center">2OO</td>
+<td align="center">15.8</td>
+<td align="center">253</td>
+<td align="center">2O</td>
+<td align="center">279</td>
+<td align="center">22.1</td>
+<td align="center">3O4</td>
+<td align="center">24</td>
+<td align="center">342</td>
+<td align="center">27</td>
+<td align="center">398</td>
+<td align="center">31.5</td>
+<td align="center">426</td>
+<td align="center">33.7</td>
+</tr>
+<tr>
+<td>Change of parents</td>
+<td align="center">1O5</td>
+<td align="center">8.3</td>
+<td align="center">128</td>
+<td align="center">1O.1</td>
+<td align="center">141</td>
+<td align="center">11.1</td>
+<td align="center">174</td>
+<td align="center">13.8</td>
+<td align="center">18O</td>
+<td align="center">14.2</td>
+<td align="center">2O2</td>
+<td align="center">16</td>
+<td align="center">2OO</td>
+<td align="center">15.8</td>
+<td align="center">252</td>
+<td align="center">19.9</td>
+<td align="center">279</td>
+<td align="center">22.1</td>
+<td align="center">3O4</td>
+<td align="center">24</td>
+<td align="center">342</td>
+<td align="center">27</td>
+<td align="center">398</td>
+<td align="center">31.5</td>
+<td align="center">426</td>
+<td align="center">33.7</td>
+</tr>
+<tr>
+<td>Mother smoking</td>
+<td align="center">1O5</td>
+<td align="center">8.3</td>
+<td align="center">128</td>
+<td align="center">1O.1</td>
+<td align="center">141</td>
+<td align="center">11.1</td>
+<td align="center">174</td>
+<td align="center">13.8</td>
+<td align="center">18O</td>
+<td align="center">14.2</td>
+<td align="center">2O2</td>
+<td align="center">16</td>
+<td align="center">2OO</td>
+<td align="center">15.8</td>
+<td align="center">252</td>
+<td align="center">19.9</td>
+<td align="center">279</td>
+<td align="center">22.1</td>
+<td align="center">3O4</td>
+<td align="center">24</td>
+<td align="center">342</td>
+<td align="center">27</td>
+<td align="center">398</td>
+<td align="center">31.5</td>
+<td align="center">426</td>
+<td align="center">33.7</td>
+</tr>
+<tr>
+<td>Father smoking</td>
+<td align="center">1O2</td>
+<td align="center">8.1</td>
+<td align="center">128</td>
+<td align="center">1O.1</td>
+<td align="center">145</td>
+<td align="center">11.5</td>
+<td align="center">176</td>
+<td align="center">13.9</td>
+<td align="center">181</td>
+<td align="center">14.3</td>
+<td align="center">2O2</td>
+<td align="center">16</td>
+<td align="center">2OO</td>
+<td align="center">15.8</td>
+<td align="center">252</td>
+<td align="center">19.9</td>
+<td align="center">279</td>
+<td align="center">22.1</td>
+<td align="center">3O4</td>
+<td align="center">24</td>
+<td align="center">342</td>
+<td align="center">27</td>
+<td align="center">398</td>
+<td align="center">31.5</td>
+<td align="center">426</td>
+<td align="center">33.7</td>
+</tr>
+<tr>
+<td>Accommodation type</td>
+<td align="center">1O5</td>
+<td align="center">8.3</td>
+<td align="center">133</td>
+<td align="center">1O.5</td>
+<td align="center">152</td>
+<td align="center">12</td>
+<td align="center">18O</td>
+<td align="center">14.2</td>
+<td align="center">186</td>
+<td align="center">14.7</td>
+<td align="center">2O2</td>
+<td align="center">16</td>
+<td align="center">2OO</td>
+<td align="center">15.8</td>
+<td align="center">252</td>
+<td align="center">19.9</td>
+<td align="center">279</td>
+<td align="center">22.1</td>
+<td align="center">3O4</td>
+<td align="center">24</td>
+<td align="center">344</td>
+<td align="center">27.2</td>
+<td align="center">4OO</td>
+<td align="center">31.6</td>
+<td align="center">427</td>
+<td align="center">33.8</td>
+</tr>
+<tr>
+<td>Housing tenure (owned/rented)</td>
+<td align="center">1O2</td>
+<td align="center">8.1</td>
+<td align="center">128</td>
+<td align="center">1O.1</td>
+<td align="center">141</td>
+<td align="center">11.1</td>
+<td align="center">174</td>
+<td align="center">13.8</td>
+<td align="center">18O</td>
+<td align="center">14.2</td>
+<td align="center">2O2</td>
+<td align="center">16</td>
+<td align="center">2OO</td>
+<td align="center">15.8</td>
+<td align="center">252</td>
+<td align="center">19.9</td>
+<td align="center">279</td>
+<td align="center">22.1</td>
+<td align="center">3O4</td>
+<td align="center">24</td>
+<td align="center">342</td>
+<td align="center">27</td>
+<td align="center">398</td>
+<td align="center">31.5</td>
+<td align="center">426</td>
+<td align="center">33.7</td>
+</tr>
+<tr>
+<td>Overcrowding</td>
+<td align="center">1O2</td>
+<td align="center">8.1</td>
+<td align="center">128</td>
+<td align="center">1O.1</td>
+<td align="center">141</td>
+<td align="center">11.1</td>
+<td align="center">174</td>
+<td align="center">13.8</td>
+<td align="center">18O</td>
+<td align="center">14.2</td>
+<td align="center">2O2</td>
+<td align="center">16</td>
+<td align="center">2OO</td>
+<td align="center">15.8</td>
+<td align="center">252</td>
+<td align="center">19.9</td>
+<td align="center">279</td>
+<td align="center">22.1</td>
+<td align="center">3O4</td>
+<td align="center">24</td>
+<td align="center">342</td>
+<td align="center">27</td>
+<td align="center">398</td>
+<td align="center">31.5</td>
+<td align="center">426</td>
+<td align="center">33.7</td>
+</tr>
+<tr>
+<td>GP visits</td>
+<td align="center">111</td>
+<td align="center">8.8</td>
+<td align="center">136</td>
+<td align="center">1O.8</td>
+<td align="center">142</td>
+<td align="center">11.2</td>
+<td align="center">179</td>
+<td align="center">14.2</td>
+<td align="center">182</td>
+<td align="center">14.4</td>
+<td align="center">2O4</td>
+<td align="center">16.1</td>
+<td align="center">2OO</td>
+<td align="center">15.8</td>
+<td align="center">252</td>
+<td align="center">19.9</td>
+<td align="center">279</td>
+<td align="center">22.1</td>
+<td align="center">3O5</td>
+<td align="center">24.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Hospital admissions</td>
+<td align="center">1O5</td>
+<td align="center">8.3</td>
+<td align="center">122</td>
+<td align="center">9.6</td>
+<td align="center">139</td>
+<td align="center">11</td>
+<td align="center">174</td>
+<td align="center">13.8</td>
+<td align="center">178</td>
+<td align="center">14.1</td>
+<td align="center">2O2</td>
+<td align="center">16</td>
+<td align="center">2OO</td>
+<td align="center">15.8</td>
+<td align="center">252</td>
+<td align="center">19.9</td>
+<td align="center">279</td>
+<td align="center">22.1</td>
+<td align="center">3O4</td>
+<td align="center">24</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Hospital outpatient attendances</td>
+<td align="center">1O5</td>
+<td align="center">8.3</td>
+<td align="center">122</td>
+<td align="center">9.6</td>
+<td align="center">139</td>
+<td align="center">11</td>
+<td align="center">175</td>
+<td align="center">13.8</td>
+<td align="center">179</td>
+<td align="center">14.2</td>
+<td align="center">2O3</td>
+<td align="center">16</td>
+<td align="center">2OO</td>
+<td align="center">15.8</td>
+<td align="center">252</td>
+<td align="center">19.9</td>
+<td align="center">279</td>
+<td align="center">22.1</td>
+<td align="center">3O4</td>
+<td align="center">24</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Reading ability</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">26O</td>
+<td align="center">2O.6</td>
+<td align="center">289</td>
+<td align="center">22.8</td>
+<td align="center">315</td>
+<td align="center">24.9</td>
+<td align="center">349</td>
+<td align="center">27.6</td>
+<td align="center">4O8</td>
+<td align="center">32.3</td>
+<td align="center">437</td>
+<td align="center">34.5</td>
+</tr>
+<tr>
+<td>Conduct problems</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">2O3</td>
+<td align="center">16</td>
+<td align="center">2OO</td>
+<td align="center">15.8</td>
+<td align="center">252</td>
+<td align="center">19.9</td>
+<td align="center">279</td>
+<td align="center">22.1</td>
+<td align="center">3O5</td>
+<td align="center">24.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A4.</strong><span data-astro-cid-dzaleqsp> Missing data: Time-invariant variables – Dunedin multidisciplinary health and development study (N = 1037).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Number of missing values</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gender</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+</tr>
+<tr>
+<td>Ethnicity</td>
+<td align="center">3</td>
+<td align="center">0.3%</td>
+</tr>
+<tr>
+<td>Age of mother at child’s birth</td>
+<td align="center">4</td>
+<td align="center">0.4%</td>
+</tr>
+<tr>
+<td>Age of father at child’s birth</td>
+<td align="center">28</td>
+<td align="center">2.7%</td>
+</tr>
+<tr>
+<td>Mother’s education at child’s birth</td>
+<td align="center">4</td>
+<td align="center">0.4%</td>
+</tr>
+<tr>
+<td>Father’s education at child’s birth</td>
+<td align="center">51</td>
+<td align="center">4.9%</td>
+</tr>
+<tr>
+<td>Family’s SES at child’s birth</td>
+<td align="center">97</td>
+<td align="center">9.4%</td>
+</tr>
+<tr>
+<td>Single-parent status at the child’s birth</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+</tr>
+<tr>
+<td>Birth weight</td>
+<td align="center">2</td>
+<td align="center">0.2%</td>
+</tr>
+<tr>
+<td>Multiple birth</td>
+<td align="center">122</td>
+<td align="center">11.8%</td>
+</tr>
+<tr>
+<td>Gestational age</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+</tr>
+<tr>
+<td>Birth order</td>
+<td align="center">2</td>
+<td align="center">0.2%</td>
+</tr>
+<tr>
+<td>Smoking during pregnancy</td>
+<td align="center">7</td>
+<td align="center">0.7%</td>
+</tr>
+<tr>
+<td>Drinking during pregnancy</td>
+<td align="center">2</td>
+<td align="center">0.2%</td>
+</tr>
+<tr>
+<td>Breastfeeding</td>
+<td align="center">49</td>
+<td align="center">4.7%</td>
+</tr>
+<tr>
+<td>Maternal responsiveness</td>
+<td align="center">2</td>
+<td align="center">0.2%</td>
+</tr>
+<tr>
+<td>Maternal punitiveness</td>
+<td align="center">261</td>
+<td align="center">25.2%</td>
+</tr>
+<tr>
+<td>Early childhood education</td>
+<td align="center">0</td>
+<td align="center">0%</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A5.</strong><span data-astro-cid-dzaleqsp> Missing data: Time-varying variables by year – Dunedin multidisciplinary health and development study (N = 1037).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">Year 3</th>
+<th colspan="2">Year 5</th>
+<th colspan="2">Year 7</th>
+<th colspan="2">Year 9</th>
+<th colspan="2">Year 11</th>
+<th colspan="2">Year 13</th>
+</tr>
+<tr>
+<th>Variable</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Number of children</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">90</td>
+<td align="center">8.7</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">133</td>
+<td align="center">12.8</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Number of household members</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Mother’s working hours</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">51</td>
+<td align="center">4.9</td>
+<td align="center">90</td>
+<td align="center">8.7</td>
+<td align="center">107</td>
+<td align="center">10.3</td>
+<td align="center">135</td>
+<td align="center">13.0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Change of parents</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">133</td>
+<td align="center">12.8</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Change of residence</td>
+<td align="center">4</td>
+<td align="center">0.4</td>
+<td align="center">59</td>
+<td align="center">5.7</td>
+<td align="center">91</td>
+<td align="center">8.8</td>
+<td align="center">89</td>
+<td align="center">8.6</td>
+<td align="center">133</td>
+<td align="center">12.8</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Mother smoking</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">244</td>
+<td align="center">23.5</td>
+<td align="center">142</td>
+<td align="center">13.7</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Father smoking</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">289</td>
+<td align="center">27.9</td>
+<td align="center">157</td>
+<td align="center">15.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Accommodation type</td>
+<td align="center">5</td>
+<td align="center">0.5</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Housing tenure (owned/rented)</td>
+<td align="center">16</td>
+<td align="center">1.5</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>GP visits</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">163</td>
+<td align="center">15.7</td>
+<td align="center">223</td>
+<td align="center">21.5</td>
+<td align="center">147</td>
+<td align="center">14.2</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Hospital admissions</td>
+<td align="center">3</td>
+<td align="center">0.3</td>
+<td align="center">52</td>
+<td align="center">5.0</td>
+<td align="center">162</td>
+<td align="center">15.6</td>
+<td align="center">222</td>
+<td align="center">21.4</td>
+<td align="center">184</td>
+<td align="center">17.4</td>
+<td align="center">215</td>
+<td align="center">20.7</td>
+</tr>
+<tr>
+<td>Hospital outpatient attendances</td>
+<td align="center">1</td>
+<td align="center">0.1</td>
+<td align="center">51</td>
+<td align="center">4.9</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">142</td>
+<td align="center">13.7</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Reading ability</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">95</td>
+<td align="center">9.2</td>
+<td align="center">85</td>
+<td align="center">8.2</td>
+<td align="center">118</td>
+<td align="center">11.4</td>
+<td align="center">210</td>
+<td align="center">20.3</td>
+</tr>
+<tr>
+<td>Conduct problems</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">25</td>
+<td align="center">2.4</td>
+<td align="center">86</td>
+<td align="center">8.3</td>
+<td align="center">89</td>
+<td align="center">8.6</td>
+<td align="center">117</td>
+<td align="center">11.3</td>
+<td align="center">48</td>
+<td align="center">4.6</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A6.</strong><span data-astro-cid-dzaleqsp> Missing data: Time-invariant variables – Pacific Islands families study (N = 1398).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Number of missing values</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ethnicity</td>
+<td align="center">17</td>
+<td align="center">1.2</td>
+</tr>
+<tr>
+<td>Age of mother at child’s birth</td>
+<td align="center">1</td>
+<td align="center">0.1</td>
+</tr>
+<tr>
+<td>Age of father at child’s birth</td>
+<td align="center">565</td>
+<td align="center">40.4</td>
+</tr>
+<tr>
+<td>Mother’s education at child’s birth</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td>Father’s education at child’s birth</td>
+<td align="center">565</td>
+<td align="center">40.4</td>
+</tr>
+<tr>
+<td>Birth weight</td>
+<td align="center">17</td>
+<td align="center">1.2</td>
+</tr>
+<tr>
+<td>Multiple birth</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td>Gestational age</td>
+<td align="center">19</td>
+<td align="center">1.4</td>
+</tr>
+<tr>
+<td>Birth order</td>
+<td align="center">17</td>
+<td align="center">1.2</td>
+</tr>
+<tr>
+<td>Smoking during pregnancy</td>
+<td align="center">6</td>
+<td align="center">0.4</td>
+</tr>
+<tr>
+<td>Drinking during pregnancy</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td>Maternal punitiveness</td>
+<td align="center">94</td>
+<td align="center">6.7</td>
+</tr>
+<tr>
+<td>Early childhood education</td>
+<td align="center">539</td>
+<td align="center">38.6</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A7.</strong><span data-astro-cid-dzaleqsp> Missing data: Time-varying variables by year – Pacific Islands families study (N = 1398).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">Year</th>
+<th colspan="2">Year 2</th>
+<th colspan="2">Year 4</th>
+<th colspan="2">Year 6</th>
+<th colspan="2">Year 9</th>
+</tr>
+<tr>
+<th>Variable</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+<th>N. Miss</th>
+<th>%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Single-parent status</td>
+<td align="center">563</td>
+<td align="center">40.3</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Number of household members</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Mother smoking</td>
+<td align="center">162</td>
+<td align="center">11.6</td>
+<td align="center">244</td>
+<td align="center">17.5</td>
+<td align="center">340</td>
+<td align="center">24.3</td>
+<td align="center">393</td>
+<td align="center">28.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Father smoking</td>
+<td align="center">570</td>
+<td align="center">40.8</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Accommodation type</td>
+<td align="center">1</td>
+<td align="center">0.1</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Housing tenure (owned/rented)</td>
+<td align="center">157</td>
+<td align="center">11.2</td>
+<td align="center">236</td>
+<td align="center">16.9</td>
+<td align="center">332</td>
+<td align="center">23.7</td>
+<td align="center">381</td>
+<td align="center">27.3</td>
+<td align="center">424</td>
+<td align="center">30.3</td>
+</tr>
+<tr>
+<td>Overcrowding</td>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>GP visits for a morbidity</td>
+<td align="center">157</td>
+<td align="center">11.2</td>
+<td align="center">237</td>
+<td align="center">17.0</td>
+<td align="center">334</td>
+<td align="center">23.9</td>
+<td align="center">379</td>
+<td align="center">27.1</td>
+<td align="center">385</td>
+<td align="center">27.5</td>
+</tr>
+<tr>
+<td>Hospital admissions</td>
+<td align="center">158</td>
+<td align="center">11.3</td>
+<td align="center">237</td>
+<td align="center">17.0</td>
+<td align="center">332</td>
+<td align="center">23.7</td>
+<td align="center">379</td>
+<td align="center">27.1</td>
+<td align="center">386</td>
+<td align="center">27.6</td>
+</tr>
+<tr>
+<td>Conduct problems</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">333</td>
+<td align="center">23.8</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">420</td>
+<td align="center">30.0</td>
+</tr>
+</tbody>
+</table></div></figure></div></details><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ajetunmobi, OM, Whyte, B, Chalmers, J (2015). <span data-astro-cid-oer3kof4>Breastfeeding is associated with reduced childhood hospitalization: evidence from a Scottish Birth Cohort (1997–2009)</span>. <em data-astro-cid-oer3kof4>J Pediatr</em>, <strong data-astro-cid-oer3kof4>166</strong>, 620–5.</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Algert, CS, Bowen, JR, Lain, SL (2011). <span data-astro-cid-oer3kof4>Pregnancy exposures and risk of childhood asthma admission in a population birth cohort</span>. <em data-astro-cid-oer3kof4>Pediatr Allergy Immunol</em>, <strong data-astro-cid-oer3kof4>22</strong>, 836–42.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Anthopolos, R1, Edwards, SE, Miranda, ML (2013). <span data-astro-cid-oer3kof4>Effects of maternal prenatal smoking and birth outcomes extending into the normal range on academic performance in fourth grade in North Carolina, USA</span>. <em data-astro-cid-oer3kof4>Paediatr Perinat Epidemiol</em>, <strong data-astro-cid-oer3kof4>27</strong>, 564–74.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Boyle, MH (2002). <span data-astro-cid-oer3kof4>Home ownership and the emotional and behavioral problems of children and youth</span>. <em data-astro-cid-oer3kof4>Child Dev</em>, <strong data-astro-cid-oer3kof4>73</strong>, 883–92.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Burgner, DP, Cooper, MN, Moore, HC (2015). <span data-astro-cid-oer3kof4>Childhood hospitalisation with infection and cardiovascular disease in early-mid adulthood: a longitudinal population-based study</span>. <em data-astro-cid-oer3kof4>PLoS One</em>, <strong data-astro-cid-oer3kof4>10</strong>.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Caspi, A, Moffitt, TE, Morgan, J (2004). <span data-astro-cid-oer3kof4>Maternal expressed emotion predicts children's antisocial behavior problems: using monozygotic-twin differences to identify environmental effects on behavioral development</span>. <em data-astro-cid-oer3kof4>Dev Psychol</em>, <strong data-astro-cid-oer3kof4>40</strong>, 149–61.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Chatterji, P, Kim, D, Lahiri, K (2014). <span data-astro-cid-oer3kof4>Birth weight and academic achievement in childhood</span>. <em data-astro-cid-oer3kof4>Health Economics</em>, <strong data-astro-cid-oer3kof4>23</strong>, 1013–1035.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Coohey, C, Renner, LM, Hua, L (2011). <span data-astro-cid-oer3kof4>Academic achievement despite child maltreatment: a longitudinal study</span>. <em data-astro-cid-oer3kof4>Child Abuse Negl</em>, <strong data-astro-cid-oer3kof4>35</strong>, 688–99.</span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Côté, SM, Boivin, M, Nagin, DS (2007). <span data-astro-cid-oer3kof4>The role of maternal education and nonmaternal care services in the prevention of children's physical aggression problems</span>. <em data-astro-cid-oer3kof4>Arch Gen Psychiatry</em>, <strong data-astro-cid-oer3kof4>64</strong>, 1305–12.</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Davidson, R, Roberts, SE, Wotton, CJ, Goldacre, MJ (2010). <span data-astro-cid-oer3kof4>Influence of maternal and perinatal factors on subsequent hospitalisation for asthma in children: evidence from the Oxford record linkage study</span>. <em data-astro-cid-oer3kof4>BMC Pulm Med</em>, <strong data-astro-cid-oer3kof4>10</strong>.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Dearing, E, McCartney, K, Taylor, BA (2009). <span data-astro-cid-oer3kof4>Does higher quality early child care promote low-income children's math and reading achievement in middle childhood?</span>. <em data-astro-cid-oer3kof4>Child Dev</em>, <strong data-astro-cid-oer3kof4>80</strong>, 1329–49.</span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Dekkers, G, Inagaki, S, Desmet, R (2012). <span data-astro-cid-oer3kof4>Dynamic microsimulation modeling for policy support: An application to Belgium and possibilities for Japan</span>. <em data-astro-cid-oer3kof4>Rev Socionetwork Strat</em>, <strong data-astro-cid-oer3kof4>6</strong>, 31–47.</span></li><li id="bib13" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ellingson, JM, Goodnight, JA, Van Hulle, CA (2014). <span data-astro-cid-oer3kof4>A sibling-comparison study of smoking during pregnancy and childhood psychological traits</span>. <em data-astro-cid-oer3kof4>Behav Genet</em>, <strong data-astro-cid-oer3kof4>44</strong>, 25–35.</span></li><li id="bib14" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Farst, K, Ambadwar, PB, King, AJ (2013). <span data-astro-cid-oer3kof4>Trends in hospitalization rates and severity of injuries from abuse in young children, 1997-2009</span>. <em data-astro-cid-oer3kof4>Pediatrics</em>, <strong data-astro-cid-oer3kof4>131</strong>, e1796–802.</span></li><li id="bib15" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Fergusson, DM, Horwood, LJ (2001). <span data-astro-cid-oer3kof4>The Christchurch Health and Development Study: Review of Findings on Child and Adolescent Mental Health</span>. <em data-astro-cid-oer3kof4>Australian and New Zealand Journal of Psychiatry</em>, <strong data-astro-cid-oer3kof4>35</strong>, 287–296.</span></li><li id="bib16" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Fitzgerald, E, Durie, M (2000). <span data-astro-cid-oer3kof4>Assessing and addressing Māori outcomes: Preliminary findings from Te Hoe Nuku Roa Māori Household Research</span>. <em data-astro-cid-oer3kof4>New Zealand Population Review</em>, <strong data-astro-cid-oer3kof4>26</strong>, 115–121.</span></li><li id="bib17" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Gaysina, D, Fergusson, DM, Leve, LD (2013). <span data-astro-cid-oer3kof4>Maternal smoking during pregnancy and offspring conduct problems: evidence from 3 independent genetically sensitive research designs</span>. <em data-astro-cid-oer3kof4>JAMA Psychiatry</em>, <strong data-astro-cid-oer3kof4>70</strong>, 956–63.</span></li><li id="bib18" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Gilbert, N, Troitzsch, K (2005). <em data-astro-cid-oer3kof4>Simulation for the Social Scientist</em>. Maidenhead: Open University Press.</span></li><li id="bib19" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Gill, PJ, Ashdown, HF, Wang, K (2015). <span data-astro-cid-oer3kof4>Identification of children at risk of influenza-related complications in primary and ambulatory care: a systematic review and meta-analysis</span>. <em data-astro-cid-oer3kof4>Lancet Respir Med</em>, <strong data-astro-cid-oer3kof4>3</strong>, 139–149.</span></li><li id="bib20" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Gilmore, A, Croft, C, Reid, N (1976). <em data-astro-cid-oer3kof4>Burt Word Reading Test, New Zealand Revision</em>. Wellington: New Zealand Council for Educational Research.</span></li><li id="bib21" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hampden-Thompson, G (2013). <span data-astro-cid-oer3kof4>Family policy, family structure, and children's educational achievement</span>. <em data-astro-cid-oer3kof4>Soc Sci Res</em>, <strong data-astro-cid-oer3kof4>42</strong>, 804–17.</span></li><li id="bib22" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Harding, A (2007). <em data-astro-cid-oer3kof4>APPSIM: The Australian Dynamic Population and Policy Microsimulation Model</em>. Canberra, Australia: National Centre for Social and Economic Modeling.</span></li><li id="bib23" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Haurin, DR, Parcel, TL, Haurin, RJ (2002). <span data-astro-cid-oer3kof4>Does homeownership affect child outcomes?</span>. <em data-astro-cid-oer3kof4>Real Estate Economics</em>, <strong data-astro-cid-oer3kof4>30</strong>, 635–666.</span></li><li id="bib24" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hill, J (2002). <span data-astro-cid-oer3kof4>Biological, psychological and social processes in the conduct disorders</span>. <em data-astro-cid-oer3kof4>Journal of Child Psychology and Psychiatry</em>, <strong data-astro-cid-oer3kof4>43</strong>, 133–164.</span></li><li id="bib25" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Jaffee, SR, Moffitt, TE, Caspi, A, Taylor, A (2003). <span data-astro-cid-oer3kof4>Life with (or without) father: the benefits of living with two biological parents depend on the father's antisocial behavior</span>. <em data-astro-cid-oer3kof4>Child Dev</em>, <strong data-astro-cid-oer3kof4>74</strong>, 109–26.</span></li><li id="bib26" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Lay-Yee, R, Milne, B, Davis, P (2015). <span data-astro-cid-oer3kof4>Determinants and disparities: A simulation approach to the case of child health care</span>. <em data-astro-cid-oer3kof4>Social Science and Medicine</em>, <strong data-astro-cid-oer3kof4>128</strong>, 202–211.</span></li><li id="bib27" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Li, J, O’Donahue, C (2014). <span data-astro-cid-oer3kof4>Evaluating Binary Alignment Methods in Microsimulation Models</span>. <em data-astro-cid-oer3kof4>Journal of Artificial Societies and Social Simulation</em>, <strong data-astro-cid-oer3kof4>17</strong>.</span></li><li id="bib28" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Lind, JN, Li, R, Perrine, CG, Schieve, LA (2014). <span data-astro-cid-oer3kof4>Breastfeeding and later psychosocial development of children at 6 years of age</span>. <em data-astro-cid-oer3kof4>Pediatrics</em>, <strong data-astro-cid-oer3kof4>134</strong>, S36–41.</span></li><li id="bib29" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ludwig, J, Phillips, D (2007). <span data-astro-cid-oer3kof4>The benefits and costs of Head Start</span>. <em data-astro-cid-oer3kof4>Social Policy Report</em>, <strong data-astro-cid-oer3kof4>21</strong>, 3–13.</span></li><li id="bib30" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mackenbach, JD, Ringoot, AP, van der Ende, J (2014). <span data-astro-cid-oer3kof4>Exploring the relation of harsh parental discipline with child emotional and behavioral problems by using multiple informants. The generation R study</span>. <em data-astro-cid-oer3kof4>PLoS One</em>, <strong data-astro-cid-oer3kof4>9</strong>.</span></li><li id="bib31" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Magnuson, K (2007). <span data-astro-cid-oer3kof4>Maternal Education and Children's Academic Achievement During Middle Childhood</span>. <em data-astro-cid-oer3kof4>Dev Psychol</em>, <strong data-astro-cid-oer3kof4>43</strong>, 1497–1512.</span></li><li id="bib32" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mannion, O, Lay-Yee, R, Wrapson, W (2012). <span data-astro-cid-oer3kof4>JAMSIM: A Micro-simulation Modeling Policy Tool</span>. <em data-astro-cid-oer3kof4>Journal of Artificial Societies and Social Simulation</em>, <strong data-astro-cid-oer3kof4>15</strong>.</span></li><li id="bib33" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>McCrory, C, Layte, R (2011). <span data-astro-cid-oer3kof4>The effect of breastfeeding on children's educational test scores at nine years of age: results of an Irish cohort study</span>. <em data-astro-cid-oer3kof4>Soc Sci Med</em>, <strong data-astro-cid-oer3kof4>72</strong>, 1515–21.</span></li><li id="bib34" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>McLay, JM, Lay-Yee, R, Milne, BJ, Davis, P (2015). <span data-astro-cid-oer3kof4>Regression-Style Models for Parameter Estimation in Dynamic Microsimulation: An Empirical Performance Assessment.</span>. <em data-astro-cid-oer3kof4>International Journal of Microsimulation</em>, <strong data-astro-cid-oer3kof4>8</strong>, 83–127.</span></li><li id="bib35" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Menezes, AM, Noal, RB, Cesar, JA (2010). <span data-astro-cid-oer3kof4>Hospital admissions from birth to early adolescence and early-life risk factors: the 11-year follow-up of the 1993 Pelotas (Brazil) birth cohort study.</span>. <em data-astro-cid-oer3kof4>Cad Saude Publica</em>, <strong data-astro-cid-oer3kof4>26</strong>, 1980–9.</span></li><li id="bib36" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Milne, BJ, Lay-Yee, R, Thomas, J (2014). <span data-astro-cid-oer3kof4>A collaborative approach to bridging the research-policy gap through the development of policy advice software</span>. <em data-astro-cid-oer3kof4>Evidence and Policy</em>, <strong data-astro-cid-oer3kof4>10</strong>, 127–136.</span></li><li id="bib37" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2012). <em data-astro-cid-oer3kof4>The Health of New Zealand Children 2011/12: Key findings of the New Zealand Health Survey</em>. Wellington: Ministry of Health.</span></li><li id="bib38" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2007). <em data-astro-cid-oer3kof4>Inter-agency plan for conduct disorder/ severe antisocial behaviour. 2007-2012</em>. Wellington: Ministry of Social Development.</span></li><li id="bib39" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Murray, J, Anselmi, L, Gallo, EA (2013). <span data-astro-cid-oer3kof4>Epidemiology of childhood conduct problems in Brazil: systematic review and meta-analysis</span>. <em data-astro-cid-oer3kof4>et al</em>, <strong data-astro-cid-oer3kof4>48</strong>, 1527–1538.</span></li><li id="bib40" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Murray, J, Farrington, DP (2010). <span data-astro-cid-oer3kof4>Risk factors for conduct disorder and delinquency: key findings from longitudinal studies</span>. <em data-astro-cid-oer3kof4>Can J Psychiatry</em>, <strong data-astro-cid-oer3kof4>55</strong>, 633–42.</span></li><li id="bib41" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2013). <span data-astro-cid-oer3kof4>National Minimum Dataset (Hospital Events) Data Dictionary</span>.</span></li><li id="bib42" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Odgers, CL, Caspi, A, Broadbent, JM (2007). <span data-astro-cid-oer3kof4>Prediction of differential adult health burden by conduct problem subtypes in males</span>. <em data-astro-cid-oer3kof4>Archives of General Psychiatry</em>, <strong data-astro-cid-oer3kof4>64</strong>, 476–484.</span></li><li id="bib43" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Parker, M (2011). <span data-astro-cid-oer3kof4>http://ascape.sourceforge.net/</span>. <a href="http://ascape.sourceforge.net/" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://ascape.sourceforge.net/</a>.</span></li><li id="bib44" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Paterson, J, Percival, T, Schluter, P (2008). <span data-astro-cid-oer3kof4>Cohort profile, The Pacific Islands Families (PIF) Study</span>. <em data-astro-cid-oer3kof4>International Journal of Epidemiology</em>, <strong data-astro-cid-oer3kof4>37</strong>, 273–279.</span></li><li id="bib45" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Reijneveld, SA, Crone, MR, de Meer, G (2012). <span data-astro-cid-oer3kof4>Early detection of children at risk for antisocial behaviour using data from routine preventive child healthcare</span>. <em data-astro-cid-oer3kof4>BMC Pediatr</em>, <strong data-astro-cid-oer3kof4>12</strong>.</span></li><li id="bib46" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Rogers, SM, Rineer, J, Scrugg (2014). <span data-astro-cid-oer3kof4>A Geospatial Dynamic Microsimulation Model for Household Population Projections</span>. <em data-astro-cid-oer3kof4>Int J Microsimulation</em>, <strong data-astro-cid-oer3kof4>7</strong>, 119–146.</span></li><li id="bib47" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ryan, RM, Claessens, A, Markowitz, AJ (2014). <span data-astro-cid-oer3kof4>Associations Between Family Structure Change and Child Behavior Problems: The Moderating Effect of Family Income</span>.</span></li><li id="bib48" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2010). <em data-astro-cid-oer3kof4>SAS 9.3.</em>. Cary, NC, USA: SAS Institute Inc.</span></li><li id="bib49" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Shaw, M, Lawlor, DA, Najman, JM (2006). <span data-astro-cid-oer3kof4>Teenage children of teenage mothers: Psychological, behavioural and health outcomes from an Australian prospective longitudinal study</span>. <em data-astro-cid-oer3kof4>Soc Sci Med</em>, <strong data-astro-cid-oer3kof4>62</strong>, 2526–2539.</span></li><li id="bib50" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Shelton, KH, Collishaw, S, Rice, FJ (2011). <span data-astro-cid-oer3kof4>Using a genetically informative design to examine the relationship between breastfeeding and childhood conduct problems</span>. <em data-astro-cid-oer3kof4>Eur Child Adolesc Psychiatry</em>, <strong data-astro-cid-oer3kof4>20</strong>, 571–9.</span></li><li id="bib51" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (1996). <em data-astro-cid-oer3kof4>From child to adult: The Dunedin Multidisciplinary Health and Development Study</em>. Auckland: Oxford University Press.</span></li><li id="bib52" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Solar, O, Irwin, AA (2010). <em data-astro-cid-oer3kof4>A conceptual framework for action on the social determinants of health. Discussion paper 2</em>. A conceptual framework for action on the social determinants of health. Discussion paper 2.</span></li><li id="bib53" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2012). <em data-astro-cid-oer3kof4>Census data user guide</em>. Wellington: Statistics New Zealand.</span></li><li id="bib54" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2014). <span data-astro-cid-oer3kof4>http://www.stats.govt.nz/tools and services/university-students/2006-census-birth-cohort.aspx</span>. <a href="http://www.stats.govt.nz/tools and services/university-students/2006-census-birth-cohort.aspx" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://www.stats.govt.nz/tools and services/university-students/2006-census-birth-cohort.aspx</a>.</span></li><li id="bib55" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2014). <span data-astro-cid-oer3kof4>http://www.stats.govt.nz/Census/2006CensusHomePage/QuickStats/quickstats-about-a-subject/Māori.aspx</span>. <a href="http://www.stats.govt.nz/Census/2006CensusHomePage/QuickStats/quickstats-about-a-subject/Māori.aspx" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://www.stats.govt.nz/Census/2006CensusHomePage/QuickStats/quickstats-about-a-subject/Māori.aspx</a>.</span></li><li id="bib56" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Stevenson, CJ, Blackburn, P, Pharoah, PO (1999). <span data-astro-cid-oer3kof4>Longitudinal study of behaviour disorders in low birthweight infants</span>. <em data-astro-cid-oer3kof4>Arch Dis Child Fetal Neonatal Ed</em>, <strong data-astro-cid-oer3kof4>81</strong>, F5–9.</span></li><li id="bib57" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Torres, DD (2015). <span data-astro-cid-oer3kof4>Growth curve analyses of the relationship between early maternal age and children's mathematics and reading performance</span>. <em data-astro-cid-oer3kof4>Soc Sci Res</em>, <strong data-astro-cid-oer3kof4>50</strong>, 343–66.</span></li><li id="bib58" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Van Os, J, Wichers, M, Danckaerts, M (2001). <span data-astro-cid-oer3kof4>A prospective twin study of birth weight discordance and child problem behavior</span>. <em data-astro-cid-oer3kof4>Biol Psychiatry</em>, <strong data-astro-cid-oer3kof4>50</strong>, 593–9.</span></li><li id="bib59" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Victora, CG, Huttly, SR, Barros, FC (1992). <span data-astro-cid-oer3kof4>Maternal education in relation to early and late child health outcomes: findings from a Brazilian cohort study</span>. <em data-astro-cid-oer3kof4>Soc Sci Med</em>, <strong data-astro-cid-oer3kof4>34</strong>, 899–905.</span></li><li id="bib60" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Williams, BL, Dunlop, AL, Kramer, M (2013). <span data-astro-cid-oer3kof4>Perinatal origins of first-grade academic failure: role of prematurity and maternal factors</span>. <em data-astro-cid-oer3kof4>Pediatrics</em>, <strong data-astro-cid-oer3kof4>131</strong>, 693–700.</span></li><li id="bib61" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Wilson, HW, Stover, CS, Berkowitz, SJ (2009). <span data-astro-cid-oer3kof4>Research review: The relationship between childhood violence exposure and juvenile antisocial behavior: a meta-analytic review</span>. <em data-astro-cid-oer3kof4>J Child Psychol Psychiatry</em>, <strong data-astro-cid-oer3kof4>50</strong>, 769–79.</span></li><li id="bib62" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Winship, S, Owen, S (2013). <em data-astro-cid-oer3kof4>Guide to the Brookings Social Genome Project</em>. Washington: Brookings Institute.</span></li><li id="bib63" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Wylie, C, Thompson, J (2003). <span data-astro-cid-oer3kof4>The long-term contribution of early childhood education to children’s performance – evidence from New Zealand</span>. <em data-astro-cid-oer3kof4>Int J Early Years Education</em>, <strong data-astro-cid-oer3kof4>11</strong>, 69–78.</span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Barry J Milne</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Centre of Methods and Policy Application in the Social Sciences, The University of Auckland, New Zealand</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:b.milne@auckland.ac.nz" data-astro-cid-m3fa5h5a>b.milne@auckland.ac.nz</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Roy Lay-Yee</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Centre of Methods and Policy Application in the Social Sciences, The University of Auckland, New Zealand</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:r.layyee@auckland.ac.nz" data-astro-cid-m3fa5h5a>r.layyee@auckland.ac.nz</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Jessica M McLay</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Centre of Methods and Policy Application in the Social Sciences, The University of Auckland, New Zealand</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:jessica.mclay@auckland.ac.nz" data-astro-cid-m3fa5h5a>jessica.mclay@auckland.ac.nz</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Janet Pearson</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Department of Biostatistics and Epidemiology Auckland University of Technology, New Zealand</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:jpearson@aut.ac.nz" data-astro-cid-m3fa5h5a>jpearson@aut.ac.nz</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Martin von Randow</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Centre of Methods and Policy Application in the Social Sciences, The University of Auckland, New Zealand</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:mvonrandow@auckland.ac.nz" data-astro-cid-m3fa5h5a>mvonrandow@auckland.ac.nz</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Peter Davis</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Centre of Methods and Policy Application in the Social Sciences, The University of Auckland, New Zealand</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:pb.davis@auckland.ac.nz" data-astro-cid-m3fa5h5a>pb.davis@auckland.ac.nz</a></p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Acknowledgements</h3><p data-astro-cid-m3fa5h5a>This research was funded by grant UOAX0802 from the New Zealand Ministry of Business, Innovation and Employment. All authors are independent from the funding sources. We would like to thank the Christchurch Health and Development Study, Dunedin Multidisciplinary Health and Development Study, Pacific Islands Families Study, and Te Hoe Nuku Roa Study for allowing us to use their data, and the children and parents from each study for participating in assessments. We would also like to thank Wendy Wrapson and Oliver Mannion for their help with the development of the model.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00116" data-astro-cid-m3fa5h5a>Version of Record published: August 31, 2015 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2015, Milne</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/health" data-pagefind-filter="Research category:Health" data-astro-cid-m3fa5h5a>Health</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=childhood" data-astro-cid-m3fa5h5a>childhood</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=policy" data-astro-cid-m3fa5h5a>policy</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=reading" data-astro-cid-m3fa5h5a>reading</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=conduct%20problems" data-astro-cid-m3fa5h5a>conduct problems</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=health%20service%20use" data-astro-cid-m3fa5h5a>health service use</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

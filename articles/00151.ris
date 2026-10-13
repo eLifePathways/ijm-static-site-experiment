@@ -1,0 +1,22 @@
+TY  - JOUR
+TI  - JAS-mine: A new platform for microsimulation and agent-based modelling
+AU  - Richiardi, Matteo G.
+AU  - Richardson, Ross E.
+VL  - 10
+IS  - 1
+PY  - 2017
+DA  - 2017/04/30
+SP  - 106-134
+C1  - IJM 2017;10(1):106-134
+DO  - 10.34196/ijm.00151
+UR  - https://doi.org/10.34196/ijm.00151
+AB  - We introduce JAS-mine, a new Java-based computational platform that features tools to support the development of large-scale, data-driven, discrete-event simulations. JAS-mine is specifically designed for both agent-based and microsimulation modelling, anticipating a convergence between the two approaches. An embedded relational database management system provides tools for sophisticated input-output communications and data storage, allowing the power of relational databases to be used within an object-oriented framework. The JAS-mine philosophy encourages the separation of distinct concepts, objects and functionalities of the simulation model, and advocates and supports transparency, flexibility and modularity in model design. For instance, JAS-mine allows to store the list of regressors and their estimated coefficients externally to code, making it easy to change the specification of regression models used in the simulation and achieving a complete parallelisation between the tasks of the econometricians and those of the programmers. Moreover, tools for uncertainty analysis and search over the parameter space are also built in.
+KW  - simulation platform
+KW  - microsimulation
+KW  - agent-based
+KW  - software
+KW  - open-source
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

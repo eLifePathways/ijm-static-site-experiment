@@ -1,0 +1,19 @@
+TY  - JOUR
+TI  - Constructing full adult life-cycles from short panels
+AU  - Levell, Peter
+AU  - Shaw, Jonathan
+VL  - 9
+IS  - 2
+PY  - 2016
+DA  - 2016/08/31
+SP  - 5-40
+C1  - IJM 2016;9(2):5-40
+DO  - 10.34196/ijm.00134
+UR  - https://doi.org/10.34196/ijm.00134
+AB  - In this paper we discuss two alternative approaches to constructing complete adult life-cycles using data from an 18-year panel. The first of these is a splicing approach – closely related to imputation – that involves stitching together individuals observed at different ages. The second is a microsimulation approach that uses panel data to estimate transition probabilities between different states at adjacent ages and then simulates a large number of individuals with different initial values. Our aim throughout is to construct life-cycle profiles of employment, earnings and family circumstances that are representative of UK individuals born between 1945 and 1954. On balance, we find the microsimulation approach is to be preferred because it allows us to correct for observable differences across cohorts, and it is more amenable to counterfactual modelling.
+KW  - microsimulation models
+KW  - lifetime income distribution
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

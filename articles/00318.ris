@@ -1,0 +1,24 @@
+TY  - JOUR
+TI  - SimPaths: An open-source microsimulation model for life course analysis
+AU  - Bronka, Patryk
+AU  - van de Ven, Justin
+AU  - Kopasker, Daniel
+AU  - Katikireddi, Srinivasa Vittal
+AU  - Richiardi, Matteo
+VL  - 18
+IS  - 1
+PY  - 2025
+DA  - 2025/04/30
+SP  - 95-133
+C1  - IJM 2025;18(1):95-133
+DO  - 10.34196/ijm.00318
+UR  - https://doi.org/10.34196/ijm.00318
+AB  - The paper introduces SimPaths, an open-source framework for individual and household life course events. The framework is designed to project life histories through time, building up a detailed picture of career paths, family (inter)relations, health, and financial circumstances. The modular nature of the SimPaths framework is designed to facilitate analysis of alternative assumptions concerning the tax and benefit system, sensitivity to parameter estimates and alternative approaches for projecting labour/leisure and consumption/savings decisions. SimPaths builds upon standardised assumptions and data sources, which facilitates adaptation to alternative countries – models based on the framework currently exist for the UK, Greece, Hungary, Italy, and Poland, and are under development for Germany, Spain and Sweden. Projections for a workhorse model parameterised to the UK context are reported, which closely reflect observed data throughout a validation window between the Financial crisis (2011) and the Covid-19 pandemic (2019).
+KW  - Dynamic microsimulation
+KW  - static-dynamic microsimulation linkage
+KW  - population ageing
+KW  - open source
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

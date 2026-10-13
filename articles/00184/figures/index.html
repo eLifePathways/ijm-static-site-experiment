@@ -1,0 +1,675 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Figures and data in Simulating the joint distribution of individuals, households and dwellings in small areas | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00184/figures"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.figures-page__summary[data-astro-cid-uy5dlehv]{color:var(--color-ink-muted);margin-block-end:var(--space-m)}@media (width>=75em){.article-content-grid[data-astro-cid-uy5dlehv]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-astro-cid-uy5dlehv><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/spatial-microsimulation" data-astro-cid-ak4gb66a>Spatial microsimulation</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Aug 31, 2018</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Simulating the joint distribution of individuals, households and dwellings in small areas</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Trond Husby, Olga Ivanova, Mark Thissen</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Netherlands Environmental Assessment Agency (PBL), Netherlands</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/11-2/volume-11-2-summer-2018" data-astro-cid-ak4gb66a>Volume 11(2) Summer 2018</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> T. Husby, O. Ivanova, M. Thissen; 2018; <span data-astro-cid-ak4gb66a>Simulating the joint distribution of individuals, households and dwellings in small areas</span>; International Journal of Microsimulation; 11(2); 169–190. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00184" data-astro-cid-ak4gb66a>10.34196/ijm.00184</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>This article proposes a sample-based methodology for synthesizing individuals, households and dwellings in small areas, illustrated using a case study of Amsterdam. The method encompasses the following steps: first, individual- and household-level tables are created separately using Iterative Proportional Fitting (IPF). Second, synthetic individuals are allocated into synthetic households using a combination of sorting algorithms and mixed integer programming. As such, the synthetic households are adjusted to accommodate the synthetic individuals, ensuring a consistent joint distribution of individuals, households and dwellings in small areas.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00184/ijm-00184.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00184.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00184.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-uy5dlehv><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00184" class="view-tabs__link" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00184/figures" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#figures" data-astro-cid-twdwaz5s>Figures</a></li><li data-astro-cid-twdwaz5s><a href="#tables" data-astro-cid-twdwaz5s>Tables</a></li></ul></details></div><div class="article-content" data-astro-cid-uy5dlehv><p class="figures-page__summary" data-astro-cid-uy5dlehv>This article contains 10 figures and 11 tables.</p><details id="figures" class="article-section article-section--collapsible" open data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Figures</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-fig1.Bpj8TxLu_ZUbVnu.webp" class="figure-lightbox-trigger" data-pswp-width="287" data-pswp-height="287" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-fig1.Bpj8TxLu_ZUbVnu.webp" alt width="287" height="287" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Population in neighbourhoods in Amsterdam.</span></figcaption></figure><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-fig2.ChfK7JdD_Z1TKoEa.webp" class="figure-lightbox-trigger" data-pswp-width="328" data-pswp-height="440" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-fig2.ChfK7JdD_Z1TKoEa.webp" alt width="328" height="440" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> The overall population synthesis methodology.</span></figcaption></figure><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-fig3.D5wnktLO_ZtR8Dt.webp" class="figure-lightbox-trigger" data-pswp-width="476" data-pswp-height="336" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-fig3.D5wnktLO_ZtR8Dt.webp" alt width="476" height="336" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Correlation coefficient and RMSE of the individual-level table.</span></figcaption></figure><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-fig4.BKm8CDTV_ZnkDDN.webp" class="figure-lightbox-trigger" data-pswp-width="476" data-pswp-height="337" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-fig4.BKm8CDTV_ZnkDDN.webp" alt width="476" height="337" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Correlation coefficient and RMSE of the household-level table.</span></figcaption></figure><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-fig5.BEVfOOhf_ZkwJlD.webp" class="figure-lightbox-trigger" data-pswp-width="408" data-pswp-height="288" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-fig5.BEVfOOhf_ZkwJlD.webp" alt width="408" height="288" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> Neighbourhood population calculated from the households table relative to population calculated from the person-table.</span></figcaption></figure><figure id="fig6" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-fig6.Cbew7Uuk_18tOo0.webp" class="figure-lightbox-trigger" data-pswp-width="408" data-pswp-height="289" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-fig6.Cbew7Uuk_18tOo0.webp" alt width="408" height="289" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 6.</strong><span data-astro-cid-dzaleqsp> Number of members in the adjusted (purple) and in the unadjusted households (yellow).</span></figcaption></figure><figure id="fig7" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-fig7.8wbubmUv_t6T1D.webp" class="figure-lightbox-trigger" data-pswp-width="476" data-pswp-height="337" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-fig7.8wbubmUv_t6T1D.webp" alt width="476" height="337" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 7.</strong><span data-astro-cid-dzaleqsp> Number of household members by age in the unadjusted (yellow) and adjusted (purple) households.</span></figcaption></figure><figure id="fig8" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-fig8.DlEUhnIe_Z2ewGT8.webp" class="figure-lightbox-trigger" data-pswp-width="476" data-pswp-height="336" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-fig8.DlEUhnIe_Z2ewGT8.webp" alt width="476" height="336" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 8.</strong><span data-astro-cid-dzaleqsp> Percentage members gender in the unadjusted (yellow) and adjusted (purple) households.</span></figcaption></figure><figure id="figA1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-figA1.CtBANtH__rxz0T.webp" class="figure-lightbox-trigger" data-pswp-width="476" data-pswp-height="336" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-figA1.CtBANtH__rxz0T.webp" alt width="476" height="336" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure A.1.</strong><span data-astro-cid-dzaleqsp> Correlation and RMSE for the synthetic population created with IPU.</span></figcaption></figure><figure id="figA2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-figA2.Sbn6BNB__1Ngd8N.webp" class="figure-lightbox-trigger" data-pswp-width="476" data-pswp-height="475" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-figA2.Sbn6BNB__1Ngd8N.webp" alt width="476" height="475" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure A.2.</strong><span data-astro-cid-dzaleqsp> Residuals by constraints for the synthetic population created with IPU.</span></figcaption></figure></div></details><details id="tables" class="article-section article-section--collapsible" data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Tables</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Variables from OVIN and their levels.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Levels</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ind_lmstatus</td>
+<td>active, not-active</td>
+<td>labour-market status</td>
+</tr>
+<tr>
+<td>ind_ethn</td>
+<td>Dutch, foreign</td>
+<td>ethnicity</td>
+</tr>
+<tr>
+<td>ind_income</td>
+<td>high, low, mid</td>
+<td>household income</td>
+</tr>
+<tr>
+<td>ind_gender</td>
+<td>man, woman</td>
+<td>gender</td>
+</tr>
+<tr>
+<td>ind_age</td>
+<td>00_14, 15_44, 45_64, 65_AO</td>
+<td>age</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Household and dwelling characteristics from WOON.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Levels</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dw_typei</td>
+<td>rental, owner-occupied</td>
+<td>dwelling tenure</td>
+</tr>
+<tr>
+<td>dw_type2</td>
+<td>apartment, house</td>
+<td>type of dwelling</td>
+</tr>
+<tr>
+<td>dw_byear</td>
+<td>before 1945,1945–1969,1970–1989,1990 and later</td>
+<td>building year</td>
+</tr>
+<tr>
+<td>dw_dheat</td>
+<td>no, yes</td>
+<td>district heating</td>
+</tr>
+<tr>
+<td>dw_size</td>
+<td>(6,51], (51,68], (68,89], (89,3e+04]</td>
+<td>size (m2)</td>
+</tr>
+<tr>
+<td>hh_age_h</td>
+<td>15_44, 45_64, 65_AO</td>
+<td>age household head</td>
+</tr>
+<tr>
+<td>hh_gender_h</td>
+<td>man, woman</td>
+<td>gender household head</td>
+</tr>
+<tr>
+<td>hh_ethn_h</td>
+<td>Dutch, foreign</td>
+<td>ethnicity household head</td>
+</tr>
+<tr>
+<td>hh_income</td>
+<td>high, low, mid</td>
+<td>household income</td>
+</tr>
+<tr>
+<td>hh_lmstatus</td>
+<td>active, not-active</td>
+<td>labour-market status head</td>
+</tr>
+<tr>
+<td>hh_type</td>
+<td>single, w_child, wo_child</td>
+<td>household type
+</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Information about household members from WOON.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Levels</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n_00_i4</td>
+<td>numeric</td>
+<td>members between 0 and 14 years</td>
+</tr>
+<tr>
+<td>n_i5_44</td>
+<td>numeric</td>
+<td>members between 15 and 44 years</td>
+</tr>
+<tr>
+<td>n_45_64</td>
+<td>numeric</td>
+<td>members between 45 and 64 years</td>
+</tr>
+<tr>
+<td>n_65_AO</td>
+<td>numeric</td>
+<td>members 65 years and older</td>
+</tr>
+<tr>
+<td>n_persons</td>
+<td>numeric</td>
+<td>number ofmembers</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Data sources and their usage.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OVIN 2010–2016</td>
+<td>Survey sample of individuals</td>
+</tr>
+<tr>
+<td>WOON 2012 and 2015</td>
+<td>Survey sample of households and dwellings</td>
+</tr>
+<tr>
+<td>Neighbourhood and District maps 2014</td>
+<td>Constraints on individuals, households and dwellings</td>
+</tr>
+<tr>
+<td>100x100m statistics</td>
+<td>Constraint on cadastral value of dwelling</td>
+</tr>
+<tr>
+<td>Dutch Kadaster data</td>
+<td>Constraints on dwelling size and building year</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Five households from the sample seed.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>hh 1</th>
+<th>hh2</th>
+<th>hh 3</th>
+<th>hh 4</th>
+<th>hh 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dw_value</td>
+<td>oo_199</td>
+<td>oo_199</td>
+<td>2oo_299</td>
+<td>2oo_299</td>
+<td>00_199</td>
+</tr>
+<tr>
+<td>dw_typei</td>
+<td>rental</td>
+<td>owner</td>
+<td>owner</td>
+<td>owner</td>
+<td>rental</td>
+</tr>
+<tr>
+<td>dw_type2</td>
+<td>apartment</td>
+<td>house</td>
+<td>house</td>
+<td>house</td>
+<td>apartment</td>
+</tr>
+<tr>
+<td>dw_byear</td>
+<td>1970–1989</td>
+<td>1970–1989</td>
+<td>1970–1989</td>
+<td>before 1945</td>
+<td>1970–1989</td>
+</tr>
+<tr>
+<td>dw_dheat</td>
+<td>No</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>dw_size</td>
+<td>(68,89]</td>
+<td>(89,3e+04]</td>
+<td>(89,3e+04]</td>
+<td>(89,3e+04]</td>
+<td>(51,68]</td>
+</tr>
+<tr>
+<td>hh_age_h</td>
+<td>65_AO</td>
+<td>65_AO</td>
+<td>45_64</td>
+<td>45_64</td>
+<td>65_AO</td>
+</tr>
+<tr>
+<td>hh_gender_h</td>
+<td>Man</td>
+<td>man</td>
+<td>man</td>
+<td>man</td>
+<td>woman</td>
+</tr>
+<tr>
+<td>hh_ethn_h</td>
+<td>dutch</td>
+<td>dutch</td>
+<td>dutch</td>
+<td>dutch</td>
+<td>dutch</td>
+</tr>
+<tr>
+<td>hh_income</td>
+<td>Low</td>
+<td>low</td>
+<td>mid</td>
+<td>high</td>
+<td>low</td>
+</tr>
+<tr>
+<td>hh_lmstatus</td>
+<td>not-active</td>
+<td>not-active</td>
+<td>active</td>
+<td>active</td>
+<td>not-active</td>
+</tr>
+<tr>
+<td>hh_type</td>
+<td>wo_child</td>
+<td>wo_child</td>
+<td>wo_child</td>
+<td>wo_child</td>
+<td>single</td>
+</tr>
+<tr>
+<td>n_00_14</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>n_15_44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>n_45_64</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr>
+<td>n_65_AO</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n_persons</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Characteristics used to match households and individuals.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<td>Dimension</td>
+<td>Levels</td>
+<td>Explanation</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lmstatus</td>
+<td>active, not-active</td>
+<td>labour-market status</td>
+</tr>
+<tr>
+<td>ethn</td>
+<td>Dutch, foreign</td>
+<td>ethnicity</td>
+</tr>
+<tr>
+<td>gender</td>
+<td>man, woman</td>
+<td>gender</td>
+</tr>
+<tr>
+<td/>
+<td>00_14,15_44, 45_64, 65_AO</td>
+<td>age</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="alg1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Algorithm 1.</strong><span data-astro-cid-dzaleqsp> Allocation of household heads.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td>1: <b>for</b> all households <b>do</b></td>
+</tr>
+<tr>
+<td>2:  <b>while</b> <inline-formula id="inline1"><math display="inline" id="i1"><mrow><mstyle displaystyle="true"><msub><mo>∑</mo><mi>i</mi></msub><mrow><mi>w</mi><msub><mi>d</mi><mrow><mi>i</mi><mo>,</mo><mi>h</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow></mstyle></mrow></math> <b>do</b></td>
+</tr>
+<tr>
+<td>3:   <b>for</b> non-allocated individuals with matching characteristics <b>do</b></td>
+</tr>
+<tr>
+<td>4:    update <i>al<sub>h,c</sub></i> = <i>al<sub>h,c</sub></i> + <i>ind<sub>i,c</sub></i></td>
+</tr>
+<tr>
+<td>5:    set <i>wd<sub>i,h</sub></i> = 1</td>
+</tr>
+<tr>
+<td>6:   <b>end for</b></td>
+</tr>
+<tr>
+<td>7:  <b>end while</b></td>
+</tr>
+<tr>
+<td>8: <b>end for</b></td>
+</tr>
+</tbody>
+</table></div></figure><figure id="alg2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Algorithm 2.</strong><span data-astro-cid-dzaleqsp> Allocation of the remaining household members.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td>1: <b>for</b> non-allocated individuals <b>do</b></td>
+</tr>
+<tr>
+<td>2:  <b>while</b> <inline-formula id="inline4"><math display="inline" id="i4"><mrow><mstyle displaystyle="true"><msub><mo>∑</mo><mi>h</mi></msub><mrow><mi>w</mi><msub><mi>d</mi><mrow><mi>i</mi><mo>,</mo><mi>h</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow></mstyle></mrow></math> <b>do</b></td>
+</tr>
+<tr>
+<td>3:   <b>for</b> households with available slots on matching characteristics <b>do</b></td>
+</tr>
+<tr>
+<td>4:    set <i>al<sub>h,d</sub></i> = <i>al<sub>h,d</sub></i> + <i>ind<sub>i,d</sub></i></td>
+</tr>
+<tr>
+<td>5:    set <i>wd<sub>i,h</sub></i> = 1</td>
+</tr>
+<tr>
+<td>6:   <b>end for</b></td>
+</tr>
+<tr>
+<td>7:  <b>end while</b></td>
+</tr>
+<tr>
+<td>8: <b>end for</b></td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Chi-squared test of neighbourhood population.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>X-squared</th>
+<th>p-value</th>
+<th>df</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unadjusted households</td>
+<td>617</td>
+<td>0</td>
+<td>94</td>
+</tr>
+<tr>
+<td>adjusted households</td>
+<td>0</td>
+<td>1</td>
+<td>94</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A.1.</strong><span data-astro-cid-dzaleqsp> Individual-level constraints.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Mean</th>
+<th>Standard deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ind_lmstatusactive</td>
+<td>494i</td>
+<td>3182.8</td>
+</tr>
+<tr>
+<td>ind_lmstatusnot-active</td>
+<td>3594</td>
+<td>2605.4</td>
+</tr>
+<tr>
+<td>ind_ethndutch</td>
+<td>4211</td>
+<td>2665.4</td>
+</tr>
+<tr>
+<td>ind_ethnforeign</td>
+<td>4324</td>
+<td>3833.8</td>
+</tr>
+<tr>
+<td>ind_incomehigh</td>
+<td>1394</td>
+<td>ii84.4</td>
+</tr>
+<tr>
+<td>ind_incomelow</td>
+<td>4445</td>
+<td>3i97.i</td>
+</tr>
+<tr>
+<td>ind_incomemid</td>
+<td>2697</td>
+<td>i857.9</td>
+</tr>
+<tr>
+<td>ind_genderman</td>
+<td>4204</td>
+<td>2762.4</td>
+</tr>
+<tr>
+<td>ind_genderwoman</td>
+<td>433i</td>
+<td>2865.2</td>
+</tr>
+<tr>
+<td>ind_age00_14</td>
+<td>i334</td>
+<td>ii08.0</td>
+</tr>
+<tr>
+<td>ind_age15_44</td>
+<td>4099</td>
+<td>2674.7</td>
+</tr>
+<tr>
+<td>ind_age45_64</td>
+<td>2095</td>
+<td>i467.5</td>
+</tr>
+<tr>
+<td>ind_age65_AO</td>
+<td>i007</td>
+<td>776.5</td>
+</tr>
+<tr>
+<td>n_ind</td>
+<td>8535</td>
+<td>56i8.7</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A.2.</strong><span data-astro-cid-dzaleqsp> Household-level constraints.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Var</th>
+<th>Mean</th>
+<th>SD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dw_type1owner</td>
+<td>1247.2</td>
+<td>861.0</td>
+</tr>
+<tr>
+<td>dw_type1rental</td>
+<td>3391.4</td>
+<td>2278.5</td>
+</tr>
+<tr>
+<td>dw_type2apartment</td>
+<td>4074.4</td>
+<td>2838.3</td>
+</tr>
+<tr>
+<td>dw_type2house</td>
+<td>564.2</td>
+<td>885.5</td>
+</tr>
+<tr>
+<td>dw_byearbefore.1945</td>
+<td>2070.9</td>
+<td>2315.3</td>
+</tr>
+<tr>
+<td>dw_byear1945.1969</td>
+<td>678.4</td>
+<td>1343.6</td>
+</tr>
+<tr>
+<td>dw_byear1970.1989</td>
+<td>778.4</td>
+<td>1576.8</td>
+</tr>
+<tr>
+<td>dw_byear1990.and.later</td>
+<td>1111.0</td>
+<td>1424.9</td>
+</tr>
+<tr>
+<td>hh_typesingle</td>
+<td>2536.6</td>
+<td>1722.9</td>
+</tr>
+<tr>
+<td>hh_typew_child</td>
+<td>1160.1</td>
+<td>913.4</td>
+</tr>
+<tr>
+<td>hh_typewo_child</td>
+<td>942.0</td>
+<td>575.0</td>
+</tr>
+<tr>
+<td>hh_incomehigh</td>
+<td>747.2</td>
+<td>592.1</td>
+</tr>
+<tr>
+<td>hh_incomelow</td>
+<td>2445.1</td>
+<td>1739.0</td>
+</tr>
+<tr>
+<td>hh_incomemid</td>
+<td>1446.4</td>
+<td>943.7</td>
+</tr>
+<tr>
+<td>hh_gender_opman</td>
+<td>2287.3</td>
+<td>1469.7</td>
+</tr>
+<tr>
+<td>hh_gender_opwoman</td>
+<td>2351.4</td>
+<td>1516.3</td>
+</tr>
+<tr>
+<td>hh_ethn_opdutch</td>
+<td>2331.3</td>
+<td>1541.5</td>
+</tr>
+<tr>
+<td>hh_ethn_opforeign</td>
+<td>2307.4</td>
+<td>1928.8</td>
+</tr>
+<tr>
+<td>hh_lmstatusactive</td>
+<td>2698.0</td>
+<td>1730.9</td>
+</tr>
+<tr>
+<td>hh_lmstatusnot.active</td>
+<td>1940.7</td>
+<td>1340.5</td>
+</tr>
+<tr>
+<td>dw_value00_199</td>
+<td>1545.4</td>
+<td>2169.1</td>
+</tr>
+<tr>
+<td>dw_value200_299</td>
+<td>1965.0</td>
+<td>1759.5</td>
+</tr>
+<tr>
+<td>dw_value300_399</td>
+<td>646.1</td>
+<td>893.8</td>
+</tr>
+<tr>
+<td>dw_value400_499</td>
+<td>218.5</td>
+<td>330.8</td>
+</tr>
+<tr>
+<td>dw_value500_AO</td>
+<td>263.7</td>
+<td>661.3</td>
+</tr>
+<tr>
+<td>dw_dheatno</td>
+<td>4296.3</td>
+<td>2805.9</td>
+</tr>
+<tr>
+<td>dw_dheatyes</td>
+<td>342.4</td>
+<td>864.2</td>
+</tr>
+<tr>
+<td>dw_size.6.51.</td>
+<td>1135.7</td>
+<td>1108.2</td>
+</tr>
+<tr>
+<td>dw_size.51.68.</td>
+<td>1226.5</td>
+<td>966.2</td>
+</tr>
+<tr>
+<td>dw_size.68.89.</td>
+<td>1152.7</td>
+<td>965.1</td>
+</tr>
+<tr>
+<td>dw_size.89.3e.04.</td>
+<td>1123.8</td>
+<td>1131.9</td>
+</tr>
+<tr>
+<td>n_hh</td>
+<td>4638.7</td>
+<td>2980.3</td>
+</tr>
+</tbody>
+</table></div></figure></div></details></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/figures.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

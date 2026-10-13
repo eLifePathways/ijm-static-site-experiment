@@ -1,0 +1,1 @@
+import{t as e}from"./photoswipe-lightbox.esm.BGJAtL8t.js";import{t}from"./preload-helper.L5lOfJxi.js";window.addEventListener(`DOMContentLoaded`,()=>{new e({gallery:`.article-page`,children:`a.figure-lightbox-trigger`,bgOpacity:1,pswpModule:()=>t(()=>import(`./photoswipe.esm.2E0BZqjm.js`),[])}).init()});

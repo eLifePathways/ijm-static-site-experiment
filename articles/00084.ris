@@ -1,0 +1,26 @@
+TY  - JOUR
+TI  - Modelling private wealth accumulation and spend-down in the Italian microsimulation model CAPP_DYN: A life-cycle approach
+AU  - Tedeschi, Simone
+AU  - Pisano, Elena
+AU  - Mazzaferro, Carlo
+AU  - Morciano, Marcello
+VL  - 6
+IS  - 2
+PY  - 2013
+DA  - 2013/08/31
+SP  - 76-122
+C1  - IJM 2013;6(2):76-122
+DO  - 10.34196/ijm.00084
+UR  - https://doi.org/10.34196/ijm.00084
+AB  - In microsimulation literature a limited number of models include a module aimed at analyzing and projecting the evolution of private wealth over time. However, this issue appears crucial in order to comprehensively evaluate the likely distributional effects of institutional reforms adopted to cope with population ageing. In this work we describe the implementation in the Italian dynamic micro simulation model CAPP_DYN of a new module in which households’ savings and asset allocation are modelled. In particular, we aim to account for possible behavioural responses to pension reforms in household savings. To this end, we rely on an approximate life cycle structural framework for estimating saving behaviour, while adopting a traditional stochastic micro simulation approach for asset allocation. In line with Ando and Nicoletti Altimari (2004), we emphasize the role of lifetime economic resources in households’ consumption decisions, yet we further account for internal habit formation and subjective expectations on pension outcomes in the econometric stage. In addition, we model intergenerational transfers of private wealth in a probabilistic fashion. As the behavioural hypothesis adopted can largely affect results, we compare our semi-structural life-cycle approach with the estimation and the simulation of a non-structural consumption rule, analyzing wealth and disposable income dynamics and their drivers according to the two methods, especially in a long-term intergenerational perspective. While a ‘quasi’ life cycle consumption profile, including saving responses to pension reforms, curbs the dynamics of wealth inequality compared to the non-structural approach, results for the period 2010–2050 suggest an increasing contribution of intergenerational transfers to the predicted increase in wealth dispersion. Although hypotheses on (the mean of) returns are neutral for the evolution of net wealth inequality, the differential between returns and productivity (r-g) parameters are crucial in affecting the dynamics of disposable income due to cumulated effect on capital incomes shares.
+KW  - household consumption
+KW  - habit formation
+KW  - pension expectations
+KW  - social security
+KW  - intergenerational transfers
+KW  - income and wealth distribution
+KW  - microsimulation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

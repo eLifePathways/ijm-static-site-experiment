@@ -1,0 +1,4082 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Figures and data in LifeSim: A Lifecourse Dynamic Microsimulation Model of the Millennium Birth Cohort in England | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00228/figures"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.figures-page__summary[data-astro-cid-uy5dlehv]{color:var(--color-ink-muted);margin-block-end:var(--space-m)}@media (width>=75em){.article-content-grid[data-astro-cid-uy5dlehv]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-astro-cid-uy5dlehv><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/dynamic-microsimulation" data-astro-cid-ak4gb66a>Dynamic microsimulation</a>, <a href="/subjects/health" data-astro-cid-ak4gb66a>Health</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Apr 30, 2021</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>LifeSim: A Lifecourse Dynamic Microsimulation Model of the Millennium Birth Cohort in England</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Ieva Skarda, Miqdad Asaria, Richard Cookson</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Centre for Health Economics, York, YO10 5DD, UK; Department of Health Policy, Cowdray House, London WC2A 2AE, UK</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/14-1/volume-14-1-spring-2021" data-astro-cid-ak4gb66a>Volume 14(1) Spring 2021</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> I. Skarda, M. Asaria, R. Cookson; 2021; <span data-astro-cid-ak4gb66a>LifeSim: A Lifecourse Dynamic Microsimulation Model of the Millennium Birth Cohort in England</span>; International Journal of Microsimulation; 14(1); 2–42. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00228" data-astro-cid-ak4gb66a>10.34196/ijm.00228</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>We present a dynamic microsimulation model for childhood policy analysis that models developmental, economic, social and health outcomes from birth to death for each child in the Millennium Birth Cohort (MCS) in England, together with public costs and a summary wellbeing measure. The model is a discrete event simulation in discrete time (annual periods), implemented in R, which progresses 100,000 individuals through each year of their lives from birth in the year 2000 to death. From age 0 to 18 the model draws observational data from the MCS, with explicit modelling of only a few derived outcomes (mental health, conduct disorder, mortality, health-related quality of life, public costs and a general wellbeing metric). During adulthood, all outcomes are modelled dynamically using explicit networks of stochastic process equations, with separate networks for working age and retirement. Our equations are parameterised using effect estimates from existing studies combined with target outcome levels from up-to-date administrative and survey data. We present our baseline projections and a simple validation check against external data from the British Cohort Study 1970 and Understanding Society survey.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00228/ijm-00228.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00228.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00228.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-uy5dlehv><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00228" class="view-tabs__link" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00228/figures" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#figures" data-astro-cid-twdwaz5s>Figures</a></li><li data-astro-cid-twdwaz5s><a href="#tables" data-astro-cid-twdwaz5s>Tables</a></li></ul></details></div><div class="article-content" data-astro-cid-uy5dlehv><p class="figures-page__summary" data-astro-cid-uy5dlehv>This article contains 8 figures and 12 tables.</p><details id="figures" class="article-section article-section--collapsible" open data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Figures</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00228-fig001.BLKdFVeR_ZTfuWd.webp" class="figure-lightbox-trigger" data-pswp-width="1891" data-pswp-height="1913" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00228-fig001.BLKdFVeR_ZTfuWd.webp" alt width="1891" height="1913" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Overview of Key Outcomes Over the Lifecourse</span></figcaption></figure><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00228-fig002.BsSRAHRx_Z1PukEx.webp" class="figure-lightbox-trigger" data-pswp-width="1891" data-pswp-height="2008" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00228-fig002.BsSRAHRx_Z1PukEx.webp" alt width="1891" height="2008" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Model Structure for Key Life Stages in Childhood</span></figcaption></figure><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00228-fig003.BIEE_mOx_2a6lO.webp" class="figure-lightbox-trigger" data-pswp-width="1891" data-pswp-height="2152" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00228-fig003.BIEE_mOx_2a6lO.webp" alt width="1891" height="2152" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Model Structure for Key Life Stages in Adulthood</span></figcaption></figure><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00228-fig004.C6y3eJ4E_Z1srgGt.webp" class="figure-lightbox-trigger" data-pswp-width="1891" data-pswp-height="1056" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00228-fig004.C6y3eJ4E_Z1srgGt.webp" alt width="1891" height="1056" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Model Structure for Public Costs</span></figcaption></figure><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00228-fig005.BLMElezy_1V1Pyz.webp" class="figure-lightbox-trigger" data-pswp-width="1891" data-pswp-height="833" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00228-fig005.BLMElezy_1V1Pyz.webp" alt width="1891" height="833" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> Distributions of Core Outcomes</span></figcaption></figure><figure id="fig6" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00228-fig006.Dhes3WRs_Z1vVGYe.webp" class="figure-lightbox-trigger" data-pswp-width="1891" data-pswp-height="1129" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00228-fig006.Dhes3WRs_Z1vVGYe.webp" alt width="1891" height="1129" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 6.</strong><span data-astro-cid-dzaleqsp> Earnings: Comparison with Other Data Sources</span></figcaption></figure><figure id="fig7" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00228-fig007.BlIQc-9B_2hsGuV.webp" class="figure-lightbox-trigger" data-pswp-width="1891" data-pswp-height="1747" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00228-fig007.BlIQc-9B_2hsGuV.webp" alt width="1891" height="1747" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 7.</strong><span data-astro-cid-dzaleqsp> Other Outcomes: Comparison with Understanding Society</span></figcaption></figure><figure id="fig8" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00228-fig008.D1RTRKLZ_22B6Dq.webp" class="figure-lightbox-trigger" data-pswp-width="1891" data-pswp-height="1836" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00228-fig008.D1RTRKLZ_22B6Dq.webp" alt width="1891" height="1836" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 8.</strong><span data-astro-cid-dzaleqsp> Earnings: Comparison with Other Data Sources</span></figcaption></figure></div></details><details id="tables" class="article-section article-section--collapsible" data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Tables</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Summary of Child Characteristics and Family Conditions</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Child's characteristic / family condition</th>
+<th align="left">Data used in modelling</th>
+<th align="left">Source</th>
+<th align="left">Mean</th>
+<th align="left">SD</th>
+<th align="left">Min</th>
+<th align="left">Max</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">A: BASIC CHILD’S CHARACTERISTICS</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Sex</td>
+<td align="left">Indicator if child is male</td>
+<td align="left">MCS1</td>
+<td align="left">0.49</td>
+<td align="left">0.50</td>
+<td align="left">0</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left">Teenage smoking</td>
+<td align="left">Indicator if child smokes at 14</td>
+<td align="left">MCS6</td>
+<td align="left">0.16</td>
+<td align="left">0.37</td>
+<td align="left">0</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left">B: SOCIAL CONDITIONS</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Parental income</td>
+<td align="left">OECD equivalised household income after taxes and benefits, £</td>
+<td align="left">MCS1</td>
+<td align="left">32,004</td>
+<td align="left">19,972</td>
+<td align="left">1,445</td>
+<td align="left">128,246</td>
+</tr>
+<tr>
+<td align="left">Parental wealth</td>
+<td align="left">Parental assets, £</td>
+<td align="left">MCS5</td>
+<td align="left">3,068</td>
+<td align="left">19,937</td>
+<td align="left">0</td>
+<td align="left">600,000</td>
+</tr>
+<tr>
+<td align="left">Parental socio-economic position</td>
+<td align="left">Household income quintile</td>
+<td align="left">MCS1</td>
+<td align="left">3.06</td>
+<td align="left">1.37</td>
+<td align="left">1</td>
+<td align="left">5</td>
+</tr>
+<tr>
+<td align="left">Childhood poverty</td>
+<td align="left">Indicator if household income is below 60% median</td>
+<td align="left">MCS1</td>
+<td align="left">0.27</td>
+<td align="left">0.45</td>
+<td align="left">0</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left">C: PARENTAL CHARACTERISTICS</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Parental education</td>
+<td align="left">Indicator if parent has a university degree (NVQ 4 or above)</td>
+<td align="left">MCS1</td>
+<td align="left">0.31</td>
+<td align="left">0.46</td>
+<td align="left">0</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left">Parental depression at child’s birth</td>
+<td align="left">Indicator if Rutter malaise inventory score is 4 or above</td>
+<td align="left">MCS1</td>
+<td align="left">0.14</td>
+<td align="left">0.35</td>
+<td align="left">0</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left">Parental depression severity at child’s birth</td>
+<td align="left">9-item Rutter malaise inventory score</td>
+<td align="left">MCS1</td>
+<td align="left">1.66</td>
+<td align="left">1.68</td>
+<td align="left">0</td>
+<td align="left">9</td>
+</tr>
+<tr>
+<td align="left">Parental depression when child is 5 years old</td>
+<td align="left">Indicator if Kessler psychological distress scale score is 13 or above</td>
+<td align="left">MCS3</td>
+<td align="left">0.03</td>
+<td align="left">0.18</td>
+<td align="left">0</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left">Parental depression severity when child is 5 years old</td>
+<td align="left">6-item Kessler psychological distress scale score</td>
+<td align="left">MCS3</td>
+<td align="left">3.17</td>
+<td align="left">3.72</td>
+<td align="left">0</td>
+<td align="left">24</td>
+</tr>
+<tr>
+<td align="left">D: CHILD’S SOCIAL SKILLS</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Conduct problems up to age 4</td>
+<td align="left">SDQ conduct problem score (see the note)</td>
+<td align="left">MCS2</td>
+<td align="left">2.87</td>
+<td align="left">2.02</td>
+<td align="left">0</td>
+<td align="left">10</td>
+</tr>
+<tr>
+<td align="left">Conduct problems, ages 5-6</td>
+<td align="left">SDQ conduct problem score</td>
+<td align="left">MCS3</td>
+<td align="left">1.46</td>
+<td align="left">1.47</td>
+<td align="left">0</td>
+<td align="left">8</td>
+</tr>
+<tr>
+<td align="left">Conduct problems, ages 7-10</td>
+<td align="left">SDQ conduct problem score</td>
+<td align="left">MCS4</td>
+<td align="left">1.32</td>
+<td align="left">1.50</td>
+<td align="left">0</td>
+<td align="left">9</td>
+</tr>
+<tr>
+<td align="left">Conduct problems, ages 11-13</td>
+<td align="left">SDQ conduct problem score</td>
+<td align="left">MCS5</td>
+<td align="left">1.38</td>
+<td align="left">1.58</td>
+<td align="left">0</td>
+<td align="left">10</td>
+</tr>
+<tr>
+<td align="left">Conduct problems, age 14+</td>
+<td align="left">SDQ conduct problem score</td>
+<td align="left">MCS6</td>
+<td align="left">1.42</td>
+<td align="left">1.68</td>
+<td align="left">0</td>
+<td align="left">10</td>
+</tr>
+<tr>
+<td align="left">Impact of problems up to age 4</td>
+<td align="left">SDQ impact supplement score</td>
+<td align="left">MCS2</td>
+<td align="left">0.11</td>
+<td align="left">0.58</td>
+<td align="left">0</td>
+<td align="left">8</td>
+</tr>
+<tr>
+<td align="left">Impact of problems, ages 5-6</td>
+<td align="left">SDQ impact supplement score</td>
+<td align="left">MCS3</td>
+<td align="left">0.13</td>
+<td align="left">0.63</td>
+<td align="left">0</td>
+<td align="left">8</td>
+</tr>
+<tr>
+<td align="left">Impact of problems, age 7+</td>
+<td align="left">SDQ impact supplement score</td>
+<td align="left">MCS4</td>
+<td align="left">0.25</td>
+<td align="left">0.91</td>
+<td align="left">0</td>
+<td align="left">9</td>
+</tr>
+<tr>
+<td align="left">E: CHILD’S COGNITIVE SKILLS</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Cognitive skills up to age 4</td>
+<td align="left">Various measures (see the note)</td>
+<td align="left">MCS2</td>
+<td align="left">1.02</td>
+<td align="left">0.14</td>
+<td align="left">0.58</td>
+<td align="left">1.44</td>
+</tr>
+<tr>
+<td align="left">Cognitive skills, ages 5-6</td>
+<td align="left">Various measures</td>
+<td align="left">MCS3</td>
+<td align="left">1.03</td>
+<td align="left">0.13</td>
+<td align="left">0.57</td>
+<td align="left">1.45</td>
+</tr>
+<tr>
+<td align="left">Cognitive skills, ages 7-10</td>
+<td align="left">Various measures</td>
+<td align="left">MCS4</td>
+<td align="left">1.03</td>
+<td align="left">0.14</td>
+<td align="left">0.56</td>
+<td align="left">1.41</td>
+</tr>
+<tr>
+<td align="left">Cognitive skills, ages 11-13</td>
+<td align="left">Various measures</td>
+<td align="left">MCS5</td>
+<td align="left">1.03</td>
+<td align="left">0.15</td>
+<td align="left">0.39</td>
+<td align="left">1.49</td>
+</tr>
+<tr>
+<td align="left">Cognitive skills, age 14+</td>
+<td align="left">Various measures</td>
+<td align="left">MCS6</td>
+<td align="left">1.02</td>
+<td align="left">0.14</td>
+<td align="left">0.43</td>
+<td align="left">1.50</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Note: The analysis is for 100,000 individuals in the LifeSim cohort. MCS denotes MCS sweep <i>j</i> (6 sweeps in total). Children were 9 months old in MCS1, 3 years old in MCS2, 5 years old in MCS3, 7 years old in MCS4, 11 years old in MCS5 and 14 years old in MCS6. SDQ conduct problem and impacts scores have a scale 0-10, with a higher value representing more problems/higher impact of problems. The cognitive skills measure is an age-specific common factor extracted from the various cognitive skills measures in MCS, including the British Ability Scales II, Bracken School Readiness Assessment, National Foundation for Educational Research Progress in Maths, Cambridge Neuropsychological Test Automated Battery tests and Applied Psychology Unit.</p></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Determinants of the Modelled Outcomes</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Outcomes (Y)</th>
+<th align="left"/>
+<th align="left" colspan="3">Determinants (X)</th>
+</tr>
+<tr>
+<th align="left" rowspan="2">Name</th>
+<th align="left" rowspan="2">Type</th>
+<th align="left" rowspan="2">Other modelled outcomes (parameter source in brackets)</th>
+<th align="left" colspan="2">Exogenous variables</th>
+</tr>
+<tr>
+<th align="left">From childhood dataset (MCS)</th>
+<th align="left">From target datasets</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">SOCIAL</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Conduct disorder</td>
+<td align="left">P, I</td>
+<td align="left"/>
+<td align="left">SDQ conduct problem score, SDQ impact score (both <a href="#bib50">Goodman et al. (2015)</a>);</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Education (university degree)</td>
+<td align="left">P, I</td>
+<td align="left">Poverty at age 18 (<a href="#bib50">Goodman et al., 2015</a>; <a href="#bib49">Fletcher, 2010</a>; <a href="#bib47">Farahati et al., 2003</a>);</td>
+<td align="left">Cognitive skills (age 14), SDQ conduct problem score (age 14) (both <a href="#bib50">Goodman et al. (2015)</a>);</td>
+<td align="left">Estimated likelihood of a person participating in Higher Education by age 30 (DE, 2016);</td>
+</tr>
+<tr>
+<td align="left">Unemployment (employment)</td>
+<td align="left">P, I</td>
+<td align="left">L.prob. of employment; prison; age;</td>
+<td align="left">Cognitive skills (age 14) (<a href="#bib50">Goodman et al. (2015)</a>), SDQ conduct problem score (age 14) (both <a href="#bib50">Goodman et al. (2015)</a>);</td>
+<td align="left">Employment rate in UK by age and sex (ONS, 2018);</td>
+</tr>
+<tr>
+<td align="left">Poverty</td>
+<td align="left">I</td>
+<td align="left">Consumption;</td>
+<td align="left">60% equivalised household income in UK (ONS, 2011);</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Prison</td>
+<td align="left">P, I</td>
+<td align="left">L.prob. of prison; conduct disorder at age 18 (<a href="#bib48">Fergusson et al., 2005</a>); L.depression (<a href="#bib37">Anderson et al., 2015</a>);</td>
+<td align="left"/>
+<td align="left">Prison rates in England by age and sex ( MJ, 2017 and ONS, 2018);</td>
+</tr>
+<tr>
+<td align="left">Residential care</td>
+<td align="left">P, I</td>
+<td align="left">L.prob. of residential care; L.depression (<a href="#bib60">McDougall et al., 2007</a>; <a href="#bib64">Stewart et al., 2014</a>);</td>
+<td align="left"/>
+<td align="left">Rates of people aged 65+ in care home by sex in England (ONS, 2011).</td>
+</tr>
+<tr>
+<td align="left">HEALTH</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Smoking</td>
+<td align="left">P, I</td>
+<td align="left">L.prob. of smoking; education, poverty (both <a href="#bib53">Jefferis et al. (2003)</a>); depression (<a href="#bib54">Lasser et al., 2000</a>), prison (<a href="#bib63">Singleton et al., 2003</a>);</td>
+<td align="left"/>
+<td align="left">Teenage smoking rates by sex (MCS, age 14) (param. from <a href="#bib53">Jefferis et al. (2003)</a>), smoking rate in England by age, sex and IMD quintile group (HSE, 2006);</td>
+</tr>
+<tr>
+<td align="left">Coronary heart disease (CHD)</td>
+<td align="left">P, I</td>
+<td align="left">L.prob. of CHD; L.smoking (<a href="#bib39">Bazzano et al., 2003</a>; <a href="#bib43">Critchley and Capewell, 2003</a>); L.poverty (<a href="#bib58">Marmot et al., 1997</a>);</td>
+<td align="left"/>
+<td align="left">CHD rates in England by age, sex and IMD quintile group (HSE, 2006);</td>
+</tr>
+<tr>
+<td align="left">Depression</td>
+<td align="left">P, I</td>
+<td align="left">L.prob. of depression; L.conduct disorder (<a href="#bib57">Luby et al., 2014</a>); employment (<a href="#bib66">Thomas et al., 2005</a>); poverty (<a href="#bib67">Weich and Lewis, 1998</a>);</td>
+<td align="left"/>
+<td align="left">Emotional disorder rates in England by age, sex and IMD quintile group (MHCYPGB, 2004), depression rates in England by age, sex and IMD quintile group (HSE, 2014);</td>
+</tr>
+<tr>
+<td align="left">Mortality</td>
+<td align="left">P, I</td>
+<td align="left">Depression (<a href="#bib42">Chang et al., 2010</a>); CHD (estimated using HSE (2006) and ONS data);</td>
+<td align="left"/>
+<td align="left">Mortality rates in England by age, sex and IMD quintile group (ONS, 2011);</td>
+</tr>
+<tr>
+<td align="left">ECONOMIC</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Earnings from employment (gross), £</td>
+<td align="left">C</td>
+<td align="left">Education (<a href="#bib40">Blundell et al., 2000</a>) ; employment; age;</td>
+<td align="left">Cognitive skills at age 14, SDQ conduct problem score at age 14 (both <a href="#bib50">Goodman et al. (2015)</a>);</td>
+<td align="left">Full time annual gross pay in UK by age and sex (ONS, 2015);</td>
+</tr>
+<tr>
+<td align="left">Interest, £</td>
+<td align="left">C</td>
+<td align="left">L.Wealth;</td>
+<td align="left"/>
+<td align="left">Interest rates in UK;</td>
+</tr>
+<tr>
+<td align="left">Pension, £</td>
+<td align="left">C</td>
+<td align="left">Years in employment; age;</td>
+<td align="left"/>
+<td align="left">Level of state pension in UK;</td>
+</tr>
+<tr>
+<td align="left">Savings, £</td>
+<td align="left">C</td>
+<td align="left">Earnings from employment; interest; taxes; L.consumption;</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Wealth, £</td>
+<td align="left">C</td>
+<td align="left">L.Wealth; Earnings from employment; interest; pension; tax; consumption; residential care; age;</td>
+<td align="left">Parental wealth; parental income;</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Taxes, £</td>
+<td align="left">C</td>
+<td align="left">Earnings from employment; interest; pension;</td>
+<td align="left"/>
+<td align="left">Income tax brackets in UK;</td>
+</tr>
+<tr>
+<td align="left">Benefits, £</td>
+<td align="left">C</td>
+<td align="left">Earnings from employment; interest; pension; wealth; residential care;</td>
+<td align="left">Parental income;</td>
+<td align="left">Conditions for claiming benefits in UK;</td>
+</tr>
+<tr>
+<td align="left">WELLBEING</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Consumption, £</td>
+<td align="left">C</td>
+<td align="left">Earnings from employment; interest, pension; taxes; savings; residential care; L.consumption, L.wealth;</td>
+<td align="left">Parental income;</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Health quality, QALYs</td>
+<td align="left">C</td>
+<td align="left">CHD, depression (both <a href="#bib65">Sullivan et al. (2011)</a>);</td>
+<td align="left"/>
+<td align="left">Average health quality in England by age, sex and IMD quintile group (<a href="#bib56">Love-Koh et al., 2015</a>);</td>
+</tr>
+<tr>
+<td align="left">Wellbeing, wellbeing-QALYs</td>
+<td align="left">C</td>
+<td align="left">Health quality, consumption (both <a href="#bib7">Cookson et al. (2021)</a>).</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Note: Outcome types: P -- probability, I -- indicator, C -- continuous. Other abbreviations: prob. - probability, L. -- lagged (previous year), MCS -- Millennium Cohort Study, ONS -- Office for National Statistics, HSE -- Health Survey for England, MHCYPGB -- Mental Health of Children and Young People in Great Britain, IMD -- Index of Multiple Deprivation, DE -- Department of Education. Full references for the parameter sources are in the Appendix B.</p></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Summary Statistics of the Simulated Outcomes</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" rowspan="2">Outcome</th>
+<th align="left" colspan="4">Baseline simulation</th>
+<th align="left" colspan="2">Bootstrap simulation</th>
+</tr>
+<tr>
+<th align="left">Mean</th>
+<th align="left">SD</th>
+<th align="left">Min</th>
+<th align="left">Max</th>
+<th align="left">Mean</th>
+<th align="left">SE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">CHILD OUTCOMES</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Conduct disorder at age 5, %</td>
+<td align="left">8.63</td>
+<td align="left">28.08</td>
+<td align="left">0.00</td>
+<td align="left">100.00</td>
+<td align="left">8.59</td>
+<td align="left">0.10</td>
+</tr>
+<tr>
+<td align="left">Conduct disorder at age 18, %</td>
+<td align="left">9.09</td>
+<td align="left">28.74</td>
+<td align="left">0.00</td>
+<td align="left">100.00</td>
+<td align="left">9.00</td>
+<td align="left">0.08</td>
+</tr>
+<tr>
+<td align="left">ADULT OUTCOMES</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Proportion of university graduates, %</td>
+<td align="left">38.51</td>
+<td align="left">48.66</td>
+<td align="left">0.00</td>
+<td align="left">100.00</td>
+<td align="left">38.51</td>
+<td align="left">0.15</td>
+</tr>
+<tr>
+<td align="left">Proportion of working years in unemployment, %</td>
+<td align="left">5.73</td>
+<td align="left">6.63</td>
+<td align="left">0.00</td>
+<td align="left">100.00</td>
+<td align="left">5.70</td>
+<td align="left">0.02</td>
+</tr>
+<tr>
+<td align="left">Proportion of lifetime in poverty, %</td>
+<td align="left">26.85</td>
+<td align="left">18.30</td>
+<td align="left">0.00</td>
+<td align="left">100.00</td>
+<td align="left">26.80</td>
+<td align="left">0.05</td>
+</tr>
+<tr>
+<td align="left">Proportion of working years in prison, %</td>
+<td align="left">1.62</td>
+<td align="left">5.12</td>
+<td align="left">0.00</td>
+<td align="left">75.00</td>
+<td align="left">1.60</td>
+<td align="left">0.01</td>
+</tr>
+<tr>
+<td align="left">Proportion of retirement in residential care, %</td>
+<td align="left">1.28</td>
+<td align="left">3.95</td>
+<td align="left">0.00</td>
+<td align="left">100.00</td>
+<td align="left">1.28</td>
+<td align="left">0.02</td>
+</tr>
+<tr>
+<td align="left">Proportion of adult years as a smoker, %</td>
+<td align="left">5.32</td>
+<td align="left">5.12</td>
+<td align="left">0.00</td>
+<td align="left">100.00</td>
+<td align="left">5.31</td>
+<td align="left">0.02</td>
+</tr>
+<tr>
+<td align="left">Proportion of adult years with CHD, %</td>
+<td align="left">6.16</td>
+<td align="left">4.07</td>
+<td align="left">0.00</td>
+<td align="left">33.33</td>
+<td align="left">6.15</td>
+<td align="left">0.01</td>
+</tr>
+<tr>
+<td align="left">Proportion of life years with mental illness, %</td>
+<td align="left">5.98</td>
+<td align="left">2.81</td>
+<td align="left">0.00</td>
+<td align="left">25.81</td>
+<td align="left">5.99</td>
+<td align="left">0.01</td>
+</tr>
+<tr>
+<td align="left">Years of life</td>
+<td align="left">78.78</td>
+<td align="left">13.04</td>
+<td align="left">0.00</td>
+<td align="left">100.00</td>
+<td align="left">78.80</td>
+<td align="left">0.04</td>
+</tr>
+<tr>
+<td align="left">Premature mortality rate (before age 75), %</td>
+<td align="left">28.13</td>
+<td align="left">44.96</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">28.04</td>
+<td align="left">0.14</td>
+</tr>
+<tr>
+<td align="left">Annual earnings (lifetime average), £</td>
+<td align="left">29,655</td>
+<td align="left">7,638</td>
+<td align="left">4,792</td>
+<td align="left">67,879</td>
+<td align="left">29,659</td>
+<td align="left">23</td>
+</tr>
+<tr>
+<td align="left">Annual savings (lifetime average), £</td>
+<td align="left">2,833</td>
+<td align="left">942</td>
+<td align="left">0</td>
+<td align="left">7,803</td>
+<td align="left">2,832</td>
+<td align="left">3</td>
+</tr>
+<tr>
+<td align="left">Annual interest (lifetime average), £</td>
+<td align="left">402</td>
+<td align="left">234</td>
+<td align="left">0</td>
+<td align="left">3,321</td>
+<td align="left">402</td>
+<td align="left">1</td>
+</tr>
+<tr>
+<td align="left">FINAL WELLBEING OUTCOMES</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Annual consumption (lifetime average), £</td>
+<td align="left">24,114</td>
+<td align="left">6,648</td>
+<td align="left">10,000</td>
+<td align="left">113,817</td>
+<td align="left">24,115</td>
+<td align="left">22</td>
+</tr>
+<tr>
+<td align="left">Healthy years</td>
+<td align="left">68.28</td>
+<td align="left">9.99</td>
+<td align="left">0.87</td>
+<td align="left">88.16</td>
+<td align="left">68.30</td>
+<td align="left">0.03</td>
+</tr>
+<tr>
+<td align="left">Healthy years (discounted)</td>
+<td align="left">40.94</td>
+<td align="left">3.96</td>
+<td align="left">0.87</td>
+<td align="left">48.01</td>
+<td align="left">40.96</td>
+<td align="left">0.01</td>
+</tr>
+<tr>
+<td align="left">Good years</td>
+<td align="left">65.67</td>
+<td align="left">10.21</td>
+<td align="left">0.69</td>
+<td align="left">91.93</td>
+<td align="left">65.69</td>
+<td align="left">0.03</td>
+</tr>
+<tr>
+<td align="left">Good years (discounted)</td>
+<td align="left">39.80</td>
+<td align="left">4.89</td>
+<td align="left">0.69</td>
+<td align="left">52.18</td>
+<td align="left">39.82</td>
+<td align="left">0.01</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Note: The baseline simulation mean, standard deviation (SD), minimum value (Min) and maximum value (Max) are calculated for the simulated population of 100,000 (for the lifetime aggregates, or yearly – for the annual variables). The bootstrap simulation mean and standard error (SE) are calculated for the distribution of the means of the 100 bootstrap simulations. The time periods for calculating life-stage proportions are as follows: ‘working years’ refer to the period between ages 19-69; ‘retirement’ refers to the time period from age 70 up to death; adult years refer to the time period from age 19 up to death; lifetime refers to the entire period from birth to death. CHD – coronary heart disease. We use year 2015/16 prices and the annual discount rate of 1.5% (<a href="#bib25">Paulden and Claxton, 2012</a>).</p></div></figure><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Cumulative Costs Over Various Time Periods</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Costs (Per Capita), £</th>
+<th align="left">Age 0-10</th>
+<th align="left">Age 0-15</th>
+<th align="left">Age 0-20</th>
+<th align="left">Age 0-25</th>
+<th align="left">Lifetime</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" colspan="6">GENERAL POPULATION COHORT</td>
+</tr>
+<tr>
+<td align="left">PUBLIC SERVICES</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Conduct disorderPrisonResidential care</td>
+<td align="left">1,10000</td>
+<td align="left">1,70000</td>
+<td align="left">1,8009300</td>
+<td align="left">1,8003,2000</td>
+<td align="left">1,80017,0001,200</td>
+</tr>
+<tr>
+<td align="left">HEALTHCARE</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">CHDDepressionOther</td>
+<td align="left">07409,300</td>
+<td align="left">01,90014,000</td>
+<td align="left">03,60020,000</td>
+<td align="left">04,90027,000</td>
+<td align="left">1,40014,00088,000</td>
+</tr>
+<tr>
+<td align="left">Benefit payments</td>
+<td align="left">1,400</td>
+<td align="left">2,100</td>
+<td align="left">4,100</td>
+<td align="left">6,300</td>
+<td align="left">12,000</td>
+</tr>
+<tr>
+<td align="center" colspan="6">LOWEST INCOME QUINTILE GROUP AT BIRTH</td>
+</tr>
+<tr>
+<td align="left">PUBLIC SERVICES</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Conduct disorderPrisonResidential care</td>
+<td align="left">1,40000</td>
+<td align="left">2,10000</td>
+<td align="left">2,2001,1000</td>
+<td align="left">2,2004,0000</td>
+<td align="left">2,20020,0001,200</td>
+</tr>
+<tr>
+<td align="left">HEALTHCARE</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">CHDDepressionOther</td>
+<td align="left">077011,000</td>
+<td align="left">02,00016,000</td>
+<td align="left">03,60022,000</td>
+<td align="left">05,00029,000</td>
+<td align="left">1,40014,00091,000</td>
+</tr>
+<tr>
+<td align="left">Benefit payments</td>
+<td align="left">8,600</td>
+<td align="left">12,000</td>
+<td align="left">17,000</td>
+<td align="left">19,000</td>
+<td align="left">22,000</td>
+</tr>
+<tr>
+<td align="center" colspan="6">TOP INCOME QUINTILE GROUP AT BIRTH</td>
+</tr>
+<tr>
+<td align="left">PUBLIC SERVICES</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Conduct disorderPrisonResidential care</td>
+<td align="left">88000</td>
+<td align="left">1,30000</td>
+<td align="left">1,5008000</td>
+<td align="left">1,5002,7000</td>
+<td align="left">1,50014,0001,100</td>
+</tr>
+<tr>
+<td align="left">HEALTHCARE</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">CHDDepressionOther</td>
+<td align="left">07108,400</td>
+<td align="left">01,90013,000</td>
+<td align="left">03,50018,000</td>
+<td align="left">04,90025,000</td>
+<td align="left">1,40014,00085,000</td>
+</tr>
+<tr>
+<td align="left">Benefit payments</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">1,300</td>
+<td align="left">3,000</td>
+<td align="left">7,900</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Note: All values are calculated per simulated individual in year 2015/16 prices, and discounted at 1.5% annual rate, and rounded to 2 significant figures. See details on cost sources in <a href="#A1-T6">Table A6</a> in <a href="#app1">Appendix A</a>.</p></div></figure><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Whole Cohort Lifetime Inequality by Childhood Circumstance</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Childhood circumstance</th>
+<th align="left">Number of children</th>
+<th align="left">Annual consumption, £</th>
+<th align="left">Lifetime health, healthy years</th>
+<th align="left">Lifetime wellbeing, good years</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Best off 20%</td>
+<td align="left">20,000</td>
+<td align="left">32,559</td>
+<td align="left">68.71</td>
+<td align="left">69.59</td>
+</tr>
+<tr>
+<td align="left">Worst off 20%</td>
+<td align="left">20,000</td>
+<td align="left">18,471</td>
+<td align="left">66.31</td>
+<td align="left">59.84</td>
+</tr>
+<tr>
+<td align="left">Difference</td>
+<td align="left"/>
+<td align="left">14,088</td>
+<td align="left">2.40<sup><a href="#fn7">7</a></sup>
+</td>
+<td align="left">9.76</td>
+</tr>
+<tr>
+<td align="left">Extreme best off 20%</td>
+<td align="left">12,149</td>
+<td align="left">32,909</td>
+<td align="left">68.81</td>
+<td align="left">69.83</td>
+</tr>
+<tr>
+<td align="left">Extreme worst off 20%</td>
+<td align="left">26</td>
+<td align="left">16,808</td>
+<td align="left">62.16</td>
+<td align="left">54.51</td>
+</tr>
+<tr>
+<td align="left">Difference</td>
+<td align="left"/>
+<td align="left">16,101</td>
+<td align="left">6.66</td>
+<td align="left">15.32</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Note: The average policy gains per cohort member for the subgroups of the simulated cohort of 100,000 individuals.</p></div></figure><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Comparison with the British Cohort 1970</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" rowspan="2">Outcome</th>
+<th align="left" colspan="2">N</th>
+<th align="left" colspan="2">Mean</th>
+<th align="left" rowspan="2">Differencein means</th>
+<th align="left" colspan="2">SD</th>
+<th align="left">Difference</th>
+</tr>
+<tr>
+<th align="left">LifeSim</th>
+<th align="left">BCS70</th>
+<th align="left">LifeSim</th>
+<th align="left">BCS70</th>
+<th align="left">LifeSim</th>
+<th align="left">BCS70</th>
+<th align="left">in SDs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center" colspan="9">AGE 26</td>
+</tr>
+<tr>
+<td align="left">Male (indicator)</td>
+<td align="left">99,402</td>
+<td align="left">9,003</td>
+<td align="left">0.48</td>
+<td align="left">0.46</td>
+<td align="left">0.03</td>
+<td align="left">0.50</td>
+<td align="left">0.50</td>
+<td align="left">0.00</td>
+</tr>
+<tr>
+<td align="left">University Degree (indicator)</td>
+<td align="left">99,402</td>
+<td align="left">8,399</td>
+<td align="left">0.39</td>
+<td align="left">0.25</td>
+<td align="left">0.13</td>
+<td align="left">0.49</td>
+<td align="left">0.43</td>
+<td align="left">0.05</td>
+</tr>
+<tr>
+<td align="left">Employed (indicator)</td>
+<td align="left">99402</td>
+<td align="left">9003</td>
+<td align="left">0.95</td>
+<td align="left">0.96</td>
+<td align="left">-0.01</td>
+<td align="left">0.23</td>
+<td align="left">0.20</td>
+<td align="left">0.02</td>
+</tr>
+<tr>
+<td align="left">Earnings (in year 2015 £)</td>
+<td align="left">99,402</td>
+<td align="left">6,642</td>
+<td align="left">19,736</td>
+<td align="left">14,279</td>
+<td align="left">5,457</td>
+<td align="left">5,882</td>
+<td align="left">7,110</td>
+<td align="left">-1,228</td>
+</tr>
+<tr>
+<td align="left">Depression (indicator)</td>
+<td align="left">99402</td>
+<td align="left">9003</td>
+<td align="left">0.07</td>
+<td align="left">0.10</td>
+<td align="left">-0.03</td>
+<td align="left">0.25</td>
+<td align="left">0.30</td>
+<td align="left">-0.05</td>
+</tr>
+<tr>
+<td align="left">Smoking (indicator)</td>
+<td align="left">99,402</td>
+<td align="left">8,892</td>
+<td align="left">0.06</td>
+<td align="left">0.27</td>
+<td align="left">-0.20</td>
+<td align="left">0.25</td>
+<td align="left">0.44</td>
+<td align="left">-0.20</td>
+</tr>
+<tr>
+<td align="center" colspan="9">AGE 29</td>
+</tr>
+<tr>
+<td align="left">Male (indicator)</td>
+<td align="left">99,267</td>
+<td align="left">11,261</td>
+<td align="left">0.48</td>
+<td align="left">0.49</td>
+<td align="left">-0.00</td>
+<td align="left">0.50</td>
+<td align="left">0.50</td>
+<td align="left">-0.00</td>
+</tr>
+<tr>
+<td align="left">University Degree (indicator)</td>
+<td align="left">99,267</td>
+<td align="left">11,211</td>
+<td align="left">0.39</td>
+<td align="left">0.27</td>
+<td align="left">0.11</td>
+<td align="left">0.49</td>
+<td align="left">0.44</td>
+<td align="left">0.04</td>
+</tr>
+<tr>
+<td align="left">Employed (indicator)</td>
+<td align="left">99,267</td>
+<td align="left">9,506</td>
+<td align="left">0.94</td>
+<td align="left">0.96</td>
+<td align="left">-0.02</td>
+<td align="left">0.23</td>
+<td align="left">0.19</td>
+<td align="left">0.04</td>
+</tr>
+<tr>
+<td align="left">Earnings (in year 2015 £)</td>
+<td align="left">99,267</td>
+<td align="left">8,102</td>
+<td align="left">22,400</td>
+<td align="left">20,796</td>
+<td align="left">1,604</td>
+<td align="left">6,682</td>
+<td align="left">68,798</td>
+<td align="left">-62,115</td>
+</tr>
+<tr>
+<td align="left">Depression (indicator)</td>
+<td align="left">99,267</td>
+<td align="left">11,261</td>
+<td align="left">0.07</td>
+<td align="left">0.10</td>
+<td align="left">-0.03</td>
+<td align="left">0.25</td>
+<td align="left">0.30</td>
+<td align="left">-0.05</td>
+</tr>
+<tr>
+<td align="left">Smoking (indicator)</td>
+<td align="left">99,267</td>
+<td align="left">11,205</td>
+<td align="left">0.06</td>
+<td align="left">0.29</td>
+<td align="left">-0.23</td>
+<td align="left">0.24</td>
+<td align="left">0.45</td>
+<td align="left">-0.22</td>
+</tr>
+<tr>
+<td align="center" colspan="9">AGE 42</td>
+</tr>
+<tr>
+<td align="left">Male (indicator)</td>
+<td align="left">98,149</td>
+<td align="left">9,841</td>
+<td align="left">0.48</td>
+<td align="left">0.48</td>
+<td align="left">0.00</td>
+<td align="left">0.50</td>
+<td align="left">0.50</td>
+<td align="left">0.00</td>
+</tr>
+<tr>
+<td align="left">University Degree (indicator)</td>
+<td align="left">98,149</td>
+<td align="left">9,841</td>
+<td align="left">0.39</td>
+<td align="left">0.34</td>
+<td align="left">0.05</td>
+<td align="left">0.49</td>
+<td align="left">0.47</td>
+<td align="left">0.01</td>
+</tr>
+<tr>
+<td align="left">Employed (indicator)</td>
+<td align="left">98,149</td>
+<td align="left">8,594</td>
+<td align="left">0.95</td>
+<td align="left">0.97</td>
+<td align="left">-0.02</td>
+<td align="left">0.21</td>
+<td align="left">0.16</td>
+<td align="left">0.05</td>
+</tr>
+<tr>
+<td align="left">Earnings (in year 2015 £)</td>
+<td align="left">98,149</td>
+<td align="left">2,158</td>
+<td align="left">29,327</td>
+<td align="left">22,107</td>
+<td align="left">7,220</td>
+<td align="left">9,604</td>
+<td align="left">15,567</td>
+<td align="left">-5,963</td>
+</tr>
+<tr>
+<td align="left">Depression (indicator)</td>
+<td align="left">98,149</td>
+<td align="left">9,756</td>
+<td align="left">0.07</td>
+<td align="left">0.11</td>
+<td align="left">-0.04</td>
+<td align="left">0.26</td>
+<td align="left">0.31</td>
+<td align="left">-0.05</td>
+</tr>
+<tr>
+<td align="left">Smoking (indicator)</td>
+<td align="left">98,149</td>
+<td align="left">9,801</td>
+<td align="left">0.06</td>
+<td align="left">0.20</td>
+<td align="left">-0.14</td>
+<td align="left">0.24</td>
+<td align="left">0.40</td>
+<td align="left">-0.17</td>
+</tr>
+<tr>
+<td align="center" colspan="9">AGE 46</td>
+</tr>
+<tr>
+<td align="left">Male (indicator)</td>
+<td align="left">97,532</td>
+<td align="left">8,581</td>
+<td align="left">0.48</td>
+<td align="left">0.48</td>
+<td align="left">-0.00</td>
+<td align="left">0.50</td>
+<td align="left">0.50</td>
+<td align="left">-0.00</td>
+</tr>
+<tr>
+<td align="left">University Degree (indicator)</td>
+<td align="left">97,532</td>
+<td align="left">8,444</td>
+<td align="left">0.39</td>
+<td align="left">0.34</td>
+<td align="left">0.04</td>
+<td align="left">0.49</td>
+<td align="left">0.47</td>
+<td align="left">0.01</td>
+</tr>
+<tr>
+<td align="left">Employed (indicator)</td>
+<td align="left">97,532</td>
+<td align="left">5,038</td>
+<td align="left">0.95</td>
+<td align="left">0.99</td>
+<td align="left">-0.03</td>
+<td align="left">0.21</td>
+<td align="left">0.12</td>
+<td align="left">0.09</td>
+</tr>
+<tr>
+<td align="left">Earnings (in year 2015 £)</td>
+<td align="left">97,532</td>
+<td align="left">358</td>
+<td align="left">28,558</td>
+<td align="left">22,538</td>
+<td align="left">6,020</td>
+<td align="left">9,978</td>
+<td align="left">31,559</td>
+<td align="left">-21,581</td>
+</tr>
+<tr>
+<td align="left">CHD (indicator)</td>
+<td align="left">97,532</td>
+<td align="left">8,353</td>
+<td align="left">0.02</td>
+<td align="left">0.00</td>
+<td align="left">0.02</td>
+<td align="left">0.15</td>
+<td align="left">0.05</td>
+<td align="left">0.10</td>
+</tr>
+<tr>
+<td align="left">Depression (indicator)</td>
+<td align="left">97,532</td>
+<td align="left">8,486</td>
+<td align="left">0.06</td>
+<td align="left">0.14</td>
+<td align="left">-0.08</td>
+<td align="left">0.23</td>
+<td align="left">0.35</td>
+<td align="left">-0.12</td>
+</tr>
+<tr>
+<td align="left">Smoking (indicator)</td>
+<td align="left">97,532</td>
+<td align="left">8,578</td>
+<td align="left">0.05</td>
+<td align="left">0.15</td>
+<td align="left">-0.10</td>
+<td align="left">0.23</td>
+<td align="left">0.36</td>
+<td align="left">-0.13</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Note: N – number of observations, SD – standard-deviation. We quantify the difference between the LifeSim distribution and BCS70 distribution in terms of the absolute difference in their means and standard deviations. Earnings is the net pay from employment.</p></div></figure><figure id="A1-T1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A1.</strong><span data-astro-cid-dzaleqsp> Notation</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Notation</th>
+<th align="left">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"/>
+<td align="left">SIMULATED VARIABLES</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf94">
+<mrow>
+<mi>r</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>c</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Recipient for the parent-training programme (indicator);</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf95">
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Conduct problem measure;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf96">
+<mrow>
+<mi>i</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Impact of problems;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf97">
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Childhood conduct disorder (indicator);</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf98">
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>o</mi>
+<mo>⁢</mo>
+<mi>g</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Cognitive skills;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf99">
+<mrow>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>u</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">University degree (indicator);</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf100">
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>m</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Smokes (indicator);</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf101">
+<mrow>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Mental illness (indicator);</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf102">
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>h</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Coronary heart disease (CHD) (indicator);</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf103">
+<mrow>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Dead (indicator);</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf104">
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+<mo>⁢</mo>
+<mi>i</mi>
+<mo>⁢</mo>
+<mi>s</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">In prison (indicator);</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf105">
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">In residential care (indicator);</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf106">
+<mrow>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>m</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>l</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Employed (indicator);</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf107">
+<mrow>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+<mo>⁢</mo>
+<mi>n</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Annual earnings, £;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf108">
+<mrow>
+<mi>w</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>l</mi>
+<mo>⁢</mo>
+<mi>t</mi>
+<mo>⁢</mo>
+<mi>h</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Lifetime accumulated wealth;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf109">
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>o</mi>
+<mo>⁢</mo>
+<mi>n</mi>
+<mo>⁢</mo>
+<mi>s</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Annual consumption level, £;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf110">
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>o</mi>
+<mo>⁢</mo>
+<mi>v</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">In poverty (indicator);</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf111">
+<mrow>
+<mi>t</mi>
+<mo>⁢</mo>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>x</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Annual amount of taxes paid;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf112">
+<mrow>
+<mi>b</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>n</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>f</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Annual amount of benefits received;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf113">
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>v</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Savings rate;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf114">
+<mrow>
+<mrow>
+<mi>m</mi>
+<mo>⁢</mo>
+<mi>i</mi>
+<mo>⁢</mo>
+<mi>n</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>o</mi>
+<mo>⁢</mo>
+<mi>n</mi>
+<mo>⁢</mo>
+<mi>s</mi>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">Minimum consumption level, which government subsidises if it cannot be sustained by an individual;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf115">
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>x</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Male (indicator);</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf116">
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+</mrow>
+</math>
+
+</td>
+<td align="left">Socio-economic position (quintile group);</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf117">
+<mrow>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>q</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>M</mi>
+<mo>⁢</mo>
+<mi>C</mi>
+<mo>⁢</mo>
+<mi>S</mi>
+<mo>⁢</mo>
+<mi>j</mi>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">SDQ conduct problem score reported in MCS sweep <i>j</i> (<i>j</i> = 2; 3; 4; 5; 6);</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf118">
+<mrow>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>q</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>i</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>M</mi>
+<mo>⁢</mo>
+<mi>C</mi>
+<mo>⁢</mo>
+<mi>S</mi>
+<mo>⁢</mo>
+<mi>j</mi>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">SDQ impact score reported in MCS sweep<i>j</i>;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf119">
+<mrow>
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>o</mi>
+<mo>⁢</mo>
+<mi>g</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>M</mi>
+<mo>⁢</mo>
+<mi>C</mi>
+<mo>⁢</mo>
+<mi>S</mi>
+<mo>⁢</mo>
+<mi>j</mi>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">Extracted factor using principal component analysis based on cognitive skills tests reported in MCS sweep <i>j</i>, standardised with a mean of 1.00 and standard deviation of 0.15 following <a href="#bib68">Jones and Schoon (2008)</a>;</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">OTHER NOTATION</td>
+</tr>
+<tr>
+<td align="left">prefix <i>pr</i>.</td>
+<td align="left">Probability, i.e. 
+<math id="inf120">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<mi>p</mi>
+<mi>r</mi>
+<mo>.</mo>
+<mi>s</mi>
+<mi>m</mi>
+</mrow>
+</mstyle>
+</math>
+ denotes probability of smoking;</td>
+</tr>
+<tr>
+<td align="left">line over variable (—)</td>
+<td align="left">Mean calculated from a target dataset, i.e. 
+<math id="inf121">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<mover>
+<mrow>
+<mi>s</mi>
+<mi>m</mi>
+</mrow>
+<mo accent="false">¯</mo>
+</mover>
+<mo stretchy="false">[</mo>
+<mi>a</mi>
+<mi>g</mi>
+<mi>e</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mi>e</mi>
+<mi>x</mi>
+<mo stretchy="false">]</mo>
+</mrow>
+</mstyle>
+</math>
+ is proportion of people smoking in a particular age and sex group;</td>
+</tr>
+<tr>
+<td align="left">prefix <i>trend</i>.</td>
+<td align="left">Modelled time trend, i.e. the mean increase in variable over time, estimated from a target dataset, i.e. during working years expected earnings increase as people get past their youth, as they gain work experience, climb the career ladder, etc.;</td>
+</tr>
+<tr>
+<td align="left">prefix <i>sd</i>.</td>
+<td align="left">Modelled variation in some variable, i.e. standard deviation in the variable, estimated from a target dataset;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf122">
+<msubsup>
+<mi>β</mi>
+<mi>x</mi>
+<mi>y</mi>
+</msubsup>
+</math>
+
+</td>
+<td align="left">Parameter representing the effect of some outcome 
+<math id="inf123">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>m</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>h</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+</mrow>
+</mrow>
+</msubsup>
+</math>
+ denotes the effect of smoking on CHD risk. Depending on the context, we use it to represent coefficients from a linear regression, odds-ratios, etc. See full list of parameters, and their sources in <a href="#A1-T3">Table A3</a>;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf124">
+<mrow>
+<mi>S</mi>
+<mo>⁢</mo>
+<mi>M</mi>
+<mo>⁢</mo>
+<msub>
+<mi>R</mi>
+<mi>x</mi>
+</msub>
+</mrow>
+</math>
+
+</td>
+<td align="left">Standard mortality ratio given condition <i>x</i>, i.e. the probability of dying from condition <i>x</i> divided by the probability of dying in the general population.</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Note: MCS – Millennium Cohort Study.</p></div></figure><figure id="A1-T2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A2.</strong><span data-astro-cid-dzaleqsp> Target Data</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Description</th>
+<th align="left">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+
+<math id="inf125">
+<mrow>
+<mover accent="true">
+<mrow>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+</mrow>
+<mo>¯</mo>
+</mover>
+<mo>⁢</mo>
+<mrow>
+<mo stretchy="false">[</mo>
+<mrow>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>g</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+</mrow>
+<mo>,</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>x</mi>
+</mrow>
+<mo>,</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+</mrow>
+<mo stretchy="false">]</mo>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">Mortality rates (by age, sex and the English IMD quintile group);</td>
+<td align="left">ONS, 2011;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf126">
+<mrow>
+<mover accent="true">
+<mrow>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+</mrow>
+<mo>¯</mo>
+</mover>
+<mo>⁢</mo>
+<mrow>
+<mo stretchy="false">[</mo>
+<mrow>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>g</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+</mrow>
+<mo>,</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>x</mi>
+</mrow>
+<mo>,</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+</mrow>
+<mo stretchy="false">]</mo>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">Ages 5-18: proportion of children with any emotional disorder (by age, sex, and IMD quintile group); age 18+: depression diagnosed by a doctor and present or being treated within the past 12 months in England (by age, sex, and English IMD quintile group);</td>
+<td align="left">For age 5-18: Mental Health of Children and Young People Great Britain, 2004; age 18+: Health Survey for England, 2014;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf127">
+<mrow>
+<mover accent="true">
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>h</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+</mrow>
+<mo>¯</mo>
+</mover>
+<mo>⁢</mo>
+<mrow>
+<mo stretchy="false">[</mo>
+<mrow>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>g</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+</mrow>
+<mo>,</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>x</mi>
+</mrow>
+<mo>,</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+</mrow>
+<mo stretchy="false">]</mo>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">Proportion of people with CHD in England (by age, sex, and English IMD quintile group);</td>
+<td align="left">Health Survey for England, 2006;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf128">
+<mrow>
+<mover accent="true">
+<mrow>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+<mo>⁢</mo>
+<mi>n</mi>
+</mrow>
+<mo>¯</mo>
+</mover>
+<mo>⁢</mo>
+<mrow>
+<mo stretchy="false">[</mo>
+<mrow>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>g</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+</mrow>
+<mo>,</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>x</mi>
+</mrow>
+<mo stretchy="false">]</mo>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">Mean full time annual gross pay in UK (by age and sex);</td>
+<td align="left">Annual Survey of Hours and Earnings, ONS, 2015;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf129">
+<mrow>
+<mover accent="true">
+<mrow>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>m</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>l</mi>
+</mrow>
+<mo>¯</mo>
+</mover>
+<mo>⁢</mo>
+<mrow>
+<mo stretchy="false">[</mo>
+<mrow>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>g</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+</mrow>
+<mo>,</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>x</mi>
+</mrow>
+<mo stretchy="false">]</mo>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">Seasonally adjusted employment rate, expressed as a proportion of the economically active population (by age and sex);</td>
+<td align="left">Labour Force Survey, ONS, 2018;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf130">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<mover>
+<mrow>
+<mi>s</mi>
+<mi>d</mi>
+<mi>q</mi>
+<mo>.</mo>
+<mi>c</mi>
+<mi>p</mi>
+</mrow>
+<mo accent="false">¯</mo>
+</mover>
+<mo stretchy="false">[</mo>
+<mi>a</mi>
+<mi>g</mi>
+<mi>e</mi>
+<mo>,</mo>
+<mi>s</mi>
+<mi>e</mi>
+<mi>x</mi>
+<mo stretchy="false">]</mo>
+</mrow>
+</mstyle>
+</math>
+
+</td>
+<td align="left">Mean SDQ conduct problem score (by age and sex);</td>
+<td align="left">MCS, 2000–2014;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf131">
+<mrow>
+<mover accent="true">
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>o</mi>
+<mo>⁢</mo>
+<mi>g</mi>
+</mrow>
+<mo>¯</mo>
+</mover>
+<mo>⁢</mo>
+<mrow>
+<mo stretchy="false">[</mo>
+<mrow>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>g</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+</mrow>
+<mo>,</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>x</mi>
+</mrow>
+<mo stretchy="false">]</mo>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">Mean cognitive measure (by age and sex);</td>
+<td align="left">MCS, 2000–2014;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf132">
+<mrow>
+<mover accent="true">
+<mrow>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>u</mi>
+</mrow>
+<mo>¯</mo>
+</mover>
+<mo>⁢</mo>
+<mrow>
+<mo stretchy="false">[</mo>
+<mn>19</mn>
+<mo stretchy="false">]</mo>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">Higher Education Initial Participation Rate in 2015/2016 (estimate of the likelihood of a person participating in Higher Education by age 30, based on current participation rates, adjusted by the probability of dropping out);</td>
+<td align="left">Department for Education, 2016;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf133">
+<mrow>
+<mover accent="true">
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>m</mi>
+</mrow>
+<mo>¯</mo>
+</mover>
+<mo>⁢</mo>
+<mrow>
+<mo stretchy="false">[</mo>
+<mn>14</mn>
+<mo>,</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>x</mi>
+</mrow>
+<mo stretchy="false">]</mo>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">Proportion of 14-year-old children smoking (by sex);</td>
+<td align="left">MCS, 2014;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf134">
+<mrow>
+<mover accent="true">
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>m</mi>
+</mrow>
+<mo>¯</mo>
+</mover>
+<mo>⁢</mo>
+<mrow>
+<mo stretchy="false">[</mo>
+<mn>19</mn>
+<mo>,</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>x</mi>
+</mrow>
+<mo stretchy="false">]</mo>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">Proportion of daily smokers in England (by age, sex and English IMD quintile group) in England;</td>
+<td align="left">Health Survey for England, 2006;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf135">
+<mrow>
+<mover accent="true">
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>o</mi>
+<mo>⁢</mo>
+<mi>v</mi>
+</mrow>
+<mo>¯</mo>
+</mover>
+<mo>⁢</mo>
+<mrow>
+<mo stretchy="false">[</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>x</mi>
+</mrow>
+<mo stretchy="false">]</mo>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">Proportion of households below 60% median income by sex in UK;</td>
+<td align="left">Family Resources Survey, Department for Work &amp; Pensions, 2016/2017;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf136">
+<mrow>
+<mover accent="true">
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+</mrow>
+<mo>¯</mo>
+</mover>
+<mo>⁢</mo>
+<mrow>
+<mo stretchy="false">[</mo>
+<mn>4</mn>
+<mo>,</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>x</mi>
+</mrow>
+<mo stretchy="false">]</mo>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">Proportion of 4-year-old children with conduct disorder (by age, sex);</td>
+<td align="left">Mental Health of Children and Young People Great Britain, 2004;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf137">
+<mrow>
+<mover accent="true">
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+<mo>⁢</mo>
+<mi>i</mi>
+<mo>⁢</mo>
+<mi>s</mi>
+</mrow>
+<mo>¯</mo>
+</mover>
+<mo>⁢</mo>
+<mrow>
+<mo stretchy="false">[</mo>
+<mrow>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>g</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+</mrow>
+<mo>,</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>x</mi>
+</mrow>
+<mo stretchy="false">]</mo>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">Average proportion of people in prison (by age and sex) in England and Wales over 31 March 2017 - 31 March 2018 (calculated using population estimates in mid-2017);</td>
+<td align="left">Offender Management Statistics, Ministry of Justice, 2017-2018; Population Estimates for UK, England and Wales, Scotland and Northern Ireland Mid-2017, ONS;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf138">
+<mrow>
+<mover accent="true">
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+</mrow>
+<mo>¯</mo>
+</mover>
+<mo>⁢</mo>
+<mrow>
+<mo stretchy="false">[</mo>
+<mn>70</mn>
+<mo>,</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>x</mi>
+</mrow>
+<mo stretchy="false">]</mo>
+</mrow>
+</mrow>
+</math>
+
+</td>
+<td align="left">Proportion of people aged 65+ in resident care homes (by sex) in England and Wales, 2011;</td>
+<td align="left">“Changes in the older resident care home population between 2001 and 2011” 2014, ONS.</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Note: MCS – Millennium Cohort Study, ONS – Office for National Statistics, IMD – Index of Multiple Deprivation. Our notation uses an overline to denote averages from a target dataset.</p></div></figure><figure id="A1-T3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A3.</strong><span data-astro-cid-dzaleqsp> Parameters</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Parameter</th>
+<th align="left">Value</th>
+<th align="left">Source</th>
+<th align="left">Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+
+<math id="inf139">
+<mrow>
+<mi>S</mi>
+<mo>⁢</mo>
+<mi>M</mi>
+<mo>⁢</mo>
+<msub>
+<mi>R</mi>
+<mrow>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+</mrow>
+</msub>
+</mrow>
+</math>
+
+</td>
+<td align="left">3.21 among 15-44 year olds, 1.75 – 45-64 year olds and 1.18 for 65+</td>
+<td align="left">
+<a href="#bib42">Chang et al. (2010)</a>
+</td>
+<td align="left">Age standardised mortality ratios in southeast London 2007–2009, for people with depressive episode against the general population of England and Wales in 2008;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf140">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>h</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+</mrow>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">See <a href="#A1-T5">Table A5</a>
+</td>
+<td align="left">Health survey for England (2006); the 20th Century Mortality Files, ONS; Mid-year population estimates for England and Wales, ONS</td>
+<td align="left">Estimated probability of dying from CHD among those who have a CHD, in England and Wales, 2008 using CHD prevalence rates of 2006;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf141">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>q</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>o</mi>
+<mo>⁢</mo>
+<mi>n</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+</mrow>
+</mrow>
+<mrow>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+<mo>⁢</mo>
+<mi>n</mi>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">ln 1.004/<i>SD<sub>sdq.cp</sub>
+</i>
+</td>
+<td align="left">
+<a href="#bib50">Goodman et al. (2015)</a> social</td>
+<td align="left">0.4% increase in gross wage with standard deviation increase in externalising subscale (conduct+peer); <i>SD<sub>s</sub>
+</i>
+<sub>dq.cp</sub> – standard deviation of SDQ conduct problem score in the relevant age-sex subgroup of our simulation.</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf142">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>o</mi>
+<mo>⁢</mo>
+<mi>g</mi>
+</mrow>
+<mrow>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+<mo>⁢</mo>
+<mi>n</mi>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">ln 1.072/<i>SD<sub>cog</sub>
+</i>
+</td>
+<td align="left">
+<a href="#bib50">Goodman et al. (2015)</a> social</td>
+<td align="left">7.2% increase in gross wage with standard deviation increase in IQ score; <i>SD<sub>cog</sub>
+</i> – standard deviation of cognitive skills in the relevant age-sex subgroup of our simulation.</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf143">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>u</mi>
+</mrow>
+<mrow>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+<mo>⁢</mo>
+<mi>n</mi>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">ln 1.17if male; ln 1.37if female</td>
+<td align="left">
+<a href="#bib40">Blundell et al. (2000)</a>
+</td>
+<td align="left">17% increase in hourly wage from having undergraduate degree for males, 37% for females;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf144">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>o</mi>
+<mo>⁢</mo>
+<mi>g</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>u</mi>
+</mrow>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">
+
+<math id="inf145">
+<mrow>
+<mrow>
+<mn>0.12</mn>
+<mo>/</mo>
+<mi>S</mi>
+</mrow>
+<mo>⁢</mo>
+<msub>
+<mi>D</mi>
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>o</mi>
+<mo>⁢</mo>
+<mi>g</mi>
+<mo>⁢</mo>
+<mrow>
+<mo stretchy="false">(</mo>
+<mn>19</mn>
+<mo stretchy="false">)</mo>
+</mrow>
+</mrow>
+</msub>
+</mrow>
+</math>
+
+</td>
+<td align="left">
+<a href="#bib50">Goodman et al. (2015)</a> social</td>
+<td align="left">standard deviation increase in cognitive ability associated with 12% point increase in prob. obtaining a degree;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf146">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>s</mi>
+<mi>d</mi>
+<mi>q</mi>
+<mo>.</mo>
+<mi>c</mi>
+<mi>p</mi>
+</mrow>
+<mrow>
+<mi>p</mi>
+<mi>r</mi>
+<mo>.</mo>
+<mi>e</mi>
+<mi>d</mi>
+<mi>u</mi>
+</mrow>
+</msubsup>
+</mrow>
+</mstyle>
+</math>
+
+</td>
+<td align="left">
+
+<math id="inf147">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<mn>0.02</mn>
+<mrow>
+<mo>/</mo>
+</mrow>
+<mi>S</mi>
+<msub>
+<mi>D</mi>
+<mrow>
+<mi>s</mi>
+<mi>d</mi>
+<mi>q</mi>
+<mo>.</mo>
+<mi>c</mi>
+<mi>p</mi>
+<mo stretchy="false">(</mo>
+<mn>19</mn>
+<mo stretchy="false">)</mo>
+</mrow>
+</msub>
+</mrow>
+</mstyle>
+</math>
+
+</td>
+<td align="left">
+<a href="#bib50">Goodman et al. (2015)</a> social</td>
+<td align="left">standard deviation decrease in Rutter externalising score associated with 2.2% point increase in prob. obtaining a degree;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf148">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>u</mi>
+</mrow>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">-0.04</td>
+<td align="left">
+<a href="#bib50">Goodman et al. (2015)</a> social; <a href="#bib49">Fletcher (2010)</a> adolescent; <a href="#bib47">Farahati et al. (2003)</a> effects</td>
+<td align="left">goodman2015social fletcher2010adolescent find no statistically significant effect; but fletcher2010adolescent finds that being depressed increases the probability of dropping out of high school by around 2.4% points, and decreases the probability of college enrolment by 2.7–7.2 percentage points. farahati2003effects find that parent’s depression increases child’s probability of dropout by over 3% points for females. In the light of these findings, the current model specification sets the parameter at 4% points;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf149">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mrow>
+<mi>t</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>n</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>m</mi>
+</mrow>
+</mrow>
+<mrow>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>m</mi>
+</mrow>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">ln 3.38 if male; ln 3.68 if female</td>
+<td align="left">
+<a href="#bib53">Jefferis et al. (2003)</a> cigarette</td>
+<td align="left">Estimates obtained using logistic regression;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf150">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>o</mi>
+<mo>⁢</mo>
+<mi>v</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>m</mi>
+</mrow>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">ln 1.91 if male; ln 1.81if female</td>
+<td align="left">
+<a href="#bib53">Jefferis et al. (2003)</a> cigarette</td>
+<td align="left">Estimates obtained using logistic regression;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf151">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>u</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>m</mi>
+</mrow>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">ln 3.32if male; ln 3.26if female</td>
+<td align="left">
+<a href="#bib53">Jefferis et al. (2003)</a> cigarette</td>
+<td align="left">Estimates obtained using logistic regression;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf152">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>m</mi>
+</mrow>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">ln 2.7</td>
+<td align="left">
+<a href="#bib54">Lasser et al. (2000)</a> smoking</td>
+<td align="left">Estimates obtained using logistic regression;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf153">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+<mo>⁢</mo>
+<mi>i</mi>
+<mo>⁢</mo>
+<mi>s</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>m</mi>
+</mrow>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">0.07 if male and 0.06 if female</td>
+<td align="left">
+<a href="#bib63">Singleton et al. (2003)</a> substance</td>
+<td align="left">Calculated using the prevalence rates in a population before and after imprisonment, does not take into account the contribution of this increase because of mental illness, poverty and potentially other variables;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf154">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+</mrow>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">ln 3.63</td>
+<td align="left">
+<a href="#bib57">Luby et al. (2014)</a> trajectories</td>
+<td align="left">Including the effect that occurs via non-supportive parenting (see discussion below); estimated using logistic regression;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf155">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>u</mi>
+<mi>n</mi>
+<mi>e</mi>
+<mi>m</mi>
+<mi>p</mi>
+<mi>l</mi>
+</mrow>
+<mrow>
+<mi>p</mi>
+<mi>r</mi>
+<mo>.</mo>
+<mi>d</mi>
+<mi>e</mi>
+<mi>p</mi>
+</mrow>
+</msubsup>
+</mrow>
+</mstyle>
+</math>
+
+</td>
+<td align="left">ln 2.05 if male;ln 1.72if female</td>
+<td align="left">
+<a href="#bib66">Thomas et al. (2005)</a> employment</td>
+<td align="left">Estimated using logistic regression; the effect on psychological problems measured by general health questionnaire;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf156">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>e</mi>
+<mi>m</mi>
+<mi>p</mi>
+<mi>l</mi>
+</mrow>
+<mrow>
+<mi>p</mi>
+<mi>r</mi>
+<mo>.</mo>
+<mi>d</mi>
+<mi>e</mi>
+<mi>p</mi>
+</mrow>
+</msubsup>
+</mrow>
+</mstyle>
+</math>
+
+</td>
+<td align="left">ln 0.87 if male; ln 0.79 if female</td>
+<td align="left">
+<a href="#bib66">Thomas et al. (2005)</a> employment</td>
+<td align="left">Estimated using logistic regression; the effect on psychological problems measured by general health questionnaire;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf157">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>o</mi>
+<mo>⁢</mo>
+<mi>v</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+</mrow>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">ln 1.24</td>
+<td align="left">
+<a href="#bib67">Weich and Lewis (1998)</a> material</td>
+<td align="left">Estimated using logistic regression; the effect on psychological problems measured by general health questionnaire;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf158">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>o</mi>
+<mo>⁢</mo>
+<mi>v</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>h</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+</mrow>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">ln 1.49 if male; ln 1.18if female</td>
+<td align="left">
+<a href="#bib58">Marmot et al. (1997)</a> contribution</td>
+<td align="left">Calculated using logistic regression controlling for age and CHD risk factors (incl. smoking), social support and job control. Using the parameters depends on assuming poverty correlates with low employment grade;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf159">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>s</mi>
+<mo>⁢</mo>
+<mi>m</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>h</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+</mrow>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">ln 2</td>
+<td align="left">
+<a href="#bib39">Bazzano et al. (2003)</a> relationship, <a href="#bib43">Critchley and Capewell (2003)</a> mortality</td>
+<td align="left">Based on estimates of odds ratios reported in the cited sources (see discussion in section A.1.2);</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf160">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>d</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+<mo>⁢</mo>
+<mi>i</mi>
+<mo>⁢</mo>
+<mi>s</mi>
+</mrow>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">0.18</td>
+<td align="left">
+<a href="#bib48">Fergusson et al. (2005)</a> show</td>
+<td align="left">Estimated using rates of arrests/convictions among people with different levels of conduct problems;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf161">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>d</mi>
+<mi>e</mi>
+<mi>p</mi>
+</mrow>
+<mrow>
+<mi>p</mi>
+<mi>r</mi>
+<mo>.</mo>
+<mi>p</mi>
+<mi>r</mi>
+<mi>i</mi>
+<mi>s</mi>
+</mrow>
+</msubsup>
+</mrow>
+</mstyle>
+</math>
+
+</td>
+<td align="left">0.015</td>
+<td align="left">
+<a href="#bib37">Anderson et al. (2015)</a> youth</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf162">
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>d</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+<mo>⁢</mo>
+<mi>p</mi>
+</mrow>
+<mrow>
+<mrow>
+<mi>p</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+</mrow>
+<mo>.</mo>
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>a</mi>
+<mo>⁢</mo>
+<mi>r</mi>
+<mo>⁢</mo>
+<mi>e</mi>
+</mrow>
+</mrow>
+</msubsup>
+</math>
+
+</td>
+<td align="left">0.18</td>
+<td align="left">
+<a href="#bib60">McDougall et al. (2007)</a> prevalence; <a href="#bib64">Stewart et al. (2014)</a> current</td>
+<td align="left">Calculated using depression prevalence rates;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf163">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>s</mi>
+<mi>d</mi>
+<mi>q</mi>
+<mo>.</mo>
+<mi>c</mi>
+<mi>p</mi>
+</mrow>
+<mrow>
+<mi>p</mi>
+<mi>r</mi>
+<mo>.</mo>
+<mi>e</mi>
+<mi>m</mi>
+<mi>p</mi>
+<mi>l</mi>
+</mrow>
+</msubsup>
+</mrow>
+</mstyle>
+</math>
+
+</td>
+<td align="left">
+
+<math id="inf164">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<mn>0.016</mn>
+<mspace width="thinmathspace"/>
+<msub>
+<mi>β</mi>
+<mrow>
+<mn>1</mn>
+</mrow>
+</msub>
+<mrow>
+<mo>/</mo>
+</mrow>
+<mi>S</mi>
+<msub>
+<mi>D</mi>
+<mrow>
+<mi>s</mi>
+<mi>d</mi>
+<mi>q</mi>
+<mo>.</mo>
+<mi>c</mi>
+<mi>p</mi>
+</mrow>
+</msub>
+</mrow>
+</mstyle>
+</math>
+
+</td>
+<td align="left">
+<a href="#bib50">Goodman et al. (2015)</a> social</td>
+<td align="left">Standard deviation increase in externalising subscale of SDQ raises probability being employed by 1.6%; <i>SD</i>
+<sub>sdq.cp</sub> – standard deviation of SDQ conduct problem score in the relevant age-sex subgroup of our simulation;</td>
+</tr>
+<tr>
+<td align="left">
+
+<math id="inf165">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<msubsup>
+<mi>β</mi>
+<mrow>
+<mi>c</mi>
+<mi>o</mi>
+<mi>g</mi>
+</mrow>
+<mrow>
+<mi>p</mi>
+<mi>r</mi>
+<mo>.</mo>
+<mi>e</mi>
+<mi>m</mi>
+<mi>p</mi>
+<mi>l</mi>
+</mrow>
+</msubsup>
+</mrow>
+</mstyle>
+</math>
+
+</td>
+<td align="left">
+
+<math id="inf166">
+<mrow>
+<mrow>
+<mrow>
+<mpadded width="+1.7pt">
+<mn>0.021</mn>
+</mpadded>
+<mo>⁢</mo>
+<msub>
+<mi>β</mi>
+<mn>1</mn>
+</msub>
+</mrow>
+<mo>/</mo>
+<mi>S</mi>
+</mrow>
+<mo>⁢</mo>
+<msub>
+<mi>D</mi>
+<mrow>
+<mi>c</mi>
+<mo>⁢</mo>
+<mi>o</mi>
+<mo>⁢</mo>
+<mi>g</mi>
+</mrow>
+</msub>
+</mrow>
+</math>
+
+</td>
+<td align="left">
+<a href="#bib50">Goodman et al. (2015)</a> social</td>
+<td align="left">Standard deviation increase in IQ test score raises probability being employed by 2.1%;<i>SD<sub>cog</sub>
+</i> – standard deviation of the cognitive skills measure in the relevant age-sex subgroup of our simulation.</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="A1-T4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A4.</strong><span data-astro-cid-dzaleqsp> Modelled Variables and Controls</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Y</th>
+<th align="left">Effect parameter</th>
+<th align="left">Method</th>
+<th align="left">Parameter reported</th>
+<th align="left" colspan="15">Explanatory variables (X) in the modelling equation</th>
+</tr>
+<tr>
+<th align="left"/>
+<th align="left"/>
+<th align="left"/>
+<th align="left"/>
+<th align="left">Cond. prob.</th>
+<th align="left">CD</th>
+<th align="left">Cog. skills</th>
+<th align="left">Education</th>
+<th align="left">Smoking</th>
+<th align="left">Teen. smoking</th>
+<th align="left">Depression</th>
+<th align="left">CHD</th>
+<th align="left">Employment</th>
+<th align="left">Prison</th>
+<th align="left">Res. care</th>
+<th align="left">Poverty</th>
+<th align="left">Income</th>
+<th align="left">Age</th>
+<th align="left">Sex</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">SOCIAL</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left" rowspan="4">Education</td>
+</tr>
+<tr>
+<td align="left">Conduct problems</td>
+<td align="left">Probit;</td>
+<td align="left">AME;</td>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+<td align="left"/>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left">Cognitive skills</td>
+<td align="left">Probit;</td>
+<td align="left">AME;</td>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+<td align="left"/>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left">Depression</td>
+<td align="left">Probit;</td>
+<td align="left">AME;</td>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">Unemployment</td>
+<td align="left">Conduct problems</td>
+<td align="left">Probit;</td>
+<td align="left">AME;</td>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+<td align="left"/>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left">Cognitive skills</td>
+<td align="left">Probit;</td>
+<td align="left">AME;</td>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+<td align="left"/>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">Prison</td>
+<td align="left">CD</td>
+<td align="left">Compare prevalence rates across subgroups, test the significance of relationships using logit;</td>
+<td align="left">Average rates of being arrested/convicted among the different subgroups;</td>
+<td align="left">(√)</td>
+<td align="left">√</td>
+<td align="left">(√)</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left">Depression</td>
+<td align="left">OLS (robustness checks with probit and logit yield similar results);</td>
+<td align="left">Regression coefficient;</td>
+<td align="left"/>
+<td align="left">√(control for drug, alcohol and marijuana use, ADHD, bad temper and anxiety during adolescence)</td>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left">Residential care</td>
+<td align="left">Depression</td>
+<td align="left">Compare prevalence rates across subgroups;</td>
+<td align="left">Age and sex adjusted difference between subgroups;</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left">HEALTH</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left" rowspan="5">Smoking</td>
+<td align="left">Education</td>
+<td align="left">Logit;</td>
+<td align="left">OR;</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left">Teenage smoking</td>
+<td align="left">Logit;</td>
+<td align="left">OR;</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left">√(manual social class)</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left">Poverty</td>
+<td align="left">Logit;</td>
+<td align="left">OR;</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left">Depression</td>
+<td align="left">Logit;</td>
+<td align="left">OR;</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left">Prison</td>
+<td align="left">Comparison of smoking status pre and post imprisonment;</td>
+<td align="left">Increase in smoking rate post imprisonment;</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left" rowspan="3">Depressed</td>
+<td align="left">CD</td>
+<td align="left">Logit;</td>
+<td align="left">OR;</td>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">√(family income-to-needs ratio)</td>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Unemployment</td>
+<td align="left">Logit;</td>
+<td align="left">OR;</td>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">√(prior mental illness)</td>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Poverty</td>
+<td align="left">Logit;</td>
+<td align="left">OR;</td>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">CHD</td>
+<td align="left">Smoking</td>
+<td align="left">Logit;</td>
+<td align="left">OR;</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left">Poverty</td>
+<td align="left">Logit;</td>
+<td align="left">OR;</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">√(low employment grade)</td>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">Mortality</td>
+<td align="left">Depression</td>
+<td align="left">Estimation of standardised mortality ratios;</td>
+<td align="left">Age standardised mortality ratio;</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left">CHD</td>
+<td align="left">Estimation of dying probability from CHD;</td>
+<td align="left">Probability of dying from CHD;</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left">ECONOMIC</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left" rowspan="3">Earnings</td>
+<td align="left">Conduct problems</td>
+<td align="left">Probit;</td>
+<td align="left">AME;</td>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+<td align="left"/>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left">Cognitive skills</td>
+<td align="left">Probit;</td>
+<td align="left">AME;</td>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">(√)</td>
+<td align="left">(√)</td>
+<td align="left"/>
+<td align="left">(√)</td>
+</tr>
+<tr>
+<td align="left">Education</td>
+<td align="left">Regression based linear matching;</td>
+<td align="left">Regression coefficient;</td>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left">✵</td>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left"/>
+<td align="left">√</td>
+<td align="left">√</td>
+<td align="left"/>
+<td align="left">(√)</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Note: √– variable X is included in the modelling equation for Y, as well as was controlled for in the literature; (√) – variable X is not included in the modelling equation for Y, but indirectly influences Y through the other LifeSim equations, as well as was controlled for in the literature; ✵– variable X is included in the modelling equation for Y, but was not controlled for in the literature; AME – average marginal effects; OLS – ordinary least squares. Other abbreviations: AME – average marginal effects, OR – odds ratio, cond. prob. – conduct problems, CD- conduct disorder, teen. smoking – teenage smoking, CHD – coronary heart disease, res. care – residential care.</p></div></figure><figure id="A1-T5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A5.</strong><span data-astro-cid-dzaleqsp> Mortality from Coronary Heart Disease</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left" colspan="4">Sex</th>
+<th align="left" colspan="4">Age band</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"/>
+<td align="left"/>
+<td align="left">16–24</td>
+<td align="left">25–34</td>
+<td align="left">35–44</td>
+<td align="left">45–54</td>
+<td align="left">55–64</td>
+<td align="left">65–74</td>
+<td align="left">75+</td>
+</tr>
+<tr>
+<td align="left" rowspan="2">Mortality, %</td>
+<td align="left">male</td>
+<td align="left">0.19</td>
+<td align="left">1.24</td>
+<td align="left">2.81</td>
+<td align="left">1.83</td>
+<td align="left">1.61</td>
+<td align="left">2.07</td>
+<td align="left">5.31</td>
+</tr>
+<tr>
+<td align="left">female</td>
+<td align="left">0.06</td>
+<td align="left">0.49</td>
+<td align="left">1.26</td>
+<td align="left">1.13</td>
+<td align="left">1.43</td>
+<td align="left">1.95</td>
+<td align="left">8.82</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Note: Estimated mortality from coronary heart disease (CHD) among people diagnosed with CHD. These estimates are used to model the parameter  <math id="inf167"> <msubsup> <mi>β</mi> <mrow> <mi>c</mi> <mo>⁢</mo> <mi>h</mi> <mo>⁢</mo> <mi>d</mi> </mrow> <mrow> <mrow> <mi>p</mi> <mo>⁢</mo> <mi>r</mi> </mrow> <mo>.</mo> <mrow> <mi>d</mi> <mo>⁢</mo> <mi>e</mi> <mo>⁢</mo> <mi>a</mi> <mo>⁢</mo> <mi>d</mi> </mrow> </mrow> </msubsup> </math>  in equation (18) and <a href="#A1-T3">Table A3</a>.</p></div></figure><figure id="A1-T6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A6.</strong><span data-astro-cid-dzaleqsp> Public Service Costs</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Cost type</th>
+<th align="left">Components of the cost</th>
+<th align="left">Annual cost per person, £</th>
+<th align="left">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Healthcare: coronary heart disease<sup><a href="#fn14">14</a></sup>
+</td>
+<td align="left">Direct health care cost;Informal care cost;</td>
+<td align="left">840;1,173;</td>
+<td align="left">
+<a href="#bib55">Liu et al. (2002)</a> economic;</td>
+</tr>
+<tr>
+<td align="left">Healthcare: depression</td>
+<td align="left">Costs to the National Health Service, the Accident and Emergency department, other support services (average);</td>
+<td align="left">5,260;</td>
+<td align="left">
+<a href="#bib59">McCrone et al. (2008)</a> paying;</td>
+</tr>
+<tr>
+<td align="left">Other healthcare</td>
+<td align="left">Average English National Health Service healthcare spending in the financial year 2011/12 by age, sex and English neighbourhood deprivation quintile group;</td>
+<td align="left">see <a href="#bib38">Asaria (2017)</a>;</td>
+<td align="left">
+<a href="#bib38">Asaria (2017)</a>;</td>
+</tr>
+<tr>
+<td align="left">Conduct disorder</td>
+<td align="left">Cost to the National Health Service;</td>
+<td align="left">1,243 (age 5-10), 113 (age 11+);</td>
+<td align="left">
+<a href="#bib46">Edwards et al. (2007)</a> parenting; <a href="#bib62">Scott et al. (2001)</a> financial, cited by <a href="#bib41">Bonin et al. (2011)</a>;</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Cost to the Social Services Department;</td>
+<td align="left">175 (age 5-10), 70 (age 11+);</td>
+<td align="left">
+<a href="#bib46">Edwards et al. (2007)</a> parenting; <a href="#bib61">Romeo et al. (2006)</a> economic, cited by <a href="#bib41">Bonin et al. (2011)</a>;</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Cost to the Department for Education;</td>
+<td align="left">985 (age 5-10), 1,3402 (age 11-16), 0 (age 17+);</td>
+<td align="left">
+<a href="#bib46">Edwards et al. (2007)</a> parenting; <a href="#bib62">Scott et al. (2001)</a> financial, cited by <a href="#bib41">Bonin et al. (2011)</a>;</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Cost to the voluntary Sector;</td>
+<td align="left">26;</td>
+<td align="left">
+<a href="#bib46">Edwards et al. (2007)</a> parenting, cited by <a href="#bib41">Bonin et al. (2011)</a>;</td>
+</tr>
+<tr>
+<td align="left">Prison</td>
+<td align="left">Unit annual costs of custody (per year);</td>
+<td align="left">31,925;</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Unit costs of police (per record crime);</td>
+<td align="left">553;</td>
+<td align="left">
+<a href="#bib45">Dubourg et al. (2005)</a>;</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">Unit costs of courts (per court event);</td>
+<td align="left">7,103;</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Residential care</td>
+<td align="left">Cost of residential home;</td>
+<td align="left">29,934;</td>
+<td align="left">
+<a href="#bib44">Curtis and Burns (2017)</a>.</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Note: We uprate all the costs to year 2015/16 prices.</p></div></figure></div></details></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/figures.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

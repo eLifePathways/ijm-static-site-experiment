@@ -1,0 +1,16 @@
+TY  - JOUR
+TI  - Pooling Incomplete Data Sets
+AU  - Klevmarken, Anders
+VL  - 15
+IS  - 1
+PY  - 2022
+DA  - 2022/04/30
+SP  - 31-42
+C1  - IJM 2022;15(1):31-42
+DO  - 10.34196/ijm.00248
+UR  - https://doi.org/10.34196/ijm.00248
+AB  - Data needed in micro studies are not always available from just a single source. In such cases it might be possible to combine two or more independent samples. The problem studied in this paper is to estimate a linear function between y and x from one sample of y-observations and another of x-observations. This is feasible if there are common variables z which can be used to predict x. A two-stage least squares estimator is propounded, which, for the model considered, is also an ML estimator. Simulation experiments show that it has a good relative efficiency and virtually no small sample bias.
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

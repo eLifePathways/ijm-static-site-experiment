@@ -1,0 +1,22 @@
+TY  - JOUR
+TI  - Testing the Statistical Significance of Microsimulation Results: A Plea
+AU  - Goedemé, Tim
+AU  - Bosch, Karel Van den
+AU  - Salanauskaite, Lina
+AU  - Verbist, Gerlinde
+VL  - 6
+IS  - 3
+PY  - 2013
+DA  - 2013/12/31
+SP  - 50-77
+C1  - IJM 2013;6(3):50-77
+DO  - 10.34196/ijm.00088
+UR  - https://doi.org/10.34196/ijm.00088
+AB  - In the microsimulation literature, it is still uncommon to test the statistical significance of results. In this article we argue that this situation is both undesirable and unnecessary. Provided the parameters used in the microsimulation are exogenous, as is often the case in static microsimulation of the first-order effects of policy changes, simple statistical tests can be sufficient. Moreover, standard routines have been developed which enable applied researchers to calculate the sampling variance of microsimulation results, while taking the sample design into account, even of relatively complex statistics such as relative poverty, inequality measures and indicators of polarization, with relative ease and a limited time investment. We stress that when comparing simulated and baseline variables, as well as when comparing two simulated variables, it is crucial to take account of the covariance between those variables. Due to this covariance, the mean difference between the variables can generally (though not always) be estimated with much greater precision than the means of the separate variables.
+KW  - microsimulation
+KW  - statistical inference
+KW  - EUROMOD
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

@@ -1,0 +1,21 @@
+TY  - JOUR
+TI  - Spatial microsimulation modelling: A review of applications and methodological choices
+AU  - O’Donoghue, Cathal
+AU  - Morrissey, Karyn
+AU  - Lennon, John
+VL  - 7
+IS  - 1
+PY  - 2014
+DA  - 2014/04/30
+SP  - 26-75
+C1  - IJM 2014;7(1):26-75
+DO  - 10.34196/ijm.00093
+UR  - https://doi.org/10.34196/ijm.00093
+AB  - Spatial microsimulation modelling has developed for over a half century and is now a mainstream analytical tool within the microsimulation community accounting for a very significant proportion of papers at conferences and within the journal. There have been a number of recent surveys of “mainstream” spatial microsimulation models and associated methodologies. The contribution of this paper relates mainly in extending these surveys by considering other micro based simulation models that incorporate a spatial or geographic dimension. We feel this is important as in many areas of microsimulation modelling, there are parallel literatures that have developed that apply simulation techniques to micro units that are not labelled microsimulation or in the case of the papers reviewed in this paper not labelled spatial microsimulation. The paper reviews a number of different application areas of spatially focused microsimulation models, including demography, welfare, health, regional development, transport planning, agri-environmental analysis, crisis planning, land use and planning. We also review a number of the methodological choices made by modellers including scope, and spatial disaggregation, data sources, data creation methodology, validation and calibration and simulating change.
+KW  - spatial microsimulation
+KW  - survey
+KW  - methodology
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

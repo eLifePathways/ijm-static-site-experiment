@@ -1,0 +1,20 @@
+TY  - JOUR
+TI  - Validation of spatial microsimulation models: A proposal to adopt the Bland-Altman method
+AU  - Timmins, Kate A
+AU  - Edwards, Kimberley L
+VL  - 9
+IS  - 2
+PY  - 2016
+DA  - 2016/08/31
+SP  - 106-122
+C1  - IJM 2016;9(2):106-122
+DO  - 10.34196/ijm.00137
+UR  - https://doi.org/10.34196/ijm.00137
+AB  - Model validation is recognised as crucial to microsimulation modelling. However, modellers encounter difficulty in choosing the most meaningful methods to compare simulated and actual values. The aim of this paper is to introduce and demonstrate a method employed widely in healthcare calibration studies. The ‘Bland-Altman plot’ consists of a plot of the difference between two methods against the mean (x-y versus x+y/2). A case study is presented to illustrate the method in practice for spatial microsimulation validation. The study features a deterministic combinatorial model (SimObesity), which modelled a synthetic population for England at the ward level using survey (ELSA) and Census 2011 data. Bland-Altman plots were generated, plotting simulated and census ward-level totals for each category of all constraint (benchmark) variables. Other validation metrics, such as R2, SEI, TAE and RMSE, are also presented for comparison. The case study demonstrates how the Bland-Altman plots are interpreted. The simple visualisation of both individual- (ward-) level difference and total variation gives the method an advantage over existing tools used in model validation. There still remains the question of what constitutes a valid or well-fitting model. However, the Bland Altman method can usefully be added to the canon of calibration methods.
+KW  - validation
+KW  - Bland Altman
+KW  - spatial microsimulation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

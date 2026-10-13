@@ -1,0 +1,22 @@
+TY  - JOUR
+TI  - Using trajectory analysis to test and illustrate microsimulation outcomes
+AU  - Salonen, Janne
+AU  - Tikanmäki, Heikki
+AU  - Nummi, Tapio
+VL  - 12
+IS  - 2
+PY  - 2019
+DA  - 2019/08/31
+SP  - 3-17
+C1  - IJM 2019;12(2):3-17
+DO  - 10.34196/ijm.00198
+UR  - https://doi.org/10.34196/ijm.00198
+AB  - We propose a new data-driven way of testing and visualizing dynamic microsimulation outcome data. The proposed statistical methodology is based on trajectory analysis (Nagin, 1999), which can be used to identify several sub-populations from a population measured longitudinally. We briefly introduce the statistical basis of trajectory analysis and discuss its use in the context of microsimulation. Finally, we report our results from the Finnish microsimulation model ELSI (Tikanmäki et al., 2014; Tikanmäki et al., 2015) to illustrate the possibilities and benefits of this technique. Trajectory analysis is available in many statistical software packages (e.g., SAS, R, Stata and Mplus). We conclude that trajectory analysis is a useful tool for investigating microsimulation outcomes.
+KW  - finite mixtures
+KW  - trajectory analysis
+KW  - group-based modeling
+KW  - dynamic microsimulation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

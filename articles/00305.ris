@@ -1,0 +1,22 @@
+TY  - JOUR
+TI  - Population-based Simulation of COVID-19 Outbreak in Iran: Comparison of Different Policy Options
+AU  - Eini-Zinab, Hassan
+AU  - Sadeghi, Hananeh Sadat
+VL  - 17
+IS  - 1
+PY  - 2024
+DA  - 2024/04/30
+SP  - 102-121
+C1  - IJM 2024;17(1):102-121
+DO  - 10.34196/ijm.00305
+UR  - https://doi.org/10.34196/ijm.00305
+AB  - Simulation and modeling of the COVID-19 outbreak can prognosticate behavior of the disease and simultaneously provide planners with a picture of what to expect. The existing studies simulating the COVID-19 outbreak in Iran, regardless of their macro or micro approaches, have been based on the principle of population homogeneity. Assuming population homogeneity in the simulation will lead to far-fetched results, as the actual population of a society is heterogeneous. This study uses a micro simulation approach and real demographic data drawn from the national census of 2016 conducted by the Statistical Center of Iran to simulate the outbreak. The conceptual framework of the National Corona Virus Taskforce Epidemiological Committee, which uses a SEIR approach, has been developed and expanded in this study to include socioeconomic, demographic, and geographical variables in the model. Total of eight policy scenarios (i.e. No Intervention, Student Quarantine, Weekend Lockdown, Inter-Province Travel Ban, Jobless Quarantine, Elderly Quarantine, Inter-District Travel Ban and Iranian School Policy) have been examined in the simulation. The results indicate, in terms of the number of population at risk, hospitalized patients, and total number of deaths, Jobless Quarantine is the most effective and No Intervention is the least effective policy option in Iran.
+KW  - Population-Based Simulation
+KW  - Micro Data
+KW  - Policy Options
+KW  - COVID-19
+KW  - Iran
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

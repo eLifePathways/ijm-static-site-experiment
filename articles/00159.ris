@@ -1,0 +1,23 @@
+TY  - JOUR
+TI  - simSALUD: Design and implementation of an open-source wizard based spatial microsimulation framework
+AU  - Tomintz, Melanie N
+AU  - Kosar, Bernhard
+AU  - García-Barrios, Victor M
+VL  - 10
+IS  - 2
+PY  - 2017
+DA  - 2017/08/31
+SP  - 118-143
+C1  - IJM 2017;10(2):118-143
+DO  - 10.34196/ijm.00159
+UR  - https://doi.org/10.34196/ijm.00159
+AB  - Spatial microsimulation models have been in use for around 40 years for various applications. Responding to users’ needs and project purpose, many have emerged using different methods and algorithms. Despite this, the literature suggests a gap in applications combining operability, flexibility, availability or generally an implementation of an online web mapping application in the area of spatial microsimulation. In this paper we introduce the development of a new open-source web-based spatial microsimulation framework, called simSALUD, as a solution approach for static simulation modelling where no programming skills are required. The emphasis lies on the design and implementation of the wizard and web-based spatial microsimulation application, including integrated validation and mapping elements. The current version supports two deterministic spatial microsimulation algorithms (combinatorial optimisation and iterative proportional fitting). The application is designed for experts as well as for non-experts to simulate their own spatial microdata. In addition, the application integrates statistical tools to validate and verify the robustness of the models ad hoc. The outputs of the simulation and validation results can either be visualized in the form of a map within the application or exported as comma separated files for further analyses. simSALUD comes with a demonstration dataset, an extensive documentation and video tutorial to disburden the usage of the software. The architecture of simSALUD was designed with the possibility to expand the tool towards a spatial decision support system, allowing measurement of possible future policy interventions on population groups at small geographies.
+KW  - spatial microsimulation
+KW  - open-source software development
+KW  - simSALUD
+KW  - usability evaluation
+KW  - system design and architecture
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

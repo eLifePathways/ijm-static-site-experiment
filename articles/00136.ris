@@ -1,0 +1,23 @@
+TY  - JOUR
+TI  - Improving the validity of microsimulation results: Lessons from Slovakia
+AU  - Siebertova, Zuzana
+AU  - Svarda, Norbert
+AU  - Valachyova, Jana
+VL  - 9
+IS  - 2
+PY  - 2016
+DA  - 2016/08/31
+SP  - 77-105
+C1  - IJM 2016;9(2):77-105
+DO  - 10.34196/ijm.00136
+UR  - https://doi.org/10.34196/ijm.00136
+AB  - This paper summarizes the lessons learned in the process of building a microsimulation tool tailored to country-specific conditions and involving a maximum degree of user control. The objective to construct a model useful in the process of budgeting and fiscal forecasting has been achieved by paying attention to policy simulation details as well as to the representativeness of the underlying micro-dataset. The validity of simulated results improved significantly after the input database sample has been reweighted in such a way that the new weights replicate, among other factors, the earned income distribution and selected age cohorts directly. Innovative approaches in bringing the model closer to legislation as well as data highlight the benefits of having more user control compared with standardized microsimulation tools.
+KW  - microsimulation
+KW  - calibration
+KW  - EUROMOD
+KW  - tax and transfer policy
+KW  - Slovakia
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

@@ -1,0 +1,20 @@
+TY  - JOUR
+TI  - A more efficient sampling procedure, using loaded probabilities
+AU  - Cumpston, J Richard
+VL  - 5
+IS  - 1
+PY  - 2012
+DA  - 2012/06/30
+SP  - 21-30
+C1  - IJM 2012;5(1):21-30
+DO  - 10.34196/ijm.00065
+UR  - https://doi.org/10.34196/ijm.00065
+AB  - All-case simulation, where demographic outcomes are simulated for each person each simulation cycle, has been used in almost every national household microsimulation model. This paper suggests the use of simulation by stratified sampling with loaded probabilities. This suggestion is intended to provide faster simulations, particularly when using simulation cycle times much shorter than a year. The paper derives optimal formulas for draw numbers and loaded probabilities, and uses stochastic simulations to show that sampling with loaded probabilities gives similar results to all-case simulation. Tests with a microsimulation model of 175,000 Australians show that sampling with loaded probabilities can reduce run times with yearly cycles by about 43%, and run times with weekly cycles by about 98%. A 50-year demographic projection took 34 seconds with a yearly cycle, and 54 seconds with a weekly cycle. Event numbers and standard deviations are comparable with those expected from risk profiles. The paper concludes that sampling with loaded probabilities is theoretically valid, can be much quicker than all-case simulation, and does give similar estimates. Potential applications are for large models, or those with short simulation cycles.
+KW  - all-case simulation
+KW  - stratified sampling
+KW  - loaded probabilities
+KW  - faster simulations
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

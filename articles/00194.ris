@@ -1,0 +1,21 @@
+TY  - JOUR
+TI  - Tax-benefit microsimulation and income redistribution in Ecuador
+AU  - Jara, H Xavier
+AU  - Varela, Marcelo
+VL  - 12
+IS  - 1
+PY  - 2019
+DA  - 2019/04/30
+SP  - 52-82
+C1  - IJM 2019;12(1):52-82
+DO  - 10.34196/ijm.00194
+UR  - https://doi.org/10.34196/ijm.00194
+AB  - The aim of this paper is to explore the redistributive effects of taxes and benefits in Ecuador using two different approaches: direct use of reported taxes and benefits in survey data, and use of simulated taxes and benefits. We make use of representative household microdata from ENIGHUR 2011–2012, which contains detailed information on labour and non-labour income, taxes and social insurance contributions, public pensions, social benefits and expenditure, as well as personal and household characteristics. First, ECUAMOD, the tax-benefit microsimulation model for Ecuador is used to simulate cash benefit entitlements, personal income tax and social insurance contribution liabilities, as well as indirect taxes. Then, the redistributive effect of simulated tax-benefit policies is compared to that obtained from taxes, social insurance contributions and benefits taken directly from the data. Our results show that simulated taxes and social insurance contributions capture better the number of taxpayers and aggregate revenue amounts from official statistics, compared to information taken directly from the data. Moreover, using reported data on taxes and social insurance contributions underestimates their redistributive effect, compared to simulated policies. Underreporting of income components in survey data and the difficulty of simulating complex eligibility rules for benefits in microsimulation models are some of the factors driving the differences between the two approaches. Our paper concludes with a discussion of the advantages offered by microsimulation for policy analysis.
+KW  - taxes
+KW  - benefits
+KW  - microsimulation
+KW  - Ecuador
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

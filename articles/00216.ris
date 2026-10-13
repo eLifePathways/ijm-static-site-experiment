@@ -1,0 +1,18 @@
+TY  - JOUR
+TI  - Estimating Confidence Intervals in a Tax Microsimulation Model
+AU  - McClelland, Robert
+AU  - Khitatrakun, Surachai
+AU  - Lu, Chenxi
+VL  - 13
+IS  - 2
+PY  - 2020
+DA  - 2020/08/31
+SP  - 2-20
+C1  - IJM 2020;13(2):2-20
+DO  - 10.34196/ijm.00216
+UR  - https://doi.org/10.34196/ijm.00216
+AB  - Since the creation of microsimulation models, the need to measure uncertainty has been recognized, but little research has been conducted in spite of the widespread use of these models. In this article, we calculate confidence intervals for a large tax microsimulation model, comparing a normal approximation to a bootstrap estimator. We estimate confidence intervals for five proposed changes to tax law. We explore the relationship between the size of proposals’ point-estimated impacts and their confidence intervals by considering high, central, and low scenarios for three proposals. To explore uncertainty around small-magnitude estimates, we consider a proposal designed to keep tax revenue unchanged. Finally, we consider a proposal that affects a small number of taxpayers but has a large heterogeneous effect. We find that, overall, confidence intervals in the model fit tightly around the point estimates, but there are exceptions. We also find that in many cases the normal approximation is close to the bootstrap estimator but may differ for policy changes that affect a small number of taxpayers.
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

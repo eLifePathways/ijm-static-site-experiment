@@ -1,0 +1,690 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>A more efficient sampling procedure, using loaded probabilities | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00065"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00065" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/methodology" data-astro-cid-ak4gb66a>Methodology</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Jun 30, 2012</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>A more efficient sampling procedure, using loaded probabilities</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>J Richard Cumpston</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>JR Cumpston Pty Ltd, Australia</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/5-1/volume-5-1-spring-2012" data-astro-cid-ak4gb66a>Volume 5(1) Spring 2012</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> J. Cumpston; 2012; <span data-astro-cid-ak4gb66a>A more efficient sampling procedure, using loaded probabilities</span>; International Journal of Microsimulation; 5(1); 21–30. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00065" data-astro-cid-ak4gb66a>10.34196/ijm.00065</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>All-case simulation, where demographic outcomes are simulated for each person each simulation cycle, has been used in almost every national household microsimulation model. This paper suggests the use of simulation by stratified sampling with loaded probabilities. This suggestion is intended to provide faster simulations, particularly when using simulation cycle times much shorter than a year. The paper derives optimal formulas for draw numbers and loaded probabilities, and uses stochastic simulations to show that sampling with loaded probabilities gives similar results to all-case simulation. Tests with a microsimulation model of 175,000 Australians show that sampling with loaded probabilities can reduce run times with yearly cycles by about 43%, and run times with weekly cycles by about 98%. A 50-year demographic projection took 34 seconds with a yearly cycle, and 54 seconds with a weekly cycle. Event numbers and standard deviations are comparable with those expected from risk profiles. The paper concludes that sampling with loaded probabilities is theoretically valid, can be much quicker than all-case simulation, and does give similar estimates. Potential applications are for large models, or those with short simulation cycles.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00065/ijm-00065.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00065.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00065.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00065" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00065/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. Theory</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. Tests on accuracy</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. Example of the use of pools in simulating deaths</a></li><li data-astro-cid-twdwaz5s><a href="#s5" data-astro-cid-twdwaz5s>5. Run times with an australian microsimulation model</a></li><li data-astro-cid-twdwaz5s><a href="#s6" data-astro-cid-twdwaz5s>6. Checks on projected event numbers</a></li><li data-astro-cid-twdwaz5s><a href="#s7" data-astro-cid-twdwaz5s>7. Checks on event number standard deviations</a></li><li data-astro-cid-twdwaz5s><a href="#s8" data-astro-cid-twdwaz5s>8. Computational aspects</a></li><li data-astro-cid-twdwaz5s><a href="#s9" data-astro-cid-twdwaz5s>9. Likely applications</a></li><li data-astro-cid-twdwaz5s><a href="#s10" data-astro-cid-twdwaz5s>10. Conclusions</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s1-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1.1 All-case simulations</h3><p data-astro-cid-qsyhzaho>The first household microsimulation model developed in response to <a href="#bib5">Orcutt’s 1957</a> proposals simulated demographic outcomes for each person in turn, working in the order in which the persons were stored (<a href="#bib6">Orcutt, Greenberger, Korbel &amp; Rivlin 1961</a>). Unfortunately, processing persons in the same fixed order each cycle has the potential to introduce bias in some applications. <a href="#bib4">Morrison (2006</a>, p. 13) described the “sidewalk shuffle” alignment method, where persons in an alignment pool were sorted into random order before event simulation. Demographic outcomes were then simulated for the persons in the sorted pool, until the desired event total was reached. As the event probabilities were unchanged, the number of persons tested for the event was approximately equal to the number of persons in the pool.</p></section><section id="s1-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1.2 Simulation by sampling with loaded probabilities</h3><p data-astro-cid-qsyhzaho>Testing every person for the occurrence of a demographic event seems inefficient, particularly for low-probability events. This paper proposes an alternative. Can we divide persons into pools, and only test a small proportion of persons in those pools with low probabilities? To ensure the correct expected number of events is still simulated, this partial sampling would be offset by loading the assumed probabilities of the event occurring. Such a process might be particularly efficient in short simulation cycles, where the probabilities of events occurring in the cycle are very low.</p></section><section id="s1-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1.3 Structure of paper</h3><p data-astro-cid-qsyhzaho>The structure of the remainder of this paper is as follows. First, the theory under-pinning sampling with loaded probabilities is derived (<a href="#s2">Section 2</a>). Tests on some simple cases with only two risk groups support the theory (<a href="#s3">Section 3</a>). The large reductions in sample numbers feasible when simulating deaths are illustrated in <a href="#s4">Section 4</a>, and <a href="#s5">Section 5</a> examines the actual run time reductions obtained in a realistic model. <a href="#s6">Section 6</a> compares expected and observed event numbers, for different simulation methods, cycle times and event orders. <a href="#s7">Section 7</a> similarly compares expected and observed event number standard deviations. <a href="#s8">Section 8</a> discusses computational aspects associated with implementation of this approach. Finally, <a href="#s9">Section 9</a> summarises the key findings from the paper, and considers in which situations use of simulation with loaded probabilities might be most appropriate.</p></section></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. Theory</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s2-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.1 A trivial case: Uniform event probabilities</h3><p data-astro-cid-qsyhzaho>Suppose we have 100 persons in a pool, each with 20% chance of death. To simulate the expected 20 deaths, we can randomly select any 20 persons from the pool, and declare them to have died. This simple procedure will rarely be applicable, as the expected number of events from a pool is unlikely to be an integer. For example, if there are 101 persons in the pool, each with a 20% chance of dying, then 20.2 deaths are expected. To obtain simulations with the correct expected number of deaths, we can randomly draw 21 persons from the pool, select a random number between 0 and 1 for each of them, and declare them to be dead if the random number is less than 20.2/21 (ie 0.9619). The number of draws needed in this case is reduced by 79%, increasing computational efficiency.</p><p data-astro-cid-qsyhzaho>More formally, if there are n persons in a pool, each with probability pi of an event occurring, then the number of draws d needed from the pool is</p><div id="eqn1" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(1)</span><math><mtable><mtr><mtd><mrow><mtext>d</mtext><mtext> </mtext><mo>=</mo><mtext> </mtext><msub><mtext>p</mtext><mtext>i</mtext></msub><mtext>n</mtext></mrow></mtd><mtd><mrow><mtext>to the higher integer</mtext></mrow></mtd></mtr></mtable></math></div><p data-astro-cid-qsyhzaho>Let q<sub>i</sub> be the loaded probability of the event occurring for each of the drawn persons.</p><p data-astro-cid-qsyhzaho>Then</p><div id="eqn2" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(2)</span><math><msub><mtext>q</mtext><mtext>i</mtext></msub><mtext> </mtext><mo>=</mo><mtext> </mtext><mo>(</mo><msub><mtext>p</mtext><mtext>i</mtext></msub><mtext> </mtext><mtext>n)/d</mtext></math></div><p data-astro-cid-qsyhzaho>Substituting p<sub>i</sub> = 0.2, n = 101 and d = 21 gives q<sub>i</sub> = 0.9619, as above.</p><p data-astro-cid-qsyhzaho>As each person has the same probability of the event occurring, this procedure works for events such as death where a person is lost from the pool, or events such as moves where the person remains within the pool.</p></section><section id="s2-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.2 Non-uniform event probabilities, with no losses from pool</h3><p data-astro-cid-qsyhzaho>The previous section assumed uniform probabilities. If persons in the pool have varying probabilities of the event occurring, a more complex loaded sampling procedure is needed. Suppose that the highest probability is pmax. From <a href="#eqn2">equation 2</a>, restricting the maximum loaded probability to not exceed 1 requires that</p><div id="eqn3" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(3)</span><math><mtext>(pmax</mtext><mtext> </mtext><mtext>n)</mtext><mtext> </mtext><mtext>/</mtext><mtext> </mtext><mtext>d</mtext><mtext> </mtext><mtext> </mtext><mtext>&lt;</mtext><mo>=</mo><mtext> </mtext><mtext>1</mtext></math></div><p data-astro-cid-qsyhzaho>so that the number of draws needed from the pool is</p><div id="eqn4" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(4)</span><math><mtable><mtr><mtd><mrow><mtext>d</mtext><mtext> </mtext><mo>=</mo><mtext> </mtext><mtext>pmax</mtext><mtext> </mtext><mtext>n</mtext></mrow></mtd><mtd><mrow><mtext>to the higher integer</mtext></mrow></mtd></mtr></mtable></math></div><p data-astro-cid-qsyhzaho>As before, the loaded probability of the event occurring for person i is given by <a href="#eqn2">equation 2</a>. This analysis is appropriate for events not causing losses from a pool – for example, movements within a geographic pool.</p></section><section id="s2-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.3 Non-uniform event probabilities, with losses from pool</h3><p data-astro-cid-qsyhzaho>The previous section assumed no losses form the pool, but some events, such as deaths and emigration, will cause losses. As sampling proceeds from the pool, the cases most at risk are likely to be selected, and the risk profile within the pool will change. This requires some modifications to the formulas for loaded probabilities and draw numbers.</p><p data-astro-cid-qsyhzaho>Let nt be the number of persons in the pool immediately before the tth draw (so that n1 = n). Also let qit be the loaded probability for person i during the tth draw. The probability of any person being picked in the tth draw is 1 / nt, so the probability of person i being simulated to have the event in draw t is qit / nt. The probability of person i not being simulated to have the event in any of d draws is</p><div id="eqn5" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(5)</span><math><mrow><mtext>(1 </mtext><mo>−</mo><mtext> </mtext><mtext>qi1</mtext><mtext> </mtext><mtext>/</mtext><mtext> </mtext><mtext>n1)</mtext><mtext> </mtext><mtext>(1</mtext><mtext> </mtext><mo>−</mo><mtext> </mtext><mtext>qi2</mtext><mtext> </mtext><mtext>/</mtext><mtext> </mtext><mtext>n2)</mtext><mtext> </mtext><mtext>…</mtext><mtext> </mtext><mtext>(1</mtext><mtext> </mtext><mtext> </mtext><mo>−</mo><mtext> </mtext><mtext> </mtext><mtext>qid</mtext><mtext> </mtext><mtext>/</mtext><mtext> </mtext><mtext>nd)</mtext></mrow></math></div><p data-astro-cid-qsyhzaho>We do not know n2, n3 ... nd in advance, because they will depend on whether the preceding draws have removed any persons from the pool. But we can make the probability of person i being selected to have the event equal in each draw, by calculating loaded probabilities for each draw after the first with the formula</p><div id="eqn6" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(6)</span><math><mrow><mtext>qit</mtext><mtext> </mtext><mo>=</mo><mtext> </mtext><mtext>qi1</mtext><mtext> </mtext><mtext>(nt</mtext><mtext> </mtext><mtext>/</mtext><mtext> </mtext><mtext>n1)</mtext></mrow></math></div><p data-astro-cid-qsyhzaho>Substituting <a href="#eqn6">equation (6)</a> in <a href="#eqn5">(5)</a>, and setting the result equal to the desired probability of person i not having the event, gives</p><div id="eqn7" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(7)</span><math><mrow><mo stretchy="false">(</mo><mn>1</mn><mtext> </mtext><mo>−</mo><mtext> </mtext><mtext>qi</mtext><mn>1</mn><mtext> </mtext><mo>/</mo><mtext> </mtext><mtext>n</mtext><mo stretchy="false">)</mo><mtext>d</mtext><mtext> </mtext><mo>=</mo><mtext> </mtext><mn>1</mn><mo>−</mo><mtext>pi</mtext></mrow></math></div><p data-astro-cid-qsyhzaho>Taking the 1/dth power of both sides and rearranging gives</p><div id="eqn8" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(8)</span><math><mrow><mtext>qi</mtext><mn>1</mn><mtext> </mtext><mo>=</mo><mtext> </mtext><mtext>n</mtext><mtext> </mtext><mo stretchy="false">[</mo><mn>1</mn><mtext> </mtext><mo>−</mo><mtext> </mtext><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mtext>pi</mtext><mo stretchy="false">)</mo><mn>1</mn><mo>/</mo><mtext>d</mtext><mtext> </mtext><mo stretchy="false">]</mo></mrow></math></div><p data-astro-cid-qsyhzaho>Now qi1 is the loaded probability of person i being selected for the event in draw 1, and we do not want this to exceed unity. Thus we require, for all the persons in the pool, that</p><div id="eqn9" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(9)</span><math><mrow><mtext>n</mtext><mtext> </mtext><mo stretchy="false">[</mo><mn>1</mn><mtext> </mtext><mo>−</mo><mtext> </mtext><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mtext> </mtext><mtext>pi</mtext><mo stretchy="false">)</mo><mn>1</mn><mo>/</mo><mtext>d</mtext><mo stretchy="false">]</mo><mtext> </mtext><mo>&lt;</mo><mo>=</mo><mtext> </mtext><mn>1</mn></mrow></math></div><div id="eqn10" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(10)</span><math><mrow><mtext>ie</mtext><mtext> </mtext><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mtext> </mtext><mtext>pi</mtext><mo stretchy="false">)</mo><mn>1</mn><mo>/</mo><mtext>d</mtext><mtext> </mtext><mo>&gt;</mo><mo>=</mo><mtext> </mtext><mn>1</mn><mtext> </mtext><mo>−</mo><mtext> </mtext><mn>1</mn><mo>/</mo><mi>n</mi></mrow></math></div><p data-astro-cid-qsyhzaho>Taking logs of both sides and rearranging gives the requirement that</p><div id="eqn11" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(11)</span><math><mrow><mtable><mtr><mtd><mrow><mtext>d</mtext><mtext> </mtext><mtext>&gt;</mtext><mtext> </mtext><mo>=</mo><mtext> </mtext><mtext>In(1</mtext><mtext> </mtext><mo>−</mo><mtext> </mtext><mtext>pi)</mtext><mtext> </mtext><mtext>/</mtext><mtext> </mtext><mtext>In(1</mtext><mtext> </mtext><mo>−</mo><mtext> </mtext><mtext>1/n)</mtext></mrow></mtd><mtd><mrow><mtext>for all i</mtext></mrow></mtd></mtr></mtable></mrow></math></div><p data-astro-cid-qsyhzaho>This can be achieved by taking d as</p><div id="eqn12" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(12)</span><math><mrow><mtable><mtr><mtd><mrow><mtext>d</mtext><mtext> </mtext><mo>=</mo><mtext> </mtext><mtext>In(</mtext><mn>1</mn><mtext> </mtext><mo>−</mo><mtext> </mtext><mtext>p</mtext><mtext>max</mtext><mo stretchy="false">)</mo><mtext> </mtext><mo>/</mo><mtext> </mtext><mtext>In</mtext><mo stretchy="false">(</mo><mn>1</mn><mtext> </mtext><mo>−</mo><mtext> </mtext><mn>1</mn><mo>/</mo><mtext>n</mtext><mo stretchy="false">)</mo></mrow></mtd><mtd><mrow><mtext>to the higher integer</mtext></mrow></mtd></mtr></mtable></mrow></math></div><p data-astro-cid-qsyhzaho>where pmax is the highest probability of the event occurring for any member of the pool. Note that if pmax is small and n large, this formula for d approximates to that in <a href="#eqn4">equation 4</a>. Once d has been chosen using <a href="#eqn12">equation 12</a>, it remains unchanged till all the d draws are completed. For the person selected for testing in the tth draw, the loaded probability qit can be calculated by combining <a href="#eqn6">equations 6</a> and <a href="#eqn8">8</a> to get</p><div id="eqn13" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(13)</span><math><mrow><mtext>qit</mtext><mtext> </mtext><mo>=</mo><mtext> </mtext><mtext>nt</mtext><mtext> </mtext><mo stretchy="false">[</mo><mn>1</mn><mtext> </mtext><mo>−</mo><mtext> </mtext><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mtext> </mtext><mtext>pi</mtext><mo stretchy="false">)</mo><mn>1</mn><mo>/</mo><mtext>d</mtext><mtext> </mtext><mo stretchy="false">]</mo></mrow></math></div><p data-astro-cid-qsyhzaho>As the number nt in the pool cannot increase above its initial value, the loaded probabilities cannot exceed their values for the first draw, and thus cannot exceed 1.</p><p data-astro-cid-qsyhzaho><a href="#table1">Table 1</a> shows the numbers of draws needed for pools of varying size, calculated using <a href="#eqn12">equation 12</a>. The minimum number of draws from any pool is 1, so that sampling from very small pools becomes inefficient. If the maximum event probability for a pool is about 0.63 or higher, the number of draws will exceed the number of persons in the pool. In practice this is likely to occur for relatively few pools, a point illustrated in <a href="#s4">Section 4</a>.</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Number of draws to give maximum loaded probability of 1.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="2">Number in pool</th>
+<th/>
+<th/>
+<th>maximum</th>
+<th>unloaded</th>
+<th>probability</th>
+<th/>
+</tr>
+<tr><td>0.01</td>
+<td>0.02</td>
+<td>0.05</td>
+<td>0.1</td>
+<td>0.2</td>
+<td>0.5</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>7</td>
+</tr>
+<tr>
+<td>100</td>
+<td>2</td>
+<td>3</td>
+<td>6</td>
+<td>11</td>
+<td>23</td>
+<td>69</td>
+</tr>
+<tr>
+<td>1,000</td>
+<td>11</td>
+<td>21</td>
+<td>52</td>
+<td>106</td>
+<td>224</td>
+<td>693</td>
+</tr>
+<tr>
+<td>10,000</td>
+<td>101</td>
+<td>203</td>
+<td>513</td>
+<td>1,054</td>
+<td>2,232</td>
+<td>6,932</td>
+</tr>
+<tr>
+<td>100,000</td>
+<td>1,006</td>
+<td>2,021</td>
+<td>5,130</td>
+<td>10,536</td>
+<td>22,315</td>
+<td>69,315</td></tr></tbody>
+</table></div></figure></section><section id="s2-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.4 Sampling with loaded probabilities with short simulation cycles</h3><p data-astro-cid-qsyhzaho>None of the above formulas depend on the length of the simulation cycle. The assumed probabilities of event occurrence are likely to have been based on annual simulation cycles, and will have to be appropriately recalculated for use with shorter simulation cycles.</p></section><section id="s2-5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.5 Sampling with loaded probabilities with alignment</h3><p data-astro-cid-qsyhzaho>Sampling with loaded probabilities can be adapted to give event numbers conforming with external alignment totals</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The highest probability of the event occurring in the alignment pool, or some upper limit to that probability, is assumed to be known</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>An individual is randomly selected from the pool, their probability divided by the highest probability, and a random number drawn to see if the event occurs</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The process is repeated until the desired alignment total is reached.</p></li></ul><p data-astro-cid-qsyhzaho>This process is similar to the sidewalk shuffle described by <a href="#bib4">Morrison (2006)</a>, except that random shuffling of the persons in the pool is replaced by repeated random selection.</p></section><section id="s2-6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.6 Uses of simulation by sampling with loaded probabilities in other fields</h3><p data-astro-cid-qsyhzaho>Given its generality, it is likely that similar processes are being used for applications in other fields. Sampling with loaded probabilities uses stratified sampling (<a href="#bib7">Ross 2006</a>: 66–184), one of a wide range of variance reduction techniques used in simulation.</p></section></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. Tests on accuracy</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>There was some concern that the formulas in <a href="#s2-3">Section 2.3</a> might not give completely correct results in practice. To test this, 10,000 repeated trials were made with risk pools containing varying numbers of low risk cases, and 500 high risk cases. In the first set of trials, 2,500 low-risk cases were assumed, each with probability of 0.1, so that 250 events were expected from the low-risk cases. In the second to fifth set of trials, the assumed probability for the low-risk cases was progressively increased, and their number reduced, so as to maintain the expected number of low-risk events at 250. In each set of trials, the 500 high-risk cases were assumed to have probability 0.5, so that 250 events were expected from them. In each set of trials, 500 events were thus expected.</p><p data-astro-cid-qsyhzaho><a href="#table2">Table 2</a> shows that the mean numbers of simulated events were all very close to the expected 500. The worst deviation from the expected 500 events was 0.12, for the second and third set or trials. In no case was the deviation from the expected 500 events greater than the standard deviations in the last column of <a href="#table2">Table 2</a>. These standard deviations are the standard deviations in the observed event numbers from 10,000 trials, divided by 100 (the square root of the number of trials). These results suggest that sampling by loaded probabilities, for the case with non-uniform event probabilities and losses from the pool, can work correctly.</p><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Simulated event numbers with pools chosen to produce 500 events.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Number low risk persons</th>
+<th>Low risk rate</th>
+<th>Number high risk persons</th>
+<th>High risk rate</th>
+<th>Expected number of events</th>
+<th>Mean number from 10,000 trials</th>
+<th>Standard deviation from 10,000 trials</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2,500</td>
+<td>0.1</td>
+<td>500</td>
+<td>0.5</td>
+<td>500</td>
+<td>499.92</td>
+<td>.16</td>
+</tr>
+<tr>
+<td>1,250</td>
+<td>0.2</td>
+<td>500</td>
+<td>0.5</td>
+<td>500</td>
+<td>500.12</td>
+<td>.14</td>
+</tr>
+<tr>
+<td>833</td>
+<td>0.3</td>
+<td>500</td>
+<td>0.5</td>
+<td>500</td>
+<td>499.88</td>
+<td>.12</td>
+</tr>
+<tr>
+<td>625</td>
+<td>0.4</td>
+<td>500</td>
+<td>0.5</td>
+<td>500</td>
+<td>500.03</td>
+<td>.10</td>
+</tr>
+<tr>
+<td>500</td>
+<td>0.5</td>
+<td>500</td>
+<td>0.5</td>
+<td>500</td>
+<td>500.00</td>
+<td>.09</td>
+</tr></tbody>
+</table></div></figure></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. Example of the use of pools in simulating deaths</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In practice, there can be considerable heterogeneity in risk rates, so that segregation into a small number of risk groups can greatly reduce the numbers of draws needed to simulate the expected numbers of events. This is illustrated in <a href="#table3">Table 3</a>, using Australian data on ages and mortality rates.</p><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Table Draws needed to simulate the deaths in a year 175,000 Australians.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Age group</th>
+<th>Persons in group</th>
+<th>Average mortality rate</th>
+<th>Expected deaths</th>
+<th>Maximum mortality rate</th>
+<th>Draws</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0-</td>
+<td>36,441</td>
+<td>0.00040</td>
+<td>14.5</td>
+<td>0.00453</td>
+<td>166</td>
+</tr>
+<tr>
+<td>15-</td>
+<td>23,593</td>
+<td>0.00060</td>
+<td>14.1</td>
+<td>0.00113</td>
+<td>27</td>
+</tr>
+<tr>
+<td>25-</td>
+<td>25,575</td>
+<td>0.00087</td>
+<td>22.1</td>
+<td>0.00138</td>
+<td>36</td>
+</tr>
+<tr>
+<td>35-</td>
+<td>26,810</td>
+<td>0.00123</td>
+<td>33.0</td>
+<td>0.00192</td>
+<td>52</td>
+</tr>
+<tr>
+<td>45-</td>
+<td>24,156</td>
+<td>0.00237</td>
+<td>57.2</td>
+<td>0.00415</td>
+<td>101</td>
+</tr>
+<tr>
+<td>55-</td>
+<td>16,348</td>
+<td>0.00642</td>
+<td>104.9</td>
+<td>0.01315</td>
+<td>217</td>
+</tr>
+<tr>
+<td>65-</td>
+<td>11,852</td>
+<td>0.01826</td>
+<td>216.4</td>
+<td>0.03697</td>
+<td>447</td>
+</tr>
+<tr>
+<td>75-</td>
+<td>7,706</td>
+<td>0.05051</td>
+<td>389.3</td>
+<td>0.10627</td>
+<td>866</td>
+</tr>
+<tr>
+<td>85-</td>
+<td>2,563</td>
+<td>0.18238</td>
+<td>467.4</td>
+<td>0.48496</td>
+<td>1701</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>175,044</td>
+<td>0.00754</td>
+<td>1,319.0</td>
+<td/>
+<td>3,613</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>The numbers of expected deaths in <a href="#table3">Table 3</a> were estimated by applying 2001-02 mortality rates to a sample of 175,044 persons derived from the 1% 2001 census sample file. The maximum mortality rates are the highest applying to any age in each of the groups. For example, the highest mortality rate for the 0–14 group is for males aged 0, while the highest rate for persons 85+ is for females aged 110. The numbers of draws needed with loaded sampling were calculated from <a href="#eqn12">equation 12</a>. For example, the number of draws needed from the pool for persons 55-64 was calculated as</p><div id="ueqn1" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(14)</span><math><mtable><mtr><mtd><mrow><mtext>In</mtext><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mn>.01315</mn><mo stretchy="false">)</mo><mo>/</mo><mtext>In</mtext><mo stretchy="false">(</mo><mn>1</mn><mo>−</mo><mn>1</mn><mo>/</mo><mn>16348</mn><mo stretchy="false">)</mo></mrow></mtd><mtd><mrow><mtext>ie 217 to the higher integer</mtext></mrow></mtd></mtr></mtable></math></div><p data-astro-cid-qsyhzaho>These estimates suggest that good simulations of the deaths in a year can be made by 3,613 draws with loaded probabilities, rather than 175,044 draws with true mortality rates. Note that, for this empirical example, the identified pmax of 0.485 for the highest-risk group is less than 0.63 – the tipping point at which the number of draws starts to exceed the number of persons in the pool.</p></div></details><details id="s5" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">5. Run times with an australian microsimulation model</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s5-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.1 Pools used to test sampling with loaded probabilities</h3><p data-astro-cid-qsyhzaho>In order to explore the achievable efficiency gains offered by sampling with loaded probabilities, the technique was applied to a dynamic microsimulation model of Australia. The pools in this model used here are each combination of 8 areas, 8 person types and 9 age groups (see <a href="#table4">Table 4</a>), making 576 pools in all.</p><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Areas, person types and age groups used to form pools.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="center">Area code</th>
+<th align="center">Area name</th>
+<th align="center">Person type code</th>
+<th align="center">Person type</th>
+<th align="center">Age code</th>
+<th align="center">Age group</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>NSW</td>
+<td>1</td>
+<td>Partner</td>
+<td>1</td>
+<td>0–14</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Victoria</td>
+<td>2</td>
+<td>Lone parent</td>
+<td>2</td>
+<td>15–24</td></tr>
+<tr>
+<td>3</td>
+<td>Queensland</td>
+<td>3</td>
+<td>Child</td>
+<td>3</td>
+<td>25–34</td></tr>
+<tr>
+<td>4</td>
+<td>SA</td>
+<td>4</td>
+<td>Related person</td>
+<td>4</td>
+<td>35–44</td></tr>
+<tr>
+<td>5</td>
+<td>WA</td>
+<td>5</td>
+<td>Unrelated person</td>
+<td>5</td>
+<td>45–54</td></tr>
+<tr>
+<td>6</td>
+<td>Tasmania</td>
+<td>6</td>
+<td>Lone person</td>
+<td>6</td>
+<td>55–54</td></tr>
+<tr>
+<td>7</td>
+<td>NT</td>
+<td>7</td>
+<td>Group member</td>
+<td>7</td>
+<td>65–74</td></tr>
+<tr>
+<td>8</td>
+<td>ACT</td>
+<td>8</td>
+<td>Non-private resident</td>
+<td>8</td>
+<td>75–84</td></tr>
+<tr>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>9</td>
+<td>85-</td></tr>
+</tbody></table></div></figure><p data-astro-cid-qsyhzaho>These pools were available for alignment purposes, and not specifically chosen for sampling with loaded probabilities. With hindsight, these pools were too fine for sampling with loaded probabilities, and resulted in simulated numbers of exits and moves being a little different from expected. These errors, and ways to minimize them, are discussed in <a href="#s6-1">Section 6.1</a>.</p></section><section id="s5-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.2 Run times to simulate 175,000 Australian for a year</h3><p data-astro-cid-qsyhzaho>The run times in <a href="#table5">Table 5</a> exclude the input of data and assumptions before a run, and the time needed to output results. Maximum probabilities for each risk group are included in the assumptions file, which takes about 0.3 seconds to read. There were some unexpectedly large random variations in run times for the first cycle, so all the run times with yearly cycles are the average of 50 runs. All the multi-cycle all-case run times are from single runs, and all the multi-cycle loaded run times are the averages of at least 3 runs.</p><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Mean run times in seconds to simulate 175,000 Australians for a year.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Cycles per year</th>
+<th>All-case trials seconds</th>
+<th>All-case fitted seconds</th>
+<th>Loaded trials seconds</th>
+<th>Loaded fitted seconds</th>
+<th>Loaded trials as % of all-case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1.13</td>
+<td>1.58</td>
+<td>0.64</td>
+<td>0.66</td>
+<td>57%</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4.10</td>
+<td>4.14</td>
+<td>0.67</td>
+<td>0.68</td>
+<td>16%</td></tr>
+<tr>
+<td>12</td>
+<td>11.37</td>
+<td>10.98</td>
+<td>0.75</td>
+<td>0.73</td>
+<td>7%</td>
+</tr>
+<tr>
+<td>26</td>
+<td>23.29</td>
+<td>22.94</td>
+<td>0.83</td>
+<td>0.82</td>
+<td>4%</td>
+</tr>
+<tr>
+<td>52</td>
+<td>44.90</td>
+<td>45.15</td>
+<td>0.98</td>
+<td>0.97</td>
+<td>2%</td>
+</tr>
+<tr>
+<td>365</td>
+<td/>
+<td/>
+<td>2.88</td>
+<td>2.88</td>
+<td/>
+</tr></tbody></table></div></figure><p data-astro-cid-qsyhzaho>The run times in <a href="#table5">Table 5</a> exclude the input of data and assumptions before a run, and the time needed to output results. Maximum probabilities for each risk group are included in the assumptions file, which takes about 0.3 seconds to read. There were some unexpectedly large random variations in run times for the first cycle, so all the run times with yearly cycles are the average of 50 runs. All the multi-cycle all-case run times are from single runs, and all the multi-cycle loaded run times are the averages of at least 3 runs.</p><p data-astro-cid-qsyhzaho><a href="#table5">Table 5</a> shows that the times required with all-case simulations increase broadly in line with the number of cycles a year. The slope and constant obtained by fitting a linear trend line by least squares minimization suggest that sampling each case takes about 0.85 seconds a cycle, and adjusting data in response to simulated events takes about 0.72 seconds a year, with a poor fit for yearly cycles (see <a href="#table5">Table 5</a>). The slope and constant from the trend-line fit with loaded probabilities suggest that sampling takes about 0.006 seconds a cycle, and adjusting data in response to simulated events takes about 0.66 seconds a year. The fit with loaded probabilities is good up to 365 cycles a year. The numbers of simulated events, and the time taken to process them, should be very similar with both methods. As expected, the time savings are in sampling.</p><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00065-fig1.iDZYWLDc_lCsxW.webp" class="figure-lightbox-trigger" data-pswp-width="1548" data-pswp-height="930" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00065-fig1.iDZYWLDc_lCsxW.webp" alt width="1548" height="930" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Run times with varying simulation cycles.</span></figcaption></figure></section><section id="s5-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.3 Run times for projections for up to 50 years</h3><p data-astro-cid-qsyhzaho>The yearly values in the first line of <a href="#table6">Table 6</a> are those in the first line of <a href="#table5">Table 5</a>. They show sampling with loading probability has a one-year run-time about 57% of all-case sampling, which is out of line with the 53% or 52% in the multi-year lines of <a href="#table6">Table 6</a>. Comparing the calculation steps involved in all-case and loaded sampling suggests that the savings from loaded sampling should be a constant proportion, regardless of the number of projection years. The one-year result is an anomaly.</p><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Run times in seconds for projections up to 50 years.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Projection years</th>
+<th>All-case Yearly</th>
+<th>Loaded Yearly</th>
+<th>Loaded Weekly</th>
+<th>Loaded as% of all case Yearly</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td>
+<td>1.13</td>
+<td>0.64</td>
+<td>0.98</td>
+<td>57%</td></tr>
+<tr><td>10</td>
+<td>11.59</td>
+<td>6.18</td>
+<td>9.81</td>
+<td>53%</td></tr>
+<tr><td>20</td>
+<td>24.28</td>
+<td>12.82</td>
+<td>20.28</td>
+<td>53%</td></tr>
+<tr><td>30</td>
+<td>37.35</td>
+<td>19.72</td>
+<td>31.2</td>
+<td>53%</td></tr>
+<tr><td>40</td>
+<td>51.93</td>
+<td>27.25</td>
+<td>42.51</td>
+<td>52%</td></tr>
+<tr><td>50</td>
+<td>66.32</td>
+<td>34.16</td>
+<td>53.87</td>
+<td>52%</td></tr></tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho><a href="#fig2">Figure 2</a> shows that both all-case and loaded sampling methods have a slight increase in run time per year for higher projection times. This is because of the population growth of about 30% projected over the 50 years.</p><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00065-fig2.CF1NgY9a_Z8OW4r.webp" class="figure-lightbox-trigger" data-pswp-width="1601" data-pswp-height="961" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00065-fig2.CF1NgY9a_Z8OW4r.webp" alt width="1601" height="961" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Run times with one cycle per year.</span></figcaption></figure></section></div></details><details id="s6" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">6. Checks on projected event numbers</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>This section compares the expected numbers of each type of movement, with the average numbers observed with different cycle time, sampling methods and event orders. The types of event examined are births, deaths, emigrants, exits and moves. Immigrants were not compared, because the microsimulation model pregenerates immigrant families to match exogenous immigrant assumptions. An “exit” is a departure from a household of a person, possibly followed by one or more of the other household members. By contrast, a “move” is where the whole household moves to another dwelling. For various reasons, the observed numbers differ from expected by more than can be explained by random variation. Nevertheless, the comparisons show that broadly reasonable results are being obtained.</p><section id="s6-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.1 One-year projection results with each event simulated separately</h3><p data-astro-cid-qsyhzaho><a href="#table7">Table 7</a> shows the average numbers of projected events from 50 one-year runs, using either all-scase simulation or sampling with loaded probabilities. To avoid event interactions confusing the results, only one type of event was simulated in each run. Also shown are the expected numbers of events, obtained by summing the probabilities of each person having that event.</p><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Event totals from one-year projections, each event simulated separately (50 run averages).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Expected</th>
+<th>Observed all-case yearly</th>
+<th>Observed loaded yearly</th>
+<th>Observed loaded weekly</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Births</td>
+<td>2,170</td>
+<td>2,179</td>
+<td>2,183</td>
+<td>2,208</td>
+</tr>
+<tr>
+<td>Deaths</td>
+<td>1,372</td>
+<td>1,379</td>
+<td>1,330</td>
+<td>1,370</td>
+</tr>
+<tr><td>Emigrants</td>
+<td>2,284</td>
+<td>2,280</td>
+<td>2,251</td>
+<td>2,275</td>
+</tr>
+<tr>
+<td>Exits</td>
+<td>6,254</td>
+<td>6,441</td>
+<td>6,203</td>
+<td>6,592</td>
+</tr>
+<tr>
+<td>Moves</td>
+<td>12,468</td>
+<td>12,411</td>
+<td>12,330</td>
+<td>12,364</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>Some of the possible reasons for the differences in <a href="#table7">Table 7</a> are:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Random variations in the numbers of simulated events</i>. For example, if the expected 2,208 deaths were Poisson distributed, they would have a standard deviation of 47, and averaging over 50 runs would reduce this to about 7. The observed death numbers from all-case yearly and loaded weekly are thus within one standard deviation, while those from loaded yearly runs are well outside.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Derivation of the expected numbers in a manner inconsistent with the simulations</i>. Event probabilities, particularly for births, exits and moves, depend on a number of person and household characteristics. While the expected probabilities for each person were based as closely as possible on the data at the start of the first projection year, some approximations may have occurred. One error in expected numbers was found during checking.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Movements between sampling pools resulting from births, deaths or emigrants</i>. For example, if a partnered male is simulated to die, then his partner will be removed from a partner pool, and put into a pool of lone persons or lone parents. As deaths from these pools are simulated after deaths from partner pools, then the former partner may be double exposed to the risk of death. As birth, death and emigration are low-probability events, and some offsetting may occur, the resulting errors are likely to be small. A solution is to use pools based only on age.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Changes in type or area for exits</i>. In the simulations with loaded probabilities, it was assumed that exits do not cause any losses from the pool. Trials show that about 86% of exits involve a type change, and about 10% involve an area change. With the area/type/age pool structure being used, changes of either type or area result in removal from the pool being simulated. This is not a problem with all-case simulations, but can cause insufficient persons to be sampled when using loaded probabilities. This seems likely to be a major reason why exits with a yearly cycle and loaded probabilities were 3.7% below the all-case number. A solution is to use pools based only on age, so that no pool losses occur.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Changes in area for moves</i>. About 14% of moves involve an area change, and moves with a yearly cycle and loaded probabilities were 0.7% below the all-case number. Again, a solution is to use pools based only on age.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Changes in person types during the year</i>. If type change assumptions are inappropriate, then there can be rapid changes in the numbers of particular types of persons in the first projection year. This may be a major reason for the 6% increase in exit estimates with loaded probabilities when changing from annual to weekly cycles.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Programming errors</i>. The household microsimulation model used here was primarily constructed as a test-bed for different simulation techniques. It has been substantially validated and debugged, but there is potential for errors of the order of 10% in exit and move numbers to be still undetected, and for smaller errors in births, deaths and emigrants.</p></li></ul></section><section id="s6-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.2 One-year projection results with all events simulated together</h3><p data-astro-cid-qsyhzaho><a href="#table8">Table 8</a> shows the same expected numbers as <a href="#table7">Table 7</a>, but with observed numbers obtained by simulating all events together. Within each simulation cycle, events have been simulated in the order births, deaths, emigrants, immigrants, exits and moves. Apart from moves, simulated event numbers are similar for both tables. Move numbers increased by about 8% for all-case simulation, 7% for loaded probabilities with a yearly cycle, and 4% for loaded probabilities with a weekly cycle. Move probabilities depend strongly on person types, so that poorly chosen exit assumptions can cause significant changes to moves in a year.</p><figure id="table8" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 8.</strong><span data-astro-cid-dzaleqsp> Event totals from one-year projections, all events simulated together.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Expected</th>
+<th>Observed all-case yearly</th>
+<th>Observed loaded yearly</th>
+<th>Observed loaded weekly</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Births</td>
+<td>2,170</td>
+<td>2,175</td>
+<td>2,182</td>
+<td>2,232</td>
+</tr>
+<tr>
+<td>Deaths</td>
+<td>1,372</td>
+<td>1,375</td>
+<td>1,335</td>
+<td>1,375</td>
+</tr>
+<tr>
+<td>Emigrants</td>
+<td>2,284</td>
+<td>2,282</td>
+<td>2,263</td>
+<td>2,304</td>
+</tr>
+<tr>
+<td>Exits</td>
+<td>6,254</td>
+<td>6,333</td>
+<td>6,075</td>
+<td>6,611</td>
+</tr>
+<tr>
+<td>Moves</td>
+<td>12,468</td>
+<td>13,418</td>
+<td>13,210</td>
+<td>12,826</td>
+</tr>
+</tbody>
+</table></div></figure></section><section id="s6-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.3 Comparisons between normal and reverse order simulations</h3><p data-astro-cid-qsyhzaho><a href="#bib2">Galler (1997)</a> recommended short simulation cycles. To test their usefulness, simulations were made in normal and reverse order with yearly cycles, and then in normal and reverse order with weekly cycles.</p><p data-astro-cid-qsyhzaho><a href="#table9">Table 9</a> shows the changes from simulating events in reverse order are much smaller with weekly simulation cycles, particularly for exits and moves.</p><figure id="table9" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 9.</strong><span data-astro-cid-dzaleqsp> Table one-year projections, with events in normal & reverse order (50 run averages).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="2">Event</th>
+<th colspan="3">Yearly</th>
+<th colspan="3">Weekly</th>
+</tr>
+<tr>
+<th>normal order</th>
+<th>reverse order</th>
+<th>change in year</th>
+<th>normal order</th>
+<th>reverse order</th>
+<th>change in year</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Births</td>
+<td>2,182</td>
+<td>2,243</td>
+<td>61</td>
+<td>2,232</td>
+<td>2,224</td>
+<td>-8</td></tr>
+<tr><td>Deaths</td>
+<td>1,335</td>
+<td>1,331</td>
+<td>-4</td>
+<td>1,375</td>
+<td>1,378</td>
+<td>3</td></tr>
+<tr><td>Emigrants</td>
+<td>2,263</td>
+<td>2,308</td>
+<td>45</td>
+<td>2,304</td>
+<td>2,311</td>
+<td>7</td></tr>
+<tr><td>Exits</td>
+<td>6,075</td>
+<td>6,540</td>
+<td>465</td>
+<td>6,611</td>
+<td>6,615</td>
+<td>4</td></tr>
+<tr><td>Moves</td>
+<td>13,210</td>
+<td>12,323</td>
+<td>-887</td>
+<td>12,826</td>
+<td>12,819</td>
+<td>-7</td></tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>These results strongly confirm the desirability of short simulation cycles.</p></section><section id="s6-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.4 Comparisons between all-case and loaded 50-year projections</h3><p data-astro-cid-qsyhzaho><a href="#table10">Table 10</a> compares the averages of 10 50-year runs using all-case simulation with the averages of 10 runs using loaded probabilities. The expected numbers of births, deaths and emigrants are reasonably similar for both simulation methods. The 2.3% reduction in exits is less than the 4.1% for the one-year projections in <a href="#table7">Table 7</a>, and may similarly reflect the assumption of no losses when most exits did in fact result in losses from the sampling pools. The 2.4% reduction in moves is more than the 0.7% in <a href="#table7">Table 7</a>, and may reflect the 50-year accumulation of type errors when using loaded probabilities. Exits and moves do not affect person numbers, and the projected numbers of persons are very close.</p><figure id="table10" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 10.</strong><span data-astro-cid-dzaleqsp> 50-year projections with yearly cycles (10 run averages).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Event/persons at end</th>
+<th>All-case yearly mean</th>
+<th>All-case yearly SD</th>
+<th>Loaded yearly mean</th>
+<th>Loaded yearly SD</th>
+<th>Loaded as % of all-case</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Births</td>
+<td>102,831</td>
+<td>541</td>
+<td>101,611</td>
+<td>516</td>
+<td>98.8%</td>
+</tr>
+<tr>
+<td>Deaths</td>
+<td>92,205</td>
+<td>127</td>
+<td>91,924</td>
+<td>130</td>
+<td>99.7%</td>
+</tr>
+<tr>
+<td>Emigrants</td>
+<td>123,775</td>
+<td>186</td>
+<td>123,024</td>
+<td>232</td>
+<td>99.4%</td>
+</tr>
+<tr>
+<td>Exits</td>
+<td>355,304</td>
+<td>891</td>
+<td>347,052</td>
+<td>746</td>
+<td>97.7%</td>
+</tr>
+<tr>
+<td>Moves</td>
+<td>797,511</td>
+<td>1,716</td>
+<td>778,254</td>
+<td>937</td>
+<td>97.6%</td>
+</tr>
+<tr>
+<td>Persons at end</td>
+<td>226,755</td>
+<td>488</td>
+<td>226,566</td>
+<td>504</td>
+<td>99.9%</td>
+</tr>
+</tbody>
+</table></div></figure></section></div></details><details id="s7" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">7. Checks on event number standard deviations</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>From initial trials, it was noted that simulations with loaded probabilities sometimes gave much lower standard deviations in event numbers than all-case simulations. This was unexpected, but investigation showed that low standard deviations were likely when sampling from pools with limited probability ranges. Some approximate theoretical estimates of expected standard deviations were thus made, and compared with the observed standard deviations with the two methods with a yearly cycle, and with loaded probabilities with a weekly cycle.</p><p data-astro-cid-qsyhzaho><a href="#table11">Table 11</a> compares approximate expected standard deviations for each event type with those observed from 50 runs, simulating all events together. For each sampling pool, the average loaded probability was calculated as</p><figure id="table11" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 11.</strong><span data-astro-cid-dzaleqsp> Standard deviations for one-year projections (based on 50 runs).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="2">Event</th>
+<th>All-case Yearly</th>
+<th>All-case Yearly</th>
+<th>Loaded Yearly</th>
+<th>Loaded Yearly</th>
+<th>Loaded weekly</th>
+<th>Loaded weekly</th>
+</tr>
+<tr>
+<th>Expected</th>
+<th>Observed</th>
+<th>Expected</th>
+<th>Observed</th>
+<th>Expected</th>
+<th>Observed</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Births</td>
+<td>43.8</td>
+<td>38.6</td>
+<td>43.6</td>
+<td>38.7</td>
+<td>43.5</td>
+<td>52.8</td>
+</tr>
+<tr>
+<td>Deaths</td>
+<td>35.4</td>
+<td>32.7</td>
+<td>28.0</td>
+<td>29.9</td>
+<td>31.7</td>
+<td>32.2</td>
+</tr>
+<tr>
+<td>Emigrants</td>
+<td>47.3</td>
+<td>38.6</td>
+<td>26.2</td>
+<td>35.6</td>
+<td>36.5</td>
+<td>42.8</td>
+</tr>
+<tr>
+<td>Exits</td>
+<td>73.7</td>
+<td>67.6</td>
+<td>33.2</td>
+<td>39.8</td>
+<td>54.7</td>
+<td>59.6</td>
+</tr>
+<tr>
+<td>Moves</td>
+<td>98.3</td>
+<td>99.7</td>
+<td>10.3</td>
+<td>18.9</td>
+<td>50.0</td>
+<td>55.1</td>
+</tr></tbody></table></div></figure><div id="ueqn2" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(15)</span><math><mtext>expected number of events / number of draws from pool</mtext></math></div><p data-astro-cid-qsyhzaho>where the number of draws was calculated using <a href="#eqn4">equation 4</a> or <a href="#eqn12">12</a>.</p><p data-astro-cid-qsyhzaho>The expected variance of the number of events from that pool was then approximately estimated assuming the variance formula for a binomial distribution</p><div id="ueqn3" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(16)</span><math><mtext>number of draws * average loaded probability</mtext><mo>*</mo><mtext>(1</mtext><mo>−</mo><mtext> average loaded probability)</mtext></math></div><p data-astro-cid-qsyhzaho>Variances were summed across all pools, and the square root taken to give an approximate estimate of the standard deviation. Given the approximate nature of the expected standard deviations, and the broad confidence limits generally associated with standard deviation observations, the expected and observed standard deviations are reasonably comparable.</p><p data-astro-cid-qsyhzaho>As shown in <a href="#table2">Table 2</a>, sampling with loaded probabilities can give low standard deviations, particularly for risk combinations with a narrow range of risks. This is because the loaded probabilities can all be close to 1, and there will be little variability in the simulated numbers of events. For moves, most of the persons in each sampling pool had similar probabilities, so that loaded probabilities with a one-year simulation cycle gave standard deviations that were much lower than with all-case sampling.</p><p data-astro-cid-qsyhzaho>As the number of simulation cycles in a year increases, more pools have very low numbers of expected events, with loaded probabilities well below 1, and higher variability in simulated numbers of events. Comparing the values for loaded simulations with yearly and weekly cycles, all the observed standard deviations increased, and particularly so for moves.</p><p data-astro-cid-qsyhzaho>The coefficients of variation in <a href="#table12">Table 12</a> were obtained by dividing the observed standard deviations in <a href="#table11">Table 11</a> by the observed numbers in <a href="#table8">Table 8</a>. Regardless of simulation method or cycle length, the coefficients of variation for the tested model are small, and may not be important in most practical applications.</p><figure id="table12" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 12.</strong><span data-astro-cid-dzaleqsp> Observed coefficients of variation for one-year projections (based on 50 runs).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Event</th>
+<th>All-case Yearly</th>
+<th>Loaded yearly</th>
+<th>Loaded weekly</th>
+</tr></thead>
+<tbody>
+<tr><td>Births</td>
+<td>0.018</td>
+<td>0.018</td>
+<td>0.024</td></tr>
+<tr><td>Deaths</td>
+<td>0.024</td>
+<td>0.022</td>
+<td>0.023</td></tr>
+<tr><td>Emigrants</td>
+<td>0.017</td>
+<td>*0.016</td>
+<td>0.019</td></tr>
+<tr><td>Exits</td>
+<td>0.011</td>
+<td>0.007</td>
+<td>0.009</td></tr>
+<tr><td>Moves</td>
+<td>0.007</td>
+<td>0.001</td>
+<td>0.004</td></tr>
+</tbody>
+</table></div></figure></div></details><details id="s8" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">8. Computational aspects</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Computational details for loaded sampling will depend strongly on the database structure and programming language. Test results here are from a model using a list structure rather than a relational database. A separate list is maintained of member addresses for each of 576 pools (each combination of 8 areas, 8 person types and 9 age groups). These pools are maintained for alignment purposes, but they also proved useful for loaded sampling. All data for a person are stored as a single line in an array, and their address in the array is recorded in the relevant pool list. The address of each new person in a pool is added to the end of the list. The address of any exiting person is replaced in the list by the address currently at the end of the list, with the length of the list being reduced by one. A random number is drawn, and multiplied by the length of the list, to randomly select a person from a pool</p><p data-astro-cid-qsyhzaho>A similar list structure has been used by INHASIM for many years (<a href="#bib3">Inagaki 2009</a>). INHASIM uses a template class of sequence containers, based on Microsoft’s Visual C++ STL list class, that maintains its elements in a linear arrangement and allows efficient insertions and deletions at any location within a sequence.</p></div></details><details id="s9" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">9. Likely applications</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In practice, where is sampling with loaded probabilities likely to be useful? Models with fine geographic subdivisions will generally require at least 1,000 persons to realistically represent each subdivision, and may thus become very large. Models with many different types of physical disability will also need to be large, so as to adequately represent uncommon disabilities. Models including processes with short time spans are also likely to get useful time savings from sampling with loaded probabilities. For example, a microsimulation model of dwelling sales and rentals is likely to need both a detailed geographic structure, and a simulation cycle of a week or less.</p><p data-astro-cid-qsyhzaho>Existing models of moderate size but unusually slow run times are unlikely to benefit from sampling with loaded probabilities. Their slowness may reflect programming and data storage issues, or excessive use of alignment, and more efficient sampling will have little effect. Adding sampling with loaded probabilities to any existing model may require changes to data indexing procedures, and will require additional model validation.</p><p data-astro-cid-qsyhzaho><a href="#bib1">Fredriksen, Knudsen &amp; Stolen (2011)</a> describe the use of multithreading to greatly reduce runtimes in the MOSART model of the whole Norwegian population. They comment that simulation steps involved in household formation are cumbersome to multi-thread, due to often subtle interactions between individuals, with little or no effect on runtime. Sampling with loaded probabilities seems particularl yrelevant to births, deaths, immigration, emigration and household changes, all of which are likely to be hard to multithread.</p><p data-astro-cid-qsyhzaho>Sampling with loaded probabilities thus seems appropriate for new ambitious models, with many persons or short simulation cycles. Ideally, the sampling processes should be designed at the same time as data storage and alignment.</p></div></details><details id="s10" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">10. Conclusions</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><a href="#s2">Section 2</a> shows that sampling with loaded probabilities is feasible, and gives formulas for the numbers of persons drawn from each pool, and for the loaded probabilities. The run times in <a href="#s5">Section 5</a> confirm that sampling with loading probabilities can be much quicker, and the comparisons in <a href="#s6">Sections 6</a> and <a href="#s7">7</a> show that it can give similar results to all-case simulation.</p></div></details></div><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Fredricksen, D, Knudsen, P, Stolen, N (2011). <span data-astro-cid-oer3kof4>The dynamic cross-sectional microsimulation model MOSART</span>. .</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Galler, HP (1997). <span data-astro-cid-oer3kof4>Discrete time and continuoustime approaches to dynamic microsimulation reconsidered. National Centre for Social & Economic Modelling. Technical Paper No 13</span>.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Inagaki, S (2009). <span data-astro-cid-oer3kof4>INAHSIM: A Japanese microsimulation model</span>.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Morrison, R (2006). <span data-astro-cid-oer3kof4>http://www.ssb.no/misi/papers/morrison-rick_makeitso-oslo-2.doc</span>. <a href="http://www.ssb.no/misi/papers/morrison-rick_makeitso-oslo-2.doc" target="_blank" rel="noopener" data-astro-cid-oer3kof4>http://www.ssb.no/misi/papers/morrison-rick_makeitso-oslo-2.doc</a>.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Orcutt, GH (1957). <span data-astro-cid-oer3kof4>A new type of socio-economic system</span>. <em data-astro-cid-oer3kof4>Review of Economics and Statistics</em>, <strong data-astro-cid-oer3kof4>58</strong>, 773–797.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Orcutt, GH, Greenberger, M, Korbel, J, Rivlin, A (1961). <span data-astro-cid-oer3kof4>Microanalysis of socioeconomic systems - a simulation study</span>.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ross, SM (2004). <span data-astro-cid-oer3kof4>Simulation 4th edition</span>.</span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>J Richard Cumpston</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>JR Cumpston Pty Ltd, Australia</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:richard.cumpston@gmail.com" data-astro-cid-m3fa5h5a>richard.cumpston@gmail.com</a></p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Acknowledgements</h3><p data-astro-cid-m3fa5h5a>I am grateful for the many suggestions made by the three reviewers of this paper. Almost all were adopted, and greatly improved the paper.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00065" data-astro-cid-m3fa5h5a>Version of Record published: June 30, 2012 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2012, Cumpston</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/methodology" data-pagefind-filter="Research category:Methodology" data-astro-cid-m3fa5h5a>Methodology</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=all-case%20simulation" data-astro-cid-m3fa5h5a>all-case simulation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=stratified%20sampling" data-astro-cid-m3fa5h5a>stratified sampling</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=loaded%20probabilities" data-astro-cid-m3fa5h5a>loaded probabilities</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=faster%20simulations" data-astro-cid-m3fa5h5a>faster simulations</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

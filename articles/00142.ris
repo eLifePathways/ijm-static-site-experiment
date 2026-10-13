@@ -1,0 +1,23 @@
+TY  - JOUR
+TI  - The Eurosystem household finance and consumption survey: A new underlying database for EUROMOD
+AU  - Kuypers, Sarah
+AU  - Figari, Francesco
+AU  - Verbist, Gerlinde
+VL  - 9
+IS  - 3
+PY  - 2016
+DA  - 2016/12/31
+SP  - 35-65
+C1  - IJM 2016;9(3):35-65
+DO  - 10.34196/ijm.00142
+UR  - https://doi.org/10.34196/ijm.00142
+AB  - We explore the prospects for using the Eurosystem Household Finance and Consumption Survey (HFCS) dataset as an underlying micro-database for the EU tax-benefit model, EUROMOD. This will allow expanding the policy domains currently covered in EUROMOD with dimensions like wealth taxation, incentives for wealth accumulation and asset tests determining benefit eligibility. As the HFCS only contains gross income amounts which are not suitable for distributive analysis, the purpose of this paper is to derive net incomes by simulating the gross-to-net transition with EUROMOD taking into account all important details of the social security and personal income tax system. In order to identify the issues and illustrate their importance a trial database for Belgium and Italy is constructed.
+KW  - EUROMOD
+KW  - HFCS
+KW  - simulations
+KW  - gross-to-net incomes
+KW  - wealth taxation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

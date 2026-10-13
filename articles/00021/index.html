@@ -1,0 +1,725 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>A non-parametric microsimulation approach to assess changes in inequality and poverty | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00021"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00021" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/methodology" data-astro-cid-ak4gb66a>Methodology</a>, <a href="/subjects/taxes-benefits" data-astro-cid-ak4gb66a>Taxes and benefits</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Jun 30, 2010</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>A non-parametric microsimulation approach to assess changes in inequality and poverty</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Rob Vos, Marco V. Sánchez</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>United Nations Department of Economic and Social Affairs, United States</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/3-1/volume-3-1-spring-2010" data-astro-cid-ak4gb66a>Volume 3(1) Spring 2010</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> R. Vos, M. Sánchez; 2010; <span data-astro-cid-ak4gb66a>A non-parametric microsimulation approach to assess changes in inequality and poverty</span>; International Journal of Microsimulation; 3(1); 8–23. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00021" data-astro-cid-ak4gb66a>10.34196/ijm.00021</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>This paper presents a non-parametric microsimulation methodology for assessing the impact of labour market changes and government transfers on income inequality and poverty at the household level. The approach assumes that labour markets are segmented and determines (as part of a randomized process) which individuals are expected to move in or out of employment and which move from one employment segment to another based on either known or counterfactual information of aggregate labour market changes. The methodology assumes that the distribution of earnings of those who become employed in a particular segment resembles that of the individuals observed to be employed in that segment. The approach can be effectively combined in top-down fashion with static or dynamic computable general equilibrium (CGE) models, which typically provide insufficient information about household income distribution. The paper discusses the virtues and limitations of applying this methodology and further explains to practitioners how to implement it as a stand-alone methodology or in combination with a CGE model. It also shows how the methodology can be generalized to also capture the poverty and inequality effects of changes in non-labour incomes, such as government transfers. One great advantage of this method is that it is not very demanding in terms of modelling labour supply and household behaviour as compared with alternative parametric approaches, while at the same time providing a plausible link between changes in overall labour market conditions and the full household income distribution.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00021/ijm-00021.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00021.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00021.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00021" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00021/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. Non-parametric microsimulation approach</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. Top-down combination of a CGE model and the non-parametric micro-simulation method</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. An application with a CGE model for costa rica</a></li><li data-astro-cid-twdwaz5s><a href="#s5" data-astro-cid-twdwaz5s>5. Conclusions</a></li><li data-astro-cid-twdwaz5s><a href="#footnotes" data-astro-cid-twdwaz5s>Footnotes</a></li><li data-astro-cid-twdwaz5s><a href="#appendix-1" data-astro-cid-twdwaz5s>The non-parametric micro-simulation methodology step by step<a href="#fn11"><sup>11</sup></a></a></li><li data-astro-cid-twdwaz5s><a href="#appendix2" data-astro-cid-twdwaz5s>Does Path Dependence Matter?<a href="#fn12"><sup>12</sup></a></a></li><li data-astro-cid-twdwaz5s><a href="#appendix3" data-astro-cid-twdwaz5s>Additional Microsimulation Results</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The empirical literature on income distribution is extensive and rather fragmented. Much focuses on the outcomes of the labour market processes, since these appear to be a crucial determinant of earnings and income inequality. The development of counterfactual microsimulations methods to study the determinants of distributional changes owes much to the seminal work by <a href="#bib14">Mincer (1958)</a>, <a href="#bib16">Oaxaca (1973)</a> and <a href="#bib4">Blinder (1973)</a> who focused on the determinants of differentials in wage earnings. These methods are rooted in human capital theory. They are designed to analyze how the income distribution changes depending on the characteristics of individual workers (such as their working experience or level of education), but are less useful in assessing the impact of changes in aggregate labour market conditions (such as the level of unemployment, sectoral labour demand and wages) as further information is required about which workers are most likely to shift position in the labour market in response to changed conditions.</p><p data-astro-cid-qsyhzaho>Recently, several microsimulation methods have been developed which draw on an idea originally developed by Orcutt in the 1950s (<a href="#bib17">Orcutt, 1957</a>) and which try to overcome this informational deficit as well as to assess how changes in the labour market affect poverty and income inequality at the household level. One such approach consists of an econometrically estimated household income generation model, as proposed by Bourguignon and others (see <i>e.g</i>., <a href="#bib5">Bourguignon, <i>et al</i>., 2001</a>, <a href="#bib6">2002a</a>,<a href="#bib7">b</a>). The probabilities and determinants of the model subsequently are used to simulate the impact of changes in labour market conditions, endowments of human capital and returns to these endowments on inequality and poverty at the household level. An alternative counterfactual microsimulation methodology, developed originally by <a href="#bib1">Almeida dos Reis and Paes de Barros (1991)</a>, does not explicitly model labour market behaviour, but assumes instead that the way in which shifts in overall labour market conditions (like changes in unemployment, sectoral labour demand or wages) affect occupational conditions of individual workers can be proxied by a random selection procedure in a segmented labour market. This method can be called non-parametric or non-behavioural, because it does not involve econometrically estimated probabilities of the underlying behaviour.</p><p data-astro-cid-qsyhzaho>Both methods have been applied in conjunction with economy-wide models, more in particular with computable general equilibrium (CGE) models, which may provide a counterfactual for the simulated impact on labour market conditions of an economic shock or policy change. Such models typically only provide outcomes for employment and wages by rather aggregate labour categories and household groups, though. As a consequence, these models provide too little information about distributional changes to derive robust estimates of the impact of simulated shocks and policies on poverty and income distribution at the household level. This limitation can be overcome by combining the CGE analysis with the type of microsimulation methodologies as just described. Bourguignon <i>et al</i>., (<a href="#bib6">2002a</a>, <a href="#bib7">b</a>) first probed this macro-micro modelling using the parametric or behavioural approach for the case of Indonesia. The use of the non-parametric microsimulation approach in conjunction with CGE model analysis, in turn, was pioneered in a number of Latin American studies and later applied more widely (see <a href="#bib11">Vos <i>et al</i>., 2002</a>).</p><p data-astro-cid-qsyhzaho>In this paper we focus on the non-parametric microsimulation methodology, its theoretical foundations and applications, and on how the method works in combination with a dynamic CGE model. In doing so, we will explain the virtues and limitations. The main advantage of the non-parametric microsimulation methodology is that it resolves the ‘assignment’ problem in the labour market while requiring little actual modelling effort in contrast to alternative parametric approaches. One of its weaknesses is that a certain sequence must be assumed in how different dimensions of aggregate labour market changes (<i>e.g</i>. changes in unemployment rates, sectoral labour demand, etc.) impact on the situation of individual workers and their families and this could create a problem of path dependence. As argued in this paper, such path dependence may also affect alternative approaches, but more importantly, it need not be a major concern once one can justify the logic of the followed sequence on the basis of plausible labour market behaviour and as long as the size of certain shifts are not very large.</p><p data-astro-cid-qsyhzaho>The remainder of this paper is organized as follows. In <a href="#s2">Section 2</a>, we explain the key theoretical notions behind the non-parametric microsimulations methodology and show how it works in practice. This section also addresses the problem of path dependence and how the methodology can also be used to assess changes in non-labour incomes on household income distribution and poverty. In <a href="#appendix-1">Appendix A.1</a> a practitioner’s guide is given of the basic steps to be taken.<a href="#fn1"><sup>1</sup></a> <a href="#s3">Section 3</a> explains how the method can be applied in conjunction with an economy-wide model, more in particular a dynamic CGE model. As a further addition to the existing literature, the section addresses how to implement the microsimulations in a dynamic setting and the additional assumptions that need to be made as a consequence. The following section provides a numerical example using outcomes from a CGE model for Costa Rica to analyze the impact of changing labour market conditions and government transfers on inequality and poverty by means of the non-parametric simulation method. <a href="#s5">Section 5</a> concludes.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. Non-parametric microsimulation approach</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The basic idea behind the microsimulation methodology is to isolate the effects of key determinants of the changes in poverty and inequality. As mentioned, the methodology presented here was originally developed by Almeida dos <a href="#bib1">Reis and Paes de Barros (1991)</a> to analyze wage inequality and was subsequently generalized in order to analyze income inequality and poverty based on the total per capita household income (see <a href="#bib19">Paes de Barros &amp; Leite, 1998</a>; <a href="#bib18">Paes de Barros, 1999</a>; <a href="#bib10">Frenkel and González, 2002</a>; <a href="#bib11">Ganuza <i>et al</i>., 2002</a>). The approach does not explicitly model labour market behaviour for reasons explained further below.</p><p data-astro-cid-qsyhzaho>Instead, it assumes that the impact of changes in overall labour market conditions on the employment status and labour incomes of individual workers can be proxied through a random selection procedure in the context of segmented labour markets.</p><section id="s2-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.1 Basic Notions</h3><p data-astro-cid-qsyhzaho>The basic intuition behind the non-parametric microsimulation approach referred in the above can be explained through a set of basic identities. Total per capita household income (<i>ypc<sub>h</sub></i>) is defined as:</p><div id="equ1" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(1)</span><math><mrow><mi>y</mi><mi>p</mi><msub><mi>c</mi><mi>h</mi></msub><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>n</mi><mi>h</mi></msub></mrow></mfrac><mrow><mo>[</mo> <mrow><mstyle displaystyle="true"><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><msub><mi>n</mi><mi>h</mi></msub></mrow></munderover><mrow><mi>y</mi><msub><mi>p</mi><mrow><mi>h</mi><mi>i</mi></mrow></msub><mo>+</mo></mrow></mstyle><mi>y</mi><msub><mi>q</mi><mi>h</mi></msub></mrow> <mo>]</mo></mrow></mrow></math></div><p data-astro-cid-qsyhzaho>where, <i>n<sub>h</sub></i> is the size of household <i>h</i>, <i>yp<sub>hi</sub></i> the labour income of member <i>i</i> of household <i>h</i>, and <i>yq<sub>h</sub></i> the sum of all non-labour incomes of the household, defined as:</p><div id="equ2" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(2)</span><math><mrow><mi>y</mi><msub><mi>q</mi><mi>h</mi></msub><mo>=</mo><mstyle displaystyle="true"><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><msub><mi>n</mi><mi>h</mi></msub></mrow></munderover><mrow><mi>y</mi><mi>q</mi><msub><mi>p</mi><mrow><mi>h</mi><mi>i</mi></mrow></msub></mrow></mstyle><mo>+</mo><mi>y</mi><mi>q</mi><msub><mi>t</mi><mi>h</mi></msub></mrow></math></div><p data-astro-cid-qsyhzaho>In <a href="#equ2">Equation (2)</a>, <i>yqp<sub>hi</sub></i> equals individual non-labour income of member <i>i</i> of household <i>h</i> and <i>yqt<sub>h</sub></i> equals other household incomes. In the microsimulations, <i>yp<sub>hi</sub></i> is altered for some individuals <i>i</i> of household <i>h</i> as a result of changes in the variables that define the labour market structure.</p><p data-astro-cid-qsyhzaho>The labour market structure in year <i>t</i> is defined first in terms of rates of labour participation (<i>P<sub>j</sub></i>) and unemployment (<i>U<sub>j</sub></i>) among different groups <i>j</i> of the population in working age. Individuals maybe classified according to personal characteristics such as sex, age and skill. Next, the structure of employment is defined by sector of activity (<i>S</i>) and occupational category (<i>O</i>) and remuneration (<i>W<sub>1</sub></i>), the level of overall remuneration (<i>W<sub>2</sub></i>) as well as the skill composition of the employed population (represented by variable <i>M</i>). The labour-market structure can thus be written as:</p><div id="equ3" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(3)</span><math><mrow><mi>λ</mi><mo>=</mo><mi>λ</mi><mrow><mo>(</mo><mrow><mi>P</mi><mo>,</mo><mi>U</mi><mo>,</mo><mi>S</mi><mo>,</mo><mi>O</mi><mo>,</mo><msub><mi>W</mi><mrow><mn>1</mn><mo>,</mo></mrow></msub><msub><mi>W</mi><mrow><mn>2</mn><mo>,</mo></mrow></msub><mi>M</mi></mrow><mo>)</mo></mrow></mrow></math></div><p data-astro-cid-qsyhzaho>To define a labour market structure in year <i>t</i>, the population at working age in that year could be classified, for example, into <i>four types</i> of individuals <i>j</i> according to sex and two levels of education (skill versus unskilled), while <i>four segments</i> of the labour market <i>k</i> are defined according to occupational category (wage employees versus self-employed or non-wage workers) and sector of economic activity (for example, agriculture versus non-agriculture). The microsimulation methodology is flexible, however, as regards the number and types of categorizations the user wishes to identify.</p><p data-astro-cid-qsyhzaho>Now, let earnings of an individual <i>i</i> be a function of personal characteristics, such as sex, age and skills, and his or her position in the labour market.</p><p data-astro-cid-qsyhzaho>Let skills, sex, age and other individual attributes be represented by a variable <i>c</i>. Individual earnings can then be written as:</p><div id="equ4" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(4)</span><math><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mrow><mi>λ</mi><mo>,</mo><msub><mi>c</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow></math></div><p data-astro-cid-qsyhzaho>In each microsimulation, employment conditions of an individual <i>i</i> may change as a result of changes in labour market conditions. Hence:</p><div id="equ5" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(5)</span><math><mrow><mi>y</mi><msubsup><mi>p</mi><mi>i</mi><mo>∗</mo></msubsup><mo>=</mo><mi>f</mi><mrow><mo>(</mo><mrow><msup><mi>λ</mi><mo>∗</mo></msup><mo>,</mo><msub><mi>c</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow></math></div><p data-astro-cid-qsyhzaho>where <i>λ</i><sup>*</sup> represents a counterfactual labour market structure. In the application of the microsimulation methodology, the effects can be assessed by altering the variables <i>P</i>, <i>U, S</i>, <i>O</i>, <i>W<sub>1</sub>, W<sub>2</sub></i> and <i>M</i> separately or in sequential cumulative form.</p><p data-astro-cid-qsyhzaho>Given <i>λ</i><sup>*</sup> and the resulting <i>yp<sub>i</sub><sup>*</sup></i>, the simulated per capita income is defined as:</p><div id="equ6" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(6)</span><math><mrow><mi>y</mi><mi>p</mi><msubsup><mi>c</mi><mi>h</mi><mo>∗</mo></msubsup><mo>=</mo><mfrac><mn>1</mn><mrow><msub><mi>n</mi><mi>h</mi></msub></mrow></mfrac><mrow><mo>[</mo> <mrow><mstyle displaystyle="true"><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mrow><msub><mi>n</mi><mi>h</mi></msub></mrow></munderover><mrow><mi>y</mi><msub><mi>p</mi><mrow><mi>h</mi><mi>i</mi></mrow></msub><msup><mrow/><mo>*</mo></msup><mo>+</mo><mi>y</mi><msub><mi>q</mi><mi>h</mi></msub></mrow></mstyle></mrow> <mo>]</mo></mrow></mrow></math></div><p data-astro-cid-qsyhzaho>The distribution of per capita household income in year <i>t</i> is a function of the above-mentioned labour market variables, as well as the skill, age and sex distribution within households, represented by <i>c</i>, and other factors, captured by a parameter <i>a</i>:</p><div id="equ7" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(7)</span><math><mrow><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><mi>D</mi><mrow><mo>(</mo><mrow><mi>y</mi><mi>p</mi><msub><mi>c</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="left"><mrow><mo>=</mo><mi>D</mi><mrow><mo>(</mo><mrow><mi>P</mi><mo>,</mo><mi>U</mi><mo>,</mo><mi>S</mi><mo>,</mo><mi>O</mi><mo>,</mo><msub><mi>W</mi><mn>1</mn></msub><mo>,</mo><msub><mi>W</mi><mn>2</mn></msub><mo>,</mo><mi>M</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>a</mi></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow/></mtd><mtd columnalign="left"><mrow><mo>=</mo><mi>F</mi><mrow><mo>(</mo><mrow><mi>λ</mi><mo>,</mo><mi>c</mi><mo>,</mo><mi>a</mi></mrow><mo>)</mo></mrow></mrow></mtd></mtr></mtable></mrow></math></div><p data-astro-cid-qsyhzaho>Similarly, the distribution of income per capita (<i>ypc</i>) in year <i>t<sup>*</sup></i> is defined as:</p><div id="equ8" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(8)</span><math><mrow><msup><mi>D</mi><mo>∗</mo></msup><mrow><mo>(</mo><mrow><mi>y</mi><mi>p</mi><msub><mi>c</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><mi>F</mi><mrow><mo>(</mo><mrow><msup><mi>λ</mi><mo>∗</mo></msup><mo>,</mo><msup><mi>c</mi><mo>∗</mo></msup><mo>,</mo><msup><mi>a</mi><mo>∗</mo></msup></mrow><mo>)</mo></mrow></mrow></math></div><p data-astro-cid-qsyhzaho>Assuming “other factors” (<i>a</i>) are constant and since a change in the overall level of earnings <i>W<sub>2</sub></i> does not influence the distribution, the change in inequality in labour earnings between two years (or between a counterfactual and an observed distribution) can be defined as a function of the changes in the remaining six labour market variables and in individual attributes (<i>c</i>):</p><div id="equ9" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(9)</span><math><mrow><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><mi>Δ</mi><mi>D</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo></mrow></mtd><mtd columnalign="left"><mrow><mi>D</mi><mrow><mo>(</mo><mrow><msup><mi>P</mi><mo>∗</mo></msup><mo>,</mo><msup><mi>U</mi><mo>∗</mo></msup><mo>,</mo><msup><mi>S</mi><mo>∗</mo></msup><mo>,</mo><msup><mi>O</mi><mo>∗</mo></msup><mo>,</mo><msub><mi>W</mi><mn>1</mn></msub><msup><mrow/><mo>∗</mo></msup><mo>,</mo><msup><mi>M</mi><mo>∗</mo></msup><mo>,</mo><msup><mi>c</mi><mo>∗</mo></msup></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow/></mtd><mtd columnalign="left"><mrow><mo>−</mo><mi>D</mi><mrow><mo>(</mo><mrow><mi>P</mi><mo>,</mo><mi>U</mi><mo>,</mo><mi>S</mi><mo>,</mo><mi>O</mi><mo>,</mo><msub><mi>W</mi><mn>1</mn></msub><mo>,</mo><mi>M</mi><mo>,</mo><mi>c</mi></mrow><mo>)</mo></mrow></mrow></mtd></mtr></mtable></mrow></math></div><p data-astro-cid-qsyhzaho>In a microsimulation, the estimates of the six labour market variables of year <i>t</i> would be replaced by those of year <i>t*</i> (or the counterfactual obtained from, for instance, a CGE model simulation). The simulated change is thus defined as:</p><div id="equ10" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(10)</span><math><mrow><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><msup><mi>Δ</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msup><mi>D</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="left"><mrow><mo>≡</mo><msup><mi>D</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>−</mo><mi>D</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow/></mtd><mtd columnalign="left"><mrow><mo>=</mo><mstyle displaystyle="true"><munderover><mo>∑</mo><mrow><mi>s</mi><mo>=</mo><mn>1</mn></mrow><mn>6</mn></munderover><mrow><mrow><mo>[</mo> <mrow><msubsup><mi>D</mi><mi>s</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>−</mo><msubsup><mi>D</mi><mrow><mi>s</mi><mo>−</mo><mn>1</mn></mrow><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow> <mo>]</mo></mrow></mrow></mstyle></mrow></mtd></mtr></mtable></mrow></math></div><p data-astro-cid-qsyhzaho>where</p><div id="equ11" class="equation" data-astro-cid-qsyhzaho><math><mrow><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><msubsup><mi>D</mi><mn>1</mn><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><mi>D</mi><mrow><mo>(</mo><mrow><msup><mi>P</mi><mo>∗</mo></msup><mo>,</mo><mi>U</mi><mo>,</mo><mi>S</mi><mo>,</mo><mi>O</mi><mo>,</mo><msub><mi>W</mi><mn>1</mn></msub><mo>,</mo><mi>M</mi><mo>,</mo><mi>c</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><msubsup><mi>D</mi><mn>2</mn><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><mi>D</mi><mrow><mo>(</mo><mrow><msup><mi>P</mi><mo>∗</mo></msup><mo>,</mo><msup><mi>U</mi><mo>∗</mo></msup><mo>,</mo><mi>S</mi><mo>,</mo><mi>O</mi><mo>,</mo><msub><mi>W</mi><mn>1</mn></msub><mo>,</mo><mi>M</mi><mo>,</mo><mi>c</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><msubsup><mi>D</mi><mn>3</mn><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><mi>D</mi><mrow><mo>(</mo><mrow><msup><mi>P</mi><mo>∗</mo></msup><mo>,</mo><msup><mi>U</mi><mo>∗</mo></msup><mo>,</mo><msup><mi>S</mi><mo>∗</mo></msup><mo>,</mo><mi>O</mi><mo>,</mo><msub><mi>W</mi><mn>1</mn></msub><mo>,</mo><mi>M</mi><mo>,</mo><mi>c</mi></mrow><mo>)</mo></mrow><mo>,</mo><mtext>  </mtext><mn>......</mn><mtext>  etc</mtext><mo>.</mo></mrow></mtd></mtr></mtable></mrow></math></div><p data-astro-cid-qsyhzaho>In principle, the difference between the observed and simulated change is the result of interaction effects and the fact that <i>c</i> may have changed as denoted as follows:<a href="#fn2"><sup>2</sup></a></p><div id="equ12" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(11)</span><math><mrow><mi>Δ</mi><msub><mi>D</mi><mrow><mi>r</mi><mi>e</mi><mi>s</mi></mrow></msub><mo>=</mo><mi>Δ</mi><mi>D</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>−</mo><msup><mi>Δ</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msup><mi>D</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow></math></div><p data-astro-cid-qsyhzaho>The interaction effects (<i>ΔD<sub>res</sub></i>) are derived here as a residual. In the discussion further below we discuss the importance of these effects when addressing the problem of path dependency in the application of this microsimulation methodology.</p></section><section id="s2-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.2 Randomized labour market behaviour</h3><p data-astro-cid-qsyhzaho>The methodology does not explicitly model labour market behaviour. The latter is approached in a rudimentary way by assuming a certain compartmentalization or segmentation of the labour market and the possibility of individuals to move from one segment to another. Individuals that change segment are assigned a new labour income which is the average of the workers in that segment. In a parametric approach, such as that proposed by Bourguignon and others, for instance, one would model the probability of an individual worker being employed or not, being in a particular occupation and sector of activity and earning a labour income corresponding to the worker’s occupation. Those probabilities then can be used to simulate the likelihood of a worker to change position in the labour market when overall conditions change.</p><p data-astro-cid-qsyhzaho>A conventional approach to study the distribution of earnings is to apply the human capital model and to model labour participation and earnings functions based on individual characteristics and conditioning factors of the household the individual belongs to. In essence, this is also the approach applied by Bourguignon and others, in the development of their microsimulations approach. This approach to modelling labour market behaviour had been criticized, however, for overemphasizing labour supply factors and inadequately considering the demand side of the labour market (see <i>e.g</i>. <a href="#bib12">Hartog, 1985</a>, <a href="#bib13">1986</a>). Alternative models acknowledge that there is an ‘assignment problem’ in the economy (see <i>e.g</i>. <a href="#bib23">Sattinger, 1993</a>). These labour market models consider that the distribution of earnings cannot be explained by merely considering characteristics of <i>individuals</i>, but that the characteristics of <i>jobs</i> also need to be taken into account. Assignment models, which consider individual and job characteristics, assume that selection in labour market positioning is the result of voluntary choices by individual workers. Models of labour market segmentation, in contrast, assume the selection is involuntary (see the overview of theories in <a href="#bib2">Atkinson &amp; Bourguignon, 2000</a>: 23). This approach goes to another extreme by assuming that access to some segments of the labour market is restricted. It is then labour demand, rather than individual attributes on the supply side that is seen as the major determinant of the labour market position of individuals and hence also of the distribution of earnings. There is no consensus as to which labour market modelling approach provides the best empirical approximation of actual behaviour and of changes in labour earnings.</p><p data-astro-cid-qsyhzaho>The non-parametric approach to microsimulations presented here takes a middle ground. It considers both individual characteristics of workers and a certain labour market segmentation, but allows workers to move across segments at the margin; that is, workers are allowed to move from unemployment into employment, from non-wage to wage employment or from agriculture to non-agriculture, or <i>vice versa</i>, for instance, depending on changes in aggregate labour market conditions set from both the supply and demand side. Given the complexities in adequately modelling labour market behaviour empirically, it is then assumed that the probability that one rather than another individual moves position may just as well be approximated by a <i>randomized process</i>.</p><p data-astro-cid-qsyhzaho>In order to simulate which person or worker is affected by a particular change in labour market conditions, the non-parametric microsimulation approach assigns random numbers to individuals grouped by the predefined individual attributes and labour market segments. By repeating the simulations a sufficient number of times—in Monte Carlo fashion—a confidence interval of 95 per cent for the results (such as inequality and poverty indices) can be generated.<a href="#fn3"><sup>3</sup></a> This randomized process is used to determine: (<i>i</i>) which persons at working age change their labour force status (inactivity versus activity; and, if active, employed versus unemployed); (<i>ii</i>) who will change from one segment of the labour market to another (sector and/or occupational category); (<i>iii</i>) which employed persons obtain a different level of education; and (<i>iv</i>) how are new mean labour incomes assigned to individuals.<a href="#fn4"><sup>4</sup></a> <a href="#appendix-1">Appendix A.1</a> spells out each step to be taken when applying the simulation methodology in practice.</p></section><section id="s2-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.3 Simulating income inequality and poverty</h3><p data-astro-cid-qsyhzaho>Following the indicated procedure, a new income distribution is generated in each simulation. From here any desired poverty and inequality index can be calculated. Since random numbers are used, the mean values of the simulated poverty and inequality indices of each iteration have to be calculated. Hence, the assumption is that, on average, the effect of the random changes correctly reflects the impact of the actual changes in the labour market. Analogous to <a href="#equ10">Equation (10)</a>, the mean simulated change in, for instance, the indices of earnings inequality can be written as:</p><div id="equ13" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(12)</span><math><mrow><mover accent="true"><mrow><msup><mi>Δ</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>≡</mo><mstyle displaystyle="true"><munderover><mo>∑</mo><mrow><mi>s</mi><mo>=</mo><mn>1</mn></mrow><mn>6</mn></munderover><mrow><mrow><mo>[</mo> <mrow><msubsup><mrow><mover accent="true"><mi>I</mi><mo stretchy="true">¯</mo></mover></mrow><mi>s</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>−</mo><msubsup><mover accent="true"><mi>I</mi><mo>¯</mo></mover><mrow><mi>s</mi><mo>−</mo><mn>1</mn></mrow><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow> <mo>]</mo></mrow></mrow></mstyle></mrow></math></div><p data-astro-cid-qsyhzaho>where</p><div id="equ14" class="equation" data-astro-cid-qsyhzaho><math><mrow><msubsup><mover accent="true"><mi>I</mi><mo>¯</mo></mover><mn>0</mn><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mtext> </mtext><mo>⋅</mo></mrow></math></div><p data-astro-cid-qsyhzaho>Accordingly, the residual change is defined as:</p><div id="equ15" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(13)</span><math><mrow><msub><mi>Δ</mi><mrow><mi>r</mi><mi>e</mi><mi>s</mi></mrow></msub><mi>I</mi><mo>=</mo><mi>Δ</mi><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>−</mo><mover accent="true"><mrow><msup><mo>△</mo><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover></mrow></math></div><p data-astro-cid-qsyhzaho>The main advantage of this non-parametric micro-simulation methodology is that it allows simulating the impact of changes in the labour-market structure on the full income distribution, while staying low in modelling intensity. In fact, it requires relatively little information beyond the micro dataset providing the full income distribution, such as a household survey. The method further allows for a dynamic decomposition of the relative importance of the factors driving changes in the distributions of incomes and in poverty.</p></section><section id="s2-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.4 Path dependence</h3><p data-astro-cid-qsyhzaho>A weakness of the approach is, of course, that it does not make full use of all possibly available information on labour market behaviour. However, as indicated, doubts about the robustness of the parameters derived from existing labour market models may precisely provide one reason for using the more simple non-parametric approach. More critically, perhaps, the simulation results may be path dependent. That is, results might change depending on the choice of the base year when the microsimulation method is applied in a case of analyzing the distributional change between two observed labour market structures. Path dependence could also be a problem in any sequential simulation of changes in labour market conditions. In other words, it could make a difference, given the cumulative effects, whether in an assumed sequence one would first simulate, say, changes in employment by occupational category (<i>O</i>) rather than by sector of employment (<i>S</i>). In the simulation procedure one has to define the sequence upfront; hence, knowing whether the particular sequence in which changes in labour market conditions are imposed matters or not is important.<a href="#fn5"><sup>5</sup></a></p><p data-astro-cid-qsyhzaho>It can be shown formally that path dependence in terms of the order of sequence shows greater sensitivity when the interaction terms of the changes in the labour market variables are large (see <a href="#bib9">De Jong, 2001</a>, <a href="#bib25">Vos &amp; De Jong, 2001</a>; and <a href="#appendix2">Appendix A.2</a> for a proof). The interaction terms, in turn, could become large when major shifts in the labour market take place. However, as argued by <a href="#bib11">Ganuza <i>et al</i>. (2002)</a>, there is also an economic logic to the order in which the various effects need to be analyzed. The sequence as typically defined in applications of the non-parametric microsimulation method reproduces the steps used in many labour market models. It is assumed that agents first decide whether to participate or not (<i>P</i>). Then the market defines whether they can find employment or not (<i>U</i>). If they found employment, the adjustment process of the labour market defines in which sector (<i>S</i>) they will be located and the occupation category of their employment (<i>O</i>) (though, in practice, the sector and occupational choice more likely will be a simultaneous process.). Obviously, their decisions as to whether to work or not can be influenced by the relative remuneration, but, once the sector and the occupation in which they obtain employment are defined, the probability of the relative remuneration they will have becomes known. The changes in labour supply and demand in each segment of the labour market are likely to be a factor underlying changes in the remuneration structure for different sex and skill groups, while the change in average level of remuneration is a reflection of the overall performance of the economy. Finally, the skill composition of the workforce is partly a result of demand factors in the labour market, but probably mainly the result of more exogenous changes in endowments. Of course, human capital formation is also likely to be a function of expected earnings in the labour market (see <i>e.g</i>. <a href="#bib3">Behrman, 1999</a>). These are arguments for considering changes in the skill composition as the last step in the sequential simulation.</p><p data-astro-cid-qsyhzaho>Although even by the above logic the sequence of some of the parameter changes could be reversed (such as between the assignment by sector or occupation category), the proposed sequence would seem plausible in most contexts. Empirical tests with alternative sequences for the urban labour market variables using the living standards measurement study (LSMS) surveys for Ecuador suggest that interaction terms in this particular case are small; hence, aggregate results are not sensitive to the sequence of parameter changes (<a href="#bib25">Vos &amp; de Jong, 2001</a>). The same study for Ecuador also shows that altering the occupational category structure prior to the sector of economic activity structure yields somewhat larger residuals but does not much change the relative importance of the impact of the changes in the labour market variables on outcomes for inequality and poverty.<a href="#fn6"><sup>6</sup></a></p></section><section id="s2-5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.5 Accounting for changes in non-labour incomes</h3><p data-astro-cid-qsyhzaho>The impact of changes in non-labour incomes (such as pension incomes or other transfers, rental incomes, as well as, with a negative sign, direct taxes) can be simulated by assigning the income change to households that are expected to receive the income. This may require additional information about which household are expected to benefit from the income change. The direct impact on inequality and poverty can then be simulated by making the appropriate adjustments to variable <i>yq<sub>h</sub></i> in <a href="#equ1">Equation 1</a> so as to obtain a new level and distribution of per capita household income <i>ypc<sub>h</sub></i>. Assuming information is available about which type of households are expected to gain (or lose) from the non-labour income change, no randomized assignment procedure needs to be applied. If it further maybe assumed that non-labour income generation does not directly interact with labour market variables, this additional step in the microsimulations procedure will not be path dependent and, hence, can be introduced either at the end or beginning of the microsimulations.</p><p data-astro-cid-qsyhzaho>Changes in non-labour incomes may also have economy-wide effects by the way these are generated or by the impact on prices and economic activity. For instance, a cash transfer programme with significant coverage will have fiscal effects and affect production activities depending on the way the programme is financed (<i>e.g</i>. via higher taxation or increases in public borrowing). Changes in rental incomes may be associated with, say, changes in interest rates which likely have economy-wide effects through investment and consumption behaviour. Cash transfers received by individuals or families may affect labour participation behaviour (as it may induce them to work less or not to seek work) and, if significant, could alter outcomes in terms of unemployment and wage rates. As a further example, changes in workers’ remittances from abroad will affect the balance of payments and may influence the real exchange rate, which may trigger further economy wide effects through its impact on exports, production, real wages, and employment. When using the microsimulation method in combination with an economy-wide framework, such as a CGE model, such general equilibrium effects can be taken into account by first simulating the impact of, say, a government transfer programme through the CGE model and then using the resulting labour market outcomes in an application of the non-parametric microsimulation methodology as outlined above.<a href="#fn7"><sup>7</sup></a> This way, both the direct and second-order general equilibrium effects of a transfer on the distribution of per capita household incomes can be accounted for. In the illustration of an application of the non-parametric microsimulation method presented in section 4, an example is included of both the direct and indirect effects of a government transfer to households.</p></section></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. Top-down combination of a CGE model and the non-parametric micro-simulation method</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The microsimulation approach outlined above may be applied to analyze distributional changes comparing two observed distributions or by imposing a counterfactual labour market structure (<i>e.g</i>. resulting after a macroeconomic shock or policy change) simulated through an economy-wide model. In the former case one would “impose” the labour market structure as observed in, say, 2010 on to household or labour force survey data for 2000 to assess the impact of changes in different labour market variables on poverty and inequality. In the latter case, the changes in labour market variables are model driven, for instance as simulated through a CGE model.</p><p data-astro-cid-qsyhzaho>CGE models typically have enough detail by sectors and labour categories to provide enough ‘structure’ to meaningfully apply the microsimulation method. Macroeconomic models mostly only generate counterfactuals for aggregate employment and unemployment and for average, economy-wide wages. This would still leave the assignment problem as to, for example, which workers are more likely to become unemployed (or which unemployed would find a job) when assessing distributional outcomes, but clearly would not reveal any other labour market shifts which result in distributional changes.</p><p data-astro-cid-qsyhzaho>The non-parametric microsimulation method has been applied to both outcomes derived from static (see <i>e.g</i>. <a href="#bib11">Vos <i>et al</i>., 2002</a>, <a href="#bib27">2006</a>) and dynamic CGE models (see <i>e.g</i>. <a href="#bib20">Sánchez, 2004</a>; <a href="#bib21">Sánchez &amp; Vos, 2005</a>, <a href="#bib22">2006</a>). In both cases, the modelling approach is called ‘top down’ in that the results of the CGE model are taken forward to the microsimulations, but that there is no feedback from the outcomes of the latter into the CGE model. A major advantage of doing this in top-down fashion is that the analysis (and ‘modelling’) of household and labour market behaviour can be done separately from the economy-wide analysis and that there is no need to reconcile household survey data with national accounts and other macroeconomic data. The communication between the two types of models is in the form of information about prices, wages and employment and there is no need to reconcile data on levels.</p><p data-astro-cid-qsyhzaho>One reason to combine the two methods is that CGE models typically only provide information about (simulated) changes in income distribution between fairly aggregate labour categories and household groups, hence missing out much of possible within-group changes. The microsimulations can then help to make up for the missing detail. An alternative approach would be to introduce distribution functions into the CGE model. However, this is often done by assuming given (static) distribution functions and does not resolve the ‘assignment problem’, as discussed above, and because of which the within-group distribution may not be assumed constant. The microsimulation methodology resolves this problem, but under the limiting assumptions as discussed in the previous section.</p><p data-astro-cid-qsyhzaho>A further alternative would be to apply a sequential modelling approach whereby bi-directional link between a CGE and a household and occupational choice model is established and requires obtaining a converging solution between both models. An example of this approach can be found in <a href="#bib24">Savard (2003)</a> and has the advantages of considering feedback effects of poverty and inequality on consumption, production, and labour market adjustment and of ensuring coherence between the micro data and the aggregates of the CGE model. This method is, however, more demanding as it requires maintaining coherence in macro-micro behaviour across the two types of models and convergence cannot be guaranteed in practice. The results for poverty and inequality are also less tractable than in the top-down approach, as presented here.</p><p data-astro-cid-qsyhzaho>Application of the top-down approach using a static CGE model and the non-parametric microsimulation method is straightforward. It works the same way as when applying the microsimulations to household survey data at two different points in time. In a purely static framework, the CGE model would be used to generate the counterfactual labour market structure <i>λ*</i>.<a href="#fn8"><sup>8</sup></a></p><p data-astro-cid-qsyhzaho>The top-down approach can be also be applied using a dynamic CGE model following the procedure spelled out in <a href="#bib20">Sánchez (2004)</a> and Sánchez and Vos (<a href="#bib21">2005</a>, <a href="#bib22">2006</a>). This procedure combines dynamic CGE simulations and non-parametric microsimulations based on information from one household survey (typically for the base year of the model). Practitioners may have little other alternative if their CGE model performs counterfactual simulations into the future for years for which no new observed survey data are available. In these applications, the dynamic CGE model provides estimates of the labour market structure <i>λ<sub>t</sub></i><sup>*base</sup> for each year <i>t</i> of the baseline period. Policy experiments or experiments reflecting an exogenous shock are typically carried out to modify the baseline, generating simulations for new labour market structures <i>λ<sub>t</sub><sup>*sim</sup></i> for each scenario <i>sim</i>. The new labour market structures for the baseline and all scenarios are then imposed on the base-year survey data set by running the non-parametric microsimulation procedure.</p><p data-astro-cid-qsyhzaho>Following this procedure requires accepting a number of additional restrictive assumptions. One would either need to assume no demographic changes take place during the simulation period or that these can be imposed exogenously (by adjusting variables “<i>c</i>” and “<i>a</i>” in <a href="#equ7">Equation 7</a>) as most dynamic CGE models do not endogenize demographic change. More typically, these assume demographic changes are exogenous and in some cases constant (such as participation rates). The consequence of the latter assumption is participation rates (<i>P</i>) would remain unchanged and hence play no role in distributional outcomes assessed through the microsimulations.</p></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. An application with a CGE model for costa rica</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s4-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.1 Baseline simulations</h3><p data-astro-cid-qsyhzaho>In this sub-section we show the application of the non-parametric microsimulation approach in combination with a dynamic-recursive CGE model developed by <a href="#bib8">Cicowiez and Sánchez (2009)</a> and on income distribution and poverty and the effectiveness of social transfer schemes in protecting the poor against such shocks.</p><p data-astro-cid-qsyhzaho>The baseline scenario of this model runs from 2002 until 2012 as we apply this using a dataset for Costa Rica. We combined a “growth calibration” with a set of closure rules to enable replication of the aggregate functioning of the economy as observed for 2002–2009. For 2010–12 the baseline is calibrated to an output growth path suggested by projections of the Central Bank of Costa Rica. According to these projections, Costa Rica’s economy is seen to recover quickly from the global economic crisis that erupted in 2008 and to converge to its pre-crisis GDP growth rate of around 4.5 per cent per annum.</p><p data-astro-cid-qsyhzaho>The non-parametric microsimulation methodology is first applied to generate new baseline income distributions for every year of the simulation period using the outcomes for the labour market variables embedded in the CGE model. Though the actual base year of the CGE model is 2002, below we present a selection of results for the 2008–2012 period only. The micro dataset used for running the microsimulations was derived from the 2008 Multiple Purpose Household Survey of the National Institute of Statistics and Censuses (INEC) of Costa Rica.</p><p data-astro-cid-qsyhzaho>As shown in <a href="#table1">Table 1</a>, the baseline assumptions of the CGE for Costa Rica are consistent with a relatively rapid output recovery from the 2008–2009 global economic crisis with employment and wages showing positive growth during 2008–2012. While the CGE model allows for underutilization of factors and, hence, unemployment, the rate of unemployment remains rather constant as in 2008 (the base year here), the assumed minimum or ‘natural’ rate of open unemployment of about 6 per cent was reached and consequently with the growth and employment recovery after the 2009 recession, most labour market adjustment falls on real labour incomes. These fall visibly in 2009, but the average labour income per worker (<i>W<sub>2</sub></i>) would recover in 2010, along with overall employment conditions. Employment by sector (<i>S</i>) and type of occupation (<i>O</i>) does not change much in the baseline growth path, but there are significant shifts in relative wages (<i>W<sub>1</sub></i>), as shown in <a href="#table2">Table 2</a>.</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Real GDP growth and labour-market, poverty and inequality results in the baseline scenario for Costa Rica, 2008–2012.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th> </th>
+<th>2008</th>
+<th>2010</th>
+<th>2012</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Real GDP (at factor cost)</td>
+<td>2.6</td>
+<td>2.2</td>
+<td>4.4</td>
+</tr>
+<tr>
+<td>Total unemployment rate (%)</td>
+<td>6.0</td>
+<td>5.9</td>
+<td>5.9</td>
+</tr>
+<tr>
+<td>Employment (in thousands of workers)</td>
+<td>1,958</td>
+<td>2,035</td>
+<td>2,115</td>
+</tr>
+<tr>
+<td>Labour income per worker <a href="#tfn1_1"><sup>a</sup></a></td>
+<td>239,984</td>
+<td>242,083</td>
+<td>254,820</td>
+</tr>
+<tr>
+<td>Total poverty incidence (% of population) <a href="#tfn1_2"><sup>b</sup></a></td>
+<td>20.7</td>
+<td>19.5</td>
+<td>16.5</td>
+</tr>
+<tr>
+<td>Extreme poverty incidence (% of population) <a href="#tfn1_2"><sup>b</sup></a></td>
+<td>4.3</td>
+<td>4.1</td>
+<td>3.6</td>
+</tr>
+<tr>
+<td>Gini coefficient for labour income</td>
+<td>0.461</td>
+<td>0.456</td>
+<td>0.447</td>
+</tr>
+<tr>
+<td>Gini coefficient for per-capita household income</td>
+<td>0.497</td>
+<td>0.490</td>
+<td>0.478</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: CGE model and microsimulation results for Costa Rica.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Real monthly labour income in <i>colones</i>, excluding social security contributions</p><p class="table-footnote" data-astro-cid-dzaleqsp>Calculation based on a national poverty line.</p></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Real labour income of workers by skill, sex and occupational category, 2008–2012.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="2"/>
+<th colspan="3">Real labour income per worker (<i>colones</i>)</th>
+<th colspan="3">Relative remuneration (<i>W<sub>1</sub></i>) <a href="#tfn2_1"><sup>a</sup></a></th>
+</tr>
+<tr>
+<th>2008</th>
+<th>2010</th>
+<th>2012</th>
+<th>2008</th>
+<th>2010</th>
+<th>2012</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="7">Unskilled female workers</td>
+</tr>
+<tr>
+<td>Wage earners</td>
+<td>167,077</td>
+<td>165,631</td>
+<td>167,821</td>
+<td>0.696</td>
+<td>0.684</td>
+<td>0.659</td>
+</tr>
+<tr>
+<td>Non-wage earners</td>
+<td>44,021</td>
+<td>44,820</td>
+<td>47,644</td>
+<td>0.183</td>
+<td>0.185</td>
+<td>0.187</td>
+</tr>
+<tr>
+<td colspan="7">Unskilled male workers</td>
+</tr>
+<tr>
+<td>Wage earners</td>
+<td>243,219</td>
+<td>258,632</td>
+<td>293,963</td>
+<td>1.013</td>
+<td>1.068</td>
+<td>1.154</td>
+</tr>
+<tr>
+<td>Non-wage earners</td>
+<td>160,052</td>
+<td>166,719</td>
+<td>190,108</td>
+<td>0.667</td>
+<td>0.689</td>
+<td>0.746</td>
+</tr>
+<tr>
+<td colspan="7">Skilled female workers</td>
+</tr>
+<tr>
+<td>Wage earners</td>
+<td>396,095</td>
+<td>388,726</td>
+<td>389,430</td>
+<td>1.651</td>
+<td>1.606</td>
+<td>1.528</td>
+</tr>
+<tr>
+<td>Non-wage earners</td>
+<td>90,935</td>
+<td>84,048</td>
+<td>81,142</td>
+<td>0.379</td>
+<td>0.347</td>
+<td>0.318</td>
+</tr>
+<tr>
+<td colspan="7">Skilled male workers</td>
+</tr>
+<tr>
+<td>Wage earners</td>
+<td>390,806</td>
+<td>383,148</td>
+<td>384,967</td>
+<td>1.628</td>
+<td>1.583</td>
+<td>1.511</td>
+</tr>
+<tr>
+<td>Non-wage earners</td>
+<td>165,769</td>
+<td>155,686</td>
+<td>158,703</td>
+<td>0.691</td>
+<td>0.643</td>
+<td>0.623</td>
+</tr>
+<tr>
+<td>Average labour income economy</td>
+<td>239,984</td>
+<td>242,083</td>
+<td>254,820</td>
+<td>1.000</td>
+<td>1.000</td>
+<td>1.000</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Baseline estimates of CGE model for Costa Rica.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Changes in relative remuneration are similar across sector of activity.</p></div></figure><p data-astro-cid-qsyhzaho><a href="#table2">Table 2</a> shows that the relative remuneration of unskilled workers, especially wage male workers, regardless of their occupational category, increase substantially relative to the base year. In contrast, earnings of skilled workers are projected to decline. Exchange rate depreciation, triggered by the recession at the beginning of the period, is the main cause of this redistribution of labour incomes. In the CGE model, the depreciation would stimulate an export-led recovery in subsequent years mainly benefiting export agriculture and other activities that are relatively intensive in the use of unskilled labour. The increase in demand for this labour category exceeds growth of labour supply (which is exogenous in the CGE model), thus pushing up wages of unskilled workers relative to those of other workers.</p><p data-astro-cid-qsyhzaho>The information about the simulated changes in the labour market variables as indicated above was subsequently used to run the microsimulations and obtain poverty and inequality estimates for each year of the baseline period. The results are presented in <a href="#table3">Table 3</a>. Since, as mentioned the participation rate is assumed constant in the Costa Rica CGE, variable <i>P</i> does not change and, hence, in this application the sequential and cumulative effects of changes in the labour market structure start with the impact of changes in the unemployment rates (for <i>j</i> groups of individuals), followed by the other effects in the sequence of <a href="#equ3">Equation 3</a>. Not surprisingly given the CGE baseline outcomes, changes in the remuneration structure (<i>W<sub>1</sub></i>) exert the stronger impact on changes in poverty. Unskilled workers which are more likely to be poor, see above-average income improvements helping a fair number of them (and their families) climb out of poverty. The increase in the mean remuneration (<i>W<sub>2</sub></i>) also has a visible poverty-reducing impact but weaker than the distributional effect. The changes in unemployment (<i>U</i>) and composition of employment by sector (<i>S</i>) and occupation (<i>O</i>) show as expected no notable effect and also changes in the skill composition of employment are not large enough to affect poverty in any significant way.</p><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Sequential and cumulative effects for changes in the labour-market parameters for the baseline scenario for Costa Rica<a href="#tfn3_1"><sup>a</sup></a>, 2008–2012.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>Total poverty incidence (% of population)<a href="#tfn3_2"><sup>b</sup></a></th>
+<th>Extreme poverty incidence (% of population) <a href="#tfn3_2"><sup>b</sup></a></th>
+<th>Gini coefficient for labour income</th>
+<th>Gini coefficient for per-capita household income</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5">2008</td>
+</tr>
+<tr>
+<td><i>U</i></td>
+<td>20.7</td>
+<td>4.3</td>
+<td>0.461</td>
+<td>0.497</td>
+</tr>
+<tr>
+<td><i>U+S</i></td>
+<td>20.7</td>
+<td>4.3</td>
+<td>0.461</td>
+<td>0.497</td>
+</tr>
+<tr>
+<td><i>U+S+O</i></td>
+<td>20.7</td>
+<td>4.3</td>
+<td>0.461</td>
+<td>0.497</td>
+</tr>
+<tr>
+<td><i>U+S+O+W<sub>1</sub></i></td>
+<td>20.7</td>
+<td>4.3</td>
+<td>0.461</td>
+<td>0.497</td>
+</tr>
+<tr>
+<td><i>U+S+O+W<sub>1</sub>+W<sub>2</sub></i></td>
+<td>20.7</td>
+<td>4.3</td>
+<td>0.461</td>
+<td>0.497</td>
+</tr>
+<tr>
+<td><i>U+S+O+W<sub>1</sub>+W<sub>2</sub>+M</i></td>
+<td>20.7</td>
+<td>4.3</td>
+<td>0.461</td>
+<td>0.497</td>
+</tr>
+<tr>
+<td colspan="5">2010</td>
+</tr>
+<tr>
+<td><i>U</i></td>
+<td>20.6</td>
+<td>4.3</td>
+<td>0.461</td>
+<td>0.497</td>
+</tr>
+<tr>
+<td><i>U+S</i></td>
+<td>20.6</td>
+<td>4.3</td>
+<td>0.461</td>
+<td>0.497</td>
+</tr>
+<tr>
+<td><i>U+S+O</i></td>
+<td>20.6</td>
+<td>4.3</td>
+<td>0.461</td>
+<td>0.497</td>
+</tr>
+<tr>
+<td><i>U+S+O+W<sub>1</sub></i></td>
+<td>19.8</td>
+<td>4.1</td>
+<td>0.456</td>
+<td>0.491</td>
+</tr>
+<tr>
+<td><i>U+S+O+W<sub>1</sub>+W<sub>2</sub></i></td>
+<td>19.6</td>
+<td>4.1</td>
+<td>0.456</td>
+<td>0.491</td>
+</tr>
+<tr>
+<td><i>U+S+O+W<sub>1</sub>+W<sub>2</sub>+M</i></td>
+<td>19.5</td>
+<td>4.1</td>
+<td>0.456</td>
+<td>0.490</td>
+</tr>
+<tr>
+<td colspan="5">2012</td>
+</tr>
+<tr>
+<td><i>U</i></td>
+<td>20.5</td>
+<td>4.2</td>
+<td>0.461</td>
+<td>0.497</td>
+</tr>
+<tr>
+<td><i>U+S</i></td>
+<td>20.5</td>
+<td>4.2</td>
+<td>0.461</td>
+<td>0.497</td>
+</tr>
+<tr>
+<td><i>U+S+O</i></td>
+<td>20.4</td>
+<td>4.2</td>
+<td>0.461</td>
+<td>0.496</td>
+</tr>
+<tr>
+<td><i>U+S+O+W<sub>1</sub></i></td>
+<td>18.1</td>
+<td>3.8</td>
+<td>0.447</td>
+<td>0.479</td>
+</tr>
+<tr>
+<td><i>U+S+O+W<sub>1</sub>+W<sub>2</sub></i></td>
+<td>16.6</td>
+<td>3.6</td>
+<td>0.447</td>
+<td>0.479</td>
+</tr>
+<tr>
+<td><i>U+S+O+W<sub>1</sub>+W<sub>2</sub>+M</i></td>
+<td>16.5</td>
+<td>3.6</td>
+<td>0.447</td>
+<td>0.478</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: CGE model and microsimulation results for Costa Rica.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Key</i>: Simulations present cumulative effects of changes in: <i>U</i> = unemployment; <i>S</i> = employment by sector; <i>O</i> = employment by occupational category; <i>W<sub>1</sub></i> = relative remuneration per worker; <i>W<sub>2</sub></i> = mean real remuneration per worker; <i>M</i> = skill level.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Sequential and cumulative effects are presented for changes in the type of labour market variables as explained in the text.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Calculation based on a national poverty line.</p></div></figure><p data-astro-cid-qsyhzaho>A similar pattern is found in the impact of the labour market adjustment on inequality as measured by the Gini coefficient. In the baseline simulation it is principally the change in <i>W<sub>1</sub></i> which helps reduce the inequality in both the distribution of labour incomes and that of household per-capita income.</p><p data-astro-cid-qsyhzaho>The changes in poverty and inequality as obtained through the microsimulations are statistically significant (at 95 per cent confidence) for changes in <i>W<sub>1</sub></i> and <i>W<sub>2</sub></i>, but not for most other effects for which the changes tend to be within the confidence interval, as can be seen <a href="#tableA1">Table A.1</a> in <a href="#appendix3">Appendix A3</a>. As explained above, the confidence intervals were obtained by repeating the randomized assignment process 30 times in Monte Carlo fashion.</p></section><section id="s4-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.2 Simulating the impact of cash transfers to the poor</h3><p data-astro-cid-qsyhzaho>As a further example, we show the direct and indirect (general-equilibrium) effects of an expansion of a cash transfer programme for poor households in Costa Rica. The simulation assumes that from 2011 poor households receive an increment of $25 per child in primary school age.<a href="#fn9"><sup>9</sup></a> The cash transfer is not made conditional on having a child in the household attending primary school.</p><p data-astro-cid-qsyhzaho>The general equilibrium effects of this expanded transfer programme are rather small. At the macro level, as shown in <a href="#table4">Table 4</a>, the cost of the transfer programme leads to an increase of the fiscal deficit by 0.1 per cent of GDP as compared with the baseline. In the simulated scenario the budget deficit is assumed to be financed entirely through domestic borrowing. Aggregate output is affected as less domestic savings become available for private investment.<a href="#fn10"><sup>10</sup></a> The impact is very modest, however. As in the baseline, the labour market adjustment principally takes place through real wages. All workers see a decline in real labour incomes, though the impact is somewhat stronger among non-wage, self-employed and family workers. As a result of these general equilibrium effects, average household incomes (as measured in the CGE) fall on balance for non-poor households.</p><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Macro-micro effects of simulating an increase in government cash transfers to poor households for Costa Rica<a href="#tfn4_1"><sup>a</sup></a>, 2011–2012 (deviation with respect to the baseline). <a href="#tfn4_2"><sup>b</sup></a></span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>2011</th>
+<th>2012</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gross capital formation</td>
+<td>−1.0</td>
+<td>−1.0</td>
+</tr>
+<tr>
+<td>Real GDP at market prices</td>
+<td>−0.2</td>
+<td>−0.3</td>
+</tr>
+<tr>
+<td>Government income</td>
+<td>−0.5</td>
+<td>−0.6</td>
+</tr>
+<tr>
+<td>Government expenditure</td>
+<td>0.2</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>Fiscal deficit/GDP</td>
+<td>0.1</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>Unemployment rate</td>
+<td>0.1</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td>Employment</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td> Wage-earners, unskilled women</td>
+<td>0.2</td>
+<td>0.2</td>
+</tr>
+<tr>
+<td> Non-wage earners, unskilled women</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td> Wage-earners, unskilled men</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td> Non-wage earners, unskilled men</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td> Wage-earners, skilled women</td>
+<td>−0.1</td>
+<td>−0.2</td>
+</tr>
+<tr>
+<td> Non-wage-earners, skilled women</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td> Wage-earners, skilled men</td>
+<td>0.1</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td> Non-wage earners, skilled men</td>
+<td>0.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>Labour income</td>
+<td>−0.5</td>
+<td>−0.6</td>
+</tr>
+<tr>
+<td> Wage-earners, unskilled women</td>
+<td>−0.4</td>
+<td>−0.5</td>
+</tr>
+<tr>
+<td> Non-wage earners, unskilled women</td>
+<td>−1.2</td>
+<td>−1.3</td>
+</tr>
+<tr>
+<td> Wage-earners, unskilled men</td>
+<td>−0.4</td>
+<td>−0.5</td>
+</tr>
+<tr>
+<td> Non-wage earners, unskilled men</td>
+<td>−0.8</td>
+<td>−0.9</td>
+</tr>
+<tr>
+<td> Wage-earners, skilled women</td>
+<td>−0.5</td>
+<td>−0.6</td>
+</tr>
+<tr>
+<td> Non-wage-earners, skilled women</td>
+<td>−0.8</td>
+<td>−1.0</td>
+</tr>
+<tr>
+<td> Wage-earners, skilled men</td>
+<td>−0.5</td>
+<td>−0.5</td>
+</tr>
+<tr>
+<td> Non-wage earners, skilled men</td>
+<td>−0.5</td>
+<td>−0.7</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: CGE model and microsimulation results for Costa Rica.</p><p class="table-footnote" data-astro-cid-dzaleqsp>The performed simulation is explained in the text.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Percentage deviation for all variables except for fiscal deficit for which results are presented in percentage points of GDP, and poverty and inequality for which absolute changes of the indicator are used.</p></div></figure><p data-astro-cid-qsyhzaho>In implementing the microsimulations for this case, non-labour incomes were adjusted first for the value of the increase in cash transfer benefits. Subsequently, the labour market adjustments as simulated through the CGE model were imposed on the micro dataset in the same sequence as this was done for the baseline simulation. Unsurprisingly, most of the impact on poverty is explained by the direct effect of the transfer (<a href="#table5">Table 5</a>). Moderate poverty falls by 1.6 percentage points in 2011 as compared with the baseline and extreme poverty by 0.8 percentage points. The general equilibrium effects in the form of lower real wages slightly offset the reduction in extreme poverty but show no visible effect on moderate poverty. In 2012, the indirect effects are only slightly larger and the overall finding remains that the transfer helps to reduce poverty despite some adverse side effects on the labour market. The transfer further reduces household income inequality, but only to a small degree. This is a result of the modest size of the transfer.</p><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Decomposition of the poverty and inequality effect of simulating an increase in government cash transfers to poor households for Costa Rica, 2011–2012 (Absolute deviation with respect to the baseline).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="2"/>
+<th align="center" colspan="3">2011</th>
+<th align="center" colspan="3">2012</th>
+</tr>
+<tr>
+<th>Direct effect</th>
+<th>CGE effect</th>
+<th>Total effect</th>
+<th>Direct effect</th>
+<th>CGE effect</th>
+<th>Total effect</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Total poverty incidence <a href="#tfn5_1"><sup>a</sup></a></td>
+<td>−1.6</td>
+<td>0.0</td>
+<td>−1.6</td>
+<td>−1.5</td>
+<td>0.1</td>
+<td>−1.4</td>
+</tr>
+<tr>
+<td>Extreme poverty incidence <a href="#tfn5_1"><sup>a</sup></a></td>
+<td>−0.9</td>
+<td>0.1</td>
+<td>−0.8</td>
+<td>−0.9</td>
+<td>0.2</td>
+<td>−0.7</td>
+</tr>
+<tr>
+<td>Gini – labour income</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>0.000</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>Gini – per-capita household income</td>
+<td>−0.004</td>
+<td>0.000</td>
+<td>−0.004</td>
+<td>−0.003</td>
+<td>0.000</td>
+<td>−0.004</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: CGE model and microsimulation results for Costa Rica.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Incidence as a percentage of the population. Calculation based on nationally defined poverty lines.</p></div></figure></section></div></details><details id="s5" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">5. Conclusions</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The non-parametric microsimulation methodology explained in this paper allows assessing the impact of labour market changes on income inequality and poverty at the household level, while resolving the assignment problem known from the labour market literature. The approach assumes that labour markets are segmented and determines (as part of a randomized process) which individuals are expected to move in or out of employment and which move from one employment segment to another based on either known or counterfactual information of aggregate labour market changes. The methodology assumes that the distribution of earnings of those who become employed in a particular segment resembles that of the individuals observed to be employed in that segment. There is no direct link to individual attributes as assumed in the parametric approaches that are rooted in human capital theory and model labour market behaviour based on such attributes. The non-parametric approach does account for (observed or simulated) changes in the composition of the labour force by individual endowments, including skill level and sex.</p><p data-astro-cid-qsyhzaho>The non-parametric method can be applied even if one has access to only one micro dataset, typically a household or labour force survey. The additional information required is relevant summary information about changes in labour market variables (and/or non-labour incomes) either from observed data or a counterfactual simulated through, for instance, a macroeconomic or a CGE model. Parametric approaches, such as that developed by <a href="#bib5">Bourguignon <i>et al</i>. (2001)</a> require availability of the micro datasets from at least two household surveys. A further advantage of the non-parametric approach is that it facilitates a detailed insight in the relative importance of a range of labour market shifts on household level inequality and poverty, including changes in participation rates, unemployment, employment shifts by sector and occupational category, labour and non-labour income changes and individual endowments (such as skill level).</p><p data-astro-cid-qsyhzaho>Since these different aspects are introduced in the microsimulation methodology in a particular order, a potential problem of path dependence emerges. Parametric microsimulation methods are equally subject to possible path dependence. However, as shown in <a href="#appendix2">Appendix A.2</a>, this problem will be limited as long as labour market shifts are not very large. It was also indicated that path dependence is less of an issue if one accepts the suggested logic of the sequence in which these changes are introduced.</p><p data-astro-cid-qsyhzaho>The obvious disadvantage of the non-parametric approach is that it does not explicitly model behaviour in the labour market and instead assumes that individuals change position in the labour market as part of a randomized process in the context of a segmented labour market. The use of a bootstrapping (Monte Carlo) procedure allows to generate confidence intervals and application shows that such intervals typically show narrow margins of error and that only a limited number of repetitions (about 30) tend to be needed to obtain stable confidence intervals. Even so, the approach remains a strong simplification and a fuller specification of labour market behaviour may be preferred. In practice, however, empirical labour market models, especially when applied to developing countries, typically show relatively low explanatory power suggesting much of labour market behaviour is left unexplained. This has been an additional reason to develop the non-parametric approach. If behavioural models leave to much unexplained, then a controlled (<i>i.e</i>. within a pre-defined structure), randomized process of labour market behaviour might be as good an approximation of actual behaviour and with the advantage of saving on modelling effort and computational time.</p><p data-astro-cid-qsyhzaho>Yet, little comparative analysis has been undertaken to pin down with greater robustness how parametric and non-parametric microsimulations methods compare in terms of outcomes and sensitivity to the assumptions made. Such comparison should be subjected to further research. Based on a by now wide application of the non-parametric method presented here we are confident to conclude that the method is relatively easy to apply and that its outcomes are easy to understand and typically plausible for the labour market outcomes that are simulated. We do not argue that this method is superior to the parametric or behavioural approaches, but it is easy to implement and helps overcome many data constraints to practical applications. The method has also proven to be effective in overcoming insufficient distributional detail present in static and dynamic CGE models to assess the impact of trade, tax reforms or other policy reforms on poverty and income distribution. This combination of CGE modelling and the non-parametric microsimulation method has been applied in a top-down, sequential manner. While this has limitations of its own, it has the advantages of being relatively easy to implement and generating easy-to-understand and tractable outcomes for inequality and poverty.</p></div></details><details id="footnotes" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Footnotes</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="fn1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1.</h3><p data-astro-cid-qsyhzaho>A coded version (in STATA) can be obtained from the authors upon request.</p></section><section id="fn2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.</h3><p data-astro-cid-qsyhzaho>In reality there may also be other factors that explain the difference between the actual and simulated change in earnings inequality, <i>e.g</i>. demographic changes.</p></section><section id="fn3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.</h3><p data-astro-cid-qsyhzaho>The application of the microsimulation methodology to data sets for Latin American countries suggests that repeating the random selection about 30 times is sufficient to generate stable confidence intervals and repeating it more times would not yield statistically significant differences in the outcomes for labour earnings inequality or indicators for household income inequality and poverty (see <a href="#bib11">Ganuza <i>et al</i>., 2002</a>; <a href="#bib22">Vos <i>et al</i>., 2006</a>).</p></section><section id="fn4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.</h3><p data-astro-cid-qsyhzaho>Mean incomes per decile are calculated (per segment) for employed persons according to the used individual characteristics. These means are assigned to newly employed or to already employed persons who change sector of economic activity, occupational category or skill category.</p></section><section id="fn5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.</h3><p data-astro-cid-qsyhzaho>Please note that path dependence is also an issue in alternative methods. For instance, the parametric approach of Bourguignon <i>et al</i>. (<a href="#bib5">2001</a>, <a href="#bib6">2002a</a>,<a href="#bib7">b</a>) performance simulations for a price effect (such as changes in wage rates), a participation effect (emanating from labour supply behaviour) and a population effect. The outcomes of any sequential decomposition of distributional changes on account of these three effects will be sensitive to the order in which these effects are accounted for.</p></section><section id="fn6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.</h3><p data-astro-cid-qsyhzaho>It should be emphasized, however, that the microsimulation methodology does not allow certain sequences. For instance, the simulation of the impact of an alteration in the remuneration structure assumes full information on both the sector of economic activity and the occupational category. Hence, changes in the remuneration structure cannot be preceded immediately by the simulated changes in either unemployment or participation rates.</p></section><section id="fn7" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.</h3><p data-astro-cid-qsyhzaho>Alternative approaches that model labour supply behaviour might capture such effects as part of the behavioural model underpinning the microsimulation method. In the non-parametric approach such effects would need to be captured through the economy-wide model and would require such a model would capture the impact of different types of transfers to households or individuals on labour market behaviour.</p></section><section id="fn8" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">8.</h3><p data-astro-cid-qsyhzaho>Ideally, the CGE model would use data for base year values for labour market and household incomes that are derived from the same survey to be used for the microsimulations to avoid further ‘noise’ in the results because of discrepancies in the underlying information.</p></section><section id="fn9" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">9.</h3><p data-astro-cid-qsyhzaho>The CGE model for Costa Rica allows assigning transfers by type of household as it distinguishes four groups of households: urban poor and non-poor and rural poor and non-poor. It should be noted that poor households are defined as the bottom 40 per cent of the rural and urban income distribution, respectively.</p></section><section id="fn10" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">10.</h3><p data-astro-cid-qsyhzaho>In this simulation the model assumes an investment-driven macroeconomic closure; that is, savings adjust to meet investment demand. Also, the government account is assumed to adjust this way; that is, the government will try to mobilize private savings through domestic borrowing to finance the budget deficit.</p></section><section id="fn11" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">11.</h3><p data-astro-cid-qsyhzaho>This explanation of the procedure has been adapted from the original specification of Ganuza <i>et al</i>. (<a href="#bib11">2002</a>: 83–86) and which has been followed in a large number of country case studies. In this appendix, reference to the counterfactual labour market variables is in terms of that for “year <i>t</i>*”, but may be understood equally in an application where the counterfactual is generated through an economy-wide model. The explanation here only refers to changes in labour market variables. See the text for how to include changes in non-labour incomes.</p></section><section id="fn12" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">12.</h3><p data-astro-cid-qsyhzaho>This appendix was adapted from earlier work by <a href="#bib9">De Jong (2001)</a> and <a href="#bib25">Vos and De Jong (2001)</a>.</p></section></div></details></div><details id="appendix-1" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">The non-parametric micro-simulation methodology step by step<a href="#fn11"><sup>11</sup></a></h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>For year <i>t</i> (or any observed distribution) an alternative structure of the labour market is defined on the basis of data for year <i>t*</i> (or a counterfactual distribution). In each iteration of the microsimulations a random number drawn from a normal distribution is assigned to each individual (of a sub-group) of the population in year <i>t</i>. This number is used to rank the individuals. The following simulations are considered (separately or sequentially):</p><section id="s6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1. Change of the <i>participation rate</i> (<i>P</i>) of each group <i>j</i> of the population.</h3><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Objective</i>: Determine the indices of poverty and inequality if the participation rates in year <i>t</i> were to be equal to those in year <i>t*</i>.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Procedure</i>: Within each group <i>j</i> the persons at working age are in the first place ranked according to labour force status – starting with the economically active – and in the second place on the basis of the random numbers. If for a group <i>j</i> the participation rate in year <i>t*</i> is at most equal to that in year <i>t</i>, the last economically active individuals of types <i>j</i> with lower participation rates in year <i>t*</i> than in year <i>t</i> will be reclassified as economically inactive and their labour income is set to zero. If the corresponding participation rate is higher, it will subsequently be determined whether the new economically active persons will be employed. If so, they will be randomly assigned a labour income.</p></li></ul></section><section id="s7" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2. Change of the <i>unemployment rate</i> (<i>U</i>) of economically active persons of type <i>j</i>.</h3><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Objective</i>: Determine the indices of poverty and inequality if the unemployment rates in year <i>t</i> were to be equal to those in year <i>t*</i>.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Procedure</i>: Only the economically active population is considered. Within each group <i>j</i> the individuals are in the first place ranked according to employment condition – starting with the employed – and in the second place on the basis of the random numbers. For the types <i>j</i> with higher rates of unemployment in year <i>t*</i> than in year <i>t</i>, the last employed persons of each type <i>j</i> are reclassified as unemployed and their labour income is set to zero. In case of types <i>j</i> with lower rates of unemployment in year <i>t*</i>, the newly employed are grouped into deciles on the basis of the random numbers and assigned the mean labour income of the corresponding decile of employed persons in year <i>t</i>.</p></li></ul></section><section id="s8" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3. Change of the <i>sector of activity</i> (<i>S</i>) of wage employees and non-wage workers of type <i>j</i></h3><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Objective</i>: Determine the indices of poverty and inequality if the proportion of persons employed by sector in year <i>t</i> were to be the same as in year <i>t*</i>.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Procedure</i>: Only the employed population is considered. Mean incomes are calculated per decile of wage employees and non-wage workers of type <i>j</i> in each sector of activity. For both sectors of activity within each group <i>j</i> the individuals are in the first place ranked according to occupational category – starting with the wage employees – and in the second place on the basis of the random numbers. In groups in which the proportion of wage employees is lower in year <i>t*</i> than in year <i>t</i>, the last wage employees become non-wage workers. In groups in which the proportion of wage employees is higher in year <i>t*</i> than in year <i>t</i>, the first non-wage workers become wage employees. Within each group <i>j</i> the persons who change from one occupational category to the other are classified into deciles on the basis of their random number and their labour income is replaced by the corresponding mean income of the decile of all persons who in year <i>t</i> are actually working in the occupational category of destination.</p></li></ul></section><section id="s9" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4. Change of the <i>occupational category</i> (<i>O</i>) of employed persons of type <i>j</i> in each sector</h3><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Objective</i>: Determine the indices of poverty and inequality if the proportion of persons employed by sector in year <i>t</i> were to be the same as in year <i>t*</i>.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Procedure</i>: Only the employed population is considered. Mean incomes per decile of employed persons of type <i>j</i> in each sector are calculated For both occupational categories. Within each group <i>j</i> the individuals are in the first place ranked according to sector of activity and in the second place on the basis of the random numbers. In groups in which the proportion of persons working in sectore 2 is lower in year <i>t*</i> than in year <i>t</i>, the first persons of sectors, 2 move to sector 1, if there were two sectors, for example. In groups <i>j</i> in which the proportion of persons in sector 2 is higher in year <i>t*</i> than in year <i>t</i>, the last persons of sector 1 move to sector 2. Within each group <i>j</i> the persons who change from one sector to the other are classified into deciles on the basis of their random number and their labour income is replaced by the corresponding mean income of the decile of all persons who in year <i>t</i> are actually working in the sector of destination.</p></li></ul></section><section id="s10" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5. Change of the <i>remuneration structure</i> (<i>W<sub>1</sub></i>)</h3><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Objective</i>: Determine the indices of poverty and inequality if the proportion of wage employees in year <i>t</i> were to be the same as in year <i>t*</i>.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Procedure</i>: Only the employed population is considered. Mean labour incomes are calculated for, say, each of the 16 groups <i>jk</i> of employed persons – for 4 types of workers <i>j</i> and 4 segments <i>k</i> defined for 2 sectors and 2 occupational categories, as well as an overall mean, for both year <i>t*</i> and year <i>t</i>. Subsequently, the following relative mean incomes are calculated for year <i>t*</i>:</p></li></ul><div id="equ16" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A.1)</span><math><mrow><msub><mi>S</mi><mrow><mi>j</mi><mi>k</mi></mrow></msub><mo>=</mo><mfrac><mrow><mover accent="true"><mrow><mi>y</mi><msubsup><mi>p</mi><mrow><mi>j</mi><mi>k</mi></mrow><mrow><mi>t</mi><mo>∗</mo></mrow></msubsup></mrow><mo stretchy="true">¯</mo></mover></mrow><mrow><mover accent="true"><mrow><mi>y</mi><msup><mi>p</mi><mrow><mi>t</mi><mo>∗</mo></mrow></msup></mrow><mo stretchy="true">¯</mo></mover></mrow></mfrac></mrow></math></div><p data-astro-cid-qsyhzaho>The mean labour income in year <i>t</i> of each group <i>jk</i> is multiplied by the corresponding <i>s<sub>jk</sub></i> in order to obtain a new mean labour income for each group <i>jk</i> in prices of year <i>t</i>:</p><div id="equ17" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A.2)</span><math><mrow><msubsup><mrow><mover accent="true"><mrow><mi>y</mi><mi>p</mi></mrow><mo stretchy="true">¯</mo></mover></mrow><mrow><mi>j</mi><mi>k</mi></mrow><mo>∗</mo></msubsup><mo>=</mo><mfrac><mrow><mover accent="true"><mrow><mi>y</mi><msubsup><mi>p</mi><mrow><mi>j</mi><mi>k</mi></mrow><mrow><mi>t</mi><mo>∗</mo></mrow></msubsup></mrow><mo stretchy="true">¯</mo></mover></mrow><mrow><mover accent="true"><mrow><mi>y</mi><msup><mi>p</mi><mrow><mi>t</mi><mo>∗</mo></mrow></msup></mrow><mo stretchy="true">¯</mo></mover></mrow></mfrac><mo>⋅</mo><mover accent="true"><mrow><mi>y</mi><msup><mi>p</mi><mi>t</mi></msup></mrow><mo stretchy="true">¯</mo></mover></mrow></math></div><p data-astro-cid-qsyhzaho>In turn, the new mean incomes of the groups <i>jk</i> are expressed as a proportion of the corresponding mean in year <i>t</i>, and subsequently the year <i>t</i> labour income of each individual <i>i</i> in group <i>jk</i> is multiplied by the proportion for the group:</p><div id="equ18" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A.3)</span><math><mrow><mi>y</mi><msubsup><mi>p</mi><mrow><mi>j</mi><mi>k</mi><mi>i</mi></mrow><mrow><mi>t</mi><mo>∗</mo></mrow></msubsup><mo>=</mo><mfrac><mrow><msubsup><mrow><mover accent="true"><mrow><mi>y</mi><mi>p</mi></mrow><mo stretchy="true">¯</mo></mover></mrow><mrow><mi>j</mi><mi>k</mi></mrow><mo>∗</mo></msubsup></mrow><mrow><mover accent="true"><mrow><mi>y</mi><msubsup><mi>p</mi><mrow><mi>j</mi><mi>k</mi></mrow><mi>t</mi></msubsup></mrow><mo stretchy="true">¯</mo></mover></mrow></mfrac><mtext> </mtext><mo>⋅</mo><mi>y</mi><msubsup><mi>p</mi><mrow><mi>j</mi><mi>k</mi><mi>i</mi></mrow><mi>t</mi></msubsup></mrow></math></div><p data-astro-cid-qsyhzaho>As a final step, all the individual incomes are multiplied by an adjustment factor, so as to keep the overall mean income constant.</p></section><section id="s11" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6. Change of the level of remuneration (<i>W<sub>2</sub></i>).</h3><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Objective</i>: Determine the indices of poverty and inequality if the level of real incomes of year t were to be that of year t*.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Procedure</i>: Only the employed population is considered. New labour incomes are calculated by multiplying the year <i>t</i> labour income of each income recipient by the ratio of mean income in year <i>t</i>* (in currency of year <i>t</i>) to that in year t:</p></li></ul><div id="equ19" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A.4)</span><math><mrow><mi>y</mi><msubsup><mi>p</mi><mrow><mi>j</mi><mi>k</mi><mi>i</mi></mrow><mrow><mi>t</mi><mo>∗</mo><mo>∗</mo></mrow></msubsup><mo>=</mo><mfrac><mrow><mover accent="true"><mrow><mi>y</mi><msup><mi>p</mi><mrow><mi>t</mi><mo>∗</mo></mrow></msup></mrow><mo stretchy="true">¯</mo></mover></mrow><mrow><mover accent="true"><mrow><mi>y</mi><msup><mi>p</mi><mi>t</mi></msup></mrow><mo stretchy="true">¯</mo></mover></mrow></mfrac><mo>⋅</mo><mi>y</mi><msubsup><mi>p</mi><mrow><mi>j</mi><mi>k</mi><mi>i</mi></mrow><mi>t</mi></msubsup></mrow></math></div></section><section id="s12" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7. Change of the <i>level of skill</i> (<i>M</i>) of employed individual <i>j</i> in segment <i>k</i>.</h3><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Objective</i>: Determine the indices of poverty and inequality if the proportion of skilled workers in year <i>t</i> were to be same as in year <i>t*</i>.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho><i>Procedure</i>: Only the employed population is considered. Mean incomes are calculated per decile of employed individual <i>j</i> in each segment <i>k</i>. Individuals within each group defined by sex and age, for example, and segment are in the first place classified according to skill – starting with the unskilled workers – and in the second place on the basis of the random numbers. In groups in which the proportion of skilled workers is higher in year <i>t*</i> than in year <i>t</i>, the last unskilled workers are reclassified as skilled workers. In case of groups with lower proportions of skilled workers year <i>t*</i>, the first skilled workers move to the category of unskilled workers. Within each group <i>j</i> the persons who change from unskilled to skilled are classified into deciles on the basis of their random number and their labour income is replaced by the mean income of the corresponding decile of all persons who are actually skilled in year <i>t</i>. In the reverse case, the actual year <i>t</i> incomes are replaced by that of the corresponding decile of unskilled workers.</p><p data-astro-cid-qsyhzaho>Due to changes in the participation rate and the unemployment rate in the sequential simulation it is possible that persons become classified as employed, but that there is no information concerning occupational category for these persons. For this reason, in the part of the sequential simulations in which the employment structure according to sector of activity is changed, mean proportions of persons employed in, say, the non-agricultural sector in year <i>t*</i> are used (instead of different proportions for, say, wage employees and non-wage workers separately) in cases of lack of information concerning the occupational category.</p></li></ul></section></div></details><details id="appendix2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Does Path Dependence Matter?<a href="#fn12"><sup>12</sup></a></h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The simulated change in earnings inequality in the sequential simulation is defined as:</p><div id="equ20" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A.5)</span><math><mrow><mover accent="true"><mrow><msup><mi>Δ</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>≡</mo><mstyle displaystyle="true"><munderover><mo>∑</mo><mrow><mi>s</mi><mo>=</mo><mn>1</mn></mrow><mn>6</mn></munderover><mrow><mrow><mo>[</mo> <mrow><msubsup><mover accent="true"><mi>I</mi><mo>¯</mo></mover><mi>s</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>−</mo><msubsup><mover accent="true"><mi>I</mi><mo>¯</mo></mover><mrow><mi>s</mi><mo>−</mo><mn>1</mn></mrow><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow> <mo>]</mo></mrow></mrow></mstyle></mrow></math></div><p data-astro-cid-qsyhzaho>where:</p><div id="equ21" class="equation" data-astro-cid-qsyhzaho><math><mrow><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><msubsup><mover accent="true"><mi>I</mi><mo>¯</mo></mover><mn>1</mn><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="left"><mrow><mo>=</mo><mover accent="true"><mi>I</mi><mo>¯</mo></mover><mrow><mo>(</mo><mrow><msup><mi>P</mi><mo>∗</mo></msup><mo>,</mo><mi>U</mi><mo>,</mo><mi>S</mi><mo>,</mo><mi>O</mi><mo>,</mo><msub><mi>W</mi><mn>1</mn></msub><mo>,</mo><mi>M</mi><mo>,</mo><mi>c</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><msubsup><mover accent="true"><mi>I</mi><mo>¯</mo></mover><mn>2</mn><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="left"><mrow><mo>=</mo><mover accent="true"><mi>I</mi><mo>¯</mo></mover><mrow><mo>(</mo><mrow><msup><mi>P</mi><mo>∗</mo></msup><mo>,</mo><msup><mi>U</mi><mo>∗</mo></msup><mo>,</mo><mi>S</mi><mo>,</mo><mi>O</mi><mo>,</mo><msub><mi>W</mi><mn>1</mn></msub><mo>,</mo><mi>M</mi><mo>,</mo><mi>c</mi></mrow><mo>)</mo></mrow><mo>,</mo></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><msubsup><mover accent="true"><mi>I</mi><mo>¯</mo></mover><mn>3</mn><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow></mtd><mtd columnalign="left"><mrow><mo>=</mo><mover accent="true"><mi>I</mi><mo>¯</mo></mover><mrow><mo>(</mo><mrow><msup><mi>P</mi><mo>∗</mo></msup><mo>,</mo><msup><mi>U</mi><mo>∗</mo></msup><mo>,</mo><msup><mi>S</mi><mo>∗</mo></msup><mo>,</mo><mi>O</mi><mo>,</mo><msub><mi>W</mi><mn>1</mn></msub><mo>,</mo><mi>M</mi><mo>,</mo><mi>c</mi></mrow><mo>)</mo></mrow><mo>,</mo><mtext> </mtext><mn>.....</mn><mo>,</mo><mtext> </mtext><mi>e</mi><mi>t</mi><mi>c</mi><mo>.</mo></mrow></mtd></mtr></mtable></mrow></math></div><p data-astro-cid-qsyhzaho>and</p><div id="equ22" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A.6)</span><math><mrow><msubsup><mover accent="true"><mi>I</mi><mo>¯</mo></mover><mn>0</mn><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><mi>I</mi><mrow><mo>(</mo><mrow><mi>P</mi><mo>,</mo><mi>U</mi><mo>,</mo><mi>S</mi><mo>,</mo><mi>O</mi><mo>,</mo><msub><mi>W</mi><mn>1</mn></msub><mo>,</mo><mi>M</mi><mo>,</mo><mi>c</mi></mrow><mo>)</mo></mrow></mrow></math></div><p data-astro-cid-qsyhzaho>In <a href="#equ20">Equation A.5</a>, ¯<i>I</i> is the mean value of the summary statistic, ¯Δ<i>I</i> the mean simulated change in the summary statistic, while <i>P</i>, <i>U</i>, <i>S</i>, <i>O</i>, <i>W<sub>1</sub></i> and <i>M</i> are labour market variables as defined in the text and <i>c</i> refers to the sex and age distribution among members of each household.</p><p data-astro-cid-qsyhzaho>The total simulated change in inequality can be decomposed in changes due to alteration of participation rates, changes due to alteration of unemployment rates given the simulated incomes as a result of altering the participation rates, and a residual <i>R</i>.</p><div id="equ23" class="equation" data-astro-cid-qsyhzaho><math><mrow><mover accent="true"><mrow><msup><mi>Δ</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>≡</mo><mstyle displaystyle="true"><munderover><mo>∑</mo><mrow><mi>s</mi><mo>=</mo><mn>1</mn></mrow><mn>2</mn></munderover><mrow><mrow><mo>[</mo> <mrow><msubsup><mover accent="true"><mi>I</mi><mo>¯</mo></mover><mi>s</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>−</mo><msubsup><mover accent="true"><mi>I</mi><mo>¯</mo></mover><mrow><mi>s</mi><mo>−</mo><mn>1</mn></mrow><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow> <mo>]</mo></mrow></mrow></mstyle><mo>+</mo><mi>R</mi></mrow></math></div><p data-astro-cid-qsyhzaho>Changes in the distribution as a consequence of shifts in the participation (<i>P</i>)and unemployment (<i>U</i>)rates, respectively, can be defined as:</p><div id="equ24" class="equation" data-astro-cid-qsyhzaho><math><mrow><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><mover accent="true"><mrow><msubsup><mi>Δ</mi><mi>P</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover></mrow></mtd><mtd columnalign="left"><mrow><mo>=</mo><msubsup><mover accent="true"><mi>I</mi><mo>¯</mo></mover><mn>1</mn><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>−</mo><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow/></mtd><mtd columnalign="left"><mrow><mo>=</mo><mover accent="true"><mi>I</mi><mo>¯</mo></mover><mrow><mo>(</mo><mrow><msup><mi>p</mi><mo>∗</mo></msup><mo>,</mo><mi>U</mi><mo>,</mo><mi>S</mi><mo>,</mo><mi>O</mi><mo>,</mo><msub><mi>W</mi><mn>1</mn></msub><mo>,</mo><mi>M</mi><mo>,</mo><mi>c</mi></mrow><mo>)</mo></mrow><mo>−</mo><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><msup><mtext> </mtext><mo>'</mo></msup></mrow></mtd></mtr></mtable></mrow></math></div><p data-astro-cid-qsyhzaho>and</p><div id="equ25" class="equation" data-astro-cid-qsyhzaho><math><mrow><mover accent="true"><mrow><msubsup><mi>Δ</mi><mi>U</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>=</mo><mover accent="true"><mi>I</mi><mo>¯</mo></mover><mrow><mo>(</mo><mrow><mi>P</mi><mo>,</mo><msup><mi>U</mi><mo>∗</mo></msup><mo>,</mo><mi>S</mi><mo>,</mo><mi>O</mi><mo>,</mo><msub><mi>W</mi><mn>1</mn></msub><mo>,</mo><mi>M</mi><mo>,</mo><mi>c</mi></mrow><mo>)</mo></mrow><mo>−</mo><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>,</mo></mrow></math></div><p data-astro-cid-qsyhzaho>and the cumulative sequential change of a change in the participation and unemployment rates as:</p><div id="equ26" class="equation" data-astro-cid-qsyhzaho><math><mrow><mover accent="true"><mrow><msubsup><mi>Δ</mi><mi>U</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msubsup><mi>p</mi><mi>i</mi><mi>p</mi></msubsup></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>=</mo><mover accent="true"><mrow><msubsup><mi>I</mi><mi>U</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mrow><mo>(</mo><mrow><mi>y</mi><msubsup><mi>p</mi><mi>i</mi><mi>p</mi></msubsup></mrow><mo>)</mo></mrow><mo>−</mo><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msubsup><mi>p</mi><mi>i</mi><mi>p</mi></msubsup></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>,</mo></mrow></math></div><p data-astro-cid-qsyhzaho>so that we can write:</p><div id="equ27" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A.7)</span><math><mrow><mover accent="true"><mrow><msubsup><mi>Δ</mi><mi>U</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>=</mo><mover accent="true"><mrow><msubsup><mi>Δ</mi><mi>p</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>+</mo><msubsup><mi>Δ</mi><mi>U</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msubsup><mi>p</mi><mi>i</mi><mi>p</mi></msubsup></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>+</mo><mi>R</mi></mrow></math></div><p data-astro-cid-qsyhzaho>The second component in this expression is the distribution that results from altering the unemployment rates, given the simulated incomes as a result of altering the participation rates. Hence it includes an interaction term:</p><div id="equ28" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A.8)</span><math><mrow><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><mover accent="true"><mrow><msup><mi>Δ</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>≡</mo></mrow></mtd><mtd columnalign="left"><mrow><mover accent="true"><mrow><msubsup><mi>Δ</mi><mi>P</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>+</mo><mover accent="true"><mrow><msubsup><mi>Δ</mi><mi>U</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>+</mo></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow/></mtd><mtd columnalign="left"><mrow><mover accent="true"><mrow><msubsup><mi>Δ</mi><mi>U</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>Δ</mi><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>+</mo><mi>R</mi></mrow></mtd></mtr></mtable></mrow></math></div><p data-astro-cid-qsyhzaho>If the sequence of altering <i>P</i> and <i>U</i> were reversed, the result would become:</p><div id="equ29" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A.9a)</span><math><mrow><mover accent="true"><mrow><msup><mi>Δ</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>≡</mo><mover accent="true"><mrow><msubsup><mi>Δ</mi><mi>U</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mo>+</mo><msubsup><mi>Δ</mi><mi>P</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msubsup><mi>p</mi><mi>i</mi><mi>U</mi></msubsup></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>+</mo><mi>R</mi></mrow></math></div><p data-astro-cid-qsyhzaho>or</p><div id="equ30" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A.9b)</span><math><mrow><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><mover accent="true"><mrow><msup><mi>Δ</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>≡</mo></mrow></mtd><mtd columnalign="left"><mrow><mover accent="true"><mrow><msubsup><mi>Δ</mi><mi>P</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>+</mo><mover accent="true"><mrow><msubsup><mi>Δ</mi><mi>U</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>+</mo></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow/></mtd><mtd columnalign="left"><mrow><mover accent="true"><mrow><msubsup><mi>Δ</mi><mi>U</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>Δ</mi><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>+</mo><mi>R</mi></mrow></mtd></mtr></mtable></mrow></math></div><p data-astro-cid-qsyhzaho>For the relative importance of altering respectively parameters <i>P</i> and <i>U</i> to be more or less the same in both sequences, it should hold that the Marginal effects of altering <i>P</i> or <i>U</i> should be similar, irrespective of the sequence:</p><div id="equ31" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A.10a)</span><math><mrow><mover accent="true"><mrow><msubsup><mi>Δ</mi><mi>P</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msubsup><mi>p</mi><mi>i</mi><mi>U</mi></msubsup></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>≅</mo><mover accent="true"><mrow><msubsup><mi>Δ</mi><mi>P</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover></mrow></math></div><p data-astro-cid-qsyhzaho>and</p><div id="equ32" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(A.10b)</span><math><mrow><mover accent="true"><mrow><msubsup><mi>Δ</mi><mi>U</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msubsup><mi>p</mi><mi>i</mi><mi>P</mi></msubsup></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover><mo>≅</mo><mover accent="true"><mrow><msubsup><mi>Δ</mi><mi>U</mi><mrow><mi>s</mi><mi>i</mi><mi>m</mi></mrow></msubsup><mi>I</mi><mrow><mo>(</mo><mrow><mi>y</mi><msub><mi>p</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow></mrow><mo stretchy="true">¯</mo></mover></mrow></math></div><p data-astro-cid-qsyhzaho>This means that the interaction effects should be relatively small.</p><p data-astro-cid-qsyhzaho>Similar notation can be used for the (simulated) changes in the poverty and inequality indices of per capita income. In the simulations, the effect of altering characteristics of individuals in the household and other factors will appear in the residuals – <i>i.e</i>. the difference between the observed change in the indices and changes simulated by imposing an alternative labour market structure <i>λ*</i>.</p></div></details><details id="appendix3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Additional Microsimulation Results</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><figure id="tableA1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A.1.</strong><span data-astro-cid-dzaleqsp> Sequential and cumulative effects and confidence intervals for changes in the labour-market parameters for the baseline scenario for Costa Rica<a href="#tfnA1_1"><sup>a</sup></a>, 2012.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Obs.</th>
+<th>Mean</th>
+<th>Standard Error</th>
+<th align="center" colspan="2">[95% Confidence Interval]</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="6"><i>U</i></td>
+</tr>
+<tr>
+<td>Total poverty incidence <a href="#tfnA1_2"><sup>b</sup></a></td>
+<td>30</td>
+<td>20.45249</td>
+<td>0.00685</td>
+<td>20.43850</td>
+<td>20.46649</td>
+</tr>
+<tr>
+<td>Extreme poverty incidence <a href="#tfnA1_2"><sup>b</sup></a></td>
+<td>30</td>
+<td>4.21342</td>
+<td>0.00788</td>
+<td>4.19730</td>
+<td>4.22954</td>
+</tr>
+<tr>
+<td>Gini – labour income</td>
+<td>30</td>
+<td>0.46117</td>
+<td>0.00003</td>
+<td>0.46111</td>
+<td>0.46123</td>
+</tr>
+<tr>
+<td>Gini – per-capita household income</td>
+<td>30</td>
+<td>0.49661</td>
+<td>0.00003</td>
+<td>0.49655</td>
+<td>0.49668</td>
+</tr>
+<tr>
+<td colspan="6"><i>U+S</i></td>
+</tr>
+<tr>
+<td>Total poverty incidence <a href="#tfnA1_2"><sup>b</sup></a></td>
+<td>30</td>
+<td>20.48056</td>
+<td>0.00658</td>
+<td>20.46711</td>
+<td>20.49402</td>
+</tr>
+<tr>
+<td>Extreme poverty incidence <a href="#tfnA1_2"><sup>b</sup></a></td>
+<td>30</td>
+<td>4.22287</td>
+<td>0.00857</td>
+<td>4.20533</td>
+<td>4.24040</td>
+</tr>
+<tr>
+<td>Gini – labour income</td>
+<td>30</td>
+<td>0.46119</td>
+<td>0.00005</td>
+<td>0.46109</td>
+<td>0.46129</td>
+</tr>
+<tr>
+<td>Gini – per-capita household income</td>
+<td>30</td>
+<td>0.49662</td>
+<td>0.00005</td>
+<td>0.49652</td>
+<td>0.49672</td>
+</tr>
+<tr>
+<td colspan="6"><i>U+S+O</i></td>
+</tr>
+<tr>
+<td>Total poverty incidence <a href="#tfnA1_2"><sup>b</sup></a></td>
+<td>30</td>
+<td>20.44773</td>
+<td>0.00622</td>
+<td>20.43501</td>
+<td>20.46044</td>
+</tr>
+<tr>
+<td>Extreme poverty incidence <a href="#tfnA1_2"><sup>b</sup></a></td>
+<td>30</td>
+<td>4.20806</td>
+<td>0.00825</td>
+<td>4.19119</td>
+<td>4.22492</td>
+</tr>
+<tr>
+<td>Gini – labour income</td>
+<td>30</td>
+<td>0.46098</td>
+<td>0.00005</td>
+<td>0.46088</td>
+<td>0.46108</td>
+</tr>
+<tr>
+<td>Gini – per-capita household income</td>
+<td>30</td>
+<td>0.49647</td>
+<td>0.00005</td>
+<td>0.49636</td>
+<td>0.49657</td>
+</tr>
+<tr>
+<td colspan="6"><i>U+S+O+W<sub>a</sub></i></td>
+</tr>
+<tr>
+<td>Total poverty incidence <a href="#tfnA1_2"><sup>b</sup></a></td>
+<td>30</td>
+<td>18.12911</td>
+<td>0.01060</td>
+<td>18.10742</td>
+<td>18.15079</td>
+</tr>
+<tr>
+<td>Extreme poverty incidence <a href="#tfnA1_2"><sup>b</sup></a></td>
+<td>30</td>
+<td>3.76363</td>
+<td>0.00698</td>
+<td>3.74935</td>
+<td>3.77790</td>
+</tr>
+<tr>
+<td>Gini – labour income</td>
+<td>30</td>
+<td>0.44659</td>
+<td>0.00005</td>
+<td>0.44648</td>
+<td>0.44669</td>
+</tr>
+<tr>
+<td>Gini – per-capita household income</td>
+<td>30</td>
+<td>0.47856</td>
+<td>0.00005</td>
+<td>0.47845</td>
+<td>0.47867</td>
+</tr>
+<tr>
+<td colspan="6"><i>U+S+O+W<sub>1</sub>+W<sub>2</sub></i></td>
+</tr>
+<tr>
+<td>Total poverty incidence <a href="#tfnA1_2"><sup>a</sup></a></td>
+<td>30</td>
+<td>16.56747</td>
+<td>0.01072</td>
+<td>16.54556</td>
+<td>16.58939</td>
+</tr>
+<tr>
+<td>Extreme poverty incidence <a href="#tfnA1_2"><sup>b</sup></a></td>
+<td>30</td>
+<td>3.58093</td>
+<td>0.00593</td>
+<td>3.56881</td>
+<td>3.59305</td>
+</tr>
+<tr>
+<td>Gini – labour income</td>
+<td>30</td>
+<td>0.44667</td>
+<td>0.00005</td>
+<td>0.44656</td>
+<td>0.44677</td>
+</tr>
+<tr>
+<td>Gini – per-capita household income</td>
+<td>30</td>
+<td>0.47851</td>
+<td>0.00005</td>
+<td>0.47840</td>
+<td>0.47862</td>
+</tr>
+<tr>
+<td colspan="6"><i>U+S+O+W<sub>1</sub>+W<sub>2</sub>+M</i></td>
+</tr>
+<tr>
+<td>Total poverty incidence <a href="#tfnA1_2"><sup>b</sup></a></td>
+<td>30</td>
+<td>16.52524</td>
+<td>0.01902</td>
+<td>16.48635</td>
+<td>16.56413</td>
+</tr>
+<tr>
+<td>Extreme poverty incidence <a href="#tfnA1_2"><sup>b</sup></a></td>
+<td>30</td>
+<td>3.59980</td>
+<td>0.01135</td>
+<td>3.57659</td>
+<td>3.62302</td>
+</tr>
+<tr>
+<td>Gini – labour income</td>
+<td>30</td>
+<td>0.44682</td>
+<td>0.00007</td>
+<td>0.44668</td>
+<td>0.44696</td>
+</tr>
+<tr>
+<td>Gini – per-capita household income</td>
+<td>30</td>
+<td>0.47790</td>
+<td>0.00009</td>
+<td>0.47771</td>
+<td>0.47809</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: CGE model and microsimulation results for Costa Rica.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Sequential and cumulative effects are presented for changes in the labour market variables as explained in the text.</p><p class="table-footnote" data-astro-cid-dzaleqsp>The poverty incidence is expressed as a percentage of the total population and was estimated using nationally defined poverty lines.</p></div></figure></div></details><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Almeida dos Reis, JG, Paes de Barros, R (1991). <span data-astro-cid-oer3kof4>Wage Inequality and the Distribution of Education: A Study of the Evolution of Regional Differences in Inequality in Metropolitan Brazil</span>. <em data-astro-cid-oer3kof4>Journal of Development Economics</em>, <strong data-astro-cid-oer3kof4>34</strong>, 117–143.</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Atkinson, AB, Bourguignon, F (2000). <span data-astro-cid-oer3kof4>Introduction: Income Distribution and Economics</span>. In Atkinson, AB, Bourguignon, F (Eds.), <em data-astro-cid-oer3kof4>Handbook of Income Distribution, Volume 1</em> (pp. 1–58). Amsterdam: North Holland, Elsevier.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Behrman, JR (1999). <span data-astro-cid-oer3kof4>Labor Markets in Developing Countries</span>. In Ashenfelter, O, Layard, R, Card, D (Eds.), <em data-astro-cid-oer3kof4>Handbook of Labor Economics</em> (pp. 2859–2939). Amsterdam: North Holland, Elsevier.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Blinder, AS (1973). <span data-astro-cid-oer3kof4>Wage Discrimination: Reduced Form and Structural Estimates</span>. <em data-astro-cid-oer3kof4>Journal of Human Resources</em>, <strong data-astro-cid-oer3kof4>8</strong>, 436–455.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Bourguignon, F, Fournier, M, Gurgand, M (2001). <span data-astro-cid-oer3kof4>Fast Development with a Stable Income Distribution: Taiwan, 1979–1994</span>. <em data-astro-cid-oer3kof4>Review of Income and Wealth</em>, <strong data-astro-cid-oer3kof4>47</strong>, 139–164.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Bourguignon, F, Pereira da Silva, LA, Stern, N (2002). <em data-astro-cid-oer3kof4>Evaluating the Poverty Impact of Economic Policies: Some Analytical Challenges</em>. Washington D.C.: World Bank.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Bourguignon, F, Robilliard, A-S, Robinson, S (2002). <span data-astro-cid-oer3kof4>Representative versus Real Households in the Macro-economic Modeling of Inequality</span>.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Cicowiez, M, Sánchez, MV (2009). <em data-astro-cid-oer3kof4>MACEPES: Modelo de Análisis de Choques Exó genos y de Protección Econó mica y Social. Technical Document prepared for the project. Implications of Macroeconomic Policy, External Shocks and Social Protection Systems for Poverty, Inequality, and Social Vulnerability in Latin America and the Caribbean</em>. MACEPES: Modelo de Análisis de Choques Exó genos y de Protección Econó mica y Social. Technical Document prepared for the project. Implications of Macroeconomic Policy, External Shocks and Social Protection Systems for Poverty, Inequality, and Social Vulnerability in Latin America and the Caribbean.</span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>De Jong, N (2001). <span data-astro-cid-oer3kof4>Decomposing Changes in Poverty and Inequality: The Case of Urban Panama in the 1990s</span>. .</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Frenkel, R, González Rozada, M (2002). <span data-astro-cid-oer3kof4>Argentina: macroeconomic behaviour, employment and income distribution in the 1990s</span>. In Vos, R, Paes de Barros, R, Taylor, L (Eds.), <em data-astro-cid-oer3kof4>Economic Liberalization, Distribution and Poverty. Latin America in the 1990s</em> (pp. 89–124). Cheltenham (UK), Northampton (MA): Edward Elgar Publishers.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ganuza, E, Paes de Barros, R, Vos, R (2002). <span data-astro-cid-oer3kof4>Labour market adjustment, poverty, and inequality during liberalization</span>. In Vos, R, Taylor, L, Paes de Barros, R (Eds.), <em data-astro-cid-oer3kof4>Economic Liberalization, Distribution and Poverty. Latin America in the 1990s</em> (pp. 54–88). Cheltenham (UK), Northampton (US): Edward Elgar Publishers.</span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hartog, J (1985). <span data-astro-cid-oer3kof4>Earnings Functions. Testing for the Demand Side</span>. <em data-astro-cid-oer3kof4>Economics Letters</em>, <strong data-astro-cid-oer3kof4>19</strong>, 281–285.</span></li><li id="bib13" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Hartog, J (1986). <span data-astro-cid-oer3kof4>Earnings Functions. Beyond Human Capital</span>. <em data-astro-cid-oer3kof4>Applied Economics</em>, <strong data-astro-cid-oer3kof4>18</strong>, 1291–1309.</span></li><li id="bib14" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mincer, J (1958). <span data-astro-cid-oer3kof4>Investment in Human Capital and Personal Income Distribution</span>. <em data-astro-cid-oer3kof4>Journal of Political Economy</em>, <strong data-astro-cid-oer3kof4>66</strong>, 281–302.</span></li><li id="bib15" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Mincer, J (1974). <em data-astro-cid-oer3kof4>Schooling, Experience and Earnings</em>. New York: Columbia University Press.</span></li><li id="bib16" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Oaxaca, RL (1973). <span data-astro-cid-oer3kof4>Male-Female Wage Differentials in Urban Labor Markets</span>. <em data-astro-cid-oer3kof4>International Economic Review</em>, <strong data-astro-cid-oer3kof4>14</strong>, 693–709.</span></li><li id="bib17" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Orcutt, GH (1957). <span data-astro-cid-oer3kof4>A new type of socio-economic system</span>. <em data-astro-cid-oer3kof4>Review of Economics and Statistics</em>, <strong data-astro-cid-oer3kof4>80</strong>, 1081–1100.</span></li><li id="bib18" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Paes de Barros, R (1999). <em data-astro-cid-oer3kof4>Evaluando el Impacto de Cambios en la Estructura Salarial y del Empleo sobre la Distribución de Renta</em>. Rio de Janeiro: IPEA (mimeo).</span></li><li id="bib19" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Paes de Barros, R, Leite, P (1998). <em data-astro-cid-oer3kof4>O Impacto da Liberalizaçao sobre Distribuiçao de Renda no Brasil</em>. Rio de Janeiro: IPEA (mimeo).</span></li><li id="bib20" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Sánchez, MV (2004). <em data-astro-cid-oer3kof4>Rising Inequality and Falling Poverty in Costa Rica’s Agriculture during Trade Reform: A Macro-micro General Equilibrium Analysis</em>. Maastricht: Shaker.</span></li><li id="bib21" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Sánchez, MV, Vos, R (2005). <em data-astro-cid-oer3kof4>Impacto del Tratado de Libre Comercio con Estados Unidos en el crecimiento, la pobreza y la desigualdad en Panamá: Una evaluación ex ante usando un modelo de equilibrio general computable dinámico. Project Report prepared for Panama’s government</em>. Impacto del Tratado de Libre Comercio con Estados Unidos en el crecimiento, la pobreza y la desigualdad en Panamá: Una evaluación ex ante usando un modelo de equilibrio general computable dinámico. Project Report prepared for Panama’s government.</span></li><li id="bib22" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Sánchez, MV, Vos, R (2006). <span data-astro-cid-oer3kof4>Impacto del CAFTA en el crecimiento, la pobreza y la desigualdad en Nicaragua</span>.</span></li><li id="bib23" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Sattinger, M (1993). <span data-astro-cid-oer3kof4>Assignment Models of the Distribution of Earnings</span>. <em data-astro-cid-oer3kof4>Journal of Economic Literature</em>, <strong data-astro-cid-oer3kof4>31</strong>, 831–880.</span></li><li id="bib24" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Savard, L (2003). <em data-astro-cid-oer3kof4>Poverty and Income Distribution in a CGE-Household Micro-Simulation Model: Top-Down/Bottom Up Approach</em>. Dakar: International Development Research Centre (IDRC).</span></li><li id="bib25" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Vos, R, De Jong, N (2001). <em data-astro-cid-oer3kof4>Rising Inequality during Economic Liberalization and Crisis: Macro or Micro Causes in Ecuador’s Case?. Working Paper Series No. 326</em>. Rising Inequality during Economic Liberalization and Crisis: Macro or Micro Causes in Ecuador’s Case?. Working Paper Series No. 326.</span></li><li id="bib26" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (1000). <em data-astro-cid-oer3kof4>Economic liberalisation, distribution and poverty. Latin America in the 1990s</em>. Cheltenham (UK), Northampton (US): Edward Elgar.</span></li><li id="bib27" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Vos, R, Ganuza, E, Morley, S, Robinson, S (2006). <em data-astro-cid-oer3kof4>Who Gains from Free Trade? Export-led-Growth, Inequality and Poverty in Latin America</em>. London: Routledge.</span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Rob Vos</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>United Nations Department of Economic and Social Affairs, United States</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:vos@un.org" data-astro-cid-m3fa5h5a>vos@un.org</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Marco V. Sánchez</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>United Nations Department of Economic and Social Affairs, United States</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:sanchez-cantillo@un.org" data-astro-cid-m3fa5h5a>sanchez-cantillo@un.org</a></p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00021" data-astro-cid-m3fa5h5a>Version of Record published: June 30, 2010 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2010, Vos and Sánchez</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/methodology" data-pagefind-filter="Research category:Methodology" data-astro-cid-m3fa5h5a>Methodology</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/taxes-benefits" data-pagefind-filter="Research category:Taxes and benefits" data-astro-cid-m3fa5h5a>Taxes and benefits</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

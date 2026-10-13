@@ -1,0 +1,22 @@
+TY  - JOUR
+TI  - A fine grained hybrid spatial microsimulation technique for generating detailed synthetic individuals from multiple data sources: An application to walking and cycling
+AU  - Philips, Ian
+AU  - Clarke, Graham
+AU  - Watling, David
+VL  - 10
+IS  - 1
+PY  - 2017
+DA  - 2017/04/30
+SP  - 167-200
+C1  - IJM 2017;10(1):167-200
+DO  - 10.34196/ijm.00153
+UR  - https://doi.org/10.34196/ijm.00153
+AB  - We propose a hybrid static spatial microsimulation technique that combines simulated annealing and synthetic reconstruction (Monte-Carlo sampling), in order to generate a synthetic population of individuals as part of a model-based policy indicator. We focus on the following case: (i) the model must produce outputs at a fine spatial resolution; (ii) the individuals have many attributes the majority of which are found in an available micro-data survey, though some attributes are missing and need to be added from other sources. The hybrid method proposed uses simulated annealing to simulate the majority of the required attributes, and Monte-Carlo sampling to add the missing attributes. our paper expands the range of techniques which could produce this type of model. We test the hybrid technique on a UK example estimating the capability of individuals to make journeys by walking and cycling, in order to produce a novel indicator of resilience to the disruption of fuel availability. Additionally, the staged approach means that the intermediate steps in the spatial microsimulation modelling process generate data on bicycle availability and the need to escort children during commuting that are useful in their own right.
+KW  - spatial microsimulation
+KW  - walking
+KW  - cycling
+KW  - transport resilience
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

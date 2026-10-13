@@ -1,0 +1,690 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Figures and data in A more efficient sampling procedure, using loaded probabilities | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00065/figures"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.figures-page__summary[data-astro-cid-uy5dlehv]{color:var(--color-ink-muted);margin-block-end:var(--space-m)}@media (width>=75em){.article-content-grid[data-astro-cid-uy5dlehv]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-astro-cid-uy5dlehv><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/methodology" data-astro-cid-ak4gb66a>Methodology</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Jun 30, 2012</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>A more efficient sampling procedure, using loaded probabilities</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>J Richard Cumpston</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>JR Cumpston Pty Ltd, Australia</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/5-1/volume-5-1-spring-2012" data-astro-cid-ak4gb66a>Volume 5(1) Spring 2012</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> J. Cumpston; 2012; <span data-astro-cid-ak4gb66a>A more efficient sampling procedure, using loaded probabilities</span>; International Journal of Microsimulation; 5(1); 21–30. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00065" data-astro-cid-ak4gb66a>10.34196/ijm.00065</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>All-case simulation, where demographic outcomes are simulated for each person each simulation cycle, has been used in almost every national household microsimulation model. This paper suggests the use of simulation by stratified sampling with loaded probabilities. This suggestion is intended to provide faster simulations, particularly when using simulation cycle times much shorter than a year. The paper derives optimal formulas for draw numbers and loaded probabilities, and uses stochastic simulations to show that sampling with loaded probabilities gives similar results to all-case simulation. Tests with a microsimulation model of 175,000 Australians show that sampling with loaded probabilities can reduce run times with yearly cycles by about 43%, and run times with weekly cycles by about 98%. A 50-year demographic projection took 34 seconds with a yearly cycle, and 54 seconds with a weekly cycle. Event numbers and standard deviations are comparable with those expected from risk profiles. The paper concludes that sampling with loaded probabilities is theoretically valid, can be much quicker than all-case simulation, and does give similar estimates. Potential applications are for large models, or those with short simulation cycles.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00065/ijm-00065.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00065.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00065.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-uy5dlehv><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00065" class="view-tabs__link" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00065/figures" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#figures" data-astro-cid-twdwaz5s>Figures</a></li><li data-astro-cid-twdwaz5s><a href="#tables" data-astro-cid-twdwaz5s>Tables</a></li></ul></details></div><div class="article-content" data-astro-cid-uy5dlehv><p class="figures-page__summary" data-astro-cid-uy5dlehv>This article contains 2 figures and 12 tables.</p><details id="figures" class="article-section article-section--collapsible" open data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Figures</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00065-fig1.iDZYWLDc_lCsxW.webp" class="figure-lightbox-trigger" data-pswp-width="1548" data-pswp-height="930" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00065-fig1.iDZYWLDc_lCsxW.webp" alt width="1548" height="930" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Run times with varying simulation cycles.</span></figcaption></figure><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00065-fig2.CF1NgY9a_Z8OW4r.webp" class="figure-lightbox-trigger" data-pswp-width="1601" data-pswp-height="961" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00065-fig2.CF1NgY9a_Z8OW4r.webp" alt width="1601" height="961" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Run times with one cycle per year.</span></figcaption></figure></div></details><details id="tables" class="article-section article-section--collapsible" data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Tables</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Number of draws to give maximum loaded probability of 1.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="2">Number in pool</th>
+<th/>
+<th/>
+<th>maximum</th>
+<th>unloaded</th>
+<th>probability</th>
+<th/>
+</tr>
+<tr><td>0.01</td>
+<td>0.02</td>
+<td>0.05</td>
+<td>0.1</td>
+<td>0.2</td>
+<td>0.5</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>10</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>7</td>
+</tr>
+<tr>
+<td>100</td>
+<td>2</td>
+<td>3</td>
+<td>6</td>
+<td>11</td>
+<td>23</td>
+<td>69</td>
+</tr>
+<tr>
+<td>1,000</td>
+<td>11</td>
+<td>21</td>
+<td>52</td>
+<td>106</td>
+<td>224</td>
+<td>693</td>
+</tr>
+<tr>
+<td>10,000</td>
+<td>101</td>
+<td>203</td>
+<td>513</td>
+<td>1,054</td>
+<td>2,232</td>
+<td>6,932</td>
+</tr>
+<tr>
+<td>100,000</td>
+<td>1,006</td>
+<td>2,021</td>
+<td>5,130</td>
+<td>10,536</td>
+<td>22,315</td>
+<td>69,315</td></tr></tbody>
+</table></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Simulated event numbers with pools chosen to produce 500 events.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Number low risk persons</th>
+<th>Low risk rate</th>
+<th>Number high risk persons</th>
+<th>High risk rate</th>
+<th>Expected number of events</th>
+<th>Mean number from 10,000 trials</th>
+<th>Standard deviation from 10,000 trials</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2,500</td>
+<td>0.1</td>
+<td>500</td>
+<td>0.5</td>
+<td>500</td>
+<td>499.92</td>
+<td>.16</td>
+</tr>
+<tr>
+<td>1,250</td>
+<td>0.2</td>
+<td>500</td>
+<td>0.5</td>
+<td>500</td>
+<td>500.12</td>
+<td>.14</td>
+</tr>
+<tr>
+<td>833</td>
+<td>0.3</td>
+<td>500</td>
+<td>0.5</td>
+<td>500</td>
+<td>499.88</td>
+<td>.12</td>
+</tr>
+<tr>
+<td>625</td>
+<td>0.4</td>
+<td>500</td>
+<td>0.5</td>
+<td>500</td>
+<td>500.03</td>
+<td>.10</td>
+</tr>
+<tr>
+<td>500</td>
+<td>0.5</td>
+<td>500</td>
+<td>0.5</td>
+<td>500</td>
+<td>500.00</td>
+<td>.09</td>
+</tr></tbody>
+</table></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Table Draws needed to simulate the deaths in a year 175,000 Australians.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Age group</th>
+<th>Persons in group</th>
+<th>Average mortality rate</th>
+<th>Expected deaths</th>
+<th>Maximum mortality rate</th>
+<th>Draws</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0-</td>
+<td>36,441</td>
+<td>0.00040</td>
+<td>14.5</td>
+<td>0.00453</td>
+<td>166</td>
+</tr>
+<tr>
+<td>15-</td>
+<td>23,593</td>
+<td>0.00060</td>
+<td>14.1</td>
+<td>0.00113</td>
+<td>27</td>
+</tr>
+<tr>
+<td>25-</td>
+<td>25,575</td>
+<td>0.00087</td>
+<td>22.1</td>
+<td>0.00138</td>
+<td>36</td>
+</tr>
+<tr>
+<td>35-</td>
+<td>26,810</td>
+<td>0.00123</td>
+<td>33.0</td>
+<td>0.00192</td>
+<td>52</td>
+</tr>
+<tr>
+<td>45-</td>
+<td>24,156</td>
+<td>0.00237</td>
+<td>57.2</td>
+<td>0.00415</td>
+<td>101</td>
+</tr>
+<tr>
+<td>55-</td>
+<td>16,348</td>
+<td>0.00642</td>
+<td>104.9</td>
+<td>0.01315</td>
+<td>217</td>
+</tr>
+<tr>
+<td>65-</td>
+<td>11,852</td>
+<td>0.01826</td>
+<td>216.4</td>
+<td>0.03697</td>
+<td>447</td>
+</tr>
+<tr>
+<td>75-</td>
+<td>7,706</td>
+<td>0.05051</td>
+<td>389.3</td>
+<td>0.10627</td>
+<td>866</td>
+</tr>
+<tr>
+<td>85-</td>
+<td>2,563</td>
+<td>0.18238</td>
+<td>467.4</td>
+<td>0.48496</td>
+<td>1701</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>175,044</td>
+<td>0.00754</td>
+<td>1,319.0</td>
+<td/>
+<td>3,613</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Areas, person types and age groups used to form pools.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="center">Area code</th>
+<th align="center">Area name</th>
+<th align="center">Person type code</th>
+<th align="center">Person type</th>
+<th align="center">Age code</th>
+<th align="center">Age group</th></tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>NSW</td>
+<td>1</td>
+<td>Partner</td>
+<td>1</td>
+<td>0–14</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Victoria</td>
+<td>2</td>
+<td>Lone parent</td>
+<td>2</td>
+<td>15–24</td></tr>
+<tr>
+<td>3</td>
+<td>Queensland</td>
+<td>3</td>
+<td>Child</td>
+<td>3</td>
+<td>25–34</td></tr>
+<tr>
+<td>4</td>
+<td>SA</td>
+<td>4</td>
+<td>Related person</td>
+<td>4</td>
+<td>35–44</td></tr>
+<tr>
+<td>5</td>
+<td>WA</td>
+<td>5</td>
+<td>Unrelated person</td>
+<td>5</td>
+<td>45–54</td></tr>
+<tr>
+<td>6</td>
+<td>Tasmania</td>
+<td>6</td>
+<td>Lone person</td>
+<td>6</td>
+<td>55–54</td></tr>
+<tr>
+<td>7</td>
+<td>NT</td>
+<td>7</td>
+<td>Group member</td>
+<td>7</td>
+<td>65–74</td></tr>
+<tr>
+<td>8</td>
+<td>ACT</td>
+<td>8</td>
+<td>Non-private resident</td>
+<td>8</td>
+<td>75–84</td></tr>
+<tr>
+<td/>
+<td/>
+<td/>
+<td/>
+<td>9</td>
+<td>85-</td></tr>
+</tbody></table></div></figure><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Mean run times in seconds to simulate 175,000 Australians for a year.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Cycles per year</th>
+<th>All-case trials seconds</th>
+<th>All-case fitted seconds</th>
+<th>Loaded trials seconds</th>
+<th>Loaded fitted seconds</th>
+<th>Loaded trials as % of all-case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>1.13</td>
+<td>1.58</td>
+<td>0.64</td>
+<td>0.66</td>
+<td>57%</td>
+</tr>
+<tr>
+<td>4</td>
+<td>4.10</td>
+<td>4.14</td>
+<td>0.67</td>
+<td>0.68</td>
+<td>16%</td></tr>
+<tr>
+<td>12</td>
+<td>11.37</td>
+<td>10.98</td>
+<td>0.75</td>
+<td>0.73</td>
+<td>7%</td>
+</tr>
+<tr>
+<td>26</td>
+<td>23.29</td>
+<td>22.94</td>
+<td>0.83</td>
+<td>0.82</td>
+<td>4%</td>
+</tr>
+<tr>
+<td>52</td>
+<td>44.90</td>
+<td>45.15</td>
+<td>0.98</td>
+<td>0.97</td>
+<td>2%</td>
+</tr>
+<tr>
+<td>365</td>
+<td/>
+<td/>
+<td>2.88</td>
+<td>2.88</td>
+<td/>
+</tr></tbody></table></div></figure><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Run times in seconds for projections up to 50 years.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Projection years</th>
+<th>All-case Yearly</th>
+<th>Loaded Yearly</th>
+<th>Loaded Weekly</th>
+<th>Loaded as% of all case Yearly</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>1</td>
+<td>1.13</td>
+<td>0.64</td>
+<td>0.98</td>
+<td>57%</td></tr>
+<tr><td>10</td>
+<td>11.59</td>
+<td>6.18</td>
+<td>9.81</td>
+<td>53%</td></tr>
+<tr><td>20</td>
+<td>24.28</td>
+<td>12.82</td>
+<td>20.28</td>
+<td>53%</td></tr>
+<tr><td>30</td>
+<td>37.35</td>
+<td>19.72</td>
+<td>31.2</td>
+<td>53%</td></tr>
+<tr><td>40</td>
+<td>51.93</td>
+<td>27.25</td>
+<td>42.51</td>
+<td>52%</td></tr>
+<tr><td>50</td>
+<td>66.32</td>
+<td>34.16</td>
+<td>53.87</td>
+<td>52%</td></tr></tbody>
+</table></div></figure><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Event totals from one-year projections, each event simulated separately (50 run averages).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Expected</th>
+<th>Observed all-case yearly</th>
+<th>Observed loaded yearly</th>
+<th>Observed loaded weekly</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Births</td>
+<td>2,170</td>
+<td>2,179</td>
+<td>2,183</td>
+<td>2,208</td>
+</tr>
+<tr>
+<td>Deaths</td>
+<td>1,372</td>
+<td>1,379</td>
+<td>1,330</td>
+<td>1,370</td>
+</tr>
+<tr><td>Emigrants</td>
+<td>2,284</td>
+<td>2,280</td>
+<td>2,251</td>
+<td>2,275</td>
+</tr>
+<tr>
+<td>Exits</td>
+<td>6,254</td>
+<td>6,441</td>
+<td>6,203</td>
+<td>6,592</td>
+</tr>
+<tr>
+<td>Moves</td>
+<td>12,468</td>
+<td>12,411</td>
+<td>12,330</td>
+<td>12,364</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table8" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 8.</strong><span data-astro-cid-dzaleqsp> Event totals from one-year projections, all events simulated together.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Expected</th>
+<th>Observed all-case yearly</th>
+<th>Observed loaded yearly</th>
+<th>Observed loaded weekly</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Births</td>
+<td>2,170</td>
+<td>2,175</td>
+<td>2,182</td>
+<td>2,232</td>
+</tr>
+<tr>
+<td>Deaths</td>
+<td>1,372</td>
+<td>1,375</td>
+<td>1,335</td>
+<td>1,375</td>
+</tr>
+<tr>
+<td>Emigrants</td>
+<td>2,284</td>
+<td>2,282</td>
+<td>2,263</td>
+<td>2,304</td>
+</tr>
+<tr>
+<td>Exits</td>
+<td>6,254</td>
+<td>6,333</td>
+<td>6,075</td>
+<td>6,611</td>
+</tr>
+<tr>
+<td>Moves</td>
+<td>12,468</td>
+<td>13,418</td>
+<td>13,210</td>
+<td>12,826</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table9" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 9.</strong><span data-astro-cid-dzaleqsp> Table one-year projections, with events in normal & reverse order (50 run averages).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="2">Event</th>
+<th colspan="3">Yearly</th>
+<th colspan="3">Weekly</th>
+</tr>
+<tr>
+<th>normal order</th>
+<th>reverse order</th>
+<th>change in year</th>
+<th>normal order</th>
+<th>reverse order</th>
+<th>change in year</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Births</td>
+<td>2,182</td>
+<td>2,243</td>
+<td>61</td>
+<td>2,232</td>
+<td>2,224</td>
+<td>-8</td></tr>
+<tr><td>Deaths</td>
+<td>1,335</td>
+<td>1,331</td>
+<td>-4</td>
+<td>1,375</td>
+<td>1,378</td>
+<td>3</td></tr>
+<tr><td>Emigrants</td>
+<td>2,263</td>
+<td>2,308</td>
+<td>45</td>
+<td>2,304</td>
+<td>2,311</td>
+<td>7</td></tr>
+<tr><td>Exits</td>
+<td>6,075</td>
+<td>6,540</td>
+<td>465</td>
+<td>6,611</td>
+<td>6,615</td>
+<td>4</td></tr>
+<tr><td>Moves</td>
+<td>13,210</td>
+<td>12,323</td>
+<td>-887</td>
+<td>12,826</td>
+<td>12,819</td>
+<td>-7</td></tr>
+</tbody>
+</table></div></figure><figure id="table10" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 10.</strong><span data-astro-cid-dzaleqsp> 50-year projections with yearly cycles (10 run averages).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Event/persons at end</th>
+<th>All-case yearly mean</th>
+<th>All-case yearly SD</th>
+<th>Loaded yearly mean</th>
+<th>Loaded yearly SD</th>
+<th>Loaded as % of all-case</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Births</td>
+<td>102,831</td>
+<td>541</td>
+<td>101,611</td>
+<td>516</td>
+<td>98.8%</td>
+</tr>
+<tr>
+<td>Deaths</td>
+<td>92,205</td>
+<td>127</td>
+<td>91,924</td>
+<td>130</td>
+<td>99.7%</td>
+</tr>
+<tr>
+<td>Emigrants</td>
+<td>123,775</td>
+<td>186</td>
+<td>123,024</td>
+<td>232</td>
+<td>99.4%</td>
+</tr>
+<tr>
+<td>Exits</td>
+<td>355,304</td>
+<td>891</td>
+<td>347,052</td>
+<td>746</td>
+<td>97.7%</td>
+</tr>
+<tr>
+<td>Moves</td>
+<td>797,511</td>
+<td>1,716</td>
+<td>778,254</td>
+<td>937</td>
+<td>97.6%</td>
+</tr>
+<tr>
+<td>Persons at end</td>
+<td>226,755</td>
+<td>488</td>
+<td>226,566</td>
+<td>504</td>
+<td>99.9%</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table11" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 11.</strong><span data-astro-cid-dzaleqsp> Standard deviations for one-year projections (based on 50 runs).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th rowspan="2">Event</th>
+<th>All-case Yearly</th>
+<th>All-case Yearly</th>
+<th>Loaded Yearly</th>
+<th>Loaded Yearly</th>
+<th>Loaded weekly</th>
+<th>Loaded weekly</th>
+</tr>
+<tr>
+<th>Expected</th>
+<th>Observed</th>
+<th>Expected</th>
+<th>Observed</th>
+<th>Expected</th>
+<th>Observed</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Births</td>
+<td>43.8</td>
+<td>38.6</td>
+<td>43.6</td>
+<td>38.7</td>
+<td>43.5</td>
+<td>52.8</td>
+</tr>
+<tr>
+<td>Deaths</td>
+<td>35.4</td>
+<td>32.7</td>
+<td>28.0</td>
+<td>29.9</td>
+<td>31.7</td>
+<td>32.2</td>
+</tr>
+<tr>
+<td>Emigrants</td>
+<td>47.3</td>
+<td>38.6</td>
+<td>26.2</td>
+<td>35.6</td>
+<td>36.5</td>
+<td>42.8</td>
+</tr>
+<tr>
+<td>Exits</td>
+<td>73.7</td>
+<td>67.6</td>
+<td>33.2</td>
+<td>39.8</td>
+<td>54.7</td>
+<td>59.6</td>
+</tr>
+<tr>
+<td>Moves</td>
+<td>98.3</td>
+<td>99.7</td>
+<td>10.3</td>
+<td>18.9</td>
+<td>50.0</td>
+<td>55.1</td>
+</tr></tbody></table></div></figure><figure id="table12" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 12.</strong><span data-astro-cid-dzaleqsp> Observed coefficients of variation for one-year projections (based on 50 runs).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Event</th>
+<th>All-case Yearly</th>
+<th>Loaded yearly</th>
+<th>Loaded weekly</th>
+</tr></thead>
+<tbody>
+<tr><td>Births</td>
+<td>0.018</td>
+<td>0.018</td>
+<td>0.024</td></tr>
+<tr><td>Deaths</td>
+<td>0.024</td>
+<td>0.022</td>
+<td>0.023</td></tr>
+<tr><td>Emigrants</td>
+<td>0.017</td>
+<td>*0.016</td>
+<td>0.019</td></tr>
+<tr><td>Exits</td>
+<td>0.011</td>
+<td>0.007</td>
+<td>0.009</td></tr>
+<tr><td>Moves</td>
+<td>0.007</td>
+<td>0.001</td>
+<td>0.004</td></tr>
+</tbody>
+</table></div></figure></div></details></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/figures.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

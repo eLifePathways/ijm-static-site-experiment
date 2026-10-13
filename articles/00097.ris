@@ -1,0 +1,21 @@
+TY  - JOUR
+TI  - Microsimulation model projecting small area populations using contextual variables: An application to the Montreal metropolitan area, 2006–2031
+AU  - Marois, Guillaume
+AU  - Bélanger, Alain
+VL  - 7
+IS  - 1
+PY  - 2014
+DA  - 2014/04/30
+SP  - 158-193
+C1  - IJM 2014;7(1):158-193
+DO  - 10.34196/ijm.00097
+UR  - https://doi.org/10.34196/ijm.00097
+AB  - A common difficulty faced when projecting small area populations has to do with the implementation of local factors which highly influence local population growth. This problem is particularly important when simulating events that have a strong geographic component, such as internal migration, and destination choice of external migrants. This paper is part of a larger research program that aims at developing a dynamic time-based microsimulation projection model of the population of the Montreal metropolitan area and its 79 municipalities, by age, sex, and language. It presents an innovative treatment of migration by taking into consideration previous changes in local conditions when determining mobility and destination choices. Municipalities are first divided into two categories, suburban and the central city, to compute location-specific probabilities of moving by age, language and place of birth. Then, the destination choice of movers is based on a utility function that accounts for five important determinants of residential choice: (1) the distance from the central city, (2) the current size of the population of each municipality, (3) the municipality development potential, (4) the linguistic composition of its population, and (5) the geographical location. A similar function is estimated to allocate a place of residence to external migrants. Parameters are estimated using conditional logistic regressions and are implemented into the microsimulation model. The model is validated over the 2006–2011 period and results of the reference scenario presented for 2031.
+KW  - small area population projections
+KW  - microsimulation
+KW  - urban and regional planning
+KW  - Montreal Canada
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

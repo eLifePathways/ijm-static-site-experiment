@@ -1,0 +1,1811 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Microreg: A traditional tax-benefit microsimulation model extended to indirect taxes and in-kind transfers | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00148"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00148" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/taxes-benefits" data-astro-cid-ak4gb66a>Taxes and benefits</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Apr 30, 2017</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Microreg: A traditional tax-benefit microsimulation model extended to indirect taxes and in-kind transfers</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>M Luisa Maitino, Letizia Ravagli, Nicola Sciclone</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>IRPET (Regional Institute for Economic Planning of Tuscany), Italy</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/10-1/volume-10-1-spring-2017" data-astro-cid-ak4gb66a>Volume 10(1) Spring 2017</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> M. Maitino, L. Ravagli, N. Sciclone; 2017; <span data-astro-cid-ak4gb66a>Microreg: A traditional tax-benefit microsimulation model extended to indirect taxes and in-kind transfers</span>; International Journal of Microsimulation; 10(1); 5–38. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00148" data-astro-cid-ak4gb66a>10.34196/ijm.00148</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>MicroReg is a tax-benefit microsimulation model, developed by IRPET (Regional Institute for Economic Planning in Tuscany), able to simulate the main fiscal policies for all the Italian Regions. The model is based on the EUROSTAT Survey on Income and Living Conditions (EU-SILC). In its traditional version MicroReg can simulate direct taxes and in-cash transfers, but recently it was extended in two directions. The first extension aims at adding indirect taxes to simulated tax policies, thanks to a statistical matching between EU-SILC and the Italian Household Budget Survey by Istat (National Institute of Statistics (Italy)). To improve the matching, an estimation of the level of expenditure for each EU-SILC household is added to the variables on which the matching is conditioned, by applying the relation between consumption and income estimated on the Bank of Italy Survey of Households Income and Wealth. The second extension aims at including in-kind transfers, in health and education and in household disposable income. The monetary value of in-kind transfers is estimated with the public cost of production by using national and regional administrative data. The allocation of benefits among individuals is done by following the so called "actual consumption approach", both for health and education. This paper describes MicroReg, focusing on the new extensions, and the results of an application to assess the distributive effects of fiscal policies introduced in the last few years in Italy, both on the revenue and on the expenditure side.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00148/ijm-00148.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00148.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00148.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00148" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00148/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. The model structure</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. Extensions of the model</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. An application of the extended model</a></li><li data-astro-cid-twdwaz5s><a href="#footnotes" data-astro-cid-twdwaz5s>Footnotes</a></li><li data-astro-cid-twdwaz5s><a href="#A1" data-astro-cid-twdwaz5s>Appendix</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>MicroReg is a static microsimulation model, developed by IRPET (Regional Institute for Economic Planning in Tuscany) for the Region of Tuscany, which is able to simulate the main fiscal policies for all the Italian Regions. Static models usually measure the short run impact of policies, by comparing households’ income under the actual legislation and the one resulting from reform policies. In comparing the two scenarios no changes in the structure of the population or in the behavior of agents are contemplated. Compared to previous versions of the model (<a href="#bib4">Betti <i>et al</i>., (2012)</a>, <a href="#bib16">Maitino &amp; Sciclone (2008)</a>), the one described in this paper adds two new modules to the traditionally simulated policies (i.e. direct taxes and in-cash transfers), namely indirect taxation and in-kind transfers (in health and education)<sup><a href="#fn1">1</a></sup>. MicroReg is now, therefore, able to assess the regional impact of public policies as a whole, considering both revenues and expenditures. This paper is structured in three sections. The first presents the model structure. The second section describes the new modules, indirect taxes and in-kind transfers. Finally, a section concludes by presenting an application of the extended model.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. The model structure</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The model is divided in three phases: i) the choice of micro-data and the imputation of missing information, namely gross income and cadastral value, ii) the calibration of sample weights, iii) the validation of results.</p><section id="s2-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.1 The choice of micro-data and the imputation of missing information</h3><p data-astro-cid-qsyhzaho>The first phase of a microsimulation model is the choice of micro-data. In Italy many microsimulation models use the Survey on Household Income and Wealth of Bank of Italy (SHIW), which provides accurate information on income and household wealth<sup><a href="#fn2">2</a></sup>. MicroReg uses the EUROSTAT Survey on Income and Living Conditions (EU-SILC), since it is more representative at regional level with respect to SHIW. In this paper we describe the model built on EU-SILC 2013 (year of income 2012). However, some important information is missing in EU-SILC. Indeed, gross income and cadastral value of buildings need to be estimated.</p><section id="s2-1-1" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">2.1.1 The grossing-up procedure</h4><p data-astro-cid-qsyhzaho>The conversion of net to gross income can be done in different ways (<a href="#bib14">Immervoll &amp; O'Donoghue, 2001</a>, <a href="#bib21">Sutherland, 2001</a>). A first solution is to estimate a coefficient of conversion from net to gross income in a data set where both the information are available (usually for a subset of individuals). A second solution calculates the gross income for each net income in the sample, through an analytical inversion of all existing taxes in the year in which net income is detected. The third solution is based on an iterative algorithm. For each individual in the sample, the procedure estimates a gross income starting from the original net income. Fiscal rules are then applied to the estimated gross income in order to get an estimated net income. The latter is compared with the original one. If the two values are similar with a certain margin of error, the estimated gross income is considered a good approximation; otherwise the procedure iteratively corrects the algorithm.</p><p data-astro-cid-qsyhzaho>MicroReg uses the third approach and, in particular, a variant of the algorithm used for EUROMOD, the microsimulation model for EU member states. The net income used is the sum of several sources of taxable income for personal income tax (PIT): net individual income of employees, net income from self-employment, net income from retirement, survivor's pension, disability pension (excluding war pension), net income from redundancy funds, unemployment benefits, mobility or early retirement and net income from scholarships. Incomes from land and buildings are not included since they are considered already gross. Other incomes are excluded because they are not taxable for PIT such as healthcare liquidations, insurance and pension arrears. The iterative procedure is similar to the one described in <a href="#bib14">Immervol and O’Donoghue (2001)</a>. At the first iteration an arbitrarily fixed average tax rate equal to 0.22 is applied to each net income to obtain an estimation of gross income. By applying fiscal rules to the estimated gross income an estimated net income is obtained. Then, the estimated net income is compared with the true one. When the difference is higher with respect to a certain margin of error the procedure continues—by iterating–to a new estimation of gross income, by properly correcting the initial tax rate. The procedure stops when for all sample individuals the difference between the original value and estimated net income is less than 10 euro. When the algorithm does not converge after a certain number of iterations, the procedure starts with a different value of the initial rate, randomly drawn from a uniform distribution defined in the range 0–1.</p></section><section id="s2-1-2" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">2.1.2 The estimation of cadastral values</h4><p data-astro-cid-qsyhzaho>The total gross income for PIT should include incomes from land and buildings (such as rents and cadastral values of properties). EU-SILC collects only rental income but lacks the cadastral value of properties. The only available information is the total tax paid on buildings (IMU), without distinction between the dwelling house and the others. Therefore, before estimating the cadastral value we need an allocation of the total tax paid between the two components, the dwelling house and the other buildings. Then we can apply fiscal rules to estimate cadastral values.</p><p data-astro-cid-qsyhzaho>In MicroReg the allocation of the total property tax into the two components is made by using the official data on the tax paid for the dwelling house registered by the Ministry of Finance (MEF). In details, the estimation is made in the following three steps:</p><ol data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The first step in the model makes an initial split of the total tax with the following criteria:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>If the individual is the owner of the dwelling house and does not own other buildings then the tax is considered paid only for the dwelling house.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>If the individual does not own neither, the dwelling house nor other buildings, the tax is considered paid only for other buildings.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>If the individual does not own the dwelling house but only other buildings the tax is considered paid only for other buildings.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>If the individual claims to own both, the dwelling house and other buildings, the tax is initially divided in two equal parts. This is only an initial division that can change in the second part of the procedure.</p></li></ul></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In the second step the tax paid for the dwelling house is estimated as follows. From the total tax paid for dwelling houses resulting from MEF, the tax paid for dwelling houses imputed in the first step to individuals of criteria (a) is subtracted. The resulting amount is used to bind the tax paid for dwelling houses imputed in the first step to individuals of criteria (d). After this step the initial division of the total tax paid of individual of criteria (d) is corrected according to real data.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In the last step the tax paid for the other buildings is estimated for each individual, with the difference between the total tax paid declared in EU-SILC and the tax paid for the dwelling house previously estimated<sup><a href="#fn3">3</a></sup>.</p></li></ol><p data-astro-cid-qsyhzaho>After having obtained the two components fiscal rules can be inversely applied. Rates, as well as deductions, are regional averages of municipal rates.</p><div id="eqn1" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(1)</span><math><mrow><mtext>Cadastral value dwelling house</mtext><mtext> </mtext><mtext>=</mtext><mfrac><mrow><msub><mrow><mtext>(Tax paid</mtext></mrow><mrow><mtext>i,r</mtext></mrow></msub><mo>+</mo><msub><mrow><mtext>Tax credit</mtext></mrow><mrow><mtext>i,r</mtext></mrow></msub><msub><mrow><mtext>+Tax credit for children</mtext></mrow><mrow><mi>i</mi><mo>,</mo><mi>r</mi></mrow></msub><mo stretchy="false">)</mo></mrow><mrow><msub><mrow><mtext>rate_main residence</mtext></mrow><mrow><mtext>i,r</mtext></mrow></msub><mtext>*1,05 *160</mtext></mrow></mfrac></mrow></math></div><div id="eqn2" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(2)</span><math><mrow><mtext>Cadastral value other buildings</mtext><mtext> </mtext><mtext> </mtext><mtext>=</mtext><mtext> </mtext><mfrac><mrow><msub><mrow><mtext>Tax paid</mtext></mrow><mrow><mtext>i,r</mtext></mrow></msub></mrow><mrow><msub><mrow><mtext>rate_other buildings</mtext></mrow><mrow><mtext>i,r</mtext></mrow></msub><mtext>*1,05 *160</mtext></mrow></mfrac></mrow></math></div><p data-astro-cid-qsyhzaho>i=1,...n individuals; r=1,..K Regions</p><p data-astro-cid-qsyhzaho>In order to validate the estimation of cadastral value, <a href="#table1">Table 1</a> and <a href="#table2">Table 2</a> compare MicroReg results with official statistics when available. As expected, for what concerns the dwelling house MicroReg gives satisfactory results. Tax revenue from the dwelling house is obviously similar with respect to the official tax paid registered by the MEF, given that our estimation procedure is bound exactly to that value<sup><a href="#fn4">4</a></sup>. The tax paid (and the tax base) simulated by our model isclose to the estimation made by <a href="#bib9">Dipartimento delle Finanze and Agenzia del Territorio (2012)</a><sup><a href="#fn5">5</a></sup>.</p><p data-astro-cid-qsyhzaho>The validation for other buildings cannot be done by using MEF official statistics that include the tax paid from legal entities. The comparison can instead be made with data registered in <a href="#bib9">Dipartimento delle Finanze and Agenzia del Territorio (2012)</a>, which distinguishes between individuals and legal entities. Both the tax base and the tax revenue are under-estimated in MicroReg with respect to official data by <a href="#bib9">Dipartimento delle Finanze and Agenzia del Territorio (2012)</a>. However, it is worth noting that official data include buildings owned by individuals used for productive reasons that can be under-reported in EU-SILC.</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Validation of the estimation of cadastral value and IMU – billion euro.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">Tax base (cadastral value)</th>
+<th colspan="3">Total tax paid on buildings (IMU)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td/>
+<td>MicroReg</td>
+<td>Dip. Fin. and Agenzia del Territorio</td>
+<td>MicroReg</td>
+<td>Dip. Fin. and Agenzia del Territorio</td>
+<td>MEF</td></tr>
+<tr><td>Dwelling house</td>
+<td align="center">11.6</td>
+<td align="center">11.4</td>
+<td align="center">3.8</td>
+<td align="center">3.3</td>
+<td align="center">4.0</td></tr>
+<tr><td>Other buildings</td>
+<td align="center">5.2</td>
+<td align="center">9.3</td>
+<td align="center">6.5</td>
+<td align="center">9.3</td>
+<td align="center">19.7</td></tr>
+<tr><td><b>Total</b></td>
+<td align="center"><b>16.7</b></td>
+<td align="center"><b>20.7</b></td>
+<td align="center"><b>10.3</b></td>
+<td align="center"><b>12.6</b></td>
+<td align="center"><b>23.7</b></td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: MicroReg, Agenzia del Territorio, Ministry of Finance.</p></div></figure><p data-astro-cid-qsyhzaho>According to our simulation about 52.3% of Italian taxpayers own a dwelling house (<a href="#table2">Table 2</a>). Not surprisingly, as underlined also in <a href="#bib18">Pellegrino <i>et al</i>. (2011)</a>, the value is higher with respect to the one registered by the MEF since taxpayers, who use the “770” form do not have to declare the ownership of the main residence. The average cadastral value of the dwelling house is about 500 euro in MicroReg and 491 euro in MEF. It increases from 415 euro in the first income class to 807 euroin the last, with a similar trend to official data. For what concerns the other buildings the model predicts that about 28.8% of taxpayers has a positive cadastral value. The tax base increases with income classes with a higher rate than the dwelling house.</p><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Distribution of the dwelling house and the other buildings by gross income classes.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th align="center" colspan="2">Dwelling house MicroReg</th>
+<th align="center" colspan="2">Dwelling house MEF</th>
+<th align="center" colspan="2">Other buildings MicroReg</th>
+</tr>
+<tr>
+<th>Gross income classes (euro)</th>
+<th>Households (%) with positive cadastral value</th>
+<th>Mean cadastral value (euro)</th>
+<th>Households (%) with positive cadastral value</th>
+<th>Mean cadastral value (euro)</th>
+<th>Households (%) with positive cadastral value</th>
+<th>Mean cadastral value (euro)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Until 2,500</td>
+<td align="center">31.5</td>
+<td align="center">415</td>
+<td align="center">27.3</td>
+<td align="center">452</td>
+<td align="center">19.5</td>
+<td align="center">374</td></tr>
+<tr><td>2,501 to 5,000</td>
+<td align="center">32.4</td>
+<td align="center">383</td>
+<td align="center">18.4</td>
+<td align="center">432</td>
+<td align="center">17.9</td>
+<td align="center">390</td></tr>
+<tr><td>5,001 to 10,005</td>
+<td align="center">47.3</td>
+<td align="center">448</td>
+<td align="center">26.9</td>
+<td align="center">405</td>
+<td align="center">23.8</td>
+<td align="center">340</td></tr>
+<tr><td>10,006 to 15,000</td>
+<td align="center">48.2</td>
+<td align="center">474</td>
+<td align="center">40.5</td>
+<td align="center">430</td>
+<td align="center">26.7</td>
+<td align="center">379</td></tr>
+<tr><td>15,001 to 26,000</td>
+<td align="center">54.9</td>
+<td align="center">484</td>
+<td align="center">48.4</td>
+<td align="center">445</td>
+<td align="center">27.9</td>
+<td align="center">376</td></tr>
+<tr><td>26,001 to 29,000</td>
+<td align="center">64.5</td>
+<td align="center">535</td>
+<td align="center">59.9</td>
+<td align="center">492</td>
+<td align="center">35.9</td>
+<td align="center">419</td></tr>
+<tr><td>29,001 to 35,000</td>
+<td align="center">66.6</td>
+<td align="center">544</td>
+<td align="center">64.2</td>
+<td align="center">526</td>
+<td align="center">40.3</td>
+<td align="center">480</td></tr>
+<tr><td>35,001 to 50,000</td>
+<td align="center">67.5</td>
+<td align="center">585</td>
+<td align="center">67.8</td>
+<td align="center">592</td>
+<td align="center">41.4</td>
+<td align="center">586</td></tr>
+<tr><td>50,001 to 60,000</td>
+<td align="center">64.9</td>
+<td align="center">647</td>
+<td align="center">69.8</td>
+<td align="center">683</td>
+<td align="center">45.9</td>
+<td align="center">743</td></tr>
+<tr><td>60,001 to 70,000</td>
+<td align="center">71.1</td>
+<td align="center">775</td>
+<td align="center">70.7</td>
+<td align="center">730</td>
+<td align="center">45.9</td>
+<td align="center">626</td></tr>
+<tr><td>70,001 to 100,000</td>
+<td align="center">72.4</td>
+<td align="center">797</td>
+<td align="center">72.0</td>
+<td align="center">796</td>
+<td align="center">53.1</td>
+<td align="center">862</td></tr>
+<tr><td>100,101 to 150,000</td>
+<td align="center">74.2</td>
+<td align="center">750</td>
+<td align="center">72.8</td>
+<td align="center">916</td>
+<td align="center">57.3</td>
+<td align="center">871</td></tr>
+<tr><td>150,001 to 200,000</td>
+<td align="center">82.6</td>
+<td align="center">816</td>
+<td align="center">72.0</td>
+<td align="center">1,056</td>
+<td align="center">65.7</td>
+<td align="center">947</td></tr>
+<tr><td>Over 200,000</td>
+<td align="center">69.9</td>
+<td align="center">807</td>
+<td align="center">69.7</td>
+<td align="center">1,322</td>
+<td align="center">66.4</td>
+<td align="center">1564</td></tr>
+<tr><td>Total</td>
+<td align="center"><b>52.3</b></td>
+<td align="center"><b>501</b></td>
+<td align="center"><b>43.8</b></td>
+<td align="center"><b>491</b></td>
+<td align="center"><b>28.8</b></td>
+<td align="center"><b>435</b></td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: MicroReg and Ministry of Finance.</p></div></figure></section></section><section id="s2-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.2 The calibration</h3><p data-astro-cid-qsyhzaho>This procedure is performed to make estimates of gross income more similar to real data of the MEF and therefore to tackle the problem of tax evasion. Usually in a survey under the guarantee of anonymity, people are more honest than when the counterparty is the tax authority. The calibration binds the original sample weights to the joint distribution of individuals by income class (taken from the MEF) and by socio-demographic variables derived from ISTAT. The total income considered for the calibration is the one used in the grossing up procedure, plus incomes from buildings obtained after the estimation of cadastral values.</p><p data-astro-cid-qsyhzaho>In literature two types of calibration methods can be found: i) independent calibration and ii) integrative calibration. The independent calibration allows calibrating weights with households’ variables independently from individual’s variables. The convergence procedure is generally fast, but it generates different weights for households and individuals. Integrative calibration takes into account households’ and individuals’ variables together. It converges more slowly, but households’ and individuals’ weights are the same (as requested by the European Commission Regulation for the SILC). In MicroReg an integrative calibration is performed with the following constraints: taxpayers by income classes and prevailing source of income; population by age, sex, gender and level of education; population by region of residence and by number of family members.</p></section><section id="s2-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.3 The validation</h3><p data-astro-cid-qsyhzaho>After having imputed missing information (see <a href="#s2-1">Section 2.1</a>) and calibrated sample weights (see <a href="#s2-2">Section 2.2</a>) we simulate all fiscal rules that every taxpayer follows to pay PIT in the following way:</p><ol data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>According to Italian fiscal rules, every taxpayer can deduct the value of the main residence<sup><a href="#fn6">6</a></sup> and other expenses (such as expenditure for disabled family members or for donations) from gross income. Since EU-SILC does not collect detailed information about deductible expenses, we impute their value to each taxpayer by applying a coefficient equal to the ratio between deductions and gross income by gross income classes calculated on official data from the MEF<sup><a href="#fn7">7</a></sup>. Taxable income is then simulated by subtracting deductions from gross income tax for each taxpayer.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Gross PIT is simulated by applying the legal tax rates to the simulated taxable income.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Each taxpayer can subtract different types of tax credits from gross PIT: i) tax credits by income source, ii) tax credits for family members and iii) other tax credits (for health expenditure, housing works, etc.). Tax credits by income source and for family members are simulated in the model since detailed information on income and household components are collected in EU-SILC. The other tax credits, similar to tax deductions, are estimated by applying to each taxpayer a coefficient given by the ratio of tax credits and gross income by gross income classes registered by MEF<sup><a href="#fn8">8</a></sup>.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Finally, the net PIT is simulated by detracting simulated and imputed tax credits from gross PIT. When PIT is positive, regional additional income tax is simulated by applying the different fiscal rules of each region.</p></li></ol><p data-astro-cid-qsyhzaho>In order to validate the model, the results of our simulations are compared with data from the MEF. <a href="#table3">Table 3</a> compares the distribution of the total number of taxpayers by prevailing income source resulting from the model with respect to official statistics. The total number of taxpayers in the model is in line with the real one and the composition is very similar to the one of the MEF. These satisfactory results are expected given that one of the constraints of our calibration procedure (see <a href="#s2-2">Section 2.2</a>) is the distribution of taxpayers by source of income and gross income classes.</p><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Taxpayers by prevailing income source (millions).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th align="center">MicroReg</th>
+<th align="center">MEF</th>
+<th align="center">Diff. (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Employee income</td>
+<td align="center">20.02</td>
+<td align="center">20.02</td>
+<td align="center">0.0</td></tr>
+<tr><td>Retirement income</td>
+<td align="center">14.22</td>
+<td align="center">14.22</td>
+<td align="center">0.0</td></tr>
+<tr><td>Self-employed income</td>
+<td align="center">4.60</td>
+<td align="center">4.60</td>
+<td align="center">0.0</td></tr>
+<tr><td>Other sources of income</td>
+<td align="center">1.69</td>
+<td align="center">1.68</td>
+<td align="center">0.3</td></tr>
+<tr><td><b>Total</b></td>
+<td align="center"><b>40.54</b></td>
+<td align="center"><b>40.53</b></td>
+<td align="center"><b>0.0</b></td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: MicroReg and Ministry of Finance.</p></div></figure><p data-astro-cid-qsyhzaho><a href="#table4">Table 4</a> compares aggregate fiscal amounts simulated by the model with official data from the MEF<sup><a href="#fn9">9</a></sup>. The model is able to simulate quiet gross income, taxable income, gross and net PIT well. A little less accurate is the simulation of tax credits for family members. Results are in line with other microsimulation models. In <a href="#bib6">Ceriani <i>et al</i>. (2016)</a> the model over-estimates gross income by 3% and PIT by 1%. In <a href="#bib18">Pellegrino <i>et al</i>. (2011)</a> the average gross income is 97.5% of the real one. Models that also use administrative data obtain better results. In <a href="#bib8">Di Nicola <i>et al</i>. (2015)</a> a microsimulation model is built on a dataset that matches EU-SILC with administrative data on PIT and real estate datasets. Their results are very close to official statistics,except for municipal taxes, where the difference in amounts between the model and the MEF is lower than 1%.</p><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Validation of the model – income year 2012 (billion euro).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr><th/>
+<th align="center">MicroReg</th>
+<th align="center">MEF</th>
+<th align="center">Diff. (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Gross income</td>
+<td align="center">790.9</td>
+<td align="center">800.4</td>
+<td align="center">−1.2</td></tr>
+<tr><td>Deductions</td>
+<td align="center">23.7</td>
+<td align="center">24.0</td>
+<td align="center">−1.2</td></tr>
+<tr><td>Taxable income</td>
+<td align="center">767.2</td>
+<td align="center">773.6</td>
+<td align="center">−0.8</td></tr>
+<tr><td>Gross PIT</td>
+<td align="center">205.1</td>
+<td align="center">208.2</td>
+<td align="center">−1.5</td></tr>
+<tr><td>Tax credits by income source</td>
+<td align="center">41.5</td>
+<td align="center">41.6</td>
+<td align="center">−0.3</td></tr>
+<tr><td>Family tax credits</td>
+<td align="center">11.7</td>
+<td align="center">11.5</td>
+<td align="center">2.3</td></tr>
+<tr><td>Net PIT</td>
+<td align="center">151.3</td>
+<td align="center">152.3</td>
+<td align="center">−0.6</td></tr>
+<tr><td>Regional additional income tax</td>
+<td align="center">11.0</td>
+<td align="center">11.0</td>
+<td align="center">−0.5</td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: MicroReg and Ministry of Finance.</p></div></figure><p data-astro-cid-qsyhzaho><a href="#fig1">Figure 1</a> shows the density function by gross income classes simulated by MicroReg and registered by MEF<sup><a href="#fn10">10</a></sup>. The overall distribution of gross income simulated by the model is close to the real one with some specific limits. The model under-estimates the number of taxpayers under 1,000 euro and over-estimates between 7,500 and 10,000 euro. The under-estimation in the first class depends on a typical problem of under-reporting on small amounts of income in EU-SILC<sup><a href="#fn11">11</a></sup>. We do not correct for this under-reporting problem since taxpayers under 1,000 euro represents a small part of the total that do not pay PIT. The over-estimation of taxpayers between 7,500 and 10,000 euro is partially offset by a small under-estimation of taxpayers between 6,000 and 7,500 euro.</p><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00148-fig1.DoPC4s8M_Z1XYiwI.webp" class="figure-lightbox-trigger" data-pswp-width="1511" data-pswp-height="818" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00148-fig1.DoPC4s8M_Z1XYiwI.webp" alt width="1511" height="818" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Frequency density function for gross income – income year 2012.</span></figcaption></figure><p data-astro-cid-qsyhzaho><a href="#fig2">Figure 2</a> reports the distribution of taxpayers with positive net PIT by gross income classes<sup><a href="#fn12">12</a></sup>. The distribution of simulated PIT is quite similar with respect to official statistics. The number of taxpayers with positive PIT is 32.3 million in MicroReg against 31.2 million in official data of the MEF.</p><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00148-fig2.Wx14IXvV_2sMWCk.webp" class="figure-lightbox-trigger" data-pswp-width="1670" data-pswp-height="706" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00148-fig2.Wx14IXvV_2sMWCk.webp" alt width="1670" height="706" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Distribution of taxpayers by gross income classes – net PIT – income year 2012.</span></figcaption></figure><p data-astro-cid-qsyhzaho><a href="#table5">Table 5</a> finally shows the main redistributive indexes calculated at the taxpayer level. The pre-tax Gini coefficient is about 0.42. After the PIT the Gini becomes 0.38 with a decreasing of 0.05. The strong redistribution is given by the combination of an average tax rate of 0.19 and a strong progressive tax (Kakwani index of 0.22). As expected, the redistributive effect of regional additional income tax is lower with respect to PIT. Indeed, several regions apply a proportional additional tax and others impose a less progressive system of tax rates than PIT.</p><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Redistributive indexes.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th align="center">PIT</th>
+<th align="center">Regional additional income tax</th>
+<th align="center">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Pre-tax Gini</td>
+<td align="center">0.4234</td>
+<td align="center">0.4234</td>
+<td align="center">0.4234</td></tr>
+<tr><td>Post-tax Gini</td>
+<td align="center">0.3714</td>
+<td align="center">0.4223</td>
+<td align="center">0.3692</td></tr>
+<tr><td>Average tax rate</td>
+<td align="center">0.1913</td>
+<td align="center">0.0139</td>
+<td align="center">0.2051</td></tr>
+<tr><td>Reynolds-Smolensky net redis. effect</td>
+<td align="center">0.052</td>
+<td align="center">0.0011</td>
+<td align="center">0.0543</td></tr>
+<tr><td>Kakwani progressivity index</td>
+<td align="center">0.2223</td>
+<td align="center">0.0769</td>
+<td align="center">0.2125</td></tr>
+<tr><td>Reranking</td>
+<td align="center">0.0005</td>
+<td align="center">0.0000</td>
+<td align="center">0.0006</td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: MicroReg.</p></div></figure></section></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. Extensions of the model</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>MicroReg was recently extended to indirect taxes and in-kind transfers (health and education). Indirect taxes are estimated for all Italian Regions (multi-regional model), while in-kind transfers are quantified only for the Region of Tuscany (for which data is available).</p><section id="s3-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.1 Indirect taxes</h3><p data-astro-cid-qsyhzaho>One of the recent developments of MicroReg is the simulation of indirect taxes after a matching of EU-SILC with a database on consumption. An integrated database can be used with many aims: to analyse saving and consumption behaviour; to study consumption of durable or not durable goods; to make multidimensional analysis of poverty; and to study the impact of fiscal policies.</p><p data-astro-cid-qsyhzaho>Despite the large availability of sample surveys, it does not exist a unique survey which collects information both on income (<i>y</i>) and consumption (<i>z</i> with a minimum level of accuracy and details. Basically, given the variables <i>x,y,z</i>,, where <i>x</i> is a set of households ‘characteristics, the database lacks completely or partially, the joint observation of all three. The only way to integrate the two datasets is to assume that information in <i>x</i> is sufficient to jointly determine both <i>y</i> and <i>z</i>. Literature suggests many solutions to integrate the two datasets (<a href="#bib7">Decoster <i>et al</i>., 2007</a>). Basically, at least two approaches can be distinguished and they are explained in the following.</p><p data-astro-cid-qsyhzaho>One, the so called <i>explicit approach</i>, uses Engel curves to impute expenditure to the income database. According to this approach a regression of each expenditure share variables common to the consumption and the income database (usually disposable income and socio-demographic characteristics) is estimated on the consumption database. Then, the estimated coefficients are applied to records in the income database to impute expenditure shares for each good. An application of this procedure in Italy is in <a href="#bib17">O’Donoghue <i>et al</i>. (2004)</a>. The survey which collects information on income is the SHIW, while the consumption database is the Italian Household Budget Survey (HBS). In the latter a variable on disposable income is collected (even if underestimated), so a regression of total consumption on income and socio-demographic characteristics is estimated. The estimated coefficients are then applied to SHIW to impute total consumption. Budget shares of total consumption are subsequently estimated in HBS trough Engel curves and applied to the imputed total consumption in SHIW. The explicit approach is more recently applied in <a href="#bib22">Taddei (2012)</a>, where the income database is EU-SILC and the consumption one is HBS. The procedure is made in two steps. <a href="#bib22">Taddei (2012)</a> first applies a statistical matching to impute income from EU-SILC to HBS. Once imputed income to HBS by following the explicit approach, it estimates Engel curves to associate to each observation in EU-SILC a vector of budget shares for each consumption good.</p><p data-astro-cid-qsyhzaho>The second approach, called <i>implicit approach</i>, tries to find for each household of the income database the most similar in the consumption database. This approach is not based on a statistical model or on theoretical assumptions that explain consumption behaviour, but on a statistical matching (<a href="#bib11">D’Orazio <i>et al</i>., 2002</a>). The matching links similar units through a distance function that should be minimized. Units are compared according to a set of socio-demographic characteristics, common to the two databases. The matching can be done only if the two surveys are random samples extracted from the same population. In Italy a statistical matching between the Bank of Italy Survey of Households Income and Wealth and HBS is in <a href="#bib3">Battellini <i>et al</i>. (2009)</a>, in which the integrated database is mainly used to compile Social Accounting Matrices (SAM). More recently, in <a href="#bib19">Pisani and Tedeschi (2014)</a> a matching technique is applied to build an integrated dataset useful for direct and indirect tax benefit microsimulation models<sup><a href="#fn13">13</a></sup>. The income database is the Bank of Italy Survey of Households Income and Wealth and the consumption one is HBS. Before doing the matching, <a href="#bib19">Pisani and Tedeschi (2014)</a> estimate a propensity score to synthesize in one scalar all the different variables common to the two databases. The propensity score is indeed the estimated probability to belong to SHIW conditioning on the common set of characteristics. Then, they apply two different matching procedures. In the first one they associate to each observation in SHIW the one in HBS with the closest propensity score (nearest neighbour within calliper). In the second they use a function (called Mahalanobis) to measure for each unit in SHIW the distance to all units in HBS in the common variables (included the propensity score). The unit in HBS with the lower distance is then associated to each unit in SHIW. According to <a href="#bib19">Pisani and Tedeschi (2014)</a> the Mahalanobis distance function performs better than the nearest neighbour method.</p><p data-astro-cid-qsyhzaho>In MicroReg an implicit approach based on a matching between EU-SILC and HBS is implemented. Therefore, our method is not parametric as the ones used in <a href="#bib17">O’Donoghue <i>et al</i>. (2004)</a> and <a href="#bib22">Taddei (2012)</a>, but it is more similar to <a href="#bib19">Pisani and Tedeschi (2014)</a>. The objective of the matching is to link each family in EU-SILC to the most similar in HBS, given the set of common observable variables. The matching is shown in detail in the following three steps:</p><ul data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Preliminarily a comparison between the common variables is made by using a T-test for the mean difference and a <i>X</i><sup>2</sup>test for equality of distribution (results are reported in appendix, <a href="#tableA4">Tables A.4</a> and <a href="#tableA5">A.5</a>). After, variables are standardized with the same classifications and encodings and aggregated at household level.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Secondly, we select the conditioning variables for the matching. We do not estimate a propensity score, as in <a href="#bib19">Pisani and Tedeschi (2014)</a>, but we select among the distinct common variables. The common set of variables is selected by making a regression of consumption on socio-demographic characteristics (see results for the Centre of Italy in appendix, <a href="#tableA6">Table A.6</a>). Some variables refer to households characteristics (such as residence area, number of components, number of rooms, presence of loan to pay, personal computer and dishwasher ownership, access to internet). Other variables refer to sociodemographic characteristics of household components (number of children, number of adults, type of work, number of earners).</p><p data-astro-cid-qsyhzaho>In order to improve the matching, for each EU-SILC household an estimation of total consumption is added to the set of common variables. More precisely, a regression of total consumption on household income is estimated for income quintiles in the Bank of Italy Survey of Households Income and Wealth. Indeed, SHIW collects detailed information on income, but also an aggregate measure of consumption. Then, estimated coefficients are applied to EU-SILC households to find the imputed total consumption that can be used in the matching.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Similarly to <a href="#bib19">Pisani and Tedeschi (2014)</a> we define a proximity function to integrate household by household information collected from both surveys. Our matching is made in two steps. A first exact matching for a selection of common variables (geographical area and number of components) is implemented. The exact matching allows linking each EU-SILC household with the corresponding HBS household, given the two selected variables. For the other variables the following proximity function is defined:</p><div id="eqn3" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(3)</span><math><mi>s</mi><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo><mo>=</mo><mi>max</mi><mstyle displaystyle="true"><mo>∑</mo> <mrow><msubsup><mrow/><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></msubsup></mrow></mstyle><msubsup><msup><mstyle displaystyle="true" mathsize="140%"><mo>∑</mo></mstyle><mtext>​</mtext></msup><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>P</mi></msubsup><msub><mi>s</mi><mi>i</mi></msub><mo stretchy="false">(</mo><msub><mi>x</mi><mrow><mtext>ij</mtext></mrow></msub><mo>,</mo><msub><mi>y</mi><mrow><mtext>ij</mtext></mrow></msub><mo stretchy="false">)</mo><mo>∀</mo><mi>j</mi><mo>∈</mo><mi>N</mi></math></div><div id="eqn4" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>(4)</span><math><msub><mi>s</mi><mi>i</mi></msub><mo stretchy="false">(</mo><msub><mi>x</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo>,</mo><msub><mi>y</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mo stretchy="false">)</mo><mo>=</mo><mrow><mo>{</mo> <mrow><mfrac><mrow><mn>1</mn><mtext> </mtext><mtext>if</mtext><mtext> </mtext><msub><mtext>x</mtext><mrow><mtext>ij</mtext></mrow></msub><mo>=</mo><msub><mi>y</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub></mrow><mrow><mn>0</mn><mtext> </mtext><mtext>otherwise</mtext></mrow></mfrac></mrow> </mrow></math></div></li></ul><p data-astro-cid-qsyhzaho>Basically, the distance function counts for every household in EU-SILC, the number of variables with the same value in EU-SILC and in HBS. The total consumption is considered equal if the difference is lower than 1,000 euro. Finally, for each EU-SILC household the HBS household with the higher number of variables with the same value is associated. When two HBS household have the same number of equal variables the household with the lower difference of total consumption is linked.</p><p data-astro-cid-qsyhzaho>In the integrated database the Value Added Tax (VAT) rates by type of expenditure are inversely applied to find the production price (HBS collect retails prices which include indirect taxes). Given the tax base VAT can subsequently be simulated.</p><p data-astro-cid-qsyhzaho>The following statistics are used to validate the matching procedure and the VAT simulation. In line with expectations, the food share is higher in the South of Italy than in the North-Centre (<a href="#table6">Table 6</a>) and the propensity to consume decreases by income deciles (<a href="#table7">Table 7</a>).</p><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Food share by geographical area.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Area</th>
+<th>Expenditure (euro)</th>
+<th>Income (euro)</th>
+<th>Food share</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>North West</td>
+<td align="center">487.5</td>
+<td align="center">2,454.80</td>
+<td align="center">0.1986</td></tr>
+<tr><td>North East</td>
+<td align="center">446.1</td>
+<td align="center">2,450.70</td>
+<td align="center">0.182</td></tr>
+<tr><td>Centre</td>
+<td align="center">504.3</td>
+<td align="center">2,356.50</td>
+<td align="center">0.214</td></tr>
+<tr><td>South</td>
+<td align="center">506.7</td>
+<td align="center">1,893.80</td>
+<td align="center">0.2675</td></tr>
+<tr><td>Italy</td>
+<td align="center">488.7</td>
+<td align="center">2,259.20</td>
+<td align="center">0.2163</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: MicroReg.</p></div></figure><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Propensity to consume by income deciles.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Decile</th>
+<th>Italy</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>0</td>
+<td align="center">1.26</td></tr>
+<tr><td>1</td>
+<td align="center">1.07</td></tr>
+<tr><td>2</td>
+<td align="center">0.96</td></tr>
+<tr><td>3</td>
+<td align="center">0.93</td></tr>
+<tr><td>4</td>
+<td align="center">0.87</td></tr>
+<tr><td>5</td>
+<td align="center">0.83</td></tr>
+<tr><td>6</td>
+<td align="center">0.78</td></tr>
+<tr><td>7</td>
+<td align="center">0.76</td></tr>
+<tr><td>8</td>
+<td align="center">0.69</td></tr>
+<tr><td>9</td>
+<td align="center">0.56</td></tr>
+<tr><td><b>Total</b></td>
+<td align="center">0.92</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: MicroReg.</p></div></figure><p data-astro-cid-qsyhzaho>The total VAT base is about 419 billion euro while tax revenue is 58 billion<sup><a href="#fn14">14</a></sup> (<a href="#table8">Table 8</a>). The validation of the simulation of VAT is not an easy task, as <a href="#bib22">Taddei (2012)</a> underlines, since official statistics about the revenue deriving from households are not available. As expected, our simulated tax revenue is lower with respect to the official data estimated by <a href="#bib15">ISTAT (2016)</a><sup><a href="#fn15">15</a></sup> (about 94 billion euro). Indeed, the official data includes the tax paid from public administration, no-profit institutions and others that, on the contrary, is not included in our simulation on final consumption of households. According to <a href="#bib22">Taddei (2012)</a> the percentage of total revenue that derives from households is about 70%. <a href="#bib10">D’Agosto <i>et al</i>. (2012)</a> estimates that about 68% of the potential tax revenue depends on final consumption of households. By applying these percentages to the total tax paid estimated by <a href="#bib15">ISTAT (2016)</a> a value around 64–66 billion is obtained, not very far from our result (58 billion euro). Further, our simulated tax revenue is in the middle between the one obtained by <a href="#bib22">Taddei (2012)</a>, about 72 billion euro, and the one simulated by <a href="#bib12">Gastaldi <i>et al</i>. (2014)</a>, around 49 billion euro.</p><figure id="table8" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 8.</strong><span data-astro-cid-dzaleqsp> VAT tax base and revenue (billion euro).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>VAT rate</th>
+<th>Tax base</th>
+<th>Tax revenue</th>
+</tr></thead>
+<tbody>
+<tr><td>4%</td>
+<td align="center">77.9</td>
+<td align="center">3.1</td></tr>
+<tr><td>10%</td>
+<td align="center">166.8</td>
+<td align="center">16.7</td></tr>
+<tr><td>22%</td>
+<td align="center">174.2</td>
+<td align="center">38.3</td></tr>
+<tr><td><b>Total</b></td>
+<td align="center"><b>418.8</b></td>
+<td align="center"><b>58.1</b></td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: MicroReg.</p></div></figure><p data-astro-cid-qsyhzaho>Finally, <a href="#table9">Table 9</a> shows redistributive indexes, calculated at household level, for each VAT rate. Not surprisingly, VAT has a negative redistribution role. Indeed, the Gini of disposable income increases after the tax. Among the different rates, it is easily to see that the reduced rate (4%) has the most regressive impact with a negative Kakwani of 0.21. The reduced rate is applied to those essential goods that each household needs and, consequently, the fiscal burden is higher for lower incomes. Despite this, the ordinary rate shows the strongest negative redistributive effect owing to the highest average tax rate.</p><figure id="table9" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 9.</strong><span data-astro-cid-dzaleqsp> Redistributive indexes.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>VAT rate</th>
+<th>4%</th>
+<th>10%</th>
+<th>22%</th>
+<th>Total</th></tr>
+</thead>
+<tbody>
+<tr><td>Pre-tax Gini</td>
+<td align="center">0.3009</td>
+<td align="center">0.3009</td>
+<td align="center">0.3009</td>
+<td align="center">0.3009</td></tr>
+<tr><td>Post-tax Gini</td>
+<td align="center">0.3017</td>
+<td align="center">0.3040</td>
+<td align="center">0.3059</td>
+<td align="center">0.3102</td></tr>
+<tr><td>Average Tax Rate</td>
+<td align="center">0.0039</td>
+<td align="center">0.0208</td>
+<td align="center">0.0470</td>
+<td align="center">0.0717</td></tr>
+<tr><td>Reynolds-Smolensky net redis. effect</td>
+<td align="center">−0.0008</td>
+<td align="center">−0.0031</td>
+<td align="center">−0.0050</td>
+<td align="center">−0.0093</td></tr>
+<tr><td>Kakwani progressivity index</td>
+<td align="center">−0.2116</td>
+<td align="center">−0.1426</td>
+<td align="center">−0.0931</td>
+<td align="center">−0.1139</td></tr>
+<tr><td>Re-ranking</td>
+<td align="center">0.0000</td>
+<td align="center">0.0001</td>
+<td align="center">0.0004</td>
+<td align="center">0.0005</td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: MicroReg.</p></div></figure><p data-astro-cid-qsyhzaho>In conclusion, the matching results and the simulation of VAT are satisfactory and in line with expectations. The indirect tax module of MicroReg can then be used to simulate different scenarios of VAT reforms.</p></section><section id="s3-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.2 In-kind transfers</h3><p data-astro-cid-qsyhzaho>The second extension of MicroReg concerns in-kind transfers<sup><a href="#fn16">16</a></sup>. Many empirical studies about inequality and poverty do not consider benefits from public expenditure in in-kind transfers like education, health, transport and so on. The monetary disposable income is, however, only a part of the household welfare, which depends also on the public subsidies for the production and the financing of services. The inclusion of in-kind transfers in a microsimulation model allows: i) to compare their distributive impact with respect to in-cash transfers, ii) to make a more correct comparison between countries which have a different composition of in-cash and in-kind transfers, iii) to monitor the effects of cuts in services and spending reviews.</p><p data-astro-cid-qsyhzaho>In order to estimate the distributive effects of in-kind transfers many methodological issues should be addressed (<a href="#bib13">Gigliarano &amp; D’Ambrosio, 2009</a>). The first issue refers to the imputation of a monetary value to in-kind transfers. Usually the monetary value is quantified by estimating the average production cost of the public sector, even if this approach has several limits. For example, it does not take into account that differences in production costs could depend on differences in the quality of services, in inefficiency or on different costs of inputs.</p><p data-astro-cid-qsyhzaho>Once quantified the monetary value, in-kind transfers should be imputed to the individuals/households of the sample (in our case EU-SILC). In literature, two approaches have been used, the <i>actual consumption approach</i> (AA) and the <i>insurance value approach</i> (IA).</p><p data-astro-cid-qsyhzaho>The AA imputes the monetary value of in-kind transfers only to individuals who actually use the service. The advantage of this approach is that it considers the true usage of services and it takes into account individuals’ differences. Disadvantages are many. First, the attribution is not independent on the time interval considered, during which the use of services could be entirely random. Second, it does not consider different needs of families. For example, it can impute a large monetary value to old people who need many health services with a consequent strong re-ranking (old people become richer than people with more income who do not use services).</p><p data-astro-cid-qsyhzaho>The IA imputes to every individual an average monetary value of in-kind transfers by demographic characteristics (usually age and gender), without taking into account the actual use of services. In health, for example, a sort of insurance premium against diseases is imputed to all individuals by demographic characteristics. According to the IA, the use of health services should not depend on random reasons (as in the AA), but on demographic differences. Also this approach, however, has some disadvantages. The possibility to have a re-ranking is still present (even if less likely than in the AA) and it does not take into account individuals’ differences.</p><p data-astro-cid-qsyhzaho>In literature the AA is often applied for education. In health the debate is more open. In studies that compare both the approaches, it has been noticed a higher distributive impact of IA than AA (<a href="#bib2">Baldini <i>et al</i>., 2007</a>).</p><p data-astro-cid-qsyhzaho>In evaluating the distributive impact of in-kind transfers further methodological issues must be addressed. Usually the long run effects of in kind-transfers (like education returns) are not considered in empirical studies. Further, there is no consensus about the correct counterfactual (the starting income) that should be used to evaluate the distributive effect of in-kind transfers and about the equivalence scale that should be used. Moreover, studies about in-kind transfers typically neglect externalities. In other words, by imputing the benefit only to students or to patients they under-estimate the positive externalities of education and health on the entire population.</p><p data-astro-cid-qsyhzaho>In MicroReg the monetary value of in-kind transfers is quantified with the cost of production of the public sector. The monetary value is imputed to individuals through the AA approach, both for education and for health. The equivalence scale is not used for in-kind transfers, but a per-household member in-kind value is attributed to each individual. The modified OECD scale is used only for the monetary disposable income. In what follows methodological choices and data used for education and health are described in details. The simulation of in-kind transfers is performed only for the Region of Tuscany, both for education and health<sup><a href="#fn17">17</a></sup>.</p><section id="s3-2-1" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">3.2.1 From pre-school to secondary education</h4><p data-astro-cid-qsyhzaho>To quantify the cost of production of pre-school, primary school, middle school and high school data from the balance sheet of the national government are used. Indeed, the biggest part of public expenditure derives from the central level. So, the total expenditure for each level of education is taken from balance sheets. Then, the regional expenditure is estimated by applying the distribution of teachers by Region to the national expenditure. The per-student value of education is afterwards estimated by dividing the total regional expenditure by the number of students (taken from the Ministry of Education) for each level of education. Finally, the per-student value is imputed to students by exploiting the information about the school attended, collected in EU-SILC, and about the age of children.</p></section><section id="s3-2-2" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">3.2.2 Higher education</h4><p data-astro-cid-qsyhzaho>In order to find the monetary value of higher education, first the cost of production is calculated and second taxes paid by each student are simulated. To quantify the cost of production the balance sheets of the three Tuscan universities (Florence, Pisa and Siena)<sup><a href="#fn18">18</a></sup> are used. The per-student value is obtained by dividing the total cost of production by the number of students (taken from the Ministry of Education). University taxes are composed of three parts: entry fee, fee for the right to study and contributions. The first two are a fixed amount; the third depends on a mean test instrument called ISEE (Equivalent Economic Situation Indicator). ISEE and taxes are simulated in the model for each student. The net benefit from tertiary education is given by the difference between the per-student cost of production and simulated taxes. The net per-student value is imputed to students by exploiting the information collected in EU-SILC.</p></section><section id="s3-2-3" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">3.2.3 Health services</h4><p data-astro-cid-qsyhzaho>For health in-kind transfers administrative data from the Region of Tuscany (year 2010) are exploited. Administrative data collects both the numbers of users and the costs of production for each health service that is hospital services (cards hospital discharges), outpatient services, pharmaceutical services and rehabilitation services<sup><a href="#fn19">19</a></sup>. To attribute health consumption to individuals we applied the Monte Carlo method. First, a probability to consume a certain service is estimated for intersections (cells) of socio-demographic characteristics (gender, citizenship, age classes and level of education). Second, the service is attributed to individuals by comparing the estimated probability with a random number from a uniform distribution in the interval 0–1. For the selected individuals the in-kind benefit of each service (evaluated by its cost of production) is imputed.</p></section><section id="s3-2-4" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">3.2.4 The distributive impact of in-kind transfers</h4><p data-astro-cid-qsyhzaho>The incidence of simulated in-kind transfers on income by quintiles of equivalent disposable income shows the important distributive role of public expenditure, both in education and health (<a href="#fig3">Figures 3</a> and <a href="#fig4">4</a>).</p><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00148-fig3.Dy0ldyWU_Z2e5kT6.webp" class="figure-lightbox-trigger" data-pswp-width="1669" data-pswp-height="669" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00148-fig3.Dy0ldyWU_Z2e5kT6.webp" alt width="1669" height="669" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Incidence of education transfers on disposable income by equivalent household disposable income quintile – Tuscany.</span></figcaption></figure><p data-astro-cid-qsyhzaho>In education, the incidence clearly decreases with income and it is particularly high in the first quintile for high and middle school. The incidence is lower for pre-school even if still decreasing with income (<a href="#fig3">Figure 3</a>). Also health expenditure seems to affect more low income quintiles. Among the different services considered hospital ones tend to have a stronger impact (<a href="#fig4">Figure 4</a>).</p><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00148-fig4.CVQqTeqn_2gxx3T.webp" class="figure-lightbox-trigger" data-pswp-width="1681" data-pswp-height="636" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00148-fig4.CVQqTeqn_2gxx3T.webp" alt width="1681" height="636" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Incidence of health transfers on disposable income by equivalent household disposable income quintile – Tuscany.</span></figcaption></figure><p data-astro-cid-qsyhzaho>These descriptive results are confirmed by the redistributive indexes (<a href="#table10">Table 10</a>) calculated at the individual level. All in-kind transfers in education have a positive redistributive impact like in <a href="#bib2">Baldini <i>et al</i>. (2007)</a>. Further, similarly to <a href="#bib2">Baldini <i>et al</i>. (2007)</a> the stronger redistribution derives from primary, middle and high school. The progressivity index is particularly elevated for middle and high school. The reduction in the post-transfer Gini index is lower for pre-school and university. Pre-school has a high progressivity, but a low incidence. University is the less progressive education in-kind transfer.</p><figure id="table10" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 10.</strong><span data-astro-cid-dzaleqsp> Redistributive indexes for in-kind transfers – Tuscany.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>Pre-transfer Gini</th>
+<th>Post-transfer Gini</th>
+<th>Avg. tax rate</th>
+<th>Reynolds-Smolensky net redis. effect</th>
+<th>Kakwani Progressivity index</th>
+<th>Re-ranking</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Pre-school</td>
+<td align="center">0.2838</td>
+<td align="center">0.2825</td>
+<td align="center">0.0050</td>
+<td align="center">0.0013</td>
+<td align="center">0.3186</td>
+<td align="center">0.0002</td></tr>
+<tr><td>Primary school</td>
+<td align="center">0.2838</td>
+<td align="center">0.2808</td>
+<td align="center">0.0113</td>
+<td align="center">0.0030</td>
+<td align="center">0.3268</td>
+<td align="center">0.0006</td></tr>
+<tr><td>Middle school</td>
+<td align="center">0.2838</td>
+<td align="center">0.2814</td>
+<td align="center">0.0068</td>
+<td align="center">0.0024</td>
+<td align="center">0.4062</td>
+<td align="center">0.0004</td></tr>
+<tr><td>High school</td>
+<td align="center">0.2838</td>
+<td align="center">0.2776</td>
+<td align="center">0.0134</td>
+<td align="center">0.0062</td>
+<td align="center">0.5221</td>
+<td align="center">0.0007</td></tr>
+<tr><td>Total school</td>
+<td align="center">0.2838</td>
+<td align="center">0.2712</td>
+<td align="center">0.0365</td>
+<td align="center">0.0126</td>
+<td align="center">0.4122</td>
+<td align="center">0.0019</td></tr>
+<tr><td>University</td>
+<td align="center">0.2838</td>
+<td align="center">0.2824</td>
+<td align="center">0.0127</td>
+<td align="center">0.0014</td>
+<td align="center">0.2165</td>
+<td align="center">0.0014</td></tr>
+<tr><td>Pharmaceutical services</td>
+<td align="center">0.2838</td>
+<td align="center">0.2802</td>
+<td align="center">0.0147</td>
+<td align="center">0.0036</td>
+<td align="center">0.2585</td>
+<td align="center">0.0001</td></tr>
+<tr><td>Outpatient services</td>
+<td align="center">0.2838</td>
+<td align="center">0.2806</td>
+<td align="center">0.0129</td>
+<td align="center">0.0032</td>
+<td align="center">0.2544</td>
+<td align="center">0.0001</td></tr>
+<tr><td>Hospital services</td>
+<td align="center">0.2838</td>
+<td align="center">0.2792</td>
+<td align="center">0.0305</td>
+<td align="center">0.0047</td>
+<td align="center">0.3250</td>
+<td align="center">0.0050</td></tr>
+<tr><td>Total health services</td>
+<td align="center">0.2838</td>
+<td align="center">0.2731</td>
+<td align="center">0.0582</td>
+<td align="center">0.0107</td>
+<td align="center">0.2924</td>
+<td align="center">0.0054</td></tr></tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: MicroReg.</p></div></figure><p data-astro-cid-qsyhzaho>According to our simulation, as in <a href="#bib2">Baldini <i>et al</i>. (2007)</a>, but different with respect to <a href="#bib20">Sonedda and Turati (2005)</a><sup><a href="#fn20">20</a></sup>, health services decrease inequality. Inequality diminishes especially thanks to hospital services that have the higher incidence and progressivity. Different with respect to pharmaceutical and outpatient services, hospital services are concentrated on old people and their cost of production can be very high. Consequently, as in <a href="#bib2">Baldini <i>et al</i>. (2007)</a>, hospital services have a strong re-ranking effect.</p></section></section></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. An application of the extended model</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The extended microsimulation model allows to evaluate the effect of fiscal policies both on the revenue and the expenditure side. In the last few years in Italy the central government implemented many fiscal policies. In this paper three polices are considered.</p><p data-astro-cid-qsyhzaho>The first is the introduction of the “fiscal bonus” (law 190/2014 so called Stability Law for 2015). The Stability Law confirms the “fiscal bonus” for employees, introduced for the first time in 2014, with effects from 2015 onwards. The government expects from the “fiscal bonus” indirect positive effects on consumption. More precisely, the “fiscal bonus” is a fixed amount of 960 euro per year (80 euro per month) for employees with gross income under 24,000 euro and it is decreasing for employees with gross income between 24,000 and 26,000 euro, as explained in the following table (<a href="#table11">Table 11</a>). The bonus is attributed to employees with a gross PIT higher than tax credit for employees.</p><figure id="table11" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 11.</strong><span data-astro-cid-dzaleqsp> Fiscal bonus scheme.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr><th>Income (euro)</th>
+<th>Fiscal bonus (euro)</th>
+</tr></thead>
+<tbody>
+<tr><td>Under 24,000</td>
+<td>960</td></tr>
+<tr><td>Between 24,000 and 26,000</td>
+<td>960* [1−(income−24,000)/(26,000–24,000)]</td></tr>
+<tr><td>Over 26,000</td>
+<td>0</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Stability Law for 2015.</p></div></figure><p data-astro-cid-qsyhzaho>The second policy is the safeguard clause about the increase of VAT (law 190/2014 so called Stability Law for 2015). In Italy three VAT rates are applied: the ordinary rate is now 22%, the decreased rate is 10% and concerns tourist services and some types of food, and the minimum rate is 4% for basic necessities. The law 190/2014 states that VAT rates will increase from 10% to 12% and from 22% to 24% in 2016 if other resources to meet budget constraints will not be found (safeguard clause). In the following years further increases are established (see <a href="#table12">Table 12</a>).</p><figure id="table12" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 12.</strong><span data-astro-cid-dzaleqsp> VAT rates: safeguard clause.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Year</th>
+<th>Ordinary rate</th>
+<th>Decreased rate</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>2015</td>
+<td>22%</td>
+<td>10%</td></tr>
+<tr><td>2016</td>
+<td>24%</td>
+<td>12%</td></tr>
+<tr><td>2017</td>
+<td>25%</td>
+<td>13%</td></tr>
+<tr><td>2018</td>
+<td>25.5%</td>
+<td>13%</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Stability Law for 2015.</p></div></figure><p data-astro-cid-qsyhzaho>The third policy is the variation in health and education expenditure between 2013 and 2016 as expected by the estimated budget of the State and by the Economic and Financial Document (DEF) 2015. In the last few years the central government decided for many cuts and spending review operations (<a href="#table13">Table 13</a>). Between 2013 and 2016 there will be a decrease in education public spending and an increase in health (current prices). These variations (in percentage) are applied to the monetary value of in-kind transfer estimated in MicroReg to evaluate the redistributive effects.</p><figure id="table13" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 13.</strong><span data-astro-cid-dzaleqsp> Education and health expenditure (million euro) — Italy.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Year</th>
+<th>School</th>
+<th>University</th>
+<th>Health</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>2013</td>
+<td>41,899</td>
+<td>6,997</td>
+<td>110,044</td></tr>
+<tr><td>2016</td>
+<td>41,028</td>
+<td>6,931</td>
+<td>113,372</td>
+</tr>
+</tbody></table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: DEF 2015 and budget of the State.</p></div></figure><p data-astro-cid-qsyhzaho>In order to evaluate the total distributive effects of the three policies we compare the disposable income in 2013 (without the fiscal bonus and the increase in VAT and with the 2013 value of in-kind transfers) and the disposable income in 2016 (with the fiscal bonus, the increase in VAT and with the 2016 value of in-kind transfers) (<a href="#fig5">Figure 5</a>).</p><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00148-fig5.AadgwPpJ_YMRgH.webp" class="figure-lightbox-trigger" data-pswp-width="1824" data-pswp-height="686" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00148-fig5.AadgwPpJ_YMRgH.webp" alt width="1824" height="686" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> Variation of household disposable income and its components by equivalent disposable income quintiles – Tuscany.</span></figcaption></figure><p data-astro-cid-qsyhzaho>The fiscal bonus has a strong effect and it is more favourable to central quintiles. It costs about 656 million of euro and it includes 788 thousands of beneficiaries in Tuscany (about 21% of the total population that lives in the 38% of the total number of households).</p><p data-astro-cid-qsyhzaho>The increase in VAT rates has a clear regressive impact, since the disposable income is reduced more for the first quintile with respect to the others. Similar results are in <a href="#bib1">Arachi <i>et al</i>. (2012)</a>. By simulating an increase to 23.5% and to 12.5% in the ordinary and the reduced tax rate they observe a regressive redistribution.</p><p data-astro-cid-qsyhzaho>Cuts in school expenditure have a clear regressive impact since the decrease in disposable income is decreasing by quintile of income. The effect of reduction in university expenditure is negligible. The increase in disposable income due to the raise in health expenditure is higher for the first quintiles of income. By considering all the three policies together the effect is positive for central quintiles, with a variation in disposable income of about 0.8% (thanks especially to the fiscal bonus). For the first and the last quintile, the increase in disposable income is lower. Therefore, if the increase in VAT rates will not be avoided the positive effect of the fiscal bonus on consumption expected by the national government (most from the first quintile) could miss.</p><figure id="table14" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 14.</strong><span data-astro-cid-dzaleqsp> Redistributive indexes – Tuscany.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>Gini</th>
+<th>Theil</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Original disposable income</td>
+<td align="center">0.2836</td>
+<td align="center">0.1450</td></tr>
+<tr><td>Disposable income with VAT increase</td>
+<td align="center">0.2851</td>
+<td align="center">0.1470</td></tr>
+<tr><td>Disposable income with fiscal bonus</td>
+<td align="center">0.2815</td>
+<td align="center">0.1426</td></tr>
+<tr><td>Disposable income with variation in school expenditure</td>
+<td align="center">0.2838</td>
+<td align="center">0.1451</td></tr>
+<tr><td>Disposable income with variation in university expenditure</td>
+<td align="center">0.2836</td>
+<td align="center">0.1450</td></tr>
+<tr><td>Disposable income with variation in health expenditure</td>
+<td align="center">0.2834</td>
+<td align="center">0.1447</td></tr>
+<tr><td>Final disposable income</td>
+<td align="center">0.2829</td>
+<td align="center">0.1445</td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: MicroReg.</p></div></figure><p data-astro-cid-qsyhzaho>Inequality indexes, calculated at household level, confirm these results (<a href="#table14">Table 14</a>). After the increase in VAT the Gini increases. On the contrary, it decreases with the introduction of fiscal bonus. In-kind transfers have positive effect in inequality. When their value decreases (school and university) the Gini increases, the opposite when their value increases (health).</p></div></details><details id="footnotes" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Footnotes</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="fn1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1.</h3><p data-astro-cid-qsyhzaho>Due to data availability the model is extended to in-kind transfers only for the Region of Tuscany.</p></section><section id="fn2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.</h3><p data-astro-cid-qsyhzaho>However, also in SHIW households’ wealth is highly under-estimated.</p></section><section id="fn3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.</h3><p data-astro-cid-qsyhzaho>Second homes (when more than one) are considered together in the tax paid that remains after the dwelling house. This simplification should not be a problem since second homes are basically subjected to the same taxation, independently on their number.</p></section><section id="fn4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.</h3><p data-astro-cid-qsyhzaho>The small difference depends on the sequence of the phases of the model. Indeed, the imputation of cadastral value precedes the sample weights calibration.</p></section><section id="fn5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.</h3><p data-astro-cid-qsyhzaho>The data of <a href="#bib9">Dipartimento delle Finanze and Agenzia del Territorio (2012)</a> is a projection.</p></section><section id="fn6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.</h3><p data-astro-cid-qsyhzaho>Actually in 2012 the cadastral value of the dwelling house is not included in gross income so it does not be deducted.</p></section><section id="fn7" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.</h3><p data-astro-cid-qsyhzaho>The imputation is made for each taxpayer, so in our model the number of taxpayers with positive gross income is equal to the number of taxpayers with positive taxable income.</p></section><section id="fn8" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">8.</h3><p data-astro-cid-qsyhzaho>Consequently, each taxpayer has a positive tax credit.</p></section><section id="fn9" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">9.</h3><p data-astro-cid-qsyhzaho>Results for each Italian Region can be found in appendix (<a href="#tableA1">Tables A.1</a> and <a href="#tableA2">A.2</a>).</p></section><section id="fn10" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">10.</h3><p data-astro-cid-qsyhzaho>The comparison on the average value of gross income by gross income classes can be found in appendix (<a href="#figA1">Figure A.1</a>).</p></section><section id="fn11" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">11.</h3><p data-astro-cid-qsyhzaho>The problem is detected also in <a href="#bib8">Di Nicola <i>et al</i>. (2015)</a>. They can recover the small amounts of income within PIT and real estate datasets.</p></section><section id="fn12" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">12.</h3><p data-astro-cid-qsyhzaho>The average value of PIT by gross income classes can be found in appendix (<a href="#figA2">Figure A.2</a>).</p></section><section id="fn13" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">13.</h3><p data-astro-cid-qsyhzaho><a href="#bib12">Gastaldi <i>et al</i>. (2014)</a> evaluate some VAT reforms on the integrated database built in <a href="#bib19">Pisani and Tedeschi (2014)</a>.</p></section><section id="fn14" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">14.</h3><p data-astro-cid-qsyhzaho>Tax base and tax revenue for each Region is reported in appendix (<a href="#tableA3">Table A.3</a>). In appendix it is also shown the distribution of tax revenue by income and expenditure deciles (<a href="#figA3">Figure A.3</a>).</p></section><section id="fn15" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">15.</h3><p data-astro-cid-qsyhzaho><a href="#table10">Table 10</a> “Imposte indirette prelevate dalle Amministrazioni pubbliche e dall'Unione europea per tipo di tributo. Anni 1995 - 2015 (milioni di euro correnti)”.</p></section><section id="fn16" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">16.</h3><p data-astro-cid-qsyhzaho>See <a href="#bib5">Bianchini <i>et al</i>.(2013)</a> for a previous application.</p></section><section id="fn17" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">17.</h3><p data-astro-cid-qsyhzaho>The education module can be easily extended to the rest of Italy. For health data are available only for Tuscany.</p></section><section id="fn18" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">18.</h3><p data-astro-cid-qsyhzaho>Data are taken from Comitato Nazionale di Valutazione del Sistema Universitario (CNVSU).</p></section><section id="fn19" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">19.</h3><p data-astro-cid-qsyhzaho>The services for which regional data are available do not cover the entire public health expenditure. Prevention, homecare, assistance against addiction, mental health assistance, primary and district care are excluded.</p></section><section id="fn20" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">20.</h3><p data-astro-cid-qsyhzaho><a href="#bib20">Sonedda and Turati (2005)</a> find a regressive but weak and not highly significant impact of health expenditure. They follows the insurance value approach.</p></section></div></details></div><details id="A1" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Appendix</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><figure id="tableA1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A.1.</strong><span data-astro-cid-dzaleqsp> Validation of the model - income year 2012 (billion euro).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">Gross income</th>
+<th colspan="2">Deductions</th>
+<th colspan="2">Taxable income</th>
+<th colspan="2">Gross PIT</th>
+</tr>
+<tr>
+<th/>
+<th>Micro Reg</th>
+<th>MEF</th>
+<th>Micro Reg</th>
+<th>MEF</th>
+<th>Micro Reg</th>
+<th>MEF</th>
+<th>Micro Reg</th>
+<th>MEF</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Piedmont</td>
+<td align="center">67.5</td>
+<td align="center">66.8</td>
+<td align="center">2.0</td>
+<td align="center">2.1</td>
+<td align="center">65.5</td>
+<td align="center">64.4</td>
+<td align="center">17.5</td>
+<td align="center">17.3</td></tr>
+<tr><td>Aosta valley</td>
+<td align="center">2.1</td>
+<td align="center">2.1</td>
+<td align="center">0.1</td>
+<td align="center">0.1</td>
+<td align="center">2.1</td>
+<td align="center">2.0</td>
+<td align="center">0.6</td>
+<td align="center">0.5</td></tr>
+<tr><td>Lombardy</td>
+<td align="center">164.5</td>
+<td align="center">163.6</td>
+<td align="center">5.0</td>
+<td align="center">5.1</td>
+<td align="center">159.5</td>
+<td align="center">157.6</td>
+<td align="center">44.0</td>
+<td align="center">44.0</td></tr>
+<tr><td>Liguria</td>
+<td align="center">23.8</td>
+<td align="center">25.1</td>
+<td align="center">0.7</td>
+<td align="center">0.8</td>
+<td align="center">23.1</td>
+<td align="center">24.2</td>
+<td align="center">6.3</td>
+<td align="center">6.5</td></tr>
+<tr><td>Trento</td>
+<td align="center">8.4</td>
+<td align="center">8.3</td>
+<td align="center">0.3</td>
+<td align="center">0.3</td>
+<td align="center">8.2</td>
+<td align="center">8.0</td>
+<td align="center">2.2</td>
+<td align="center">2.1</td></tr>
+<tr><td>Bolzano</td>
+<td align="center">8.5</td>
+<td align="center">8.8</td>
+<td align="center">0.3</td>
+<td align="center">0.3</td>
+<td align="center">8.2</td>
+<td align="center">8.5</td>
+<td align="center">2.2</td>
+<td align="center">2.3</td></tr>
+<tr><td>Veneto</td>
+<td align="center">69.9</td>
+<td align="center">71.8</td>
+<td align="center">2.0</td>
+<td align="center">2.6</td>
+<td align="center">67.9</td>
+<td align="center">69.0</td>
+<td align="center">18.1</td>
+<td align="center">18.5</td></tr>
+<tr><td>Friuli Venezia Giulia</td>
+<td align="center">18.2</td>
+<td align="center">19.0</td>
+<td align="center">0.5</td>
+<td align="center">0.6</td>
+<td align="center">17.7</td>
+<td align="center">18.4</td>
+<td align="center">4.6</td>
+<td align="center">4.9</td></tr>
+<tr><td>Emilia Romagna</td>
+<td align="center">71.4</td>
+<td align="center">70.9</td>
+<td align="center">2.1</td>
+<td align="center">2.5</td>
+<td align="center">69.3</td>
+<td align="center">68.0</td>
+<td align="center">18.6</td>
+<td align="center">18.4</td></tr>
+<tr><td>Tuscany</td>
+<td align="center">54.1</td>
+<td align="center">54.4</td>
+<td align="center">1.6</td>
+<td align="center">1.8</td>
+<td align="center">52.5</td>
+<td align="center">52.3</td>
+<td align="center">13.8</td>
+<td align="center">14.0</td></tr>
+<tr><td>Umbria</td>
+<td align="center">11.6</td>
+<td align="center">11.8</td>
+<td align="center">0.3</td>
+<td align="center">0.4</td>
+<td align="center">11.3</td>
+<td align="center">11.4</td>
+<td align="center">2.9</td>
+<td align="center">3.0</td></tr>
+<tr><td>Marche</td>
+<td align="center">19.7</td>
+<td align="center">20.6</td>
+<td align="center">0.6</td>
+<td align="center">0.8</td>
+<td align="center">19.1</td>
+<td align="center">19.8</td>
+<td align="center">5.0</td>
+<td align="center">5.2</td></tr>
+<tr><td>Lazio</td>
+<td align="center">84.3</td>
+<td align="center">83.2</td>
+<td align="center">2.6</td>
+<td align="center">1.9</td>
+<td align="center">81.6</td>
+<td align="center">80.7</td>
+<td align="center">22.5</td>
+<td align="center">22.6</td></tr>
+<tr><td>Abruzzo</td>
+<td align="center">14.2</td>
+<td align="center">15.3</td>
+<td align="center">0.4</td>
+<td align="center">0.4</td>
+<td align="center">13.8</td>
+<td align="center">14.9</td>
+<td align="center">3.5</td>
+<td align="center">3.9</td></tr>
+<tr><td>Molise</td>
+<td align="center">3.1</td>
+<td align="center">3.3</td>
+<td align="center">0.1</td>
+<td align="center">0.1</td>
+<td align="center">3.0</td>
+<td align="center">3.2</td>
+<td align="center">0.8</td>
+<td align="center">0.8</td></tr>
+<tr><td>Campania</td>
+<td align="center">49.3</td>
+<td align="center">50.5</td>
+<td align="center">1.5</td>
+<td align="center">1.1</td>
+<td align="center">47.8</td>
+<td align="center">49.3</td>
+<td align="center">12.6</td>
+<td align="center">12.9</td></tr>
+<tr><td>Apulia</td>
+<td align="center">38.2</td>
+<td align="center">39.0</td>
+<td align="center">1.1</td>
+<td align="center">1.0</td>
+<td align="center">37.0</td>
+<td align="center">38.1</td>
+<td align="center">9.3</td>
+<td align="center">9.8</td></tr>
+<tr><td>Basilicata</td>
+<td align="center">5.1</td>
+<td align="center">5.7</td>
+<td align="center">0.2</td>
+<td align="center">0.2</td>
+<td align="center">4.9</td>
+<td align="center">5.5</td>
+<td align="center">1.3</td>
+<td align="center">1.4</td></tr>
+<tr><td>Calabria</td>
+<td align="center">18.4</td>
+<td align="center">17.0</td>
+<td align="center">0.6</td>
+<td align="center">0.4</td>
+<td align="center">17.8</td>
+<td align="center">16.7</td>
+<td align="center">4.6</td>
+<td align="center">4.2</td></tr>
+<tr><td>Sicily</td>
+<td align="center">39.4</td>
+<td align="center">45.0</td>
+<td align="center">1.2</td>
+<td align="center">1.0</td>
+<td align="center">38.2</td>
+<td align="center">44.2</td>
+<td align="center">9.7</td>
+<td align="center">11.4</td></tr>
+<tr><td>Sardinia</td>
+<td align="center">19.2</td>
+<td align="center">17.9</td>
+<td align="center">0.6</td>
+<td align="center">0.5</td>
+<td align="center">18.7</td>
+<td align="center">17.5</td>
+<td align="center">4.9</td>
+<td align="center">4.5</td></tr>
+<tr><td>Total</td>
+<td align="center">790.9</td>
+<td align="center">800.4</td>
+<td align="center">23.7</td>
+<td align="center">24.0</td>
+<td align="center">767.2</td>
+<td align="center">773.6</td>
+<td align="center">205.1</td>
+<td align="center">208.2</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: MicroReg and Ministry of Finance.</p></div></figure><figure id="tableA2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A.2.</strong><span data-astro-cid-dzaleqsp> Validation of the model - income year 2012 (billion euro).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">Tax credits by income source</th>
+<th colspan="2">Family tax credits</th>
+<th colspan="2">Net PIT</th>
+<th colspan="2">Regional additional income tax</th>
+</tr>
+<tr>
+<th/>
+<th>MicroReg</th>
+<th>MEF</th>
+<th>MicroReg</th>
+<th>MEF</th>
+<th>MicroReg</th>
+<th>MEF</th>
+<th>MicroReg</th>
+<th>MEF</th>
+</tr></thead>
+<tbody>
+<tr>
+<td>Piedmont</td>
+<td align="center">3.2</td>
+<td align="center">3.2</td>
+<td align="center">0.8</td>
+<td align="center">0.7</td>
+<td align="center">13.3</td>
+<td align="center">12.9</td>
+<td align="center">1.0</td>
+<td align="center">1.0</td></tr>
+<tr><td>Aosta valley</td>
+<td align="center">0.1</td>
+<td align="center">0.1</td>
+<td align="center">0.0</td>
+<td align="center">0.0</td>
+<td align="center">0.4</td>
+<td align="center">0.4</td>
+<td align="center">0.0</td>
+<td align="center">0.0</td></tr>
+<tr><td>Lombardy</td>
+<td align="center">7.0</td>
+<td align="center">6.9</td>
+<td align="center">1.7</td>
+<td align="center">1.6</td>
+<td align="center">34.8</td>
+<td align="center">34.0</td>
+<td align="center">2.2</td>
+<td align="center">2.2</td></tr>
+<tr><td>Liguria</td>
+<td align="center">1.2</td>
+<td align="center">1.2</td>
+<td align="center">0.2</td>
+<td align="center">0.2</td>
+<td align="center">4.8</td>
+<td align="center">4.9</td>
+<td align="center">0.3</td>
+<td align="center">0.3</td></tr>
+<tr><td>Trento</td>
+<td align="center">0.4</td>
+<td align="center">0.4</td>
+<td align="center">0.1</td>
+<td align="center">0.1</td>
+<td align="center">1.7</td>
+<td align="center">1.5</td>
+<td align="center">0.1</td>
+<td align="center">0.1</td></tr>
+<tr><td>Bolzano</td>
+<td align="center">0.3</td>
+<td align="center">0.4</td>
+<td align="center">0.1</td>
+<td align="center">0.1</td>
+<td align="center">1.8</td>
+<td align="center">1.8</td>
+<td align="center">0.0</td>
+<td align="center">0.1</td></tr>
+<tr><td>Veneto</td>
+<td align="center">3.5</td>
+<td align="center">3.6</td>
+<td align="center">0.9</td>
+<td align="center">0.9</td>
+<td align="center">13.5</td>
+<td align="center">13.5</td>
+<td align="center">0.8</td>
+<td align="center">0.8</td></tr>
+<tr><td>Friuli Venezia Giulia</td>
+<td align="center">0.9</td>
+<td align="center">1.0</td>
+<td align="center">0.2</td>
+<td align="center">0.2</td>
+<td align="center">3.5</td>
+<td align="center">3.6</td>
+<td align="center">0.2</td>
+<td align="center">0.2</td></tr>
+<tr><td>Emilia Romagna</td>
+<td align="center">3.3</td>
+<td align="center">3.4</td>
+<td align="center">0.7</td>
+<td align="center">0.7</td>
+<td align="center">14.4</td>
+<td align="center">13.7</td>
+<td align="center">1.1</td>
+<td align="center">1.1</td></tr>
+<tr><td>Tuscany</td>
+<td align="center">2.7</td>
+<td align="center">2.8</td>
+<td align="center">0.7</td>
+<td align="center">0.6</td>
+<td align="center">10.3</td>
+<td align="center">10.3</td>
+<td align="center">0.6</td>
+<td align="center">0.6</td></tr>
+<tr><td>Umbria</td>
+<td align="center">0.7</td>
+<td align="center">0.7</td>
+<td align="center">0.1</td>
+<td align="center">0.2</td>
+<td align="center">2.0</td>
+<td align="center">2.1</td>
+<td align="center">0.1</td>
+<td align="center">0.1</td></tr>
+<tr><td>Marche</td>
+<td align="center">1.2</td>
+<td align="center">1.2</td>
+<td align="center">0.3</td>
+<td align="center">0.3</td>
+<td align="center">3.5</td>
+<td align="center">3.6</td>
+<td align="center">0.2</td>
+<td align="center">0.3</td></tr>
+<tr><td>Lazio</td>
+<td align="center">3.9</td>
+<td align="center">3.6</td>
+<td align="center">1.1</td>
+<td align="center">1.0</td>
+<td align="center">17.4</td>
+<td align="center">17.6</td>
+<td align="center">1.3</td>
+<td align="center">1.3</td></tr>
+<tr><td>Abruzzo</td>
+<td align="center">1.0</td>
+<td align="center">1.0</td>
+<td align="center">0.3</td>
+<td align="center">0.3</td>
+<td align="center">2.3</td>
+<td align="center">2.6</td>
+<td align="center">0.2</td>
+<td align="center">0.2</td></tr>
+<tr><td>Molise</td>
+<td align="center">0.2</td>
+<td align="center">0.2</td>
+<td align="center">0.1</td>
+<td align="center">0.1</td>
+<td align="center">0.5</td>
+<td align="center">0.5</td>
+<td align="center">0.1</td>
+<td align="center">0.1</td></tr>
+<tr><td>Campania</td>
+<td align="center">3.3</td>
+<td align="center">3.2</td>
+<td align="center">1.9</td>
+<td align="center">1.4</td>
+<td align="center">8.2</td>
+<td align="center">8.6</td>
+<td align="center">0.9</td>
+<td align="center">0.9</td></tr>
+<tr><td>Apulia</td>
+<td align="center">2.6</td>
+<td align="center">2.7</td>
+<td align="center">1.1</td>
+<td align="center">1.0</td>
+<td align="center">5.9</td>
+<td align="center">6.3</td>
+<td align="center">0.5</td>
+<td align="center">0.5</td></tr>
+<tr><td>Basilicata</td>
+<td align="center">0.4</td>
+<td align="center">0.4</td>
+<td align="center">0.2</td>
+<td align="center">0.1</td>
+<td align="center">0.8</td>
+<td align="center">0.9</td>
+<td align="center">0.1</td>
+<td align="center">0.1</td></tr>
+<tr><td>Calabria</td>
+<td align="center">1.4</td>
+<td align="center">1.4</td>
+<td align="center">0.4</td>
+<td align="center">0.4</td>
+<td align="center">2.9</td>
+<td align="center">2.7</td>
+<td align="center">0.3</td>
+<td align="center">0.3</td></tr>
+<tr><td>Sicily</td>
+<td align="center">3.0</td>
+<td align="center">3.1</td>
+<td align="center">1.5</td>
+<td align="center">1.2</td>
+<td align="center">5.8</td>
+<td align="center">7.5</td>
+<td align="center">0.6</td>
+<td align="center">0.7</td></tr>
+<tr><td>Sardinia</td>
+<td align="center">1.1</td>
+<td align="center">1.1</td>
+<td align="center">0.4</td>
+<td align="center">0.3</td>
+<td align="center">3.4</td>
+<td align="center">3.1</td>
+<td align="center">0.2</td>
+<td align="center">0.2</td></tr>
+<tr><td>Total</td>
+<td align="center">41.5</td>
+<td align="center">41.6</td>
+<td align="center">12.8</td>
+<td align="center">11.5</td>
+<td align="center">151.3</td>
+<td align="center">152.3</td>
+<td align="center">11.0</td>
+<td align="center">11.0</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: MicroReg and Ministry of Finance.</p></div></figure><figure id="figA1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00148-figA1.D59HpaVp_F4O3Y.webp" class="figure-lightbox-trigger" data-pswp-width="1503" data-pswp-height="738" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00148-figA1.D59HpaVp_F4O3Y.webp" alt width="1503" height="738" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure A.1.</strong><span data-astro-cid-dzaleqsp> Average value of gross income by gross income classes - income year 2012.</span></figcaption></figure><figure id="figA2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00148-figA2.DMflcnf4_1Qjaxl.webp" class="figure-lightbox-trigger" data-pswp-width="1449" data-pswp-height="751" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00148-figA2.DMflcnf4_1Qjaxl.webp" alt width="1449" height="751" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure A.2.</strong><span data-astro-cid-dzaleqsp> Average value of PIT by gross income classes - income year 2012.</span></figcaption></figure><figure id="tableA3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A.3.</strong><span data-astro-cid-dzaleqsp> VAT tax base and revenue (billion euro).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th align="center" colspan="4">Tax base</th>
+<th align="center" colspan="4">Tax revenue</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>Region/VAT rate</td>
+<td align="center">4%</td>
+<td align="center">10%</td>
+<td align="center">22%</td>
+<td align="center">Total</td>
+<td align="center">4%</td>
+<td align="center">10%</td>
+<td align="center">22%</td>
+<td align="center">Total</td></tr>
+<tr><td>Piedmont</td>
+<td align="center">6.5</td>
+<td align="center">14.1</td>
+<td align="center">13.7</td>
+<td align="center">34.3</td>
+<td align="center">0.3</td>
+<td align="center">1.4</td>
+<td align="center">3.0</td>
+<td align="center">4.7</td></tr>
+<tr><td>Aosta valley</td>
+<td align="center">0.2</td>
+<td align="center">0.4</td>
+<td align="center">0.4</td>
+<td align="center">1.0</td>
+<td align="center">0.0</td>
+<td align="center">0.0</td>
+<td align="center">0.1</td>
+<td align="center">0.1</td></tr>
+<tr><td>Lombardy</td>
+<td align="center">14.5</td>
+<td align="center">32.2</td>
+<td align="center">33.7</td>
+<td align="center">80.4</td>
+<td align="center">0.6</td>
+<td align="center">3.2</td>
+<td align="center">7.4</td>
+<td align="center">11.2</td></tr>
+<tr><td>Bolzano</td>
+<td align="center">0.7</td>
+<td align="center">1.5</td>
+<td align="center">1.8</td>
+<td align="center">4.0</td>
+<td align="center">0.0</td>
+<td align="center">0.1</td>
+<td align="center">0.4</td>
+<td align="center">0.6</td></tr>
+<tr><td>Trento</td>
+<td align="center">0.7</td>
+<td align="center">1.6</td>
+<td align="center">1.7</td>
+<td align="center">4.0</td>
+<td align="center">0.0</td>
+<td align="center">0.2</td>
+<td align="center">0.4</td>
+<td align="center">0.6</td></tr>
+<tr><td>Veneto</td>
+<td align="center">6.2</td>
+<td align="center">14.3</td>
+<td align="center">15.6</td>
+<td align="center">36.1</td>
+<td align="center">0.2</td>
+<td align="center">1.4</td>
+<td align="center">3.4</td>
+<td align="center">5.1</td></tr>
+<tr><td>Friuli Venezia Giulia</td>
+<td align="center">1.7</td>
+<td align="center">3.8</td>
+<td align="center">4.2</td>
+<td align="center">9.6</td>
+<td align="center">0.1</td>
+<td align="center">0.4</td>
+<td align="center">0.9</td>
+<td align="center">1.4</td></tr>
+<tr><td>Liguria</td>
+<td align="center">2.4</td>
+<td align="center">5.1</td>
+<td align="center">5.1</td>
+<td align="center">12.6</td>
+<td align="center">0.1</td>
+<td align="center">0.5</td>
+<td align="center">1.1</td>
+<td align="center">1.7</td></tr>
+<tr><td>Emilia Romagna</td>
+<td align="center">5.8</td>
+<td align="center">13.9</td>
+<td align="center">15.1</td>
+<td align="center">34.8</td>
+<td align="center">0.2</td>
+<td align="center">1.4</td>
+<td align="center">3.3</td>
+<td align="center">4.9</td></tr>
+<tr><td>Tuscany</td>
+<td align="center">5.2</td>
+<td align="center">10.9</td>
+<td align="center">11.8</td>
+<td align="center">27.9</td>
+<td align="center">0.2</td>
+<td align="center">1.1</td>
+<td align="center">2.6</td>
+<td align="center">3.9</td></tr>
+<tr><td>Umbria</td>
+<td align="center">1.2</td>
+<td align="center">2.4</td>
+<td align="center">2.6</td>
+<td align="center">6.2</td>
+<td align="center">0.0</td>
+<td align="center">0.2</td>
+<td align="center">0.6</td>
+<td align="center">0.9</td></tr>
+<tr><td>Marche</td>
+<td align="center">2.0</td>
+<td align="center">4.1</td>
+<td align="center">4.3</td>
+<td align="center">10.3</td>
+<td align="center">0.1</td>
+<td align="center">0.4</td>
+<td align="center">0.9</td>
+<td align="center">1.4</td></tr>
+<tr><td>Lazio</td>
+<td align="center">8.0</td>
+<td align="center">17.1</td>
+<td align="center">19.1</td>
+<td align="center">44.2</td>
+<td align="center">0.3</td>
+<td align="center">1.7</td>
+<td align="center">4.2</td>
+<td align="center">6.2</td></tr>
+<tr><td>Abruzzo</td>
+<td align="center">1.6</td>
+<td align="center">3.3</td>
+<td align="center">3.5</td>
+<td align="center">8.3</td>
+<td align="center">0.1</td>
+<td align="center">0.3</td>
+<td align="center">0.8</td>
+<td align="center">1.2</td></tr>
+<tr><td>Molise</td>
+<td align="center">0.4</td>
+<td align="center">0.8</td>
+<td align="center">0.7</td>
+<td align="center">1.8</td>
+<td align="center">0.0</td>
+<td align="center">0.1</td>
+<td align="center">0.2</td>
+<td align="center">0.2</td></tr>
+<tr><td>Campania</td>
+<td align="center">6.0</td>
+<td align="center">11.9</td>
+<td align="center">11.6</td>
+<td align="center">29.5</td>
+<td align="center">0.2</td>
+<td align="center">1.2</td>
+<td align="center">2.5</td>
+<td align="center">4.0</td></tr>
+<tr><td>Apulia</td>
+<td align="center">4.5</td>
+<td align="center">9.0</td>
+<td align="center">8.8</td>
+<td align="center">22.2</td>
+<td align="center">0.2</td>
+<td align="center">0.9</td>
+<td align="center">1.9</td>
+<td align="center">3.0</td></tr>
+<tr><td>Basilicata</td>
+<td align="center">0.6</td>
+<td align="center">1.3</td>
+<td align="center">1.3</td>
+<td align="center">3.2</td>
+<td align="center">0.0</td>
+<td align="center">0.1</td>
+<td align="center">0.3</td>
+<td align="center">0.4</td></tr>
+<tr><td>Calabria</td>
+<td align="center">2.3</td>
+<td align="center">4.5</td>
+<td align="center">4.5</td>
+<td align="center">11.3</td>
+<td align="center">0.1</td>
+<td align="center">0.4</td>
+<td align="center">1.0</td>
+<td align="center">1.5</td></tr>
+<tr><td>Sicily</td>
+<td align="center">5.6</td>
+<td align="center">10.6</td>
+<td align="center">10.4</td>
+<td align="center">26.6</td>
+<td align="center">0.2</td>
+<td align="center">1.1</td>
+<td align="center">2.3</td>
+<td align="center">3.6</td></tr>
+<tr><td>Sardinia</td>
+<td align="center">2.1</td>
+<td align="center">4.1</td>
+<td align="center">4.3</td>
+<td align="center">10.5</td>
+<td align="center">0.1</td>
+<td align="center">0.4</td>
+<td align="center">0.9</td>
+<td align="center">1.4</td></tr>
+<tr><td>Total</td>
+<td align="center">77.9</td>
+<td align="center">166.8</td>
+<td align="center">174.2</td>
+<td align="center">418.8</td>
+<td align="center">3.1</td>
+<td align="center">16.7</td>
+<td align="center">38.3</td>
+<td align="center">58.1</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: MicroReg.</p></div></figure><figure id="figA3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00148-figA3.3v_6c-ww_mgKDu.webp" class="figure-lightbox-trigger" data-pswp-width="1737" data-pswp-height="710" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00148-figA3.3v_6c-ww_mgKDu.webp" alt width="1737" height="710" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure A.3.</strong><span data-astro-cid-dzaleqsp> Distribution of VAT revenue by disposable income and expenditure deciles.</span></figcaption></figure><figure id="tableA4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A.4.</strong><span data-astro-cid-dzaleqsp> Test t for mean difference — EU-SILC vs HBS — Centre of Italy.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th align="center" colspan="4">EU-SILC</th>
+<th align="center" colspan="4">HBS</th>
+</tr>
+<tr>
+<th>Variable</th>
+<th align="center">Mean</th>
+<th align="center">Standard Deviation</th>
+<th align="center">Min</th>
+<th align="center">Max</th>
+<th align="center">Mean</th>
+<th align="center">Standard Deviation</th>
+<th align="center">Min</th>
+<th align="center">Max</th></tr>
+</thead>
+<tbody>
+<tr><td>Number of rooms</td>
+<td align="center">3.4</td>
+<td align="center">36.15</td>
+<td align="center">1</td>
+<td align="center">6</td>
+<td align="center">4.26</td>
+<td align="center">40.08</td>
+<td align="center">1</td>
+<td align="center">6</td></tr>
+<tr><td>Loan</td>
+<td align="center">0.16</td>
+<td align="center">12.28</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0.17</td>
+<td align="center">12.84</td>
+<td align="center">0</td>
+<td align="center">1</td></tr>
+<tr><td>Number of members</td>
+<td align="center">2.28</td>
+<td align="center">39.82</td>
+<td align="center">1</td>
+<td align="center">5</td>
+<td align="center">2.25</td>
+<td align="center">40.29</td>
+<td align="center">1</td>
+<td align="center">6</td></tr>
+<tr><td>Pc</td>
+<td align="center">0.61</td>
+<td align="center">16.36</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0.64</td>
+<td align="center">16.3</td>
+<td align="center">0</td>
+<td align="center">1</td></tr>
+<tr><td>Internet</td>
+<td align="center">0.57</td>
+<td align="center">16.62</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0.59</td>
+<td align="center">16.73</td>
+<td align="center">0</td>
+<td align="center">1</td></tr>
+<tr><td>Car</td>
+<td align="center">0.81</td>
+<td align="center">13.24</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0.83</td>
+<td align="center">12.72</td>
+<td align="center">0</td>
+<td align="center">1</td></tr>
+<tr><td>Dishwasher</td>
+<td align="center">0.51</td>
+<td align="center">16.77</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0.61</td>
+<td align="center">16.59</td>
+<td align="center">0</td>
+<td align="center">1</td></tr>
+<tr><td>Expenditure</td>
+<td align="center">23,850</td>
+<td align="center">363,619</td>
+<td align="center">7303</td>
+<td align="center">185,488</td>
+<td align="center">26,369</td>
+<td align="center">721,718</td>
+<td align="center">2,657</td>
+<td align="center">321,923</td></tr>
+<tr><td>Number of members &lt;5 years old</td>
+<td align="center">0.14</td>
+<td align="center">13.37</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">0.11</td>
+<td align="center">12.42</td>
+<td align="center">0</td>
+<td align="center">3</td></tr>
+<tr><td>Number of members 617 years old</td>
+<td align="center">0.25</td>
+<td align="center">19.67</td>
+<td align="center">0</td>
+<td align="center">4</td>
+<td align="center">0.26</td>
+<td align="center">20.1</td>
+<td align="center">0</td>
+<td align="center">4</td></tr>
+<tr><td>Number of members 1824 years old</td>
+<td align="center">0.15</td>
+<td align="center">14.31</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">0.14</td>
+<td align="center">13.57</td>
+<td align="center">0</td>
+<td align="center">3</td></tr>
+<tr><td>Number of members 3469 years old</td>
+<td align="center">1.12</td>
+<td align="center">28.42</td>
+<td align="center">0</td>
+<td align="center">4</td>
+<td align="center">1.18</td>
+<td align="center">27.91</td>
+<td align="center">0</td>
+<td align="center">4</td></tr>
+<tr><td>Householder with low education</td>
+<td align="center">0.52</td>
+<td align="center">16.77</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0.51</td>
+<td align="center">16.99</td>
+<td align="center">0</td>
+<td align="center">1</td></tr>
+<tr><td>Number of managers</td>
+<td align="center">0.02</td>
+<td align="center">4.9</td>
+<td align="center">0</td>
+<td align="center">2</td>
+<td align="center">0.03</td>
+<td align="center">6.57</td>
+<td align="center">0</td>
+<td align="center">3</td></tr>
+<tr><td>Number of self-employed</td>
+<td align="center">0.05</td>
+<td align="center">7.87</td>
+<td align="center">0</td>
+<td align="center">3</td>
+<td align="center">0.08</td>
+<td align="center">10.53</td>
+<td align="center">0</td>
+<td align="center">3</td></tr>
+<tr><td>In property</td>
+<td align="center">0.86</td>
+<td align="center">11.79</td>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0.85</td>
+<td align="center">12.02</td>
+<td align="center">0</td>
+<td align="center">1</td></tr>
+<tr><td>Number of earners</td>
+<td align="center">1.39</td>
+<td align="center">26.58</td>
+<td align="center">0</td>
+<td align="center">5</td>
+<td align="center">1.44</td>
+<td align="center">25.5</td>
+<td align="center">0</td>
+<td align="center">5</td></tr>
+<tr><td>P-value</td>
+<td align="left" colspan="8">0.9439473</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: our elaborations on HBS and EU-SILC.</p></div></figure><figure id="tableA5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A.5.</strong><span data-astro-cid-dzaleqsp> Test <i>X</i><sup>2</sup> for equality of distribution - EU-SILC vs. HBS.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th align="center" colspan="2">EU-SILC</th>
+<th align="center" colspan="2">HBS</th>
+</tr>
+<tr>
+<th align="center">Geographical area</th>
+<th align="center">N°</th>
+<th align="center">%</th>
+<th align="center">N°</th>
+<th align="center">%</th></tr>
+</thead>
+<tbody>
+<tr><td align="center">North West</td>
+<td align="center">7,251,965</td>
+<td align="center">28.3</td>
+<td align="center">7,270,064</td>
+<td align="center">28.34</td></tr>
+<tr><td align="center">North East</td>
+<td align="center">5,068,067</td>
+<td align="center">19.78</td>
+<td align="center">5,055,184</td>
+<td align="center">19.71</td></tr>
+<tr><td align="center">Centre</td>
+<td align="center">5,280,629</td>
+<td align="center">20.61</td>
+<td align="center">5,241,862</td>
+<td align="center">20.44</td></tr>
+<tr><td align="center">South</td>
+<td align="center">8,023,134</td>
+<td align="center">31.31</td>
+<td align="center">8,083,272</td>
+<td align="center">31.51</td></tr>
+<tr><td align="center">P-value</td>
+<td align="left" colspan="4">1</td>
+</tr>
+<tr><td/>
+<td align="center" colspan="2"><b>EU-SILC</b></td>
+<td align="center" colspan="2"><b>HBS</b></td>
+</tr>
+<tr><td align="center">Number of components</td>
+<td align="center">N°</td>
+<td align="center">%</td>
+<td align="center">N°</td>
+<td align="center">%</td>
+</tr>
+<tr><td align="center">1</td>
+<td align="center">8,281,042</td>
+<td align="center">32.32</td>
+<td align="center">8,391,562</td>
+<td align="center">32.715</td></tr>
+<tr><td align="center">2</td>
+<td align="center">6,762,685</td>
+<td align="center">26.39</td>
+<td align="center">6,801,077</td>
+<td align="center">26.515</td></tr>
+<tr><td align="center">3</td>
+<td align="center">5,045,371</td>
+<td align="center">19.69</td>
+<td align="center">4,841,819</td>
+<td align="center">18.876</td></tr>
+<tr><td align="center">4</td>
+<td align="center">4,226,780</td>
+<td align="center">16.5</td>
+<td align="center">4,331,686</td>
+<td align="center">16.887</td></tr>
+<tr><td align="center">5</td>
+<td align="center">1,028,286</td>
+<td align="center">4.01</td>
+<td align="center">1,023,989</td>
+<td align="center">3.992</td></tr>
+<tr><td align="center">6</td>
+<td align="center">202,530</td>
+<td align="center">0.79</td>
+<td align="center">199,543</td>
+<td align="center">0.778</td></tr>
+<tr><td align="center">7</td>
+<td align="center">52,711</td>
+<td align="center">0.21</td>
+<td align="center">45,463</td>
+<td align="center">0.177</td></tr>
+<tr><td align="center">8</td>
+<td align="center">15,078</td>
+<td align="center">0.06</td>
+<td align="center">13,698</td>
+<td align="center">0.053</td></tr>
+<tr><td align="center">9</td>
+<td align="center">6,810</td>
+<td align="center">0.03</td>
+<td align="center">1,249</td>
+<td align="center">0.005</td></tr>
+<tr><td align="center">10</td>
+<td align="center">2,410</td>
+<td align="center">0.01</td>
+<td align="center">296</td>
+<td align="center">0.001</td></tr>
+<tr><td align="center">P-value</td>
+<td align="left" colspan="4">1</td>
+</tr>
+<tr>
+<td/>
+<td align="center" colspan="2"><b>EU-SILC</b></td>
+<td align="center" colspan="2"><b>HBS</b></td>
+</tr>
+<tr><td align="center">Number of earners</td>
+<td align="center">N°</td>
+<td align="center">%</td>
+<td align="center">N°</td>
+<td align="center">%</td></tr>
+<tr><td align="center">0</td>
+<td align="center">3,956,170</td>
+<td align="center">15.44</td>
+<td align="center">2,506,273</td>
+<td align="center">9.95</td></tr>
+<tr><td align="center">1</td>
+<td align="center">13,124,349</td>
+<td align="center">51.22</td>
+<td align="center">13,378,643</td>
+<td align="center">53.13</td></tr>
+<tr><td align="center">2</td>
+<td align="center">7,109,135</td>
+<td align="center">27.74</td>
+<td align="center">8,125,715</td>
+<td align="center">32.27</td></tr>
+<tr><td align="center">3</td>
+<td align="center">1,197,490</td>
+<td align="center">4.67</td>
+<td align="center">1,009,751</td>
+<td align="center">4.01</td></tr>
+<tr><td align="center">4</td>
+<td align="center">215,988</td>
+<td align="center">0.84</td>
+<td align="center">148,021</td>
+<td align="center">0.59</td></tr>
+<tr><td align="center">5</td>
+<td align="center">20,662</td>
+<td align="center">0.08</td>
+<td align="center">13,492</td>
+<td align="center">0.05</td></tr>
+<tr><td align="center">P-value</td>
+<td align="left" colspan="4">0.554</td>
+</tr>
+<tr><td/>
+<td align="center" colspan="2"><b>EU-SILC</b></td>
+<td align="center" colspan="2"><b>HBS</b></td></tr>
+<tr><td align="center">Number of females</td>
+<td align="center">N°</td>
+<td align="center">%</td>
+<td align="center">N°</td>
+<td align="center">%</td></tr>
+<tr><td align="center">0</td>
+<td align="center">3,703,284</td>
+<td align="center">14.45</td>
+<td align="center">3,868,724</td>
+<td align="center">15.36</td></tr>
+<tr><td align="center">1</td>
+<td align="center">14,672,359</td>
+<td align="center">57.26</td>
+<td align="center">14,380,843</td>
+<td align="center">57.11</td></tr>
+<tr><td align="center">2</td>
+<td align="center">5,418,932</td>
+<td align="center">21.15</td>
+<td align="center">5,315,662</td>
+<td align="center">21.11</td></tr>
+<tr><td align="center">3</td>
+<td align="center">1,615,631</td>
+<td align="center">6.31</td>
+<td align="center">1,426,684</td>
+<td align="center">5.67</td></tr>
+<tr><td align="center">4</td>
+<td align="center">191,205</td>
+<td align="center">0.75</td>
+<td align="center">171,297</td>
+<td align="center">0.68</td></tr>
+<tr><td align="center">5</td>
+<td align="center">17,507</td>
+<td align="center">0.07</td>
+<td align="center">18,684</td>
+<td align="center">0.07</td></tr>
+<tr><td align="center">6</td>
+<td align="center">4,183</td>
+<td align="center">0.02</td>
+<td align="center">n/a or 0 ?</td>
+<td align="center">n/a or 0 ?</td></tr>
+<tr><td align="center">7</td>
+<td align="center">693</td>
+<td align="center">0</td>
+<td align="center">n/a or 0 ?</td>
+<td align="center">n/a or 0 ?</td>
+</tr>
+<tr>
+<td align="center">P-value</td>
+<td align="left" colspan="4">1</td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Our elaborations on <b>HBS</b> and <b>EU-SILC</b>.</p></div></figure><figure id="tableA6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A.6.</strong><span data-astro-cid-dzaleqsp> Regression of consumption on households’ characteristics.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td>Number of observations</td>
+<td>19,988</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr><td>R squared</td>
+<td>0.366</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr><td>R- squared corr.</td>
+<td>0.365</td>
+<td/>
+<td/>
+<td/>
+<td/>
+<td/>
+</tr>
+<tr><td>Variable</td>
+<td>DF</td>
+<td>Parameter estimate</td>
+<td>Standard Error</td>
+<td>T statistic</td>
+<td>Pr &gt; |t|</td>
+<td>Vif</td></tr>
+<tr><td>Intercept</td>
+<td>1</td>
+<td>9.08</td>
+<td>0.02</td>
+<td>483.94</td>
+<td>&lt;.0001</td>
+<td>0</td></tr>
+<tr><td>Number of rooms</td>
+<td>1</td>
+<td>0.04</td>
+<td>0</td>
+<td>10.78</td>
+<td>&lt;.0001</td>
+<td>1.26</td></tr>
+<tr><td>In property</td>
+<td>1</td>
+<td>-0.26</td>
+<td>0.01</td>
+<td>-22.41</td>
+<td>&lt;.0001</td>
+<td>1.17</td></tr>
+<tr><td>VHS</td>
+<td>1</td>
+<td>0.08</td>
+<td>0.01</td>
+<td>9.54</td>
+<td>&lt;.0001</td>
+<td>1.14</td></tr>
+<tr><td>Loan</td>
+<td>1</td>
+<td>0.11</td>
+<td>0.01</td>
+<td>8.43</td>
+<td>&lt;.0001</td>
+<td>1.14</td></tr>
+<tr><td>Box</td>
+<td>1</td>
+<td>0.13</td>
+<td>0.01</td>
+<td>14.37</td>
+<td>&lt;.0001</td>
+<td>1.22</td></tr>
+<tr><td>Pc</td>
+<td>1</td>
+<td>0.14</td>
+<td>0.02</td>
+<td>8.9</td>
+<td>&lt;.0001</td>
+<td>4.15</td></tr>
+<tr><td>Car</td>
+<td>1</td>
+<td>0.27</td>
+<td>0.01</td>
+<td>23.11</td>
+<td>&lt;.0001</td>
+<td>1.51</td></tr>
+<tr><td>Internet</td>
+<td>1</td>
+<td>0.09</td>
+<td>0.02</td>
+<td>5.7</td>
+<td>&lt;.0001</td>
+<td>3.81</td></tr>
+<tr><td>Dishwasher</td>
+<td>1</td>
+<td>0.18</td>
+<td>0.01</td>
+<td>19.54</td>
+<td>&lt;.0001</td>
+<td>1.33</td></tr>
+<tr><td>Number of members &lt;5 years old</td>
+<td>1</td>
+<td>0.03</td>
+<td>0.01</td>
+<td>2.49</td>
+<td>0.013</td>
+<td>1.22</td></tr>
+<tr><td>Number of members 6–17 years old</td>
+<td>1</td>
+<td>0.03</td>
+<td>0.01</td>
+<td>4.26</td>
+<td>&lt;.0001</td>
+<td>1.56</td></tr>
+<tr><td>Number of members 18–24 years old</td>
+<td>1</td>
+<td>0.05</td>
+<td>0.01</td>
+<td>3.93</td>
+<td>&lt;.0001</td>
+<td>2.41</td></tr>
+<tr><td>Number of members 25–34 years old</td>
+<td>1</td>
+<td>-0.01</td>
+<td>0.01</td>
+<td>-0.74</td>
+<td>0.461</td>
+<td>2.19</td></tr>
+<tr><td>Number of members 34–69 years old</td>
+<td>1</td>
+<td>0.03</td>
+<td>0.01</td>
+<td>3.93</td>
+<td>&lt;.0001</td>
+<td>3.03</td></tr>
+<tr><td>Householder with low education</td>
+<td>1</td>
+<td>-0.08</td>
+<td>0.01</td>
+<td>-5.66</td>
+<td>&lt;.0001</td>
+<td>3.1</td></tr>
+<tr><td>Number of males</td>
+<td>1</td>
+<td>0.02</td>
+<td>0.01</td>
+<td>2.91</td>
+<td>0.004</td>
+<td>2.46</td></tr>
+<tr><td>Number of job seekers</td>
+<td>1</td>
+<td>-0.07</td>
+<td>0.01</td>
+<td>-5.71</td>
+<td>&lt;.0001</td>
+<td>2.19</td></tr>
+<tr><td>Number of retired</td>
+<td>1</td>
+<td>0.04</td>
+<td>0.01</td>
+<td>4.52</td>
+<td>&lt;.0001</td>
+<td>2.39</td></tr>
+<tr><td>Number of not employed</td>
+<td>1</td>
+<td>0</td>
+<td>0.01</td>
+<td>0.23</td>
+<td>0.82</td>
+<td>3.18</td></tr>
+<tr><td>Number of managers</td>
+<td>1</td>
+<td>0.12</td>
+<td>0.02</td>
+<td>5.4</td>
+<td>&lt;.0001</td>
+<td>1.06</td></tr>
+<tr><td>Number of self-employed</td>
+<td>1</td>
+<td>0.08</td>
+<td>0.01</td>
+<td>5.22</td>
+<td>&lt;.0001</td>
+<td>1.1</td></tr>
+<tr><td>Number of members with high education</td>
+<td>1</td>
+<td>0.11</td>
+<td>0.01</td>
+<td>10.78</td>
+<td>&lt;.0001</td>
+<td>2.22</td></tr>
+<tr><td>Number of members with medium education</td>
+<td>1</td>
+<td>0.04</td>
+<td>0.01</td>
+<td>4.82</td>
+<td>&lt;.0001</td>
+<td>3.69</td></tr>
+<tr><td>Number of earners</td>
+<td>1</td>
+<td>0.08</td>
+<td>0.01</td>
+<td>7.45</td>
+<td>&lt;.0001</td>
+<td>4.37</td>
+</tr></tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Our elaborations on HBS.</p></div></figure></div></details><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Arachi, G, Bucci, V, Longobardi, E, Panteghini, PM, Parisi, ML, Pellegrino, S, Zanardi, A (2012). <span data-astro-cid-oer3kof4>Fiscal Reforms during Fiscal Consolidation: The Case of Italy</span>. <em data-astro-cid-oer3kof4>FinanzArchiv: Public Finance Analysis</em>, <strong data-astro-cid-oer3kof4>68</strong>, 445–465.</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Baldini, M, Bosi, P, Pacifico, D (2007). <span data-astro-cid-oer3kof4>Gli effetti distributivi dei trasferimenti in-kind: il caso dei servizi educativi e sanitari</span>. In Brandolini, A, Saraceno, C (Eds.), <em data-astro-cid-oer3kof4>Povertá e benessere. Una geografia delle disuguaglianze in Italia</em> (pp. 411–422). Bologna: Il Mulino.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Battellini, F, Coli, A, Tartamella, F (2009). <span data-astro-cid-oer3kof4>La SAM come strumento di integrazione e analisi</span>. <em data-astro-cid-oer3kof4>Rivista di statistica ufficiale</em>, <strong data-astro-cid-oer3kof4>2-3</strong>, 35–62.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Betti, G, Maitino, M, Sciclone, N (2012). <span data-astro-cid-oer3kof4>A che cosa servono i modelli di microsimulazione? Tre applicazioni usando microReg</span>. <em data-astro-cid-oer3kof4>Science Regionali</em>, <strong data-astro-cid-oer3kof4>2</strong>, 101–119.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Bianchini, L, Maitino, M, Piazza, S, Ravagli, L, Sciclone, N (2013). <em data-astro-cid-oer3kof4>Federalismo fiscale e redistribuzione: l’ejfetto distributīvo dei benefici in-kind a livello regionale.</em>. Un’applicazione a due Regioni italiane, IRPET.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ceriani, L, Figari, F, Fiorio, C (2016). <span data-astro-cid-oer3kof4>ITALY (IT)</span>.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Decoster, A, De Rock, B, De Swerdt, K, Loughrey, J, O’Donoghue, C, Verwerft, D (2007). <span data-astro-cid-oer3kof4>Comparative Analysis of Different Techniques to Impute Expenditures into an Income Data Set</span>.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Di Nicola, F, Mongelli, G, Pellegrino, S (2015). <span data-astro-cid-oer3kof4>The static microsimulation model of the Italian Department of Finance: Structure and first results regarding income and housing taxation</span>.</span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2012). <span data-astro-cid-oer3kof4>Gli immobili in Italia 2012 - Ricchezza, reddito e fiscalitá immobiliare</span>.</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>D’Agosto, E, Marigliani, M, Pisani, S (2012). <em data-astro-cid-oer3kof4>Asimmetrie territorial! nel gap IVA, Atti della Conferenza XXIV SIEP “Economia informale, evasione fiscale e corruzione”</em>. Universitá di Pavia, SIEP.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>D’Orazio, M, Di Zio, M, Scanu, M (2002). <span data-astro-cid-oer3kof4>Statistical Matching and Official Statistics</span>. <em data-astro-cid-oer3kof4>Rivista di statistica ufficiale</em>, <strong data-astro-cid-oer3kof4>1</strong>, 5–24.</span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Gastaldi, F, Liberati, P, Pisano, E, Tedeschi, S (2014). <em data-astro-cid-oer3kof4>Progressivity-improving VAT reforms in Italy, University of Pavia</em>. wp: SIEP.</span></li><li id="bib13" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Gigliarano, C, D&#39;Ambrosio, C (2009). <span data-astro-cid-oer3kof4>Public health transfers in kind: measuring the distributional effects in Italy, Universitá Commerciale Luigi Bocconi, Econpubblica Centre for Research on the Public Sector, Working Paper, (145)</span>.</span></li><li id="bib14" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Immervoll, H, O&#39;Donoghue, C (2001). <span data-astro-cid-oer3kof4>Imputation of gross amounts from net incomes in household surveys: an application using EUROMOD. EUROMOD Working Paper EM1/01</span>.</span></li><li id="bib15" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2016). <span data-astro-cid-oer3kof4>Sintesi dei conti ed aggregati economici delle Amministrazioni pubbliche</span>.</span></li><li id="bib16" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Maitino, ML, Sciclone, N (2008). <span data-astro-cid-oer3kof4>Il modelh di microsimulazione fiscale dell’IRPET Microreg</span>.</span></li><li id="bib17" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>O’Donoghue, C, Baldini, M, Montovani, D (2004). <span data-astro-cid-oer3kof4>Modelling the Redistributive Impact of Indirect Taxes in Europe: An Application of Eurmod. EUROMOD Working Paper no. EM7/01</span>.</span></li><li id="bib18" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Pellegrino, S, Piacenza, M, Turati, G (2011). <span data-astro-cid-oer3kof4>Developing a static microsimulation model for the analysis of housing taxation in Italy</span>. <em data-astro-cid-oer3kof4>International Journal of Microsimulation</em>, <strong data-astro-cid-oer3kof4>4</strong>, 73–85.</span></li><li id="bib19" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Pisani, E, Tedeschi, S (2014). <span data-astro-cid-oer3kof4>Micro Data Fusion of Italian Expenditures and Incomes Surveys. WP n.164, Working Papers Series of the Department of Public Economics - Sapienza University of Rome</span>.</span></li><li id="bib20" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Sonedda, D, Turati, G (2005). <span data-astro-cid-oer3kof4>Winners and losers in the Italian Welfare State: A microsimulation analysis of income redistribution considering in-kind transfers</span>. <em data-astro-cid-oer3kof4>Giornale degli Economisti</em>, <strong data-astro-cid-oer3kof4>64</strong>, 423–464.</span></li><li id="bib21" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Sutherland, H (2001). <span data-astro-cid-oer3kof4>Final report EUROMOD: An Integrated European Benefit Tax Model. Working Paper, n. EM9</span>.</span></li><li id="bib22" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Taddei, A (2012). <em data-astro-cid-oer3kof4>The tax shift from labor to consumption in Italy: afiscal microsimulation analysis using EUROMOD</em>. University of Genoa.</span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>M Luisa Maitino</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>IRPET (Regional Institute for Economic Planning of Tuscany), Italy</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:marialuisa.maitino@irpet.it" data-astro-cid-m3fa5h5a>marialuisa.maitino@irpet.it</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Letizia Ravagli</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>IRPET (Regional Institute for Economic Planning of Tuscany), Italy</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:letizia.ravagli@irpet.it" data-astro-cid-m3fa5h5a>letizia.ravagli@irpet.it</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Nicola Sciclone</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>IRPET (Regional Institute for Economic Planning of Tuscany), Italy</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:nicola.sciclone@irpet.it" data-astro-cid-m3fa5h5a>nicola.sciclone@irpet.it</a></p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00148" data-astro-cid-m3fa5h5a>Version of Record published: April 30, 2017 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2017, Maitino</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/taxes-benefits" data-pagefind-filter="Research category:Taxes and benefits" data-astro-cid-m3fa5h5a>Taxes and benefits</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=microsimulation%20models" data-astro-cid-m3fa5h5a>microsimulation models</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=tax-benefit%20system" data-astro-cid-m3fa5h5a>tax-benefit system</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=indirect%20taxes" data-astro-cid-m3fa5h5a>indirect taxes</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=in-kind%20transfers" data-astro-cid-m3fa5h5a>in-kind transfers</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

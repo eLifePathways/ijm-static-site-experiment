@@ -1,0 +1,21 @@
+TY  - JOUR
+TI  - Simulating disease transmission dynamics at a multi-scale level
+AU  - Hoshen, Moshe B.
+AU  - Burton, Anthony H.
+AU  - Bowcock, Themis J. V.
+VL  - 1
+IS  - 1
+PY  - 2007
+DA  - 2007/12/31
+SP  - 26-34
+C1  - IJM 2007;1(1):26-34
+DO  - 10.34196/ijm.00004
+UR  - https://doi.org/10.34196/ijm.00004
+AB  - We present a model of the global spread of a generic human infectious disease using a Monte Carlo micro-simulation with large-scale parallel-processing. This prototype has been constructed and tested on a model of the entire population of the British Isles. Typical results are presented. A microsimulation of this order of magnitude of population simulation has not been previously attained. Further, an efficiency assessment of processor usage indicates that extension to the global scale is feasible. We conclude that the flexible approach outlined provides the framework for a virtual laboratory capable of supporting public health policy making at a variety of spatial scales.
+KW  - high-performance computing
+KW  - global modelling
+KW  - disease transmission
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

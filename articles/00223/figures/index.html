@@ -1,0 +1,2355 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Figures and data in Enhancing microsimulation analysis of wealth-related policies in EUROMOD | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00223/figures"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.figures-page__summary[data-astro-cid-uy5dlehv]{color:var(--color-ink-muted);margin-block-end:var(--space-m)}@media (width>=75em){.article-content-grid[data-astro-cid-uy5dlehv]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-astro-cid-uy5dlehv><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/methodology" data-astro-cid-ak4gb66a>Methodology</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Dec 31, 2020</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Enhancing microsimulation analysis of wealth-related policies in EUROMOD</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Sarah Kuypers, Jonas Boone, Johannes Derboven, Francesco Figari, Gerlinde Verbist</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Centre for Social Policy, Antwerp, Belgium; University of Insubria, Varese, Italy; University of Essex, Colchester, United Kingdom</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/13-3/volume-13-3-winter-2020" data-astro-cid-ak4gb66a>Volume 13(3) Winter 2020</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> S. Kuypers, J. Boone, J. Derboven, F. Figari, G. Verbist; 2020; <span data-astro-cid-ak4gb66a>Enhancing microsimulation analysis of wealth-related policies in EUROMOD</span>; International Journal of Microsimulation; 13(3); 5–26. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00223" data-astro-cid-ak4gb66a>10.34196/ijm.00223</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>While microsimulation techniques have been widely used for the analysis of the distribution of income, this has not been the case for the distribution of wealth. A major reason for this has been the lack of appropriate input data. In Europe this has recently changed among others by the launch of the Eurosystem Household Finance and Consumption Survey (HFCS). In this paper we explain how microsimulation analysis of wealth-related taxes and policies is enhanced by using the HFCS as input data for EUROMOD, the EU-wide tax-benefit microsimulation model. Pilot databases for Belgium and Italy were explored in Kuypers et al. (2016). This paper builds further on that work by extending the coverage to 17 countries and introducing the simulation of new wealth-related policies in EUROMOD. We explain the processes used to build the input data and to code the wealth-related policies in EUROMOD and highlight some important advantages and drawbacks. Finally, we put forward some research questions which may be addressed by using this enhanced model.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00223/ijm-00223.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00223.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00223.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-uy5dlehv><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00223" class="view-tabs__link" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00223/figures" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#tables" data-astro-cid-twdwaz5s>Tables</a></li></ul></details></div><div class="article-content" data-astro-cid-uy5dlehv><p class="figures-page__summary" data-astro-cid-uy5dlehv>This article contains 10 tables.</p><details id="tables" class="article-section article-section--collapsible" open data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Tables</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Overview of income reference periods, HFCS second wave.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="center" colspan="4">Income reference year</th>
+</tr>
+<tr>
+<th align="left">2010</th>
+<th align="left">2012</th>
+<th align="left">2013</th>
+<th align="left">2014</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">ES</td>
+<td align="left">EE, PT, IE</td>
+<td align="left">BE, DE, CY, LU, AT, PL, SL, SK, FI, EL</td>
+<td align="left">FR, IT, HU</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source:</i> The <a href="#bib8">HFCN (Eurosystem Household Finance and Consumption Network) (2016)</a>. <i>Cross-country metadatainformation. Wave 2,</i> European Central Bank.</p></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Descriptive statistics of sample and weights, EM-HFCS vs. EM-SILC.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left"/>
+<th align="left">Households</th>
+<th align="left">Original individuals</th>
+<th align="left">Restricted individuals</th>
+<th align="left">Mean weight</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+<b>Austria</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">2,997</td>
+<td align="left">6,189</td>
+<td align="left">6,168</td>
+<td align="left">1,335</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">5,909</td>
+<td align="left">-</td>
+<td align="left">12,945</td>
+<td align="left">647</td>
+</tr>
+<tr>
+<td align="left">
+<b>Belgium</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">2,238</td>
+<td align="left">5,200</td>
+<td align="left">5,187</td>
+<td align="left">2,143</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">5,817</td>
+<td align="left">-</td>
+<td align="left">13,896</td>
+<td align="left">781</td>
+</tr>
+<tr>
+<td align="left">
+<b>Cyprus</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">1,289</td>
+<td align="left">4,223</td>
+<td align="left">4,214</td>
+<td align="left">198</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">4,294</td>
+<td align="left">-</td>
+<td align="left">12,000</td>
+<td align="left">71</td>
+</tr>
+<tr>
+<td align="left">
+<b>Estonia</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">2,220</td>
+<td align="left">5,709</td>
+<td align="left">5,650</td>
+<td align="left">225</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">5,433</td>
+<td align="left">-</td>
+<td align="left">14,210</td>
+<td align="left">93</td>
+</tr>
+<tr>
+<td align="left">
+<b>Finland</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">11,030</td>
+<td align="left">27,142</td>
+<td align="left">27,142</td>
+<td align="left">198</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">11,030</td>
+<td align="left">-</td>
+<td align="left">27,142</td>
+<td align="left">198</td>
+</tr>
+<tr>
+<td align="left">
+<b>France</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">12,035</td>
+<td align="left">28,845</td>
+<td align="left">28,577</td>
+<td align="left">2,229</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">11,390</td>
+<td align="left">-</td>
+<td align="left">26,558</td>
+<td align="left">2,342</td>
+</tr>
+<tr>
+<td align="left">
+<b>Germany</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">4,461</td>
+<td align="left">10,201</td>
+<td align="left">10,160</td>
+<td align="left">7,833</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">12,744</td>
+<td align="left">-</td>
+<td align="left">26,438</td>
+<td align="left">3,015</td>
+</tr>
+<tr>
+<td align="left">
+<b>Greece</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">3,003</td>
+<td align="left">7,744</td>
+<td align="left">7,741</td>
+<td align="left">1,386</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">14,096</td>
+<td align="left">-</td>
+<td align="left">34,380</td>
+<td align="left">311</td>
+</tr>
+<tr>
+<td align="left">
+<b>Hungary</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">6,207</td>
+<td align="left">14,623</td>
+<td align="left">14,473</td>
+<td align="left">663</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">7,770</td>
+<td align="left">-</td>
+<td align="left">18,668</td>
+<td align="left">519</td>
+</tr>
+<tr>
+<td align="left">
+<b>Ireland</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">5,419</td>
+<td align="left">14,546</td>
+<td align="left">14,546</td>
+<td align="left">316</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">4,592</td>
+<td align="left">-</td>
+<td align="left">11,794</td>
+<td align="left">386</td>
+</tr>
+<tr>
+<td align="left">
+<b>Italy</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">8,156</td>
+<td align="left">19,366</td>
+<td align="left">19,290</td>
+<td align="left">3,131</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">17,985</td>
+<td align="left">-</td>
+<td align="left">42,791</td>
+<td align="left">1,413</td>
+</tr>
+<tr>
+<td align="left">
+<b>Luxembourg</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">1,601</td>
+<td align="left">4,444</td>
+<td align="left">4,400</td>
+<td align="left">115</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">5,802</td>
+<td align="left">-</td>
+<td align="left">15,462</td>
+<td align="left">32</td>
+</tr>
+<tr>
+<td align="left">
+<b>Poland</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">3,455</td>
+<td align="left">9,035</td>
+<td align="left">9,035</td>
+<td align="left">4,215</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">12,978</td>
+<td align="left">-</td>
+<td align="left">35,991</td>
+<td align="left">1,045</td>
+</tr>
+<tr>
+<td align="left">
+<b>Portugal</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">6,207</td>
+<td align="left">16,513</td>
+<td align="left">16,404</td>
+<td align="left">634</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">6,257</td>
+<td align="left">-</td>
+<td align="left">15,926</td>
+<td align="left">660</td>
+</tr>
+<tr>
+<td align="left">
+<b>Slovakia</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">2,135</td>
+<td align="left">5,433</td>
+<td align="left">5,378</td>
+<td align="left">959</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">5,490</td>
+<td align="left">-</td>
+<td align="left">15,681</td>
+<td align="left">332</td>
+</tr>
+<tr>
+<td align="left">
+<b>Slovenia</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">2,553</td>
+<td align="left">7,245</td>
+<td align="left">7,204</td>
+<td align="left">285</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">9,205</td>
+<td align="left">-</td>
+<td align="left">28,034</td>
+<td align="left">71</td>
+</tr>
+<tr>
+<td align="left">
+<b>Spain</b>
+</td>
+<td align="left">
+<b>EM-HFCS</b>
+</td>
+<td align="left">6,106</td>
+<td align="left">15,852</td>
+<td align="left">15,788</td>
+<td align="left">2,892</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">
+<b>EM-SILC</b>
+</td>
+<td align="left">13,597</td>
+<td align="left">-</td>
+<td align="left">36,992</td>
+<td align="left">1,244</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source:</i> Own calculations based on EUROMOD and micro-datafrom EM-HFCS and EM-SILC.</p></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Ratio cadastral values/market values.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Country</th>
+<th align="left">Ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Austria</td>
+<td align="left">0.105</td>
+</tr>
+<tr>
+<td align="left">Belgium</td>
+<td align="left">0.004</td>
+</tr>
+<tr>
+<td align="left">Finland</td>
+<td align="left">0.510</td>
+</tr>
+<tr>
+<td align="left">France</td>
+<td align="left">0.022 for buildings, 0.105 for land</td>
+</tr>
+<tr>
+<td align="left">Germany</td>
+<td align="left">0.080</td>
+</tr>
+<tr>
+<td align="left">Italy</td>
+<td align="left">0.0033 for main residence, 0.0097 for other real estate</td>
+</tr>
+<tr>
+<td align="left">Luxembourg</td>
+<td align="left">0.005</td>
+</tr>
+<tr>
+<td align="left">Portugal</td>
+<td align="left">0.809</td>
+</tr>
+<tr>
+<td align="left">Spain</td>
+<td align="left">0.360</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: Ratio between the total of cadastral values from administrative data and the total market value of all properties estimated in HFCS, for Belgium between mean cadastral value in EU-SILC and mean market value in HFCS, for Luxembourg ratio was inferred from policy parameters.</p></div></figure><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Overview of uprating indices used for wealth variables in EUROMOD, Germany (in billion euros).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Variables uprated by the index</th>
+<th align="left">Value2013</th>
+<th align="left">Value2017</th>
+<th align="left">Ratio value 2017/2013</th>
+<th align="left">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Wealth from main residence, Wealth from other buildings, Purchase value of main residence, Purchase value of other buildings</td>
+<td align="left">7160.3</td>
+<td align="left">8328.8</td>
+<td align="left">1.16</td>
+<td align="left">Gross stock of buildings and structures (1)</td>
+</tr>
+<tr>
+<td align="left">Wealth from vehicles</td>
+<td align="left">302.2</td>
+<td align="left">328.8</td>
+<td align="left">1.09</td>
+<td align="left">Stock of personal transport equipment (2)</td>
+</tr>
+<tr>
+<td align="left">Wealth from valuables</td>
+<td align="left">157.9</td>
+<td align="left">175.9</td>
+<td align="left">1.11</td>
+<td align="left">Stock of other durables (2)</td>
+</tr>
+<tr>
+<td align="left">Self-employment business wealth</td>
+<td align="left">317.3</td>
+<td align="left">332.4</td>
+<td align="left">1.05</td>
+<td align="left">Stock of machinery &amp; equipment and intellectual property products (1)</td>
+</tr>
+<tr>
+<td align="left">Wealth from deposits</td>
+<td align="left">1798.8</td>
+<td align="left">2119.6</td>
+<td align="left">1.18</td>
+<td align="left">Stock of transferable &amp; other deposits (3)</td>
+</tr>
+<tr>
+<td align="left">Wealth from mutual funds, wealth from managed accounts</td>
+<td align="left">398.3</td>
+<td align="left">576.2</td>
+<td align="left">1.45</td>
+<td align="left">Stock of investment fund shares (3)</td>
+</tr>
+<tr>
+<td align="left">Wealth from bonds</td>
+<td align="left">179.0</td>
+<td align="left">120.5</td>
+<td align="left">0.67</td>
+<td align="left">Stock of debt securities (3)</td>
+</tr>
+<tr>
+<td align="left">Wealth from private non-self-employment businesses</td>
+<td align="left">264.4</td>
+<td align="left">314.7</td>
+<td align="left">1.19</td>
+<td align="left">Stock of unlisted shares and other equity (3)</td>
+</tr>
+<tr>
+<td align="left">Wealth from listed shares</td>
+<td align="left">223.2</td>
+<td align="left">327.4</td>
+<td align="left">1.47</td>
+<td align="left">Stock of listed shares (domestic &amp; other (3)</td>
+</tr>
+<tr>
+<td align="left">Wealth from private pensions and life insurances</td>
+<td align="left">1555.6</td>
+<td align="left">1826.0</td>
+<td align="left">1.17</td>
+<td align="left">Stock of life insurance and pension entitlements (3)</td>
+</tr>
+<tr>
+<td align="left">Wealth from other assets</td>
+<td align="left">328.0</td>
+<td align="left">384.8</td>
+<td align="left">1.17</td>
+<td align="left">Stock of non-life insurance technical reserves and other accounts (3)</td>
+</tr>
+<tr>
+<td align="left">Debts</td>
+<td align="left">1565.1</td>
+<td align="left">1727.5</td>
+<td align="left">1.11</td>
+<td align="left">Stock of total liabilities (3)</td>
+</tr>
+<tr>
+<td align="left">Value of inheritances and components of inheritances</td>
+<td align="left">17.3</td>
+<td align="left">23.3</td>
+<td align="left">1.35</td>
+<td align="left">Total amount of inheritances&gt;0 euro (4)</td>
+</tr>
+<tr>
+<td align="left">Value of gifts and components of gifts</td>
+<td align="left">11.5</td>
+<td align="left">11.2</td>
+<td align="left">0.97</td>
+<td align="left">Total amount of gifts&gt;0 euro (4)</td>
+</tr>
+<tr>
+<td align="left">Net wealth</td>
+<td align="left">11920.7</td>
+<td align="left">13876.7</td>
+<td align="left">1.16</td>
+<td align="left">Stock of net wealth (sum of fixed assets, consumer durables and financial assets less liabilities) (1,2 and 3)</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: All stock variables refer to the situation at the end of the year.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: (1) National Accounts, Fixed assets by sector (<a href="#bib5">Federal Statistical Office Germany, 2018a</a>); (2) National Wealth Accounts, consumer durables (<a href="#bib6">Federal Statistical Office Germany, 2018b</a>); (3) Financial Accounts (<a href="#bib4">Deutsche Bundesbank, 2018</a>); (4) Finanzen und Steuern, Erbschaft- und Schenkungsteuer (<a href="#bib7">Federal Statistical Office Germany, 2018c</a>).</p></div></figure><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Overview of simulation new wealth-related taxes in EUROMOD, 2017.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">Real property tax</th>
+<th align="left">Real property transfer tax</th>
+<th align="left">Inheritance tax</th>
+<th align="left">Gift tax</th>
+<th align="left">General net wealth tax</th>
+<th align="left">Specific net wealth tax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Austria</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N<sup>1</sup>
+</td>
+<td align="left">N<sup>1</sup>
+</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Belgium</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Cyprus</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES<sup>2</sup>
+</td>
+<td align="left">ES<sup>2</sup>
+</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Estonia</td>
+<td align="left">ES<sup>3</sup>
+</td>
+<td align="left">N</td>
+<td align="left">N</td>
+<td align="left">N</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Finland</td>
+<td align="left">ES</td>
+<td align="left">ENS</td>
+<td align="left">ENS</td>
+<td align="left">ENS</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">France</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Germany</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Greece</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Hungary</td>
+<td align="left">ENS</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Ireland</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Italy</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">ES</td>
+</tr>
+<tr>
+<td align="left">Luxembourg</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Poland</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Portugal</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES<sup>4</sup>
+</td>
+<td align="left">ES<sup>4</sup>
+</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Slovakia</td>
+<td align="left">ES</td>
+<td align="left">ENS<sup>5</sup>
+</td>
+<td align="left">N</td>
+<td align="left">N</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Slovenia</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">N</td>
+</tr>
+<tr>
+<td align="left">Spain</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES<sup>6</sup>
+</td>
+<td align="left">N</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: ES= exists &amp; simulated; ENS= exists &amp; not simulated; N= does not exist. <sup>1</sup>The inheritance &amp; gift tax was abolished in 2008. A provision for inheritances and gifts still exists under the real property transfer tax. <sup>2</sup>Inheritance &amp; gift tax was abolished in 2000 and thereafter included in the legislation of the real property transfer tax. <sup>3</sup>Land tax <sup>4</sup>Inheritance &amp; gift tax was abolished in 2004 and thereafter included in the stamp duty. <sup>5</sup>In Slovakia there is a real property transfer tax provision. We are not able to simulate this provision since it requires specific information. However, the budgetary impact of the tax is very limited. <sup>6</sup>The general net wealth tax was abolished in Spain between 2008 and 2011 and was reintroduced thereafter.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source:</i> <a href="#bib2">Boone et al. (2019)</a>.</p></div></figure><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Overview of refined wealth-related policies in EUROMOD, 2017.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">Taxation of income from financial assets</th>
+<th align="left">Taxation of income from real property</th>
+<th align="left">Tax relief for mortgage repayment</th>
+<th align="left">Tax relief for contributions made to private pension funds</th>
+<th align="left">Asset-test for social benefits</th>
+<th align="left">Country specific tax</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Austria</td>
+<td align="left">ESR<sup>1</sup>
+</td>
+<td align="left">ES</td>
+<td align="left">ESR<sup>2</sup>
+</td>
+<td align="left">ESR<sup>3</sup>
+</td>
+<td align="left">ESR</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Belgium</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">ESR</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ESR<sup>4</sup>
+</td>
+</tr>
+<tr>
+<td align="left">Cyprus</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">EN<sup>5</sup>
+</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">ESR<sup>6</sup>
+</td>
+</tr>
+<tr>
+<td align="left">Estonia</td>
+<td align="left">ESR</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">EN</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Finland</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">EN</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">France</td>
+<td align="left">ESR</td>
+<td align="left">ESR</td>
+<td align="left">ESR</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Germany</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">EN</td>
+<td align="left">ESR</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Greece</td>
+<td align="left">ESR</td>
+<td align="left">ESR</td>
+<td align="left">N</td>
+<td align="left">N</td>
+<td align="left">ES</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Hungary</td>
+<td align="left">ESR</td>
+<td align="left">ES</td>
+<td align="left">N</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Ireland</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">ESR</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Italy</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Luxembourg</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Poland</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">ES</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Portugal</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">ES</td>
+<td align="left">ESR</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Slovakia</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">EN<sup>7</sup>
+</td>
+<td align="left">ES</td>
+<td align="left">ES<sup>8</sup>
+</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Slovenia</td>
+<td align="left">ESR</td>
+<td align="left">ESR</td>
+<td align="left">N</td>
+<td align="left">ES</td>
+<td align="left">EN</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left">Spain</td>
+<td align="left">N<sup>9</sup>
+</td>
+<td align="left">ES</td>
+<td align="left">ESR<sup>10</sup>
+</td>
+<td align="left">ES</td>
+<td align="left">ES</td>
+<td align="left">n/a</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: ES = exists &amp; simulated; ESR = exists, simulated &amp; refined; EN = exists &amp; not simulated; N = does not exist. <sup>1</sup>Tax on capital gains. <sup>2</sup>Included under the tax allowance for cost of earnings and tax allowance for exceptional deductions. <sup>3</sup>Included under the tax allowance for exceptional deductions. <sup>4</sup>Tax on long term saving. <sup>5</sup>No specific information was found online such that we cannot implement this tax. <sup>6</sup>Special contribution to defense. <sup>7</sup>Not yet applicable in 2013 and 2017. <sup>8</sup>Social assistance is the only means-tested benefit which is simulated for Slovakia and we did not find any applicable asset-test. <sup>9</sup>Exemption for dividends was abolished in 2015. <sup>10</sup>Since 2013 the mortgage tax credit is no longer in effect for individuals who bought their residences after 1<sup>st</sup> of January of that year.</p></div></figure><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Comparison of key EUROMOD equivalised income concepts (in € per year), EM-HFCS vs. EM-SILC, income reference year.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Country</th>
+<th align="left" colspan="4">Mean</th>
+<th align="left" colspan="4">Median</th>
+<th align="left" colspan="4">Gini-coefficients</th>
+</tr>
+<tr>
+<th align="left"> </th>
+<th align="left" colspan="2">Original income</th>
+<th align="left" colspan="2">Disposable income</th>
+<th align="left" colspan="2">Original income</th>
+<th align="left" colspan="2">Disposable income</th>
+<th align="left" colspan="2">Original income</th>
+<th align="left" colspan="2">Disposable income</th>
+</tr>
+<tr>
+<th align="left"> </th>
+<th align="left">HFCS</th>
+<th align="left">SILC</th>
+<th align="left">HFCS</th>
+<th align="left">SILC</th>
+<th align="left">HFCS</th>
+<th align="left">SILC</th>
+<th align="left">HFCS</th>
+<th align="left">SILC</th>
+<th align="left">HFCS</th>
+<th align="left">SILC</th>
+<th align="left">HFCS</th>
+<th align="left">SILC</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Austria</td>
+<td align="left">27,274</td>
+<td align="left">32,553</td>
+<td align="left">21,627</td>
+<td align="left">25,185</td>
+<td align="left">24,575</td>
+<td align="left">28,198</td>
+<td align="left">20,174</td>
+<td align="left">22,519</td>
+<td align="left">0.288</td>
+<td align="left">0.364</td>
+<td align="left">0.200</td>
+<td align="left">0.250</td>
+</tr>
+<tr>
+<td align="left">Belgium</td>
+<td align="left">30,623</td>
+<td align="left">26,686</td>
+<td align="left">21,623</td>
+<td align="left">21,023</td>
+<td align="left">27,227</td>
+<td align="left">24,206</td>
+<td align="left">19,863</td>
+<td align="left">20,038</td>
+<td align="left">0.374</td>
+<td align="left">0.396</td>
+<td align="left">0.250</td>
+<td align="left">0.221</td>
+</tr>
+<tr>
+<td align="left">Cyprus</td>
+<td align="left">16,098</td>
+<td align="left">18,652</td>
+<td align="left">15,404</td>
+<td align="left">19,100</td>
+<td align="left">12,600</td>
+<td align="left">14,229</td>
+<td align="left">12,790</td>
+<td align="left">15,115</td>
+<td align="left">0.404</td>
+<td align="left">0.412</td>
+<td align="left">0.324</td>
+<td align="left">0.338</td>
+</tr>
+<tr>
+<td align="left">Estonia</td>
+<td align="left">10,353</td>
+<td align="left">8,112</td>
+<td align="left">9,345</td>
+<td align="left">7,502</td>
+<td align="left">7,869</td>
+<td align="left">6,727</td>
+<td align="left">7,291</td>
+<td align="left">6,356</td>
+<td align="left">0.468</td>
+<td align="left">0.381</td>
+<td align="left">0.401</td>
+<td align="left">0.317</td>
+</tr>
+<tr>
+<td align="left">Finland</td>
+<td align="left">31,601</td>
+<td align="left">30,329</td>
+<td align="left">26,359</td>
+<td align="left">25,573</td>
+<td align="left">27,736</td>
+<td align="left">26,760</td>
+<td align="left">23,962</td>
+<td align="left">23,211</td>
+<td align="left">0.364</td>
+<td align="left">0.379</td>
+<td align="left">0.233</td>
+<td align="left">0.241</td>
+</tr>
+<tr>
+<td align="left">France</td>
+<td align="left">22,079</td>
+<td align="left">28,914</td>
+<td align="left">20,033</td>
+<td align="left">23,994</td>
+<td align="left">19,138</td>
+<td align="left">24,485</td>
+<td align="left">17,467</td>
+<td align="left">20,802</td>
+<td align="left">0.401</td>
+<td align="left">0.371</td>
+<td align="left">0.260</td>
+<td align="left">0.276</td>
+</tr>
+<tr>
+<td align="left">Germany</td>
+<td align="left">31,375</td>
+<td align="left">28,600</td>
+<td align="left">23,852</td>
+<td align="left">22,061</td>
+<td align="left">24,222</td>
+<td align="left">24,379</td>
+<td align="left">19,641</td>
+<td align="left">19,526</td>
+<td align="left">0.431</td>
+<td align="left">0.378</td>
+<td align="left">0.318</td>
+<td align="left">0.280</td>
+</tr>
+<tr>
+<td align="left">Greece</td>
+<td align="left">14,339</td>
+<td align="left">11,161</td>
+<td align="left">12,621</td>
+<td align="left">9,886</td>
+<td align="left">11,780</td>
+<td align="left">8,990</td>
+<td align="left">10,511</td>
+<td align="left">8,549</td>
+<td align="left">0.386</td>
+<td align="left">0.409</td>
+<td align="left">0.346</td>
+<td align="left">0.330</td>
+</tr>
+<tr>
+<td align="left">Hungary</td>
+<td align="left">6,225</td>
+<td align="left">5,889</td>
+<td align="left">4,897</td>
+<td align="left">4,429</td>
+<td align="left">4,998</td>
+<td align="left">5,199</td>
+<td align="left">4,067</td>
+<td align="left">4,030</td>
+<td align="left">0.412</td>
+<td align="left">0.355</td>
+<td align="left">0.329</td>
+<td align="left">0.286</td>
+</tr>
+<tr>
+<td align="left">Ireland</td>
+<td align="left">28,790</td>
+<td align="left">22,744</td>
+<td align="left">24,531</td>
+<td align="left">22,156</td>
+<td align="left">21,886</td>
+<td align="left">18,134</td>
+<td align="left">21,145</td>
+<td align="left">19,573</td>
+<td align="left">0.493</td>
+<td align="left">0.518</td>
+<td align="left">0.331</td>
+<td align="left">0.275</td>
+</tr>
+<tr>
+<td align="left">Italy</td>
+<td align="left">20,137</td>
+<td align="left">22,020</td>
+<td align="left">15,484</td>
+<td align="left">22,021</td>
+<td align="left">16,290</td>
+<td align="left">18,338</td>
+<td align="left">13,340</td>
+<td align="left">15,557</td>
+<td align="left">0.407</td>
+<td align="left">0.388</td>
+<td align="left">0.340</td>
+<td align="left">0.314</td>
+</tr>
+<tr>
+<td align="left">Luxembourg</td>
+<td align="left">48,971</td>
+<td align="left">44,526</td>
+<td align="left">39,801</td>
+<td align="left">37,874</td>
+<td align="left">36,800</td>
+<td align="left">37,039</td>
+<td align="left">33,225</td>
+<td align="left">33,816</td>
+<td align="left">0.424</td>
+<td align="left">0.385</td>
+<td align="left">0.296</td>
+<td align="left">0.242</td>
+</tr>
+<tr>
+<td align="left">Poland</td>
+<td align="left">8,898</td>
+<td align="left">7,434</td>
+<td align="left">6,978</td>
+<td align="left">6,040</td>
+<td align="left">7,410</td>
+<td align="left">6,309</td>
+<td align="left">5,956</td>
+<td align="left">5,265</td>
+<td align="left">0.378</td>
+<td align="left">0.367</td>
+<td align="left">0.333</td>
+<td align="left">0.304</td>
+</tr>
+<tr>
+<td align="left">Portugal</td>
+<td align="left">11,693</td>
+<td align="left">11,903</td>
+<td align="left">10,395</td>
+<td align="left">10,501</td>
+<td align="left">8,725</td>
+<td align="left">8,960</td>
+<td align="left">8,582</td>
+<td align="left">8,726</td>
+<td align="left">0.433</td>
+<td align="left">0.438</td>
+<td align="left">0.330</td>
+<td align="left">0.319</td>
+</tr>
+<tr>
+<td align="left">Slovakia</td>
+<td align="left">7,841</td>
+<td align="left">7,933</td>
+<td align="left">6,945</td>
+<td align="left">7,026</td>
+<td align="left">7,046</td>
+<td align="left">7,105</td>
+<td align="left">6,277</td>
+<td align="left">6,461</td>
+<td align="left">0.352</td>
+<td align="left">0.322</td>
+<td align="left">0.252</td>
+<td align="left">0.236</td>
+</tr>
+<tr>
+<td align="left">Slovenia</td>
+<td align="left">11,436</td>
+<td align="left">14,731</td>
+<td align="left">9,587</td>
+<td align="left">12,648</td>
+<td align="left">9,650</td>
+<td align="left">12,988</td>
+<td align="left">8,580</td>
+<td align="left">11,728</td>
+<td align="left">0.388</td>
+<td align="left">0.363</td>
+<td align="left">0.264</td>
+<td align="left">0.241</td>
+</tr>
+<tr>
+<td align="left">Spain</td>
+<td align="left">16,883</td>
+<td align="left">15,651</td>
+<td align="left">16,495</td>
+<td align="left">14,714</td>
+<td align="left">13,043</td>
+<td align="left">13,067</td>
+<td align="left">13,186</td>
+<td align="left">13,384</td>
+<td align="left">0.451</td>
+<td align="left">0.400</td>
+<td align="left">0.383</td>
+<td align="left">0.313</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Notes</i>: White cells refer to differences of less than 5%, light grey cells refer to differences of between 5% and 10%, medium grey cells refer to differences of between 10% and 20% and dark grey cells refer to differences of more than 20%. In case of Hungary amounts in national currency have been converted to euros based on the average exchange rate in 2017 reported by the European Central Bank, namely €1=HUF 309.19. For Poland the exchange rate applied is equal to €1=4.2259 PLN.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source:</i> Own calculations based on EUROMOD and micro-datafrom EM-HFCS and EM-SILC.</p></div></figure><figure id="table8" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 8.</strong><span data-astro-cid-dzaleqsp> Number of observations potentially liable for and actually paying the tax for each of the simulated wealth-related taxes, 2017.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Country</th>
+<th align="left">Wealth-related tax</th>
+<th align="left">Number of potentially liable observations</th>
+<th align="left">Number of observed taxpayers</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Austria</td>
+<td align="left">Real property tax</td>
+<td align="left">1,412</td>
+<td align="left">1,412 (2,033,783)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">27</td>
+<td align="left">27 (37,195)</td>
+</tr>
+<tr>
+<td align="left">Belgium</td>
+<td align="left">Real property tax</td>
+<td align="left">1,689</td>
+<td align="left">1,686 (3,531,695)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">28</td>
+<td align="left">25 (68,577)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance tax</td>
+<td align="left">49</td>
+<td align="left">45 (75,363)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Gift tax</td>
+<td align="left">15</td>
+<td align="left">14 (45,970)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Mortgage registration duties</td>
+<td align="left">40</td>
+<td align="left">40 (119,424)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Tax on long-term saving</td>
+<td align="left">44</td>
+<td align="left">44 (66,663)</td>
+</tr>
+<tr>
+<td align="left">Cyprus</td>
+<td align="left">Real property tax</td>
+<td align="left">1,098</td>
+<td align="left">1,098 (250,309)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">5</td>
+<td align="left">5 (688)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Mortgage registration duties</td>
+<td align="left">77</td>
+<td align="left">77 (13,824)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Gift provision</td>
+<td align="left">27</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">Estonia</td>
+<td align="left">Real property tax</td>
+<td align="left">1,801</td>
+<td align="left">0</td>
+</tr>
+<tr>
+<td align="left">Finland</td>
+<td align="left">Real property tax</td>
+<td align="left">8,536</td>
+<td align="left">8,536 (1,775,911)</td>
+</tr>
+<tr>
+<td align="left">France</td>
+<td align="left">Real property tax</td>
+<td align="left">8,983</td>
+<td align="left">7,355 (13,935,691)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">288</td>
+<td align="left">270 (507,207)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">436</td>
+<td align="left">147 (252,843)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Net wealth tax</td>
+<td align="left">19,262</td>
+<td align="left">1,155 (342,915)</td>
+</tr>
+<tr>
+<td align="left">Germany</td>
+<td align="left">Real property tax</td>
+<td align="left">2,895</td>
+<td align="left">2,894 (19,830,502)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">92</td>
+<td align="left">89 (628,066)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">363</td>
+<td align="left">27 (119,988)</td>
+</tr>
+<tr>
+<td align="left">Greece</td>
+<td align="left">Real property tax</td>
+<td align="left">3,003</td>
+<td align="left">1,793 (3,038,838)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Emergency property tax</td>
+<td align="left">3,003</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">11</td>
+<td align="left">11 (3,326)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">13</td>
+<td align="left">5 (4.134)</td>
+</tr>
+<tr>
+<td align="left">Hungary</td>
+<td align="left">Real property transfer tax</td>
+<td align="left">69</td>
+<td align="left">69 (42,300)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance tax</td>
+<td align="left">47</td>
+<td align="left">5 (3,514)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Gift tax</td>
+<td align="left">28</td>
+<td align="left">1 (224)</td>
+</tr>
+<tr>
+<td align="left">Ireland</td>
+<td align="left">Real property tax</td>
+<td align="left">3,968</td>
+<td align="left">3,917 (1,221,527)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">79</td>
+<td align="left">36 (9,153)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">96</td>
+<td align="left">17 (4,273)</td>
+</tr>
+<tr>
+<td align="left">Italy</td>
+<td align="left">Real property tax</td>
+<td align="left">6,070</td>
+<td align="left">1,880 (5,693,335)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">77</td>
+<td align="left">77 (300,929)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">204</td>
+<td align="left">30 (86,236)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Net wealth tax</td>
+<td align="left">8,156</td>
+<td align="left">8,156 (24,694,121)</td>
+</tr>
+<tr>
+<td align="left">Luxembourg</td>
+<td align="left">Real property tax</td>
+<td align="left">1,295</td>
+<td align="left">1,295 (157,609)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">41</td>
+<td align="left">41 (5,700)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance tax</td>
+<td align="left">37</td>
+<td align="left">8 (1,048)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Gift tax</td>
+<td align="left">10</td>
+<td align="left">1 (76)</td>
+</tr>
+<tr>
+<td align="left">Poland</td>
+<td align="left">Real property tax</td>
+<td align="left">3,436</td>
+<td align="left">3,428 (13,375,016)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">51</td>
+<td align="left">50 (231,159)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">85</td>
+<td align="left">1 (1,785)</td>
+</tr>
+<tr>
+<td align="left">Portugal</td>
+<td align="left">Real property tax</td>
+<td align="left">5,269</td>
+<td align="left">4,770 (2,704,456)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">25</td>
+<td align="left">21 (8,976)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax (stamp duty)</td>
+<td align="left">158</td>
+<td align="left">57 (33,037)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Mortgage registration duties</td>
+<td align="left">59</td>
+<td align="left">59 (29,484)</td>
+</tr>
+<tr>
+<td align="left">Slovakia</td>
+<td align="left">Real property tax</td>
+<td align="left">1,879</td>
+<td align="left">1,863 (1,594,174)</td>
+</tr>
+<tr>
+<td align="left">Slovenia</td>
+<td align="left">Real property tax</td>
+<td align="left">2,066</td>
+<td align="left">224 (79,900)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">15</td>
+<td align="left">15 (4,350)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">49</td>
+<td align="left">2 (305)</td>
+</tr>
+<tr>
+<td align="left">Spain</td>
+<td align="left">Real property tax</td>
+<td align="left">5,586</td>
+<td align="left">5,586 (15,234,706)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">77</td>
+<td align="left">77 (236,799)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance tax</td>
+<td align="left">150</td>
+<td align="left">112 (240,448)</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Net wealth tax</td>
+<td align="left">10,150</td>
+<td align="left">1,133 (313,698)</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: Population weighted numbers in brackets.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Own calculations based on EUROMOD and micro-data from EM-HFCS.</p></div></figure><figure id="table9" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 9.</strong><span data-astro-cid-dzaleqsp> Simulated wealth tax revenues (in million euro per year), income reference year and 2017</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Country</th>
+<th align="left">Wealth tax</th>
+<th align="center" colspan="3">Income reference year</th>
+<th align="center" colspan="3">2017</th>
+</tr>
+<tr>
+<th align="left"> </th>
+<th align="left"> </th>
+<th align="left">Simulated revenue</th>
+<th align="left">External figure</th>
+<th align="left">Ratio</th>
+<th align="left">Simulated revenue</th>
+<th align="left">External figure</th>
+<th align="left">Ratio</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Austria</td>
+<td align="left">Real property tax</td>
+<td align="left">617.10</td>
+<td align="left">736.0 (1)</td>
+<td align="left">83.85%</td>
+<td align="left">617.10</td>
+<td align="left">771.0 (1)</td>
+<td align="left">80.04%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">272.20</td>
+<td align="left">790.0 (1)</td>
+<td align="left">34.46%</td>
+<td align="left">142.40</td>
+<td align="left">1,118 (1)</td>
+<td align="left">12.74%</td>
+</tr>
+<tr>
+<td align="left">Belgium</td>
+<td align="left">Real property tax</td>
+<td align="left">3,218</td>
+<td align="left">3,478 (1)</td>
+<td align="left">92.52%</td>
+<td align="left">3,254</td>
+<td align="left">3,775 (1)</td>
+<td align="left">86.20%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">1,987</td>
+<td align="left">3,452 (3)</td>
+<td align="left">56.10%</td>
+<td align="left">1,977</td>
+<td align="left">4,065 (3)</td>
+<td align="left">48.63%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance tax</td>
+<td align="left">1,142</td>
+<td align="left">2,634 (3)</td>
+<td align="left">43.36%</td>
+<td align="left">1,035</td>
+<td align="left">2,365 (3)</td>
+<td align="left">43.76%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Gift tax</td>
+<td align="left">103.8</td>
+<td align="left">463.0 (3)</td>
+<td align="left">22.42%</td>
+<td align="left">83.49</td>
+<td align="left">567.0 (3)</td>
+<td align="left">43.76%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Mortgage registration duties</td>
+<td align="left">241</td>
+<td align="left">244.0 (4)</td>
+<td align="left">98.77%</td>
+<td align="left">233</td>
+<td align="left">122.0 (4)</td>
+<td align="left">190.98%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Tax on long-term saving</td>
+<td align="left">197.7</td>
+<td align="left">207.0 (3)</td>
+<td align="left">95.51%</td>
+<td align="left">158.2</td>
+<td align="left">382.0 (3)</td>
+<td align="left">41.41%</td>
+</tr>
+<tr>
+<td align="left">Cyprus</td>
+<td align="left">Real property tax</td>
+<td align="left">94.49</td>
+<td align="left">100.8 (2)</td>
+<td align="left">93.74%</td>
+<td align="left">22.52</td>
+<td align="left">16.50 (2)</td>
+<td align="left">136.48%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax, gift provision and mortgage registration duties</td>
+<td align="left">39.93</td>
+<td align="left">79.70 (2)</td>
+<td align="left">50.10%</td>
+<td align="left">22.28</td>
+<td align="left">99.0 (2)</td>
+<td align="left">22.51%</td>
+</tr>
+<tr>
+<td align="left">Estonia</td>
+<td align="left">Real property tax</td>
+<td align="left">0</td>
+<td align="left">59.0 (1)</td>
+<td align="left">0%</td>
+<td align="left">0</td>
+<td align="left">59.0 (1)</td>
+<td align="left">0%</td>
+</tr>
+<tr>
+<td align="left">Finland</td>
+<td align="left">Real property tax</td>
+<td align="left">718.40</td>
+<td align="left">623.0 (1)</td>
+<td align="left">115.31%</td>
+<td align="left">858.20</td>
+<td align="left">811.0 (1)</td>
+<td align="left">105.82%</td>
+</tr>
+<tr>
+<td align="left">France</td>
+<td align="left">Real property tax</td>
+<td align="left">14,390</td>
+<td align="left">17,003 (1)</td>
+<td align="left">84.63%</td>
+<td align="left">15,470</td>
+<td align="left">18,465 (1)</td>
+<td align="left">83.78%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">6,088</td>
+<td align="left">10,143 (1)</td>
+<td align="left">60.0%</td>
+<td align="left">5,916</td>
+<td align="left">12,644 (1)</td>
+<td align="left">46.79%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">6,644</td>
+<td align="left">10,300 (1)</td>
+<td align="left">64.50%</td>
+<td align="left">8,533</td>
+<td align="left">12,188 (1)</td>
+<td align="left">70.01%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Net wealth tax</td>
+<td align="left">6,807</td>
+<td align="left">5,377 (1)</td>
+<td align="left">126.59%</td>
+<td align="left">8,148</td>
+<td align="left">4,837 (1)</td>
+<td align="left">168.45%</td>
+</tr>
+<tr>
+<td align="left">Germany</td>
+<td align="left">Real property tax</td>
+<td align="left">6,795</td>
+<td align="left">4,951 (1)</td>
+<td align="left">137.2%</td>
+<td align="left">7,199</td>
+<td align="left">5,586 (1)</td>
+<td align="left">128.9%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">5,181</td>
+<td align="left">8,394 (1)</td>
+<td align="left">61.7%</td>
+<td align="left">6,899</td>
+<td align="left">13,139 (1)</td>
+<td align="left">52.5%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">1,496</td>
+<td align="left">4,633 (1)</td>
+<td align="left">32.3%</td>
+<td align="left">2,548</td>
+<td align="left">6,114 (1)</td>
+<td align="left">41.7%</td>
+</tr>
+<tr>
+<td align="left">Greece</td>
+<td align="left">Real property tax &amp; Emergency property tax</td>
+<td align="left">415.93</td>
+<td align="left">2,619 (2)</td>
+<td align="left">15.88%</td>
+<td align="left">1,042</td>
+<td align="left">3,095 (2)</td>
+<td align="left">33.67%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">37.77</td>
+<td align="left">275.0 (2)</td>
+<td align="left">13.73%</td>
+<td align="left">50.92</td>
+<td align="left">181.0 (2)</td>
+<td align="left">28.13%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">2.53</td>
+<td align="left">99.0 (2)</td>
+<td align="left">2.56%</td>
+<td align="left">6.63</td>
+<td align="left">115.0 (2)</td>
+<td align="left">5.77%</td>
+</tr>
+<tr>
+<td align="left">Hungary</td>
+<td align="left">Real property transfer tax</td>
+<td align="left">54.52</td>
+<td align="left">265.23 (1)</td>
+<td align="left">20.56%</td>
+<td align="left">73.87</td>
+<td align="left">419.91 (1)</td>
+<td align="left">17.59%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance tax</td>
+<td align="left">4.49</td>
+<td align="left">16.14 (1)</td>
+<td align="left">27.82%</td>
+<td align="left">6.27</td>
+<td align="left">26.40 (1)</td>
+<td align="left">23.75%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Gift tax</td>
+<td align="left">0.13</td>
+<td align="left">3.87 (1)</td>
+<td align="left">3.36%</td>
+<td align="left">0.13</td>
+<td align="left">3.97 (1)</td>
+<td align="left">3.27%</td>
+</tr>
+<tr>
+<td align="left">Ireland</td>
+<td align="left">Real property tax</td>
+<td align="left">172.6</td>
+<td align="left">1,478 (1)</td>
+<td align="left">11.70%</td>
+<td align="left">483.9</td>
+<td align="left">463.0 (2)</td>
+<td align="left">98.03%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">56.6</td>
+<td align="left">105.0 (2)</td>
+<td align="left">53.90%</td>
+<td align="left">68.8</td>
+<td align="left">301.0 (2)</td>
+<td align="left">22.86%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">191.4</td>
+<td align="left">282.0 (1)</td>
+<td align="left">67.87%</td>
+<td align="left">341.1</td>
+<td align="left">411.0 (1)</td>
+<td align="left">82.99%</td>
+</tr>
+<tr>
+<td align="left">Italy</td>
+<td align="left">Real property tax</td>
+<td align="left">19,113</td>
+<td align="left">17,900 (5)</td>
+<td align="left">106.77%</td>
+<td align="left">15,675</td>
+<td align="left">14,400 (5)</td>
+<td align="left">108.85%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">504</td>
+<td align="left">n/a</td>
+<td align="left">n/a</td>
+<td align="left">507</td>
+<td align="left">n/a</td>
+<td align="left">n/a</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">398</td>
+<td align="left">622 (5)</td>
+<td align="left">63.98%</td>
+<td align="left">404</td>
+<td align="left">557 (5)</td>
+<td align="left">72.53%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Net wealth tax</td>
+<td align="left">1,402</td>
+<td align="left">2,743 (5)</td>
+<td align="left">51.11%</td>
+<td align="left">1,412</td>
+<td align="left">2,743 (5)</td>
+<td align="left">51.47%</td>
+</tr>
+<tr>
+<td align="left">Luxembourg</td>
+<td align="left">Real property tax</td>
+<td align="left">15.62</td>
+<td align="left">33.0 (1)</td>
+<td align="left">47.33%</td>
+<td align="left">15.62</td>
+<td align="left">38.0 (1)</td>
+<td align="left">41.11%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">72.97</td>
+<td align="left">164.0 (1)</td>
+<td align="left">44.49%</td>
+<td align="left">89.90</td>
+<td align="left">319.0 (1)</td>
+<td align="left">28.18%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">17.62</td>
+<td align="left">71.80 (2)</td>
+<td align="left">24.54%</td>
+<td align="left">22.96</td>
+<td align="left">85.90 (2)</td>
+<td align="left">26.73%</td>
+</tr>
+<tr>
+<td align="left">Poland</td>
+<td align="left">Real property tax</td>
+<td align="left">1,578</td>
+<td align="left">4,428 (2)</td>
+<td align="left">35.64%</td>
+<td align="left">1,583</td>
+<td align="left">4,916 (2)</td>
+<td align="left">32.2%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">232</td>
+<td align="left">115 (2)</td>
+<td align="left">201.74%</td>
+<td align="left">238</td>
+<td align="left">101 (2)</td>
+<td align="left">235.64%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">167</td>
+<td align="left">1,093 (1)</td>
+<td align="left">15.3%</td>
+<td align="left">178</td>
+<td align="left">1,183 (1)</td>
+<td align="left">15.05%</td>
+</tr>
+<tr>
+<td align="left">Portugal</td>
+<td align="left">Real property tax</td>
+<td align="left">1,452</td>
+<td align="left">1,140 (1)</td>
+<td align="left">127.37%</td>
+<td align="left">1,443</td>
+<td align="left">1,630 (1)</td>
+<td align="left">88.53%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">69.44</td>
+<td align="left">417.0 (1)</td>
+<td align="left">16.65%</td>
+<td align="left">68.98</td>
+<td align="left">841.0 (1)</td>
+<td align="left">8.20%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax (stamp duty)</td>
+<td align="left">100.90</td>
+<td align="left">1,407 (2)</td>
+<td align="left">7.17%</td>
+<td align="left">320.40</td>
+<td align="left">1,430 (2)</td>
+<td align="left">22.41%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Mortgage registration duties</td>
+<td align="left">14.95</td>
+<td align="left">31.80 (1)</td>
+<td align="left">47.01%</td>
+<td align="left">14.95</td>
+<td align="left">32.28 (1)</td>
+<td align="left">46.31%</td>
+</tr>
+<tr>
+<td align="left">Slovakia</td>
+<td align="left">Real property tax</td>
+<td align="left">39.96</td>
+<td align="left">105.0 (1)</td>
+<td align="left">38.06%</td>
+<td align="left">36.31</td>
+<td align="left">115.0 (1)</td>
+<td align="left">31.57%</td>
+</tr>
+<tr>
+<td align="left">Slovenia</td>
+<td align="left">Real property tax</td>
+<td align="left">38.56</td>
+<td align="left">199.0 (1)</td>
+<td align="left">19.38%</td>
+<td align="left">41.86</td>
+<td align="left">211.0 (1)</td>
+<td align="left">19.84%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">34.98</td>
+<td align="left">23.0 (1)</td>
+<td align="left">152.09%</td>
+<td align="left">34.96</td>
+<td align="left">32.0 (1)</td>
+<td align="left">109.25%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance &amp; gift tax</td>
+<td align="left">0.86</td>
+<td align="left">7.0 (1)</td>
+<td align="left">12.29%</td>
+<td align="left">0.94</td>
+<td align="left">8.0 (1)</td>
+<td align="left">11.75%</td>
+</tr>
+<tr>
+<td align="left">Spain</td>
+<td align="left">Real property tax</td>
+<td align="left">10,780</td>
+<td align="left">9,685 (1)</td>
+<td align="left">111.31%</td>
+<td align="left">10,780</td>
+<td align="left">13,045 (1)</td>
+<td align="left">82.64%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Real property transfer tax</td>
+<td align="left">2,979</td>
+<td align="left">8,228 (1)</td>
+<td align="left">36.21%</td>
+<td align="left">4,826</td>
+<td align="left">8,585 (1)</td>
+<td align="left">56.21%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Inheritance tax</td>
+<td align="left">3,237</td>
+<td align="left">2,425 (1)</td>
+<td align="left">133.48%</td>
+<td align="left">3,732</td>
+<td align="left">2,709 (1)</td>
+<td align="left">137.76%</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Net wealth tax</td>
+<td align="left">n/a</td>
+<td align="left">n/a</td>
+<td align="left">n/a</td>
+<td align="left">1,490</td>
+<td align="left">1,348 (1)</td>
+<td align="left">110.53%</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: Own calculations based on EUROMOD and micro-data from EM-HFCS. (1) Tax Revenue Database (<a href="#bib25">OECD (2017)</a>); (2) Taxes in Europe Database (<a href="#bib26">European Commission (2018)</a>); (3) Received taxes and actual social insurance contributions by type (<a href="#bib28">National Bank of Belgium (2017)</a>); (4) Recent figures concerning the federally collected tax revenues (<a href="#bib29">Federal Public Service Finance, 2017</a>); (5) Italian Ministry of Economy and Finance, various sources. In case of Hungary amounts in national currency have been converted to euros based on the average exchange rate in 2017 reported by the European Central Bank, namely €1=HUF 309.19. For Poland the exchange rate applied is equal to €1=4.2259 PLN.</p></div></figure><figure id="table10" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 10.</strong><span data-astro-cid-dzaleqsp> Redistributive effect of income and wealth taxes</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Country</th>
+<th align="left">Type of taxes</th>
+<th align="left">Absolute redistributive effect</th>
+<th align="left">Relative redistributive effect</th>
+<th align="left">Average tax rate</th>
+<th align="left">Kakwani progressivity index</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Austria</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.055</td>
+<td align="left">21.6%</td>
+<td align="left">25.4%</td>
+<td align="left">0.172</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">0.000</td>
+<td align="left">0.0%</td>
+<td align="left">0.6%</td>
+<td align="left">0.049</td>
+</tr>
+<tr>
+<td align="left">Belgium</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.067</td>
+<td align="left">21.1%</td>
+<td align="left">35.0%</td>
+<td align="left">0.138</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.015</td>
+<td align="left">-4.7%</td>
+<td align="left">2.8%</td>
+<td align="left">-0.095</td>
+</tr>
+<tr>
+<td align="left">Cyprus</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.030</td>
+<td align="left">8.5%</td>
+<td align="left">11.2%</td>
+<td align="left">0.247</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.002</td>
+<td align="left">-0.6%</td>
+<td align="left">1.5%</td>
+<td align="left">-0.102</td>
+</tr>
+<tr>
+<td align="left">Estonia</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.024</td>
+<td align="left">5.6%</td>
+<td align="left">15.8%</td>
+<td align="left">0.133</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.011</td>
+<td align="left">-2.7%</td>
+<td align="left">3.5%</td>
+<td align="left">-0.227</td>
+</tr>
+<tr>
+<td align="left">Finland</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.051</td>
+<td align="left">18.0%</td>
+<td align="left">26.4%</td>
+<td align="left">0.150</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">0.000</td>
+<td align="left">0.0%</td>
+<td align="left">0.5%</td>
+<td align="left">-0.040</td>
+</tr>
+<tr>
+<td align="left">France</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.042</td>
+<td align="left">15.2%</td>
+<td align="left">21.0%</td>
+<td align="left">0.171</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.002</td>
+<td align="left">-0.7%</td>
+<td align="left">3.0%</td>
+<td align="left">0.199</td>
+</tr>
+<tr>
+<td align="left">Germany</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.057</td>
+<td align="left">14.4%</td>
+<td align="left">29.3%</td>
+<td align="left">0.149</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">0.000</td>
+<td align="left">0.0%</td>
+<td align="left">0.7%</td>
+<td align="left">0.121</td>
+</tr>
+<tr>
+<td align="left">Greece</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.015</td>
+<td align="left">4.2%</td>
+<td align="left">15.1%</td>
+<td align="left">0.104</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.001</td>
+<td align="left">-0.3%</td>
+<td align="left">0.4%</td>
+<td align="left">-0.188</td>
+</tr>
+<tr>
+<td align="left">Hungary</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.028</td>
+<td align="left">7.8%</td>
+<td align="left">28.5%</td>
+<td align="left">0.089</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.001</td>
+<td align="left">-0.3%</td>
+<td align="left">0.1%</td>
+<td align="left">-0.051</td>
+</tr>
+<tr>
+<td align="left">Ireland</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.081</td>
+<td align="left">19.7%</td>
+<td align="left">23.1%</td>
+<td align="left">0.279</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.003</td>
+<td align="left">-0.7%</td>
+<td align="left">0.5%</td>
+<td align="left">-0.065</td>
+</tr>
+<tr>
+<td align="left">Italy</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.048</td>
+<td align="left">14.1%</td>
+<td align="left">24.8%</td>
+<td align="left">0.148</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">0.002</td>
+<td align="left">0.6%</td>
+<td align="left">2.5%</td>
+<td align="left">0.090</td>
+</tr>
+<tr>
+<td align="left">Luxembourg</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.067</td>
+<td align="left">18.5%</td>
+<td align="left">25.6%</td>
+<td align="left">0.200</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.001</td>
+<td align="left">-0.3%</td>
+<td align="left">0.5%</td>
+<td align="left">0.117</td>
+</tr>
+<tr>
+<td align="left">Poland</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.005</td>
+<td align="left">1.5%</td>
+<td align="left">26.3%</td>
+<td align="left">0.025</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.004</td>
+<td align="left">-1.2%</td>
+<td align="left">0.9%</td>
+<td align="left">-0.074</td>
+</tr>
+<tr>
+<td align="left">Portugal</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.049</td>
+<td align="left">12.9%</td>
+<td align="left">17.0%</td>
+<td align="left">0.251</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.002</td>
+<td align="left">-0.5%</td>
+<td align="left">1.8%</td>
+<td align="left">-0.081</td>
+</tr>
+<tr>
+<td align="left">Slovakia</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.037</td>
+<td align="left">12.8%</td>
+<td align="left">20.4%</td>
+<td align="left">0.180</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">0.000</td>
+<td align="left">0.0%</td>
+<td align="left">0.1%</td>
+<td align="left">-0.245</td>
+</tr>
+<tr>
+<td align="left">Slovenia</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.060</td>
+<td align="left">18.5%</td>
+<td align="left">22.3%</td>
+<td align="left">0.225</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.001</td>
+<td align="left">-0.3%</td>
+<td align="left">0.5%</td>
+<td align="left">-0.033</td>
+</tr>
+<tr>
+<td align="left">Spain</td>
+<td align="left">Income taxes + SIC</td>
+<td align="left">0.014</td>
+<td align="left">3.5%</td>
+<td align="left">10.0%</td>
+<td align="left">0.134</td>
+</tr>
+<tr>
+<td align="left"> </td>
+<td align="left">Wealth-related taxes</td>
+<td align="left">-0.007</td>
+<td align="left">-1.8%</td>
+<td align="left">2.9%</td>
+<td align="left">-0.045</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: SIC= social insurance contributions.</p><p class="table-footnote" data-astro-cid-dzaleqsp><i>Source</i>: <a href="#bib2">Boone et al. (2019)</a>.</p></div></figure></div></details></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/figures.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

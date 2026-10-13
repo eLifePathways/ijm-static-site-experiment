@@ -1,0 +1,21 @@
+TY  - JOUR
+TI  - Structural labour supply models and microsimulation
+AU  - Aaberge, Rolf
+AU  - Colombino, Ugo
+VL  - 11
+IS  - 1
+PY  - 2018
+DA  - 2018/04/30
+SP  - 162-197
+C1  - IJM 2018;11(1):162-197
+DO  - 10.34196/ijm.00177
+UR  - https://doi.org/10.34196/ijm.00177
+AB  - The purpose of the paper is to provide a discussion of the various approaches for accounting for labour supply responses in microsimulation models. The paper focus attention on two methodologies for modelling labour supply: (i) the discrete choice model and (ii) the random utility – random opportunities model. The paper then describes approaches to utilising these models for policy simulation in terms of producing and interpreting simulation outcomes, outlining an extensive literature of policy analyses utilising these approaches. Labour supply models are not only central for analysing behavioural labour supply responses but also for identifying optimal tax-benefit systems, given some of the challenges of the theoretical approach. Combining labour supply results with individual and social welfare functions enables the social evaluation of policy simulations. combining welfare functions and labour supply functions, the paper discusses how to model socially optimal income taxation.
+KW  - behavioural microsimulation
+KW  - labour supply
+KW  - discrete choice
+KW  - tax reforms
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

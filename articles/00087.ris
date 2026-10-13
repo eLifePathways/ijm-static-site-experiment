@@ -1,0 +1,22 @@
+TY  - JOUR
+TI  - A new equilibrium simulation procedure with discrete choice models
+AU  - Colombino, Ugo
+VL  - 6
+IS  - 3
+PY  - 2013
+DA  - 2013/12/31
+SP  - 25-49
+C1  - IJM 2013;6(3):25-49
+DO  - 10.34196/ijm.00087
+UR  - https://doi.org/10.34196/ijm.00087
+AB  - Many microeconometric models of discrete choice include alternative-specific constants meant to account for (possibly besides other factors) the density or accessibility of particular types of alternatives. A notable area of application is labour supply, where for example part-time jobs vs. full-time jobs might be more or less accessible. The most common use of these models is the simulation of tax-transfer reforms. The simulation is usually interpreted as a comparative statics exercise, i.e. the comparison of different equilibria induced by different policy regimes. The simulation procedure, however, typically keeps fixed the estimated alternative-specific constants. In this note we argue that this procedure is not consistent with the comparative statics interpretation. Since the constants reflect the number of jobs and since the number of people willing to work changes as a response to the change in tax-transfer regime, the new equilibrium induced by the reform implies that the constants should also change. A structural interpretation of the alternative-specific constants leads to the development of a simulation procedure consistent with the comparative statics interpretation. The procedure is illustrated with a simulation of alternative reforms of the income support policies in Italy.
+KW  - random utility
+KW  - discrete choice
+KW  - labour supply
+KW  - policy simulation
+KW  - alternative-specific constants
+KW  - equilibrium simulation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

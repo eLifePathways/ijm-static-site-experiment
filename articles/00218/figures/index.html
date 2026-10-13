@@ -1,0 +1,775 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Figures and data in Using sequence analysis to visualize and validate model transitions | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00218/figures"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.figures-page__summary[data-astro-cid-uy5dlehv]{color:var(--color-ink-muted);margin-block-end:var(--space-m)}@media (width>=75em){.article-content-grid[data-astro-cid-uy5dlehv]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-astro-cid-uy5dlehv><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/methodology" data-astro-cid-ak4gb66a>Methodology</a>, <a href="/subjects/health" data-astro-cid-ak4gb66a>Health</a>, <a href="/subjects/dynamic-microsimulation" data-astro-cid-ak4gb66a>Dynamic microsimulation</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Aug 31, 2020</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Using sequence analysis to visualize and validate model transitions</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Janne Salonen, Jyrki Möttönen, Heikki Tikanmäki, Tapio Nummi</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Finnish Centre for Pensions, Helsinki, Finland; University of Helsinki, Helsinki, Finland; Tampere University, Tampere, Finland</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/13-2/volume-13-2-summer-2020" data-astro-cid-ak4gb66a>Volume 13(2) Summer 2020</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> J. Salonen, J. Möttönen, H. Tikanmäki, T. Nummi; 2020; <span data-astro-cid-ak4gb66a>Using sequence analysis to visualize and validate model transitions</span>; International Journal of Microsimulation; 13(2); 61–78. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00218" data-astro-cid-ak4gb66a>10.34196/ijm.00218</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>We illustrate a novel data-driven way of visualizing paths of labor market transitions. The proposed technique is used in many fields of science when analyzing transitions longitudinally. The statistical method applied in this study is based on sequence analysis (SA) used to identify similar and dissimilar individual transition patterns over longitudinal measurements. We briefly introduce the statistical basis of SA and discuss its use in the dynamic microsimulation context. We also report our results from the Finnish ELSI model to illustrate labor market transitions near retirement. SA is available in many popular statistical software packages such as R and Stata. The programming code for SA and data simulations are also given. Our conclusion is that SA is a useful tool also in a microsimulation context, in visualizing and validating simulated model transitions when statistically more sophisticated mixture modeling are not applicable.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00218/ijm-00218.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00218.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00218.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-uy5dlehv><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00218" class="view-tabs__link" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00218/figures" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#figures" data-astro-cid-twdwaz5s>Figures</a></li><li data-astro-cid-twdwaz5s><a href="#tables" data-astro-cid-twdwaz5s>Tables</a></li></ul></details></div><div class="article-content" data-astro-cid-uy5dlehv><p class="figures-page__summary" data-astro-cid-uy5dlehv>This article contains 5 figures and 5 tables.</p><details id="figures" class="article-section article-section--collapsible" open data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Figures</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00218-fig001.D54dNx_2_UCmwA.webp" class="figure-lightbox-trigger" data-pswp-width="1791" data-pswp-height="1149" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00218-fig001.D54dNx_2_UCmwA.webp" alt width="1791" height="1149" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Sequence index plot of cohort born in 1970, individuals.</span></figcaption></figure><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00218-fig002.bme7QFYv_Z10thXa.webp" class="figure-lightbox-trigger" data-pswp-width="1791" data-pswp-height="1324" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00218-fig002.bme7QFYv_Z10thXa.webp" alt width="1791" height="1324" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> State distribution plot for the 1970 cohort by gender, per cent.</span></figcaption></figure><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00218-fig003.Dd-qKWsh_Z2ahR5k.webp" class="figure-lightbox-trigger" data-pswp-width="1791" data-pswp-height="1416" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00218-fig003.Dd-qKWsh_Z2ahR5k.webp" alt width="1791" height="1416" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Mean time in state for 1970 cohort by education, years.</span></figcaption></figure><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00218-fig004.D8fTMUvQ_Z155Iot.webp" class="figure-lightbox-trigger" data-pswp-width="1791" data-pswp-height="1046" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00218-fig004.D8fTMUvQ_Z155Iot.webp" alt width="1791" height="1046" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Clustering transition sequences of cohort born 1970.</span></figcaption></figure><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00218-fig005.B5MPID_G_ZjXExa.webp" class="figure-lightbox-trigger" data-pswp-width="1102" data-pswp-height="644" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00218-fig005.B5MPID_G_ZjXExa.webp" alt width="1102" height="644" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> Employment trajectories of cohort born in 2000 (k=6). Dotted line indicates old-age retirement age.</span></figcaption></figure></div></details><details id="tables" class="article-section article-section--collapsible" data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Tables</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Labor market states and corresponding color codes in figures.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Labor market state</th>
+<th align="left">ELSI state(s)</th>
+<th align="left">Abb.</th>
+<th align="left">Substantial contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Basic pension</td>
+<td align="left">21,22</td>
+<td align="left">bap</td>
+<td align="left">National pension only</td>
+</tr>
+<tr>
+<td align="left">Deceased</td>
+<td align="left">12</td>
+<td align="left">DEC</td>
+<td align="left">Deceased people remain in the model population until the end of the simulation period</td>
+</tr>
+<tr>
+<td align="left">Early OA Pension</td>
+<td align="left">7</td>
+<td align="left">eop</td>
+<td align="left">Early old-age pension, retirement age adjusted for life-expectancy</td>
+</tr>
+<tr>
+<td align="left">Employed</td>
+<td align="left">1,10,11,15,16</td>
+<td align="left">EMP</td>
+<td align="left">Full or part time employed</td>
+</tr>
+<tr>
+<td align="left">Full D Pension</td>
+<td align="left">9,5,17</td>
+<td align="left">fdp</td>
+<td align="left">Full disability pension, leading to old-age pension</td>
+</tr>
+<tr>
+<td align="left">Inactive</td>
+<td align="left">4,13,19</td>
+<td align="left">INA</td>
+<td align="left">Outside the labor force</td>
+</tr>
+<tr>
+<td align="left">Misfits</td>
+<td align="left">20</td>
+<td align="left">MIS</td>
+<td align="left">Permanently outside the labor force</td>
+</tr>
+<tr>
+<td align="left">NA</td>
+<td align="left">‘’</td>
+<td align="left">NA</td>
+<td align="left">Technical state for sequence analysis, not a labor market state in ELSI</td>
+</tr>
+<tr>
+<td align="left">OA Pension</td>
+<td align="left">8</td>
+<td align="left">oap</td>
+<td align="left">Old-age pension, retirement age adjusted for life-expectancy</td>
+</tr>
+<tr>
+<td align="left">Part D Pension</td>
+<td align="left">18</td>
+<td align="left">pdp</td>
+<td align="left">Partial disability pension</td>
+</tr>
+<tr>
+<td align="left">Unemployed</td>
+<td align="left">2,3</td>
+<td align="left">UNE</td>
+<td align="left">Unemployed</td>
+</tr>
+<tr>
+<td align="left">YoS Pension</td>
+<td align="left">6</td>
+<td align="left">yos</td>
+<td align="left">Years-of-service pension. Available for individuals aged 63 who have had a long and strenuous working life. No subjective choice.</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Notes. The Non-aggregated model states are given in the <a href="#appendix-1">Appendix A.2</a>.</p></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Five most common transition sequences of cohorts born in 1970, 1980, 1990 and 2000, individuals and shares.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Transition sequence</th>
+<th align="left">Count</th>
+<th align="left">%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" colspan="3">1970</td>
+</tr>
+<tr>
+<td align="left"> EMP/11 - oap/5</td>
+<td align="left">58</td>
+<td align="left">15.4</td>
+</tr>
+<tr>
+<td align="left"> INA/15 - oap/1</td>
+<td align="left">23</td>
+<td align="left">6.1</td>
+</tr>
+<tr>
+<td align="left"> EMP/12 - oap/4</td>
+<td align="left">22</td>
+<td align="left">5.9</td>
+</tr>
+<tr>
+<td align="left"> DEC/16</td>
+<td align="left">13</td>
+<td align="left">3.5</td>
+</tr>
+<tr>
+<td align="left"> EMP/13 - oap/3</td>
+<td align="left">13</td>
+<td align="left">3.5</td>
+</tr>
+<tr>
+<td align="left" colspan="3">1980</td>
+</tr>
+<tr>
+<td align="left"> EMP/12 - oap/4</td>
+<td align="left">57</td>
+<td align="left">15.4</td>
+</tr>
+<tr>
+<td align="left"> INA/15 - oap/1</td>
+<td align="left">25</td>
+<td align="left">6.8</td>
+</tr>
+<tr>
+<td align="left"> DEC/16</td>
+<td align="left">16</td>
+<td align="left">4.3</td>
+</tr>
+<tr>
+<td align="left"> EMP/13 - oap/3</td>
+<td align="left">14</td>
+<td align="left">3.8</td>
+</tr>
+<tr>
+<td align="left"> fdp/12 - oap/4</td>
+<td align="left">11</td>
+<td align="left">3.0</td>
+</tr>
+<tr>
+<td align="left" colspan="3">1990</td>
+</tr>
+<tr>
+<td align="left"> EMP/13 - oap/3</td>
+<td align="left">71</td>
+<td align="left">15.5</td>
+</tr>
+<tr>
+<td align="left"> INA/15 - oap/1</td>
+<td align="left">35</td>
+<td align="left">7.6</td>
+</tr>
+<tr>
+<td align="left"> EMP/14 - oap/2</td>
+<td align="left">28</td>
+<td align="left">6.1</td>
+</tr>
+<tr>
+<td align="left"> EMP/15 - oap/1</td>
+<td align="left">14</td>
+<td align="left">3.1</td>
+</tr>
+<tr>
+<td align="left"> fdp/13 - oap/3</td>
+<td align="left">13</td>
+<td align="left">2.8</td>
+</tr>
+<tr>
+<td align="left" colspan="3">2000</td>
+</tr>
+<tr>
+<td align="left"> EMP/13 - oap/3</td>
+<td align="left">54</td>
+<td align="left">14.0</td>
+</tr>
+<tr>
+<td align="left"> INA/15 - oap/1</td>
+<td align="left">26</td>
+<td align="left">6.7</td>
+</tr>
+<tr>
+<td align="left"> EMP/14 - oap/2</td>
+<td align="left">18</td>
+<td align="left">4.7</td>
+</tr>
+<tr>
+<td align="left"> EMP/15 - oap/1</td>
+<td align="left">18</td>
+<td align="left">4.7</td>
+</tr>
+<tr>
+<td align="left"> fdp/13 - oap/3</td>
+<td align="left">10</td>
+<td align="left">2.6</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Transition rates of cohort born in 1970, per cent.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left" colspan="12">To</th>
+</tr>
+<tr>
+<th align="left">From</th>
+<th align="left">bap</th>
+<th align="left">DEC</th>
+<th align="left">eop</th>
+<th align="left">EMP</th>
+<th align="left">fdp</th>
+<th align="left">INA</th>
+<th align="left">MIS</th>
+<th align="left">NA</th>
+<th align="left">oap</th>
+<th align="left">pdp</th>
+<th align="left">UNE</th>
+<th align="left">yos</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">bap</td>
+<td align="left">97.0</td>
+<td align="left">1.5</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">1.5</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+</tr>
+<tr>
+<td align="left">DEC</td>
+<td align="left">0.0</td>
+<td align="left">100.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+</tr>
+<tr>
+<td align="left">eop</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">72.7</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">27.3</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+</tr>
+<tr>
+<td align="left">EMP</td>
+<td align="left">0.0</td>
+<td align="left">0.3</td>
+<td align="left">0.2</td>
+<td align="left">87.0</td>
+<td align="left">0.4</td>
+<td align="left">4.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">5.2</td>
+<td align="left">0.2</td>
+<td align="left">2.4</td>
+<td align="left">0.3</td>
+</tr>
+<tr>
+<td align="left">fdp</td>
+<td align="left">0.0</td>
+<td align="left">1.1</td>
+<td align="left">0.0</td>
+<td align="left">0.8</td>
+<td align="left">82.1</td>
+<td align="left">0.3</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">15.4</td>
+<td align="left">0.3</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+</tr>
+<tr>
+<td align="left">INA</td>
+<td align="left">0.0</td>
+<td align="left">0.5</td>
+<td align="left">0.1</td>
+<td align="left">1.2</td>
+<td align="left">5.3</td>
+<td align="left">77.9</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">11.9</td>
+<td align="left">0.1</td>
+<td align="left">2.8</td>
+<td align="left">0.0</td>
+</tr>
+<tr>
+<td align="left">MIS</td>
+<td align="left">16.7</td>
+<td align="left">6.7</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">73.3</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">3.3</td>
+<td align="left">0.0</td>
+</tr>
+<tr>
+<td align="left">NA</td>
+<td align="left">0.0</td>
+<td align="left">2.6</td>
+<td align="left">0.0</td>
+<td align="left">5.1</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">10.3</td>
+<td align="left">82.1</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+</tr>
+<tr>
+<td align="left">oap</td>
+<td align="left">0.0</td>
+<td align="left">0.5</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">99.5</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+</tr>
+<tr>
+<td align="left">pdp</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">4.8</td>
+<td align="left">2.4</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">16.7</td>
+<td align="left">76.2</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+</tr>
+<tr>
+<td align="left">UNE</td>
+<td align="left">0.0</td>
+<td align="left">0.6</td>
+<td align="left">1.6</td>
+<td align="left">14.9</td>
+<td align="left">0.0</td>
+<td align="left">6.3</td>
+<td align="left">0.3</td>
+<td align="left">0.0</td>
+<td align="left">10.8</td>
+<td align="left">0.0</td>
+<td align="left">65.4</td>
+<td align="left">0.0</td>
+</tr>
+<tr>
+<td align="left">yos</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">50.0</td>
+<td align="left">0.0</td>
+<td align="left">0.0</td>
+<td align="left">50.0</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A2.</strong><span data-astro-cid-dzaleqsp> ELSI model states.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" valign="bottom">No.</th>
+<th align="left" valign="bottom">Contents</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="bottom">15</td>
+<td align="left" valign="bottom">Full-time employed for the first consecutive year</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">16</td>
+<td align="left" valign="bottom">Full-time employed for the second consecutive year</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">Full-time employed for at least the third consecutive year</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">2</td>
+<td align="left" valign="bottom">Unemployed (excluding those on an unemployment pathway to retirement)</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">3</td>
+<td align="left" valign="bottom">On an unemployment pathway to retirement</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">4</td>
+<td align="left" valign="bottom">Sickness benefits preceding full disability pension</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">5</td>
+<td align="left" valign="bottom">Part-time pension</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">11</td>
+<td align="left" valign="bottom">Partial old-age pension and employed</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">10</td>
+<td align="left" valign="bottom">Partial disability pension and employed</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">6</td>
+<td align="left" valign="bottom">Years-of-service pension</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">7</td>
+<td align="left" valign="bottom">Partial old-age pension and not employed</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">8</td>
+<td align="left" valign="bottom">Old-age pension</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">17</td>
+<td align="left" valign="bottom">Full disability pension for the first consecutive year</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">9</td>
+<td align="left" valign="bottom">Full disability pension for at least the second consecutive year</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">18</td>
+<td align="left" valign="bottom">Partial disability pension and not employed</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">21</td>
+<td align="left" valign="bottom">National old-age pension only</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">22</td>
+<td align="left" valign="bottom">National disability pension only</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">13</td>
+<td align="left" valign="bottom">Outside the labor force but has accrued earnings-related pension</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">19</td>
+<td align="left" valign="bottom">Permanently outside the labor force but has accrued earnings-related pension</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">20</td>
+<td align="left" valign="bottom">Outside the labor force and has not accrued earnings-related pension</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">12</td>
+<td align="left" valign="bottom">Deceased</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A3.</strong><span data-astro-cid-dzaleqsp> Labor market states of the cohort born in 1970 at ages 55 to 70, per cent.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" valign="bottom">Labor market state</th>
+<th align="left" valign="bottom">55</th>
+<th align="left" valign="bottom">56</th>
+<th align="left" valign="bottom">57</th>
+<th align="left" valign="bottom">58</th>
+<th align="left" valign="bottom">59</th>
+<th align="left" valign="bottom">60</th>
+<th align="left" valign="bottom">61</th>
+<th align="left" valign="bottom">62</th>
+<th align="left" valign="bottom">63</th>
+<th align="left" valign="bottom">64</th>
+<th align="left" valign="bottom">65</th>
+<th align="left" valign="bottom">66</th>
+<th align="left" valign="bottom">67</th>
+<th align="left" valign="bottom">68</th>
+<th align="left" valign="bottom">69</th>
+<th align="left" valign="bottom">70</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" valign="bottom">Basic pension</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">2</td>
+<td align="left" valign="bottom">2</td>
+<td align="left" valign="bottom">2</td>
+<td align="left" valign="bottom">2</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Deceased</td>
+<td align="left" valign="bottom">3</td>
+<td align="left" valign="bottom">3</td>
+<td align="left" valign="bottom">4</td>
+<td align="left" valign="bottom">4</td>
+<td align="left" valign="bottom">4</td>
+<td align="left" valign="bottom">5</td>
+<td align="left" valign="bottom">5</td>
+<td align="left" valign="bottom">6</td>
+<td align="left" valign="bottom">6</td>
+<td align="left" valign="bottom">7</td>
+<td align="left" valign="bottom">7</td>
+<td align="left" valign="bottom">8</td>
+<td align="left" valign="bottom">9</td>
+<td align="left" valign="bottom">9</td>
+<td align="left" valign="bottom">10</td>
+<td align="left" valign="bottom">11</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Early OA pension</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">2</td>
+<td align="left" valign="bottom">3</td>
+<td align="left" valign="bottom">3</td>
+<td align="left" valign="bottom">2</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Employed</td>
+<td align="left" valign="bottom">69</td>
+<td align="left" valign="bottom">67</td>
+<td align="left" valign="bottom">67</td>
+<td align="left" valign="bottom">65</td>
+<td align="left" valign="bottom">64</td>
+<td align="left" valign="bottom">61</td>
+<td align="left" valign="bottom">59</td>
+<td align="left" valign="bottom">56</td>
+<td align="left" valign="bottom">44</td>
+<td align="left" valign="bottom">37</td>
+<td align="left" valign="bottom">35</td>
+<td align="left" valign="bottom">14</td>
+<td align="left" valign="bottom">5</td>
+<td align="left" valign="bottom">2</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">0</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Full D pension</td>
+<td align="left" valign="bottom">5</td>
+<td align="left" valign="bottom">5</td>
+<td align="left" valign="bottom">6</td>
+<td align="left" valign="bottom">6</td>
+<td align="left" valign="bottom">7</td>
+<td align="left" valign="bottom">8</td>
+<td align="left" valign="bottom">10</td>
+<td align="left" valign="bottom">11</td>
+<td align="left" valign="bottom">13</td>
+<td align="left" valign="bottom">15</td>
+<td align="left" valign="bottom">15</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Inactive</td>
+<td align="left" valign="bottom">12</td>
+<td align="left" valign="bottom">12</td>
+<td align="left" valign="bottom">12</td>
+<td align="left" valign="bottom">12</td>
+<td align="left" valign="bottom">12</td>
+<td align="left" valign="bottom">12</td>
+<td align="left" valign="bottom">13</td>
+<td align="left" valign="bottom">13</td>
+<td align="left" valign="bottom">21</td>
+<td align="left" valign="bottom">24</td>
+<td align="left" valign="bottom">24</td>
+<td align="left" valign="bottom">13</td>
+<td align="left" valign="bottom">8</td>
+<td align="left" valign="bottom">5</td>
+<td align="left" valign="bottom">5</td>
+<td align="left" valign="bottom">0</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Misfits</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">NA</td>
+<td align="left" valign="bottom">2</td>
+<td align="left" valign="bottom">2</td>
+<td align="left" valign="bottom">2</td>
+<td align="left" valign="bottom">2</td>
+<td align="left" valign="bottom">2</td>
+<td align="left" valign="bottom">2</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">OA pension</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">61</td>
+<td align="left" valign="bottom">75</td>
+<td align="left" valign="bottom">81</td>
+<td align="left" valign="bottom">82</td>
+<td align="left" valign="bottom">87</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Part D pension</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Unemployed</td>
+<td align="left" valign="bottom">8</td>
+<td align="left" valign="bottom">8</td>
+<td align="left" valign="bottom">8</td>
+<td align="left" valign="bottom">8</td>
+<td align="left" valign="bottom">8</td>
+<td align="left" valign="bottom">9</td>
+<td align="left" valign="bottom">10</td>
+<td align="left" valign="bottom">10</td>
+<td align="left" valign="bottom">10</td>
+<td align="left" valign="bottom">10</td>
+<td align="left" valign="bottom">10</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">YoS pension</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">1</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+<td align="left" valign="bottom">0</td>
+</tr>
+<tr>
+<td align="left" valign="bottom">Total</td>
+<td align="left" valign="bottom">100</td>
+<td align="left" valign="bottom">100</td>
+<td align="left" valign="bottom">100</td>
+<td align="left" valign="bottom">100</td>
+<td align="left" valign="bottom">100</td>
+<td align="left" valign="bottom">100</td>
+<td align="left" valign="bottom">100</td>
+<td align="left" valign="bottom">100</td>
+<td align="left" valign="bottom">100</td>
+<td align="left" valign="bottom">100</td>
+<td align="left" valign="bottom">100</td>
+<td align="left" valign="bottom">100</td>
+<td align="left" valign="bottom">100</td>
+<td align="left" valign="bottom">100</td>
+<td align="left" valign="bottom">100</td>
+<td align="left" valign="bottom">100</td>
+</tr>
+</tbody>
+</table></div></figure></div></details></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/figures.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

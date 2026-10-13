@@ -1,0 +1,22 @@
+TY  - JOUR
+TI  - The importance of choosing the data set for tax-benefit analysis
+AU  - Ceriani, Lidia
+AU  - Fiorio, Carlo V.
+AU  - Gigliarano, Chiara
+VL  - 6
+IS  - 1
+PY  - 2013
+DA  - 2013/04/30
+SP  - 86-121
+C1  - IJM 2013;6(1):86-121
+DO  - 10.34196/ijm.00078
+UR  - https://doi.org/10.34196/ijm.00078
+AB  - Given the increased availability of survey income data, in this paper we analyse the pros and cons of alternative data sets for static tax-benefit microsimulation in Italy. We focus on all possible alternatives, namely using (a) SHIW or (b) IT-SILC data using a consistent net-to-gross microsimulation model, or (c) IT-SILC data using the gross incomes provided since 2007. Our results suggest that IT-SILC improves in the regional representativeness of the Italian population and does not perform worse than SHIW as for most demographic characteristics, SHIW provides more information regarding building and real estate incomes. Gross income variables simulated by using the net-to-gross module included in the TABEITA microsimulation model and calibrating for tax evasion provide a very precise fit with external statistics. Simulated IT-SILC gross income data fit external aggregate data even better than gross income data provided in IT-SILC, which tend to largely overestimate self-employment income. Finally, we suggest to match IT-SILC with SHIW to include in the former the information on building and real estate incomes that are contained only in the latter. This allows us to reach a very satisfactory validation of the final data set.
+KW  - H20
+KW  - H24
+KW  - H26
+KW  - C63
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

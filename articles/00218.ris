@@ -1,0 +1,24 @@
+TY  - JOUR
+TI  - Using sequence analysis to visualize and validate model transitions
+AU  - Salonen, Janne
+AU  - Möttönen, Jyrki
+AU  - Tikanmäki, Heikki
+AU  - Nummi, Tapio
+VL  - 13
+IS  - 2
+PY  - 2020
+DA  - 2020/08/31
+SP  - 61-78
+C1  - IJM 2020;13(2):61-78
+DO  - 10.34196/ijm.00218
+UR  - https://doi.org/10.34196/ijm.00218
+AB  - We illustrate a novel data-driven way of visualizing paths of labor market transitions. The proposed technique is used in many fields of science when analyzing transitions longitudinally. The statistical method applied in this study is based on sequence analysis (SA) used to identify similar and dissimilar individual transition patterns over longitudinal measurements. We briefly introduce the statistical basis of SA and discuss its use in the dynamic microsimulation context. We also report our results from the Finnish ELSI model to illustrate labor market transitions near retirement. SA is available in many popular statistical software packages such as R and Stata. The programming code for SA and data simulations are also given. Our conclusion is that SA is a useful tool also in a microsimulation context, in visualizing and validating simulated model transitions when statistically more sophisticated mixture modeling are not applicable.
+KW  - optimal matching analysis
+KW  - sequence analysis
+KW  - dynamic microsimulation
+KW  - labor market
+KW  - retirement
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

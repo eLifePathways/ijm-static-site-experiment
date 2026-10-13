@@ -1,0 +1,26 @@
+TY  - JOUR
+TI  - The Italian Treasury Dynamic Microsimulation Model: Data, Structure and Validation
+AU  - Conti, Riccardo
+AU  - Bavaro, Michele
+AU  - Boscolo, Stefano
+AU  - Fabrizi, Elena
+AU  - Puccioni, Chiara
+AU  - Tedeschi, Simone
+VL  - 17
+IS  - 1
+PY  - 2024
+DA  - 2024/04/30
+SP  - 23-68
+C1  - IJM 2024;17(1):23-68
+DO  - 10.34196/ijm.00303
+UR  - https://doi.org/10.34196/ijm.00303
+AB  - The Treasury Dynamic Microsimulation Model (T-DYMM) is a dynamic microsimulation model (DMM) owned by the Department of the Treasury of the Italian Ministry of Economy and Finance. One of the very few DMMs presently operating in Italy, it has been developed through three EU-funded research projects, spanning from 2009 to 2021. The present article is intended to provide a general and comprehensive description of T-DYMM. The model, based on the AD-SILC dataset, which matches administrative and survey data, delivers long-term simulations and is divided into five modules: demographic, labour market, pension, wealth and tax-benefit. The last two contain the most relevant novelties of the present version of T-DYMM. The broad aim of the model is to provide long-term analyses of the Italian social security system, with a focus on pension and social protection adequacy and their distributional implications.
+KW  - dynamic microsimulation
+KW  - pensions
+KW  - wealth
+KW  - tax-benefit
+KW  - validation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

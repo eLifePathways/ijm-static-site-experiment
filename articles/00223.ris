@@ -1,0 +1,24 @@
+TY  - JOUR
+TI  - Enhancing microsimulation analysis of wealth-related policies in EUROMOD
+AU  - Kuypers, Sarah
+AU  - Boone, Jonas
+AU  - Derboven, Johannes
+AU  - Figari, Francesco
+AU  - Verbist, Gerlinde
+VL  - 13
+IS  - 3
+PY  - 2020
+DA  - 2020/12/31
+SP  - 5-26
+C1  - IJM 2020;13(3):5-26
+DO  - 10.34196/ijm.00223
+UR  - https://doi.org/10.34196/ijm.00223
+AB  - While microsimulation techniques have been widely used for the analysis of the distribution of income, this has not been the case for the distribution of wealth. A major reason for this has been the lack of appropriate input data. In Europe this has recently changed among others by the launch of the Eurosystem Household Finance and Consumption Survey (HFCS). In this paper we explain how microsimulation analysis of wealth-related taxes and policies is enhanced by using the HFCS as input data for EUROMOD, the EU-wide tax-benefit microsimulation model. Pilot databases for Belgium and Italy were explored in Kuypers et al. (2016). This paper builds further on that work by extending the coverage to 17 countries and introducing the simulation of new wealth-related policies in EUROMOD. We explain the processes used to build the input data and to code the wealth-related policies in EUROMOD and highlight some important advantages and drawbacks. Finally, we put forward some research questions which may be addressed by using this enhanced model.
+KW  - Wealth taxation
+KW  - wealth policies
+KW  - EUROMOD
+KW  - distributional analysis
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

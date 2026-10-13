@@ -1,0 +1,26 @@
+TY  - JOUR
+TI  - Modelling the Early life-course (MELC): A Microsimulation Model of Child Development in New Zealand
+AU  - Milne, Barry J
+AU  - Lay-Yee, Roy
+AU  - McLay, Jessica M
+AU  - Pearson, Janet
+AU  - von Randow, Martin
+AU  - Davis, Peter
+VL  - 8
+IS  - 2
+PY  - 2015
+DA  - 2015/08/31
+SP  - 28-60
+C1  - IJM 2015;8(2):28-60
+DO  - 10.34196/ijm.00116
+UR  - https://doi.org/10.34196/ijm.00116
+AB  - To understand the factors upon which policies can be devised to improve the lives of children and young people, we have developed a dynamic discrete-time micro-simulation model called ‘Modelling the early life-course’ (MELC). MELC models child development from birth through to age 13, encompassing changes in material and family circumstances, family functioning and early education. MELC focusses on three main outcomes: health service use, early literacy, and conduct problems. A synthetic base population (n = 10,000) derived from the 2006 New Zealand Census is used, and transitions through the life-course are determined from estimates derived by analysing three New Zealand child cohort studies: the Christchurch Health and Development Study, the Dunedin Multidisciplinary Health and Development Study, and the Pacific Islands Families Study. The model has been validated against New Zealand norms for reading, general practitioner visits and hospital admissions. Three scenarios were demonstrated. First, we tested the impact of a number of putatively important factors on early literacy, and found small effects. Second, we found that halving the prevalence of single parenting reduced the prevalence of conduct problems. Third, we changed a number of material and family factors for Māori, Pacific and low-socio-economic groups to be equal to those for the general population, and found that this produced small improvements in reading, but large reductions in conduct problems for these groups. MELC has been deployed as a user friendly desktop application at a number of New Zealand government agencies, where it can be used to test policy-relevant scenarios.
+KW  - childhood
+KW  - policy
+KW  - reading
+KW  - conduct problems
+KW  - health service use
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

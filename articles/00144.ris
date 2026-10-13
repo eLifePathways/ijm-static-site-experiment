@@ -1,0 +1,21 @@
+TY  - JOUR
+TI  - Logit scaling: A general method for alignment in microsimulation models
+AU  - Stephensen, Peter
+VL  - 9
+IS  - 3
+PY  - 2016
+DA  - 2016/12/31
+SP  - 89-102
+C1  - IJM 2016;9(3):89-102
+DO  - 10.34196/ijm.00144
+UR  - https://doi.org/10.34196/ijm.00144
+AB  - A general and easily implemented method for alignment in microsimulation models is proposed. Most existing alignment methods address the binary case and they typically put special emphasis on one of the alternatives rather than treating all alternatives in a symmetric way. In this paper we propose a general mathematical foundation of multinominal alignment, which minimizes the relative entropy in the process of aligning probabilities to given targets. The method is called Logit Scaling. The analytical solution to the alignment problem is characterized and applied in deriving various properties for the method. It is demonstrated that there exits an algorithm called Bi-Proportional Scaling that converges to the solution of the problem. This is tested against two versions of the Newton-Raphson-algorithm, and it is demonstrated that it is at least twice as fast as these methods. Finally, the method is not just computational efficient but also easy to implement.
+KW  - EUROMOD
+KW  - HFCS
+KW  - simulations
+KW  - gross-to-net incomes
+KW  - wealth taxation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

@@ -1,0 +1,24 @@
+TY  - JOUR
+TI  - Imputing individual effects in dynamic microsimulation models an application to household formation and labour market participation in Italy
+AU  - Richiardi, Matteo
+AU  - Poggi, Ambra
+VL  - 7
+IS  - 2
+PY  - 2014
+DA  - 2014/08/31
+SP  - 3-39
+C1  - IJM 2014;7(2):3-39
+DO  - 10.34196/ijm.00099
+UR  - https://doi.org/10.34196/ijm.00099
+AB  - Dynamic microsimulation modelling involves two stages: estimation and forecasting. Unobserved heterogeneity is often considered in estimation, but not in forecasting, beyond trivial cases. Non-trivial cases involve individuals that enter the simulation with a history of previous outcomes. We show that the simple solutions of attributing to these individuals a null effect or a random draw from the estimated unconditional distributions lead to biased forecasts, which are often worse than those obtained neglecting unobserved heterogeneity altogether. We then present a first implementation of the Rank method, a new algorithm for assigning individual effects to the simulation sample. Out-of-sample validation of our model shows that use of the Rank method significantly improves the quality of the forecasts.
+KW  - dynamic microsimulation
+KW  - unobserved heterogeneity
+KW  - validation
+KW  - Rank method
+KW  - assignment algorithms
+KW  - female labour force participation
+KW  - Italy
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

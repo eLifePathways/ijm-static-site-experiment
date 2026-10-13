@@ -1,0 +1,19 @@
+TY  - JOUR
+TI  - The Retirement Decision in Dynamic Microsimulation Models: An Exploratory Review
+AU  - Gonzalez Garibay, Montserrat
+VL  - 16
+IS  - 3
+PY  - 2023
+DA  - 2023/12/31
+SP  - 19-48
+C1  - IJM 2023;16(3):19-48
+DO  - 10.34196/ijm.00287
+UR  - https://doi.org/10.34196/ijm.00287
+AB  - This article conducts an exploratory review of the decision to retire in microsimulation models (MSM) by asking two research questions: Which theoretical and methodological approaches from the scientific literature on retirement are used in MSM? What is the theoretical and methodological quality of those models? Retirement is a central topic in microsimulation. The knowledge about the concrete way in which the transition probabilities of retiring are modelled is, however, scattered across the individual MSM’s documentation. This review constitutes a first attempt at centralising the available knowledge. It has three main objectives: to link the treatment of retirement in the MSM tradition to the broader theoretical and methodological paradigms governing the study of retirement decisions, to deepen the knowledge basis on MSM, and to encourage further discussion and knowledge-sharing about how retirement decisions are modelled in MSM. Using the systematic review methodology first outlined by Moher et al. (2009), a general analysis including 32 models was conducted, after which 26 models were examined in detail. The review found a relatively uniform application of econometric methods when estimating retirement decisions, whereas some theoretical frames and variables are less well-represented.
+KW  - Retirement
+KW  - statistical modelling
+KW  - Microsimulation models
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

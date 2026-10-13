@@ -1,0 +1,17 @@
+TY  - JOUR
+TI  - Towards a multi-purpose framework for tax-benefit microsimulation: Lessons from EUROMOD
+AU  - Immervoll, Herwig
+AU  - O’Donoghue, Cathal
+VL  - 2
+IS  - 2
+PY  - 2009
+DA  - 2009/12/31
+SP  - 43-54
+C1  - IJM 2009;2(2):43-54
+DO  - 10.34196/ijm.00016
+UR  - https://doi.org/10.34196/ijm.00016
+AB  - Tax-benefit models provide tools for policy analyses that should enable researchers to focus their attention on formulating policy scenarios and analysing their effects. From the users’ and the developers’ points of view, numerous characteristics and features are desirable to maximise the model’s usefulness. A model framework that offers generalised components essential for tax-benefit modelling while at the same time providing a large degree of flexibility in defining the specific parameters can be re-used for a multitude of modelling purposes. This paper discusses issues arising in the construction of such a general framework and illustrates possible approaches by reference to the the framework developed for construction of the EUROMOD tax-benefit model. EUROMOD is an integrated tax-benefit microsimulation model covering 15 (pre 2004) countries that are members of the European Union (Immervoll et al., 1999) as well as 4 of the New Member States. Implementing this many tax-benefit systems in one single consistent framework requires a robust yet flexible structure. The framework needs to reflect the basic structural characteristics of tax-benefit systems while leaving enough room for a diversity of particular instruments and rules. This paper outlines the general model framework adopted. We argue that, apart from its direct usefulness for EUROMOD, the framework has far wider applicability as a general approach to static tax-benefit microsimulation modelling.
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

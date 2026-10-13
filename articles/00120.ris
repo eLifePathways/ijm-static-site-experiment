@@ -1,0 +1,30 @@
+TY  - JOUR
+TI  - The quantitative and qualitative evaluation of a multi-agent microsimulation model for subway carriage design
+AU  - Cao, Le-le
+AU  - Li, Xiao-xue
+AU  - Kang, Fen-ni
+AU  - Liu, Chang
+AU  - Sun, Fu-chun
+AU  - Kotagiri, Ramamohanarao
+VL  - 8
+IS  - 3
+PY  - 2015
+DA  - 2015/12/31
+SP  - 6-40
+C1  - IJM 2015;8(3):6-40
+DO  - 10.34196/ijm.00120
+UR  - https://doi.org/10.34196/ijm.00120
+AB  - Multi-agent microsimulation, as a third way of doing science other than induction and deduction methods, is explored to aid subway carriage design in this paper. Realizing that passenger behavior shapes the environment and in turn is shaped by the environment itself, we intend to model this interaction and examine the effectiveness and usability of the proposed model. We address our micro-model from essential aspects of environment space, agent attributes, agent behaviors, simulation process, and global objective/convergence function. Based on the real and simulated data, we evaluate our model with a combination of quantitative and qualitative procedures. For quantitative approach, we proposed two evaluation paradigms (i.e. “unified multinomial classifier” and “one-vs.-all binary classifiers”) using the state-of-the-art machine learning techniques and frameworks; and we manage to show from various perspectives that our model matches the reality in the majority of cases. For qualitative verification, we present a small-scale case study to evaluate different seat layouts in a subway carriage, and identify their advantages and disadvantages with little effort. By enriching microsimulation theory with innovative techniques, our research aims at promoting its acceptance level in design communities by means of avoiding costly creation of real-world experiments.
+KW  - microsimulation
+KW  - multi-agent
+KW  - machine learning
+KW  - neural network
+KW  - design
+KW  - subway carriage
+KW  - pedestrian flow
+KW  - qualitative study
+KW  - quantitative evaluation
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

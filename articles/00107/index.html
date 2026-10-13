@@ -1,0 +1,1251 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>A microsimulation model to evaluate Italian households’ financial vulnerability | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00107"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00107" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/finance" data-astro-cid-ak4gb66a>Finance</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Dec 31, 2014</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>A microsimulation model to evaluate Italian households’ financial vulnerability</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Valentina Michelangeli, Mario Pietrunti</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Institute Bank of Italy, Financial Stability Directorate, Via Nazionale, Italy</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/7-3/volume-7-3-winter-2014" data-astro-cid-ak4gb66a>Volume 7(3) Winter 2014</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> V. Michelangeli, M. Pietrunti; 2014; <span data-astro-cid-ak4gb66a>A microsimulation model to evaluate Italian households’ financial vulnerability</span>; International Journal of Microsimulation; 7(3); 53–79. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00107" data-astro-cid-ak4gb66a>10.34196/ijm.00107</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>We build a microsimulation model to monitor the financial vulnerability of Italian households. Starting from household-level data from the Survey on Household Income and Wealth and matching them with macroeconomic forecasts on debt and income, we project the future path of households’ indebtedness and debt-service ratio. This allows us to assess households’ vulnerability at a higher frequency and in a more timely manner than by using household data alone. We find that the share of vulnerable households (defined as those with a debt-service ratio above 30 per cent and income below the median) over the total population is projected to be about stable between 2012 and 2014, with a slight decrease in 2015 due to positive income growth. Their debt is also projected to decrease in those years. Overall, we find that the dynamics of income growth are the main driver of households’ vulnerability.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00107/ijm-00107.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00107.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00107.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00107" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00107/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. Data</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. The model</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. Results</a></li><li data-astro-cid-twdwaz5s><a href="#s5" data-astro-cid-twdwaz5s>5. Conclusions</a></li><li data-astro-cid-twdwaz5s><a href="#footnotes" data-astro-cid-twdwaz5s>Footnotes</a></li><li data-astro-cid-twdwaz5s><a href="#A1" data-astro-cid-twdwaz5s>Online appendix</a></li><li data-astro-cid-twdwaz5s><a href="#A1-2" data-astro-cid-twdwaz5s>2. Comparison of backtesting exercices under different amortization hypotheses</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>After the increase in households’ indebtedness in several OECD countries in the period 2000–2008 (<a href="#bib18">OECD 2010</a>) and the subsequent financial crisis, several central banks began to develop indicators and models to monitor and evaluate the risks associated with the household sector. The increasing indebtedness of many households and the consequent weakness of their balance sheets raised concerns about their resilience to negative shocks, with implications for both financial stability and economic growth.</p><p data-astro-cid-qsyhzaho>To evaluate households’ vulnerability we build on state of the art microsimulation models and we use data on Italian households available from the Survey on Household Income and Wealth (SHIW), available up to 2012. Those data provide a comprehensive picture of the household sector, distinguishing households according to their idiosyncratic characteristics, such as income, balance sheet, age, education and occupation. However, they are low frequency data and, moreover, as the survey runs every two years the data become available with about a year’s delay. Macroeconomic data are instead high frequency and provide more up-to-date information on the status of the economy from both a real (income) and a financial (interest rates, growth rate in total debt) point of view.</p><p data-astro-cid-qsyhzaho>In this paper we describe a methodology to simulate the evolution of households’ debt that integrates the microeconomic household data with the macroeconomic data. This exercise allows us to monitor closely the financial condition of the household sector and hence to evaluate the impact of possible policy interventions. The methodology is flexible enough to analyse the evolution of vulnerable households under stress scenarios (e.g. income or interest rate shocks) and to measure the impact of policy interventions in the household debt market (e.g. suspension of loan payments) in the short-to-medium run.</p><p data-astro-cid-qsyhzaho>The model is explicitly targeted at modelling the vulnerability of Italian households. After a long period of feeble positive GDP growth, the Italian economy was exposed to the 2007–2009 financial crisis and to the 2011–12 sovereign debt crisis, whose effects are still in place. In such a scenario, although household debt has been historically low by international standards<sup><a href="#fn1">1</a></sup>, the recent increase in unemployment, along with the weak dynamics of disposable income, affected the households’ ability to meet their debt obligations. Nonetheless, the adverse consequences have been partially mitigated by the low interest rates (see <a href="#bib17">Magri and Pico, 2014</a>, for an analysis of the impact of the crisis on household debt).</p><p data-astro-cid-qsyhzaho>The vulnerability of indebted households is typically summarized by the debt-service ratio (DSR), defined as the share of debt payments to income. In line with most studies (<a href="#bib10">IMF, 2011</a>, <a href="#bib11">2012</a>, <a href="#bib12">2013</a>; <a href="#bib7">ECB, 2013</a>), we identify as vulnerable those households with a DSR above a given threshold. These households are considered more likely to be affected by shocks associated with important changes in interest rates or income. Their sensitivity to shocks is greater when income is low; hence, in this paper we focus on households with income below the median in the population. In most of what follows we define as vulnerable those households with a debt-service ratio above 30 per cent and an income below the median, consistently with previous studies on the Italian economy (<a href="#bib16">Magri &amp; Pico, 2012</a>). Our flexible framework allows different definitions of financial vulnerability to be considered, in line with other studies (Bank of Canada, 2012; IMF, 2010): in particular, we also investigate the financial vulnerability of Italian households under a less stringent debt-service ratio threshold of 40 per cent.</p><p data-astro-cid-qsyhzaho>Simulating the evolution of DSR requires information on households’ future income and debt. Therefore, we first distinguish households according to their income class. For each income class we estimate the parameters of the income process using historical microeconomic data and we allow households to have different income realizations. We then require that the income growth generated by the model be consistent with the growth in nominal income from macroeconomic projections. Secondly, we impose some structure on the debt evolution by assuming that indebted households repay their mortgage according to a French amortization schedule, which implies that the annual repayment is constant until loan termination and the annual interest expense is calculated on outstanding debt. Annual repayments may be subject to variations for variable interest rate mortgages only, due to changes in the interest rate. Mortgage debt associated with new originations is determined starting from microeconomic estimates, which are then properly readjusted to match the macroeconomic data on total mortgage debt growth. By combining those projections of income, debt and debt payments we can compute the projected share of vulnerable households over time. More precisely, since the SHIW at the time of writing is available up to 2012, we make use of macroeconomic data to simulate the evolution of indebted households from 2013 to 2015 under different scenarios. In this regard, our model also fits in the growing literature on nowcasting, as it provides a granular and accurate picture of the indebtedness of Italian households almost in real-time. A back-testing exercise is performed on previous SHIW waves and, overall, the model provides a good fit of the data.</p><p data-astro-cid-qsyhzaho>Microsimulation tools have been recently developed in central banks and international institutions. As a way of example, the IMF usually assesses the vulnerability of the household sector in its Financial Sector Assessment Program missions (see e.g. <a href="#bib12">IMF, 2013</a>). A recent contribution is <a href="#bib1">Ampudia <i>et al</i>. (2014)</a>, where a series of metrics for measuring the financial fragility of Euro Area households is proposed. The results of our exercise are consistent with the outcome of that paper. One of the closest papers to ours is <a href="#bib6">Djoudad (2010)</a>, which performs a similar exercise on Canadian data. While building on that paper, we enhance the methodology, providing further contributions to current modelling of households’ vulnerability in several respects. First of all, we impose some structure in the evolution of debt for existing mortgages by having each household paying a loan instalment determined according to a standard amortization formula and its specific debt characteristics. Hence, we do not empirically estimate a process for total debt growth of existing mortgages starting from the empirical data. In fact, our approach does not require any estimation of the process of total debt growth, which could produce estimates that are not statistically significant when the number of indebted households is relatively small in the total population. Moreover, for each household we compute its loan payment in each period using the standard amortization formula. Thus, we do not keep the share of principal on current credit balance fixed. We believe that keeping that share fixed may have significant consequences on the evolution of households’ debt in the short-to-medium run as well.<sup><a href="#fn2">2</a></sup> Moreover, as the formula incorporates parameters that are important in the simulation of stress test scenarios, we believe that our approach is more accurate when computing each household’s loan payment and, subsequently, total aggregates.</p><p data-astro-cid-qsyhzaho>We explicitly model mortgage terminations taking into account microeconomic data on mortgage duration and starting year of the mortgage available on Italian data. This is a major advantage of the SHIW compared with other surveys that do not provide such data. It avoids making arbitrary assumptions on mortgage termination that could lead to biases in debt evolution. Finally, we present a way of introducing mortgage originations obtained from a pseudo-panel that builds on historical data, adjusted to match the total amount of debt using macroeconomic forecasts.</p><p data-astro-cid-qsyhzaho>As a remark, given our focus on financial stability, we develop a framework for evaluating the vulnerability of the household sector in the short-to-medium run (below two years). Thus, we concentrated on carefully simulating the evolution of debt (both the existing stock and new originations) and income, whose changes in the short-to-medium run could have significant effects on the stability of the entire system. Instead, we maintain the other socio-economic household characteristics constant, with the only exception of the household’s age. We believe that this assumption is reasonable given the time horizon simulated. The model, however, could be extended rather easily to introduce time variation for demographic characteristics. We leave this extension to further research.</p><p data-astro-cid-qsyhzaho>The main results of the model for the Italian economy are as follows. In a baseline scenario, in which interest rates are not expected to change significantly and income growth is expected to be positive, the share of vulnerable households with income below the median is projected to be almost stable over the next few years, with a small decrease in 2015 mainly because of the expected growth in income. Moreover, the share of total debt held by those households is expected to decrease progressively and to revert to 2010 levels.<sup><a href="#fn3">3</a></sup> In particular, in 2015 the share of vulnerable households with income below the median level is projected to be 2.7 per cent and their debt equal to 16 per cent of total debt.</p><p data-astro-cid-qsyhzaho>In our stress test simulations a projected zero income growth in 2015 (instead of 2.9 per cent) has a bigger effect on the share of vulnerable households than an increase of 100 basis points in interest rates. Indeed, a cut in income growth at a macro level affects all households, while an increase in interest rates directly affects only those households with an adjustable rate mortgage or new mortgages.</p><p data-astro-cid-qsyhzaho>All in all and under alterative scenarios of stress, the share of vulnerable households is not projected to change dramatically in the next few years; hence, indebted households do not represent a source of significant risk for the financial stability of the Italian system. These results are confirmed when we consider the 40 per cent threshold for DSR.</p><p data-astro-cid-qsyhzaho>The paper is organized as follows: <a href="#s2">Section 2</a> presents the data, <a href="#s3">Section 3</a> gives a description of the model, <a href="#s4">Section 4</a> sets out the results and <a href="#s5">Section 5</a> concludes.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. Data</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="s2-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.1 Microeconomic variables</h3><p data-astro-cid-qsyhzaho>The microeconomic data used in the analysis are taken from the 2002–12 waves of the SHIW.<sup><a href="#fn4">4</a></sup> This database was initiated in the 1960s with the goal of collecting data on the incomes and savings of Italian households. Over time, the database has been expanded and currently it contains detailed information on households’ individual characteristics (age, education, employment status of the head of household), consumption, income and balance sheets. A representative sample of the Italian resident population is interviewed so that the SHIW is able to offer a comprehensive picture of the current status of the Italian household sector. The SHIW data have been widely used for economic research on household income, debt and wealth (see for instance <a href="#bib9">Guiso <i>et al</i>., 1996</a>; <a href="#bib15">Magri 2007</a>; <a href="#bib13">Jappelli and Pistaferri, 2000</a>, <a href="#bib14">2010</a>) as well as in institutional publications (see <a href="#bib2">Bank of Italy Annual Report for 2013</a>, among others). Moreover, the Eurosystem Household Finance and Consumption Survey (HFCS), a survey initiated in 2010 and coordinated by the European Central Bank, incorporates the SHIW households’ microdata for Italy.</p><p data-astro-cid-qsyhzaho>In our exercise, we use household data on demographics, income, and debt. In particular, we distinguish between different types of debt: mortgage debt on the primary residence, mortgage debt on other real estate, and consumer credit.<sup><a href="#fn5">5</a></sup> For each type of debt, we observe the outstanding amount, the initial amount borrowed, the year when the loan was granted, the total length of the contract, the amount of the annual instalment, the interest rate, and – in case of mortgage debt – whether it is adjustable rate or fixed rate.</p><p data-astro-cid-qsyhzaho>The starting point of our analysis is the cross-section of the most recent wave, namely 2012. In that year, about 12.4 per cent of the households in our sample had a mortgage debt on a primary or secondary residence, with an average outstanding debt of about €78,000 and a starting value of the debt of €115,000. About 50 per cent of first mortgages on the primary residence were fixed rate mortgages while the rest were mainly variable rate.<sup><a href="#fn6">6</a></sup> If we extend the analysis to all kinds of real estate debt, that proportion remains about the same. About 10 per cent of households had consumer credit debt.</p><p data-astro-cid-qsyhzaho>The database is an unbalanced panel where only half of each wave’s sample is retained in the next wave of the survey. Therefore, we miss a full historical track of the same households’ characteristics and choices. Following <a href="#bib6">Djoudad (2010)</a> we simulate the income process by grouping observations according to their income class, while to simulate the new mortgage originations we construct a pseudo panel referring to other household characteristics.</p></section><section id="s2-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.2 Building a pseudo panel</h3><p data-astro-cid-qsyhzaho>The pseudo panel constructed in this analysis can be considered a new dataset, in which each observation is the result of grouping together households with the same characteristics. Specifically, we group households according to the following characteristics of the household head:</p><ol data-astro-cid-qsyhzaho><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Age groups: 18–34 years, 35–44 years, 45–54 years, 55–64 years, 65 and over.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>Education groups: 1) no education or elementary education, 2) lower secondary school, 3) upper secondary school, 4) undergraduate or post-graduate study.</p></li><li data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>occupation status: 1) not working, 2) working.</p></li></ol><p data-astro-cid-qsyhzaho>We thus obtain 40 groups of households with similar characteristics. This approach allows a comparison over time to be made of the data for each group of representative households, so that we can make inferences about the underlying processes of some variables of interest.</p></section><section id="s2-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.3 Macroeconomic data</h3><p data-astro-cid-qsyhzaho>We also gather macroeconomic data that stand as a benchmark for the aggregate dynamics obtained starting from the microeconomic data in the household survey. The model dynamics for total income and total debt are corrected by annual adjustment factors, in order to have them in line with the macroeconomic picture or with its forecasts. The macro data come from three main sources and are reported in <a href="#table1">Table 1</a>.</p><p data-astro-cid-qsyhzaho>First, we gather data on income growth over years from the national accounts (<i>Contabilità Nazionale</i>, CN). The variable of interest is income as defined in the CN, which includes imputed rents. This measure captures the standard of living of households.<sup><a href="#fn7">7</a></sup> Nominal income growth was negative in 2013, while it is projected to be positive and equal to 2.4 per cent and 2.9 per cent respectively in 2014 and 2015. Those projections indicate expectations of a potential recovery of the economy, manifested by positive growth. <sup><a href="#fn8">8</a></sup></p><p data-astro-cid-qsyhzaho>Second, we make use of projections on lending volumes to households for house purchase developed by the Bank of Italy. This variable represents the volume of loans in banks’ balance sheets plus an estimate of securitized loans; data for 2014 and 2015 are a projection based on an internal macro-econometric model. Total debt growth is negative in 2013 and in 2014 and then positive and slightly below 2 per cent in 2015. <sup><a href="#fn9">9</a></sup></p><p data-astro-cid-qsyhzaho>Third, we use projections of the three-month Euribor rate obtained from futures contracts.<sup><a href="#fn10">10</a></sup> The data are employed in our model projections of the interest rate, which affect the loan payments of households holding a variable interest rate mortgage and those associated with new originations. This choice is a natural one as mortgage rates in Italy are typically tied to the Euribor rate and so we choose to model those rates equal to the Euribor rate plus a bank spread. Implicitly, we are assuming that the bank spread remains fixed across simulation periods. This assumption is typically true for existing contracts, apart from the case of mortgage refinancing.<sup><a href="#fn11">11</a></sup> The change in the value of the Euribor rate<sup><a href="#fn12">12</a></sup> is negative in 2013 and is then expected to be close to zero.</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Macroeconomic aggregates (<i>Percentages</i>).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td/>
+<td>2013</td>
+<td>2014</td>
+<td>2015</td>
+</tr>
+<tr>
+<td>Income growth rate at current prices (national accounts)</td>
+<td>0.1</td>
+<td>2.4</td>
+<td>2.9</td>
+</tr>
+<tr>
+<td>Total debt growth (macro model for forecasting debt growth)</td>
+<td>-1.0</td>
+<td>-0.3</td>
+<td>1.8</td>
+</tr>
+<tr>
+<td>Euribor (3m Euribor and 3m Euribor futures)</td>
+<td>0.21</td>
+<td>0.27</td>
+<td>0.32</td>
+</tr>
+<tr>
+<td>Euribor change</td>
+<td>-0.65</td>
+<td>0.06</td>
+<td>0.05</td>
+</tr>
+</tbody>
+</table></div></figure></section></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. The model</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In this section we describe how households’ income and debt evolve over time.</p><section id="s3-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.1 Income growth dynamics</h3><p data-astro-cid-qsyhzaho>Households’ income enters in the denominator of the DSR and therefore affects the projected share of vulnerable households in the economy. We distinguish between disposable income and disposable income gross of financial charges and net of imputed rents.<sup><a href="#fn13">13</a></sup> The first definition of income is used to classify households according to their living standard and is consistent with the CN, helping us to match the model statistics with the macro data. The second definition more closely resembles the actual income available to the household for current expenses and it enters directly in the computation of DSR. We compute the income growth dynamics following <a href="#bib6">Djoudad (2010)</a>. Specifically, we group households’ income into four classes, <i>j</i>, of equal frequency.</p><p data-astro-cid-qsyhzaho>The process for the disposable income growth for each class <i>j</i> is given by:</p><div id="eqn1" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>[1]</span><math><mrow><mi>log</mi><mrow><mo>(</mo><mrow><msubsup><mi>y</mi><mrow><mi>j</mi><mo>,</mo><mi>t</mi></mrow><mi>d</mi></msubsup></mrow><mo>)</mo></mrow><mo>−</mo><mi>log</mi><mrow><mo>(</mo><mrow><msubsup><mi>y</mi><mrow><mi>j</mi><mo>,</mo><mi>t</mi><mo>−</mo><mn>1</mn></mrow><mi>d</mi></msubsup></mrow><mo>)</mo></mrow><mo>~</mo><mi>N</mi><mrow><mo>(</mo><mrow><msubsup><mi>μ</mi><mi>j</mi><mi>d</mi></msubsup><mo>,</mo><msubsup><mi>σ</mi><mi>j</mi><mi>d</mi></msubsup></mrow><mo>)</mo></mrow><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext>for j=1,2,3,4</mtext></mrow></math></div><p data-astro-cid-qsyhzaho>Starting from household disposable income and dividing it by a factor that reflects its number of components, we obtain household equalized income. In each period, we compute the thresholds for each class of equalized income and we assign each household to a specific class.</p><p data-astro-cid-qsyhzaho>The process for the growth of households’ disposable income gross of financial charges and net of imputed rent for each income class j is given by:</p><div id="eqn2" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>[2]</span><math><mrow><mi>log</mi><mrow><mo>(</mo><mrow><msub><mi>y</mi><mrow><mi>j</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow><mo>)</mo></mrow><mo>−</mo><mi>log</mi><mrow><mo>(</mo><mrow><msub><mi>y</mi><mrow><mi>j</mi><mo>,</mo><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub></mrow><mo>)</mo></mrow><mo>~</mo><mi>N</mi><mrow><mo>(</mo><mrow><msub><mi>μ</mi><mi>j</mi></msub><mo>,</mo><msub><mi>σ</mi><mi>j</mi></msub></mrow><mo>)</mo></mrow><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext>for j=1,2,3,4</mtext><mtext>.</mtext></mrow></math></div><p data-astro-cid-qsyhzaho>To estimate the parameters entering in those equations we employ the SHIW data from 2002 to 2008 (t=2002,…, 2008). We use this sample period because the Italian economy is expected to grow in the next few years. Thus, considering a period of positive economic growth such as 2002–08 could help us to better capture expected income dynamics to 2015.<sup><a href="#fn14">14</a></sup> The mean and standard deviation for the income processes <i>y<sup>d</sup></i> and <i>y</i> are reported for each of the four income classes in <a href="#table2">Table 2</a>.</p><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Estimated mean and standard deviation for the income process.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th colspan="2">y<sup>d</sup> growth</th>
+<th colspan="2">y growth</th>
+</tr>
+<tr>
+<th/>
+<th>μ<sup>d</sup></th>
+<th>σ<sup>d</sup></th>
+<th>μ</th>
+<th>σ</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1st – 25th percentile</td>
+<td>0.035</td>
+<td>0.034</td>
+<td>0.039</td>
+<td>0.025</td>
+</tr>
+<tr>
+<td>25th – 50th percentile</td>
+<td>0.029</td>
+<td>0.023</td>
+<td>0.029</td>
+<td>0.025</td>
+</tr>
+<tr>
+<td>50th – 75th percentile</td>
+<td>0.026</td>
+<td>0.026</td>
+<td>0.025</td>
+<td>0.023</td>
+</tr>
+<tr>
+<td>75th – 100th percentile</td>
+<td>0.025</td>
+<td>0.024</td>
+<td>0.023</td>
+<td>0.024</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho><a href="#table2">Table 2</a> shows that the dynamics for the two definitions of income are fairly similar. Means are positive as we are estimating the parameters considering a period characterized by positive income growth. The mean growth is smaller for the 75st-100th percentile and larger for the 1st-25th percentile, indicating that households in the lowest group are those that are expected to benefit the most from an economic recovery. As expected and in line with other studies (see, for instance, <a href="#bib6">Djoudad, 2010</a>), the standard deviation is higher for lower groups and lower for the upper groups.</p><p data-astro-cid-qsyhzaho>In the model each household receives a random income shock in each period. Since shocks differ among households we generate some heterogeneity in income growth among households that belong to the same income class. At the same time the simulated distribution of income growth for each class is in line with the standard deviations per class reported above.</p><p data-astro-cid-qsyhzaho>It is known in the literature that the distribution of any given variable resulting from survey data almost never matches the one based on macro data. In particular, the discrepancy could be driven by sampling errors, as surveys are random samples from the population and thus their statistics could present differences from those of the total population. It could also be associated with measurement errors or there may be some non-response bias in both the survey and the macro source. Thus, we could find some discrepancy between macroeconomic projections, computed though rich autoregressive models, and those based on survey data, whose quality and time-series properties depend on the microdata used.</p><p data-astro-cid-qsyhzaho>In our model, in order to obtain an income growth for the entire economy in line with the macroeconomic data from the CN we introduce an adjustment factor <i>adj<sub>t</sub></i> for each time period.</p><p data-astro-cid-qsyhzaho>Specifically, we select the adjustment factors so that the per period average growth in nominal disposable income resulting from the model, <math><mrow><mi>Δ</mi><msubsup><mover accent="true"><mi>y</mi><mo>¯</mo></mover><mi>t</mi><mi>d</mi></msubsup></mrow></math> equals the growth in the average nominal income obtained from the macroeconomics projections, <math><mrow><mi>Δ</mi><msubsup><mover accent="true"><mi>y</mi><mo>¯</mo></mover><mi>t</mi><mrow><mi>C</mi><mi>N</mi></mrow></msubsup></mrow></math> :</p><div id="eqn3" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>[3]</span><math><mrow><mi>Δ</mi><msubsup><mover accent="true"><mi>y</mi><mo>¯</mo></mover><mi>t</mi><mi>d</mi></msubsup><mo>=</mo><mi>Δ</mi><msubsup><mover accent="true"><mi>y</mi><mo>¯</mo></mover><mi>t</mi><mrow><mi>C</mi><mi>N</mi></mrow></msubsup><mtext> </mtext><mtext>for t=2013,</mtext><mn>..</mn><mtext>,2015</mtext><mtext>.</mtext></mrow></math></div><p data-astro-cid-qsyhzaho>The adjustment factors introduced in the model are reported in <a href="#table3">Table 3</a>. It is worth to point out that the adjustment factors are overall fairly small.</p><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Adjustment factors for households’ income.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td/>
+<td>2013</td>
+<td>2014</td>
+<td>2015</td>
+</tr>
+<tr>
+<td>Adjustment factor</td>
+<td>0.974</td>
+<td>0.970</td>
+<td>0.971</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>After incorporating the adjustment factors households’ disposable income used to compare the model statistics with the macro projection is:</p><div id="eqn4" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>[4]</span><math><mrow><mi>log</mi><mrow><mo>(</mo><mrow><msubsup><mi>y</mi><mi>t</mi><mi>d</mi></msubsup></mrow><mo>)</mo></mrow><mo>=</mo><mi>a</mi><mi>d</mi><msub><mi>i</mi><mi>t</mi></msub><mi>log</mi><mrow><mo>(</mo><mrow><msubsup><mi>y</mi><mi>t</mi><mi>d</mi></msubsup></mrow><mo>)</mo></mrow><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext>for </mtext><mi>t</mi><mo>=</mo><mn>2013</mn><mo>,</mo><mn>...</mn><mo>,</mo><mn>2015.</mn></mrow></math></div><p data-astro-cid-qsyhzaho><a href="#table4">Table 4</a> shows the growth of the average nominal income in the model and in the macro projections. The dynamics of income growth for the aggregates are the same. Income growth is positive and increasing between 2013 and 2015, with the largest growth in 2015.</p><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Income growth (<i>Percentages</i>).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td/>
+<td>2013</td>
+<td>2014</td>
+<td>2015</td>
+</tr>
+<tr>
+<td><i>National accounts</i></td>
+<td>0.1</td>
+<td>2.4</td>
+<td>2.9</td>
+</tr>
+<tr>
+<td>Model</td>
+<td>0.1</td>
+<td>2.4</td>
+<td>2.9</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>Even though adjustment factors are computed starting from disposable income, we also apply them to our estimates of households’ disposable income gross of financial charges and net of imputed rents. We believe that this choice has no major effects on the results as the two definitions of income imply similar econometric estimates of the processes. Therefore, households’ disposable income gross of financial charges and net of imputed rent, which is used in the computation of DSR, is given by:</p><div id="eqn5" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>[5]</span><math><mrow><mi>log</mi><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>)</mo></mrow><mo>=</mo><mi>a</mi><mi>d</mi><msub><mi>i</mi><mi>t</mi></msub><mi>log</mi><mrow><mo>(</mo><mrow><msub><mi>y</mi><mi>t</mi></msub></mrow><mo>)</mo></mrow><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext> </mtext><mtext>for </mtext><mi>t</mi><mo>=</mo><mn>2013</mn><mo>,</mo><mn>...</mn><mo>,</mo><mn>2015.</mn></mrow></math></div></section><section id="s3-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.2 Debt growth dynamics</h3><p data-astro-cid-qsyhzaho>In order to compute the dynamics of the model for periods <i>t+1</i> onward, we distinguish between existing debts and new originations.</p><section id="s3-2-1" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">3.2.1 Existing debts</h4><p data-astro-cid-qsyhzaho>We distinguish between mortgage debt and consumer debt.</p></section><section id="s3-2-2" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">3.2.2 Mortgage debt</h4><p data-astro-cid-qsyhzaho>We assume that households with an existing mortgage repay their debt following a French amortization schedule, which is a widespread amortization schedule for mortgages in Italy. Given that the share of variable interest rate mortgages among indebted households is quite substantial in Italy, it is crucial to model an amortization schedule that allows for a readjustment of the payments associated with a change in interest rates. We also assume that there is no refinancing or prepayment of the mortgage as prepayment or refinancing are not very common in Italy.<sup><a href="#fn15">15</a></sup> For each household <i>i</i>=1,…, <i>N</i>, where <i>N</i> equals the total number of indebted households, and for each type of debt <i>y</i> the evolution of the outstanding debt is given by:</p><div id="eqn6" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>[6]</span><math><mrow><mi>M</mi><mi>D</mi><mi>e</mi><mi>b</mi><msub><mi>t</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi><mo>+</mo><mn>1</mn></mrow></msub><mtext>= </mtext><mi>M</mi><mi>D</mi><mi>e</mi><mi>b</mi><msub><mi>t</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>−</mo><mi>R</mi><msub><mi>P</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math></div><p data-astro-cid-qsyhzaho>where <b><i>RP</i></b><i><sub>y,i,t</sub></i> is the annual payment of the principal. The scheduled total annual repayment <i>R<sub>y,i,t</sub></i>, which includes both the payment of the principal and of the interest, follows a standard amortization schedule based on the formula:</p><div id="eqn7" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>[7]</span><math><mrow><msub><mi>R</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mi>M</mi><mi>D</mi><mi>e</mi><mi>b</mi><msub><mi>t</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><msup><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msub><mi>r</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo stretchy="false">)</mo></mrow><mi>A</mi></msup><mfrac><mrow><msub><mi>r</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>+</mo><msub><mi>r</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo stretchy="false">)</mo></mrow><mi>A</mi></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mrow></math></div><p data-astro-cid-qsyhzaho>where <b><i>r</i></b><i><sub>y,i,t</sub></i> is the interest rate on the debt <b><i>MDebt</i></b><i><sub>y,i,t</sub>, A</i> is the residual duration of the contract. The annual payment for interest <b><i>RI</i></b><i><sub>y,i,t</sub></i> is given by:</p><div id="eqn8" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>[8]</span><math><mrow><mi>R</mi><msub><mi>I</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><msub><mi>r</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mi>M</mi><mi>D</mi><mi>e</mi><mi>b</mi><msub><mi>t</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math></div><p data-astro-cid-qsyhzaho>So that the principal repayment could be obtained as:</p><div id="eqn9" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>[9]</span><math><mrow><mi>R</mi><msub><mi>P</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><msub><mi>R</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>−</mo><mi>R</mi><msub><mi>I</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></math></div></section><section id="s3-2-3" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">3.2.3 Consumer debt</h4><p data-astro-cid-qsyhzaho>In the baseline scenario, we assume that the annual payment <b><i>RI</i></b><i><sub>y,i,t</sub></i> for consumer debt <b><i>CDebt</i></b><i><sub>y,i,t</sub></i> remains constant in the periods of the simulation. We are implicitly imposing a French amortization schedule with fixed interest rate for consumer debt, which points to fixed payments over time for the household. As our simulation involves only a few periods and given that the largest percentage of consumer debt involved payments based on a fixed interest rate in the past, we believe that this assumption cannot significantly affect the main results.</p></section><section id="s3-2-4" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">3.2.4 Total annualpayments and total debt</h4><p data-astro-cid-qsyhzaho>Given that households are allowed to take different types of debt, total outstanding debt is written as:</p><div id="eqn10" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>[10]</span><math><mrow><mi>D</mi><mi>e</mi><mi>b</mi><msub><mi>t</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mstyle displaystyle="true"><munder><mo>∑</mo><mi>y</mi></munder><mrow><mrow><mo>(</mo><mrow><mi>M</mi><mi>D</mi><mi>e</mi><mi>b</mi><msub><mi>t</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>+</mo><mi>C</mi><mi>D</mi><mi>e</mi><mi>b</mi><msub><mi>t</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow><mo>)</mo></mrow></mrow></mstyle></mrow></math></div><p data-astro-cid-qsyhzaho>The annual payment is given by the sum of the annual payments on mortgage debt and consumer credit:</p><div id="eqn11" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>[11]</span><math><mrow><msub><mi>R</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mstyle displaystyle="true"><munder><mo>∑</mo><mi>y</mi></munder><mrow><msub><mi>R</mi><mrow><mi>y</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>.</mo></mrow></mstyle></mrow></math></div></section></section><section id="s3-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.3 New mortgage originations</h3><p data-astro-cid-qsyhzaho>New originations bring about a change in the total number and in the average characteristics of indebted households, inducing a composition effect that affects the share of vulnerable households in the economy.</p><p data-astro-cid-qsyhzaho>To evaluate the debt dynamics associated with new mortgage originations we use the panel component of the SHIW, including the last three waves (2008, 2010, 2012). We focus on this period because we noted a non-trivial structural change in the characteristics of the new originations relative to a pre-crisis period, with an associated reduction of their weight in total households’ indebtedness.<sup><a href="#fn16">16</a></sup> Thus, considering only the last few years allows us to better model the expected dynamics of debt originations in the near future.</p><p data-astro-cid-qsyhzaho>A new mortgage origination occurs when a household has a mortgage debt equal to zero at time <i>t</i>-1 and a positive mortgage debt at time <i>t</i> (<b><i>MDebt</i></b><i><sub>y,i,t- 1</sub></i> = 0, <b><i>MDebt</i></b><i><sub>y,i,t</sub></i> &gt; 0). Using the pseudo panel household groups we compute the percentage of new originations in each of those groups.</p><p data-astro-cid-qsyhzaho>For each group <i>k</i>, the number of new originations at time <i>t,θ</i><i><sub>k,t</sub></i>, equals the number of originations for the same group in the previous period <i>θ</i><i><sub>k,t-1</sub></i>: <sup><a href="#fn17">17</a></sup></p><div id="eqn12" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>[12]</span><math><mrow><msub><mi>θ</mi><mrow><mi>k</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><msub><mi>θ</mi><mrow><mi>k</mi><mo>,</mo><mi>t</mi><mo>−</mo><mn>1</mn></mrow></msub><mo>.</mo></mrow></math></div><p data-astro-cid-qsyhzaho>Based on the SHIW historical data, we assume that 50 per cent of the originations have a variable mortgage rate while the rest have a fixed mortgage rate. To each household with a new origination we assign a debt amount equal to the mean debt at origination for households belonging to the same group who had an origination between 2010 and 2012. We then readjust the amount of debt associated with new originations to match the macro data. <a href="#table5">Table 5</a> shows the total debt growth deriving from the Bank of Italy projections and that generated by the model.</p><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Total debt growth (<i>Percentages</i>).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td/>
+<td>2013</td>
+<td>2014</td>
+<td>2015</td>
+</tr>
+<tr>
+<td>Macro</td>
+<td>-1.0</td>
+<td>-0.3</td>
+<td>1.8</td>
+</tr>
+<tr>
+<td>Model with originations</td>
+<td>-1.0</td>
+<td>-0.3</td>
+<td>1.8</td>
+</tr>
+<tr>
+<td>Model without originations</td>
+<td>-5.1</td>
+<td>-5.7</td>
+<td>-6.1</td>
+</tr>
+</tbody>
+</table></div></figure></section><section id="s3-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.4 Mortgage terminations</h3><p data-astro-cid-qsyhzaho>The reduction in total debt in the model without originations is driven by mortgage terminations.</p><p data-astro-cid-qsyhzaho>Some households exit from the pool of indebted households, causing a change in the composition of the pool itself. We assume that mortgage prepayment is not allowed so households exit from the mortgage market only after they have completely extinguished their debt. By introducing mortgage terminations we are then able to capture another important feature of the mortgage market. We introduce this aspect benefiting both from the Italian household data, where the duration of the mortgage is explicitly given, and from our model structure, which allows us to follow the evolution of debt for each household.</p></section><section id="s3-5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.5 Vulnerable households</h3><p data-astro-cid-qsyhzaho>Households’ vulnerability is measured referring to the DSR, defined as the share of loan payments to income. A household is defined as vulnerable if it has a debt-service ratio greater than a threshold that we set at 30 per cent:</p><div id="eqn13" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>[13]</span><math><mrow><mi>D</mi><mi>S</mi><msub><mi>R</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub><mo>=</mo><mfrac><mrow><msub><mi>R</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow><mrow><msub><mi>y</mi><mrow><mi>i</mi><mo>,</mo><mi>t</mi></mrow></msub></mrow></mfrac><mo>&gt;</mo><mn>0.3.</mn></mrow></math></div><p data-astro-cid-qsyhzaho>To evaluate households’ vulnerability in the initial year we make use of micro data from the 2012 wave of the SHIW. The sample is composed of 8151 households. For each household we compute the debt-service ratio starting from their statement of annual loan payments and income.</p><p data-astro-cid-qsyhzaho>In the following periods household income evolves following the process described above and the annual mortgage payments are obtained under the assumption of a French amortization schedule. We are then able to compute a debt-service ratio for each household in each simulation period.</p></section></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. Results</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>In this section, we present the model results for a backtesting exercise, for the baseline scenario, for an extended baseline scenario with the possibility of a temporary suspension of the mortgage payments and for two scenarios of stress (100 basis point increase in the Euribor rate and zero income growth in 2015). We generate a series of 50 realizations of the shock to each household income in any simulation year and for each scenario considered. We then derive the median estimate and a confidence interval for each of the variables of interest. In the figures, the lines connect the median estimates for different years.</p><section id="s4-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.1 Backtesting</h3><p data-astro-cid-qsyhzaho>To test the forecasting performance of our model we perform a backtest on previous waves of the SHIW (2008 and 2010). The main results of those simulations are reported in <a href="#fig1">Figure 1</a> and <a href="#fig2">Figure 2</a>. In particular, we show the percentage of all vulnerable households and of those with income below the median over total households.</p><p data-astro-cid-qsyhzaho>In the following figures red diamonds are historical SHIW data. The values for 2009 and 2011 have been interpolated by cubic splines. The solid blue lines are projections of the median value of the share of vulnerable households across 50 simulations, while the dashed lines represent the 10th and 90th percentiles.<sup><a href="#fn18">18</a></sup></p><p data-astro-cid-qsyhzaho>on average, we are able to replicate quite well the percentage of vulnerable households in 2010 and 2012 starting from the 2008 and 2010 waves. The differences between the model results and the data are due to two main factors. First, the SHIW data are an unbalanced panel, in which only half of the sample is maintained in the next wave. As the composition of households can change there could be differences in the total share of vulnerable households and in their characteristics.</p><p data-astro-cid-qsyhzaho>Second, there is some measurement error as is common in any household survey.</p><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00107-fig1.CupgOfad_1JhImf.webp" class="figure-lightbox-trigger" data-pswp-width="1305" data-pswp-height="851" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00107-fig1.CupgOfad_1JhImf.webp" alt width="1305" height="851" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Percentage of vulnerable households in the population.</span></figcaption></figure><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00107-fig2.mbvFePJ1_1Hx8M0.webp" class="figure-lightbox-trigger" data-pswp-width="1301" data-pswp-height="854" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00107-fig2.mbvFePJ1_1Hx8M0.webp" alt width="1301" height="854" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Percentage of vulnerable households with income below the median.</span></figcaption></figure></section><section id="s4-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.2 Baseline scenario</h3><p data-astro-cid-qsyhzaho><a href="#fig3">Figure 3</a> reports the distribution of the debt-service ratio among indebted households in the initial year 2012 and in 2015. The share of indebted households with DSR above 30 per cent is about constant in the two periods.</p><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00107-fig3.Bf0FOJUa_w88kQ.webp" class="figure-lightbox-trigger" data-pswp-width="1153" data-pswp-height="978" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00107-fig3.Bf0FOJUa_w88kQ.webp" alt width="1153" height="978" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> DSR Distribution.</span></figcaption></figure><p data-astro-cid-qsyhzaho><a href="#fig4">Figure 4</a> shows the evolution of the fraction of vulnerable households in the total population in the baseline scenario. That share is expected to decrease between 2012 and 2015, moving to about 4.4 per cent. As reported in <a href="#table7">Table 7</a>, the confidence interval for this value is rather narrow as 80 per cent of the observations are comprised within 4.3 and 4.5 per cent. In 2013, the reduction in the share of vulnerable households is driven by the decrease in the interest rate as households with variable interest rate mortgages pay lower instalments. To a minor extent that reduction is also associated with negative credit growth. In 2014 and in 2015 positive income growth drives the low share of vulnerable households, which decreases slightly relative to 2013. In particular, in 2015 the expected increase in income growth is even larger than in 2014, but at the same time the increase in total debt growth in the economy generates an increase in indebted households, inducing a composition effect. However, in line with the supply conditions observed in recent years, it can be argued that new loans are mostly given to non-vulnerable households<sup><a href="#fn19">19</a></sup> and, as a result, in 2015 new originations can only explain about 0.4 percentage points of the increase in the share of vulnerable households.<sup><a href="#fn20">20</a></sup></p><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00107-fig4._xWJ-qaf_ZcqVCS.webp" class="figure-lightbox-trigger" data-pswp-width="1295" data-pswp-height="870" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00107-fig4._xWJ-qaf_ZcqVCS.webp" alt width="1295" height="870" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Percentage of vulnerable households in the population.</span></figcaption></figure><p data-astro-cid-qsyhzaho>In <a href="#fig5">Figure 5</a>, we focus on the percentage of vulnerable households with income below the median. That percentage is about stable between 2012 and 2013 with a slight decrease of 0.2 percentage points in 2015<sup><a href="#fn21">21</a></sup>, falling in the range of 2.7–2.9 per cent (see <a href="#table8">Table 8</a>): the decrease is almost completely driven by positive income growth. Those numbers suggest that also among households with income below the median there are no major risks for financial stability.</p><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00107-fig5.BiAHl5aG_yfo9G.webp" class="figure-lightbox-trigger" data-pswp-width="1295" data-pswp-height="870" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00107-fig5.BiAHl5aG_yfo9G.webp" alt width="1295" height="870" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> Percentage of vulnerable households with income below the median in total households.</span></figcaption></figure><p data-astro-cid-qsyhzaho><a href="#fig6">Figure 6</a> presents the percentage of total debt held by vulnerable households, distinguishing between those belonging to the lower (below the median) and the upper (above the median) groups of equalized income. Those percentages decrease between 2012 and 2015. The share of total debt held by vulnerable households with income below the median moves from 20 per cent to 16 per cent, in line with the estimates for 2010. Similar to 2010, the increase in income growth reduces the percentage of vulnerable households; at the same time, the increase in the total debt growth in 2015 is mainly directed towards households with a low level of vulnerability, so that the share of total debt held by vulnerable households does not increase significantly regardless of a positive growth of total debt in the economy.</p><figure id="fig6" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00107-fig6.DBJl-3pF_1pnrqG.webp" class="figure-lightbox-trigger" data-pswp-width="1198" data-pswp-height="718" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00107-fig6.DBJl-3pF_1pnrqG.webp" alt width="1198" height="718" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 6.</strong><span data-astro-cid-dzaleqsp> Percentage of debt held by all vulnerable households.</span></figcaption></figure><p data-astro-cid-qsyhzaho><i>Note</i>: above and below the median income.</p><p data-astro-cid-qsyhzaho>In <a href="#table6">Table 6</a> we report the characteristics of all vulnerable households. Some trends are evident. Vulnerable households belong mainly to the 35-to-54 age group, have secondary education and are in work.</p><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Percentage of vulnerable households by age, education and occupation (<i>Mean values</i>).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>2012</th>
+<th>2013</th>
+<th>2014</th>
+<th>2015</th>
+<th><i>Total population (2012)</i></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="6">Age</td>
+</tr>
+<tr>
+<td>                 &lt; 35</td>
+<td>16.8</td>
+<td>14.2</td>
+<td>12.9</td>
+<td>10.7</td>
+<td><i>9.5</i></td>
+</tr>
+<tr>
+<td>                 35–44</td>
+<td>33.5</td>
+<td>31.1</td>
+<td>29.3</td>
+<td>28.9</td>
+<td><i>20.2</i></td>
+</tr>
+<tr>
+<td>                 45–54</td>
+<td>28.4</td>
+<td>32.7</td>
+<td>35.0</td>
+<td>35.7</td>
+<td><i>21.3</i></td>
+</tr>
+<tr>
+<td>                 55–64</td>
+<td>9.4</td>
+<td>9.6</td>
+<td>11.0</td>
+<td>12.2</td>
+<td><i>16.2</i></td>
+</tr>
+<tr>
+<td>                 &gt; 65</td>
+<td>11.9</td>
+<td>11.9</td>
+<td>11.3</td>
+<td>12.1</td>
+<td><i>32.8</i></td>
+</tr>
+<tr>
+<td colspan="6">Education</td>
+</tr>
+<tr>
+<td>                 No education or primary education</td>
+<td>6.2</td>
+<td>6.3</td>
+<td>6.3</td>
+<td>6.1</td>
+<td><i>23.3</i></td>
+</tr>
+<tr>
+<td>                 Lower secondary education</td>
+<td>39.7</td>
+<td>38.4</td>
+<td>38.3</td>
+<td>36.0</td>
+<td><i>35.8</i></td>
+</tr>
+<tr>
+<td>                 Upper secondary education</td>
+<td>39.7</td>
+<td>40.7</td>
+<td>41.2</td>
+<td>45.3</td>
+<td><i>27.8</i></td>
+</tr>
+<tr>
+<td>                 Undergraduate or post-graduate</td>
+<td>14.5</td>
+<td>14.8</td>
+<td>14.4</td>
+<td>13.6</td>
+<td><i>13.1</i></td>
+</tr>
+<tr>
+<td colspan="6">Occupation</td>
+</tr>
+<tr>
+<td>                 Not working</td>
+<td>16.0</td>
+<td>15.7</td>
+<td>15.1</td>
+<td>14.4</td>
+<td><i>41.0</i></td>
+</tr>
+<tr>
+<td>                 Working</td>
+<td>84.0</td>
+<td>84.2</td>
+<td>84.4</td>
+<td>85.4</td>
+<td><i>59.0</i></td>
+</tr>
+</tbody>
+</table></div></figure></section><section id="s4-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.3 Extended baseline scenario and stress test scenarios</h3><p data-astro-cid-qsyhzaho>In this section we present an extended baseline scenario and two stress test scenarios. <a href="#fig7">Figure 7</a> shows how the percentage of all vulnerable households changes in each scenario. <a href="#table7">Table 7</a> reports both the median estimates and ranges. Detailed tables with results are reported in the online Appendix.</p><p data-astro-cid-qsyhzaho>In the extended baseline scenario we consider the baseline changes in income, interest rate, and total debt (<a href="#table1">Table 1</a>), but we also include the possibility of obtaining a temporary suspension of mortgage payments for a specific period of time. This option was widely used in the period 2009–12, even with bilateral agreements with banks. The cure rate was quite high: more than 60 per cent of households that obtained suspensions started to repay the mortgage (<a href="#bib5">Bartiloro, Carpinelli, Finaldi Russo &amp; Pastorelli, 2012</a>). We assume that this option is still available until 2015. We modelled it following the data from the 2012 SHIW wave, according to which, between 2009 and 2012, 22 per cent of households with a mortgage belonging to the first income class and 9 per cent of those in the second income class obtained a suspension of mortgage payments over the period. Under this scenario, the percentage of vulnerable households with income below the median drops to 2.6 per cent in 2015, hence it is on average 0.1 percentage points lower than in the baseline scenario. <sup><a href="#fn22">22</a></sup></p><p data-astro-cid-qsyhzaho>We also consider two alternative scenarios of stress for the financial conditions of indebted households. First, we consider an increase of 100 basis points in the Euribor rate in 2015 (from 0.3% to 1.3%). That increase affects both the loan payments associated with existing variable interest rate mortgages and new mortgage originations.<sup><a href="#fn23">23</a></sup> Relative to the baseline scenario, the share of all vulnerable households increases by about 0.2 percentage points and their debt increases by about 2 percentage points.</p><p data-astro-cid-qsyhzaho>Second, we consider an adverse scenario in which income growth is equal to zero in 2015. The shock affects all households. Relative to the baseline scenario the share of all vulnerable households is about 0.3 percentage points higher and their debt about 2 percentage points higher.</p><figure id="fig7" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00107-fig7.CfpiyfFc_ZSSVtH.webp" class="figure-lightbox-trigger" data-pswp-width="1295" data-pswp-height="803" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00107-fig7.CfpiyfFc_ZSSVtH.webp" alt width="1295" height="803" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 7.</strong><span data-astro-cid-dzaleqsp> Percentage of vulnerable households under alternative scenarios.</span></figcaption></figure><p data-astro-cid-qsyhzaho><a href="#fig8">Figure 8</a> gives the results for vulnerable households belonging to the first two income classes, namely those with income below the median. The mechanisms described above apply and the share of vulnerable households tends to increase slightly following a rise in the Euribor rate or a decrease in nominal income growth.</p><figure id="fig8" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00107-fig8.CWLYQyKZ_ZsS44E.webp" class="figure-lightbox-trigger" data-pswp-width="1298" data-pswp-height="804" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00107-fig8.CWLYQyKZ_ZsS44E.webp" alt width="1298" height="804" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 8.</strong><span data-astro-cid-dzaleqsp> Percentage of vulnerable households with income below the median under alternative scenarios.</span></figcaption></figure><p data-astro-cid-qsyhzaho><a href="#table7">Table 7</a> and <a href="#table8">Table 8</a> report the central estimates and ranges for the baseline case, the extended baseline with suspension of the payments, and the two stress test scenarios that underlie <a href="#fig7">Figure 7</a> and <a href="#fig8">Figure 8</a>.</p><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Percentage of vulnerable households under alternative scenarios.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>2012</th>
+<th>2013</th>
+<th>2014</th>
+<th colspan="4">2015</th>
+</tr>
+<tr>
+<th/>
+<th/>
+<th/>
+<th/>
+<th>Baseline</th>
+<th>Suspension of  payments</th>
+<th>Interest rate shock</th>
+<th>Income shock</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Central estimate</td>
+<td align="center">4.8</td>
+<td align="center">4.6</td>
+<td align="center">4.4</td>
+<td align="center">4.4</td>
+<td align="center">4.3</td>
+<td align="center">4.6</td>
+<td align="center">4.7</td>
+</tr>
+<tr>
+<td>10th-90th percentiles</td>
+<td align="center">--</td>
+<td align="center">4.5–4.7</td>
+<td align="center">4.3–4.6</td>
+<td align="center">4.3–4.5</td>
+<td align="center">4.2–4.5</td>
+<td align="center">4.5–4.7</td>
+<td align="center">4.6–4.8</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table8" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 8.</strong><span data-astro-cid-dzaleqsp> Percentage of vulnerable households with income below the median under alternative scenarios.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>2012</th>
+<th>2013</th>
+<th>2014</th>
+<th colspan="5">2015</th>
+</tr>
+<tr>
+<th/>
+<th/>
+<th/>
+<th/>
+<th>Baseline</th>
+<th>Suspension of payments</th>
+<th>Interest rate shock</th>
+<th>Income shock</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Central estimate</td>
+<td align="center">2.9</td>
+<td align="center">2.9</td>
+<td align="center">2.8</td>
+<td align="center">2.7</td>
+<td align="center">2.6</td>
+<td align="center">2.9</td>
+<td align="center">3.0</td>
+</tr>
+<tr>
+<td>10th-90th percentiles</td>
+<td align="center">--</td>
+<td align="center">2.9–3.0</td>
+<td align="center">2.6–2.9</td>
+<td align="center">2.7–2.9</td>
+<td align="center">2.6–2.8</td>
+<td align="center">2.7–3.0</td>
+<td align="center">2.9–3.1</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho><a href="#fig9">Figure 9</a> shows how the share of total debt held by vulnerable households with income below the median evolves over time in the baseline scenario and in the alternative scenarios described above. In the baseline scenario, the debt held by those vulnerable households tends to decrease from about 20 per cent in 2012 to about 16 per cent in 2015, a level similar to the one recorded in 2010. The reduction is smaller if shocks to income or interest rate occur.</p><figure id="fig9" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00107-fig9.DFXUD3mz_UMGaK.webp" class="figure-lightbox-trigger" data-pswp-width="1295" data-pswp-height="807" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00107-fig9.DFXUD3mz_UMGaK.webp" alt width="1295" height="807" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 9.</strong><span data-astro-cid-dzaleqsp> Percentage of total debt held by vulnerable households with income below the median.</span></figcaption></figure></section><section id="s4-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.4 Alternative definition of vulnerability: DSR above 40 per cent</h3><p data-astro-cid-qsyhzaho>Some central banks and policy institutions (Bank of Canada, FSR 2012; <a href="#bib7">ECB, 2013</a>) define a household as vulnerable if its DSR is equal or above 40 per cent. We implemented the same approach and re-computed the percentage of vulnerable households according to the new, less stringent definition. As shown in <a href="#fig10">Figure 10</a> the share of vulnerable households now equals 2.3 per cent in 2012 and it is projected to decrease slightly over time, to 2.1 per cent in 2015. As mentioned before, the reduction is mostly driven by the positive income growth.</p><figure id="fig10" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00107-fig10.B44b2o5E_Z10zSH7.webp" class="figure-lightbox-trigger" data-pswp-width="1296" data-pswp-height="917" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00107-fig10.B44b2o5E_Z10zSH7.webp" alt width="1296" height="917" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 10.</strong><span data-astro-cid-dzaleqsp> Percentage of vulnerable households with DSR above 40%.</span></figcaption></figure></section></div></details><details id="s5" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">5. Conclusions</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>This paper presents a framework to study how the vulnerability of Italian households evolves over time. Starting from the SHIW microeconomic data and incorporating some macroeconomic projections on income growth, total debt growth and interest rates, we built a model that captures the evolution of households’ debt and vulnerability over time. The micro-founded model delivers aggregate variables that are in line with projected macroeconomic statistics and is therefore suitable for simulating stress scenarios to evaluate households’ resilience to negative shocks, such as income or interest rate shocks. The model is also well suited to study the effects of stress scenarios, alternative policy measures or the effects associated with the suspension of loan payments driven by banks’ decisions.</p><p data-astro-cid-qsyhzaho>We found that the percentage of vulnerable households with equalized income below the median is projected to be almost stable between 2012 and 2015, being in the order of 2.7 per cent in 2015. Similarly, the share of total debt held by those vulnerable households decreases progressively to 16 per cent in 2015, a value similar to the one in 2010. When simulating scenarios of stress, zero income growth has a larger effect on the share of vulnerable households than a 100 basis point increase in interest rates.</p><p data-astro-cid-qsyhzaho>Future research aims to improve the current model. First of all, we could include a probability of becoming unemployed. Households facing spells of unemployment of different severity and duration may become vulnerable and so could raise the percentage of vulnerable households. Other important factors of vulnerability which can be simulated starting from our microdata could be incorporated. For instance, changes in household composition due to birth of a child or divorce may affect the income committed to debt repayment and thus the ability to service the debt. Second, we could try to incorporate other sources of macroeconomic data when modelling new mortgage originations. Third, we could study other indicators of households’ vulnerability and accordingly evaluate their evolution over time. Fourth, we could improve our modelling approach for consumer credit debt.</p><p data-astro-cid-qsyhzaho>Finally, one related question that could be addressed in some future work is whether the dynamics of the mortgage debt has any impact on the outcome indicators at the micro-level. In particular, it would be worth analysing how the mortgage debt affects some groups of households that are especially prone to the risk of unemployment and poverty in Italy, e.g. young people households.</p></div></details><details id="footnotes" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Footnotes</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="fn1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1.</h3><p data-astro-cid-qsyhzaho>It currently stands at around 63 per cent of disposable income. See Bank of Italy (2014).</p></section><section id="fn2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.</h3><p data-astro-cid-qsyhzaho>This is particularly true for the highest income groups. A back test exercise keeping the share of principal on current balance fixed is reported in the online Appendix.</p></section><section id="fn3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.</h3><p data-astro-cid-qsyhzaho>This result follows, to a minor extent, from our assumption that lending standards will remain somewhat tight in the next few years compared with the levels observed before the financial crisis.</p></section><section id="fn4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">4.</h3><p data-astro-cid-qsyhzaho>For a general description of the survey, see <a href="http://www.bancaditalia.it/statistiche/tematiche/indagini-famiglie-imprese/bilanci-famiglie/index.html?com.dotmarketing.htmlpage.language=1">http://www.bancaditalia.it/statistiche/tematiche/indagini-famiglie-imprese/bilanci-famiglie/index.html?com.dotmarketing.htmlpage.language=1</a></p></section><section id="fn5" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">5.</h3><p data-astro-cid-qsyhzaho>The data allow us to differentiate between first mortgage, second mortgage and third mortgage on the primary residence and on other real estate.</p></section><section id="fn6" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">6.</h3><p data-astro-cid-qsyhzaho>Studies based on data provided by financial intermediaries indicate a higher fraction of households with variable rate mortgages (see <a href="#bib8">Felici <i>et al</i>., 2012</a>). We also tested our model assuming 70 per cent of mortgages with variable rate (see the online Appendix); the results are overall confirmed.</p></section><section id="fn7" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">7.</h3><p data-astro-cid-qsyhzaho>As explained below, in the computation of the DSR we use the disposable income gross of financial charges and net of imputed rent, which better captures the monetary income available to the household for consumption or as a buffer against unexpected shocks. In the model we keep track of both definitions of income to be able both to match the macroeconomic aggregates and to compute correctly the DSR. The equalized income, computed starting from the disposable income and using the OECD equivalence scale, is used to group households into four income classes.</p></section><section id="fn8" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">8.</h3><p data-astro-cid-qsyhzaho>The model has been used to evaluate the evolution of households’ vulnerability in accordance with the economic slowdown registered as November 2014. We used a baseline scenario in which both nominal income and lending to households begin to rise again only in 2015 and interest rates remain almost unchanged. For an overview of the simulation results see <i>Financial Stability Report</i> No. 2, November 2014, Bank of Italy.</p></section><section id="fn9" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">9.</h3><p data-astro-cid-qsyhzaho>Those projections on total debt growth were developed in April 2014.</p></section><section id="fn10" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">10.</h3><p data-astro-cid-qsyhzaho>Euribor is short for Euro Interbank Offered Rate. It is defined as “the rate at which Euro interbank term deposits are offered by one prime bank to another prime bank within the EMU zone” (<a href="http://www.emmi-benchmarks.eu/euribor-org/about-euribor.html">http://www.emmi-benchmarks.eu/euribor-org/about-euribor.html</a>).</p></section><section id="fn11" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">11.</h3><p data-astro-cid-qsyhzaho>An alternative assumption for new originations, relying on projections of interest rates on loans for house purchase developed at Bank of Italy, has been tested. The results of the simulation exercise (available upon request) do not differ significantly from the ones presented here.</p></section><section id="fn12" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">12.</h3><p data-astro-cid-qsyhzaho>Data on the Euribor rate refer to March in each year.</p></section><section id="fn13" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">13.</h3><p data-astro-cid-qsyhzaho>The value of imputed rents is provided by each household in the survey. The related questions are: “Imagine you wanted to let your house/flat, what monthly rent do you or the household think could be charged? Do not include condominium charges, heating or other expenses.” and “If you wanted to let the property, what annual rental could the household obtain? total amount in the year.”</p></section><section id="fn14" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">14.</h3><p data-astro-cid-qsyhzaho>Alternatively, to estimate the mean and standard deviation of the income process we could have used the SHIW data from 2008 to 2012. This sample captures the slowdown of the Italian economy and therefore would be adequate if the recession were to continue. As shown in the online Appendix, the estimated income means associated with the period 2008–12 are negative, but the mean growth is less negative for the 75st-100th percentile and more negative for the 1st-25th percentile, indicating that households in the lowest group are those that suffer the most. In periods of expansion and in periods of recession income movements for the lowest income group are stronger and therefore it is important to take them properly into account. We also present a sensitivity test using as income parameters those estimated using the 2008–12 sample period and we find that the share of vulnerable households is projected to be slightly higher than in the baseline scenario.</p></section><section id="fn15" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">15.</h3><p data-astro-cid-qsyhzaho>The share of households renegotiating a mortgage contract was about 2 per cent in 2012, while the share of those refinancing it was below 3 per cent (Source: Regional Lending Banking Survey).</p></section><section id="fn16" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">16.</h3><p data-astro-cid-qsyhzaho>See e.g. Financial Stability Report No. 6, November 2013, Bank of Italy.</p></section><section id="fn17" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">17.</h3><p data-astro-cid-qsyhzaho>In the code we set <i>θ<sub>k,t</sub></i>=0.5·<i>θ<sub>k,t</sub></i><sub>-2</sub> the first period as the survey is biannual.</p></section><section id="fn18" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">18.</h3><p data-astro-cid-qsyhzaho>A further backtesting exercise is reported in the online Appendix. In that exercise we also present the results for the assumption of an amortization schedule in which the share of principal on current credit balance is kept fixed, as in <a href="#bib6">Djoudad (2010)</a>.</p></section><section id="fn19" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">19.</h3><p data-astro-cid-qsyhzaho>This result is confirmed by the case with no originations reported in the online Appendix, where the dynamics for the share of vulnerable households in the population is very similar to the case with originations. This result suggests that changes in interest rates or in income are the primary driving forces of households’ vulnerability.</p></section><section id="fn20" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">20.</h3><p data-astro-cid-qsyhzaho>This result is obtained comparing the baseline scenario with the scenario without originations.</p></section><section id="fn21" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">21.</h3><p data-astro-cid-qsyhzaho>This result is based on a comparison of the median values obtained across simulations in different years.</p></section><section id="fn22" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">22.</h3><p data-astro-cid-qsyhzaho>This result and the following comparisons with the baseline scenario are based on the difference between median values obtained across simulations under alternative economic scenarios.</p></section><section id="fn23" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">23.</h3><p data-astro-cid-qsyhzaho>We assume that the interest rate change has no effect on consumer debt.</p></section></div></details></div><details id="A1" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Online appendix</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="A1-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">1. Detailed results</h3><section id="A1-1-1" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">1.1 Baseline scenario</h4><figure id="table1a" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>2012</th>
+<th>2013</th>
+<th>2014</th>
+<th>2015</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5">Percentage of vulnerable households over total households</td>
+</tr>
+<tr><td>    1st–25th percentile</td>
+<td>1.5</td>
+<td>1.6</td>
+<td>1.6</td>
+<td>1.6</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>1.4</td>
+<td>1.4</td>
+<td>1.2</td>
+<td>1.1</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>2.9</i></td>
+<td><i>2.9</i></td>
+<td><i>2.8</i></td>
+<td><i>2.7</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>1.2</td>
+<td>1.0</td>
+<td>0.9</td>
+<td>0.8</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.8</td></tr>
+<tr><td>    <b>TOTAL</b></td>
+<td>4.8</td>
+<td>4.6</td>
+<td>4.4</td>
+<td>4.4</td></tr>
+<tr>
+<td colspan="5">Percentage of vulnerable households over indebted households</td>
+</tr>
+<tr><td>    1st–25th percentile</td>
+<td>7.6</td>
+<td>7.4</td>
+<td>6.8</td>
+<td>6.7</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>7.0</td>
+<td>6.3</td>
+<td>5.2</td>
+<td>4.6</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>14.6</i></td>
+<td><i>13.6</i></td>
+<td><i>12.0</i></td>
+<td><i>11.2</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>6.0</td>
+<td>4.4</td>
+<td>3.8</td>
+<td>3.3</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>3.5</td>
+<td>3.0</td>
+<td>3.2</td>
+<td>3.3</td></tr>
+<tr><td>    <b>TOTAL</b></td>
+<td>24.1</td>
+<td>21.2</td>
+<td>19.1</td>
+<td>18.1</td></tr>
+<tr><td colspan="5">Percentage of debt held by vulnerable households</td></tr>
+<tr><td>    1st–25th percentile</td>
+<td>9.5</td>
+<td>10.4</td>
+<td>9.7</td>
+<td>9.2</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>10.2</td>
+<td>9.1</td>
+<td>7.9</td>
+<td>7.0</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>19.7</i></td>
+<td><i>19.3</i></td>
+<td><i>17.4</i></td>
+<td><i>16.0</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>7.9</td>
+<td>6.4</td>
+<td>5.9</td>
+<td>5.2</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>9.8</td>
+<td>9.1</td>
+<td>8.7</td>
+<td>8.2</td></tr>
+<tr><td>    <b>TOTAL</b></td>
+<td>37.5</td>
+<td>34.7</td>
+<td>31.8</td>
+<td>29.5</td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: Households are divided into classes according to their equalized income gross of imputed rents. The reported values have been approximated to the first decimal.</p></div></figure></section><section id="A1-1-2" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">1.2 Suspension of loan payments</h4><figure id="ufig1" data-astro-cid-qsyhzaho><a href="/_astro/ijm-00107-ufig1.B4w4HeQi_ZWkDo7.webp" class="figure-lightbox-trigger" data-pswp-width="1940" data-pswp-height="779" target="_blank" rel="noreferrer" data-astro-cid-qsyhzaho><img src="/_astro/ijm-00107-ufig1.B4w4HeQi_ZWkDo7.webp" width="1940" height="779" alt loading="lazy" data-astro-cid-qsyhzaho></a></figure><figure id="table2a" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>2012</th>
+<th>2013</th>
+<th>2014</th>
+<th>2015</th>
+</tr></thead>
+<tbody>
+<tr>
+<td colspan="5">Percentage of vulnerable households over total households</td>
+</tr>
+<tr><td>    1st–25th percentile</td>
+<td>1.5</td>
+<td>1.6</td>
+<td>1.5</td>
+<td>1.6</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>1.4</td>
+<td>1.3</td>
+<td>1.2</td>
+<td>1.1</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>2.9</i></td>
+<td><i>2.9</i></td>
+<td><i>2.7</i></td>
+<td><i>2.6</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>1.2</td>
+<td>1.0</td>
+<td>0.9</td>
+<td>0.8</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.8</td></tr>
+<tr><td>    TOTAL</td>
+<td>4.8</td>
+<td>4.5</td>
+<td>4.3</td>
+<td>4.3</td></tr>
+<tr><td colspan="5">Percentage of vulnerable households over indebted households</td></tr>
+<tr><td>    1st–25th percentile</td>
+<td>7.6</td>
+<td>7.2</td>
+<td>6.5</td>
+<td>6.4</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>7.0</td>
+<td>6.2</td>
+<td>5.2</td>
+<td>4.4</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>14.6</i></td>
+<td><i>13.3</i></td>
+<td><i>11.6</i></td>
+<td><i>10.9</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>6.0</td>
+<td>4.4</td>
+<td>3.8</td>
+<td>3.3</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>3.5</td>
+<td>3.0</td>
+<td>3.2</td>
+<td>3.3</td></tr>
+<tr><td>    TOTAL</td>
+<td>24.1</td>
+<td>20.9</td>
+<td>18.8</td>
+<td>17.8</td></tr>
+<tr><td colspan="5">Percentage of debt held by vulnerable households</td></tr>
+<tr><td>    1st–25th percentile</td>
+<td>9.5</td>
+<td>10.1</td>
+<td>9.1</td>
+<td>8.8</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>10.2</td>
+<td>8.9</td>
+<td>7.9</td>
+<td>6.8</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>19.7</i></td>
+<td><i>18.7</i></td>
+<td><i>16.7</i></td>
+<td><i>15.4</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>7.9</td>
+<td>6.4</td>
+<td>5.9</td>
+<td>5.2</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>9.8</td>
+<td>9.1</td>
+<td>8.7</td>
+<td>8.2</td></tr>
+<tr><td>    TOTAL</td>
+<td>37.5</td>
+<td>34.0</td>
+<td>31.4</td>
+<td>29.1</td>
+</tr>
+</tbody></table></div></figure></section><section id="A1-1-3" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">1.3 Stress test scenarios</h4><section id="A1-1-3-1" class="article-section" data-astro-cid-qsyhzaho><h5 data-astro-cid-qsyhzaho="true">1.3.1 Interest rate shock</h5><figure id="ufig2" data-astro-cid-qsyhzaho><a href="/_astro/ijm-00107-ufig2.C4rsMDW9_2meydf.webp" class="figure-lightbox-trigger" data-pswp-width="1950" data-pswp-height="804" target="_blank" rel="noreferrer" data-astro-cid-qsyhzaho><img src="/_astro/ijm-00107-ufig2.C4rsMDW9_2meydf.webp" width="1950" height="804" alt loading="lazy" data-astro-cid-qsyhzaho></a></figure><figure id="table3a" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>2012</th>
+<th>2013</th>
+<th>2014</th>
+<th>2015</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5">Percentage of vulnerable households over total households</td>
+</tr>
+<tr><td>    1st–25th percentile</td>
+<td>1.5</td>
+<td>1.6</td>
+<td>1.6</td>
+<td>1.7</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>1.4</td>
+<td>1.4</td>
+<td>1.2</td>
+<td>1.2</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>2.9</i></td>
+<td><i>2.9</i></td>
+<td><i>2.8</i></td>
+<td><i>2.9</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>1.2</td>
+<td>1.0</td>
+<td>0.9</td>
+<td>0.9</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.8</td></tr>
+<tr><td>    TOTAL</td>
+<td>4.8</td>
+<td>4.6</td>
+<td>4.4</td>
+<td>4.6</td></tr>
+<tr><td colspan="5">Percentage of vulnerable households over indebted households</td></tr>
+<tr><td>    1st–25th percentile</td>
+<td>7.6</td>
+<td>7.4</td>
+<td>6.8</td>
+<td>6.9</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>7.0</td>
+<td>6.3</td>
+<td>5.2</td>
+<td>4.9</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>14.6</i></td>
+<td><i>13.6</i></td>
+<td><i>12.0</i></td>
+<td><i>11.8</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>6.0</td>
+<td>4.4</td>
+<td>3.8</td>
+<td>3.5</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>3.5</td>
+<td>3.0</td>
+<td>3.2</td>
+<td>3.4</td></tr>
+<tr><td>    TOTAL</td>
+<td>24.1</td>
+<td>21.2</td>
+<td>19.1</td>
+<td>19.0</td></tr>
+<tr><td colspan="5">Percentage of debt held by vulnerable households</td></tr>
+<tr><td>    1st–25th percentile</td>
+<td>9.5</td>
+<td>10.4</td>
+<td>9.7</td>
+<td>9.7</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>10.2</td>
+<td>9.1</td>
+<td>7.9</td>
+<td>7.6</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>19.7</i></td>
+<td><i>19.3</i></td>
+<td><i>17.4</i></td>
+<td><i>17.1</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>7.9</td>
+<td>6.4</td>
+<td>5.9</td>
+<td>5.7</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>9.8</td>
+<td>9.1</td>
+<td>8.7</td>
+<td>8.7</td></tr>
+<tr><td>    TOTAL</td>
+<td>37.5</td>
+<td>34.7</td>
+<td>31.8</td>
+<td>31.4</td>
+</tr>
+</tbody>
+</table></div></figure></section><section id="A1-1-3-2" class="article-section" data-astro-cid-qsyhzaho><h5 data-astro-cid-qsyhzaho="true">1.3.2 <i>Income shock</i></h5><figure id="ufig3" data-astro-cid-qsyhzaho><a href="/_astro/ijm-00107-ufig3.Dg8D8pWc_fbipo.webp" class="figure-lightbox-trigger" data-pswp-width="1890" data-pswp-height="762" target="_blank" rel="noreferrer" data-astro-cid-qsyhzaho><img src="/_astro/ijm-00107-ufig3.Dg8D8pWc_fbipo.webp" width="1890" height="762" alt loading="lazy" data-astro-cid-qsyhzaho></a></figure><figure id="table4a" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>2012</th>
+<th>2013</th>
+<th>2014</th>
+<th>2015</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5">Percentage of vulnerable households over total households</td>
+</tr>
+<tr><td>    1st–25th percentile</td>
+<td>1.5</td>
+<td>1.6</td>
+<td>1.6</td>
+<td>1.7</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>1.4</td>
+<td>1.4</td>
+<td>1.2</td>
+<td>1.3</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>2.9</i></td>
+<td><i>2.9</i></td>
+<td><i>2.8</i></td>
+<td><i>3.0</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>1.2</td>
+<td>1.0</td>
+<td>0.9</td>
+<td>0.9</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.7</td></tr>
+<tr><td>    TOTAL</td>
+<td>4.8</td>
+<td>4.6</td>
+<td>4.4</td>
+<td>4.7</td></tr>
+<tr><td colspan="5">Percentage of vulnerable households over indebted households</td></tr>
+<tr><td>    1st–25th percentile</td>
+<td>7.6</td>
+<td>7.4</td>
+<td>6.8</td>
+<td>6.9</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>7.0</td>
+<td>6.3</td>
+<td>5.2</td>
+<td>5.4</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>14.6</i></td>
+<td><i>13.6</i></td>
+<td><i>12.0</i></td>
+<td><i>12.3</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>4.0</td>
+<td>4.4</td>
+<td>3.8</td>
+<td>3.8</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>3.5</td>
+<td>3.0</td>
+<td>3.2</td>
+<td>3.0</td></tr>
+<tr><td>    TOTAL</td>
+<td>24.1</td>
+<td>21.2</td>
+<td>19.1</td>
+<td>19.3</td></tr>
+<tr><td colspan="5">Percentage of debt held by vulnerable households</td></tr>
+<tr><td>    1st–25th percentile</td>
+<td>9.5</td>
+<td>10.4</td>
+<td>9.7</td>
+<td>9.5</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>10.2</td>
+<td>9.1</td>
+<td>7.9</td>
+<td>8.0</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>19.7</i></td>
+<td><i>19.3</i></td>
+<td><i>17.4</i></td>
+<td><i>17.3</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>7.9</td>
+<td>6.4</td>
+<td>5.9</td>
+<td>5.5</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>9.8</td>
+<td>9.1</td>
+<td>8.7</td>
+<td>8.2</td></tr>
+<tr><td>    TOTAL</td>
+<td>37.5</td>
+<td>34.7</td>
+<td>31.8</td>
+<td>31.2</td>
+</tr></tbody>
+</table></div></figure></section></section><section id="A1-1-4" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">1.4 Households are vulnerable if DSR &gt; 40%</h4><figure id="ufig4" data-astro-cid-qsyhzaho><a href="/_astro/ijm-00107-ufig4.BD4wjAYv_2n0Jsk.webp" class="figure-lightbox-trigger" data-pswp-width="1890" data-pswp-height="768" target="_blank" rel="noreferrer" data-astro-cid-qsyhzaho><img src="/_astro/ijm-00107-ufig4.BD4wjAYv_2n0Jsk.webp" width="1890" height="768" alt loading="lazy" data-astro-cid-qsyhzaho></a></figure><figure id="table4b" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>2012</th>
+<th>2013</th>
+<th>2014</th>
+<th>2015</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5">Percentage of vulnerable households over total households</td>
+</tr>
+<tr><td>    1st–25th percentile</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>1.0</td>
+</tr>
+<tr><td>    25th–50th percentile</td>
+<td>0.6</td>
+<td>0.6</td>
+<td>0.5</td>
+<td>0.5</td>
+</tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>1.6</i></td>
+<td><i>1.6</i></td>
+<td><i>1.5</i></td>
+<td><i>1.4</i></td>
+</tr>
+<tr><td>    50th–75th percentile</td>
+<td>0.4</td>
+<td>0.3</td>
+<td>0.3</td>
+<td>0.3</td>
+</tr>
+<tr><td>    75th–100th percentile</td>
+<td>0.3</td>
+<td>0.3</td>
+<td>0.3</td>
+<td>0.3</td>
+</tr>
+<tr><td>    TOTAL</td>
+<td>2.3</td>
+<td>2.2</td>
+<td>2.1</td>
+<td>2.1</td>
+</tr>
+<tr><td colspan="5">Percentage of vulnerable households over indebted households</td>
+</tr>
+<tr><td>    1st–25th percentile</td>
+<td>4.8</td>
+<td>4.5</td>
+<td>4.2</td>
+<td>4.1</td>
+</tr>
+<tr><td>    25th–50th percentile</td>
+<td>3.1</td>
+<td>2.7</td>
+<td>2.2</td>
+<td>1.9</td>
+</tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>7.9</i></td>
+<td><i>7.3</i></td>
+<td><i>6.4</i></td>
+<td><i>5.9</i></td>
+</tr>
+<tr><td>    50th–75th percentile</td>
+<td>2.1</td>
+<td>1.6</td>
+<td>1.3</td>
+<td>1.2</td>
+</tr>
+<tr><td>    75th–100th percentile</td>
+<td>1.5</td>
+<td>1.3</td>
+<td>1.3</td>
+<td>1.3</td>
+</tr>
+<tr><td>    TOTAL</td>
+<td>11.5</td>
+<td>10.2</td>
+<td>9.2</td>
+<td>8.5</td>
+</tr>
+<tr><td colspan="5">Percentage of debt held by vulnerable households</td>
+</tr>
+<tr><td>    1st–25th percentile</td>
+<td>6.6</td>
+<td>6.9</td>
+<td>6.3</td>
+<td>5.8</td>
+</tr>
+<tr><td>    25th–50th percentile</td>
+<td>4.9</td>
+<td>4.2</td>
+<td>3.6</td>
+<td>3.0</td>
+</tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>11.5</i></td>
+<td><i>11.1</i></td>
+<td><i>9.9</i></td>
+<td><i>8.6</i></td>
+</tr>
+<tr><td>    50th–75th percentile</td>
+<td>3.4</td>
+<td>3.0</td>
+<td>2.5</td>
+<td>2.1</td>
+</tr>
+<tr><td>    75th–100th percentile</td>
+<td>3.3</td>
+<td>3.1</td>
+<td>3.1</td>
+<td>2.9</td>
+</tr>
+<tr><td>    TOTAL</td>
+<td>18.2</td>
+<td>17.1</td>
+<td>15.7</td>
+<td>13.8</td>
+</tr>
+</tbody>
+</table></div></figure></section><section id="A1-1-5" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">1.5 No originations</h4><figure id="ufig5" data-astro-cid-qsyhzaho><a href="/_astro/ijm-00107-ufig5.DrCls4nv_Z15HQ18.webp" class="figure-lightbox-trigger" data-pswp-width="1890" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-qsyhzaho><img src="/_astro/ijm-00107-ufig5.DrCls4nv_Z15HQ18.webp" width="1890" height="783" alt loading="lazy" data-astro-cid-qsyhzaho></a></figure><figure id="table5a" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>2012</th>
+<th>2013</th>
+<th>2014</th>
+<th>2015</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5">Percentage of vulnerable households over total households</td>
+</tr>
+<tr><td>    1st–25th percentile</td>
+<td>1.5</td>
+<td>1.6</td>
+<td>1.4</td>
+<td>1.3</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>1.4</td>
+<td>1.4</td>
+<td>1.2</td>
+<td>1.0</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>2.9</i></td>
+<td><i>2.9</i></td>
+<td><i>2.6</i></td>
+<td><i>2.3</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>1.2</td>
+<td>1.0</td>
+<td>0.9</td>
+<td>0.8</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.8</td></tr>
+<tr><td>    TOTAL</td>
+<td>4.8</td>
+<td>4.6</td>
+<td>4.3</td>
+<td>4.0</td></tr>
+<tr><td colspan="5">Percentage of vulnerable households over indebted households</td></tr>
+<tr><td>    1st–25th percentile</td>
+<td>7.6</td>
+<td>8.0</td>
+<td>7.5</td>
+<td>7.0</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>7.0</td>
+<td>6.9</td>
+<td>6.1</td>
+<td>5.1</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>14.6</i></td>
+<td><i>14.7</i></td>
+<td><i>13.5</i></td>
+<td><i>12.1</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>6.0</td>
+<td>4.8</td>
+<td>4.5</td>
+<td>4.2</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>3.5</td>
+<td>3.3</td>
+<td>3.7</td>
+<td>4.1</td></tr>
+<tr><td>    TOTAL</td>
+<td>24.1</td>
+<td>23.0</td>
+<td>21.9</td>
+<td>20.8</td></tr>
+<tr><td colspan="5">Percentage of debt held by vulnerable households</td>
+<td/></tr>
+<tr><td>    1st–25th percentile</td>
+<td>9.5</td>
+<td>10.7</td>
+<td>10.1</td>
+<td>9.7</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>10.2</td>
+<td>9.4</td>
+<td>8.6</td>
+<td>7.4</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>19.7</i></td>
+<td><i>19.9</i></td>
+<td><i>18.3</i></td>
+<td><i>16.9</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>7.9</td>
+<td>6.7</td>
+<td>6.5</td>
+<td>6.1</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>9.8</td>
+<td>9.4</td>
+<td>9.6</td>
+<td>9.7</td></tr>
+<tr><td>    TOTAL</td>
+<td>37.5</td>
+<td>35.9</td>
+<td>34.1</td>
+<td>32.8</td>
+</tr>
+</tbody>
+</table></div></figure></section><section id="A1-1-6" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">1.6 Credit loans and 70 % of mortgages at adjustable rate</h4><figure id="ufig6" data-astro-cid-qsyhzaho><a href="/_astro/ijm-00107-ufig6.VpLoJB-x_1OlgHS.webp" class="figure-lightbox-trigger" data-pswp-width="1890" data-pswp-height="783" target="_blank" rel="noreferrer" data-astro-cid-qsyhzaho><img src="/_astro/ijm-00107-ufig6.VpLoJB-x_1OlgHS.webp" width="1890" height="783" alt loading="lazy" data-astro-cid-qsyhzaho></a></figure><figure id="table6a" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>2012</th>
+<th>2013</th>
+<th>2014</th>
+<th>2015</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="5">Percentage of vulnerable households over total households</td>
+</tr>
+<tr><td>    1st–25th percentile</td>
+<td>1.5</td>
+<td>1.6</td>
+<td>1.6</td>
+<td>1.6</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>1.4</td>
+<td>1.3</td>
+<td>1.2</td>
+<td>1.1</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>2.9</i></td>
+<td><i>2.9</i></td>
+<td><i>2.7</i></td>
+<td><i>2.7</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>1.2</td>
+<td>0.9</td>
+<td>0.9</td>
+<td>0.8</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.8</td></tr>
+<tr><td>    TOTAL</td>
+<td>4.8</td>
+<td>4.5</td>
+<td>4.4</td>
+<td>4.4</td></tr>
+<tr><td colspan="5">Percentage of vulnerable households over indebted households</td></tr>
+<tr><td>    1st–25th percentile</td>
+<td>7.6</td>
+<td>7.4</td>
+<td>6.8</td>
+<td>6.6</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>7.0</td>
+<td>6.2</td>
+<td>5.1</td>
+<td>4.5</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>14.6</i></td>
+<td><i>13.4</i></td>
+<td><i>11.9</i></td>
+<td><i>11.2</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>6.0</td>
+<td>4.2</td>
+<td>3.8</td>
+<td>3.3</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>3.5</td>
+<td>3.0</td>
+<td>3.1</td>
+<td>3.3</td></tr>
+<tr><td>    TOTAL</td>
+<td>24.1</td>
+<td>20.8</td>
+<td>18.9</td>
+<td>18.0</td></tr>
+<tr><td colspan="5">Percentage of debt held by vulnerable households</td></tr>
+<tr><td>    1st–25th percentile</td>
+<td>9.5</td>
+<td>10.4</td>
+<td>9.6</td>
+<td>9.2</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>10.2</td>
+<td>8.9</td>
+<td>7.8</td>
+<td>6.9</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>19.7</i></td>
+<td><i>18.9</i></td>
+<td><i>17.2</i></td>
+<td><i>15.9</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>7.9</td>
+<td>6.3</td>
+<td>5.8</td>
+<td>5.2</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>9.8</td>
+<td>8.9</td>
+<td>8.6</td>
+<td>8.2</td></tr>
+<tr><td>    TOTAL</td>
+<td>37.5</td>
+<td>34.2</td>
+<td>31.3</td>
+<td>29.3</td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: we randomly assigned a fraction of individuals declaring a fixed rate mortgage to hold a variable rate mortgage so that about 70 per cent of the mortgages are at variable rate. We also assume that the credit loans are adjustable rate.</p></div></figure></section><section id="A1-1-7" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">1.7 Income process estimated using the SHIW data from 2008 to 2012</h4><figure id="table7a" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Estimated mean and standard deviation for the income process (SHIW 2008-2012).</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th align="center" colspan="2">y<sup>d</sup> growth</th>
+<th align="center" colspan="2">y growth</th>
+</tr>
+<tr>
+<th/>
+<th>μ<sup>d</sup></th>
+<th>σ<sup>d</sup></th>
+<th>μ</th>
+<th>σ</th>
+</tr>
+</thead>
+<tbody>
+<tr><td>    1st – 25th percentile</td>
+<td>-0.020</td>
+<td>0.040</td>
+<td>-0.028</td>
+<td>0.032</td></tr>
+<tr><td>    25th – 50th percentile</td>
+<td>-0.014</td>
+<td>0.029</td>
+<td>-0.016</td>
+<td>0.025</td></tr>
+<tr><td>    50th – 75th percentile</td>
+<td>-0.014</td>
+<td>0.036</td>
+<td>-0.014</td>
+<td>0.025</td></tr>
+<tr><td>    75th – 100th percentile</td>
+<td>-0.010</td>
+<td>0.029</td>
+<td>-0.011</td>
+<td>0.001</td></tr>
+</tbody>
+</table></div></figure><figure id="table8a" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 8.</strong></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>2012</th>
+<th>2013</th>
+<th>2014</th>
+<th>2015</th>
+</tr>
+</thead>
+<tbody>
+<tr><td colspan="5">Percentage of vulnerable households over total households</td></tr>
+<tr><td>    1st–25th percentile</td>
+<td>1.5</td>
+<td>1.6</td>
+<td>1.7</td>
+<td>1.8</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>1.4</td>
+<td>1.4</td>
+<td>1.3</td>
+<td>1.2</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>2.9</i></td>
+<td><i>3.0</i></td>
+<td><i>3.0</i></td>
+<td><i>3.0</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>1.2</td>
+<td>0.9</td>
+<td>0.9</td>
+<td>0.8</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.7</td>
+<td>0.7</td></tr>
+<tr><td>    TOTAL</td>
+<td>4.8</td>
+<td>4.6</td>
+<td>4.5</td>
+<td>4.6</td></tr>
+<tr><td colspan="5">Percentage of vulnerable households over indebted households</td></tr>
+<tr><td>    1st–25th percentile</td>
+<td>7.6</td>
+<td>7.5</td>
+<td>7.3</td>
+<td>7.3</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>7.0</td>
+<td>6.4</td>
+<td>5.5</td>
+<td>4.9</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>14.6</i></td>
+<td><i>13.9</i></td>
+<td><i>12.8</i></td>
+<td><i>12.4</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>6.0</td>
+<td>4.4</td>
+<td>3.8</td>
+<td>3.4</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>3.5</td>
+<td>3.0</td>
+<td>2.9</td>
+<td>3.0</td></tr>
+<tr><td>    TOTAL</td>
+<td>24.1</td>
+<td>21.4</td>
+<td>19.6</td>
+<td>18.9</td></tr>
+<tr><td colspan="5">Percentage of debt held by vulnerable households</td></tr>
+<tr><td>    1st–25th percentile</td>
+<td>9.5</td>
+<td>10.5</td>
+<td>10.0</td>
+<td>9.8</td></tr>
+<tr><td>    25th–50th percentile</td>
+<td>10.2</td>
+<td>9.3</td>
+<td>8.5</td>
+<td>7.5</td></tr>
+<tr><td>    <i>Below the median</i></td>
+<td><i>19.7</i></td>
+<td><i>19.7</i></td>
+<td><i>18.4</i></td>
+<td><i>17.1</i></td></tr>
+<tr><td>    50th–75th percentile</td>
+<td>7.9</td>
+<td>6.2</td>
+<td>5.7</td>
+<td>5.1</td></tr>
+<tr><td>    75th–100th percentile</td>
+<td>9.8</td>
+<td>9.1</td>
+<td>7.8</td>
+<td>7.8</td></tr>
+<tr><td>    TOTAL</td>
+<td>37.5</td>
+<td>35.0</td>
+<td>32.0</td>
+<td>30.2</td></tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp><i>Note</i>: we randomly assigned a fraction of individuals declaring a fixed rate mortgage to hold a variable rate mortgage so that about 70 percent of the mortgages are at variable rate. We also assume that the credit loans are adjustable rate.</p></div></figure></section></section></div></details><details id="A1-2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. Comparison of backtesting exercices under different amortization hypotheses</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><figure id="fig2-2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00107-fig2-2A.CzPAIgaC_2e6XkX.webp" class="figure-lightbox-trigger" data-pswp-width="1242" data-pswp-height="854" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00107-fig2-2A.CzPAIgaC_2e6XkX.webp" alt width="1242" height="854" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.2.</strong><span data-astro-cid-dzaleqsp> Percentage of vulnerable households over total population.</span></figcaption></figure><figure id="fig2-2a" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00107-fig2-2B.DPQ2cPY4_Z2jvV6h.webp" class="figure-lightbox-trigger" data-pswp-width="1244" data-pswp-height="856" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00107-fig2-2B.DPQ2cPY4_Z2jvV6h.webp" alt width="1244" height="856" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.2.</strong><span data-astro-cid-dzaleqsp> Percentage of vulnerable households with income below the median over total population.</span></figcaption></figure></div></details><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ampudia, M, van Vlokhoven, H, Żochowski, D (2014). <span data-astro-cid-oer3kof4>Financial fragility of euro area households. Working Paper Series 1737 ECB</span>.</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2014). <span data-astro-cid-oer3kof4>Annual Report for 2013</span>.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2013). <span data-astro-cid-oer3kof4>Financial Stability Report, No. 6</span>.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2014). <span data-astro-cid-oer3kof4>Financial Stability Report, No. 2</span>.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Bartiloro, L, Carpinelli, L, Russo, PF, Pastorelli, S (2012). <span data-astro-cid-oer3kof4>L’accesso al credito in tempo di crisi: le misure di sostegno a imprese e famiglie. Bank of Italy Occasional Papers (Questioni di economia e finanza)</span>.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Djoudad, R (2010). <span data-astro-cid-oer3kof4>The Bank of Canada’s analytic framework for assessing the vulnerability of the household sector</span>. <em data-astro-cid-oer3kof4>Financial System Review</em>, 57–62.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2013). <span data-astro-cid-oer3kof4>The Eurosystem Household, Finance and Consumption Survey, Results from the first wave. Statistics Paper Series 2</span>.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Felici, R, Manzoli, E, Pico, R (2012). <span data-astro-cid-oer3kof4>Crisis and Italian Households: A Microeconomic Analysis of Mortgage Contracts. Bank of Italy Occasional Papers (Questioni di economia e finance)</span>.</span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Luigi, Guiso, Jappelli, T, Terlizzese, D (1996). <span data-astro-cid-oer3kof4>Income Risk, Borrowing Constraints, and Portfolio Choice</span>. <em data-astro-cid-oer3kof4>American Economic Review, American Economic Association</em>, <strong data-astro-cid-oer3kof4>86</strong>, 158–72.</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2011). <span data-astro-cid-oer3kof4>United Kingdom: Vulnerabilities of household and corporate balance sheets and risks for the financial sector Technical Note. Country Report 11/229</span>.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2012). <span data-astro-cid-oer3kof4>Spain: Vulnerabilities of private sector balance sheets and risks to the financial sector Technical Note. Country Report 12/140</span>.</span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2013). <span data-astro-cid-oer3kof4>Italy: Technical Note on the financial situation of Italian households and non-financial corporations and risks to the banking system. Country Report No. 13/348</span>.</span></li><li id="bib13" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Jappelli, T, Pistaferri, L (2000). <span data-astro-cid-oer3kof4>The dynamics of household wealth accumulation in Italy</span>. <em data-astro-cid-oer3kof4>Fiscal Studies, Institute for Fiscal Studies</em>, <strong data-astro-cid-oer3kof4>21</strong>, 269–295.</span></li><li id="bib14" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Jappelli, T, Pistaferri, L (2010). <span data-astro-cid-oer3kof4>Does consumption inequality track income inequality in Italy?</span>. <em data-astro-cid-oer3kof4>Review of Economic Dynamics, Elsevier for the Society for Economic Dynamics</em>, <strong data-astro-cid-oer3kof4>13</strong>, 133–153.</span></li><li id="bib15" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Magri, S (2007). <span data-astro-cid-oer3kof4> Italian households’ debt: the participation to the debt market and the size of the loan</span>. <em data-astro-cid-oer3kof4>Empirical Economics</em>, <strong data-astro-cid-oer3kof4>33</strong>, 401–426.</span></li><li id="bib16" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Magri, S, Pico, R (2012). <span data-astro-cid-oer3kof4>L’indebitamento delle famiglie italiane dopo la crisi del 2008. Bank of Italy Occasional Papers (Questioni di economia e finanza)</span>.</span></li><li id="bib17" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Magri, S, Pico, R (2014). <span data-astro-cid-oer3kof4>Il mercato del credito alle famiglie dopo cinque anni di crisi: evidenze dall’indagine sui loro bilanci. Bank of Italy Occasional Papers (Questioni di economia e finanza)</span>.</span></li><li id="bib18" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2010). <span data-astro-cid-oer3kof4>OECD Factjournal 2010: Economic, Environmental and Social Statistics, Paris, OECD Publishing</span>.</span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Valentina Michelangeli</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Institute Bank of Italy, Financial Stability Directorate, Via Nazionale, Italy</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:valentina.michelangeli@bancaditalia.it" data-astro-cid-m3fa5h5a>valentina.michelangeli@bancaditalia.it</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Mario Pietrunti</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Institute Bank of Italy, Financial Stability Directorate, Via Nazionale, Italy</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:mario.pietrunti@bancaditalia.it" data-astro-cid-m3fa5h5a>mario.pietrunti@bancaditalia.it</a></p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Acknowledgements</h3><p data-astro-cid-m3fa5h5a>Financial Stability Directorate, Bank of Italy. We thank Paolo Angelini, Antonio Di Cesare, Giorgio Gobbi, Silvia Magri, Matteo Piazza, Luigi Federico Signorini the editor and two anonymous referees for their useful comments. The analysis and conclusions expressed herein are those of the authors and should not be attributed to the Bank of Italy.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00107" data-astro-cid-m3fa5h5a>Version of Record published: December 31, 2014 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2014, Michelangeli &amp; Pietrunti</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/finance" data-pagefind-filter="Research category:Finance" data-astro-cid-m3fa5h5a>Finance</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=households%E2%80%99%20vulnerability" data-astro-cid-m3fa5h5a>households’ vulnerability</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=debt" data-astro-cid-m3fa5h5a>debt</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=stress%20test" data-astro-cid-m3fa5h5a>stress test</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

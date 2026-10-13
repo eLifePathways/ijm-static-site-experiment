@@ -1,0 +1,21 @@
+TY  - JOUR
+TI  - MILC: A microsimulation model of the natural history of lung cancer
+AU  - Chrysanthopoulou, Stavroula A
+VL  - 10
+IS  - 3
+PY  - 2017
+DA  - 2017/12/31
+SP  - 5-26
+C1  - IJM 2017;10(3):5-26
+DO  - 10.34196/ijm.00164
+UR  - https://doi.org/10.34196/ijm.00164
+AB  - The Microsimulation Lung Cancer (MILC) model was developed to simulate individual trajectories and predict outcomes of lung cancer for populations. The model describes the natural history of lung cancer from a disease-free state to death. Predictions of individual trajectories depend on a set of covariates including age, sex, and smoking behaviors. The module presented here is designed as part of a comprehensive decision-making toolkit for evaluating lung cancer prevention, screening and treatment policies. The MILC package implements the model in the open-source statistical software R. This paper introduces the main components, simulation algorithm, and specifics of the MILC model, validates it by reproducing observed lung cancer incidence trends in the US population, and uses it to make plausible predictions for 50-year-old men and women with a range of smoking histories.
+KW  - microsimulation
+KW  - comparative effectiveness research
+KW  - natural history model
+KW  - lung cancer
+KW  - software
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

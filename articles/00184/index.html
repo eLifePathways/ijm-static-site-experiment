@@ -1,0 +1,675 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Simulating the joint distribution of individuals, households and dwellings in small areas | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00184"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.article-info__author-list[data-astro-cid-m3fa5h5a]{margin:0;padding:0;list-style:none}.article-info__author[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h4{font-size:var(--step-0);margin:0 0 var(--space-3xs)}}.article-info__affiliations[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-3xs);font-size:var(--step--1);color:var(--color-ink-muted);padding-inline-start:var(--space-m)}.article-info__detail[data-astro-cid-m3fa5h5a]{font-size:var(--step--1);color:var(--color-ink-muted);margin:0 0 var(--space-3xs)}.article-info__section[data-astro-cid-m3fa5h5a]{margin:0 0 var(--space-m);& h3{font-size:var(--step-0);margin:0 0 var(--space-2xs)}& p{font-size:var(--step--1)}}.article-meta[data-astro-cid-m3fa5h5a]{border-block-start:1px solid var(--color-border);margin-block-start:var(--space-m);padding-block-start:var(--space-m);& h4{font-size:var(--step--1);text-transform:uppercase;letter-spacing:.03em;color:var(--color-ink-muted);margin:0 0 var(--space-2xs)}}.article-meta__list[data-astro-cid-m3fa5h5a]{gap:var(--space-2xs) var(--space-s);font-family:var(--font-heading);font-size:var(--step--1);flex-wrap:wrap;margin:0;padding:0;list-style:none;display:flex;& a{color:var(--color-accent);text-decoration:none}& a:hover{color:var(--color-accent-strong)}& a.article-meta__tag{color:var(--color-ink-muted)}& a.article-meta__tag:hover{color:var(--color-ink)}}blockquote[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);border-inline-start:3px solid var(--color-border);color:var(--color-ink-muted);padding-inline-start:var(--space-s);font-style:italic}pre[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-s);padding:var(--space-s);background:var(--color-surface-subtle);border-radius:3px;overflow-x:auto;& code{font-family:var(--font-mono);font-size:var(--step--1)}}.article-box[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);padding:var(--space-s) var(--space-m);background:var(--color-surface-subtle);border-inline-start:3px solid var(--color-accent);& .article-box__title{margin-block-end:var(--space-2xs)}& .article-box__label{color:var(--color-accent)}}.equation[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);justify-content:center;align-items:center;gap:var(--space-s);display:flex;overflow-x:auto;& .equation-label{color:var(--color-ink-muted);font-family:var(--font-heading);font-size:var(--step--1);margin-inline-start:auto}}figure[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);& img{margin-inline:auto}}.figure-lightbox-trigger[data-astro-cid-qsyhzaho]{cursor:zoom-in;display:block}figcaption[data-astro-cid-qsyhzaho]{font-family:var(--font-heading);font-size:var(--step--1);color:var(--color-ink-muted);margin-block-start:var(--space-2xs)}.table-wrap[data-astro-cid-qsyhzaho]{margin:0 0 var(--space-m);overflow-x:auto;& table{border-collapse:collapse;width:100%}& th,& td{border:1px solid var(--color-border);padding:var(--space-2xs) var(--space-xs);text-align:start}& th{font-family:var(--font-heading);background:var(--color-surface-subtle)}}.table-footnote[data-astro-cid-qsyhzaho]{font-size:var(--step--1);color:var(--color-ink-muted)}.reference-list[data-astro-cid-oer3kof4]{margin-block-start:var(--space-m);padding-inline-start:var(--space-l);& li{margin-block-end:var(--space-s);padding-inline-start:var(--space-2xs)}}@media (width>=75em){.article-content-grid[data-astro-cid-poxfbvb2]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-pagefind-body data-pagefind-meta="url:/articles/00184" data-astro-cid-poxfbvb2><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/spatial-microsimulation" data-astro-cid-ak4gb66a>Spatial microsimulation</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Aug 31, 2018</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Simulating the joint distribution of individuals, households and dwellings in small areas</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Trond Husby, Olga Ivanova, Mark Thissen</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Netherlands Environmental Assessment Agency (PBL), Netherlands</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/11-2/volume-11-2-summer-2018" data-astro-cid-ak4gb66a>Volume 11(2) Summer 2018</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> T. Husby, O. Ivanova, M. Thissen; 2018; <span data-astro-cid-ak4gb66a>Simulating the joint distribution of individuals, households and dwellings in small areas</span>; International Journal of Microsimulation; 11(2); 169–190. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00184" data-astro-cid-ak4gb66a>10.34196/ijm.00184</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>This article proposes a sample-based methodology for synthesizing individuals, households and dwellings in small areas, illustrated using a case study of Amsterdam. The method encompasses the following steps: first, individual- and household-level tables are created separately using Iterative Proportional Fitting (IPF). Second, synthetic individuals are allocated into synthetic households using a combination of sorting algorithms and mixed integer programming. As such, the synthetic households are adjusted to accommodate the synthetic individuals, ensuring a consistent joint distribution of individuals, households and dwellings in small areas.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00184/ijm-00184.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00184.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00184.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-poxfbvb2><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00184" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00184/figures" class="view-tabs__link" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#abstract" data-astro-cid-twdwaz5s>Abstract</a></li><li data-astro-cid-twdwaz5s><a href="#s1" data-astro-cid-twdwaz5s>1. Introduction</a></li><li data-astro-cid-twdwaz5s><a href="#s2" data-astro-cid-twdwaz5s>2. Data</a></li><li data-astro-cid-twdwaz5s><a href="#s3" data-astro-cid-twdwaz5s>3. Population synthesis: Methodology</a></li><li data-astro-cid-twdwaz5s><a href="#s4" data-astro-cid-twdwaz5s>4. Internal validation of the results</a></li><li data-astro-cid-twdwaz5s><a href="#s5" data-astro-cid-twdwaz5s>5. Conclusions</a></li><li data-astro-cid-twdwaz5s><a href="#app1" data-astro-cid-twdwaz5s>Appendix</a></li><li data-astro-cid-twdwaz5s><a href="#references" data-astro-cid-twdwaz5s>References</a></li><li data-astro-cid-twdwaz5s><a href="#info" data-astro-cid-twdwaz5s>Article and author information</a></li></ul></details></div><div class="article-content" data-astro-cid-poxfbvb2><div class="article-body" data-astro-cid-poxfbvb2><details id="s1" class="article-section article-section--collapsible" open data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">1. Introduction</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>There is a growing interest in microsimulation models covering small geographical areas (<a href="#bib21">Tanton, 2014</a>). Such spatial microsimulation models attempt to solve the problem of lacking or non-representative data within small geographical areas, providing a ‘best guess’ of policy-relevant indicators at a small scale. For example, spatial microsimulation has been used to estimate smoking rates in zones within a city using knowledge about the composition of the population in these zones (<a href="#bib24">Tomintz, Clarke, &amp; Rigby, 2008</a>). An important usage of the technique is synthetic reconstruction of population within small areas. The synthetic population is a key component of disaggregated models of travel- and residential energy use, used for spatially fine-grained scenario analysis or for predicting local impacts of policy interventions (<a href="#bib10">Guo &amp; Bhat, 2007</a>; <a href="#bib18">Muñoz &amp; Peters, 2014</a>).</p><p data-astro-cid-qsyhzaho>One of the main usages of spatial microsimulation is <i>reweighting</i> of survey sample weights to reflect the population-composition of a small area and possibly new constraints (<a href="#bib3">Ballas, Rossiter, Thomas, Clarke, &amp; Dorling, 2005</a>). The output of the reweighting is a weight matrix, reflecting the probability that a household or individual is located in a certain zone. A second main usage is <i>synthetic reconstruction</i>, which entails constructing full tables of synthetic households or individuals on the basis of the weight matrix.</p><p data-astro-cid-qsyhzaho>Spatial microsimulation methods can be further classified into deterministic or probabilistic techniques. The most widely used deterministic technique is iterative proportional fitting (IPF — see <a href="#bib14">Lovelace &amp; Dumont, 2016</a>). Despite its popularity, IPF has a number of limitations. First, non- xistent individual- or household-types in the seed data can lead to the so-called ‘empty cell problem’. Second, control variables need to belong to the same ‘universe’, meaning that IPF can not be directly used to synthesize individuals and households at the same time (<a href="#bib20">Pritchard &amp; Miller, 2012</a>). The latter limitation is the focus of this paper.</p><p data-astro-cid-qsyhzaho>A number of recent papers has proposed methods for generating synthetic individuals and households at the same time (<a href="#bib2">Auld &amp; Mohammadian, 2010</a>; <a href="#bib15">Ma &amp; Srinivasan, 2015</a>; <a href="#bib19">Namazi-Rad, Tanton, Steel, Mokhtarian, &amp; Das, 2017</a>). For example <a href="#bib1">Arentze, Timmermans, and Hofman (2007)</a> develop a two-step approach, where a first IPF procedure is used to aggregate individual-level attributes to the household-level and a second IPF procedure is used to synthesize the household population. <a href="#bib25">Ye, Konduri, Pendyala, Sana, and Waddell (2009)</a> propose the method of Iterative Proportional Updating (IPU), whereby individual- and household-level weights are adjusted to match joint individual- and household-level constraints. However, in cases with large number of constraints, sample-based algorithms such as the IPU become prone to the empty cell problem and may not converge (<a href="#bib12">Lenormand &amp; Deffuant, 2012</a>; <a href="#bib20">Pritchard &amp; Miller, 2012</a>).</p><p data-astro-cid-qsyhzaho>This paper provides a sample-based method for estimating the joint distribution of individuals, households and dwellings and we illustrate the methodology with a case study of Amsterdam. In a similar vein as <a href="#bib17">Muñoz, Dochev, Seller, and Peters (2016)</a>, we aim to develop a realistic environment of the building stock and its resident population. This requires synthesizing a consistent population of individuals, households and dwellings. The structure of our household survey is such that we could potentially generate a population of households and individuals with IPU. However, as shown in <a href="#sA-1">Appendix A.1</a>, using IPU we experience problems with convergence. To overcome the problems we instead create two tables: one with synthetic household and dwellings and one with synthetic individuals. The main contribution of this paper is a methodology for resolving inconsistencies between the resulting individual- and household-level tables.</p><p data-astro-cid-qsyhzaho>We base the population synthesis primarily on IPF. The technique is well known for its numerical stability and algebraic simplicity, making it fairly intuitive and attractive to practitioners. Our strategy involves an additional step to allocate synthetic individuals to synthetic households. We opt for an approach similar to that discussed in <a href="#bib5">Barthelemy and Toint (2013)</a>; namely to start allocating synthetic household heads, proceeding by allocating the remaining family members. However, Barthelemy and Toint (2013) construct households from the table of individuals, using a combination of maximum likelihood estimation and tabu-search optimisation. Consequently, the synthetic households are, in their case, already consistent with the synthetic individuals. Due to the large number of household- and dwelling-level constraints, we choose to start with two separate tables of synthetic households and individuals. Although these tables are internally consistent, they are not consistent with each other, meaning that the synthetic households can generally not accommodate the number of synthetic individuals. The inconsistencies between the individual- and household-level tables could therefore lead to non-allocated individuals or households without members. We solve this problem using mixed integer programming, adjusting the members of the synthetic households in such a way that the changes to the household composition are minimised.</p><p data-astro-cid-qsyhzaho>Our methodology encompasses the following steps: first, we create separate tables of synthetic households and individuals using IPF. Next, we allocate synthetic persons into synthetic households using a combination of heuristic sorting algorithms and mixed integer programming. This allows us to adjust the synthetic households such that they accommodate the synthetic individuals, ensuring consistency between the individual- and household-level tables.</p><p data-astro-cid-qsyhzaho>The paper is structured as follows: Section 2 presents the data used for the population synthesis; Section 3 discusses the proposed methodology; Section 4 shows the results of an internal validation and Section 5 concludes.</p></div></details><details id="s2" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">2. Data</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>The first key input to IPF is a (non-spatial) survey which is used to create a seed of individuals or households. In our case, we use two separate surveys: one capturing households and dwellings and another capturing individual people. The second key input is aggregate geographical data, which is used to create small area constraints. This section gives a description of the data sources used in the paper.</p><section id="s2-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.1 Survey data: Dutch mobility survey (OVIN)</h3><p data-astro-cid-qsyhzaho>The Dutch Mobility Survey (OVIN) is collected yearly by Statistics Netherlands (CBS). The goal of the survey is to provide adequate information on the daily mobility of the Dutch population. To this end, the movement behavior of the Dutch population is described by place of origin and destination, time of the carriage, means of transport used and reasons for travel. In addition, considerable attention is paid to the background variables for a particular movement pattern and choice of transport.</p><p data-astro-cid-qsyhzaho>Each version of OVIN contains around 40,000 respondents, and CBS assumes that the survey covers 1.9% of total travelled kilometres in the Netherlands. Respondents are individual persons and not households, although the data set contains information about household-level variables for each respondent.</p><p data-astro-cid-qsyhzaho>In this paper we use 7 versions of OVIN (2010–1016) to generate a seed of individuals, ignoring the location of residence of each respondent. <a href="#table1">Table 1</a> shows the variables we include in the seed of individuals.</p><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Variables from OVIN and their levels.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Levels</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ind_lmstatus</td>
+<td>active, not-active</td>
+<td>labour-market status</td>
+</tr>
+<tr>
+<td>ind_ethn</td>
+<td>Dutch, foreign</td>
+<td>ethnicity</td>
+</tr>
+<tr>
+<td>ind_income</td>
+<td>high, low, mid</td>
+<td>household income</td>
+</tr>
+<tr>
+<td>ind_gender</td>
+<td>man, woman</td>
+<td>gender</td>
+</tr>
+<tr>
+<td>ind_age</td>
+<td>00_14, 15_44, 45_64, 65_AO</td>
+<td>age</td>
+</tr>
+</tbody>
+</table></div></figure></section><section id="s2-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.2 Survey data: Netherlands’ household survey (WOON)</h3><p data-astro-cid-qsyhzaho>The goal of the Netherlands’ Household Survey (WOON) is to gather information about the housing situation of the Dutch population and their living requirements and needs. The survey includes information about the composition of households, the dwelling and living environment, housing costs, living requirements and housing re-locations. Frequency is three-yearly. A minimum of 60,000 respondents have to be reached, as the survey should also provide reliable information on small geographical areas. In this paper we use two versions of WOON (2012 and 2015).</p><p data-astro-cid-qsyhzaho>WOON contains a large number of variables about households and dwellings, and we have to make choices on which household characteristics to include. Firstly, included variables should cover basic demographic information and they must be associated with the outcome(s) of interest (<a href="#bib8">Burden &amp; Steel, 2016</a>). Secondly, the variables need to exist in both the survey data as well as in the aggregate geographical data. <a href="#table2">Table 2</a> shows the dwelling- and household characteristics that are included in our analysis. WOON contains additional information about the number of household members by age. As has been discussed, this information, listed in <a href="#table3">Table 3</a>, can not directly be used for a joint individual-household synthesis with IPF. However, by using information from <a href="#table3">Table 3</a>, we can aggregate the household members to estimate the population in each small area, predicting the population of individuals from the synthetic households.</p><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Household and dwelling characteristics from WOON.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Levels</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dw_typei</td>
+<td>rental, owner-occupied</td>
+<td>dwelling tenure</td>
+</tr>
+<tr>
+<td>dw_type2</td>
+<td>apartment, house</td>
+<td>type of dwelling</td>
+</tr>
+<tr>
+<td>dw_byear</td>
+<td>before 1945,1945–1969,1970–1989,1990 and later</td>
+<td>building year</td>
+</tr>
+<tr>
+<td>dw_dheat</td>
+<td>no, yes</td>
+<td>district heating</td>
+</tr>
+<tr>
+<td>dw_size</td>
+<td>(6,51], (51,68], (68,89], (89,3e+04]</td>
+<td>size (m2)</td>
+</tr>
+<tr>
+<td>hh_age_h</td>
+<td>15_44, 45_64, 65_AO</td>
+<td>age household head</td>
+</tr>
+<tr>
+<td>hh_gender_h</td>
+<td>man, woman</td>
+<td>gender household head</td>
+</tr>
+<tr>
+<td>hh_ethn_h</td>
+<td>Dutch, foreign</td>
+<td>ethnicity household head</td>
+</tr>
+<tr>
+<td>hh_income</td>
+<td>high, low, mid</td>
+<td>household income</td>
+</tr>
+<tr>
+<td>hh_lmstatus</td>
+<td>active, not-active</td>
+<td>labour-market status head</td>
+</tr>
+<tr>
+<td>hh_type</td>
+<td>single, w_child, wo_child</td>
+<td>household type
+</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Information about household members from WOON.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Levels</th>
+<th>Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>n_00_i4</td>
+<td>numeric</td>
+<td>members between 0 and 14 years</td>
+</tr>
+<tr>
+<td>n_i5_44</td>
+<td>numeric</td>
+<td>members between 15 and 44 years</td>
+</tr>
+<tr>
+<td>n_45_64</td>
+<td>numeric</td>
+<td>members between 45 and 64 years</td>
+</tr>
+<tr>
+<td>n_65_AO</td>
+<td>numeric</td>
+<td>members 65 years and older</td>
+</tr>
+<tr>
+<td>n_persons</td>
+<td>numeric</td>
+<td>number ofmembers</td>
+</tr>
+</tbody>
+</table></div></figure></section><section id="s2-3" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.3 The neighbourhood and district maps (Buurt en wijk kaarten)</h3><p data-astro-cid-qsyhzaho>The Neighbourhood and District maps from Statistics Netherlands contain digital geographical information as well as key figures for municipalities, neighbourhoods and districts (gemeente, buurt, wijk) in the Netherlands. Key figures include data on population and its composition; firms; housing stock; energy use; income and transport.</p><p data-astro-cid-qsyhzaho><a href="#fig1">Figure 1</a> shows the population of each neighbourhood in Amsterdam. We use the 2014 classification of neighbourhoods, with a total of 98 neighbourhoods. Several of these neighbourhoods are industrial zones with negligible population, meaning that the number of neighbourhoods included in the analysis is 95. The total number of inhabitants is 810,825, distributed over 440,675 households. The plot shows that population is concentrated mainly around the centre and in suburbs in the south-eastern parts of the city.</p><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-fig1.Bpj8TxLu_ZUbVnu.webp" class="figure-lightbox-trigger" data-pswp-width="287" data-pswp-height="287" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-fig1.Bpj8TxLu_ZUbVnu.webp" alt width="287" height="287" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Population in neighbourhoods in Amsterdam.</span></figcaption></figure></section><section id="s2-4" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">2.4 Additional data</h3><p data-astro-cid-qsyhzaho>The Neighbourhood and District maps only reports the mean value for a number of key variables of dwelling characteristics. In order to obtain a distribution for these variables we used additional open data sources. First, a distribution for the cadastral value of each neighbourhood was calculated from the 100x100m grid cell data from Statistics Netherlands. Second, categories of construction year as well as categories of dwelling size per neighbourhood were constructed on the basis of the Dutch Kadaster data. <a href="#table4">Table 4</a> lists all data sources and their usage.</p><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> Data sources and their usage.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Source</th>
+<th>Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OVIN 2010–2016</td>
+<td>Survey sample of individuals</td>
+</tr>
+<tr>
+<td>WOON 2012 and 2015</td>
+<td>Survey sample of households and dwellings</td>
+</tr>
+<tr>
+<td>Neighbourhood and District maps 2014</td>
+<td>Constraints on individuals, households and dwellings</td>
+</tr>
+<tr>
+<td>100x100m statistics</td>
+<td>Constraint on cadastral value of dwelling</td>
+</tr>
+<tr>
+<td>Dutch Kadaster data</td>
+<td>Constraints on dwelling size and building year</td>
+</tr>
+</tbody>
+</table></div></figure></section></div></details><details id="s3" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">3. Population synthesis: Methodology</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>We use IPF to calculate neighbourhood-level weights for (i) individual respondents from the mobility survey OVIN and (ii) household respondents in the housing demand survey WOON, to fit the neighbourhood-level constraints. This results in separate tables of synthetic individuals and households consistent with the constraints. We proceed by allocating the synthetic individuals to the synthetic households. In this Section we first describe the generation of individuals’ and household tables including the constraints used. Next, we describe the methodology for allocating individuals into households.</p><section id="s3-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.1 Generating synthetic individuals and households using IPF</h3><p data-astro-cid-qsyhzaho>In general, the main output of a spatial microsimulation exercise is a table representing the most probable configuration of the population of small areas. The table is generated using a ‘seed’ of individuals or households from a survey and a number of constraints from geographically aggregated data. One of the most frequently used algorithms to generate the table is IPF. IPF is simple, computationally efficient, rigorously founded and it has a long history: it was first implemented by <a href="#bib9">Deming and Stephan (1940)</a>, who estimated internal cells based on known marginals. The technique is also known as <i>raking</i> and is in practice identical to maximum entropy (<a href="#bib23">Thissen &amp; Löfgren, 1998</a>). The output of IPF, when used in spatial microsimulation, is a series of non-integer weight matrices of a survey sample. Each cell in the matrix indicates how representative one survey respondent is of the real population within each geographical area. The weight matrix thus gives the most probable configuration of individuals in these areas.</p><p data-astro-cid-qsyhzaho>The standard population synthesis using IPF involves two steps (<a href="#bib6">Beckman, Baggerly, &amp; McKay, 1996</a>): the first step is to generate a joint multiway distribution of all relevant attributes of households or individuals. Next, persons or households are drawn from a seed of individual records in order to satisfy the distribution of attributes. The last step involves creating a list representing the synthetic population of individuals or households, using the weights generated by the IPF procedure. Since the weights are fractional, this step also involves integerisation of the weight matrix (<a href="#bib13">Lovelace &amp; Ballas, 2013</a>).</p><p data-astro-cid-qsyhzaho>Due to the popularity of IPF, there are several accessible and ready-to-use implementations of IPF in software programmes such as R (<a href="#bib14">Lovelace &amp; Dumont, 2016</a>). In this paper the synthetic population of individuals is generated in R using the IPF procedure from the ipfp package (<a href="#bib7">Blocker, 2016</a>). As a consistency check, we repeated the exercise with the mipfp package (<a href="#bib4">Barthelemy &amp; Suesse, 2015</a>) and results were identical.</p><p data-astro-cid-qsyhzaho>As input for the synthetic population of individuals we used the respondent from the OVIN data set to generate the seed. The output of IPF in this case is a respondent-neighbourhood weight matrix consistent with the individual-level constraints for each neighbourhood. Constraints are the labourmarket status (ind_lmstatus), ethnicity (ind_ethnicity), gender (ind_gender) and age (ind_age) of each individual. The Buurt en Wijk Kaarten contains data for all these variables in percentages. To obtain the actual number we simply multiply the percentage with the number of individuals in the neighbourhood. The individual-level constraints, with their respective mean and standard deviation across neighbourhoods are presented in <a href="#tableA1">Table A.1</a> in the <a href="#app1">Appendix</a>.</p><p data-astro-cid-qsyhzaho>The synthetic household population is also generated with the IPF procedure from the ipfp package, using respondent from WOON as constraints. Dwelling variables include two types of classifications (dw_type1 and dw_type2), building year (dw_byear), size (dw_size), district heating (dw_dheat) and cadastral value (dw_value). For the sake of simplicity we ignore empty dwellings, setting the number of dwellings equal to the number of households. In addition to the dwelling-related constraints we also include constraints related to the household or to the household head; namely household income (hh_income), household type (hh_type), labour market status (hh_lmstatus), gender (hh_gender) and ethnicity of the household head (hh_ethn). <a href="#tableA2">Table A.2</a> in the <a href="#app1">Appendix</a> shows the household- and dwelling-level constraints. <a href="#table5">Table 5</a> shows an example of five households from the sample seed derived from WOON. Note that the household-level constraints includes some information on the household head and the household composition.</p><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> Five households from the sample seed.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>hh 1</th>
+<th>hh2</th>
+<th>hh 3</th>
+<th>hh 4</th>
+<th>hh 5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dw_value</td>
+<td>oo_199</td>
+<td>oo_199</td>
+<td>2oo_299</td>
+<td>2oo_299</td>
+<td>00_199</td>
+</tr>
+<tr>
+<td>dw_typei</td>
+<td>rental</td>
+<td>owner</td>
+<td>owner</td>
+<td>owner</td>
+<td>rental</td>
+</tr>
+<tr>
+<td>dw_type2</td>
+<td>apartment</td>
+<td>house</td>
+<td>house</td>
+<td>house</td>
+<td>apartment</td>
+</tr>
+<tr>
+<td>dw_byear</td>
+<td>1970–1989</td>
+<td>1970–1989</td>
+<td>1970–1989</td>
+<td>before 1945</td>
+<td>1970–1989</td>
+</tr>
+<tr>
+<td>dw_dheat</td>
+<td>No</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr>
+<td>dw_size</td>
+<td>(68,89]</td>
+<td>(89,3e+04]</td>
+<td>(89,3e+04]</td>
+<td>(89,3e+04]</td>
+<td>(51,68]</td>
+</tr>
+<tr>
+<td>hh_age_h</td>
+<td>65_AO</td>
+<td>65_AO</td>
+<td>45_64</td>
+<td>45_64</td>
+<td>65_AO</td>
+</tr>
+<tr>
+<td>hh_gender_h</td>
+<td>Man</td>
+<td>man</td>
+<td>man</td>
+<td>man</td>
+<td>woman</td>
+</tr>
+<tr>
+<td>hh_ethn_h</td>
+<td>dutch</td>
+<td>dutch</td>
+<td>dutch</td>
+<td>dutch</td>
+<td>dutch</td>
+</tr>
+<tr>
+<td>hh_income</td>
+<td>Low</td>
+<td>low</td>
+<td>mid</td>
+<td>high</td>
+<td>low</td>
+</tr>
+<tr>
+<td>hh_lmstatus</td>
+<td>not-active</td>
+<td>not-active</td>
+<td>active</td>
+<td>active</td>
+<td>not-active</td>
+</tr>
+<tr>
+<td>hh_type</td>
+<td>wo_child</td>
+<td>wo_child</td>
+<td>wo_child</td>
+<td>wo_child</td>
+<td>single</td>
+</tr>
+<tr>
+<td>n_00_14</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>n_15_44</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>n_45_64</td>
+<td>1</td>
+<td>0</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+</tr>
+<tr>
+<td>n_65_AO</td>
+<td>1</td>
+<td>2</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>n_persons</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>2</td>
+<td>1</td>
+</tr>
+</tbody>
+</table></div></figure></section><section id="s3-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">3.2 Allocating individuals to households</h3><p data-astro-cid-qsyhzaho>The overall approach for allocating individuals to households is summarised in <a href="#fig2">Figure 2</a>. The allocation of individuals into households consists of three parts: we first assign a household head from the individuals’ table to each household in the household table. This makes sure that each household has at least one member. Next, we adjust the numbers of remaining household members in the household table using mixed integer programming. Finally, we allocate the remaining household members to the adjusted households.</p><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-fig2.ChfK7JdD_Z1TKoEa.webp" class="figure-lightbox-trigger" data-pswp-width="328" data-pswp-height="440" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-fig2.ChfK7JdD_Z1TKoEa.webp" alt width="328" height="440" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> The overall population synthesis methodology.</span></figcaption></figure><section id="s3-2-1" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">3.2.1 Allocating household heads</h4><p data-astro-cid-qsyhzaho>In order to find household heads, we start with a pool of candidate individuals <i>i</i> = 1, ..., <i>I</i> with certain characteristics <i>c</i> and a pool of households <i>h</i> = 1, ..., <i>H</i>. Remember from <a href="#table5">Table 5</a> that the household survey WOON allows us to identify the following groups of characteristics of each household head: age, gender, ethnicity, labour market status (the levels of each group of characteristic can be found in the <a href="#table2">Table 2</a>). Our strategy involves searching the pool of individuals whose characteristics match those of the household heads, allocating individuals to households using the matching characteristics.</p><p data-astro-cid-qsyhzaho>More formally, in each neighbourhood, household heads are gathered in the matrix <i>head<sub>h,c</sub></i> where rows indicate household ID and columns represent characteristics of the household head (for simplicity, the neighbourhood index is dropped). Similarly, individuals are gathered in the matrix <i>ind<sub>i,c</sub></i>. Each entry in <i>head<sub>h,c</sub></i> and <i>ind<sub>i,c</sub></i> is a binary variable indicating whether the household head of household <i>h</i> or individual <i>i</i> has a specific characteristic <i>c</i>. The set <i>c</i> is a tuple, described in <a href="#table6">Table 6</a>. The elements of <i>c</i> are defined in the second column of the table.</p><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Characteristics used to match households and individuals.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<td>Dimension</td>
+<td>Levels</td>
+<td>Explanation</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>lmstatus</td>
+<td>active, not-active</td>
+<td>labour-market status</td>
+</tr>
+<tr>
+<td>ethn</td>
+<td>Dutch, foreign</td>
+<td>ethnicity</td>
+</tr>
+<tr>
+<td>gender</td>
+<td>man, woman</td>
+<td>gender</td>
+</tr>
+<tr>
+<td/>
+<td>00_14,15_44, 45_64, 65_AO</td>
+<td>age</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>The algorithm used for allocating household heads is described in Algorithm 1. We first initiate an empty matrix representing individuals per characteristics allocated into households <i>al<sub>h,c</sub></i> = 0 and an indicator for successful match between an individual and households <i>wd<sub>i,h</sub></i> = 0. We proceed by searching over all individuals who have matching characteristics with the household head in household <i>h</i>, updating <i>al<sub>h,c</sub></i> when the first individual is found. In some cases there are no individuals left with fully matching characteristics. In those cases we search for individuals with matching characteristics in only three groups (age, gender, ethnicity). This way we make sure that each household has at least one member.</p><figure id="alg1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Algorithm 1.</strong><span data-astro-cid-dzaleqsp> Allocation of household heads.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td>1: <b>for</b> all households <b>do</b></td>
+</tr>
+<tr>
+<td>2:  <b>while</b> <inline-formula id="inline1"><math display="inline" id="i1"><mrow><mstyle displaystyle="true"><msub><mo>∑</mo><mi>i</mi></msub><mrow><mi>w</mi><msub><mi>d</mi><mrow><mi>i</mi><mo>,</mo><mi>h</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow></mstyle></mrow></math> <b>do</b></td>
+</tr>
+<tr>
+<td>3:   <b>for</b> non-allocated individuals with matching characteristics <b>do</b></td>
+</tr>
+<tr>
+<td>4:    update <i>al<sub>h,c</sub></i> = <i>al<sub>h,c</sub></i> + <i>ind<sub>i,c</sub></i></td>
+</tr>
+<tr>
+<td>5:    set <i>wd<sub>i,h</sub></i> = 1</td>
+</tr>
+<tr>
+<td>6:   <b>end for</b></td>
+</tr>
+<tr>
+<td>7:  <b>end while</b></td>
+</tr>
+<tr>
+<td>8: <b>end for</b></td>
+</tr>
+</tbody>
+</table></div></figure></section><section id="s3-2-2" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">3.2.2 Resolving inconsistencies between household and individuals’ tables</h4><p data-astro-cid-qsyhzaho>As shown in <a href="#table5">Table 5</a>, WOON allows us to calculate the number of remaining household members by age, ethnicity and gender. We can express the amount of remaining household members with characteristic <i>d</i> in household <i>h</i> as the matrix <i>hh<sub>h,d</sub></i> where <i>d = c ∈ age, ethnicity, gender</i>. Each entry in the matrix indicates the number of household members in <i>h</i> of category <i>d</i>. Therefore, the number of household members of characteristic <i>d</i> in household <i>h</i> is <i>head<sub>h,d</sub></i> + <i>hh<sub>h,d</sub></i>. Consequently, <inline-formula id="inline2"><math display="inline" id="i2"><mrow><mstyle displaystyle="true"><msub><mo>∑</mo><mrow><mi>d</mi><mo>∈</mo><mi>a</mi><mi>g</mi><mi>e</mi></mrow></msub><mrow><mi>h</mi><msub><mi>h</mi><mrow><mi>h</mi><mo>,</mo><mi>d</mi></mrow></msub><mo>=</mo></mrow></mstyle><mstyle displaystyle="true"><msub><mo>∑</mo><mrow><mi>d</mi><mo>∈</mo><mi>e</mi><mi>t</mi><mi>h</mi><mi>n</mi><mi>i</mi><mi>c</mi><mi>i</mi><mi>t</mi><mi>y</mi></mrow></msub><mrow><mi>h</mi><msub><mi>h</mi><mrow><mi>h</mi><mi>d</mi></mrow></msub></mrow></mstyle><mstyle displaystyle="true"><msub><mo>∑</mo><mrow><mi>d</mi><mo>∈</mo><mi>g</mi><mi>e</mi><mi>n</mi><mi>d</mi><mi>e</mi><mi>r</mi></mrow></msub><mrow><mi>h</mi><msub><mi>h</mi><mrow><mi>h</mi><mo>,</mo><mi>d</mi></mrow></msub></mrow></mstyle></mrow></math>. This means that we can calculate the population of household members in a particular neighbourhood as <inline-formula id="inline3"><math display="inline" id="i3"><mrow><mstyle displaystyle="true"><msub><mo>∑</mo><mrow><mi>d</mi><mo>∈</mo><mi>a</mi><mi>g</mi><mi>e</mi></mrow></msub><mrow><mi>h</mi><mi>e</mi><mi>a</mi><msub><mi>d</mi><mrow><mi>h</mi><mo>,</mo><mi>d</mi></mrow></msub><mo>+</mo><mi>h</mi><msub><mi>h</mi><mrow><mi>h</mi><mo>,</mo><mi>d</mi></mrow></msub></mrow></mstyle></mrow></math>. However, the number of household members does not necessarily match the constraints from the individuals’ table. In fact, as will be shown in the following section, the population of household members calculated from the household table tends to be an underestimate of the population of individuals from the individuals’ table. This means that there is a potential mismatch between the number of individuals to allocate and the number of available slots for additional members in each household. The result could be individuals that are not allocated to households or, more likely in our case, radical changes to the composition of the households. To ensure that there are enough available slots for the allocation of individuals, we must adjust the households.</p><p data-astro-cid-qsyhzaho>The adjustment is formulated as a mixed integer problem where the (squared) adjustments of household members by characteristic are minimised. Adjustments are written as <i>w<sub>h,d</sub></i>. In the case where <i>w<sub>h,d</sub> ∈ {−1, 0, 1}</i>, we have:</p><div id="uequ1" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>1</span><math><mrow><msub><mi>w</mi><mrow><mi>h</mi><mo>,</mo><mi>d</mi></mrow></msub><mo>=</mo><mrow><mo>{</mo> <mrow><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mn>1</mn></mtd><mtd columnalign="left"><mrow><mtext>if an individual with characteristic</mtext><mtext> </mtext><mi>d</mi><mtext> </mtext><mtext>is added to household</mtext><mtext> </mtext><mi>h</mi></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mn>0</mn></mtd><mtd columnalign="left"><mrow><mtext>if no changes are made to household </mtext><mi>h</mi></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><mo>−</mo><mn>1</mn></mrow></mtd><mtd columnalign="left"><mrow><mtext>if an individual with characteristic </mtext><mi>d</mi><mtext> </mtext><mtext>is removed from household</mtext><mtext> </mtext><mi>h</mi></mrow></mtd></mtr></mtable></mrow></mrow></mrow></math></div><p data-astro-cid-qsyhzaho>Intuitively, the mixed integer problem involves minimising the changes to the household composition (objective function) necessary to achieve consistency with the individuals’ table (constraints). The constraints in the the problem are (1) that same amount of adjustments are made across all groups of characteristics; (2) the amount of household members by characteristic <i>d</i> is non-negative and (3) the sum of household members by characteristic <i>d</i> is equal to the sum of individuals by characteristic <i>d</i> who have not been allocated as household head (<i>ind<sub>i,d</sub></i> for which <i>wd<sub>i,h</sub></i> = 0):</p><div id="equ1" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>2</span><math><mrow><mtable columnalign="left"><mtr columnalign="left"><mtd columnalign="left"><mrow><mi>min</mi></mrow></mtd><mtd columnalign="left"><mrow><mstyle displaystyle="true"><munder><mo>∑</mo><mrow><mi>h</mi><mo>,</mo><mi>d</mi></mrow></munder><mrow><msubsup><mi>w</mi><mrow><mi>h</mi><mo>,</mo><mi>d</mi></mrow><mn>2</mn></msubsup></mrow></mstyle></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow><mtext>s</mtext><mtext>.t</mtext><mtext>.</mtext></mrow></mtd><mtd columnalign="left"><mrow/></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow/></mtd><mtd columnalign="left"><mrow><mstyle displaystyle="true"><munder><mo>∑</mo><mrow><mi>d</mi><mo>∈</mo><mi>a</mi><mi>g</mi><mi>e</mi></mrow></munder><mrow><msub><mi>w</mi><mrow><mi>h</mi><mo>,</mo><mi>d</mi></mrow></msub></mrow></mstyle><mo>=</mo><mstyle displaystyle="true"><munder><mo>∑</mo><mrow><mi>d</mi><mo>∈</mo><mi>e</mi><mi>t</mi><mi>h</mi><mi>n</mi><mi>i</mi><mi>c</mi><mi>i</mi><mi>t</mi><mi>y</mi></mrow></munder><mrow><msub><mi>w</mi><mrow><mi>h</mi><mo>,</mo><mi>d</mi></mrow></msub></mrow></mstyle><mo>=</mo><mstyle displaystyle="true"><munder><mo>∑</mo><mrow><mi>d</mi><mo>∈</mo><mi>g</mi><mi>e</mi><mi>n</mi><mi>d</mi><mi>e</mi><mi>r</mi></mrow></munder><mrow><msub><mi>w</mi><mrow><mi>h</mi><mo>,</mo><mi>d</mi></mrow></msub></mrow></mstyle></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow/></mtd><mtd columnalign="left"><mrow><msub><mi>w</mi><mrow><mi>h</mi><mo>,</mo><mi>d</mi></mrow></msub><mo>+</mo><mi>h</mi><msub><mi>h</mi><mrow><mi>h</mi><mo>,</mo><mi>d</mi></mrow></msub><mo>≥</mo><mn>0</mn></mrow></mtd></mtr><mtr columnalign="left"><mtd columnalign="left"><mrow/></mtd><mtd columnalign="left"><mrow><mstyle displaystyle="true"><munder><mo>∑</mo><mi>h</mi></munder><mrow><msub><mi>w</mi><mrow><mi>h</mi><mo>,</mo><mi>d</mi></mrow></msub><mo>+</mo><mi>h</mi><msub><mi>h</mi><mrow><mi>h</mi><mo>,</mo><mi>d</mi></mrow></msub></mrow></mstyle><mo>=</mo><mstyle displaystyle="true"><munder><mo>∑</mo><mrow><mi>i</mi><mo>|</mo><mstyle displaystyle="true"><msub><mo>∑</mo><mi>h</mi></msub><mrow><mi>w</mi><msub><mi>d</mi><mrow><mi>i</mi><mo>,</mo><mi>h</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow></mstyle></mrow></munder><mrow><mi>i</mi><mi>n</mi><msub><mi>d</mi><mrow><mi>i</mi><mo>,</mo><mi>d</mi></mrow></msub></mrow></mstyle></mrow></mtd></mtr></mtable></mrow></math></div><p data-astro-cid-qsyhzaho>The problem is solved for each neighbourhood separately, using the MOSEK solver in GAMS (<a href="#bib16">MOSEK, 2018</a>). We initially limit adjustments such that <i>w<sub>h,d</sub> ∈ {−1, 0, 1}</i>. In one small neighbourhood the problem is infeasible. In this cases we run the mixed integerisation problem iteratively, increasing the maximum value of adjustments until a solution is found.</p></section><section id="s3-2-3" class="article-section" data-astro-cid-qsyhzaho><h4 data-astro-cid-qsyhzaho="true">3.2.3 Allocating the remaining household members</h4><p data-astro-cid-qsyhzaho>The adjustments made in the previous step ensure consistency between the household and individuallevel tables, meaning that there are enough ‘slots’ for allocating the individuals who have not yet been allocated as household heads. The algorithm used for the allocation of the remaining individuals (Algorithm 2), is similar to the algorithm used for the allocation of household heads. The algorithm starts with the pool of individuals who have not been assigned as household heads, and searches over households with available slots on characteristics matching those of the individual. For example, if individual <i>i</i> is a Dutch male between 15 and 44 years old, the algorithm will search over households with available slots on these characteristics. Once such a household is found, the number of household members in the household will be updated with the new member. In cases where there are no households with available slots on these matching characteristics, we simply allocate individuals to households who have an available slot.</p><figure id="alg2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Algorithm 2.</strong><span data-astro-cid-dzaleqsp> Allocation of the remaining household members.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<tbody>
+<tr>
+<td>1: <b>for</b> non-allocated individuals <b>do</b></td>
+</tr>
+<tr>
+<td>2:  <b>while</b> <inline-formula id="inline4"><math display="inline" id="i4"><mrow><mstyle displaystyle="true"><msub><mo>∑</mo><mi>h</mi></msub><mrow><mi>w</mi><msub><mi>d</mi><mrow><mi>i</mi><mo>,</mo><mi>h</mi></mrow></msub><mo>=</mo><mn>0</mn></mrow></mstyle></mrow></math> <b>do</b></td>
+</tr>
+<tr>
+<td>3:   <b>for</b> households with available slots on matching characteristics <b>do</b></td>
+</tr>
+<tr>
+<td>4:    set <i>al<sub>h,d</sub></i> = <i>al<sub>h,d</sub></i> + <i>ind<sub>i,d</sub></i></td>
+</tr>
+<tr>
+<td>5:    set <i>wd<sub>i,h</sub></i> = 1</td>
+</tr>
+<tr>
+<td>6:   <b>end for</b></td>
+</tr>
+<tr>
+<td>7:  <b>end while</b></td>
+</tr>
+<tr>
+<td>8: <b>end for</b></td>
+</tr>
+</tbody>
+</table></div></figure></section></section></div></details><details id="s4" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">4. Internal validation of the results</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>This section presents internal validations of the household and individuals’ tables generated by IPF and of the allocation of individuals into households. As is common in the literature, we evaluate the fit of individual- and household-level tables using the correlation coefficient Pearson’s <i>r</i> and the root means square error (RMSE). The correlation coefficient shows the bivariate correlation between the fitted values and the constraints in each neighbourhood. It is thus a rough check of the numerical precision of the weight matrix per neighbourhood. RMSE gives further insight into the distribution of the residuals across constraints. We first calculate the residual <i>e<sub>z,k</sub></i> of constraint <i>k</i> in neighbourhood <i>z</i> as the difference between the value of the constraint <i>obs<sub>z,k</sub></i> and the simulated value <i>sim<sub>z,k</sub></i>. Then RMSE is calculated as follows:</p><div id="equ2" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>3</span><math><mrow><msub><mi>e</mi><mrow><mi>z</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>=</mo><mi>o</mi><mi>b</mi><msub><mi>s</mi><mrow><mi>z</mi><mo>,</mo><mi>k</mi></mrow></msub><mo>−</mo><mi>s</mi><mi>i</mi><msub><mi>m</mi><mrow><mi>z</mi><mo>,</mo><mi>k</mi></mrow></msub></mrow></math></div><div id="equ3" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>4</span><math><mrow><mi>R</mi><mi>M</mi><mi>S</mi><msub><mi>E</mi><mi>k</mi></msub><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>Z</mi></mfrac><mstyle displaystyle="true"><munderover><mo>∑</mo><mi>z</mi><mi>Z</mi></munderover><mrow><msubsup><mi>e</mi><mrow><mi>z</mi><mo>,</mo><mi>k</mi></mrow><mn>2</mn></msubsup></mrow></mstyle></mrow></msqrt></mrow></math></div><p data-astro-cid-qsyhzaho>Since RMSE is scale-dependent, its value should be seen in light of the (mean) value of the constrain: the RMSE for a constraint with very large values across all neighbourhoods should be larger than the RMSE for a constraint with small values (see <a href="#tableA1">Table A.1</a> in the <a href="#app1">Appendix</a>). However, in our case this is less of a problem. <a href="#fig3">Figure 3</a>, showing the correlation coefficient and the RMSE across all constraints for the individual-level table, reveals that all RMSE are very close to zero, suggesting a near perfect fit.</p><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-fig3.D5wnktLO_ZtR8Dt.webp" class="figure-lightbox-trigger" data-pswp-width="476" data-pswp-height="336" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-fig3.D5wnktLO_ZtR8Dt.webp" alt width="476" height="336" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Correlation coefficient and RMSE of the individual-level table.</span></figcaption></figure><p data-astro-cid-qsyhzaho>Due to the fairly large amount of constraints one might expect the fit of the household table to be worse than that of the individuals’ table. However, as <a href="#fig4">Figure 4</a> shows, this is not the case: also here all RMSE values are very close to zero. From the internal validation we can conclude that the household- and individual-level tables both have a very good fit.</p><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-fig4.BKm8CDTV_ZnkDDN.webp" class="figure-lightbox-trigger" data-pswp-width="476" data-pswp-height="337" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-fig4.BKm8CDTV_ZnkDDN.webp" alt width="476" height="337" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Correlation coefficient and RMSE of the household-level table.</span></figcaption></figure><p data-astro-cid-qsyhzaho>As shown in the previous section, we are able to calculate the population of each neighbourhood by using information about household members from the household table. However, we also suggested that there were discrepancies between population from the household members and the individuals’ table. Obviously, if this were not the case, the mixed integer step would not be necessary.</p><p data-astro-cid-qsyhzaho>We investigate whether there are discrepancies by calculating the percentage difference between the sum of unadjusted household members (<i>members<sub>z,h,d</sub></i>) and the sum of individuals in neighbourhood <i>z</i>. In essence, this amounts to checking whether the predicted population from the synthetic households is consistent with the constraint <i>n</i>_<i>ind</i> from <a href="#tableA1">Table A.1</a>. The percentage difference is cal- culated as:</p><div id="equ4" class="equation" data-astro-cid-qsyhzaho><span class="equation-label" data-astro-cid-qsyhzaho>5</span><math><mrow><mi>d</mi><mi>i</mi><mtext> </mtext><mi>f</mi><mtext> </mtext><msub><mi>f</mi><mi>z</mi></msub><mo>=</mo><mn>100</mn><mo>*</mo><mfrac><mrow><mstyle displaystyle="true"><msub><mo>∑</mo><mrow><mi>d</mi><mo>∈</mo><mi>a</mi><mi>g</mi><mi>e</mi></mrow></msub><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><msub><mo>∑</mo><mi>h</mi></msub><mrow><mi>m</mi><mi>e</mi><mi>m</mi><mi>b</mi><mi>e</mi><mi>r</mi><msub><mi>s</mi><mrow><mi>z</mi><mo>,</mo><mi>h</mi><mo>,</mo><mi>d</mi></mrow></msub><mo>−</mo><mstyle displaystyle="true"><msub><mo>∑</mo><mi>i</mi></msub><mrow><mi>i</mi><mi>n</mi><msub><mi>d</mi><mrow><mi>z</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>d</mi></mrow></msub></mrow></mstyle></mrow></mstyle></mrow><mo>)</mo></mrow></mrow></mstyle></mrow><mrow><mstyle displaystyle="true"><msub><mo>∑</mo><mrow><mi>d</mi><mo>∈</mo><mi>a</mi><mi>g</mi><mi>e</mi></mrow></msub><mrow><mstyle displaystyle="true"><msub><mo>∑</mo><mi>i</mi></msub><mrow><mi>i</mi><mi>n</mi><msub><mi>d</mi><mrow><mi>z</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>d</mi></mrow></msub></mrow></mstyle></mrow></mstyle></mrow></mfrac></mrow></math></div><p data-astro-cid-qsyhzaho><a href="#fig5">Figure 5</a> shows that there are indeed substantial discrepancies between the population from the household table and the population from the individuals’ table. The left panel, showing the density of <i>diff<sub>z</sub></i>, gives evidence of positive deviations of up to 30%. However, the right panel, showing the cumulative density of <i>diff<sub>z</sub></i>, suggests that the population is underestimated in a majority of the neighbourhoods.</p><figure id="fig5" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-fig5.BEVfOOhf_ZkwJlD.webp" class="figure-lightbox-trigger" data-pswp-width="408" data-pswp-height="288" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-fig5.BEVfOOhf_ZkwJlD.webp" alt width="408" height="288" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 5.</strong><span data-astro-cid-dzaleqsp> Neighbourhood population calculated from the households table relative to population calculated from the person-table.</span></figcaption></figure><p data-astro-cid-qsyhzaho>We also run a <i>x</i><sup>2</sup> test of the improvement in fit by comparing the population from the unadjusted <inline-formula id="inline5"><math display="inline" id="i5"><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><msub><mo>∑</mo><mrow><mi>d</mi><mo>∈</mo><mi>a</mi><mi>g</mi><mi>e</mi></mrow></msub><mrow><mstyle displaystyle="true"><msub><mo>∑</mo><mi>h</mi></msub><mrow><mi>m</mi><mi>e</mi><mi>m</mi><mi>b</mi><mi>e</mi><msub><mi>r</mi><mrow><mi>z</mi><mo>,</mo><mi>h</mi><mo>,</mo><mi>d</mi></mrow></msub></mrow></mstyle></mrow></mstyle></mrow><mo>)</mo></mrow></mrow></math> and adjusted households <inline-formula id="inline6"><math display="inline" id="i6"><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><msub><mo>∑</mo><mrow><mi>d</mi><mo>∈</mo><mi>a</mi><mi>g</mi><mi>e</mi></mrow></msub><mrow><mstyle displaystyle="true"><msub><mo>∑</mo><mi>h</mi></msub><mrow><mi>a</mi><msub><mi>l</mi><mrow><mi>z</mi><mo>,</mo><mi>h</mi><mo>,</mo><mi>d</mi></mrow></msub></mrow></mstyle></mrow></mstyle></mrow><mo>)</mo></mrow></mrow></math> in each neighbourhood with the constraint <inline-formula id="inline7"><math display="inline" id="i7"><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><msub><mo>∑</mo><mrow><mi>d</mi><mo>∈</mo><mi>a</mi><mi>g</mi><mi>e</mi></mrow></msub><mrow><mstyle displaystyle="true"><msub><mo>∑</mo><mi>h</mi></msub><mrow><mi>i</mi><mi>n</mi><msub><mi>d</mi><mrow><mi>z</mi><mo>,</mo><mi>i</mi><mo>,</mo><mi>d</mi></mrow></msub></mrow></mstyle></mrow></mstyle></mrow><mo>)</mo></mrow></mrow></math>. This tests whether the two predictions of neighbourhood population are independent from the actual neighbourhood population. The p-values from <a href="#table7">Table 7</a> reveals that we can cannot reject the null hypothesis of independence for the population derived from the unadjusted households. The adjusted households fare better: the p-value of 1 and <i>x</i><sup>2</sup> value of 0 suggest that the population from the adjusted households is as good as identical with the constraint.</p><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Chi-squared test of neighbourhood population.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th/>
+<th>X-squared</th>
+<th>p-value</th>
+<th>df</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>unadjusted households</td>
+<td>617</td>
+<td>0</td>
+<td>94</td>
+</tr>
+<tr>
+<td>adjusted households</td>
+<td>0</td>
+<td>1</td>
+<td>94</td>
+</tr>
+</tbody>
+</table></div></figure><p data-astro-cid-qsyhzaho>In addition to ensuring correspondence between the household- and individual-level tables, our mixed integer programming aims at minimising changes to the household composition. It is therefore necessary to investigate whether we also achieve this goal. <a href="#fig6">Figure 6</a> plots the frequency of households by number of members before (yellow) and after (purple) the adjustments. The figure suggests that our methodology leads to a slight increase in the number of households with one and three members relative to the unadjusted household.</p><figure id="fig6" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-fig6.Cbew7Uuk_18tOo0.webp" class="figure-lightbox-trigger" data-pswp-width="408" data-pswp-height="289" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-fig6.Cbew7Uuk_18tOo0.webp" alt width="408" height="289" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 6.</strong><span data-astro-cid-dzaleqsp> Number of members in the adjusted (purple) and in the unadjusted households (yellow).</span></figcaption></figure><p data-astro-cid-qsyhzaho><a href="#fig7">Figure 7</a> plots the number of household members across age groups in the unadjusted (yellow) and adjusted (purple) households. It does not give evidence of very large changes to the age composition. Adjustments were primarily carried out in the age group 15 to 44.</p><figure id="fig7" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-fig7.8wbubmUv_t6T1D.webp" class="figure-lightbox-trigger" data-pswp-width="476" data-pswp-height="337" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-fig7.8wbubmUv_t6T1D.webp" alt width="476" height="337" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 7.</strong><span data-astro-cid-dzaleqsp> Number of household members by age in the unadjusted (yellow) and adjusted (purple) households.</span></figcaption></figure><p data-astro-cid-qsyhzaho><a href="#fig8">Figure 8</a> plots the distribution of the percentage men and women per household across the unadjusted (yellow) and adjusted (purple) households. The figure shows that the share of households with an equal gender balance has been reduced, while there is a slight increase in the share of households consisting of only men. As above, the figure suggests that the adjusted households are fairly similar to the unadjusted households.</p><figure id="fig8" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-fig8.DlEUhnIe_Z2ewGT8.webp" class="figure-lightbox-trigger" data-pswp-width="476" data-pswp-height="336" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-fig8.DlEUhnIe_Z2ewGT8.webp" alt width="476" height="336" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 8.</strong><span data-astro-cid-dzaleqsp> Percentage members gender in the unadjusted (yellow) and adjusted (purple) households.</span></figcaption></figure></div></details><details id="s5" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">5. Conclusions</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><p data-astro-cid-qsyhzaho>This article reports on the creation of a spatial microsimulation model of Amsterdam. In the paper we have presented a methodology for joint synthesis of individuals, households and dwellings. Our proposed methodology encompasses the following steps: we first create separate household- and individual-level tables using IPF. Next, we allocate persons to households, resolving inconsistencies between the household- and individual-level tables using mixed integer programming. Our internal validation suggests that the method leads to a significant improvement in consistency between the two tables.</p><p data-astro-cid-qsyhzaho>A major usage of spatial microsimulation is to construct a synthetic population for bottom-up models of mobility and residential energy use. These models are important tools in scenario analysis and policy analysis. However, this requires including variables that are relevant to mobility choices and energy use. In our case, the Dutch housing demand survey WOON provides detailed information about dwellings, households and persons. As such, one would be able to estimate energy use based on the household table alone. However, as evidenced by <a href="#fig5">Figure 5</a>, a population of individuals calculated from the household table deviates substantially from the population —in some cases by up to 30%. Such inconsistencies could potentially be solved by an algorithm such as the IPU. In fact, we first attempted to do so, but with limited success (see <a href="#sA-1">Appendix A.1</a>). We suspect that the number or combination of constraints in our case are such that the IPU becomes vulnerable to the empty cell problem.</p><p data-astro-cid-qsyhzaho>We provide, in our opinion, a fairly intuitive method for solving the problem of inconsistency. Granted, combining synthetic households and persons drawn from different surveys will always be difficult: a sample-free approach may be easier to implement and could indeed give a better fit (<a href="#bib5">Barthelemy &amp; Toint, 2013</a>; <a href="#bib11">Jeong, Lee, Kim, &amp; Shin, 2016</a>). We are of the opinion that a sample-based approach such as presented here is useful in practice. The survey used for creating the seed may well be used for purposes related to the spatial microsimulation exercise – for example to estimate the model used to predict a small-scale indicator. Such a direct connection between the population synthesis and the prediction is valuable in practical applications of spatial microsimulation.</p></div></details></div><details id="app1" class="article-section article-section--collapsible" data-astro-cid-qsyhzaho><summary data-astro-cid-qsyhzaho><h2 data-astro-cid-qsyhzaho="true">Appendix</h2></summary><div class="article-section__body" data-astro-cid-qsyhzaho><section id="sA-1" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">A.1 Results from IPU</h3><p data-astro-cid-qsyhzaho>In this Appendix we construct a combined household-individuals’ table using the IPU algorithm implemented in the [a115]im[a80]op package (<a href="#bib22">Templ, Meindl, Kowarik, &amp; Dupriez, 2017</a>). As mentioned, WOON also gives information about the number of household members by age category as well as the total household size. Since we have four age categories, we run the IPU with a total of 37 constraints: 32 for households and 5 for individuals. In the majority of the neighbourhoods, the algorithm did not converge. <a href="#figA1">Figure A.1</a> shows the correlation coeffient and RMSE for the fit from IPU. The left panel suggests that problems with convergence are concentrated in a couple of neighbourhoods. The right panel of the figure suggests that the RMSE are orders of magnitude larger than in the IPF presented in the tables in the text. We believe that the problems we experience with IPU are related to the large number and composition of constraints.</p><figure id="figA1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-figA1.CtBANtH__rxz0T.webp" class="figure-lightbox-trigger" data-pswp-width="476" data-pswp-height="336" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-figA1.CtBANtH__rxz0T.webp" alt width="476" height="336" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure A.1.</strong><span data-astro-cid-dzaleqsp> Correlation and RMSE for the synthetic population created with IPU.</span></figcaption></figure><p data-astro-cid-qsyhzaho>It is well known that the ordering of the constraints matter for both IPF and IPU: the best fit is likely to be seen with last constraint. <a href="#figA2">Figure A.2</a> shows the residuals by constraints including the ordering of the constraints (the constraint on the top is the last). The blue dot shows the mean residual of each constraint. The figure clearly illustrates that the residuals are smallest for the last constraints (number of individuals) and that they in general are quite small for all individual-level constraints. The IPU algorithm seems to encounter difficulties with the constraints on the number of households, district heating and apartment.</p><figure id="figA2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00184-figA2.Sbn6BNB__1Ngd8N.webp" class="figure-lightbox-trigger" data-pswp-width="476" data-pswp-height="475" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00184-figA2.Sbn6BNB__1Ngd8N.webp" alt width="476" height="475" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure A.2.</strong><span data-astro-cid-dzaleqsp> Residuals by constraints for the synthetic population created with IPU.</span></figcaption></figure></section><section id="sA-2" class="article-section" data-astro-cid-qsyhzaho><h3 data-astro-cid-qsyhzaho="true">A.2 Descriptive statistics of the constraints</h3><figure id="tableA1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A.1.</strong><span data-astro-cid-dzaleqsp> Individual-level constraints.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Mean</th>
+<th>Standard deviation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ind_lmstatusactive</td>
+<td>494i</td>
+<td>3182.8</td>
+</tr>
+<tr>
+<td>ind_lmstatusnot-active</td>
+<td>3594</td>
+<td>2605.4</td>
+</tr>
+<tr>
+<td>ind_ethndutch</td>
+<td>4211</td>
+<td>2665.4</td>
+</tr>
+<tr>
+<td>ind_ethnforeign</td>
+<td>4324</td>
+<td>3833.8</td>
+</tr>
+<tr>
+<td>ind_incomehigh</td>
+<td>1394</td>
+<td>ii84.4</td>
+</tr>
+<tr>
+<td>ind_incomelow</td>
+<td>4445</td>
+<td>3i97.i</td>
+</tr>
+<tr>
+<td>ind_incomemid</td>
+<td>2697</td>
+<td>i857.9</td>
+</tr>
+<tr>
+<td>ind_genderman</td>
+<td>4204</td>
+<td>2762.4</td>
+</tr>
+<tr>
+<td>ind_genderwoman</td>
+<td>433i</td>
+<td>2865.2</td>
+</tr>
+<tr>
+<td>ind_age00_14</td>
+<td>i334</td>
+<td>ii08.0</td>
+</tr>
+<tr>
+<td>ind_age15_44</td>
+<td>4099</td>
+<td>2674.7</td>
+</tr>
+<tr>
+<td>ind_age45_64</td>
+<td>2095</td>
+<td>i467.5</td>
+</tr>
+<tr>
+<td>ind_age65_AO</td>
+<td>i007</td>
+<td>776.5</td>
+</tr>
+<tr>
+<td>n_ind</td>
+<td>8535</td>
+<td>56i8.7</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A.2.</strong><span data-astro-cid-dzaleqsp> Household-level constraints.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th>Var</th>
+<th>Mean</th>
+<th>SD</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dw_type1owner</td>
+<td>1247.2</td>
+<td>861.0</td>
+</tr>
+<tr>
+<td>dw_type1rental</td>
+<td>3391.4</td>
+<td>2278.5</td>
+</tr>
+<tr>
+<td>dw_type2apartment</td>
+<td>4074.4</td>
+<td>2838.3</td>
+</tr>
+<tr>
+<td>dw_type2house</td>
+<td>564.2</td>
+<td>885.5</td>
+</tr>
+<tr>
+<td>dw_byearbefore.1945</td>
+<td>2070.9</td>
+<td>2315.3</td>
+</tr>
+<tr>
+<td>dw_byear1945.1969</td>
+<td>678.4</td>
+<td>1343.6</td>
+</tr>
+<tr>
+<td>dw_byear1970.1989</td>
+<td>778.4</td>
+<td>1576.8</td>
+</tr>
+<tr>
+<td>dw_byear1990.and.later</td>
+<td>1111.0</td>
+<td>1424.9</td>
+</tr>
+<tr>
+<td>hh_typesingle</td>
+<td>2536.6</td>
+<td>1722.9</td>
+</tr>
+<tr>
+<td>hh_typew_child</td>
+<td>1160.1</td>
+<td>913.4</td>
+</tr>
+<tr>
+<td>hh_typewo_child</td>
+<td>942.0</td>
+<td>575.0</td>
+</tr>
+<tr>
+<td>hh_incomehigh</td>
+<td>747.2</td>
+<td>592.1</td>
+</tr>
+<tr>
+<td>hh_incomelow</td>
+<td>2445.1</td>
+<td>1739.0</td>
+</tr>
+<tr>
+<td>hh_incomemid</td>
+<td>1446.4</td>
+<td>943.7</td>
+</tr>
+<tr>
+<td>hh_gender_opman</td>
+<td>2287.3</td>
+<td>1469.7</td>
+</tr>
+<tr>
+<td>hh_gender_opwoman</td>
+<td>2351.4</td>
+<td>1516.3</td>
+</tr>
+<tr>
+<td>hh_ethn_opdutch</td>
+<td>2331.3</td>
+<td>1541.5</td>
+</tr>
+<tr>
+<td>hh_ethn_opforeign</td>
+<td>2307.4</td>
+<td>1928.8</td>
+</tr>
+<tr>
+<td>hh_lmstatusactive</td>
+<td>2698.0</td>
+<td>1730.9</td>
+</tr>
+<tr>
+<td>hh_lmstatusnot.active</td>
+<td>1940.7</td>
+<td>1340.5</td>
+</tr>
+<tr>
+<td>dw_value00_199</td>
+<td>1545.4</td>
+<td>2169.1</td>
+</tr>
+<tr>
+<td>dw_value200_299</td>
+<td>1965.0</td>
+<td>1759.5</td>
+</tr>
+<tr>
+<td>dw_value300_399</td>
+<td>646.1</td>
+<td>893.8</td>
+</tr>
+<tr>
+<td>dw_value400_499</td>
+<td>218.5</td>
+<td>330.8</td>
+</tr>
+<tr>
+<td>dw_value500_AO</td>
+<td>263.7</td>
+<td>661.3</td>
+</tr>
+<tr>
+<td>dw_dheatno</td>
+<td>4296.3</td>
+<td>2805.9</td>
+</tr>
+<tr>
+<td>dw_dheatyes</td>
+<td>342.4</td>
+<td>864.2</td>
+</tr>
+<tr>
+<td>dw_size.6.51.</td>
+<td>1135.7</td>
+<td>1108.2</td>
+</tr>
+<tr>
+<td>dw_size.51.68.</td>
+<td>1226.5</td>
+<td>966.2</td>
+</tr>
+<tr>
+<td>dw_size.68.89.</td>
+<td>1152.7</td>
+<td>965.1</td>
+</tr>
+<tr>
+<td>dw_size.89.3e.04.</td>
+<td>1123.8</td>
+<td>1131.9</td>
+</tr>
+<tr>
+<td>n_hh</td>
+<td>4638.7</td>
+<td>2980.3</td>
+</tr>
+</tbody>
+</table></div></figure></section></div></details><details id="references" class="article-section article-section--collapsible" data-astro-cid-oer3kof4><summary data-astro-cid-oer3kof4><h2 data-astro-cid-oer3kof4>References</h2></summary><ol class="reference-list" data-astro-cid-oer3kof4><li id="bib1" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Arentze, T, Timmermans, H, Hofman, F (2007). <span data-astro-cid-oer3kof4>Creating synthetic household populations: Problems and approach</span>. <em data-astro-cid-oer3kof4>Transportation Research Record: Journal of the Transportation Research Board</em>, <strong data-astro-cid-oer3kof4>2014</strong>, 85–91.</span></li><li id="bib2" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Auld, J, Mohammadian, A (2010). <span data-astro-cid-oer3kof4>Efficient methodology for generating synthetic populations with multiple control levels</span>. <em data-astro-cid-oer3kof4>Transportation Research Record: Journal of the Transportation Research Board</em>, <strong data-astro-cid-oer3kof4>2175</strong>, 138–147.</span></li><li id="bib3" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ballas, D, Rossiter, D, Thomas, B, Clarke, G, Dorling, D (2005). <span data-astro-cid-oer3kof4>Geography matters: Simulating the local impacts of national social policies</span>.</span></li><li id="bib4" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Barthelemy, J, Suesse, T (2015). <span data-astro-cid-oer3kof4>Retrieved from</span>.</span></li><li id="bib5" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Barthelemy, J, Toint, PL (2013). <span data-astro-cid-oer3kof4>Synthetic population generation without a sample</span>. <em data-astro-cid-oer3kof4>Transportation Science</em>, <strong data-astro-cid-oer3kof4>47</strong>, 266–279.</span></li><li id="bib6" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Beckman, RJ, Baggerly, KA, McKay, MD (1996). <span data-astro-cid-oer3kof4>Creating synthetic baseline populations</span>. <em data-astro-cid-oer3kof4>Transportation Research Part A: Policy and Practice</em>, <strong data-astro-cid-oer3kof4>30</strong>, 415–429.</span></li><li id="bib7" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Blocker, A (2016). <span data-astro-cid-oer3kof4>Retrieved from</span>.</span></li><li id="bib8" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Burden, S, Steel, D (2016). <span data-astro-cid-oer3kof4>Constraint Choice for Spatial Microsimulation</span>.</span></li><li id="bib9" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Deming, W, Stephan, F (1940). <span data-astro-cid-oer3kof4>On a least squares adjustment of a sampled frequency table when the expected marginal totals are known</span>. <em data-astro-cid-oer3kof4>The Annals of Mathematical Statistics</em>, <strong data-astro-cid-oer3kof4>11</strong>, 427–444.</span></li><li id="bib10" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Guo, J, Bhat, C (2007). <span data-astro-cid-oer3kof4>Population synthesis for microsimulating travel behavior</span>. <em data-astro-cid-oer3kof4>Transportation Research Record: Journal of the Transportation Research Board</em>, <strong data-astro-cid-oer3kof4>2014</strong>, 92–101.</span></li><li id="bib11" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Jeong, B, Lee, W, Kim, D-S, Shin, H (2016). <span data-astro-cid-oer3kof4>Copula-Based Approach to Synthetic Population Generation</span>. <em data-astro-cid-oer3kof4>PLOS ONE</em>, <strong data-astro-cid-oer3kof4>11</strong>, 1–28. <a href="https://doi.org/10.1371/journal.pone.0159496" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1371/journal.pone.0159496</a></span></li><li id="bib12" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Lenormand, M, Deffuant, G (2012). <span data-astro-cid-oer3kof4>Generating a synthetic population of individuals in households: Sample-free vs sample-based methods</span>.</span></li><li id="bib13" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Lovelace, R, Ballas, D (2013). <span data-astro-cid-oer3kof4>‘Truncate, replicate, sample’: A method for creating integer weights for spatial microsimulation</span>. <em data-astro-cid-oer3kof4>Computers, Environment and Urban Systems</em>, <strong data-astro-cid-oer3kof4>41</strong>, 1–11.</span></li><li id="bib14" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Lovelace, R, Dumont, M (2016). <em data-astro-cid-oer3kof4>Spatial microsimulation with R</em>. CRC Press.</span></li><li id="bib15" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ma, L, Srinivasan, S (2015). <span data-astro-cid-oer3kof4>Synthetic Population Generation with Multilevel Controls: A Fitness-Based Synthesis Approach and Validations</span>. <em data-astro-cid-oer3kof4>Computer-Aided Civil and Infrastructure Engineering</em>, <strong data-astro-cid-oer3kof4>30</strong>, 135–150.</span></li><li id="bib16" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4> (2018). <span data-astro-cid-oer3kof4>The MOSEK optimization software</span>.</span></li><li id="bib17" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Muñoz, E, Dochev, I, Seller, H, Peters, I (2016). <span data-astro-cid-oer3kof4>Constructing a synthetic city for estimating spatially disaggregated heat demand</span>. <em data-astro-cid-oer3kof4>International Journal of Microsimulation</em>, <strong data-astro-cid-oer3kof4>9</strong>, 66–88.</span></li><li id="bib18" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Muñoz, E, Peters, I (2014). <span data-astro-cid-oer3kof4>Constructing an Urban Microsimulation Model to Assess the Influence of Demographics on Heat Consumption</span>. <em data-astro-cid-oer3kof4>International Journal of Microsimulation</em>, <strong data-astro-cid-oer3kof4>7</strong>, 127–157.</span></li><li id="bib19" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Namazi-Rad, M.-R, Tanton, R, Steel, D, Mokhtarian, P, Das, S (2017). <span data-astro-cid-oer3kof4>An unconstrained statistical matching algorithm for combining individual and household level geo-specific census and survey data</span>. <em data-astro-cid-oer3kof4>Computers, Environment and Urban Systems</em>, <strong data-astro-cid-oer3kof4>63</strong>, 3–14.</span></li><li id="bib20" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Pritchard, DR, Miller, EJ (2012). <span data-astro-cid-oer3kof4>Advances in population synthesis: Fitting many attributes per agent and fitting to household and person margins simultaneously</span>. <em data-astro-cid-oer3kof4>Transportation</em>, <strong data-astro-cid-oer3kof4>39</strong>, 685–704. <a href="https://doi.org/10.1007/s11116-011-9367-4" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.1007/s11116-011-9367-4</a></span></li><li id="bib21" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Tanton, R (2014). <span data-astro-cid-oer3kof4>A review of spatial microsimulation methods</span>. <em data-astro-cid-oer3kof4>International Journal of Microsimulation</em>, <strong data-astro-cid-oer3kof4>7</strong>, 4–25.</span></li><li id="bib22" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Templ, M, Meindl, B, Kowarik, A, Dupriez, O (2017). <span data-astro-cid-oer3kof4>Simulation of Synthetic Complex Data: The R Package simPop</span>. <em data-astro-cid-oer3kof4>Journal of Statistical Software</em>, <strong data-astro-cid-oer3kof4>79</strong>, 1–38. <a href="https://doi.org/10.18637/jss.v079.i10" target="_blank" rel="noopener" data-astro-cid-oer3kof4>https://doi.org/10.18637/jss.v079.i10</a></span></li><li id="bib23" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Thissen, M, Löfgren, H (1998). <span data-astro-cid-oer3kof4>A new approach to SAM updating with an application to Egypt</span>. <em data-astro-cid-oer3kof4>Environment and Planning A</em>, <strong data-astro-cid-oer3kof4>30</strong>, 1991–2003.</span></li><li id="bib24" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Tomintz, MN, Clarke, GP, Rigby, J. E (2008). <span data-astro-cid-oer3kof4>The geography of smoking in Leeds: Estimating individual smoking rates and the implications for the location of stop smoking services</span>.</span></li><li id="bib25" class="reference-item" data-astro-cid-oer3kof4><span data-astro-cid-oer3kof4>Ye, X, Konduri, K, Pendyala, RM, Sana, B, Waddell, P (2009). <span data-astro-cid-oer3kof4>A methodology to match distributions of both household and person attributes in the generation of synthetic populations</span>.</span></li></ol></details><details id="info" class="article-section article-section--collapsible" data-astro-cid-m3fa5h5a><summary data-astro-cid-m3fa5h5a><h2 data-astro-cid-m3fa5h5a>Article and author information</h2></summary><div class="article-section__body" data-astro-cid-m3fa5h5a><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Author details</h3><ol class="article-info__author-list" data-astro-cid-m3fa5h5a><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Trond Husby</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Netherlands Environmental Assessment Agency (PBL), Netherlands</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:trond.husby@pbl.nl" data-astro-cid-m3fa5h5a>trond.husby@pbl.nl</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Olga Ivanova</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Netherlands Environmental Assessment Agency (PBL), Netherlands</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:olga.ivanova@pbl.nl" data-astro-cid-m3fa5h5a>olga.ivanova@pbl.nl</a></p></li><li class="article-info__author" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Mark Thissen</h4><p class="article-info__detail" data-astro-cid-m3fa5h5a>Netherlands Environmental Assessment Agency (PBL), Netherlands</p><p class="article-info__detail" data-astro-cid-m3fa5h5a><strong data-astro-cid-m3fa5h5a>For correspondence:</strong> <a href="mailto:mark.thissen@pbl.nl" data-astro-cid-m3fa5h5a>mark.thissen@pbl.nl</a></p></li></ol></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Acknowledgements</h3><p data-astro-cid-m3fa5h5a>The research leading to this paper has been carried out under the Horizon 2020 project Clair-City. This project has received funding from the European Research Council (ERC) under the European Union’s Horizon 2020 research and innovation programme. Hans van Amsterdam (PBL) helped with collecting the Dutch cadaster data. The paper has benefited from comments from consortium members and from colleagues at PBL.</p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Publication history</h3><p data-astro-cid-m3fa5h5a><a href="/articles/00184" data-astro-cid-m3fa5h5a>Version of Record published: August 31, 2018 (version 1)</a></p></section><section class="article-info__section" data-astro-cid-m3fa5h5a><h3 data-astro-cid-m3fa5h5a>Copyright</h3><p data-astro-cid-m3fa5h5a>© 2018, Husby et al.</p><p data-astro-cid-m3fa5h5a>This article is distributed under the terms of the <a href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution License</a>, which permits unrestricted use and redistribution provided that the original author and source are credited.</p></section></div></details><footer class="article-meta" data-astro-cid-m3fa5h5a><h4 data-astro-cid-m3fa5h5a>Categories and tags</h4><ul class="article-meta__list" data-astro-cid-m3fa5h5a><li data-astro-cid-m3fa5h5a><a href="/articles/research-article" data-astro-cid-m3fa5h5a>Research article</a></li><li data-astro-cid-m3fa5h5a><a href="/subjects/spatial-microsimulation" data-pagefind-filter="Research category:Spatial microsimulation" data-astro-cid-m3fa5h5a>Spatial microsimulation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=spatial%20microsimulation" data-astro-cid-m3fa5h5a>spatial microsimulation</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=iterative%20proportional%20fitting" data-astro-cid-m3fa5h5a>iterative proportional fitting</a></li><li data-astro-cid-m3fa5h5a><a class="article-meta__tag" href="/search?q=mixed%20integer%20programming" data-astro-cid-m3fa5h5a>mixed integer programming</a></li></ul></footer></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/_id_.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

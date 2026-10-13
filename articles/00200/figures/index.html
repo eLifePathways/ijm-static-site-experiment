@@ -1,0 +1,826 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Figures and data in Spatial microsimulation of osteoarthritis prevalence at the small area level in England – Constraint selection for a 2-stage microsimulation process | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00200/figures"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.figures-page__summary[data-astro-cid-uy5dlehv]{color:var(--color-ink-muted);margin-block-end:var(--space-m)}@media (width>=75em){.article-content-grid[data-astro-cid-uy5dlehv]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-astro-cid-uy5dlehv><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/spatial-microsimulation-health" data-astro-cid-ak4gb66a>Spatial Microsimulation, Health</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Aug 31, 2019</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Spatial microsimulation of osteoarthritis prevalence at the small area level in England – Constraint selection for a 2-stage microsimulation process</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Onosi Sylvia Ifesemen, Thomas Bestwick-Stevenson, Kimberley L. Edwards</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Centre for Sports, Exercise and Osteoarthritis, Versus Arthritis, Nottingham, United Kingdom; Academic Orthopaedics, Trauma and Sports medicine, School of Medicine, Queens Medical Centre, University of Nottingham, Nottingham, United Kingdom</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/12-2/volume-12-2-summer-2019" data-astro-cid-ak4gb66a>Volume 12(2) Summer 2019</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> O. Ifesemen, T. Bestwick-Stevenson, K. Edwards; 2019; <span data-astro-cid-ak4gb66a>Spatial microsimulation of osteoarthritis prevalence at the small area level in England – Constraint selection for a 2-stage microsimulation process</span>; International Journal of Microsimulation; 12(2); 37–51. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00200" data-astro-cid-ak4gb66a>10.34196/ijm.00200</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>The presence of identical benchmark/constraint variables in both geographic and survey datasets is a principal requirement for static spatial microsimulation models, particularly in the field of medicine and health sciences. This is also a key limitation of static spatial models because geographical datasets rarely contain all variables required to realistically simulate an outcome. We believe this challenge can be overcome by a multilevel approach to spatial microsimulation using a case study of estimating the small area level prevalence of knee osteoarthritis in England. In the paper, we describe constraint selection and demonstrate a novel two–stage spatial microsimulation procedure using SimObesity, a static deterministic combinatorial spatial microsimulation model. We also present the validation parameters of our synthetic data, important areas for consideration and avenues for future research. Our findings demonstrate that important benchmark variables absent from the geographical dataset can be incorporated into spatial microsimulation models without compromising model robustness.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00200/ijm-00200.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00200.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00200.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-uy5dlehv><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00200" class="view-tabs__link" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00200/figures" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#figures" data-astro-cid-twdwaz5s>Figures</a></li><li data-astro-cid-twdwaz5s><a href="#tables" data-astro-cid-twdwaz5s>Tables</a></li></ul></details></div><div class="article-content" data-astro-cid-uy5dlehv><p class="figures-page__summary" data-astro-cid-uy5dlehv>This article contains 4 figures and 7 tables.</p><details id="figures" class="article-section article-section--collapsible" open data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Figures</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00200-fig001.xbUIRTMj_jn8ms.webp" class="figure-lightbox-trigger" data-pswp-width="2835" data-pswp-height="1252" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00200-fig001.xbUIRTMj_jn8ms.webp" alt width="2835" height="1252" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> 2-stage Spatial Microsimulation</span></figcaption></figure><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00200-fig002.BOfoTEPu_IXN8i.webp" class="figure-lightbox-trigger" data-pswp-width="1594" data-pswp-height="1089" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00200-fig002.BOfoTEPu_IXN8i.webp" alt width="1594" height="1089" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Scatter plots for age, sex and NSSEC categories, simulated counts from the hybrid dataset versus census totals</span></figcaption></figure><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00200-fig003.BGbfRplU_22VSDv.webp" class="figure-lightbox-trigger" data-pswp-width="1594" data-pswp-height="1017" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00200-fig003.BGbfRplU_22VSDv.webp" alt width="1594" height="1017" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Scatter plots for age, sex and NSSEC categories, simulated counts from the final dataset versus census</span></figcaption></figure><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00200-fig004.fgIb40uN_Z1zcKFA.webp" class="figure-lightbox-trigger" data-pswp-width="768" data-pswp-height="934" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00200-fig004.fgIb40uN_Z1zcKFA.webp" alt width="768" height="934" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Comparing regional aggregates of our simulated synthetic microdata data with ELSA data (grouped by regions)</span></figcaption></figure></div></details><details id="tables" class="article-section article-section--collapsible" data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Tables</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Names and categories of covariates used in our analyses</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Variable</th>
+<th align="left">Categories</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><b>Age</b></td>
+<td align="left">50–59 years, 60–69 years, 70–79 years, 80–89 years, ≥90 years</td>
+</tr>
+<tr>
+<td align="left"><b>Sex</b></td>
+<td align="left">Male, Female</td>
+</tr>
+<tr>
+<td align="left"><b><a href="#T1_FN1">*</a>Ethnicity</b></td>
+<td align="left">White, Non-White</td>
+</tr>
+<tr>
+<td align="left"><b>Health</b></td>
+<td align="left">Good, Fair, Poor</td>
+</tr>
+<tr>
+<td align="left"><b>BMI</b></td>
+<td align="left">Underweight, Overweight &amp; Obese</td>
+</tr>
+<tr>
+<td align="left"><b><a href="#T1_FN1">*</a>NSSEC</b></td>
+<td align="left">Higher managerial &amp; professional, Lower-professional, Intermediate Occupations, Lower supervisory &amp; technical, Semi routine, routine &amp; other.</td>
+</tr>
+<tr>
+<td align="left"><b>Marital Status</b></td>
+<td align="left">Single, Married, Separated, Divorced, Widowed</td>
+</tr>
+<tr>
+<td align="left"><b>Level of Education</b></td>
+<td align="left">NVQ4&amp;5, Higher Education below Degree, NVQ3, NVQ2, NVQ1</td>
+</tr>
+<tr>
+<td align="left"><b>Smoking history</b></td>
+<td align="left">Never smoker, Ex-smoker, Current smoker</td>
+</tr>
+<tr>
+<td align="left"><b>Alcohol</b></td>
+<td align="left">Never, once or twice a year, Every couple of Months, Once or twice a month, Once or twice a week, Every other day, Everyday</td>
+</tr>
+<tr>
+<td align="left"><b>Fruit &amp; Vegetable Consumption/week</b></td>
+<td align="left">Less than 5 portions, Greater than 5 portions</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Categorised to match ELSA.</p></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Frequency distribution of variables in geographical (census) and survey (HSE and ELSA) datasets</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" colspan="2">Variables/categories</th>
+<th align="left">ELSA, n (%)</th>
+<th align="left">HSE, n (%)</th>
+<th align="left">Census LSOA, n (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="5"><b>Age</b></td>
+<td align="left">50–59 years</td>
+<td align="left">2,062 (22.49)</td>
+<td align="left">4,901 (32.67)</td>
+<td align="left">6,397,087 (35.09)</td>
+</tr>
+<tr>
+<td align="left">60–69 years</td>
+<td align="left">3,451 (37.64)</td>
+<td align="left">4,018 (32.09)</td>
+<td align="left">5,680,431 (31.16)</td>
+</tr>
+<tr>
+<td align="left">70–79 years</td>
+<td align="left">2,444 (26.66)</td>
+<td align="left">2,837(22.66)</td>
+<td align="left">3,713,474 (20.37)</td>
+</tr>
+<tr>
+<td align="left">80–89 years</td>
+<td align="left">1,005 (10.96)</td>
+<td align="left">1,383 (11.05)</td>
+<td align="left">2,032,084 (11.16)</td>
+</tr>
+<tr>
+<td align="left">≥90 years</td>
+<td align="left">207 (2.26)</td>
+<td align="left">192 (1.53)</td>
+<td align="left">403,817 (2.22)</td>
+</tr>
+<tr>
+<td align="left" rowspan="2"><b>Sex</b></td>
+<td align="left">Female</td>
+<td align="left">5,096 (55.58)</td>
+<td align="left">6,756 (53.96)</td>
+<td align="left">9,658,440 (52.98)</td>
+</tr>
+<tr>
+<td align="left">Male</td>
+<td align="left">4,073 (44.42)</td>
+<td align="left">5,765 (46.04)</td>
+<td align="left">8,571,453 (47.02)</td>
+</tr>
+<tr>
+<td align="left" rowspan="5"><b><a href="#T2_FN1">*</a>Marital</b></td>
+<td align="left">Single, Cohabitees</td>
+<td align="left">603 (6.58)</td>
+<td align="left">1,425 (11.39)</td>
+<td align="left">1,464,682 (8.03)</td>
+</tr>
+<tr>
+<td align="left">Married, Civil partnerships</td>
+<td align="left">5,872 (64.06)</td>
+<td align="left">7,726 (61.73)</td>
+<td align="left">11,167,413 (61.26)</td>
+</tr>
+<tr>
+<td align="left">Separated</td>
+<td align="left">25 (0.27)</td>
+<td align="left">271 (2.17)</td>
+<td align="left">420,140 (2.31)</td>
+</tr>
+<tr>
+<td align="left">Divorced</td>
+<td align="left">1,070 (11.67)</td>
+<td align="left">1,268 (10.13)</td>
+<td align="left">2,306,990 (12.65)</td>
+</tr>
+<tr>
+<td align="left">Widowed</td>
+<td align="left">1,597 (17.42)</td>
+<td align="left">1,826 (14.59)</td>
+<td align="left">2,870,668 (15.75)</td>
+</tr>
+<tr>
+<td align="left" rowspan="2"><b><a href="#T2_FN1">*</a>Ethnicity</b></td>
+<td align="left">White</td>
+<td align="left">8,845 (96.49)</td>
+<td align="left">11,792 (94.54)</td>
+<td align="left">17,027,207 (93.40)</td>
+</tr>
+<tr>
+<td align="left">Non-white</td>
+<td align="left">322 (3.51)</td>
+<td align="left">681 (5.46)</td>
+<td align="left">1,202,686 (6.60)</td>
+</tr>
+<tr>
+<td align="left" rowspan="5"><b><a href="#T2_FN1">*</a>NSSEC</b></td>
+<td align="left">Higher Managerial &amp; Professional</td>
+<td align="left">3,167 (34.74)</td>
+<td align="left">3,982 (32.36)</td>
+<td align="left">5,475,646 (30.04)</td>
+</tr>
+<tr>
+<td align="left">Lower Managerial</td>
+<td align="left">1,249 (13.70)</td>
+<td align="left">1,922 (15.57)</td>
+<td align="left">2,624,312 (14.40)</td>
+</tr>
+<tr>
+<td align="left">Intermediate Occupations</td>
+<td align="left">1,059 (11.62)</td>
+<td align="left">1,298 (10.52)</td>
+<td align="left">2,080,200 (11.41)</td>
+</tr>
+<tr>
+<td align="left">Lower supervisory &amp; Technical</td>
+<td align="left">846 (9.28)</td>
+<td align="left">937 (7.59)</td>
+<td align="left">1,457,493(7.99)</td>
+</tr>
+<tr>
+<td align="left">Semi routine, routine &amp; others</td>
+<td align="left">2,794 (30.65)</td>
+<td align="left">4,204 (34.06)</td>
+<td align="left">6,592,242(36.16)</td>
+</tr>
+<tr>
+<td align="left" rowspan="7"><b><a href="#T2_FN1">*</a>Education</b></td>
+<td align="left">NVQ 4 &amp; 5</td>
+<td align="left">1,551 (17.06)</td>
+<td align="left">2,191 (17.50)</td>
+<td align="left">6,965,766 (38.21)</td>
+</tr>
+<tr>
+<td align="left">Higher Education, below Degree</td>
+<td align="left">1,268 (13.94)</td>
+<td align="left">1,459 (11.65)</td>
+<td align="left">1,773,428 (9.73)</td>
+</tr>
+<tr>
+<td align="left">NVQ3</td>
+<td align="left">752 (8.27)</td>
+<td align="left">1,173 (9.37)</td>
+<td align="left">1,930,079 (10.59)</td>
+</tr>
+<tr>
+<td align="left">NVQ2</td>
+<td align="left">1,703 (18.73)</td>
+<td align="left">2,336 (18.66)</td>
+<td align="left">991,560 (5.44)</td>
+</tr>
+<tr>
+<td align="left">NVQ1</td>
+<td align="left">366 (4.03)</td>
+<td align="left">514 (4.11)</td>
+<td align="left">1,254,681 (6.88)</td>
+</tr>
+<tr>
+<td align="left">Foreign/Other</td>
+<td align="left">1,043 (11.47)</td>
+<td align="left">353 (2.82)</td>
+<td align="left">4,180,862 (22.93)</td>
+</tr>
+<tr>
+<td align="left">No Qualification</td>
+<td align="left">2,410 (26.50)</td>
+<td align="left">4,444 (35.49)</td>
+<td align="left">1,133,517 (6.22)</td>
+</tr>
+<tr>
+<td align="left" rowspan="3"><b>Health</b></td>
+<td align="left">Excellent, good</td>
+<td align="left">6,330 (72.10)</td>
+<td align="left">8,010 (63.97)</td>
+<td align="left">11,213,005 (61.51)</td>
+</tr>
+<tr>
+<td align="left">Fair</td>
+<td align="left">1,729 (19.69)</td>
+<td align="left">3,079 (24.59)</td>
+<td align="left">4,856,203 (26.64)</td>
+</tr>
+<tr>
+<td align="left">Poor</td>
+<td align="left">720 (8.20)</td>
+<td align="left">1,425 (11.38)</td>
+<td align="left">2,160,685 (11.85)</td>
+</tr>
+<tr>
+<td align="left" rowspan="3"><b><a href="#T2_FN1">*</a>Smoke</b></td>
+<td align="left">Never smoker</td>
+<td align="left">3,275 (36.73)</td>
+<td align="left">5,777 (46.14)</td>
+<td align="left">–</td>
+</tr>
+<tr>
+<td align="left">Ex-smoker</td>
+<td align="left">4,790 (52.25)</td>
+<td align="left">4,910 (39.21)</td>
+<td align="left">–</td>
+</tr>
+<tr>
+<td align="left">Current Smoker</td>
+<td align="left">1,102 (12.02)</td>
+<td align="left">1,802 (14.39)</td>
+<td align="left">–</td>
+</tr>
+<tr>
+<td align="left" rowspan="4"><b><a href="#T2_FN1">*</a>BMI</b></td>
+<td align="left">Underweight</td>
+<td align="left">69 (0.93)</td>
+<td align="left">85 (0.82)</td>
+<td align="left">–</td>
+</tr>
+<tr>
+<td align="left">Normal</td>
+<td align="left">1,958 (26.52)</td>
+<td align="left">2,761 (26.58)</td>
+<td align="left">–</td>
+</tr>
+<tr>
+<td align="left">Overweight</td>
+<td align="left">3,029 (41.03)</td>
+<td align="left">4,380 (42.16)</td>
+<td align="left">–</td>
+</tr>
+<tr>
+<td align="left">Obese</td>
+<td align="left">2,327 (31.52)</td>
+<td align="left">3,163 (30.45)</td>
+<td align="left">–</td>
+</tr>
+<tr>
+<td align="left"><b>Knee Osteoarthritis</b></td>
+<td align="left">Yes</td>
+<td align="left">1,728 (18.85)</td>
+<td align="left">–</td>
+<td align="left">–</td>
+</tr>
+<tr>
+<td align="left"/>
+<td align="left">No</td>
+<td align="left">7,441 (81.15)</td>
+<td align="left">–</td>
+<td align="left">–</td>
+</tr>
+<tr>
+<td align="left" colspan="2"><b>TOTAL</b></td>
+<td align="left">9,169 (100)</td>
+<td align="left">12,521 (100)</td>
+<td align="left">18,229,893 (100)</td>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Variables with missing data in HSE & ELSA.</p></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> ELSA Univariate and Multivariate Logistic Regression Analysis – F test and P values</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" rowspan="2">Variables</th>
+<th align="left" colspan="2">Univariate</th>
+<th align="left" colspan="2">Final model</th>
+</tr>
+<tr>
+<th align="left">F - test</th>
+<th align="left">P value</th>
+<th align="left">F -test</th>
+<th align="left">P value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="#T3_FN1">*</a>Age</td>
+<td align="left">3.01</td>
+<td align="left">0.0172</td>
+<td align="left">0.43</td>
+<td align="left">0.9038</td>
+</tr>
+<tr>
+<td align="left">Sex</td>
+<td align="left">22.74</td>
+<td align="left">&lt;0.0001</td>
+<td align="left">20.67</td>
+<td align="left">&lt;0.0001</td>
+</tr>
+<tr>
+<td align="left">NSSEC</td>
+<td align="left">19.54</td>
+<td align="left">&lt;0.0001</td>
+<td align="left">6.15</td>
+<td align="left">0.0001</td>
+</tr>
+<tr>
+<td align="left">Health</td>
+<td align="left">174.26</td>
+<td align="left">&lt;0.0001</td>
+<td align="left">54.06</td>
+<td align="left">&lt;0.0001</td>
+</tr>
+<tr>
+<td align="left">BMI</td>
+<td align="left">47.93</td>
+<td align="left">&lt;0.0001</td>
+<td align="left">24.81</td>
+<td align="left">&lt;0.0001</td>
+</tr>
+<tr>
+<td align="left"><a href="#T3_FN2"><sup>†</sup></a>Illness</td>
+<td align="left">234</td>
+<td align="left">&lt;0.0001</td>
+<td align="left">76.7</td>
+<td align="left">&lt;0.0001</td>
+</tr>
+<tr>
+<td align="left">Marital</td>
+<td align="left">1.98</td>
+<td align="left">0.0953</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Ethnicity</td>
+<td align="left">1.85</td>
+<td align="left">0.1741</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Education</td>
+<td align="left">5,847</td>
+<td align="left">&lt;0.001</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Smoke</td>
+<td align="left">5.85</td>
+<td align="left">0.0029</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Alcohol</td>
+<td align="left">14.14</td>
+<td align="left">&lt;0.0001</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Fruit &amp; Vegetable consumption</td>
+<td align="left">3.94</td>
+<td align="left">0.0196</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+</tbody>
+</table><p class="table-footnote" data-astro-cid-dzaleqsp>Not significant but included in the final model.</p><p class="table-footnote" data-astro-cid-dzaleqsp>Found to be defined differently in the census and was subsequently dropped from analysis.</p></div></figure><figure id="table4" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 4.</strong><span data-astro-cid-dzaleqsp> ELSA Goodness of fit test</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Model parameters</th>
+<th align="left">Archer-Lemenshow GOF values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Age,Sex, NSSEC, Illness, Health, BMI</td>
+<td align="left">0.3374</td>
+</tr>
+<tr>
+<td align="left">Age, Sex, NSSEC, Health, BMI</td>
+<td align="left">0.4861</td>
+</tr>
+<tr>
+<td align="left">Age, Sex, Health, BMI</td>
+<td align="left">0.1147</td>
+</tr>
+<tr>
+<td align="left">Age, Sex, BMI</td>
+<td align="left">0.6283</td>
+</tr>
+<tr>
+<td align="left">Age, Sex, NSSEC</td>
+<td align="left">0.6708</td>
+</tr>
+<tr>
+<td align="left">Age, Sex,Health</td>
+<td align="left">0.7564</td>
+</tr>
+<tr>
+<td align="left">Age, NSSEC</td>
+<td align="left">0.3453</td>
+</tr>
+<tr>
+<td align="left"><b>Age, Sex, NSSEC, BMI</b></td>
+<td align="left"><b>0.9742</b></td>
+</tr>
+<tr>
+<td align="left">Age,Sex</td>
+<td align="left">0.5680</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table5" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 5.</strong><span data-astro-cid-dzaleqsp> HSE Univariate and Multivariate Multinomial Regression Analysis – F test and P values</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" rowspan="2">Variables</th>
+<th align="left" colspan="2">Univariate</th>
+<th align="left" colspan="2">Final model</th>
+</tr>
+<tr>
+<th align="left">F - test</th>
+<th align="left">P value</th>
+<th align="left">F -test</th>
+<th align="left">P value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><b>Age</b></td>
+<td align="left">2.88</td>
+<td align="left">&lt;0.0001</td>
+<td align="left">8.87</td>
+<td align="left">&lt;0.0001</td>
+</tr>
+<tr>
+<td align="left"><b>Sex</b></td>
+<td align="left">41.49</td>
+<td align="left">&lt;0.0001</td>
+<td align="left">35.73</td>
+<td align="left">&lt;0.0001</td>
+</tr>
+<tr>
+<td align="left"><b>NSSEC</b></td>
+<td align="left">7.22</td>
+<td align="left">&lt;0.0001</td>
+<td align="left">1.98</td>
+<td align="left">0.0139</td>
+</tr>
+<tr>
+<td align="left"><b>Health</b></td>
+<td align="left">35.24</td>
+<td align="left">&lt;0.0001</td>
+<td align="left">28.75</td>
+<td align="left">&lt;0.0001</td>
+</tr>
+<tr>
+<td align="left"><b>Marital</b></td>
+<td align="left">13.87</td>
+<td align="left">&lt;0.0001</td>
+<td align="left">28.89</td>
+<td align="left">&lt;0.0001</td>
+</tr>
+<tr>
+<td align="left"><b>Ethnicity</b></td>
+<td align="left">3046.85</td>
+<td align="left">&lt;0.0001</td>
+<td align="left">1236.81</td>
+<td align="left">&lt;0.0001</td>
+</tr>
+<tr>
+<td align="left"><b>Education</b></td>
+<td align="left">5.7</td>
+<td align="left">&lt;0.0001</td>
+<td align="left">2.29</td>
+<td align="left">0.0016</td>
+</tr>
+<tr>
+<td align="left"><b>Smoke</b></td>
+<td align="left">12.54</td>
+<td align="left">&lt;0.0001</td>
+<td align="left">14.63</td>
+<td align="left">&lt;0.0001</td>
+</tr>
+<tr>
+<td align="left"><b>Fruit &amp; Vegetable consumption</b></td>
+<td align="left">1.06</td>
+<td align="left">0.3843</td>
+<td align="left"/>
+<td align="left"/>
+</tr>
+</tbody>
+</table></div></figure><figure id="table6" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 6.</strong><span data-astro-cid-dzaleqsp> Frequency distribution of variables in Original and synthetic datasets</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" colspan="2">Variables/Categories</th>
+<th align="left">Census (%)</th>
+<th align="left">Hybrid, n (%)</th>
+<th align="left">Final, n (%)</th>
+<th align="left">ELSA, n (%)</th>
+<th align="left">HSE, n (%)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="5"><b>Age</b></td>
+<td align="left">50–59 years</td>
+<td align="left">35.09</td>
+<td align="left">35.02</td>
+<td align="left">34.59</td>
+<td align="left">22.49</td>
+<td align="left">32.67</td>
+</tr>
+<tr>
+<td align="left">60–69 years</td>
+<td align="left">31.16</td>
+<td align="left">31.16</td>
+<td align="left">31.19</td>
+<td align="left">37.64</td>
+<td align="left">32.09</td>
+</tr>
+<tr>
+<td align="left">70–79 years</td>
+<td align="left">20.37</td>
+<td align="left">20.48</td>
+<td align="left">20.75</td>
+<td align="left">26.66</td>
+<td align="left">22.66</td>
+</tr>
+<tr>
+<td align="left">80–89 years</td>
+<td align="left">11.16</td>
+<td align="left">11.15</td>
+<td align="left">11.24</td>
+<td align="left">10.96</td>
+<td align="left">11.05</td>
+</tr>
+<tr>
+<td align="left">≥90 years</td>
+<td align="left">2.22</td>
+<td align="left">2.19</td>
+<td align="left">2.21</td>
+<td align="left">2.26</td>
+<td align="left">1.53</td>
+</tr>
+<tr>
+<td align="left" rowspan="2"><b>Sex</b></td>
+<td align="left">Female</td>
+<td align="left">52.98</td>
+<td align="left">52.84</td>
+<td align="left">54.07</td>
+<td align="left">55.58</td>
+<td align="left">53.96</td>
+</tr>
+<tr>
+<td align="left">Male</td>
+<td align="left">47.02</td>
+<td align="left">47.16</td>
+<td align="left">45.92</td>
+<td align="left">44.42</td>
+<td align="left">46.04</td>
+</tr>
+<tr>
+<td align="left" rowspan="5"><b>NSSEC</b></td>
+<td align="left">Higher Managerial &amp; Professional</td>
+<td align="left">30.04</td>
+<td align="left">30.16</td>
+<td align="left">31.39</td>
+<td align="left">34.74</td>
+<td align="left">32.36</td>
+</tr>
+<tr>
+<td align="left">Lower Managerial</td>
+<td align="left">14.4</td>
+<td align="left">14.29</td>
+<td align="left">13.84</td>
+<td align="left">13.70</td>
+<td align="left">15.57</td>
+</tr>
+<tr>
+<td align="left">Intermediate Occupations</td>
+<td align="left">11.41</td>
+<td align="left">11.49</td>
+<td align="left">11.39</td>
+<td align="left">11.62</td>
+<td align="left">10.52</td>
+</tr>
+<tr>
+<td align="left">Lower supervisory &amp; Technical</td>
+<td align="left">7.99</td>
+<td align="left">8.08</td>
+<td align="left">8.17</td>
+<td align="left">9.28</td>
+<td align="left">7.59</td>
+</tr>
+<tr>
+<td align="left">Semi routine, routine &amp; others</td>
+<td align="left">36.16</td>
+<td align="left">35.98</td>
+<td align="left">35.20</td>
+<td align="left">30.65</td>
+<td align="left">34.06</td>
+</tr>
+<tr>
+<td align="left" rowspan="4"><b>BMI</b></td>
+<td align="left">&lt;18.5 (Underweight)</td>
+<td align="left">–</td>
+<td align="left">0.98</td>
+<td align="left">0.98</td>
+<td align="left">0.93</td>
+<td align="left">0.82</td>
+</tr>
+<tr>
+<td align="left">18.5–&lt;25 (Normal)</td>
+<td align="left">–</td>
+<td align="left">26.20</td>
+<td align="left">26.39</td>
+<td align="left">26.52</td>
+<td align="left">26.58</td>
+</tr>
+<tr>
+<td align="left">≥24–&lt;30 (Overweight)</td>
+<td align="left">–</td>
+<td align="left">42.20</td>
+<td align="left">41.51</td>
+<td align="left">41.03</td>
+<td align="left">42.16</td>
+</tr>
+<tr>
+<td align="left">≥30 (Obese)</td>
+<td align="left">–</td>
+<td align="left">30.62</td>
+<td align="left">31.10</td>
+<td align="left">31.52</td>
+<td align="left">30.45</td>
+</tr>
+<tr>
+<td align="left" rowspan="2"><b>Knee Osteoarthritis</b></td>
+<td align="left">Yes</td>
+<td align="left">–</td>
+<td align="left">–</td>
+<td align="left">18.69</td>
+<td align="left">18.85</td>
+<td align="left">–</td>
+</tr>
+<tr>
+<td align="left">No</td>
+<td align="left">–</td>
+<td align="left">–</td>
+<td align="left">81.31</td>
+<td align="left">81.15</td>
+<td align="left">–</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table7" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 7.</strong><span data-astro-cid-dzaleqsp> Validation parameters (SAE, R<sup>2</sup> and SEI) for BMI and OA spatial microsimulations</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left" colspan="2" rowspan="2">Variables/Categories</th>
+<th align="left" colspan="3">BMI simulation</th>
+<th align="left" colspan="3">OA Simulation</th>
+</tr>
+<tr>
+<th align="left">SAE</th>
+<th align="left">R<sup>2</sup></th>
+<th align="left">SEI</th>
+<th align="left">SAE</th>
+<th align="left">R<sup>2</sup></th>
+<th align="left">SEI</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left" rowspan="5"><b>Age</b></td>
+<td align="left">50–59 years</td>
+<td align="left">0.0186</td>
+<td align="left">0.9933</td>
+<td align="left">0.9918</td>
+<td align="left">0.0433</td>
+<td align="left">0.9681</td>
+<td align="left">0.9569</td>
+</tr>
+<tr>
+<td align="left">60–69 years</td>
+<td align="left">0.0132</td>
+<td align="left">0.9983</td>
+<td align="left">0.9980</td>
+<td align="left">0.0200</td>
+<td align="left">0.9959</td>
+<td align="left">0.9951</td>
+</tr>
+<tr>
+<td align="left">70–79 years</td>
+<td align="left">0.0295</td>
+<td align="left">0.9933</td>
+<td align="left">0.9931</td>
+<td align="left">0.0560</td>
+<td align="left">0.9768</td>
+<td align="left">0.9753</td>
+</tr>
+<tr>
+<td align="left">80–89 years</td>
+<td align="left">0.0304</td>
+<td align="left">0.9949</td>
+<td align="left">0.9949</td>
+<td align="left">0.0617</td>
+<td align="left">0.9807</td>
+<td align="left">0.9800</td>
+</tr>
+<tr>
+<td align="left">≥90 years</td>
+<td align="left">0.0916</td>
+<td align="left">0.9801</td>
+<td align="left">0.9797</td>
+<td align="left">0.1741</td>
+<td align="left">0.9416</td>
+<td align="left">0.9289</td>
+</tr>
+<tr>
+<td align="left" rowspan="2"><b>Sex</b></td>
+<td align="left">Male</td>
+<td align="left">0.0344</td>
+<td align="left">0.9847</td>
+<td align="left">0.9792</td>
+<td align="left">0.0680</td>
+<td align="left">0.9370</td>
+<td align="left">0.9327</td>
+</tr>
+<tr>
+<td align="left">Female</td>
+<td align="left">0.0304</td>
+<td align="left">0.9851</td>
+<td align="left">0.9847</td>
+<td align="left">0.0777</td>
+<td align="left">0.9367</td>
+<td align="left">0.9064</td>
+</tr>
+<tr>
+<td align="left" rowspan="5"><b>NSSEC</b></td>
+<td align="left">Higher Managerial &amp; Professional</td>
+<td align="left">0.0199</td>
+<td align="left">0.9978</td>
+<td align="left">0.9977</td>
+<td align="left">0.0583</td>
+<td align="left">0.9908</td>
+<td align="left">0.9800</td>
+</tr>
+<tr>
+<td align="left">Lower Managerial</td>
+<td align="left">0.0374</td>
+<td align="left">0.9888</td>
+<td align="left">0.9872</td>
+<td align="left">0.0818</td>
+<td align="left">0.9550</td>
+<td align="left">0.9450</td>
+</tr>
+<tr>
+<td align="left">Intermediate Occupations</td>
+<td align="left">0.0300</td>
+<td align="left">0.9956</td>
+<td align="left">0.9954</td>
+<td align="left">0.0542</td>
+<td align="left">0.9867</td>
+<td align="left">0.9850</td>
+</tr>
+<tr>
+<td align="left">Lower supervisory &amp; Technical</td>
+<td align="left">0.0271</td>
+<td align="left">0.9940</td>
+<td align="left">0.9929</td>
+<td align="left">0.0556</td>
+<td align="left">0.9788</td>
+<td align="left">0.9710</td>
+</tr>
+<tr>
+<td align="left">Semi routine, routine &amp; others</td>
+<td align="left">0.0124</td>
+<td align="left">0.9987</td>
+<td align="left">0.9984</td>
+<td align="left">0.0353</td>
+<td align="left">0.9938</td>
+<td align="left">0.9881</td>
+</tr>
+</tbody>
+</table></div></figure></div></details></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/figures.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

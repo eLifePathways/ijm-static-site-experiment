@@ -1,0 +1,36 @@
+TY  - JOUR
+TI  - Introducing CASCADEPOP: an open-source sociodemographic simulation platform for US health policy appraisal
+AU  - Brennan, Alan
+AU  - Buckley, Charlotte
+AU  - Vu, Tuong Manh
+AU  - Probst, Charlotte
+AU  - Nielsen, Alexandra
+AU  - Bai, Hao
+AU  - Broomhead, Thomas
+AU  - Greenfield, Thomas
+AU  - Kerr, William
+AU  - Meier, Petra S
+AU  - Rehm, Jürgen
+AU  - Shuper, Paul
+AU  - Strong, Mark
+AU  - Purshouse, Robin C
+VL  - 13
+IS  - 2
+PY  - 2020
+DA  - 2020/08/31
+SP  - 21-60
+C1  - IJM 2020;13(2):21-60
+DO  - 10.34196/ijm.00217
+UR  - https://doi.org/10.34196/ijm.00217
+AB  - Largescale individual-level and agent-based models are gaining importance in health policy appraisal and evaluation. Such models require the accurate depiction of the jurisdiction’s population over extended time periods to enable modeling of the development of non-communicable diseases under consideration of historical, sociodemographic developments. We developed CASCADEPOP to provide a readily available sociodemographic micro-synthesis and microsimulation platform for US populations. The micro-synthesis method used iterative proportional fitting to integrate data from the US Census, the American Community Survey, the Panel Study of Income Dynamics, Multiple Cause of Death Files, and several national surveys to produce a synthetic population aged 12 to 80 years on 01/01/1980 for five states (California, Minnesota, New York, Tennessee, and Texas) and the US. Characteristics include individuals’ age, sex, race/ethnicity, marital/employment/parental status, education, income and patterns of alcohol use as an exemplar health behavior. The microsimulation simulates individuals’ sociodemographic life trajectories over 35 years to 31/12/2015 accounting for population developments including births, deaths, and migration. Results comparing the 1980 micro-synthesis against observed data shows a successful depiction of state and US population characteristics and of drinking. Comparing the microsimulation over 30 years with Census data also showed the successful simulation of sociodemographic developments. The CASCADEPOP platform enables modelling of health behaviors across individuals’ life courses and at a population level. As it contains a large number of relevant sociodemographic characteristics it can be further developed by researchers to build US agent-based models and microsimulations to examine health behaviors, interventions, and policies.
+KW  - microsimulation models
+KW  - demography
+KW  - agent-based modeling
+KW  - alcohol use
+KW  - public health
+KW  - social simulation
+KW  - United States
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

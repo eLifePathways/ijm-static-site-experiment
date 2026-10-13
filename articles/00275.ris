@@ -1,0 +1,23 @@
+TY  - JOUR
+TI  - SWITCH: A Tax-Benefit Model for Ireland Linked to Survey and Register Data
+AU  - Keane, Claire
+AU  - Doorley, Karina
+AU  - Kakoulidou, Theano
+AU  - O’Malley, Seamus
+VL  - 16
+IS  - 1
+PY  - 2023
+DA  - 2023/04/30
+SP  - 65-88
+C1  - IJM 2023;16(1):65-88
+DO  - 10.34196/ijm.00275
+UR  - https://doi.org/10.34196/ijm.00275
+AB  - This paper describes the development and operation of the SWITCH model, a tax-benefit microsimulation model for Ireland which is linked to survey and register data. SWITCH is based on the EUROMOD platform but has important advantages over the Irish component of EUROMOD, including a “current income” concept, detailed information on benefit receipt in the underlying data and the modelling of non-cash benefits. We discuss the process of creating an input dataset, including reweighting and uprating. We validate the model’s simulation of the income distribution with respect to a range of external sources and suggest future improvements.
+KW  - tax benefit models
+KW  - income tax
+KW  - databases
+KW  - policy analysis
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

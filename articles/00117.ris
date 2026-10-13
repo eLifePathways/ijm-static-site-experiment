@@ -1,0 +1,25 @@
+TY  - JOUR
+TI  - Regression-style models for parameter estimation in dynamic microsimulation: An empirical performance assessment
+AU  - McLay, Jessica M
+AU  - Lay-Yee, Roy
+AU  - Milne, Barry J
+AU  - Davis, Peter
+VL  - 8
+IS  - 2
+PY  - 2015
+DA  - 2015/08/31
+SP  - 83-127
+C1  - IJM 2015;8(2):83-127
+DO  - 10.34196/ijm.00117
+UR  - https://doi.org/10.34196/ijm.00117
+AB  - Microsimulation models seek to represent real-world processes and can generate extensive amounts of synthetic data. The parameters that drive the data generation process are often estimated by statistical models, such as linear regression models. There are many models that could be considered for this purpose. We compare six potential models, discuss the assumptions of these models, and perform an empirical assessment that compares synthetic data simulated from these models with observed data. We chose six regression-style models that can be easily implemented in standard statistical software: an ordinary least squares regression model with a lagged dependent variable, two random effects models (with and without an autoregressive order 1within-unit error structure), a fixed effects model, a hybrid model combining features from both fixed and random effects models, and a dynamic panel model estimated with system generalised method of moments. The criterion for good performance was the proximity of fit of simulated data to the observed data on various characteristics. We found evidence of violated assumptions in our data for all the models but found that, for the majority of data characteristics assessed, all the models produced synthetic data that were a reasonable approximation to the observed data, with some models performing better or worse for particular characteristics. We hope more modellers will consider and test the assumptions of models used for parameter estimation and experiment with different model specifications resulting in higher quality microsimulation models and other research applications.
+KW  - microsimulation
+KW  - panel data analysis
+KW  - simulation
+KW  - dynamic model
+KW  - estimation techniques
+KW  - model assumptions
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

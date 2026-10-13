@@ -1,0 +1,396 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="International Journal of Microsimulation"><title>Figures and data in Sima – an Open-source Simulation Framework for Realistic Large-scale Individual-level Data Generation | International Journal of Microsimulation</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="canonical" href="/articles/00240/figures"><link rel="stylesheet" href="/_astro/BaseLayout.DHTjKy_I.css"><link rel="stylesheet" href="/_astro/photoswipe.F7UhRieN.css"><style>.figures-page__summary[data-astro-cid-uy5dlehv]{color:var(--color-ink-muted);margin-block-end:var(--space-m)}@media (width>=75em){.article-content-grid[data-astro-cid-uy5dlehv]{gap:var(--space-l);grid-template-columns:12rem 1fr 12rem;align-items:start;display:grid}}
+</style></head><body><header class="site-header" data-astro-cid-fzpbxy5g><div class="site-header__inner wrapper" data-astro-cid-fzpbxy5g><a href="/" class="site-header__logo" data-astro-cid-fzpbxy5g><picture data-astro-cid-fzpbxy5g><source srcset="/logo-full.png" media="(min-width: 45.625em)" data-astro-cid-fzpbxy5g><img src="/logo-symbol.png" alt="International Journal of Microsimulation home" data-astro-cid-fzpbxy5g></picture></a><div class="site-header__secondary" data-astro-cid-fzpbxy5g><a href="/about" class="site-header__about" data-astro-cid-fzpbxy5g>About</a><a href="https://www.epress.ac.uk/ijm/webforms/author.php" class="site-header__submit" data-astro-cid-fzpbxy5g>Submit my research</a></div><nav class="site-nav" aria-label="Primary" data-astro-cid-fzpbxy5g><ul class="site-nav__list" data-astro-cid-fzpbxy5g><li data-astro-cid-fzpbxy5g><a href="/" data-astro-cid-fzpbxy5g>Home</a></li><li data-astro-cid-fzpbxy5g><a href="/collections" data-astro-cid-fzpbxy5g>Issues</a></li><li class="site-nav__search" data-astro-cid-fzpbxy5g><a href="/search" aria-label="Search" data-astro-cid-fzpbxy5g><img src="/search-icon.svg" alt="" width="24" height="24" data-astro-cid-fzpbxy5g></a></li></ul></nav></div></header><main id="maincontent" class="article-page wrapper" data-astro-cid-uy5dlehv><header class="article-header" data-astro-cid-ak4gb66a><div class="article-header__intro" data-astro-cid-ak4gb66a><p class="article-header__subjects" data-astro-cid-ak4gb66a><a href="/subjects/health" data-astro-cid-ak4gb66a>Health</a>, <a href="/subjects/methodology" data-astro-cid-ak4gb66a>Methodology</a></p><p class="article-header__type" data-astro-cid-ak4gb66a><a href="/articles/research-article" data-astro-cid-ak4gb66a>Research articles</a><span class="article-header__date" data-astro-cid-ak4gb66a> · Dec 31, 2021</span></p><h1 class="article-header__title" data-astro-cid-ak4gb66a>Sima – an Open-source Simulation Framework for Realistic Large-scale Individual-level Data Generation</h1><p class="article-header__authors" data-astro-cid-ak4gb66a>Santtu Tikka, Jussi Hakanen, Mirka Saarela, Juha Karvanen</p><p class="article-header__institutions" data-astro-cid-ak4gb66a>Department of Mathematics and Statistics, University of Jyvaskyla, Finland; Faculty of Information Technology, Jyvaskyla, Finland</p><p class="article-header__volume" data-astro-cid-ak4gb66a><a href="/collections/14-3/volume-14-3-winter-2021" data-astro-cid-ak4gb66a>Volume 14(3) Winter 2021</a></p></div><p class="article-header__cite" data-astro-cid-ak4gb66a><span class="article-header__cite_label" data-astro-cid-ak4gb66a>Cite as:</span> S. Tikka, J. Hakanen, M. Saarela, J. Karvanen; 2021; <span data-astro-cid-ak4gb66a>Sima – an Open-source Simulation Framework for Realistic Large-scale Individual-level Data Generation</span>; International Journal of Microsimulation; 14(3); 27–53. <span class="article-header__cite_doi" data-astro-cid-ak4gb66a>doi: <a href="https://doi.org/10.34196/ijm.00240" data-astro-cid-ak4gb66a>10.34196/ijm.00240</a></span></p><section id="abstract" class="article-section article-header__abstract" data-astro-cid-ak4gb66a><h2 data-astro-cid-ak4gb66a>Abstract</h2><p data-astro-cid-ak4gb66a>We propose a framework for realistic data generation and the simulation of complex systems and demonstrate its capabilities in a health domain example. The main use cases of the framework are predicting the development of variables of interest, evaluating the impact of interventions and policy decisions, and supporting statistical method development. We present the fundamentals of the framework by using rigorous mathematical definitions. The framework supports calibration to a real population as well as various manipulations and data collection processes. The freely available open-source implementation in R embraces efficient data structures, parallel computing, and fast random number generation, hence ensuring reproducibility and scalability. With the framework, it is possible to run daily-level simulations for populations of millions of individuals for decades of simulated time. An example using the occurrence of stroke, type 2 diabetes, and mortality illustrates the usage of the framework in the Finnish context. In the example, we demonstrate the data collection functionality by studying the impact of nonparticipation on the estimated risk models and interventions related to controlling excessive salt consumption.</p></section><nav class="article-downloads" aria-label="Downloads" data-astro-cid-bvtjhkkr><ul data-astro-cid-bvtjhkkr><li data-astro-cid-bvtjhkkr><a href="/files/00240/ijm-00240.pdf" id="downloads" data-astro-cid-bvtjhkkr>Download PDF</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00240.bib" data-astro-cid-bvtjhkkr>Download BibTeX</a></li><li data-astro-cid-bvtjhkkr><a href="/articles/00240.ris" data-astro-cid-bvtjhkkr>Download RIS</a></li></ul></nav></header><div class="article-content-grid" data-astro-cid-uy5dlehv><div class="article-sidebar" data-astro-cid-twdwaz5s><nav class="view-tabs" aria-label="Article view" data-astro-cid-twdwaz5s><a href="/articles/00240" class="view-tabs__link" data-astro-cid-twdwaz5s>Article</a><a href="/articles/00240/figures" class="view-tabs__link view-tabs__link--active" aria-current="page" data-astro-cid-twdwaz5s>Figures and data</a></nav><details class="article-toc" data-astro-cid-twdwaz5s><summary data-astro-cid-twdwaz5s>Jump to</summary><ul data-astro-cid-twdwaz5s><li data-astro-cid-twdwaz5s><a href="#figures" data-astro-cid-twdwaz5s>Figures</a></li><li data-astro-cid-twdwaz5s><a href="#tables" data-astro-cid-twdwaz5s>Tables</a></li></ul></details></div><div class="article-content" data-astro-cid-uy5dlehv><p class="figures-page__summary" data-astro-cid-uy5dlehv>This article contains 5 figures and 5 tables.</p><details id="figures" class="article-section article-section--collapsible" open data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Figures</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="fig1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00240-fig001.Du1FPjke_Z1RfNpY.webp" class="figure-lightbox-trigger" data-pswp-width="1654" data-pswp-height="879" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00240-fig001.Du1FPjke_Z1RfNpY.webp" alt width="1654" height="879" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 1.</strong><span data-astro-cid-dzaleqsp> Flowchart of a simulator constructed within the Sima framework. Slanted nodes are inputs and outputs, rectangular nodes are processes, and diamond nodes are decisions. Dashed nodes depict optional components. At the “RETURN” node, we return all generated outputs, meaning the final status of the population 
+<math id="inf1">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<msub>
+<mrow>
+<mi mathvariant="bold">X</mi>
+</mrow>
+<mrow>
+<mi>T</mi>
+</mrow>
+</msub>
+</mrow>
+</mstyle>
+</math>
+ and any samples 
+<math id="inf2">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<msubsup>
+<mrow>
+<mi mathvariant="bold">X</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+<mrow>
+<mo>∗</mo>
+</mrow>
+</msubsup>
+</mrow>
+</mstyle>
+</math>
+ or entire records of the status 
+<math id="inf3">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<msub>
+<mrow>
+<mi mathvariant="bold">X</mi>
+</mrow>
+<mrow>
+<mi>t</mi>
+</mrow>
+</msub>
+</mrow>
+</mstyle>
+</math>
+ that may have been collected during the simulation. The node including “calibrate” should be understood as a procedure that provides a new values for the simulator parameters 
+<math id="inf4">
+<mstyle displaystyle="true" scriptlevel="0">
+<mrow>
+<mi mathvariant="bold-italic">θ</mi>
+</mrow>
+</mstyle>
+</math>
+ based on the results of current run and the validation data.</span></figcaption></figure><figure id="fig2" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00240-fig002.Cb4kxnrq_ZtU5Xu.webp" class="figure-lightbox-trigger" data-pswp-width="1654" data-pswp-height="1426" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00240-fig002.Cb4kxnrq_ZtU5Xu.webp" alt width="1654" height="1426" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 2.</strong><span data-astro-cid-dzaleqsp> Performance benchmark using a population of 10 million individuals, 5 events and a simulation period of 10 years on a time scale of one day. Total time also includes the time it takes to generate the initial population, initialize the parallel computation cluster and to distribute the data to the cores. MPI was used to conduct the benchmark.</span></figcaption></figure><figure id="fig3" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00240-fig003.BH8K6noV_Z1q4Ihv.webp" class="figure-lightbox-trigger" data-pswp-width="1654" data-pswp-height="1079" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00240-fig003.BH8K6noV_Z1q4Ihv.webp" alt width="1654" height="1079" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 3.</strong><span data-astro-cid-dzaleqsp> Simulated mortality in a population of 3.6 million individuals after calibration and official mortality statistics of Finland for the year 2017 by age. A population of one million individuals was used for the calibration.</span></figcaption></figure><figure id="fig4" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00240-fig004.CwEZ1I6x_Z1iOuRx.webp" class="figure-lightbox-trigger" data-pswp-width="1654" data-pswp-height="1437" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00240-fig004.CwEZ1I6x_Z1iOuRx.webp" alt width="1654" height="1437" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure 4.</strong><span data-astro-cid-dzaleqsp> Boxplots of the total number of new stroke cases in the three scenarios from 100 replications of each scenario (from the same initial population in each scenario and replication). “Baseline” is the scenario without interventions, “Industry” corresponds to the salt content reduction carried out by the food industry, and “Advice” is the recommendation regarding salt use targeted towards individuals with high blood pressure.</span></figcaption></figure><figure id="figC1" data-astro-cid-dzaleqsp><a href="/_astro/ijm-00240-fig005.0e4_U5Yy_1x7EVH.webp" class="figure-lightbox-trigger" data-pswp-width="1546" data-pswp-height="872" target="_blank" rel="noreferrer" data-astro-cid-dzaleqsp><img src="/_astro/ijm-00240-fig005.0e4_U5Yy_1x7EVH.webp" alt width="1546" height="872" loading="lazy" data-astro-cid-dzaleqsp></a><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Figure C1.</strong><span data-astro-cid-dzaleqsp> Density plots of time taken (in milliseconds) for 10 million random draws over 1000 replications for the Xoroshiro128+ PRNG implementation of dqrng and the 32 bit Mersenne-Twister of base R with Weibull, normal, exponential and uniform distributions. Prefix “dq” denotes the dqrng version of the function. The horizontal axis uses log10-scaling. Weibull-distributed random variables are generated using the inverse method.</span></figcaption></figure></div></details><details id="tables" class="article-section article-section--collapsible" data-astro-cid-uy5dlehv><summary data-astro-cid-uy5dlehv><h2 data-astro-cid-uy5dlehv>Tables</h2></summary><div class="article-section__body" data-astro-cid-uy5dlehv><figure id="table1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 1.</strong><span data-astro-cid-dzaleqsp> Estimated parameter values, odds ratios, and their 95% confidence intervals for the model of baseline nonparticipation.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">
+
+<math alttext="-" id="inf88">
+<mo>-</mo>
+</math>
+
+
+<math alttext="\widehat{\rho_{k}}" id="inf89">
+<mover accent="true">
+<msub>
+<mi mathsize="80%">ρ</mi>
+<mi mathsize="80%">k</mi>
+</msub>
+<mo mathsize="80%" stretchy="false">^</mo>
+</mover>
+</math>
+
+</th>
+<th align="left">
+
+<math alttext="\widehat{\exp(\rho_{k})}" id="inf90">
+<mover accent="true">
+<mrow>
+<mi mathsize="80%">exp</mi>
+<mo>⁡</mo>
+<mrow>
+<mo maxsize="80%" minsize="80%">(</mo>
+<msub>
+<mi mathsize="80%">ρ</mi>
+<mi mathsize="80%">k</mi>
+</msub>
+<mo maxsize="80%" minsize="80%">)</mo>
+</mrow>
+</mrow>
+<mo mathsize="80%" stretchy="false">^</mo>
+</mover>
+</math>
+
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Intercept</td>
+<td align="left">−9.48 (−10.68, −8.32)</td>
+<td align="left"/>
+</tr>
+<tr>
+<td align="left">Gender</td>
+<td align="left">−0.31 (−0.62, −0.01)</td>
+<td align="left">0.73 (0.54, 0.99)</td>
+</tr>
+<tr>
+<td align="left">Age</td>
+<td align="left">
+
+<math alttext="-" id="inf91">
+<mo>-</mo>
+</math>
+0.11 (0.10, 0.12)</td>
+<td align="left">1.12 (1.11, 1.13)</td>
+</tr>
+<tr>
+<td align="left">BMI</td>
+<td align="left">−0.09 (−0.15, −0.03)</td>
+<td align="left">0.91 (0.86, 0.97)</td>
+</tr>
+<tr>
+<td align="left">Smoking</td>
+<td align="left">
+
+<math alttext="-" id="inf92">
+<mo>-</mo>
+</math>
+0.69 (0.44, 0.94)</td>
+<td align="left">1.99 (1.56, 2.56)</td>
+</tr>
+<tr>
+<td align="left">Waist Circumference</td>
+<td align="left">
+
+<math alttext="-" id="inf93">
+<mo>-</mo>
+</math>
+0.04 (0.02, 0.06)</td>
+<td align="left">1.04 (1.02, 1.06)</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 2.</strong><span data-astro-cid-dzaleqsp> Estimated odds ratios and their 95% confidence intervals for the model of 10-year risk of stroke for men.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">A</th>
+<th align="left">B</th>
+<th align="left">C</th>
+<th align="left">FINRISK</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Age</td>
+<td align="left">1.11 (1.10, 1.13)</td>
+<td align="left">1.10 (1.10, 1.11)</td>
+<td align="left">1.10 (1.09, 1.10)</td>
+<td align="left">1.12</td>
+</tr>
+<tr>
+<td align="left">Smoking</td>
+<td align="left">2.13 (1.52, 2.96)</td>
+<td align="left">1.67 (1.27, 2.19)</td>
+<td align="left">1.53 (1.50, 1.55)</td>
+<td align="left">1.65</td>
+</tr>
+<tr>
+<td align="left">Systolic blood pressure</td>
+<td align="left">1.01 (1.00, 1.02)</td>
+<td align="left">1.01 (1.01, 1.02)</td>
+<td align="left">1.02 (1.02, 1.02)</td>
+<td align="left">1.02</td>
+</tr>
+<tr>
+<td align="left">HDL cholesterol</td>
+<td align="left">0.73 (0.48, 1.07)</td>
+<td align="left">0.67 (0.49, 0.91)</td>
+<td align="left">0.65 (0.64, 0.66)</td>
+<td align="left">0.64</td>
+</tr>
+<tr>
+<td align="left">Diabetes</td>
+<td align="left">2.30 (1.67, 3.13)</td>
+<td align="left">2.38 (1.87, 3.02)</td>
+<td align="left">2.31 (2.28, 2.34)</td>
+<td align="left">2.41</td>
+</tr>
+<tr>
+<td align="left">Parents’ stroke</td>
+<td align="left">1.25 (0.83, 1.84)</td>
+<td align="left">1.41 (1.04, 1.89)</td>
+<td align="left">1.33 (1.31, 1.35)</td>
+<td align="left">1.34</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="table3" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table 3.</strong><span data-astro-cid-dzaleqsp> Estimated odds ratios and their 95% confidence intervals for the model of 10-year risk of stroke for women.</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left"/>
+<th align="left">A</th>
+<th align="left">B</th>
+<th align="left">C</th>
+<th align="left">FINRISK</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">Age</td>
+<td align="left">1.06 (1.05, 1.08)</td>
+<td align="left">1.05 (1.04, 1.06)</td>
+<td align="left">1.05 (1.05, 1.05)</td>
+<td align="left">1.07</td>
+</tr>
+<tr>
+<td align="left">Smoking</td>
+<td align="left">1.67 (1.01, 2.66)</td>
+<td align="left">1.62 (1.05, 2.44)</td>
+<td align="left">1.40 (1.37, 1.44)</td>
+<td align="left">1.52</td>
+</tr>
+<tr>
+<td align="left">Systolic blood pressure</td>
+<td align="left">1.01 (1.00, 1.01)</td>
+<td align="left">1.01 (1.01, 1.02)</td>
+<td align="left">1.01 (1.01, 1.01)</td>
+<td align="left">1.01</td>
+</tr>
+<tr>
+<td align="left">HDL cholesterol</td>
+<td align="left">0.50 (0.32, 0.76)</td>
+<td align="left">0.54 (0.37, 0.78)</td>
+<td align="left">0.45 (0.44, 0.46)</td>
+<td align="left">0.47</td>
+</tr>
+<tr>
+<td align="left">Diabetes</td>
+<td align="left">3.70 (2.54, 5.34)</td>
+<td align="left">3.37 (2.43, 4.62)</td>
+<td align="left">3.21 (3.16, 3.27)</td>
+<td align="left">3.45</td>
+</tr>
+<tr>
+<td align="left">Parents’ stroke</td>
+<td align="left">2.18 (1.42, 3.27)</td>
+<td align="left">2.02 (1.39, 2.87)</td>
+<td align="left">1.69 (1.65, 1.72)</td>
+<td align="left">1.73</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA1" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A1.</strong><span data-astro-cid-dzaleqsp> Selection of related work on using simulation for medical decision making applications. Typically, models are not made open-source and—with the exception of DYNAMIS-POP—developed only for one particular country and decision making problem</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Authors</th>
+<th align="left">Simulation Model, Objective</th>
+<th align="left">Software, Tools, Open-source Availability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+<a href="#bib14">Eldabi et al. (2000)</a>
+</td>
+<td align="left">Discrete event simulation to simulate economic factors in adjuvant breast cancer treatment in England.</td>
+<td align="left">A package called ABCSim was created using the commercial simulation software Simul8. ABCSim is not open-source.</td>
+</tr>
+<tr>
+<td align="left">
+<a href="#bib10">Cooper et al. (2002)</a>
+</td>
+<td align="left">Discrete event simulation to model the progress of English patients who have had a coronary event through their treatment pathways and subsequent coronary events.</td>
+<td align="left">The simulation was written using the POST (Patient Oriented Simulation Technique) software with a Delphi interface. The developed model is not open-source.</td>
+</tr>
+<tr>
+<td align="left">
+<a href="#bib7">Caro et al. (2006)</a>
+</td>
+<td align="left">Discrete event simulation to simulate the course of individuals with acute mania in bipolar I disorder and estimation of the budget impact of treatments for them from a United States healthcare payer perspective.</td>
+<td align="left">The model is not open-source and the article does not provide any information on the used software.</td>
+</tr>
+<tr>
+<td align="left">
+<a href="#bib2">Ahmad and Billimek (2007)</a>
+</td>
+<td align="left">A 75-year dynamic simulation model comparing the long-term health benefits to society of various levels of tax increase to a viable alternative: limiting youth access to cigarettes by raising the legal purchase age to 21 in the United States.</td>
+<td align="left">Vensim (i.e., commercial software) was used to develop a dynamic simulation model for estimating the population health outcomes resulting from raising taxes on cigarettes and raising the legal smoking age to 21. The developed model is not open-source.</td>
+</tr>
+<tr>
+<td align="left">
+<a href="#bib21">Huang et al. (2007)</a>
+</td>
+<td align="left">A Monte Carlo simulation model to estimate the cost-effectiveness of improving diabetes care in federally qualified community health centers in the United States.</td>
+<td align="left">Microsoft Excel 2000 and @Risk 4.5.4 for Windows were used to conduct the simulations and an older diabetes complications model (<a href="#bib13">Eastman et al., 1997</a>) was adapted. The model is not open-source but the inputs are described in the article.</td>
+</tr>
+<tr>
+<td align="left">
+<a href="#bib68">Zur and Zaric (2016)</a>
+</td>
+<td align="left">Microsimulation model of alcohol consumption and its effects on alcohol-related causes of death in the Canadian population. Estimation of the cost-effectiveness of implementing universal alcohol screening and brief intervention in primary care in Canada.</td>
+<td align="left">The model was programmed and run in C and the results analyzed in R version 3.1.2. The programmed model is not open-source.</td>
+</tr>
+<tr>
+<td align="left">
+<a href="#bib29">Larsson et al. (2018)</a>
+</td>
+<td align="left">Individual-based microsimulation model to project economic consequences of resistance to antibacterial drugs for the Swedish health care sector.</td>
+<td align="left">A dynamic microsimulation model developed by the Swedish Ministry of Finance called SESIM was used. Currently (May 2021), it is not possible to download SESIM.</td>
+</tr>
+<tr>
+<td align="left">
+<a href="#bib47">Prakash et al. (2017)</a>; <a href="#bib50">Sai et al. (2019)</a>
+</td>
+<td align="left">CMOST is a microsimulation model for modeling the natural history of colorectal cancer, simulating the effects of colorectal cancer screening interventions, and calculating the resulting costs.</td>
+<td align="left">CMOST (Colon Modeling Open Simulation Tool) was implemented in Matlab and is freely available under the GNU General Public License at <a href="https://gitlab.com/misselwb/CMOST">https://gitlab.com/misselwb/CMOST</a>.</td>
+</tr>
+<tr>
+<td align="left">
+<a href="#bib28">Kuchenbecker et al. (2018)</a>
+</td>
+<td align="left">The authors adapted an existing microsimulation US model (<a href="#bib63">Weycker et al., 2012</a>) to depict lifetime risks and costs of invasive pneumococcal diseases and nonbacteremic pneumonia, as well as the expected impact of different vaccination schemes, in a hypothetical population of German adults.</td>
+<td align="left">No link to a documentation of the model or open-source framework can be found in the articles (<a href="#bib63">Weycker et al., 2012</a>; <a href="#bib28">Kuchenbecker et al., 2018</a>).</td>
+</tr>
+<tr>
+<td align="left">
+<a href="#bib53">Spielauer and Dupriez (2019)</a>
+</td>
+<td align="left">DYNAMIS-POP is a dynamic micro-simulation model for population and education projections, health applications, and for the simulation of policies. Adaptation of the model to a specific country only requires adapting a single setup script and simulation module.</td>
+<td align="left">All components of DYNAMIS-POP including its code and all statistical analysis files are freely available and documented online at <a href="http://dynamis.ihsn.org/">http://dynamis.ihsn.org/</a>. Most statistical analysis scripts and scripts for post-processing and visualization of the results are implemented in R.</td>
+</tr>
+<tr>
+<td align="left">
+<a href="#bib19">Hennessy et al. (2015)</a>; <a href="#bib34">Manuel et al. (2014)</a>; <a href="#bib35">Manuel et al. (2016)</a>; <a href="#bib66">Wolfson (1994)</a>
+</td>
+<td align="left">POHEM (POpulation HEalth Model) is a longitudinal microsimulation model of health and disease. The model simulates representative populations and allows the rational comparison of competing health intervention alternatives, in a framework that captures the effects of disease interactions.</td>
+<td align="left">POHEM was developed in Modgen (see <a href="#tableA2">Table A2</a>). However, the POHEM model implementation itself is not open-source (and so far still limited to Canada, i.e., one country). <a href="https://www.statcan.gc.ca/eng/microsimulation/modgen/new/mods/pohem">https://www.statcan.gc.ca/eng/microsimulation/modgen/new/mods/pohem</a>.</td>
+</tr>
+</tbody>
+</table></div></figure><figure id="tableA2" data-astro-cid-dzaleqsp><figcaption data-astro-cid-dzaleqsp><strong data-astro-cid-dzaleqsp>Table A2.</strong><span data-astro-cid-dzaleqsp> Related work on open-source frameworks for microsimulation models</span></figcaption><div class="table-wrap" data-astro-cid-dzaleqsp><table>
+<thead>
+<tr>
+<th align="left">Authors</th>
+<th align="left">Simulation Model/ Objective</th>
+<th align="left">Link / Open-source Availability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">
+<a href="#bib11">De Menten et al. (2014)</a>
+</td>
+<td align="left">LIAM2 is an open-source development tool for discrete-time dynamic microsimulation models. The framework is for general purposes (not specifically health related). It allows for the simulation of discrete-time dynamic models with a cross-sectional time step of whatever kind of objects the modeler chooses. It provides functionalities to calibrate to exogenous information of any number of dimensions.</td>
+<td align="left">LIAM2 was developed primarily in Python, it can be downloaded from <a href="http://liam2.plan.be">http://liam2.plan.be</a>. It is licensed under the GNU General Public License, meaning one can freely use, copy, modify and redistribute the software.</td>
+</tr>
+<tr>
+<td align="left">
+<a href="#bib33">Mannion et al. (2012)</a>
+</td>
+<td align="left">JAMSIM (JAva MicroSIMulation) is a synthesis of open-source packages that provides an environment and set of features for the creation of dynamic discrete-time microsimulation models that are to be executed, manipulated and interrogated by nontechnical, policy-oriented users.</td>
+<td align="left">JAMSIM is freely available as an open-source tool, for public reuse and modification at <a href="http://code.google.com/p/jamsim/">http://code.google.com/p/jamsim/</a>. It combines R and the Java-based agent-based modeling graphical tool Ascape.</td>
+</tr>
+<tr>
+<td align="left">
+<a href="#bib49">Richiardi and Richardson (2017)</a>
+</td>
+<td align="left">JAS-mine is a Java-based computational platform that features tools for discrete-event simulations encompassing both dynamic microsimulation and agent-based modeling. Object-relational mapping is used to embed a relational database management system. It is a general-purpose platform (not specifically health related).</td>
+<td align="left">JAS-mine is freely available as an open-source tool, for public reuse and modification at <a href="https://github.com/jasmineRepo/JAS-mine-core">https://github.com/jasmineRepo/JAS-mine-core</a>. It is written in Java.</td>
+</tr>
+<tr>
+<td align="left">
+<a href="#bib26">Kosar and Tomintz (2014)</a>; <a href="#bib58">Tomintz et al. (2017)</a>
+</td>
+<td align="left">simSALUD is a deterministic spatial microsimulation framework. Its main aim is to model health related issues for small areas using spatial microsimulation modeling to simulate information where no data exists or is accessible.</td>
+<td align="left">simSALUD is an open-source web-application, programmed using Java and based on Apache’s model-view-controller application Struts2. It can be accessed at <a href="http://www.simsalud.org/simulation/">http://www.simsalud.org/simulation/</a>.</td>
+</tr>
+<tr>
+<td align="left">
+<a href="#bib9">Clements et al. (2021)</a>
+</td>
+<td align="left">microsimulation package for R provides implementations of discrete event simulations in both R and C++. The R implementation builds on several R5 classes (useful from a pedagogical perspective, but slow for larger microsimulations). For speed, the authors provide C++ classes.</td>
+<td align="left">The package is freely available at <a href="https://github.com/mclements/microsimulation">https://github.com/mclements/microsimulation</a>.</td>
+</tr>
+<tr>
+<td align="left">Developed by Statistics Canada; used, for example, in <a href="#bib53">Spielauer and Dupriez (2019)</a>
+</td>
+<td align="left">Modgen and its open-source implementation openM++ are generic microsimulation software supporting the creation, maintenance and documentation of dynamic microsimulation models. Several types of models can be accommodated, be they continuous or discrete time, with interacting or noninteracting populations. Compared to its closed source predecessor Modgen, openM++ has many advantages like portability, scalability and open source.</td>
+<td align="left">openM++ is freely available at <a href="https://github.com/openmpp">https://github.com/openmpp</a>.</td>
+</tr>
+</tbody>
+</table></div></figure></div></details></div></div></main><footer class="site-footer" data-astro-cid-nns7i3if><p class="wrapper" data-astro-cid-nns7i3if>All IJM articles, unless otherwise stated, are published under the terms of the Creative Commons Attribution (CC BY) License which permits use, distribution and reproduction in any medium, provided the work is properly attributed back to the original author and publisher.</p></footer></body></html><script type="module" src="/_astro/figures.astro_astro_type_script_index_0_lang.DINPKtzg.js"></script>

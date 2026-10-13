@@ -1,0 +1,22 @@
+TY  - JOUR
+TI  - Constructing an urban microsimulation model to assess the influence of demographics on heat consumption
+AU  - Muñoz H., M. Esteban
+AU  - Peters, Irene
+VL  - 7
+IS  - 1
+PY  - 2014
+DA  - 2014/04/30
+SP  - 127-157
+C1  - IJM 2014;7(1):127-157
+DO  - 10.34196/ijm.00096
+UR  - https://doi.org/10.34196/ijm.00096
+AB  - We present ongoing work on the construction of a spatial microsimulation model to assess the influence of demographics on residential heat consumption for Hamburg, Germany. Demographics are important for urban energy planning as: (1) Buildings are becoming more energy-efficient and building occupant behaviour accounts for a growing share in the variation of consumption; (2) building occupant needs are changing along with demographic change; and (3) the share of small decentralized district heating grids, in which fewer customers mean less averaging out of heterogeneous occupant profiles, is set to play a bigger role in the country’s heat supply. We construct a spatial microdata set for the city of Hamburg (of roughly 1.8 million inhabitants and 370 000 buildings), with households populating geo-referenced buildings, in three steps: (a) Synthesizing the population of small scale “statistical areas”, comprising up to around 2000 people (we do this by selecting households recorded in the German microcensus and fitting them into the statistical areas); (b) assigning energy relevant properties to the geo-referenced buildings from the Hamburg digital cadaster (we do this by making use of a well-established building typology developed for energy assessment) and constructing dwelling units in these buildings; and (c) matching households to the dwelling units in these buildings (which we do again by using household data from the microcensus). This last step – allocating households to buildings – may be the most interesting and challenging task. As of to date, we use a combinatorial optimization algorithm to achieve this. Once we have a microsimulation model of buildings and households living in them, including their demographic composition, the range of questions that can be explored is immense. The illustration presented here is a simple heat balance computation of individual buildings, using the constructed socio-demographic data and the digital cadaster data as input parameters.
+KW  - heat consumption
+KW  - digital cadaster
+KW  - building stock
+KW  - spatial microsimulation
+KW  - combinatorial optimization
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

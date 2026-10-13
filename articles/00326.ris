@@ -1,0 +1,24 @@
+TY  - JOUR
+TI  - Dynamic Simulation of Taxes and Welfare Benefits by Database Imputation
+AU  - van de Ven, Justin
+AU  - Bronka, Patryk
+AU  - Richiardi, Matteo
+VL  - 18
+IS  - 2
+PY  - 2025
+DA  - 2025/08/20
+SP  - 124-155
+C1  - IJM 2025;18(2):124-155
+DO  - 10.34196/ijm.00326
+UR  - https://doi.org/10.34196/ijm.00326
+AB  - This paper proposes a new method for describing a realistic tax-benefit system in a dynamic microsimulation model. The suggested approach draws upon existing third-party tax-benefit calculators and provides an alternative to integration of tax functions within a dynamic structure. It has the advantages of adapting to the degree of household sector detail described by a model and permits taxes and benefits to be imputed directly from commonly available micro-data sources. A practical application to a dynamic programming model designed to reflect the contemporary UK policy context indicates that the proposed method for projecting taxes and benefits implies a comparable computational burden and generates qualitatively comparable results to a detailed functional description of fiscal policy, while simplifying model development.
+KW  - static
+KW  - dynamic
+KW  - agent-based
+KW  - microsimulation
+KW  - taxes
+KW  - welfare benefits
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

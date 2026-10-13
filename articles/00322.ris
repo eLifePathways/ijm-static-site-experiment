@@ -1,0 +1,19 @@
+TY  - JOUR
+TI  - Can a Mayor Change the Course of a Pandemic? An Agent-Based Study on the COVID Spread on Local Level in Germany
+AU  - Heger, Lucas
+AU  - Akdogan, Kerem
+AU  - Huwer, Friedemann
+AU  - Schott, Matthias
+VL  - 18
+IS  - 2
+PY  - 2025
+DA  - 2025/08/20
+SP  - 70-78
+C1  - IJM 2025;18(2):70-78
+DO  - 10.34196/ijm.00322
+UR  - https://doi.org/10.34196/ijm.00322
+AB  - During the COVID-19 pandemic, a large variance of incidence rates on local level, e.g. cities and districts, within one country have been observed, while the same non-pharmaceutical measures have been taken to control the spread of the virus. This variance in incidence rates triggered the question, if the spread of incidence rates can be explained only by statistical processes and the local population statistics or if indeed other factors, e.g. local information campaigns, have to be considered. Within this paper we study the expected spread of incidence rates in the German State of Rhineland Palatinate during the second COVID-19 wave using an agent based simulation. We find that our agent-based model is able to replicate the observed incidence rates per district by only considering state-wide policies. While this does not imply that local policies or specific local political circumstances have no impact on local infection rates, it suggests that the dominant factors driving the distribution of infection rates across a state are primarily statistical effects, demographics, and state-wide policies.
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

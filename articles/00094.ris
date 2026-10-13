@@ -1,0 +1,21 @@
+TY  - JOUR
+TI  - Comparing two methods of reweighting a survey file to small area data
+AU  - Tanton, Robert
+AU  - Williamson, Paul
+AU  - Harding, Ann
+VL  - 7
+IS  - 1
+PY  - 2014
+DA  - 2014/04/30
+SP  - 76-99
+C1  - IJM 2014;7(1):76-99
+DO  - 10.34196/ijm.00094
+UR  - https://doi.org/10.34196/ijm.00094
+AB  - One method of calculating small area estimates using survey data involves deriving new weights for each respondent in the survey. These new weights are derived so that the survey data sums to some known totals for a small area (from either a Census or administrative data). There are different methods for calculating these weights, and this paper analyses the results from two different methods – a generalised regression method and combinatorial optimisation. The weights derived from each method are compared, and advantages and disadvantages of each method are assessed. Estimates of housing stress at a Statistical Local Area in Australia from each method are then calculated, and these estimates are then validated against a third reliable source, Australian Census data from 2001.
+KW  - spatial microsimulationxs
+KW  - combinatorial optimisation
+KW  - generalised regression
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

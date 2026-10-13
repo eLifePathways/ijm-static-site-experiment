@@ -1,0 +1,24 @@
+TY  - JOUR
+TI  - Modelling the Economic Impact of Next Generation Sequencing and Precision Medicine on Childhood Cancer Management—a Microsimulation Approach
+AU  - Tan, Owen
+AU  - Schofield, Deborah J
+AU  - O’Brien, Tracey
+AU  - Trahair, Toby
+AU  - Shrestha, Rupendra N
+VL  - 14
+IS  - 1
+PY  - 2021
+DA  - 2021/04/30
+SP  - 73-91
+C1  - IJM 2021;14(1):73-91
+DO  - 10.34196/ijm.00230
+UR  - https://doi.org/10.34196/ijm.00230
+AB  - Precision medicine is a new approach to identify the best treatment available to patients based on their genomic information. However, no economic evaluation of genome sequencing has been reported for the treatment of childhood cancers, which is critical to evaluate the feasibility of implementing patient’s genome sequencing as part of a publicly funded treatment strategy. We have developed a microsimulation model, PeCanMOD, to evaluate the cost and benefit of applying the Next Generation Sequencing (NGS) in the management of childhood cancer. This paper describes the construction of PeCanMOD. We used linked datasets of children under 18 year of age, living in New South Wales (NSW), Australia, who have had cancer, as a base population. Their records were extracted from the NSW Central Cancer Registry and were linked to mortality and hospital datasets. In addition, we simulated the genomic landscape of the cancer registry population, through information obtained from 1,200 molecularly profiled paediatric cancer from the Foundation Medicine. The model simulated the number of individuals eligible for precision medicine, and the incremental cost of treatment per life year gained if precision medicine was introduced for late stage cancer patients as a final treatment option. Cost of drugs, and hospital admission were included in the model. Data on response rate and probability of survival was imputed based on the latest available evidence. Each unit record in the model was weighted using input from the Australian Institute of Health and Welfare (AIHW) to reflect total paediatric cancer population in Australia. The model demonstrates the application of microsimulation modelling to simulate the impacts of NGS and precision medicine on costs and health outcomes for childhood cancer.
+KW  - childhood cancers
+KW  - economic impacts
+KW  - genomic technology
+KW  - precision medicine
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 

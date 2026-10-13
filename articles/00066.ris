@@ -1,0 +1,20 @@
+TY  - JOUR
+TI  - A mate-matching algorithm for continuous-time microsimulation models
+AU  - Zinn, Sabine
+VL  - 5
+IS  - 1
+PY  - 2012
+DA  - 2012/06/30
+SP  - 31-51
+C1  - IJM 2012;5(1):31-51
+DO  - 10.34196/ijm.00066
+UR  - https://doi.org/10.34196/ijm.00066
+AB  - The timing of partnership formation in closed continuous-time microsimulation models poses difficulties due to the continuous time scale. in this paper the problem is resolved by the concept of a partnership market, which individuals can enter and leave at any point in time over the complete simulation time range. Each individual, who looks for a spouse, remains in the market for a specific period during which searching and matching is performed. To build up synthetic couples, the model imitates a decision making-process. The decision to enter a partnership depends on empirically estimated logit models for the probability that a given woman and a given man will get together, and also on an individual aspiration level regarding a potential partner. A couple is formed if a positive decision has been made and the timing of the partnership formation is consistent with the individual searching periods of the prospective spouses. The algorithm is illustrated by an example in which simulations are run to project a synthetic population, similar to the population of the Netherlands, by using an extended version of the microsimulation tool of the MicMac project.
+KW  - mate-matching algorithm
+KW  - closed mating model
+KW  - continuous-time microsimulation
+KW  - compatibility index
+JF  - IJM
+SN  - 1747-5864
+PB  - International Journal of Microsimulation
+ER  - 
