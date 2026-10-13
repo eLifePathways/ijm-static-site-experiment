@@ -3,10 +3,14 @@ dev: node_modules prepare-assets
 	pnpm exec astro dev
 
 .PHONY: prod
-prod: node_modules prepare-assets
+prod: dist
+	pnpm exec astro preview
+
+# agent thinks: Phony so it always rebuilds — astro's inputs are too spread out to track here.
+.PHONY: dist
+dist: node_modules prepare-assets
 	pnpm exec astro build
 	pnpm exec pagefind --site dist
-	pnpm exec astro preview
 
 .PHONY: prepare-assets
 prepare-assets: node_modules

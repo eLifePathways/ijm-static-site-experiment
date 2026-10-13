@@ -1,0 +1,83 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # assets/ is GBs of LFS objects; cache them to avoid re-downloading
+      # (and burning LFS bandwidth) on every deploy. The object IDs are content
+      # hashes, so this list also serves as a cheap fingerprint of assets/.
+      - name: List LFS objects
+        run: git lfs ls-files --long | cut -d ' ' -f1 | sort > .lfs-assets-id
+      - uses: actions/cache@v4
+        with:
+          path: .git/lfs
+          key: lfs-${{ hashFiles('.lfs-assets-id') }}
+          restore-keys: lfs-
+      - name: Pull LFS objects
+        run: git lfs pull
+
+      - uses: jdx/mise-action@v2
+      - name: Locate pnpm store
+        run: echo "PNPM_STORE=$(pnpm store path)" >> "$GITHUB_ENV"
+      - uses: actions/cache@v4
+        with:
+          path: ${{ env.PNPM_STORE }}
+          key: pnpm-${{ hashFiles('pnpm-lock.yaml') }}
+          restore-keys: pnpm-
+      - name: Install dependencies
+        run: make node_modules
+
+      # Restored after `make node_modules`, otherwise the restored
+      # node_modules/.astro would make `make` think dependencies are installed.
+      # - src/generated-tiffs, public/files: prepare-assets.mjs output
+      # - node_modules/.astro/assets: Astro's TIFF -> WebP conversion cache,
+      #   whose entries are named by content hash, so stale ones are never reused.
+      - uses: actions/cache@v4
+        id: assets-cache
+        with:
+          path: |
+            src/generated-tiffs
+            public/files
+            node_modules/.astro/assets
+          key: assets-${{ hashFiles('.lfs-assets-id', 'pnpm-lock.yaml') }}
+          restore-keys: assets-
+      # prepare-assets.mjs skips files whose copy is newer than the source, but
+      # checkout gives every source a fresh mtime. On an exact hit the copies are
+      # known to match, so bump their mtimes; on a partial hit they're left
+      # older, so everything is recopied.
+      - name: Mark cached asset copies as fresh
+        if: steps.assets-cache.outputs.cache-hit == 'true'
+        run: find src/generated-tiffs public/files -type f -exec touch {} +
+
+      - name: Build
+        run: make dist
+
+      # Force-push a single orphan commit so gh-pages doesn't grow by the
+      # site's size (100s of MB) on every deploy.
+      - name: Push to gh-pages
+        working-directory: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          touch .nojekyll  # Without this, Pages runs Jekyll, which drops _astro/.
+          git init -q -b gh-pages
+          git add -A
+          git -c user.name='github-actions[bot]' \
+              -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+              commit -q -m "Deploy ${GITHUB_SHA}"
+          git push --force "https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" gh-pages
