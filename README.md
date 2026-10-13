@@ -12,12 +12,14 @@ Node and pnpm (both pinned in `mise.toml`; run `mise install` to get them).
 - `make dev` gives you hot reloading, but because of this search doesn't work.
 - `make prod` is the equivalent to the version that would be deployed. Rerun to reload. Pregenerated assets; search works.
 
-## Cleaning up
+## Checking changes
 
+`make check` runs various linters and tests.
+
+## Cleaning up
 
 - `make clean` removes build output (`dist/`, `.astro/`)
 - `make clobber` cleans, plus also removes generated assets and node_modules — a blank slate.
-
 
 ## Deploying to GitHub Pages
 
