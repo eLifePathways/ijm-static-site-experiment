@@ -6,7 +6,7 @@ import { describe, it, expect } from 'vitest';
 import { readdirSync, readFileSync } from 'fs';
 import { join, resolve } from 'path';
 
-const DATA_ROOT = resolve('../api/data');
+const DATA_ROOT = resolve('./data');
 const ARTICLES_DIR = join(DATA_ROOT, 'articles');
 const COLLECTIONS_DIR = join(DATA_ROOT, 'collections');
 const SUBJECTS_DIR = join(DATA_ROOT, 'subjects');

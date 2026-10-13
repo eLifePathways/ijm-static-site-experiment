@@ -11,7 +11,7 @@ import { resolve } from 'path';
 import { buildBibTeX, buildRIS, type CitableArticle } from '@/utils/articleContent';
 
 function loadArticle(id: string): CitableArticle {
-  const path = resolve('../api/data/articles', `${id}.json`);
+  const path = resolve('./data/articles', `${id}.json`);
   return JSON.parse(readFileSync(path, 'utf-8'));
 }
 

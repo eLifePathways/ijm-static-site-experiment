@@ -17,7 +17,7 @@ test: node_modules
 	pnpm exec vitest run
 
 .PHONY: check
-check: node_modules
+check: node_modules lint test
 	pnpm exec astro check
 
 .PHONY: lint
