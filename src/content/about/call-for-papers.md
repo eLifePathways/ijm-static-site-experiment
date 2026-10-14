@@ -1,5 +1,5 @@
 ---
-title: Special issues
+title: Call for papers
 order: 5
 ---
 
