@@ -14,6 +14,8 @@ async function loadAllImages(page: Page) {
 const PAGES = [
   // 2007 article: figures, an appendix, MathML and a long reference list.
   { path: '/articles/00003', name: 'article-00003' },
+  // 2024 article: MathML equations with labels.
+  { path: '/articles/00327', name: 'article-00327' },
 ];
 
 for (const spec of PAGES) {

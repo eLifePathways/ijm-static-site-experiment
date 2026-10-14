@@ -141,8 +141,8 @@ if (type === 'image' && !resolvedImage) {
 {/* MathML equation */}
 {type === 'mathml' && (
   <div id={node.id || undefined} class="equation">
-    {node.label && <span class="equation-label">{node.label}</span>}
     <Fragment set:html={node.mathml} />
+    {node.label && <span class="equation-label">{node.label}</span>}
   </div>
 )}
 
