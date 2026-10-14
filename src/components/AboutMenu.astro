@@ -3,9 +3,14 @@ import { getCollection } from 'astro:content';
 
 interface Props {
   currentPath: string;
+  // The legacy site renders the listing at the bottom of the page, with an
+  // "All sections" jump link under the title; at >=75em its JS moves the
+  // listing up into the jump link's place. We render both placements and
+  // switch between them with CSS, so only one is ever displayed.
+  placement: 'top' | 'bottom';
 }
 
-const { currentPath } = Astro.props;
+const { currentPath, placement } = Astro.props;
 
 const entries = (await getCollection('about'))
   .filter((entry) => entry.data.order !== undefined)
@@ -20,8 +25,15 @@ const slugToPath: Record<string, string> = {
 };
 ---
 
-<nav aria-label="About sections" class="about-menu wrapper">
-  <h2>About sections</h2>
+{placement === 'top' && (
+  <a href="#sections" class="about-menu-link">All sections</a>
+)}
+<nav
+  aria-label="About sections"
+  class:list={['about-menu', `about-menu--${placement}`]}
+  id={placement === 'bottom' ? 'sections' : undefined}
+>
+  {placement === 'bottom' && <h2>About sections</h2>}
   <ul>
     {entries.map((entry) => {
       const href = slugToPath[entry.id] ?? `/about/${entry.id}`;
@@ -37,10 +49,46 @@ const slugToPath: Record<string, string> = {
 </nav>
 
 <style>
-  .about-menu {
+  .about-menu-link {
+    display: block;
+    border-bottom: 1px solid var(--color-border);
+    padding-block: var(--space-xs);
+    text-align: center;
+    color: var(--color-ink);
+    text-decoration: none;
+    font-family: var(--font-heading);
+
+    &::after {
+      content: '\00a0\00bb';
+    }
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+
+  .about-menu--top {
+    display: none;
+    border-bottom: 1px solid var(--color-border);
+    padding-block-end: var(--space-xs);
+  }
+
+  .about-menu--bottom {
     border-top: 1px solid var(--color-border);
     padding-block: var(--space-m) var(--space-l);
+    text-align: center;
+  }
 
+  @media (min-width: 75em) {
+    .about-menu-link,
+    .about-menu--bottom {
+      display: none;
+    }
+    .about-menu--top {
+      display: block;
+    }
+  }
+
+  .about-menu {
     h2 {
       font-size: var(--step-1);
       margin-block-end: var(--space-xs);
@@ -49,6 +97,7 @@ const slugToPath: Record<string, string> = {
     ul {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
       gap: var(--space-2xs) var(--space-m);
       list-style: none;
       margin: 0;

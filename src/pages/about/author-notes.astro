@@ -11,7 +11,8 @@ const { Content } = await render(entry);
 <BaseLayout title={entry.data.title}>
   <main id="maincontent" class="wrapper">
     <h1>{entry.data.title}</h1>
+    <AboutMenu currentPath="/about/author-notes" placement="top" />
     <Content />
+    <AboutMenu currentPath="/about/author-notes" placement="bottom" />
   </main>
-  <AboutMenu currentPath="/about/author-notes" />
 </BaseLayout>

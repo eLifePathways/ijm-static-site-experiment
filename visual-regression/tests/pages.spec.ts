@@ -16,6 +16,9 @@ const PAGES = [
   { path: '/articles/00003', name: 'article-00003' },
   // 2024 article: MathML equations with labels.
   { path: '/articles/00327', name: 'article-00327' },
+  // About sections menu: under the title at desktop, at the bottom (with an
+  // "All sections" jump link under the title) below the 75em breakpoint.
+  { path: '/about', name: 'about' },
 ];
 
 for (const spec of PAGES) {
