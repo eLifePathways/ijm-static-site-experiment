@@ -3,8 +3,8 @@ import { googleScholarUrl } from '@/utils/googleScholar';
 
 interface Author {
   type: 'person' | 'group';
-  name?: { preferred: string; index: string };
-  groupName?: string;
+  // A group's name is a plain string; a person's is structured.
+  name?: string | { preferred: string; index: string };
 }
 
 interface Pages {
@@ -22,6 +22,8 @@ interface Reference {
   id: string;
   type: string;
   authors?: Author[];
+  // Theses name a single `author`; `authors` is then a "n/a" placeholder.
+  author?: Author;
   date?: string;
   // journal
   articleTitle?: string;
@@ -38,14 +40,13 @@ interface Reference {
   editors?: Author[];
   chapterTitle?: string;
   // conference
-  conferenceName?: string;
+  conference?: { name: string[] };
   // web
   title?: string;
   uri?: string;
   accessed?: string;
   // report / thesis / software / preprint
   source?: string;
-  institution?: Publisher;
   // misc
   number?: string;
   pages_raw?: string;
@@ -57,11 +58,21 @@ interface Props {
 
 const { references } = Astro.props;
 
+function authorName(a: Author): string {
+  if (typeof a.name === 'string') return a.name;
+  return a.name?.index ?? a.name?.preferred ?? '';
+}
+
+// "n/a" is a placeholder group author in the source data; the legacy site
+// doesn't display it.
+function referenceAuthors(ref: Reference): Author[] {
+  if (ref.author) return [ref.author];
+  return (ref.authors ?? []).filter((a) => a.name !== 'n/a');
+}
+
 function authorStr(authors: Author[] | undefined, max = 99): string {
   if (!authors?.length) return '';
-  const names = authors.slice(0, max).map((a) =>
-    a.type === 'group' ? (a.groupName ?? '') : (a.name?.index ?? a.name?.preferred ?? '')
-  );
+  const names = authors.slice(0, max).map(authorName);
   const suffix = authors.length > max ? ' et al' : '';
   return names.join(', ') + suffix;
 }
@@ -93,7 +104,7 @@ function pubStr(pub: Publisher | undefined): string {
         {/* Journal article */}
         {ref.type === 'journal' && (
           <span>
-            {authorStr(ref.authors)} ({ref.date}).{' '}
+            {authorStr(referenceAuthors(ref))} ({ref.date}).{' '}
             {ref.articleTitle && <span set:html={ref.articleTitle} />}.{' '}
             <em>{ref.journal}</em>
             {ref.volume && <>, <strong>{ref.volume}</strong></>}
@@ -106,7 +117,7 @@ function pubStr(pub: Publisher | undefined): string {
         {/* Book */}
         {ref.type === 'book' && (
           <span>
-            {authorStr(ref.authors)} ({ref.date}).{' '}
+            {authorStr(referenceAuthors(ref))} ({ref.date}).{' '}
             <em set:html={ref.bookTitle} />.
             {ref.edition && <> {ref.edition} ed.</>}
             {pubStr(ref.publisher) && <> {pubStr(ref.publisher)}.</>}
@@ -116,7 +127,7 @@ function pubStr(pub: Publisher | undefined): string {
         {/* Book chapter */}
         {ref.type === 'book-chapter' && (
           <span>
-            {authorStr(ref.authors)} ({ref.date}).{' '}
+            {authorStr(referenceAuthors(ref))} ({ref.date}).{' '}
             {ref.chapterTitle && <span set:html={ref.chapterTitle} />}.{' '}
             {ref.editors && <>In {editorStr(ref.editors)}, </>}
             <em set:html={ref.bookTitle} />
@@ -128,9 +139,9 @@ function pubStr(pub: Publisher | undefined): string {
         {/* Conference proceeding */}
         {ref.type === 'conference-proceeding' && (
           <span>
-            {authorStr(ref.authors)} ({ref.date}).{' '}
+            {authorStr(referenceAuthors(ref))} ({ref.date}).{' '}
             {ref.articleTitle && <span set:html={ref.articleTitle} />}.{' '}
-            {ref.conferenceName && <em>{ref.conferenceName}</em>}
+            {ref.conference && <em>{ref.conference.name.join(', ')}</em>}
             {pageStr(ref.pages) && <>, {pageStr(ref.pages)}</>}.
           </span>
         )}
@@ -138,7 +149,7 @@ function pubStr(pub: Publisher | undefined): string {
         {/* Web / online source */}
         {ref.type === 'web' && (
           <span>
-            {authorStr(ref.authors)} ({ref.date}).{' '}
+            {authorStr(referenceAuthors(ref))} ({ref.date}).{' '}
             {ref.title && <span set:html={ref.title} />}.
             {ref.uri && <>{' '}<a href={ref.uri} target="_blank" rel="noopener">{ref.uri}</a></>}
             {ref.accessed && <> (accessed {ref.accessed})</>}.
@@ -148,10 +159,11 @@ function pubStr(pub: Publisher | undefined): string {
         {/* Report */}
         {(ref.type === 'report' || ref.type === 'data') && (
           <span>
-            {authorStr(ref.authors)} ({ref.date}).{' '}
+            {authorStr(referenceAuthors(ref))} ({ref.date}).{' '}
             {ref.title && <em set:html={ref.title} />}
-            {ref.source && <>{'. '}{ref.source}</>}
-            {pubStr(ref.institution) && <>{'. '}{pubStr(ref.institution)}</>}.
+            {/* A report's `source` just repeats its title; for data it's the repository. */}
+            {ref.type === 'data' && ref.source && <>{'. '}{ref.source}</>}
+            {ref.type === 'report' && pubStr(ref.publisher) && <>{'. '}{pubStr(ref.publisher)}</>}.
             {ref.doi && <>{' '}<a href={`https://doi.org/${ref.doi}`} target="_blank" rel="noopener">{`https://doi.org/${ref.doi}`}</a></>}
           </span>
         )}
@@ -159,7 +171,7 @@ function pubStr(pub: Publisher | undefined): string {
         {/* Thesis */}
         {ref.type === 'thesis' && (
           <span>
-            {authorStr(ref.authors)} ({ref.date}).{' '}
+            {authorStr(referenceAuthors(ref))} ({ref.date}).{' '}
             {ref.title && <em set:html={ref.title} />}.
             {pubStr(ref.publisher) && <> {pubStr(ref.publisher)}.</>}
           </span>
@@ -168,7 +180,7 @@ function pubStr(pub: Publisher | undefined): string {
         {/* Preprint / software */}
         {(ref.type === 'preprint' || ref.type === 'software') && (
           <span>
-            {authorStr(ref.authors)} ({ref.date}).{' '}
+            {authorStr(referenceAuthors(ref))} ({ref.date}).{' '}
             {ref.title && <em set:html={ref.title} />}.
             {ref.source && <>{' '}{ref.source}.</>}
             {ref.doi && <>{' '}<a href={`https://doi.org/${ref.doi}`} target="_blank" rel="noopener">{`https://doi.org/${ref.doi}`}</a></>}
@@ -178,7 +190,7 @@ function pubStr(pub: Publisher | undefined): string {
         {/* Fallback for unknown types */}
         {ref.type === 'unknown' && (
           <span>
-            {authorStr(ref.authors)}
+            {authorStr(referenceAuthors(ref))}
             {ref.date && <> ({ref.date})</>}.
             {(ref.articleTitle || ref.title || ref.bookTitle) && (
               <> <span set:html={ref.articleTitle ?? ref.title ?? ref.bookTitle} />.</>
