@@ -21,14 +21,14 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       # assets/ is GBs of LFS objects; cache them to avoid re-downloading
       # (and burning LFS bandwidth) on every deploy. The object IDs are content
       # hashes, so this list also serves as a cheap fingerprint of assets/.
       - name: List LFS objects
         run: git lfs ls-files --long | cut -d ' ' -f1 | sort > .lfs-assets-id
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         with:
           path: .git/lfs
           key: lfs-${{ hashFiles('.lfs-assets-id') }}
@@ -36,10 +36,10 @@ jobs:
       - name: Pull LFS objects
         run: git lfs pull
 
-      - uses: jdx/mise-action@v2
+      - uses: jdx/mise-action@v3
       - name: Locate pnpm store
         run: echo "PNPM_STORE=$(pnpm store path)" >> "$GITHUB_ENV"
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         with:
           path: ${{ env.PNPM_STORE }}
           key: pnpm-${{ hashFiles('pnpm-lock.yaml') }}
@@ -52,7 +52,7 @@ jobs:
       # - src/generated-tiffs, public/files: prepare-assets.mjs output
       # - node_modules/.astro/assets: Astro's TIFF -> WebP conversion cache,
       #   whose entries are named by content hash, so stale ones are never reused.
-      - uses: actions/cache@v4
+      - uses: actions/cache@v5
         id: assets-cache
         with:
           path: |
@@ -72,8 +72,8 @@ jobs:
       - name: Build
         run: make dist
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v4
         with:
           path: dist
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
