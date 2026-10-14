@@ -57,7 +57,7 @@ function pagesParam(pages: ScholarReference['pages']): string | undefined {
 // Which title field is looked up depends on the reference type, as on the
 // legacy site — e.g. a conference proceeding's `articleTitle`, even when it
 // also has a `chapterTitle`.
-function referenceTitle(ref: ScholarReference): string | undefined {
+export function referenceTitle(ref: ScholarReference): string | undefined {
   switch (ref.type) {
     case 'book-chapter':
       return ref.chapterTitle;

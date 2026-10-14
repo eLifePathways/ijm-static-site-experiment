@@ -1,5 +1,6 @@
 ---
-import { googleScholarUrl } from '@/utils/googleScholar';
+import { googleScholarUrl, referenceTitle } from '@/utils/googleScholar';
+import { referenceHref } from '@/utils/referenceLinks';
 
 interface Author {
   type: 'person' | 'group';
@@ -24,13 +25,15 @@ interface Reference {
   authors?: Author[];
   // Theses name a single `author`; `authors` is then a "n/a" placeholder.
   author?: Author;
+  authorsEtAl?: boolean;
   date?: string;
   // journal
   articleTitle?: string;
   journal?: string;
   volume?: string;
   issue?: string;
-  pages?: Pages;
+  // A page range, or free text such as an article number.
+  pages?: Pages | string;
   doi?: string;
   // book
   bookTitle?: string;
@@ -83,8 +86,9 @@ function editorStr(eds: Author[] | undefined): string {
   return eds.length === 1 ? `${s} (Ed.)` : `${s} (Eds.)`;
 }
 
-function pageStr(pages: Pages | undefined): string {
+function pageStr(pages: Pages | string | undefined): string {
   if (!pages) return '';
+  if (typeof pages === 'string') return pages;
   return pages.range ?? (pages.first && pages.last ? `${pages.first}–${pages.last}` : (pages.first ?? ''));
 }
 
@@ -101,101 +105,72 @@ function pubStr(pub: Publisher | undefined): string {
   <ol class="reference-list">
     {references.map((ref) => (
       <li id={ref.id} class="reference-item">
+        {/* Same order as the legacy site: title, authors (year), details, DOI, Google Scholar. */}
+        {referenceHref(ref) ? (
+          <a class="reference-item__title" href={referenceHref(ref)} target="_blank" rel="noopener" set:html={referenceTitle(ref)} />
+        ) : (
+          <span class="reference-item__title" set:html={referenceTitle(ref)} />
+        )}
+
+        <span class="reference-item__authors">
+          {authorStr(referenceAuthors(ref))}
+          {ref.authorsEtAl && <> et al.</>}
+          {ref.date && <> ({ref.date})</>}
+        </span>
+
         {/* Journal article */}
         {ref.type === 'journal' && (
-          <span>
-            {authorStr(referenceAuthors(ref))} ({ref.date}).{' '}
-            {ref.articleTitle && <span set:html={ref.articleTitle} />}.{' '}
+          <span class="reference-item__origin">
             <em>{ref.journal}</em>
-            {ref.volume && <>, <strong>{ref.volume}</strong></>}
+            {ref.volume && <>, <strong>{ref.volume.trim()}</strong></>}
             {ref.issue && <>({ref.issue})</>}
             {pageStr(ref.pages) && <>, {pageStr(ref.pages)}</>}.
-            {ref.doi && <>{' '}<a href={`https://doi.org/${ref.doi}`} target="_blank" rel="noopener">{`https://doi.org/${ref.doi}`}</a></>}
           </span>
         )}
 
         {/* Book */}
-        {ref.type === 'book' && (
-          <span>
-            {authorStr(referenceAuthors(ref))} ({ref.date}).{' '}
-            <em set:html={ref.bookTitle} />.
-            {ref.edition && <> {ref.edition} ed.</>}
-            {pubStr(ref.publisher) && <> {pubStr(ref.publisher)}.</>}
+        {ref.type === 'book' && (ref.edition || pubStr(ref.publisher)) && (
+          <span class="reference-item__origin">
+            {ref.edition && <>{ref.edition} ed. </>}
+            {pubStr(ref.publisher) && <>{pubStr(ref.publisher)}.</>}
           </span>
         )}
 
         {/* Book chapter */}
         {ref.type === 'book-chapter' && (
-          <span>
-            {authorStr(referenceAuthors(ref))} ({ref.date}).{' '}
-            {ref.chapterTitle && <span set:html={ref.chapterTitle} />}.{' '}
+          <span class="reference-item__origin">
             {ref.editors && <>In {editorStr(ref.editors)}, </>}
-            <em set:html={ref.bookTitle} />
-            {pageStr(ref.pages) && <> (pp. {pageStr(ref.pages)})</>}.
+            <em set:html={ref.bookTitle} />.
             {pubStr(ref.publisher) && <> {pubStr(ref.publisher)}.</>}
+            {pageStr(ref.pages) && <> pp. {pageStr(ref.pages)}.</>}
           </span>
         )}
 
         {/* Conference proceeding */}
-        {ref.type === 'conference-proceeding' && (
-          <span>
-            {authorStr(referenceAuthors(ref))} ({ref.date}).{' '}
-            {ref.articleTitle && <span set:html={ref.articleTitle} />}.{' '}
-            {ref.conference && <em>{ref.conference.name.join(', ')}</em>}
+        {ref.type === 'conference-proceeding' && ref.conference && (
+          <span class="reference-item__origin">
+            <em>{ref.conference.name.join(', ')}</em>
             {pageStr(ref.pages) && <>, {pageStr(ref.pages)}</>}.
           </span>
         )}
 
         {/* Web / online source */}
-        {ref.type === 'web' && (
-          <span>
-            {authorStr(referenceAuthors(ref))} ({ref.date}).{' '}
-            {ref.title && <span set:html={ref.title} />}.
-            {ref.uri && <>{' '}<a href={ref.uri} target="_blank" rel="noopener">{ref.uri}</a></>}
-            {ref.accessed && <> (accessed {ref.accessed})</>}.
-          </span>
+        {ref.type === 'web' && ref.accessed && (
+          <span class="reference-item__origin">Accessed {ref.accessed}.</span>
         )}
 
-        {/* Report */}
-        {(ref.type === 'report' || ref.type === 'data') && (
-          <span>
-            {authorStr(referenceAuthors(ref))} ({ref.date}).{' '}
-            {ref.title && <em set:html={ref.title} />}
-            {/* A report's `source` just repeats its title; for data it's the repository. */}
-            {ref.type === 'data' && ref.source && <>{'. '}{ref.source}</>}
-            {ref.type === 'report' && pubStr(ref.publisher) && <>{'. '}{pubStr(ref.publisher)}</>}.
-            {ref.doi && <>{' '}<a href={`https://doi.org/${ref.doi}`} target="_blank" rel="noopener">{`https://doi.org/${ref.doi}`}</a></>}
-          </span>
+        {/* Report / thesis: a report's `source` just repeats its title, so show the publisher */}
+        {(ref.type === 'report' || ref.type === 'thesis') && pubStr(ref.publisher) && (
+          <span class="reference-item__origin">{pubStr(ref.publisher)}.</span>
         )}
 
-        {/* Thesis */}
-        {ref.type === 'thesis' && (
-          <span>
-            {authorStr(referenceAuthors(ref))} ({ref.date}).{' '}
-            {ref.title && <em set:html={ref.title} />}.
-            {pubStr(ref.publisher) && <> {pubStr(ref.publisher)}.</>}
-          </span>
+        {/* Data / preprint / software: `source` is the repository or series */}
+        {(ref.type === 'data' || ref.type === 'preprint' || ref.type === 'software') && ref.source && (
+          <span class="reference-item__origin">{ref.source}.</span>
         )}
 
-        {/* Preprint / software */}
-        {(ref.type === 'preprint' || ref.type === 'software') && (
-          <span>
-            {authorStr(referenceAuthors(ref))} ({ref.date}).{' '}
-            {ref.title && <em set:html={ref.title} />}.
-            {ref.source && <>{' '}{ref.source}.</>}
-            {ref.doi && <>{' '}<a href={`https://doi.org/${ref.doi}`} target="_blank" rel="noopener">{`https://doi.org/${ref.doi}`}</a></>}
-          </span>
-        )}
-
-        {/* Fallback for unknown types */}
-        {ref.type === 'unknown' && (
-          <span>
-            {authorStr(referenceAuthors(ref))}
-            {ref.date && <> ({ref.date})</>}.
-            {(ref.articleTitle || ref.title || ref.bookTitle) && (
-              <> <span set:html={ref.articleTitle ?? ref.title ?? ref.bookTitle} />.</>
-            )}
-          </span>
+        {ref.doi && (
+          <a class="reference-item__doi" href={`https://doi.org/${ref.doi}`} target="_blank" rel="noopener">{`https://doi.org/${ref.doi}`}</a>
         )}
 
         {googleScholarUrl(ref) && (
@@ -217,8 +192,19 @@ function pubStr(pub: Publisher | undefined): string {
     }
   }
 
+  .reference-item__title,
+  .reference-item__authors,
+  .reference-item__origin,
+  .reference-item__doi,
   .reference-item__scholar {
     display: block;
+  }
+
+  .reference-item__title {
+    font-weight: bold;
+  }
+
+  .reference-item__scholar {
     font-size: var(--step--1);
   }
 </style>
