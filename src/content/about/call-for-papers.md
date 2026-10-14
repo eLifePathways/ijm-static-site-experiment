@@ -1,6 +1,6 @@
 ---
 title: Call for papers
-order: 5
+order: 6
 ---
 
 ## Forthcoming special issues

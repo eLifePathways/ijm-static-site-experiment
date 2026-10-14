@@ -1,6 +1,6 @@
 ---
 title: Notes for reviewers
-order: 4
+order: 5
 ---
 
 The primary purpose of the review process is to ensure that papers accepted for publication by the journal meet the highest academic standards of clarity, rigour and replicability. A secondary purpose of the review process is to provide constructive feedback for authors whose papers fall short of this mark.
