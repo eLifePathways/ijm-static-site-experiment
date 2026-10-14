@@ -4,6 +4,7 @@ import { type CollectionEntry } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import { issueSlug } from '@/utils/slugs';
 import ArticleTeaser from '@/components/ArticleTeaser.astro';
+import { formatShortDate } from '@/utils/articleContent';
 
 export async function getStaticPaths() {
   const issues = await getAllIssues();
@@ -18,7 +19,7 @@ interface Props {
 }
 
 const { issue } = Astro.props;
-const { title, content: articleIds } = issue.data;
+const { title, published, content: articleIds } = issue.data;
 
 const allArticles = await getAllArticles();
 const issueArticles = articleIds
@@ -29,8 +30,33 @@ const issueArticles = articleIds
 <BaseLayout title={title}>
   <main id="maincontent" class="wrapper">
     <h1>{title}</h1>
+    <p class="issue-meta">
+      <a class="issue-meta__type" href="/collections">Issue</a>
+      <time datetime={published}>{formatShortDate(published)}</time>
+    </p>
     <ol class="teaser-list">
       {issueArticles.map((article) => <ArticleTeaser article={article} />)}
     </ol>
   </main>
 </BaseLayout>
+
+<style>
+  .issue-meta {
+    display: flex;
+    gap: var(--space-xs);
+    font-family: var(--font-heading);
+    font-size: var(--step--2);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-ink-muted);
+    margin: 0 0 var(--space-m);
+  }
+
+  .issue-meta__type {
+    color: inherit;
+    text-decoration: none;
+  }
+  .issue-meta__type:hover {
+    color: var(--color-accent);
+  }
+</style>
