@@ -1,0 +1,58 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { resolvePdfPath } from '@/utils/articleContent';
+
+interface Props {
+  article: CollectionEntry<'articles'>;
+}
+
+const { article } = Astro.props;
+const { title, authors, published, doi, pdf, copyright, volume, issue, fpage, lpage, keywords, subjects, abstract } =
+  article.data;
+
+const publisher = 'International Journal of Microsimulation';
+const publicationDate = published.split('T')[0];
+const doiUrl = `https://doi.org/${doi}`;
+const pdfPath = resolvePdfPath(pdf);
+const siteUrl = Astro.site?.origin ?? 'https://microsimulation.org';
+const pdfUrl = `${siteUrl}${pdfPath}`;
+
+// Extract plain text from abstract (strip HTML tags)
+function extractAbstractText(): string | undefined {
+  if (!abstract || typeof abstract !== 'object') return undefined;
+  const content = (abstract as { content?: Array<{ text?: string }> }).content;
+  if (!Array.isArray(content)) return undefined;
+  return content
+    .map((p) => p.text ?? '')
+    .join(' ')
+    .replace(/<[^>]+>/g, '')
+    .trim();
+}
+const abstractText = extractAbstractText();
+
+// Format citation
+const citation = `International Journal of Microsimulation, ${volume}(${issue}), ${fpage}-${lpage}`;
+---
+
+<link rel="schema.DC" href="http://purl.org/dc/elements/1.1/" />
+<meta name="DC.title" content={title} />
+{authors?.map((author) => (
+  <meta name="DC.creator" content={author.name.preferred} />
+))}
+<meta name="DC.date" content={publicationDate} />
+<meta name="DC.identifier" content={doiUrl} />
+<meta name="DC.identifier.PDF" content={pdfUrl} />
+<meta name="DC.publisher" content={publisher} />
+<meta name="DC.type" content="Text" />
+<meta name="DC.format" content="text/html" />
+<meta name="DC.language" content="en" />
+<meta name="DC.source" content={publisher} />
+<meta name="DC.rights" content={copyright.license} />
+<meta name="DC.citation" content={citation} />
+{abstractText && <meta name="DC.description" content={abstractText} />}
+{keywords?.map((keyword) => (
+  <meta name="DC.subject" content={keyword} />
+))}
+{subjects?.map((subject) => (
+  <meta name="DC.subject" content={subject.name} />
+))}

@@ -7,6 +7,7 @@ import ArticleInfo from '@/components/article/ArticleInfo.astro';
 import ArticleToc from '@/components/article/ArticleToc.astro';
 import BodyNode from '@/components/article/BodyNode.astro';
 import ReferenceList from '@/components/article/ReferenceList.astro';
+import DublinCoreMeta from '@/components/article/DublinCoreMeta.astro';
 import { articleHasFiguresOrTables } from '@/utils/figuresAndData';
 import 'photoswipe/style.css';
 
@@ -48,6 +49,7 @@ const figuresHref = articleHasFiguresOrTables(article.data) ? `/articles/${id}/f
 ---
 
 <BaseLayout title={title}>
+  <DublinCoreMeta slot="head" article={article} />
   <main
     id="maincontent"
     class="article-page wrapper"

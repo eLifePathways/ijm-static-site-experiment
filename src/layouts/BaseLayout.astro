@@ -24,6 +24,7 @@ const siteTitle = 'International Journal of Microsimulation';
         trailing-slash URL from the crawled file path (dir/index.html) and
         every search result 404s. Pagefind honours this tag over its default. */}
     <link rel="canonical" href={Astro.url.pathname} />
+    <slot name="head" />
   </head>
   <body>
     <SiteHeader />
