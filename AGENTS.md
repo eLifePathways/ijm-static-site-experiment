@@ -20,11 +20,12 @@ what the project actually is.
   (only at `depth === 2`, i.e. top-level). Appendices reuse this component
   directly rather than a separate renderer — see the `isSectionShaped` check
   for why appendix nodes (which have no explicit `type` field) still match.
-- Collapsible sections everywhere (article sections, references, the ToC,
-  the homepage issues-by-year groups) use **native `<details>`/`<summary>`**,
+- Collapsible sections everywhere (article sections, references, the
+  homepage issues-by-year groups) use **native `<details>`/`<summary>`**,
   not JS — this reproduces the legacy PHP site's click-to-expand behaviour
   with zero JS and works before hydration. All article sections (body,
-  appendices, references, article info) default `open` — a deliberate
+  appendices, references, article info, and the Figures/Tables sections
+  on the figures view) default `open` — a deliberate
   departure from the legacy site, which only expanded the first section.
 - Pure logic (formatting, grouping, anything with edge cases worth a unit
   test) belongs in `src/utils/`, not inline in a component's frontmatter —

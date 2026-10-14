@@ -39,14 +39,14 @@ const { items, articleHref, figuresHref, activeView = 'article' } = Astro.props;
   )}
 
   {items.length > 0 && (
-    <details class="article-toc">
-      <summary>Jump to</summary>
+    <nav class="article-toc" aria-labelledby="article-toc-heading">
+      <p id="article-toc-heading" class="article-toc__heading">Jump to</p>
       <ul>
         {items.map((item) => (
           <li><a href={`#${item.id}`} set:html={item.title} /></li>
         ))}
       </ul>
-    </details>
+    </nav>
   )}
 </div>
 
@@ -58,9 +58,9 @@ const { items, articleHref, figuresHref, activeView = 'article' } = Astro.props;
     }
   }
 
-  /* Same typographic treatment as .article-toc's "Jump to" summary below —
+  /* Same typographic treatment as .article-toc's "Jump to" heading below —
      plain text links, not a pill/tab control, so the two view links and the
-     ToC toggle read as one consistent list of sidebar labels. */
+     ToC heading read as one consistent list of sidebar labels. */
   .view-tabs {
     display: flex;
     flex-direction: column;
@@ -90,35 +90,14 @@ const { items, articleHref, figuresHref, activeView = 'article' } = Astro.props;
   .article-toc {
     margin-block-end: var(--space-m);
 
-    > summary {
-      cursor: pointer;
-      list-style: none;
-      display: flex;
-      align-items: center;
-      gap: var(--space-2xs);
+    .article-toc__heading {
+      margin: 0;
       font-family: var(--font-heading);
       font-weight: bold;
       font-size: var(--step--1);
       text-transform: uppercase;
       letter-spacing: 0.03em;
       color: var(--color-ink-muted);
-
-      &::-webkit-details-marker {
-        display: none;
-      }
-      &::before {
-        content: '';
-        flex: none;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 4px 0 4px 6px;
-        border-color: transparent transparent transparent var(--color-ink-muted);
-        transition: transform 0.15s ease;
-      }
-    }
-    &[open] > summary::before {
-      transform: rotate(90deg);
     }
 
     ul {
