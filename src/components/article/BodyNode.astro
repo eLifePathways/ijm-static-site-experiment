@@ -10,12 +10,9 @@ interface Props {
   node: AnyNode;
   depth?: number;
   articleId: string;
-  // Position among top-level (depth 2) sections — only the first one starts
-  // expanded, matching the legacy site's collapsing behaviour.
-  index?: number;
 }
 
-const { node, depth = 2, articleId, index } = Astro.props;
+const { node, depth = 2, articleId } = Astro.props;
 const type: string = node.type ?? '';
 const headingLevel = Math.min(depth, 6) as 2 | 3 | 4 | 5 | 6;
 const HeadingTag = `h${headingLevel}` as const;
@@ -43,10 +40,10 @@ if (type === 'image' && !resolvedImage) {
 }
 ---
 
-{/* Top-level section — collapsible, matching the legacy site (only the
-    first section after the abstract starts expanded) */}
+{/* Top-level section — collapsible like the legacy site, but expanded by
+    default */}
 {isCollapsibleSection && (
-  <details id={node.id || undefined} class="article-section article-section--collapsible" open={index === 0}>
+  <details id={node.id || undefined} class="article-section article-section--collapsible" open>
     <summary><HeadingTag set:html={node.title} /></summary>
     <div class="article-section__body">
       {sectionChildren.map((child) => (

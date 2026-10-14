@@ -47,7 +47,7 @@ const copyrightYear = copyright.year ?? new Date(published).getUTCFullYear();
 const hasTagsFooter = Boolean(type || (subjects && subjects.length > 0) || (keywords && keywords.length > 0));
 ---
 
-<details id="info" class="article-section article-section--collapsible">
+<details id="info" class="article-section article-section--collapsible" open>
   <summary><h2>Article and author information</h2></summary>
   <div class="article-section__body">
     {personAuthors.length > 0 && (

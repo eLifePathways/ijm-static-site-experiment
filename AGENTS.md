@@ -23,9 +23,9 @@ what the project actually is.
 - Collapsible sections everywhere (article sections, references, the ToC,
   the homepage issues-by-year groups) use **native `<details>`/`<summary>`**,
   not JS — this reproduces the legacy PHP site's click-to-expand behaviour
-  with zero JS and works before hydration. Only the first top-level section
-  after the abstract defaults `open`; everything else defaults closed
-  (`open={index === 0}`), matching the legacy default state exactly.
+  with zero JS and works before hydration. All article sections (body,
+  appendices, references, article info) default `open` — a deliberate
+  departure from the legacy site, which only expanded the first section.
 - Pure logic (formatting, grouping, anything with edge cases worth a unit
   test) belongs in `src/utils/`, not inline in a component's frontmatter —
   extracted this way specifically so it's testable without an Astro/browser
