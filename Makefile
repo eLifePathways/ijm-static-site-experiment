@@ -56,7 +56,7 @@ VRT_RUN = docker run --rm -i --init --ipc=host \
 	--add-host=host.docker.internal:host-gateway \
 	-e VRT_BASE_URL=http://host.docker.internal:$(VRT_PORT) \
 	$(VRT_IMAGE) \
-	pnpm exec playwright test --config=visual-regression/playwright.config.ts
+	pnpm exec --config.verify-deps-before-run=false playwright test --config=visual-regression/playwright.config.ts
 
 # Build, serve dist/ in the background, run $(VRT_RUN) with the given extra
 # args, and always stop the server afterwards.
