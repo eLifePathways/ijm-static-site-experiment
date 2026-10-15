@@ -23,6 +23,7 @@ const slugToPath: Record<string, string> = {
   'submission-guidelines': '/about/submission-guidelines',
   'reviewer-notes': '/about/reviewer-notes',
   'call-for-papers': '/about/call-for-papers',
+  'iwa-prize': '/about/iwa-prize',
 };
 ---
 
@@ -38,10 +39,18 @@ const slugToPath: Record<string, string> = {
   <ul>
     {entries.map((entry) => {
       const href = slugToPath[entry.id] ?? `/about/${entry.id}`;
+      const hasResponsiveTitle = entry.data.navTitle && entry.data.navTitleShort;
       return (
         <li>
           <a href={href} aria-current={href === currentPath ? 'page' : undefined}>
-            {entry.data.title}
+            {hasResponsiveTitle ? (
+              <>
+                <span class="nav-title-wide">{entry.data.navTitle}</span>
+                <span class="nav-title-short">{entry.data.navTitleShort}</span>
+              </>
+            ) : (
+              entry.data.title
+            )}
           </a>
         </li>
       );
@@ -118,6 +127,23 @@ const slugToPath: Record<string, string> = {
       color: var(--color-ink);
       font-weight: bold;
       text-decoration: underline;
+    }
+
+    /* Responsive nav titles: short on narrow, full on wide */
+    .nav-title-wide {
+      display: none;
+    }
+    .nav-title-short {
+      display: inline;
+    }
+
+    @media (min-width: 75em) {
+      .nav-title-wide {
+        display: inline;
+      }
+      .nav-title-short {
+        display: none;
+      }
     }
   }
 </style>

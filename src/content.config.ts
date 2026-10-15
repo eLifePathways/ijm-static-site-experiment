@@ -127,6 +127,9 @@ const aboutCollection = defineCollection({
     // Sets the about-section menu order; pages without one (e.g. author-notes,
     // which the legacy PHP site's own menu excludes) are left out of the menu.
     order: z.number().optional(),
+    // Optional nav titles for responsive display (e.g. shorter text on narrow screens)
+    navTitle: z.string().optional(),
+    navTitleShort: z.string().optional(),
   }),
 });
 
