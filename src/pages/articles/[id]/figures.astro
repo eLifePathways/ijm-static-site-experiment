@@ -85,8 +85,8 @@ const tocItems = [
   @media (min-width: 75em) {
     .article-content-grid {
       display: grid;
-      /* Mirrors [id].astro's 2/8/2-twelfths split. */
-      grid-template-columns: 12rem 1fr 12rem;
+      /* Mirrors [id].astro's ToC + content columns. */
+      grid-template-columns: 12rem minmax(0, 1fr);
       gap: var(--space-l);
       align-items: start;
     }

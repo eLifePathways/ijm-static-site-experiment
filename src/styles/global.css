@@ -39,6 +39,27 @@ h6 {
   padding-block: var(--space-l);
 }
 
+/* Shared by both article views ([id].astro and [id]/figures.astro). Long
+   unbroken URLs in body text and reference titles would otherwise run past
+   the content column and give the whole page a horizontal scroll. */
+.article-content {
+  overflow-wrap: break-word;
+}
+
+/* Inline MathML can't wrap, so a long formula scrolls on its own rather
+   than widening the page (display equations already scroll inside
+   .equation). The padding/negative-margin pair gives tall glyphs room inside
+   the scroll box without changing line spacing — without it nearly every
+   formula overflows by a few px and gets a vertical scrollbar. Global
+   because the MathML arrives via set:html, out of reach of scoped styles. */
+.article-content math:not(.equation > math) {
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-block: 0.5em;
+  margin-block: -0.5em;
+}
+
 /* Shared across article/[id].astro, BodyNode.astro, and ReferenceList.astro
    (Astro's component-scoped styles don't reach into child components, so a
    class this widely reused is simpler as one global rule). */

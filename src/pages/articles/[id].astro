@@ -86,10 +86,13 @@ const figuresHref = articleHasFiguresOrTables(article.data) ? `/articles/${id}/f
   @media (min-width: 75em) {
     .article-content-grid {
       display: grid;
-      /* Mirrors the legacy site's 2/8/2-twelfths split: the ToC fills the
-         left margin and an equal-width empty column on the right keeps the
-         content column itself centered rather than flush against the ToC. */
-      grid-template-columns: 12rem 1fr 12rem;
+      /* ToC in the left margin; the content column runs to the wrapper's
+         right edge so its right margin lines up with the full-width abstract
+         above (no empty balancing column as on the legacy site).
+         minmax(0, …) rather than plain 1fr (whose minimum is the content's
+         min-content width) so wide tables/figures/URLs can't stretch the
+         column past the viewport — they scroll in their own wrappers instead. */
+      grid-template-columns: 12rem minmax(0, 1fr);
       gap: var(--space-l);
       align-items: start;
     }

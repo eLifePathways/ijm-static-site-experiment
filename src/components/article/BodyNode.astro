@@ -210,7 +210,9 @@ if (type === 'image' && !resolvedImage) {
     margin: 0 0 var(--space-m);
     display: flex;
     align-items: center;
-    justify-content: center;
+    /* `safe` falls back to start alignment when the equation overflows, so
+       its left edge stays scrollable-to instead of being pushed off-box. */
+    justify-content: safe center;
     gap: var(--space-s);
     overflow-x: auto;
 

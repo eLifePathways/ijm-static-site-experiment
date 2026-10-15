@@ -5,8 +5,13 @@
 */
 
 /* Center: constrains and centers content, with mobile-first inline padding.
-   Max width matches the legacy site's .wrapper (69.625rem / 1114px). */
+   Max width matches the legacy site's .wrapper (69.625rem / 1114px).
+   Explicit width because <main class="wrapper"> is a flex item of the
+   column-flex <body>, where auto margins disable stretching and the item
+   would otherwise size to its content — a wide table or long URL then
+   pushes it past a narrow viewport. */
 .wrapper {
+  width: 100%;
   max-width: 69.625rem;
   margin-inline: auto;
   padding-inline: var(--space-m);
