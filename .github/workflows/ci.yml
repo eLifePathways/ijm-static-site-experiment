@@ -9,6 +9,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v5
+
+      # LFS assets needed for build
+      - name: List LFS objects
+        run: git lfs ls-files --long | cut -d ' ' -f1 | sort > .lfs-assets-id
+      - uses: actions/cache@v5
+        with:
+          path: .git/lfs
+          key: lfs-${{ hashFiles('.lfs-assets-id') }}
+          restore-keys: lfs-
+      - name: Pull LFS objects
+        run: git lfs pull
+
       - uses: jdx/mise-action@v4
 
       - name: Locate pnpm store
@@ -18,5 +30,21 @@ jobs:
           path: ${{ env.PNPM_STORE }}
           key: pnpm-${{ hashFiles('pnpm-lock.yaml') }}
           restore-keys: pnpm-
+      - run: make node_modules
+
+      # Asset cache (generated TIFFs, public files, Astro image cache)
+      - uses: actions/cache@v5
+        id: assets-cache
+        with:
+          path: |
+            src/generated-tiffs
+            public/files
+            node_modules/.astro/assets
+          key: assets-${{ hashFiles('.lfs-assets-id', 'pnpm-lock.yaml') }}
+          restore-keys: assets-
+      - name: Mark cached asset copies as fresh
+        if: steps.assets-cache.outputs.cache-hit == 'true'
+        run: find src/generated-tiffs public/files -type f -exec touch {} +
 
       - run: make check
+      - run: make dist
