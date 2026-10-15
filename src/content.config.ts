@@ -99,7 +99,7 @@ const articlesCollection = defineCollection({
       additionalFiles: z.unknown().optional(),
       ethics: z.unknown().optional(),
     })
-    .passthrough(),
+    .catchall(z.unknown()),
 });
 
 const issuesCollection = defineCollection({
