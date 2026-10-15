@@ -6,12 +6,14 @@
 
   Font roles are also lifted from the legacy CSS: body copy is set in
   "Noto Serif", headings/UI chrome in "Noto Sans" — an unusual split, but
-  it's what the source app actually does throughout.
+  it's what the source app actually does throughout. Both are self-hosted
+  Fontsource variable builds (imported in BaseLayout.astro), which register
+  as "Noto … Variable"; the plain names stay as a match for local installs.
 */
 
 :root {
-  --font-heading: 'Noto Sans', Arial, Helvetica, sans-serif;
-  --font-body: 'Noto Serif', Georgia, serif;
+  --font-heading: 'Noto Sans Variable', 'Noto Sans', Arial, Helvetica, sans-serif;
+  --font-body: 'Noto Serif Variable', 'Noto Serif', Georgia, serif;
   --font-mono: ui-monospace, 'SF Mono', 'Cascadia Code', Consolas, monospace;
 
   /* static steps: legacy doesn't fluidly scale fine print or body copy */

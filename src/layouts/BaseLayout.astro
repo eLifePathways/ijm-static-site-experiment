@@ -1,4 +1,12 @@
 ---
+// Self-hosted web fonts (variable weight, roman + italic). Without these the
+// font tokens only match a locally installed copy, so most visitors fell back
+// to Georgia/Arial. Vite bundles the woff2 files; unicode-range subsets mean
+// browsers only download the scripts a page actually uses.
+import '@fontsource-variable/noto-serif/wght.css';
+import '@fontsource-variable/noto-serif/wght-italic.css';
+import '@fontsource-variable/noto-sans/wght.css';
+import '@fontsource-variable/noto-sans/wght-italic.css';
 import '@/styles/global.css';
 import SiteHeader from '@/components/SiteHeader.astro';
 import SiteFooter from '@/components/SiteFooter.astro';
