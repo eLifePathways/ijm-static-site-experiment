@@ -15,7 +15,7 @@ jobs:
       # LFS assets needed for build
       - name: List LFS objects
         run: git lfs ls-files --long | cut -d ' ' -f1 | sort > .lfs-assets-id
-      - uses: actions/cache@v5
+      - uses: actions/cache@v6
         with:
           path: .git/lfs
           key: lfs-${{ hashFiles('.lfs-assets-id') }}
@@ -27,7 +27,7 @@ jobs:
 
       - name: Locate pnpm store
         run: echo "PNPM_STORE=$(pnpm store path)" >> "$GITHUB_ENV"
-      - uses: actions/cache@v5
+      - uses: actions/cache@v6
         with:
           path: ${{ env.PNPM_STORE }}
           key: pnpm-${{ hashFiles('pnpm-lock.yaml') }}
@@ -35,7 +35,7 @@ jobs:
       - run: make node_modules
 
       # Asset cache (generated TIFFs, public files, Astro image cache)
-      - uses: actions/cache@v5
+      - uses: actions/cache@v6
         id: assets-cache
         with:
           path: |
@@ -59,7 +59,7 @@ jobs:
       # LFS assets needed for build
       - name: List LFS objects
         run: git lfs ls-files --long | cut -d ' ' -f1 | sort > .lfs-assets-id
-      - uses: actions/cache@v5
+      - uses: actions/cache@v6
         with:
           path: .git/lfs
           key: lfs-${{ hashFiles('.lfs-assets-id') }}
@@ -71,7 +71,7 @@ jobs:
 
       - name: Locate pnpm store
         run: echo "PNPM_STORE=$(pnpm store path)" >> "$GITHUB_ENV"
-      - uses: actions/cache@v5
+      - uses: actions/cache@v6
         with:
           path: ${{ env.PNPM_STORE }}
           key: pnpm-${{ hashFiles('pnpm-lock.yaml') }}
@@ -79,7 +79,7 @@ jobs:
       - run: make node_modules
 
       # Asset cache (generated TIFFs, public files, Astro image cache)
-      - uses: actions/cache@v5
+      - uses: actions/cache@v6
         id: assets-cache
         with:
           path: |
