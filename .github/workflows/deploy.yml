@@ -39,7 +39,7 @@ jobs:
       - name: Pull LFS objects
         run: git lfs pull
 
-      - uses: jdx/mise-action@v4
+      - uses: jdx/mise-action@v5
       - name: Locate pnpm store
         run: echo "PNPM_STORE=$(pnpm store path)" >> "$GITHUB_ENV"
       - uses: actions/cache@v6
