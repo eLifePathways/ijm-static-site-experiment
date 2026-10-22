@@ -21,21 +21,21 @@ const { items, columns } = Astro.props;
     column-gap: var(--space-l);
     list-style: none;
     margin: 0;
-    padding-inline-start: 0;
-    padding-block-start: var(--space-xs);
+    padding: 0;
+  }
 
-    li {
-      break-inside: avoid;
-      padding-block: var(--space-3xs);
-    }
+  .category-items li {
+    break-inside: avoid;
+    margin: 0;
+  }
 
-    a {
-      font-family: var(--font-heading);
-      color: var(--color-ink);
-      text-decoration: none;
-    }
-    a:hover {
-      color: var(--color-accent);
-    }
+  .category-items a {
+    font-family: var(--font-heading);
+    color: var(--color-ink);
+    text-decoration: none;
+  }
+
+  .category-items a:hover {
+    color: var(--color-accent);
   }
 </style>
