@@ -3,16 +3,16 @@ import { getEntry, render } from 'astro:content';
 import BaseLayout from '@/layouts/BaseLayout.astro';
 import AboutMenu from '@/components/AboutMenu.astro';
 
-const entry = await getEntry('about', 'iwa-prize');
-if (!entry) throw new Error('Missing about/iwa-prize.md content entry');
+const entry = await getEntry('about', 'ima-prize');
+if (!entry) throw new Error('Missing about/ima-prize.md content entry');
 const { Content } = await render(entry);
 ---
 
 <BaseLayout title={entry.data.title}>
   <main id="maincontent" class="wrapper">
     <h1>{entry.data.title}</h1>
-    <AboutMenu currentPath="/about/iwa-prize" placement="top" />
+    <AboutMenu currentPath="/about/ima-prize" placement="top" />
     <Content />
-    <AboutMenu currentPath="/about/iwa-prize" placement="bottom" />
+    <AboutMenu currentPath="/about/ima-prize" placement="bottom" />
   </main>
 </BaseLayout>
