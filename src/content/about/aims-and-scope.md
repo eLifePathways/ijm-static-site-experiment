@@ -30,7 +30,7 @@ In particular, the IJM invites submission of five types of contributions: resear
 
 <strong>Software reviews</strong> are short contributions that describe advances in software development that are likely to be of interest to the journal readership, with a particular attention to open source software.
 
-The journal also publishes thematic special issues containing historically relevant work for the microsimulation community, previously unpublished in journal or book form, such as documentation of landmark models. Occasionally, the journal might also republish relevant chapters from edited volumes, with permission from the original publisher, to facilitate access to important early microsimulation work. The original source of publication is always clearly indicated in the published articles.
+The journal also publishes thematic special issues, always clearly labelled. Special issues might contain historically relevant work for the microsimulation community, previously unpublished in journal or book form, such as documentation of landmark models. Occasionally, the journal might also republish relevant chapters from edited volumes, with permission from the original publisher, to facilitate access to important early microsimulation work. The original source of publication is always clearly indicated in the published articles.
 
 If in doubt concerning the suitability of a particular manuscript, or if interested in editing a Special thematic issue, please <a href="mailto:ijm-editor@microsimulation.org">contact the editor</a> for further advice.
 
