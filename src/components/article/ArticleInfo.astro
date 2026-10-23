@@ -16,7 +16,7 @@ interface AuthorInfo {
   name: { preferred: string };
   affiliations?: AffiliationInfo[];
   emailAddresses?: string[];
-  competing?: string;
+  competingInterests?: string;
   orcid?: string;
 }
 
@@ -71,8 +71,8 @@ const hasTagsFooter = Boolean(type || (subjects && subjects.length > 0) || (keyw
                   <a href={`mailto:${author.emailAddresses[0]}`}>{author.emailAddresses[0]}</a>
                 </p>
               )}
-              {author.competing && (
-                <p class="article-info__detail"><strong>Competing interests:</strong> {author.competing}</p>
+              {author.competingInterests && (
+                <p class="article-info__detail"><strong>Competing interests:</strong> {author.competingInterests}</p>
               )}
               {author.orcid && (
                 <p class="article-info__detail article-info__orcid">

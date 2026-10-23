@@ -23,7 +23,7 @@ const authorSchema = z.object({
   affiliations: z.array(affiliationSchema).optional(),
   emailAddresses: z.array(z.string()).optional(),
   equalContributionGroups: z.array(z.number()).optional(),
-  competing: z.string().optional(),
+  competingInterests: z.string().optional(),
   orcid: z.string().optional(),
 });
 
