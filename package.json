@@ -8,7 +8,7 @@
     "@fontsource-variable/noto-sans": "^5.3.0",
     "@fontsource-variable/noto-serif": "^5.3.0",
     "@pagefind/default-ui": "^1.5.2",
-    "astro": "^7.4.1",
+    "astro": "^7.4.2",
     "pagefind": "^1.5.2",
     "photoswipe": "^5.4.4",
     "sharp": "^0.35.5"
