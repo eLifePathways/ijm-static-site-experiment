@@ -14,7 +14,7 @@ const publisher = 'International Journal of Microsimulation';
 const publicationDate = published.split('T')[0];
 const doiUrl = `https://doi.org/${doi}`;
 const pdfPath = resolvePdfPath(pdf);
-const siteUrl = Astro.site?.origin ?? 'https://microsimulation.org';
+const siteUrl = Astro.site?.origin ?? 'https://microsimulation.pub';
 const pdfUrl = `${siteUrl}${pdfPath}`;
 
 // Extract plain text from abstract (strip HTML tags)
