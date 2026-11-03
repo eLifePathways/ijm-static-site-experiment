@@ -1,0 +1,14 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { buildHighwireMeta } from '@/utils/highwireMeta';
+
+interface Props {
+  article: CollectionEntry<'articles'>;
+}
+
+const { article } = Astro.props;
+const siteUrl = Astro.site?.origin ?? 'https://microsimulation.pub';
+const tags = buildHighwireMeta(article.data, siteUrl);
+---
+
+{tags.map(({ name, content }) => <meta name={name} content={content} />)}
