@@ -41,4 +41,41 @@ All submissions are peer reviewed by at least two independent referees in line w
 
 ## "Microsimulation in Government"
 
-Guest Editors: Dave Pankhurst, Grant Tregonning
+**Call for Papers**
+
+Guest Editor: Dave Pankhurst, Department for Work and Pensions (DWP), United Kingdom
+
+**Submission deadline:** 30 June 2027
+
+**Background**
+
+Microsimulation is a critical tool for governments seeking to understand the distributional, behavioural and fiscal consequences of their policies. While academic literature continues to advance rapidly, many of the most sophisticated and influential applications are developed within government institutions, where practitioners face unique challenges relating to policy timeliness, operational delivery, transparency, capability building, stakeholder engagement and public accountability. This body of work is underrepresented in the published literature. The purpose of this special issue is to document and showcase the state of the art in government microsimulation, strengthen links between the practitioner and academic communities, and promote the professionalisation of microsimulation practice within government. It follows the international workshop on Microsimulation Practice in Government (November 2025), co-organised by the UK Department for Work and Pensions and the International Microsimulation Association.
+
+**Scope**
+
+The issue will examine how governments and closely related institutions develop, maintain and use microsimulation models to inform policy, forecasting and service delivery. We welcome papers that present a substantive microsimulation application, methodological innovation or transferable lessons from developing, maintaining or using models in government and closely related institutions. For example:
+
+- **Large-scale or long-term applications -** including dynamic models developed, operated or maintained within government.
+- **Methodological advances -** including behavioural modelling, wealth, indirect taxation, spatial analysis, dynamic modelling and model emulation.
+- **Innovative government uses -** including applications that underpinned policy analysis, forecasting, service planning, operational delivery or institutional capability.
+
+The primary focus is work developed, maintained or applied within governments, public bodies and international organisations. Contributions from universities, research institutes, learned societies, social enterprises and other organisations are also welcome where the work has been undertaken in close partnership with government.
+Submissions may address, but are not limited to, the following themes:
+- Distributional analysis
+- Demography
+- Behavioural responses
+- Forecasting
+- Service planning
+- Advances in static/dynamic modelling approaches
+- Uncertainty analysis and communication
+- Methodological and technical advances
+- Use of administrative data and data-linkage
+- Quality assurance and validation
+- Capability building
+
+**Submission information**
+
+Authors should submit full manuscripts through the IJM submission system and indicate in their cover letter that the paper is intended for the special issue "Microsimulation in Government".
+Papers should clearly describe the policy or institutional context, the microsimulation approach, data and other evidence used, the validation methods applied and the lessons transferable beyond the immediate application.
+Submissions are welcome from authors who did not participate in the workshop.
+All submissions will be subject to the journal's standard peer-review process.
