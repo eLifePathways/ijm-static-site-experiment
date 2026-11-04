@@ -7,7 +7,7 @@
     "@astrojs/sitemap": "^3.7.4",
     "@fontsource-variable/noto-sans": "^5.3.0",
     "@fontsource-variable/noto-serif": "^5.3.0",
-    "@pagefind/default-ui": "^1.5.2",
+    "@pagefind/default-ui": "^1.6.0",
     "astro": "^7.4.4",
     "pagefind": "^1.5.2",
     "photoswipe": "^5.4.4",
