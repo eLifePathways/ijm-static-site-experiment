@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@astrojs/sitemap": "^3.7.4",
+    "@astrojs/sitemap": "^3.7.5",
     "@fontsource-variable/noto-sans": "^5.3.0",
     "@fontsource-variable/noto-serif": "^5.3.0",
     "@pagefind/default-ui": "^1.6.0",
